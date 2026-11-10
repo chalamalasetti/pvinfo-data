@@ -44,7 +44,8 @@ test('CI becomes a polling check that posts commit statuses on PV-Info', () => {
   const w = buildWorkflow('ci.yml', 'on: {pull_request: {}}\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: npm test\n');
   assert.deepEqual(Object.keys(w.on).sort(), ['schedule', 'workflow_dispatch']);
   assert.equal(w.jobs.test.needs, 'plan');
-  assert.equal(w.jobs.test.steps[1].with.ref, '${{ matrix.target.sha }}');
+  assert.equal(w.jobs.test.steps[1].with.ref, '${{ matrix.target.ref }}');
+  assert.match(w.jobs.plan.steps[0].with.script, /merge_commit_sha/);
   assert.match(w.jobs.test.steps.at(-1).with.script, /createCommitStatus/);
   assert.equal(w.jobs.test.steps.at(-1).if, 'always()');
 });

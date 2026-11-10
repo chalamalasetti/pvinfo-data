@@ -10,6 +10,10 @@ on:
         description: Optional PV-Info commit SHA to check now
         type: string
         default: ""
+      recheck:
+        description: Check again even if a result was already posted
+        type: boolean
+        default: false
 permissions:
   contents: read
 concurrency:
@@ -27,18 +31,36 @@ jobs:
         with:
           github-token: ${{ secrets.PVINFO_CODE_TOKEN }}
           script: |-
-            const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '${{ inputs.sha }}'.trim();
+            // A pull request is tested as GitHub's merge commit with main (as pull_request CI did), so a
+            // branch made before a newer test landed on main is not failed for it. The result is posted on
+            // the pull request's head commit.
+            const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '${{ inputs.sha }}'.trim(), recheck = '${{ inputs.recheck }}' === 'true';
             const targets = [];
-            if (wanted) targets.push({sha: wanted, label: 'manual'});
+            if (wanted) targets.push({sha: wanted, ref: wanted, label: 'manual'});
             else {
               const pulls = await github.paginate(github.rest.pulls.list, {owner, repo, state: 'open', sort: 'updated', direction: 'desc', per_page: 100});
               const main = (await github.rest.repos.getBranch({owner, repo, branch: 'main'})).data.commit.sha;
-              const candidates = [{sha: main, label: 'main'}, ...pulls.filter(p => p.head.repo?.full_name?.toLowerCase() === 'chalamalasetti/pv-info').map(p => ({sha: p.head.sha, label: '#' + p.number}))];
+              const candidates = [{sha: main, ref: main, label: 'main'}];
+              for (const p of pulls) {
+                if (p.head.repo?.full_name?.toLowerCase() !== 'chalamalasetti/pv-info') continue;
+                candidates.push({sha: p.head.sha, number: p.number, label: '#' + p.number});
+              }
               for (const c of candidates) {
                 if (targets.length >= 4) break;
                 if (targets.some(t => t.sha === c.sha)) continue;
-                const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: c.sha, per_page: 100});
-                if (!statuses.some(s => s.context.startsWith('PV-Info checks /'))) targets.push(c);
+                if (!recheck) {
+                  const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: c.sha, per_page: 100});
+                  if (statuses.some(s => s.context.startsWith('PV-Info checks /'))) continue;
+                }
+                if (c.number) {
+                  const pr = (await github.rest.pulls.get({owner, repo, pull_number: c.number})).data;
+                  if (pr.mergeable === false || !pr.merge_commit_sha) {
+                    await github.rest.repos.createCommitStatus({owner, repo, sha: c.sha, state: 'error', context: 'PV-Info checks / merge', description: 'Has merge conflicts with main; resolve them to run the checks'});
+                    continue;
+                  }
+                  c.ref = pr.merge_commit_sha;
+                }
+                targets.push(c);
               }
             }
             core.info('Commits to check: ' + (targets.map(t => t.label + ' ' + t.sha.slice(0, 7)).join(', ') || 'none'));
@@ -60,7 +82,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: chalamalasetti/PV-Info
-          ref: ${{ matrix.target.sha }}
+          ref: ${{ matrix.target.ref }}
           token: ${{ secrets.PVINFO_CODE_TOKEN }}
           persist-credentials: false
       - name: Use the public data repository as origin
@@ -114,7 +136,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: chalamalasetti/PV-Info
-          ref: ${{ matrix.target.sha }}
+          ref: ${{ matrix.target.ref }}
           token: ${{ secrets.PVINFO_CODE_TOKEN }}
           persist-credentials: false
       - name: Use the public data repository as origin

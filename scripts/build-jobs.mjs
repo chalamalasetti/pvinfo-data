@@ -14,7 +14,8 @@
 //   persisted credentials off, and `origin` is pointed at this public repository so cache
 //   branches are fetched from and pushed to here.
 // - ci.yml becomes pv-info-checks.yml: every 30 minutes it tests new commits of open
-//   PV-Info pull requests and of main, and posts the result on the commit as a status.
+//   PV-Info pull requests (tested as their merge with main) and of main, and posts the
+//   result on the head commit as a status.
 // - curated-requirements.yml publishes the newest curation commit (any claude/** branch
 //   or main) every 30 minutes instead of on each push.
 // - Files this script wrote earlier whose source is gone are removed.
@@ -84,18 +85,36 @@ const statusStep = (job, state) => ({
 });
 
 const PLAN_SCRIPT = `
-const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '\${{ inputs.sha }}'.trim();
+// A pull request is tested as GitHub's merge commit with main (as pull_request CI did), so a
+// branch made before a newer test landed on main is not failed for it. The result is posted on
+// the pull request's head commit.
+const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '\${{ inputs.sha }}'.trim(), recheck = '\${{ inputs.recheck }}' === 'true';
 const targets = [];
-if (wanted) targets.push({sha: wanted, label: 'manual'});
+if (wanted) targets.push({sha: wanted, ref: wanted, label: 'manual'});
 else {
   const pulls = await github.paginate(github.rest.pulls.list, {owner, repo, state: 'open', sort: 'updated', direction: 'desc', per_page: 100});
   const main = (await github.rest.repos.getBranch({owner, repo, branch: 'main'})).data.commit.sha;
-  const candidates = [{sha: main, label: 'main'}, ...pulls.filter(p => p.head.repo?.full_name?.toLowerCase() === 'chalamalasetti/pv-info').map(p => ({sha: p.head.sha, label: '#' + p.number}))];
+  const candidates = [{sha: main, ref: main, label: 'main'}];
+  for (const p of pulls) {
+    if (p.head.repo?.full_name?.toLowerCase() !== 'chalamalasetti/pv-info') continue;
+    candidates.push({sha: p.head.sha, number: p.number, label: '#' + p.number});
+  }
   for (const c of candidates) {
     if (targets.length >= 4) break;
     if (targets.some(t => t.sha === c.sha)) continue;
-    const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: c.sha, per_page: 100});
-    if (!statuses.some(s => s.context.startsWith('${CHECK_CONTEXT} /'))) targets.push(c);
+    if (!recheck) {
+      const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: c.sha, per_page: 100});
+      if (statuses.some(s => s.context.startsWith('${CHECK_CONTEXT} /'))) continue;
+    }
+    if (c.number) {
+      const pr = (await github.rest.pulls.get({owner, repo, pull_number: c.number})).data;
+      if (pr.mergeable === false || !pr.merge_commit_sha) {
+        await github.rest.repos.createCommitStatus({owner, repo, sha: c.sha, state: 'error', context: '${CHECK_CONTEXT} / merge', description: 'Has merge conflicts with main; resolve them to run the checks'});
+        continue;
+      }
+      c.ref = pr.merge_commit_sha;
+    }
+    targets.push(c);
   }
 }
 core.info('Commits to check: ' + (targets.map(t => t.label + ' ' + t.sha.slice(0, 7)).join(', ') || 'none'));
@@ -115,12 +134,12 @@ function ciWorkflow(doc, file) {
       if: "needs.plan.outputs.targets != '[]'",
       ...job,
       strategy: {'fail-fast': false, matrix: {target: '${{ fromJSON(needs.plan.outputs.targets) }}'}},
-      steps: [statusStep(name, 'pending'), ...rewriteSteps(job.steps, {ref: '${{ matrix.target.sha }}', file}), statusStep(name, 'result')],
+      steps: [statusStep(name, 'pending'), ...rewriteSteps(job.steps, {ref: '${{ matrix.target.ref }}', file}), statusStep(name, 'result')],
     };
   }
   return {
     name: 'PV-Info checks',
-    on: {schedule: [{cron: POLL}], workflow_dispatch: {inputs: {sha: {description: 'Optional PV-Info commit SHA to check now', type: 'string', default: ''}}}},
+    on: {schedule: [{cron: POLL}], workflow_dispatch: {inputs: {sha: {description: 'Optional PV-Info commit SHA to check now', type: 'string', default: ''}, recheck: {description: 'Check again even if a result was already posted', type: 'boolean', default: false}}}},
     permissions: {contents: 'read'},
     concurrency: {group: 'pv-info-checks', 'cancel-in-progress': false},
     jobs,
