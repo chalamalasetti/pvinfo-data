@@ -3,7 +3,7 @@
 name: Feed health check
 on:
   schedule:
-    - cron: 47 */6 * * *
+    - cron: 47 * * * *
   workflow_dispatch: null
 permissions:
   contents: read
