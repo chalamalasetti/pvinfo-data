@@ -1,0 +1,45 @@
+# Rebuilds this repository's job workflows from the job definitions in the private code
+# repository (chalamalasetti/PV-Info). Public repositories run GitHub Actions free; the
+# code stays private and each job checks it out for the run with PVINFO_CODE_TOKEN.
+# Pushing workflow files needs PVINFO_DATA_TOKEN with "Workflows: read and write" on this
+# repository (the built-in token is not allowed to change workflows).
+name: Sync jobs from PV-Info
+on:
+  schedule:
+    - cron: '7 */2 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: sync-jobs
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PVINFO_DATA_TOKEN }}
+      - uses: actions/checkout@v4
+        with:
+          repository: chalamalasetti/PV-Info
+          ref: main
+          token: ${{ secrets.PVINFO_CODE_TOKEN }}
+          path: code
+          persist-credentials: false
+          sparse-checkout: .github/workflows
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Rebuild workflows
+        run: node scripts/build-jobs.mjs code/.github/workflows .github/workflows
+      - name: Commit changes
+        run: |
+          git add -A .github/workflows
+          if git diff --cached --quiet; then echo 'Workflows already match PV-Info.'; exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -qm "Sync jobs from PV-Info $(git -C code rev-parse --short HEAD)"
+          git push -q origin HEAD:main
