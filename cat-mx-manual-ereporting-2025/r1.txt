@@ -1,0 +1,2408 @@
+                            e-Reporting
+                             Industria
+                               Manual de uso
+
+
+                                                                            Versión 2.0
+                                                                                           Febrero 2025
+
+
+Control de cambios: actualización a papelería institucional vigente
+Control de cambios respecto a la versión 1.0 (septiembre 2021)
+    La terminología MedDRA ya está disponible en campos correspondientes para el módulo de carga manual.
+    Se describe procedimiento para habilitar MedDRA en el módulo de carga manual
+    Se agregó el apartado de anulación de reporte aplicable para ambos módulos
+    Se incluye proceso adicional para descargar el XML del reporte
+    Se tradujeron al español los campos que aún se encontraban en inglés
+    Se actualizaron respuestas de algunas preguntas de la sección preguntas frecuentes
+
+
+
+
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         1 de 61
+                                             Tabla de contenidos
+
+1. Generalidades ............................................................................................3
+2. Objetivo ......................................................................................................4
+3. Desarrollo del contenido ..........................................................................4
+  3.1 Solicitud de acceso y cuentas de usuario .........................................5
+  3.2 Indicaciones iniciales...........................................................................8
+  3.3 Ingreso por primera vez para generación de contraseña ..............8
+  3.4 Inicio de sesión ...................................................................................10
+  3.5 Administración y activación de licencia MedDRA .........................15
+  3.6 Consideraciones importantes para el ingreso de reportes a e-
+  Reporting Industria. ..................................................................................18
+  3.7 Módulo de carga E2B .........................................................................18
+  3.8 Módulo de carga manual ..................................................................21
+     3.8.1 Generalidades ...............................................................................21
+     3.8.2 Crear nuevo reporte .....................................................................22
+     3.8.3 Editar un reporte ..........................................................................45
+     3.8.4 Situaciones especiales en el módulo de carga manual. ..........46
+  3.9 Nulificar un reporte ...........................................................................47
+  3.10 Estado de envío y revisión de acklogs .............................................49
+4. Preguntas frecuentes .............................................................................53
+5. Anexo A .....................................................................................................60
+
+
+
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+     OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           2 de 61
+   1. Generalidades
+
+   A inicios de noviembre 2020 comenzó el uso de e-Reporting Industria como sistema de
+notificación de reportes de casos individuales de sospechas de reacciones adversas a
+medicamentos (SRAM), reacciones adversas a medicamentos (RAM), eventos adversos (EA),
+eventos supuestamente atribuibles a la vacunación o inmunización (ESAVI) y otros problemas de
+seguridad relacionados con el uso de medicamentos y vacunas por parte de los titulares de
+registro sanitario o sus representantes legales, instituciones o establecimientos donde se realice
+Investigación para la salud (se incluyen a las organizaciones de investigación por contrato o CRO
+por sus siglas en inglés) y distribuidores/comercializadores (en lo sucesivo industria
+farmacéutica).
+
+e-Reporting Industria es una herramienta que permite que la industria farmacéutica realice la
+notificación conforme lo solicitado en la NOM-220-SSA-2016, Instalación y operación de la
+Farmacovigilancia y bajo el estándar internacional ICH E2B. Es la única herramienta aceptada
+por el Centro Nacional de Farmacovigilancia para que la industria farmacéutica de cumplimiento
+a la notificación de casos individuales. Consta de dos módulos:
+
+
+
+a) Módulo de carga E2B: permite la carga de archivos XML para aquellos laboratorios que
+  cuentan con bases de datos de Farmacovigilancia estandarizadas E2B y que ya han concluido
+  las pruebas con el Centro Nacional de Farmacovigilancia (CNFV) recibiendo el visto bueno
+  para la notificación por esta vía.
+
+   El CNFV ha definido que los laboratorios con un alto número de notificaciones anuales sean
+los que implementen el estándar E2B en sus bases de Farmacovigilancia para la notificación a
+través de este módulo. Las corporativas multinacionales generalmente ya cuentan con bases de
+datos estandarizadas y utilizan el reporte XML-E2B en otros países, por lo que cuentan con las
+herramientas y el soporte tecnológico para llevar a cabo la
+implementación. Esto no es limitante para que un                          IMPORTANTE
+laboratorio que no es multinacional o que no tiene un alto
+                                                                    El CNFV será el
+número de notificaciones, pueda implementar el estándar
+                                                                    responsable de otorgar
+E2B en sus bases y utilizar este módulo.                            el acceso al módulo de
+El CNFV contactará a las UFV (bajo al criterio establecido)         carga de XML o al de
+que deban implementar el estándar ICH-E2B. Si una                   carga manual de
+empresa tiene el interés de utilizar el módulo de carga XML,        información.
+comuníquese      al     CNFV     a     través   del   correo
+xmlvigiflow@cofepris.gob.mx con el fin de establecer el proceso de las pruebas respectivas.
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    3 de 61
+b) Módulo de carga manual: permite la captura de información de un reporte de caso
+  individual a partir de un formulario electrónico con campos estructurados y estandarizados.
+  El uso de este módulo se centra en aquella industria farmacéutica que no cuenta con bases
+  de datos E2B.
+
+Las particularidades de este módulo de carga manual son:
+    Estructura compatible con ICH-E2B (R3).
+    Uso prioritario de campos estructurados sobre campos de texto libre.
+    Catálogos estandarizados de términos médicos y medicamentos: MedDRA y WHODRUG
+       (próximamente).
+    Posibilidad de adjuntar documentos con información adicional relevante.
+    Envío inmediato del reporte al CNFV.
+    Generación de seguimientos a partir de modificación del archivo XML del reporte inicial.
+    Descarga de acuse de recepción electrónico (acklog) en formato XML.
+
+El CNFV ha definido que este módulo sea utilizado por la industria farmacéutica que tiene un
+bajo número de notificaciones anuales y que no cuentan con bases de datos E2B.
+
+Independientemente del módulo que se utilice, es indispensable el cumplimiento de lo
+solicitado en la NOM-220-SSA1-2016 y su modificación, así como lo especificado en la Guía de
+Farmacovigilancia para la notificación de EA, SRAM, RAM, ESAVI o cualquier problema de
+seguridad relacionado con el uso de medicamentos y vacunas.
+
+
+
+   2. Objetivo
+
+            Describir y estandarizar el llenado de información del módulo de carga manual y uso
+             del módulo de carga XML de e-Reporting Industria para generar notificaciones de alta
+             calidad de SRAM, RAM, EA, ESAVI y cualquier otro problema de seguridad relacionado
+             con el uso de medicamentos y vacunas por parte de la industria farmacéutica.
+
+
+
+
+   3. Desarrollo del contenido
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     4 de 61
+           3.1 Solicitud de acceso y cuentas de usuario
+
+Los requisitos para otorgar acceso a e-Reporting Industria son:
+        Unidad de Farmacovigilancia (UFV) / responsable actualizado ante el CNFV. Los
+          requerimientos de alta y modificación de UFV y Responsable, puede encontrarlos en
+          el documento “Lineamientos para dar de alta, modificación o baja de Unidad y/o
+          Responsable de Farmacovigilancia de acuerdo con lo establecido en la NOM-220-SSA1-
+          2016”, que se encuentra publicado en la página web de COFEPRIS.
+        Licencia MedDRA vigente al momento de solicitar el acceso. Para el cumplimiento del
+          punto 8.1.10.1 de la NOM-220-SSA1-2016 y su modificación, es un requerimiento
+          indispensable que la industria farmacéutica que utilice e-Reporting Industria tengan
+          la licencia MedDRA vigente correspondiente.
+
+La solicitud se realiza a través del correo electrónico: xmlvigiflow@cofepris.gob.mx
+
+Se debe considerar lo siguiente:
+
+            Se otorgarán como máximo 2 cuentas por UFV, esto dependerá del número de
+             notificaciones anuales de cada empresa solicitante.
+            Se recomienda que el usuario principal sea el correo de Farmacovigilancia de la UFV y
+             la cuenta adicional sea el correo del (la) responsable de Farmacovigilancia.
+            Es indispensable que las cuentas de correos de los usuarios sean corporativas.
+
+   Información requerida en la solicitud:
+
+           Solicitud                                                  Descripción
+ Estatus de vigencia de               Proporcionar vigencia de la licencia MedDRA actual.
+ licencia MedDRA.
+ Nombre largo                         Empresas que cuentan con base de datos E2B, solicitar este dato a su área
+                                      técnica/proveedor de base de datos.
+
+                                      Se propone utilizar la razón social (máx. 254 caracteres) de la empresa en
+                                      México.
+
+                                      Ejemplo: Laboratorios MedSolutions S.A. de C.V.
+
+                                      El nombre largo es el que se observará en el cuadrante superior izquierdo
+                                      de la interfaz, para que la compañía sepa que ha iniciado la sesión correcta
+
+ Nombre corto                         Nombre abreviado propuesto (máx. 20 caracteres).
+ (short name)
+                                                               Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                               Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                               Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 5 de 61
+                                     Formará parte de la estructura del Worldwide unique case identification
+                                     (WWUID).
+                                      WWUID e.g. MX-MerckHealthcareKGaA-0000001, debe coincidir con el
+                                     WWUID de los archivos XML (para aquellos laboratorios que cuenten con
+                                     bases de datos E2B que generen este ID).
+                                     E2B (R2): <companynumb>
+                                     (En la guía es el punto A.1.10 Worldwide unique case identification number)
+                                     E2B (R3): 2.16.840.1.113883.3.989.2.1.3.2
+                                     (En la guía ICH-OID es el punto C.1.8.1 Worldwide Unique Case Identification
+                                     Number)
+
+                                     El short name también se observará en el Safety report unique identifier
+                                     SRID e.g. MX-MerckHealthcareKGaA-0000001
+
+                                     Para compañías que no tienen bases de datos E2B, se puede proponer un
+                                     nombre corto.
+
+                                     Es importante mencionar que una vez definido este nombre corto, no se
+                                     podrá modificar posteriormente en la fase de producción.
+Identificador del                    Corresponde al identificador de la organización transmisora (máx. 60
+transmisor                           caracteres). Permite la transmisión electrónica entre bases de datos.
+(Sender Identifier)
+                                     Para empresas con bases de datos E2B que pueden generar este ID, debe
+                                     ser idéntico al que produce su base de datos, de lo contrario los reportes no
+                                     serán recibidos correctamente.
+                                     E2B (R2): <messagesenderidentifier>
+                                     (En la guía es el punto M.1.5 Message Sender Identifier)
+                                     E2B (R3): 2.16.840.1.113883.3.989.2.1.3.11
+                                     (En la guía es el punto N.2.r.2 Message Sender Identifier)
+
+                                     Para compañías que no tienen bases de datos E2B, deben proponerlo y
+                                     definirlo junto con el CNFV.
+
+                                     Es importante mencionar que una vez definido este ID, no se podrá
+                                     modificar posteriormente en la fase de producción.
+Organización                         Para empresas que cuentan con base de datos E2B:
+transmisora                           E2B (R2): <senderorganization> (campo A.3.1.2 Sender en guía ICH).
+(Sender organisation)                 E2B (R3): Campo C.3.2 Sender’s Organisation en guía ICH
+                                     Para empresas que NO cuentan con base de datos E2B, se propone que sea
+                                     el mismo que el Sender identifier.
+Usuario 1 (principal)                Nombre (s), apellidos y correo electrónico.
+Usuario 2 (adicional)                Nombre (s), apellidos y correo electrónico.
+
+
+                                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 6 de 61
+Imágenes ejemplo para las compañías que tienen bases de datos E2B identifiquen el short
+name y el sender identifier.
+R2
+
+
+
+
+R3
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+     OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   7 de 61
+   Para una baja/modificación de cuenta, por ejemplo, por cambio de responsable de la UFV,
+debe solicitarlo al correo anteriormente mencionado con la información del responsable de la
+nueva cuenta.
+
+
+         3.2 Indicaciones iniciales
+                  o    Se sugiere que el equipo de cómputo que utilice cuente con un dispositivo de
+                       almacenamiento de energía para prevenir la pérdida de información por
+                       cortes de energía eléctrica.
+                  o    Disponer una conexión de internet estable de alta velocidad para el correcto
+                       funcionamiento de la plataforma.
+                  o    Utilizar los siguientes navegadores en orden de preferencia, Chrome, Firefox,
+                       Microsoft Edge, otros. Tener los navegadores actualizados en su última versión
+                       para una operación óptima.
+                  o    Inhabilitar la traducción automática del navegador que vaya a utiliza para
+                       evitar errores en la traducción al español que tiene la interfaz.
+                  o    Mantener la integridad y confidencialidad de las cuentas de acceso y
+                       contraseñas.
+                  o    Atender las disposiciones establecidas en el documento “Términos y
+                       condiciones de uso”. Anexo A.
+                  o    No ingresar casos de de prueba por ninguno de los módulos, ya que estos
+                       llegarían a la base de datos del CNFV como casos válidos.
+                  o    Cerrar la sesión cuando no se esté ingresando información a la plataforma.
+
+       La inestabilidad e interrupciones en la conexión de internet y cortes de energía pueden
+       ser motivos para perder la información de un reporte si no se ha enviado previamente.
+
+
+
+
+         3.3 Ingreso por primera vez para generación de contraseña
+
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             8 de 61
+Una vez que el CNFV le ha otorgado acceso a la plataforma, siga los siguientes pasos para la
+generación de su contraseña.
+
+   1) Inicie sesión a través del siguiente enlace (se recomienda no guardar el enlace en la
+      sección favoritos de su navegador):
+
+                                                                                   IMPORTANTE
+   https://industryereporting.who-umc.org/
+                                                                                No        habilite     la
+                                                                                traducción automática
+                                                                                del navegador que
+   2) De clic en la opción Forgot your pasword? (¿Olvidó su                     esté utilizando, ya que
+      contraseña?), siga las instrucciones para crear una nueva                 puede              haber
+                                                                                traducciones
+      contraseña.                                                               imprecisas de algunos
+                                                                                campos            cuando
+                                                                                cambia el idioma de la
+   3) En el campo “Email Address”, ingrese su nombre de
+                                                                                interfaz.
+      usuario (correo electrónico con el que el CNFV lo dio de
+      alta).
+
+   4) Oprima el enlace Send Verification Code.
+
+
+
+
+       No cierre esta ventana de e-Reporting Industria.
+
+   5) Se enviará a su correo un código de 6 dígitos que deberá ingresar en el campo
+      Verification Code. Oprimir el vínculo “Verify code”.
+
+   6) Si el código es correcto, se le mostrará el mensaje “The code has been verified. You can
+      now continue”.
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   9 de 61
+7) Presione “Continue”.
+
+
+
+
+8) Se mostrará una pantalla donde deberá proporcionar su nueva contraseña. Su
+    contraseña debe contener como MÍNIMO 8 caracteres (letras, números, mayúsculas,
+    minúsculas, símbolos), y es importante que no se parezca a su nombre de usuario.
+    Coloque nuevamente su contraseña propuesta en el recuadro de abajo para confirmarla.
+9) Presione el botón “Continue”.
+10) Si el proceso es exitoso el sistema lo redirigirá a la pantalla de inicio para que ingrese su
+    usuario y contraseña.
+
+NOTA: para recuperación de contraseña (p.e. en caso de no recordarla) debe realizar con el
+mismo procedimiento anteriormente descrito.
+
+
+
+
+     3.4 Inicio de sesión
+
+                                               Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                               Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                               Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     10 de 61
+Para iniciar sesión vaya al siguiente enlace (cópielo y péguelo en su navegador, se recomienda
+no guardar el enlace en la sección favoritos de su navegador y acceder desde el enlace que se
+encuentra en este Manual o en la página web de la COFEPRIS):
+
+
+                        https://industryereporting.who-umc.org/
+
+   -   Ingrese su usuario y contraseña en los campos correspondientes.
+   -   Presione el botón “Sign in” (Iniciar sesión).
+
+
+
+
+Pantalla de inicio
+       Una vez que haya iniciado sesión, encontrará la siguiente pantalla principal:
+
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    11 de 61
+Esta interfaz de inicio la integran el cuerpo de la ventana y un menú principal.
+El cuerpo de la interfaz contiene las siguientes secciones:
+     Bienvenido a eReporting: proporciona una serie de opciones que se describen a
+       continuación:
+                Función                             Descripción                       Aplicable a usuarios
+                                                                                               de
+      Crear nuevo reporte                  Ingrese un nuevo reporte en el Módulo de carga manual
+                                           módulo de carga manual
+      Editar reporte                       Edite   un    reporte   generado Módulo de carga manual
+                                           previamente en el módulo de carga
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02              12 de 61
+                                            manual
+       Carga E2B                            Módulo de carga E2B que permite Módulo de carga E2B
+                                            cargar un reporte XML generados
+                                            en bases de datos E2B
+       Estado de envío                      En esta sección puede revisar el Ambos módulos
+                                            estado de envío de sus reportes
+                                            generados y descargar el acuse de
+                                            recepción electrónico
+       Nulificar reporte                    Anular   un     reporte generado Ambos módulos
+                                            previamente
+
+      MedDRA: muestra la versión actual de la terminología MedDRA con la que dispone el
+       módulo de carga manual. El idioma de MedDRA puede ser modificado en
+       Configuraciones del usuario.
+      Noticias: historial de versiones y lanzamientos. Describe las últimas actualizaciones
+       realizadas a la plataforma.
+
+El menú principal presenta las siguientes opciones, algunas de las cuales ya fueron descritas en
+la tabla anterior.
+
+
+
+
+      Ingreso de datos: permite crear un nuevo reporte y editarlo (para usuarios del módulo
+       de carga manual), así como anularlo (para usuarios de ambos módulos).
+
+
+
+
+      Cargar E2B: permite cargar un reporte XML generado en una base de datos E2B
+      Estado de envío: permite revisar el estado de envío de los reportes generados y
+       descargar el acuse de recepción electrónico
+      Usuario y ajustes:
+
+                                                           Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                           Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                           Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02              13 de 61
+                      Función                                            Detalle
+       Iniciar                              Lo traslada a la pantalla principal. Si está capturando un
+                                            reporte, cerciórese primero de haberlo enviado y
+                                            descargado.
+       Configuraciones del                  Ajustes de idioma de la interfaz y terminología MedDRA
+       usuario
+       Licencia MedDRA                      Habilitar la terminología MedDRA para su uso en el módulo
+                                            de carga manual. Ver Administración y activación de licencia
+                                            MedDRA
+       Política de Privacidad               Se direcciona a la página web del UMC donde se estipula la
+                                            política de privacidad de la herramienta
+       Cerrar sesión                        Si está capturando un reporte, cerciórese primero de
+                                            haberlo enviado y descargado antes de cerrar la sesión.
+
+Para cambiar el idioma de la interfaz diríjase a Configuraciones del usuario.
+
+      Puede elegir Español como idioma por defecto de la                                IMPORTANTE
+       interfaz.
+      Elija “Español; Castellano (spa)” como idioma nativo.                       Toda la información
+                                                                                   que se registre en el
+       Permitirá llenar automáticamente los campos en                              módulo      de     carga
+       donde se solicite elegir el idioma de un término                            manual deberá ser en
+                                                                                   español, a excepción de
+       colocado en un campo específico.
+                                                                                   los            catálogos
+      Idioma de MedDRA: puede seleccionar el idioma de la                         prestablecidos en la
+       terminología MedDRA                                                         herramienta, que aún
+                                                                                   no cuenten con una
+      Para guardar los cambios oprima Guardar.                                    traducción al español.
+
+
+
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          14 de 61
+         3.5 Administración y activación de licencia MedDRA
+
+El uso de MedDRA dentro del módulo de carga manual requiere la activación de la licencia
+dentro de la herramienta. Se debe obtener una clave API (interfaz de programación de
+aplicación) para validar que la licencia de la empresa está en orden. Para ello, debe llevar a cabo
+lo siguiente:
+    1) Ingrese a la siguiente dirección electrónica (sitio externo a e-Reporting Industria):
+                                   https://mid.meddra.org/account/register
+
+
+
+
+   2) Proporcione “usuario” y “contraseña de su licencia MedDRA. Dar clic en “Login”
+   3) Si el proceso fue exitoso, la página le proporcionará la clave API para el usuario MedDRA
+      ingresado. Si no fue exitoso, revise usuario y contraseña e intente nuevamente o
+      contacte a su proveedor MedDRA.
+   4) Copie la clave API.
+   5) Inicie sesión en e-Reporting Industria
+   6) Ubique en el menú superior derecho la opción “Licencia MedDRA”
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        15 de 61
+7) En el primer campo coloque su usuario MedDRA y en el segundo la clave API generada
+   en los pasos previamente descritos. De clic en “Guardar”.
+
+
+
+
+                                            Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                            Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                            Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   16 de 61
+Importante
+
+ Una vez que ha activado la licencia MedDRA no es necesario que repita el proceso cada vez
+  que inicia sesión. En caso de expiración de la licencia MedDRA, e-Reporting Industria
+  bloqueará la codificación en los campos MedDRA. El usuario deberá revisar los detalles en
+  el menú superior derecho en la opción “Licencia MedDRA” y en caso necesario se deberá
+  validar nuevamente como se indica en los pasos anteriores.
+ Exención de responsabilidad: cada laboratorio es responsable de realizar/verificar la
+  renovación de la licencia MedDRA de su organización con MSSO, para poder utilizar la
+  terminología en e-Reporting Industria de forma legal. El CNFV se exime de la obligación de
+  solicitar y comprobar la renovación de licencias MedDRA de los laboratorios.
+ La aplicación de la terminología MedDRA en el módulo de carga manual (para el módulo
+  de carga XML se aplica desde un inicio) es efectiva en los siguientes reportes:
+  o Iniciales y sus correspondientes seguimientos posteriores a la emisión de la versión 2.0
+     de este manual.
+  o Seguimientos de casos reportados inicialmente previos a la emisión de la versión 2.0 de
+     este manual.
+
+
+
+8) Si el proceso fue exitoso, se guardará la información y se mostrará el siguiente mensaje
+   que le indicará que su licencia ha quedado validada para usar MedDRA dentro de e-
+   Reporting Industria:
+
+
+
+
+9) Regrese a la pantalla principal.
+
+Cuando capture/modifique un reporte, en las secciones donde se dispone de MedDRA,
+podrá buscar el término MedDRA correspondiente.
+
+Cabe señalar que el visor de MedDRA contenido en los campos correspondientes en e-
+Reporting Industria permite una búsqueda general del término deseado por lo que la
+información que se presenta en el resultado es concreta, específica y no pretende suplir las
+funciones y características que ofrece el explorador web de MedDRA. Por lo que si requiere
+realizar una consulta ampliada, utilice el navegador web de MedDRA en el siguiente enlace:
+
+                                        https://tools.meddra.org/wbb/
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            17 de 61
+         3.6 Consideraciones importantes para el ingreso de reportes a e-
+                  Reporting Industria.
+
+Con el objetivo de definir el proceso a seguir con relación a notificaciones que se sometieron en
+sistemas anteriores a e-Reporting Industria (Base de datos espejo Access, Notireporta, e-
+Reporting ordinario), independientemente si utiliza el módulo de carga de XML o el módulo de
+carga manual, debe seguir las siguientes indicaciones:
+
+      La notificación de reportes de casos individuales en e-Reporting Industria, será única y
+       exclusivamente para nuevos casos y sus respectivos seguimientos.
+      Si notificó un caso inicial y seguimiento a través de e-Reporting ordinario, debe dar
+       seguimiento                y         conclusión     a        través        del        correo         electrónico
+       farmacovigilancia@cofepris.gob.mx mediante el formato oficial de notificación.
+
+   Excepción:
+
+      Se permitirá el reporte como inicial en e-Reporting Industria, solo si este caso fue
+       notificado previamente a través de Notireporta o la Base de datos Access, herramientas
+       que utilizó el CNFV antes de 2018 y su seguimiento no fue reportado en e-Reporting
+       ordinario. En esta única situación, deberá someter como un caso inicial debiendo incluir
+       toda la información notificada con anterioridad.
+
+
+Revise lo concerniente a los casos reportables válidos para el CNFV descrito en la Guía de
+Farmacovigilancia para la notificación de EA, SRAM, RAM, ESAVI o cualquier problema de
+seguridad relacionado con el uso de medicamentos y vacunas.
+
+Las notificaciones no reportables (no válidos) no deben ser ingresadas a e-Reporting Industria.
+
+
+
+         3.7 Módulo de carga E2B
+
+Este módulo es de uso exclusivo para la industria que ya concluyó la fase de pruebas ante el
+CNFV y tiene el visto bueno para realizar la notificación por esta vía.
+En la pantalla principal o en el menú superior derecho elija la opción “Cargar E2B”.
+Una vez dentro, encontrará la siguiente pantalla:
+
+
+
+
+                                                               Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                               Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                               Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                18 de 61
+La carga de los archivos XML-E2B se realiza de forma individual. Arrastre el archivo XML al
+recuadro gris o de clic en “Explorar” para buscar el archivo deseado.
+Una vez que arrastre o seleccione el archivo XML-E2B, se comenzará a cargar como a
+continuación se muestra:
+
+
+
+
+Si el archivo cumple con las especificaciones del formato ICH R2 o R3, se cargará exitosamente
+como a continuación se muestra:
+
+
+ Importante
+
+ Es fundamental que descargue el acklog lo más pronto posible una vez cargado el XML, ya que
+ el sistema solo guardará los reportes de 7 días previos. Una vez pasado este límite, ya no podrá
+ descargar el acklog. Es responsabilidad del emisor tener respaldo de los acklog generados, ya
+ que el CNFV no podrá generar nuevamente acklog una vez que se eliminen del histórico.
+
+
+
+
+De clic en “Enviar”.
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    19 de 61
+Tenga en cuenta el Identificador de envío, con el cual podrá descargar el acklog. Para esto
+diríjase al menú superior derecho y de clic en “Estado de envío”.
+
+
+
+
+Puede mostrarse el Identificador único del reporte de seguridad de cada reporte si oprime el
+icono .
+                                                                                  IMPORTANTE
+En esta ventana podrá verificar el estado del envío de sus
+reportes, descargar el reporte en formato XML y el acuse de                  El     CNFV     realizará
+recepción electrónico (acklog).                                              revisiones periódicas de
+                                                                             los reportes ingresados
+Identifique el reporte que cargó a través del Identificador de
+                                                                             en           e-Reporting
+envío. De clic en los iconos para descargar el reporte y                     Industria y aquellos que
+                                                                             no      sean    reportes
+para descargar el acklog. Tenga en cuenta que el estado de
+                                                                             válidos se eliminarán de
+envío no asegura la recepción correcta del reporte por lo que                la base de datos.
+la columna “Estado” le informará la aprobación o rechazo del
+reporte.
+
+Cargue el acklog en su base de datos para corroborar la importación exitosa.
+
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    20 de 61
+         3.8 Módulo de carga manual
+3.8.1 Generalidades
+
+Para ingresar al módulo de carga manual puede hacerlo desde la ventana principal en la opción
+“Crear nuevo reporte-editar reporte” o a través del menú superior derecho en la opción “Ingreso
+de datos”.
+
+
+
+
+Interpretación de los códigos “NF“: NullFlavor (Información faltante)
+
+Los códigos NullFlavor son una serie de códigos que especifican la razón por la que un valor de
+un campo válido no está presente. Estos códigos pueden ser encontrados al final de ciertos
+campos, por ejemplo, País del notificador primario, Iniciales de paciente, Indicación terapéutica,
+etc.
+     Desconocido
+      Preguntado pero desconocido
+      No preguntado
+      Encubierto
+
+Cabe señalar que estos códigos solo podrán ser utilizados justificadamente en campos
+obligatorios para e-Reporting requeridos para poder enviar el reporte al CNFV. Los campos
+mínimos obligatorios incluyen aquellos de carácter administrativo y de identificación del reporte
+los cuales son conocidos por la UFV notificante, además de los 4 mínimos necesarios ya
+conocidos y establecidos en la modificación de la NOM-220-SSA1-2016.
+Si en un campo con un código NF relacionado no se cuenta con información y este campo no es
+obligatorio para el envío del reporte, debe dejarlo en blanco con el marcador en NF
+prestablecido (no modificar). Por ejemplo: Inicio de la reacción/evento; dado que no es un criterio
+mínimo para la notificación grado 0, el campo puede quedar en blanco con el marcador NF.
+e-Reporting señalará en color rojo aquellos campos mínimos necesarios que no ha aportado
+para el envío del reporte.
+
+Íconos comunes en las diferentes secciones:
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    21 de 61
+   Ícono                                                 Función
+                      Permite agregar una sección o campo correspondiente en donde se
+                      encuentre este ícono. Por ejemplo: Medicamento, Indicación terapéutica,
+                      Dosis, Reacciones, Evaluación de causalidad, etc.
+                      Permite eliminar un campo o una sección completa correspondiente en
+                      donde se encuentre este icono. Considere que, si elimina una sección o
+                      campo y éste es indispensable para el envío del reporte, deberá llenar
+                      nuevamente la información solicitada.
+                      Permite realizar una búsqueda del campo relacionado.
+
+                      Permite pasar a la siguiente sección. En el módulo de carga manual no es
+                      obligatorio llenar completamente una sección para poder pasar a la siguiente.
+                      Al final, los campos mínimos necesarios para el envío se marcarán en rojo y
+                      deberá regresar a la sección correspondiente para aportar la información
+                      faltante o hacer correcciones.
+
+
+
+
+3.8.2 Crear nuevo reporte
+
+Secciones del reporte.
+      1)   Administrativo
+        a) Información del reporte
+            o Tipo de reporte. Elija entre:
+                    Reporte espontáneo: a cualquier comunicación no solicitada en la cual el
+                       informante/notificador describe un reporte de caso individual con RAM, SRAM,
+                       ESAVI o cualquier problema de seguridad relacionado con el uso de
+                       medicamentos y vacunas.
+                    Reporte de estudio: reporte que se deriva de cualquier estudio clínico en
+                       alguna de sus fases o también para reportes solicitados derivados de sistemas
+                       de recopilación de información. Si elige la opción Reporte de estudio, se
+                       desplegarán otros campos adicionales relacionados a la identificación de
+                       dicho estudio:
+
+
+
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         22 de 61
+                        Tipo de estudio:
+                            Ensayos clínicos: para estudios de intervención.
+                              Uso individual del paciente: para programas de uso compasivo.
+                              Otros estudios: en esta opción se puede incluir:
+                                        o Estudios observacionales
+                                        o Registros
+                                        o Monitoreo intensivo
+                                        o Programas de uso postcomercialización
+                                        o Programas de apoyo a pacientes
+                                        o Programas de manejo de enfermedades
+                                        o Encuestas orientadas a pacientes o profesionales de la salud
+                                        o Estudios de Farmacovigilancia
+
+                        Nombre del estudio: proporcione el nombre del estudio como aparece en
+                        el oficio de autorización de la COFEPRIS o, para el caso de programas, el
+                        nombre de éste.
+
+                        Número de estudio del patrocinador: código de identificación del estudio
+                        como aparece en el oficio de autorización de la COFEPRIS o, para el caso de
+                        programas, la identificación de este.
+
+   Para notificaciones de Literatura, deberá elegir Reporte espontáneo o Reporte de estudio
+   de acuerdo con la procedencia del caso. Además, deberá agregar necesariamente la
+   referencia bibliográfica de donde se obtuvo el caso colocándola en el campo Referencias
+   bibliográficas. Ver Referencias bibliográficas. Si no es clara la procedencia del reporte de
+   literatura debe elegir la opción “Otro” como Tipo de reporte.
+
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 23 de 61
+   La opción No disponible por el remitente no debe ser utilizada cuando se conoce la
+   fuente del reporte.
+
+         o Fecha en que se recibió el reporte por primera vez: día cero, es decir es el día
+              en que el responsable de notificar, en este caso la UFV, tiene conocimiento del
+              caso.
+         o Fecha de información más reciente: corresponde a la fecha cuando la UFV recibió
+              la última información que dio origen al respectivo seguimiento del reporte. Si es
+              un reporte inicial, esta fecha es la misma fecha en que se recibió el reporte por
+              primera vez.
+
+   La fecha de notificación ante la autoridad corresponde a la fecha cuando se envía el
+   reporte y ésta se proporciona automáticamente.
+
+
+
+         o ¿Este caso cumple los criterios locales para ser un reporte que precisa
+              atención prioritaria?
+                       Colocar “SI”: para reportes graves con desenlace fatal y dos o más reportes
+                        graves, semejantes en el mismo lugar, con el mismo medicamento o
+                        vacuna y del mismo lote.
+                       Colocar “NO”: para notificaciones graves con otras consecuencias distintas
+                        a la muerte y notificaciones clasificadas
+                        como no graves.
+                                                                                              IMPORTANTE
+
+         o Número             de        identificación     único    mundial              El Identificador único
+              (WWUID por sus siglas en inglés). Corresponde al                           del      reporte       de
+                                                                                         seguridad y Número de
+              primer identificador que se le asigna al reporte,                          identificación      único
+              si es una compañía no tiene base de datos que lo                           mundial       no      son
+                                                                                         campos          editables
+              genere, será el primer código que se le asigna al                          cuando se realiza un
+              reporte. Si es una compañía tiene base de datos                            seguimiento, por lo que
+                                                                                         se debe tener especial
+              E2B es el mismo código que genera la base.
+                                                                                         cuidado en ingresarlos
+              La sección constante del WWIID, es decir, el                               correctamente en el
+              código ISO del país (MX) + el Nombre corto, debe                           reporte inicial pues no
+              quedar establecido junto con el CNFV (cuando se                            se pueden modificar
+                                                                                         posteriormente.
+              solicita la información para el acceso) y no
+              modificarse posteriormente.
+                                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                    24 de 61
+         o Identificador único del reporte de seguridad (SRUID por sus siglas en inglés).
+              Es otro identificador que se le puede asignar a un caso siguiendo el mismo
+              formato que el WWUID. Para el módulo de carga manual, el Identificador único
+              del reporte de seguridad y el Número de identificación único mundial
+              corresponderán al mismo código de identificación.
+
+
+
+
+                  Sección constante: Código ISO del país + nombre corto (shotname) del
+                                           laboratorio
+
+SRUID y WWUID son identificadores únicos para cada reporte por lo que el sistema no le
+permitirá modificarlos en los seguimientos.
+
+Cuando ingresa un reporte, la sección constante de ambos identificadores ya se presenta
+predefinida por lo que no es necesario modificar la sección constante de estos IDs.
+La sección variable del WWUID y SRUID debe constar de un número consecutivo de al
+menos 5 dígitos el cual debe ser único para cada caso. Por lo que el primer reporte que
+ingrese en el módulo de carga manual debe ser el 00001.
+
+Si requiere utilizar otro ID interno del laboratorio o IDs solicitados por el CNFV, agréguelo en
+el campo “Otros identificadores de caso en transmisiones anteriores”.
+
+   Ejemplo:
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02      25 de 61
+         o Otros identificadores de caso en transmisiones anteriores: Si cuenta con una
+              codificación interna en su organización u otros indicadores solicitados, puede
+              agregarlos oprimiendo el icono “+”.
+           En este campo pueden incluirse códigos IQF, identificadores generados en
+           sistemas anteriores a e-Reporting Industria: Notireporta y base de datos Access,
+           así como codificaciones establecidas para notificaciones de actividades adicionales
+           de Planes de Manejo de Riesgos (PMR).
+         o Número de identificación del reporte vinculado a este reporte: cuando se
+              tienen casos que se relacionan de alguna manera con el que está reportando (por
+              ejemplo, un grupo de casos en una familia), coloque los WWUID de los reportes
+              relacionados.
+         o Referencias bibliográficas: este campo solo será utilizado si se notifica un
+              reporte de literatura (ver Tipo de reporte). Coloque en este campo la referencia
+              bibliográfica de donde obtuvo el caso (preferentemente utilizar el estilo
+              Vancouver).
+              Opcionalmente, es posible agregar archivos de las referencias de literatura del
+              caso (en el idioma original), siempre y cuando no se violen los derechos de autor
+              de la publicación. Para cargar un archivo arrástrelo y suéltelo sobre la sección gris
+              o ábralo desde su explorador de archivos con la opción “Explorar”. El archivo
+              deberá ser en formato PDF para evitar incompatibilidades de formatos.
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        26 de 61
+     b) Fuentes primarias.
+   Información referente al notificador primario/original o lo que de acuerdo con la
+   normatividad vigente corresponde al “Informante”.
+         o Fuente primaria para fines regulatorios: debe habilitar necesariamente esta
+              opción. En el caso de múltiples fuentes, la "Fuente primaria para fines
+              regulatorios” es la persona que primero informó los hechos al remitente. El
+              reporte solo deberá tener una fuente primaria para fines regulatorios.
+         o Calificación: corresponde al perfil del notificador primario. Campo obligatorio.
+              Elegir entre:
+                       Médico
+                       Farmacéutico
+                       Otro profesional de la salud
+                       Abogado
+
+
+
+                                                   Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                   Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                   Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         27 de 61
+                       Consumidor u otro profesional no sanitario. Elija esta opción si el
+                        notificador primario es el propio paciente/consumidor o algún familiar y
+                        otro profesional no sanitario.
+         o País: Por defecto elegir México. Sin embargo, en algunas ocasiones la
+              nacionalidad del notificador primario es distinta y deberá ser seleccionada.
+         o Los siguientes campos sobre el informante no son obligatorios, pero puede incluir
+              la información si cuenta con ella o puede prescindir de ellos por cuestiones de
+              confidencialidad o negativa del informante.
+                       Título
+                       Nombre
+                       Segundo nombre
+                       Apellidos
+                       Organización
+                       Departamento
+                       Calle
+                       Ciudad
+                       Estado o provincia
+                       Código postal
+                       Teléfono
+
+
+   Puede agregar otras fuentes primarias con la opción “Agregar fuente primaria”.
+
+
+
+
+   2)         Paciente
+     a) Características del paciente                                                  IMPORTANTE
+         o Nombre o iniciales: Aportar iniciales de primer                         Un reporte válido
+              apellido, segundo apellido y nombre(s) en ese                        debe         contener
+                                                                                   necesariamente       al
+              orden, o en caso de Estudios Clínicos, el código de
+                                                                                   menos uno de los
+              identificación del paciente. No proporcionar el                      siguientes
+              nombre completo del paciente.                                        identificadores     de
+                                                                                   paciente: iniciales, o
+         o Sexo.                                                                   sexo o fecha de
+         o Fecha de nacimiento                                                     nacimiento o edad).
+         o Edad           al      momento    del   inicio     de      la
+              reacción/evento
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           28 de 61
+         o Grupo de edad
+         o Período de gestación cuando se observó una reacción/evento en el feto.
+              Coloque el valor y elija la unidad de tiempo del catálogo.
+         o Fecha del último periodo menstrual. Cuando aplique. Si no cuenta con la fecha
+              completa, puede ingresar mes y año o solo año.
+         o Peso
+         o Altura
+
+   Los siguientes campos no son relevantes para la calidad del reporte, sin embargo, si
+   cuenta con la información, puede proporcionarla o simplemente dejar los campos en
+   blanco:
+      o Número de expediente médico del médico general
+         o Número de registro de especialista
+         o Número de expediente hospitalario. Corresponde al número de expediente clínico
+         o Número de investigación. Identificación de paciente en ensayo clínico
+
+     b) En caso de muerte
+   Si el desenlace de la reacción/evento fue muerte, proporcione la siguiente información:
+         o Fecha de la muerte. Si no cuenta con la fecha completa, puede ingresar sólo mes
+              y año o solo año.
+         o Causas de muerte según lo reportado por la fuente primaria. De clic en el
+              icono “+” si cuenta con la información
+                       Causa de muerte reportada: coloque necesariamente el término literal
+                        reportado por la fuente primaria
+                 Causa de muerte reportada (MedDRA): proporcione el término MedDRA
+                   
+                 (LLT) de la causa de muerte o parte de este y oprima el botón ; elija el
+                 término deseado una vez desplegado el resultado.
+         o ¿Se realizó la autopsia? Si elige Si, proporcione información en el siguiente
+              campo.
+         o Causa de muerte determinada por autopsia. coloque el término literal de la
+           causa de muerte determinada por autopsia reportado por la fuente primaria
+         o Causa de muerte determinada por autopsia (MedDRA). Proporcione el término
+           MedDRA (LLT) de la causa de muerte determinada por autopsia o parte de este y
+           oprima el botón ; elija el término deseado una vez desplegado el resultado.
+
+     c) Progenitor
+                                                   Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                   Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                   Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          29 de 61
+         o ¿Es este un informe de padres e hijos?
+
+
+         Reporte padre - hijo, usar cuando:
+                       Se sospeche que una complicación / evento grave o médicamente relevante
+                        durante el embarazo (por ejemplo, muerte fetal, aborto) en relación con el
+                        feto, pudiera estar asociado con un medicamento.
+                       Se sospeche que un evento adverso grave / importante desde el punto de
+                        vista médico para el recién nacido (malformación), pudiera estar
+                        relacionado con los medicamentos administrados en los padres.
+
+              En estos casos el progenitor (padre o madre) no tuvo la reacción/evento, de lo
+              contrario no se debe utilizar esta sección.
+
+              Si elige Si, se desplegarán campos adicionales sobre el progenitor que debe
+              proporcionar si cuenta con la información, de lo contrario dejar en blanco.
+
+
+              Antecedentes de medicamentos relevantes de la madre
+              Proporcione información sobre los medicamentos previos del progenitor, es decir,
+              aquellos que ya no se administran al momento del evento/reacción.
+                       Nombre del medicamento según se reportó. Por parte del notificador
+                        primario
+                       Indicación (MedDRA): proporcione el término MedDRA (LLT) de la indicación
+                        terapéutica o parte de este y oprima el botón ; elija el término deseado
+                        una vez desplegado el resultado.
+                       Reacción (MedDRA): si el/la progenitor/a presentó alguna reacción con el
+                        medicamento previo, proporcione el término MedDRA (LLT) de la reacción
+                        o parte de este y oprima el botón        ; elija el término deseado una vez
+                        desplegado el resultado.
+                       Fecha de inicio. Proporcione la fecha cuando inició la medicación previa
+                        relevante del progenitor. Si no cuenta con la fecha completa, puede
+                        ingresar sólo mes y año o solo año.
+                       Fecha de finalización. Proporcione la fecha finalizó la medicación previa
+                        relevante del progenitor. Si no cuenta con la fecha completa, puede
+                        ingresar sólo mes y año o solo año.
+
+
+
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          30 de 61
+              Historia clínica de los padres
+                       Historia clínica relevante y condiciones concurrentes de los padres.
+                        Proporcione información sobre historial médico relevante del progenitor.
+                       Información estructurada sobre la historia clínica relevante de los padres.
+                        Estructure cada una de las enfermedades y condiciones concurrentes de la
+                        historia clínica del progenitor. Oprima el icono “+” para abrir la sección.
+                              Historia clínica (enfermedad/procedimiento quirúrgico/etc.)
+                               (MedDRA). Proporcione el término MedDRA (LLT) o parte de este y
+                               oprima el botón ; elija el término deseado una vez desplegado el
+                               resultado.
+                              Comentario del médico. Agregue comentarios adicionales del
+                                   médico tratante sobre el término proporcionado
+                              Fecha de inicio. Proporcione la fecha de inicio de la enfermedad
+                               descrita en MedDRA. Si no cuenta con la fecha completa, puede
+                               ingresar sólo mes y año o solo año.
+                              Continúa. Si elige Si, el campo siguiente “Fecha de término” debe
+                                   dejarse en blanco
+                              Fecha de término. Proporcione la fecha de término de la
+                               enfermedad descrita en MedDRA. Si no cuenta con la fecha
+                               completa, puede ingresar sólo mes y año o solo año.
+
+
+
+   3)         Medicamentos
+   En esta sección debe registrar el(los) medicamento(s)
+   sospechoso(s) de haber causado la reacción/evento,                                      IMPORTANTE
+   medicamentos concomitantes, interactuantes, incluso                                 Un reporte válido
+   aquellos que ya no se administran pero que, por el                                  deberá contener por
+                                                                                       lo     menos       un
+   tiempo de vida media de estos, aún permanecen en el
+                                                                                       medicamento
+   organismo y podrían ser considerados sospechosos o                                  sospechoso o dos
+   concomitantes.              Pero,    NO    DEBE      REGISTRAR        los           medicamentos
+                                                                                       interactuantes.
+   medicamentos              administrados     al     paciente   para     el           El      medicamento
+   tratamiento de las reacciones/eventos.                                              sospechoso debe ser
+                                                                                       el medicamento del
+         o Nombre del medicamento según lo informado                                   emisor    que    está
+              por       la     fuente     primaria.     Proporcione       la           haciendo el reporte.
+              denominación distintiva y entre paréntesis la
+
+                                                         Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                         Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                         Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02               31 de 61
+              denominación genérica.
+              Para el caso de estudios clínicos cegados puede colocar el nombre del fármaco de
+              estudio (o código), comparadores y placebo (si aplica), así bien, cuando no se tiene
+              la información del medicamento en estudio puede proporcionar el código del
+              estudio y la leyenda estudio ciego (código no roto o información cegada) en el
+              campo Información adicional sobre el medicamento
+
+
+         o Caracterización del rol del medicamento. Elegir entre:
+                       Sospechoso
+                       Concomitante
+                       Interacción. Si elige esta opción debe haber al menos otro medicamento
+                        interactuante.
+                       Medicamento no administrado
+         o Acción tomada con el medicamento. Elegir entre:
+                       Fármaco retirado
+                       Dosis reducida
+                       Dosis aumentada
+                       Dosis no modificada
+                       Desconocido
+                       No aplicable
+         o Número de autorización/solicitud. Proporcione el número de registro sanitario
+              del medicamento / vacuna. En caso de un reporte de estudio clínico de un
+              medicamento que no cuenta con registro sanitario, puede colocar el número de
+              autorización del protocolo del estudio clínico otorgado por la Comisión de
+              Autorización Sanitaria.
+         o País de autorización/solicitud
+         o Nombre del titular/solicitante. Razón social del titular del registro sanitario o
+              representante legal. Para EC, se debe colocar en nombre del patrocinador.
+         o Información adicional del medicamento. En este campo de texto libre puede
+              agregar información que no haya podido agregar a través de los campos que
+              integran la sección de Medicamento, por ejemplo, la fecha de caducidad del
+              medicamento.
+         o Indicaciones según lo notificado por la fuente primaria.
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         32 de 61
+                       Indicación. Proporcione el término literal de la indicación terapéutica tal
+                        cual fue reportada por el notificador primario
+                       Indicación (MedDRA). Proporcione el término MedDRA (LLT) o parte de
+                        este de la indicación terapéutica y oprima el botón              , elija el término
+                        deseado una vez desplegado el resultado.
+
+
+
+
+              Puede proporcionar otra indicación terapéutica con el icono “+”.
+
+         o Dosis
+                       Número de lote
+                       Dosis. Coloque el valor en el primer campo y seleccione la unidad de
+                        medida del catálogo. Para el caso de medicamentos con más de un activo
+                        podrá expresarse como unidad de medida de dosificación (DF: dosage
+                        form).
+                       Intervalo de dosificación. Coloque en el primer campo el valor y
+                        seleccione la unidad de tiempo del catálogo.
+                       Texto de dosificación. Proporcione la posología como fue reportada por el
+                        notificador primario, incluyendo el tiempo de tratamiento.
+                       Inicio de la administración. Si no cuenta con la fecha completa, puede
+                        ingresar sólo mes y año o solo año.
+                       Fin de la administración. Si no cuenta con la fecha completa, puede
+                        ingresar sólo mes y año o solo año. Si continúa con el tratamiento, dejar en
+                        blanco.
+                       Duración. Coloque el valor en el primer campo y seleccione la unidad de
+                        tiempo del catálogo.
+                       Vía de administración. Seleccione del catálogo la vía de administración.
+                       Texto de vía de administración. Utilizar este campo solo si no encontró la
+                        vía de administración específica en el catálogo o si eligió Otro descríbalo
+                        aquí.
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          33 de 61
+              Si tiene más de un régimen de dosificación para el medicamento, por ejemplo,
+              diferentes posologías, lotes, fechas de administración, etc., puede agregarlo con el
+              ícono “+” en vez de agregar otro medicamento.
+
+              Debe estructurarse cada medicamento. Para poder agregar más medicamentos
+              sospechosos o concomitantes elija la opción “Agregar medicamento”.
+
+
+
+   4)         Reacciones
+         o Reacción/evento               según   reportó     la   fuente
+                                                                                        IMPORTANTE
+              primaria.           Proporcione    necesariamente        el
+              término literal de la reacción/evento reportado                       Un reporte válido
+                                                                                    deberá contener por
+              por       la      fuente    primaria.   Este        término           lo menos una SRAM,
+              necesariamente deberá ingresarse en idioma                            RAM, EA.
+              español, manteniendo el campo siguiente en ese
+              idioma (Español; Castellano (spa)).
+         o Reacción/evento (MedDRA). Proporcione el término MedDRA (LLT) o parte de
+           este de la reacción/evento y oprima el botón , elija el término deseado una vez
+           desplegado el resultado.
+
+
+
+
+              Puede expandir varias jerarquías (si lo requiere) del término deseado oprimiendo
+              el ícono y desplegar más resultados con la opción “Mostrar más”.
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             34 de 61
+         o Traducción de reacción/evento según lo informado por la fuente primaria. Si
+              lo requiere, puede proporcionar la traducción a otro idioma del campo o
+              Reacción/evento según reportó la fuente primaria, por ejemplo, en idioma inglés.
+         o País donde ocurrió la reacción/evento. Elegir México.
+         o Inicio de la reacción/evento. Si no cuenta con la fecha completa, puede ingresar
+           sólo mes y año o solo año.
+         o Fin de la reacción/evento. Si no cuenta con la fecha completa, puede ingresar
+           sólo mes y año o solo año. Si el evento/reacción continúa, dejar en blanco.
+         o Duración. De la reacción/evento. Coloque el valor en el primer campo y seleccione
+           la unidad de tiempo del catálogo. Si el evento/reacción continúa, dejar en blanco.
+         o Resultado al momento de la última observación. Elegir entre:
+                       Recuperado / Resuelto.
+                       Recuperando / Resolviendo.
+                       No recuperado / No resuelto / En curso. Utilizar, por ejemplo, en caso de
+                        anomalías congénitas irreversibles
+                       Recuperado / Resuelto con secuela. Utilizar, por ejemplo, en condiciones
+                        médicas irreversibles.
+                       Fatal. Se debe utilizar solo cuando se sospeche que la muerte está
+                        posiblemente relacionada con la reacción/evento. Cuando la muerte no
+                        esté relacionada con la reacción/evento, según notificador, NO se debe
+                        seleccionar fatal en este campo; sin embargo, la muerte debe informarse
+                        en la Sección “En caso de muerte” de Paciente.
+                       Desconocido.
+
+         o Confirmación médica por un profesional de la salud. Elegir Si, cuando el
+              notificador primario (informante) es un médico u otro profesional de la salud que
+              confirmó el evento. Cuando el caso sea notificado por el paciente/consumidor u
+              otro profesional que no es de la salud, debe elegir No. Sin embargo, cuando un
+              consumidor/paciente, amigo, pariente o cuidador del paciente médicamente
+              calificado puede proporcionar documentación médica (por ejemplo, datos de
+              laboratorio) que respalden la ocurrencia de un evento/reacción y que indique que
+              un profesional de la salud identificable sospecha una relación causal entre un
+              medicamento y la reacción adversa notificada, puede ser considerado como
+              médicamente confirmado.
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            35 de 61
+         o ¿Es esta una reacción grave? Conforme a la clasificación de gravedad de la NOM-
+              220-SSA1-2016, establezca si es un caso grave o no. Si clasifica como grave, debe
+              elegir necesariamente al menos (puede seleccionar más de uno) un criterio de
+              gravedad de los siguientes:
+                       Amenaza a la vida
+                       Causa de muerte
+                       Causó o prologó la hospitalización
+                       Discapacidad / incapacidad
+                       Anomalía congénita / defecto de nacimiento
+                       Otra condición médicamente importante
+
+                   Si clasifica el evento/reacción como no grave, debe dejar estos criterios en
+                   blanco.
+
+   Para agregar más reacciones/eventos elija la opción “Agregar reacción”.
+
+
+
+
+   5)         Reacción a un medicamento
+     a) Reexposición
+         o ¿El paciente fue reexpuesto al medicamento? Si cuenta con información que dé
+              indicio de una readministración, elija “Si”, de lo contrario dejar en blanco. Si elige
+              si, debe llenar el campo que se habilitará:
+                       Resultado de la reexposición. Elija entre:
+                              La reacción se repitió: corresponde a una readministración positiva.
+                              La reacción no se repitió: corresponde a una readministración
+                                   negativa.
+                              Resultado desconocido
+
+   La reexposición solo será aplicable para medicamentos sospechosos, por lo que debe
+   dejar vacíos los campos de reexposición de los medicamentos concomitantes.
+
+     b) Intervalo de tiempo)
+         o Intervalo de tiempo desde la administración y el inicio de la reacción
+                       Tiempo desde la primera dosis. Coloque el valor en el primer campo y
+                        seleccione la unidad de tiempo del catálogo.
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           36 de 61
+                       Tiempo desde la última dosis. Coloque el valor y seleccione la unidad de
+                        tiempo del catálogo.
+
+
+   6)         Otro
+     a) Resultados de pruebas
+         o Nombre del análisis. Proporcione el término literal del nombre del análisis tal
+              cual fue reportado por el notificador primario.
+         o Nombre del análisis (MedDRA). Proporcione el término MedDRA (LLT) o parte de
+              este del correspondiente análisis y oprima el botón            , elija el término deseado
+              una vez desplegado el resultado.
+         o Fecha de la prueba. Si no cuenta con la fecha completa, puede ingresar sólo mes
+           y año o solo año.
+         o Resultados de la prueba. En el campo de texto libre coloque el valor y elija del
+              catálogo la unidad de medida (considere que el catálogo solo se encuentra
+              disponible en inglés). Puede utilizar los símbolos =, >, <, ≥, o ≤ que encontrará en
+              el catálogo ubicado a la izquierda del texto libre.
+         o Código del resultado de la prueba. Cuando no se puede utilizar un valor
+              numérico para describir el resultado de una prueba, utilice los códigos de este
+              campo:
+                       Positivo
+                       Negativo
+                       Límite
+                       No concluyente
+         o Texto del resultado de la prueba. si no le fue posible colocar el resultado del
+              análisis en el campo estructurado Resultados de la prueba debido a que no
+              encontró la unidad de medida en el catálogo, coloque el resultado en este campo
+              de texto libre expresando la unidad de medida. Si utilizó el campo Resultados de
+              la prueba, deje este en blanco.
+         o Valor bajo normal. Capture el valor "más bajo" del rango normal de la prueba
+              realizada. Este valor generalmente lo publica el laboratorio que proporciona los
+              resultados. Utilice el campo para aportar el valor y la unidad conforme al campo
+              Resultados de la prueba.
+         o Valor alto normal. Capture el valor "más alto" del rango normal de la prueba
+           realizada. Este valor generalmente lo publica el laboratorio que proporciona los
+
+                                                   Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                   Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          37 de 61
+           resultados. Utilice el campo para aportar el valor y la unidad conforme al campo
+           Resultados de la prueba.
+         o Comentarios. Si cuenta con más información sobre la prueba realizada que no
+              esté incluida en los campos estructurados, colóquela en este campo de texto libre.
+         o Más información disponible (documentos adicionales). Si tiene a disposición más
+              documentos que proporcionen información adicional sobre esta sección elija si, y
+              adjúntelos en la sección “Documentos adicionales”.
+
+   Para agregar más pruebas de laboratorio elija la opción “Agregar resultado de la prueba”.
+
+     b) Historial de medicamentos.
+   En esta sección se deben proporcionar medicamentos relevantes que consumió el
+   paciente previo a la presencia de la reacción/evento y que ya no se administra (considere
+   el tiempo de vida media de los medicamentos). De continuar con el tratamiento, este
+   corresponderá a un medicamento concomitante o sospechoso y deberá registrarse en la
+   sección “Medicamentos”.
+         o Nombre del medicamento según se reportó. Proporcione la denominación
+              distintiva si cuenta con ella y entre paréntesis la denominación genérica como fue
+              reportada por el notificador primario.
+         o Indication (MedDRA). Proporcione el término MedDRA (LLT) o parte de este de la
+              indicación terapéutica del medicamento y oprima el botón               , elija el término
+              deseado una vez desplegado el resultado.
+         o Reacción (MedDRA). Si el paciente presento alguna reacción/evento al
+              medicamento, proporcionar el término MedDRA (LLT) o parte de este de la
+              reacción/evento y oprima el botón           , elija el término deseado una vez
+              desplegado el resultado, de lo contrario dejar en blanco
+         o Fecha de inicio. Si no cuenta con la fecha completa, puede ingresar sólo mes y
+              año o solo año.
+         o Fecha de finalización. Si no cuenta con la fecha completa, puede ingresar sólo
+              mes y año o solo año.
+
+   Para agregar más medicamentos de este historial, elija la opción “Agregar historial de
+   medicamentos”.
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       38 de 61
+     c) Historia clínica
+         o ¿Se reportó historia clínica relevante? Si elige Si, se habilitará la sección Historia
+              clínica del paciente.
+         o Historia           clínica   relevante   y     condiciones        concurrentes         (sin    incluir
+              reacción/evento). Campo de texto libre que corresponde a los antecedentes
+              clínicos relevantes (que ayude a la evaluación causal) y condiciones concomitantes
+              (enfermedades, condiciones como embarazo, cirugías, trauma psicológico,
+              factores de riesgo, entre otros) del paciente. Si no cuenta con información sobre el
+              historial clínico del paciente, dejar en blanco.
+         o Información estructurada sobre la historia clínica. En esta sección se debe
+              estructurar cada enfermedad, síndrome, procedimiento quirúrgico, etc., que
+              describió en el campo anterior.
+                       Historia clínica (enfermedad/procedimiento quirúrgico/etc.) (MedDRA).
+                        Proporcionar el término MedDRA (LLT) o parte de este de la enfermedad y
+                        oprima el botón       , elija el término deseado una vez desplegado el
+                        resultado.
+                       Fecha de inicio. Proporcione la fecha de inicio de la enfermedad descrita
+                        en MedDRA. Si no cuenta con la fecha completa, puede ingresar sólo mes y
+                        año o solo año.
+                       Continúa. Si elige Si, el campo siguiente “Fecha de término” debe dejarse
+                        en blanco.
+                       Fecha de término. Proporcione la fecha de término de la enfermedad
+                        descrita en MedDRA. Si no cuenta con la fecha completa, puede ingresar
+                        sólo mes y año o solo año.
+
+
+   7)         Evaluaciones
+
+   Es importante que la UFV establezca la clasificación de causalidad en esta sección.
+   Conforme a punto 7.4.3.4 de la NOM-220-SSA1-2016, debe proporcionar la evaluación de
+   causalidad utilizando las categorías probabilísticas de la OMS o algún otro método
+   validado que establezca la UFV. Para EC se puede considerar la evaluación causal del
+   patrocinador/investigador principal.
+       o Método de evaluación. Coloque en el campo de texto libre el nombre de la
+              metodología utilizada, por ejemplo, Naranjo, categorías OMS, ESAVI OMS,
+              Dicotómica, entre otras.
+
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           39 de 61
+         o Fuente de evaluación. Corresponde a la identidad quien realiza la evaluación. En
+              primera instancia, debe colocarse la evaluación de la UFV, pero también puede
+              agregar la evaluación del notificador primario (informante) si cuenta con ella o del
+              patrocinador/investigador para estudios clínicos.
+         o Resultado de la evaluación. Coloque en el campo de texto libre el resultado de la
+              evaluación para cada reacción/evento de acuerdo con la metodología que se
+              utilizó. Para poder colocar el resultado, es necesario que haya ingresado al
+              reporte al menos un medicamento sospechoso o dos interactuantes.
+
+   Para agregar más evaluaciones elija la opción “Agregar evaluación de causalidad”. Si
+   cuenta con una evaluación, por ejemplo, del médico informante, la puede agregar;
+   coloque Notificador primario en “Fuente de evaluación”.
+
+   8)         Caso narrativo
+
+         Resumen narrativo del caso y otra información
+
+         o Caso narrativo. Deberá colocar la narrativa del caso con las palabras y frases
+              utilizadas por el notificador inicial/original, tal cual fue notificado por éste,
+              manteniendo la narrativa original. Citar las manifestaciones clínicas de forma
+              cronológica. Indicar el diagnóstico clínico de certeza y/o presuntivo que motivó la
+              medicación y posteriormente los signos y síntomas de la reacción adversa. Si se
+              detecta un efecto terapéutico no conocido hasta la fecha, puede indicarse en este
+              espacio.
+              Deben de describirse todos los medicamentos y terapias concomitantes,
+              incluyendo aquellas como radioterapia, suplementos alimenticios, remedios
+              herbolarios, etc., y los cuales deberán ser estructurados en la sección de
+              Medicamentos.
+              En caso de tratarse de malformaciones congénitas, precise el momento del
+              embarazo en que ocurrió.
+              En este campo también debe colocar los medicamentos utilizados para tratar la(s)
+              reacción/evento.
+              Si reporta otro problema de seguridad relacionado con el uso de medicamentos y
+              vacunas, debe describir de que problema se trata (por ejemplo, sobredosis,
+              sospecha de falsificación, mal uso, abuso, error de medicación, uso fuera de
+              indicación, exposición ocupacional, entre otros).
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        40 de 61
+              Cuando reporte un seguimiento (Ver sección Editar reporte), en este campo deberá
+              ingresar la información adicional generada de dicho seguimiento, colocándola
+              debajo de la información inicial o el seguimiento anterior, separado de la
+              siguiente manera:
+              -----------------------------------------------------------------
+              Seguimiento 1, 2, 3, 4, etc, Información recibida el día…
+
+              Si el caso se considera cerrado o requerirá seguimiento adicional, debe
+              especificarlo también en este campo.
+
+              Dado que este campo tiene un límite de 20 mil caracteres, existe la posibilidad de
+              que para algunos casos narrativos muy largos este campo sea insuficiente. Puede
+              utilizar el campo Resumen del caso y comentarios del notificador en idioma nativo
+              para completar el caso narrativo.
+
+         o Terapias concomitantes
+              Habilite la casilla si el reporte describe terapias concomitantes al momento de la
+              reacción. Todos los detalles de estas terapias deben proporcionarse en el campo
+              Caso narrativo. Incluso si solo se conoce el nombre de la terapia.
+         o Comentarios de notificador. En este campo
+              puede        agregar      comentarios   adicionales    que                  IMPORTANTE
+
+              aporte el notificador primario en caso de contar                       Es necesario que los
+              con ellos.                                                             documentos       que
+                                                                                     requiera adjuntar se
+              Además, dado que la normatividad mexicana                              encuentren        en
+              solicita dos clasificaciones de reacciones/eventos                     formato PDF y que
+              adicionales          a    las   contempladas     a    nivel            no excedan los 2 MB
+                                                                                     para poderlos cargar
+              internacional, en este campo también deberá de                         sin problemas.
+              agregar necesariamente la siguiente información:
+                       Calidad de información del reporte, conforme al punto 8.1.4 de la NOM-
+                        220-SSA1-2016.
+                       Severidad de los eventos/reacciones (para cada una), conforme al punto
+                        8.1.6 de la NOM-220-SSA1-2016, no aplicable si no son manifestaciones
+                        clínicas.
+
+
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02              41 de 61
+         o Diagnóstico de la empresa. Este campo permite a la empresa emisora sugerir un
+              diagnóstico a partir de la combinación de signos y síntomas reportados. Para
+              agregar oprima el icono “+”, proporcione el término MedDRA (LLT) o parte de este
+              del diagnóstico y oprima el botón    , elija el término deseado una vez desplegado
+              el resultado.
+         o Comentarios de la compañía. Este campo permite a la empresa emisora alguna
+              alternativa de diagnóstico en la que no esté de acuerdo con el proporcionado por
+              el notificador inicial.
+         o Resumen del caso y comentarios del notificador en idioma nativo. No se
+              requieres su uso, dejar en blanco, a menos que la narrativa del reporte tenga más
+              de 20 mil caracteres y el campo Caso narrativo sea insuficiente.
+
+
+
+
+   9)         Documentos adicionales
+
+   Esta sección le permitirá cargar documentos relevantes para la evaluación del caso.
+   Algunos ejemplos pueden ser (pero no se limitan a estos):
+      o Resultados de pruebas
+         o Certificado de defunción
+         o Cartilla de vacunación
+
+   Coloque en el campo de texto libre el nombre del documento y cargue el archivo en
+   formato PDF, ya sea arrastrándolo y soltándolo en la sección gris o abriéndolo desde su
+   explorador de archivos con la opción “Browse”.
+
+
+
+
+   Si requiere adjuntar más documentos, lo puede hacer con la opción “Agregar documento
+   adicional”.
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        42 de 61
+       10)        Enviar reporte
+
+       Para poder enviar el reporte es necesario que haya capturado la información mínima
+       requerida. Si no lo ha hecho, en esta sección se listará la información faltante o errónea,
+       la cual tendrá que completar o revisar. Se presentará en
+       color rojo la información faltante en las diferentes                     IMPORTANTE
+       secciones que conforman el reporte.
+                                                                                Si la notificación no
+                                                                                cuenta con al menos
+                                                                                los      4     criterios
+                                                                                fundamentales
+                                                                                (calidad             de
+                                                                                información grado 0)
+                                                                                no debe ser enviada.
+                                                                                Deberá hacer una
+                                                                                búsqueda             de
+                                                                                información faltante
+                                                                                para poder reportar el
+      Cuando ya tenga lista la información de su reporte, de clic               caso. De igual manera
+en “Enviar”.                                                                    deberá considerar los
+                                                                                criterios válidos para
+                                                                                la      emisión      de
+                                                                                seguimientos.
+
+
+
+
+       Una vez enviado el reporte se mostrará una ventana la cual puede utilizar como un acuse
+       de envío, ya que le proporcionará un identificador.
+
+       11)        Descargar reporte
+
+       Puede descargar inmediatamente el reporte una vez que lo ha enviado oprimiendo el
+       botón Descargar, o ir a la opción “Estado de envío” del menú superior. En esta ventana
+       ubique el reporte enviado (mediante el Identificador de envío en su defecto el
+       Identificador único del reporte de seguridad) y a continuación oprima el botón .
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    43 de 61
+Al oprimir Descargar o el icono anteriormente señalado, se descargará el archivo XML. Es
+importante que guarde este archivo en su respaldo, ya que deberá utilizarlo si requiere
+reportar un seguimiento posterior (Ver “Editar reporte”).
+
+Adicionalmente, e-Reporting Industria proporciona un recibo de confirmación conocido
+como acknowledgement log (acklog) del reporte enviado, el cual estará disponible también
+en la sección de Estado de envío. Si su base de datos de Farmacovigilancia permite ejecutar
+este recibo de confirmación electrónico, este funcionará como tal para su base de datos.
+
+También, en esta sección de Estado de envío, podrá revisar la hora de envío de sus reportes
+señalada en la columna Hora de envío y de finalización, la cual ya está ajustada al uso horario
+del centro de México.
+
+
+
+
+Es muy importante que se diferencien entre los archivos XML de los reportes descargados y
+que con los cuales se realizan los seguimientos posteriores y a los acklog. Estos últimos no
+deben de utilizarse para generar un seguimiento ya que no están diseñados para esto.
+
+Tanto el archivo XML como el acklog, estarán disponibles en la sección Estado de envío
+únicamente por 7 días una vez realizado el envío del reporte, por lo cual se exhorta a
+descargarlos inmediatamente, ya que pasado este tiempo no se podrán recuperar.
+
+
+
+                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    44 de 61
+3.8.3 Editar un reporte
+
+  Esta función permite recuperar un reporte que previamente se                    IMPORTANTE
+  ingresó y no se concluyó o enmienda o generar seguimientos
+                                                                                  Para         efectos
+  de un reporte en el módulo de carga manual (únicamente
+                                                                                  edición            y
+  creado en este módulo). Recordar: un reporte de seguimiento                     seguimientos de
+  es aquel en donde se agrega o completa información                              reportes, el archivo
+  importante para la evaluación de causalidad del caso. Por                       que corresponde
+  ejemplo, se agregan (no limitativo):                                            al acuse acklog
+                                                                                  NO deberá usarse
+         o Fechas de inicio y término de la reacción                              para            este
+            o Fechas de administración de medicamentos                            propósito.
+            o Adición de medicamentos concomitantes
+            o Adición de enfermedades concomitantes
+            o Adición de resultados de laboratorio
+
+      Ingrese a “Editar reporte” desde la pantalla principal o del menú superior.
+
+
+
+
+   Cargue el archivo XML generado del reporte inicial o seguimiento anterior, el cual debió
+   guardar en su equipo de cómputo. Arrastre el archivo a la sección gris o ábralo desde su
+   explorador de archivos con la opción “Explorar”.
+
+   Espere a que cargue el reporte. Inmediatamente se abrirá con todas las secciones que lo
+   componen, habilitadas para edición (a excepción del Identificador único del reporte de
+   seguridad y Número de identificación único mundial).
+
+   Debe agregar la información adicional y modificaciones respectivas que contiene
+   seguimiento en los campos correspondientes. Es fundamental actualizar la Date of most
+   recent information (Fecha de información más reciente) que corresponde a la fecha cuando
+   recibió la última información de seguimiento en su UFV. Es importante que en el
+   seguimiento también actualice el caso narrativo con la nueva información. Para separar la
+   información del reporte inicial previamente reportado en el campo Caso narrativo, utilice
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    45 de 61
+   una línea y coloque la nueva información debajo, agregando el texto: Seguimiento 1,
+   Seguimiento 2, según corresponda.
+
+
+
+
+   Una vez que haya concluido la captura de información en el seguimiento, debe enviar el
+   reporte nuevamente y descargar el archivo XML correspondiente para un futuro
+   seguimiento.
+   Recuerde que el archivo del Acklog no debe cargarlo en la sección “Editar reporte” pues el
+   archivo no está diseñado para edición de reporte y seguimientos.
+
+
+
+
+3.8.4 Situaciones especiales en el módulo de carga manual.
+      3.8.4.1        No pudo descargar el archivo XML del caso inicial o seguimiento
+                     capturado.
+
+     Es crucial el paso de descarga del archivo una vez enviado el reporte o dentro de los
+     primeros 7 días naturales y se debe tener mucho cuidado en no omitirlo. Las fallas
+     técnicas que le impidan descargar los XML son excepcionales, sin embargo otras
+     situaciones ajenas al sistema, como problemas en la estabilidad de la conexión de
+     internet, y omisión de la descarga del archivo, pudieran no ser excepcionales.
+     En caso remoto de falla técnica de e-Reporting, se procederá de la siguiente manera:
+  1) Si el sistema no permitió la descarga del archivo del caso inicial o seguimiento por falla
+     técnica, debe enviar un correo electrónico a la cuenta: xmlvigiflow@cofepris.gob.mx con
+     el asunto “Falla en la descarga del archivo”, proporcionando el WWUID del caso, y la
+     fecha y hora cuando se envió el reporte.
+  2) El CNFV revisará si el caso fue ingresado correctamente en VigiFlow y de ser así,
+     proporcionará el reporte ingresado en formato PDF como respuesta al correo.
+  3) El usuario deberá ingresar el caso nuevamente con la información del PDF enviado,
+     adicionando la información de seguimiento, teniendo cuidado en dejar los mismos
+     identificadores (WWUID y SRUID). No olvidar descargar el archivo una vez enviado el
+     reporte. Responder el correo al CNFV indicando que ya se concluyó la captura del caso.
+  4) El CNFV procederá a la eliminación del primer reporte, quedando válido únicamente el
+     segundo que capturó el usuario.
+                                               Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                               Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                               Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   46 de 61
+3.9      Nulificar un reporte
+
+  e-Reporting Industria permite la anulación de reportes directamente desde la plataforma
+  para los usuarios de ambos módulos, cuando por ejemplo, se ingresó un reporte erróneo o
+  un reporte duplicado. Ingrese desde la pantalla principal a la opción Nulificar reporte.
+
+
+
+
+      Es importante que identifique el archivo XML correcto que requiere anular ya que una vez
+      realizada la anulación no podrá deshacerse esta acción. Cargue el archivo XML arrastrando
+      el archivo a la sección gris o ábralo desde su explorador de archivos con la opción
+      “Explorar”.
+
+
+
+
+  Se mostrará una ventana con información general del reporte que desea anular. Oprima
+  “Siguiente”.
+
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+      OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   47 de 61
+Deberá proporcionar necesariamente en el campo Motivo de la eliminación la razón por la
+cual requiere eliminar el reporte. Si es por duplicidad, deberá colocar el WWUID con el cual
+se ha duplicado el reporte. Dar clic en “Enviar”.
+
+
+
+
+Si el proceso fue exitoso, se mostrará una ventana como la siguiente:
+
+
+
+
+Descargue el XML generado o puede hacerlo desde la sección Estado de envío donde
+también podrá descargar el acklog correspondiente.
+
+Con la actualización de esta función de nulificación, ya no es necesario solicitar al CNFV la
+anulación de un reporte como se realizaba previamente.
+
+
+
+                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   48 de 61
+3.10 Estado de envío y revisión de acklogs
+
+  La recepción exitosa de un reporte en la base de datos del CNFV puede ser revisado desde la
+  carga del acklog en la base E2B. Para aquellos laboratorios que no cuentan con base E2B
+  para procesar este acklog, pueden abrir el archivo en cualquier explorador, por ejemplo
+  Chrome, e identificar la siguiente información:
+
+
+           E2B R2
+
+            Recibido correctamente
+           OK
+           01=All reports loaded into database
+           <transmissionacknowledgmentcode>01</transmissionacknowledgmentcode>
+           01=Report loaded successfully
+           <reportacknowledgmentcode>01</reportacknowledgmentcode>
+
+            Rechazado
+           Error
+           02=Not accepted
+           <transmissionacknowledgmentcode>02</transmissionacknowledgmentcode>
+           <parsingerrormessage>Could not understand the import format!</parsingerrormessage>
+
+
+           03=SGML parsing error
+           <transmissionacknowledgmentcode>03</transmissionacknowledgmentcode>
+           <parsingerrormessage>Message sender and/or receiver identifier doesn't match expected
+            values</parsingerrormessage>
+
+
+
+
+           E2B R3
+            Recibido correctamente
+             OK
+           AA=Accept - successfully processed!
+           Transmission Acknowledgement Code;
+           <acknowledgement typeCode="AA">
+
+           CA=Commit Accept
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           49 de 61
+        Acknowledgement Code for an ICSR Message;
+        <acknowledgement typeCode="CA">
+
+         Rechazado
+        Error
+        CR=Commit Reject (not loaded)
+        <acknowledgement typeCode="CR">
+        <acknowledgementDetail>
+        <text>Existing ICSR is nullified, followup not allowed.</text>
+        or
+        <acknowledgementDetail>
+        <text>Invalid MedDRA code found: 0</text>
+
+        AE=Parsial
+        <acknowledgement typeCode="AE">
+        <acknowledgementDetail>
+        <text>Could not persist all information</text>
+
+        AR=Reject
+        <acknowledgement typeCode="AR">
+        <acknowledgementDetail>
+        <text>Could not understand the import data: The 'extension' attribute is invalid - The value '' is invalid
+         according to its datatype 'urn:hl7-org:v3:st' - The actual length is less than the MinLength value., Line: 17
+         Position: 53. The 'extension' attribute is invalid - The value '' is invalid according to its datatype 'urn:hl7-
+         org:v3:st' - The actual length is less than the MinLength value., Line: 426 Position: 51. </text>
+
+
+
+
+   A continuación, se presentan algunos ejemplos de Acklog en donde se muestran los
+   campos anteriormente señalados.
+
+
+   E2B R2
+        Error
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE ichicsrack SYSTEM"http://eudravigilance.ema.europa.eu/dtd/ichicsrack11xml.dtd">
+        <ichicsrack lang="en">
+         <ichicsrmessageheader>
+                  <messagetype>ichicsrack</messagetype>
+        <messageformatversion>1.1</messageformatversion>
+
+                                                            Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                            Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                50 de 61
+        <messageformatrelease>1.0</messageformatrelease>
+        <messagenumb>4a58dec0-96b5-425a-8003-2f37ff3014f2</messagenumb>
+        <messagesenderidentifier>MPA</messagesenderidentifier>
+        <messagereceiveridentifier>BAYER</messagereceiveridentifier>
+        <messagedateformat>204</messagedateformat>
+        <messagedate>20201005200414</messagedate>
+         </ichicsrmessageheader>
+        <acknowledgment>
+         <messageacknowledgment>
+        <icsrmessagenumb>7401084_8P1</icsrmessagenumb>
+        <localmessagenumb>4a58dec0-96b5-425a-8003-2f37ff3014f2</localmessagenumb>
+        <icsrmessagesenderidentifier>BAYER</icsrmessagesenderidentifier>
+        <icsrmessagereceiveridentifier>MPA</icsrmessagereceiveridentifier>
+        <icsrmessagedateformat>204</icsrmessagedateformat>
+        <icsrmessagedate>20181025021712</icsrmessagedate>
+        <transmissionacknowledgmentcode>03</transmissionacknowledgmentcode>
+        <parsingerrormessage>Message sender and/or receiver identifier doesn't match expected
+         values</parsingerrormessage>
+         </messageacknowledgment>
+        </acknowledgment>
+        </ichicsrack>
+
+
+
+
+         E2B R3
+
+        OK
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <MCCI_IN200101UV01 xmlns="urn:hl7-org:v3" ITSVersion="XML_1.0" xsi:schemaLocation="urn:hl7-
+         org:v3 MCCI_IN200101UV01.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <id extension="842e09df-bb47-48d3-90f9-d5d36a06c39b" root="2.16.840.1.113883.3.989.2.1.3.20"/>
+        <creationTime value="20201005201537+0200"/>
+        <responseModeCode code="D"/>
+        <interactionId extension="MCCI_IN200101UV01" root="2.16.840.1.113883.1.6"/>
+        <MCCI_IN000002UV01>
+        <id extension="UMC-UMCORG-276" root="2.16.840.1.113883.3.989.2.1.3.19"/>
+        <creationTime value="20201005201537+0200"/>
+        <interactionId extension="MCCI_IN000002UV01" root="2.16.840.1.113883.1.6"/>
+        <processingCode code="P"/><processingModeCode code="T"/>
+        <acceptAckCode code="NE"/>
+        <receiver typeCode="RCV">
+        <device determinerCode="INSTANCE" classCode="DEV">
+        <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.16"/>
+        </device>
+
+                                                           Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                           Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                51 de 61
+        </receiver>
+        <sender typeCode="SND">
+        <device determinerCode="INSTANCE" classCode="DEV">
+        <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.15"/>
+        </device>
+        </sender>
+        <attentionLine>
+        <keyWordText code="1" codeSystemVersion="1.0" codeSystem="2.16.840.1.113883.3.989.2.1.1.24"/>
+        <value value="20200929133859+0000" xsi:type="TS"/>
+        </attentionLine>
+        <acknowledgement typeCode="CA">
+        <targetMessage>
+        <id extension="SE-UMCTEST-000007" root="2.16.840.1.113883.3.989.2.1.3.1"/>
+        </targetMessage>
+        <acknowledgementDetail>
+        <text/></acknowledgementDetail>
+        </acknowledgement>
+        </MCCI_IN000002UV01>
+        <receiver typeCode="RCV">
+        <device determinerCode="INSTANCE" classCode="DEV">
+        <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.18"/>
+        </device>
+        </receiver>
+        <sender typeCode="SND">
+        <device determinerCode="INSTANCE" classCode="DEV">
+        <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.17"/>
+        </device>
+        </sender>
+        <attentionLine>
+        <keyWordText code="2" codeSystemVersion="1.0" codeSystem="2.16.840.1.113883.3.989.2.1.1.24"/>
+        <value extension="842e09df-bb47-48d3-90f9-
+         d5d36a06c39b" root="2.16.840.1.113883.3.989.2.1.3.21" xsi:type="II"/>
+        </attentionLine>
+        <attentionLine>
+        <keyWordText code="3" codeSystemVersion="1.0" codeSystem="2.16.840.1.113883.3.989.2.1.1.24"/>
+        <value value="20200929133859+0000" xsi:type="TS"/>
+        </attentionLine>
+        <acknowledgement typeCode="AA">
+        <targetBatch>
+        <id extension="a60401bb-e8f1-4d4f-925d-66ab95d48525" root="2.16.840.1.113883.3.989.2.1.3.22"/>
+        </targetBatch>
+        <acknowledgementDetail>
+        <text/>
+        </acknowledgementDetail>
+        </acknowledgement>
+        </MCCI_IN200101UV01>
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          52 de 61
+    4. Preguntas frecuentes
+¿Puedo notificar un caso que no tenga los 4 criterios mínimos?
+No, y adicionalmente e-Reporting Industria indicará los campos mínimos obligatorios (conforme al
+estándar ICH-E2B) para poder enviar un caso al CNFV.
+
+¿Cuántos usuarios se proporcionarán por empresa, la contraseña deberá exclusiva por usuario
+o es necesario crear una contraseña por cada usuario?
+El número máximo de usuarios por cada laboratorio será de 2, ya sea para el módulo de carga manual o
+para el módulo de carga XML. Cada usuario deberá genera su propia contraseña.
+
+¿Podemos dar de alta el mismo correo para diferentes razones sociales?
+No es posible. El sistema reconoce cada correo electrónico como un usuario y no puede haber dos
+usuarios con el mismo correo electrónico.
+Si son de diferentes filiales que conforman un grupo de laboratorios, donde la responsable es la misma
+persona, se puede dar de alta a la misma persona con diferentes correos.
+
+¿Qué sucede con los reportes que se notificaron inicialmente en Notireporta o en e-Reporting
+ordinario?
+¿En caso de haber realizado una notificación en alguno de los sistemas o formato de
+seguimiento, debo capturar toda la información disponible, incluida la información del
+seguimiento que me corresponde en esta nueva plataforma o solo la información nueva?
+Para los casos de seguimiento de notificaciones sometidas previas a la implementación de este
+módulo ¿se deberá ingresar el caso completo al no contar con una codificación MX?
+Si un reporte se notificó inicialmente a través e-Reporting ordinario, deberá someter los seguimientos
+mediante el formato oficial a través del correo electrónico farmacovigilancia@cofepris.gob.mx
+Si un reporte se notificó inicialmente a través de Notireporta y el seguimiento posterior se notificó por e-
+Reporting ordinario, deberá continuar los seguimientos hasta cerrarlo por correo señalado.
+Si un reporte se notificó inicialmente a través de Notireporta y no se realizó seguimiento posterior en e-
+Reporting ordinario), por única ocasión podrá ingresar el reporte completo con toda la información en e-
+Reporting Industria.
+
+¿Es posible que dos usuarios reporten simultáneamente (si se cuenta con más de 1 usuario)?
+Si. Las dos cuentas que se otorgan por laboratorio son independientes y se pueden ingresar casos al
+módulo de carga manual o cargar XML en el módulo de carga de XML de forma simultánea. Pero, una
+cuenta no puede ser utilizada simultáneamente por más de dos personas.
+
+¿Entonces el evento adverso se reporta en Verbatim y también en MedDRA?
+Sí, es necesario reportar ambos términos en los campos correspondientes.
+
+¿Es necesario que cada laboratorio tenga licencia MedDRA?
+Si. Es obligatorio contar con la licencia respectiva para el uso de e-Reporting Industria.
+
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          53 de 61
+¿Hay opción en la plataforma para guardar el caso y terminarlo después?
+No. Si deja incompleto un reporte y cierra sesión sin enviarlo, no podrá recuperar la información
+posteriormente y deberá capturarla nuevamente.
+Se solicita que se capture el caso por completo, se envíe y descargue el archivo y acuse de acklog antes de
+cerrar sesión.
+
+¿Se manejará un límite de tiempo para cargar un caso? ¿Cuánto tiempo puede mantenerse la
+sesión activa?
+
+No hay un límite de tiempo siempre que esté ingresando información constantemente en periodos
+cortos. Pero si permanece la página abierta sin actividad en largos periodos, después de cierto tiempo se
+cerrará la sesión por seguridad.
+
+Se solicita mantener la sesión activa solo si ingresará información, de lo contrario debe cerrarla.
+
+¿Se deberá realizar la notificación por cada medicamento sospechoso?
+No. Un reporte de caso individual puede contener uno o más medicamentos sospechosos, así como uno o
+más EA, SRAM, RAM, ESAVI.
+
+¿En dónde se obtiene el WWUID?
+La parte constante se integra del el Country ISO code (MX) y el Nombre corto de la empresa. Estos datos
+son establecidos en la solicitud de información que hace el CNFV al laboratorio para dar de alta al usuario.
+La parte variable consta de un número consecutivo de al menos 5 dígitos el cual debe ser único para cada
+caso.
+
+¿Qué diferencia hay entre el Safety report unnique indentifier y el WWUCI?
+El WWUID es el primer identificador que se le asigna al reporte. El Safety Report ID es otro identificador
+que se le puede asignar a un caso siguiendo el mismo formato que el WWUID en caso de que se necesite.
+
+¿Qué pasa con mis códigos IQFs, ID de notireporta e IDs generados anteriormente en e-
+Reporting? ¿Debo usar el campo identificado como “Otros identificadores de caso en
+transmisiones anteriores” para colocar esta información?
+Si, puede agregarlos en el campo “Other case identifiers in previous transmissions” (Otros identificadores
+de caso en transmisiones anteriores), siempre y cuando no haya ingresado un seguimiento previamente
+en el e-Reporting ordinario.
+
+Si se tienen notificaciones iniciales de actividades adicionales de PMR aprobadas por el CNFV en
+los años anteriores a la implementación del e-Reporting Industria, ¿se pueden reportar por esta
+vía? ¿Dónde coloco la codificación que de la notificación que aprobó el CNFV, sustituye al WWU
+ID o al SRU ID?
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         54 de 61
+Sí se pueden notificar en el módulo de carga manual siempre y cuando sean iniciales o sus respectivos
+seguimientos y no se haya reportado seguimiento por e-Reporting ordinario.
+La codificación otorgada por el CNFV puede agregarse en el campo “Otros identificadores de caso en
+transmisiones anteriores”. Por ningún motivo esta codificación otorgada por el CNFV sustituye al SRUID y
+al WWUID.
+
+¿Es posible regresar entre secciones para editar información en caso de haber cometido algún
+error de captura?
+Sí es posible. La navegación entre secciones no está limitada a que aporte toda la información obligatoria
+en una sección para pasar a la siguiente.
+
+¿Es posible guardar la información para continuar con el reporte o deberá realizarse en una
+misma sesión?
+La captura de un reporte debe realizarse en una sesión. El sistema no guarda el reporte hasta que lo
+envíe.
+
+En el caso de reportes provenientes de literatura, ¿es un requerimiento adjuntar la publicación
+de referencia?
+No es un requerimiento ni campo obligatorio.
+
+¿Para estudio clínico, el medicamento del estudio clínico es siempre el medicamento
+sospechoso?
+Puede agregar más de un medicamento sospechoso pero el de estudio y/o comparadores en estudios
+cegados, deben marcarse como sospechosos al menos.
+
+En la sección de narrativa del caso en las tres secciones, ¿cuántos caracteres se pueden
+capturar?
+La capacidad del campo “Caso narrativo” es de 20 mil caracteres (considerando espacios). Si su reporte
+tiene un caso narrativo que sobrepasa este límite, coloque el resto del texto en el campo Resumen del caso
+y comentarios del notificador en idioma nativo.
+
+¿Se deberá incluir la causalidad de cada uno de los PT reportados, independientemente de si es
+un el sospechoso o concomitante?
+La evaluación de causalidad se debe realizar para cada EA/SRAM/ESAVI, solo es aplicable para el (los)
+medicamento sospechoso.
+
+¿Cómo se pueden revisar los casos cargados anteriormente y dentro del tiempo antes de que se
+borren?
+La información completa de los casos cargados previamente no está disponibles en e-Reporting Industria,
+ya que no es una base de datos. Lo que estará disponible serán los XML generados y los acklog (de los
+
+
+
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       55 de 61
+últimos 7 días) en la sección “Estado de envío” del menú superior derecho y la posibilidad de cargar
+seguimientos respectivos
+
+Si antes de enviar el caso no aparecen datos faltantes o erróneos en rojo y aun así no se puede
+enviar el caso, ¿qué se debe hacer?
+Debe revisar el reporte nuevamente a detalle, sección por sección. Mientras aporte la información mínima
+requerida y no tenga datos faltantes o erróneos en rojo, el reporte se podrá enviar sin problema.
+
+Si voy a reportar un seguimiento, ¿requiero capturar todo el caso nuevamente?
+No requiere capturar todo el caso nuevamente. Una vez sometido el caso inicial en el módulo de carga
+manual, debe descargar inmediatamente el archivo XML (o dentro de los primero 7 días naturales) y
+guardarlo en el directorio de su computadora Cuando requiera hacer un seguimiento debe ir a la sección
+Editar reporte del menú superior como lo describe este manual.
+
+En el caso de notificación manual a transmisión E2B, el ACK log generado en la carga manual,
+¿para un seguimiento en transmisión E2B puede ser utilizado? o solo se carga en XML del
+seguimiento enviado por nuestro global ?
+No con el acklog. Debe recordar que el acklog solo es el acuse de recepción electrónico. Por otro lado, los
+seguimientos de casos iniciales ingresados en carga manual si pueden ser cargados vía Carga E2B, el
+requisito es asegurarse que el WWUID sean exactamente los mismos, para que al entrar el reporte a
+VigiFlow lo reconozca como seguimiento.
+
+Si no descargué el reporte, ¿ya no es posible descargarlo?
+Tiene hasta 7 días para descargarlo una vez que envía el reporte. Pasado este periodo, ya no podrá
+descargarlo, ni le acklog correspondiente
+
+Si aparecen otros problemas que no se mencionan en esta guía ¿cómo y a donde se deben
+reportar?
+¿Existe algún plan de contingencia, si la plataforma no funciona? ¿Cómo se reportarían los
+casos?
+En caso de error en la plataforma y/o no disponibilidad del sistema, ¿hay alguna otra opción
+para reporte de casos?
+El módulo de carga manual de e-Reporting es continuamente monitoreado y actualizado por el UMC para
+asegurar su correcto funcionamiento. Cuando el UMC realiza actualizaciones, no tarda más que unas
+horas en concluirlas por lo que el acceso puede ser intermitente para algunos usuarios. En este caso debe
+esperar al menos 3 horas y volver a intentar el acceso. En caso de que no pueda acceder a e-Reporting
+Industria por más de 24 horas y que la falla se deba a una causa ajena al UMC (puede documentarlo con
+captura de pantalla si su procedimiento interno lo solicita), reporte el error a
+xmlvigiflow@cofepris.gob.mx y monitoree constantemente hasta que se reestablezca el servicio.
+Si tiene un problema en el acceso, intente lo siguiente:
+      Acceda desde el enlace que se encuentra en este manual y no a través del que se guarda en el
+         caché de su computadora o el historial.
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        56 de 61
+      Borre las cookies del explorador utilizado.
+      Acceda a la plataforma mediante un navegador distinto.
+      Cerciórese que se coloca el usuario y contraseña correctos.
+      Si olvidó su contraseña genere otra conforme lo establece este manual.
+
+
+¿Qué sucede si en la sección Submission status (Estado de envío), la hora de finalización aparece
+vacía y el estado de envío de mi notificación se visualiza como pendiente y no tengo disponible
+el acklog emitido y disponible para descarga?
+
+Cuando se detecta este tipo de situaciones no es necesario notificarlo. El módulo se encuentra
+continuamente monitoreado, por lo que podrá considerar como evidencia de envío los datos relacionados
+a la hora de envío e identificador de envío.
+Una vez confirmada la transmisión exitosa, el mismo módulo emitirá de manera automática el Acklog y
+estará disponible para descarga de manera habitual, únicamente por 7 días. En caso de que algún acklog
+quede pendiente de descarga, será responsabilidad del usuario monitorear el estatus de este para
+descargarlo de manera inmediata para completar la documentación correspondiente al caso.
+Al descargar el xml es necesario confirmar que el siguiente dato se encuentre contenido, pues confirma la
+transmisión exitosa de la información:
+<acknowledgement typeCode="AA"> AA – Application Acknowledgement Accept (message successfully
+processed, no further action)
+En caso de recibir un acklog con alguna de las siguientes codificaciones, será necesario cargar la
+información:
+AE – Application Acknowledgment Error (error detected, error response has additional detail, some ICSR
+message(s) need further action)
+AR – Application Acknowledgment Reject (parsing error, no data extracted, resend the entire transaction)
+
+¿Cómo realizará la industria farmacéutica un control de calidad o revisión de la información
+ingresada?
+
+Aportando la mayor cantidad de información posible del caso, cubriendo al menos los campos mínimos
+obligatorios y apegándose al ingreso de información como lo establece este manual.
+
+¿Qué debemos hacer si se rechaza nuestro caso de XML?
+Debe revisar el acklog para identificar la causa y establecer las correcciones necesarias para el
+resometimiento.
+
+¿En el caso de los seguimientos que se mandaron por eReporting y que se envían por el formato
+de notificación, es posible enviar varios formatos en un mismo correo?
+No, se solicita que cada seguimiento se envíe en un correo independiente.
+
+
+Si hay un problema de seguridad que no genera evento adverso, ¿se debe de reportar? por
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       57 de 61
+ejemplo, la exposición a algún medicamento durante el embarazo, pero no hubo evento ni en la
+madre o no en el bebé. ¿Se reporta?
+Conforme al punto 4.57 y el punto 7.7.1 de la NOM-220-SSA1-2016, los casos de exposición a
+medicamentos o vacunas durante el embarazo y lactancia deben ser reportados.
+Conforme al punto 8.1.2.1 de la modificación de la NOM-220-SSA1-2016, solo son reportables otros
+problemas de seguridad relacionados con el uso de medicamentos y vacunas si son acompañadas de
+manifestaciones clínicas (no necesariamente relacionadas al problema de seguridad).
+
+
+Los medicamentos para tratar el evento adverso ¿dónde se cargarán en el módulo de carga
+manual? ¿en la narrativa?
+En el campo de texto libre Caso narrativo.
+
+
+¿Se podría replantear el acceso a carga manual y XML para aquellos casos en los que no
+podemos ingresar la información en español por ejemplo estudios clínicos y casos graves a
+reportar dentro de las 48 horas?
+
+El CNFV definirá las excepciones válidas en las cuales la industria farmacéutica que tiene acceso al módulo
+de carga XML pueda utilizar el módulo de carga manual para la notificación de casos particulares y
+excepcionales.
+
+Aunque inicialmente se trabaje con el módulo manual y después migrar a XML, el short name
+¿debe ser proporcionado desde ahora?
+Si, debe proporcionarse el nombre largo, el nombre corto y el sender identifier. Estos datos deben ser los
+mismos que se proporcionen inicialmente para el módulo de carga manual y posteriormente para la
+carga E2B. Esto evitará que haya problemas futuros en la entrada de reportes.
+
+
+Para CROs ¿se tiene que crear 1a cuenta por cliente o un usuario por cliente? porque la molécula
+debe estar ligada al dueño de la molécula no a la CRO o esto se definirá con la información que
+se envíe para la cuenta con la definición de nombres largos y cortos.
+Las CRO tendrán, al igual que los laboratorios farmacéuticos, dos cuentas de usuario en el módulo de
+carga manual o de XML. Con ellas podrá ingresar todos los reportes de eventos adversos de sus clientes.
+Recuerde que debe haber un acuerdo establecido entre la CRO y el patrocinador para que solo uno de
+estos haga la notificación de eventos adversos conforme a los tiempos establecidos en la NOM-220-SSA1-
+2016 y no se duplique la notificación.
+
+
+En caso de que no podamos descargar el archivo XML una vez enviado un caso inicial, por cual
+razón, y queramos enviar un seguimiento y no contemos con ese archivo, ¿que tendríamos que
+hacer?
+Ver sección Descargar reporte de este manual
+
+
+
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        58 de 61
+¿El método de evaluación de causalidad puede ser el juicio médico? en la empresa donde laboro
+hacen la evaluación de causalidad con el análisis del caso y empleando el juicio médico, ¿esto es
+válido como método?
+Se solicita la utilización prioritaria de metodologías de evaluación estandarizadas.
+
+
+La versión MedDRA que manejará el e-Reporting ¿será la más reciente?
+Si, se utilizará la versión más reciente y se actualizará automáticamente conforme MedDRA MSSO libere
+nuevas versiones.
+
+
+
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         59 de 61
+   5. Anexo A
+         Términos y condiciones de uso e-Reporting Industria
+
+Descripción
+e-Reporting Industria es una plataforma desarrollada por el Centro de Monitoreo de Uppsala (UMC)
+específicamente para que la industria farmacéutica notifique a la Autoridad Regulatoria Reportes de Caso
+Individual de Reacciones Adversas a Medicamentos (RAM), Sospechas de Reacciones Adversas a
+Medicamentos (SRAM), Eventos Adversos (EA), Eventos Supuestamente Atribuibles a la Vacunación o
+Inmunización (ESAVI), y cualquier problema de seguridad relacionado con el uso de medicamentos y
+vacunas mediante una plataforma estandarizada y diseñada para la mejor colecta de información. e-
+Reporting Industria está vinculado a VigiFlow, herramienta utilizada para la gestión de Reportes de caso
+individual a nivel nacional. El Centro Nacional de Farmacovigilancia (CNFV) opera VigiFlow a nivel nacional
+como país perteneciente al Programa Internacional de Medicamentos de la Organización Mundial de la
+Salud (OMS) para la gestión de los reportes de seguridad de caso individual.
+El CNFV ha definido el uso exclusivo de e-Reporting Industria para:
+     Titulares de Registro Sanitario o sus representantes legales.
+     Instituciones o establecimientos donde se realice investigación para la salud (se incluyen
+        empresas de Investigación por Contrato o CROs).
+     Distribuidores/comercializadores
+
+Declaraciones
+El CNFV declara que:
+    I. Es el área de la Comisión Federal para la Protección contra Riesgos Sanitarios, a través de la
+         Dirección Ejecutiva de Farmacopea y Farmacovigilancia que se encarga conforme la normativa
+         aplicable, de emitir las políticas y lineamientos para la operación de la Farmacovigilancia en el
+         territorio nacional, entre los que se encuentra:
+             a. Establecer y difundir requerimientos y formatos en materia de Farmacovigilancia, para la
+                  notificación de SRAM, EA, RAM, ESAVI y cualquier otro problema de seguridad relacionado
+                  con el uso de los medicamentos y vacunas, INCLUYENDO las herramientas electrónicas
+                  para la operación de la notificación, consideraciones de uso y guías para operación.
+
+El Usuario declara que:
+    I. Como usuario de e-Reporting Industria, autentica que pertenece a uno de los siguientes
+         integrantes de la Farmacovigilancia en el país:
+             a. Titulares de Registro Sanitario o sus representantes legales.
+             b. Instituciones o establecimientos donde se realice investigación para la salud (se incluyen
+                  organizaciones de investigación por contrato o CROs).
+             c. Distribuidores/comercializadores
+
+
+
+
+                                                         Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                         Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                         Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          60 de 61
+   II. Todo uso no autorizado por alguna entidad mencionada en el punto anterior representa una
+         violación.
+   III. Conoce el contenido y las obligaciones que se desprenden de esta carta de términos y condiciones
+         de uso de e-Reporting Industria, y por lo tanto se obliga en términos de este, a cumplir las
+         siguientes reglas de acceso y uso.
+   IV. Está de acuerdo en que el CNFV y el Centro de Monitoreo de Uppsala (UMC) le retiren el acceso si
+           infringe alguna de las siguientes reglas de accesos y uso de e-Reporting Industria.
+
+
+Reglas de acceso y uso
+   I. El usuario de e-Reporting Industria es responsable de mantener la confidencialidad de su
+             contraseña y las consecuencias derivadas de no hacerlo así. Debe proteger su contraseña y no
+             compartirla. Si sabe de un uso no autorizado de su cuenta, debe cambiar su contraseña de
+             inmediato e informar al nivel jerárquico superior.
+   II. El usuario de e-Reporting Industria acepta no usarlo indebidamente ni ayudar a nadie a hacerlo,
+             por ejemplo, en las siguientes situaciones:
+             a. Explorar, escanear o poner a prueba la vulnerabilidad del sistema.
+             b. Infringir o eludir cualquier medida de seguridad o autenticación.
+             c. Vender los servicios de e-Reporting Industria.
+             d. Usar de forma ilegal, fraudulenta o perjudicial.
+             e. Dentro del sistema, copiar, almacenar, alojar, transmitir, enviar, usar, publicar o distribuir
+                  cualquier material que consista (o esté vinculado) a cualquier spyware, virus informático,
+                  troyano, gusano, registrador de teclas, rootkits u otro software informático malicioso.
+             f.   Compartir la contraseña de su cuenta o dar acceso a personas no autorizadas a su cuenta.
+   III. La información que se comparte a través de e-Reporting debe ser tratada de conformidad
+             con la Ley General de Protección de Datos Personales en posesión de Sujetos Obligados y
+             en su caso en la Ley Federal del Protección de Datos Personales en Posesión de los
+             Particulares, Ley General de Transparencia y Acceso a la Información Pública y demás
+             normatividad aplicable a la materia.
+   IV. El usuario de e-Reporting Industria reconoce el hecho de que el UMC a través del Centro Nacional
+             de Farmacovigilancia le concede el acceso a esta herramienta, pero no se le otorga ningún
+             derecho de licencia, patente o propiedad intelectual sobre el mismo.
+
+
+Puede revisar el Aviso de privacidad integral de la COFEPRIS en la siguiente liga:
+     https://tramiteselectronicos02.cofepris.gob.mx/Frontendnuevoportal/General/AvisoPrivacidad
+
+
+
+
+                                                           Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                           Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                           Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           61 de 61
+

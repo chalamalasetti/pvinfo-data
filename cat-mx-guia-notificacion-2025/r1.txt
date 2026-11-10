@@ -1,0 +1,3033 @@
+  Guía de Farmacovigilancia para la
+   notificación de EA, SRAM, RAM,
+   ESAVI o cualquier problema de
+  seguridad relacionado con el uso
+    de medicamentos y vacunas.
+
+
+
+
+                                                                                      Marzo-2025
+Control de cambios: actualización a papelería institucional vigente
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    1 de 86
+                                                         Tabla de Contenido
+1.     Introducción............................................................................................................................................... 4
+2.     Objetivos .................................................................................................................................................... 4
+     2.1     Objetivo general ................................................................................................................................. 4
+     2.2     Objetivos particulares ........................................................................................................................ 4
+3.     Generalidades ............................................................................................................................................ 4
+4.     VigiFlow ...................................................................................................................................................... 7
+     4.1     Generalidades ..................................................................................................................................... 8
+     4.2     Solicitud de cuentas de usuario ...................................................................................................... 10
+     4.3     Inicio de sesión ................................................................................................................................. 11
+       4.3.1        Ingreso por primera vez, solicitud y cambio de contraseña ................................................. 11
+       4.3.2        Inicio de sesión en VigiFlow ..................................................................................................... 15
+     4.4     Información de la pantalla principal ............................................................................................... 17
+     4.5     Ingreso de un nuevo reporte. ......................................................................................................... 20
+       4.5.1        Consideraciones previas. .......................................................................................................... 20
+       4.5.1.1         Detección de duplicidad. ....................................................................................................... 20
+       4.5.1.2         Guardar un reporte. .............................................................................................................. 21
+       4.5.2        Campos obligatorios para completar un reporte .................................................................. 24
+       4.5.3        Información del reporte ........................................................................................................... 27
+       4.5.4        Paciente ...................................................................................................................................... 35
+       4.5.4.1         Campos básicos ..................................................................................................................... 35
+       4.5.4.2         Campos adicionales ............................................................................................................... 37
+       4.5.5        Caso narrativo e información adicional .................................................................................. 40
+       4.5.6        Historia clínica y tratamiento médico previo relevante ......................................................... 41
+       4.5.7        Reacción ..................................................................................................................................... 44
+       4.5.8        Medicamento ............................................................................................................................. 47
+       4.5.9        Análisis y procedimientos ......................................................................................................... 62
+       4.5.10          Evaluación............................................................................................................................... 63
+       4.5.11          Vista general........................................................................................................................... 65
+                                                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+      OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                              2 de 86
+     4.6     Administración de reportes. ............................................................................................................ 66
+       4.6.1        Búsqueda de notificaciones por filtros. .................................................................................. 66
+       4.6.2        Búsqueda de notificaciones de una organización ................................................................. 70
+       4.6.3        Asignación de notificaciones .................................................................................................... 70
+       4.6.4        Delegación de notificaciones ................................................................................................... 72
+       4.6.5        Eliminación de un reporte ........................................................................................................ 74
+     4.7     Ingreso de información adicional de un reporte (seguimiento) .................................................. 74
+     4.8     Respaldo de la información ............................................................................................................. 75
+     4.9     Funciones del primer, segundo y tercer nivel en la operación de VigiFlow ............................... 77
+5.     E-Reporting .............................................................................................................................................. 80
+     5.1     Generalidades ................................................................................................................................... 81
+     5.2     Ingreso de una notificación en e-Reporting .................................................................................. 81
+6. Transmisión electrónica XML-E2B ............................................................................................................. 83
+     6.1     Generalidades ................................................................................................................................... 83
+     6.2     Documentos técnicos ....................................................................................................................... 85
+7. Definiciones ................................................................................................................................................ 85
+
+
+
+
+                                                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+      OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                             3 de 86
+   1. Introducción
+    La necesidad de contar con sistemas tecnológicos de información aplicados en los sistemas
+de Farmacovigilancia ha sido recurrente en todas las autoridades regulatorias. Los sistemas de
+información en salud más exitosos en el mundo han permitido la toma de decisiones basados
+en evidencia. La Farmacovigilancia, como herramienta en salud pública, requiere de sistemas de
+identificación, validación, análisis y comunicación de Reacciones Adversas a Medicamentos
+(RAM), Sospechas de Reacciones Adversas a Medicamentos (SRAM), Eventos Adversos (EA),
+Eventos Supuestamente Asociados a la Vacunación o Inmunización (ESAVI) y otros problemas de
+seguridad relacionados con el uso de medicamentos y vacunas, que permitan cumplir con una
+de las actividades cruciales de la Farmacovigilancia que es la notificación.
+
+
+
+   2. Objetivos
+     2.1        Objetivo general
+                Describir el uso de las herramientas de reporte con las que cuenta el Centro
+                Nacional de Farmacovigilancia (CNFV) para la notificación de SRAM, RAM, EA, ESAVI,
+                o cualquier otro problema de seguridad relacionado con el uso de los
+                medicamentos y vacunas.
+     2.2        Objetivos particulares
+                 Establecer la herramienta que utilizará cada integrante de Farmacovigilancia.
+                 Proporcionar los instructivos para la correcta operación de VigiFlow, el correcto
+                    llenado del formato electrónico e-Reporting, así como el procedimiento para la
+                    transferencia electrónica de XML-E2B.
+
+
+
+   3. Generalidades
+
+    Con base a la operación de la Farmacovigilancia en México mediante la cual los integrantes
+que la componen (Figura 1) llevan a cabo la notificación de SRAM, RAM, EA, ESAVI, o cualquier
+otro problema de seguridad relacionado con el uso de los medicamentos y vacunas, así como a
+las especificaciones en la transferencia de información que define el Centro de Monitoreo de
+Uppsala (UMC) bajo el estándar internacional, así como en la operación de la herramienta
+VigiFlow y sus servicios alojados, el Centro Nacional de Farmacovigilancia ha establecido los
+medios de notificación que aplicarán los integrantes de Farmacovigilancia en concordancia con
+lo determinado en la NOM-220-SSA1-2016, y los cuales se definen en la tabla 1.
+
+
+
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       4 de 86
+Figura 1. Integrantes de la Farmacovigilancia
+
+
+
+
+Tabla 1. Medios de notificación en Farmacovigilancia.
+                                            Integrante                                              Herramienta a
+                                                                                                       utilizar
+
+Centro Nacional de Farmacovigilancia (CNFV)
+
+Centros Estatales de Farmacovigilancia (CEFV)
+
+Centros Institucionales Coordinadores de Farmacovigilancia (CICFV)                                      VigiFlow
+
+Centros Institucionales de Farmacovigilancia (CIFV)
+
+Unidades de Farmacovigilancia (UFV) dependientes de CEFV y CICFV
+
+Titulares de registro o sus representantes legales, instituciones o establecimientos              Envío de archivos
+que realicen investigación para la salud, distribuidores/comercializadores que
+CUENTAN con la capacidad para llevar a cabo la transmisión electrónica de reportes                     XML-E2B.
+en formato XML-E2B.
+
+
+
+
+                                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                5 de 86
+Titulares de registro o sus representantes legales, instituciones o establecimientos           e-Reporting
+que realicen investigación para la salud, distribuidores/comercializadores que por el
+momento NO CUENTAN con la capacidad para llevar a cabo la transmisión
+electrónica de reportes en formato XML-E2B.
+
+Profesionales de la salud y Pacientes/consumidores                                             e-Reporting
+
+                                                                                           Correo electrónico
+
+                                                                                                 Teléfono
+
+                                                                                           Centro Integral de
+                                                                                               Servicios
+
+
+
+VigiFlow a nivel central es alimentado por diferentes fuentes como se muestra en la figura 2:
+
+Figura 2. Fuentes de alimentación de VigiFlow
+
+
+
+
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02        6 de 86
+      4. VigiFlow
+
+
+                                            Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                            Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                            Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   7 de 86
+4.1 Generalidades
+
+    VigiFlow es un sistema de gestión de notificaciones de SRAM, RAM, EA, ESAVI o cualquier
+problema de seguridad relacionado con el uso de los medicamentos y vacunas que opera en
+línea y el cual funciona como la base de datos del Centro Nacional de Farmacovigilancia,
+permitiendo la recepción, procesamiento y análisis de notificaciones, para así, facilitar la
+transferencia de información a la base de datos mundial de la OMS/UMC gracias a la
+compatibilidad que tiene este sistema con el estándar internacional ICH-E2B (R2 y R3). VigiFlow
+permite también la importación de archivos XML con el estándar E2B, con el objetivo de
+intercambiar reportes con notificadores específicos como la industria farmacéutica (Ver sección
+Transmisión electrónica XML-E2B).
+
+    La nueva versión de VigiFlow permite tener una estructura jerárquica en su operación para
+habilitar a múltiples centros regionales de Farmacovigilancia como se señala en la figura 3. Esto
+permite entre otras cosas, reportar directamente (en tiempo real) a la base de datos del CNFV, a
+través de 3 niveles de operación. Los 3 niveles definidos para la operación de VigiFlow son los
+siguientes:
+
+    Figura 3. Estructura jerárquica en la notificación a través de VigiFlow.
+
+
+
+
+                                                   Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                   Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                   Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02      8 de 86
+    Cada organización dentro de la estructura jerárquica tiene acceso únicamente la
+información de los reportes ingresados manualmente por esta organización y las
+organizaciones que estén debajo de este nivel.
+
+
+    Figura 4. Flujo de información a través de VigiFlow.
+
+
+
+
+    Como un adicional a la entrada manual de información a VigiFlow, también se cuenta con
+un formato electrónico de reporte alojado en la página web de la COFEPRIS. Este formato
+electrónico fue desarrollado específicamente para incrementar la participación de Profesionales
+de la salud y pacientes/consumidores (Ver sección e-Reporting).
+
+    El nuevo VigiFlow utiliza catálogos estructurados y estandarizados para el ingreso de
+información de reacciones adversas, medicamentos, indicaciones terapéuticas, entre otros
+(MedDRA, CIE-10, catálogo de medicamentos de la OMS, etc.).
+Nota: el catálogo WHO-ART (terminología de reacciones adversas de la OMS) ha quedado en
+desuso para la nueva versión de VigiFlow.
+
+   Los recursos tecnológicos necesarios para el correcto funcionamiento de VigiFlow y e-
+Reporting son:
+             Una computadora con una conexión estable de Internet
+             Navegadores de internet.
+
+
+
+
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       9 de 86
+4.2 Solicitud de cuentas de usuario
+
+    Es importante señalar que la gestión de las cuentas de VigiFlow será llevada por la Dirección
+Ejecutiva de Sistemas y Procesos (DESP) de la COFEPRIS.
+    El segundo nivel de operación (CEFV, CICFV, CIFV, CENSIA y DGE), podrá solicitar cuentas
+adicionales para su organización necesariamente a través del siguiente correo electrónico:
+
+                                            vigiflowcuentas@cofepris.gob.mx
+
+       Las solicitudes por correo electrónico deben contener la siguiente información:
+
+ Nombre de la               Nombre del              Correo electrónico*         Codificación        Justificación de la
+Organización en           responsable de           (Usuario de VigiFlow)              de              solicitud de la
+   VigiFlow                  la cuenta                                          notificacione             cuenta
+ (CEFV, CICFV,               solicitada                                                s             inicial/adicional
+    CIFV…)
+                                                         Ejemplos
+   CEFV/CDMX                   Gabriela         vazquezg@saludcdmx.gob.m        CEFV/CDMX/        El número promedio
+                               Vázquez          x                               00000/2020        de notificaciones que
+                               Morales                                                            recibimos al año en
+   CICFV/IMSS               Rubén Flores        floresmruben@imss.gob.mx         CICFV/IMSS       el      CNFV       es
+                              Mercado                                                             demasiado para que
+   CIFV/HJM                  Alicia López       farmacovigilanciahjmlopez@      CIFV/HJM/00       sean       ingresadas
+Hospital Juárez de              López           hjm.com                          000/2020         manualmente         a
+     México                                                                                       través de una sola
+                                                                                                  cuenta
+
+
+*Se solicita que la cuenta de correo electrónico sea una institucional. Si no cuenta con una o
+tiene problemas con el funcionamiento de ésta, puede optar por otra cuenta.
+
+    Las Unidades de Farmacovigilancia (UFV) del tercer nivel (unidades que notifican a los CEFV
+y a los CICFV, o los responsables del PVU/Epidemiología a nivel jurisdiccional o local según se
+defina) que cuenten con los recursos tecnológicos para utilizar VigiFlow, deberán solicitar
+cuentas de usuario al CEFV, CICFV, CENSIA o DGE según corresponda. Los CEFV, CICFV, CENSIA o
+DGE deben solicitar cuentas de usuario de su tercer nivel al CNFV, aportando la siguiente
+información:
+
+
+
+
+                                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02               10 de 86
+ Nombre de la       Nombre de la         Nombre       Nombre del           Correo          Codificación    Justificación de
+ Organización        Institución        abreviado     responsable       electrónico*            de              cuenta
+en VigiFlow del       del tercer        propuesto     de la cuenta      (Usuario de       notificaciones   inicial/adiciona
+segundo nivel           nivel             para la      solicitada         VigiFlow)        de la unidad            l
+                                       organización                                         del tercer
+                                         de tercer                                             nivel
+                                         nivel en
+                                         VigiFlow
+                                                          Ejemplo
+ CICFV/IMSS           Hospital         UFV/IMSS/H       Franco        gomezroldanf@i       UFV/IMSS/…      Con base al
+                    General de            GZ30          Roldán          mss.gob.mx                         criterio
+                    Zona No. 30                         Gómez                                              interno      del
+                                                                                                           número       de
+                                                                                                           notificaciones
+                                                                                                           anuales     que
+                                                                                                           debe      enviar
+                                                                                                           una UFV a
+                                                                                                           nuestro cargo
+                                                                                                           para solicitar
+                                                                                                           una cuenta de
+                                                                                                           VigiFlow, esta
+                                                                                                           UFV      cuenta
+                                                                                                           cumple      con
+                                                                                                           dicho criterio.
+
+
+    Una vez que la DESP recibe el correo y previo visto bueno del CNFV, dará respuesta de
+confirmación con las instrucciones específicas para accesar por primera vez a VigiFlow.
+
+    Los integrantes del segundo nivel podrán solicitar la modificación o eliminación de cuentas
+de su nivel o de su tercer nivel cuando corresponda, haciendo la misma solicitud por correo
+electrónico, con la diferencia de que debe indicar y justificar el usuario que se requiere
+modificar/eliminar.
+
+
+
+
+4.3 Inicio de sesión
+
+4.3.1         Ingreso por primera vez, solicitud y cambio de contraseña
+
+    -   Para ingresar a VigiFlow se recomienda utilizar el navegador Google Chrome, Mozilla
+        Firefox o Internet Explorer en ese orden de preferencia.
+
+    -   Ingresar al enlace: https://vigiflow.who-umc.org/
+
+                                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+     OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                11 de 86
+-   Ingresar el nombre de usuario en el campo correspondiente, es decir, el correo
+    electrónico con el que el que lo dio de alta el CNFV en VigiFlow (Ver solicitud de cuentas de
+    usuario).
+
+
+
+
+                                        -
+-   Presionar el botón: Can´t access your account? (¿No puede acceder a su cuenta?)
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       12 de 86
+-   En el campo “USER ID”, corroborar el nombre de usuario ingresado.
+-   Ingresar los caracteres alfanuméricos que aparecen en el recuadro (considerar
+    mayúsculas y minúsculas).
+-   Presione el botón “NEXT”.
+-   Presione en el recuadro azul “EMAIL”. Es importante que no cierre esta ventana. Se le
+    enviará a su correo electrónico un código de 6 dígitos. Ingrese a su correo y verifique el
+    número que se le envió.
+-   Copie el código enviado en la página de VigiFlow abierta, específicamente en el recuadro
+    “Enter your verification code (Ingrese su código de verificación)”
+-   Presione el botón “NEXT”.
+
+
+
+
+                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    13 de 86
+-   Se mostrará una página donde deberá ingresar su nueva contraseña, la cual debe
+    contener como MÍNIMO 8 caracteres (letras, números, mayúsculas, minúsculas,
+    símbolos), y es importante que no se parezca a su nombre de usuario.
+-   Escriba esa misma contraseña en el recuadro de abajo para confirmar su nueva
+    contraseña.
+-   Presione el botón “FINISH”.
+
+
+
+
+-   Si el proceso fue exitoso aparecerá una página con una “√” en verde, además se le
+    enviará un correo electrónico de confirmación.
+-   Con el proceso anterior concluído, puede iniciar sesión desde el enlace principal de
+    VigiFlow ingresando su mismo usuario y su nueva contraseña.
+
+
+
+                                            Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                            Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                            Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   14 de 86
+  NOTA: en caso de no recordar su contraseña, la recuperación de esta será mediante el
+  mismo procedimiento descrito.
+
+
+4.3.2       Inicio de sesión en VigiFlow
+  -   Ingresar al enlace: https://vigiflow.who-umc.org/
+  -   Ingresar su usuario y contraseña en los campos correspondientes.
+  -   Puede elegir la opción “Keep me signed in” para que el sistema recuerde su usuario y
+      contraseña y no tenga que ingresarlas manualmente en el siguiente inicio de sesión.
+  -   Presione el botón “Sign in” (Iniciar sesión).
+
+
+
+
+ IMPORTANTE: no debe utilizar el traductor automático de su navegador ya que puede
+ generar problemas en la traducción de los campos cuando modifique el idioma al español
+ en VigiFlow. Por lo que, si tiene habilitado el traductor automático debe desactivarlo.
+
+
+
+     Al ingresar por primera vez, se invitará a leer y aceptar los términos y condiciones de uso
+  de VigiFlow.
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   15 de 86
+-   Dar click en “Accept”. Puede leer posteriormente los términos y condiciones de uso
+    desde la pantalla principal de VigiFlow, los cuales podrá localizar en la parte inferior
+    central como “Terms of use”.
+-   La pantalla de inicio que visualizará se encuentra en idioma inglés. Puede modificar el
+    idioma en la parte superior derecha de la pantalla donde se localiza el nombre de su
+    usuario. Oprimir la opción “Idioma” y elija Spanish.
+
+
+
+
+Si requiere salir del sistema, de click en la opción “Cerrar sesión” .
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+ OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02      16 de 86
+4.4 Información de la pantalla principal
+
+       Nota: las capturas de pantalla mostradas en esta sección y en las posteriores son del carácter
+ilustrativo. Algunas funciones mostradas pueden no aplicar al segundo y tercer nivel de VigiFlow.
+        La pantalla principal de VigiFlow se muestra a continuación:
+
+
+
+
+     La pantalla principal de VigiFlow contiene un menú superior con las opciones:
+
+
+
+
+    1. Nuevo reporte: ingresa un nuevo reporte.
+
+    2. Importe de reportes (XML-E2B): función solo operable por el primer nivel (CNFV).
+     SI oprime el botón “Importe de reportes (XML-E2B)”, se abrirá la siguiente pantalla:
+
+
+
+
+                                                   Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                   Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                   Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     17 de 86
+Con esta función, el CNFV puede importar archivos XML provenientes de la Industria
+Farmacéutica (Ver sección Transmisión electrónica XML–E2B).
+
+3. Administración de cuentas: función solo disponible por el usuario Administrador que
+    lleva a cabo la gestión de cuentas, es decir, el CNFV y la DESP.
+ Al oprimir el botón “Administración de cuentas” se desplegará toda la jerarquización de la
+ estructura dispuesta en VigiFlow.
+
+
+
+
+4. VigiLyze: función solo disponible para el primer nivel (CNFV).
+
+5. Filtro: despliega una sección de filtros que se aplicarán en la búsqueda específica de
+    notificaciones (ver punto 4.6.1 “Búsqueda de notificaciones por filtro”) a los reportes que
+    tiene en su listado, como aparece a continuación:
+
+
+
+
+6. PDF/ Excel: exporta todos los reportes incluidos en el listado en formato Excel a través de
+    dos modalidades: Excel y Estadísticas administrativas.
+
+
+
+
+                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    18 de 86
+    Debajo del menú principal encontrará el listado de reportes ingresados.
+
+
+
+
+     La visualización de los reportes ingresados tiene las siguientes características:
+    El primer nivel visualizará los reportes ingresados manualmente y todos los ingresados
+       por el segundo y tercer nivel de VigiFlow. El listado también incluirá los reportes
+       ingresados mediante e-Reporting (Ver sección e-Reporting) y los reportes importados a
+       través de transferencia electrónica de XML-E2B (ver Transmisión electrónica XML-E2B).
+    Cada integrante del segundo nivel podrá visualizar los reportes que ingresó
+       manualmente a VigiFlow y, si aplica, los reportes ingresados por las UFV del tercer nivel
+       que estén a su cargo, así como aquellos que el primer y segundo nivel le delegue.
+    Cada integrante del tercer nivel podrá visualizar únicamente los reportes que ingresó
+       manualmente a VigiFlow, así como aquellos que el primer y segundo nivel le delegue.
+    La sección inferior de la pantalla principal como se muestra en la siguiente tabla, contiene
+una serie de opciones que le permiten remitirlo a diferentes sitios de interés:
+
+            Opción                                       Función
+Logotipo de Uppsala Monitoring Lo enlaza a la página web oficial del UMC
+Centre
+Contacto                        Lo enlaza a su servidor de correo electrónico para enviar
+                                un correo al centro de contacto del UMC
+Política de Privacidad (Privacy Lo enlaza a la sección de Política de privacidad de
+policy)                         VigiFlow en la página web del UMC
+Cookies                         Lo enlaza a una sección de la página web del UMC para
+                                mejor comprensión del uso de Cookies
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   19 de 86
+             Opción                                                      Función
+Términos de uso (Terms of use)                   Le despliega una ventana con los términos de uso de
+                                                 VigiFlow
+Ayuda (Help)                                     Lo enlaza a la página web de VigiFlow
+Versión MedDRA: 22.1                             Le muestra la versión del diccionario MedDRA que
+                                                 incluye VigiFlow en ese momento
+Barra de           desplazamiento           de
+páginas
+                                                 >: página siguiente
+                                                 >> última página
+                                                 <: página anterior
+                                                 <<: primera página
+
+
+
+
+4.5 Ingreso de un nuevo reporte.
+
+4.5.1        Consideraciones Previas.
+
+  Antes de ingresar manualmente una notificación a VigiFlow deberá considerar lo siguiente
+como criterio para un buen registro de una notificación.
+
+
+4.5.1.1           Detección de duplicidad.
+   VigiFlow al ser una herramienta que se alimenta de información proveniente de múltiples
+fuentes no está exenta de recibir casos duplicados, es decir, notificaciones que contienen la
+misma información, pero con diferente codificación. Es por eso que previo al ingreso de una
+notificación debe cerciorase de que esa notificación no ha sido ingresada con anterioridad por
+su propia organización o por una Unidad de Farmacovigilancia del 3er nivel.
+
+   Para esto, debe utilizar filtros de búsqueda específicos (ver sección 4.4 “Información de la
+pantalla principal”) con la finalidad de detectar duplicidad, como pueden ser:
+
+      Iniciales
+      Sexo
+      Fecha de nacimiento
+      Medicamento sospechoso
+      Reacción/evento (MedDRA)
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             20 de 86
+Si detecta que la notificación ya ha sido ingresada con anterioridad, debe cotejar e identificar si
+la notificación que iba a ingresar tiene información adicional relevante que pudiera modificar el
+reporte que ya se encuentra en VigiFlow (seguimiento); si es así, abra el reporte que
+corresponda a la primera notificación e ingrese la información adicional.
+
+
+
+4.5.1.2           Guardar un reporte.
+
+    Como una buena práctica es importante Guardar el reporte desde el comienzo de ingreso
+de información con el objetivo no perder la información ingresada tras percances como
+desconexión del internet, falla eléctrica, o alguna situación que le impida continuar con el
+llenado del reporte.
+
+    Al dar click en el botón guardar            , le mostrará el siguiente mensaje:
+
+
+
+
+    Si el botón “Guardar” se encuentra en color gris en lugar de color azul, significa que no ha
+agregado información que modifique el reporte.
+
+    Si bien es posible GUARDAR un reporte que no incluye uno o más campos obligatorios, sin
+estos campos no será posible enviar el reporte a la base de datos mundial de la OMS. Por lo que
+será labor fundamental del notificador (quien ingresa manualmente el reporte a VigiFlow) o si
+delega el reporte al nivel anterior, recabar la información faltante para incrementar la calidad de
+información.
+
+     En caso de que requiera salir de la captura de un reporte (al oprimir “Ir a la lista de
+reportes”) y no lo haya guardado en ningún momento, el sistema le mostrará un mensaje como
+el siguiente:
+
+
+
+
+    Elija la opción deseada.
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    21 de 86
+    Para poder ingresar manualmente una notificación/reporte a VigiFlow, debe dar click en la
+opción “Nuevo reporte” de la pantalla principal.
+
+   Al ingresar un reporte nuevo le mostrará la siguiente ventana:
+
+
+
+
+   En la parte superior derecha se muestran los siguientes botones.
+
+
+
+
+      Ir a lista de reportes: regresa a la página inicial de VigiFlow donde se visualiza el listado
+       de reportes.
+      Nuevo reporte: Ingresar un nuevo reporte.
+      VigiLyze: botón habilitado únicamente para el CNFV que le permite abrir la base de datos
+       mundial de reacciones adversas de la OMS.
+      Delegar a organización: ver sección 4.6.4 “Delegación”.
+      Estado del reporte: Abierto: puede atribuir un estatus al reporte para organizar su flujo
+       de trabajo. La configuración predeterminada es “Abierto”, para más detalles de este
+       botón ver sección 4.9 “Funciones del primer, segundo y tercer nivel en la operación de
+       VigiFlow”.
+      Eliminar: ver sección 4.6.5 “Eliminación de un reporte”.
+      Enviar copia: enviar una copia del reporte a la base de datos global de la OMS para
+       permitir su análisis en VigiLize. Esta opción solo está habilitada para el CNFV.
+      PDF/Excel: se despliega un menú con la opción para descargar la versión PDF del
+       reporte.
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    22 de 86
+      Guardar: guarda la información ingresada hasta ese momento. Ver detalles en 4.5.1.2
+       Guardar un reporte.
+
+    Siguiendo con el ingreso de un nuevo reporte, de lado izquierdo se mostrará un menú con
+todas las secciones que componen un reporte:
+
+
+
+
+   De manera amplificada se observa el siguiente menú:
+
+
+
+
+      Del lado derecho encontrará los campos que incluye la sección específica que se
+encuentre marcada en color azul.
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   23 de 86
+       Es posible ingresar la información de la notificación ya sea dando click en cada sección
+del menú izquierdo, o eligiendo la opción “Vista general” en la cual se desplegarán todos las
+secciones y los campos que incluye el reporte.
+
+
+
+4.5.2        Campos obligatorios para completar un reporte
+
+   Es importante mencionar que VigiFlow solicita campos obligatorios para poder establecer un
+reporte como válido, los cuales están basados en los requerimientos internacionales en
+Farmacovigilancia y son los siguientes:
+
+  Sección                                          Campo obligatorio
+Información           Fecha de recepción inicial, Tipo de reporte, Fecha de recepción más reciente
+del reporte           (modificar esta última fecha solo cuando se actualice la información del
+                      reporte, es decir, en un seguimiento), Profesión del notificador primario (lo que
+                      en México se conoce como Informante de acuerdo con la NOM-220-SSA1-2016).
+
+
+
+
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         24 de 86
+Paciente                       Iniciales del paciente o
+                               Sexo o
+                               Fecha de nacimiento o
+                               Edad al comienzo de la reacción o
+                               Grupo etario o
+                               Fecha de análisis junto con el resultado del análisis (sección: Análisis y
+                                procedimientos) o
+                               Si es un reporte Padre/Madre – Hijo
+                                    o Edad gestacional al comienzo de la reacción (si es un feto) o
+                                    o Edad gestacional a la exposición (si es un feto) (sección:
+                                        Medicamento)
+Medicamento                    Por lo menos un medicamento Sospechoso o dos medicamentos
+                                Interactuantes
+                               Nombre del medicamento (Denominación Distintiva o genérica) o
+                               Nombre del medicamento tal como fue reportado por el notificador
+                                primario (en campo libre)
+Reacción                       Reacción / evento (MedDRA) o
+                               Reacción / evento tal como fue reportado por el notificador primario (en
+                                campo libre)
+
+  Cuando se ingresa información en cualquier campo de VigiFlow, este cambia a color
+AMARILLO, diferenciándose de los campos vacíos blanco, como se muestra a continuación:
+
+
+
+
+   Los campos obligatorios se visualizarán en cada sección del reporte mediante los íconos  ,
+y puede explorarlos en cada sección, o en la opción de Vista general que desplegará la lista
+completa de los campos obligatorios en todo el reporte.
+
+
+
+
+                                                         Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                         Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                         Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            25 de 86
+  También encontrará íconos marcados como     que al oprimirlos le mostrará cuadros de
+ayuda para el llenado de un campo en específico, por ejemplo: si da click en el ícono
+correspondiente a “nombre del medicamento” ubicado en el apartado “medicamento” le
+mostrará el siguiente mensaje:
+
+
+
+
+  También debe considerar que hay campos con información privada que el sistema le
+notificará que no será compartida a otros países cuando el reporte se comparta a la base de
+datos mundial, como aparece a continuación:
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   26 de 86
+4.5.3        Información del reporte
+
+  Esta sección está divida en dos subsecciones. La primera hace referencia a la identificación
+del reporte y contiene los siguientes campos:
+
+
+
+
+  Debe incluir la información detallada como se muestra en la siguiente tabla:
+  Nombre del                                  Información requerida
+    campo
+ Título      del Este campo necesariamente se dejará en blanco, únicamente se llenará cuando
+ reporte         el CNFV considere necesario para lo cual el CNFV comunicará a los usuarios de
+                 VigiFlow, qué título o información deberá ingresar en este campo.
+ Tipo         de Encontrará las opciones:
+ reporte              Espontáneo: es aquel reporte que le llega por parte del informante sin
+                         solicitarlo y se da en la práctica clínica habitual.
+                      Reporte de Estudio: elegir esta opción cuando se trate de un reporte de
+                         estudio clínico. Si elige esta opción, deberá llenar la sección
+                         correspondiente a “Información del estudio”Otro: en esta opción quedarán
+                         establecidos los reportes de literatura, notificaciones de reporte
+                         estimulado y de vigilancia activa o “reporte activo”.
+                      No disponible al remitente (desconocido).
+ Fecha        de Se refiere a la fecha en el que el reporte ha sido recibido por primera vez en la
+ recepción       instancia que capturará la información en VigiFlow, ya sea en el primer, segundo
+ inicial         o tercer nivel.
+ Fecha        de Se refiere a la fecha en la que el caso fue registrado por primera vez por el
+ notificación    notificador inicial.
+ inicial         En el caso de notificaciones estimuladas; por estudios de Farmacovigilancia en
+                 busca de RAM, ESAVI, SRAM, se colocará como fecha de notificación inicial la
+                 fecha en la cual se encontró la RAM en el expediente clínico.
+ Fecha        de Esta fecha solo aplicará cuando se quiera ingresar información de seguimiento y
+ recepción más se refiere a la fecha en que se ha recibido información de seguimiento en el
+ reciente        centro de Farmacovigilancia (primer, segundo o tercer nivel).
+ Tipo de emisor Se refiere a la UFV, CEFV, CICFV, CIFV e inclusive el CEFV que está ingresando
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   27 de 86
+Nombre del                                   Información requerida
+  campo
+              manualmente la notificación en VigiFlow.
+              Se despliega un catálogo con las siguientes opciones:
+                     Laboratorio farmacéutico
+                     Profesional de la salud
+                     Centro Regional de Farmacovigilancia (si un reporte es ingresado por
+                       los CEFV, CIFV, CICFV o por sus UFV de tercer nivel, deben elegir esta
+                       opción)
+                     Paciente/consumidor
+                     Autoridad regulatoria (esta opción es solo aplicable para los reportes
+                       que ingresa el CNFV)
+                     Otro (p. e. distribuidor, patrocinador del estudio, organización de
+                       investigación por contrato u organización no comercial)
+Otros Ids del Debe ingresar la codificación asignada para su organización, con base en lo
+reporte       especificado para los CEFV, CICFV, CIFV y UFV.
+              Ejemplos:
+                     CEFV/AGS/00001/2020
+                     CICFV/IMSS/00001/2020
+                     CIFV/HGAEPY/00001/2020
+                     UFV/JAL/ANKER/00001/2020
+              Además, en el caso que se ingrese un seguimiento, deberá añadir un nuevo “Id”,
+              dando click en el signo “más” (+), aparecerá un nuevo campo vacío donde deberá
+              ingresar la codificación asignada para su organización, seguido de una diagonal
+              (/), letra “S” y el número de seguimiento correspondiente a la notificación.
+              Ejemplos: En el caso de un primer seguimiento, es decir, cuando se recibió
+              información actualizada de un reporte por primera vez:
+                     CEFV/AGS/00001/2020/S1
+                     CICFV/IMSS/00001/2020/S1
+                     CIFV/HGAEPY/00001/2020/S1
+                     UFV/JAL/ANKER/00001/2020/S1
+              Ejemplo: Una UFV ingresa un reporte nuevo y posteriormente su primer
+              seguimiento.
+
+
+
+
+                                               Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                               Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                               Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   28 de 86
+ Nombre del                                        Información requerida
+   campo
+                        En este campo se pueden ingresan tantos Ids como lo requiera el emisor con la
+                        finalidad de facilitar la búsqueda de un reporte que puede no ser llevada a cabo a
+                        través de los filtros prestablecidos en VigiFlow. Ejemplos: número interno de
+                        identificación de caso, número de historial clínico de paciente, número de
+                        expediente, código de protocolo en el caso de estudios clínicos, entre otros.
+                        En general se pueden agregar tantos Ids como considere necesarios
+                        aprovechando su utilidad para identificar y encontrar una notificación o un grupo
+                        de notificaciones específicas.
+
+                        Es labor de los CEFV y los CICFV, revisar, verificar y validar la información
+                        contenida en los reportes ingresados por sus UFV (tercer nivel). Una vez validado
+                        dicho reporte, agregará la codificación perteneciente a su CEFV o CICFV
+                        correspondiente.
+                        Ejemplo: Un centro de Farmacovigilancia nivel 2 (CEFV) recibe una notificación de
+                        su UFV correspondiente y posterior a su revisión y validación agrega su
+                        codificación perteneciente.
+
+
+
+
+Id del reporte Una vez que el reporte se guarda por primera vez, el sistema crea este ID, el cual
+de seguridad   está compuesto por los siguientes 3 elementos:
+               <código del país>-<nombre de la organización>-<número consecutivo>
+               Este Id del reporte de seguridad lo puede visualizar en dos secciones en la
+               sección de información del reporte:
+
+
+
+
+Número           de Si el reporte fue ingresado manualmente en VigiFlow, el Id del reporte de
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         29 de 86
+  Nombre del                                        Información requerida
+    campo
+ identificación          seguridad y el Número de Identificación Único Mundial serán los mismos. Solo
+ único mundial           serán diferentes cuando el CNFV importe archivos XML-E2B, en donde el número
+                         de identificación único mundial será representado por el nombre y el país de la
+                         organización (industria farmacéutica) que envió el archivo XML.
+ (Parent Child           Cuando tiene un reporte donde el paciente es el feto, neonato que se sospecha
+    report)              estuvo expuesto a uno / varios medicamentos y ha experimentado una / varias
+   Reporte               reacciones adversas, debe seleccionar esta opción. Cuando lo haga, en la sección
+   parental              de “paciente”, se habilitarán campos de información específicos para este tipo de
+                         reporte que se deberán llenar, así también, en la sección de “Medicamento” se
+                         desplegarán dos campos específicos sobre la “Vía de administración” que utilizó
+                         el padre o la madre y la edad gestacional al momento de la exposición. Esta
+                         sección es fundamental para atender los reportes de la exposición a
+                         medicamento o vacuna antes y durante el embarazo, así como su seguimiento
+                         correspondiente que establece la NOM-220-SSA1-2016.
+                         Existen casos donde el padre puede incidir en la reacción adversa presentada en
+                         el feto. Ejemplo: Un fármaco que causa mutaciones al material genético de los
+                         espermatozoides los cuales pueden provocar alteraciones en el embrión;
+                         eliminación de un fármaco a través del líquido seminal.
+
+
+
+  La segunda subsección está conformada por 6 pestañas de información las cuales
+denominaremos “componentes”. Cada componente debe incluir información detallada cuando
+sea aplicable, como se muestra a continuación:
+
+
+
+
+    Componente “Información del notificador primario”
+
+Para el caso de nuestra normativa, esta sección debe ser interpretada como información del
+“informante”, que puede tratarse de un paciente/consumidor o profesionales de la salud. En
+esta sección se debe capturar la información correspondiente a la figura que notificó el caso al
+emisor.
+
+
+
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02         30 de 86
+Debe incluir información detallada como se muestra en la siguiente tabla:
+       Campo                            Información requerida del informante
+Profesión          del Elegir entre las opciones: “médico”, “farmacéutico”, “otro profesional de
+notificador            la salud”, “consumidor u otro profesional”.
+Título                 Si elige “médico” en el campo de profesión del notificador, en este
+                       campo puede agregar la especialidad del médico o si elige “otro
+                       profesional de la salud” puede especificar el perfil específico de este
+                       profesional, así también si elige “otro profesional”.
+País del notificador   En automático aparecerá México. No modificar.
+Primario               Es posible agregar más de un notificador en caso de que el reporte haya
+                       pasado por medios físicos como el formato en papel antes de llegar a
+                       usted, pero solo uno debe marcarse como “primario” en esta casilla.
+Apellido               Apellidos paterno y materno del informante
+Nombre                 Nombre(s) del informante
+Departamento           Si es un médico, farmacéutico o profesional de la salud que labora en
+                       una institución de salud, colocar el departamento o área específica
+                       dentro de la institución desde donde se informó del caso.
+Organización           Si es un médico, farmacéutico o profesional de la salud que labora en
+                       una institución de salud, colocar el nombre de esta.
+Dirección              Calle, número exterior e interior, colonia
+Ciudad                 Municipio o demarcación territorial
+Estado o provincia     Entidad Federativa
+Código postal          CP
+Teléfono               Teléfono con lada
+Correo electrónico     Correo electrónico
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   31 de 86
+    A excepción del campo “profesión del notificador” toda la demás información ingresada en
+esta sección no será compartida a la base de datos mundial de la OMS.
+
+    Cabe señalar que si el notificador primario/original es un paciente/consumidor, será difícil
+recabar toda la información solicitada en la tabla anterior además de que hay campos no
+aplicables para este informante (departamento y organización), por lo que hay que elegir los
+campos aplicables al paciente/consumidor.
+
+     Componente “Información del emisor”
+    Para el caso de nuestra normativa, esta sección debe interpretarse como la información del
+“notificador” del caso (la persona que entrega la información relativa a una SRAM, RAM, EA,
+ESAVI o cualquier problema de seguridad relacionado con el uso de medicamentos y vacunas al
+CNFV), por tanto, aquí debe ingresar la información correspondiente a quien está ingresando el
+reporte manualmente en VigiFlow. Los emisores podrán ser las UFV que reportan a los CEFV o a
+los CICFV. También podrán ser los propios CEFV, CICFV, CIFV o incluso el CNFV.
+
+
+
+
+    Los campos solicitados en esta sección son similares a los del notificador primario/original,
+pero hay que mencionar que, para el emisor, si es posible contar con la información de todos
+los campos requeridos. Para los siguientes campos, se sugiere colocar la siguiente información:
+     Organización: nombre del hospital, clínica donde se encuentra la UFV del tercer nivel o,
+       nombre de la dependencia, instituto, hospital del segundo nivel o, nombre de la
+       autoridad regulatoria regional o nacional (cuando un CEFV o COFEPRIS son los emisores).
+     Departamento: UFV, CEFV, CICFV, CIFV, CENSIA, DGE o CNFV.
+     Título: especifique la especialidad (si aplica) del profesional de la salud que funge como
+       emisor.
+
+  Ejemplos para identificar al notificador primario/original y al emisor en un reporte.
+   a) Un paciente informa al responsable de la UFV del Hospital General de zona X sobre una
+      SRAM que experimentó. En este caso, el paciente es el notificador primario/original
+      (informante) y la UFV (tercer nivel) que ingresa el reporte a VigiFlow es el “emisor”.
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   32 de 86
+   b) Un profesional de la salud envía un reporte en papel al CEFV/CICFV/CIFV y este lo captura
+      en VigiFlow. El profesional de la salud será el notificador primario/original y el
+      CEFV/CICFV/CIFV será el emisor.
+   c) El CNFV recibe una notificación de un paciente vía telefónica. El paciente es el notificador
+      primario/original y el CNFV será el emisor.
+
+   En determinadas circunstancias, tanto el notificador primario/original como el emisor son la
+misma figura.
+   Ejemplo: una UFV que lleva a cabo búsqueda intencionada de SRAM con los pacientes de su
+institución, hospital, clínica, etc.
+
+    Componente “Relacionar reportes”
+
+
+
+
+    En esta sección podrá vincular reportes que considere pueden estar relacionados por alguna
+circunstancia. Para ello, deberá colocar el o los títulos de los reportes relacionados (también
+puede ingresar el Id del reporte de seguridad o el Número de identificación único mundial) en el
+campo “Reporte relacionado” y describir en el campo “Razón”, por la cuales considera que los
+reportes se relacionan.
+    Esta sección puede ser aprovechada para el tema de los problemas relacionados con el uso
+de medicamentos y vacunas, como pueden ser las sobredosis accidentales en una unidad
+médica, uso de un medicamento posterior a la fecha de caducidad, errores de medicación,
+sospecha de falsificación de un medicamento, exposición ocupacional, entre otros. Dentro de la
+NOM-220-SSA1-2016, puede relacionarse con el reporte de dos casos graves o más, semejantes
+en el mismo lugar, con el mismo medicamento y del mismo lote que deben notificarse
+inmediatamente sin exceder las 48 horas una vez que se tiene conocimiento de los casos.
+
+    Componente “Notas”
+
+
+
+
+   Este es un campo de texto libre puede agregar comentarios internos sobre el reporte, por
+ejemplo, especificar tipo de reporte: estimulado, activo. Esta información no se compartirá a la
+base de datos mundial ni se exportará en Excel y PDF.
+
+    Componente “Reporte de literatura”
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   33 de 86
+   Si cuenta con un reporte de literatura y lo especificó en el campo Tipo de reporte colocando la
+opción “Otro”, en esta sección debe colocar la(s) referencia(s) bibliográfica(s) de donde obtuvo el
+reporte. Las citas deben colocarse en Estilo Vancouver.
+   Puede agregar otra referencia dando click en el ícono        .
+
+     Componente “Información del estudio”
+    Si el reporte se trata de un caso de Estudio clínico y lo especificó en el campo tipo de reporte
+como “reporte de estudio clínico”, en la sección de información del estudio deberá colocar
+información adicional sobre éste.
+
+
+
+
+      Tipo de estudio: deberá elegir entre “Ensayos clínicos”, “Uso individual del paciente” u
+       “Otros”.
+         Elegir Ensayos clínicos para estudios clínicos de intervención (Fase I a IV)
+         Elegir Uso individual del paciente para casos de Uso compasivo.
+         Elegir Otros estudios para casos provenientes de monitoreo intensivo, cohortes de
+           monitoreo de eventos, estudios de Farmacoepidemiología y Farmacoeconomía. Los
+           estudios de Farmacovigilancia pueden clasificarse en este rubro (incluidos los
+           contenidos en los Planes de Manejo de Riesgos).
+
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     34 de 86
+      Nombre del estudio: debe colocar el nombre del estudio preferentemente como está
+       establecido en la autorización emitida por la Comisión de Autorización Sanitaria. En caso
+       de no contar con este nombre, colocar el titulo tal como fue reportado.
+
+
+
+
+      Study sponsor number: número de patrocinador del estudio.
+      Study registration number: número de registro del estudio o número de protocolo en
+       caso de contar con él, preferentemente como está establecido en la autorización emitida
+       por la Comisión de Autorización Sanitaria.
+      Study registration country: país de registro del estudio.
+
+
+
+4.5.4        Paciente
+
+  Esta sección es fundamental para la identificación del paciente. Debe recordar cuáles son los
+campos obligatorios en esta sección para tener un reporte válido.
+
+
+4.5.4.1           Campos básicos
+
+
+
+
+Debe incluir la información detallada como se muestra en la siguiente tabla:
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   35 de 86
+      Campo                                  Información requerida del informante
+ Iniciales*                Deberá iniciar en mayúsculas colocando la primera letra del apellido
+                           paterno, seguida de la primera letra del apellido materno y por último
+                           colocar la primera letra del (los) nombre(s)
+                           Ejemplo: Raúl Alberto Aceves González, deberá codificarse de la siguiente
+                           manera
+                               Primera letra del apellido paterno = A
+                               Primera letra del apellido materno= G
+                               Primera letra del (los) nombre(s)= RA
+
+                           Quedando de la siguiente manera:
+                                                                  AGRA
+                           En el caso de que el reporte provenga de un estudio clínico, se sustituirán
+                           las iniciales por el código de identificación asignado al sujeto de estudio.
+                           En el caso de no tener este dato, dejar el campo en blanco.
+ Sexo                      Elija la opción según corresponda entre masculino, femenino o desconocido.
+ Fecha de última           Esta casilla solo se habilitará si eligió femenino en el campo de sexo. Si
+ menstruación              considera relevante para el caso y cuenta con la información, colocar la
+                           fecha en el formato dd/elegir mes/aaaa. Se podrá ingresar como mínimo el
+                           año.
+ Peso (kg)                 Ingrese la información en kilogramos y si es necesario utilice punto como
+                           separador decimal.
+ Altura (cm)               Ingrese la información en centímetros.
+ Fecha        de           Colocar la fecha de nacimiento en el formato dd/elegir mes/aaaa. Se podrá
+ nacimiento                ingresar como mínimo el año.
+ Edad         al           Si no conoce la fecha de nacimiento puede agregar la edad al momento que
+ comienzo de la            sucedió la reacción en el campo correspondiente.
+ reacción
+ Grupo etario    No es necesario indicar el grupo etario al que pertenece el paciente, sólo si
+                 desconoce tanto la fecha de nacimiento como la edad al comienzo de la
+                 reacción puede ingresar el grupo etario del paciente/consumidor. Elija
+                 entre: feto, neonato, infante, niño, adolescente, adulto o adulto mayor.
+
+* Esta información no será compartida a la base de datos mundial de la OMS.
+
+
+
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          36 de 86
+4.5.4.2          Campos adicionales
+
+   Existen campos adicionales donde podrá añadir información sobre la investigación de un
+caso grave y la causa de muerte.
+
+
+
+
+  En esta sección debe incluir información detallada como se muestra en la siguiente tabla:
+          Campo                           Información requerida del informante
+Número                          de Si cuenta con un número de identificación, este campo puede ser
+identificación                  del utilizado para identificar al médico especialista que trató al
+especialista*                       paciente.
+
+Número                          de Si se cuenta con un número de identificación, este campo puede
+identificación                  del ser utilizado para identificar al médico general que trató al
+médico general*                     paciente.
+
+Número de expediente Si cuenta con un número de expediente clínico, puede aportar la
+hospitalario*        información en este campo.
+
+Número                           de Si se llevó a cabo una investigación sobre el caso y cuenta con un
+identificación           de      la número de investigación, colocar el identificador en este campo.
+investigación*
+Fecha de muerte                            Ingrese la información si cuenta con ella en el formato dd/elegir
+                                           mes/aaaa. Se podrá ingresar como mínimo el año.
+¿Se realizó autopsia?                      Si conoce la información, señale si se realizó la autopsia
+                                           habilitando la casilla correspondiente (SI, NO, DESCONOCIDO). En
+                                           caso de haber habilitado alguna opción y requiere eliminarla
+                                           puede limpiar las casillas oprimiendo la opción “Vaciar campos”.
+
+                                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 37 de 86
+         Campo                                      Información requerida del informante
+                                        Al elegir “SI” se desplegará la opción “Causa de muerte
+                                        determinada por autopsia”.
+
+
+
+
+                                        Puede ingresar la causa de muerte determinada por autopsia a
+                                        través del catálogo del diccionario MedDRA (busque y seleccione el
+                                        término preferido en MedDRA (LLT) que más se acerque a la causa
+                                        de muerte determinada por la autopsia) o a través de texto libre
+                                        en el campo “Causa de muerte determinada por autopsia” (incluir
+                                        la causa de muerte determinada por autopsia con palabras o
+                                        frases cortas)
+                                        Si elige hacerlo a través del catálogo MedDRA puede hacerlo
+                                        escribiendo el término deseado en el campo, y se desplegará las
+                                        opciones que se acerquen a su búsqueda, o puede elegirlo
+                                        directamente navegando en la jerarquía completa de MedDRA con
+                                        el ícono     . Cuando lo haya elegido, como se muestra en la
+                                        siguiente imagen:
+
+
+                                        Al oprimir el ícono   , se desplegará las jerarquías superiores del
+                                        término elegido, así como otros términos de bajo nivel. De esa
+                                        manera, puede verificar fácilmente si hay otro término que se
+                                        adecúe más al informado por el notificador inicial y que esté
+                                        relacionado con el mismo concepto médico del término preferido
+                                        (PT).
+
+
+
+
+                                                           Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                           Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                           Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 38 de 86
+             Campo                                      Información requerida del informante
+
+
+
+
+ Causa de muerte                            Si no cuenta con información sobre la autopsia y el reporte
+                                            contiene información sobre la causa de muerte, la puede agregar
+                                            como:
+                                                Causa de muerte (MedDRA): busque y seleccione el término
+                                                   más bajo de MedDRA (LLT) o el término preferido (PT) que
+                                                   más se acerque a la causa de muerte reportada,
+                                                   escribiendo el término deseado en el campo o puede
+                                                   elegirlo directamente navegando en la jerarquía completa
+                                   de MedDRA con el ícono       .
+                                Causa de muerte tal como la reportó el notificador
+                                   primario/original: en este campo de texto libre registrar la
+                                   causa de muerte con palabras o frases cortas.
+* La información contenida en estos campos no será compartida a la base de datos mundial de
+la OMS.
+
+    Si en la sección Información del reporte habilitó la casilla “Reporte Padres-hijo (Parent Child
+report)”, deberá llenar los campos de la sección “Paciente” con la información correspondiente al
+neonato o infante (no totalmente aplicables a un feto) del mismo modo corresponderán a los
+datos de la sección “historial clínico”.
+   En esta sección se desplegarán campos adicionales para añadir información sobre los padres,
+la cual se resume a continuación:
+     Información del padre/madre: Datos de identificación (iniciales, sexo, peso, estatura,
+        entre otros): llenar conforme a lo establecido en los campos del paciente.
+     Historia clínica parental previa: ingresar la historia clínica relevante, por ejemplo,
+        enfermedades, condiciones como embarazo, cirugías, traumas psicológicos, factores de
+        riesgo, entre otros, esto mediante catálogo MedDRA o texto libre. Fechas de inicio y
+        término de las enfermedades, así como comentarios del médico tratante. Si quiere
+       agregar otra condición relevante en la historia clínica, debe oprimir el icono                       .
+
+
+                                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 39 de 86
+      Tratamiento previo parental: En esta sección se ingresarán los medicamentos relevantes
+       administrados previamente a los padres. Puede incluirse también la experiencia previa
+       con medicamentos similares. Se registra en texto libre la denominación distintiva,
+       denominación genérica y el grupo terapéutico. También es posible ingresar el motivo de
+       prescripción del medicamento (en catálogo MedDRA), alguna RAM que hayan
+       experimentado los padres con dicho medicamento (colocar “Ausencia de reacción
+       adversa” si los padres no han sufrido alguna reacción), las fechas de inicio y término del
+       tratamiento (es posible ingresar al menos el año). Si quiere agregar otro medicamento
+       en esta sección, debe oprimir el ícono     .
+
+
+
+4.5.5        Caso narrativo e información adicional
+
+  En esta sección encontrará dos campos en texto libre como se muestra en la siguiente
+imagen:
+
+
+
+
+   Caso narrativo: deberá colocar la narrativa del caso con las palabras y frases utilizadas por el
+informante (tal cual fue notificado por éste), manteniendo la narrativa original.
+
+       En caso de actualizar un reporte (Ver punto 4.7 Ingreso de información adicional de un
+reporte (SEGUIMIENTO)) se deberá agregar una línea divisoria al final del texto previo del campo
+“Caso narrativo” y debajo de esta colocar la leyenda “Seguimiento (Numero de seguimiento)” y
+posteriormente escribir la información adicional.
+   Ejemplo:
+
+
+
+
+  Comentarios del notificador: dado que la regulación de Farmacovigilancia en México solicita
+una clasificación por severidad y por calidad de información que no es solicitada por otros
+países, VigiFlow no cuenta con los campos específicos para estas dos clasificaciones. Por tanto,
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    40 de 86
+se solicita que las UFV, los CEFV, CIFV y los CICFV, utilicen este campo libre para colocar la
+siguiente información:
+    Severidad de las manifestaciones (con base a lo establecido en el numeral 8.1.6 de la
+       NOM-220-SSA1-2016): leve, moderado y severo. Solo para manifestaciones clasificadas
+       como NO GRAVES.
+    Grado de información (con base a lo establecido en el numeral 8.1.4 de la NOM-220-SSA1-
+       2016) del caso: grado 0 a 3.
+    Referencias Bibliográficas: se ha establecido para UFV, CEFV, CICFV y CIFV como
+       metodología para la evaluación de causalidad el algoritmo de Naranjo, por ello deben
+       proporcionarse las referencias bibliográficas utilizadas que respalden la clasificación
+       causal. Las citas deben colocarse en Estilo Vancouver.
+
+   Ejemplo:
+
+
+
+
+  Cabe señalar que la información contenida en estos campos es exportable al formato Excel
+para su análisis.
+
+
+
+4.5.6        Historia clínica y tratamiento médico previo relevante
+   En esta sección debe ingresar información relevante (que ayude a la evaluación causal) de la
+historia clínica y condiciones relevantes (enfermedades, condiciones como embarazo, cirugías,
+trauma psicológico, factores de riesgo, entre otros) del paciente y el tratamiento médico previo
+(medicamentos relevantes administrados previamente al paciente y que se han suspendido
+previo a la ocurrencia de las SRAM; puede incluirse también la experiencia previa con
+medicamentos similares).
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   41 de 86
+Debe incluir información detallada como se muestra en la siguiente tabla:
+
+    Sección                Campo                               Información requerida
+ Historia              Historia             Puede agregar una condición relevante a través del catálogo del
+ Clínica               clínica              diccionario MedDRA (busque y seleccione el término más bajo de
+                       relevante            MedDRA (LLT) o término preferido (PT) que más se acerque a la
+                       (MedRA)              condición buscada). Lo puede hacerlo escribiendo el término
+                                            deseado en el campo en el cual se desplegará las opciones que se
+                                            acerquen a su búsqueda, o puede elegirlo directamente
+                                            navegando en la jerarquía completa de MedDRA con el ícono .
+                                            Cuando halle, selecciónelo como se muestra en la siguiente
+                                            imagen:
+
+
+
+
+                                            Al oprimir el ícono   , se desplegará las jerarquías superiores del
+                                            término elegido, así como otros términos de bajo nivel. De esa
+                                            manera, puede verificar fácilmente si hay otro término que se
+                                            adecúe más al notificado y que esté relacionado con el mismo
+                                            concepto médico del PT.
+
+
+
+
+                       Historia             También puede agregar otra información de las condiciones
+                       clínica              relevantes a través de texto libre en este campo cuando no puede
+                       relevante            ser estructurada en MedDRA. Es labor del segundo nivel de
+                                            operación de VigiFlow (o del primer nivel cuando aplique), revisar
+                                            esta información en texto libre y pasarla a un término
+                                            estandarizado en MedDRA.
+
+                                                           Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                           Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                           Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             42 de 86
+   Sección                 Campo                       Información requerida
+                       Fecha     de
+                                Fecha cuando inició con la condición relevante reportada. Se
+                       inicio   puede ingresar al menos el año.
+                       Fecha     de
+                                Fecha cuando terminó la condición relevante reportada. Se puede
+                       término  ingresar al menos el año. Si la condición médica persiste, dejar en
+                                blanco esta fecha
+               ¿Continúa?       Seleccionar si la condición médica persiste (continúa). En caso de
+                                haber habilitado alguna opción y requiere eliminarla puede
+                                limpiar las casillas oprimiendo la opción “Vaciar campos”.
+               Comentarios Puede agregar información respecto a comentarios del médico
+               del médico       tratante sobre la condición relevante.
+Tratamiento Tratamiento Se refiere al tratamiento que el paciente tomó en algún momento
+médico         médico           previo a la reacción adversa y que ha dejado de consumir. De
+previo         previo           continuar con el tratamiento, este corresponderá a un
+                                medicamento concomitante y deber registrarse en la sección
+                                “Medicamento”.
+                                En este campo de texto libre debe colocar la denominación
+                                distintiva y denominación genérica entre paréntesis.
+                                Ejemplo: Doloron (ketorolaco)
+               Indicación       Ingresar a través de diccionario MedDRA el motivo de
+               (MedRA)          prescripción del tratamiento médico previo. Busque y seleccione
+                                el término de más bajo (LLT) o término preferido (PT) que más se
+                                acerque al término notificado.
+               Reacción         Si el paciente experimentó alguna reacción adversa con este
+               (MedRA)          tratamiento médico previo, puede registrarlo en este campo
+                                mediante el catálogo MedDRA. Busque y seleccione el término de
+                                más bajo (LLT) o término preferido (PT) que más se acerque al
+                                término de reacción adversa deseado. Si el paciente no tuvo
+                                ninguna reacción con este medicamento, debe colocar “Ausencia
+                                de reacción adversa”
+               Fecha       de Fecha de inicio del tratamiento médico previo. Se puede ingresar
+               inicio           al menos el año.
+               Fecha       de Fecha de término del tratamiento médico previo. Se puede
+               término          ingresar al menos el año. Si el tratamiento continúa, dejar en
+                                blanco este campo.
+ Si quiere agregar otra condición relevante u otro medicamento como tratamiento previo en
+esta sección, debe oprimir el ícono         . Es posible eliminar condiciones relevantes o
+medicamentos adicionales oprimiendo el ícono      .
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   43 de 86
+4.5.7        Reacción
+
+  En esta sección deberá registrarse la(s) SRAM, RAM, EA, ESAVI o cualquier otro problema de
+seguridad relacionado con el uso de medicamentos y vacunas.
+
+La sección de Reacción Adversa se observa de la siguiente manera:
+
+
+
+
+      El sistema permite ingresar información sobre una reacción mediante la siguiente forma:
+   a) Mediante el diccionario MedDRA.
+   b) Usando el campo libre (Reacción / evento tal como fue reportada por el notificador
+      primario / original). Este campo puede ser usado cuando no encuentra un término
+      MedDRA adecuado,
+      Se solicita dejar ambas opciones, tanto lo que se informó originalmente como el término
+      MedDRA que le corresponde, de esta manera y si es necesario, se podrá analizar la
+      relación entre el término tal como fue reportado por el notificador primario / original y el
+      término ingresado por el emisor.
+      Debe considerarse que las reacciones ingresadas en texto libre no se podrían buscar
+      desde los filtros de búsqueda de la pantalla principal de VigiFlow.
+
+       Debe incluir la información detallada como se muestra en la siguiente tabla:
+
+      Campo                                      Información requerida del informante
+ Reacción / evento               Puede agregar una condición relevante a través del diccionario MedDRA
+    (MedDRA)                     (busque y seleccione el término más bajo de MedDRA (LLT) o término
+                                 preferido (PT) que más se acerque a la condición notificada). Lo puede
+                                 hacer escribiendo el término deseado en el campo en el cual se
+                                                         Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                         Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                         Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           44 de 86
+                                desplegará las opciones que se acerquen a su búsqueda, o puede
+                                elegirlo directamente desplegando la estructura completa de MedDRA
+                                con el ícono    . Cuando lo haya elegido, como se muestra en la
+                                siguiente imagen:
+
+
+
+
+                                Al oprimir el ícono     , se desplegará las jerarquías superiores del
+                                término elegido, así como otros términos de bajo nivel. De esa manera,
+                                puede verificar fácilmente si hay otro término que se adecúe más al
+                                informado y que esté relacionado con el mismo concepto médico del PT.
+
+
+
+
+ Reacción / evento              Ingrese el (los) términos empleados por notificador original / primario
+    tal como fue                en el lenguaje con que fue recibido el relato para describir la reacción.
+  reportada por el
+notificador primario
+      / original
+ País de ocurrencia             De las SRAM, RAM, EA, ESAVI o cualquier otro problema de seguridad
+                                relacionado con el uso de medicamentos y vacunas. En automático
+                                aparecerá México, de no ser así, puede elegirlo del catálogo.
+Fecha de comienzo               Fecha de inicio de la SRAM, RAM, EA, ESAVI o cualquier otro problema de
+                                seguridad relacionado con el uso de medicamentos y vacunas. Lo
+                                sugerido es contar con la fecha completa, pero en un reporte expedito,
+                                puede ingresar al menos el año.
+      Horario                   Si cuenta con el dato, ingrese la hora (horas y minutos) en formato de
+                                24 horas, en la que inició la reacción reportada. Considerar:
+                                12:00 para mediodía
+                                00:00 para medianoche
+     Fecha de                   Fecha de finalización de la reacción adversa. Lo sugerido es contar con
+                                                         Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                         Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                         Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            45 de 86
+    finalización                la fecha completa, pero en un reporte expedito, puede ingresar al
+                                menos el año. Si la reacción continúa, debe dejar en blanco este campo.
+                                Si se da una fecha en este campo, debe haber congruencia con la
+                                información colocada del campo “resultado”, ya que solo aplicarían las
+                                opciones Recuperado/resuelto y Recuperado/resuelto con secuelas.
+      Horario                   Si cuenta con el dato, ingrese la hora (horas y minutos) en formato de
+                                24 horas, en la que finalizó la reacción reportada. Considerar:
+                                12:00 para mediodía
+                                00:00 para medianoche
+     Duración                   Solo se podrá calcular la duración, si las fechas de ocurrencia y
+                                finalización están completas (día/mes/año).
+    Resultado                   Elegir el resultado de la reacción adversa entre: Recuperado/resuelto,
+                                Recuperando/resolviendo,           No         recuperado/no          resuelto,
+                                Recuperado/resuelto con secuelas, Fatal o Desconocido.
+                                Si elige la opción “fatal”, debe ser congruente con el criterio de
+                                gravedad/seriedad.
+  Confirmación                  Habilitar “SI”, cuando el reporte provenga de un profesional de la salud
+ médica realizada               que confirmó el evento. Dado que las UFV, CEFV, CICFV, CIFV y demás
+por un profesional              tienen como notificadores profesionales de la salud, casi todos los
+    de la salud                 reportes estarán marcados con la opción “SI”. La excepción será cuando
+                                el notificador original sea un paciente o consumidor. En caso de haber
+                                habilitado alguna opción y requiere eliminarla, puede limpiar las casillas
+                                oprimiendo la opción “Vaciar campos”.
+        Grave                   Elegir la casilla “SI” cuando la reacción cumpla con los criterios de
+                                gravedad/seriedad establecidos. En caso de haber habilitado alguna
+                                opción y requiere eliminarla, puede limpiar las casillas oprimiendo la
+                                opción “Vaciar campos”. Para cada reacción debe aplicarse la
+                                clasificación de gravedad, por lo que podría haber en un caso
+                                reacciones graves y otras no graves.
+Criterio de seriedad            Estos criterios solo se habilitarán si se elige la casilla de gravedad.
+                                Elegir entre muerte, discapacidad, amenaza de vida, anomalía
+                                congénita, causó o prolongó la hospitalización u Otra condición médica
+                                importante (lo que en la NOM-220-SSA1-2016 se especifica cómo “son
+                                considerados médicamente importantes”)
+
+
+
+
+                                                           Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                           Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                           Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             46 de 86
+    Si requiere agregar otra reacción debe oprimir el ícono          . Al agregar más de una
+reacción, las podrá visualizar en el menú izquierdo, como se muestra a continuación:
+
+
+
+
+   Si requiere eliminar una reacción que agregó, oprima el ícono          .
+
+
+
+
+4.5.8        Medicamento
+
+  Esta sección puede ser dividida en 4 cuadrantes fundamentales:
+   A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e interactuantes.
+   B. Información sobre la dosis utilizada.
+   C. Información sobre la indicación terapéutica.
+   D. Intervalo de tiempo entre la administración del medicamento sospechoso y la ocurrencia
+      de la reacción.
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   47 de 86
+                                            A
+                                                                                                        B
+
+
+
+
+                                            C
+
+
+
+                                                                                                       D
+
+
+Debe incluir la información detallada como se muestra en la siguiente tabla:
+
+       A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e
+                                          interactuantes
+Rol     del Debe elegir entre medicamento “sospechoso”, “concomitante”, “interactuante” o
+medicamento “medicamento no administrado”.
+             Debe considerar cuál es el medicamento sospechoso y los demás
+             corresponderán a medicamentos concomitantes (salvo en algunas excepciones
+             en donde se justifique ingresar más de un medicamento sospechoso).
+             Si la SRAM, EA, RAM, ESAVI es debida a la interacción entre dos o más
+             medicamentos, debe dejar estos medicamentos como interactuantes, ya que el
+             sistema le solicitará al menos dos medicamentos para una interacción.
+             Dado que VigiFlow está preparado para recibir otros problemas relacionados
+             con el uso de medicamentos y vacunas donde cabe la posibilidad de no haber
+             administrado el medicamento (p.e. probable falsificación), es posible
+             seleccionar del catálogo la opción “medicamento no administrado”
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   48 de 86
+            A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e
+                                           interactuantes
+
+WHODrug     VigiFlow cuenta con un catálogo de medicamentos que alimentan
+Nombre del periódicamente las autoridades regulatorias que utilizan esta plataforma. Podrá
+medicamento buscar la denominación distintiva (marca comercial) si cuenta con ella o la
+            denominación genérica. Debe considerar que este campo es sensible a los
+            acentos (´), además de que el nombre de algunos ingredientes activos se
+            encuentra en inglés, por lo que debe dar preferencia a la búsqueda de términos
+            en español y en caso de no encontrar el término en español, elegirlo en inglés.
+            Al ingresar el nombre de un medicamento deberá considerar la información
+            con la que se cuenta acerca del nombre e introducirlo de acuerdo al siguiente
+            orden de prioridad:
+                1. Denominación distintiva: Ingresar el nombre del medicamento de
+                   acuerdo con la denominación distintiva y corroborar que el(los)
+                   ingrediente(s) activo(s) corresponden exactamente al medicamento, esto
+                   debido a que el nombre comercial de un medicamento en México puede
+                   ser el mismo en otro país, pero los principios activos pudieran ser
+                   diferentes.
+
+                                Ejemplo: La denominación distintiva que se busca es NOLOTIL
+                                (Metamizol magnésico/ Dextropropoxifeno)
+                                                         a                                                   b
+
+
+
+
+                               En este caso se elegirá la opción “b”.
+
+                           2. Denominación genérica: Ingresar el medicamento con la denominación
+                              genérica y corroborar que los compuestos del(los) ingrediente(s)
+                              activo(s) corresponden exactamente al indicado en el medicamento.
+                           3. En caso de no contar con el nombre completo del fármaco, buscar en el
+                              catálogo el nombre del ingrediente activo sin la sal del compuesto.
+                              Ejemplo: Sólo se cuenta, con el nombre genérico “diclofenaco”; en el
+                              catálogo al escribir “diclofenaco” se desplegarán las siguientes opciones:
+                              “diclofenac sodium”, “diclofenac potassium”, “diclofenac diethylamine”,
+                              “diclofenac”, entre otros. Se deberá elegir la opción “diclofenac”
+
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            49 de 86
+        A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e
+                                       interactuantes
+                                                       a                                                   b
+
+
+
+
+                            En este caso, se elegirá la opción b.
+
+                 En caso de no encontrar en el catálogo el (los) medicamento(s) o fármaco(s)
+                 deseados, debe colocarlo en el campo “nombre del medicamento tal como
+                 fue reportado por el notificador inicial / original”. Debe considerar que los
+                 campos estructurados, es decir, los que están en los catálogos como MedDRA o
+                 WHODRUG entre otros, permiten generar un mejor análisis de información y
+                 son susceptibles a búsquedas desde la pantalla principal de VigiFlow.
+
+                 En el caso de Estudios clínicos, en especial estudios comparativos, es posible
+                 que no se encuentren en el catálogo la combinación de fármacos en estudio y
+                 no se sabe cuál pueda ser el sospechoso, por lo que deberá agregar otro
+                 medicamento, dar click en el botón        e ingresar las especificaciones
+                 correspondientes al segundo fármaco.
+                 Cabe señalar que el catálogo de WhoDrug cuenta con la opción de “placebo”
+                 como nombre del medicamento cuando se requiera.
+                 Ejemplo.
+                 Cuando se compara el medicamento en estudio Vs el placebo; se ingresa el
+                 placebo como otro medicamento. Como se muestra en el siguiente ejemplo:
+
+
+
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             50 de 86
+         A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e
+                                          interactuantes
+Nombre del En este campo debe colocar el nombre del medicamento o fármaco tal cual le
+medicament fue reportado por el informante (si aplica). Se sugiere colocar la denominación
+o tal como distintiva en caso de contar con ella y entre paréntesis el (los) activo(s) en el
+fue            orden conforme lo indica el marbete.
+reportado      También puede utilizar este campo cuando, después de una búsqueda en el
+por         el catálogo WHODRUG, no halló el medicamento o fármaco deseado. Debe tener
+notificador    presente que la información ingresada en este campo de texto libre no será
+inicial      / reconocida para el proceso de filtrado desde la pantalla principal de VigiFlow.
+original
+
+
+
+
+Concentració         Debe ingresar la concentración establecida en el marbete del medicamento.
+n                    Ejemplo: 50 mg.
+                     Para medicamentos combinados (que cuentan con más de un principio activo)
+                     debe agregar la concentración de todos los activos tal cual el orden como se
+                     despliegan en el catálogo de WHODRUG.
+                     Ejemplo: Se tiene la información ALIN (Dexametasona 0.5, fenilefrina 5.0mg,
+                     neomicina 3.5mg)
+
+
+
+
+Laboratorio          Cuando selecciona un medicamento (denominación distintiva) en el catálogo
+titular  del         WHODRUG, es posible que el sistema presente en este campo una lista de
+registro             laboratorios farmacéuticos predefinidos. Puede elegir el correcto de acuerdo
+(WHODrug)            con el marbete del medicamento. Si no encuentra el nombre del laboratorio
+                     descrito en esta lista prestablecida, debe dejar en blanco este campo y colocar
+                     el nombre correcto del laboratorio titular en el campo “laboratorio titular del
+                     registro”)
+
+
+
+                                                     Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                     Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                     Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       51 de 86
+            A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e
+                                           interactuantes
+
+
+
+
+Laboratorio  En caso de no poder elegir el laboratorio titular del registro sanitario del
+titular  del medicamento reportado del catálogo arriba mencionado, colocarlo en este
+registro     campo.
+
+
+
+País       de Debe colocar el país de autorización del medicamento.
+autorización
+
+
+              Para situaciones excepcionales el CNFV determinará y comunicará a los
+              emisores la forma de cómo utilizar este campo.
+País donde se Debe colocar el país de autorización del medicamento que, bajo la regulación
+obtuvo     el nacional, debe ser México en automático, salvo algunas excepciones (p.e.
+medicamento importación de medicamentos por emergencia epidemiológica o si el
+              medicamento fue importado de otro país para uso compasivo). Para situaciones
+              excepcionales el CNFV determinará y comunicará a los emisores la forma de
+              cómo utilizar este campo.
+
+
+
+
+Ingrediente          En este campo se despliega un listado de los componentes de un medicamento.
+sospechoso           Cuando se tiene la certeza de que un componente, distinto al principio activo,
+                     es causante de la SRAM, EA, ESAVI, puede elegirlo de este catálogo. De lo
+                     contrario, debe dejar la opción “Principio activo”.
+
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02       52 de 86
+            A. Información sobre el(los) medicamentos(s) sospechoso, concomitantes e
+                                           interactuantes
+
+
+
+
+Para agregar otro medicamento debe oprimir el ícono                   . Si desea eliminar la sección debe
+oprimir el ícono
+
+
+                                       B. Información sobre la dosis utilizada
+ Dosis                         Este campo estructurado junto con el “Número de dosis en intervalo” y el
+                               “Intervalo de dosificación” se debe interpretar como la posología de la
+                               medicación. En el campo de dosis, debe colocar el valor en número y la
+                               unidad de dosis del catálogo.
+                               Ejemplo: Si le reportan 25 mg una vez al día, Dosis=25 mg.
+
+
+
+                 Solo se utilizará este campo estructurado cuando se trate de un
+                 medicamento con un solo principio activo. Para medicamentos con dos o
+                 más activos se dejará en blanco y se empleará el campo “Dosis (texto
+                 libre)” para especificar las dosis correspondientes de cada principio
+                 activo.
+ Número de dosis Es el número de ocasiones de la toma de medicamento. Tomando el
+ en intervalo    ejemplo anterior, 25 mg dos veces al día:
+                 Dosis en el intervalo = 2
+ Intervalo    de Consiste en el intervalo de la administración de la dosis.
+ dosificación    Ejemplo: 25 mg dos veces al día, se deberá ingresar en “Dosis”: 25 mg,
+                 como “número de dosis en el intervalo”: 2 y en “intervalo de dosificación”:
+                 1 día
+                 Utilizando este ejemplo, se ingresarían los datos como los muestra la
+                 siguiente imagen:
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           53 de 86
+                                           B. Información sobre la dosis utilizada
+
+
+
+
+Ejemplos.
+Posología reportada = media tableta de 50 mg al día.
+    Dosis = 50 mg
+    Número de dosis en el intervalo = 0.5
+    Intervalo de dosificación = 1 día
+
+Posología reportada = dos tabletas de 5 mg tres veces al día (cada 8 horas)
+    Dosis = 5 mg
+    Número de dosis en el intervalo = (2)
+    Intervalo de dosificación= 8 Horas.
+
+Posología reportada = 5 g como dosis única.
+    Dosis = 5 g
+    Número de dosis en el intervalo = 1
+    Intervalo de dosificación = 1 total
+Dosis (texto libre) Este campo de texto libre permite ingresar la dosis tal cual fue reportada
+                    por el informante. Es labor del segundo nivel revisar y/o transformar este
+                    texto libre a los campos estructurados arriba mencionados.
+                    Cuando un fármaco contenga más de un ingrediente activo, no se
+                    colocará esta información en el campo estructurado de dosis, solamente
+                    se dejarán redactados en este campo.
+                    En el caso en que la posología indique la duración del tratamiento, se
+                    colocará en el campo estructurado el intervalo de dosificación y se
+                    colocará la duración del tratamiento en el campo “texto libre”.
+                    Ejemplo:
+                    Posología reportada: 1 tableta 50 mg al día por 7 días.
+
+
+
+
+                              Cuando se indique como prescripciones dosis menores a 1 unidad,
+                              ejemplo, “media tableta”; se ingresará la dosis completa de la tableta en
+
+                                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                54 de 86
+                                     B. Información sobre la dosis utilizada
+                              el campo “Dosis” y como “Número de dosis en el intervalo” se colocará el
+                              valor de 0.5. Ejemplo:
+
+
+
+
+Forma             Este campo se encuentra en formato en texto libre, sin embargo, debe
+Farmacéutica      considerar las siguientes formas farmacéuticas establecidos en la
+                  Farmacopea de los Estados Unidos Mexicanos:
+                     Aerosol, Cápsula, Colirio, Crema, Elíxir, Emulsión, Espuma, Gas
+                       medicinal, Gel, Goma, Grageas, Granulado, Implante, Jalea, Jarabe,
+                       Laminilla, Linimento, Loción, Oblea, Óvulo, Parche, Pasta, Pastilla,
+                       Polvo, Solución, Supositorio, Suspensión, Tableta o comprimido,
+                       Ungüento.
+Número de lote    Debe agregar el número de lote del medicamento reportado. Debe
+                  recordar que la NOM-220-SSA1-2016 establece que para medicamentos
+                  biológicos/biotecnológicos y vacunas, además de cumplir como grado
+                  mínimo de información, deberá incluir número de lote y nombre de
+                  laboratorio fabricante.
+Comienzo de la Ingrese la fecha de inicio de la medicación en el formato dd/elegir
+administración    mes/aaaa. Si no cuenta con la fecha completa puede ingresar como
+                  mínimo el año.
+Fin     de     la Ingrese la fecha de finalización de la medicación en el formato dd/elegir
+administración    mes/aaaa. Si no cuenta con la fecha completa, puede ingresar como
+                  mínimo el año.
+                  Si el tratamiento continúa, debe dejar este campo en blanco y en la
+                  sección “Acción tomada” debe completar la acción tomada respecto al
+                  medicamento.
+                  Cuando se indique una pausa en la administración del tratamiento o un
+                  cambio en la dosis, se ingresarán las fechas que abarcan el primer
+                  periodo antes de la pausa. Se agregará una nueva dosis haciendo click en
+                              el ícono         e ingresará la información referente al segundo
+                              periodo/segunda dosis.
+Duración                      El sistema puede calcular automáticamente la duración del tratamiento
+                              solamente si proporcionan las fechas completas. Sin embargo, si no
+                              cuenta con la información sobre las fechas de administración o para
+                              situaciones de administraciones con duraciones más cortas a un día, por
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           55 de 86
+                                    B. Información sobre la dosis utilizada
+                              ejemplo, horas, puede ingresar esta duración de forma manual.
+
+
+
+
+                                           Información de la vacuna
+   Esta sección permite proporcionar información adicional de la vacunación ante un
+                                         ESAVI
+Número de dosis               Debe elegir del catálogo a que dosis corresponde la vacunación.
+                              Por ejemplo:
+                              2a dosis de DPT (Difteria, Tétanos, Pertussis)
+                              3a dosis de OPV (Vacuna Antipoliomielítica Oral)
+Fecha                  de     Colocar la fecha de caducidad de la vacuna reportada (en el formato
+expiración                    dd/elegir mes/aaaa). Este campo es aplicable no solo para vacunas, sino
+                              para para cualquier medicamento, aunque el campo esté indicado “para
+                              vacunas”. Se especificará la fecha de expiración indicada en el empaque
+                              primario del medicamento.
+Nombre         del            Campo de texto libre para colocar el nombre del diluyente utilizado en la
+diluyente                     vacunación.
+Número de lote                Campo de texto libre para colocar el número de lote del diluyente
+del diluyente                 utilizado en la vacunación.
+Sitio           de            Elija del catálogo el sitio de administración de la vacuna entre las
+administración                siguientes opciones:
+                                    Left arm (Brazo izquierdo)
+                                    Right arm (Brazo derecho)
+                                    Arm (unspecified) (Brazo (no especificado))
+                                    Left thigh (Muslo izquierdo)
+                                    Right thigh (Muslo derecho)
+                                    Thigh (unspecified) (Muslo (no especificado))
+                                    Oral (Oral)
+                                    Other (Otro). Si elige esta opción, en el campo de texto libre
+                                      “Información adicional sobre el medicamento”, deberá especificar
+                                      el sitio de administración preciso.
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           56 de 86
+                         B. Información sobre la dosis utilizada
+ Tipo de campaña Elija del catálogo la sesión de vacunación donde fue aplicada la vacuna de
+ de vacunación   entre las siguientes opciones:
+                       Mass campaing (Campaña masiva): para semanas nacionales de
+                         salud o emergencia epidemiológica.
+                       Routine sesión (Sesión de rutina): para sesiones intramuros en
+                         vacunación ordinaria
+                       School based (Escuela)
+                       Travel clinic (Clínica del viajero)
+                       Work clinic (Clínica en trabajo)
+                       Other (Otro). Si elige esta opción, en el campo de texto libre
+                         “Información adicional sobre el medicamento”, deberá especificar
+                         el tipo de campaña de vacunación.
+ Ejemplo:
+
+
+
+
+Para agregar otra dosificación referente al mismo medicamento o principio activo debe oprimir
+el ícono        de esta subsección. Si desea eliminar la subsección debe oprimir el ícono
+
+
+En la sección de Indicación, que se detalla en la siguiente tabla, refiere a la información sobre la
+indicación terapéutica.
+
+                                                  C. Indicación
+ Indicación                   Busque y seleccione el término MedDRA de más bajo nivel (LLT) o en su
+ (MedDRA)                     defecto el término preferido (PT) que más se acerque a la indicación
+                              terapéutica como fue reportada por el notificador original / primario. Lo
+                              puede hacer escribiendo el término deseado en el campo en el cual se
+                              desplegará las opciones que se acerquen a su búsqueda, o puede elegirlo
+                              directamente desplegando la estructura completa de MedDRA con el
+
+
+                                                        Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                        Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                        Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02           57 de 86
+                                                    C. Indicación
+                             ícono         . Cuando lo haya elegido, como se muestra en la siguiente
+                             imagen:
+
+
+
+
+                             Al oprimir el ícono      , se desplegarán las jerarquías superiores del
+                             término elegido, así como otros términos de bajo nivel. De esa manera,
+                             puede verificar fácilmente si hay otro término que se adecúe más al
+                             informado y que esté relacionado con el mismo concepto médico del PT.
+                   En caso de no contar con la información de la indicación para la cual fue
+                   prescrito el medicamento, deberá buscar en el catálogo la opción “uso de
+                   un fármaco para una indicación desconocida”
+Indicación     tal Debe colocar la indicación tal cual fue notificada por el notificador original
+como          fue / primario.
+reportado por el También puede utilizar este campo cuando no pueda encontrar un
+notificador        término adecuado en MedDRA. Es labor del segundo nivel revisar y
+primario/original convertir en sus notificaciones y las del tercer nivel este término de texto
+                   libre al catálogo estructurado de MedDRA.
+
+
+
+
+Otros problemas              Este campo cuenta con un catálogo que permite ingresar otros problemas
+relacionados al              de seguridad relacionados con el uso de medicamentos y vacunas que no
+uso          del             son una RAM. Estos otros problemas pueden ingresarse en terminología
+medicamento                  MedDRA dentro del campo de “Reacción”, así también signos/síntomas
+                             ocasionado por estos problemas pero que no tendrán una relación causal
+                             con el medicamento. Si el problema de seguridad no ocasionó
+                             signos/síntomas debe colocarse “Ausencia de reacción adversa” en el
+                             campo de “Reacción”.
+
+
+
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02             58 de 86
+                                                 C. Indicación
+
+
+
+
+                             Cualquier otro problema que no localice en el catálogo puede colocarlo
+                             como error de medicación y describirlo en el campo de “Información
+                             adicional sobre el medicamento”.
+                             Si el caso lo requiere, puede agregar más de un problema relacionados al
+                             uso del medicamento y vacuna oprimiendo el ícono             Si desea eliminarlo
+                             debe oprimir el ícono    .
+Acción tomada                Acción tomada respecto al medicamento como resultado de la reacción
+                             adversa. Por ejemplo, si el medicamento se retiró debe seleccionar del
+                             catálogo Medicamento retirado.
+
+
+
+
+                  La opción “no aplicable” puede ser utilizada en las siguientes situaciones:
+                      el paciente falleció
+                      vacunas (solo se administra una dosis)
+                      el tratamiento finalizó previo a la(s) reacción(es)
+                      cuando el medicamento no se administró
+¿El paciente fue Esta sección permite conocer los resultados de una readministración del
+reexpuesto     al medicamento SOSPECHOSO (la readministración no es aplicable a
+medicamento?      medicamentos concomitantes ni para medicamentos que no se
+                  administraron). Si elige “Si”, se abrirán campos adicionales respecto a una
+                  readministración y sus consecuencias.
+
+
+
+                                                       Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                       Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                       Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          59 de 86
+                                                 C. Indicación
+
+
+
+
+                             Una vez habilitados estos campos adicionales, debe elegir del catálogo
+                             “¿La reacción tuvo lugar nuevamente luego de la reexposición?”, la
+                             consecuencia de la readministración fue:
+
+
+
+
+                             Es importante considerar que una “reexposición” es aplicable únicamente
+                             cuando se cumplen los siguientes criterios.
+                                 1. Se retiró el medicamento a consecuencia de una RAM. No
+                                    confundir con el tiempo requerido para la siguiente dosis.
+                                 2. El paciente se recuperó por completo de la RAM, con o sin
+                                    tratamiento tras la retirada el medicamento sospechoso.
+                                 3. Una vez recuperado, se administró el medicamento nuevamente.
+
+                   Esta sección tiene la finalidad de determinar una recurrencia de RAM a un
+                   medicamento para fortalecer el análisis de causalidad.
+Información        En este campo de texto libre puede agregar información que no haya sido
+adicional sobre el ingresada a través de los campos que integran la sección de Medicamento.
+medicamento        Además, en este campo deberá indicar:
+                       Código del fármaco de estudio en el caso de un Estudio clínico.
+                       Registro sanitario del medicamento en caso de contar con la
+                          información
+                   Y deberá agregar las leyendas cuando aplique:
+                        “no se encontró el medicamento en el catálogo whoDrug”; cuando el
+                           medicamento no haya sido encontrado en dicho catálogo.
+                        “no coincide la denominación distintiva con la combinación de
+
+                                                      Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                      Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                      Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02          60 de 86
+                                                         C. Indicación
+                                           ingredientes activos”; cuando los nombres de la combinación de
+                                           ingredientes activos no se encuentren exactamente como indica el
+                                           marbete, sin importar el orden.
+                                           Por ejemplo: ocasiones donde al buscar la denominación distintiva
+                                           en el catálogo hace falta o tiene de más un ingrediente activo.
+
+
+
+       D. Intervalo de tiempo entre la administración del medicamento sospechoso y la
+                                    ocurrencia de la reacción
+
+Esta sección es muy útil para cubrir situaciones en donde el intervalo entre la administración
+del medicamento y la ocurrencia de la reacción es muy corto, por ejemplo, como puede
+suceder en una reacción de anafilaxia o arritmia.
+Reacción / evento (MedDRA)        Le mostrará la (s) reacciones agregadas a su reporte.
+Primera dosis                     En este campo debe colocar el intervalo entre la
+                                  administración de la primera dosis del medicamento
+                                  sospechoso y el inicio de cada reacción.
+Última dosis                      En este campo debe colocar el intervalo entre la última dosis
+                                  administrada del medicamento sospechoso y el inicio de
+                                  cada reacción.
+Dosis acumulada a la primera Se refiere a la dosis total administrada al paciente desde la
+reacción                          primera toma y hasta el momento del primer signo/síntoma.
+                                  Ejemplo: si un paciente ha consumido 100 mg diarios por 5
+                                  días y posteriormente presentó la reacción, la dosis
+                                  acumulada a la primera reacción son 500 mg, presentando
+                                  prurito y comezón una hora después de la última
+                                  administración, como se muestra en la siguiente imagen
+
+
+
+
+                                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02                 61 de 86
+4.5.9        Análisis y procedimientos
+
+   En esta sección deberá abordar los exámenes y procedimientos clínicos relevantes para el
+caso, los cuales pudieron ser realizados para diagnóstico o confirmación de la SRAM, EA, RAM,
+ESAVI reportados, incluyendo aquellos realizados para investigar una causa no relacionada con
+el medicamento.
+ÚNICAMENTE deberán notificarse los resultados anormales.
+
+           Campo                                            Información solicitada
+ Nombre del análisis                        Agregue el nombre del análisis a través del término MedDRA
+                                            deseado o selecciónelo directamente del navegador
+                                            oprimiendo el ícono     .
+ Fecha del análisis                         Colocar la fecha de realización del análisis reportado en el
+                                            formato dd/elegir mes/aaaa. Si no cuenta con la fecha
+                                            completa puede ingresar como mínimo el año.
+ Resultados del análisis                    En el campo libre colocar la cantidad y del catálogo
+                                            seleccionar la unidad de medida. Si dentro del catálogo no
+                                            encuentra la unidad de medida correcta, deberá colocar el
+                                            resultado en el campo de texto libre “Resultados”.
+ Mínimo valor estándar                      Debe colocar los valores de referencia proporcionados por el
+ Máximo valor estándar                      laboratorio
+ Tipo de análisis                           Cuando no encuentra el nombre del análisis en la
+                                            terminología MedDRA, puede colocarlo en este campo de
+                                            texto libre, aunque se solicita priorizar la búsqueda en el
+                                            campo MedDRA.
+ Resultados                                 Utilizar este campo como optativo al “Resultado del análisis”
+                                            cuando no se encuentra la unidad de medida deseada.
+                                            Puede describir el resultado del análisis como texto libre.
+ Comentarios del notificador                Puede agregar algún comentario adicional respecto a las
+                                            pruebas y resultados realizados al paciente.
+
+Por ejemplo:
+
+Análisis sanguíneo para sospecha de anemia inducida por el medicamento.
+
+
+                                                         Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                         Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                         Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            62 de 86
+Para agregar otro Análisis y procedimiento, debe oprimir el ícono           . Si se desea eliminarlo
+debe oprimir el ícono              .
+
+
+
+4.5.10 Evaluación
+   En esta sección se debe colocar el resultado de la evaluación de causalidad realizado por el
+tercer y/o segundo nivel.
+
+
+
+
+   Metodología utilizada: el sistema permite elegir entre las siguientes metodologías:
+    Algoritmo de Naranjo
+    Categorías probabilísticas de la OMS (WHO-UMC Causality)
+    Categorías de la OMS para ESAVI (WHO-AEFI)
+    Método francés
+
+   Para poder colocar el resultado de causalidad necesariamente tuvo que haber ingresado un
+medicamento sospechoso o interactuante en la sección correspondiente a medicamentos y
+haber colocado al menos una SRAM en el catálogo estructurado MedDRA. En esta sección se
+cargará automáticamente la combinación medicamento sospechoso – reacción(es) adversa(s).
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   63 de 86
+Ejemplo: Prurito por sospecha a Penicilina.
+
+
+
+
+   Deberá elegir el algoritmo de naranjo para medicamentos y las categorías de ESAVI para
+vacunas, esto de acuerdo con las indicaciones que ha dado el CNFV para las UFV, CEFV, CICFV y
+CIFV.
+
+   Cuando la UFV realiza la clasificación de causalidad, el segundo nivel (CICFV, CEFV) y el CNFV
+no podrán modificar esta primera evaluación, pero si podrán agregar una evaluación causal
+adicional si es necesario reclasificarlo dando click en el ícono  . Se pueden agregar diferentes
+evaluaciones, por ejemplo, en caso de estudios clínicos se cuentan con métodos de evaluación
+distintos a los que se encuentre en el listado, pero se deberá indicar en el campo “comentarios”
+la fuente de donde se tomó la evaluación.
+    Por lo anterior, cada organización puede ver su evaluación causal y la de los niveles
+anteriores, pero solo podrá editar la suyas. Únicamente el CNFV podrá eliminar evaluaciones de
+causalidad de los niveles 2 y 3.
+
+
+
+
+         Campo                                             Información solicitada
+ Metodología                       Elegir la metodología que se utilizará. Las UFV, CEFV, CICFV y CIFV,
+ utilizada                         DEBERÁN utilizar necesariamente el algoritmo de Naranjo.
+                                   El CNFV validará la clasificación causal del nivel 2 y si lo considera
+                                   necesario proporcionará una evaluación causal adicional distinta a la
+                                   propuesta por el nivel 3.
+                                   En caso de estudios clínicos, se podrá utilizar otra evaluación de
+                                   causalidad siempre y cuando sean algoritmos validados.
+
+                                                          Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                          Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                          Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02            64 de 86
+      Campo                                   Información solicitada
+Fuente                En automático, VigiFlow muestra el nombre de la organización a la que
+                      pertenece el usuario.
+                      En caso donde la evaluación de causalidad se haya reportado por un
+                      notificador primario el cual no pertenezca a ninguna UFV se podrá
+                      cambiar el nombre de la fuente de dicha evaluación, de igual forma se
+                      deberá agregar la evaluación realizada como se especificó
+                      anteriormente.
+Relación        entre Debe elegir del catálogo la clasificación causal que aplicará para la
+el(los)               evaluación entre el(los) medicamento(s) sospechoso(s) y las SRAM,
+medicamento(s)      y ESAVI.
+la(s) reacción(es)    La evaluación de causalidad no será aplicable a los otros problemas de
+                      seguridad relacionados con el uso de medicamentos y vacunas
+                      (sobredosis, mal uso, abuso, uso fuera de indicación, entre otros).
+Diagnóstico           Si cuenta con la experiencia clínica, y el caso cuenta con la información
+                      suficiente, puede combinar los signos y síntomas reportados para
+                      trasladarlos a un diagnóstico que debe agregar en terminología
+                      MedDRA.
+Comentarios           En este campo puede agregar información que de soporte a la
+                      evaluación causal, por ejemplo el conteo de puntaje obtenido del
+                      algoritmo de Naranjo, así como la bibliografía empleada para dicha
+                      evaluación.
+
+
+
+
+4.5.11 Vista general
+
+     Esta sección le permite visualizar toda la información que ha ingresado del reporte. Su
+utilidad radica en que puede visualizar más fácilmente todo el contenido en lugar de navegar
+sección por sección, además puede identificar los campos mínimos obligatorios faltantes
+requeridos para poder compartir el reporte con la base de datos mundial.
+
+
+   Debe recordar GUARDAR el reporte en cualquier momento oprimiendo el ícono de la parte
+superior derecha.
+
+
+
+
+   Para salir del reporte debe oprimir el botón “Ir a la lista de reportes”.
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    65 de 86
+     Si no guardó el reporte durante el proceso de ingreso de información, al oprimir el enlace
+“Ir a la lista de reportes”, se le mostrará la siguiente advertencia:
+
+
+
+
+  Si desestima los cambios, no se guardará ninguna información que capturó en el reporte.
+
+
+
+4.6 Administración de reportes.
+   Para un correcto funcionamiento y buen aprovechamiento de la plataforma se han propuesto
+acuerdos en los procedimientos para administrar el manejo y flujo de información con la
+finalidad de facilitar y coordinar el manejo VigiFlow en conjunto con todas las organizaciones
+que alimentan la base de datos.
+
+
+
+
+4.6.1        Búsqueda de notificaciones por filtros
+
+  En la pantalla principal de VigiFlow se muestra una sección con los siguientes filtros de
+búsqueda:
+           Fecha de recepción inicial (desde)/ Fecha de recepción inicial (hasta):
+             búsqueda por intervalo de fechas (desde… hasta) de acuerdo con la fecha en que
+             se ingresó la notificación a VigiFlow.
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   66 de 86
+          Título del reporte: búsqueda a partir del campo “título del reporte”.
+          Estado del reporte: búsqueda de acuerdo con el estado del reporte: abierto, bajo
+            evaluación, cerrado.
+          Tipo de emisor: búsqueda de acuerdo con el tipo de emisor: laboratorio
+            farmacéutico, profesional de la salud, centro regional de Farmacovigilancia,
+            paciente/ consumidor, autoridad regulatoria, otro.
+          Tipo de reporte: búsqueda de acuerdo con el tipo de reporte: espontáneo,
+            reporte del estudio, otro, no disponible al remitente (desconocido).
+          Medio de notificación: búsqueda de acuerdo con la fuente de ingreso a VigiFlow:
+            Ingreso manual de datos, e-Reporting, aplicación móvil (en construcción),
+            importe- validado, importe-no validado, unknown (desconocido).
+          Profesión del notificador: búsqueda de acuerdo con el tipo de notificador
+            primario (informante): médico, farmacéutico, otro profesional de la salud,
+            abogado, consumidor u otro profesional.
+          Identificación del reporte: búsqueda de acuerdo con la información agregada en
+            los campos “otros Ids del reporte” (ver sección 4.5.3 “Información del reporte”).
+          Iniciales: búsqueda de acuerdo con la información ingresada en el campo
+            “Iniciales” (ver sección 4.5.4 “Paciente”).
+          Sexo: búsqueda de acuerdo con el sexo del paciente: masculino, femenino,
+            desconocido.
+          Fecha de nacimiento: búsqueda de acuerdo con la fecha de nacimiento del
+            paciente, ya sea por las siguientes combinaciones: dd/m/aaaa, --/m/aaaa ó --/--
+            /aaaa. Debe ingresar al menos el año, de lo contrario no se podrá realizar la
+            búsqueda.
+          Reacción/ evento (MedDRA): búsqueda por reacción-evento con la terminología
+            MedDRA. El resultado de una búsqueda general por SOC incluirá los reportes con
+            los términos más bajos (LLT) que pertenezcan a ese SOC.
+          Grave: búsqueda de acuerdo con la clasificación marcada en la sección “Reacción
+            adversa” por gravedad de los eventos: si o no.
+          Criterio de gravedad: búsqueda de acuerdo el criterio seleccionado en la sección
+            “Reacción adversa”: amenaza de vida, anomalía congénita, causó o prolongó
+            hospitalización, discapacidad, muerte, otra condición médica importante.
+          Resultado de la reacción: búsqueda de acuerdo con el resultado de la reacción
+            seleccionado en la sección “Reacción adversa”: recuperado/resuelto,
+            recuperando/resolviendo, no recuperado/no resuelto, recuperado/resuelto con
+            secuela, fatal, desconocido.
+          Asignado a: búsqueda de acuerdo con el nombre de la persona con una cuenta
+            registrada en la base de datos de VigiFlow a la cual se le asignó un reporte.
+            También es posible filtrar reportes “sin asignación”.
+
+                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    67 de 86
+              Delegado a (organización): búsqueda de notificaciones delegadas a una
+                organización en específico (CNFV, CEFV, CICFV, CIFV o UFV). Cabe señalar que
+                cuando se crea un reporte, el sistema delega automáticamente ese reporte a la
+                organización que lo creó.
+              Creado por: búsqueda de notificaciones creadas por cierta organización específica
+                (CNFV, CEFV, CICFV, CIFV o UFV). Se puede marcar la casilla “Include sub
+                organisations” (Incluir suborganizaciones) para incluir en la búsqueda las
+                notificaciones de las organizaciones de tercer nivel que tiene a su cargo.
+              Nombre del medicamento (patente-WHODrug): búsqueda de acuerdo con la
+                denominación distintiva del medicamento (o vacuna) registrada en el campo
+                “Nombre del medicamento” de la sección “Medicamento” y que fue registrada a
+                través del diccionario WHODrugs.
+              Principio(s) activo(s) (WHODrug): búsqueda de acuerdo con los principios activos
+                de los fármacos ingresados, puede incluir tantos p. a. como requiera, la búsqueda
+                incluirá aquellas notificaciones que contengan exactamente la combinación de
+                todos los p. a. que se ingresaron.
+              Código ATC: búsqueda de acuerdo con el código ATC correspondientes a los
+                medicamentos reportados. Es posible realizar la búsqueda con el ATC completo o
+                con los primeros caracteres, para la cual, la búsqueda contendrá las
+                notificaciones con todos los medicamentos pertenecientes a esta clasificación.
+                Ejemplo: búsqueda por el código ATC “N02”; los resultados mostrarán todas las
+                notificaciones con medicamentos con dicha clasificación que “actúan sobre el
+                sistema nervioso con propiedades analgésicas”.
+              Otros problemas relacionados al uso del medicamento: búsqueda de acuerdo
+                con la opción seleccionada en el campo “otros problemas relacionados al uso del
+                medicamento” de la sección “Medicamento”: Falsificación, sobredosis,
+                medicamento usado por el padre, medicamento usado después de la fecha de
+                caducidad, lote probado y encontrado dentro de las especificaciones, lote
+                probado y encontrado fuera de las especificaciones, error de medicación, mal
+                uso, abuso, exposición ocupacional, uso fuera de indicación.
+              Número de lote/ número de lote del diluyente: búsqueda de acuerdo con la
+                información ingresada en los campos “número del lote” y/o “número del
+                diluyente” de la sección “Medicamento”.
+
+
+
+  Además de los filtros ya mencionados anteriormente, en la pantalla principal de VigiFlow
+podrá encontrar casillas con características específicas para filtro de notificaciones:
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    68 de 86
+           Incluir reportes eliminados: incluye los reportes que se han eliminado por alguno de
+            los tres niveles. Ver 4.6.5. Eliminación de un reporte.
+           Mostrar solo los reportes que pueden ser compartidos a VigiLyze: se incluirán
+            reportes que cuenten con todos los campos mínimos obligatorios para poder ser
+            enviados a la base de datos mundial.
+           Mostrar solo los reportes que contienen por lo menos un medicamento o una
+            reacción no codificada: se mostrarán las notificaciones que cuentan al menos con un
+            medicamento registrado en el campo de texto libre correspondiente o al menos una
+            reacción adversa registrada en el campo de texto libre correspondiente.
+
+
+
+   Se debe tener en cuenta que, al ingresar texto en los campos de búsqueda, VigiFlow filtrará
+todas las notificaciones que contengan parte o totalidad del texto ingresado en los campos
+correspondientes a los filtros utilizados.
+
+
+
+   Ejemplo: Se desea realizar una búsqueda del total de notificaciones espontáneas ingresadas
+desde enero de 2017 a diciembre 2019, notificadas por medio de un laboratorio farmacéutico en
+las que se presentaron enfermedades epidérmicas y dérmicas graves causadas por
+Antiinflamatorios prescritos para dolor muscular (código ATC: M01), que causaron o
+prolongaron la hospitalización de pacientes cuyo inicial de su nombre contiene A.
+
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    69 de 86
+Como se puede observar, con los criterios de búsqueda se obtienen 3 notificaciones, las cuales
+cumplen con los requisitos de búsqueda ingresados. Además, como se mencionó, el buscador
+incluyó las notificaciones que contienen la letra “A” como parte de las iniciales del paciente.
+
+
+
+4.6.2        Búsqueda de notificaciones de una organización
+     Si requiere buscar notificaciones de una organización específica en su base de datos, puede
+llevarlo a cabo de distintas maneras, pero se le sugieren las dos siguientes:
+    1. A través del filtro “Creado por (organización)”. Al abrir el catálogo de este campo, se
+         desplegará los usuarios de su propia organización y, si aplica, los usuarios del tercer nivel
+         que tiene a su cargo. En algunas situaciones una organización podrá tener notificaciones
+         delegadas a su organización, por ejemplo, cuando un profesional de la salud de su
+         institución realiza una notificación a través de e-Reporting y el CNFV delega este reporte
+         a la UFV o al segundo nivel; en esta situación, también puede utilizar el filtro “Delegado a
+         (organización)” para la búsqueda de notificaciones de cierta organización.
+    2. Mediante el campo de texto libre “Identificación del reporte”, es posible buscar un
+         reporte o una serie de reportes conforme a la codificación que se le asignó, es decir, la
+         establecida para los CEFV, CIFV, CICFV y UFV. Si no cuenta con la codificación completa,
+         puede buscar parte de esta.
+
+
+4.6.3        Asignación de notificaciones
+
+
+                                                   Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                   Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                   Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     70 de 86
+     VigiFlow permite asignar un reporte a un usuario específico (cuando su organización cuenta
+con más de un usuario) dentro de su propia organización o a sí mismo, con el objeto de
+distribuir la carga de trabajo en la captura, revisión y validación de la información.
+
+    Para realizar la asignación debe ubicar el reporte en cuestión en el listado de reportes de la
+pantalla principal de VigiFlow. En el lado derecho del Número de identificación único mundial del
+reporte encontrará un círculo de color gris, al oprimirlo se desplegará un menú con los
+integrantes de su organización, como se muestra a continuación:
+
+
+
+
+    Al asignarlo, el círculo gris cambiará de color e incluirá las iniciales del usuario al que se
+asignó el reporte:
+
+
+
+
+     El proceso de asignación y reasignación de reportes dependerá de la organización interna
+de cada CEFV, CIFV, CICFV y UFV.
+Para encontrar los reportes asignados a un usuario específico, debe utilizar el filtro “Asignado
+a”. Al abrir el catálogo de este filtro aparecerán todos los usuarios de su organización.
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    71 de 86
+4.6.4        Delegación de notificaciones
+
+     Esta función permite delegar (otorgar la responsabilidad de verificación y validación de
+información) un reporte a una organización de cualquier nivel. Esto es útil cuando hay
+información faltante o información que debe corroborarse por el nivel anterior. Así, el CNFV,
+puede delegar reportes a los CEFV, CICFV, CIFV, y éstos a su vez pueden delegarlos a las UFV, si
+aplica. El CNFV puede delegar, si la información ingresada lo permite, las notificaciones
+provenientes de e-Reporting a los CEFV, CIFV, CICFV, CENSIA/DGE, para que éstos tengan
+conocimiento y gestionen estos casos conforme a su competencia y estos a su vez, si aplica,
+podrían delegarlos a sus UFV.
+
+    Los centros que no disponen con una cuenta de VigiFlow que ingresan notificaciones
+mediante e-Reporting se delegarán por parte del CNFV a sus organizaciones de segundo nivel
+que les corresponda, mientras que las UFV que disponen de una cuenta de VigiFlow y que por
+alguna razón mandaron notificaciones al CNFV a través de e-Reporting se delegarán a su UFV
+correspondiente. Esta delegación irá acompañada de un mensaje que podrá visualizar en el
+listado de sus reportes.
+
+  Ejemplo: el CNFV recibe una notificación ingresada por el hospital X que no tiene una cuenta
+de VigiFlow, en el cual, debido a su información ingresada se puede identificar su procedencia la
+cual correspondería a una organización de 2do nivel.
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   72 de 86
+     La organización de segundo o tercer nivel a la cual se le delegó un reporte tiene la completa
+libertar de delegarlo nuevamente hacia el nivel superior si confirma que esa notificación no le
+corresponde. Deberá incluir un mensaje describiendo la situación.
+     Para proceder a la delegación se debe identificar el (los) reporte(s) específico(s) y habilitar la
+casilla que se encuentra del lado izquierdo del Número de identificación único mundial del reporte.
+Posteriormente debe oprimir el botón superior “# reportes seleccionados” y se desplegará su
+organización y, si aplica, las UFV dependientes de su CEFV o CICFV. Elegir la organización a la
+que quiere delegar el(los) reporte(s).
+
+
+
+
+    El CNFV podrá siempre ver y editar todos los reportes que han sido creados o delegados a
+otras organizaciones de los niveles 2 y 3.
+
+    Ver Funciones del primer, segundo y tercer nivel en la operación de VigiFlow.
+
+   El proceso de delegación de reportes de las UFV de tercer nivel será únicamente a sus
+respectivos organismos de segundo nivel (CEFV, CICFV) y no directamente al CNFV.
+
+
+
+
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02      73 de 86
+4.6.5        Eliminación de un reporte
+   Esta función le permite eliminar un reporte existente en su base de datos. Para ello, debe
+ingresar al reporte desde la Lista de reportes y oprimir el botón “Eliminar” que se encuentra en el
+menú de la parte superior derecha.
+
+
+
+
+    Debe ingresar la razón por la cual quiere eliminar el reporte. El reporte eliminado
+permanecerá inactivo (ya no podrá modificarlo) y no aparecerá en la Lista de reportes. VigiFlow
+solo le permitirá tener acceso al documento PDF del caso, para lo cual deberá localizarlo
+mediante los filtros de búsqueda y habilitar la casilla “Incluir reportes eliminados” de la pantalla
+principal.
+    Cabe señalar que la eliminación de reportes es un tema sensible y solo debe llevarse a cabo
+cuando realmente es necesario, teniendo como justificación limitada una duplicidad de un
+reporte la cual puede evitarse si se atiende lo especificado en la sección 4.5.1.1. Detección de
+duplicidad. Por lo anterior, se sugiere que cada UFV, CEFV, CICFV, CIFV y el CNFV lleve una
+minuta de reportes eliminados en donde se especifique al menos el usuario, fecha y razón de la
+eliminación, que les permita tener un control de estos casos.
+
+
+
+4.7 Ingreso de información                               adicional         de       un        reporte
+    (seguimiento)
+
+    NOTA: es importante resaltar la relevancia de esta sección para la rastreabilidad de la
+información adicional que se ha agregado al reporte inicial y que conocemos como
+Seguimientos.
+    Cuando requiera agregar información adicional (seguimiento) a un reporte ya capturado en
+VigiFlow no es necesario capturarlo como Nuevo reporte. Debe buscar y abrir el reporte inicial
+desde su lista de reportes de la pantalla. En la sección “Información de reporte”, debe ubicar el
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     74 de 86
+campo “Fecha de recepción más reciente” y colocar la fecha en la que está ingresando la
+información de seguimiento.
+
+
+
+
+    Esta fecha debe ser distinta a la Fecha de recepción inicial. Posteriormente debe ingresar
+toda la información adicional en las secciones del reporte que correspondan.
+    No debe agregar ningún Título del reporte, pero si agregar en el campo Otros Id una
+codificación adicional de seguimiento (S1, S2…Sn).
+    Una vez agregada toda la información adicional debe guardar el reporte e ir al “Listado de
+reportes”.
+    La manera de poder visualizar las versiones anteriores del último reporte modificado será a
+través del historial de cada reporte. Ubique el reporte en el listado y oprima la flecha situada en
+el costado izquierdo del Número de identificación único mundial del reporte. Aparecerá lo
+siguiente:
+
+
+
+
+    El historial le mostrará las versiones modificadas de la notificación, la fecha, el usuario y le
+permitirá descargar el archivo en formato PDF con la información de las versiones anteriores de
+ese caso.
+
+
+
+4.8 Respaldo de la información
+   Como característica particular de VigiFlow las notificaciones ingresadas podrán ser
+exportadas a Microsoft Excel directamente o bien podrán ser descargadas en formato PDF.
+
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     75 de 86
+    Cada CEFV, CICFV, CICFV y UFV debe definir en sus procedimientos internos, la periodicidad
+con la que debe generar el respaldo de su información.
+
+
+    Para respaldar toda la información de su base de datos, debe ir a los FILTROS de la página
+principal de VigiFlow y ubicarse en los campos “Fecha de recepción inicial (desde)” y “Fecha de
+recepción inicial (hasta)”. Puede generar el backup desde la fecha de ingreso de su primer
+reporte al presente o hacerlo por periodos, pero considere que el sistema tiene un límite para
+exportar a Excel un máximo mil reportes. Estos serán los únicos filtros que debe aplicar por lo
+que todos los demás filtros deberán dejarse en blanco. Al oprimir “Buscar”, la consulta le
+arrojará los reportes ingresados en el periodo seleccionado.
+
+
+
+
+     Exporte la información mediante la Opción “Excel”, ya que esta opción le permite tener toda
+la información ingresada en cada reporte. La opción “Estadísticas administrativas”, le muestra
+un resumen de los casos exportados mediante indicadores relevantes como son, estadísticas
+por sexo, grupo etario, gravedad, tipo de reporte, tipo de emisor, entre otros.
+     El archivo Excel generado debe resguardarse en su unidad de almacenamiento.
+     Para exportar reportes en formato de documento portátil (PDF), debe seleccionar los
+reportes y elegir la opción PDF. Se descargará un archivo comprimido que contendrá todos los
+casos exportados de forma individual.
+
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   76 de 86
+4.9 Funciones del primer, segundo y tercer nivel en la
+    operación de VigiFlow
+
+    Dado que VigiFlow es una plataforma de notificación en tiempo real, en la cual un
+notificador al momento de ingresar un reporte y guardarlo, esta puede ser visualizada
+inmediatamente por los niveles superiores, se hace necesario establecer una metodología en la
+que se definan responsabilidades en la CAPTURA, REVISIÓN y VALIDACIÓN de la información de
+cada nivel. Cabe recordar los tres niveles pueden ingresar reportes manualmente a VigiFlow,
+teniendo en cuenta lo siguiente:
+    Una notificación ingresada por una organización del 3er nivel (UFV) será visible y editable
+        por:
+           o El mismo, su segundo nivel correspondiente y el primer nivel
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   77 de 86
+     Una notificación ingresada por una organización del 2do nivel (CEFV, CICFV, CIFV,
+      CENSIA/DGE) será visible y editable por:
+         o El mismo y el primer nivel
+    Una notificación ingresada por el 1er nivel (CNFV) será visible y editable por:
+         a. El mismo
+    En función del nivel que ingrese manualmente el reporte en VigiFlow, serán las
+responsabilidades que debe efectuar ese nivel, como se muestra a continuación:
+
+    Figura 5. Funciones y estado del reporte para los 3 niveles de operación de VigiFlow.
+
+
+
+
+     El proceso de validación es fundamental y su objetivo en la revisión exhaustiva para
+corroborar la coherencia, integridad y completitud de la información en campos estructurados
+lo que permite entre otros aspectos, homogenizar las terminologías reportadas, permitir el
+proceso de búsqueda de reportes a través de la herramienta de FILTROS de VigiFlow y preparar
+la información para el envío a la base de datos mundial de la OMS. La información contenida en
+los campos de texto libre, no pueden ser identificada y filtrada para la generación de
+estadísticas desde la pantalla principal de VigiFlow.
+
+   Para poder definir que un reporte está listo para poder ser atendido por el nivel inmediato
+superior, es necesario identificarlo de alguna manera para que dicho nivel pueda visualizarlo.
+
+
+
+
+                                                    Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                    Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                    Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02      78 de 86
+         La captura de información puede revisarla en la sección correspondiente a “Ingreso
+          de un reporte”.
+         La revisión de información consiste en corroborar que se ha ingresado al reporte al
+          menos los campos mínimos necesarios requeridos por el sistema, revisión de la
+          coherencia y la integridad de la información.
+         La validación de información consiste en transferir toda la información de los
+          campos de texto libre a los campos estructurados, como son: catálogos de
+          identificación del paciente, diccionario MedDRA (reacción/evento, historia clínica
+          relevante, análisis y procedimiento), y el diccionario de medicamentos (WHODRUG)
+          de la sección “Medicamento”. Así también la validación incluye la revisión de la pre-
+          evaluación causal de la notificación (algoritmo de Naranjo). Es labor del segundo
+          nivel, si aplica, colocar su codificación correspondiente en “Otros Ids del reporte” para
+          los reportes ingresados de UFV de tercer nivel.
+
+
+
+  Una vez capturado y revisado el reporte por el tercer nivel, debe colocar el estado de reporte
+como “Bajo evaluación” y enseguida deberá delegar a su CEFV, CICFV, CENSIA/DGE
+correspondiente.
+  El segundo nivel identifica este reporte, lo valida de acuerdo con lo establecido y lo guarda
+con el estado de reporte “Cerrado”, seguido a esto se deberá delegar inmediatamente al CNFV
+para su validación final para envío a la base de datos mundial de la OMS.
+
+
+
+
+                                                 Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                 Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                 Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   79 de 86
+5. E-Reporting
+
+
+
+                                            Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                            Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                            Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   80 de 86
+5.1 Generalidades
+    Es un formato estandarizado para notificar SRAM/RAM/ESAVI a través de internet,
+desarrollado por el UMC para facilitar la notificación por parte de Pacientes/consumidores y
+Profesionales de la Salud.
+
+
+
+
+    Las notificaciones ingresadas en este formato electrónico se transmiten directamente a la
+base de datos del CNFV en VigiFlow.
+    Con el objetivo de proporcionar un medio de notificación para titulares de registro o
+sus representantes legales, instituciones o establecimientos que realicen investigación
+para la salud, distribuidores/comercializadores que por el momento NO CUENTAN con
+la capacidad para llevar a cabo la transmisión electrónica de reportes en formato XML-
+E2B al CNFV, se ha dispuesto la utilización temporal de e-Reporting para ello.
+    Puede ingresar a e-Reporting a través de la página web de COFEPRIS. En la pantalla
+principal, dentro de la sección “LIGAS DE INTERÉS”, dar click en “¿Te hizo daño un
+medicamento?” y posteriormente buscar el link para ingresar a e-Reporting:
+           https://primaryreporting.who-umc.org/Reporting/Reporter?OrganizationID=MX
+
+
+
+5.2 Ingreso de una notificación en e-Reporting
+
+Para mayor información consulte:
+
+   1. Instructivo de uso de e-Reporting para la notificación de reacciones adversas (malestares
+      ocasionados por los medicamentos) por parte de profesionales de la salud y pacientes o
+      consumidores.
+   2. Instructivo para el uso de e-Reporting para los Titulares de Registro Sanitario o sus
+      Representantes Legales, Instituciones o Establecimientos donde se realice investigación
+      para la salud y Distribuidores/Comercializadores.
+
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   81 de 86
+Ambos instructivos puede visualizarlos y descargarlos desde la página web de COFEPRIS o
+mediante el siguiente enlace:
+
+https://www.gob.mx/cofepris/acciones-y-programas/como-notificar-una-sospecha-de-
+reaccion-adversa?state=published
+
+
+
+
+                                               Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                               Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                               Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+   OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   82 de 86
+  6. Transmisión
+    electrónica
+      XML-E2B
+
+
+6.1 Generalidades
+                                              Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                              Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                              Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+  OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   83 de 86
+   En la actualidad los reportes de reacciones adversas deben transmitirse a través de las
+comunidades interesadas en la Farmacovigilancia a lo largo del ciclo de vida de los
+medicamentos en especial en el monitoreo continuo posterior a la comercialización.
+
+    Los reportes electrónicos facilitan la transferencia de información y hacen que los datos de
+seguridad estén fácilmente disponibles para su posterior procesamiento y análisis. Estas
+ventajas permiten que las autoridades reguladoras, los titulares de registros sanitarios, los
+profesionales de la salud y los pacientes/consumidores tomen decisiones al estar mejor
+informadas sobre el uso de los medicamentos.
+
+   La falta de armonización en los sistemas que generan los reportes electrónicos podría dar
+lugar a dificultades para conciliar los reportes de reacciones adversa a nivel mundial. El contar
+con un estándar armonizado ayuda a maximizar la compatibilidad de la información de
+Farmacovigilancia y minimizar las complejidades de la compatibilidad en un futuro. Por ello las
+autoridades reguladoras y la industria farmacéutica deben manifestarse al unísono hacia un
+estándar armonioso que facilite la transferencia de reportes electrónicos.
+
+    El estándar para la transferencia de reportes electrónicos de reacciones adversas es el
+establecido a nivel internacional por la Conferencia Internacional para la armonización de
+requisitos técnicos para el registro de productos farmacéuticos de uso humano (ICH), la cual reúne a
+las autoridades reguladoras y la industria farmacéutica para armonizar los aspectos científicos y
+técnicos del registro de medicamentos. La primera directriz establecida para la transferencia
+electrónica fue la Guía ICH-E2B “Elementos de información para la transmisión de informes de
+seguridad de casos individuales”. La necesidad de intercambiar un alto volumen de información
+en todo el mundo de manera eficiente y automática ha llevado a revisiones periódicas del
+documento ICH-E2B. Desde 2001, cuando se implementó E2B (R2), ha habido muchos
+desarrollos en los requisitos de informes electrónicos y las buenas prácticas de
+farmacovigilancia, por lo que se desarrolló más recientemente la guía ICH E2B (R3) que incluye
+nuevos requisitos para el cumplimiento por parte de titulares de los registros sanitarios y demás
+integrantes de la Farmacovigilancia interesados en notificar información de seguridad de los
+medicamentos.
+
+    El nuevo VigiFlow permite importar archivos XML de acuerdo con los estándares
+internacionales ICH E2B (R2) e ICH E2B (R3). Para ello, el CNFV debe trabajar con la industria
+para establecer los requerimientos técnicos para la implementación del estándar en los
+sistemas de la industria farmacéutica.
+
+
+
+                                                  Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                  Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                  Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02     84 de 86
+6.2 Documentos técnicos
+    Es necesario que los titulares de los registros sanitarios o sus representantes legales,
+establecimientos que realicen investigación para la salud y distribuidores/comercializadores
+interesados en la estandarización de sus sistemas para la transferencia electrónica de reportes,
+deban atender los siguientes documentos generales sobre las pautas de ICH E2B (R2 y R3):
+
+   ICH E2B (R2) Especificación de informe de seguridad de caso individual (ICSR) y archivos
+    relacionados.
+           o http://estri.ich.org/e2br22/index.htm
+     ICH E2B (R3) Especificación de informe de seguridad de caso individual (ICSR) y archivos
+       relacionados
+           o http://estri.ich.org/e2br3/index.htm
+
+       Los demás documentos técnicos, por ejemplo, formato de transferencia de CIOMS a ICH-
+    E2B, lista de requerimientos para la generación de archivos XML-E2B, serán compartidos en
+    su momento a cada titular de registro sanitario o su representante legal, establecimiento
+    que realice investigación para la salud y distribuidor/comercializador interesado en la
+    estandarización de sus sistemas.
+
+
+
+7. Definiciones
+       ATC: Anatomical, Therapeutic, Chemical classification system; sistema de clasificación
+        Anatómica, Terapéutica y Química, sistema instituido por la O.M.S.
+       Centro de Monitoreo de Uppsala (UMC): Centro colaborador de la OMS en el Programa
+        Internacional de Monitoreo de Medicamentos.
+       Centro Estatal de Farmacovigilancia (CEFV): a la instancia designada por la Secretaría
+        de Salud Estatal y de la Ciudad de México para participar en la ejecución de las
+        actividades de Farmacovigilancia, en apego a la NOM-220-SSA1-2016 y a la normativa
+        aplicable, de manera coordinada con el Centro Nacional de Farmacovigilancia.
+       Centro Institucional de Farmacovigilancia (CIFV): a la Unidad de Farmacovigilancia de
+        una institución del Sistema Nacional de Salud que participa en la ejecución de las
+        actividades de Farmacovigilancia.
+       Centro Institucional Coordinador de Farmacovigilancia (CICFV): Instancia encargada
+        de coordinar a las diversas Unidades de Farmacovigilancia de una institución.
+       Centro Nacional de Farmacovigilancia (CNFV): al área de la Comisión de Evidencia y
+        Manejo de Riesgos, adscrita a la Comisión Federal para la Protección contra Riesgos
+
+
+                                                Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                                Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                                Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+    OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02   85 de 86
+    Sanitarios, que se encarga conforme la normativa aplicable, de emitir las políticas y
+    lineamientos para la operación de la Farmacovigilancia en el territorio nacional.
+   CIE-10: Clasificación Internacional de Enfermedades.
+   E2B: Formato de envío estandarizado para la transmisión de reportes de seguridad de
+    casos individuales.
+   LLT: Lower Level Term, Término del nivel más bajo.
+   MedDRA: Diccionario Médico para Actividades Regulatorias (por sus siglas en inglés:
+    Medical Dictionary for Regulatory Activities).
+   Organización de investigación por contrato (CRO): Una persona u organización
+    (comercial, académica o de otro tipo) contratada por el patrocinador para realizar una o
+    más de las labores y funciones del patrocinador relacionadas con el estudio.
+   Retiro del medicamento: a la acción de suspender el medicamento causante de la
+    reacción junto con el resultado de la reacción (p.e. si el paciente se recuperó o no).
+   Reexposición: al proceso de readministrar un medicamento después de presentar una
+    SRAM, así como el resultado de dicha readministración (p.e. si la reacción recurrió o no)
+   SOC: System Organ Class, Clasificación por órganos y sistemas.
+   VigiLyze: Herramienta mediante la cual se accede a VigiBase.
+   Uso compasivo: a la dispensación, por motivos compasivos, de un medicamento a un
+    paciente o grupo de pacientes que padecen una enfermedad crónica o gravemente
+    debilitadora o que se considera pone en peligro su vida y que no puede ser tratados
+    satisfactoriamente con un medicamento autorizado.
+   VigiBase: base de datos internacional de los casos de reporte de seguridad individuales
+    reportados por los países miembros del Programa Internacional del Monitoreo de
+    Medicamentos de la OMS.
+
+
+
+
+                                             Av. Marina Nacional Núm. 60, Piso 4, Colonia Tacuba, Demarcación
+                                             Territorial Miguel Hidalgo, Ciudad de México, C.P. 11410
+
+                                                             Tel: (55) 50 80 52 00 www.gob.mx/cofepris
+
+OCF-SGC-P-01-POI-01-L-01-F-02 Rev. 02    86 de 86
+

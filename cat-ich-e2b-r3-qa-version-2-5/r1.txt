@@ -1,0 +1,1073 @@
+     ICH E2B(R3) Expert Working Group / Implementation Working Group
+ICH E2B(R3) Guideline: Electronic Transmission of Individual Case Safety Reports (ICSRs)
+
+                                          Questions and Answers
+
+
+
+
+                                                      Version 2.5
+                                                     18 July 2025
+
+
+
+
+          International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use
+                                   Route Pré-Bois 20, P.O Box 1894, 1215 Geneva, Switzerland
+                                Telephone: +41 (22) 710 74 80- admin@ich.org, http://www.ich.org
+                                                                                                      Dated: 18 July 2025
+                                                                                                         E2B(R3) Q&As
+
+                                In order to facilitate the implementation of the E2B(R3) Guideline,
+                                        the ICH Experts have developed a series of Q&As:
+                                                              E2B(R3) Q&As
+                                                             Document History
+Code           History                                               Date
+  E2B(R3)      Approval by the ICH Steering Committee under Step 4   12 November
+   Q&As                                                                  2014
+ Version 1.0
+
+  E2B(R3)      Approval by the ICH Assembly under Step 4             16 June 2016
+   Q&As
+ Version 1.1
+
+  E2B(R3)      Approval by the ICH Assembly under Step 4             10 November
+   Q&As                                                                  2016
+ Version 2.0
+
+  E2B(R3)      Approval by the ICH Assembly under Step 4              1 June 2017
+   Q&As
+ Version 2.1
+
+  E2B(R3)      Approval by the ICH Assembly under Step 4              7 June 2018
+   Q&As
+ Version 2.2
+
+  E2B(R3)      Approval by the ICH Assembly under Step 4              6 June 2019
+   Q&As
+ Version 2.3
+
+  E2B(R3)      Approval by the ICH Assembly under Step 4              17 January
+   Q&As                                                                  2023
+ Version 2.4
+
+
+
+
+                                                                                                                        i
+                                                                                                                                                                Dated: 18 July 2025
+                                                                                                                                                                   E2B(R3) Q&As
+
+    E2B(R3)        Approval by the ICH Assembly under Step 4                           18 July 2025
+     Q&As
+   Version 2.5
+
+
+
+
+Legal notice: This document is protected by copyright and may, with the exception of the ICH logo, be used, reproduced, incorporated into other works, adapted, modified, translated
+or distributed under a public license provided that ICH's copyright in the document is acknowledged at all times. In case of any adaption, modification or translation of the document,
+reasonable steps must be taken to clearly label, demarcate or otherwise identify that changes were made to or based on the original document. Any impression that the adaption,
+modification or translation of the original document is endorsed or sponsored by the ICH must be avoided.
+The document is provided "as is" without warranty of any kind. In no event shall the ICH or the authors of the original document be liable for any claim, damages or other liability
+arising from the use of the document.
+The above-mentioned permissions do not apply to content supplied by third parties. Therefore, for documents where the copyright vests in a third party, permission for reproduction
+must be obtained from this copyright holder.
+
+
+
+
+                                                                                                                                                                                     ii
+                                                                                                                                                                                                              Dated: 18 July 2025
+                                                                                                                                                                                                                 E2B(R3) Q&As
+
+
+                                                                                                Table of Contents
+
+
+
+
+PREFACE ............................................................................................................................................................................................................................ 1
+1.  PURPOSES ............................................................................................................................................................................................................... 2
+2.  BACKGROUND....................................................................................................................................................................................................... 2
+3.  ESSENTIAL COMPONENTS ................................................................................................................................................................................ 2
+4.  ICH E2B(R3) DATA ELEMENTS ......................................................................................................................................................................... 4
+5.  DOCUMENT ATTACHMENT ............................................................................................................................................................................ 11
+6.  THE ICSR ACKNOWLEDGEMENT TRANSACTION ................................................................................................................................... 11
+7.  APPENDICES ........................................................................................................................................................................................................ 11
+8.  Q&AS MERGED INTO THE IMPLEMENTATION GUIDE .......................................................................................................................... 11
+9.  ANNEX: Q&AS LINKED TO THE RESPECTIVE SECTIONS OF ICH E2B(R3) GUIDELINE .............................................................. 20
+
+
+
+
+                                                                                                                                                                                                                                         iii
+                                                                                                                             Dated: 18 July 2025
+                                                                                                                                E2B(R3) Q&As
+
+
+PREFACE
+This Q&A document provides clarifications for the harmonized interpretation of the E2B(R3) IG package and should be reviewed in conjunction
+with the IG package. This will facilitate the implementation of the electronic transmission of Individual Case Safety Reports (ICSRs) in the ICH
+regions. The sections of this Q&A document correspond to the organization of the E2B(R3) IG.
+
+Pharmaceutical companies, regulators and vendors are encouraged to submit implementation-related questions to the ICH E2B(R3) EWG/IWG;
+answers to these questions are developed by the ICH E2B(R3) EWG/IWG in accordance with the ICH consensus process.
+
+Questions concerning the time frame and specific regional requirements not communicated in the E2B(R3) guidance are answered in guidance
+documents published for each region.
+
+The use of the terminology “upgrading” or “downgrading” in the documents included in the IG package refers to the technical conversion between
+E2B(R2) and E2B(R3).
+
+Future update to this Q&A document, if any, will be published at ICH web site.
+
+
+
+
+                                                                                                                                              1
+                                                              E2B(R3) Questions and Answers
+1.      Purposes
+             No Q&A
+
+2.      Background
+             No Q&A
+
+3.      Essential Components
+     #                                                                                                                                                       E2B(R3)
+                Date of
+     (# from               Questions                                              Answers                                                                    Data
+                Approval
+     ver.1.1)                                                                                                                                                Element
+                           Is it possible to use NI even if NI is not listed in   No, only nullFlavors specified for each element in IG and Q&A
+                           allowed values? Because, the explanation of NI         document are acceptable.
+     3.2        November   is that No information whatsoever can be inferred      The value set of nullFlavor in Q&A supersede the value set stated in
+     (002)      2014       from this exceptional value. This is the most          the IG.
+                           general exceptional value. It is also the default
+                           exceptional value.
+                           Does XML schema define default values for              The ISO/HL7 schema files automatically populate certain attributes with
+                           some attributes?                                       a default value, such as unit = ’1’ for PQ data type and mediaType
+                                                                                  = ’text/plain’ for ED data type. The ICSR sender should replace the
+                                                                                  default value with an appropriate value pertaining to the data being
+                                                                                  transmitted. For example, use the appropriate UCUM code for
+     3.3        November
+                                                                                  representing a unit of measurement for physical quantities (PQ) and
+     (004)      2014
+                                                                                  media designation for encapsulated data (ED). To help reduce parsing
+                                                                                  errors, the sender should omit optional data element tags if there is no
+                                                                                  information to be transmitted. For example, patient age is an optional
+                                                                                  data element and the sender should omit the entire age observation class
+                                                                                  if no age value is known.
+                           Is there anything senders should consider in           Senders should refer not only to the ICH Implementation Guide and
+     3.4        November   creating XML files for ICSRs?                          regional Implementation Guides but also its Appendices such as
+     (005)      2014                                                              Reference instances, Technical Information and so on.
+
+
+
+
+                                                                                                                                                                       2
+                                                                                                                                         Dated: 18 July 2025
+                                                                                                                                            E2B(R3) Q&As
+
+                   There is no guidance whether case sensitive form      In the ICH E2B(R3) ICSR messages, case sensitive form should be used
+3.5     November   or case insensitive form should be used for codes     for codes.
+(007)   2014       in the ICH E2B(R3) ICSR messages.                     Please refer to regional guidance for more information about case
+                                                                         sensitivity.
+
+                   Use of HL7 nullFlavors requires implementation Support for HL7 nullFlavor values, such as MSK (masked), NI (No
+                   of very specific business rules for parsing – not Information) and UNK (Unknown) may vary across implementation.
+                   necessarily as part of ICSR file validation. ICSR Systems should be designed to receive process and re-produce a
+                   file validation is checking appropriate HL7 compliant message utilizing nullFlavors as defined in the ICH E2B(R3)
+3.6     November   nullFlavors by data element (datatype). Backend IG.
+(008)   2014       system parsing rules are different because they
+                   affect how data is actually displayed / queried in
+                   the database: EX: Date fields with a NI value
+                   cannot be parsed to a field structured for
+                   date/time.
+                   A serious case was sent electronically by a a) Yes, the company should send a new message, updating the previous
+                   company to a Regulatory Authority. Meanwhile,          report with the new information, indicating that the case is now non-
+                   due to follow-up information received at the           serious.
+                   company, this case is now determined to be non-
+                   serious.                                            b) No, the company should not send a new message to nullify the case
+                                                                          in the Regulatory Authority's database.
+                   a) Should the company send a new message
+3.7     November        indicating that the case is now non-serious? c) Yes, this would be new information, and a follow-up report would
+(010)   2014                                                              be appropriate utilizing the same safety report identifier.
+                   b) Should the company send a new message to
+                        nullify the case in the Regulatory Authority's
+                        database?
+
+                   c)    If the case becomes serious again, should the
+                         company send a new message with the same
+                         safety report identifier?
+                   If a report is forwarded to a company by a Health     a) and b) by definition a spontaneous report contains suspected adverse
+                   Authority, should the company consider that:          reactions (i.e., a possible causal relationship is suspected but not
+3.8     November
+                   a) the Health Authority's causality assessment        established). However, there is no universally accepted definition for
+(011)   2014
+                         is at least “possible”?                         "possible" in the scale of causality assessment. It is therefore not
+                                                                         possible to provide a precise answer to this question. It is up to the
+
+                                                                                                                                                          3
+                                                                                                                                                Dated: 18 July 2025
+                                                                                                                                                   E2B(R3) Q&As
+
+                            b)   the reporter’s causality assessment is also at   company and receiver to define causality assessment method and
+                                 least “possible”?                                classify the case-reports accordingly.
+
+
+                            In the ISO 639-2 language code list some              For those languages where (T) and (B) codes are provided the (T) code
+                            languages appear twice with two different codes       should be used in E2B(R3) messages.
+                            designated B and T: for instance, Czech is either
+     3.9                    cze (B) or ces (T) where ‘B’ indicates
+                June 2016
+     (028)                  ‘bibliographic’ and ‘T’ indicates ‘terminology’.
+                            In such instances is one of these correct (meaning
+                            that the other is incorrect) – if so, which, or is
+                            either OK?
+                            Does data length provided in the IG (e.g., 5AN)       Data length provided in the IG represents the apparent number of
+                            represent data length (byte) or apparent number       characters. Please note some languages/characters require more than a
+     3.10
+                June 2016   of characters? In UTF-8, surrogate pairs and          single byte for a character.
+     (029)
+                            combining characters have longer data length
+                            (byte) than their apparent data length.
+                            To use UCUM in E2B(R3), is it required to use a       ICH E2B(R3) standard does not require any UCUM syntax checking
+                            UCUM syntax checking tool in order to ensure          tools.
+     3.12       June 2018
+                            that units of measurements are correctly formed?
+
+                            As a regulator, how does one request an ICH ICH M2 is responsible for assigning OID in the ICH name space to the
+                            Object Identifier (OID) assigned to a region? ICH regulators. An information paper about OID can be found at the
+                                                                          ICH website, M2 Recommendations & Technical References page:
+     3.13       June 2019
+                                                                          https://www.ich.org/page/m2-recommendations-technical-references/
+                                                                          Please contact M2 via ICH Secretariat at admin@ich.org to request OID
+                                                                          assignment.
+
+
+4.      ICH E2B(R3) DATA ELEMENTS
+     #                                                                                                                                                    E2B(R3)
+                Date of
+      (# from               Questions                                         Answers                                                                     Data
+                Approval
+     ver.1.1)                                                                                                                                             Element
+
+
+
+
+                                                                                                                                                                    4
+                                                                                                                                  Dated: 18 July 2025
+                                                                                                                                     E2B(R3) Q&As
+
+                   A man started medications before his partner Following are abbreviated answer for the question and examples for various D, E, G
+                   became pregnant. But she has a miscarriage scenario regarding parent and/or child/foetus.
+                   now.                                         a) Yes. In this case the ADR should be the miscarriage experienced by
+                   a) Is the ADR a miscarriage?                      the mother.
+
+                   b)   Is the patient of the report the father or b) The patient should be the mother.
+                        mother?
+                                                                   c) Yes. The route of administration should be how the father was given
+                   Is the route of administration how the father       the suspect medication.
+                   took the medicine?
+                                                                   Scenario 1: Miscarriage, drug administered to Mother
+                                                                     Patient (D)               Mother
+                                                                     AE (E)                    Miscarriage
+                                                                     Drug section (G)          Product taken by mother
+                                                                     Route of Administration
+                                                                                               Route administered to mother
+                                                                     (G.k.4.r.10)
+4.1     November
+(009)   2014                                                    Scenario 2: Miscarriage, drug administered to Father
+                                                                  Patient (D)               Mother
+                                                                  AE (E)                    Miscarriage
+                                                                  Drug section (G)          Product taken by father
+                                                                                            Use nullFlavor “UNK” in G.k.4.r.10.1
+                                                                  Route of Administration
+                                                                                            Describe information about father and
+                                                                  (G.k.4.r.10)
+                                                                                            mother in the narrative
+                                                                  Additional Information
+                                                                                            3 (Drug taken by the father)
+                                                                  on Drug (G.k.10.r)
+
+                                                                Scenario 3: foetus or breast-feeding infant is exposed to drug(s)
+                                                                through the mother and experienced adverse events/reactions
+                                                                  Patient (D)                Infant/foetus
+                                                                  AE (E)                     AE experienced by Infant/foetus
+                                                                  Drug section (G)           Product taken by mother
+                                                                  Route of Administration This is usually an indirect exposure, such
+                                                                  (G.k.4.r.10)               as transmammary
+
+                                                                                                                                                     5
+                                                                                                                                     Dated: 18 July 2025
+                                                                                                                                        E2B(R3) Q&As
+
+                                                                    Parent       Route     of
+                                                                    Administration             Route administered to mother
+                                                                    (G.k.4.r.11)
+                                                                    For a Parent-child /
+                                                                    Foetus             Report, Mother’s information according to the
+                                                                    Information Concerning user guidance for section D
+                                                                    the Parent (D.10)
+
+                                                                  Scenario 4: child/foetus experienced adverse events/reactions through
+                                                                  drug(s) administered to father
+                                                                    Patient (D)                Child/foetus
+                                                                    AE (E)                     AE experienced by child/foetus
+                                                                    Drug section (G)           Product taken by father
+                                                                                               Use nullFlavor “UNK” in G.k.4.r.10.1
+                                                                    Route       of      admin
+                                                                                               Describe information about father and
+                                                                    (G.k.4.r.10)
+                                                                                               mother in the narrative
+                                                                    Parent       Route     of
+                                                                    Administration             Route administered to father
+                                                                    (G.k.4.r.11)
+                                                                    Additional Information
+                                                                                               3 (Drug taken by the father)
+                                                                    on Drug (G.k.10.r)
+                                                                    For a Parent-child /
+                                                                    Foetus             Report, Father’s information according to the user
+                                                                    Information Concerning guidance for section D
+                                                                    the Parent (D.10)
+
+                   Here is scenario on E.i.4 and E.i.5:           Senders should populate the most accurate information known for each E.i.4,
+                    Reaction       E.i.4           E.i.5          event. A blank field for start date or end date or both is acceptable if the E.i.5
+                    Sequence       Start date      End date       information is not known to the sender. When a precise date is not available,
+                    Reaction1      01-Feb-2010 02-Feb-2010        the decision of whether to leave blank or an inferred date for a given event
+4.5     November    Reaction2      03-Feb-2010 -                  should be left up to the sender’s clinical judgment. If the events are thought
+(020)   2014        Reaction3      -               01-Jan-2010    to be related (i.e., if event1 is a sign or symptom of event2), it would be
+                                                                  clinically reasonable to use the earliest start date or latest end date, as
+                   How to get the blank start date and end date relevant, for both events. However, a sender should not infer dates unless
+                   details. As per the IG, if we have to consider there is a clear clinical rationale and this rationale should be stated in the
+                                                                  case narrative.
+                                                                                                                                                       6
+                                                                                                                                                Dated: 18 July 2025
+                                                                                                                                                   E2B(R3) Q&As
+
+                   start date of first reaction and end date of last
+                   reaction, the output will not be correct.
+
+                   If a value of test results does not have a          In such case, senders should enter the value and unit as unstructured data         F.r.3.4
+                   suitable UCUM code or a unit (for example           in F.r.3.4.
+4.8     November
+                   International Normalized Ratio, INR) or a
+(024)   2014
+                   unit of test results is unknown, how should
+                   the test results be entered?
+                   a) How should re-administration data be      Answers to question a) through c) are summarized into the scenarios below: E.i.4,
+                        entered after recovery from AE, e.g.,                                                                                   E.i.7,
+                        G.k.4.r.8 or G.k.4.r repetition?        The data element (G.k.8) is not a repeatable data element and captures the G.k.4.r,
+                                                                action taken with the suspect drug as a result of the reaction(s) / event(s) as G.k.8,
+                   b) When multiple dosage information provided by the reporter of the information. This data element is a within G.k.9.i.4
+                      (G.k.4.r) is available for a drug, which the ‘parent’ instance of G.k Drug and only one action can be captured for
+                                                                each instance of G.k Drug.
+                      dosage information should be used for
+                      G.k.8?                                    Because this data element is not associated with its own ‘time’ element, the
+                                                                relevant ‘time’ for G.k.8 Action(s) Taken with Drug is the onset of the
+                   c) Is it possible to identify the re- reaction. Analysis of the dosage information records in G.k.4 in
+4.9     November      administration after drug is discontinued combination with start date of the reaction/event in E.i.4 – Date of Start of
+(026)   2014          or after drug is temporarily stopped?     the Reaction/Event – would enable the receiver of the information to
+                                                                determine the relevant G.k.4 Dosage Information record associated with
+                                                                the reaction(s)/event(s).
+
+                                                                       The information related to the outcome of the reaction(s)/event(s) is noted
+                                                                       in E.i.7 - Outcome of Reaction / Event at the Time of Last Observation.
+                                                                       If the reaction(s)/event(s) do not recur after reintroducing the drug, G.k.9.i.4
+                                                                       Did Reaction Recur on Re-administration? would be set to 2 (rechallenge
+                                                                       was done, reaction did not recur) and E.i.7 – Outcome of Reaction / Event
+                                                                       at the Time of Last Observation would be set to 1 = recovered/resolved.
+
+                                                                 An example is provided in Appendix A.
+                   Clarification was requested for usage on "1" should be selected for both suspected and confirmed counterfeit                           E.i.2.1b,
+4.10    November   coding reports of possible counterfeit drugs. products in G.k.10.r and the appropriate MedDRA term should be selected                  G.k.10.r,
+(027)   2014                                                     for E.i.2.1b. Any explanatory information should be included in case                     H.1,
+                                                                 narrative. If new information is received to confirm the product is not a                H.3.r
+
+                                                                                                                                                                      7
+                                                                                                                                       Dated: 18 July 2025
+                                                                                                                                          E2B(R3) Q&As
+
+                                                                   counterfeit, then G.k.10.r should be changed appropriately as follow up. If
+                                                                   the product is confirmed as a counterfeit, the sender should use the
+                                                                   appropriate MedDRA code in H.3.r and explain in narrative.
+                    What is an appropriate age for newborn if an   Section D.2 provides several options for reporting patient age information. D.2
+4.15                adverse drug reaction/event has been           The sender should select the most appropriate field based on the information
+        June 2016   developed during pregnancy but just observed   provided. Based on the information provided in the question, field D.2.3
+(035)
+                    at time of delivery?                           may be the most appropriate field to report the patient age.
+                    What is an appropriate value for “G.k.9.i.4 Medical judgment should be used to assess the conceptual similarity of the E.i.2.1,
+                    Did reaction recur on re-administration?” if events. MedDRA codes do not need to be identical. [Refer to the most G.k.9.i.4
+                    adverse drug reaction/event on re- recent ICH MedDRA Term Selection: Points To Consider.]
+                    administration is not exactly the same as the
+                    one on previous administration?
+4.16
+        June 2016
+(036)
+                    Ex)
+                    E.i.2.1 Reaction/event: liver disorder
+
+                    Re-administration:                Aspartate
+                    aminotransferase increased
+                    Certain units that are commonly used to        The unit “mg/mL” is now available on the constrained E2B Code List #25        G.k.2.3.r.2b
+                    express concentration or strength of           (file name E2B CL25 ich-dose-strength-unit.xml). The IWG will evaluate
+                    pharmaceutical products are included in the    other UCUM units, singly and in combination, for possible inclusion in the
+                    UCUM Mass Concentration Units but are          E2B constrained units list.
+        November    missing from the E2B constrained term list.
+4.17
+        2016        An example is mg/mL that might be used in
+                    E2B(R3) data element G.k.2.3.r.2b Strength
+                    (unit). Is it possible to add mg/mL to the
+                    terms available for strength units in ICSR
+                    XML messages?
+                    Please clarify the conformance of data         Optional, but required when all the following conditions are met:             F.r.3.4
+                    element F.r.3.4.
+                                                                    F.r.2 – Test Name                              Populated
+4.21    June 2018                                                   F.r.3.1 – Test Result (code)                   Not populated
+                                                                    F.r.3.2 – Test Result (value / qualifier)      Not populated
+                                                                    F.r.3.3 – Test Result (unit)                   Not populated
+
+
+                                                                                                                                                           8
+                                                                                                                                       Dated: 18 July 2025
+                                                                                                                                          E2B(R3) Q&As
+
+                 For vaccines given according to a schedule of Information on the suspected dose schedule (sequence number) should be            D.8.r
+                 multiple doses, how should the ICSR message recorded in G.k.4.r.8 Dosage Text with alpha-numerical values.                      G.k.1
+                 capture which dose (sequence number) in the E.g., 1st dose, Dose #2, Dose no. in series: 3, etc.                                G.k.2
+                 schedule that was given?                                                                                                        G.k.4.r
+                                                               Information concerning unsuspected dose schedule should be recorded in            G.k.4.r.8
+                                                               D.8.r Relevant Past Drug History.
+                                                               When information regarding past doses is unavailable, only the information
+                                                               concerning the suspected dose should be recorded.
+                                                               Please refer to regional guidance for more information about vaccine
+                                                               reporting.
+
+                                                               Scenario 1: Patient received two doses of the same or different vaccine(s), the
+                                                               first dose is not suspected and the second dose is suspected
+
+                                                                   Data element                       k/r     Value
+                                                                   Characterization of Drug Role
+                                                                                                      k=1     1 (Suspect)
+                                                                   (G.k.1)
+       January                                                     Drug Identification (G.k.2)        k=1     Second vaccine
+4.23                                                                    Dosage      and Relevant              Information related second
+       2023                                                                                           k=1
+                                                                        Information (G.k.4.r)                 vaccine
+                                                                        Dosage Text (G.k.4.r.8)       k=1     E.g., 2nd dose
+                                                                   Relevant Past Drug History
+                                                                                                              First vaccine
+                                                                   (D.8.r)
+
+                                                               Scenario 2: Patient received two doses of the same vaccine and both doses are
+                                                               suspected
+
+                                                                   Data element                       k/r     Value
+                                                                   Characterization of Drug Role
+                                                                                                      k=1     1 (Suspect)
+                                                                   (G.k.1)
+                                                                   Drug Identification (G.k.2)        k=1     First and second vaccine
+                                                                        Dosage      and Relevant      k=1     Information related first
+                                                                        Information (G.k.4.r)         r=1     vaccine
+                                                                                                      k=1
+                                                                        Dosage Text (G.k.4.r.8)               E.g., 1st dose
+                                                                                                      r=1
+                                                                        Dosage     and     Relevant   k=1     Information related second
+                                                                                                                                                             9
+                                                                        Dated: 18 July 2025
+                                                                           E2B(R3) Q&As
+
+         Information (G.k.4.r)         r=2     vaccine
+                                       k=1
+         Dosage Text (G.k.4.r.8)               E.g., 2nd dose
+                                       r=2
+
+Scenario 3: Patient received two doses of different vaccines and both doses are
+suspected
+
+   Data element                        k/r     Value
+   Characterization of Drug Role
+                                       k=1     1 (Suspect)
+   (G.k.1)
+   Drug Identification (G.k.2)         k=1     First vaccine
+        Dosage      and Relevant               Information related first
+                                       k=1
+        Information (G.k.4.r)                  vaccine
+        Dosage Text (G.k.4.r.8)        k=1     E.g., 1st dose
+   Characterization of Drug Role
+                                       k=2     1 (Suspect)
+   (G.k.1)
+   Drug Identification (G.k.2)         k=2     Second vaccine
+        Dosage      and Relevant               Information related second
+                                       k=2
+        Information (G.k.4.r)                  vaccine
+        Dosage Text (G.k.4.r.8)        k=2     E.g., 2nd dose
+
+
+
+
+                                                                                        10
+                                                                                                                                          Dated: 18 July 2025
+                                                                                                                                             E2B(R3) Q&As
+
+5.      DOCUMENT ATTACHMENT
+             No Q&A.
+
+6.      THE ICSR ACKNOWLEDGEMENT TRANSACTION
+             No Q&A.
+
+7.      APPENDICES
+             No Q&A.
+
+
+8.      Q&As MERGED INTO THE IMPLEMENTATION GUIDE
+     These Q&As were incorporated into the documents included in the IG package (October 2023, Prague).
+
+     # from                                                                                                                                       E2B(R3)
+     ver.2.4     Date of                                                                                                                          Data
+                                     Questions                             Answers
+     (# from     Approval                                                                                                                         Element
+     ver.1.1)
+                                     Does ICH data type “AN” accept In principle, ICH “AN” data type accepts all characters, including space
+                                     Space?                             and some special characters listed in UTF8, but some characters such as
+                                                                        > and < are not allowed with XML message. So please refer to section
+                                     Does ICH data type “AN” accept all 3.6 of the ICH ICSR Implementation Guide for further clarification.
+                                     characters listed in UTF8?         However, ICH data elements with the ICH “AN” data type may not
+                                                                        always have a one-to-one mapping with the data type in ISO/HL7 27953-
+                                                                        2 ICSR message standard. The representation of the data can vary across
+                                                                        implementations.
+     3.1
+                 November 2014                                          For Example, ICH F.r.4 Normal Low Value and ICH F.r.5 Normal high
+     (001)
+                                                                        Value. These data elements specify use of the ICH AN data type;
+                                                                        however, the ISO/HL7 27953-2 message specification restricts allowable
+                                                                        XML schema values using the HL7 xsi:type code designation Physical
+                                                                        Quantity (PQ). The HL7 PQ data type is expressed as two XML schema
+                                                                        attributes: value and unit; value has HL7 REAL data type and units are
+                                                                        expressed as UCUM codes. For the use and information of the HL7 data
+                                                                        type, please refer to the ISO/HL7 27953-2 Informative Annex F: HL7
+                                                                        Data Type Specification.
+                                                                                                                                                          11
+                                                                                                                                     Dated: 18 July 2025
+                                                                                                                                        E2B(R3) Q&As
+
+                                                                  In the Business Rule section for the related data elements, the ICH ICSR
+                                                                  Implementation Guide provides information and examples for
+                                                                  representing the ICH AN data type with HL7 data type in transmission.
+
+                        The lists of UCUM couldn’t be found.      Information about UCUM, including link to download the specification is
+(003)   November 2014                                             available at: http://unitsofmeasure.org/trac/
+                        Which website should be referred to?
+                        When ‘Z’ was added at the end of time     No, the examples described in Appendix I(C) are inappropriate. ‘Z’
+                        values as described in Appendix II (C)    should not be added at the end of time values.
+                        ISO 8601 Compliant XML Examples           XML Schema defines the Time Zone value as <xs:pattern value="[0-
+                        in the IG ver. 5.01, parse error          9]{1,8}|([0-9]{9,14}|[0-9]{14,14}\.[0-9]+)([+|-][0-9]{1,4})?"/>, and
+                        occurred.     Can senders use the         Appendix II (B) Time Zone in the IG states that “The syntax is
+(006)   November 2014
+                        representations of date and time such     ‘CCYYMMDDHHMMSS.UUUU[+|-ZZzz]’ where digits can be omitted
+                        as                    199411051315Z,      from right side to express less precision”.
+                        20090601231105.5Z,
+                        20090601231105Z, 200906012331Z
+                        or 2009060123Z?
+                        There are several references to M5        All references to M5 Identifiers in the Implementation Guide and
+                        Identifiers    in    the    E2B     R3    associated technical documents should be replaced with ISO IDMP Terms
+(012)   November 2014
+                        Implementation        Guide,     please   and Identifiers.
+                        confirm these still apply?
+                        It is not assumed that ‘In exceptional    No, it is not assumed that the country of the primary source is not available C.1.1,
+                        cases where the country of the            to sender and there is not any case that E.i.9 is used as alternative of C.2.r.3,
+                        primary source is not available to the    Reporter’s Country Code.                                                      E.i.9
+                        sender’ described in User Guidance of
+                        C.2.r.3.                                   In this context, the description in User Guidance of C.1.1 ‘in exceptional
+(013)   November 2014
+                        Is there any case that E.i.9 is used as    circumstances where the country of primary source is unknown, the
+                        alternative of Reporter’s Country          country where the reaction occurred (E.i.9) should be used to indicate the
+                        code?                                      country code’ is also inappropriate.
+                                                                   A change of E.i.9 never change Sender’s (case) Safety Report Unique
+                                                                   Identifiers.
+                        How can I identify the primary source     If no information on the primary source is available, section C.2.r should  C.1.3,
+                        and the reporter qualification when an    identify the Health Authority as the primary source.                        C.2.r
+4.2                     ICSR is forwarded by Health               Field C.2.r.4 ‘Qualification’ should be populated with nullFlavor
+        November 2014
+(014)                   Authorities with minimal or no            “UNK”.
+                        information on the primary source?         Additionally, field C.1.3 ‘Type of report’ may be populated with a code of
+                                                                   “4” (Not available to sender (unknown), if appropriate.
+                                                                                                                                                         12
+                                                                                                                                        Dated: 18 July 2025
+                                                                                                                                           E2B(R3) Q&As
+
+                        The conformance of C.1.5 is               Yes, a sender must enter date.                                                 C.1.4,
+                        “Required”. Even if a sender has only     If a sender has only first received information, the date of first received    C.1.5
+4.3
+        November 2014   first received information and no         information and the date of most recent information are same, so a sender
+(015)
+                        follow-up information, must a sender      enters the date correspond to C.1.4 in C.1.5.
+                        enter date in this field?
+                        The Business Rule(s) of C.2.r.3           No, the description of Business Rule(s) of C.2.r.3 is inappropriate. E.i.9 C.2.r,
+                        Reporter’s Country Code in the IG         only allows a two character country code.                                  E.i.9
+                        ver. 5.01 states that “When C.2.r.5 is
+                        populated ‘1’, nullFlavor is not
+                        allowed in this data element unless
+(016)   November 2014   E.i.9 is populated without a
+                        nullFlavor”.
+                        However nullFlavor is not allowed in
+                        E.i.9 Identification of the Country
+                        Where the Reaction / Event Occurred.
+                        Can senders use nullFlavor in C.2.r.3?
+                        NullFlavor value for D.1 stated in IG     The business rule for ICH D.1. Patient (name or initial) concerning the use    D.1
+                        ver. 5.01 doesn’t match what is stated    of allowable null flavor values is incomplete. Senders should refer to table
+                        in Appendix I (B) Backwards and           in section 5.6.2 nullFlavour for Fields Required in E2B(R3) and follow
+                        Forwards                  Compatibility   guidance concerning use of additional null flavor values for D.1., which
+                        Recommendations (BFC) ver. 2.00.          include the use of: MSK, ASKU, NASK, UNK value options.
+(017)   November 2014
+                        The IG currently states that the
+                        nullFlavor value allowed is MSK and
+                        the BFC states that the nullFlavor
+                        values allowed are MSK, ASKU,
+                        NASK and UNK.
+                        Appendix I (B) Backwards and              The business rule for D.7.1.r.3 or D.10.7.1.r.3 Continuing concerning the      D.7.1.r.3,
+                        Forwards                  Compatibility   use of allowable null flavor values is incomplete.                             D.10.7.1.r.3
+                        Recommendations (BFC) ver. 2.00           MSK, ASKU, NASK and UNK are allowed for D.7.1.r.3 and
+                        explains that “To upgrade to E2B(R3),     D.10.7.1.r.3.
+                        ‘Continuing (patient or parent
+(018)   November 2014   medical history)’ (i.e., B.1.7.1d or      Senders should follow the guidance of upgrading to E2B(R3) or
+                        B.1.10.7.1d in E2B(R2)) is provided       downgrading to E2B(R2) in section 5.6.3 nullFlavour for Optional Codes
+                        with value ‘3’ (unknown) in E2B(R2),      and Dates concerning use of the nullFlavour UNK for D.7.1.r.3 or
+                        the corresponding field should be         D.10.7.1.r.3.
+                        provided in E2B(R3) with the
+                        nullFlavour (UNK)”.
+                                                                                                                                                          13
+                                                                                                                                       Dated: 18 July 2025
+                                                                                                                                          E2B(R3) Q&As
+
+                        And the BFC also explains that “To This correction is reflected in the BFC version 2.01 (modified in
+                        downgrade to E2B(R2), ‘Continuing November 2014).
+                        (patient or parent medical history)’
+                        (i.e., D.7.1.r.3 or D.10.7.1.r.3 in
+                        E2B(R3)) has null flavor (UNK) in
+                        E2B(R3), the corresponding field in
+                        E2B(R2) should be provided with
+                        value ‘3’ (unknown)”.
+
+                        However, The IG currently states that
+                        the nullFlavor values allowed are
+                        MSK, ASK and NASK.
+                        About E2B(R3) data element: E.i.3.2 a)        E.i.3.2 are mandatory elements and False is not a value allowed for        E.i.3.2
+                        Seriousness Criteria at Event Level,          this data element. This mandatory data element should either be
+                                                                      ‘true’ or nullFlavor= ‘NI’.
+                        a) How to describe “unknown” and              When the information is unknown or the event is not serious, “NI”
+                           “not serious”? What is allowed             should be populated.
+4.4
+        November 2014      value for this data element?
+(019)
+                                                                 b)    “Left blank” if not serious using the nullFlavor “NI”.
+                        b) How to describe allowed values              All 6 criteria in E.i.3.2 should be included in XML every time (even
+                           and "left blank" in XML?                    if a report is non serious).
+                                                                       The following is an XML example.
+                                                                       <value xsi:type="BL" nullFlavor=”NI” />
+                        Test Result (code): ICH document The conformance of F.r.3.1 is clarified as follows.                                     F.r.2,
+                        states – “Optional, but required if F.r.2                                                                                F.r.3.1,
+                        is populated, and F.r.3.2 and F.r.3.4 is Optional, but required if F.r.2 is populated, and neither F.r.3.2 nor F.r.3.4   F.r.3.2,
+                        not populated”.         Whereas, EU is populated”.                                                                       F.r.3.4
+                        implementation guide says –
+(021)   November 2014   “Mandatory if F.r.2.2b is populated,
+                        and F.r.3.2 or F.r.3.4 is not
+                        populated.”.     Similar discrepancy
+                        exists for F.r.3.2 and F.r.3.4. The
+                        explicit meaning of “OR” / “AND”
+                        used in this needs to be clarified.
+                        How are the nullFlavors ‘NINF’ and When empty data elements are transmitted, nullFlavors are used to code                F.r.3.2
+4.6
+        November 2014   ‘PINF’ implemented           in     ICH the reason for the lack of data in a standardized manner. This allows for
+(022)
+                        E2B(R3)?                                  the creation of valid messages containing mandatory elements without
+                                                                                                                                                            14
+                                                                                                                                       Dated: 18 July 2025
+                                                                                                                                          E2B(R3) Q&As
+
+                                                                transmitting                                                        content.
+                                                                For ICH E2B(R3), the nullFlavors ‘NINF’ (negative infinity of numbers)
+                                                                and ‘PINF’ (positive infinity of numbers) are used only for the data
+                                                                element ICH E2B(R3) F.r.3.2 Test Result, and only when the element
+                                                                describes a range (e.g., data type IVL<…>) with an (unknown) infinity.
+                                                                For example, the concept of ‘equal or greater to 3’ can be represented as
+                                                                the range from ‘3’ to ‘positive infinity’, e.g., any (unknown) number
+                                                                greater than 3.
+                        User Guidance of F.r.3.2 Test Result No, senders cannot add a qualifier symbol in this data element.                    F.r.3.2
+                        (value/qualifier) in the IG ver. 5.01 This data element captures the value (amount) for the test result. In ICSR
+                        states that “A qualifier symbol can be message, this data element is represented in HL7 IVL_PQ data type which
+                        added to the value when appropriate. is a composite data type with multiple attributes. “Positive Infinity
+                        The supported qualifiers are ‘greater (PINF)” and “Negative Infinity (NINF)” nullFlavors are used to express
+                        than’, ‘less than’, ‘greater than or “Greater than” and “Less than” a specific value respectively. Followings
+                        equal to’ and ‘less than or equal to’”. are examples for test results with exact value, greater or less than a specific
+                        However allowed values are Numeric value.
+                        and nullFlavor (NINF and PINF).
+                        Can senders add a qualifier symbol (<, Test Result = 10 (mg/dl)
+                        >, ≤, ≥)?                               <value xsi:type="IVL_PQ"> <center value="10" unit="mg/dl"/>
+
+
+4.7                                                              Test Result < 10 (mg/dl)
+        November 2014
+(023)                                                            <value   xsi:type="IVL_PQ">       <low     nullFlavor="NINF"/><high
+                                                                 value="10" unit="mg/dl" inclusive="false"/></value>
+
+
+                                                                 Test Result <= 10 (mg/dl)
+                                                                 <value   xsi:type="IVL_PQ">       <low     nullFlavor="NINF"/><high
+                                                                 value="10" unit="mg/dl" inclusive="true"/></value>
+
+
+                                                                 Test Result > 10 (mg/dl)
+                                                                 <value    xsi:type="IVL_PQ">       <low   value="10"           unit="mg/dl"
+                                                                 inclusive="false"/><high nullFlavor="PINF"/></value>
+
+
+
+                                                                                                                                                          15
+                                                                                                                                   Dated: 18 July 2025
+                                                                                                                                      E2B(R3) Q&As
+
+                                                                Test Result >= 10 (mg/dl)
+                                                                <value    xsi:type="IVL_PQ">      <low   value="10"         unit="mg/dl"
+                                                                inclusive="true"/><high nullFlavor="PINF"/></value>
+
+                                                               The IG was updated to remove the references to qualifiers symbols. The
+                                                               correction is reflected to the IG version 5.02 (modified in November
+                                                               2016).
+                        The E2B IG implies the free text field The free text ‘Not specified’ or ‘Unknown’ should be expressed by using       G.k.7.r.1,
+                        G.k.7.r.1 is optional, however the nullFlavor.                                                                       G.k.7.r.2b
+(025)   November 2014
+                        business rules for G.k.7.r.2b. implies
+                        the use of a nullFlavor is mandatory.
+                        When retransmitting an ICSR As mentioned in the E2B(R3) implementation guide, the primary source                     C.2.r.5,
+                        received from another sender such as of the information is the person who provided the facts about the ICSR. In      C.3
+                        a regulatory authority, partner case of multiple sources, the ‘Primary Source for Regulatory Purposes’
+                        company, or other source, which (C.2.r.5) is the person who first reported the facts to the original sender,
+                        reporter should be marked as 'Primary not retransmitter.
+                        Source for Regulatory Purposes' (field The primary source should be distinguished from senders and
+                        C.2.r.5)?                              retransmitters. Information on the sender and retransmitters is captured in
+4.11
+        June 2016                                              section C.3. When retransmitting an electronic ICSR received from
+(030)
+                                                               another sender, such as a regulatory authority, partner company, or other
+                                                               source in E2B format, the Primary Source information in the initial
+                                                               transmission should reflect the reporter with first-hand information on the
+                                                               case and this should not be changed.
+                                                               The reporter identified as ‘Primary Source for Regulatory Purposes’ in
+                                                               the original transmission should remain unchanged in all subsequent
+                                                               retransmission of the case.
+                        The conformance of D.8.r.1 Name of The conformance of D.8.r.1 in the current Implementation Guide is                 D.8.r.
+                        Drug as Reported is “Required” and inappropriate. D.8.r Relevant Past Drug History can be left blank when no
+                        the business rule states that information is obtained.
+                        “nullFlavor = NA” should be used Technically, D.8.r.1 is required by the schema if any data element in
+                        when there is no previous exposure to section D.8.r is used. Therefore, the conformance of D.8.r.1 should be
+(031)   June 2016
+                        a drug or vaccine and no other interpreted as Conditionally Required.
+                        nullFlavor is allowed. Drug or NullFlavor = UNK is allowed when no information is available but need
+                        vaccine exposure history may be to enter D.8.r.1.
+                        unknown in most cases, but
+                        nullFlavor = UNK is not allowed in
+                                                                                                                                                        16
+                                                                                                                                 Dated: 18 July 2025
+                                                                                                                                    E2B(R3) Q&As
+
+                    this field. How should sender report
+                    such cases?
+                    Which data element (F.r.3.4 Result       Field F.r.6 is reserved for comments made by the reporter about the results F.r.3.4,
+4.12                unstructured data or F.r.6 Comments)     of tests and procedures.                                                    F.r.6
+        June 2016
+(032)               is applicable for test results such as   Unstructured findings from tests and procedures such as CT, MRI,
+                    comments on CT, MRI, or radiogram?       radiogram, etc. should be provided as free text in field F.r.3.4.
+                    The mother’s drug exposure has           It is appropriate to use G.k.6 to capture the earliest exposure during G.k.6
+                    started prior to her pregnancy. Is       pregnancy, a clinical judgment should be used to choose the most
+4.13                “G.k.6 Gestation period at time of       appropriate value/unit.
+        June 2016
+(033)               exposure”       necessary     to    be
+                    populatedon the child/foetus report
+                    and/or mother report?
+                    Is “D.2.2.1 Gestation Period When        In a foetus report, regardless the exposure from father or mother, the foetus D.2.2.1,
+4.14                Reaction / Event Was Observed in the     age information should be provided in D.2.2.1. Information concerning D.10
+        June 2016
+(034)               Foetus” necessary in the foetus report   the parent should be provided in section D.10.
+                    when drug was taken by father?
+                    The codesystem versions for the E2B      Yes, a sender should update the codesystem version in ICSR messages
+                    code lists used in the ICH E2B(R3)       (xml files) for submission. Acceptable codesystem version(s) are
+5.1                 reference instances are old compared     designated by regulatory authorities in each region.
+        June 2016
+(037)               to the latest version of the E2B code
+                    lists. Should a sender update the
+                    codesystem version appropriately?
+                    ISO 3166 Part 1 (alpha-2) country        IG specifies use of ISO 3166 Part 1 (alpha-2). ISO 3166 Part 1 (alpha-2) N, C to H
+                    codes are provided in the ISO web        supports use of country codes in E2B(R3) messages. This includes
+                    site.                                    “Officially assigned” country codes plus “EU” in the “Exceptionally
+                    https://www.iso.org/obp/ui/#home         reserved” category.
+3.11                There are some categories like           The “Unassigned” category should not be used. “Transitionally reserved”,
+        June 2016
+(038)               “Officially assigned codes” or “Other    “Indeterminately reserved” and “Formerly used” categories may be used
+                    code types”. Does ICH accept             when appropriate, e.g., for legacy data.
+                    “Officially assigned codes” only?
+                    Note: “EU” is categorized in
+                    “exceptionally reserved”
+                    How should “Decade” be represented       {Decade} in the IG should not be used. E2B(R3) EWG/IWG consulted with        D.2.2b
+                    in data element D.2.2b Age at Time of    UCUM and preferred notation is “10.a”. The code list #26 has been updated    D.10.2.2b
+4.18    June 2017   Onset of Reaction / Event (unit) and     accordingly.
+                    D.10.2.2b Age of Parent (unit)?
+                    There is a discrepancy between the IG
+                                                                                                                                                      17
+                                                                                                                                  Dated: 18 July 2025
+                                                                                                                                     E2B(R3) Q&As
+
+                   Value allowed and the code list #26,
+                   which one should be used?
+                   The data elements, F.r.4 Normal Low        While IG indicates data type 50AN and Value Allowed free text, value should   F.r.4,
+                   Value and F.r.5 Normal high Value,         be transmitted as two XML attributes: value and unit. Use only numeric data   F.r.5
+                   specify use of the ICH AN data type.       in value and alphanumeric in unit as currently documented in the Business
+                   However, an error is occurred by           Rule(s) section of data elements F.r.4 and F.r.5.
+4.19   June 2018
+                   some alphanumeric characters entered
+                   in these data elements. Is it possible
+                   to enter alphanumeric characters in
+                   these data elements?
+                   Please clarify which nullFlavour is        Only MSK is allowed nullFlavor for D.6.                                       D.6
+                   allowed for data element D.6 ‘last
+                   menstrual period’. The data element
+                   description for D.6 allows only
+4.20   June 2018   ‘MSK’ as a nullFlavor. But the table
+                   of definitions for nullFlavors (IG
+                   section 3.3.6) provides the following
+                   example for the value ‘NA’: last
+                   menstrual period for a male’.
+                   There is inconsistency regarding a         A numeric code listed in the ICH code list #4 is required to be entered for   D.1.1.1 –
+                   data entry rule between ICH OID and        D.1.1.1 – D.1.1.4. For further information, refer the X-path described in     D.1.1.4
+                   Business Rule(s) of D.1.1.1 – D.1.1.4.     Appendix I(G) Technical Information version 1.02 and Reference Instances
+                   For example, the ICH OID of D.1.1.4        version 3.1.
+                   specifies the ICH code list #4 and the
+                   numeric code "4" should be entered
+                   according to the list. However, the
+                   Business Rule(s) of D.1.1.4 is
+4.22   June 2019
+                   described as <code code =
+                   "investigation"      codeSystem        =
+                   "2.16.840.1.113883.3.989.2.1.1.4"/> .
+                   This looks as if a sender is required to
+                   enter a kind of word, and not a
+                   numeric code. Which way of data
+                   entry is appropriate for these data
+                   elements?
+
+
+                                                                                                                                                     18
+                                                                                                                     Dated: 18 July 2025
+                                                                                                                        E2B(R3) Q&As
+
+                  If date/time is provided without No, do not make this assumption. If date/time is provided as UTC exactly
+                  timezone offset can I assume that it is it would be expressed with a zero offset e.g. :
+                  UTC time?
+                                                          CCYYMMDDHHMM+0
+7.1   June 2017
+                                                          CCYYMMDDHH+0
+
+                                                       Note: This may need to be taken into consideration during data
+                                                       migration/conversion from E2B(R2) source data.
+
+
+
+
+                                                                                                                                     19
+                                                                                                                                                                 Dated: 18 July 2025
+                                                                                                                                                                    E2B(R3) Q&As
+
+9.   ANNEX: Q&As linked to the respective Sections of ICH E2B(R3) Guideline
+
+
+
+
+                                                                                                                                 4.0 THE ICSR
+                                                                                          3.4: ICH E2B(R3) DATA
+
+
+
+                                                                3: Essential Components                                                                             Other ICH Guidelines
+     Sections of
+     ICH
+
+
+                                                                                                                  3.5 DOCUMENT   ACKNOWLEDGEMENT
+     E2B(R3)
+
+
+
+
+                                               2: Background                                                                                        APPENDICES
+     Guideline
+
+
+
+
+                   Introduction   1: Purpose                                              ELEMENTS                ATTACHMENTS    TRANSACTION
+
+     1. Purpose
+     2. Background
+     3. Essential Components
+      2                                                        3.3.6
+      3                                                                                                                                            I(A)
+      4                                                                                                                                            I (D)
+                                                                                                                                                   I (G)
+      5                                                        3.3.2
+      6                                                        3.3.6
+      9                                                        3.2.3
+      10                                                       3.3.7
+      13                                                       3.2.2
+     4. ICH E2B(R3) DATA ELEMENTS
+      1                                                                                   D,E,G
+      5                                                                                   E.i.4,
+                                                                                           E.i.5
+      8                                                                                   F.r.3.4
+
+
+
+
+                                                                                                                                                                                           20
+                                                                                                                                                              Dated: 18 July 2025
+                                                                                                                                                                 E2B(R3) Q&As
+
+
+
+
+                                                                                                                              4.0 THE ICSR
+                                                                                       3.4: ICH E2B(R3) DATA
+
+
+
+                                                          3: Essential Components                                                                                Other ICH Guidelines
+Sections of
+ICH
+
+
+                                                                                                               3.5 DOCUMENT   ACKNOWLEDGEMENT
+E2B(R3)
+
+
+
+
+                                          2: Background                                                                                         APPENDICES
+Guideline
+
+
+
+
+              Introduction   1: Purpose                                                ELEMENTS                ATTACHMENTS    TRANSACTION
+
+ 9                                                                                     E.i.4,
+                                                                                       E.i.7,
+                                                                                      G.k.4.r,
+                                                                                      G.k.8,
+                                                                                     G.k.9.i.4
+ 10                                                                                  E.i.2.1b,
+                                                                                     G.k.10.r,
+                                                                                       H.1,
+                                                                                       H.3.r
+ 15                                                                                     D.2
+ 16                                                                                   E.i.2.1,                                                               MedDRA PTC
+                                                                                     G.k.9.i.4
+ 17                                                                                 G.k.2.3.r.2b
+ 21                                                                                   F.r.3.4
+ 23                                                                                    D.8.r
+                                                                                       G.k.1
+                                                                                       G.k.2
+                                                                                      G.k.4.r
+                                                                                     G.k.4.r.8
+5. DOCUMENT ATTACHMENT
+6. THE ICSR ACKNOWLEDGEMENT TRANSACTION
+7. APPENDICES
+
+                                                                                                                                                                                        21
+                                                                                                                                                   Dated: 18 July 2025
+                                                                                                                                                      E2B(R3) Q&As
+
+Appendix A
+Example for Q&A #4.9
+
+Consider a patient starting a drug for smoking cessation. The dose is titrated upwards over 2 weeks. After 4 weeks of use, the patient has onset of nightmares. As a
+result, the drug is withdrawn and subsequently the reaction/event is resolved.
+
+   Initial                                                                             Withdrawn due to Nightmares
+               Dose1
+                                       Dose2
+                                                                                                             Recovered
+                                                               Dose3
+
+                                                                                       Nightmares
+
+
+
+
+                    Parent Element                      Parent Value               Child Element                                 Child Value
+       C.1.5 Date of Most Recent Information        February 2nd
+       for This Report
+       G.k.2 Drug Identification          k=1       ‘QuitSmoking’
+       G.k.8 Action(s) Taken with Drug    k=1       'drug withdrawn’
+                                                                                                     k=1,   January 1st: 0.5mg daily, orally, x 7 days
+                                                                                                     r=1
+                                                                            G.k.4.r Dosage and       k=1,   January 8th: 1mg daily, orally, x 7 days
+                                                                            Relevant Information     r=2
+                                                                                                     k=1,   January 15th -29th:1mg twice daily, orally (stopped)
+                                                                                                     r=3
+                                                                            G.k.9.i Drug-                   January 29th: onset of (E.i.1) = Nightmares;
+                                                                            reaction(s) / Event(s)   i=1    (E.i.7=1-Recovered/Resolved)
+                                                                            Matrix
+
+
+                                                                                                                                                                   22
+                                                                                                                                            Dated: 18 July 2025
+                                                                                                                                               E2B(R3) Q&As
+
+Follow-up ICSR:
+Subsequently two weeks later, the drug re-introduced (dose, duration and action taken are unknown) and the reaction/event recurred.
+
+   Follow-up                                                                          Withdrawn due to Nightmares
+          Dose1
+                                                                                                                          Readministared
+                                       Dose2                                                                              Dosage info unknown
+                                                               Dose3
+                                                                                                                 Dose4
+                                                                                      Nightmares                    Nightmares
+                                                                                                                    recurred (Outcome:unknown)
+
+
+                                                                               Recovered
+
+
+
+
+                                                                                                                                                            23
+                                                                                                                               Dated: 18 July 2025
+                                                                                                                                  E2B(R3) Q&As
+
+
+           Parent Element              Parent Value           Child Element                                Child Value
+C.1.5 Date of Most Recent           March 15th
+Information for This Report
+G.k.2 Drug Identification     k=1   ‘QuitSmoking’
+G.k.8 Action(s) Taken with    k=1   ‘Unknown’
+Drug
+                                                                                 k=1,   January 1st: 0.5mg daily, orally, x 7 days
+                                                                                 r=1    duration
+                                                                                 k=1,   January 8th: 1mg daily, orally, x 7 days duration
+                                                      G.k.4.r Dosage and         r=2
+                                                      Relevant Information       k=1,   January 15th -29th: 1mg twice daily, orally
+                                                                                 r=3    (stopped)
+                                                                                 k=1,   February 13th: unknown, unknown
+                                                                                 r=4
+                                                                                        January 29th: onset of (E.i.1) = Nightmares;
+                                                      G.k.9.i Drug-reaction(s)
+                                                                                 i=1    G.k.9.i.4 = 1 yes - yes (rechallenge was done,
+                                                      / Event(s) Matrix
+                                                                                        reaction recurred); (E.i.7=0-Unknown)
+
+
+
+
+                                                                                                                                               24
+

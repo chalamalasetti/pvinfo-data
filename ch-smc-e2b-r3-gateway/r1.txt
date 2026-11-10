@@ -1,0 +1,979 @@
+    Information sheet
+    MB Guidance for Industry on the electronic exchange of ICSRs in
+    E2B (R3) format through B2B gateway
+
+    Identification number:                          MU101_20_832
+
+    Version:                                        2.0
+
+    Valid from:                                     01.08.2026
+
+
+
+
+Swissmedic | Hallerstrasse 7 | 3012 Berne | www.swissmedic.ch | Tel. +41 58 414 08 00 | anfragen@swissmedic.ch
+List of contents
+1         Introduction .......................................................................................................................4
+2             Context of the standards ..................................................................................................5
+3             Goal ....................................................................................................................................5
+4             Scope .................................................................................................................................6
+5             General principles / information .......................................................................................6
+5.1           Deviations............................................................................................................................6
+5.2           Electronic exchange / reporting of ICSRs ............................................................................7
+5.3           Attachments ........................................................................................................................8
+5.4           Use of nullflavor flags ..........................................................................................................9
+5.5           Important notes....................................................................................................................9
+5.6           The Swissmedic PV system and EMA guidelines ..............................................................10
+6             Processing of safety reports (ICSRs) .............................................................................10
+6.1           PV system overview ..........................................................................................................11
+6.2           Import ................................................................................................................................12
+6.3           Export ................................................................................................................................12
+7             Starting electronic submission.......................................................................................13
+7.1           Send letter of intent ...........................................................................................................13
+7.2           Test phase.........................................................................................................................13
+7.2.1         PV system compatibility test ..............................................................................................14
+7.2.2         B2B gateway connection process ......................................................................................14
+7.2.3         Exchange certificates.........................................................................................................14
+7.3           Operational phase .............................................................................................................14
+7.4           What to do in case of system failure ..................................................................................14
+7.4.1         Malfunction of the electronic pharmacovigilance system – Swissmedic .............................14
+7.4.2         Malfunction of the electronic pharmacovigilance system – MAH ........................................15
+7.5           Processing and acknowledgement of receipt of ICSRs ......................................................15
+8             Description of the Swissmedic gateway ........................................................................16
+8.1           Communication overview and process ..............................................................................17
+8.1.1         Process MAH transmits E2B to Swissmedic ......................................................................17
+8.1.2         Process Swissmedic transmits E2B to MAH ......................................................................18
+8.2           Additional information ........................................................................................................18
+8.2.1         Operational requirements for communicating with the Swissmedic gateway ......................18
+8.2.2         Security aspects ................................................................................................................19
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                                                    2 /21
+9             Information for connecting to the Swissmedic B2B gateway ......................................19
+9.1           General information ...........................................................................................................19
+9.2           Swissmedic .......................................................................................................................19
+9.2.1         MAH certificate test and production ...................................................................................19
+10            Basic conditions ..............................................................................................................20
+10.1          Time frames ......................................................................................................................20
+10.2          Location .............................................................................................................................20
+11            Utilities & equipment .......................................................................................................20
+11.1          Equipment .........................................................................................................................20
+11.2          Relevant documents ..........................................................................................................20
+12            Glossary ...........................................................................................................................21
+
+
+
+Change history
+    Version   Valid and         Modified         Description, comments (by author)                                                      Author’s
+              binding as        without                                                                                                 initials
+              of:               version
+                                change
+    2.0       01.08.2026                         1 Introduction
+                                                 Updated
+                                                      -   Swissmedic finished the changeover of the reporting
+                                                          process for ICSRs from E2B(R2) to E2B(R3) on the B2B
+                                                          gateway by 30 June 2026.
+                                                      -   For companies which do not fulfil the conditions for
+                                                          introducing an exchange of ICSRs via the B2B gateway,
+                                                          the electronic reporting system ElViS (Electronic Vigilance
+                                                          System) will be updated to E2B (R3) by the end of 2026
+
+                                                 5.2 Electronic exchange / reporting of ICSRs
+                                                 Added:
+                                                     -    Information regarding the reporting obligations for individual
+                                                          case safety reports from Category A studies and for
+                                                          adverse drug reactions of Auxiliary Medicinal Products
+                                                          (AxMP) in clinical trials                                                     bop, sgu,
+                                                     -    Patient Identifier(s) needed to confirm existing patient                      stt, zma
+                                                     -    Citation format for literature references (Vancouver Style)
+                                                     -    Specification of the maximum permitted size of attachments
+                                                          and the total ICSR
+
+                                                 5.3 Attachments
+                                                 Added: Additional information regarding the handling of literature
+                                                 case reports when the literature source document is not available at
+                                                 time of initial submission
+                                                 5.4 Use of nullflavor flags
+                                                 Added: Handling of nullflavor flags in line with GVP Module VI
+                                                 Addendum II as of 01-Aug-2026
+                                                 6.3 Export
+                                                 Added: Information on data elements to be masked, left blank or not
+                                                 to masked/left blank
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                                                  3 /21
+                                           7 Starting electronic submission
+                                           Added: Agreement with Swissmedic is required if multiple marketing
+                                           authorisation holders intend to use a shared sender ID for reporting
+                                           7.2.1 PV systems compatibility test
+                                           Deleted: a linked parent and child report
+                                           11.2 Relevant documents
+                                           Added GVP Module VI Addendum II to list of relevant documents
+
+
+                                           Chapter 6.3: Deletion of field C.2.r.3 from the list of masked fields for   bop, gem,
+    1.1      04.09.2024
+                                           export                                                                      stt, zma
+                                                                                                                       bop, gem,
+    1.0      26.08.2024                    New document                                                                isi, sgu,
+                                                                                                                       stt, zma
+
+
+
+
+1            Introduction
+
+This guidance is intended to assist marketing authorisation holders (MAHs) in preparing the electronic
+transmission of Individual Case Safety Reports (ICSRs) in pharmacovigilance in E2B(R3) format. This
+document discusses general issues related to the electronic transmission of ICSRs with the goal of
+achieving common standards for a successful electronic exchange of ICSRs with Swissmedic.
+
+Swissmedic supports the electronic transmission of ICSRs. In developing its electronic reporting
+systems Swissmedic has the ability to generate and receive electronic reports that comply with the
+ICH standards.
+
+The electronic reporting requirements apply to all MAHs which have ICH-E2B compliant
+pharmacovigilance systems.
+
+To make these ICH standards and electronic case reporting more useful and compliant with changing
+pharmacovigilance practices, a new version referred to as ICH E2B(R3) was finalised in July 2013.
+ICH agreed to use the International Organization for Standardization (ISO) Individual Case Safety
+Report (ICSR) standard ISO EN 27953-2 to meet the reporting requirements for E2B(R3):
+   • ISO/HL7 27953-2:2011 - Health informatics — Individual case safety reports (ICSRs) in
+       pharmacovigilance — Part 2: Human pharmaceutical reporting requirements for ICSR
+
+Swissmedic finished the changeover of the reporting process for ICSRs from E2B(R2) to E2B(R3) on
+the B2B gateway by 30 June 2026. The transition included the recommendations and procedures of
+the European Medicines Agency regarding data elements and message specifications (see 11.2
+Relevant documents). Differences in the requirements between the EMA and Swissmedic will be
+addressed in chapter 5 of this document.
+
+This guidance also specifies the technical requirements and the process of transmission of Safety and
+Acknowledgement Messages through the B2B gateway and describes the obligations that
+stakeholders must adhere to in this process to ensure successful electronic communication. The
+Electronic Data Interchange (EDI) process is based on the electronic exchange of a Safety Message
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                              4 /21
+between a Sender and a Receiver. The Acknowledgement Message confirms the receipt and the
+outcome of the validation of a Safety Message and completes the EDI process.
+
+For companies which do not fulfil the conditions for introducing an exchange of ICSRs via the B2B
+gateway, the electronic reporting system ElViS (Electronic Vigilance System) will be updated to E2B
+(R3) by end of 2026. You can find further details about ElViS on the Swissmedic website
+(Reporting/submitting suspected adverse drug reactions by pharmaceutical companies
+(swissmedic.ch)).
+
+
+
+2            Context of the standards
+
+ International specifications                               European and regional specifications
+
+
+
+
+          ISO                              ICH                     EMA
+                                                                              Implementation Guideline
+                                                                                   EMA E2B R3
+
+
+
+
+                                                                         EMA Implementation Guide forms the
+                                                                           basis, Swissmedic Guide shows
+                                                                                      deviations
+ Technical Specification         Implementation Guideline
+        E2B R3                         ICH E2B R3
+
+
+
+
+                                                                                Implementation Guide
+                                                                Swissmedic       Swissmedic E2B R3
+
+
+
+
+3            Goal
+
+This guideline describes the requirements for MAHs to participate in the new E2B(R3) electronic
+exchange of ICSR between Swissmedic and MAHs (bidirectional) and provides guidance on the
+technical and procedural standards applied by Swissmedic.
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                5 /21
+4            Scope
+
+MAHs are obliged by law to submit certain ICSRs (relating to human medicines) to Swissmedic, and
+Swissmedic forwards ICSRs received from other sources to the MAH concerned. The scope of this
+guideline covers Swissmedic and all MAHs for medicinal products and therapeutic biologicals for
+human use marketed in Switzerland (for reports from Liechtenstein, please refer to the corresponding
+FAQ on the Swissmedic website: FAQs: General Pharmacovigilance (swissmedic.ch)). It currently
+refers only to ICSRs from the post-authorisation phase.
+
+
+5            General principles / information
+
+The following table summarises relevant deviations from EMA business rules when post-marketing
+ICSRs are submitted to Swissmedic via the B2B gateway in E2B(R3) format.
+
+5.1          Deviations
+
+  EU Individual Case Safety
+        Report (ICSR)                               Europe                         Switzerland
+   Implementation Guide
+ Page 5                                 EudraVigilance (EV)             Swissmedic Drug Safety System
+                                        Reports can be submitted only   Reports can be submitted only
+                                        electronically                  electronically
+
+                                                                        Exception: marketing
+                                                                        authorisation holders (MAHs)
+                                                                        based outside Switzerland:
+                                                                        Reporting/submitting suspected
+                                                                        adverse drug reactions by
+                                                                        pharmaceutical companies
+                                                                        (swissmedic.ch)
+
+
+
+
+ Page 7                                 EV Post-Authorisation and       Only Post-Authorisation
+                                        Clinical Trial Module
+                                                                        Currently no Clinical Trial Module
+                                                                        (SUSARs from notified studies
+                                                                        are reported to KLV)
+ Page 8                                 Notification periods 15 days    Notification periods 15 days
+                                        (serious) or 90 days (non-      (serious) or 60 days (non-serious)
+                                        serious
+ Page 9                                 Message Flow in the EU          No Message Flow in the EU
+                                        Network                         Network
+ Page 13                                EVWEB and WEB Trader            ElViS is an alternative to the B2B
+                                                                        gateway for the exchange of
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                          6 /21
+                                                                          ISCRs between MAH and
+                                                                          Swissmedic
+     Page 14                             Registration and test process    Specific registration and test
+                                         for gateway users                process for gateway users
+     Page 24                             Data exchange between EV         No data exchange with other
+                                         and national authorities         authorities
+     Page 26                             SUSARs from clinical studies     SUSARs from notified clinical
+                                         are documented in the Clinical   studies are reported to the
+                                         Trial Module of EV.              Clinical Trials Division. No
+                                                                          documentation in the Swissmedic
+                                                                          drug safety system.
+     Page 29                             Literature monitoring for        Literature monitoring is the
+                                         selected substances              responsibility of the marketing
+                                                                          authorisation holder.
+     Page 29 & 99                        Duplicates: master case          Duplicates: Swissmedic's
+                                         procedure                        procedure for duplicates will be
+                                                                          published at a later date.
+     Page 38                             Causality assessment is not      For requirements regarding the
+                                         mandatory for post-              medical assessment of ICSRs
+                                         authorisation ICSRs              see relevant FAQ on Swissmedic
+                                                                          website
+     General deviation: several          One ICH ICSR batch can           One ICH ICSR batch can contain
+     different pages in the guide        contain one or more safety       only one safety report (ICSRs).
+                                         reports (ICSRs).
+
+
+
+5.2         Electronic exchange / reporting of ICSRs
+
+ Electronic transmission of ICSRs is a two-way process which affects only the reporting mechanism.
+ The legal reporting requirement does not change (see TPA Art. 58, 59 and TPO Art. 61-66).
+ According to the legislation, MAHs are required to submit the following Individual Case Safety Reports
+ (ICSRs), also referred to as safety reports, to Swissmedic:
+
+ ▪     All Swiss spontaneous serious ICSRs and non-serious unexpected ICSRs (including ICSRs from
+       observational / non-interventional studies, PASS, registries, compassionate use, etc.)
+ ▪     Abuse
+ ▪     Medication errors and “near misses” on an individual basis with a focus on possible risk
+       minimisation
+ ▪     Lack of efficacy according to the respective FAQ on the Swissmedic website; FAQs: General
+       Pharmacovigilance (swissmedic.ch)
+ ▪     For category A clinical trials i.e. with products marketed in Switzerland used according to the
+       marketing authorisation, notification requirements are specified in the FAQs (FAQs: General
+       Pharmacovigilance) published by Swissmedic Pharmacovigilance (Art. 59 paragraphs 1, 2 and 3
+       of the Therapeutic Product Act (TPA, SR 812.21))
+ ▪     SUSARs or other reportable reactions occurring with an AxMP, which is authorised in Switzerland,
+       originating from the Swiss market and is used according to the local label (Safety measures in
+       clinical trials)
+
+
+ MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                         7 /21
+This note for guidance does not apply to SUSARs of investigational medicinal products (IMPs) or
+SUSARs/other reportable reactions of AxMPs that do not meet the criteria specified above.
+
+To be valid for reporting to Swissmedic, an ICSR must fulfil four minimum reporting criteria: an
+identifiable reporter, an identifiable patient, a reaction and a suspected medicinal product.
+Patient identifiers according to EMA:
+With regard to patients, at least one patient identifier is required to indicate that a patient exists. This
+is met through the completion of at least one of the following data elements ICH E2B (R3) D.1,
+D.1.1.1, D.1.1.2, D.1.1.3, D.1.1.4, D.2.1, D.2.2A, D.2.2.1a, D.2.3 or D.5. At least one of these patient
+identifier data elements should be different from “UNK”, “ASKU” or “NASK”, since these nullflavors in
+any of the patient identifier data elements do not indicate that a patient exists. Similarly, use of a text
+string ‘UNK’ in the patient initials do not indicate the existence of a patient.
+See also: EU Individual Case Safety Report (ICSR)1 Implementation Guide
+
+The complete information for an ICSR that is available to the sender should be reported in the
+structured fields and in the narrative. Any supporting information related to the case must be
+sufficiently described within the ICSR and should be listed in section C.1.6.1.r.1 (document list),
+C.4.r./C.4.r.1 (literature reference) or the narrative (H/H.1). See chapter 11.2.
+In addition, whenever more recent important information on an individual case is submitted (e.g.
+follow-up information, ICSR highlighted for nullification), the complete (entire) information on the case
+must be provided and not just partial information, e.g. changes or updates.
+For those ICSRs that are highlighted for nullification (‘Report nullification’, C.1.11.1, set to ‘nullified’)
+the reasons for nullification must also be indicated (C.1.11.2), see chapter 11.2.
+For ICSRs arising from literature, the adequate/correct reference must be placed in the section
+C.4.r./C.4.r.1 (literature reference). For all submitted literature articles, the literature reference (data
+element C.4.r.1) must be formatted exclusively using the Vancouver citation style. This requirement
+applies without exception and must be adhered to across all submissions, regardless of source type
+(journal article, book, conference proceeding or electronic publication). The article itself should be
+attached as a document to the ICSR (see chapter 5.3).
+
+The maximum total size of an ICSR is currently 20 MB. For attachments, a maximum size of 15 MB
+applies. This adjustment aligns with the regulatory requirements of the EMA and must be taken into
+account in both the technical and procedural implementation by pharmaceutical companies.
+
+
+
+5.3          Attachments
+
+In order to provide supplemental information, the sender of an ICSR can attach documents to the
+ICSR message itself. Attachments are provided as in-line data transmitted using the encapsulated
+data type.
+The main use of this data element will be to provide literature articles (see chapter 5.2). Please note
+that for marketing authorisation holders which send ICSRs in R3 format it is mandatory to send
+literature articles as additional documents to ICSR message itself via the gateway. Please refrain in
+this scenario from sending literature articles via mail. If translations of original articles into English or a
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                             8 /21
+Swiss national language are only available later than the initial report, they should be sent as an
+additional document of an Amendment.
+
+Other documents made available by a primary source (e.g. autopsy reports, ECG strips, chest X-rays
+or photographs, etc.) can also be attached using the same method. However, additional documents
+should not be routinely attached to ICSRs but only at the request of the receiver on a case-by-case
+basis or where the correct medical interpretation of the ICSR can only be made with access to the
+attachment(s).
+
+
+Supported file types          File type                          Media type (values)
+PDF                           Portable Document Format           application/pdf
+JPEG/JPG                      Joint Photographic Experts Group   image/jpeg
+TXT                           Text file                          text/plain
+RTF                           Rich text file                     text/rtf
+TIFF/TIF                      Tagged Image File Format           image/tiff
+HTML                          HyperText Markup Language          text/html
+Doc                           Word document                      application/msword
+Docx                          Office Open XML (ISO/IEC 29500)    application/vnd.openxmlformats-
+                              word-processing                    officedocument.wordprocessing
+                                                                 ml.document
+XLS                           Excel document                     application/vnd.ms-excel
+XLSX                          Office Open XML (ISO/IEC 29500)    application/vnd.openxmlformats-
+                              spreadsheet                        officedocument.spreadsheetml.s
+                                                                 heet
+DICOM                         Digital Imaging and                application/dicom
+                              Communications in Medicine
+
+
+5.4          Use of nullflavor flags
+
+Regarding the use of nullflavor flags, the requirements set out in GVP Module VI Addendum II
+Masking of personal data in individual case safety reports submitted to EudraVigilance apply in
+Switzerland from 1 August 2026. See: Good pharmacovigilance practices (GVP) | European
+Medicines Agency (EMA). This applies both to ICSRs submitted to Swissmedic and to ICSRs sent by
+Swissmedic.
+
+
+
+5.5        Important notes
+
+MAHs are advised to reduce the number of follow-ups to a minimum; only new and medically relevant
+information such as outcome, alternative medical conditions, other suspect drugs, results of
+performed investigations or any other data with an impact on causality should trigger follow-up
+information. Ideally, an initial case should be followed by one follow-up when the case is closed.
+
+Further information on the current reporting obligations can be found on the Swissmedic homepage
+under FAQs on General Pharmacovigilance: FAQs
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                        9 /21
+5.6          The Swissmedic PV system and EMA guidelines
+
+The Swissmedic drug safety system is designed on top of the E2B format with the aim of being
+E2B(R3) compatible. Therefore, no major difficulties regarding E2B interpretation are expected.
+Safety and acknowledgement messages must follow the content and format of the respective EMA
+guidelines:
+
+▪     E2B (R3) Step 5 Electronic transmission of individual case safety reports (ICSRs) - data elements
+      and message specification - implementation guide (europa.eu) see chapter 11.2
+▪     EU Individual Case Safety Report (ICSR)1 Implementation Guide (europa.eu), see chapter 11.2
+▪     The XSD schema location for ICSRs, see chapter 11.2
+
+6            Processing of safety reports (ICSRs)
+
+The Swissmedic drug safety system has the ability to generate and receive electronic reports that
+comply with the ICH standards as detailed in E2B (M). The following chapter describes the processing
+and management of safety reports and some important standard procedures.
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                     10 /21
+6.1               PV system overview
+
+
+
+
+                                                 Drug Safety System
+
+                 MAH                               E2B Interface
+
+                                                       Gateway
+                                                         AS2
+
+                                                                                   ICSR ACK
+                                                    ICSR    mdn          mdn
+
+
+
+                                                              AS2
+                                                   B2B Gateway
+
+
+
+                 Swissmedic
+                                                            SOAP
+
+                                                                               ICSR ACK
+                                     WHO            ICSR
+                                      DD
+
+                                                            SOAP
+                              Med-                  Swissmedic                                 Swissmedic Reviewer
+                                                                                              Monitors and classifies
+                              DRA                Drug Safety System                           incoming transmissions
+                                                             REST
+                                                                  ICSR
+
+
+
+                                                             REST
+                                                           Vigibase
+                 UMC
+                                                           Vigilyze
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                          11 /21
+6.2          Import
+
+It is important that MAHs comply with the checks listed below when submitting electronic ICSRs to
+ensure that reports are not automatically rejected (negative ACK log) by the system.
+
+1. In the first step the drug safety system checks whether:
+   ▪ the incoming file is a valid xml file (as defined by W3C)
+   ▪ the safety message is in accordance with the EMA ICSR Schema Files (XSD), see chapter
+       11.2.
+   ▪ the sender information is complete (the fields “sender information”, “sender organisation” and
+       “sender identifier”).
+
+2. In the second step the drug safety system checks each safety report for:
+   ▪ field lengths
+   ▪ lexicon / dictionary values
+   ▪ a missing safety report ID
+   ▪ the worldwide unique number (report rejected if it is missing or if both authority numb and
+       company numb are filled in)
+   ▪ a missing report type.
+
+The Swissmedic PV system accepts MedDRA terminology and WHO Drug Dictionaries.
+
+6.3          Export
+
+The Swissmedic drug safety system uses MedDRA terminology (e.g. for indications, reactions, etc).
+
+In order to be able to comply with the revised EMA business rules for preparing and processing
+ICSRs, a validation tool based on the EMA business rules is implemented in the Swissmedic system
+(see chapter 11.2).
+The exported files are checked against the EMA business rules (see chapter 11.2). Some fields,
+however, cannot be validated or are not relevant.
+
+The table below outlines these exceptions:
+
+ E2B(R3) - Field              Name                          Comments
+ N.1.1                        Type of Message in batch
+ N.1.1.CSV                    Type of Message in batch
+                              code system version           Only one message header (N.2.r.) inside
+ N.1.2                        Batch Number                  a batch wrapper accepted
+ N.1.3                        Batch Sender Identifier
+ N.1.4                        Batch Receiver Identifier
+ N.1.5                        Date of Batch Transmission
+ C.5.1.r.1                    Study Registration Number     Not relevant
+ C.5.1.r.2                    Study Registration Country    Not relevant
+ G.k.9.i.2.r.2.E              EU Method of Assessment
+ U.1                                                        See FAQ on Swissmedic requirements
+ G.k.9.i.2.r.1.E              EU Source of Assessment
+ U.1                                                        for medical assessments of ICSRs
+ G.k.9.i.2.r.2.E              EU Method of Assessment
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                     12 /21
+ E2B(R3) - Field                                Name                                  Comments
+ U.1
+ G.k.9.i.2.r.3.E                                EU Result of Assessment
+ U.1
+ N.2.r.3                                        Message Receiver Identifier           The Swissmedic identifier is “SM” for
+ N.2.r.2                                        Message Sender Identifier             production
+ C.2.r.2.5                                      reporterstate                         Not relevant
+ C.2.r.2.6                                      reporterpostcode
+
+With regard to the masking and omission of data fields, see Chapter 5.4 and GVP Module VI
+Addendum II.
+
+
+
+7                  Starting electronic submission
+
+Before the electronic transmission of ICSRs can be initiated, MAHs should follow the steps indicated
+below.
+
+                Duration: approx.
+                3 months
+                (individual cases
+                may vary)
+
+                                                                      Connectivity
+                                                                         tests
+                                                                      (Validation)
+                                     Timeline           Technical
+    Letter of                                                                                             Go-live
+                                     planning          integration                       Invoice                        Closing
+     intent                                                                                            (Production)
+                                    SMC/MAH            (Validation)
+                                                                      Compatibility
+                                                                          tests
+                                                                       (Validation)
+
+
+
+
+If transmission of data from a single database to Swissmedic on behalf of multiple MAHs (e.g. in the
+case of a merger of MAHs) is intended, a specific agreement with Swissmedic must be concluded
+prior to implementation.
+Implementation of distinct sender IDs will be required for reasons of data consistency and in line with
+established practices adopted by other MAHs. The relevant details must be clarified and agreed with
+Swissmedic prior to initiating the transition.
+In such cases, please contact pvgateway@swissmedic.ch at an early stage for further information.
+
+
+
+7.1                Send letter of intent
+
+A Letter of Intent for the Electronic Transmission of ICSRs must be sent to the PV Specialist (Process
+Specialist) at Swissmedic (see conditions on www.swissmedic.ch).
+The Process Specialist will then contact the MAH to plan a time period for a gateway setup.
+
+
+7.2                Test phase
+
+During the test phase the currently established regulatory reporting mechanism remains unaffected.
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                                13 /21
+It is recommended that the MAH keeps a copy of configuration settings including certificates (public
+key) used during the test phase to enable the MAH to reconstruct the identical test environment for
+subsequent testing at a later stage.
+
+
+7.2.1        PV system compatibility test
+
+For the tests, the MAH and Swissmedic need to exchange and load the following XML test files into
+the drug safety system to check whether the E2B structure and the validation rules will work:
+
+      ▪   an initial report (including medical and drug history)
+      ▪   a follow-up report to the initial report
+      ▪   a non-interventional (observational) study report
+      ▪   a case reported in the literature including the attached literature article (C.4.r.2 encoded
+          attachment)
+      ▪   a nullified report
+
+
+7.2.2        B2B gateway connection process
+
+After configuration of the gateways (Swissmedic and MAH), it is necessary to test whether the
+gateways can communicate (technical layer AS2). The interoperability of the party’s gateway with the
+Swissmedic gateway is tested. Senders may have to adopt hardware, software and data
+communication configurations to meet the recommended communication standards.
+The three steps to connect to the B2B gateway are (1) system integration and connectivity testing
+(test environment), (2) end-to-end business testing between the drug safety systems (test
+environment) and, finally, (3) system configuration (productive environment).
+
+
+7.2.3        Exchange certificates
+
+Swissmedic is not mandating any particular software for the electronic communication of ICSRs. If the
+party’s software is fully interoperable with the Swissmedic gateway, then the sender will receive
+certification from Swissmedic to use it. Swissmedic also needs the public certificate of each
+participating MAH.
+
+
+
+7.3          Operational phase
+
+Following successful completion of the operational test phase, the operational phase is initiated when
+electronic transmission of ICSRs replaces the currently established regulatory transmission between
+the parties.
+
+7.4          What to do in case of system failure
+
+7.4.1        Malfunction of the electronic pharmacovigilance system – Swissmedic
+
+When Swissmedic detects a malfunction of the electronic pharmacovigilance system (database
+and/or gateway), Swissmedic investigates the root cause of the system failure and carries out a
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                           14 /21
+preliminary estimation of the expected system downtime within a maximum of 24 hours after detection
+of the system malfunction. Two scenarios are used:
+
+Scenario B
+If system downtime is estimated to be equal to or less than 5 calendar days, Swissmedic informs the
+respective MAH by e-mail that the electronic pharmacovigilance system is expected to be out of
+service for a maximum of 5 calendar days and that electronic case submission is delayed. The
+respective MAH will be informed by a separate e-mail to the same e-mail address once the system is
+up and running again. The situation is continuously monitored and if after 4 business days it is
+deemed unlikely that the system will be up and running again after 5 days, the failure is changed to
+scenario A. Swissmedic uses medical judgement to identify cases deemed critically important for
+processing under scenario A.
+
+Scenario A
+If system downtime is estimated to be more than 5 days, cases fulfilling the Swissmedic criteria for
+expedited reporting are sent via FileShare in E2B XML file format.
+
+7.4.2        Malfunction of the electronic pharmacovigilance system – MAH
+
+When an MAH detects a malfunction of the electronic pharmacovigilance system (database and/or
+gateway), the MAH investigates the root cause of the system failure and carries out a preliminary
+estimation of the expected system downtime within a maximum of 24 hours after detection of the
+system malfunction. Two scenarios are used:
+
+Scenario B
+If system downtime is estimated to be equal to or less than 5 calendar days, the MAH informs
+Swissmedic by e-mail to pvgateway@swissmedic.ch that the electronic pharmacovigilance system is
+expected to be out of service for a maximum of 5 calendar days and that electronic case submission
+will include all cases not successfully sent before (ACK log received from Swissmedic). Swissmedic
+will be informed by a separate e-mail to the same e-mail address once the system is up and running
+again. The situation is continuously monitored and if after 4 business days it is deemed unlikely that
+the system will be up and running again after 5 days, the failure is upgraded to scenario A. The MAH
+uses medical judgement to identify cases deemed critically important for processing under scenario A.
+
+Scenario A
+If system downtime is estimated to be more than 5 days, cases fulfilling the Swissmedic criteria for
+expedited reporting can be sent via FileShare in E2B XML file format. In this case, please contact
+Swissmedic via pvgateway@swissmedic.ch to initiate the necessary steps for data exchange via this
+channel. The MAH will assign a provisional case ID and will keep track of this number and provide the
+worldwide unique case identifier once the primary pharmacovigilance system is up and running again.
+
+7.5          Processing and acknowledgement of receipt of ICSRs
+
+The Swissmedic drug safety system performs a basic validation of any incoming ICSRs against the
+specified XML schema. The sender is responsible for including the correct ICSR message XML
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                     15 /21
+header as specified in I.C.3.1. If the sender has not included the correct schema reference in the XML
+header as indicated in I.C.3.1, the return of an Acknowledgment Message cannot be guaranteed.
+
+    •    If a parsing error is detected by the Swissmedic drug safety system, the following scenarios
+         may occur:
+         If, during the process of parsing the ICSR, the Swissmedic drug safety system can detect a
+         valid sender identifier, an Acknowledgement Message will be created and sent to the sender,
+         listing the detected error. The Transmission Acknowledgement Code reported in the data
+         element ICH E2B(R3) ACK.A.4 will be ‘AR’, i.e. no data extracted.
+
+         If, during the process of parsing the ICSR, the Swissmedic drug safety system cannot detect a
+         valid sender identifier, an Acknowledgement Message cannot be created as the sender cannot
+         be identified. In this case no Acknowledgement Message will be returned. Senders of ICSRs
+         should monitor for the absence of a receipt of acknowledgment. In this case contact
+         Swissmedic via pvgateway@swissmedic.ch.
+         If the process of parsing the ICSR is successful and the Swissmedic drug safety system
+         cannot detect a valid receiver identifier, an Acknowledgement Message will be created and
+         sent to the sender, listing the detected error. The Transmission Acknowledgement Code
+         reported in the data element ICH E2B(R3) ACK.A.4 will be ‘AR’, i.e. no data extracted.
+
+
+
+         ACK code AA: Application Acknowledgement Accept (message successfully processed, no
+         further action)
+         ACK code AE: Application Acknowledgment Error (error detected, error response has
+         additional detail, some ICSR message(s) need further action)
+         ACK code AR: Application Acknowledgment Reject (parsing error, no data extracted, re-send
+         the entire transaction)
+         The Acknowledgement Message can reflect two different types of transmission
+         acknowledgements at ICSR level:
+         ICSR code CA: Commit Accept (the ICSR message was successfully loaded)
+         ICSR code CR: Commit Reject (the ICSR message contains a fatal error that prevents the
+         ICSR from being loaded)
+
+8            Description of the Swissmedic gateway
+
+The Swissmedic gateway (IBM DataPower gateway) serves as a security multichannel gateway.
+
+The Swissmedic gateway follows the ICH M2 Gateway Recommendation for the Electronic Transfer
+of Regulatory Information (see chapter 11.2).
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                    16 /21
+8.1          Communication overview and process
+
+8.1.1        Process MAH transmits E2B to Swissmedic
+
+
+                                                                                     MAH
+                                                                                     AS2
+
+                                                    AS2                                                            AS2
+                               1                            MDN
+  AS2 via http
+                                      E2B file                                                                                   ACK Log
+    or https
+
+
+                                                                                                 MDN                                          5
+
+                                                    AS2                    B2B Gateway                             AS2
+                                                  AS2 -> SOAP                                                   SOAP -> AS2
+
+                               2                 Web service                                                Web service
+
+                               SOAP Request                     SOAP Response                    SOAP Request                 SOAP Response
+  Webservice
+ via SOAP and
+                                for E2B file                      for E2B file                    for ACK Log                   for ACK Log
+      https
+                                                                                 3         4                                                  6
+                                                 Web service                                                    Web service
+                                                                               Swissmedic
+                                                                            Drug Safety System
+                                                                                  SOAP
+
+
+
+
+      1: MAH transmits an E2B file to the B2B gateway via AS2 over HTTPS ; message receipt is
+         confirmed by an MDN.
+      2: The B2B gateway forwards the E2B file to the Swissmedic drug safety system via the web
+         service (SOAP request).
+      3: The Swissmedic drug safety system answers via SOAP response to the B2B gateway.
+      4: The Swissmedic drug safety system transmits an ACK log to the B2B gateway via the web
+         service (SOAP request).
+      The B2B gateway forwards the ACK log to the respective MAH via AS2 over HTTPS ; message
+      receipt is confirmed by an MDN. The B2B gateway answers via SOAP response to the
+      Swissmedic drug safety system.
+
+         The B2B gateway stores the MDN temporarily in the file system (90 days). After 90 days the
+         MDN will be stored for 10 years in a storage system.
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                                                    17 /21
+8.1.2        Process Swissmedic transmits E2B to MAH
+
+
+
+                                                                                       MAH
+                                                                                       AS2
+
+                                                  AS2                                                                AS2
+                               2                                                                                                MDN
+  AS2 via http
+                                                              E2B file                              ACK Log
+    or https
+
+
+                                   MDN                                                                                                          4
+
+                                                  AS2                        B2B Gateway                             AS2
+                                                AS2 -> SOAP                                                       SOAP -> AS2
+
+                               1               Web service                                                    Web service
+
+                               SOAP Request                       SOAP Response                    SOAP Request                 SOAP Response
+  Webservice
+ via SOAP and
+                                for E2B file                        for E2B file                    for ACK Log                   for ACK Log
+      https
+                                                                                   3         5                                                  6
+                                               Web service                                                        Web service
+                                                                                 Swissmedic
+                                                                              Drug Safety System
+                                                                                    SOAP
+
+
+      1. The Swissmedic drug safety system transmits an E2B file to an MAH via web service (SOAP
+         request) to the B2B gateway.
+      2. The B2B gateway forwards the E2B file to the respective MAH via AS2 over HTTPS ;
+         message receipt is confirmed by an MDN.
+      3. The B2B gateway answers via SOAP response to the Swissmedic drug safety system.
+      The MAH which received the E2B file transmits an ACK log to the B2B gateway via AS2 over
+      HTTPS ; message receipt is confirmed by an MDN. The B2B gateway forwards the ACK log via
+      web service (SOAP request) to the Swissmedic drug safety. The Swissmedic drug safety system
+      answers via SOAP response to the B2B gateway.
+
+The B2B gateway stores the MDN temporarily in the file system. After 90 days the MDN will be stored
+for 10 years in a storage system.
+
+8.2          Additional information
+
+8.2.1        Operational requirements for communicating with the Swissmedic gateway
+
+Each party must provide all the equipment, software and services necessary to create, transmit,
+receive, translate, record and store safety, acknowledgement and MDN messages in compliance with
+the respective ICH standards and the requirements as defined in this Guidance.
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                                                                      18 /21
+ 8.2.2        Security aspects
+
+ To facilitate the secure transmission of safety and acknowledgement messages over the Internet,
+ each party must purchase, install and operate applications that allow for the successful transmission
+ and receipt of encrypted and digitally signed safety and acknowledgement messages via the
+ Swissmedic gateway.
+ The applications chosen by each party must provide the essential functionality and interoperability as
+ outlined in chapter 6.
+ Encrypting and digitally signing safety and acknowledgement messages by using certificates provides
+ the parties with assurance about each transaction.
+
+ 9            Information for connecting to the Swissmedic B2B gateway
+
+ 9.1          General information
+
+ The following section provides information on the organisational and technical framework of
+ Swissmedic and lists the information MAHs must provide to Swissmedic in order to set up a gateway
+ connection between an MAH and Swissmedic. It also lists the contact persons at Swissmedic.
+
+ 9.2          Swissmedic
+
+     National Competent Authority address              Swissmedic
+                                                       Hallerstrasse 7
+                                                       3012 Bern
+                                                       Switzerland
+
+     PV Specialist (Process Specialist) contact        Swissmedic
+                                                       Name: Manuela Zwahlen
+                                                       E-mail: manuela.zwahlen@swissmedic.ch
+
+     Technical contact                                 Swissmedic
+                                                       Name: Petya Borissov
+                                                       E-mail: pvgateway@swissmedic.ch
+
+
+
+9.2.1       MAH certificate test and production
+
+ Please send your certificate to the following e-mail address: pvgateway@swissmedic.ch
+ Important: It is not permitted to submit self-signed certificates!
+
+ Note: The provided data will be used to set up a partner configuration on the B2B gateway, e.g.
+ “Require Signature = Yes” means that the B2B gateway will sign messages to the MAH.
+ Time to Acknowledge: The time that the MAH has to acknowledge receipt of a message via an MDN.
+ After the “Time to Acknowledge” has elapsed, the message will be resent as often as needed at
+ intervals corresponding to the “Time to Acknowledge”.
+
+
+
+ MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                   19 /21
+10           Basic conditions
+
+10.1         Time frames
+
+The time conditions operate in accordance with the standards used within Switzerland (CET).
+
+10.2         Location
+
+The services will be provided within the premises of the respective participant:
+
+▪    PharmApp Solutions GmbH, Erkrath, Germany
+▪    Swissmedic, Bern, Switzerland
+▪    MAH, MAH city, MAH country
+
+11           Utilities & equipment
+
+11.1         Equipment
+
+▪    Phone
+▪    Functional mail account for B2B gateway Swissmedic: pvgateway@swissmedic.ch
+▪    E-mail client
+▪    Internet portal and current information. The URL will be communicated to all parties during the
+     MAH coordination meeting
+
+11.2         Relevant documents
+
+▪    E2B(R3) ICSR Specification and Related Files: ICH official web site: ICH (accessed 03.01.2024)
+▪    E2B (R3) Step 5 Electronic transmission of individual case safety reports (ICSRs) - data elements
+     and message specification - implementation guide (europa.eu)
+▪    EU Individual Case Safety Report (ICSR)1 Implementation Guide (europa.eu)
+▪    The XSD schema location for ICSRs:
+     http://eudravigilance.ema.europa.eu/XSD/multicacheschemas/MCCI_IN200100UV01.xsd
+▪    GVP Module VI Addendum II – Masking of personal data in ICSRs for EudraVigilance
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                     20 /21
+12           Glossary
+
+ ACK log                      Acknowledgment log. Receipt generated automatically by receiver after an
+                              E2B has been uploaded to the drug safety system or Vigilance One Ultimate
+ ADR                          Adverse Drug Reaction
+ AS2                          Applicability Statement 2 (AS2)
+ E2B                          Electronic to Business - ICH standard for electronic transmission of adverse
+                              drug reactions in XML format
+ EMA                          European Medicines Agency
+ HP QC                        Hewlett Packard Quality Centre
+ ICH                          International Conference on Harmonisation of Technical Requirements for
+                              Registration of Pharmaceuticals for Human Use (ICH)
+ ICSR                         Individual Case Safety Report
+ Local Company                Internal case number of MAH
+ Number
+ MAH                          Marketing Authorisation Holder
+ MAH type 1                   Marketing Authorisation Holder with own gateway
+ MDN                          Message Disposition Notification. Standard confirmation of receipt of an
+                              AS2 communication
+ NCA                          National Competent Authority
+ PASS                         Post Authorisation Safety Study
+ PI                           Product Information
+ RPVZ                         Regional Pharmacovigilance Centre
+ SM/SMC                       Swissmedic
+ UMC                          Uppsala Monitoring Centre
+ Swissmedic drug              System used by Swissmedic to manage adverse drug reactions
+ safety system
+ WHO                          World Health Organization
+ WHO-Art                      WHO Adverse Reaction Terminology
+ WHO-Drug                     WHO Drug Dictionary
+ XML                          Extended mark-up language
+
+
+
+
+MU101_20_832_MB - Merkblatt | 2.0 | 01.08.2026                                                           21 /21
+

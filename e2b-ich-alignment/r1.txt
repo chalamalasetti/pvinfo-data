@@ -1,0 +1,206 @@
+     INTERNATIONAL COUNCIL FOR HARMONISATION OF
+    TECHNICAL REQUIREMENTS FOR PHARMACEUTICALS
+                   FOR HUMAN USE
+
+
+      ICH E2B(R3) Expert Working Group / Implementation
+                      Working Group
+
+
+
+
+Information Paper Regarding Alignment with ICH
+                 E2D(R1) Guideline
+
+                        Final version
+                 Adopted on 16 December 2025
+                     Document History
+
+
+Version   History                                  Date
+1.0       Approved by the Regulatory and Industry 14 October 2025
+          Members of the E2B(R3) EWG/IWG
+1.0       Endorsement by the members of the ICH 16 December
+          Management Committee                    2025
+                                                Table of Contents
+
+1   INTRODUCTION ......................................................................................................1
+2   BACKGROUND .........................................................................................................1
+3   ALIGNMENT OF E2B(R3) WITH E2D(R1) ...........................................................2
+4   TRANSITION .............................................................................................................3
+5   REGIONAL IMPLEMENTATION ..........................................................................4
+
+
+
+
+                                                             i
+1   Introduction
+This Information Paper explains the alignment of ICH E2B(R3) specifications with the revised
+ICH E2D guideline (referred to as ICH E2D(R1)) which was agreed in September 2025. This
+will require clarification and updates to two existing ICH E2B(R3) data-elements: “C.1.3 Type
+of Report” and “C.5.4 Study Type Where Reaction(s) / Event(s) Were Observed”.
+
+Addition of new value options to an existing data element can be accommodated as per the
+established ICH E2B(R3) maintenance process. This Information Paper will be available until
+the update has been incorporated into the E2B(R3) Implementation Guide package and ICH
+E2B(R3) Questions and Answers document.
+
+
+2   Background
+The revision of the ICH E2D guideline aims to clarify the management of safety data derived
+from solicited sources, such as social media, market research programs, patient support
+programs and others, which vary in characteristics and contribution to the quality of post-
+approval safety information.
+
+The User Guidance for data-element “C.1.3 Type of Report” has been updated to clarify that
+the value ‘2 = Report from study’ is used for studies as well as for other solicited sources.
+
+The ICH E2D(R1) guideline also refers to several ICH E2B values used in data element “C.5.4
+Study Type Where reaction(s) / event(s) Were Observed” to reflect the origin of the solicited
+report.
+
+Accordingly, the User Guidance for data element “C.5.4 Study Type Where Reaction(s) /
+Event(s) Were Observed” has been updated to align with definitions in ICH E2D(R1). It
+includes new values to classify solicited reports originating from patient support programs (see
+ICH E2D(R1) section 4.5), market research programs (see ICH E2D(R1) section 4.6) and
+organized data collection systems with source data from digital platforms (see ICH E2D(R1)
+section 4.3.2). This update will allow Marketing Authorization Holders (MAHs) and regulators
+to separate the analyses of case reports from these sources and provide a clearer understanding
+of their contribution to safety signal identification.
+
+
+
+
+                                               1
+3   Alignment of E2B(R3) with E2D(R1)
+The changes to the ICH E2B(R3) data elements are highlighted in bold underlined text. ICH
+Code List 8 (CL8) has been updated to accommodate the new values.
+
+C.1.3 Type of Report
+ User Guidance       This data element captures the type of report independently of its source;
+                     a separate element for the designation of the source is covered in item
+                     C.4 and is not duplicated in this section.
+
+                     For example, if a case in the literature arises from spontaneous
+                     observations, “type of report” should be Spontaneous report.
+
+                     If a case in the literature arises from a study, “type of report” should be
+                     Report from study and the differentiation between types of studies (e.g.,
+                     clinical trials or others) should be given in Section C.5.4 (See the user
+                     guidance for C.5.4).
+
+                     If it is unclear from the literature report whether or not the case(s) cited
+                     are spontaneous observations or whether they arise from a study, then
+                     this item should be Other.
+
+                     The value ‘2’ (Report from study) is used for studies as well as for
+                     other solicited sources, as described in E2D(R1).
+
+                     The Not available to sender option allows for the transmission of
+                     information by a secondary sender (e.g., regulatory authority) where the
+                     initial sender did not specify the type of report; it differs from Other,
+                     which indicates that the sender knows the type of report but cannot fit it
+                     into the categories provided.
+ Conformance         Required
+ Data Type           1N
+ OID                 2.16.840.1.113883.3.989.2.1.1.2
+ Value Allowed       1 = Spontaneous report
+                     2 = Report from study
+                     3 = Other
+                     4 = Not available to sender (unknown)
+ Business Rule(s)
+
+
+
+
+                                               2
+o
+
+C.5.4 Study Type Where Reaction(s) / Event(s) Were Observed
+ User Guidance     This information should be provided if the “Type of Report” (C.1.3) has
+                   been populated with “Report from study”.
+
+                    Definitions provided in ICH E2D(R1) for Patient Support Program,
+                    Market Research Program, Organised Data Collection System and
+                    Digital    Platform      should  be     taken    into    account.
+
+                    The value ‘6 = Organised Data Collection System with source data
+                    from a digital platform’ should only be used if the Individual Case
+                    Safety Reports (ICSR) originated from a digital platform and none
+                    of the other study types (1-5) apply.
+
+                    For example, value ‘6 = Organised Data Collection System with
+                    source data from a digital platform’ should be selected if the ICSR
+                    originated from a digital platform in the context of “social listening”
+                    activity on a digital platform that is not under the responsibility of
+                    the MAH.
+
+                    If the ICSR originated from a digital platform in the context of a
+                    Patient Support Program, then the value ‘4 = Patient Support
+                    Program’ should be selected, instead of the value ‘6 = Organised Data
+                    Collection System with source data from a digital platform’.
+ Conformance        Optional, but required if C.1.3 = 2 (Report from study).
+ Data Type          1N
+ OID                2.16.840.1.113883.3.989.2.1.1.8
+ Value Allowed      1 = Clinical trials
+                    2 = Individual patient use (e.g., “compassionate use” or “named
+                    patient basis”)
+                    3 = Other studies (e.g., pharmacoepidemiology, pharmacoeconomics,
+                    intensive monitoring)
+                    4 = Patient Support Program
+                    5 = Market Research Program
+                    6 = Organised Data Collection System with source data from a
+                    digital platform
+ Business Rule(s)
+
+
+
+
+4   Transition
+The new values for data-element “C.5.4 Study Type Where Reaction(s) / Event(s) Were
+Observed” should be used prospectively:
+   - ICSRs that have already been submitted to regulatory authorities do not need to be re-
+      submitted with a new value.
+   - However, when submitting a follow-up ICSR or an amendment report, the new values
+      should be used as appropriate. For example, submitting a follow-up ICSR for a case
+      from a market research program that was previously submitted to the regulatory
+
+                                            3
+        authorities, the new value ‘5 = Market Research Program’ should be used in data
+        element “C.5.4 Study Type Where Reaction(s) / Event(s) Were Observed”.
+    -   The new values should be used as appropriate for newly submitted ICSRs, not just for
+        newly introduced solicited data sources. For example, ICSR submissions arising from
+        a patient support program that has been running for years should use the new value ‘4
+        = Patient Support Program’ in data-element “C.5.4 Study Type Where Reaction(s) /
+        Event(s) Were Observed” for all new and follow-up ICSRs submitted from this program.
+
+It is acknowledged that the ICH E2D(R1) definition for a Patient Support Program (PSP) (see
+ICH E2D(R1) sections 2.9 and 4.5) excludes certain types of programs which historically may
+have been considered to be PSPs (e.g., MAH activities that only allow one-way interactions
+such as delivery of a product to a patient’s home, or provision of vouchers or coupons). ICSRs
+that have already been submitted to regulatory authorities for programs no longer considered
+PSPs do not need to be re-submitted with a new value. When submitting a follow-up or an
+amendment report for a previously submitted ICSR originating from these types of programs,
+the data-element “C.1.3 Type of Report” should be updated with the value ‘1 = Spontaneous
+report’ and the data-element “C.5.4 Study Type Where Reaction(s) / Event(s) Were Observed ”
+should be left empty. The case narrative of the follow-up ICSR should also clarify that the
+ICSR originates from a one-way interactions service program and not from a patient support
+program.
+
+
+5   Regional implementation
+See websites of regional regulators for the implementation timelines for accepting the new
+values for data-element “C.5.4 Study Type Where Reaction(s) / Event(s) Were Observed” and
+additional regional considerations, as appropriate.
+
+When a region has not yet implemented the new values for data-element “C.5.4 Study Type
+Where Reaction(s) / Event(s) Were Observed”, the value ‘3 = Other studies (e.g.,
+pharmacoepidemiology, pharmacoeconomics, intensive monitoring)’ should be used for ICSRs
+originating from patient support programs, market research programs or from organized data
+collection systems with source data from digital platforms.
+
+
+
+
+                                              4
+
