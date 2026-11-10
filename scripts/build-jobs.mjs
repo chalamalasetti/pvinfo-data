@@ -112,6 +112,10 @@ else {
         await github.rest.repos.createCommitStatus({owner, repo, sha: c.sha, state: 'error', context: '${CHECK_CONTEXT} / merge', description: 'Has merge conflicts with main; resolve them to run the checks'});
         continue;
       }
+      // GitHub refreshes the merge commit lazily after main moves; test only an up-to-date one
+      // (asking for the pull request above starts the refresh, so a later poll picks it up).
+      const cmp = await github.rest.repos.compareCommitsWithBasehead({owner, repo, basehead: main + '...' + pr.merge_commit_sha});
+      if (cmp.data.behind_by > 0) { core.info(c.label + ': merge commit not refreshed yet; next run'); continue; }
       c.ref = pr.merge_commit_sha;
     }
     targets.push(c);
