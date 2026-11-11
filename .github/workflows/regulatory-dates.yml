@@ -4,6 +4,7 @@ name: Refresh regulatory calendar dates
 on:
   schedule:
     - cron: 41 5 * * 2
+    - cron: 23 6 * * *
   workflow_dispatch: null
 permissions:
   contents: read
@@ -29,7 +30,10 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - name: Collect regulatory dates from official registers
-        run: node scripts/regulatory-dates/collect.mjs --out output/regulatory-dates
+        env:
+          REGULATIONS_GOV_API_KEY: ${{ secrets.REGULATIONS_GOV_API_KEY }}
+          DAILY: ${{ github.event.schedule == '23 6 * * *' }}
+        run: node scripts/regulatory-dates/collect.mjs --out output/regulatory-dates $([ "$DAILY" = "true" ] && echo "--only regulations-gov")
       - name: Check every source parsed (pull requests)
         if: github.event_name == 'pull_request'
         run: |

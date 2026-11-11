@@ -176,6 +176,7 @@ jobs:
           node test/browser/regulatory-matrix.smoke.cjs
           node test/browser/inspections.smoke.cjs
           node test/browser/change-tracker.smoke.cjs
+          node test/browser/change-control.smoke.cjs
           node test/browser/document-catalog.smoke.cjs
           node test/browser/safety-config.smoke.cjs
           node test/browser/jira-send.smoke.cjs
@@ -230,6 +231,7 @@ jobs:
           node test/browser/company-briefing.smoke.cjs
           node test/browser/action-center.smoke.cjs
           node test/browser/impact-assessment.smoke.cjs
+          PV_BASE_URL=http://127.0.0.1:4173 node test/browser/card-to-case.smoke.cjs
           node test/browser/navigation.smoke.cjs
           node test/browser/shared-header.smoke.cjs
           node test/browser/admin-navigation.smoke.cjs
