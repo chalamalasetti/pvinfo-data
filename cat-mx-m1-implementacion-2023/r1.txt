@@ -1,0 +1,769 @@
+IMPLEMENTACIÓN
+DE LA GUÍA
+M1 EN
+FARMACOVIGILANCIA
+
+
+
+
+            CO M I S I Ó N F E D E R A L PA R A L A PR OT ECC I Ó N
+            CO N T R A R I E S GO S S A N ITA R I O S
+
+
+
+  gob.mx/cofepris
+IMPLEMENTACIÓN DE LA GUÍA M1 EN
+FARMACOVIGILANCIA.
+
+Comisión Federal para la Protección contra
+Riesgos Sanitarios.
+
+Av. Marina Nacional #60, Col. Tacuba, Alcaldía
+Miguel Hidalgo, C.P. 11410, Ciudad de México.
+
+Colaboradores: Dirección Ejecutiva de Farmacopea y
+Farmacovigilancia - CEMAR
+
+Diseño: Edén Eduardo Becerril Leos
+Índice
+
+LEGALES ------------------------------------------------------------------------------------------------------------------2
+
+INTRODUCCIÓN --------------------------------------------------------------------------------------------------------4
+
+OBJETIVO ----------------------------------------------------------------------------------------------------------------5
+
+NORMATIVIDAD APLICABLE ----------------------------------------------------------------------------------------6
+
+DESARROLLO -----------------------------------------------------------------------------------------------------------7
+
+NOTIFICACIÓN ----------------------------------------------------------------------------------------------------------11
+
+REPORTES PERIÓDICOS DE SEGURIDAD -----------------------------------------------------------------------13
+
+INFORME DE FARMACOVIGILANCIA -----------------------------------------------------------------------------16
+
+PLANES DE MANEJO DE RIESGOS --------------------------------------------------------------------------------18
+
+PREGUNTAS FRECUENTES -----------------------------------------------------------------------------------------20
+
+INFORMACIÓN DE CONTACTO ------------------------------------------------------------------------------------20
+
+
+
+
+                                                                                                                              3
+Introducción
+
+¿Qué es MedDRA?
+
+Es el Diccionario Médico para Actividades Regulatorias, por sus siglas en
+inglés Medical Dictionary for Regulatory Activities.
+
+Fue desarrollado por el Consejo Internacional de Armonización de los
+Requisitos Técnicos para el Registro de Medicamentos de Uso
+Humano o ICH, por sus siglas en inglés.
+
+Es una terminología médica válida y aceptada de forma internacional,
+que es utilizada por las autoridades regulatorias, así como industrias
+farmacéuticas.
+
+Antes del desarrollo de MedDRA, no existía una terminología acepta-
+da internacionalmente y las distintas organizaciones utilizaban su
+propio sistema de codiﬁcación.
+
+Usar diferentes terminologías complicó la recuperación y análisis de datos,
+afectó la comunicación internacional, requería la conversión de datos
+de una terminología a otra, con el potencial de causar demoras y pér-
+didas o distorsión de los datos.
+
+Esta terminología se emplea en todos los pasos del proceso regulato-
+rio, desde la pre-comercialización y para el ingreso de datos, recu-
+peración, análisis y presentación de los mismos.
+Objetivo
+
+Explicar de manera clara y concisa el uso de la terminología MedDRA, su relevancia en la
+transferencia y análisis de información dentro de las actividades de farmacovigilancia.
+
+
+
+
+                                                                                       5
+Normatividad aplicable
+
+LGS
+
+ARTÍCULO 58 V bis. Información a las autoridades sanitarias acerca de efectos secundarios
+y reacciones adversas por el uso de medicamentos y otros insumos para la salud o por el
+uso, desvío o disposición ﬁnal de substancias tóxicas o peligrosas y sus desechos…
+
+RIS
+
+ARTÍCULO 38. Las reacciones adversas de los medicamentos u otros Insumos que se pre-
+senten durante la comercialización o uso de éstos, las notiﬁcadas por los profesionales de la
+salud, las publicadas en la literatura cientíﬁca y las reportadas por los organismos sanitarios
+internacionales, deberán hacerse del conocimiento inmediato de la Secretaría por el titu-
+lar del registro, por los distribuidores o comercializadores de los Insumos.
+
+NORMA Oﬁcial Mexicana NOM-220-SSA1-2016, Instalación y operación de la farmacovigilan-
+cia, y su modiﬁcación.
+
+
+
+
+                                                                                              6
+Desarrollo
+
+La terminología MedDRA se aplica en todas las fases del desarrollo de los productos médicos
+de uso humano, excluyendo la toxicología animal. El ámbito de MedDRA abarca conceptos
+médicos, regulatorios concernientes a esos productos.
+
+
+
+
+                D
+                e                                                 F
+                n                                                 u
+                t                                                 e
+                r                                                 r
+                o                                                 a
+
+
+
+
+             Patologías                                     Terminología de
+                                                            medicamentos
+      Indicaciones terapéuticas
+                                                          Datos demográﬁcos
+       Exploraciones (estudios
+             resultados)                              Terminología relacionada al
+                                                      diseño de estudios clínicos
+      Procedimientos médicos y
+             quirúrgicos                               Caliﬁcadores de frecuencia
+
+       Antecedentes médicos,                              Valores numéricos
+        sociales y familiares                              relacionados con
+                                                         parámetros analíticos
+        Errores de medicación
+                                                       Descriptores de gravedad
+       Problemas relativos a la
+        calidad de producto                            Terminología de equipos,
+                                                       dispositivos o productos
+       Problemas relacionados                              para diagnóstico
+       con el uso del producto
+
+
+                                                                                          7
+ De acuerdo a la información anterior, analiza qué términos podrías encontrar en MedDRA.
+
+       Estudio doble ciego
+
+       Sobredosis
+
+       Diabetes
+
+       Penicilina
+
+       Dolor de cabeza
+
+       Dispositivo mal calibrado
+
+       Estudio clínico controlado
+
+       Anemia
+
+       Sensación de cansancio
+
+       Omeprazol
+
+       Diarrea
+
+
+ ¿Cuáles son las características fundamentales de MedDRA?
+
+
+
+CÓDIGO IDENTIFICADOR                 ESTRUCTURA JERÁRQUICA
+                                                                               SMQ
+
+
+
+
+                                                                             Consultas
+   Código numérico
+                                                                            estandariza-
+      único de 8                            5 niveles
+                                                                               das de
+       dígitos                             ordenados
+                                                                              MedDRA
+
+                                                              Un término
+                          Traducción                            puede
+                       permanente a 14                        encontrarse
+                            idiomas                          en más de un
+                         actualmente                            grupo
+
+
+
+                     MULTILENGUAJE                       MULTIAXIALIDAD
+
+                                                                                           8
+    ¿Cómo es la estructura jerárquica de MedDRA?
+
+                                                               Clasiﬁcación órganos
+  Términos agrupados
+                                                               y sistemas (SOC)
+  de nivel alto (HLGT)
+                                                               SOC: Ofrece el concepto más amplio.
+  HLGT: Reúnen uno o más términos
+  del nivel alto relacionados según
+  anatomía, patología, ﬁsiología,
+  etiología o función.
+                                                                         Términos de nivel alto
+                                                                         (HLT)
+                                                                         HLT: Categoría inclusiva que enlaza
+                                                                         los términos PT con los que se relaciona
+                                                                         según anatomía, patología, ﬁsiología,
+                                                                         etiología o función.
+
+
+
+
+Términos preferente
+(PT)
+PT: Es un descriptor bien diferenciado
+para un síntoma, signo, enfermedad,
+                                                                      Términos de nivel
+diagnóstico, indicación terapéutica, exploración                      más bajo (LLT)
+complementaria, procedimiento médico
+                                                                      LLT: Constituye el nivel más bajo
+o quirúrgico y características de antecedentes
+                                                                      de la terminología y puede contener
+médicos, sociales o familiares.
+                                                                      términos coloquiales.
+
+
+
+
+    ¿En dónde se usa MedDRA?
+
+    Se puede utilizar la terminología para ingresar, recuperar, evaluar y presentar los datos,
+    tanto en las fases previas como en las fases posteriores a la comercialización, como sigue:
+
+             Estudios clínicos
+
+             Notiﬁcaciones de reacciones adversas espontáneas y efectos secundarios
+
+             Solicitudes de registro sanitario
+
+             Información de productos regulados
+
+             Farmacovigilancia
+             Ingreso, recuperación y análisis de datos
+
+             Post - comercialización
+
+             Pre - comercializacióm
+
+
+                                                                                                              9
+¿Cuál es la Norma Oﬁcial Mexicana que habla sobre la farmacovigilancia en
+México?
+
+NOM-220-SSA1-2016 Instalación y operación de la farmacovigilancia.
+
+Las notiﬁcaciones provenientes de los profesionales
+de la salud, titulares de registro sanitario o sus
+representantes legales, instituciones o establecimientos
+que pretendan o realicen investigación en
+seres humanos y distribuidores/comercializadores,
+deberán realizar la codiﬁcación de la manifestación
+clínica reportada en la notiﬁcación, utilizando
+la terminología MedDRA vigente.
+
+Para realizar un adecuado análisis de causalidad,
+es necesario que la información de cada caso
+notiﬁcado sea sometida de forma completa y
+estructurada, contemplando los elementos
+requeridos por las ICH-E2B vigente. Esto implica
+que la información puede repetirse en la sección
+narrativa. Además, la información de las
+manifestaciones clínicas deberá estar apegada
+a la terminología MedDRA vigente.
+
+¿Si soy paciente también debo utilizar la terminología MedDRA?
+
+                                            La NOM establece lo siguiente:
+
+                                            Las notiﬁcaciones provenientes de pacientes/consumidores
+                                            no requerirán el uso de la terminología MedDRA; es
+                                            deseable contar con la mayor cantidad posible de
+                                            información sobre la reacción notiﬁcada.
+
+
+
+
+                                                                              ?
+
+                                                                                                   10
+¿En qué actividades de farmacovigilancia se utiliza la terminología MedDRA?
+
+
+
+NOTIFICACIÓN
+Las notiﬁcaciones provenientes de los profesionales de la salud, titulares de registro sanitario
+o sus representantes legales, instituciones o establecimientos que pretendan o realicen inves-
+tigación en seres humanos y distribuidores/comercializadores, deberán realizar la codiﬁcación
+de la manifestación clínica reportada en la notiﬁcación, utilizando la terminología MedDRA
+vigente.
+
+
+
+
+                                             VigiFlow
+                                     ARN, Sistema Nacional de Salud
+
+
+
+
+                       e-Reporting Industria
+                            UFV de Titulares de RS/ representantes
+                            legales; establecimientos donde se realiza
+                            investigación para la salud; distribuidores y
+                            comercializadores
+
+
+
+
+                                                                                               11
+   Revisa el “Comunicado del Centro Nacional de Farmacovigilancia a la industria
+   farmacéutica”
+
+   Da clic en la imagen para más información.
+
+
+
+
+ht ps:/ www.gob.mx/cofepris/articulos/comunicado-del-centro-nacional
+     Comunicado del Centro
+     Nacional de Farmacovigilancia a
+     la industria Farmacéutica
+     Relacionado con MedDRA y WHOdrug
+     como estándares de codiﬁcación en
+
+
+
+
+-de-farmacovigilancia-a-la-industria-farmaceutica
+     e-Reporting Industria
+     Comisión Federal para la Protección contra Riesgos Sanitarios 02
+     de mayo 2022
+
+
+
+
+   El 02 de mayo de 2022 se publicó un comunicado del Centro Nacional de Farmacovigilancia a
+   la industria farmacéutica relacionado con MedDRA como estándar de codiﬁcación en
+   e-Reporting industria, donde se indica que la industria farmacéutica debe contar con una
+   licencia MedDRA válida para poder codiﬁcar las reacciones adversas y demás información en
+   e-Reporting Industria.
+
+
+
+
+                                                                                           9
+Reportes periódicos de seguridad
+
+“Guía de farmacovigilancia para la elaboración del Reporte Periódico
+de Seguridad”
+
+6.9. TABLA RESUMEN DE CASOS INDIVIDUALES DE SRAM, RAM, EA, ESAVI O CUALQUIER
+OTRO PROBLEMA DE SEGURIDAD RELACIONADO AL USO DE LOS MEDICAMENTOS Y
+VACUNAS, ACUMULADOS.
+
+6.9.1. Presentación tabulada resumida de la sumatoria de eventos adversos graves de los
+estudios clínicos.
+
+
+
+
+ Tabla VII. Sumatoria de eventos adversos graves en estudios clínicos
+
+  SOC
+                MEDICAMENTO EN                           MEDICAMENTO DE
+                 INVESTIGACIÓN        ESTUDIO CLÍNICO     REFERENCIA O     PLACEBO
+                  (ESPECIFIQUE)           CIEGO          COMPARADOR(ES)
+                                                          (ESPECIFIQUE)
+        PT
+
+
+  SOC 1
+  PT
+
+  PT
+
+ SOC 2
+ PT
+
+  PT
+ PT
+
+
+
+
+                                                                                      13
+6.9.2. Presentación tabulada resumida de la sumatoria e intervalo de SRAM, RAM o ESAVI
+graves y no graves posteriores a la comercialización de medicamentos o vacunas.
+
+
+
+
+         Tabla VIII. SRAM, RAM o ESAVI graves y no graves posteriores a la
+           comercialización y EA graves en estudios de no intervención
+
+
+             ESPONTÁNEAS INCLUYENDO LAS PROVENIENTES DE PROFESIONALES DE SALUD,          EVENTOS ADVERSOS GRAVES
+ SOC                                                                                        DE ESTUDIOS DE NO
+             PACIENTES/ CONSUMIDORES, TITULARES DE REGISTRO Y LITERATURA CIENTÍFICA
+                                                                                              INTERVENCIÓN
+
+                     GRAVES                        NO GRAVES                                      GRAVES
+                                                                           TOTAL
+       PT                                                               ACUMULADO***
+            INTERVALO*   ACUMULADO**      INTERVALO*   ACUMULADO**                       INTERVALO*   ACUMULADO**
+
+ SOC 1
+ PT
+
+ PT
+
+ SOC 2
+
+ PT
+
+ PT
+
+
+* El intervalo comprende el periodo que cubre el RPS correspondiente.
+** El acumulado comprende desde el inicio de la comercialización hasta el punto de corte de información presentado.
+*** El total acumulado, es la sumatoria del acumulado de notiﬁcaciones espontáneas graves y no graves.
+
+
+
+
+                                                                                                                      14
+6.20. RESUMEN SOBRE PROBLEMAS DE SEGURIDAD EN MÉXICO
+
+
+                          Tabla XII. Resumen sobre SRAM, RAM, EA, ESAVI y problemas de
+                                 seguridad de medicamentos y vacunas en México
+
+                                                                                                                              SRAM, RAM o ESAVI
+    CODIFICACIÓN                  FECHA DE ENVÍO              SRAM, RAM                 SEVERIDAD/         CAUSUALIDAD
+                                                                                                                                INESPERADA
+ DE LA NOTIFICACIÓN                  AL CNFV                  o ESAVI (PT)              GRAVEDAD
+                                                                                                                                O ESPERADA
+
+
+
+
+                                                                 Vómito                     Leve              Posible             Esperada
+  IQF/XXXXX/00025/2020              dd/mm/aaaa
+                                                                 Mialgia                 Moderada             Probable            Inesperada
+
+                                                           Infarto de miocardio            Grave              Probable            Inesperada
+
+                                                                 Vómito                     Leve               Posible             Esperada
+  IQF/XXXXX/00025/2020              dd/mm/aaaa
+                                                                 Diarrea                    Leve               Posible             Esperada
+
+  Codiﬁcación emitida por
+      el sistema que
+       corresponda                  dd/mm/aaaa                 dd/mm/aaaa                  Cefalea            Dudosa              Inesperada
+ (NotiReporta, e-reporting,
+             etc)
+
+
+
+
+        NÚMERO DE LA NOTIFICACIONES                               NÚMERO DE NOTIFICACIONES
+                                                                                                            NÚMERO TOTAL DE NOTIFICACIONES
+                 GRAVES                                                 NO GRAVES
+
+
+                              1                                                   2                                       3
+
+
+                                         SRAM, RAM O ESAVI                            NÚMERO TOTAL DE SRAM, RAM O ESAVI
+                                        CLASIFICADAS POR PT                                 CLASIFICADAS POR PT
+
+
+                                                 Vómito                                               2
+                                                 Mialgia                                              1
+                                         Infarto de miocardio                                          1
+                                                 Diarrea                                               1
+                                                 Cefalea                                               1
+
+
+
+
+                                                                                                                                                  15
+Informe de farmacovigilancia
+
+“Guía para la solicitud del informe de farmacovigilancia”
+
+8.2.4 REACCIONES ADVERSAS EN POBLACIÓN MEXICANA
+
+8.2.4.1 Postcomercialización (incluye estudios de farmacovigilancia)
+
+
+                                                         Desde dd/mm/aaaa
+             Periodo:
+                                                         Hasta   dd/mm/aaaa
+
+            RAM, SRAM, SAVI o qualquier otro problema
+            de seguridad relacionada con el uso de los      No. de graves     No. de      Total
+            medicamentos                                                      no graves
+
+
+
+ SOC         Gastrointestinal
+ PT          Diarrea                                              1             52         53
+
+ PT          Vómito                                               1              0          1
+
+ Subtotal                                                         2             52         54
+
+ SOC         Cardiovascular
+
+ PT          Infarto                                              5             16         21
+
+ Subtotal                                                         5             16         21
+
+ SOC         Sistema nervioso central
+
+ PT         Cefalea                                               0             25         25
+
+ Subtotal                                                         0             25         25
+
+             Total                                                0             93        100
+
+
+
+
+                                                                                                  16
+8.2.4.2 Investigación clínica
+
+
+
+                           EA               No. de graves   No. de      Total
+                                                            no graves
+
+
+
+   SOC           Gastrointestinal
+   PT            Diarrea                           1           25        26
+
+   PT            Vómito                            1            5        6
+
+   Subtotal                                        2           30        32
+
+   SOC           Cardiovascular
+
+   PT            Infarto                           3           17        17
+
+   Subtotal                                        3           17        17
+
+   SOC           Sistema nervioso central
+
+   PT           Cefalea                            0           25        25
+
+   Subtotal                                        0           25        25
+
+                 Total                             5           72        77
+
+
+
+
+                                                                                17
+Planes de manejo de riesgos
+
+“Guía de farmacovigilancia para la elaboración de Planes de Manejo de Riesgos”
+
+ESPECIFICACIONES DE SEGURIDAD
+Riesgos importantes
+Riesgos importantes identiﬁcados y potenciales
+
+
+1. Tipo de riesgo
+
+
+2. Frecuencia
+
+
+3. Gravedad
+
+
+4. Consecuencia del riesgo
+
+
+5. Severidad
+
+
+6. Incidencia/prevalencia de base en la población
+objetivo o bien en la población general
+
+
+7. Grupos o factores de riesgo
+
+
+8. Mecanismo potencial
+
+
+9. Posibilidad de prevención
+
+
+10. Impacto en el paciente
+
+
+11. Impacto en la salud pública
+
+
+12. Impacto en el balance beneﬁcio/riesgo del producto
+
+13. Fuentes de evidencia
+
+
+14. Terminología MedDRA asociada. Mencionar todos los términos MedDRA relacionados
+con el riesgo.
+
+
+                                                                                 18
+¿Qué tipos de licencias de MedDRA existen?
+
+• El tipo de licencias que se ofrecen es en función del tipo de organización solicitante y
+  tienen una duración de doce meses.
+
+
+
+
+               1                                                                                       2
+                                      Autoridad
+                                     reguladora
+                              Puede amparar su uso                                        Sin ﬁnes
+                       a representaciones regionales                                     de lucro /
+                      y quien determina la autoridad
+                                                                                      No comercial
+                                                                                Proveedores de Atención
+                                                                                       médica, hospitales,
+                                                                                 instituciones educativas
+
+
+
+
+                                                  El tipo de licencias que
+                                                se ofrecen es en función del
+                                                    tipo de organización
+                                                     solicitante y tienen
+                                                        una duración
+                                                       de doce meses.
+
+
+
+
+                Comercial                                                        Desarrolladores
+                                                                                    de sistemas
+                Industria Farmacéutica, CRO.
+                Los costos varían en función                                       Organizaciones que
+                de los ingresos anuales                                        desarrollan productos de
+                (facturación) de cada organi-                                     software que utilizan
+                zación.                                                                       MedDRA.
+
+
+
+
+               3                                                                                      4
+
+
+
+La organización responsable de dar información, atender solicitudes, dar seguimiento, establecer el costo
+de la licencia para cada organización es MSSO, a través de su página web o correo de contacto.
+La Cofepris no tiene injerencia alguna en la generación de licencias.
+
+                                                                                                             19
+Preguntas frecuentes
+
+¿Es requisito contar con licencia MedDRA para tener acceso a e-Reporting
+Industria?
+
+Si, la licencia debe activarse a través de una API que está integrada e e-Reporting Industria
+para poder utilizar la terminología MedDRA dentro del módulo de carga manual.
+
+Si soy titular de registro sanitarios/representante legal, pero hasta el momento no
+he recibido alguna notiﬁcación en mi UFV, ¿debo tener licencia MedDRA?
+
+La única herramienta válida para la notiﬁcación de industria es mediante eReporting
+Industria. Se debe considerar el tiempo que le toma a su empresa proporcionar el recurso
+económico para la adquisición de la licencia, por lo que debe anticiparse la solicitud y las
+renovaciones anuales.
+
+Mi corporativo que se encuentra otro país cuenta con licencia ¿la ﬁlial en México
+debe tener la propia?
+
+No es necesario, la licencia corporativa cubre a todas las ﬁliales en los demás países. Puede
+contactar directamente al servicio de asistencia de MSSO para mayores detalles.
+
+
+
+Información de contacto
+
+Licencias, renovaciones, descarga de recursos para usuarios, entrenamientos
+https://www.meddra.org/.
+mssohelp@meddra.org
+
+
+Funcionamiento API en e-Reporting Industria, accesos e-Reporting Industria
+xmlvigiﬂow@cofepris.gob.mx
+
+
+Accesos a VigiFlow
+vigiﬂowcuentas@cofepris.gob.mx
+
+
+
+
+                                                                                            20
+COMISIÓN DE FOMENTO SANITARIO
+
+Pablo Alberto Quiroga Adame
+Comisionado de Fomento Sanitario
+
+Jessica Liliana Gutiérrez Gómez
+Directora Ejecutiva de Comunicación de Riesgos y Capacitación
+
+David Iván Arcos Mancilla
+Subdirector Ejecutivo de Comunicación de Riesgos e Información
+
+Carolina Valdez Mondragón
+Gerente de Difusión e Información
+
+Jessica Lara Contreras
+Gerente de Coordinación y Operación de la Capacitación
+
+Diseño y Edición
+Comisión de Fomento Sanitario
+
+Comisión Federal para la Protección
+Contra Riesgos Sanitarios
+
+
+
+
+Fechea de publicación: Octubre de 2023
+          CO M I S I Ó N F E D E R A L PA R A L A PR OT ECC I Ó N
+          CO N T R A R I E S GO S S A N ITA R I O S
+
+
+
+gob.mx/cofepris
+
