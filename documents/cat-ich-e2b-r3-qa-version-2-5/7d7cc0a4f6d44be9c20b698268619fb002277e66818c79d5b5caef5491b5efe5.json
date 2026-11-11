@@ -1,0 +1,500 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "cat-ich-e2b-r3-qa-version-2-5",
+  "metadata": {
+    "title": "ICH E2B(R3) Guideline: Electronic Transmission of Individual Case Safety Reports (ICSRs) Questions and Answers",
+    "country": "INT",
+    "agency": "INT_ICH",
+    "edition": "Version 2.5 · Step 4 · 18 Jul 2025",
+    "norm": "Technical instruction",
+    "topic": "Q&A · PV / medicines safety",
+    "lifecycle": "Both",
+    "legal_basis": "Listed in the PV Info document catalog (ICH (International Council for Harmonisation)); the official text governs.",
+    "applicability": "See the official document for scope and applicability.",
+    "published_on": "",
+    "effective_on": "2025-07-18",
+    "source_status": "uncertain"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://database.ich.org/sites/default/files/ICH_E2B(R3)_EWG_IWG_Q&A_Step3_2025_0718_Assembly_Approved.pdf",
+  "original_sha256": "54fba2e8e9734c169b20c17debf8e38dfc0c66f81a5938852f1b3fcae4ced733",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 58,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-3-paragraph-1",
+      "statement": "ii Legal notice: This document is protected by copyright and may, with the exception of the ICH logo, be used, reproduced, incorporated into other works, adapted, modified, translated or distributed under a public license provided that ICH's copyright in the document is acknowledged at all times. In case of any adaption, modification or translation of the document, reasonable steps must be taken to clearly label, demarcate or otherwise identify that changes were made to or based on the original document. Any impression that the adaption, modification or translation of the original document is endorsed or sponsored by the ICH must be avoided.",
+      "context": "E2B(R3) Q&As Version 2.1 Approval by the ICH Assembly under Step 4 1 June 2017 E2B(R3) Q&As Version 2.2 Approval by the ICH Assembly under Step 4 7 June 2018 E2B(R3) Q&As Version 2.3 Approval by the ICH Assembly under Step 4 6 June 2019 E2B(R3) Q&As Version 2.4 Approval by the ICH Assembly under Step 4 17 January The document is provided \"as is\" without warranty of any kind. In no event shall the ICH or the authors of the original document be liable for any claim, damages or other liability arising from the use of the document.",
+      "fingerprint": "b37e616cdd014160a57d3ed13757e83e59baf0f489f0ab8346a162e4d3e3c849",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-3-paragraph-2",
+      "statement": "The document is provided \"as is\" without warranty of any kind. In no event shall the ICH or the authors of the original document be liable for any claim, damages or other liability arising from the use of the document.",
+      "context": "ii Legal notice: This document is protected by copyright and may, with the exception of the ICH logo, be used, reproduced, incorporated into other works, adapted, modified, translated or distributed under a public license provided that ICH's copyright in the document is acknowledged at all times. In case of any adaption, modification or translation of the document, reasonable steps must be taken to clearly label, demarcate or otherwise identify that changes were made to or based on the original document. Any impression that the adaption, modification or translation of the original document is endorsed or sponsored by the ICH must be avoided. The above-mentioned permissions do not apply to content supplied by third parties. Therefore, for documents where the copyright vests in a third party, permission for reproduction must be obtained from this copyright holder.",
+      "fingerprint": "dc816d4c553da5fd7c0506d92130adfe1351be8cade4e3368f3c6f007a227ad2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-3-paragraph-3",
+      "statement": "The above-mentioned permissions do not apply to content supplied by third parties. Therefore, for documents where the copyright vests in a third party, permission for reproduction must be obtained from this copyright holder.",
+      "context": "The document is provided \"as is\" without warranty of any kind. In no event shall the ICH or the authors of the original document be liable for any claim, damages or other liability arising from the use of the document. E2B(R3) Q&As Version 2.5 Approval by the ICH Assembly under Step 4 18 July 2025",
+      "fingerprint": "e9eba37e7d9c5e33f7cdec7dfedc19754e660628d984c58c8a379cf3718b6a84",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-5-paragraph-1",
+      "statement": "PREFACE This Q&A document provides clarifications for the harmonized interpretation of the E2B(R3) IG package and should be reviewed in conjunction with the IG package. This will facilitate the implementation of the electronic transmission of Individual Case Safety Reports (ICSRs) in the ICH regions. The sections of this Q&A document correspond to the organization of the E2B(R3) IG.",
+      "context": "9. ANNEX: Q&AS LINKED TO THE RESPECTIVE SECTIONS OF ICH E2B(R3) GUIDELINE .............................................................. 20 Pharmaceutical companies, regulators and vendors are encouraged to submit implementation-related questions to the ICH E2B(R3) EWG/IWG;",
+      "fingerprint": "ee7fbf25a195a27451db795a12cd8d3e3f904a645b49b200112c0184ded4372d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-6-paragraph-10",
+      "statement": "Does XML schema define default values for some attributes? The ISO/HL7 schema files automatically populate certain attributes with a default value, such as unit = ’1’ for PQ data type and mediaType = ’text/plain’ for ED data type. The ICSR sender should replace the default value with an appropriate value pertaining to the data being transmitted. For example, use the appropriate UCUM code for representing a unit of measurement for physical quantities (PQ) and media designation for encapsulated data (ED). To help reduce parsing errors, the sender should omit optional data element tags if there is no information to be transmitted. For example, patient age is an optional data element and the sender should omit the entire age observation class if no age value is known.",
+      "context": "",
+      "fingerprint": "92ae383bad68fb25be8f3e80f55fa08e0187106b29562ad96c0e476dd2367ad0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-6-paragraph-12",
+      "statement": "Is there anything senders should consider in creating XML files for ICSRs? Senders should refer not only to the ICH Implementation Guide and regional Implementation Guides but also its Appendices such as Reference instances, Technical Information and so on.",
+      "context": "",
+      "fingerprint": "f3d78d5e5f5416dbc2e0041fea0388f1636603bf36edbb1668f15c52b51ce5ca",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-7-paragraph-2",
+      "statement": "There is no guidance whether case sensitive form or case insensitive form should be used for codes in the ICH E2B(R3) ICSR messages.",
+      "context": "In the ICH E2B(R3) ICSR messages, case sensitive form should be used for codes.",
+      "fingerprint": "7cd94bd9bf119415e42d4837805e282e350dff770e91ad6ace2e8d253d6f93b9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-7-paragraph-3",
+      "statement": "In the ICH E2B(R3) ICSR messages, case sensitive form should be used for codes.",
+      "context": "There is no guidance whether case sensitive form or case insensitive form should be used for codes in the ICH E2B(R3) ICSR messages. Please refer to regional guidance for more information about case sensitivity.",
+      "fingerprint": "24f7865f7bf3251a30e604eb2f14f1cfb89910ac4658e39a67da53918cdd5895",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-7-paragraph-8",
+      "statement": "Systems should be designed to receive process and re-produce a compliant message utilizing nullFlavors as defined in the ICH E2B(R3) IG.",
+      "context": "Support for HL7 nullFlavor values, such as MSK (masked), NI (No Information) and UNK (Unknown) may vary across implementation.",
+      "fingerprint": "f989f0f03af4c953537634f96f78f597c8ca83a42895827b3d4c771410c1ab8e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-7-paragraph-11",
+      "statement": "a) Should the company send a new message indicating that the case is now non-serious? b) Should the company send a new message to nullify the case in the Regulatory Authority's database? c) If the case becomes serious again, should the company send a new message with the same safety report identifier? a) Yes, the company should send a new message, updating the previous report with the new information, indicating that the case is now non- serious.",
+      "context": "A serious case was sent electronically by a company to a Regulatory Authority. Meanwhile, due to follow-up information received at the company, this case is now determined to be non- serious. b) No, the company should not send a new message to nullify the case in the Regulatory Authority's database.",
+      "fingerprint": "5c4be856e96bb19072c0d7dc9b372686ad6152176ded7f4b33262f72272a3490",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-7-paragraph-12",
+      "statement": "b) No, the company should not send a new message to nullify the case in the Regulatory Authority's database.",
+      "context": "a) Should the company send a new message indicating that the case is now non-serious? b) Should the company send a new message to nullify the case in the Regulatory Authority's database? c) If the case becomes serious again, should the company send a new message with the same safety report identifier? a) Yes, the company should send a new message, updating the previous report with the new information, indicating that the case is now non- serious. c) Yes, this would be new information, and a follow-up report would be appropriate utilizing the same safety report identifier.",
+      "fingerprint": "92e02bcdb07b291f714792c2abed84ccce961552b8deb3514cc9c3175202f5f9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-7-paragraph-15",
+      "statement": "If a report is forwarded to a company by a Health Authority, should the company consider that:",
+      "context": "a) the Health Authority's causality assessment is at least “possible”? a) and b) by definition a spontaneous report contains suspected adverse reactions (i.e., a possible causal relationship is suspected but not established). However, there is no universally accepted definition for \"possible\" in the scale of causality assessment. It is therefore not possible to provide a precise answer to this question. It is up to the",
+      "fingerprint": "5781685a09673fbf395aa135ad1386792910e77d1e44293b49c367bb442b2e85",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-8-paragraph-3",
+      "statement": "In such instances is one of these correct (meaning that the other is incorrect) – if so, which, or is either OK? For those languages where (T) and (B) codes are provided the (T) code should be used in E2B(R3) messages.",
+      "context": "3.9 (028) June 2016 In the ISO 639-2 language code list some languages appear twice with two different codes designated B and T: for instance, Czech is either cze (B) or ces (T) where ‘B’ indicates ‘bibliographic’ and ‘T’ indicates ‘terminology’. 3.10 (029) June 2016 Does data length provided in the IG (e.g., 5AN) represent data length (byte) or apparent number of characters? In UTF-8, surrogate pairs and combining characters have longer data length (byte) than their apparent data length.",
+      "fingerprint": "fe5fa39bcbf54a1cbd61383be915ec79ca72b4a06080aa363ac4f2d68eac2ffe",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-9-paragraph-4",
+      "statement": "a) Yes. In this case the ADR should be the miscarriage experienced by the mother.",
+      "context": "a) Is the ADR a miscarriage? b) Is the patient of the report the father or mother? Is the route of administration how the father took the medicine? Following are abbreviated answer for the question and examples for various scenario regarding parent and/or child/foetus. b) The patient should be the mother. c) Yes. The route of administration should be how the father was given the suspect medication.",
+      "fingerprint": "7ce44bf5e018a4c008690460a1d2cef1e472851f6c44ea47938a6b54153963e3",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-9-paragraph-5",
+      "statement": "b) The patient should be the mother. c) Yes. The route of administration should be how the father was given the suspect medication.",
+      "context": "a) Yes. In this case the ADR should be the miscarriage experienced by the mother. Scenario 1: Miscarriage, drug administered to Mother Patient (D) Mother AE (E) Miscarriage Drug section (G) Product taken by mother Route of Administration (G.k.4.r.10) Route administered to mother Scenario 2: Miscarriage, drug administered to Father Patient (D) Mother AE (E) Miscarriage Drug section (G) Product taken by father Route of Administration (G.k.4.r.10) Use nullFlavor “UNK” in G.k.4.r.10.1 Describe information about father and mother in the narrative Additional Information on Drug (G.k.10.r) 3 (Drug taken by the father) Scenario 3: foetus or breast-feeding infant is exposed to drug(s) through the mother and experienced adverse events/reactions Patient (D) Infant/foetus AE (E) AE experienced by Infant/foetus Drug section (G) Product taken by mother Route of Administration (G.k.4.r.10) This is usua",
+      "fingerprint": "719d61b82753b3fefd0d0ce40eece8dd779d00ce94316a24258ed6d6ba4f5701",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-10-paragraph-3",
+      "statement": "Here is scenario on E.i.4 and E.i.5: Reaction Sequence E.i.4 Start date E.i.5 End date Reaction1 01-Feb-2010 02-Feb-2010 Reaction2 03-Feb-2010 - Reaction3 - 01-Jan-2010 How to get the blank start date and end date details. As per the IG, if we have to consider Senders should populate the most accurate information known for each event. A blank field for start date or end date or both is acceptable if the information is not known to the sender. When a precise date is not available, the decision of whether to leave blank or an inferred date for a given event should be left up to the sender’s clinical judgment. If the events are thought to be related (i.e., if event1 is a sign or symptom of event2), it would be clinically reasonable to use the earliest start date or latest end date, as relevant, for both events. However, a sender should not infer dates unless there is a clear clinical rationale and this rationale should be stated in the case narrative.",
+      "context": "",
+      "fingerprint": "7d7957e290ad808944d48b8269899d0243502c7b982548d1f44b47a3154bd524",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-11-paragraph-3",
+      "statement": "If a value of test results does not have a suitable UCUM code or a unit (for example International Normalized Ratio, INR) or a unit of test results is unknown, how should the test results be entered? In such case, senders should enter the value and unit as unstructured data in F.r.3.4.",
+      "context": "",
+      "fingerprint": "2ea7fd8d2ad02020da6523d721e689d8f50055773b20ea1789ec25126b52fd66",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-11-paragraph-6",
+      "statement": "a) How should re-administration data be entered after recovery from AE, e.g., G.k.4.r.8 or G.k.4.r repetition? b) When multiple dosage information (G.k.4.r) is available for a drug, which dosage information should be used for G.k.8? c) Is it possible to identify the re- administration after drug is discontinued or after drug is temporarily stopped? Answers to question a) through c) are summarized into the scenarios below:",
+      "context": "The data element (G.k.8) is not a repeatable data element and captures the action taken with the suspect drug as a result of the reaction(s) / event(s) as provided by the reporter of the information. This data element is a within the ‘parent’ instance of G.k Drug and only one action can be captured for each instance of G.k Drug.",
+      "fingerprint": "ecc2eb004e0325b3cd6016bfba68480274a3f17ff9365e2caaa21294d64072a7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-11-paragraph-14",
+      "statement": "\"1\" should be selected for both suspected and confirmed counterfeit products in G.k.10.r and the appropriate MedDRA term should be selected for E.i.2.1b. Any explanatory information should be included in case narrative. If new information is received to confirm the product is not a E.i.2.1b, G.k.10.r, H.1, H.3.r",
+      "context": "Clarification was requested for usage on coding reports of possible counterfeit drugs. counterfeit, then G.k.10.r should be changed appropriately as follow up. If the product is confirmed as a counterfeit, the sender should use the appropriate MedDRA code in H.3.r and explain in narrative.",
+      "fingerprint": "c1d0bf85ae46df4ff914d9bf61ab8616cd998f2069b5ec4769f0c64fd4c81453",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-12-paragraph-1",
+      "statement": "counterfeit, then G.k.10.r should be changed appropriately as follow up. If the product is confirmed as a counterfeit, the sender should use the appropriate MedDRA code in H.3.r and explain in narrative.",
+      "context": "\"1\" should be selected for both suspected and confirmed counterfeit products in G.k.10.r and the appropriate MedDRA term should be selected for E.i.2.1b. Any explanatory information should be included in case narrative. If new information is received to confirm the product is not a E.i.2.1b, G.k.10.r, H.1, H.3.r 4.15 (035) June 2016 What is an appropriate age for newborn if an adverse drug reaction/event has been developed during pregnancy but just observed at time of delivery? Section D.2 provides several options for reporting patient age information.",
+      "fingerprint": "d9e710a3080e7d2b5dc067612642865f6bd4a6a1dbb63005edf84ee44b3b40f8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-12-paragraph-3",
+      "statement": "The sender should select the most appropriate field based on the information provided. Based on the information provided in the question, field D.2.3 may be the most appropriate field to report the patient age.",
+      "context": "4.15 (035) June 2016 What is an appropriate age for newborn if an adverse drug reaction/event has been developed during pregnancy but just observed at time of delivery? Section D.2 provides several options for reporting patient age information.",
+      "fingerprint": "721ad9432312d187e4c8da54219d5f297cef0c5e7c2f8153f0e712094c3d71eb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-12-paragraph-5",
+      "statement": "4.16 (036) June 2016 What is an appropriate value for “G.k.9.i.4 Did reaction recur on re-administration?” if adverse drug reaction/event on re- administration is not exactly the same as the one on previous administration? Ex) E.i.2.1 Reaction/event: liver disorder Re-administration: Aspartate aminotransferase increased Medical judgment should be used to assess the conceptual similarity of the events. MedDRA codes do not need to be identical. [Refer to the most recent ICH MedDRA Term Selection: Points To Consider.] E.i.2.1, G.k.9.i.4",
+      "context": "",
+      "fingerprint": "6e3c5f402819bf22d46f027d793ee806dcc89c91e5ef87e48633d7aeefb278ae",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-13-paragraph-2",
+      "statement": "For vaccines given according to a schedule of multiple doses, how should the ICSR message capture which dose (sequence number) in the schedule that was given? Information on the suspected dose schedule (sequence number) should be recorded in G.k.4.r.8 Dosage Text with alpha-numerical values.",
+      "context": "E.g., 1st dose, Dose #2, Dose no. in series: 3, etc. Information concerning unsuspected dose schedule should be recorded in D.8.r Relevant Past Drug History.",
+      "fingerprint": "f033e0907c7f155e542343b73f89d94553540bbb51bcdd02d5beac84a85d754d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-13-paragraph-3",
+      "statement": "E.g., 1st dose, Dose #2, Dose no. in series: 3, etc. Information concerning unsuspected dose schedule should be recorded in D.8.r Relevant Past Drug History.",
+      "context": "For vaccines given according to a schedule of multiple doses, how should the ICSR message capture which dose (sequence number) in the schedule that was given? Information on the suspected dose schedule (sequence number) should be recorded in G.k.4.r.8 Dosage Text with alpha-numerical values. When information regarding past doses is unavailable, only the information concerning the suspected dose should be recorded.",
+      "fingerprint": "72bda118e2bd3ab4e7819f10e6ae314773db618883fc0f2c447e165f82933cc5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-13-paragraph-4",
+      "statement": "When information regarding past doses is unavailable, only the information concerning the suspected dose should be recorded.",
+      "context": "E.g., 1st dose, Dose #2, Dose no. in series: 3, etc. Information concerning unsuspected dose schedule should be recorded in D.8.r Relevant Past Drug History. Please refer to regional guidance for more information about vaccine reporting.",
+      "fingerprint": "3d4f2a577d4b9163570f9269f3ec1a92537a9719fe1649a11e16c98275bfe872",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-16-paragraph-2",
+      "statement": "(003) November 2014 The lists of UCUM couldn’t be found. Which website should be referred to? Information about UCUM, including link to download the specification is available at: http://unitsofmeasure.org/trac/ (006) November 2014 When ‘Z’ was added at the end of time values as described in Appendix II (C) ISO 8601 Compliant XML Examples in the IG ver. 5.01, parse error occurred. Can senders use the representations of date and time such as 199411051315Z, 20090601231105.5Z, 20090601231105Z, 200906012331Z or 2009060123Z? No, the examples described in Appendix I(C) are inappropriate. ‘Z’ should not be added at the end of time values.",
+      "context": "In the Business Rule section for the related data elements, the ICH ICSR Implementation Guide provides information and examples for representing the ICH AN data type with HL7 data type in transmission. XML Schema defines the Time Zone value as <xs:pattern value=\"[0- 9]{1,8}|([0-9]{9,14}|[0-9]{14,14}\\.[0-9]+)([+|-][0-9]{1,4})?\"/>, and Appendix II (B) Time Zone in the IG states that “The syntax is ‘CCYYMMDDHHMMSS.UUUU[+|-ZZzz]’ where digits can be omitted from right side to express less precision”.",
+      "fingerprint": "11ec68f98e4e42b22110f3c0f5c36595d77ae7667c203b41cc37c69627a3028e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-16-paragraph-4",
+      "statement": "(012) November 2014 There are several references to M5 Identifiers in the E2B R3 Implementation Guide, please confirm these still apply? All references to M5 Identifiers in the Implementation Guide and associated technical documents should be replaced with ISO IDMP Terms and Identifiers.",
+      "context": "XML Schema defines the Time Zone value as <xs:pattern value=\"[0- 9]{1,8}|([0-9]{9,14}|[0-9]{14,14}\\.[0-9]+)([+|-][0-9]{1,4})?\"/>, and Appendix II (B) Time Zone in the IG states that “The syntax is ‘CCYYMMDDHHMMSS.UUUU[+|-ZZzz]’ where digits can be omitted from right side to express less precision”. (013) November 2014 It is not assumed that ‘In exceptional cases where the country of the primary source is not available to the sender’ described in User Guidance of C.2.r.3.",
+      "fingerprint": "f747e7dcc64d472b82a4cc5a148b99f06b4048c31b4e5ab10d233d7da4eedc6d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-16-paragraph-7",
+      "statement": "In this context, the description in User Guidance of C.1.1 ‘in exceptional circumstances where the country of primary source is unknown, the country where the reaction occurred (E.i.9) should be used to indicate the country code’ is also inappropriate.",
+      "context": "Is there any case that E.i.9 is used as alternative of Reporter’s Country code? No, it is not assumed that the country of the primary source is not available to sender and there is not any case that E.i.9 is used as alternative of Reporter’s Country Code. A change of E.i.9 never change Sender’s (case) Safety Report Unique Identifiers.",
+      "fingerprint": "0cc00ba2874e16f182dd5f8fb9b22b367102fd606c7cf1664e59413271ba9396",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-16-paragraph-10",
+      "statement": "4.2 (014) November 2014 How can I identify the primary source and the reporter qualification when an ICSR is forwarded by Health Authorities with minimal or no information on the primary source? If no information on the primary source is available, section C.2.r should identify the Health Authority as the primary source.",
+      "context": "Field C.2.r.4 ‘Qualification’ should be populated with nullFlavor “UNK”.",
+      "fingerprint": "3596a86ba4439119397a1a12715c5bf98a475cde2e963197325bc4da320acf0c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-16-paragraph-11",
+      "statement": "Field C.2.r.4 ‘Qualification’ should be populated with nullFlavor “UNK”.",
+      "context": "4.2 (014) November 2014 How can I identify the primary source and the reporter qualification when an ICSR is forwarded by Health Authorities with minimal or no information on the primary source? If no information on the primary source is available, section C.2.r should identify the Health Authority as the primary source. Additionally, field C.1.3 ‘Type of report’ may be populated with a code of “4” (Not available to sender (unknown), if appropriate.",
+      "fingerprint": "b0e9e7bd702195565fef94b9905ddac09d55a48b708be507d22fdf9393c86201",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-17-paragraph-1",
+      "statement": "4.3 (015) November 2014 The conformance of C.1.5 is “Required”. Even if a sender has only first received information and no follow-up information, must a sender enter date in this field? Yes, a sender must enter date.",
+      "context": "If a sender has only first received information, the date of first received information and the date of most recent information are same, so a sender enters the date correspond to C.1.4 in C.1.5.",
+      "fingerprint": "6920e78c5c87fd1ca53bcc3d7cf1f104481bffd99e1aac972a40be7954149a72",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-17-paragraph-8",
+      "statement": "The business rule for ICH D.1. Patient (name or initial) concerning the use of allowable null flavor values is incomplete. Senders should refer to table in section 5.6.2 nullFlavour for Fields Required in E2B(R3) and follow guidance concerning use of additional null flavor values for D.1., which include the use of: MSK, ASKU, NASK, UNK value options.",
+      "context": "The IG currently states that the nullFlavor value allowed is MSK and the BFC states that the nullFlavor values allowed are MSK, ASKU, NASK and UNK. D.1 (018) November 2014 Appendix I (B) Backwards and Forwards Compatibility Recommendations (BFC) ver. 2.00 explains that “To upgrade to E2B(R3), ‘Continuing (patient or parent medical history)’ (i.e., B.1.7.1d or B.1.10.7.1d in E2B(R2)) is provided with value ‘3’ (unknown) in E2B(R2), the corresponding field should be provided in E2B(R3) with the nullFlavour (UNK)”.",
+      "fingerprint": "aa0f8ed29ad55d0345292f23ad3552a6ace3f32255810ba76686d37ee5410006",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 33,
+      "anchor": "page-17-paragraph-9",
+      "statement": "D.1 (018) November 2014 Appendix I (B) Backwards and Forwards Compatibility Recommendations (BFC) ver. 2.00 explains that “To upgrade to E2B(R3), ‘Continuing (patient or parent medical history)’ (i.e., B.1.7.1d or B.1.10.7.1d in E2B(R2)) is provided with value ‘3’ (unknown) in E2B(R2), the corresponding field should be provided in E2B(R3) with the nullFlavour (UNK)”.",
+      "context": "The business rule for ICH D.1. Patient (name or initial) concerning the use of allowable null flavor values is incomplete. Senders should refer to table in section 5.6.2 nullFlavour for Fields Required in E2B(R3) and follow guidance concerning use of additional null flavor values for D.1., which include the use of: MSK, ASKU, NASK, UNK value options. The business rule for D.7.1.r.3 or D.10.7.1.r.3 Continuing concerning the use of allowable null flavor values is incomplete.",
+      "fingerprint": "f1e368af4e2b1b9000f78f723826ff17c5a38c053456654d9a7e8651e3394078",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 34,
+      "anchor": "page-17-paragraph-11",
+      "statement": "MSK, ASKU, NASK and UNK are allowed for D.7.1.r.3 and D.10.7.1.r.3. Senders should follow the guidance of upgrading to E2B(R3) or downgrading to E2B(R2) in section 5.6.3 nullFlavour for Optional Codes and Dates concerning use of the nullFlavour UNK for D.7.1.r.3 or D.10.7.1.r.3.",
+      "context": "The business rule for D.7.1.r.3 or D.10.7.1.r.3 Continuing concerning the use of allowable null flavor values is incomplete.",
+      "fingerprint": "21eb9461ac652d8f7e10b8418b425df2f6af13dd966a902b2eeb5835038dc838",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 35,
+      "anchor": "page-18-paragraph-1",
+      "statement": "And the BFC also explains that “To downgrade to E2B(R2), ‘Continuing (patient or parent medical history)’ (i.e., D.7.1.r.3 or D.10.7.1.r.3 in E2B(R3)) has null flavor (UNK) in E2B(R3), the corresponding field in E2B(R2) should be provided with value ‘3’ (unknown)”.",
+      "context": "However, The IG currently states that the nullFlavor values allowed are MSK, ASK and NASK.",
+      "fingerprint": "2dd1709be4e2104147a090fcee44933b05a45047513c6c89eea394751e06d891",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 36,
+      "anchor": "page-18-paragraph-4",
+      "statement": "4.4 (019) November 2014 About E2B(R3) data element: E.i.3.2 Seriousness Criteria at Event Level, a) How to describe “unknown” and “not serious”? What is allowed value for this data element? b) How to describe allowed values and \"left blank\" in XML? a) E.i.3.2 are mandatory elements and False is not a value allowed for this data element. This mandatory data element should either be ‘true’ or nullFlavor= ‘NI’.",
+      "context": "This correction is reflected in the BFC version 2.01 (modified in November 2014). When the information is unknown or the event is not serious, “NI” should be populated.",
+      "fingerprint": "be03b8f47cc3ba86c51ba412fe00c544bccd4be992eb755a060dd7250b666b89",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 37,
+      "anchor": "page-18-paragraph-5",
+      "statement": "When the information is unknown or the event is not serious, “NI” should be populated.",
+      "context": "4.4 (019) November 2014 About E2B(R3) data element: E.i.3.2 Seriousness Criteria at Event Level, a) How to describe “unknown” and “not serious”? What is allowed value for this data element? b) How to describe allowed values and \"left blank\" in XML? a) E.i.3.2 are mandatory elements and False is not a value allowed for this data element. This mandatory data element should either be ‘true’ or nullFlavor= ‘NI’. b) “Left blank” if not serious using the nullFlavor “NI”. All 6 criteria in E.i.3.2 should be included in XML every time (even if a report is non serious).",
+      "fingerprint": "ee92b8abeb153eb18c6b0852a4d078c74eda9de2ceb1f42c1d86f13ec5022526",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 38,
+      "anchor": "page-18-paragraph-6",
+      "statement": "b) “Left blank” if not serious using the nullFlavor “NI”. All 6 criteria in E.i.3.2 should be included in XML every time (even if a report is non serious).",
+      "context": "When the information is unknown or the event is not serious, “NI” should be populated. The following is an XML example. <value xsi:type=\"BL\" nullFlavor=”NI” /> E.i.3.2 (021) November 2014 Test Result (code): ICH document states – “Optional, but required if F.r.2 is populated, and F.r.3.2 and F.r.3.4 is not populated”. Whereas, EU implementation guide says – “Mandatory if F.r.2.2b is populated, and F.r.3.2 or F.r.3.4 is not populated.”. Similar discrepancy exists for F.r.3.2 and F.r.3.4. The explicit meaning of “OR” / “AND” used in this needs to be clarified.",
+      "fingerprint": "5bc05ee13e6a4e65f0166242f18390e26cbe44536fdd97e29ef683676c62553d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 39,
+      "anchor": "page-18-paragraph-7",
+      "statement": "The following is an XML example. <value xsi:type=\"BL\" nullFlavor=”NI” /> E.i.3.2 (021) November 2014 Test Result (code): ICH document states – “Optional, but required if F.r.2 is populated, and F.r.3.2 and F.r.3.4 is not populated”. Whereas, EU implementation guide says – “Mandatory if F.r.2.2b is populated, and F.r.3.2 or F.r.3.4 is not populated.”. Similar discrepancy exists for F.r.3.2 and F.r.3.4. The explicit meaning of “OR” / “AND” used in this needs to be clarified.",
+      "context": "b) “Left blank” if not serious using the nullFlavor “NI”. All 6 criteria in E.i.3.2 should be included in XML every time (even if a report is non serious). The conformance of F.r.3.1 is clarified as follows. Optional, but required if F.r.2 is populated, and neither F.r.3.2 nor F.r.3.4 is populated”.",
+      "fingerprint": "5de30d92c9fd1386463bf35ede08cf878b4ec19968c4cc4aa85dc8bfb5627a4c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 40,
+      "anchor": "page-20-paragraph-3",
+      "statement": "The free text ‘Not specified’ or ‘Unknown’ should be expressed by using nullFlavor.",
+      "context": "(025) November 2014 The E2B IG implies the free text field G.k.7.r.1 is optional, however the business rules for G.k.7.r.2b. implies the use of a nullFlavor is mandatory.",
+      "fingerprint": "bceedf97404b92330075d210b8c8a05fc5c68ad064936826287fb2b47000dc57",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 41,
+      "anchor": "page-20-paragraph-5",
+      "statement": "4.11 (030) June 2016 When retransmitting an ICSR received from another sender such as a regulatory authority, partner company, or other source, which reporter should be marked as 'Primary Source for Regulatory Purposes' (field C.2.r.5)? As mentioned in the E2B(R3) implementation guide, the primary source of the information is the person who provided the facts about the ICSR. In case of multiple sources, the ‘Primary Source for Regulatory Purposes’ (C.2.r.5) is the person who first reported the facts to the original sender, not retransmitter.",
+      "context": "The primary source should be distinguished from senders and retransmitters. Information on the sender and retransmitters is captured in section C.3. When retransmitting an electronic ICSR received from another sender, such as a regulatory authority, partner company, or other source in E2B format, the Primary Source information in the initial transmission should reflect the reporter with first-hand information on the case and this should not be changed.",
+      "fingerprint": "0c923a674322fb80526f1bf5fa4504b602a93937635ecd98a15778ce5070bd47",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 42,
+      "anchor": "page-20-paragraph-6",
+      "statement": "The primary source should be distinguished from senders and retransmitters. Information on the sender and retransmitters is captured in section C.3. When retransmitting an electronic ICSR received from another sender, such as a regulatory authority, partner company, or other source in E2B format, the Primary Source information in the initial transmission should reflect the reporter with first-hand information on the case and this should not be changed.",
+      "context": "4.11 (030) June 2016 When retransmitting an ICSR received from another sender such as a regulatory authority, partner company, or other source, which reporter should be marked as 'Primary Source for Regulatory Purposes' (field C.2.r.5)? As mentioned in the E2B(R3) implementation guide, the primary source of the information is the person who provided the facts about the ICSR. In case of multiple sources, the ‘Primary Source for Regulatory Purposes’ (C.2.r.5) is the person who first reported the facts to the original sender, not retransmitter. The reporter identified as ‘Primary Source for Regulatory Purposes’ in the original transmission should remain unchanged in all subsequent retransmission of the case.",
+      "fingerprint": "5e3875b9f5292d8690bdf383c69c511423976d883ca851753ad0ac660e6b31cf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 43,
+      "anchor": "page-20-paragraph-7",
+      "statement": "The reporter identified as ‘Primary Source for Regulatory Purposes’ in the original transmission should remain unchanged in all subsequent retransmission of the case.",
+      "context": "The primary source should be distinguished from senders and retransmitters. Information on the sender and retransmitters is captured in section C.3. When retransmitting an electronic ICSR received from another sender, such as a regulatory authority, partner company, or other source in E2B format, the Primary Source information in the initial transmission should reflect the reporter with first-hand information on the case and this should not be changed. C.2.r.5, C.3 (031) June 2016 The conformance of D.8.r.1 Name of Drug as Reported is “Required” and the business rule states that “nullFlavor = NA” should be used when there is no previous exposure to a drug or vaccine and no other nullFlavor is allowed. Drug or vaccine exposure history may be unknown in most cases, but nullFlavor = UNK is not allowed in The conformance of D.8.r.1 in the current Implementation Guide is inappropriate. D.8.r",
+      "fingerprint": "ae500e01fb7fc35e9a94e331feb9b37e6519b6f3e850aa7a9e9d4921f8e7cbb9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 44,
+      "anchor": "page-20-paragraph-8",
+      "statement": "C.2.r.5, C.3 (031) June 2016 The conformance of D.8.r.1 Name of Drug as Reported is “Required” and the business rule states that “nullFlavor = NA” should be used when there is no previous exposure to a drug or vaccine and no other nullFlavor is allowed. Drug or vaccine exposure history may be unknown in most cases, but nullFlavor = UNK is not allowed in The conformance of D.8.r.1 in the current Implementation Guide is inappropriate. D.8.r Relevant Past Drug History can be left blank when no information is obtained.",
+      "context": "The reporter identified as ‘Primary Source for Regulatory Purposes’ in the original transmission should remain unchanged in all subsequent retransmission of the case. Technically, D.8.r.1 is required by the schema if any data element in section D.8.r is used. Therefore, the conformance of D.8.r.1 should be interpreted as Conditionally Required.",
+      "fingerprint": "2cef47e21f937da10c15489ea5059d600d33d79520964697b5e0c09e8902feba",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 45,
+      "anchor": "page-20-paragraph-9",
+      "statement": "Technically, D.8.r.1 is required by the schema if any data element in section D.8.r is used. Therefore, the conformance of D.8.r.1 should be interpreted as Conditionally Required.",
+      "context": "C.2.r.5, C.3 (031) June 2016 The conformance of D.8.r.1 Name of Drug as Reported is “Required” and the business rule states that “nullFlavor = NA” should be used when there is no previous exposure to a drug or vaccine and no other nullFlavor is allowed. Drug or vaccine exposure history may be unknown in most cases, but nullFlavor = UNK is not allowed in The conformance of D.8.r.1 in the current Implementation Guide is inappropriate. D.8.r Relevant Past Drug History can be left blank when no information is obtained. NullFlavor = UNK is allowed when no information is available but need to enter D.8.r.1.",
+      "fingerprint": "f50893a312cbe88625194937a51c2c0a2818a7898ec2638e4b5fcefa519dc7c1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 46,
+      "anchor": "page-20-paragraph-10",
+      "statement": "NullFlavor = UNK is allowed when no information is available but need to enter D.8.r.1.",
+      "context": "Technically, D.8.r.1 is required by the schema if any data element in section D.8.r is used. Therefore, the conformance of D.8.r.1 should be interpreted as Conditionally Required.",
+      "fingerprint": "561c81f76ea6ba14f9811422d48a94df7b9c7b2651f86a9405affd61a694385c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 47,
+      "anchor": "page-21-paragraph-1",
+      "statement": "this field. How should sender report such cases?",
+      "context": "4.12 (032) June 2016 Which data element (F.r.3.4 Result unstructured data or F.r.6 Comments) is applicable for test results such as comments on CT, MRI, or radiogram? Field F.r.6 is reserved for comments made by the reporter about the results of tests and procedures.",
+      "fingerprint": "761619596fe7f746900fe7036d829ad6252170f36041c28f1b89bec97db2ee04",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 48,
+      "anchor": "page-21-paragraph-3",
+      "statement": "Unstructured findings from tests and procedures such as CT, MRI, radiogram, etc. should be provided as free text in field F.r.3.4.",
+      "context": "4.12 (032) June 2016 Which data element (F.r.3.4 Result unstructured data or F.r.6 Comments) is applicable for test results such as comments on CT, MRI, or radiogram? Field F.r.6 is reserved for comments made by the reporter about the results of tests and procedures.",
+      "fingerprint": "3852be74ed44c670a44ef01d2bf76114a34465fbcbef2658808024a4122a83e7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 49,
+      "anchor": "page-21-paragraph-5",
+      "statement": "4.13 (033) June 2016 The mother’s drug exposure has started prior to her pregnancy. Is “G.k.6 Gestation period at time of exposure” necessary to be populatedon the child/foetus report and/or mother report? It is appropriate to use G.k.6 to capture the earliest exposure during pregnancy, a clinical judgment should be used to choose the most appropriate value/unit.",
+      "context": "",
+      "fingerprint": "389716f176a9606566da92f6872747bf6ff6d2767f20ce3ab80a8574d516e089",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 50,
+      "anchor": "page-21-paragraph-7",
+      "statement": "4.14 (034) June 2016 Is “D.2.2.1 Gestation Period When Reaction / Event Was Observed in the Foetus” necessary in the foetus report when drug was taken by father? In a foetus report, regardless the exposure from father or mother, the foetus age information should be provided in D.2.2.1. Information concerning the parent should be provided in section D.10.",
+      "context": "",
+      "fingerprint": "805561c44e8e9a64b7f9814ee281179b021fc253fdd2859938e79108fde9d388",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 51,
+      "anchor": "page-21-paragraph-9",
+      "statement": "5.1 (037) June 2016 The codesystem versions for the E2B code lists used in the ICH E2B(R3) reference instances are old compared to the latest version of the E2B code lists. Should a sender update the codesystem version appropriately? Yes, a sender should update the codesystem version in ICSR messages (xml files) for submission. Acceptable codesystem version(s) are designated by regulatory authorities in each region.",
+      "context": "3.11 (038) June 2016 ISO 3166 Part 1 (alpha-2) country codes are provided in the ISO web site.",
+      "fingerprint": "d25f6e9c7bddb354e76c39384991cdceeb5191429d89d6f7e330f5ba00c52df8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 52,
+      "anchor": "page-21-paragraph-12",
+      "statement": "The “Unassigned” category should not be used. “Transitionally reserved”, “Indeterminately reserved” and “Formerly used” categories may be used when appropriate, e.g., for legacy data.",
+      "context": "https://www.iso.org/obp/ui/#home There are some categories like “Officially assigned codes” or “Other code types”. Does ICH accept “Officially assigned codes” only? Note: “EU” is categorized in “exceptionally reserved” IG specifies use of ISO 3166 Part 1 (alpha-2). ISO 3166 Part 1 (alpha-2) supports use of country codes in E2B(R3) messages. This includes “Officially assigned” country codes plus “EU” in the “Exceptionally reserved” category.",
+      "fingerprint": "1496a997a073e7319991e8a1d0fbb1f264c1f9b3a0b0be971b50013aefe7c976",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 53,
+      "anchor": "page-21-paragraph-14",
+      "statement": "4.18 June 2017 How should “Decade” be represented in data element D.2.2b Age at Time of Onset of Reaction / Event (unit) and D.10.2.2b Age of Parent (unit)? There is a discrepancy between the IG {Decade} in the IG should not be used. E2B(R3) EWG/IWG consulted with UCUM and preferred notation is “10.a”. The code list #26 has been updated accordingly.",
+      "context": "",
+      "fingerprint": "9aa380e598831ebac4bfcf4c1d8696970755eb3f8e8885ed92403f72b9ece24e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 54,
+      "anchor": "page-22-paragraph-1",
+      "statement": "Value allowed and the code list #26, which one should be used?",
+      "context": "4.19 June 2018 The data elements, F.r.4 Normal Low Value and F.r.5 Normal high Value, specify use of the ICH AN data type.",
+      "fingerprint": "eff4c8775d1e3bb8935a92f46dc58012957ad1399d19123ce662de0f73e6dfbc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 55,
+      "anchor": "page-22-paragraph-3",
+      "statement": "However, an error is occurred by some alphanumeric characters entered in these data elements. Is it possible to enter alphanumeric characters in these data elements? While IG indicates data type 50AN and Value Allowed free text, value should be transmitted as two XML attributes: value and unit. Use only numeric data in value and alphanumeric in unit as currently documented in the Business Rule(s) section of data elements F.r.4 and F.r.5.",
+      "context": "4.19 June 2018 The data elements, F.r.4 Normal Low Value and F.r.5 Normal high Value, specify use of the ICH AN data type.",
+      "fingerprint": "ba48162c9f744bce54b0672d067536a17e947adaf0d6553aaac22d782debea79",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 56,
+      "anchor": "page-22-paragraph-8",
+      "statement": "For example, the ICH OID of D.1.1.4 specifies the ICH code list #4 and the numeric code \"4\" should be entered according to the list. However, the Business Rule(s) of D.1.1.4 is described as <code code = \"investigation\" codeSystem = \"2.16.840.1.113883.3.989.2.1.1.4\"/> .",
+      "context": "4.22 June 2019 There is inconsistency regarding a data entry rule between ICH OID and Business Rule(s) of D.1.1.1 – D.1.1.4. This looks as if a sender is required to enter a kind of word, and not a numeric code. Which way of data entry is appropriate for these data elements? A numeric code listed in the ICH code list #4 is required to be entered for D.1.1.1 – D.1.1.4. For further information, refer the X-path described in Appendix I(G) Technical Information version 1.02 and Reference Instances version 3.1.",
+      "fingerprint": "8442d06cf1e3315191db26d45e44e0239db33c2faa1042ed8646c5f21edc9dc8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 57,
+      "anchor": "page-22-paragraph-9",
+      "statement": "This looks as if a sender is required to enter a kind of word, and not a numeric code. Which way of data entry is appropriate for these data elements? A numeric code listed in the ICH code list #4 is required to be entered for D.1.1.1 – D.1.1.4. For further information, refer the X-path described in Appendix I(G) Technical Information version 1.02 and Reference Instances version 3.1.",
+      "context": "For example, the ICH OID of D.1.1.4 specifies the ICH code list #4 and the numeric code \"4\" should be entered according to the list. However, the Business Rule(s) of D.1.1.4 is described as <code code = \"investigation\" codeSystem = \"2.16.840.1.113883.3.989.2.1.1.4\"/> .",
+      "fingerprint": "40a08d60655b36dd7fe0714ed69ec355a82cc48e10b9177219a9725b46ed96a6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 58,
+      "anchor": "page-23-paragraph-2",
+      "statement": "CCYYMMDDHHMM+0 CCYYMMDDHH+0 Note: This may need to be taken into consideration during data migration/conversion from E2B(R2) source data.",
+      "context": "7.1 June 2017 If date/time is provided without timezone offset can I assume that it is UTC time? No, do not make this assumption. If date/time is provided as UTC exactly it would be expressed with a zero offset e.g. : 9. ANNEX: Q&As linked to the respective Sections of ICH E2B(R3) Guideline Sections of ICH E2B(R3) Guideline Introduction 1: Purpose 2: Background 3: Essential Components 3.4: ICH E2B(R3) DATA ELEMENTS",
+      "fingerprint": "d2725c10ec90777276e0d7e02769ece270ef9380eb6fbe1e3d45c6c8c170f75c",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-09T23:52:21.284Z"
+}
