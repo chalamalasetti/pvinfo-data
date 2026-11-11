@@ -153,7 +153,12 @@ function ciWorkflow(doc, file) {
 const PICK_SCRIPT = `
 const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '\${{ inputs.ref }}'.trim();
 const paths = PATHS;
-if (wanted) { core.setOutput('sha', wanted); return; }
+if (wanted) {
+  // Accept a branch name, a tag or a short commit id; the checkout step needs a full commit id.
+  const {data} = await github.rest.repos.getCommit({owner, repo, ref: wanted});
+  core.info(\`Publishing \${wanted} = \${data.sha}\`);
+  core.setOutput('sha', data.sha); return;
+}
 const branches = (await github.paginate(github.rest.repos.listBranches, {owner, repo, per_page: 100})).map(b => b.name).filter(n => n === 'main' || n.startsWith('claude/'));
 let newest = null;
 for (const branch of branches) for (const path of paths) {
