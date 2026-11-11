@@ -10,6 +10,10 @@ on:
         description: Optional active source ID to prioritize in the bounded batch
         type: string
         default: ""
+      admin_capture:
+        description: Optional admin-supplied PDF on the data repository's admin-captures branch, as <document-id>/<sha256>.pdf (for agencies that block automated downloads)
+        type: string
+        default: ""
 permissions:
   contents: write
   id-token: write
@@ -48,7 +52,17 @@ jobs:
               fs.writeFileSync('/tmp/pv-document-snapshots/index.json', Buffer.from(r.data.content, 'base64'));
             } catch(e) { if(e.status !== 404) throw e; }
       - name: Collect official public copies and deliver using short-lived GitHub identity
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.admin_capture) }}
         run: node scripts/document-collector.mjs --snapshot-dir=/tmp/pv-document-snapshots
+      - name: Deliver an admin-supplied copy of an official PDF
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.admin_capture }}
+        env:
+          ADMIN_CAPTURE: ${{ inputs.admin_capture }}
+        run: |
+          [[ "$ADMIN_CAPTURE" =~ ^[a-z0-9][a-z0-9-]{2,79}/[a-f0-9]{64}\.pdf$ ]] || { echo "Invalid admin capture path"; exit 1; }
+          git fetch --depth=1 origin admin-captures
+          git show "FETCH_HEAD:$ADMIN_CAPTURE" > /tmp/admin-capture.pdf
+          node scripts/document-collector.mjs --admin-capture="$ADMIN_CAPTURE" --admin-file=/tmp/admin-capture.pdf
       - name: Publish public key information even when some sources fail
         if: ${{ !cancelled() }}
         uses: actions/github-script@v7

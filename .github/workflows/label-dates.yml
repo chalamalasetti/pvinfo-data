@@ -32,6 +32,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci --ignore-scripts
+      - name: Read latest product cache
+        run: bash scripts/read-product-cache.sh || true
       - name: Bisect DailyMed label versions
         env:
           MINUTES: ${{ inputs.minutes || '40' }}
