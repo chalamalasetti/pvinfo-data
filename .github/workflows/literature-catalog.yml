@@ -2,16 +2,19 @@
 # Do not edit here: change the source file in PV-Info; the "Sync jobs from PV-Info" workflow rebuilds this.
 name: Collect finite literature catalog batches
 on:
+  schedule:
+    - cron: 37 2 11-14 11 *
   workflow_dispatch:
     inputs:
       mode:
-        description: Measurement (25 targets), single batch (100), or finite series (up to 40 campaign batches; at most 240 runner-minutes). Check account usage first.
+        description: Measurement (25 targets), single (100), thousand (10 sequential batches, up to 1000), or series (up to 40 campaign batches). Check account usage first.
         required: true
         default: measurement
         type: choice
         options:
           - measurement
           - single
+          - thousand
           - series
 permissions:
   contents: read
@@ -19,18 +22,40 @@ concurrency:
   group: pv-public-literature
   cancel-in-progress: false
 jobs:
-  collect:
-    if: github.ref == 'refs/heads/main' && vars.PV_LITERATURE_ENABLED == 'true'
+  window:
+    if: github.repository == 'chalamalasetti/pvinfo-data' && github.ref == 'refs/heads/main' && vars.PV_LITERATURE_ENABLED == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: ${{ inputs.mode == 'series' && 240 || 6 }}
+    timeout-minutes: 1
+    outputs:
+      allowed: ${{ steps.window.outputs.allowed }}
+    steps:
+      - name: Enforce finite automatic collection window
+        id: window
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          today=$(date -u +%Y-%m-%d)
+          allowed=false
+          if [ "$EVENT_NAME" = workflow_dispatch ]; then
+            allowed=true
+          elif [ "$EVENT_NAME" = schedule ] && [[ "$today" > 2026-11-10 && "$today" < 2026-11-15 ]]; then
+            allowed=true
+          fi
+          echo "allowed=$allowed" >> "$GITHUB_OUTPUT"
+  collect:
+    needs: window
+    if: needs.window.outputs.allowed == 'true' && github.ref == 'refs/heads/main' && vars.PV_LITERATURE_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ inputs.mode == 'series' && 240 || (inputs.mode == 'thousand' || github.event_name == 'schedule') && 60 || 6 }}
     steps:
       - name: Reserve whole-job publication headroom
         env:
-          MODE: ${{ inputs.mode }}
+          MODE: ${{ inputs.mode || 'thousand' }}
         run: |
           # Leave one minute outside this deadline for runner/setup variance.
           # The collector reserves another minute for durable publication.
-          if [ "$MODE" = series ]; then budget=14340000; else budget=300000; fi
+          if [ "$MODE" = series ]; then budget=14340000; elif [ "$MODE" = thousand ]; then budget=3540000; else budget=300000; fi
           echo "PV_LITERATURE_RUN_DEADLINE_MS=$(( $(date +%s%3N) + budget ))" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
         with:
@@ -63,7 +88,7 @@ jobs:
           git -C "$directory" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - name: Collect and publish bounded resumable batches
         env:
-          MODE: ${{ inputs.mode }}
+          MODE: ${{ inputs.mode || 'thousand' }}
           NCBI_EMAIL: ${{ secrets.NCBI_EMAIL }}
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
           DATA_TOKEN: ${{ secrets.PVINFO_DATA_TOKEN }}
@@ -73,6 +98,7 @@ jobs:
           case "$MODE" in
             measurement) count=1; args=(--measurement) ;;
             single) count=1; args=() ;;
+            thousand) count=10; args=() ;;
             series) count=40; args=() ;;
             *) echo 'Invalid batch mode.'; exit 1 ;;
           esac
