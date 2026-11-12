@@ -54,6 +54,11 @@ jobs:
       - name: Collect official public copies and deliver using short-lived GitHub identity
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.admin_capture) }}
         run: node scripts/document-collector.mjs --snapshot-dir=/tmp/pv-document-snapshots
+      - name: Capture official attachment files of home updates (budgeted, never fails the job)
+        if: ${{ !cancelled() && !(github.event_name == 'workflow_dispatch' && inputs.admin_capture) }}
+        continue-on-error: true
+        timeout-minutes: 7
+        run: node scripts/attachment-capture.mjs --budget-seconds=300
       - name: Deliver an admin-supplied copy of an official PDF
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.admin_capture }}
         env:
