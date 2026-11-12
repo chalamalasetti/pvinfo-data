@@ -50,6 +50,15 @@ test('CI becomes a polling check that posts commit statuses on PV-Info', () => {
   assert.equal(w.jobs.test.steps.at(-1).if, 'always()');
 });
 
+test('merge-conflict status waits for computed mergeability and is cleared when resolved', async () => {
+  const w = buildWorkflow('ci.yml', 'on: {pull_request: {}}\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - run: npm test\n');
+  const script = w.jobs.plan.steps[0].with.script;
+  assert.match(script, /mergeable === null/);
+  assert.match(script, /No conflicts with main/);
+  const AsyncFunction = (async () => {}).constructor;
+  assert.doesNotThrow(() => new AsyncFunction('github', 'core', script.replace(/\$\{\{[^}]+\}\}/g, '')));
+});
+
 test('curated requirements publish the newest curation commit on a poll', () => {
   const w = buildWorkflow('curated-requirements.yml', 'name: C\non: {push: {}}\njobs:\n  publish:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n');
   assert.equal(w.jobs.publish.needs, 'pick');

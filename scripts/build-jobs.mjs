@@ -90,7 +90,18 @@ const PLAN_SCRIPT = `
 // the pull request's head commit.
 const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '\${{ inputs.sha }}'.trim(), recheck = '\${{ inputs.recheck }}' === 'true';
 const targets = [];
-if (wanted) targets.push({sha: wanted, ref: wanted, label: 'manual'});
+const MERGE = '${CHECK_CONTEXT} / merge';
+// A merge-conflict error is replaced once GitHub reports the pull request as mergeable again.
+const clearMerge = async sha => {
+  const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: sha, per_page: 100});
+  const last = statuses.find(s => s.context === MERGE);
+  if (last && last.state !== 'success') await github.rest.repos.createCommitStatus({owner, repo, sha, state: 'success', context: MERGE, description: 'No conflicts with main'});
+};
+if (wanted) {
+  targets.push({sha: wanted, ref: wanted, label: 'manual'});
+  const prs = (await github.rest.repos.listPullRequestsAssociatedWithCommit({owner, repo, commit_sha: wanted})).data.filter(p => p.state === 'open' && p.head.sha === wanted);
+  for (const p of prs) if ((await github.rest.pulls.get({owner, repo, pull_number: p.number})).data.mergeable === true) await clearMerge(wanted);
+}
 else {
   const pulls = await github.paginate(github.rest.pulls.list, {owner, repo, state: 'open', sort: 'updated', direction: 'desc', per_page: 100});
   const main = (await github.rest.repos.getBranch({owner, repo, branch: 'main'})).data.commit.sha;
@@ -104,14 +115,18 @@ else {
     if (targets.some(t => t.sha === c.sha)) continue;
     if (!recheck) {
       const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: c.sha, per_page: 100});
-      if (statuses.some(s => s.context.startsWith('${CHECK_CONTEXT} /'))) continue;
+      if (statuses.some(s => s.context.startsWith('${CHECK_CONTEXT} /') && s.context !== MERGE)) continue;
     }
     if (c.number) {
       const pr = (await github.rest.pulls.get({owner, repo, pull_number: c.number})).data;
-      if (pr.mergeable === false || !pr.merge_commit_sha) {
-        await github.rest.repos.createCommitStatus({owner, repo, sha: c.sha, state: 'error', context: '${CHECK_CONTEXT} / merge', description: 'Has merge conflicts with main; resolve them to run the checks'});
+      // GitHub computes mergeability in the background after a push; null means not yet known.
+      if (pr.mergeable === null || (pr.mergeable && !pr.merge_commit_sha)) { core.info(c.label + ': mergeability not computed yet; next run'); continue; }
+      if (pr.mergeable === false) {
+        const last = (await github.paginate(github.rest.repos.listCommitStatusesForRef, {owner, repo, ref: c.sha, per_page: 100})).find(s => s.context === MERGE);
+        if (last?.state !== 'error') await github.rest.repos.createCommitStatus({owner, repo, sha: c.sha, state: 'error', context: MERGE, description: 'Has merge conflicts with main; resolve them to run the checks'});
         continue;
       }
+      await clearMerge(c.sha);
       // GitHub refreshes the merge commit lazily after main moves; test only an up-to-date one
       // (asking for the pull request above starts the refresh, so a later poll picks it up).
       const cmp = await github.rest.repos.compareCommitsWithBasehead({owner, repo, basehead: main + '...' + pr.merge_commit_sha});
