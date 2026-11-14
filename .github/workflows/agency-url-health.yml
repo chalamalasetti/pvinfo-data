@@ -1,0 +1,30 @@
+# Hand-written job (not generated from PV-Info, so "Sync jobs from PV-Info" leaves it alone).
+# Checks candidate agency URLs from data/agency-url-candidates.json and commits
+# data/agency-url-health.json. Public URLs only; no secrets beyond the built-in token.
+name: Agency URL health
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * 0'
+permissions:
+  contents: write
+concurrency:
+  group: agency-url-health
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check agency URLs
+        run: node scripts/agency-url-health.mjs
+      - name: Commit results
+        run: |
+          git add data/agency-url-health.json
+          if git diff --cached --quiet; then echo 'No change.'; exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -qm 'Agency URL health results'
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done; exit 1
