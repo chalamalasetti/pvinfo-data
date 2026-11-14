@@ -12,6 +12,9 @@ on:
       artifact:
         description: Artifact name
         default: fetched-documents
+      delay_seconds:
+        description: Pause between requests (raise for rate-limited hosts such as web.archive.org)
+        default: '1'
 permissions:
   contents: read
 jobs:
@@ -24,6 +27,7 @@ jobs:
       - name: Fetch
         env:
           LIST_B64: ${{ inputs.list_b64 }}
+          DELAY: ${{ inputs.delay_seconds }}
         run: |
           mkdir -p out
           echo "$LIST_B64" | base64 -d | gunzip > list.tsv
@@ -49,7 +53,7 @@ jobs:
           tail -n +2 list.tsv | while IFS=$'\t' read -r vid url rest; do
             [ -z "$vid" ] && continue
             case "$vid" in *[!A-Za-z0-9._-]*) echo "skip bad id $vid"; continue;; esac
-            meta=$(curl -sS -L --max-time 90 --retry 2 -A "$UA" -H 'Accept-Language: en' -o "raw.bin" -w '%{http_code}\t%{content_type}\t%{url_effective}' "$url" 2>/dev/null || printf '000\t\t%s' "$url")
+            meta=$(curl -sS -L --max-time 90 --retry 3 --retry-delay 20 -A "$UA" -H 'Accept-Language: en' -o "raw.bin" -w '%{http_code}\t%{content_type}\t%{url_effective}' "$url" 2>/dev/null || printf '000\t\t%s' "$url")
             code=$(printf '%s' "$meta" | cut -f1); ctype=$(printf '%s' "$meta" | cut -f2 | cut -d';' -f1); final=$(printf '%s' "$meta" | cut -f3)
             if [ -s raw.bin ]; then sha=$(sha256sum raw.bin | cut -d' ' -f1); bytes=$(stat -c %s raw.bin); else sha=; bytes=0; fi
             : > "out/$vid.txt"
@@ -59,7 +63,7 @@ jobs:
             fi
             tb=$(stat -c %s "out/$vid.txt"); first=$(grep -m1 -v '^\s*$' "out/$vid.txt" | tr '\t' ' ' | cut -c1-120)
             printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$vid" "$code" "$sha" "$bytes" "$ctype" "$final" "$tb" "$first" >> out/fetch-report.tsv
-            rm -f raw.bin; sleep 1
+            rm -f raw.bin; sleep "${DELAY:-1}"
           done
           echo "Rows: $(($(wc -l < out/fetch-report.tsv)-1)); not 200: $(tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200' | wc -l)"
           tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200{print "NOT 200", $1, $2, $6}'
