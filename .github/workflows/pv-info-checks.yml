@@ -253,9 +253,11 @@ jobs:
           node test/browser/admin-triage-rules.smoke.cjs
           node test/browser/company-briefing.smoke.cjs
           node test/browser/action-center.smoke.cjs
+          node test/browser/r4-journey.smoke.cjs
           node test/browser/impact-assessment.smoke.cjs
           node test/browser/plan-every-kind.smoke.cjs
           PV_BASE_URL=http://127.0.0.1:4173 node test/browser/card-to-case.smoke.cjs
+          PV_BASE_URL=http://127.0.0.1:4173 node test/browser/your-product.smoke.cjs
           PV_BASE_URL=http://127.0.0.1:4173 node test/browser/impact-assessment-phase2.smoke.cjs
           PV_BASE_URL=http://127.0.0.1:4173 node test/browser/phase4.smoke.cjs
           node test/browser/navigation.smoke.cjs
