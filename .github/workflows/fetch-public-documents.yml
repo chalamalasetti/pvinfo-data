@@ -1,0 +1,70 @@
+# Hand-written, manual-only job (not generated from PV-Info; "Sync jobs from PV-Info" leaves it alone).
+# Fetches public regulator documents that block cloud containers and returns their text as a
+# workflow artifact. Nothing is committed. Input: a TSV (versionId<TAB>url[<TAB>...], header row)
+# gzipped and base64-encoded.
+name: Fetch public documents
+on:
+  workflow_dispatch:
+    inputs:
+      list_b64:
+        description: gzip+base64 TSV with header; columns versionId, url (others ignored)
+        required: true
+      artifact:
+        description: Artifact name
+        default: fetched-documents
+permissions:
+  contents: read
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Install pdftotext
+        run: sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Fetch
+        env:
+          LIST_B64: ${{ inputs.list_b64 }}
+        run: |
+          mkdir -p out
+          echo "$LIST_B64" | base64 -d | gunzip > list.tsv
+          cat > html2text.py <<'PY'
+          import sys, html.parser
+          class P(html.parser.HTMLParser):
+              def __init__(s): super().__init__(); s.skip=0; s.out=[]; s.main=None
+              def handle_starttag(s, t, a):
+                  if t in ('script','style','noscript','svg','nav','footer','header'): s.skip+=1
+                  if t in ('p','div','br','li','tr','h1','h2','h3','h4','h5','h6','section','article'): s.out.append('\n')
+                  if t in ('li',): s.out.append('- ')
+              def handle_endtag(s, t):
+                  if t in ('script','style','noscript','svg','nav','footer','header') and s.skip: s.skip-=1
+              def handle_data(s, d):
+                  if not s.skip: s.out.append(d)
+          p=P(); p.feed(open(sys.argv[1], encoding='utf-8', errors='replace').read())
+          import re
+          txt=re.sub(r'[ \t]+',' ',''.join(p.out)); txt=re.sub(r'\n\s*\n+','\n\n',txt)
+          print(txt.strip())
+          PY
+          UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
+          printf 'versionId\thttp_status\tsha256\tbytes\tcontent_type\tfinal_url\ttext_bytes\tfirst_line\n' > out/fetch-report.tsv
+          tail -n +2 list.tsv | while IFS=$'\t' read -r vid url rest; do
+            [ -z "$vid" ] && continue
+            case "$vid" in *[!A-Za-z0-9._-]*) echo "skip bad id $vid"; continue;; esac
+            meta=$(curl -sS -L --max-time 90 --retry 2 -A "$UA" -H 'Accept-Language: en' -o "raw.bin" -w '%{http_code}\t%{content_type}\t%{url_effective}' "$url" 2>/dev/null || printf '000\t\t%s' "$url")
+            code=$(printf '%s' "$meta" | cut -f1); ctype=$(printf '%s' "$meta" | cut -f2 | cut -d';' -f1); final=$(printf '%s' "$meta" | cut -f3)
+            if [ -s raw.bin ]; then sha=$(sha256sum raw.bin | cut -d' ' -f1); bytes=$(stat -c %s raw.bin); else sha=; bytes=0; fi
+            : > "out/$vid.txt"
+            if [ "$code" = 200 ]; then
+              if head -c 5 raw.bin | grep -q '%PDF'; then pdftotext -layout raw.bin "out/$vid.txt" || true
+              else python3 html2text.py raw.bin > "out/$vid.txt" || true; fi
+            fi
+            tb=$(stat -c %s "out/$vid.txt"); first=$(grep -m1 -v '^\s*$' "out/$vid.txt" | tr '\t' ' ' | cut -c1-120)
+            printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$vid" "$code" "$sha" "$bytes" "$ctype" "$final" "$tb" "$first" >> out/fetch-report.tsv
+            rm -f raw.bin; sleep 1
+          done
+          echo "Rows: $(($(wc -l < out/fetch-report.tsv)-1)); not 200: $(tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200' | wc -l)"
+          tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200{print "NOT 200", $1, $2, $6}'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.artifact }}
+          path: out/
+          retention-days: 7
