@@ -63,6 +63,11 @@ jobs:
           done
           echo "Rows: $(($(wc -l < out/fetch-report.tsv)-1)); not 200: $(tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200' | wc -l)"
           tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200{print "NOT 200", $1, $2, $6}'
+      - name: Emit bundle in log (artifact storage is unreachable from some clients)
+        run: |
+          tar -czf bundle.tgz -C out .
+          echo "BUNDLE sha256 $(sha256sum bundle.tgz | cut -d' ' -f1) bytes $(stat -c %s bundle.tgz)"
+          echo '-----BEGIN BUNDLE-----'; base64 -w 200 bundle.tgz; echo '-----END BUNDLE-----'
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.artifact }}
