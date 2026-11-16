@@ -1,7 +1,7 @@
 # Hand-written, manual-only job (not generated from PV-Info; "Sync jobs from PV-Info" leaves it alone).
 # Fetches public regulator documents that block cloud containers and returns their text as a
 # workflow artifact. Nothing is committed. Input: a TSV (versionId<TAB>url[<TAB>...], header row)
-# gzipped and base64-encoded.
+# gzipped and base64-encoded. keep_raw=true also returns each original file as <versionId>.raw.
 name: Fetch public documents
 on:
   workflow_dispatch:
@@ -15,6 +15,10 @@ on:
       delay_seconds:
         description: Pause between requests (raise for rate-limited hosts such as web.archive.org)
         default: '1'
+      keep_raw:
+        description: Also return the original file as <versionId>.raw (e.g. a PDF for an admin capture)
+        type: boolean
+        default: false
 permissions:
   contents: read
 jobs:
@@ -28,6 +32,7 @@ jobs:
         env:
           LIST_B64: ${{ inputs.list_b64 }}
           DELAY: ${{ inputs.delay_seconds }}
+          KEEP_RAW: ${{ inputs.keep_raw }}
         run: |
           mkdir -p out
           echo "$LIST_B64" | base64 -d | gunzip > list.tsv
@@ -63,6 +68,7 @@ jobs:
             fi
             tb=$(stat -c %s "out/$vid.txt"); first=$(grep -m1 -v '^\s*$' "out/$vid.txt" | tr '\t' ' ' | cut -c1-120)
             printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$vid" "$code" "$sha" "$bytes" "$ctype" "$final" "$tb" "$first" >> out/fetch-report.tsv
+            if [ "$KEEP_RAW" = true ] && [ "$code" = 200 ] && [ -s raw.bin ]; then cp raw.bin "out/$vid.raw"; fi
             rm -f raw.bin; sleep "${DELAY:-1}"
           done
           echo "Rows: $(($(wc -l < out/fetch-report.tsv)-1)); not 200: $(tail -n +2 out/fetch-report.tsv | awk -F'\t' '$2!=200' | wc -l)"
