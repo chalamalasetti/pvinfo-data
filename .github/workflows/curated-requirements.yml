@@ -72,6 +72,10 @@ jobs:
         run: git fetch origin document-text-cache --depth=1 && git worktree add /tmp/text origin/document-text-cache
       - name: Check curation files and build payloads
         run: node scripts/curation/build-payloads.mjs scripts/document-catalog/curation /tmp/text /tmp/curated
+      - name: Add verification pass files
+        run: |
+          shopt -s nullglob
+          for f in scripts/document-catalog/verification/verify-*.r1.json; do node -e "const j=JSON.parse(require('fs').readFileSync(process.argv[1]));if(!/^[a-z0-9-]{3,40}$/.test(j.pass)||!Array.isArray(j.items))process.exit(1)" "$f"; cp "$f" /tmp/curated/; done
       - name: Publish to the data repository
         env:
           DATA_TOKEN: ${{ secrets.PVINFO_DATA_TOKEN }}
