@@ -192,7 +192,10 @@ core.info(\`Newest curation commit: \${newest.branch} \${newest.sha.slice(0, 7)}
 core.setOutput('sha', newest.date > published ? newest.sha : '');`;
 
 function curatedWorkflow(doc, file) {
-  const paths = ['scripts/document-catalog/curation', 'scripts/curation'];
+  // Watch the same folders as the source workflow's push filter (e.g. curation and verification files),
+  // so a merge that only touches one of them is still published on the next poll.
+  const paths = [...new Set(['scripts/document-catalog/curation', 'scripts/curation',
+    ...(doc.on?.push?.paths ?? []).filter(p => !p.startsWith('.github/')).map(p => p.replace(/\/\*\*$/, ''))])];
   const [name, job] = Object.entries(doc.jobs)[0];
   return {
     name: doc.name,

@@ -65,6 +65,13 @@ test('curated requirements publish the newest curation commit on a poll', () => 
   assert.equal(w.jobs.publish.steps[0].with.ref, '${{ needs.pick.outputs.sha }}');
 });
 
+test('curated pick watches the source push folders, not the workflow file', () => {
+  const w = buildWorkflow('curated-requirements.yml', "name: C\non: {push: {paths: ['scripts/curation/**', 'scripts/document-catalog/verification/**', '.github/workflows/curated-requirements.yml']}}\njobs:\n  publish:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n");
+  const script = w.jobs.pick.steps[0].with.script;
+  assert.match(script, /const paths = \["scripts\/document-catalog\/curation","scripts\/curation","scripts\/document-catalog\/verification"\];/);
+  assert.doesNotMatch(script, /\.github\/workflows/);
+});
+
 test('rendered files carry the generated marker and parse', () => {
   const text = render('demo.yml', buildWorkflow('demo.yml', job));
   assert.ok(text.startsWith(MARKER));
