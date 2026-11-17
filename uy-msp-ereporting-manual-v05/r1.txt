@@ -1,0 +1,3570 @@
+Manual para el uso de la herramienta e-Reporting
+
+Industria
+
+
+
+
+Unidad de Farmacovigilancia
+
+
+
+
+Departamento de Medicamentos
+
+
+
+
+MA-13221-005 V05
+CONTENIDO
+
+
+   1. GENERALIDADES .................................................................................. 4
+
+
+   2. OBJETIVOS .......................................................................................... 6
+
+
+   3. DESARROLLO DEL CONTENIDO ............................................................. 6
+
+
+      3.1 Indicaciones iniciales .................................................................... 6
+
+
+      3.2 Solicitud de cuentas de usuario ..................................................... 7
+
+
+      3.3 Ingreso por primera vez para generación de contraseña ............. 10
+
+
+      3.4 Inicio de Sesión .......................................................................... 14
+
+
+      3.5 Pantalla de inicio ......................................................................... 14
+
+
+      3.6 Menú principal ............................................................................ 17
+
+
+      3.7 Administración y activación de licencia MedDRA .......................... 18
+
+
+      3.8 Administración y activación de licencia WHODrug ........................ 22
+
+
+      3.9 Indicaciones específicas para el ingreso de reportes a e-Reporting
+             Industria .................................................................................... 24
+
+
+      3.9.1       Módulo de ingreso manual ..................................................... 25
+
+
+      3.9.1.1 Generalidades ....................................................................... 25
+
+
+      3.9.1.1.1 Códigos “NF”: NullFlavor (Información faltante) ................ 25
+
+
+      3.9.1.1.2 Íconos comunes en las diferentes secciones ....................... 26
+
+
+      3.9.1.2 Manejo del Reporte en el sistema .......................................... 27
+
+
+      3.9.1.2.1 Crear nuevo reporte ........................................................... 28
+
+
+
+
+                                                    2
+   3.9.2       Módulo de carga E2B ............................................................. 64
+
+
+4. ANEXOS ............................................................................................. 67
+
+
+   4.1. Anexo A: Términos y condiciones de uso e-Reporting Industria ... 67
+
+
+   4.2. Anexo B: Glosario ....................................................................... 68
+
+
+   4.3. Anexo C: Algoritmo OMS ............................................................. 71
+
+
+   4.4. Anexo D: Especificaciones para la notificación utilizando “e-
+          Reporting Industria” ................................................................... 72
+
+
+   4.5. Anexo E: Preguntas frecuentes ................................................... 74
+
+
+   4.6 Anexo F ...................................................................................... 85
+
+
+   4.7 Anexo G ...................................................................................... 86
+
+
+   4.8 Anexo H ...................................................................................... 87
+
+
+
+
+                                                 3
+    1. GENERALIDADES
+
+
+
+E-Reporting Industria permitirá que la Industria Farmacéutica realice la notificación,
+
+mediante el Reporte de los Eventos Adversos a Medicamentos ocurridos a nivel
+
+nacional con los productos bajo su representación, permitiendo aportar información de
+
+calidad en los reportes. Las particularidades del e-Reporting Industria (para el módulo
+
+de carga manual) son:
+
+
+Estructura compatible con ICH-E2B (R3).
+
+
+Uso prioritario de campos estructurados sobre campos de texto libre.
+
+
+Uso de campos estandarizados. MedDRA y WHODrug Dictionary
+
+
+Posibilidad de adjuntar información adicional relevante en PDF.
+
+
+Envío inmediato del reporte a la Unidad de Farmacovigilancia (UFV) del MSP.
+
+
+Los seguimientos se realizan cargando el archivo XML del reporte inicial y editándolos
+
+en la misma plataforma.
+
+
+Importante mencionar que las secciones:
+
+
+INGRESO DE DATOS:
+
+
+•      CREAR UN NUEVO REPORTE
+
+
+•      EDITAR REPORTE
+
+
+•      REPORTE DE SEGUIMIENTO
+
+
+•      NULIFICAR REPORTE
+
+
+
+
+                                           4
+Son utilizables únicamente para realizar acciones con archivos creados en el módulo
+
+de entrada manual de datos de eReporting industria. No se pueden utilizar estas
+
+secciones para realizar acciones con archivos XML creados en bases de datos
+
+externas. Todas las acciones con reportes XML creados en bases de datos externas a
+
+eReporting industria se deben realizar a través del módulo CARGAR E2B.
+
+
+Capacidad para descarga de acuse de recepción electrónico (acklog) en formato XML.
+
+
+NOTAS IMPORTANTES:
+
+
+   •   Todas las compañías que ingresaron casos por eReporting de pacientes,
+
+       deberán finalizar esos casos de acuerdo con dicho procedimiento. Solo los
+
+       casos nuevos serán ingresados a través de eReporting Industria para las
+
+       compañías antes mencionadas. Las compañías que enviaban archivos XML E2B
+
+       a la UFV para carga manual en VigiFlow, pueden sin problema mandar tanto
+
+       casos nuevos como seguimientos a los casos anteriormente enviados vía XML
+
+       por correo electrónico a través del módulo CARGAR E2B de eReporting
+
+       Industria.
+
+
+   •   A partir del 13 de julio de 2025, la UFV del MSP activó una serie de
+
+       validaciones que no hacen posible el envío de notificaciones si estas no
+
+       cumplen con las instrucciones de este manual (con especial atención al
+
+       formato ICH E2B-R3 y la utilización de los estándares WHODrug y MedDRA).
+
+
+
+
+                                         5
+    2. OBJETIVOS
+
+
+
+•    Exponer el procedimiento para la carga de archivos XML en producción para
+
+     aquellos integrantes de la Industria Farmacéutica que ya concluyeron la
+
+     implementación de E2B en sus bases de datos.
+
+
+•    Brindar información y explicar el procedimiento que debe seguir la Industria
+
+     Farmacéutica para el llenado de la información en el módulo de carga manual, y
+
+     de esta manera aportar la mayor cantidad de información posible en los campos
+
+     solicitados y así propiciar una notificación de alta calidad.
+
+
+
+    3. DESARROLLO DEL CONTENIDO
+
+
+
+     3.1     Indicaciones iniciales
+
+
+
+•    Se sugiere que el equipo que se utilice para cargar los casos cuente con un
+
+     dispositivo de    almacenamiento de         energía   para prevenir la pérdida de
+
+     información.
+
+
+•    Mantener una conexión de internet estable de alta velocidad para el correcto
+
+     funcionamiento de e-Reporting para Industria.
+
+
+•    Utilizar en orden de preferencia, los exploradores Chrome, Firefox y Microsoft
+
+     Edge. Tenerlos actualizados para su operación óptima.
+
+
+•    Salvaguardar la integridad y confidencialidad de las cuentas de acceso y
+
+     contraseñas.
+
+
+
+
+                                             6
+ •   Atender las disposiciones establecidas en el documento Términos y condiciones
+
+     de uso. Anexo A.
+
+
+ •   Cerrar la sesión cuando no se esté ingresando información a la plataforma.
+
+
+ •   La inestabilidad e interrupciones en la conexión de internet y cortes de energía
+
+     eléctrica, pueden ser motivos para perder la información de un reporte si no se
+
+     ha enviado previamente.
+
+
+
+     3.2       Solicitud de cuentas de usuario
+
+
+
+Para el otorgamiento de cuentas es fundamental tener actualizada el o la Responsable
+
+de Farmacovigilancia (RFV) ante la Unidad de Farmacovigilancia del MSP, ya que la
+
+comunicación será por correo electrónico exclusivamente con el Responsable de
+
+Farmacovigilancia:
+
+
+     • La       solicitud   se   debe     realizar   a   través   del   correo   electrónico:
+
+           farmacovigilancia@msp.gub.uy
+
+
+     • Se otorgarán hasta tres cuentas de usuario para el LTR (Laboratorio Titular
+
+           de Registro en Uruguay), una de ellas para el RFV.
+
+
+     • Es indispensable que el correo indicado para la cuenta de usuario sea
+
+           corporativa o institucional.
+
+
+     Información que deberá contener la solicitud:
+
+
+           Solicitud                                      Descripción
+
+              Estatus de     Deberá indicar si poseen licencia MedDRA vigente.
+             vigencia de     Es requerimiento que la Industria Farmacéutica tenga la licencia
+     licencia MedDRA         MedDRA vigente correspondiente a partir del 13/07/2025 de
+
+
+
+
+                                                7
+                acuerdo a la Ordenanza Nº 23/025.
+                También es aplicable para el módulo de carga XML.
+
+
+  Estatus de    Deberá indicar si poseen licencia WHODrug vigente.
+  vigencia de   Es requerimiento que la Industria Farmacéutica tenga la licencia
+     licencia   WHODrug vigente correspondiente a partir del 13/07/2025 de
+   WHODrug      acuerdo a la Ordenanza 23/025.
+                También es aplicable para el módulo de carga XML.
+
+
+Nombre largo    Se propone que sea la razón social (máx. 254 caracteres).
+
+
+                El nombre largo es el que se observará en el cuadrante superior
+                izquierdo de la interfaz, para que la compañía sepa que ingresó la
+                sesión correcta.
+
+
+Nombre corto    Nombre abreviado (máx. 20 caracteres).
+
+
+                Formará parte de las letras del formato del Worldwide unique
+                case identification (WWUID).
+
+
+                WWUID e.j. UY-LaboratorioResponsable-0000001, debe coincidir
+                con el WWUID de los archivos XML (para aquellos laboratorios
+                que cuenten con bases de datos que generen este ID).
+
+
+                Para las compañías que tienen bases de datos E2B, los siguientes
+                son los campos que contienen la información solicitada:
+                E2B (R2): <companynumb>
+                E2B (R3): 2.16.840.1.113883.3.989.2.1.3.2
+                (En la guía ICH-OID es el punto C.1.8.1 Worldwide Unique Case
+                Identification Number)
+
+
+
+
+                                   8
+                El nombre corto también se observará en el Identificador único
+                del reporte de seguridad (Safety report unique identifier)
+                SRID e.j. UY-LaboratorioResponsable-0000001
+
+
+                Para compañías que no tienen bases de datos E2B, se puede
+                proponer un nombre corto.
+
+
+                Es importante mencionar que una vez definido este nombre corto,
+                no se podrá modificar posteriormente en la fase de producción.
+
+
+Identificador   Corresponde al identificador del emisor (máx. 60 caracteres). El
+  del emisor    sender identifier es el código que permite la transmisión
+                electrónica entre bases de datos.
+
+
+                Para empresas con bases de datos que pueden o podrían generar
+                XML y tienen generador de este ID, este debe ser idéntico al que
+                posee en su base de datos, de lo contrario los reportes no serán
+                recibidos correctamente.
+
+
+                Para las compañías que tienen bases de datos E2B, los siguientes
+                son los campos que contienen la información solicitada:
+                E2B (R2): <messagesenderidentifier>
+                (En la guía es el punto M.1.5 Message Sender Identifier)
+                E2B (R3): 2.16.840.1.113883.3.989.2.1.3.11
+                (En la guía es el punto N.2.r.2 Message Sender Identifier)
+
+
+                En ocasiones es el mismo que el nombre corto, pero no
+                necesariamente.
+
+
+                Para compañías que no tienen bases de datos E2B pueden
+                proponer el sender identifier y definirlo junto con La Unidad de
+
+
+
+                                  9
+                           Farmacovigilancia del MSP.
+
+
+                           Es importante mencionar que una vez definido este ID, no se
+                           podrá modificar posteriormente en la fase de producción.
+
+           Organización    E2B (R2): Ver campo <senderorganization> (Corresponde a
+                emisora    A.3.1.2 Sender organization en la guía de la ICH)
+                           E2B (R3): (Corresponde a C.3.2 Sender’s Organization en la
+                           guía de la ICH)
+
+              Usuario 1    Nombre (s), y apellidos del responsable de la cuenta. Correo
+             (principal)   electrónico (usuario).
+
+              Usuario 2    Nombre (s), y apellidos del responsable de la cuenta. Correo
+             (adicional)   electrónico (usuario).
+
+              Usuario 3    Nombre (s), y apellidos del responsable de la cuenta. Correo
+             (adicional)   electrónico (usuario).
+
+     Identificador del     Corresponde al identificador de la Unidad de Farmacovigilancia del
+     receptor              Ministerio de Salud Pública. El receiver identifier es “MSP”.
+
+
+
+
+Las empresas que sean representantes de productos de varias compañías van a tener
+
+tantas cuentas en e-Reporting Industria como compañías a las que representen, para
+
+que a través de cada cuenta puedan enviar los reportes pertinentes a cada
+
+compañía. Cada cuenta debe tener los identificadores: Nombre corto, Organización
+
+emisora e identificador del emisor, particulares de la compañía representada, de
+
+especial importancia para la correcta transferencia de XML.
+
+
+
+     3.3     Ingreso por primera vez para generación de contraseña
+
+
+
+Una vez que la Unidad de Farmacovigilancia ha otorgado el acceso a la plataforma,
+
+debe seguir los siguientes pasos para la generación de su contraseña:
+
+
+
+
+                                             10
+• Para iniciar sesión y generar su contraseña, debe ir al siguiente enlace (se
+  recomienda no guardar el enlace en la sección favoritos de su navegador y
+  acceder desde el que se encuentra en este Manual o en la sitio web web de la
+  UFV del MSP):
+
+
+
+                  https://industryereporting.who-umc.org/
+
+
+
+
+• Presione en el enlace Forgot your pasword? (¿Olvidó su contraseña?), y
+  siga las instrucciones para crear una nueva contraseña.
+
+
+
+
+                                                            IMPORTANTE
+
+
+
+                                                       No        habilite    la
+                                                       traducción
+                                                       automática           del
+                                                       navegador que utiliza,
+                                                       ya que puede haber
+                                                       traducciones
+                                                       imprecisas           de
+                                                       algunos         campos
+                                                       cuando      cambia    el
+                                                       idioma de la interfaz.
+
+• En el campo Email Address, deberá ingresar su nombre de usuario (correo
+  electrónico).
+• Presione el botón Send Verification Code.
+
+
+
+
+                                   11
+• No cierre la ventana de e-Reporting Industria.
+
+• Se enviará a su correo un código de 6 dígitos que deberá ingresar en el
+
+  campo Verification Code. Presione el botón “Verify code”.
+
+
+
+
+• Si el código es correcto, le mostrará el mensaje “The code has been verified.
+
+  You can now continue”.
+
+• Presione el botón “Continue”.
+
+
+
+                                   12
+• Se mostrará una pantalla donde deberá ingresar su nueva contraseña. Su
+
+   contraseña debe contener como MÍNIMO 8 caracteres (letras, números,
+
+   mayúsculas, minúsculas, símbolos), y es importante que no se parezca a su
+
+   nombre de usuario.
+
+• Escriba esa misma contraseña en el recuadro de abajo para confirmarla.
+
+• Presione el botón “Continue”.
+
+• Si el proceso es exitoso el sistema lo redirigirá a la pantalla de inicio para que
+
+   ingrese su usuario y contraseña.
+
+
+
+
+NOTA: en caso de no recordar su contraseña, la recuperación se debe realizar
+
+con el mismo procedimiento anteriormente descrito.
+
+
+
+
+                                      13
+      3.4    Inicio de Sesión
+
+
+
+ Para iniciar sesión, debe ir al siguiente enlace (cópielo y péguelo en su navegador, se
+
+ recomienda no guardar el enlace en la sección favoritos de su navegador y acceder
+
+ desde el que se encuentra en este Manual o en el sitio web de la UFV del MSP):
+
+
+
+              https://industryereporting.who-umc.org/
+
+
+
+
+      ✓ Ingrese su usuario y contraseña en los campos correspondientes.
+Presione el botón Sign in (Iniciar sesión).
+
+
+
+
+      3.5    Pantalla de inicio
+
+
+
+      Una vez que haya iniciado sesión, deberá leer y aceptar términos y condiciones.
+
+
+
+
+                                              14
+    A continuación, encontrará la pantalla principal:
+
+
+
+
+    En la parte superior derecha de la pantalla se encuentra un menú principal en
+
+    donde podrá visualizar: iniciar, configuración de usuario, administración de
+
+    licencias, políticas de privacidad, términos y condiciones y cierre de sesión.
+
+
+
+
+    A continuación, se detalla cada función disponible en el menú:
+
+
+
+
+Función                                        Detalle
+
+                Inicio                         Lo traslada a la pantalla principal. Si está
+                                               ingresando        un   reporte,    asegúrese
+                                               primero de haberlo enviado y descargado
+                                               antes de ir a la pantalla de inicio, de lo
+                                               contrario    se    perderá   la   información
+                                               ingresada.
+
+     Configuraciones del Usuario               Ajustes de idioma de la interfaz.
+
+
+
+                                          15
+Administración de licencias                Administración de las licencias MedDRA y
+                                           WHODrug.
+
+   Política de Privacidad                  Lo redirige a la página web del UMC
+                                           donde    se   describe    la   política   de
+                                           privacidad.
+
+  Términos y condiciones                   Cláusulas legales que establecen la forma
+                                           en la que se puede utilizar el sistema.
+
+        Cerrar sesión                      Si está ingresando un reporte, asegúrese
+                                           primero de haberlo enviado y descargado
+                                           antes de cerrar la sesión, de lo contrario
+                                           se perderá la información ingresada.
+
+
+
+
+Para cambiar el idioma de la interfaz, ubique en el menú superior derecho, la
+
+opción configuraciones del usuario.
+
+
+
+
+• Puede elegir español como idioma de la interfaz del usuario.
+
+• Elegir “Español; Castellano (spa)” como idioma nativo, lo cual permitirá
+
+  llenar automáticamente los campos en donde se solicite elegir el idioma de un
+
+  término colocado en un campo específico.
+
+• Elegir Español como idioma de las licencias WHODrug y MedDRA.
+
+• Para guardar los cambios oprimir Guardar.
+
+
+
+
+                                      16
+• Regresar a la pantalla principal con la opción “Inicio” del menú superior
+
+      derecho.
+
+
+
+
+3.6       Menú principal
+
+
+
+
+• Existen dos mecanismos para el ingreso de un nuevo reporte, el ingreso
+
+      manual o la carga E2B.
+
+
+
+• Ingreso de datos (para el llenado manual): dirigido al ingreso manual de
+
+      la información del reporte en el sistema.
+
+• Crear Nuevo Reporte: Este módulo contiene instrucciones acerca de cómo
+
+
+
+                                        17
+            crear un nuevo Caso Individual de Seguridad y cómo hacer el manejo del
+
+            mismo en el sistema.
+
+      • Editar Reporte: Esta opción le permite cargar un reporte previamente
+
+            ingresado y editarlo.
+
+      • Reporte       de   seguimiento:   Esta    opción   le   permite   cargar   un   reporte
+
+            previamente ingresado y enviado a la autoridad reguladora, para fines de
+
+            seguimiento.
+
+      • Nulificar Reporte: Esta opción permite anular un reporte previamente creado
+
+            por este sistema.
+
+
+
+
+     •      Carga E2B: Módulo para la notificación a través de archivos en formato XML.
+
+            Todas las acciones con reportes XML creados en bases de datos externas a
+
+            eReporting industria se deben realizar a través del módulo CARGAR E2B
+
+            (envío de casos iniciales, seguimientos, nulificaciones etc.).
+
+
+
+
+      3.7       Administración y activación de licencia MedDRA
+
+
+
+
+El uso de MedDRA dentro del módulo de carga manual requiere la activación de la
+
+licencia dentro de la herramienta. Se debe obtener una clave API (interfaz de
+
+programación de aplicación) para validar que la licencia de la empresa está en orden.
+
+Para ello, debe llevar a cabo lo siguiente:
+
+
+
+
+                                                 18
+Ingrese a la siguiente dirección electrónica (sitio externo a e-Reporting Industria):
+
+
+https://mid.meddra.org/account/register
+
+
+
+
+     • Proporcione usuario y contraseña de su licencia MedDRA. Dar clic en Login.
+
+
+     • Si el proceso fue exitoso, la página le proporcionará la clave API para el
+
+         usuario MedDRA ingresado. Si no fue exitoso, revise usuario y contraseña e
+
+         intente nuevamente o contacte a su proveedor MedDRA.
+
+
+     • Copie la clave API.
+
+
+     • Inicie sesión en e-Reporting Industria
+
+
+
+
+                                           19
+• Ubique en el menú superior derecho la opción “Administración de licencias”
+
+
+• En el primer campo coloque su usuario MedDRA y en el segundo la clave API
+
+  generada en los pasos previamente descritos. De clic en Guardar.
+
+
+
+
+• Si el proceso fue exitoso, se guardará la información y se mostrará un
+
+  mensaje que le indicará que su licencia ha quedado validada para usar
+
+  MedDRA dentro de e-Reporting Industria.
+
+
+
+• Regrese a la pantalla principal.
+
+
+
+• Cuando ingrese/modifique un reporte, en las secciones donde se dispone de
+
+  MedDRA, podrá buscar el término MedDRA correspondiente.
+
+
+
+
+                                     20
+Importante
+
+ • Una vez que ha activado la licencia MedDRA no es necesario que repita el proceso cada
+ vez que inicia sesión. En caso de expiración de la licencia MedDRA, e-Reporting Industria
+ bloqueará la codificación en los campos MedDRA. El usuario deberá revisar los detalles
+ en el menú superior derecho en la opción Administración de licencias y en caso necesario
+ se deberá validar nuevamente como se indica en los pasos anteriores.
+ • Exención de responsabilidad: cada laboratorio es responsable de realizar/verificar la
+ renovación de la licencia MedDRA de su organización con MSSO, para poder utilizar la
+ terminología en e-Reporting Industria de forma legal. La UFV se exime de la obligación de
+ solicitar y comprobar la renovación de licencias MedDRA de los laboratorios.
+ • La aplicación de la terminología MedDRA en el módulo de carga manual (para el
+ módulo de carga XML se aplica desde un inicio) es efectiva en los siguientes reportes:
+ • Iniciales y sus correspondientes seguimientos posteriores a la emisión de este manual.
+
+
+
+Cabe señalar que el visor de MedDRA contenido en los campos correspondientes en e-
+
+Reporting Industria permite una búsqueda general del término deseado por lo que la
+
+información que se presenta en el resultado es concreta, específica y no pretende
+
+suplir las funciones y características que ofrece el explorador web de MedDRA. Por lo
+
+que, si requiere realizar una consulta ampliada, utilice el navegador web de MedDRA
+
+en el siguiente enlace: https://tools.meddra.org/wbb/
+
+
+   •   Para asuntos relacionados a los modelos de suscripción de licencias de
+
+       MedDRA, contactar directamente a MSSO a través de los siguientes medios:
+
+
+
+       Formulario web: https://www.meddra.org/subscription/process
+
+
+       o el email: mssohelp@meddra.org
+
+
+       La UFV no recibe beneficio alguno por la adquisición de estas licencias ni tiene
+
+       injerencia alguna en los procesos de trámite de las mismas.
+
+
+
+                                            21
+3.8      Administración y activación de licencia WHODrug
+
+
+
+Codificar   los   medicamentos    brinda    sistemáticamente   identificadores   que
+
+permiten asegurar la trazabilidad dentro del proceso de notificación de
+
+reacciones adversas, análisis de información y comunicación de riesgos
+
+asociados a medicamentos y vacunas.
+
+WHODrug Global es una terminología de reconocimiento mundial desarrollada y
+
+mantenida por el UMC y forma parte de la estrategia internacional de
+
+homologación de identificadores de productos medicinales de la OMS y agencias
+
+regulatorias. También, es una terminología que en su formato C3 permite el
+
+cumplimiento de las normas ICH E2B R3 (antes M5) del ICH en cuanto a
+
+estandarización en la codificación de medicamentos y vacunas.
+
+
+
+El uso de la codificación avanzada de WHODrug (formato C3) dentro del módulo
+
+de carga manual y la configuración de archivos XML con WHODrug requiere la
+
+activación de una licencia válida dentro de la herramienta. Para validar su
+
+licencia debe llevar a cabo lo siguiente:
+
+
+
+•     Ubique en el menú superior derecho la opción Administración de Licencias y
+
+      luego Administración de la Licencia WHODrug.
+
+
+
+
+•     Ingrese su número de licencia WHODrug en el campo correspondiente. De
+
+      clic en Guardar.
+
+
+                                      22
+•   Si el proceso fue exitoso, se guardará la información y se mostrará el
+
+    mensaje “Su licencia WHODrug es válida”, que le indicará que su licencia ha
+
+    quedado validada para usar WHODrug dentro de e-Reporting Industria.
+
+
+
+•   Regrese a la pantalla principal. Cuando ingrese/modifique un reporte, en las
+
+    secciones donde se dispone de WHODrug, podrá buscar el término WHODrug
+
+    correspondiente.
+
+
+
+    Cabe señalar que el visor de WHODrug contenido en los campos
+
+    correspondientes en e-Reporting Industria permite una búsqueda general del
+
+    término deseado por lo que la información que se presenta en el resultado es
+
+    concreta, específica y no pretende suplir las funciones y características que
+
+    ofrece el explorador web de WHODrug (WHODrug Insight).
+
+    Por lo que, si requiere realizar una consulta ampliada, utilice WHODrug
+
+    Insight en el siguiente enlace: https://who-umc.org/whodrug/whodrug-
+
+    global/applications/whodrug-insight/
+
+
+
+•   En los campos donde exista posibilidad de codificar con WHODrug (señalados
+
+    por la leyenda (WHODrug), se debe codificar lo más específicamente posible
+
+    de acuerdo con la información disponible y utilizando el formato C3 de
+
+    WHODrug. Consultar los documentos: Cómo usar el formato WHODrug C3
+
+    para la codificación de medicamentos; Guía técnica para el uso de WHODrug
+
+    Global en archivos XML cargados en VigiFlow-eReporting Industria para el
+
+    cumplimiento del estándar E2B (R3) (este último para usuarios con bases de
+
+    datos E2B y que producen archivos XML); Preguntas frecuentes WHODrug
+
+    LATAM, los tres documentos disponibles en español e inglés, anexos a este
+
+
+
+
+                                    23
+      documento y disponibles también en el WHODrug User Area (área de
+
+      usuarios con licencia WHODrug) del UMC, accesible a través del siguiente
+
+      link:
+
+      https://who-umc.org/whodrug/whodrug-global/applications/whodrug-user-
+
+      area/
+
+
+
+      Estas buenas prácticas y el uso del formato C3 aplican para todos los campos
+
+      que pueden recibir información con WHODrug y están disponibles para
+
+      usuarios con licencia válida.
+
+
+
+•     Para asuntos relacionados a los modelos de suscripción de licencias de
+
+      WHODrug, contactar directamente a UMC a través de los siguientes medios:
+
+
+
+      Formulario            web:             https://who-umc.org/whodrug/whodrug-
+
+      subscription/product-enquiry/
+
+      o el email: support@who-umc.org
+
+
+
+      La UFV no recibe beneficio alguno por la adquisición de estas licencias ni
+
+      tiene injerencia alguna en los procesos de trámite de las mismas.
+
+
+
+3.9      Indicaciones específicas para el ingreso de reportes a e-Reporting
+
+         Industria
+
+
+
+
+Con el objetivo de definir el proceso a seguir en relación con notificaciones que
+
+se      sometieron     en    sistemas    anteriores    a   e-Reporting    Industria,
+
+
+
+
+                                        24
+independientemente si utiliza el módulo de carga de XML o el módulo de carga
+
+manual, debe seguir las siguientes indicaciones importantes:
+
+
+• La notificación de reportes de caso individual a e-Reporting Industria, será
+
+   única y exclusivamente para nuevos casos y sus respectivos seguimientos.
+
+• Si notificó un caso inicial y seguimientos a través del mecanismo anterior vía
+
+   correo electrónico, debe dar seguimiento y cerrarlo a través de la misma vía,
+
+   es decir, vía correo electrónico.
+
+
+
+
+               3.9.1    Módulo de ingreso manual
+
+
+
+                       3.9.1.1 Generalidades
+
+
+
+                               3.9.1.1.1 Códigos “NF”: NullFlavor (Información
+
+                                  faltante)
+
+
+
+Los códigos NullFlavor son una colección de códigos que especifican por qué un
+
+valor válido no está presente. Estos códigos pueden ser encontrados al final de
+
+ciertos campos, por ejemplo, País del notificador primario, Iniciales de paciente,
+
+Indicación terapéutica, etc.
+
+
+• Desconocido
+
+• Preguntado pero desconocido
+
+• No preguntado
+
+
+
+
+                                       25
+    • Enmascarado/oculto
+
+
+    Cabe señalar que estos códigos solo podrán tener justificación de uso para no
+
+    aportar la información del campo si el sistema requiere obligatoriamente llenar
+
+    ese campo para poder enviar el reporte a la UFV.
+
+
+    Si en un campo que contiene un código NF, no se cuenta con la información y no
+
+    es obligatorio para el envío del reporte puede dejarlo en blanco y dejar el
+
+    marcador en NF prestablecido.
+
+
+    El sistema señalará en color rojo aquellos campos mínimos necesarios para el
+
+    envío del reporte.
+
+
+
+
+                                3.9.1.1.2 Íconos comunes en las diferentes secciones
+
+
+
+
+Ícono          Función
+
+
+
+               Permite agregar una sección o campo correspondiente en donde se
+
+               encuentre el botón. Por ejemplo: Medicamento, Indicación terapéutica,
+
+               Dosis, Reacciones, Evaluación de causalidad, etc.
+
+
+
+               Permite eliminar un campo o una sección completa correspondiente en
+
+               donde se encuentre el botón. Considere que, si elimina una sección o
+
+               campo y éste es indispensable para el envío del reporte, deberá llenar
+
+
+
+                                       26
+           nuevamente la información solicitada.
+
+
+
+           Permite pasar a la siguiente sección. En el módulo de carga manual no
+
+           es obligatorio llenar completamente una sección para poder pasar a la
+
+           siguiente. Al final, los campos mínimos necesarios para el envío se
+
+           marcarán en rojo y deberá regresar a la sección correspondiente para
+
+           aportar la información faltante o corregirla.
+
+
+
+
+                     3.9.1.2 Manejo del Reporte en el sistema
+
+
+
+Este módulo contiene instrucciones acerca de cómo crear un nuevo Caso
+
+Individual de Seguridad y cómo hacer el manejo del mismo en el sistema.
+
+
+
+
+Para ingresar al módulo de carga manual identifique en el menú superior
+
+derecho la opción Ingreso de datos.
+
+
+
+
+                                      27
+                                 3.9.1.2.1 Crear nuevo reporte
+
+
+
+
+Consta a su vez de ocho (8) secciones como se puede ver a continuación:
+
+
+     ✓ Administrativo
+
+
+
+
+           ➢ Información del Reporte
+
+     El tipo de reporte es un campo en el que se deberá elegir si se trata de un
+
+     reporte espontáneo o un reporte del estudio.
+
+
+
+
+                                         28
+Si se selecciona la opción de reporte del estudio, se desplegarán campos
+
+adicionales:
+
+
+Tipo de estudio
+
+Ensayo Clínico: para estudios de intervención
+
+Uso individual del paciente: para uso compasivo
+
+Otros estudios:
+
+  • Estudios observacionales
+
+  • Registros
+
+  • Programas de uso post comercialización
+
+  • Programas de apoyo a pacientes
+
+  • Programas de manejo de enfermedades
+
+  • Encuestas orientadas a pacientes o profesionales de la salud
+
+  • Estudios de Farmacovigilancia
+
+  • Programas de uso compasivo
+
+
+
+
+                                    29
+Nombre del estudio: coloque el nombre del estudio como aparece en el oficio
+
+de autorización de la Autoridad Reguladora.
+
+
+Número de estudio del patrocinador: código de identificación del estudio
+
+como aparece en el oficio de autorización de la Autoridad Reguladora.
+
+
+Para notificaciones de Literatura, se deberá elegir la opción de Reporte
+
+espontáneo o Reporte de estudio de acuerdo con la procedencia del caso.
+
+
+Es necesario en estos casos agregar la referencia bibliográfica de donde se
+
+obtuvo el caso colocándola en el campo Referencias bibliográficas. Este es un
+
+campo obligatorio si el reporte proviene de la literatura.
+
+
+
+
+Si no es clara la procedencia del reporte de literatura debe elegir la opción otro.
+
+
+La opción no disponible para el remitente no debe ser utilizada.
+
+
+
+
+                                      30
+Fecha en que se recibió el reporte por primera vez: fecha de conocimiento
+
+por primera vez en el LTR. Seleccione la fecha en los campos disponibles para tal
+
+fin (Día / Mes / Año). Este es un Campo Obligatorio.
+
+Fecha de información más reciente: corresponde a la fecha cuando el LTR
+
+recibió la última información que dio origen a respectivo seguimiento de un caso.
+
+Seleccione la fecha en los campos disponibles para tal fin (Día / Mes / Año). Este
+
+es un Campo Obligatorio.
+
+
+
+
+La fecha de notificación ante la autoridad corresponde al día que está realizando
+
+el ingreso y envío del caso y esta se proporciona automáticamente a la UFV
+
+cuando se hace el envío del caso.
+
+
+¿Este caso cumple los criterios locales para ser un reporte que precisa
+
+atención prioritaria? Este es un Campo Obligatorio.
+
+  • Colocar Sí: para notificaciones graves que tengan como consecuencia la
+
+     muerte o que cumplan con alguno de los criterios de gravedad: amenaza
+
+     de vida, causó o prolongó hospitalización, discapacidad / incapacidad,
+
+     anomalía congénita / defecto de nacimiento, o alguna otra condición
+
+     médica importante.
+
+  • Colocar No: para notificaciones clasificadas como no graves.
+
+Número de identificación único mundial (WWUID): es el primer identificador
+
+que se le asigna al reporte, si es una compañía que no tiene base de datos que
+
+
+                                     31
+lo genere, será el primer código que se le asigna al reporte. Si es una compañía
+
+que posee base de datos E2B, es el mismo código que genera la base. El
+
+WWUID está compuesto en primer lugar por las iniciales del país, es decir, UY,
+
+seguido por el nombre corto de la compañía (el cual debe quedar establecido
+
+ante la UFV y no ser modificado posteriormente), y por último el número que
+
+identifica al reporte.
+
+
+
+
+Identificador único del reporte de seguridad (SRUID): es otro identificador
+
+que se le puede asignar a un caso siguiendo el mismo formato que el WWUID en
+
+caso de que se necesite.
+
+
+
+
+                                    32
+    Sección constante                 Sección variable
+
+
+     (No modificable)               (Único para cada caso)
+
+
+La sección constante de ambos identificadores una vez que ya se han definido
+
+con la UFV, no podrá ser modificada posteriormente. Si requiere utilizar otro ID
+
+interno del laboratorio o códigos de notificaciones específicos solicitados por la
+
+UFV, agréguelo en el campo Other case identifiers in previous transmissions.
+
+
+Cuando ingresa un reporte al sistema, la sección constante de ambos
+
+identificadores ya viene predefinida, por lo que no es necesario ni debe modificar
+
+estos IDs.
+
+
+La sección variable del WWUID y SRUID debe constar de un número consecutivo
+
+de al menos 5 dígitos el cual debe ser único para cada caso. Por lo que el primer
+
+reporte que ingrese en el módulo de carga manual debe ser el 00001.
+
+
+
+
+                                     33
+Ejemplo:
+
+
+El   Identificador   único   del   reporte   de   seguridad   y   el   Número   de
+
+identificación único mundial son únicos para cada reporte por lo que, en los
+
+seguimientos, el sistema no le permitirá modificarlos.
+
+
+Otros identificadores de caso en transmisiones anteriores (Other case
+
+identifiers in previous transmissions): Si cuenta son una codificación interna en
+
+su organización u otros indicadores solicitados, puede agregarlos oprimiendo el
+
+icono “+”.
+
+En este campo pueden incluirse códigos del LTR, ID generados en anteriores
+
+sistemas a e-Reporting Industria, así como codificaciones establecidas para
+
+notificaciones de actividades adicionales de Planes de Manejo de Riesgos (PMR).
+
+Número de identificación de reportes que están vinculados a este reporte
+
+(Identification number of report which are linked to this report): cuando tiene
+
+casos que se relacionan de alguna manera con el que está reportando (por
+
+ejemplo, un evento adverso que sucedió en una familia), coloque WWUID de los
+
+casos relacionados. No aplica para casos que sean seguimiento.
+
+
+
+
+                                      34
+Referencias Bibliográficas (Literature references): este campo solo será
+
+utilizado si se reporta un caso de literatura (ver Tipo de reporte) y deberá
+
+colocar la referencia bibliográfica de donde obtuvo el caso. Opcionalmente, es
+
+posible agregar archivos de las referencias de literatura del caso (en el idioma
+
+original), siempre y cuando no se violen los derechos de autor del documento
+
+para compartirlo. Para cargar un archivo arrástrelo y suéltelo sobre la sección
+
+gris o ábralo desde su explorador de archivos con la opción Explorar. Agregar las
+
+referencias de literatura en formato PDF para evitar incompatibilidades de
+
+formatos.
+
+
+
+
+      ➢ Fuente Primaria: Información referente al notificador primario/original.
+
+Fuente primaria para fines regulatorios: habilitar necesariamente esta
+
+opción. La fuente principal de información es la persona que proporciona los
+
+hechos sobre el caso. En el caso de múltiples fuentes, la Fuente primaria para
+
+fines regulatorios es la persona que informó en primer lugar sobre los hechos al
+
+remitente. El reporte solo deberá tener una fuente primaria para fines
+
+regulatorios.
+
+
+
+
+Calificación: corresponde al perfil del notificador primario. Campo obligatorio.
+
+
+
+                                    35
+Deberá elegir entre:
+
+
+      • Médico
+
+      • Farmacéutico
+
+      • Otro profesional de la salud
+
+      • Abogado
+
+      • Consumidor u otro profesional no Sanitario. Elija esta opción si el
+
+          notificador primario es el propio paciente/consumidor o algún familiar
+
+          de éste.
+
+País: por defecto elegir Uruguay. Sin embargo, en algunas ocasiones el país del
+
+notificador puede ser diferente si, por ejemplo, un paciente/consumidor adquiere
+
+un medicamento en Uruguay y el evento/reacción sucede en otro país.
+
+
+Los siguientes campos sobre el notificador no son necesarios, pero puede incluir
+
+la información si cuenta con ella o puede prescindir de ellos por cuestiones de
+
+confidencialidad o negativa del notificador.
+
+
+      •   Título
+
+      •   Nombre
+
+      •   Segundo nombre, (si aplica)
+
+      •   Apellidos
+
+      • Organización
+
+      •   Departamento/área
+
+
+
+                                       36
+       •   Dirección
+
+       •   Ciudad
+
+       •   Estado
+
+       •   Código Postal
+
+       •   Teléfono
+
+
+Puede agregar otras fuentes primarias con la opción Agregar fuente primaria, sin
+
+embargo, el reporte solo debe tener habilitado una fuente primaria para fines
+
+regulatorios.
+
+
+   ✓       Paciente
+
+       ➢ Características del paciente
+
+Nombre o iniciales: Aportar iniciales de apellidos y nombre(s) en ese orden, o
+
+en caso de Estudios Clínicos, el código de identificación del paciente.
+
+Sexo
+
+Fecha de nacimiento
+
+Edad en el momento del inicio de la reacción/evento
+
+Grupo de edad
+
+       • Neonato: 0 - 27 días
+       • Infante: 28 días - 23 meses
+       • Niña/o: 2 - 11 años
+       • Adolescente: 12 - 17 años
+       • Adulto: 18 - 64 años
+       • Adulto mayor: ≥ 65 años
+
+
+
+                                       37
+(Es suficiente llenar solo uno de los campos de edad: Ingrese la información más
+
+precisa permitida bajo los requisitos de confidencialidad pertinentes)
+
+
+Tiempo de gestación (cuando se observó la reacción / evento en el feto):
+
+Coloque el valor y elija la unidad de tiempo del catálogo. Sólo debe ser llenado si
+
+la paciente se encontraba en gestación, de lo contrario dejar en blanco.
+
+Fecha de la última menstruación: Si no cuenta con la fecha completa, puede
+
+ingresar sólo uno (año) o dos campos (mes y año).
+
+Peso
+
+Altura
+
+
+
+
+Los siguientes campos no son relevantes para la calidad del reporte, sin
+
+embargo, si cuenta con la información, puede proporcionarla o simplemente
+
+dejar los campos en blanco:
+
+
+Número de expediente médico del médico general
+
+Número de registro de especialista
+
+Número de expediente hospitalario: Corresponde al número de expediente
+
+clínico
+
+Número de investigación: Para identificación del paciente en estudios clínicos.
+
+
+
+
+                                     38
+     • En caso de muerte: Si el desenlace de la reacción/evento es la muerte,
+
+        proporcione la siguiente información:
+
+Fecha de la muerte: Si no cuenta con la fecha completa, puede ingresar sólo
+
+uno (año) o dos campos (mes y año).
+
+Causa de muerte según lo reportado por la fuente primaria: Si cuenta con
+
+la información, coloque el término MedDRA (Nivel PT) de la causa de muerte.
+
+¿Se realizó la autopsia? Si cuenta con la información para afirmar o negar,
+
+proporciónela. Si elige SI, pudiera proporcionar información del siguiente campo.
+
+Causa de muerte determinada en la autopsia: Si cuenta con la información,
+
+coloque el término MedDRA (Nivel PT) de la causa de muerte.
+
+
+
+
+     • Progenitor: (Reporte padres-hijo). Cuando el neonato o feto, expuesto
+
+        a uno o varios medicamentos a través de los padres, presenta un
+
+        evento/reacción distinta del aborto espontáneo temprano / muerte
+
+        fetal, se debe proporcionar información tanto del neonato/feto como del
+
+        padre y madre en el mismo reporte.
+
+¿Este es un caso padres-hijo?
+
+Si elige SI, se desplegarán campos adicionales sobre el padre/madre que fue la
+
+fuente de exposición al medicamento sospechoso. Si cuenta con la información,
+
+proporcione la mayor información posible.
+
+
+
+
+                                    39
+Si desconoce la respuesta a la pregunta, deje en blanco.
+
+Antecedentes de medicamentos relevantes de la madre: Aporte información
+
+sobre antecedentes de medicamentos relevantes para la evaluación utilizados
+
+por el padre/madre que fue la fuente de exposición al medicamento sospechoso.
+
+Historia clínica de los padres: Proporcione información acerca de la historia
+
+clínica relevante y condiciones concurrentes de los padres.
+
+✓ Medicamentos
+
+Caracterización del rol del medicamento: Elegir entre las siguientes opciones:
+
+     • Sospechoso
+
+     • Concomitante
+
+     • Interactuante:    Si   elige   esta   opción   debe   tener   al   menos   dos
+
+        medicamentos interactuantes.
+
+     • Medicamento no administrado
+
+
+Nombre del medicamento según lo informado por la fuente primaria: Debe
+
+colocar el nombre comercial si cuenta con dicha información, y entre paréntesis
+
+la denominación genérica, así como otros datos útiles para la identificación del
+
+medicamento de acuerdo a lo reportado por el notificador inicial.
+
+
+Medicamento (WHODrug): En los campos donde exista posibilidad de codificar
+
+con WHODrug (señalados por la leyenda (WHODrug), se debe codificar lo más
+
+específicamente posible de acuerdo con la información disponible utilizando el
+
+formato C3 de WHODrug.
+
+
+País donde fue obtenido el medicamento: Uruguay
+
+
+
+                                      40
+Acción tomada con el medicamento: Elegir entre:
+
+
+     • Medicamento retirado
+
+     • Dosis reducida
+
+     • Dosis aumentada
+
+     • Dosis no modificada
+
+     • Desconocido
+
+     • No aplicable
+
+
+Número    de    autorización/solicitud:   Número    de   registro   sanitario   del
+
+medicamento, el cual deberá ser del medicamento sospechoso que el Titular de
+
+Registro o su Representante Legal esté emitiendo. En caso de un reporte de
+
+Estudios Clínicos de un medicamento que no cuenta con registro sanitario,
+
+puede colocar el número de autorización del protocolo del estudio clínico
+
+otorgado por la Autoridad.
+
+
+País de autorización/solicitud: Seleccione el país donde se autorizó el
+
+medicamento.
+
+
+Nombre del titular/solicitante: Razón social del titular del registro sanitario o
+
+representante legal. Para Estudios Clínicos, se debe colocar en nombre del
+
+patrocinador.
+
+
+Periodo de gestación al momento de la exposición: Seleccione tiempo de
+
+gestación de la lista desplegable (mes, semana, día, trimestre)
+
+
+
+                                    41
+Información adicional sobre el medicamento (campo de texto libre): En
+
+este campo de texto libre puede agregar información que no haya podido
+
+agregar a través de los campos que integran la sección de Medicamento, por
+
+ejemplo, la fecha de caducidad del medicamento.
+
+
+Información adicional sobre el medicamento (campo de selección):
+
+Seleccione de la lista despegable la opción que más se ajuste al caso, solo si
+
+aplica, de lo contrario dejar en blanco.
+
+
+
+
+Indicación tal cual fue reportada por el notificador primario: Coloque la
+
+indicación terapéutica para la cual se está dando el tal y como fue reportada por
+
+la fuente primaria.
+
+
+Indicación (MedDRA): Coloque el término MedDRA (Nivel PT) de la indicación
+
+terapéutica para la cual se está dando el medicamento o en EC la indicación para
+
+la que se está realizando el estudio clínico. En lo sucesivo se incluirá el
+
+diccionario MedDRA para esta sección.
+
+
+Número de lote
+
+
+Dosis: coloque el valor y seleccione la unidad de medida de la lista desplegable.
+
+Para el caso de medicamentos que contengan más de un principio activo podrá
+
+expresarse como unidad de medida de dosificación.
+
+
+
+
+                                      42
+Intervalo de dosificación: coloque el valor y seleccione la unidad de tiempo de
+
+la lista desplegable.
+
+
+Texto de dosificación: Si cuenta con el tiempo de tratamiento, colóquelo aquí.
+
+
+Forma farmacéutica: Indique en el campo de texto libre la forma farmacéutica
+
+correspondiente al caso.
+
+
+Inicio de la Administración: Si no cuenta con la fecha completa, puede
+
+ingresar sólo uno (año) o dos campos (mes y año).
+
+
+Fin de la Administración: Si no cuenta con la fecha completa, puede ingresar
+
+sólo uno (año) o dos campos (mes y año). Si continúa con el tratamiento, dejar
+
+en blanco.
+
+
+Duración: coloque el valor y seleccione la unidad de tiempo de la lista
+
+desplegable.
+
+Vía de administración: utilice la lista desplegable para elegir la vía de
+
+administración que corresponda al caso.
+
+
+Vía de administración en texto: usar este campo de texto libre solo si no
+
+encontró la vía de administración específica en la lista desplegable o se eligió la
+
+opción Otro.
+
+Para poder agregar más medicamentos sospechosos o concomitantes elija la
+
+opción Agregar medicamento
+
+
+
+
+                                     43
+Si tiene más de un régimen de dosificación para el mismo medicamento, por
+
+ejemplo, diferentes posologías, lotes, fechas de administración, etc., puede
+
+agregar con el ícono “+” en vez de agregar otro medicamento.
+
+
+✓ Reacciones
+
+     ➢ Reacción/evento según reportó la fuente primaria:
+
+Coloque el término MedDRA (Nivel PT) de la reacción/evento reportado entre
+
+paréntesis.
+
+En lo sucesivo se incluirá el diccionario MedDRA para esta sección y cuando esto
+
+suceda, en este campo de texto libre se colocará el término literal, es decir,
+
+originalmente como se reportó por el notificador primario, y que será útil sobre
+
+todo para aquellos casos donde no hay una coincidencia exacta con un término
+
+de MedDRA.
+
+
+Verificar que se mantiene el campo español, castellano (spa).
+
+
+En esta sección NO DEBE REGISTRAR los medicamentos administrados al
+
+paciente para el tratamiento de las reacciones/eventos.
+
+
+Idioma de la reacción / evento reportado: Verificar que se mantiene el
+
+campo español, castellano (spa).
+
+
+Traducción de reacción/evento según lo informado por la fuente primaria:
+
+Dejar el campo vacío.
+
+
+
+
+                                    44
+Reacción/evento (MedDRA): Seleccione del diccionario MedDRA la reacción
+
+correspondiente.
+
+
+Término resaltado por el notificador
+
+
+¿Es esta una reacción grave? Seleccione la opción que corresponda según el
+
+caso. Si selecciona la opción Sí debe seleccionar obligatoriamente alguno de los
+
+siguientes criterios de gravedad:
+
+
+     • Amenaza la vida
+
+     • Causa de muerte
+
+     • Causó o prolongó hospitalización
+
+     • Discapacidad / incapacidad
+
+     • Anomalía congénita / defecto de nacimiento
+
+     • Otra condición médicamente importante
+
+
+Resultado al momento de la última observación: Seleccionar de la lista
+
+desplegable la opción que corresponda al desenlace de la reacción adversa para
+
+el momento del reporte:
+
+
+     • Recuperado / Resuelto
+
+     • Recuperando / Resolviendo
+
+     • No recuperado / No resuelto / En curso
+
+     • Recuperado / Resuelto con secuela
+
+
+
+
+                                    45
+     • Fatal
+
+     • Desconocido
+
+
+Confirmación médica por un profesional de la salud: Por lo general es
+
+afirmativo cuando el notificador primario (fuente primaria) es un médico u otro
+
+profesional de la salud, sin embargo, cuando un consumidor/paciente, amigo,
+
+pariente o cuidador del paciente médicamente calificado puede proporcionar
+
+documentación médica (por ejemplo, datos de laboratorio) que respalden la
+
+aparición de un evento/reacción y que indique que un profesional de la salud
+
+identificable sospecha una relación causal entre un medicamento y la reacción
+
+adversa notificada, puede ser considerado como médicamente confirmado.
+
+
+
+
+Inicio de la reacción/evento: Si no cuenta con la fecha completa, puede
+
+ingresar sólo uno (año) o dos campos (mes y año).
+
+
+Fin de la reacción/evento: Si no cuenta con la fecha completa, puede ingresar
+
+sólo uno (año) o dos campos (mes y año). Si el evento/reacción continúa dejar
+
+en blanco.
+
+
+Duración: si la fuente primaria proporciona la información o si las fechas de
+
+inicio y término del evento/reacción lo permiten, establezca la duración de este.
+
+
+
+
+                                     46
+País donde ocurrió la reacción/evento: Elegir Uruguay. Puede haber
+
+excepciones, por ejemplo, paciente adquirió el medicamento en Uruguay, viajó a
+
+otro país y presentó una RAM.
+
+
+Para agregar más reacciones/eventos elija la opción Agregar reacción.
+
+
+✓ Reacción a un Medicamento
+
+      ➢ Re-exposición
+
+¿El paciente fue re-expuesto al medicamento? si cuenta con información que
+
+dé indicio de una re-administración, elija Sí. Si la información no lo señala, dejar
+
+en blanco. Si elige si, debe llenar el campo que se habilitará:
+
+
+(Resultado de la re-exposición): elija entre
+
+     •   La reacción se repitió: corresponde a una re-exposición positiva.
+
+     •   La reacción no se repitió: corresponde a una re-exposición negativa.
+
+     •   Resultado desconocido
+
+     •   No aplicable
+
+Dado que e-Reporting Industria solicita información de re-exposición tanto para
+
+medicamentos concomitantes como para los sospechosos y solo es de interés
+
+para la UFV la re-exposición para medicamentos sospechosos, dejar vacíos los
+
+campos de re-exposición de los medicamentos concomitantes.
+
+
+
+
+                                      47
+      ➢ Intervalo de tiempo desde la administración y el inicio de la
+
+         reacción: intervalo entre la administración del medicamento y la
+
+         aparición de la reacción/evento.
+
+Tiempo desde la primera dosis y el inicio de la reacción: Coloque el valor y
+
+seleccione la unidad de tiempo de la lista desplegable.
+
+Tiempo desde la última dosis y el inicio de la reacción: Coloque el valor y
+
+seleccione la unidad de tiempo de la lista desplegable.
+
+✓ Otro
+
+      ➢ Resultados de la prueba
+
+Nombre del análisis: coloque el término MedDRA correspondiente para el
+
+análisis en cuestión.
+
+
+En lo sucesivo se incluirá el diccionario MedDRA para esta sección.
+
+
+Fecha de la prueba: Si no cuenta con la fecha completa, puede ingresar sólo
+
+uno (año) o dos campos (mes y año).
+
+
+Resultado de la prueba: en el campo de texto libre coloque el valor y elija de la
+
+lista desplegable la unidad de medida. Puede utilizar los símbolos =, >, <, ≥, o
+
+≤ que encontrará en la lista desplegable ubicada a la izquierda del texto libre.
+
+
+Código del resultado del estudio: este elemento permite un elemento
+
+descriptivo para indicar el resultado del análisis:
+
+
+
+
+                                      48
+         • Positivo
+
+         • Negativo
+
+         • Límite
+
+         • Inconcluso
+
+Resultado de la prueba en texto: si no le fue posible colocar el resultado de la
+
+prueba en el campo estructurado debido a que no encontró la unidad de medida
+
+en la lista desplegable, coloque el resultado en este campo de texto libre
+
+expresando la unidad de medida. Si utilizó el campo Resultado de la prueba,
+
+deje este en blanco.
+
+
+Valor bajo normal: en este campo debe capturar el “valor más bajo” en el
+
+rango normal para la prueba, el cual suele ser publicado por el laboratorio que
+
+proporcionó el resultado.
+
+
+Valor alto normal: en este campo debe capturar el “valor más alto” en el rango
+
+normal para la prueba, el cual suele ser publicado por el laboratorio que
+
+proporcionó el resultado.
+
+
+Comentarios: si cuenta con más información sobre la prueba realizada que no
+
+esté incluida en los campos estructurados, colóquela en este campo de texto
+
+libre.
+
+
+
+
+                                    49
+Para agregar más pruebas de laboratorio elija la opción Agregar resultado de la
+
+prueba (Agregar resultados de laboratorio).
+
+
+     ✓ Historial de medicamentos
+
+Nombre      del   medicamento     como    fue   reportado:    Debe    colocar   la
+
+denominación distintiva si cuenta con ella y entre paréntesis la denominación
+
+genérica.
+
+
+En lo sucesivo se incluirá el catálogo de medicamentos de la OMS (WHODrug)
+
+para esta sección.
+
+
+Indicación: Coloque el término MedDRA (Nivel PT) de la indicación terapéutica
+
+para la cual se está dando el medicamento. En lo sucesivo se incluirá el
+
+diccionario MedDRA para esta sección.
+
+
+Reacción: Coloque el término MedDRA correspondiente. En lo sucesivo se
+
+incluirá el diccionario MedDRA para esta sección. Incluir otros problemas de
+
+seguridad: error de medicación, sobredosis, mal uso, uso fuera de indicación,
+
+exposición en el embarazo y/o lactancia, sospecha de falta de eficacia.
+
+
+Fecha de inicio: Si no cuenta con la fecha completa, puede ingresar sólo uno
+
+(año) o dos campos (mes y año).
+
+
+Fecha de finalización: Si no cuenta con la fecha completa, puede ingresar sólo
+
+uno (año) o dos campos (mes y año).
+
+
+
+                                    50
+Para agregar más medicamentos del tratamiento médico previo elija la opción
+
+Agregar medicamento previo.
+
+
+      ✓ Historia clínica
+
+¿Se reportó historia clínica relevante? Seleccione Sí o No según corresponda,
+
+si marca la opción Sí, se desplegarán los siguientes campos:
+
+
+Historia   clínica   relevante     y   condiciones    concurrentes    (sin   incluir
+
+reacción/evento) en texto libre: corresponde a información relevante (que
+
+ayude a la evaluación causal) de la historia clínica y condiciones concomitantes
+
+(enfermedades, condiciones como embarazo, cirugías, trauma psicológico,
+
+factores de riesgo, entre otros) del paciente. Si no cuenta con información sobre
+
+el historial clínico del paciente, dejar en blanco.
+
+
+Información estructurada sobre la historia clínica:
+
+
+Historia clínica (enfermedad/procedimiento quirúrgico/etc.) Colocar el
+
+(los) término MedDRA (Nivel PT) de las condiciones relevantes en cuestión. Si no
+
+cuenta con información sobre el historial clínico del paciente, dejar en blanco.
+
+
+En lo sucesivo se incluirá el diccionario MedDRA para esta sección.
+
+
+Comentarios del médico: corresponde a información brindada por el medico
+
+sobre el caso. Si no cuenta con información, dejar en blanco.
+
+
+
+
+                                       51
+Fecha de inicio: Si no cuenta con la fecha completa, puede ingresar sólo uno
+
+(año) o dos campos (mes y año).
+
+
+¿Continúa? Indique Sí o No según corresponda en relación a si la condición en
+
+cuestión aún persiste o no para el momento de este reporte.
+
+
+Fecha de finalización: Si no cuenta con la fecha completa, puede ingresar sólo
+
+uno (año) o dos campos (mes y año).
+
+
+Para agregar alguna otra historia clínica relevante puede hacer clic en el icono de
+
+“+”
+
+
+✓ Evaluaciones
+
+Método de evaluación: coloque en el campo de texto libre el nombre de la
+
+metodología utilizada.
+
+
+Fuente de evaluación: corresponde a la identidad quien realiza la evaluación.
+
+En primera instancia, debe colocarse la evaluación del LTR, pero también puede
+
+agregar la evaluación del notificador primario (informante) si cuenta con ella o
+
+del patrocinador/investigador para EC.
+
+
+Resultado de la evaluación: coloque en el campo de texto libre el resultado de
+
+la evaluación para cada reacción/evento de acuerdo con la metodología que se
+
+utilizó. Para poder colocar el resultado, es necesario que haya ingresado al
+
+reporte al menos un medicamento sospechoso o dos interactuantes.
+
+
+
+                                     52
+Para agregar más evaluaciones de causalidad elija la opción Agregar evaluación
+
+de causalidad si cuenta con una evaluación, por ejemplo, del médico informante,
+
+la puede agregar; coloque Notificador primario en Fuente de Evaluación.
+
+
+✓ Caso Narrativo
+
+Deberá colocar la narrativa del caso con las palabras y frases utilizadas por la
+
+fuente primaria (tal cual fue notificado por éste), manteniendo la narrativa
+
+original. Citar las manifestaciones clínicas. Indicar el diagnóstico clínico de
+
+certeza y/o presuntivo que motivó la medicación y posteriormente los signos y
+
+síntomas de la reacción adversa. Si se detecta un efecto terapéutico no conocido
+
+hasta la fecha, puede indicarse en este espacio. En caso de tratarse de
+
+malformaciones congénitas, precise el momento del embarazo en que ocurrió el
+
+impacto.
+
+
+En este campo también debe colocar los medicamentos para tratar la
+
+reacción/evento adverso.
+
+
+Si reporta otro problema de seguridad relacionado con el uso de medicamentos
+
+y vacunas, debe describir de que problema se trata (error de medicación,
+
+sobredosis, mal uso, uso fuera de indicación, exposición en el embarazo y/o
+
+lactancia, sospecha de falta de eficacia).
+
+
+
+
+                                      53
+Cuando ingresa información de seguimiento en este campo (Ver Editar reporte),
+
+colóquelo debajo de la información inicial o el seguimiento anterior, separándolo
+
+de la siguiente manera:
+
+
+Seguimiento 1, 2, 3, 4, etc, Información recibida el día…
+
+
+-----------------------------------------------------------------(con    una   raya
+
+punteada)
+
+
+Si el caso se considera cerrado o requerirá seguimiento debe especificarlo
+
+también en este campo.
+
+
+Dado que este campo tiene un límite de 20 mil caracteres, existe la posibilidad
+
+de que para algunos casos narrativos muy largos este campo sea insuficiente.
+
+Puede utilizar el campo resumen del caso y comentarios del notificador en
+
+idioma nativo para continuar con el texto del caso.
+
+
+Comentarios de notificador: En este campo puede agregar comentarios
+
+adicionales que aporte la fuente primaria en caso de contar con ellos.
+
+
+Comentarios de la compañía: comentarios adicionales que pudiera aportar el
+
+LTR notificante o en el caso de estudios clínicos, los comentarios del
+
+patrocinador del estudio.
+
+
+
+
+                                     54
+    Resumen del caso y comentarios del notificador en idioma nativo: no
+
+    utilizar, dejar en blanco, a menos que el caso narrativo tenga más de 20 mil
+
+    caracteres y el campo Caso narrativo sea insuficiente.
+
+
+    ✓ Documentos Adicionales
+
+    Esta sección le permitirá cargar documentos relevantes en la evaluación de
+
+    causalidad del caso. Algunos ejemplos pueden ser (pero no se limitan a estos):
+
+
+          • Resultados de pruebas
+
+          • Certificado de defunción
+
+          • Certificado de vacunación
+
+
+    Coloque en el campo de texto libre el nombre del documento y cargue el archivo
+
+    en formato PDF, ya sea arrastrándolo y soltándolo en la sección gris o abriéndolo
+
+    desde su explorador de archivos con la opción Explorar.
+
+
+    Si requiere adjuntar más documentos, lo puede hacer con la opción Agregar
+
+    documento adicional.
+
+
+
+
+IMPORTANTE
+
+Es necesario que los documentos que requiera adjuntar se encuentren en formato PDF y
+que no excedan los 2 MB para poderlos cargar sin problemas.
+
+
+
+
+                                         55
+  ✓ Enviar Reporte
+
+  Para poder enviar el reporte, es necesario que haya capturado la información
+
+  mínima requerida por el sistema. Si no lo ha hecho, en esta sección se listará la
+
+  información faltante o errónea, la cual tendrá que completar o revisar. También
+
+  se presentarán en color rojo la información faltante en las diferentes secciones
+
+  que conforman el reporte.
+
+
+
+
+IMPORTANTE
+
+Si la notificación no cuenta con al menos los 4 criterios fundamentales (calidad de
+información grado 0) no debe ser enviada. Deberá hacer una búsqueda de información
+faltante para poder reportar el caso.
+
+  Cuando ya tenga lista la información de su reporte, de clic en Enviar
+
+
+
+
+                                         56
+   ✓ Descargar Reporte
+
+   Es absolutamente necesario descargar inmediatamente el reporte una vez que
+
+   lo ha enviado, ya que será la única forma de obtener este archivo XML del caso
+
+   y de realizar un seguimiento correspondiente. La información que generó
+
+   durante la captura del reporte se descargará en un fichero XML.
+
+
+
+
+IMPORTANTE
+
+Si no lo descarga el archivo del reporte en esta parte del proceso, NO será posible
+descargarlo posteriormente.
+
+
+
+   Al oprimir Descargar, se descargará el archivo XML. Es importante que guarde
+
+   este archivo en su respaldo, ya que deberá utilizarlo si requiere realizar un
+
+   seguimiento del caso. Ver Editar Reporte. Por defecto, el sistema nombrará el
+
+   archivo con el Número de identificación único mundial.
+
+
+   Adicionalmente, e-Reporting Industria proporciona recibos de confirmación
+
+   conocidos como acknowledgement log (acklog) de los reportes capturados, los
+
+   cuales estarán disponibles solo por 35 días una vez realizado el envío de la
+
+   notificación. Podrá encontrarlos y descargarlos en la sección Estado de envío del
+
+
+
+                                          57
+menú superior derecho. Si su base de datos de Farmacovigilancia permite
+
+ejecutar estos recibos de confirmación electrónicos, estos funcionarán como tal
+
+para su base de datos.
+
+
+Es muy importante diferenciar el archivo XML del reporte que se descarga tras el
+
+envío y que es fundamental para seguimientos posteriores, a los acuses de
+
+recibo (acklog). Estos últimos no están diseñados para la carga de un
+
+seguimiento.
+
+
+
+
+Puede abrir el acuse (acklog) en Chrome o en otro navegador e identificar la
+
+hora de finalización y envío de su reporte. Notará que para el valor
+
+“creationTime value” está establecido en el horario UTC (coordinated universal
+
+time) por lo que, para fines de cumplimiento de los tiempos de notificación, debe
+
+considerar la diferencia de horas con relación al horario de Uruguay.
+
+
+
+
+                                     58
+3.9.1.2.2 Editar Reporte
+
+
+
+
+Esta opción permite cargar un reporte (archivo XML E2B) creado en este
+
+sistema, para editar información de un reporte inicial aún no enviado a la
+
+autoridad regulatoria.
+
+
+
+
+Elegir la opción Editar reporte del menú superior.
+
+
+Cargue el archivo XML generado en el sometimiento inicial, el cual debió guardar
+
+en su computadora, ya sea arrastrándolo y soltándolo en la sección gris o
+
+abriéndolo desde su explorador de archivos con la opción Explorar.
+
+
+
+
+Espere a que cargue el reporte. Inmediatamente se abrirá el reporte con todas
+
+las secciones que lo componen, habilitadas para edición.
+
+
+
+
+                                     59
+3.9.1.2.3 Reporte de Seguimiento
+
+
+Esta opción permite cargar un reporte (archivo XML E2B) creado en este sistema
+
+para ingresar información de seguimiento, es decir, cuando nueva información
+
+ha sido obtenida después de que el reporte inicial del caso ya ha sido enviado a
+
+la autoridad regulatoria.
+
+
+Recuerde: un reporte de seguimiento es aquel en donde se agrega o completa
+
+información importante para la evaluación de causalidad del caso. Por ejemplo,
+
+ si se tiene (no es limitativo):
+
+
+• Fechas de inicio y término de la reacción
+
+• Fechas de administración de medicamentos
+
+• Adición de medicamentos concomitantes
+
+• Adición de enfermedades concomitantes
+
+• Adición de resultados de laboratorio
+
+
+
+
+Cargue el archivo XML generado en el sometimiento inicial o seguimiento
+
+anterior, el cual debió guardar en su computadora, ya sea arrastrándolo y
+
+soltándolo en la sección gris o abriéndolo desde su explorador de archivos con la
+
+opción Explorar.
+
+
+
+
+                                    60
+Espere a que cargue el reporte. Inmediatamente se abrirá el reporte con todas
+
+las secciones que lo componen, habilitadas para edición.
+
+
+Debe agregar la nueva información o modificaciones respectivas del seguimiento
+
+en los campos correspondientes, entre ellas es fundamental actualizar la Fecha
+
+de información más reciente que corresponde a la fecha cuando recibió el
+
+seguimiento. Es importante que, en el seguimiento, además de agregar la nueva
+
+información en los campos específicos, también actualice el caso narrativo con la
+
+nueva información. Para separar la información de la inicial o los seguimientos
+
+anteriores, utilice una línea y coloque la nueva información debajo, agregando el
+
+texto: Seguimiento 1, Seguimiento 2, según corresponda.
+
+
+
+
+Caso Narrativo
+
+
+Una vez que haya concluido la captura de información de seguimiento, debe
+
+enviar el reporte y descargar el archivo XML correspondiente. Recuerde que, si
+
+no descarga el archivo, no podrá realizar el seguimiento posterior.
+
+
+
+
+                                     61
+    Recuerde que el archivo del Acklog no debe ser usado en esta actividad pues el
+
+    archivo no está diseñado para hacer un seguimiento.
+
+
+
+IMPORTANTE
+
+Para efectos de seguimiento el archivo que corresponde al acuse (acklog) disponible en la
+ventana Estado de envío NO deberá usarse para este propósito.
+
+
+
+
+    3.9.1.2.4 Nulificar Reporte
+
+
+    Esta   opción    permite      anular   permanentemente     un   caso    (transmitido
+
+    previamente). Por ejemplo, cuando todo el reporte era erróneo o en caso de
+
+    reportes duplicados.
+
+
+
+
+    Cargue el archivo XML generado que desea anular, el cual debió guardar en su
+
+    computadora, ya sea arrastrándolo y soltándolo en la sección gris o abriéndolo
+
+    desde su explorador de archivos con la opción Explorar.
+
+
+
+
+                                            62
+Verifique la información del reporte que desea anular.
+
+
+En caso de que todo este correcto en el reporte que se desea anular, presione el
+
+botón Siguiente.
+
+
+
+
+Un motivo de eliminación debe ser ingresado obligatoriamente. Seguidamente
+
+presione el botón Enviar.
+
+
+
+
+                                    63
+Descargue el archivo XML del reporte eliminado y guárdelo en su computadora
+
+para futuras actualizaciones.
+
+
+
+               3.9.2    Módulo de carga E2B
+
+
+
+Todas las acciones con reportes XML creados en bases de datos externas a
+
+eReporting industria se deben realizar a través del módulo CARGAR E2B (envío
+
+de casos iniciales, seguimientos, nulificaciones etc.).
+
+
+
+
+En el menú superior derecho elija la opción Cargar E2B.
+
+
+
+
+Una vez dentro, encontrará la siguiente pantalla:
+
+
+
+
+La carga de los archivos se realiza de forma individual. Arrastre el archivo XML al
+
+recuadro gris o de click en Explorar para abrir su explorador de archivos.
+
+
+Una vez que arrastre o seleccione el archivo XML-E2B se comenzará a cargar
+
+como a continuación se muestra:
+
+
+
+
+                                      64
+Si el archivo cumple con las especificaciones del formato ICH R3, se cargará
+
+exitosamente como a continuación se muestra:
+
+
+
+
+De click en Enviar.
+
+
+
+
+Tenga en cuenta el Identificador de envío.
+
+
+En el menú superior derecho de click en Estado de envio para descargar el
+
+acklog.
+
+
+
+
+Identifique el reporte que cargó a través del identificador de envío. De click en el
+
+icono     para descargar el acklog correspondiente.
+
+
+
+                                     65
+          Cargue el acklog en su sistema para corroborar el importe exitoso.
+
+
+
+
+    Es importante cerrar la sesión cuando no utilice la plataforma. Para ello diríjase al
+
+    menú superior sobre el ícono, y seleccionar Cerrar sesión.
+
+
+
+Importante
+
+Es fundamental que descargue el acklog lo más pronto posible una vez cargado el XML, ya que el
+sistema solo podrá guardar el histórico de 35 días previos. Una vez pasado este límite, ya no podrá
+descargar el acklog. Es responsabilidad del emisor tener respaldo de los acklog generados, ya que la
+UFV no podrá generar nuevamente acklog una vez que se eliminen del histórico .
+
+
+
+
+                                                66
+4. ANEXOS
+
+
+
+      4.1.         Anexo A: Términos y condiciones de uso e-Reporting Industria
+
+
+
+ Descripción
+
+
+ e-Reporting Industria es una plataforma desarrollada por el Centro de
+
+ Monitoreo de Uppsala (UMC) específicamente para que la industria farmacéutica
+
+ notifique a la Autoridad Regulatoria Reportes de Casos Individuales de
+
+ Seguridad:    Reacciones      Adversas     a   Medicamentos    (RAM),    Eventos
+
+ Supuestamente Atribuibles a la Vacunación o Inmunización (ESAVI) y Errores de
+
+ Medicación (EM), mediante una plataforma estandarizada y diseñada para la
+
+ mejor colecta de información. E-Reporting para la Industria está vinculado a
+
+ VigiFlow, el cual es la herramienta utilizada para la gestión de Reportes de
+
+ Eventos Adversos a medicamentos a nivel nacional.        La UFV del MSP utiliza
+
+ VigiFlow a nivel nacional como país perteneciente al Programa Internacional de
+
+ Monitoreo Medicamentos de la Organización Mundial de la Salud (OMS) para la
+
+ gestión de los reportes de eventos adversos a medicamentos.
+
+
+ Declaraciones
+
+
+ La Unidad de Farmacovigilancia del MSP declara que:
+
+
+ I. De acuerdo a la normativa vigente es la responsable de vigilar la seguridad de
+
+   los datos y su integridad durante los procesos de transferencia de información
+
+   para lo cual:
+
+
+   Establece y comunica los requerimientos y formatos para la notificación de
+
+   RAM, ESAVI y EM, incluyendo las herramientas electrónicas, consideraciones
+
+   de uso y guías para la ejecución.
+
+
+
+                                       67
+   El Usuario declara que:
+
+   I. Como usuario de e-Reporting para la Industria, certifica que pertenece a un
+      laboratorio responsable en Uruguay.
+
+   II. Conoce el contenido y las obligaciones que se desprenden de esta carta de
+
+      términos y condiciones de uso de e-Reporting para la Industria, y por lo tanto
+
+      se obliga en términos de este, a cumplir las siguientes reglas de acceso y uso.
+
+
+   III.          Está de acuerdo en que la Unidad de Farmacovigilancia del MSP y el
+
+      Centro de Monitoreo de Uppsala (UMC) le retiren el acceso si infringe alguna
+
+      de las siguientes reglas de accesos y uso de e-Reporting para la Industria.
+
+
+      Para mayor información, visite la sección Términos y condiciones ubicada en
+
+      el menú principal.
+
+
+
+          4.2.         Anexo B: Glosario
+
+
+
+ALGORITMO: Proceso sistematizado de decisión, que consiste en una secuencia
+
+ordenada de pasos, en el que cada uno de éstos depende del resultado del
+
+precedente. El uso de algoritmos para tomar decisiones clínicas tiende a disminuir
+
+la variabilidad entre observadores.
+
+
+
+CAUSALIDAD: Resultado del análisis de la imputabilidad y de la evaluación
+
+individual de la relación entre la administración de un medicamento y la aparición
+
+de una reacción adversa. La UFV utiliza seis categorías: cierta o definitiva,
+
+probable, posible, condicional, improbable e inclasificable.
+
+
+
+
+                                           68
+E2B: Formato de envío estandarizado para la transmisión de reportes de seguridad
+
+de casos individuales.
+
+
+
+
+Error de Medicación: Cualquier incidente prevenible que puede causar daño al
+
+paciente o dar lugar a una utilización inapropiada de los medicamentos, cuando
+
+éstos están bajo el control de los profesionales sanitarios o del paciente o
+
+consumidor. Estos incidentes pueden estar relacionados con la práctica profesional,
+
+los   procedimientos     o   los   sistemas,    incluyendo   fallos   en   la   prescripción,
+
+comunicación, etiquetado, envasado, denominación, preparación, dispensación,
+
+distribución, administración, educación, seguimiento y utilización.
+
+
+
+
+ESAVI: Eventos Supuestamente Atribuibles a Vacunación e inmunización.
+
+
+
+
+FARMACOVIGILANCIA: Ciencia y actividades relativas a la detección, evaluación,
+
+comprensión y prevención de los efectos adversos de los medicamentos o cualquier
+
+otro problema relacionado con ellos.
+
+
+
+
+ICH: Conferencia internacional de Armonización, ICH por sus siglas en inglés,
+
+consiste en un proyecto conjunto de las autoridades reguladoras y la industria
+
+farmacéutica procedente de Europa, Estados Unidos y Japón, unidos con el objetivo
+
+de armonizar los requisitos técnicos y científicos con la finalidad de garantizar la
+
+calidad, seguridad y eficacia de los medicamentos.
+
+
+
+
+                                           69
+E2B(R3) Individual Case Safety Report (ICSR) Specification and Related Files.
+
+https://ich.org/page/e2br3-individual-case-safety-report-icsr-specification-and-
+
+related-files
+
+
+
+
+REACCIÓN ADVERSA A MEDICAMENTOS: reacción nociva y no deseada que se
+
+presenta    tras   la   administración   de    un   medicamento,   a   dosis   utilizadas
+
+habitualmente en la especie humana, para prevenir, diagnosticar o tratar una
+
+enfermedad, o para modificar cualquier función biológica.
+
+
+
+
+RESPONSABLE DE FARMACOVIGILANCIA: Persona designada por la Dirección
+
+Técnica del Laboratorio Titular de Registro en Uruguay, como interlocutor válido,
+
+ante el MSP en materia de Farmacovigilancia.
+
+
+
+
+                                          70
+4.3.   Anexo C: Algoritmo OMS
+
+
+
+
+                         71
+    4.4.      Anexo D: Especificaciones para la notificación utilizando “e-
+
+       Reporting Industria”
+
+
+
+-   Idioma: La información contenida en la notificación deberá estar en idioma
+
+    Español, para los campos Caso narrativo, Comentarios del notificador y
+
+    Reacción/evento.
+
+-   Licencias MedDRA y WHODrug: Es requisito contar con licencias MedDRA y
+
+    WHODrug vigentes a partir del 13/07/2025 de acuerdo a la Ordenanza Nº
+
+    23/025.
+
+-   Formato E2B R3: Es requisito utilizar el formato E2B R3 para la utilización
+
+    de la herramienta a partir del 13/07/2025 de acuerdo a la Ordenanza Nº
+
+    23/025.
+
+-   Eventos que deben ser notificados:
+
+       o   RAM y ESAVI presentados por el paciente en los que hay sospechas
+
+           de que el medicamento estuvo implicado en el evento que se
+
+           informa. Siempre tiene que haber por lo menos un medicamento
+
+           sospechoso.
+
+       o   Errores de Medicación en los cuales el incidente haya llegado o no al
+           paciente. Aquellos incidentes en los cuales no hay un paciente
+           potencial identificado, no deben ser notificados por esta vía.
+
+           Otros problemas de seguridad: error de medicación, sobredosis,
+
+           mal uso, uso fuera de indicación, exposición en el embarazo y/o
+
+           lactancia, sospecha de falta de eficacia.
+
+       Aclaración:     Sólo   se   recibirán        notificaciones     relacionadas    con
+       especialidades     farmacéuticas.       Se     excluyen       los   productos   no
+       comprendidos en esta categoría.
+
+
+
+                                     72
+-   Seguimientos: Se considera seguimiento, toda información complementaria
+
+    relacionada con el o los eventos reportados inicialmente. Aclaraciones:
+
+       o   Los seguimientos relacionados con la patología del paciente y no
+
+           vinculados a los eventos notificados, no deben ser reportados.
+
+       o   Si el mismo paciente presenta un nuevo evento, posiblemente
+
+           relacionado con el mismo medicamento o con otro, se deberá
+
+           ingresar una nueva notificación.
+
+
+
+
+                                   73
+     4.5.        Anexo E: Preguntas frecuentes
+
+
+
+¿Puedo notificar un caso ocurrido fuera de Uruguay?
+
+
+La herramienta está dirigida a la notificación de Eventos              Adversas a
+
+Medicamentos ocurridas a nivel Nacional, excepto en aquellas ocasiones en que
+
+un   paciente/consumidor      adquiere      un   medicamento   en   Uruguay   y   el
+
+evento/reacción sucede en otro país.
+
+
+¿Qué reportes son objeto de notificación? Estudios clínicos / Reportes
+
+espontáneos / Literatura
+
+
+Aplica para estudios clínicos post comercialización, reportes espontáneos y
+
+reportes de la literatura.
+
+
+¿Cuáles son los criterios mínimos para realizar el reporte?
+
+
+Para que un reporte sea considerado como válido es necesario tener al menos la
+
+siguiente información: Fuente primaria identificable (Notificador al LTR),
+
+Paciente identificable (Iniciales, edad o franja etaria) Medicamento y Evento
+
+Adverso.
+
+
+¿Puedo notificar un caso que no tenga los 4 criterios mínimos?
+
+
+No. Una vez recabada la información mínima necesaria (referida en la pregunta
+
+anterior), se deberá realizar la notificación.
+
+
+
+
+                                       74
+¿Cuántos usuarios se proporcionarán por Empresa, la contraseña deberá
+
+ser exclusiva por usuario?
+
+
+Por el momento, se otorgarán un máximo de tres usuarios por cada laboratorio,
+
+ya sea para el módulo de carga manual o para el módulo de carga XML. Cada
+
+usuario deberá generar su propia contraseña.
+
+
+¿Qué se debe hacer en el caso que un laboratorio sea representante de
+
+Farmacovigilancia de más de una empresa o compañía?
+
+
+En este caso, deberán notificar a la UFV, la información de cada una de las
+
+empresas a las cuales representa, tomando en cuenta la razón social y los
+
+identificadores. Hay que tener en cuenta que es diferente representar los
+
+productos de un laboratorio a comprar la licencia de algunos productos de un
+
+laboratorio. En estos casos, consultar a la UFV.
+
+
+¿Podemos suministrar el mismo correo para diferentes razones sociales?
+
+
+Solamente será válida esta situación en el caso de que su laboratorio represente
+
+a más de una empresa (en actividades de Farmacovigilancia). De esta forma,
+
+con el correo indicado al entrar a la herramienta usted podrá elegir a que
+
+empresa pertenece el reporte que está realizando.
+
+
+¿Qué se debe hacer en caso de un seguimiento de notificaciones
+
+sometidas previas a la implementación de este módulo?
+
+
+Seguir enviando los seguimientos a través del correo electrónico de la UFV
+
+(farmacovigilancia@msp.gub.uy).
+
+
+
+
+                                     75
+¿Es posible que dos usuarios reporten simultáneamente (si se cuenta con
+
+más de 1 usuario)?
+
+
+Si. Las cuentas que se otorgan por laboratorio son independientes y se pueden
+
+ingresar casos al módulo de carga manual o cargar XML en el módulo de carga
+
+de XML de forma simultánea. Pero, una cuenta no puede ser utilizada
+
+simultáneamente por más de dos personas.
+
+
+¿Entonces el evento adverso se reporta en forma literal/coloquial y
+
+también en MedDRA?
+
+
+Si, en el campo Reacción/evento tal cual fue reportado por la fuente primaria, se
+
+coloca el término de forma literal, tal como lo indica la fuente primaria. El
+
+término   MedDRA    (Nivel   PT),   se       utiliza   en   el   campo   estructurado   de
+
+Reacción/evento.
+
+
+El evaluador deberá codificar siempre el término de la reacción/ evento
+
+suministrada/o por la fuente primaria al término MedDRA correspondiente.
+
+
+¿Hay opción en la plataforma para guardar el caso y terminarlo después?
+
+
+Sí, solamente cuando se haya completado la información mínima requerida,
+
+debiendo descargar y guardar el caso. Se puede volver a cargar en editar
+
+reporte, terminarlo y luego enviarlo.
+
+
+¿Se manejará un límite de tiempo para cargar un caso? ¿Cuánto tiempo
+
+puede mantenerse la sesión activa?
+
+
+No, no hay un límite de tiempo siempre que esté ingresando información
+
+constantemente en periodos cortos. Pero si permanece la página abierta sin
+
+
+
+
+                                        76
+actividad en periodos largos, después de un tiempo se cerrará la sesión por
+
+seguridad.
+
+
+Se solicita mantener la sesión activa solo si ingresará información, de lo
+
+contrario debe cerrarla.
+
+
+¿Se deberá realizar la notificación por cada medicamento sospechoso?
+
+
+No. Un reporte de caso individual puede contener uno o más medicamentos
+
+sospechosos, así como uno o más EM, RAM, ESAVI.
+
+
+¿En dónde se obtiene el WWUID (Número de identificación único
+
+mundial)?
+
+
+La parte constante se integra del el Country ISO code (UY) y el Nombre corto de
+
+la empresa. La parte variable consta de un número consecutivo de al menos 5
+
+dígitos el cual debe ser único para cada caso.
+
+
+¿Qué diferencia hay entre el Identificador único del reporte de seguridad
+
+y el Número de identificación único mundial?
+
+
+El WWUID es el primer identificador que se le asigna al reporte. El Identificador
+
+único del reporte de seguridad y el Número de identificación que se le puede
+
+asignar a un caso siguiendo el mismo formato que el WWUID en caso de que se
+
+necesite. Por el momento, para el módulo de carga manual se solicitará que el
+
+WWUID y el Safety Report ID sean el mismo para un reporte.
+
+
+¿Es posible regresar entre secciones para editar información en caso de
+
+haber cometido algún error en el ingreso?
+
+
+Si es posible. La navegación entre secciones no está limitada a que aporte toda
+
+la información obligatoria en una sección para pasar a la siguiente.
+
+
+
+
+                                     77
+¿Es posible guardar la información para continuar con el reporte o deberá
+
+realizarse en una misma sesión?
+
+
+El ingreso de un reporte debe realizarse en una sesión. El sistema no guarda el
+
+reporte hasta que lo envíe o descargue.
+
+
+En el caso de reportes provenientes de literatura, ¿es un requerimiento
+
+adjuntar la publicación de referencia?
+
+
+No es un campo obligatorio, pero se sugiere adjuntarlo en caso de tenerlo.
+
+
+¿Para estudio clínico, el medicamento del estudio clínico es siempre el
+
+medicamento sospechoso?
+
+
+Puede agregar más de un medicamento sospechoso, pero al menos el de estudio
+
+y/o comparadores en estudios cegados, deben marcarse como sospechosos.
+
+
+En la sección de narrativa del caso en las tres secciones, ¿cuántos
+
+caracteres se pueden ingresar?
+
+
+La capacidad del campo Caso narrativo es de 20 mil caracteres (considerando
+
+espacios). Si su reporte tiene un caso narrativo que sobrepasa este límite,
+
+coloque el resto del texto en el campo Resumen del caso y comentarios del
+
+notificador en idioma nativo
+
+
+¿Se deberá incluir la causalidad de cada uno de los PT reportados,
+
+independientemente de si es un el sospechoso o concomitante?
+
+
+La evaluación de causalidad se debe realizar para cada EM/RAM/ESAVI, solo es
+
+aplicable para el (los) medicamento sospechoso.
+
+
+¿Cómo se pueden revisar los casos cargados anteriormente y dentro del
+
+tiempo antes de que se borren?
+
+
+
+                                    78
+Los casos cargados previamente, hablando de toda la información cargada en
+
+ellos, no están disponibles en e-Reporting Industria. Lo que estará disponible
+
+serán los acklog (de los últimos 35 días) en la sección Estado de envío del menú
+
+superior derecho.
+
+
+El e-reporting industria no funciona como una base de datos de los casos, el LTR
+
+deberá tener respaldo de los casos notificados.
+
+
+Si antes de enviar el caso no aparecen datos faltantes o erróneos en rojo y
+
+aun así no se puede enviar el caso, ¿qué se debe hacer?
+
+
+Debe revisar el reporte nuevamente a detalle, sección por sección. Mientras
+
+aporte la información mínima requerida y no tenga datos faltantes o erróneos en
+
+rojo, el reporte se podrá enviar sin problema.
+
+
+¿Por cuál mecanismo recomiendan hacer la evaluación de causalidad del
+
+reporte?
+
+
+La UFV recomienda la implementación del Algoritmo de la OMS, el cual permite
+
+disminuir la variabilidad entre evaluadores.
+
+
+¿Todos los reportes deberán llevar la evaluación de causalidad?
+
+
+Sí, es necesario que todos los reportes incluyan su debida evaluación de
+
+causalidad. Se debe recordar que la evaluación se realiza por el par
+
+“medicamento-reacción” por lo que se realizaran tantas evaluaciones como
+
+reacciones por medicamento sospechoso existan.
+
+
+Si voy a reportar un seguimiento, ¿requiero ingresar todo el caso
+
+nuevamente?
+
+
+
+
+                                     79
+No, no requiere ingresar todo el caso nuevamente. Una vez sometido el caso
+
+inicial en el módulo de carga manual, debe descargar inmediatamente el archivo
+
+XML y guardarlo en el directorio de su computadora (se sugiere establecer el
+
+procedimiento correspondiente para gestionar y respaldar estos archivos).
+
+Cuando requiera hacer un seguimiento debe elegir la opción Reporte de
+
+seguimiento del menú superior Ingreso de datos; aquí debe abrir el archivo del
+
+caso inicial y una vez hecho esto, el sistema cargará toda la información que
+
+ingresó inicialmente. Debe realizar las modificaciones y adiciones de información
+
+que requiera el seguimiento, agregando también en el campo Caso narrativo, la
+
+narrativa adicional de seguimiento.
+
+
+Recuerde que el archivo del Acklog no debe ser usado en esta actividad
+
+pues el archivo no está diseñado para hacer un seguimiento.
+
+
+En el caso de notificación manual a transmisión E2B, el ACKlog generado
+
+en la carga manual, ¿para un seguimiento en transmisión E2B puede ser
+
+utilizado? o solo se carga en XML del seguimiento enviado
+
+
+No, no se debe utilizar el acklog. Debe recordar que el acklog solo es el acuse de
+
+recepción electrónico. Por otro lado, los seguimientos de casos iniciales
+
+ingresados en carga manual si pueden ser cargados vía XML-E2B, lo importante
+
+es asegurarse desde el inicio que el WWUID, el nombre corto y el Sender ID
+
+sean exactamente los mismos, para que al entrar el reporte a VigiFlow lo
+
+reconozca como seguimiento, de ahí la importancia de tener los datos de la
+
+compañía correctos.
+
+
+Si no descargué el reporte, ¿ya no es posible descargarlo?
+
+
+No, por ello es obligatorio descargarlo y guardarlo inmediatamente que se envía
+
+el reporte.
+
+
+
+                                      80
+Si aparecen otros problemas que no se mencionan en esta guía ¿cómo y a
+
+donde se deben reportar? ¿Existe algún plan de contingencia, si la
+
+plataforma no funciona? ¿Cómo se reportarían los casos?
+
+
+Para   ambas    situaciones   comunicarse    con     la   UFV   a   través   del   correo
+
+farmacovigilancia@msp.gub.uy
+
+
+En caso de error en la plataforma y/o no disponibilidad del sistema, ¿hay
+
+alguna otra opción para reporte de casos?
+
+
+El módulo de carga manual de e-Reporting es continuamente monitoreado y
+
+actualizado por el UMC para asegurar su correcto funcionamiento. Cuando el
+
+UMC realiza actualizaciones, no tarda más que unas horas en concluirlas por lo
+
+que el acceso puede ser intermitente para algunos usuarios. En este caso debe
+
+esperar al menos 3 horas y volver a intentar el acceso. En caso de que no pueda
+
+acceder a e-Reporting Industria por más de 24 horas y que se deba a una causa
+
+ajena al UMC (puede documentarlo con captura de pantalla si su procedimiento
+
+interno lo solicita), por favor reporte el error a    farmacovigilancia@msp.gub.uy
+
+y monitoree constantemente hasta que se reestablezca el servicio.
+
+
+Si tiene un problema en el acceso a la plataforma, intente lo siguiente:
+
+
+• Acceder desde el enlace que se encuentra en este manual y no a través del
+
+   que se guarda en el caché de su computadora o el historial.
+
+
+• Borrar las cookies del explorador utilizado.
+
+
+• Acceder a la plataforma mediante otro navegador.
+
+
+• Cerciorarse que se coloca el usuario y contraseña correctos.
+
+
+
+
+                                       81
+• Si ha olvidado su contraseña debe general otra para que pueda acceder al
+
+  módulo.
+
+
+¿Qué sucede si en la sección Estado de envío, la hora de finalización
+
+aparece vacía y el estado de envío de mi notificación se visualiza como
+
+pendiente y no tengo disponible el acklog emitido y disponible para
+
+descarga?
+
+
+Cuando se detecta este tipo de situaciones no es necesario notificarlo. El módulo
+
+se encuentra continuamente monitoreado, por lo que podrá considerar como
+
+evidencia de envío los datos relacionados a la hora de envío e identificador de
+
+envío.
+
+
+Una vez confirmada la transmisión exitosa, el mismo módulo emitirá de manera
+
+automática el Acklog y estará disponible para descarga de manera habitual,
+
+únicamente por 35 días. En caso de que algún acklog quede pendiente de
+
+descarga, será responsabilidad del usuario monitorear el estatus de este para
+
+descargarlo   de   manera    inmediata   para   completar      la   documentación
+
+correspondiente al caso.
+
+
+Al descargar el xml es necesario confirmar que el siguiente dato se encuentre
+
+contenido, pues confirma la transmisión exitosa de la información:
+
+
+<acknowledgement typeCode="AA"> AA – Application Acknowledgement Accept
+
+(message successfully processed, no further action)
+
+
+En caso de recibir un acklog con alguna de las siguientes codificaciones, será
+
+necesario cargar la información:
+
+
+AE – Application Acknowledgment Error (error detected, error response has
+
+additional detail, some ICSR message(s) need further action)
+
+
+
+
+                                    82
+AR – Application Acknowledgment Reject (parsing error, no data extracted,
+
+resend the entire transaction)
+
+
+¿Cómo realizará la industria farmacéutica un control de calidad o revisión
+
+de la información ingresada?
+
+
+Esto queda a criterio de cada integrante de la industria farmacéutica de acuerdo
+
+con sus procedimientos internos. Una opción es hacer una revisión usando el
+
+reporte generado en XML y documentar dicha revisión.
+
+
+¿Qué debemos hacer si se rechaza nuestro caso de XML?
+
+
+Específicamente hablando del módulo de carga de XML, cuando cargue el acklog
+
+en su sistema y se identifique el rechazo, su procedimiento interno debe
+
+establecer las correcciones necesarias para volver a cargarlo.
+
+
+Si hay un problema de seguridad que no genera evento adverso, ¿se debe
+
+de reportar?
+
+
+Sí, para el caso de errores de medicación que son catalogados como “errores
+
+potenciales” o “errores sin daño para el paciente” de acuerdo a la categorización
+
+de la NCCMERP (The National Coordinating Council for Medication Error
+
+Reporting and Prevention).
+
+
+Los medicamentos para tratar el evento adverso ¿dónde se cargarán en el
+
+módulo de carga manual? ¿En la narrativa?
+
+
+En el campo de texto libre Caso narrativo.
+
+
+Aunque inicialmente se trabaje con el módulo manual y después migrar a
+
+XML, el nombre corto ¿debe ser proporcionado desde ahora?
+
+
+
+
+                                     83
+Si, debe proporcionarse el nombre largo, el nombre corto y el sender identifier.
+
+Estos datos deben ser los mismos que se proporcionen inicialmente para el
+
+módulo de carga manual y los que se usen para generar XML-E2B. Esto evitará
+
+que haya problemas futuros en la recepción de casos en el módulo de carga de
+
+XML.
+
+
+¿El método de evaluación de causalidad puede ser el juicio médico?
+
+
+Se solicita la utilización prioritaria de metodologías de evaluación estandarizadas.
+
+
+La versión MedDRA que manejará el e-Reporting ¿será la más reciente?
+
+
+Si, se utilizará la versión más reciente y se actualizará conforme MedDRA MSSO
+
+saque nuevas versiones.
+
+
+
+
+                                     84
+          4.6 Anexo F
+
+
+
+Cómo usar el formato WHODrug C3 para la codificación de medicamentos
+
+
+
+
+                                       85
+           4.7 Anexo G
+
+
+
+Guía técnica para el uso de WHODrug Global en XML cargados en VigiFlow eReporting
+
+para la Industria para el cumplimiento de E2B (R3)
+
+
+
+
+                                         86
+         4.8 Anexo H
+
+
+
+Preguntas frecuentes WHODrug LATAM
+
+
+
+
+                                     87
+88
+

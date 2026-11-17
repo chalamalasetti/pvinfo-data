@@ -1,0 +1,2775 @@
+                                                   Manual de uso
+                                        E-Reporting Industria
+                                                       Versión 3.0
+                                                           (Febrero 2024)
+
+
+
+
+Control de cambios respecto a la versión 2.0 (mayo 2022)
+    •    El diccionario WHODrug está disponible para ambos módulos de carga, requiere activación.
+    •    Se describe procedimiento para habilitar WHODrug
+    •    Se actualiza el correo de consultas
+    •    Se amplia la cantidad de usuarios en cada perfil
+    •    Se actualiza el contenido, capturas de pantalla y se agregan leyendas
+    •    Se agrega el Anexo B: Guía técnica para el uso de WHODrug Global en los XMLs cargados en Vigiflow eReporting en la industria para el
+         cumplimiento del estándar E2B (R3).
+    •    Se agrega el Anexo C: Cómo usar el formato WHODrug C3 para la codificación de medicamentos.
+Contenido
+1.          Generalidades............................................................................................................................... 3
+2.          Objetivo del Manual ..................................................................................................................... 4
+3.          Desarrollo del contenido ............................................................................................................. 4
+     3.1. Indicaciones iniciales ..................................................................................................................... 4
+     3.2. Solicitud de cuentas de usuario..................................................................................................... 5
+     3.3. Ingreso por primera vez para generación de contraseña ............................................................. 9
+     3.4. Inicio de sesión ............................................................................................................................ 10
+     3.5. Administración y activación de licencia MedDRA ....................................................................... 14
+     3.6. Administración y activación de licencia WHODrug ..................................................................... 17
+     3.7. Indicaciones específicas para el ingreso de reportes a e-Reporting Industria. ........................... 18
+     3.8. Módulo Carga de XML ................................................................................................................. 18
+     3.9. Módulo de carga manual ............................................................................................................ 20
+     3.10.Estado de envío y revisión de ackLogs ........................................................................................ 41
+4.          Preguntas frecuentes ................................................................................................................. 46
+5.          Anexo A ....................................................................................................................................... 50
+6.          Anexo B ....................................................................................................................................... 52
+7.          Anexo C ....................................................................................................................................... 60
+
+
+
+
+                                                                                                                                                             2
+1.       Generalidades
+         e-Reporting Industria es una plataforma desarrollada por el Uppsala Monitoring Centre – UMC, centro
+         colaborador de la Organización Mundial de la Salud - OMS, específicamente para que la industria
+         farmacéutica notifique de Casos Individuales de Reacciones Adversas a Medicamentos (RAM), Sospechas
+         deReacciones Adversas a Medicamentos (SRAM), Eventos Supuestamente Atribuibles a la Vacunación o
+         Inmunización (ESAVI), y cualquier problema de seguridad relacionado con el uso de medicamentos y
+         vacunasa la Autoridad Regulatoria de Medicamentos mediante una plataforma estandarizada y diseñada
+         para la mejor colecta de información.
+
+         e-Reporting Industria está vinculado a VigiFlow, herramienta utilizada para la gestión de Reportes de
+         CasosIndividuales a nivel nacional. El Departamento de Farmacovigilancia de la Dirección Nacional de
+         Vigilancia Sanitaria opera VigiFlow a nivel nacional como país perteneciente al Programa Internacional
+         de Monitoreo de Medicamentos de la Organización Mundial de la Salud - OMS para la gestión de los
+         reportes de seguridadde casos individuales.
+
+         e-Reporting Industria permitirá que los Titulares del Registro Sanitario realicen notificaciones de
+         sospechasde reacciones adversas a medicamentos a la Autoridad Reguladora en cumplimiento de la Ley
+         1.119/97 Y Resolución DINAVISA 259/22.
+
+         El objetivo es que la industria farmacéutica comience el desuso paulatino del e-Reporting ordinario
+         (disponible en la página web del DINAVISA) y que esta herramienta solo quede disponible para
+         profesionales de la salud y pacientes, ya que la esencia de su desarrollo se orientó al uso de estos
+         participantes. Eventualmente y en un corto plazo (conforme se vayan otorgando accesos), toda la
+         industria deberá utilizarla plataforma e-Reporting Industria, la cual consta de 2 (dos) módulos: Módulo
+         de carga de XML y Módulo de carga manual de información.
+
+     1.1. Módulo de carga de XML (XML-Upload): permite la carga de                              IMPORTANTE
+          notificaciones a través de archivos XML-E2B, para aquellasindustrias que
+                                                                                        El Dpto. de Farmacovigilancia
+          ya han realizado y concluido las pruebas con el Dpto. de
+                                                                                        será el responsable de otorgar
+          Farmacovigilancia y cuentan con el visto bueno para la notificación por
+                                                                                         el acceso al módulo de carga
+          esta vía.
+                                                                                         de XML o al de carga manual
+          El Dpto. de Farmacovigilancia ha definido que los laboratorios con un alto
+                                                                                                de información.
+          número de notificaciones anuales sean los que implementen en sus bases
+          de datos la transferencia electrónica de XML-E2B,
+
+         considerando que las corporativas multinacionales que cuentan con bases de datos de Farmacovigilancia
+         estandarizadas con E2B, tienen las herramientas y el soporte tecnológico para llevar a cabo la
+         implementación.
+         Esto no es limitante a que un laboratorio que no es multinacional o que no tiene un alto porcentaje de
+         notificación anual, pueda implementar el estándar E2B en sus bases y la transferencia electrónica de XML
+         con el Dpto. de Farmacovigilancia.
+
+                                                                                                              3
+    El Dpto. de Farmacovigilancia contactará a las empresas (bajo criterio establecido) que deban
+    implementar la transferencia electrónica. Si no ha sido contactado y pretende realizar la
+    implementación, comuníquese con el Dpto. de Farmacovigilancia con el fin de establecer el proceso para
+    llevar a cabo las pruebas respectivas.
+    Todas las acciones con reportes XML creados en bases de datos externas a eReporting industria se deben
+    realizar a través del módulo CARGAR E2B (envío de casos iniciales, seguimientos, nulificaciones etc.).
+
+1.2. Módulo de carga manual de información: formulario electrónico basado en ICH-E2B (R3) que permite la
+     captura de información de un reporte en campos estructurados y estandarizados. Su uso se centra en
+     aquella industria farmacéutica que no cuenta con la transferencia electrónica XML-E2B.
+
+    El Dpto. de Farmacovigilancia ha definido que este módulo sea utilizado por los laboratorios nacionales
+    o importadores que tienen un bajo número de notificaciones anuales y/o que probablemente no cuentan
+    con bases de datos de Farmacovigilancia estandarizadas con E2B.
+
+   En cierto momento, este módulo deberá ser utilizado por laboratorios que se encuentren en transición
+   hacia la implementación del XML-E2B.
+
+   Independientemente del módulo que utilice la industria farmacéutica, es indispensable el
+   cumplimiento de lo solicitado en la Reglamentación actual vigente.
+
+
+2. Objetivo del Manual
+2.1. Exponer el procedimiento para la carga de archivos XML de producción para aquellos Titulares de Registro
+     Sanitario que ya concluyeron la implementación de la estandarización E2B en sus bases dedatos tras a las
+     pruebas realizadas y que el Dpto. de Farmacovigilancia haya dado visto bueno.
+
+2.2. Brindar información y explicar el procedimiento que deben seguir los Titulares de Registro Sanitariopara
+     el llenado de información en el módulo de carga manual, para aportar la mayor cantidad de información
+     posible en los campos solicitados y así propiciar una notificación de alta calidad.
+
+
+3. Desarrollo del contenido
+3.1. Indicaciones iniciales
+● Se sugiere que el equipo informático que se utilice para cargar los casos cuente con un dispositivo de
+    almacenamiento de energía para prevenir la pérdida de información en caso de cortes de energía
+    eléctrica.
+● Mantener una conexión de internet estable de alta velocidad para el correcto funcionamiento de e-
+    Reporting Industria.
+● Utilizar, en orden de preferencia, los exploradores Chrome, Firefox y Microsoft Edge. Tenerlos
+    actualizados para su operación óptima.
+● Inhabilitar la traducción automática del navegador que vaya a utiliza para evitar errores en la traducción
+                                                                                                          4
+    al español que tiene la interfaz.
+●   Salvaguardar la integridad y confidencialidad de las cuentas de acceso y contraseñas.
+●   Atender las disposiciones establecidas en el documento “Términos y condiciones de uso”- Anexo A.
+●   Licencia MedDRA, sujeto a costo.
+●   Licencia WHODrug, sujeto a costo.
+●   No ingresar casos de prueba por ninguno de los módulos, ya que estos llegarían a la base de datos del
+    CNFV como casos válidos, salvo indicación de DINAVISA.
+●   Cerrar la sesión cuando no se esté ingresando información a la plataforma.
+
+    La inestabilidad e interrupciones en la conexión de internet pueden ser motivos para perder la
+    información de un reporte si no se ha enviado previamente y más aún los cortes de energía eléctrica.
+
+3.2. Solicitud de cuentas de usuario
+Para el otorgamiento de cuentas es fundamental tener actualizada la designación del Responsable de
+Farmacovigilancia (RFV) ante el Dpto. de Farmacovigilancia, ya que la comunicación por correo electrónico
+será exclusivamente con el/la responsable y adjunto (si aplica). Las disposiciones de designación de
+Responsable de Farmacovigilancia se encuentran establecidas en la Resolución S.G.Nº 050/16 y en la Ficha
+de designación, ambas disponibles en la página web de la DINAVISA.
+
+●   La solicitud se realiza a través del correo electrónico: farmacovigilancia@dinavisa.gov.py
+●   Se otorgarán como máximo 3 cuentas por empresa, las cuales son independientes para la carga de XML
+    o el ingreso de información en el módulo de carga manual.
+●   Se recomienda que el usuario principal sea del correo del Regente/DT de la Empresa Titular de Registro
+    Sanitario/Responsable de Farmacovigilancia y las cuentas adicionales sea del Responsable de
+    Farmacovigilancia adjunto y/u otro personal designado.
+●   Indispensable que los correos de los usuarios sean corporativos o institucionales.
+●   Para modificación de cuentas, por ejemplo, por cambio de Regente/DT/ Responsable de
+    Farmacovigilancia, debe solicitarlo al correo arriba señalado con la Designación e información del
+    responsable de la nueva cuenta.
+●   Para aquellas empresas cuyas representadas dispongan de capacidad de generar archivos en XML, se
+    creará un perfil independiente para cada una de ellas para facilitar la transmisión electrónica de datos
+    mediante archivos XML.
+
+3.2.1.   Información que deberá contener la solicitud
+              Solicitud                                         Descripción
+
+     Nombre largo                Razón social (máx. 254 caracteres).
+                                 Ejemplo: Laboratorios MedSolutions S.A. de C.V.
+
+
+
+
+                                                                                                        5
+Nombre corto          Nombre abreviado (máx. 20 caracteres).
+
+
+                      Formará parte de las letras del formato del Worldwide unique case
+                      identification (WWUID).
+                      WWUID ej. PY-MedSolutions-0000001, debe coincidir con el WWUID de los
+                      archivos XML (para aquellos laboratorios que cuenten con bases de datos
+                      que generen este ID).
+
+
+                      Para las compañías que tienen bases de datos E2B, los siguientes son los
+                      campos que contienen la información solicitada:
+
+                      E2B (R2): <companynumb>
+                      (En la guía es el punto A.1.10 Worldwide unique case identification number)
+                      E2B (R3): 2.16.840.1.113883.3.989.2.1.3.2
+                      (En la guía ICH-OID es el punto C.1.8.1 Worldwide Unique Case Identification
+                      Number)
+
+                      Ver imágenes más abajo.
+
+
+                      El short name también se observará en el Safety report unique identifier
+                      SRID ej. PY-MedSolutions-0000001
+
+
+                      Para compañías que no tienen bases de datos E2B, se puede proponer un
+                      nombre corto.
+
+                      Es importante mencionar que una vez definido este nombre corto, no se
+                      podrá modificar posteriormente en la fase de producción.
+Sender Organization   E2B (R2): Ver campo <senderorganization> (Corresponde a A.3.1.2 Sender
+                      organization en la guía de la ICH)
+
+                      E2B (R3): (Corresponde a C.3.2 Sender’s Organization en la guía de la ICH)
+
+
+                      Ver imágenes más abajo.
+
+
+
+
+                                                                                              6
+Sender Identifier        Corresponde al identificador del emisor (máx. 60 caracteres). El sender
+                         identifier es el código que permite la transmisión electrónica entre bases de
+                         datos.
+
+
+                         Para empresas con bases de datos que pueden o podrían generar XML y
+                         tienen generador de este ID, el mismo debe ser idéntico al que produce su
+                         base de datos, de lo contrario los reportes no serán recibidos
+                         correctamente.
+
+
+                         Para las compañías que tienen bases de datos E2B, los siguientes son los
+                         campos que contienen la información solicitada:
+                         E2B (R2): <messagesenderidentifier>
+                         (En la guía es el punto M.1.5 Message Sender Identifier)
+                         E2B (R3): 2.16.840.1.113883.3.989.2.1.3.11
+                         (En la guía es el punto N.2.r.2 Message Sender Identifier)
+
+                         Ver imágenes más abajo.
+
+
+                         En ocasiones es el mismo que el nombre corto, pero no necesariamente.
+
+
+                         Para compañías que no tienen bases de datos E2B pueden proponer el
+                         sender identifier y definirlo junto con el Dpto. de Farmacovigilancia.
+
+                         Es importante mencionar que una vez definido este ID, no se podrá
+                         modificar posteriormente en la fase de producción.
+Usuario 1 (principal)    Nombre (s), apellidos y correo electrónico.
+Usuario 2 (adicional)    Nombre (s), apellidos y correo electrónico.
+Usuario 3 (adicional)    Nombre (s), apellidos y correo electrónico.
+Estatus de vigencia de   Deberá indicar si poseen licencia MedDRA vigente.
+licencia MedDRA.
+Estatus de vigencia de   Deberá indicar si poseen licencia WHODrug vigente.
+licencia WHODrug.
+
+
+
+
+                                                                                                 7
+     3.2.2.   Imágenes ejemplo para las compañías que tienen bases de datos E2B identifiquen el Short y el Sender ID
+
+
+R2
+
+
+
+
+R3
+
+
+
+
+                                                                                                            8
+    3.3. Ingreso por primera vez para generación de contraseña
+
+Una vez que el Dpto. de Farmacovigilancia le ha otorgado acceso a la plataforma, siga los siguientes pasos para
+la generación de su contraseña.
+
+    3.3.1.   Para iniciar sesión y generar su contraseña, vaya al siguiente enlace:
+
+
+                              https://industryereporting.who-umc.org/
+
+
+    3.3.2.   Presione el enlace Forgot your password? (¿Olvidó su contraseña?), siga las instrucciones para crear
+             una nueva contraseña.
+
+    -   En el campo “Email Address”, corroborar o ingresar su nombre de usuario (correo electrónico).
+    -   Oprimir el enlace Send Verification Code.
+
+
+                                                                             IMPORTANTE
+
+                                                                                 No habilite la
+                                                                           traducción automática
+                                                                             del navegador que
+                                                                            utiliza, ya que puede
+                                                                             haber traducciones
+                                                                           imprecisas de algunos
+                                                                               campos cuando
+                                                                           cambia el idioma de la
+                                                                                   interfaz.
+
+
+
+    -   No cierre la ventana de e-Reporting Industria.
+    -   Se enviará a su correo un código de 6 dígitos que deberá ingresar en el campo Verification Code.
+    -   Oprimir el vínculo “Verify code”.
+    -   Si el código es correcto, le mostrará el mensaje “The code has been verified. You can now continue”.
+
+
+
+
+                                                                                                              9
+-   Presione “Continue”.
+
+
+
+
+-   Se mostrará una pantalla donde deberá ingresar su nueva contraseña. Su contraseña debe contener
+    como MÍNIMO 8 caracteres (letras, números, mayúsculas, minúsculas, símbolos), y es importante que
+    no se parezca a su nombre de usuario.
+-   Escriba esa misma contraseña en el recuadro de abajo para confirmarla.
+-   Presione el botón “Continue”.
+-   Si el proceso es exitoso el sistema lo redirigirá a la pantalla de inicio para que ingrese su usuario y
+    contraseña.
+
+
+NOTA: en caso de no recordar su contraseña, la recuperación se debe realizar con el mismo procedimiento
+anteriormente descrito.
+
+3.4. Inicio de sesión
+- Para iniciar sesión, vaya al siguiente enlace:
+
+
+
+
+                                                                                                        10
+                                https://industryereporting.who-umc.org/
+
+
+    -   Ingrese su usuario y contraseña en los campos correspondientes.
+    -   Puede elegir la opción “Keep me signed in” para que el sistema recuerde su usuario y contraseña y no
+        tenga que ingresarlas manualmente en el siguiente inicio de sesión (considerar las políticas de
+        confidencialidad y resguardo de información de cada empresa).
+    -   Presione el botón “Sign in” (Iniciar sesión).
+
+
+
+
+           -
+                                                        -
+   3.4.1. Pantalla de inicio
+Una vez que haya iniciado sesión, encontrará la pantalla principal:
+
+
+
+
+                                                                                                         11
+Si requiere salir del sistema, de click en la opción “Sign out” (Cerrar sesión) en la parte superior derecha de la
+pantalla donde se localiza el nombre de su usuario.
+
+    ●   Noticias: historial de versiones y lanzamientos. Describe las últimas actualizaciones realizadas a la
+        plataforma.
+
+Puede cambiar el idioma de la interfaz, de la siguiente manera:
+
+    ●   Ubicar en el menú superior derecho, la opción “User Settings” (Configuraciones del Usuario).
+    ●   Puede elegir Spanish (español) como idioma de la interfaz del usuario.
+    ●   Elegir Español como lenguaje EDQM.
+    ●   Regresar a la pantalla principal con la opción “Start” del menú superior derecho.
+
+
+
+
+                                                                                                                12
+             Función                                              Detalle
+
+Start (Inicio)                     Lo traslada a la pantalla principal. Si está ingresando un reporte,
+                                   cerciórese primero de haberlo enviado y descargado antes de ir a la
+                                   pantalla de inicio.
+
+Settings (Ajustes)                 Ajustes de idioma de la interfaz.
+
+Privacy policy (Política de        Lo redirige a la página web del UMC donde se estipula la política de
+Privacidad)                        privacidad.
+
+Sign out (Cerrar sesión)           Si está ingresando un reporte, cerciórese primero de haberlo enviado
+                                   y descargado antes de cerrar la sesión.
+
+
+3.4.2. Menú principal
+
+
+
+●   Ingreso de datos
+        o Crear nuevo reporte: Permite ingresar un nuevo reporte inicial. (Para carga manual de datos).
+        o    Editar reporte: Esta opción le permite editar un reporte previamente ingresado.
+        o    Reporte de Seguimiento: Esta opción le permite actualizar un reporte previamente ingresado
+             para fines de seguimiento.
+        o    Nulificar reporte: Anular un reporte generado previamente.
+
+
+
+                                                                       IMPORTANTE
+
+                                                                       Toda la información que se
+                                                                       registre en el módulo de
+                                                                       carga manual deberá ser en
+                                                                       español, a excepción de los
+                                                                       catálogos que aún no
+                                                                       cuenten con una traducción
+                                                                       al español.
+
+
+
+
+                                                                                                          13
+     ●    Cargar E2B: Módulo para la notificación a través de la carga de archivos XML. (Ver Carga de
+          XML).
+     ●    Estado de Envío: Se listan los reportes cargados de los últimos 35 días, sea a través de la carga
+          de XML o por carga manual de información. En esta sección, se puede descargar el acuse de
+          recepción electrónico “ackLog” en archivo XML de reportes enviados.
+
+
+     3.5. Administración y activación de licencia MedDRA
+
+ El uso de MedDRA dentro del módulo de carga manual requiere la activación de la licencia dentro de la
+ herramienta. Se debe obtener una clave API (interfaz de programación de aplicación) para validar que la
+ licencia de la empresa está enorden. Para ello, debe llevar a cabo lo siguiente:
+
+
+1)   Ingrese a la siguiente dirección electrónica (sitio externo a e-Reporting Industria):
+                                       https://mid.meddra.org/account/register
+
+
+
+
+2)   Proporcione “usuario” y “contraseña de su licencia MedDRA. Dar clic en “Login”
+3)   Si el proceso fue exitoso, la página le proporcionará la clave API para el usuario MedDRA ingresado. Si no
+     fue exitoso, revise usuario y contraseña e intente nuevamente o contacte a su proveedor MedDRA.
+4)   Copie la clave API.
+5)   Inicie sesión en e-Reporting Industria
+6)   Ubique en el menú superior derecho la opción “Licencia MedDRA”
+
+
+
+
+                                                                                                                  14
+7)   En el primer campo coloque su usuario MedDRA y en el segundo la clave API generada en los pasos
+     previamente descritos. De clic en “Guardar”.
+
+
+
+
+                                                                                                       15
+    Importante
+
+    • Una vez que ha activado la licencia MedDRA no es necesario que repita el proceso cada vez que inicia sesión. En
+      caso de expiración de la licencia MedDRA, e-Reporting Industria bloqueará la codificación en los campos MedDRA.
+      El usuario deberá revisar los detalles en el menú superior derecho en la opción “Licencia MedDRA” y en caso
+      necesario se deberá validar nuevamente como se indica en los pasos anteriores.
+    • Exención de responsabilidad: cada laboratorio es responsable de realizar/verificar la renovación de la licencia
+      MedDRA de su organización con MSSO, para poder utilizar la terminología en e-Reporting Industria de forma legal.
+      El CNFV se exime de la obligación de solicitar y comprobar la renovación de licencias MedDRA de los laboratorios.
+    • La aplicación de la terminología MedDRA en el módulo de carga manual se encuentra disponible de manera
+      gratuita por tiempo limitado y es efectiva en los siguientes reportes:
+      o Iniciales y sus correspondientes seguimientos posteriores a la emisión de la versión 2.0 de este manual.
+      o Seguimientos de casos reportados inicialmente previos a la emisión de la versión 2.0 de este manual.
+    • Posterior al vencimiento del periodo gratuito se establecerán costos para la adquisición, que cada empresa debe
+      tramitar con MSSO.
+    • Se recomienda la incorporación y utilización del diccionario MedDRA para ambos
+      módulos de carga.
+
+8) Si el proceso fue exitoso, se guardará la información y se mostrará el siguiente mensaje que le indicará
+que su licencia ha quedado validada para usar MedDRA dentro de e-Reporting Industria:
+
+
+
+
+9) Regrese a la pantalla principal.
+
+Cuando capture/modifique un reporte, en las secciones donde se dispone de MedDRA, podrá buscar el
+término MedDRA correspondiente.
+
+
+Cabe señalar que el visor de MedDRA contenido en los campos correspondientes en e- Reporting Industria
+permite una búsqueda general del término deseado por lo que la información que se presenta en el resultado
+es concreta, específica y no pretende suplir las funciones y características que ofrece el explorador web de
+MedDRA. Por lo que, si requiere realizar una consulta ampliada, utilice el navegador web de MedDRA en el
+siguiente enlace:
+
+                                        https://tools.meddra.org/wbb/
+
+
+
+
+                                                                                                                          16
+3.6.     Administración y activación de licencia WHODrug
+Codificar los medicamentos brinda sistemáticamente identificadores que permiten asegurar la trazabilidad
+dentro del proceso de notificación de reacciones adversas, análisis de información y comunicación de riesgos
+asociados a medicamentos y vacunas.
+WHODrug Global es una terminología de reconocimiento mundial desarrollada y mantenida por el UMC y
+forma parte de la estrategia internacional de homologación de identificadores de productos medicinales de
+la OMS y agencias regulatorias. También, es una terminología que en su formato C3 permite el cumplimiento
+de las normas ICH E2B R3 (antes M5) del ICH en cuanto a estandarización en la codificación de medicamentos
+y vacunas.
+Por lo anterior, el CNFV recomienda el uso de esta terminología en su formato C3 para la
+codificación de medicamentos y vacunas de acuerdo con las instrucciones especificadas a
+continuación y en los anexos 3 y 4 de este instructivo.
+El uso de la codificación avanzada de WHODrug (formato C3) dentro del módulo de carga manual y la
+configuración de archivos XML con WHODrug requieren de una licencia válida. La activación de la licencia
+dentro de la herramienta. Para validar su licencia debe llevar a cabo lo siguiente:
+
+
+1) Ubique en el menú superior derecho la opción “Administración de Licencias” y luego “Administración de
+   la Licencia WHODrug”
+2) Ingrese su número de licencia WHODrug en el campo correspondiente. De clic en “Guardar”.
+3) Si el proceso fue exitoso, se guardará la información y se mostrará el mensaje “Su licencia WHODrug es
+   válida”, que le indicará que su licencia ha quedado validada para usar WHODrug dentro de e-Reporting
+   Industria.
+4) Regrese a la pantalla principal. Cuando ingrese/modifique un reporte, en las secciones donde se dispone
+   de WHODrug, podrá buscar el término WHODrug correspondiente.
+    Cabe señalar que el visor de WHODrug contenido en los campos correspondientes en e-Reporting
+    Industria permite una búsqueda general del término deseado por lo que la información que se presenta
+    en el resultado es concreta, específica y no pretende suplir las funciones y características que ofrece el
+    explorador web de WHODrug (WHODrug Insight). Por lo anterior, si requiere realizar una consulta
+    ampliada, utilice WHODrug Insight en el siguiente enlace: https://who-umc.org/whodrug/whodrug-
+    global/applications/whodrug-insight/
+5) En los campos donde exista posibilidad de codificar con WHODrug (señalados por la leyenda (WHODrug),
+   se debe codificar lo más específicamente posible de acuerdo con la información disponible y utilizando el
+   formato C3 de WHODrug. Consultar los documentos: Cómo usar el formato WHODrug C3 para la
+   codificación de medicamentos y Guía técnica para el uso de WHODrug Global en archivos XML cargados
+   en VigiFlow-eReporting Industria para el cumplimiento del estándar E2B (R3) (este último para usuarios
+   con bases de datos E2B y que producen archivos XML), ambos documentos disponibles en español e
+   inglés, y anexos a este documento y disponibles también en el WHODrug User Area (área de usuarios con
+   licencia WHODrug) del UMC, accesible a través del siguiente link:
+    https://who-umc.org/whodrug/whodrug-global/applications/whodrug-user-area/
+    Estas buenas prácticas y el uso del formato C3 aplican para todos los campos que pueden recibir
+
+                                                                                                                 17
+   información con WHODrug y están disponibles para usuarios con licencia válida.
+
+
+    3.7. Indicaciones específicas para el ingreso de reportes a e-Reporting Industria.
+
+        Con el objetivo de aclarar el proceso a seguir en relación con notificaciones que se sometieron
+en sistemas anteriores a e-Reporting Industria, independientemente si utiliza el módulo de carga de
+XML o el módulo de carga manual, debe seguir las siguientes indicaciones importantes:
+
+    ●   La notificación de reportes de caso individual a e-Reporting Industria, será única y
+        exclusivamente para nuevos casos y sus respectivos seguimientos.
+    ●   Si notificó un caso inicial y seguimientos a través de e-Reporting ordinario (a través de la Página
+        web de DINAVISA), debe dar seguimiento y cerrarlo, a través del correo electrónico
+        farmacovigilancia@dinavisa.gov.py
+
+
+    3.8. Módulo Carga de XML
+        Este módulo es de uso exclusivamente para Titulares de Registro Sanitario que ya fueron
+autorizados porel Dpto. de Farmacovigilancia para realizar la notificación por esta vía.
+
+En el menú superior derecho elija la opción “Cargar E2B” (Cargar E2B).
+
+
+
+
+Una vez dentro, encontrará la siguiente pantalla:
+
+
+
+
+La carga de los archivos se realiza de forma individual. Arrastre el archivo XML al recuadro gris o de
+click en “Explorar” para abrir su explorador de archivos.
+
+
+Una vez que arrastre o seleccione el archivo XML-E2B se comenzará a cargar como a continuación se muestra:
+
+
+
+
+                                                                                                              18
+Si el archivo cumple con las especificaciones del formato ICH R2 o R3, se cargará exitosamente como
+acontinuación se muestra:
+
+
+
+
+De click en “Enviar”
+
+Tenga en cuenta el Identificador de envío.
+
+
+
+
+En el menú superior derecho de click en “Estado de envío” para descargar el ackLog.
+
+
+
+
+Puede mostrarse el Identificador único del reporte de seguridad de cada reporte si oprime el ícono .
+
+En esta ventana podrá verificar el estado del envío de sus reportes, descargar el reporte en
+
+                                                                                                       19
+formato XML y el acuse de recepción electrónico (ackLog).
+
+Identifique el reporte que cargó a través del Submission identifier. De click en el icono      para
+descargar el reporte y     para descargar el ackLog correspondiente.
+
+Cargue el ackLog en su sistema para corroborar el importe exitoso.
+
+
+                                              IMPORTANTE
+
+   Es fundamental que descargue el ackLog lo más pronto posible una vez cargado el XML,
+   ya que el sistema solo podrá guardar el histórico de 35 días previos. Una vez pasado este
+   límite, ya no podrá descargar el ackLog. Es responsabilidad del emisor tener respaldo de
+         los ackLog generados, ya que elDpto. de Farmacovigilancia no podrá generar
+                   nuevamente ackLog una vez que se eliminen del histórico.
+
+
+Es importante cerrar la sesión cuando no se utilice la plataforma. Para ello diríjase al menú
+superior sobre elícono       y seleccionar “Cerrar sesión".
+
+
+    3.9. Módulo de carga manual
+    3.9.1. Generalidades.
+Para ingresar al módulo de carga manual identifique en el menú superior derecho la opción “Ingreso
+de datos”.
+
+
+
+
+   3.9.2. Crear un nuevo reporte.
+Antes de ingresar la información de un nuevo reporte (inicial) en el módulo de carga manual, debe
+considerar losiguiente:
+
+
+
+Interpretación de los códigos “NF”: NullFlavor (Información faltante)
+
+Los códigos NullFlavor son una colección de códigos que especifican por qué un valor válido no está
+presente. Estos códigos pueden ser encontrados al final de ciertos campos, por ejemplo, País del
+notificador primario, Iniciales de paciente, Indicación terapéutica, etc.
+
+
+                                                                                                      20
+    ●   Unknow (Desconocido)
+    ●   Asked but unknow (Preguntado pero desconocido)
+    ●   Not asked (No preguntado)
+    ●   Masked (Enmascarado/oculto)
+
+Cabe señalar que estos códigos sólo podrán tener justificación de uso para no aportar la información del campo
+si el sistema requiere obligatoriamente llenar ese campo para poder enviar el reporte al Dpto. de
+Farmacovigilancia.
+
+Si en un campo que contiene un código NF, no se cuenta con la información y esta no es obligatorio para el envío
+del reporte puede dejarlo en blanco y dejar el marcador en NF prestablecido. Por ejemplo: Start of reaction /event
+(Fecha de inicio de la reacción /evento); dado que no es un criterio mínimo para la notificación, el campo puede
+quedar en blanco con el marcador NF.
+
+El sistema señalará en color rojo aquellos campos mínimos necesarios para el envío del reporte.
+
+Íconos comunes en las diferentes secciones:
+
+        Ícono                                                Función
+                     Permite agregar una sección o campo correspondiente en donde se encuentre el botón. Por
+                     ejemplo: Medicamento, Indicación terapéutica, Dosis, Reacciones, Evaluación de
+                     causalidad, etc.
+                     Permite eliminar un campo o una sección completa correspondiente en donde se encuentre
+                     el botón. Considere que, si elimina una sección o campo y éste es indispensable para el
+                     envío del reporte, deberá llenar nuevamente la información solicitada.
+                     Permite realizar una búsqueda del campo relacionado.
+
+
+                     Permite pasar a la siguiente sección. En el módulo de carga manual no es obligatorio llenar
+                     completamente una sección para poder pasar a la siguiente. Al final, los campos mínimos
+                     necesarios para el envío se marcarán en rojo y deberá regresar a la sección correspondiente
+                     para aportar la información faltante o corregirla.
+
+Secciones del reporte:
+
+Administrative (Administrativa).
+
+● Report information (Información del reporte).
+   o Type of report (Tipo de reporte). Elegir entre:
+       ▪ Spontaneous report (Reporte espontáneo): cualquier comunicación voluntaria en la cual el
+           informante/notificador describe un reporte de caso individual con RAM, SRAM, ESAVI o cualquier
+           problema de seguridad relacionado con el uso de medicamentos y vacunas.
+       ▪ Report from study (Reporte de estudio): reporte quese deriva de cualquier estudio clínico en alguna
+           de sus fases.
+
+
+                                                                                                              21
+Datos que pueden incluir:
+●     Ensayos clínicos.                                                      IMPORTANTE
+●      Estudios observacionales.                                 El Dpto. de Farmacovigilancia
+●      Registros.                                                realizará revisiones periódicas de los
+●      Programas de uso post comercialización.                   reportes ingresados en e-Reporting
+●      Programas de apoyo a pacientes.                           Industria y aquellos que nosean
+●      Programas de manejo de enfermedades.                      reportes válidos se eliminarán de la
+●      Encuestas orientadas a pacientes o profesionales          base de datos nacional.
+de la salud.
+●      Estudios de Farmacovigilancia.
+●      Programas de uso compasivo.
+
+
+
+
+  Si elige la opción Reporte de estudio, se desplegarán otros campos adicionales:
+
+          Study type (Tipo de estudio):
+
+               ●   Clinical Trials (Ensayos clínicos): para estudios de intervención.
+
+               ●   Individual Patient Use (Uso individual del paciente): para
+                   programas de usocompasivo.
+               ●   Other studies (Otros estudios): para estudios observacionales,
+                   programas deapoyo a pacientes, entre otros citados en el campo
+                   Report from study.
+
+          Study Name (Nombre del estudio): coloque el nombre del estudio.
+
+          Sponsor study number (Número del estudio del patrocinador): código de
+          identificacióndel estudio.
+
+                                                                                                   22
+Para notificaciones de Literatura, se elegirá Spontaneous report (Reporte espontáneo) o Report from
+study (Reporte de estudio) de acuerdo con la procedencia del caso. Además, deberá agregar
+necesariamente la referencia bibliográfica de donde se obtuvo el caso colocándola en el campo Literature
+references (Referencias de literatura). Ver Literature reference. Si no es clara la procedencia del reporte
+de literatura debe elegir la opción “Other” (otro).
+
+La opción “Not available to sender” (no disponible para el remitente) no debe ser utilizada.
+
+    o   Date report was first received (Fecha en que se recibió el caso por primera vez): fecha de
+        conocimiento por primera vez en la empresa (día cero).
+    o   Date of most recent information (Fecha de información más reciente): corresponde a la fecha
+        cuando la empresa recibió la última información de seguimiento de un caso.
+
+La fecha de notificación ante la autoridad corresponde al día que está realizando el ingreso del caso y
+envío del reporte y esta se proporciona automáticamente al Dpto. de Farmacovigilancia cuando se hace
+el envío del caso.
+
+    o   Does this case fulfill the local criteria for an expedited report?
+        (¿Este caso cumple los criterios locales para ser considerado como un reporte acelerado?)
+            ▪ Colocar “SI”: para notificaciones graves que tengan consecuencia muerte y aquellos que
+                cumplan el criterio 2 (dos) casos graves o más, semejantes en el mismo lugar, con el
+                mismo medicamento o vacuna y del mismo lote.
+            ▪ Colocar “NO”: para notificaciones graves con otras consecuencias distintas a la muerte
+                y notificaciones clasificadas como no graves.
+
+    o   Worldwide Unique Case Identification (Identificador de caso único mundial): WWUID. El
+        WWUID es el primer identificadorque se le asigna al reporte.
+            ▪ Si es una compañía que tiene base de datos estandarizada, es el mismo código que
+        genera la base.
+            ▪ Si la compañía no tiene base de datos que lo genere,será el primer código que se le
+        asigna al reporte.
+
+        El WWUID debe quedar establecido junto con el Dpto. de Farmacovigilancia y no modificarse
+        posteriormente, específicamente la raíz de este identificador, es decir, el Country ISO code (PY) y
+        el Nombre corto (convenido entre el laboratorio y el Dpto. de Farmacovigilancia).
+
+    o   Safety Report Unique Identifier (Identificador Único del Reporte de Seguridad): SRUID. El
+        Safety Report Unique ID es otro identificador que se le puede asignar a un caso siguiendo el mismo
+        formato que el WWUID en caso de que se necesite. Para el módulo de carga manual, el Safety
+        Report Unique Identifier y Worldwide Unique Case Identification corresponderán al mismo código de
+        identificación por lo que tendrá que repetirse.
+                                                                                                       23
+                                                    IMPORTANTE
+
+          Los Safety Report Unique Identifier y Worlwide Unique Case Identificationno son campos editables
+          cuando se realicen los seguimientos, por lo que se debe tener especial cuidado en ingresarlos
+          correctamente pues no se pueden modificar posteriormente
+
+            Ejemplo:
+
+
+
+
+        Sección constante: Country ISO code + nombre corto
+
+
+La sección constante de ambos identificadores una vez que ya se han definido con el Dpto. de
+Farmacovigilancia, no podrá ser modificada posteriormente. Si requiere utilizar otro ID interno del laboratorio
+o códigos de notificaciones específicos solicitados por el Dpto. de Farmacovigilancia, agréguelos en el campo
+“Other case identifiers in previous transmissions” (Otros identificadores de caso).
+
+Cuando ingresa un reporte al sistema, la sección constante de ambos identificadores ya viene predefinida,
+por lo que no es necesario ni debe modificar esta sección.
+
+La sección variable del WWUID y SRUID debe constar de un número consecutivo a 5 dígitos el cual debe ser
+único para cada caso. Por lo que el primer reporte que ingrese en el módulo de carga manual debe ser el
+00001.
+
+
+
+
+   Ejemplo:
+
+
+                                                                                                           24
+El Safety Report Unique Identifier y Worldwide Unique Case Identification son únicos para cada
+reporte porlo que, en los seguimientos, el sistema no le permitirá modificarlos.
+
+       o   Other case identifiers in previous transmissions (Otros identificadores de caso): Si
+           cuenta con una codificación interna en su organización u otros indicadores
+           solicitados, puede agregarlos oprimiendo el icono “+”.
+           En este campo pueden incluirse códigos de manejo internos de la compañía, así como
+           codificaciones establecidas para notificaciones de actividades adicionales de Planes
+           de Manejo de Riesgos (PMR/PGR).
+       o   Identification number of report which are linked to this report (Número de
+           identificación de reportes que están vinculados con éste): cuando tiene casos que se
+           relacionan de alguna manera con el que está reportando (por ejemplo, RAM que
+           sucedió en una familia), coloque losWorldwide unique case identification de los casos
+           relacionados.
+       o   Literature references (Referencias de Literatura): este campo solo será utilizado si se
+           reporta un caso de literatura (ver Tipo de reporte) y deberá colocar la referencia
+           bibliográfica de donde obtuvo el caso. Preferentemente utilizar el estilo Vancouver
+           para colocar las referencias de literatura.
+           Opcionalmente, es posible agregar archivos de las referencias de literatura del caso (en
+           el idiomaoriginal), siempre y cuando no se violen los derechos de autor del documento
+           para compartirlo.Para cargar un archivo arrástrelo y suéltelo sobre la sección gris o
+           ábralo desde su explorador dearchivos con la opción “Browse”. Agregar las referencias
+           de literatura en formato PDF para evitarincompatibilidades de formatos
+
+
+
+
+                                                                                                      25
+                .
+
+
+
+
+Primary source (Fuente primaria). Información referente al notificador primario/original.
+
+            o   Primary source for regulatory purposes (Fuente primaria para fines regulatorios):
+                habilitar necesariamente esta opción. La fuente principal de información es la persona
+                que proporciona los hechos sobre el caso. En el caso de múltiples fuentes, la "Fuente
+                primaria para fines regulatorios” es la persona que primero informó los hechos al
+                remitente (sender). El reporte solo deberá tener una fuente primaria para fines
+                regulatorios.
+            o   Qualification (Perfil o calificación): corresponde al perfil del notificador primario.
+            o   Campo obligatorio. Elegir entre:
+                    ▪ Physician (Médico)
+                    ▪ Pharmacist (Farmacéutico)
+                    ▪ Other Health Professional (Otro profesional de la salud)
+                    ▪ Lawyer (Abogado)
+                    ▪ Consumer or Non-Health professional (Consumidor o no profesional de la
+                         salud). Elija esta opción si el notificador primario (informante) es el propio
+                         paciente/consumidor o algún familiar de éste.
+
+                                                                                                          26
+            o   Country (País): por defecto elegir Paraguay. Sin embargo, en algunas ocasiones el país
+                del notificador puede ser diferente si, por ejemplo, un paciente/consumidor adquiere
+                un medicamento en Paraguay y el evento/reacción sucede en otro país.
+            o   Los siguientes campos sobre el informante no son necesarios, pero puede incluir la
+                información si cuenta con ella o puede prescindir de ellos por cuestiones de
+                confidencialidad o negativa del informante.
+                    ▪ Title (Título)
+                    ▪ Given name (Primer nombre)
+                    ▪ Middle name (Segundo nombre, si aplica)
+                    ▪ Family name (Apellidos)
+                      ▪   Organization (Organización)
+                      ▪   Department (Departamento/área)
+                      ▪   Street (Dirección)
+                      ▪   City (Ciudad)
+                      ▪   State or province (Entidad federativa)
+                      ▪   Postcode (Código Postal)
+                      ▪   Telephone (Teléfono)
+
+Puede agregar otras fuentes primarias con la opción “Add primary source” (agregar fuente primaria), sin
+embargo, el reporte solo debe tener habilitado una fuente primaria para fines regulatorios.
+
+
+
+
+Patient (Paciente).
+
+    ●   Patient characteristics (Características del paciente).                                IMPORTANTE
+            o Name or initials (Nombre o iniciales): Aportar iniciales de
+                nombre(s), apellido paterno y materno, en ese orden, o en             Un reporte válido debe
+                caso de Estudios Clínicos, el código de identificación del             contener al menos un
+                paciente.                                                                 identificador de
+            o Sex (Sexo).                                                             paciente, el cual puede
+            o Date of birth (Fecha de nacimiento).                                     ser: iniciales, o sexo o
+            o Age at time of onset of reaction/event (Edad al momento                 fecha de nacimiento o
+                de presentar la reacción/evento).                                                edad.
+            o Age group (Grupo etario).
+
+
+
+
+                                                                                                                  27
+        o    Gestation period when reaction/event was observed in the foetus (Tiempo de gestacióncuando
+             se observó la reacción / evento en el feto). Coloque el valor y elija la unidad de tiempo del
+             catálogo.
+        o    Date of last menstrual period (Fecha de la última menstruación). Si no cuenta con la fecha
+             completa, puede ingresar sólo uno (año) o dos campos (mes y año).
+        o    Weight (Peso).
+        o    Height (Altura).
+
+    Los siguientes campos no son relevantes para la calidad del reporte, sin embargo, si cuenta con la
+    información, puede proporcionarla o simplemente dejar los campos en blanco:
+        o GP medical record number (Número de registro profesional del médico general).
+        o Specialist record number (Número de registro profesional del especialista).
+        o Hospital record number (Número de ficha hospitalaria).
+        o Investigation number (Número de expediente clínico).
+
+●   In case of death (En caso de muerte). Si el desenlace de la reacción/evento es la muerte, proporcione la
+    siguiente información:
+
+        o    Date of death (Fecha de la muerte). Si no cuenta con la fecha completa, puede ingresar sólo uno
+             (año) o dos campos (mes y año).
+    o   Cause of death as reported by the primary source (Causa de muerte como fue reportada por el
+        notificador primario (informante). Si cuenta con la información. De clic en el icono “+” si cuenta con la
+        información
+            ▪ Causa de muerte reportada: coloque necesariamente el término literal reportado por la
+                fuente primaria
+            ▪ Causa de muerte reportada (MedDRA): proporcione el término MedDRA (LLT) de la causa de
+                muerte o parte de este y oprima el botón ; elija el término deseado una vez desplegado el
+                resultado.
+         o Was autopsy done (Se realizó la autopsia). Si cuenta con la información para afirmar o negar,
+             proporciónela. Si elige SI, pudiera proporcionar información del siguiente campo.
+         o Cause of death as determined by autopsy (Causa de muerte como se notificó en la autopsia). Si
+             cuenta con la información coloque el término literal de la causa de muerte determinada por
+             autopsia reportado por la fuente primaria.
+         o Causa de muerte determinada por autopsia (MedDRA). Proporcione el término MedDRA (LLT)
+             de la causa de muerte determinada por autopsia o parte de este y oprima el botón           ; elija el
+             término deseado una vez desplegado el resultado.
+
+●   Parent (Reporte padres-hijo/feto). Cuando el neonato o feto, expuesto a uno o varios medicamentos a
+    través de los padres, presenta un evento/reacción distinta del aborto espontáneo temprano / muerte
+    fetal, se debe proporcionar información tanto del neonato/feto como del padre y madre en el mismo
+    reporte.
+        o Is this a parent-child report? (¿Este es un caso padres-hijo/feto?). Si elige SÍ, se desplegarán
+                                                                                                               28
+               campos adicionales sobre el padre/madre que fue la fuente de exposición al medicamento
+               sospechoso. Si cuenta con la información, proporcione la mayor información posible.
+               Si lo desconoce la respuesta a la pregunta, deje en blanco.
+           o   Relevant past drug history of parent (Tratamiento médico previo relevante del padre/madre).
+               Aporte información sobre antecedentes de medicamentos relevantes para la evaluación
+               utilizados por el padre/madre que fue la fuente de exposición al medicamento sospechoso.
+
+Drugs (Medicamentos)
+
+   ●   Medicinal product name as reported by the primary source (Nombre del medicamento tal cual fue
+       reportado por el notificador primario): Debe colocar la denominación distintiva si cuenta con ella y entre
+       paréntesis la denominación genérica. Si reporta un medicamento con polifármacos NO debe hacer un
+       reporte por cada activo que integra el medicamento.
+
+   ●   Medicamento (WHODrug)
+       En los campos donde exista posibilidad de codificar con WHODrug (señalados por la leyenda (WHODrug),
+       se debe codificar lo más específicamente posible de acuerdo con la información disponible y utilizando
+       el formato C3 de WHODrug (para usuarios con licencia válida).
+
+           Se recomienda la incorporación y utilización del diccionario WHODrug para
+                                   ambos módulos de carga.
+
+                                                                                                  IMPORTANTE
+   ●   Characterization of drug role (Rol del medicamento). Elegir entre:
+           o Suspect (Sospechoso)                                                           Un reporte válido
+           o Concomitant (Concomitante)                                                   deberá contener por lo
+           o Interacting (Interactuante). Si elige esta opción debe tener al menos        menos un medicamento
+               dos medicamentos interactuantes.                                             sospechoso o dos
+           o Drug no administered (Medicamento no administrado)                              medicamentos
+   ●   Action taken with drug (Acción tomada con el medicamento). Elegir entre:              interactuantes.
+           o Drug withdrawn (Medicamento retirado).
+           o Dose reduced (Dosis reducida).                                                  El medicamento
+           o Dose increased (Dosis aumentada).                                            sospechoso debe ser el
+           o Dose not changed (Dosis no modificada).                                      medicamento sobre el
+           o Unknown (Desconocido).                                                       cual el emisor que está
+           o Not applicable (No aplicable).                                                haciendo el reporte.
+
+
+
+
+                                                                                                              29
+●   Authorisation/application number (Número de autorización/aplicación): Número de registro sanitario
+    del medicamento / vacuna, el cual deberá ser del medicamento sospechosoque el Titular de Registro o su
+    Representante Legal esté emitiendo.
+●   Country of authorisation/application (País de autorización/aplicación). En este campo colocar Paraguay.
+●   Name of holder/applicant (Nombre del titular/aplicante): Razón social del titular de registro sanitario o
+    representante legal.
+●   Additional information on drug (Información adicional del medicamento): en este campo de texto libre
+    puede agregar información que no haya podido agregar a través de los campos que integran la sección
+    de Medicamento, por ejemplo, la fecha de caducidad del medicamento. Cuando se implemente el
+    catálogo de medicamentos WHODrug y no encuentre el medicamento específico que desea reportar a
+    través de dicho catálogo, deberá seguir los pasos descritos en el documento “Cómo usar el formato
+    WHODrug C3 para la codificación de medicamentos” y además enviar un correo electrónico a DINAVISA
+    con la misma información enviada a UMC.
+●   Indications as reported by the primary source (Indicación tal cual fue reportada por el notificador
+    primario). Coloque el término de la indicación terapéutica.
+        o Indicación (MedDRA). Proporcione el término MedDRA (LLT) de la indicación terapéutica o parte
+            de éste y oprima el botón     , elija el término deseado una vez desplegado el resultado.
+
+
+
+
+      Puede proporcionar otra indicación terapéutica con el icono “+”.
+
+●   Dosages (Dosis).
+       o Batch/lot number (Número de lote).
+       o Dose (Dosis): coloque el valor y seleccione la unidad de medida del catálogo. Para el caso de
+           medicamentos polifármacos podrá expresarse como unidad de medida de dosificación (DF:
+           dosage form).
+       o Dosing interval (Intervalo de dosificación): coloque el valor y seleccione la unidad de tiempo del
+           catálogo.
+       o Dosage text (Dosis en texto): Si cuenta con el tiempo de tratamiento, colóquelo aquí.
+       o Start of administration (Inicio de administración): Si no cuenta con la fecha completa, puede
+           ingresar sólo uno (año) o dos campos (mes y año).
+       o End of administration (Fin de administración): Si no cuenta con la fecha completa, puede
+           ingresar sólo uno (año) o dos campos (mes y año). Si continúa con el tratamiento, dejar en
+           blanco.
+                                                                                                        30
+           o   Duration (Duración): coloque el valor y seleccione la unidad de tiempo del catálogo.
+           o   Route of administration (Vía de administración): utilice el catálogo para elegir la vía de
+               administración.
+           o   Route of administration text (Vía de administración en texto): usar este campo de texto libre
+               solo si no encontró la vía de administración específica en el catálogo o eligió Otro.
+
+       Para poder agregar más medicamentos sospechosos o concomitantes elija la opción “Add drug” (Agregar
+       medicamento).
+
+       Si tiene más de un régimen de dosificación para el mismo medicamento, por ejemplo, diferentes
+       posologías, lotes, fechas de administración, etc.), puede agregar con el ícono “+” en vez de agregar otro
+       medicamento.
+
+
+Reactions (Reacciones)
+
+   ●  Reaction/event as reported by the primary source (Reacción/evento tal cual fue reportado por el
+      notificador primario). Coloque el término de la reacción/evento reportado.
+      En este campo de texto libre se colocará el término literal, es decir, originalmente como se reportó por
+      el notificador primario.
+      Verificar que se mantiene el campo Spanish; Castilian (spa).
+      En esta sección NO DEBE REGISTRAR los medicamentos administrados al paciente para el tratamiento
+      de las reacciones/eventos.
+     o Reacción/evento (MedDRA). Proporcione el término MedDRA (LLT) o parte de este de la
+          reacción/evento y oprima el botón , elija el término deseado una vez desplegado el resultado.
+   ● Translation of reaction/event as reported by the primary source: Dejar el campo vacío.
+   ● Country where the reaction/event occurred (País donde ocurrió la reacción/evento): Elegir Paraguay.
+      Puede haber excepciones, por ejemplo, el paciente adquirió el medicamento en Paraguay, viajó a otro
+      país y presentó una RAM.
+   ● Start of reaction/event (Inicio de la reacción/evento): Si no cuenta con la fecha completa, puede ingresar
+      sólo uno (año) o dos campos (mes y año).
+   ● End of reaction/event (Fin de la reacción/evento): Si no cuenta con la fecha completa, puede ingresar
+      sólo uno (año) o dos campos (mes y año). Si el evento/reacción continúa dejar en blanco.
+   ● Duration (Duración): si el notificador primario proporciona la información o si las fechas de inicio y
+      término del evento/reacción lo permiten, establezca la duración de este.
+   ● Outcome at the time of last observation (Resultado la reacción/evento al momento de la última
+      observación). Elegir entre:
+           o Recovered / Resolved (Recuperado / Resuelto).
+           o Recovering / Resolving (Recuperando / Resolviendo).
+           o Not Recovered / Not Resolved / Ongoing (No recuperado / No resuelto / En curso).
+           o Recovered / Resolved with sequelae (Recuperado / Resuelto con secuela).
+                                                                                                            31
+            o   Fatal (Muerte).
+            o   Unknown (Desconocido).
+
+    ●   Medical confirmation by healthcare professional (Confirmación médica por un profesional de la salud).
+        Por lo general es afirmativo cuando el notificador primario (informante) es un médico u otro profesional
+        de la salud, sin embargo, cuando un consumidor/paciente, amigo, pariente o cuidador del paciente
+        médicamente calificado puede proporcionar documentación médica (por ejemplo, datos de laboratorio)
+        que respalden la aparición de una evento/reacción y que indique que un profesional de la salud
+        identificable sospecha una relación causal entre un medicamento y la reacción adversa notificada, puede
+        ser considerado como médicamente confirmado.
+    ●   Is this a serious reaction? (¿Es este un caso grave?): Si clasifica como grave, debe elegir necesariamente
+        al menos un criterio de gravedad de las siguiente:
+             o Seriousness (Gravedad)
+                      o Life threatening (Amenaza a la vida)
+                      o Results in death (Resulta en muerte)
+                      o Caused/prolonged hospitalisation (Causa hospitalización o la prolonga)
+                      o Disabling/incapacitating (Invalidez o incapacidad)
+                      o Congenital anomaly/birth defect (Anormalidades congénitas / defectos de nacimiento)
+                      o Other medically important condition (Otra condición médicamente importante)
+
+Para agregar más reacciones/eventos elija la opción “Add reaction” (Agregar reacción).
+
+Drug-reaction (Medicamento-Reacción)
+
+    ●   Rechallenge (Readministración):
+           o Was a rechallenge performed? (¿Se produjo una readministración?): si cuenta con información
+                que dé indicio de una readministración, elija SÍ. Si la información no lo señala, dejar en blanco.
+                Si elige SÍ, debe llenar el campo que se habilitará:
+                     o Outcome of rechallenge (Resultado de la readministración): elija entre:
+                              ● Reaction recurred (Recurrió la reacción): corresponde a una readministración
+                                  positiva.
+                              ● Reaction did not recur (La reacción no recurrió): corresponde a una
+                                  readministración negativa.
+                              ● Outcome unknown (Resultado desconocido).
+
+        Dado que e-Reporting Industria solicita información de readministración tanto para medicamentos
+        concomitantes como para los sospechosos y solo es de interés para el Dpto. de Farmacovigilancia la
+        readministración para medicamentos sospechosos, dejar vacíos los campos de readministración de los
+        medicamentos concomitantes.
+
+    ●   Time interval (Intervalo de tiempo): intervalo entre la administración del medicamento y la aparición de
+        la reacción/evento.
+                                                                                                              32
+           o   Time from first dose to start of reaction (Tiempo desde la primera dosis y el inicio de la reacción).
+               Coloque el valor y seleccione la unidad de tiempo del catálogo.
+           o   Time from last dose to start of reaction (Tiempo desde la última dosis y el inicio de la reacción).
+               Coloque el valor y seleccione la unidad de tiempo del catálogo.
+
+Other (Otro)
+
+   ●   Test results (Resultados de laboratorio)
+           o Test name (Nombre del análisis): coloque el nombre del análisis.
+           o Test date (Fecha del análisis): Si no cuenta con la fecha completa, puede ingresar sólo uno (año)
+               o dos campos (mes y año).
+           o Test result (Resultado del análisis): en el campo de texto libre coloque el valor y elija del catálogo
+               la unidad de medida. Puede utilizar los símbolos =, >, <, ≥, o ≤ que encontrará en el catálogo
+
+
+               ubicado a la izquierda del texto libre.
+           o   Test result code (Código del resultado del análisis): este campo permite un elemento descriptivo
+               para indicar el resultado del análisis:
+                    o Positive (Positivo)
+                    o Negative (Negativo)
+                    o Borderline (Límite)
+                    o Inconclusive (Inconcluso)
+           o   Test result text (Resultado del análisis en texto): si no le fue posible colocar el resultado del
+               análisis en el campo estructurado Test result debido a que no encontró la unidad de medida en
+               el catálogo, coloque el resultado en este campo de texto libre expresando la unidad de medida.
+               Si utilizó el campo Test result, deje éste en blanco.
+           o   Normal low value (Valor mínimo normal): en este campo debe capturar el “valor más bajo” en
+               el rango normal para la prueba, el cual suele ser publicado por el laboratorio que proporcionó el
+               resultado.
+           o   Normal high value (Valor máximo normal): en este campo debe capturar el “valor más alto” en
+               el rango normal para la prueba, el cual suele ser publicado por el laboratorio que proporcionó el
+               resultado.
+           o   Comments (Comentarios): si cuenta con más información sobre la prueba realizada que no esté
+               incluida en los campos estructurados, colóquela en este campo de texto libre.
+
+       Para agregar más pruebas de laboratorio elija la opción “Add test results” (Agregar resultados de
+       laboratorio).
+
+   ●   Drug history (Tratamiento médico previo): corresponde a medicamentos relevantes que consumió el
+       paciente previo a la presencia de la reacción/evento y que ha dejado de consumir. De continuar con el
+       tratamiento, este corresponderá a un medicamento concomitante y debe registrarse en la sección
+       “Drugs”.
+                                                                                                                 33
+            o   Name of drug as reported (Nombre del medicamento como fue reportado): Debe colocar la
+                denominación distintiva si cuenta con ella y entre paréntesis la denominación genérica.
+            o   Indication (MedDRA). Proporcione el término MedDRA (LLT) o parte de este de la indicación
+                terapéutica del medicamento y oprima el botón , elija el término deseado una vez desplegado
+                el resultado.
+            o   Reacción (MedDRA). Si el paciente presento alguna reacción/evento al medicamento,
+                proporcionar el término MedDRA (LLT) o parte de este de la reacción/evento y oprima el botón
+                   , elija el término deseado una vez desplegado el resultado, de lo contrario dejar en blanco.
+            o   Start date (Fecha de inicio): Si no cuenta con la fecha completa, puede ingresar sólo uno (año) o
+                dos campos (mes y año).
+            o   End date (Fecha de término): Si no cuenta con la fecha completa, puede ingresar sólo uno (año)
+                o dos campos (mes y año).
+
+        Para agregar más medicamentos del tratamiento médico previo elija la opción “Add drug history”
+        (Agregar medicamento previo).
+
+    ●   Medical history (Historia clínica):
+          o Patient medical history. Relevant medical history and concurrent conditions (not including
+               reaction/event) (Historia clínica del paciente. Historial clínico relevante y condiciones
+               concomitantes, sin incluir la reacción/evento): corresponde a información relevante (que ayude
+               a la evaluación causal) de la historia clínica y condiciones concomitantes (enfermedades,
+               condiciones como embarazo, cirugías, trauma psicológico, factores de riesgo, entre otros) del
+               paciente. Colocar las condiciones relevantes en cuestión. Si no cuenta con información sobre el
+               historial clínico del paciente, dejar en blanco.
+
+Assessment (Evaluación de causalidad).
+
+La evaluación de causalidad por parte de la empresa Titular de Registro Sanitario no es un campo obligatorio. La
+empresa Titular de Registro Sanitario podrá proporcionar una evaluación de causalidad utilizando las categorías
+probabilísticas de la OMS o algún otro método, cabe destacar que la evaluación de causalidad debe ser
+establecida acorde a procedimientos internos del Titular de Registro Sanitario y es de carácter opcional.
+
+    ●   Method of assessment (Método de evaluación): coloque en el campo de texto libre el nombre de la
+        metodología utilizada, por ejemplo, Algoritmo de Naranjo, categorías OMS, ESAVI OMS, Dicotómica,
+        entre otras.
+    ●   Source of assessment (Fuente de evaluación): corresponde a la identidad quien realiza la evaluación. En
+        primera instancia, debe colocarse la evaluación de la empresa Titular de Registro Sanitario, o para el caso
+        de los estudios clínicos la del Investigador principal, pero también puede agregar la evaluación del
+        notificador primario (informante) si cuenta con ella.
+    ●   Result of assessments (Resultado de la evaluación): coloque en el campo de texto libre el resultado de
+
+                                                                                                                  34
+       la evaluación para cada reacción/evento de acuerdo con la metodología que se utilizó. Para poder
+       colocar el resultado, es necesario que haya ingresado al reporte al menos un medicamento sospechoso
+       o dos interactuantes.
+
+Para agregar más evaluaciones de causalidad elija la opción “Add causality assessment” (agregar evaluación de
+causalidad). Si cuenta con una evaluación, por ejemplo, del médico informante, la puede agregar; coloque
+Notificador primario en Source of assessment “Fuente de Evaluación”.
+
+Case sumaries (Caso narrativo)
+
+   ●   Case narrative (Caso narrativo): deberá colocar la narrativa del caso con las palabras y frases utilizadas
+       por el notificador inicial/original (tal cual fue notificado por éste), manteniendo la narrativa original. Citar
+       las manifestaciones clínicas. Indicar el diagnóstico clínico de certeza y/o presuntivo que motivó la
+       medicación y posteriormente los signos y síntomas de la reacción adversa. Si se detecta un efecto
+       terapéutico no conocido hasta la fecha, puede indicarse en este espacio. En caso de tratarse de
+       malformaciones congénitas, precise el momento del embarazo en que ocurrió el impacto.
+       Si reporta otro problema de seguridad relacionado con el uso de medicamentos y vacunas, debe describir
+       de qué problema se trata (sobredosis, sospecha de falsificación, mal uso, abuso, error de medicación,
+       uso fuera de indicación, exposición ocupacional, entre otros).
+       Cuando ingresa información de seguimiento en este campo (Ver Edit Report), colóquelo debajo de la
+       información inicial o el seguimiento anterior, separándolo de la siguiente manera:
+
+       Seguimiento 1, 2, 3, 4, etc, Información recibida el día…
+
+       Si el caso se considera cerrado o requerirá seguimiento debe especificarlo también en este campo.
+       Dado que este campo tiene un límite de 20 mil caracteres, existe la posibilidad de que para algunos casos
+       narrativos muy largos este campo sea insuficiente. Puede utilizar el campo Case summary and reporter's
+       comments in native language para continuar con el texto del caso.
+   ●   Reporter's comments (Comentarios de notificador). En este campo puede agregar comentarios
+       adicionales que aporte el notificador primario en caso de contar con ellos.
+   ●   Company's comments (Comentarios de la compañía): comentarios adicionales que pudiera aportar la la
+       empresa Titular de Registro Sanitario notificante o en el caso de estudios clínicos, los comentarios del
+       patrocinador del estudio.
+   ●   Case summary and reporter's comments in native language (Resumen del caso y comentarios del
+       notificador en idioma nativo): no utilizar, dejar en blanco, a menos que el caso narrativo tenga más de
+       20 mil caracteres y el campo Case narrative sea insuficiente.
+
+Additional document (Documentos adicionales).
+
+       Esta sección le permitirá cargar documentos relevantes en la
+       evaluación de causalidad del caso. Algunos ejemplos pueden ser
+       (pero no se limitan a estos):
+                                                                                                                    35
+    ●   Resultados de pruebas
+    ●   Certificado de defunción                                                              IMPORTANTE
+    ●   Certificado de vacunación
+                                                                                        Es necesario que los
+     Coloque en el campo de texto libre el nombre del documento y cargue                  documentos que
+el archivo en formato PDF, ya sea arrastrándolo y soltándolo en la sección              requiera adjuntar se
+gris o abriéndolo desde su explorador de archivos con la opción “Browse”.             encuentren en formato
+                                                                                       PDF y que no excedan
+                                                                                      los 2 MB para poderlos
+                                                                                       cargar sin problemas.
+
+
+
+
+Si requiere adjuntar más documentos, lo puede hacer con la opción “Add additional document”.
+
+                                                                                   IMPORTANTE
+Submit report (Enviar reporte)
+Para poder enviar el reporte, es necesario que haya ingresado la          Si la notificación no cuenta con al
+información mínima requerida por el sistema. Si no lo ha hecho,         menos los 4 criterios fundamentales
+en estasección se listará la información faltante o errónea, la cual     (Datos el reporte, del paciente, del
+tendrá que completar o revisar. También se presentarán en color        medicamento y de la reacción adversa),
+rojo la información faltante en las diferentes secciones que           no debeser enviada. Deberá hacer una
+conforman el reporte.                                                  búsqueda de información faltante para
+Cuando ya tenga lista la información de su reporte, de click en                  poder reportar el caso.
+“Submit” (Enviar).
+
+
+
+
+                                                                                                                36
+Una vez enviado el reporte se mostrará una ventana la cual puede ser utilizar como un acuse de envío, ya que le
+proporcionará un identificador de envío.
+
+
+
+
+Download report (Descargar reporte)
+
+Puede descargar el reporte una vez que lo ha enviado, ya que será la única forma de realizar un seguimiento
+correspondiente o ir a la opción “Estado de envío” del menú superior. En esta ventana ubique el reporte
+enviado (mediante el Identificador de envío en su defecto el Identificador único del reporte de
+seguridad) y a continuación oprima el botón .
+La información que generó durante el ingreso del reporte se descargará en un fichero XML.
+
+
+
+
+                                                                                                              37
+Al oprimir Download, se descargará el archivo XML. Es importante que guarde este archivo en su respaldo, ya
+que deberá utilizarlo si requiere realizar un seguimiento del caso. Ver “Edit report” (Editar reporte). Por defecto,
+el sistema nombrará el archivo con el Número de identificación único mundial.
+
+Adicionalmente, e-Reporting Industria proporciona recibos de confirmación conocidos como acknowledgement
+log (ackLog) de los reportes ingresados, los cuales estarán disponibles por 35 días una vez realizado el envío de
+la notificación. Podrá encontrarlos y descargarlos en la sección “Submissión Status” (Estado de envío) del menú
+superior derecho. Si su base de datos de Farmacovigilancia permite ejecutar estos recibos de confirmación
+electrónicos, estos funcionarán como tal para su base de datos.
+
+Es muy importante diferenciar el archivo XML del reporte que se descarga tras el envío y que es fundamental
+para seguimientos posteriores, a los acuses de recibo (ackLog). Estos últimos no están diseñados para la carga
+de un seguimiento.
+
+                                                  IMPORTANTE
+Tanto el archivo XML como el acklog, estarán disponibles en la sección Estado de envío únicamente por 35 días
+ una vez realizado el envío del reporte, por lo cual se exhorta a descargarlos inmediatamente, ya que pasado
+                                      este tiempo no se podrán recuperar.
+
+
+
+
+Puede abrir el acuse (ackLog) en Chrome o en otro navegador e identificar la hora de hora de finalización y envío
+de su reporte. Notará que para el valor “creationTime value” está establecido en el horario CET (Central European
+Time) por lo que, para fines de cumplimiento de los tiempos de notificación, debe considerar la diferencia horaria
+con relación al horario de Paraguay (GMT-4).
+
+    3.9.3. Edit report (Editar un reporte).
+Esta opción permite editar un reporte ya generado en el módulo de carga manual para agregar información
+con fines de seguimiento.
+
+
+
+
+                                                                                                                 38
+Recuerde: un reporte de seguimiento es aquel en donde se agrega o completa información importante
+para la evaluación de causalidad del caso. Por ejemplo, se tiene (no es limitativo):
+
+    ●   Fechas de inicio y término de la reacción
+    ●   Fechas de administración de medicamentos
+    ●   Adición de medicamentos concomitantes
+    ●   Adición de enfermedades concomitantes
+    ●   Adición de resultados de laboratorio
+
+                                           IMPORTANTE
+
+     Hay que considerar que,para efectos de seguimiento, el archivo que corresponde al acuse (ackLog)
+             disponible en la ventanaSubmissión Status NO deberá usarse para estepropósito.
+
+Elegir la opción “Edit report” del menú superior.
+
+
+
+
+Cargue el archivo XML generado en el reporte inicial o seguimiento anterior (el cual debió guardar en su
+computadora), ya sea arrastrándolo y soltándolo en la sección gris o abriéndolo desde su explorador de archivos
+con la opción “Browse”.
+
+
+
+
+Espere a que cargue el reporte. Inmediatamente se abrirá el reporte con todas las secciones que lo componen,
+habilitadas para edición.
+
+Debe agregar la nueva información o modificaciones respectivas del seguimiento en los campos
+correspondientes, entre ellas es fundamental actualizar la Date of most recent information (Fecha de información
+más reciente) que corresponde a la fecha cuando recibió el seguimiento en la empresa Titular de Registro
+                                                                                                             39
+Sanitario. Es importante que, en el seguimiento, además de agregar la nueva información en los campos
+específicos, también actualice el caso narrativo con la nueva información. Para separar la información de la inicial
+o los seguimientos anteriores, utilice una línea y coloque la nueva información debajo, agregando el texto:
+Seguimiento 1, Seguimiento 2, según corresponda.
+
+
+
+
+Una vez que haya concluido la captura de información de seguimiento, debe enviar el reporte y descargarel archivo
+XML correspondiente. Recuerde que, si no descarga el archivo, no podrá realizar el seguimiento posterior.
+
+ Recuerde que el archivo del ackLog no debe ser usado en esta actividad pues el archivo no está diseñado para hacer un
+                                                    seguimiento.
+
+    3.9.4. Anulación de un reporte en carga manual
+Por el momento la función de anulación no está implementada en el módulo de carga manual de datos, por lo
+que, en caso de tener un reporte de anulación, se procederá de la siguiente manera:
+
+    ●   El usuario debe cargar en el módulo de carga manual el seguimiento que quiere anular y en el campo de
+        Caso narrativo debe colocar en mayúsculas la leyenda “Este reporte debe ser anulado”, junto con la
+        razón de la anulación. Debe descargar el archivo y el ackLog.
+    ●   Adicionalmente, el usuario debe enviar un correo a la cuenta farmacovigilancia@dinavisa.gov.pycon el
+        asunto: “Anulación de un reporte en carga manual” proporcionando el WWUID del caso y la solicitud de
+        anulación.
+    ●   El Dpto. de Farmacovigilancia procederá a la búsqueda y eliminación del reporte en la base de datos y
+        dará respuesta al correo del usuario con la confirmación de la eliminación.
+
+    3.9.5. Situaciones especiales en el módulo de carga manual.
+
+    3.9.5.1. No se pudo descargar el archivo del caso inicial o seguimiento ingresado
+
+Es crucial el paso de descarga del archivo una vez enviado un caso inicial o seguimiento y se debe tener mucho
+cuidado en no omitirlo. Las fallas técnicas que pudiera tener el módulo de carga manual que podrían originar
+que no se pueda descargar el archivo correspondiente son excepcionales y los problemas en la estabilidad de la
+conexión a internet del usuario, o la omisión del paso de descarga del archivo por parte del usuario, no son parte
+de estas situaciones excepcionales.
+
+El Dpto. de Farmacovigilancia no espera tener muchas situaciones excepciones por falla técnica del módulo, sin
+embargo, se tendrá un mecanismo para casos excepcionales (falla de la plataforma) cuando no se pueda
+descargar el archivo del reporte inicial y este consistirá en lo siguiente:
+                                                                                                                    40
+    1) Si el sistema no permitió la descarga del archivo del caso inicial o seguimiento por falla técnica, debe
+       enviar un correo electrónico a la cuenta: farmacovigilancia@dinavisa.gov.py con el asunto “Fallaen la
+       descarga del archivo”, proporcionando el WWUID del caso, y la fecha cuando se ingresó el caso.
+    2) El Dpto. de Farmacovigilancia revisará si el caso fue ingresado correctamente en VigiFlow y de ser así,
+       proporcionará el reporte ingresado en formato PDF como respuesta al correo del usuario.
+    3) El usuario deberá tomar en cuenta el archivo PDF que recibió del Dpto. de Farmacovigilancia y deberá
+       volver a ingresar el caso ya con la información de seguimiento, teniendo cuidado de poner exactamente
+       los identificadores (WWUID y SRUID) del caso inicial para que al entrar a VigiFlow el Dpto. de
+       Farmacovigilancia pueda detectarlo como seguimiento. No olvidar descargar el archivo una vez enviada
+       la notificación. Responder el correo al Dpto. de Farmacovigilancia indicando que ya se concluyó el ingreso
+       del caso.
+    4) El Dpto. de Farmacovigilancia procederá a la eliminación del primer reporte, quedando el segundo que
+       ingresó el usuario y se avisará a este como respuesta al correo anterior.
+
+    3.10.        Estado de envío y revisión de ackLogs
+
+El estatus de envío solo muestra que el reporte ha sido enviado exitosamente desde e-Reporting Industria hacia
+VigiFlow, pero, aun así, VigiFlow puede rechazar el reporte. El medio para comprobar que el reporte ha sido
+recibido correctamente por la autoridad regulatoria (para ambos módulos) es la carga del ackLog (para
+industrias que tienen la base de datos donde el ackLog puede cargarse) o la lectura del ackLog (para industrias
+de entrada manual). El campo que indica que el reporte ha sido cargado correctamente o no a VigiFlow es el
+siguiente:
+
+    E2B R2
+        Recibido correctamente
+
+        OK
+    ●   01=All reports loaded into database
+    ●   <transmissionacknowledgmentcode>01</transmissionacknowledgmentcode>
+
+
+    ●   01=Report loaded successfully
+    ●   <reportacknowledgmentcode>01</reportacknowledgmentcode>
+
+
+        Rechazado
+
+        Error
+    ●   02=Not accepted
+    ●   <transmissionacknowledgmentcode>02</transmissionacknowledgmentcode>
+    ●   <parsingerrormessage>Could not understand the import format!</parsingerrormessage>
+
+
+    ●   03=SGML parsing error
+    ●   <transmissionacknowledgmentcode>03</transmissionacknowledgmentcode>
+    ●   <parsingerrormessage>Message sender and/or receiver identifier doesn't match expected values</parsingerrormessage>
+
+                                                                                                                             41
+E2B R3
+    Recibido correctamente
+
+    OK
+
+●   AA=Accept - successfully processed!
+●   Transmission Acknowledgement Code;
+●   <acknowledgement typeCode="AA">
+
+
+●   CA=Commit Accept
+●   Acknowledgement Code for an ICSR Message;
+●   <acknowledgement typeCode="CA">
+
+
+    Rechazado
+
+    Error
+●   CR=Commit Reject (not loaded)
+●   <acknowledgement typeCode="CR">
+●   <acknowledgementDetail>
+●   <text>Existing ICSR is nullified, followup not allowed.</text>
+●   or
+●   <acknowledgementDetail>
+●   <text>Invalid MedDRA code found: 0</text>
+
+
+●   AE=Parsial
+●   <acknowledgement typeCode="AE">
+●   <acknowledgementDetail>
+●   <text>Could not persist all information</text>
+
+
+●   AR=Reject
+●   <acknowledgement typeCode="AR">
+●   <acknowledgementDetail>
+●   <text>Could not understand the import data: The 'extension' attribute is invalid - The value '' is invalid according to its datatype
+    'urn:hl7-org:v3:st' - The actual length is less than the MinLength value., Line: 17 Position: 53. The 'extension' attribute is invalid
+    - The value '' is invalid according to its datatype 'urn:hl7-org:v3:st' - The actual length is less than the MinLength value., Line:
+    426 Position: 51. </text>
+
+
+
+
+                                                                                                                                       42
+A continuación, se presentan algunos ejemplos de ackLog en donde se muestran los campos anteriormente
+señalados.
+
+
+E2B R2
+      Error
+
+
+  ●   <?xml version="1.0" encoding="UTF-8"?>
+  ●   <!DOCTYPE ichicsrack SYSTEM"http://eudravigilance.ema.europa.eu/dtd/ichicsrack11xml.dtd">
+  ●   <ichicsrack lang="en">
+  ●    <ichicsrmessageheader>
+  ●              <messagetype>ichicsrack</messagetype>
+  ●   <messageformatversion>1.1</messageformatversion>
+  ●   <messageformatrelease>1.0</messageformatrelease>
+  ●   <messagenumb>4a58dec0-96b5-425a-8003-2f37ff3014f2</messagenumb>
+  ●   <messagesenderidentifier>MPA</messagesenderidentifier>
+  ●   <messagereceiveridentifier>BAYER</messagereceiveridentifier>
+  ●   <messagedateformat>204</messagedateformat>
+  ●   <messagedate>20201005200414</messagedate>
+  ●     </ichicsrmessageheader>
+  ●   <acknowledgment>
+  ●     <messageacknowledgment>
+  ●   <icsrmessagenumb>7401084_8P1</icsrmessagenumb>
+  ●   <localmessagenumb>4a58dec0-96b5-425a-8003-2f37ff3014f2</localmessagenumb>
+  ●   <icsrmessagesenderidentifier>BAYER</icsrmessagesenderidentifier>
+  ●   <icsrmessagereceiveridentifier>MPA</icsrmessagereceiveridentifier>
+  ●   <icsrmessagedateformat>204</icsrmessagedateformat>
+  ●   <icsrmessagedate>20181025021712</icsrmessagedate>
+  ●   <transmissionacknowledgmentcode>03</transmissionacknowledgmentcode>
+  ●   <parsingerrormessage>Message sender and/or receiver identifier doesn't match expected values</parsingerrormessage>
+  ●     </messageacknowledgment>
+  ●   </acknowledgment>
+  ●   </ichicsrack>
+
+
+
+
+                                                                                                                           43
+E2B R3
+    OK
+
+●   <?xml version="1.0" encoding="UTF-8"?>
+●   <MCCI_IN200101UV01 xmlns="urn:hl7-org:v3" ITSVersion="XML_1.0" xsi:schemaLocation="urn:hl7-org:v3
+    MCCI_IN200101UV01.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+●   <id extension="842e09df-bb47-48d3-90f9-d5d36a06c39b" root="2.16.840.1.113883.3.989.2.1.3.20"/>
+●   <creationTime value="20201005201537+0200"/>
+●   <responseModeCode code="D"/>
+●   <interactionId extension="MCCI_IN200101UV01" root="2.16.840.1.113883.1.6"/>
+●   <MCCI_IN000002UV01>
+●   <id extension="UMC-UMCORG-276" root="2.16.840.1.113883.3.989.2.1.3.19"/>
+●   <creationTime value="20201005201537+0200"/>
+●   <interactionId extension="MCCI_IN000002UV01" root="2.16.840.1.113883.1.6"/>
+●   <processingCode code="P"/><processingModeCode code="T"/>
+●   <acceptAckCode code="NE"/>
+●   <receiver typeCode="RCV">
+●   <device determinerCode="INSTANCE" classCode="DEV">
+●   <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.16"/>
+●   </device>
+●   </receiver>
+●   <sender typeCode="SND">
+●   <device determinerCode="INSTANCE" classCode="DEV">
+●   <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.15"/>
+●   </device>
+●   </sender>
+●   <attentionLine>
+●   <keyWordText code="1" codeSystemVersion="1.0" codeSystem="2.16.840.1.113883.3.989.2.1.1.24"/>
+●   <value value="20200929133859+0000" xsi:type="TS"/>
+●   </attentionLine>
+●   <acknowledgement typeCode="CA">
+●   <targetMessage>
+●   <id extension="SE-UMCTEST-000007" root="2.16.840.1.113883.3.989.2.1.3.1"/>
+●   </targetMessage>
+●   <acknowledgementDetail>
+●   <text/></acknowledgementDetail>
+●   </acknowledgement>
+●   </MCCI_IN000002UV01>
+●   <receiver typeCode="RCV">
+●   <device determinerCode="INSTANCE" classCode="DEV">
+●   <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.18"/>
+●   </device>
+●   </receiver>
+●   <sender typeCode="SND">
+●   <device determinerCode="INSTANCE" classCode="DEV">
+●   <id extension="UMC" root="2.16.840.1.113883.3.989.2.1.3.17"/>
+●   </device>
+●   </sender>
+
+                                                                                                        44
+●   <attentionLine>
+●   <keyWordText code="2" codeSystemVersion="1.0" codeSystem="2.16.840.1.113883.3.989.2.1.1.24"/>
+●   <value extension="842e09df-bb47-48d3-90f9-d5d36a06c39b" root="2.16.840.1.113883.3.989.2.1.3.21" xsi:type="II"/>
+●   </attentionLine>
+●   <attentionLine>
+●   <keyWordText code="3" codeSystemVersion="1.0" codeSystem="2.16.840.1.113883.3.989.2.1.1.24"/>
+●   <value value="20200929133859+0000" xsi:type="TS"/>
+●   </attentionLine>
+●   <acknowledgement typeCode="AA">
+●   <targetBatch>
+●   <id extension="a60401bb-e8f1-4d4f-925d-66ab95d48525" root="2.16.840.1.113883.3.989.2.1.3.22"/>
+●   </targetBatch>
+●   <acknowledgementDetail>
+●   <text/>
+●   </acknowledgementDetail>
+●   </acknowledgement>
+●   </MCCI_IN200101UV01>
+
+
+
+
+                                                                                                                      45
+4. Preguntas frecuentes
+4.1. ¿Puedo notificar un caso que no tenga los 4 criterios mínimos?
+
+    No, adicionalmente el sistema indicará los campos mínimos obligatorios (conforme al estándar ICH-E2B) para poder
+    enviar un caso al Dpto. de Farmacovigilancia.
+
+4.2. ¿Cuáles son los 4 criterios mínimos que debe contener un reporte?
+
+    Datos del reporte, del paciente, del medicamento y de la reacción adversa
+
+4.3. ¿Cuántos usuarios se proporcionarán por Empresa, la contraseña deberá ser exclusiva por usuario?
+
+    Por el momento, se otorgarán hasta 3 (tres) usuarios por cada Empresa Titular de Registro Sanitario, ya sea para el
+    módulo de carga manual o para el módulo de carga XML. Cada usuario deberá generar su propia contraseña.
+
+4.4. ¿Qué sucede con los reportes que se notificaron inicialmente en Formato de Ficha de Notificación
+     (papel) o en e-Reporting ordinario (a través de la página web de DINAVISA)?
+
+    Si un reporte se notificó inicialmente a través de la Ficha de notificación o e-Reporting ordinario, deberá someter
+    los seguimientos hasta cerrarlo por correo electrónico a farmacovigilancia@dinavisa.gov.py, indicando que
+    corresponde a un seguimiento y proporcionando datos del reporte inicial (Ejemplo: fecha de reporte inicial/código
+    de identificación)
+
+4.5. ¿Es posible que dos usuarios reporten simultáneamente (si se cuenta con más de 1 usuario)?
+
+    Si. Las dos cuentas que se otorgan por laboratorio son independientes y se pueden ingresar casos al módulo de
+    carga manual o cargar de forma simultánea. Pero, una cuenta no puede ser utilizada simultáneamente por dos
+    personas, cada cuenta es individual.
+
+4.6. ¿Hay opción en la plataforma para guardar el caso y terminarlo después?
+
+    No. Si deja la carga de información de un caso incompleta y cierra sesión, sin enviarlo y descargarlo, no podrá
+    recuperar la información después y deberá ingresarla nuevamente.
+
+    Se solicita que se ingrese el caso por completo, se envíe y descargue el archivo y acuse de recepción (ackLog) antes
+    de cerrar sesión.
+
+4.7. ¿Se manejará un límite de tiempo para ingresar un reporte? ¿Cuánto tiempo puede mantenerse la
+     sesión activa?
+
+    No hay un límite de tiempo siempre que esté ingresando información constantemente en periodos cortos. Pero si
+    permanece la página abierta sin actividad en períodos largos, después de un tiempo se cerrará la sesión por
+    seguridad.
+
+    Se solicita mantener la sesión activa solo si ingresará información, de lo contrario debe cerrarla.
+
+                                                                                                                     46
+4.8. ¿Se deberá realizar la notificación por cada medicamento sospechoso?
+
+    No. Un reporte de caso individual puede contener uno o más medicamentos sospechosos, así como una o más
+    RAM, SRAM, ESAVI.
+
+4.9. ¿Es posible regresar entre secciones para editar información en caso de haber cometido algún error en
+     la carga de datos?
+
+    Si es posible. La navegación entre secciones no está limitada a que aporte toda la información obligatoria en una
+    sección para pasar a la siguiente.
+
+4.10.      ¿Es posible guardar la información para continuar con el reporte o deberá realizarse en una
+    misma sesión?
+
+    La carga de datos o ingreso de un reporte debe realizarse en una sesión. El sistema no guarda el reporte hasta que
+    lo envíe.
+
+4.11.       En el caso de reportes provenientes de literatura, ¿es un requerimiento adjuntar la publicación
+    de referencia?
+
+    No es un requerimiento ni campo obligatorio.
+
+4.12.      ¿Para estudio clínico, el medicamento del estudio clínico es siempre el medicamento
+    sospechoso?
+
+    Puede agregar más de un medicamento sospechoso pero el de estudio y/o comparadores en estudios cegados,
+    deben marcarse como sospechosos al menos.
+
+4.13.       En la sección de narrativa del caso en las tres secciones, ¿cuántos caracteres se pueden cargar?
+
+    La capacidad del campo “Case narrative” (Casi narrativo) es de 20 mil caracteres (considerando espacios). Si su
+    reporte tiene un caso narrativo que sobrepasa este límite, coloque el resto del texto en el campo Case summary
+    and reporter's comments in native language (Resumen del caso y comentarios del notificador primario en idioma
+    nativo).
+
+4.14.       ¿Se deberá incluir la causalidad de cada una de las RAM reportadas?
+
+    La evaluación de causalidad se debe realizar para cada RAM/SRAM/ESAVI, solo es aplicable para el/los
+    medicamento/s sospechoso/s.
+
+4.15.      ¿Cómo se pueden revisar los casos cargados anteriormente y dentro del tiempo antes de que
+    se borren?
+
+    Los casos cargados previamente (de los últimos 35 días) pueden revisarse en la sección “Susmission status” (Estado
+    de envío) del menú superior derecho. En esta sección también puede descargar el ackLog.
+
+
+
+                                                                                                                   47
+4.16.       ¿Qué sucede con los reportes que se notificaron inicialmente en en e- Reporting ordinario?
+    Si un reporte se notificó inicialmente a través e-Reporting ordinario, deberá someter los seguimientos
+    por el mismo medio.
+
+4.17.       Si antes de enviar el caso no aparecen datos faltantes o erróneos en rojo y aun así no se puede
+    enviar el caso, ¿Qué se debe hacer?
+
+    Cuando intente enviar el reporte (Submit report) y tenga campos faltantes o incorrectos, esa sección le mostrará
+    las secciones donde debe regresar a aportar o corregir la información faltante.
+
+4.18.        Si voy a reportar un seguimiento, ¿requiero cargar todo el caso nuevamente?
+
+    No requiere cargar todo el caso nuevamente. Una vez sometido el caso inicial en el módulo de carga manual, debe
+    descargar inmediatamente el archivo XML y guardarlo en el directorio de su computadora (se sugiere establecer el
+    procedimiento correspondiente para gestionar y respaldar estos archivos). Cuando requiera hacer un seguimiento
+    debe elegir la opción Edit report (editar reporte) del menú superior Ingreso de información; aquí debe abrir el
+    archivo del caso inicial y una vez hecho esto, el sistema cargará toda la información que ingresó inicialmente. Debe
+    realizar las modificaciones y adiciones de información que requiera el seguimiento, agregando también en el campo
+    Caso narrativo, la narrativa adicional de seguimiento.
+
+    Recuerde que el archivo del ackLog no debe ser usado en esta actividad pues el archivo no está diseñado para hacer
+    un seguimiento.
+
+4.19.        Si no descargué el reporte, ¿ya no es posible descargarlo?
+
+    Si, pueden revisarse en la sección “Susmission status” pero sólo por un periodo de 35 días, por ello se sugiere
+    descargarlo y guardarlo inmediatamente cuando se envía el reporte.
+
+4.20.      Si aparecen otros problemas que no se mencionan en esta guía ¿Cómo y a dónde se deben
+    reportar? ¿Existe algún plan de contingencia, si la plataforma no funciona? ¿Cómo se reportarían los
+    casos?
+
+    El módulo de carga manual de e-Reporting industria es continuamente monitoreado y actualizado por el Uppsala
+    Monitoring Centre (UMC) para asegurar su correcto funcionamiento. Cuando el UMC realiza actualizaciones, no
+    tarda más que unas horas en concluirlas por lo que el acceso puede ser intermitente para algunos usuarios. En este
+    caso, debe esperar un par de horas y volver a intentar el acceso.
+
+    Cabe señalar que si en el e-Reporting ordinario, extraordinariamente presentó algún inconveniente en su operación
+    a pesar de que no está diseñada para recibir gran cantidad de reportes provenientes de la industria, se considera
+    que e-Reporting Industria, el cual está preparado para recibir una cantidad mayor de reportes, no tendrá
+    contratiempos mayores.
+
+
+
+
+                                                                                                                     48
+4.21.      En caso de error en la plataforma y/o no disponibilidad del sistema, ¿hay alguna otra opción
+    para reporte de casos?
+
+
+o      Si tiene un problema en el acceso a la plataforma, intente lo siguiente:
+o      Acceder desde el enlace que se encuentra en este manual y no a través del que se guarda en el caché de su
+       computadora o el historial.
+o      Borrar las cookies del explorador utilizado.
+o      Acceder a la plataforma mediante otro navegador.
+o      Cerciorarse que se coloca el usuario y contraseña correctos.
+o      Si ha olvidado su contraseña, debe generar otra para que pueda acceder al módulo.
+
+
+
+
+                                                                                                                   49
+                                                       5. Anexo A
+
+
+                        Términos y condiciones de uso e-Reporting Industria
+
+
+Descripción
+
+e-Reporting Industria es una plataforma desarrollada por el Uppsala Monitoring Centre (UMC) específicamente para que la
+industria farmacéutica notifique a la Autoridad Regulatoria Reportes de Casos Individuales de Reacciones Adversas a
+Medicamentos (RAM), Sospechas de Reacciones Adversas a Medicamentos (SRAM), Eventos Supuestamente Atribuibles a
+la Vacunación o Inmunización (ESAVI), y cualquier problema de seguridad relacionado con el uso de medicamentos y vacunas
+mediante una plataforma estandarizada y diseñada para la mejor colecta de información. E-Reporting Industria está
+vinculado a VigiFlow, herramienta utilizada para la gestión de Reportes de Casos Individuales a nivel nacional. El
+Departamento de Farmacovigilancia de la Dirección Nacional de Vigilancia Sanitaria opera VigiFlow a nivel nacional como
+país perteneciente al Programa Internacional de Monitoreo de Medicamentos de la Organización Mundial de la Salud (OMS)
+para la gestión de los reportes de seguridad de casos individuales.
+
+El Dpto. de Farmacovigilancia-DINAVISA ha definido el uso exclusivo de e-Reporting Industria para los Titulares de Registro
+Sanitario de Especialidades Farmacéuticas, Medicamentos Biológicos y Suplementos Dietarios registrados en Paraguay.
+
+Declaraciones
+
+El Dpto. de Farmacovigilancia-DINAVISA declara que:
+
+    I.    La Dirección Nacional de Vigilancia Sanitaria, a través del Departamento de Farmacovigilancia, se encarga
+          conforme la Reglamentación vigente, de emitir los lineamientospara la operación de la Farmacovigilancia en el
+          territorio nacional, entre los que se encuentra:
+             a. Establecer y difundir requerimientos y formatos en materia de Farmacovigilancia, para la notificación de
+                  RAM, ESAVI y cualquier otro problema de seguridad relacionado con el uso de los medicamentos y
+                  vacunas, INCLUYENDO las herramientas electrónicas para la operación de la notificación, consideraciones
+                  de uso y guías para operación.
+
+El Usuario declara que:
+
+    I.   Como usuario de e-Reporting Industria, es un Titular de Registro Sanitario de Especialidades Farmacéuticas,
+         Medicamentos Biológicos y/o Suplementos Dietarios registrados en Paraguay.
+    II. Todo uso no autorizado por alguna entidad mencionada en el punto anterior representa una violación.
+    III. Conoce el contenido y las obligaciones que se desprenden de esta carta de términos y condiciones de uso de e-
+         Reporting Industria, y por lo tanto se obliga en términos de este, a cumplir las siguientes reglas de acceso y uso.
+
+
+
+
+                                                                                                                         50
+Reglas de acceso y uso
+
+   I.      El usuario de e-Reporting Industria es responsable de mantener la confidencialidad de su contraseña y las
+           consecuencias derivadas de no hacerlo así. Debe proteger su contraseña y no compartirla. Si sabe de un uso
+           no autorizado de su cuenta, debe cambiar su contraseña de inmediato e informar al nivel jerárquico superior.
+   II.     El usuario de e-Reporting Industria acepta no usarlo indebidamente ni ayudar a nadie a hacerlo, por ejemplo,
+           en las siguientes situaciones:
+           a. Explorar, escanear o poner a prueba la vulnerabilidad del sistema.
+           b. Infringir o eludir cualquier medida de seguridad o autenticación.
+           c. Vender los servicios de e-Reporting Industria.
+           d. Usar de forma ilegal, fraudulenta o perjudicial.
+           e. Dentro del sistema, copiar, almacenar, alojar, transmitir, enviar, usar, publicar o distribuir cualquier
+                material que consista (o esté vinculado) a cualquier spyware, virus informático, troyano, gusano,
+                registrador de teclas, rootkits u otro software informático malicioso.
+           f. Compartir la contraseña de su cuenta o dar acceso a personas no autorizadas a su cuenta.
+   III.    La información que se comparte a través de e-Reporting industria debe ser tratada de conformidad con la Ley
+           que Reglamenta la Información de Carácter Privado, Ley de Acceso a la Información Pública y demás
+           normatividad aplicable a la materia.
+   IV.     El usuario de e-Reporting Industria reconoce el hecho de que el Uppsala Monitoring Centre-UMC a través del
+           Departamento de Farmacovigilancia-DINAVISA le concede el acceso a esta herramienta, pero no se le otorga
+           ningún derecho de licencia, patente o propiedad intelectual sobre el mismo.
+
+
+
+
+                                                                                                                    51
+                                     6. Anexo B
+
+
+Guía técnica para el uso de WHODrug Global en los XMLs cargados en Vigiflow
+   eReporting en la industria para el cumplimiento del estándar E2B (R3).
+
+
+
+
+                                                                              52
+Guía técnica para el uso
+de WHODrug Global en
+archivos XML cargados
+en VigiFlow-eReporting
+Industria para el
+cumplimiento del
+estándar E2B (R3)
+                                                                                                                              Technical guidance EB2 (R3)
+
+
+
+
+Contenido
+   Introducción ................................................................................................................... 2
+         Ejemplo ................................................................................................................................................... 2
+   WHODrug Global: consideraciones del formato.......................................................... 3
+   Envío de reportes mediante XML E2B(R3) y uso del OID ............................................. 4
+   Campos E2B(R3) compatibles con información de WHODrug Global ........................ 4
+   Los reportes recibidos y su presentación en VigiFlow ................................................. 5
+   Consideraciones de la versión de WHODrug Global a utilizar.................................... 6
+   Soporte técnico............................................................................................................... 6
+
+
+
+
+                                                                                                                                                                    1
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                             Technical guidance EB2 (R3)
+
+
+
+Introducción
+El diccionario de productos farmacéuticos WHODrug Global, desarrollado y mantenido por el
+Centro de Monitoreo de Uppsala (UMC), es una referencia internacional de información sobre
+medicamentos (incluidas vacunas) y es el diccionario de referencia de medicamentos más
+utilizado en el mundo en la actualidad. WHODrug Global facilita la identificación y el
+intercambio de información sobre medicamentos.
+Esta ‘(Guía técnica para el uso de WHODrug Global en los archivos XML cargados en VigiFlow-
+eReporting Industria para el cumplimiento del estándar E2B (R3))' está dirigida a las agencias
+reguladoras nacionales o regionales y otras entidades relevantes involucradas en la formulación
+de políticas, recomendaciones y/o requisitos nacionales o regionales para el envío de reportes
+de casos individuales de seguridad de medicamentos (ICSR) en formato XML y con información
+de WHODrug Global, a través de VigiFlow- eReporting Industria, en alineación con el estándar
+E2B(R3).
+Este documento no pretende ser una guía completa de todos los aspectos que componen el
+diccionario WHODrug Global o el estándar E2B(R3), sino más bien una breve descripción que
+destaca las consideraciones clave. Si tiene alguna pregunta, por favor comuníquese con
+WHODrug@who-umc.org .
+
+
+
+                                           Resumen ejecutivo
+  Recomendaciones para el uso de WHODrug Global en seguimiento del estándar E2B(R3)
+  para envíos a través de VigiFlow – eReporting Industria.
+       Utilizar el formato C3 de WHODrug Global para la codificación de medicamentos.
+       Si es posible, utilizar el Medicinal Product Identifier (MPID) de WHODrug Global
+         como identificador único para los medicamentos codificados.
+       Utilizar el WHODrug Global MPID Object Identifier (OID) para indicar que se ha
+         utilizado el MPID de WHODrug Global.
+       Utilizar la última versión disponible de WHODrug Global al realizar la codificación
+         de medicamentos.
+
+
+
+
+Ejemplo
+Para ilustrar las diversas consideraciones que se deben hacer, el nombre comercial del fármaco
+Accogem con el ingrediente activo Gemcitabine hydrochloride (Clorhidrato de gemcitabina) en
+WHODrug Global (figura 1) se utilizará a lo largo de este texto.
+
+
+
+
+                                                                                                      2
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                               Technical guidance EB2 (R3)
+
+
+
+
+Figura 1. El nombre comercial Accogem, que contiene el ingrediente activo clorhidrato de gemcitabina, seleccionado dentro
+de la plataforma eReporting industria. El ejemplo podría representarse de manera similar también en otros sistemas de
+información.
+
+
+
+WHODrug Global: consideraciones del formato
+Tradicionalmente, los usuarios de WHODrug Global han podido acceder a la información sobre
+medicamentos proporcionada en dos formatos diferentes; el formato B3 y el formato C3,
+consulte la tabla 1 para ver un ejemplo. Los dos formatos contienen información sobre los
+mismos medicamentos, pero con diferentes niveles de especificidad; el formato C3 proporciona
+información más detallada.
+Tabla 1. Un ejemplo simplificado que destaca la diferencia de especificidad entre los formatos B3 y C3.
+
+Formato
+en          Nombre      Ingrediente(s)   Código       País de                      Forma
+                                                                 TRS                                      Concentración
+WHODrug     comercial   activo(s)        ATC          ventas                       farmacéutica
+Global
+                                         L01BC,
+                        Gemcitabine
+B3          Accogem                      Pyrimidine
+                        hydrochloride
+                                         analogues
+                                         L01BC,
+                        Gemcitabine                                                Infusion ampoules,
+C3          Accogem                      Pyrimidine   Mxico      Accord Farma                             200 mg
+                        hydrochloride                                              dry vials/bottles
+                                         analogues
+
+
+La guía ICH E2B(R3) tiene elementos de datos que guardan lugar para proporcionar información
+sobre los medicamentos de acuerdo con la próxima implementación de las normas ISO de
+Identificación de Medicamentos (IDMP). En WHODrug Global, el identificador de productos
+medicinales (MPID) de WHODrug del formato C3 se puede utilizar como proxy hasta que se
+hayan establecido planes de implementación regionales y se hayan desarrollado formalmente
+los identificadores ISO.
+Por lo tanto, UMC recomienda el uso del formato C3, siempre que sea posible, para el caso
+de uso descrito en esta documentación. Dado que el formato WHODrug B3 no contiene
+información tan detallada, en comparación con lo que se puede extraer del formato C3, UMC
+no recomienda el envío de identificadores que se originen del formato B3.
+Los usuarios de la industria que ya hayan implementado el formato WHODrug B3 en bases de
+datos internas o herramientas de codificación, podrían convertir mediante programación datos
+codificados dentro del formato B3 a datos en formato C3.
+                                                                                           3
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                           Technical guidance EB2 (R3)
+
+
+
+Dado que el formato C3 de WHODrug permite la codificación de medicamentos utilizando
+niveles de información predefinidos, se recomienda que al codificar, se seleccione el MPID que
+representa el nivel de información más apropiado de acuerdo con la información notificada,
+para no sub interpretar o sobre interpretar la información notificada. Si por algún motivo no se
+puede seleccionar un MPID, se puede presentar información menos específica (e.g. uno o varios
+principios activos).
+Para los usuarios del módulo de entrada manual de datos de VigiFlow - eReporting industria,
+los MPID se asignan automáticamente al codificar el medicamento dentro de este módulo de
+entrada manual de datos.
+
+
+Envío de reportes mediante XML E2B(R3) y uso del OID
+Para facilitar el intercambio y la interpretación de los datos codificados con WHODrug Global,
+observe lo siguiente cuando se generen XML E2B(R3):
+        Utilice el identificador de productos medicinales (MPID) de WHODrug Global dentro
+         del atributo de código de la etiqueta <code>.
+        Utilice el identificador de objeto de WHODrug MPID (OID) = 2.16.840.1.113883.6.294
+         dentro del atributo codeSystem de la etiqueta <code>.
+
+Consulte la figura 2 para ver un ejemplo.
+
+
+
+
+Figura 2. Ejemplo de cómo hacer uso de los identificadores específicos de WHODrug Global dentro de los XML generados.
+
+
+
+Campos E2B(R3) compatibles con información de WHODrug Global
+Los campos E2B(R3) en los que se puede utilizar el MPID de WHODrug Global incluyen
+productos sospechosos, concomitantes, interactuantes, medicamento no administrado, así
+como los historiales de medicamentos del paciente y los progenitores en un reporte padres-hijo.
+Consulte la tabla 2 para más detalles.
+
+
+
+
+                                                                                                                        4
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                          Technical guidance EB2 (R3)
+
+
+
+Tabla 2. Orientación sobre cómo y cuándo se puede utilizar la información de WHODrug Global para completar los campos
+E2B(R3).
+
+
+
+                                                                                 ICH E2B(R3) y Guía WHODrug de
+                                             Campo ICH E2B(R3)
+                                                                                 configuración XML
+
+G.k Información sobre el (los)
+medicamento(s)                                                                   Nombre del medicamento según el
+                                             G.k.2.2
+Campo de texto libre indicado a la derecha                                       notificador inicial
+Y (véase más abajo)
+                                             G.k.2.1.1a                          Versión de WHODrug
+WHODrug ID
+Sospechoso /Concomitante /Interactivo/       G.k.2.1.1b
+                                                                                 ID del medicamento en WHODrug
+Fármaco no administrado                      Sistema de codificación OID
+                                                                                 (MPID)
+                                             2.16.840.1.113883.6.294
+Sospechoso /Concomitante /Interactivo/
+Fármaco no administrado                                                          Nombre del medicamento según el
+                                             D.8.r.1
+Campo de texto libre indicado a la derecha                                       notificador inicial
+Y (ver más abajo)
+                                             D.8.r.2a                            Versión de WHODrug
+
+Paciente Farmacoterapia anterior             D.8.r.2b
+                                                                                 ID del medicamento en WHODrug
+                                              Sistema de codificación OID
+                                                                                 (MPID)
+                                             2.16.840.1.113883.6.294
+Historial médico del progenitor (en un
+reporte padres-hijo)                                                             Nombre del medicamento según el
+                                             D.10.8.r.1
+Campo de texto libre indicado a la derecha                                       notificador inicial
+Y (véase más abajo)
+                                             D.10.8.r.2a                         Versión de WHODrug
+
+Historial médico del paciente                D.10.8.r.2b
+                                                                                 ID del medicamento en WHODrug
+                                              Sistema de codificación OID
+                                                                                 (MPID)
+                                             2.16.840.1.113883.6.294
+
+
+
+Los reportes recibidos y su presentación en VigiFlow
+Cuando los informes son recibidos por VigiFlow la información de WHODrug Global se
+recupera y se muestra automáticamente, siempre y cuando el remitente haya utilizado los
+identificadores correctos (como se mencionó anteriormente).
+
+Si se han utilizado identificadores de WHODrug global no actualizados (non-current), como en
+el ejemplo de la figura 3, VigiFlow notificará al usuario y el caso deberá procesarse manualmente
+(o recibir la información correcta mediante un seguimiento).
+
+
+
+
+                                                                                                                   5
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                            Technical guidance EB2 (R3)
+
+
+
+
+Figura 3. Ejemplo de cómo se muestra en VigiFlow el uso de un código no actualizado de WHODrug Global al codificar un
+producto en un ICSR.
+
+
+
+Consideraciones de la versión de WHODrug Global a utilizar
+Para evitar el uso de identificadores de WHODrug Global no actualizados, los usuarios de la
+industria que carguen archivos XML E2B(R3) deben utilizar la última versión disponible de
+WHODrug Global en el momento de la codificación del caso. WHODrug Global se actualiza
+dos veces al año, el 1 de marzo y el 1 de septiembre. Para indicar la versión utilizada, el año y el
+mes de la publicación de WHODrug en el formato "MMM AAAA" (por ejemplo, "MAR 2023")
+pueden utilizarse en los campos de versión. En el futuro, el UMC estudiará la posibilidad de
+desarrollar un nombre de versión oficial que pueda utilizarse en este campo.
+
+Los usuarios del módulo de entrada manual de datos de VigiFlow – eReporting industria,
+siempre tienen acceso a la información más reciente en WHODrug Global.
+
+
+Soporte técnico
+Para obtener asistencia relacionada con la implementación de WHODrug Global, póngase en
+contacto con la persona de contacto designada en el UMC o escriba a: WHODrug@who-
+umc.org
+
+
+
+
+                                                                                                                        6
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                 7. Anexo C
+
+
+Cómo usar el formato WHODrug C3 para la codificación de medicamentos.
+
+
+
+
+                                                                        60
+Cómo usar el formato
+WHODrug C3 para la
+codificación de
+medicamentos
+Versión 2.0
+                                                                                                                          How to use the WHODrug C3
+                                                                                                                               format for drug coding.
+                                                                                                                                           Version 2.0
+
+
+
+
+   Contenido
+   Historial de versiones .................................................................................................... 2
+   Descargo de responsabilidad ........................................................................................ 2
+   1. Introducción................................................................................................................ 3
+         1.1 Alcance de las directrices .................................................................................................................. 3
+         1.2 Acerca de WHODrug Global ............................................................................................................. 3
+   2. Principios generales de la codificación ..................................................................... 4
+         2.1 Codificar con la mayor precisión posible ........................................................................................ 4
+         2.2 Codificar al nivel más detallado ...................................................................................................... 4
+         2.3 Codificar con la versión más reciente de WHODrug ...................................................................... 5
+         2.4 Revisión de la calidad de los datos codificados .............................................................................. 5
+         2.5 Flujo de decisiones en la codificación de los medicamentos ........................................................ 5
+         2.6 Como utilizar la información contextual ....................................................................................... 8
+              2.6.1 No se reportó ningún ingrediente............................................................................................................ 8
+              2.6.2 Uso del país como diferenciador ............................................................................................................. 8
+         2.7 Cuando solicitar aclaraciones .......................................................................................................... 8
+         2.8 Medicamento faltante en WHODrug .............................................................................................. 9
+   3. Otros puntos a considerar ......................................................................................... 10
+         3.1 Medicamentos genéricos .................................................................................................................10
+         3.2 Códigos de la empresa (o de laboratorio) ...................................................................................... 11
+         3.3 Combinaciones de ingredients activos........................................................................................... 11
+         3.4 Ingredientes activos reportados en un idioma que no se capta en WHODrug ........................... 12
+         3.5 Medicamentos que ya no están en el mercado .............................................................................. 12
+         3.6 Nombres comerciales con caracteres especiales ........................................................................... 12
+
+
+
+
+                                                                                                                                                                 1
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                                How to use the WHODrug C3
+                                                                                                     format for drug coding.
+                                                                                                                 Version 2.0
+
+Historial de versiones
+
+Fecha                    Versión           Resumen de revisiones
+Enero de 2023            2.0               Actualizaciones generales: secciones numeradas; tablas ilustrativas para
+                                           ejemplos de escenarios de codificación agregadas a varias secciones
+                                           Sección 1.1 (Alcance de las directrices) Texto actualizado y aclarado
+                                           Sección 1.2 (Acerca de WHODrug Global) Título actualizado
+                                           Sección 2.1 (Codificar con la mayor precisión posible) Se agregó el ejemplo 3
+                                           Sección 2.2 (Codificar al nivel más detallado) Texto actualizado y aclarado; se
+                                           agregó el ejemplo 1
+                                           Sección 2.4 (Revisión de la calidad de los datos codificados) Se agregó una nueva
+                                           sección
+                                           Sección 2.5 (Flujo de decisión de la codificación de medicamentos) Parte del texto
+                                           transferido a la sección 2.2; el ejemplo 6 cambió.
+                                           Sección 2.6.2 (Uso del país como diferenciador) Texto actualizado y aclarado
+                                           Sección 2.8 (Medicamento faltante en WHODrug) Texto actualizado y aclarado;
+                                           se agregó el ejemplo 9
+                                           Sección 3.1 (Medicamentos genéricos) Se agregó el ejemplo 11 Sección 3.2
+                                           (Códigos de la empresa) Se agregó una nueva sección
+                                           Sección 3.3 (Combinaciones de ingredientes activos) Se agregó una nueva sección
+                                           Sección 3.4 (Un ingrediente activo se reporta en un idioma que no está incluido
+                                           en WHODrug) Texto actualizado y aclarado
+                                           Sección 3.5 (Medicamentos que ya no están en el mercado) Se agregó una nueva
+                                           sección
+                                           Sección 3.6 (Nombres comerciales con caracteres especiales) Se agregó una
+                                           nueva sección
+
+
+
+Descargo de responsabilidad
+El objetivo de este documento es ilustrar las mejores prácticas para codificar la información
+sobre medicamentos en el formato C3 de WHODrug en el contexto de las obligaciones y/o
+recomendaciones de farmacovigilancia. En última instancia, los reguladores decidirán sobre el
+alcance de la implementación de esta guía dentro de su jurisdicción. El Centro de Monitoreo de
+Uppsala (UMC) reconoce que las necesidades regulatorias pueden variar según la región. Este
+documento por sí solo no estipula ningún requisito de información regulatoria; estos los
+determina la autoridad reguladora nacional.
+No hay restricciones en la reproducción, distribución o uso de este documento; sin embargo, la
+modificación e incorporación de este documento, en parte o en su totalidad, a cualquier otro
+documento, en inglés o las traducciones realizadas (y autorizadas) por el UMC, no contará con
+respaldo de ningún tipo por parte del UMC. Si una organización desea agregar, eliminar o
+modificar cualquier contenido presente en este documento, se deberán eliminar todos los
+logotipos del UMC y las referencias al UMC.
+
+
+
+
+                                                                                                                                2
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                         How to use the WHODrug C3
+                                                                              format for drug coding.
+                                                                                          Version 2.0
+
+1. Introducción
+1.1 Alcance de las directrices
+El alcance de este documento es recomendar las mejores prácticas al codificar información sobre
+medicamentos con el formato C3 de WHODrug Global, para lograr una selección de
+medicamentos precisa y consistente. Las mejores prácticas en este documento se pueden aplicar
+al codificar medicamentos sospechosos, interactuantes, concomitantes, medicamento no
+administrado e historial de medicamentos del paciente y de los progenitores en un reporte
+padres-hijo.
+
+Este documento no constituye una descripción detallada de la estructura y el contenido de
+WHODrug Global y, por lo tanto, se recomienda a los usuarios que realicen una capacitación
+de WHODrug y que lean la Guía del usuario de WHODrug, ambas disponibles en el sitio web
+del UMC.
+
+1.2 Acerca de WHODrug Global
+WHODrug es un diccionario de referencia de medicamentos integral y de amplio uso, con un
+sistema jerárquico único y datos estandarizados. Una vez que la información sobre un
+medicamento se codifica en WHODrug, se habilita un lenguaje común y estandarizado que
+permite el intercambio de datos con las entidades regulatorias, promoviendo la incorporación
+significativa y eficaz de los términos informados para facilitar el análisis de los datos de
+seguridad. La estructura de WHODrug permite la codificación y agregación datos en diferentes
+niveles que incluyen, entre otros, los siguientes: principios activos, nombres comerciales,
+concentraciones, formas farmacéuticas y clases de ATC.
+WHODrug se distribuye en dos formatos: el B3 y el C3. El formato C3 contiene códigos de
+medicamentos, nombres de medicamentos, ingredientes (excluyendo los excipientes),
+clasificaciones de ATC, países en los que se comercializan los medicamentos, titulares de
+registro sanitario (TRS), formas farmacéuticas y concentraciones. El identificador único para el
+formato C3 es el identificador alfanumérico de medicamentos de WHODrug (MPID de
+WHODrug), mientras que el código de medicamentos se puede utilizar para la agregación de
+datos. Se puede encontrar más información sobre el contenido y la estructura de WHODrug en
+la Guía del usuario de WHODrug, disponible en el sitio web del UMC.
+
+
+
+
+                                                                                                   3
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                                  How to use the WHODrug C3
+                                                                                                       format for drug coding.
+                                                                                                                   Version 2.0
+
+2. Principios generales de la codificación
+2.1 Codificar con la mayor precisión posible
+El UMC recomienda seleccionar el registro de WHODrug que más se apegue al término textual
+del medicamento reportado.
+Ejemplo 1. Si se informa que el nombre de marca Artrenac es el textual, debe codificarse como el nombre de marca Artrenac
+en WHODrug.
+
+Reportado                                                 Registro seleccionado de WHODrug (MPID)
+
+
+Artrenac                                                  Artrenac (103243)
+Se desconoce el país informante
+
+
+
+Ejemplo 2. Si el ingrediente activo diclofenaco sódico se reporta textualmente, debe codificarse como el ingrediente activo
+diclofenaco sódico en WHODrug.
+
+Reportado                                                 Registro seleccionado de WHODrug
+
+
+Diclofenaco sódico                                        Diclofenaco sódico (24858)
+
+
+
+
+2.2 Codificar al nivel más detallado
+Los medicamentos en el formato C3 de WHODrug se presentan en un sistema de información
+con diferentes niveles de precisión. Cada nivel de información está identificado de forma única
+por el MPID de WHODrug.
+Los niveles de información siguen una jerarquía como se muestra en las siguientes tablas. Todos
+los registros representan el mismo medicamento, pero con diferentes niveles de información. El
+menos específico representa los principios activos, mientras que el registro más específico
+también incluye información sobre el país en el que se comercializa el medicamento, el titular
+del registro sanitario (TRS), la forma farmacéutica y la concentración. Para ver un ejemplo de
+los diferentes niveles de información, consulte la Tabla 1.
+Tabla 1. Jerarquía de niveles de información para el medicamento con nombre del medicamento, Alvedon, y el ingrediente
+activo, paracetamol
+
+MPID de         Nombre del          Ingrediente        País          TRS               Forma             Concentra    Genérico
+WHODrug         medicamento         activo                                             farmacéutica      ción
+87552           Alvedon             Paracetamol                                                                       No
+1224867         Alvedon             Paracetamol        Suecia                                                         No
+1156072         Alvedon             Paracetamol        Suecia        AstraZeneca                                      No
+1156071         Alvedon             Paracetamol        Suecia        AstraZeneca       Tabletas                       No
+1156070         Alvedon             Paracetamol        Suecia        AstraZeneca       Tabletas          500          No
+                                                                                                         miligramos
+
+
+
+Los registros de los ingredientes activos se marcan como genéricos y no incluyen información
+sobre el país, el TRS, la forma farmacéutica ni la concentración (Tabla 2).
+
+
+
+                                                                                                                            4
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                             How to use the WHODrug C3
+                                                                                                  format for drug coding.
+                                                                                                              Version 2.0
+
+
+
+Tabla 2. Jerarquía de niveles de información para el ingrediente activo con el nombre del medicamento: paracetamol
+
+MPID de          Nombre del          Ingrediente       País          TRS      Forma             Concentra        Genérico
+WHODrug          medicamento         activo                                   farmacéutica      ción
+4762              Paracetamol        Paracetamol                                                                 Sí
+
+
+El UMC recomienda codificar al nivel más detallado posible utilizando toda la información
+presentada disponible el momento de codificar. La información contextual del medicamento
+que se haya proporcionado, junto con el nombre del medicamento notificado, podrían usarse
+para seleccionar el registro más preciso y detallado disponible en WHODrug.
+La información disponible puede incluir, por ejemplo, país, TRS, indicación de uso, vía de
+administración, forma farmacéutica, concentración o lugar de administración propuesto.
+Consulte la sección "Cómo utilizar la información contextual".
+Ejemplo 3. Ejemplos de información sobre medicamentos reportados y registros seleccionados de WHODrug.
+
+Información reportada                                     Registro seleccionado de WHODrug
+
+                           MPID de          Nombre del          Ingrediente     País          TRS           Genérico
+                           WHODrug          medicamento         activo
+Diclofenaco sódico         24858            Diclofenaco         Diclofenaco                                 Sí
+                                            sódico              sódico
+Diclofenaco sódico,        247041           Diclofenaco         Diclofenaco     Letonia       Kalcex        No
+                                            sódico              sódico                        Letonia
+Arterenac,                 1259696          Artrenac            Diclofenaco     México                      No
+se informa que es de                                            sódico
+México
+
+
+
+2.3 Codificar con la versión más reciente de WHODrug
+Para la codificación de WHODrug, se recomienda utilizar los próximos datos de WHODrug
+(upcoming data) o la versión más reciente de WHODrug para garantizar la codificación más
+actualizada. Los próximos datos de WHODrug (upcoming data) reflejan cómo se vería el
+diccionario si se publicara hoy con las actualizaciones que recibirá. Estos datos se actualizan
+diariamente y pueden estar sujetos a cambios en cualquier momento hasta el punto de bloqueo
+de datos antes del próximo lanzamiento. El uso de la versión más reciente es especialmente
+importante en la codificación de seguridad, ya que los casos posteriores a la comercialización a
+menudo se refieren a medicamentos que son nuevos en el mercado.
+
+2.4 Revisión de la calidad de los datos codificados
+Los datos codificados de medicamentos, ya sea de forma manual o automatizada, deben ser
+revisados por una persona calificada, es decir, una persona con antecedentes o capacitación
+médica y/o farmacéutica que también haya recibido capacitación de WHODrug.
+
+2.5 Flujo de decisiones en la codificación de los medicamentos
+La jerarquía del formato C3 de WHODrug permite la selección de registros con diferentes
+niveles de información, dependiendo de la cantidad de información reportada. No siempre se
+ingresa información detallada sobre el medicamento reportado. Si solo están disponibles el
+
+
+                                                                                                                            5
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                         How to use the WHODrug C3
+                                                                                              format for drug coding.
+                                                                                                          Version 2.0
+
+nombre comercial y el ingrediente, se puede seleccionar un registro menos específico. Cuando
+se dispone de información más detallada, como país y forma farmacéutica, los niveles de
+información permiten seleccionar un registro con mayor precisión (Imagen 1).
+
+    •    ¿Se informa el nombre del medicamento, el país, el TRS, la forma farmacéutica y la
+         concentración? Codifique el registro al nivel más detallado que especifique el nombre
+         del medicamento, el país, el TRS, la forma farmacéutica y la concentración.
+    •    ¿Se informa el nombre del medicamento, el país, el TRS y la forma farmacéutica?
+         Codifique según el registro que especifica el nombre del medicamento, país, TRS y forma
+         farmacéutica.
+    •    ¿Se informa el nombre del medicamento, el país y el TRS? Codifique según el registro que
+         especifica el nombre del medicamento, el país y el TRS.
+    •    ¿Se informa el nombre del medicamento y el país? Codifique según el registro que
+         especifica el nombre del medicamento y el país.
+    •    ¿Se informa el nombre del medicamento? Codifique según el nombre del medicamento
+         registrado menos específico.
+    •    ¿Se informa el ingrediente activo? Codifique según el registro del ingrediente activo.
+
+
+
+
+    MPID, Nombre del medicamento, Ingrediente Activo, País, TRS, Forma farmacéutica and Concentración
+                1156070, Alvedon, paracetamol, Suecia, AstraZeneca, comprimidos, 500 mg
+
+
+             MPID, Nombre del medicamento, Ingrediente Activo, País, TRS y Forma farmacéutica
+                       1156070, Alvedon, paracetamol, Suecia, AstraZeneca, comprimidos
+
+
+                        MPID, Nombre del medicamento, Ingrediente Activo, País y TRS
+                              1156070, Alvedon, paracetamol, Suecia, AstraZeneca
+
+
+                          MPID, Nombre del medicamento, Ingrediente Activo y País
+                                    1156070, Alvedon, paracetamol, Suecia
+
+
+                             MPID, Nombre del medicamento, Ingrediente Activo
+                                           87552, Alvedon, paracetamol
+
+
+                                            MPID , Ingrediente Activo
+                                               4762, paracetamol
+
+Imagen 1. Ejemplo de un flujo de decisión de codificación de medicamentos.
+
+
+
+Las concentraciones y las formas farmacéuticas forman parte de la información que está
+conectada en el formato C3 a un medicamento específico comercializado por un TRS específico.
+
+
+                                                                                                                   6
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                               How to use the WHODrug C3
+                                                                                                    format for drug coding.
+                                                                                                                Version 2.0
+
+Por esta razón, no es posible codificar a un nivel que capture el nombre de un medicamento y
+una concentración, o el nombre de un medicamento y una forma farmacéutica sin conocer el
+TRS, o codificar a un nivel que capture el nombre de un medicamento y el TRS, sin conocer el
+país. En estos casos, se puede seleccionar un MPID de WHODrug para el nombre del
+medicamento menos específico o tratar de utilizar la otra información de campos estructurados
+disponibles para seleccionar un registro más específico.
+Ejemplo 4. Si se reporta Alvedon tabletas de 500 mg, pero falta información sobre el TRS, se debe elegir el registro menos
+específico de Alvedon (87552) en WHODrug.
+
+Reportado                                                  Registro seleccionado de WHODrug (MPID)
+
+
+Alvedon, tableta de 500 mg                                 Alvedon (87552)
+
+
+
+Ejemplo 5. Si se reportan tabletas de Alvedon de AstraZeneca pero falta información sobre el país, se debe elegir el registro
+menos específico de Alvedon (87552) en WHODrug.
+
+Reportado                                                  Registro seleccionado de WHODrug (MPID)
+
+
+Alvedon AstraZeneca                                        Alvedon (87552)
+
+
+
+Ejemplo 6. Si se reporta la tableta de 500 mg de paracetamol, debe codificarse como ingrediente activo paracetamol
+(4762), marcado como genérico en WHODrug, y reportado como 500 mg por separado, a menos que se pueda recuperar la
+información sobre el nombre comercial y el TRS.
+
+Reportado                                                  Registro seleccionado de WHODrug (MPID)
+
+
+Paracetamol, tableta de 500 mg                             Paracetamol (4762)
+
+
+
+
+                                                                                                                           7
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                             How to use the WHODrug C3
+                                                                                                  format for drug coding.
+                                                                                                              Version 2.0
+
+2.6 Como utilizar la información contextual
+Se debe seleccionar el nivel de medicamento más detallado al codificar usando toda la
+información presentada disponible. La información necesaria para elegir un nivel de
+medicamento más preciso en WHODrug puede tomarse del medicamento de forma textual o
+basarse en información contextual. La información contextual proporcionada en el reporte,
+como la indicación del uso, la vía de administración, la forma farmacéutica, la dosis o la
+concentración, podría usarse para seleccionar el registro más preciso y detallado posible en
+WHODrug (Tabla 3).
+Tabla 3. Ejemplo de información contextual disponible que se puede utilizar para seleccionar un registro más detallado en
+WHODrug
+
+Información contextual                                       Información en WHODrug
+Vía de administración/forma de dosificación                  Forma farmacéutica
+
+
+Información adicional en el nombre del medicamento           Concentración, forma farmacéutica, etc.
+
+
+2.6.1 No se reportó ningún ingrediente
+En WHODrug, nombres de medicamentos idénticos pueden estar disponibles con distintos
+principios activos, esto se conoce como nombres no únicos (non-unique names).
+Si el nombre de un medicamento un “nombre no único” en WHODrug y no hay información
+disponible sobre un ingrediente en el reporte, el nombre del medicamento por sí solo puede no
+ser suficiente para identificar el término reportado. En este caso, hay dos formas posibles de
+encontrar el registro correcto y lograr la codificación más precisa:
+1. Buscar aclaración del ingrediente. Consulte la sección "Cuándo buscar aclaraciones".
+2. Utilizar la información adicional disponible, como país, TRS, concentración y forma
+    farmacéutica para diferenciar entre nombres no únicos.
+2.6.2 Uso del país como diferenciador
+El país donde se encuentra el paciente, donde se compró el medicamento u otra información
+que sugiera al codificador dónde se obtuvo el medicamento, es información que se puede usar
+para seleccionar un nivel más detallado de información en el diccionario.
+
+Uno de los desafíos de los últimos años ha sido que los medicamentos a veces se compran por
+Internet o en un país vecino. En esta eventualidad, puede ser útil usar otra información
+relacionada con el medicamento que se haya reportado, como la indicación de uso, el TRS, la
+forma farmacéutica o la concentración, para determinar si el medicamento se compró por
+Internet o en otro país.
+
+2.7 Cuando solicitar aclaraciones
+Puede haber casos en los que la información que se haya presentado sobre el medicamento sea
+imprecisa, ambigua o entre en conflicto con otra información relacionada con medicamentos
+disponible en el reporte. El UMC generalmente recomienda buscar aclaraciones en estos casos,
+para lograr la codificación más precisa.
+Ejemplo 7. Se informa el término corticoesteroide textualmente, pero no se pudo seleccionar un corticoesteroide
+específico en WHODrug. En este caso se recomienda solicitar aclaraciones al informante para lograr una codificación más
+precisa. Si no es posible obtener más información, se puede seleccionar el registro impreciso de corticoesteroides.
+
+
+
+
+                                                                                                                            8
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                             How to use the WHODrug C3
+                                                                                                  format for drug coding.
+                                                                                                              Version 2.0
+Ejemplo 8. El término textual Movibon se reporta con la indicación de hipertensión. Movibon se comercializa en India y
+contiene ibuprofeno. En este caso, se recomienda solicitar aclaración al informante para confirmar el nombre del
+medicamento y la indicación de uso.
+
+2.8 Medicamento faltante en WHODrug
+WHODrug es un diccionario estandarizado de nombres de medicamentos con jerarquías
+basadas en principios activos y clases de medicamentos. Su contenido lo mantiene de forma
+estricta y exclusiva el Centro de Monitoreo de Uppsala. Un usuario de WHODrug con una
+licencia válida puede enviar en cualquier momento una solicitud para agregar un nuevo nombre
+de medicamento (una marca, un código de empresa, etc.) al diccionario. Esto se puede hacer en
+el formulario de Solicitud de cambio de WHODrug (WHODrug Change request).
+Algunos usuarios pueden estar codificando según los próximos datos de WHODrug (upcoming
+data), que se actualizan diariamente, mientras que otros pueden estar utilizando la versión más
+reciente de WHODrug Global. En este último caso, se recomienda verificar que el nombre del
+medicamento no exista en la próxima versión de WHODrug antes de enviar una solicitud de
+cambio.
+Mientras espera una respuesta sobre la solicitud de cambio, el término reportado puede dejarse
+sin codificar hasta que se haya recibido la respuesta de aprobación o codificarse con un
+marcador de posición.
+Ejemplo 9. El medicamento Ebvallo recibió una autorización de comercialización y se incluirá por primera vez en la versión
+del 1 de marzo de 2023 de WHODrug Global. Si se necesita codificar Ebvallo de forma textual mientras se espera que se lance
+la nueva versión, se puede codificarl según la sustancia activa como marcador de posición.
+
+Reportado                                                 Registro seleccionado de WHODrug (MPID)
+
+
+Ebvallo                                                   Tabelecleucel (4108787)
+
+
+
+
+                                                                                                                         9
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                           How to use the WHODrug C3
+                                                                                                format for drug coding.
+                                                                                                            Version 2.0
+
+3. Otros puntos a considerar
+3.1 Medicamentos genéricos
+Los productos genéricos se incluyen en el formato C3 de WHODrug de la misma manera que
+productos con nombres comerciales (de patente). Hay información disponible como país, TRS,
+forma farmacéutica y concentración para estos productos genéricos (Tablas 4 y 5), y debe
+codificarse al nivel más detallado posible utilizando toda la información presentada disponible
+al momento de la codificación.
+Tabla 4. Jerarquía de niveles de información para el medicamento con nombre de producto, Amlodipino, y el ingrediente
+activo, maleato de amlodipino
+
+MPID de        Nombre del       Ingrediente      País          TRS        Forma farmacéutica     Concentra    Genérico
+WHODrug        medicamento      activo                                                           ción
+683126         Amlodipino       Maleato de                                                                    No
+                                amlodipino
+2292537        Amlodipino       Maleato de       México                                                       No
+                                amlodipino
+2765813        Amlodipino       Maleato de       México        Pfizer                                         No
+                                amlodipino
+2765812        Amlodipino       Maleato de       México        Pfizer     Tabletas                            No
+                                amlodipino
+2765811        Amlodipino       Maleato de       México        Pfizer     Tabletas               5 mg         No
+                                amlodipino
+
+
+Ejemplo 10. Si se informa que el producto Amlodipino comercializado por Pfizer es de México, se debe codificar según el
+registro que especifica el nombre del medicamento, el país y el TAC, es decir Amlodipino (2765813), en WHODrug. En este
+caso, Pfizer no está incluido en el nombre del medicamento.
+
+Reportado                                                 Registro seleccionado de WHODrug (MPID)
+
+
+Amlodipino;                                               Amlodipino (2765813)
+se informa que es de México;
+comercializado por Pfizer
+
+
+Tabla 5. Jerarquía de niveles de información para el medicamento con nombre de producto, Amlodipino, y el ingrediente
+activo, maleato de amlodipino
+
+ MPID de        Nombre del       Ingrediente      País         TRS          Forma                Concentra    Genérico
+ WHODrug        medicamento      activo                                     farmacéutica         ción
+ 2043454        Amlodipino       Maleato de                                                                   No
+                de Liomont       amlodipino
+ 2043453        Amlodipino       Maleato de       México                                                      No
+                de Liomont       amlodipino
+ 2043452        Amlodipino       Maleato de       México       Liomont                                        No
+                de Liomont       amlodipino
+ 2043451        Amlodipino       Maleato de       México       Liomont      Tabletas                          No
+                de Liomont       amlodipino
+ 2043450        Amlodipino       Maleato de       México       Liomont      Tabletas             5 mg         No
+                de Liomont       amlodipino
+
+
+
+
+                                                                                                                     10
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                               How to use the WHODrug C3
+                                                                                                    format for drug coding.
+                                                                                                                Version 2.0
+Ejemplo 11. Si se informa que el producto Amlodipino de Liomont es de México, se debe codificar según el registro que
+especifica el nombre del medicamento, el país y el TRS, es decir Amlodipino de Liomont (2043452), en WHODrug.
+
+Reportado                                                   Registro seleccionado de WHODrug (MPID)
+
+Amlodipino de Liomont;                                      Amlodipino de Liomont (2043452)
+se informa que es de México;
+ comercializado por Liomont
+
+
+
+3.2 Códigos de la empresa (o de laboratorio)
+A veces, a un ingrediente activo en investigación se le asigna un nombre específico de la empresa
+denominado "código de la empresa" antes de recibir una denominación común internacional
+oficial para sustancias farmacéuticas (INN por sus siglas en inglés) u otro similar. Estos códigos
+de empresa están incluidos en WHODrug como ingredientes activos regulares, con un indicador
+genérico, y no están vinculados a un país específico. Los códigos de empresa están registrados
+en WHODrug como registros genéricos (en la terminología de implementación de WHODrug,
+no confundir con medicamentos genéricos del punto anterior). Consulte la Tabla 6 para ver un
+ejemplo de un nombre de medicamento con código de empresa.
+Tabla 6. Jerarquía de niveles de información para el nombre del medicamento con el código de empresa ABBV 184.
+
+MPID de         Nombre del        Ingrediente       País          TAC        Forma farmacéutica      Concentra        Genérico
+WHODrug         medicamento       activo                                                             ción
+4874280         ABBV 184          ABBV 184                                                                            Sí
+
+
+Ejemplo 12. Si el código de la empresa ABBV184 se reporta textualmente, debe codificarse según el ingrediente activo
+ABBV 184 (4874280) (marcado como genérico en la terminología de implementación de WHODrug).
+
+Reportado                                                  Registro seleccionado de WHODrug (MPID)
+
+
+ABBV-184                                                   ABBV 184 (4874280)
+
+
+
+3.3 Combinaciones de ingredients activos
+Las combinaciones de dos (o más) ingredientes pueden estar disponibles en WHODrug, como
+un registro individual (que contiene dos o más ingredientes) y marcado como genérico en la
+terminología de implementación de WHODrug. Los ingredientes de la combinación siempre se
+muestran en orden alfabético, separados por punto y coma. Cuando esté disponible, siempre se
+debe seleccionar un registro combinado para la codificación. Consulte la Tabla 7 para ver el
+ejemplo de combinación de amoxicilina y ácido clavulánico.
+Tabla 7. Jerarquía de niveles de información para el registro de ingrediente activo con principios activos: amoxicilina, ácido
+clavulánico, y amoxicilina; ácido clavulánico.
+
+MPID de         Nombre del        Ingrediente       País          TAC      Forma farmacéutica      Concentra     Genérico
+WHODrug         medicamento       activo                                                           ción
+20493           Amoxicilina       Amoxicilina                                                                    Sí
+33346           Ácido             Ácido                                                                          Sí
+                clavulánico       clavulánico
+
+
+
+
+                                                                                                                            11
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+                                                                                             How to use the WHODrug C3
+                                                                                                  format for drug coding.
+                                                                                                              Version 2.0
+
+3815525         Amoxicilina;      Amoxicilina;                                                                 Sí
+                ácido             ácido
+                clavulánico       clavulánico
+
+
+Ejemplo 13. Si la amoxicilina y el ácido clavulánico se reportan textualmente, deben codificarse según la combinación
+amoxicilina; ácido clavulánico (3815525) en WHODrug.
+
+Reportado                                                 Registro seleccionado de WHODrug (MPID)
+
+
+Amoxicilina y ácido clavulánico                           Amoxicilina; ácido clavulánico (3815525)
+
+
+
+3.4 Ingredientes activos reportados en un idioma que no se capta en WHODrug
+Si un ingrediente activo se reporta en un idioma que no está incluido en WHODrug, se puede
+enviar una solicitud de cambio al UMC (Change request). También es aceptable codificar según
+el ingrediente activo en inglés más cercano disponible en WHODrug, siempre que la traducción
+al inglés no sea ambigua.
+
+3.5 Medicamentos que ya no están en el mercado
+Los nombres de medicamentos en el diccionario podrían marcarse como antiguos (old form)
+cuando ya no se comercialicen. Investigue cuidadosamente la información presentada y/o
+utilice información contextual, como el ingrediente activo, para confirmar o excluir la selección
+de un registro antiguo de WHODrug.
+Ejemplo 14. Si se informa que el producto Cortidex es de México, se debe codificar Cortidex /antiguo/ (1316561) en
+WHODrug.
+
+Información reportada                                     Registro seleccionado de WHODrug (MPID)
+
+
+Cortidex                                                  Cortidex /antiguo/ (1316561)
+Se informa que es de México
+
+
+
+3.6 Nombres comerciales con caracteres especiales
+Los caracteres especiales como guiones, símbolos de marca comercial, marca comercial
+registrada, de derechos de autor, etc. no se incluyen en los nombres comerciales en WHODrug
+para permitir la armonización de los nombres de medicamentos a nivel mundial. Cuando se
+informan nombres comerciales con caracteres especiales, es aceptable codificar según el registro
+correspondiente en WHODrug sin caracteres especiales.
+Ejemplo 15. Si se reporta el nombre comercial ALVI-TEC®, debe codificarse como ALVI TEC en WHODrug.
+
+Reportado                                                 Registro seleccionado de WHODrug (MPID)
+
+
+ALVI-TEC®                                                 ALVI TEC (3820776)
+
+
+
+
+                                                                                                                        12
+Uppsala Monitoring Centre (UMC)
+Box 1051, SE-751 40 Uppsala, Sweden
+Email: info@who-umc.org, www.who-umc.org
+
