@@ -3,10 +3,11 @@
 name: Document text for requirement curation
 on:
   schedule:
-    - cron: 47 5 * * *
+    - cron: 47 */3 * * *
   workflow_dispatch: null
 permissions:
   contents: write
+  id-token: write
 concurrency:
   group: pv-document-text
   cancel-in-progress: false
@@ -32,6 +33,7 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/document-text.mjs /tmp/text
+      - run: node scripts/change-loop/clauses.mjs /tmp/text --curation=scripts/document-catalog/curation ${{ github.ref == 'refs/heads/main' && '--relay' || '' }}
       - name: Publish text cache
         run: |
           cd /tmp/text
