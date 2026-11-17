@@ -28,7 +28,7 @@ jobs:
           github-token: ${{ secrets.PVINFO_CODE_TOKEN }}
           script: |-
             const owner = 'chalamalasetti', repo = 'PV-Info', wanted = '${{ inputs.ref }}'.trim();
-            const paths = ["scripts/document-catalog/curation","scripts/curation"];
+            const paths = ["scripts/document-catalog/curation","scripts/curation","scripts/document-catalog/verification"];
             if (wanted) {
               // Accept a branch name, a tag or a short commit id; the checkout step needs a full commit id.
               const {data} = await github.rest.repos.getCommit({owner, repo, ref: wanted});
