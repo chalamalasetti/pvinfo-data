@@ -1,0 +1,759 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="robots" content="index, follow">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/images/fevicon.png">
+<!-- CSS
+	============================================ -->
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Flaticon -->
+<link rel="stylesheet" href="/css/flaticon.css">
+<!-- optico Icons -->
+<link rel="stylesheet" href="/css/pbminfotech-base-icons.css">
+<!-- Themify Icons -->
+<link rel="stylesheet" href="/css/themify-icons.css">
+<!-- Slick -->
+<link rel="stylesheet" href="/css/swiper.min.css">
+<!-- Magnific -->
+<link rel="stylesheet" href="/css/magnific-popup.css">
+<!-- AOS -->
+<link rel="stylesheet" href="/css/aos.css">
+<!-- Shortcode CSS -->
+<link rel="stylesheet" href="/css/shortcode.css">
+<!-- Base CSS -->
+<link rel="stylesheet" href="/css/base.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="/css/style.css?v=1.0">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/css/responsive.css?v=1.7">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.min.css">
+
+<style>
+  .floating-button {
+        position: fixed;
+        right: 20px;
+        bottom: 150px;
+        z-index: 1000; 
+    }
+    
+    .floating-button .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 25px; 
+        border-radius: 50px;
+        animation: blink 1.5s infinite;
+        transition: transform 0.3s, background-color 0.3s;
+        background: #0d9861;
+        border-color: #0d9861;
+    }
+    
+    .floating-button .btn:hover {
+        transform: scale(1.1);
+        background-color: #0056b3;
+    }
+    
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+</style>
+
+    <title>Signalements et vigilance – ANMAPS</title>
+    <style>
+        :root { --signal-green:#087b63; --signal-navy:#12304a; --signal-soft:#eef8f5; }
+        .signal-hero { padding: 72px 0 46px; background:linear-gradient(135deg,#0b3450,#087b63); color:#fff; }
+        .signal-hero h1 { color:#fff; margin-bottom:12px; font-size:clamp(32px,5vw,54px); }
+        .signal-hero p { max-width:780px; margin:0; font-size:18px; color:rgba(255,255,255,.9); }
+        .signal-main { padding:42px 0 64px; background:#f5f8fa; }
+        .signal-tabs { display:flex; gap:10px; max-width:980px; margin:0 auto 18px; flex-wrap:wrap; }
+        .signal-tab { border:1px solid #d6e2e8; background:#fff; color:var(--signal-navy); border-radius:12px;
+            padding:11px 17px; font-weight:700; cursor:pointer; box-shadow:0 4px 16px rgba(18,48,74,.06); }
+        .signal-tab.active { background:var(--signal-green); border-color:var(--signal-green); color:#fff; }
+        .signal-panel { display:none; max-width:980px; margin:0 auto; background:#fff; border-radius:16px; padding:clamp(20px,3vw,30px);
+            box-shadow:0 16px 45px rgba(18,48,74,.09); }
+        .signal-panel.active { display:block; }
+        .signal-panel h2 { color:var(--signal-navy); margin-bottom:8px; }
+        .signal-intro { color:#587080; margin-bottom:20px; }
+        .signal-section { border-top:1px solid #e5ecef; margin-top:22px; padding-top:20px; }
+        .signal-section h3 { color:var(--signal-green); font-size:18px; margin-bottom:14px; }
+        .signal-form label { font-size:14px; font-weight:650; color:#263f51; margin-bottom:5px; }
+        .signal-form .form-control, .signal-form .form-select { min-height:42px; padding:8px 11px; font-size:14px; border-radius:8px; border-color:#ccd9df; }
+        .signal-form input.form-control, .signal-form .form-select { height:42px !important; }
+        .signal-form textarea.form-control { height:88px !important; min-height:88px; }
+        .required { color:#b42318; }
+        .signal-note { padding:12px 15px; border-radius:10px; margin-bottom:18px; font-size:14px; }
+        .signal-note.warning { background:#fff5e5; border-left:4px solid #e29a18; color:#674b14; }
+        .signal-note.privacy { background:var(--signal-soft); border-left:4px solid var(--signal-green); color:#28584d; }
+        .signal-submit { border:0; border-radius:10px; background:var(--signal-green); color:#fff; font-weight:700;
+            padding:11px 22px; transition:.2s; }
+        .signal-submit:hover { background:#075f4e; transform:translateY(-1px); }
+        .signal-alert { max-width:980px; margin:0 auto 18px; border-radius:12px; padding:14px 16px; }
+        .signal-alert.success { background:#eaf8ef; color:#17633b; border:1px solid #bde5ca; }
+        .signal-alert.error { background:#fff0ef; color:#8d211b; border:1px solid #f0c3c0; }
+        .signal-honeypot { position:absolute !important; left:-10000px !important; }
+        @media (max-width:767px) {
+            .signal-main { padding:30px 0 48px; }
+            .signal-tab { width:100%; text-align:left; }
+            .signal-panel { padding:18px 16px; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+     <header class="site-header header-style-2">
+
+			<div class="container-fluid">
+
+				<div class="pbmit-header-content d-flex justify-content-between align-items-center">
+
+					<div class="d-flex justify-content-between align-items-center">
+
+						<div class="site-navigation">
+
+							<nav class="main-menu navbar-expand-xl navbar-light">
+
+								<div class="navbar-header">
+
+									<!-- Toggle Button --> 
+
+									<button class="navbar-toggler" type="button">
+
+										<i class="pbmit-base-icon-menu-1"></i>
+
+									</button>
+
+								</div>
+
+								<div class="pbmit-mobile-menu-bg"></div>
+
+								<div class="collapse navbar-collapse clearfix show" id="pbmit-menu">
+
+									<div class="pbmit-menu-wrap">
+
+										<span class="closepanel">
+
+											<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="20.163" height="20.163" viewBox="0 0 26.163 26.163">
+
+												<rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
+
+												<rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+
+											</svg>
+
+										</span>
+
+										<ul class="navigation clearfix">
+
+											<li >
+
+												<a href="index.php">Accueil</a>
+
+											</li>
+
+											<li class="dropdown">
+
+												<a href="#">Qui sommes nous</a>
+
+												<ul>
+
+													<li><a href="missions.php">Mission et vision</a></li>
+
+													<li><a href="historique.php">historique</a></li>
+
+													<li><a href="organigramme.php">Organigramme</a></li>
+
+													<li><a href="mot_du_dg.php">Mot du Directeur Général</a></li>
+
+												</ul> 
+
+											</li>  
+
+											<li class="dropdown">
+
+												<a href="#">Publications</a>
+
+												<ul > 
+
+													<li><a href="liste_medicaments.php">Liste des médicaments</a></li> 
+
+													<li><a href="autre_produits.php">Autres produits de santé</a></li>
+
+													<li><a href="publication_societe.php">Structure de santé</a></li>
+                                                                        							    	<li><a href="nos_documents.php?id_cat=1">Lignes Directrices</a></li>
+                    								                    							    	<li><a href="nos_documents.php?id_cat=2">Outils de Gouvernances</a></li>
+                    								                    							    	<li><a href="nos_documents.php?id_cat=5">Textes Législatifs et Réglémentaires</a></li>
+                    																				</ul>   
+
+											</li>
+
+											<li class="dropdown">
+
+												<a href="#">Fonctions</a>
+
+												<ul >
+
+													<li><a href="reglementation_pharmaceutique.php">La règlementation pharmaceutique</a></li>
+
+													<li><a href="hologation_medicament.php">Homologation des médicaments</a></li>
+
+													<li><a href="gestion_essaie_clinique.php">Gestion des essais cliniques</a></li>
+
+													<li><a href="surveillance_controle.php">La surveillance et le contrôle du marché des produits pharmaceutiques</a></li>
+
+													<li><a href="suivi_surveillance_sanitaire.php">Le suivi des vigilances sanitaires</a></li>
+
+													<li><a href="gestion_octroi.php">Gestion des octrois des autorisations d'ouverture des établissements pharmaceutiques</a></li>
+
+														<li><a href="gestion_pub.php">Gestion de la publicité des médicaments</a></li>
+
+													<li><a href="controle_qualite.php">Le contrôle de qualité des produits pharmaceutiques</a></li>
+
+												</ul>   
+
+											</li>
+
+											<li class="dropdown">
+
+												<a href="#">Actualités</a>
+
+												<ul>
+
+													<li><a href="actualite.php">Toutes les actualités</a></li>
+
+													<li><a href="communique_de_presse.php">Communiqués de presse</a></li>
+
+													<li><a href="#">Dossiers de presse</a></li>
+
+												</ul>
+
+											</li>
+
+											<li class="dropdown">
+
+												<a href="signalements.php">Signalements</a>
+
+												<ul>
+
+													<li><a href="signalements.php#reclamation">Réclamation client</a></li>
+
+													<li><a href="signalements.php#effet-indesirable">Déclarer un effet indésirable</a></li>
+
+												</ul>
+
+											</li>
+
+											<li ><a href="contact.php">Contacts</a></li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</nav>
+
+						</div>
+
+					</div>
+
+					<div class="pbmit-right-box d-flex align-items-center">
+
+						<div class="pbmit-button-box">
+
+							<div class="pbmit-header-button">
+
+								<a href="tel:066418349">
+
+									<span class="pbmit-header-button-text-1">(+241) 066 41 83 49</span>		
+
+								</a>
+
+							</div>
+
+						</div>
+
+						<div class="site-notification" data-notification-root data-newest="0">
+    <button class="site-notification-button" type="button" aria-label="Voir les nouvelles mises à jour"
+            aria-expanded="false" data-notification-toggle>
+        <i class="fa-solid fa-bell" aria-hidden="true"></i>
+        <span class="site-notification-badge" data-notification-badge>0</span>
+    </button>
+    <div class="site-notification-panel" data-notification-panel hidden>
+        <div class="site-notification-heading">
+            <strong>Mises à jour du site</strong>
+            <span>0 publication</span>
+        </div>
+        <div class="site-notification-list">
+                            <div class="site-notification-empty">Aucune nouvelle mise à jour pour le moment.</div>
+                                </div>
+    </div>
+</div>
+<style>
+.site-notification{position:relative;z-index:1001;margin-right:12px}
+.site-notification-button{position:relative;width:46px;height:46px;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#eef7f4;color:#087b63;font-size:19px;cursor:pointer;transition:.2s}
+.site-notification-button:hover,.site-notification-button[aria-expanded="true"]{background:#087b63;color:#fff}
+.site-notification-badge{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;padding:0 5px;border:2px solid #fff;border-radius:10px;background:#d92d20;color:#fff;font:700 11px/16px Arial,sans-serif;text-align:center}
+.site-notification-badge:empty,.site-notification-badge.is-read{display:none}
+.site-notification-panel{position:absolute;top:calc(100% + 12px);right:0;width:min(380px,calc(100vw - 28px));overflow:hidden;border:1px solid #dde8e5;border-radius:15px;background:#fff;box-shadow:0 18px 55px rgba(18,48,74,.2);color:#263f51}
+.site-notification-heading{display:flex;justify-content:space-between;gap:12px;padding:16px 18px;background:#f0f8f6;border-bottom:1px solid #e1ece9}
+.site-notification-heading strong{font-size:16px;color:#12304a}.site-notification-heading span{font-size:12px;color:#668078}
+.site-notification-list{max-height:390px;overflow-y:auto}.site-notification-empty{padding:28px 18px;text-align:center;color:#6b7f89}
+.site-notification-item{display:flex;gap:12px;padding:15px 18px;border-bottom:1px solid #edf1f2;color:#263f51!important;text-decoration:none!important}
+.site-notification-item:hover{background:#f8fbfa}.site-notification-item:last-child{border-bottom:0}
+.site-notification-dot{flex:0 0 9px;width:9px;height:9px;margin-top:6px;border-radius:50%;background:#087b63}
+.site-notification-item.level-important .site-notification-dot{background:#d92d20}.site-notification-item.level-information .site-notification-dot{background:#3976b9}
+.site-notification-content{display:flex;min-width:0;flex-direction:column;gap:4px}.site-notification-content strong{font-size:14px;color:#12304a}
+.site-notification-content span{font-size:13px;line-height:1.45;color:#516a78}.site-notification-content small{font-size:11px;color:#82939c}
+@media(max-width:1199px){
+    .site-header .pbmit-right-box:has(.site-notification){display:flex!important;position:absolute;right:68px;top:20px;transform:none;z-index:1002}
+    .site-header .pbmit-right-box:has(.site-notification)>:not(.site-notification){display:none!important}
+    .site-notification{margin-right:0}.site-notification-button{width:42px;height:42px}
+}
+</style>
+<script>
+(function(){
+    var root=document.currentScript.previousElementSibling;
+    while(root && !root.matches('[data-notification-root]')) root=root.previousElementSibling;
+    if(!root) return;
+    var button=root.querySelector('[data-notification-toggle]');
+    var panel=root.querySelector('[data-notification-panel]');
+    var badge=root.querySelector('[data-notification-badge]');
+    var lastSeen=parseInt(localStorage.getItem('anmaps_notifications_seen')||'0',10);
+    var unread=Array.from(root.querySelectorAll('[data-notification-time]')).filter(function(item){
+        return parseInt(item.dataset.notificationTime||'0',10)>lastSeen;
+    }).length;
+    badge.textContent=unread>99?'99+':String(unread);
+    if(unread===0) badge.classList.add('is-read');
+    button.addEventListener('click',function(event){
+        event.stopPropagation();
+        var willOpen=panel.hidden;
+        panel.hidden=!willOpen;
+        button.setAttribute('aria-expanded',willOpen?'true':'false');
+        if(willOpen){
+            localStorage.setItem('anmaps_notifications_seen',root.dataset.newest||'0');
+            badge.classList.add('is-read');
+        }
+    });
+    document.addEventListener('click',function(event){
+        if(!root.contains(event.target)){panel.hidden=true;button.setAttribute('aria-expanded','false');}
+    });
+    document.addEventListener('keydown',function(event){
+        if(event.key==='Escape'){panel.hidden=true;button.setAttribute('aria-expanded','false');button.focus();}
+    });
+})();
+</script>
+
+						<div class="pbmit-header-search-btn">
+
+							<a href="#" title="Search">
+
+								<i class="pbmit-base-icon-search-1"></i>
+
+							</a>
+
+						</div>
+
+						<div class="pbmit-button-box-second">
+
+							<a class="pbmit-btn" target="_blank" href="http://www.asigabon.com/LoginVrai">
+
+								<span class="pbmit-button-content-wrapper">
+
+									<span class="pbmit-button-icon pbmit-align-icon-right">
+
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.76" height="22.76" viewBox="0 0 22.76 22.76">
+
+											<title>black-arrow</title>
+
+											<path d="M22.34,1A14.67,14.67,0,0,1,12,5.3,14.6,14.6,0,0,1,6.08,4.06,14.68,14.68,0,0,1,1.59,1" transform="translate(-0.29 -0.29)" fill="none" stroke="#000" stroke-width="2"></path>
+
+											<path d="M22.34,1a14.67,14.67,0,0,0,0,20.75" transform="translate(-0.29 -0.29)" fill="none" stroke="#000" stroke-width="2"></path>
+
+											<path d="M22.34,1,1,22.34" transform="translate(-0.29 -0.29)" fill="none" stroke="#000" stroke-width="2"></path>
+
+										</svg>
+
+									</span>
+
+									<span class="pbmit-button-text">CONNEXION ASI</span>
+
+								</span>
+
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</header>
+
+    <section class="signal-hero">
+        <div class="container">
+            <h1>Signalements et vigilance</h1>
+            <p>Adressez une réclamation à l’ANMAPS ou signalez un effet indésirable susceptible d’être lié à un médicament ou à un produit de santé.</p>
+        </div>
+    </section>
+
+    <main class="signal-main">
+        <div class="container">
+            
+            <div class="signal-tabs" role="tablist" aria-label="Types de signalement">
+                <button class="signal-tab active" type="button"
+                        id="tab-reclamation" data-panel="reclamation" role="tab">
+                    <i class="fa-solid fa-comments me-2"></i>Réclamation client
+                </button>
+                <button class="signal-tab " type="button"
+                        id="tab-effet-indesirable" data-panel="effet-indesirable" role="tab">
+                    <i class="fa-solid fa-shield-heart me-2"></i>Déclaration d’effet indésirable
+                </button>
+            </div>
+
+            <section class="signal-panel active" id="reclamation" role="tabpanel">
+                <h2>Déposer une réclamation</h2>
+                <p class="signal-intro">Décrivez clairement votre demande afin que le service compétent puisse l’étudier et vous recontacter.</p>
+                <form class="signal-form" method="post" action="signalement_submit.php" enctype="multipart/form-data">
+                    <input type="hidden" name="csrf_token" value="44936716cac0a92f2b3d6e72751a985708168b75bebd178e540253a2c5ecb7f6">
+                    <input type="hidden" name="type" value="reclamation">
+                    <div class="signal-honeypot" aria-hidden="true">
+                        <label for="website-reclamation">Site internet</label>
+                        <input id="website-reclamation" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="rec-nom">Nom complet <span class="required">*</span></label>
+                            <input class="form-control" id="rec-nom" name="nom" maxlength="160" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rec-email">Adresse e-mail <span class="required">*</span></label>
+                            <input class="form-control" id="rec-email" name="email" type="email" maxlength="190" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rec-telephone">Téléphone</label>
+                            <input class="form-control" id="rec-telephone" name="telephone" type="tel" maxlength="50">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rec-categorie">Catégorie <span class="required">*</span></label>
+                            <select class="form-select" id="rec-categorie" name="categorie" required>
+                                <option value="">Sélectionner</option>
+                                <option>Accueil et qualité de service</option>
+                                <option>Autorisation ou dossier administratif</option>
+                                <option>Médicament ou produit de santé</option>
+                                <option>Établissement de santé</option>
+                                <option>Site internet et service en ligne</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="rec-sujet">Objet de la réclamation <span class="required">*</span></label>
+                            <input class="form-control" id="rec-sujet" name="sujet" maxlength="255" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rec-produit">Produit ou service concerné</label>
+                            <input class="form-control" id="rec-produit" name="produit_concerne" maxlength="255">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="rec-lot">Numéro de lot, si applicable</label>
+                            <input class="form-control" id="rec-lot" name="numero_lot" maxlength="120">
+                        </div>
+                        <div class="col-12">
+                            <label for="rec-description">Description <span class="required">*</span></label>
+                            <textarea class="form-control" id="rec-description" name="description" minlength="20" maxlength="5000" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <label for="rec-resolution">Solution ou réponse souhaitée</label>
+                            <textarea class="form-control" id="rec-resolution" name="resolution_souhaitee" maxlength="3000"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <label for="rec-piece">Document ou image justificative</label>
+                            <input class="form-control" id="rec-piece" name="piece_jointe" type="file"
+                                   accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx">
+                            <small class="d-block mt-2 text-muted">Facultatif — JPG, PNG, WEBP, PDF ou Word, 2 Mo maximum.</small>
+                        </div>
+                    </div>
+                    <div class="signal-note privacy mt-4"><i class="fa-solid fa-lock me-2"></i>Vos coordonnées sont utilisées uniquement pour traiter votre demande et assurer son suivi.</div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" id="rec-consentement" name="consentement" value="1" type="checkbox" required>
+                        <label class="form-check-label" for="rec-consentement">J’accepte le traitement de ces informations pour le suivi de ma réclamation. <span class="required">*</span></label>
+                    </div>
+                    <button class="signal-submit" type="submit">Envoyer la réclamation</button>
+                </form>
+            </section>
+
+            <section class="signal-panel " id="effet-indesirable" role="tabpanel">
+                <h2>Déclarer un effet indésirable</h2>
+                <p class="signal-intro">Ce formulaire recueille les éléments essentiels à l’analyse du signalement par la pharmacovigilance.</p>
+                <div class="signal-note warning">
+                    <strong>Important :</strong> ce formulaire ne remplace ni une consultation ni une prise en charge urgente.
+                    Si la situation est grave ou immédiate, sollicitez sans attendre un professionnel ou un service de santé.
+                </div>
+                <form class="signal-form" method="post" action="signalement_submit.php" enctype="multipart/form-data">
+                    <input type="hidden" name="csrf_token" value="44936716cac0a92f2b3d6e72751a985708168b75bebd178e540253a2c5ecb7f6">
+                    <input type="hidden" name="type" value="effet_indesirable">
+                    <div class="signal-honeypot" aria-hidden="true">
+                        <label for="website-effet">Site internet</label>
+                        <input id="website-effet" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="signal-section mt-0 pt-0 border-0">
+                        <h3>1. Personne qui déclare</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6"><label for="ei-type">Vous êtes <span class="required">*</span></label>
+                                <select class="form-select" id="ei-type" name="declarant_type" required><option value="">Sélectionner</option><option>Patient</option><option>Proche ou aidant</option><option>Médecin</option><option>Pharmacien</option><option>Autre professionnel de santé</option><option>Autre</option></select></div>
+                            <div class="col-md-6"><label for="ei-nom">Nom complet <span class="required">*</span></label><input class="form-control" id="ei-nom" name="declarant_nom" maxlength="160" required></div>
+                            <div class="col-md-6"><label for="ei-email">Adresse e-mail</label><input class="form-control" id="ei-email" name="declarant_email" type="email" maxlength="190"></div>
+                            <div class="col-md-6"><label for="ei-telephone">Téléphone</label><input class="form-control" id="ei-telephone" name="declarant_telephone" type="tel" maxlength="50"></div>
+                            <div class="col-12"><small>Indiquez au moins une adresse e-mail ou un numéro de téléphone afin de permettre un complément d’information.</small></div>
+                        </div>
+                    </div>
+
+                    <div class="signal-section">
+                        <h3>2. Patient concerné</h3>
+                        <div class="row g-3">
+                            <div class="col-md-4"><label for="ei-initiales">Initiales <span class="required">*</span></label><input class="form-control" id="ei-initiales" name="patient_initiales" maxlength="20" required></div>
+                            <div class="col-md-4"><label for="ei-age">Âge <span class="required">*</span></label><input class="form-control" id="ei-age" name="patient_age" type="number" min="0" max="130" required></div>
+                            <div class="col-md-4"><label for="ei-sexe">Sexe <span class="required">*</span></label><select class="form-select" id="ei-sexe" name="patient_sexe" required><option value="">Sélectionner</option><option>Féminin</option><option>Masculin</option><option>Autre / non précisé</option></select></div>
+                        </div>
+                    </div>
+
+                    <div class="signal-section">
+                        <h3>3. Produit suspecté</h3>
+                        <div class="row g-3">
+                            <div class="col-md-6"><label for="ei-medicament">Nom du médicament ou produit <span class="required">*</span></label><input class="form-control" id="ei-medicament" name="medicament_suspect" maxlength="255" required></div>
+                            <div class="col-md-6"><label for="ei-substance">Substance active</label><input class="form-control" id="ei-substance" name="substance_active" maxlength="255"></div>
+                            <div class="col-md-4"><label for="ei-dose">Dose et fréquence</label><input class="form-control" id="ei-dose" name="dose" maxlength="120"></div>
+                            <div class="col-md-4"><label for="ei-voie">Voie d’administration</label><input class="form-control" id="ei-voie" name="voie_administration" maxlength="120"></div>
+                            <div class="col-md-4"><label for="ei-lot">Numéro de lot</label><input class="form-control" id="ei-lot" name="numero_lot" maxlength="120"></div>
+                            <div class="col-md-4"><label for="ei-debut-traitement">Début du traitement</label><input class="form-control" id="ei-debut-traitement" name="date_debut_traitement" type="date"></div>
+                            <div class="col-md-4"><label for="ei-fin-traitement">Fin du traitement</label><input class="form-control" id="ei-fin-traitement" name="date_fin_traitement" type="date"></div>
+                            <div class="col-md-4"><label for="ei-indication">Motif du traitement</label><input class="form-control" id="ei-indication" name="indication" maxlength="2000"></div>
+                        </div>
+                    </div>
+
+                    <div class="signal-section">
+                        <h3>4. Effet observé</h3>
+                        <div class="row g-3">
+                            <div class="col-12"><label for="ei-description">Description de l’effet <span class="required">*</span></label><textarea class="form-control" id="ei-description" name="description_effet" minlength="20" maxlength="5000" required></textarea></div>
+                            <div class="col-md-4"><label for="ei-date-effet">Date de début</label><input class="form-control" id="ei-date-effet" name="date_debut_effet" type="date"></div>
+                            <div class="col-md-4"><label for="ei-gravite">Gravité <span class="required">*</span></label><select class="form-select" id="ei-gravite" name="gravite" required><option value="">Sélectionner</option><option>Non grave</option><option>Hospitalisation ou prolongation</option><option>Mise en jeu du pronostic vital</option><option>Incapacité importante</option><option>Décès</option><option>Autre situation médicalement importante</option></select></div>
+                            <div class="col-md-4"><label for="ei-evolution">Évolution <span class="required">*</span></label><select class="form-select" id="ei-evolution" name="evolution" required><option value="">Sélectionner</option><option>Guéri</option><option>En amélioration</option><option>Non guéri</option><option>Avec séquelles</option><option>Décès</option><option>Inconnue</option></select></div>
+                            <div class="col-md-6"><label for="ei-autres">Autres médicaments pris</label><textarea class="form-control" id="ei-autres" name="autres_medicaments" maxlength="3000"></textarea></div>
+                            <div class="col-md-6"><label for="ei-antecedents">Antécédents ou informations utiles</label><textarea class="form-control" id="ei-antecedents" name="antecedents" maxlength="3000"></textarea></div>
+                            <div class="col-12">
+                                <label for="ei-piece">Document ou image utile à l’évaluation</label>
+                                <input class="form-control" id="ei-piece" name="piece_jointe" type="file"
+                                       accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx">
+                                <small class="d-block mt-2 text-muted">Facultatif — ordonnance, compte rendu, photo ou autre justificatif au format JPG, PNG, WEBP, PDF ou Word, 2 Mo maximum.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signal-note privacy mt-4"><i class="fa-solid fa-user-shield me-2"></i>Les données de santé et de contact transmises sont confidentielles et utilisées pour l’évaluation et le suivi de pharmacovigilance.</div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" id="ei-consentement" name="consentement" value="1" type="checkbox" required>
+                        <label class="form-check-label" for="ei-consentement">Je certifie l’exactitude des informations et accepte leur traitement pour la vigilance sanitaire. <span class="required">*</span></label>
+                    </div>
+                    <button class="signal-submit" type="submit">Envoyer la déclaration</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <div class="floating-button">
+    <a href="#" class="btn btn-primary">
+        <i class="fas fa-phone"></i> 1421
+    </a>
+</div>
+
+<footer class="site-footer">
+	<div class="pbmit-footer-big-area-wrapper">
+		<div class="footer-wrap pbmit-footer-big-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-xl-4"></div>
+					<div class="col-md-12 col-xl-8 pbmit-footer-right">
+						<h3 class="pbmit-title">L’ANMAPS est une Autorité Administrative Indépendante sous la tutelle du ministère en charge de la santé, qui dispose  de l’autonomie de gestion..</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="pbmit-footer-widget-area">
+		<div class="container">
+			<div class="row">
+				<div class="pbmit-footer-widget-col-1 col-md-6 col-lg-3">
+					<aside class="widget widget_text">
+						<div class="textwidget">
+							<div class="pbmit-footer-logo">
+								<img src="images/logo-couleur.png" alt="">
+							</div>
+							<div class="pbmit-footer-text">
+								
+							</div>
+							<ul class="pbmit-social-links">
+								<li class="pbmit-social-li pbmit-social-facebook">
+									<a title="Facebook" href="https://www.facebook.com/profile.php?id=61552706034877" target="_blank" rel="noopener">
+										<span><i class="pbmit-base-icon-facebook-f"></i></span>
+									</a>
+								</li>
+								<li class="pbmit-social-li pbmit-social-twitter">
+									<a title="Twitter" href="https://x.com/ANMAPS_Gabon?t=31pwq-o_eUpxu7uYgPv0jw&s=09" target="_blank" rel="noopener">
+										<span><i class="pbmit-base-icon-twitter-2"></i></span>
+									</a>
+								</li>
+								<li class="pbmit-social-li pbmit-social-linkedin">
+									<a title="LinkedIn" href="https://www.linkedin.com/company/agence-du-médicament-du-gabon/" target="_blank" rel="noopener">
+										<span><i class="pbmit-base-icon-linkedin-in"></i></span>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</aside>
+				</div>
+				<div class="pbmit-footer-widget-col-2 col-md-6 col-lg-3">
+					<div class="widget">
+						<h2 class="widget-title">Liens Utiles</h2>
+						<div class="textwidget">
+							<ul>
+								<li><a href="#">Qui sommes nous</a></li>
+								<li><a href="#">Nos services</a></li>
+								<li><a href="actualite.html">Actualités</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="pbmit-footer-widget-col-3 col-md-6 col-lg-3">
+					<div class="widget">
+						<h2 class="widget-title">Heures d'ouverture</h2>
+						<div class="pbmit-timelist-wrapper">
+							<ul class="pbmit-timelist-list">
+								<li><span class="pbmit-timelist-li-title">Lun - Ven : 7h30 - 15h30</span></li>
+								<li><span class="pbmit-timelist-li-title">Samedi-Dimanche : Fermé</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="pbmit-footer-widget-col-4 col-md-6 col-lg-3">
+					<aside class="widget">
+						<h2 class="widget-title">Notre adresse</h2>
+						<div class="pbmit-contact-widget-line pbmit-contact-widget-address">
+							Libreville, Gabon<br> Oloumi
+						</div>
+					</aside>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="pbmit-footer-text-area">
+		<div class="container">
+			<div class="pbmit-footer-text-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="pbmit-footer-copyright-text-area"> 
+							Copyright © 2024 <a href="#">ANAMPS</a> 
+						</div>
+					</div>
+					<div class="col-md-6">
+						<ul class="pbmit-footer-menu">
+							<li class="menu-item">
+								<a href="#">Conditions générales</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Politique de confidentialité</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer End -->
+		
+<!-- Search Box Start Here -->
+<div class="pbmit-search-overlay">
+	<div class="pbmit-icon-close">
+		<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="28.163" height="28.163" viewBox="0 0 26.163 26.163">
+			<rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
+			<rect width="36" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+		</svg>
+	</div>
+	<div class="pbmit-search-outer"> 
+		<form class="pbmit-site-searchform">
+			<input type="search" class="form-control field searchform-s" name="s" placeholder="Que cherchez-vous ? …">
+			<button type="submit"></button>
+		</form>
+	</div>
+</div>
+<!-- Search Box End Here --></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jquery Waypoints JS -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- jquery Appear JS -->
+<script src="js/jquery.appear.js"></script>
+<!-- Numinate JS -->
+<script src="js/numinate.min.js"></script>
+<!-- Slick JS -->
+<script src="js/swiper.min.js"></script>
+<!-- Magnific JS -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Circle Progress JS -->
+<script src="js/circle-progress.js"></script> 
+<!-- countdown JS -->
+<script src="js/jquery.countdown.min.js"></script> 
+<!-- AOS -->
+<script src="js/aos.js"></script>
+<!-- GSAP -->
+<script src='js/gsap.js'></script>
+<!-- Scroll Trigger -->
+<script src='js/ScrollTrigger.js'></script>
+<!-- Split Text -->
+<script src='js/SplitText.js'></script>
+<!-- Magnetic -->
+<script src='js/magnetic.js'></script>
+<!-- GSAP Animation -->
+<script src='js/gsap-animation.js'></script>
+<!-- Scripts JS -->
+<script src="js/scripts.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"895d9f07ff7663e1","r":1,"version":"2024.4.1","token":"125856bf84ab44059737e93b01aa0fef"}' crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.3/dist/sweetalert2.all.min.js"></script><script>
+document.querySelectorAll('.signal-tab').forEach(function (button) {
+    button.addEventListener('click', function () {
+        var panelId = button.dataset.panel;
+        document.querySelectorAll('.signal-tab, .signal-panel').forEach(function (element) {
+            element.classList.remove('active');
+        });
+        button.classList.add('active');
+        document.getElementById(panelId).classList.add('active');
+        history.replaceState(null, '', '#' + panelId);
+    });
+});
+var initialPanel = location.hash.replace('#', '');
+if (initialPanel === 'reclamation' || initialPanel === 'effet-indesirable') {
+    document.querySelector('[data-panel="' + initialPanel + '"]').click();
+}
+</script>
+</body>
+</html>
