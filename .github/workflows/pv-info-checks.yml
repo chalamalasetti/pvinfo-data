@@ -173,7 +173,7 @@ jobs:
         timeout-minutes: 5
       - name: Company briefing desktop and mobile journey (synthetic fixtures only)
         run: |
-          python3 -m http.server 4173 --bind 127.0.0.1 --directory public &
+          if [ -f scripts/static-server.mjs ]; then node scripts/static-server.mjs 4173 public & else python3 -m http.server 4173 --bind 127.0.0.1 --directory public & fi
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
           npm run content:bundle
