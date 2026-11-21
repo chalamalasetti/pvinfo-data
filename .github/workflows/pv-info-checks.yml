@@ -285,6 +285,8 @@ jobs:
           node test/browser/portfolio.smoke.cjs
           node test/browser/clinical.smoke.cjs
           node test/browser/documents.smoke.cjs
+          node test/browser/discovery-runs.smoke.cjs
+          node test/browser/requirement-runs.smoke.cjs
           node test/browser/events.smoke.cjs
           node test/browser/refresh-center.smoke.cjs
       - name: Post the result on the PV-Info commit
