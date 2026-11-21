@@ -1,0 +1,1356 @@
+{
+ "pass": "dr-1",
+ "batch": "d28",
+ "items": [
+  {
+   "id": "a207eb7d-06ba-49fc-8768-9eb3f9ae9a40",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "7442075e-c05a-4a11-81b2-b17df970105a",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "6a497918-f9d8-441f-9088-707c9a05af93",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "b133e6b8-6774-4583-a8ec-42b3304817bf",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "81136d57-9b64-4b52-af5e-c32e88ce636f",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "e12591c6-5af2-4967-b626-e91823782fc7",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "4e8da73d-8aa9-4226-b034-dae9fef87f09",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "f903fbfe-f828-41a3-ab06-71b76a72e838",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "e81ac1ce-6771-4b9e-b7b5-96288339b749",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "1c589d84-90ca-461a-bbc3-0196399d043a",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "81ad62a1-3b30-492d-a9bb-864578a94c3b",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "5e9bf7ea-c012-4aa1-968c-fc18b8b1373f",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "df52efbc-a0c0-40a7-b5f4-5a2ca13a586f",
+   "document_version_id": "579774ac-114a-4c34-8da1-925edb435af3",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote began mid-sentence and did not contain the new-identifier assignment stated; replaced with the full contiguous example passage and generalised the statement.",
+   "row": {
+    "title": "Assign a new safety report identifier for a separate adverse event and link the earlier report in A.1.12",
+    "statement": "When the same patient suffers a separate adverse event, the sender should assign a new (case) safety report unique identifier for the new case and represent the previous report for that patient in A.1.12 (Identification Number of the Report which is Linked to this Report).",
+    "quote": "Company K assigns a new (case) safety report unique identifier JP-K-002 because JP-K-001, as described above, represent a separate adverse event. Company K populates A.1.10.2 with JP-K-002 because company K is the initial sender of the report. Because there has not been a previous E2B/M2 electronic report, the identifiers in A.1.0.1 and A.1.10.2 are the same. The previous report from Company K, JP-K-001, for patient XX should be represented in A.1.12, Identification Number of the Report which is Linked to this Report.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "0442ce4f-6207-477c-a60e-79810927a941",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful",
+    "level_correct"
+   ],
+   "reason": "Statement copied the bare answer 'No, ...' without the question; the rule (only listed nullFlavors are acceptable) is a conformance requirement.",
+   "row": {
+    "statement": "Senders must use only the nullFlavors specified for each data element in the E2B(R3) IG and the Q&A document (e.g. NI cannot be used where it is not listed as an allowed value); the Q&A value set supersedes the IG.",
+    "level": "Mandatory",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "17125e3b-24d5-4a7a-b22b-b57f6cb6eba1",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "cb1715e7-0418-4ea6-8921-672013dcbd69",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement was truncated mid-sentence and lost the regional IGs and appendices that senders must also consult.",
+   "row": {
+    "statement": "When creating ICSR XML files, senders should refer not only to the ICH Implementation Guide but also to regional Implementation Guides and the appendices (reference instances, technical information, etc.).",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "6f1e02db-a5e4-46be-9af5-33ce359335da",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted that the rule concerns codes.",
+   "row": {
+    "title": "Use the case-sensitive form for codes in E2B(R3) ICSR messages",
+    "statement": "In ICH E2B(R3) ICSR messages the case-sensitive form should be used for codes; regional guidance may give more detail.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "ffaecc8f-711d-48ab-b60a-7be0116173cb",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement was a bare 'Yes' answer without the scenario.",
+   "row": {
+    "statement": "When a serious case already sent electronically to a regulatory authority is determined to be non-serious after follow-up, the company should send a new message updating the previous report with the new information and indicating that the case is now non-serious.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "306abff7-c849-4b17-92b7-8f43bfc814f6",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the scenario (case downgraded to non-serious).",
+   "row": {
+    "statement": "When a serious case already sent to a regulatory authority becomes non-serious after follow-up, the company should not send a nullification message for the case in the authority's database (it should send a follow-up instead).",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "d447bebe-5d23-4d9d-b2d4-1c029e353ae9",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement 'In this case' lacked the scenario (father exposed before partner's pregnancy, miscarriage).",
+   "row": {
+    "title": "Report the miscarriage as the ADR when the father took the drug before conception",
+    "statement": "Where a man took medication before his partner became pregnant and she later miscarried, the ADR in the ICSR should be the miscarriage experienced by the mother.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "da975b50-9cac-4ede-a011-6d8a89e2ccb2",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the scenario context.",
+   "row": {
+    "statement": "In a report of miscarriage following drug exposure of the father before conception, the patient of the report should be the mother.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "6927aaf8-d56a-4aaa-be9b-0429e9442cee",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Title/statement were phrased as 'Answer c)' and unclear without context.",
+   "row": {
+    "title": "Report the father's route of administration in a paternal-exposure miscarriage case",
+    "statement": "In a miscarriage case where the father took the suspect medication, the route of administration reported should be how the father was given the suspect medication.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "b6dddf58-3262-4bd5-a192-3e6dd421a77b",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "2b9ebd01-7c18-46ec-9cde-c616a39395c4",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "646f8b88-f19c-4887-af9f-cc2e62272899",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "6e0aab02-4041-42dd-93be-7eec7e6f500e",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "91b6a1fd-2332-4897-bbbd-68114116e0c9",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "19fa41e6-5d1a-4fbb-b641-b0ec98606992",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "b1eb84af-a178-4d39-969d-96784fdd6e12",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the context of reaction start/end dates (E.i.4/E.i.5).",
+   "row": {
+    "statement": "Senders should populate the most accurate information known for each reaction/event start date (E.i.4) and end date (E.i.5).",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "93d70c96-db79-4205-9016-e1e5f5f5106c",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful",
+    "quote_clean"
+   ],
+   "reason": "Statement dropped the condition that blank dates are acceptable only when the information is not known to the sender.",
+   "row": {
+    "statement": "Leaving the reaction start date (E.i.4), end date (E.i.5) or both blank is acceptable if the information is not known to the sender.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "2677f57f-4d90-4251-a0ad-84098c797ab9",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "bca468ed-17b1-4a4d-966a-dc6a65197850",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted the qualifier 'unless there is a clear clinical rationale'.",
+   "row": {
+    "statement": "A sender should not infer reaction/event start or end dates (E.i.4/E.i.5) unless there is a clear clinical rationale, which should then be stated in the case narrative.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "f7dda2dd-3ba3-4f1f-ac57-cfbd51a35fc0",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "010a8118-c2a6-41ee-bb5a-d4b2d9990817",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement 'In such a case' omitted the triggering condition and the target field.",
+   "row": {
+    "statement": "If a test result value has no suitable UCUM code or unit (e.g. INR) or its unit is unknown, senders should enter the value and unit as unstructured data in F.r.3.4.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "2365fc02-5a76-4508-a6f6-8c3ad642196c",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "f8e8612d-bb40-44ad-a766-2877c41d9668",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "a624398f-5181-4b82-baa3-d16b7c910e18",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement did not name the data element G.k.10.r.",
+   "row": {
+    "statement": "For possible counterfeit drugs, value \"1\" should be selected in G.k.10.r (Additional Information on Drug) for both suspected and confirmed counterfeit products.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "d5753ad9-86c3-4d2e-8738-5abf1528f733",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the counterfeit context and the data element.",
+   "row": {
+    "statement": "For reports of suspected or confirmed counterfeit products, the appropriate MedDRA term should be selected for E.i.2.1b.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "9230a4f8-663f-4153-bdd6-322b632f073e",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement said 'in the case' rather than the case narrative and lacked the counterfeit context.",
+   "row": {
+    "statement": "For reports of possible counterfeit products, any explanatory information should be included in the case narrative (H.1).",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "c0cb5e18-83ce-416a-b355-0876c54c2956",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted the condition (new information confirms the product is not counterfeit).",
+   "row": {
+    "statement": "If new information confirms that a product reported as possibly counterfeit is not counterfeit, G.k.10.r should be changed appropriately in a follow-up report.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "ab25c921-e480-4348-ad72-b0a440e9b89e",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the D.2 age-field context.",
+   "row": {
+    "statement": "When reporting patient age (e.g. a newborn whose reaction developed in utero but was observed at delivery), the sender should select the most appropriate of the D.2 age fields based on the information provided.",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "dc6fe6c5-cc1d-4b97-986b-93aefd784d2e",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the context of G.k.9.i.4 (recurrence on re-administration) and that MedDRA codes need not be identical.",
+   "row": {
+    "statement": "When deciding G.k.9.i.4 (Did reaction recur on re-administration?) where the event on re-administration differs from the original, medical judgment should be used to assess conceptual similarity; the MedDRA codes need not be identical.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "bc87de80-cf32-4591-be42-7e9ccc6b9c35",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted where the information should be recorded (D.8.r).",
+   "row": {
+    "statement": "For vaccines given in multi-dose schedules, information on unsuspected doses should be recorded in D.8.r Relevant Past Drug History.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "26712816-36f0-4d5a-8094-16b011578520",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "2520ce8b-f59f-4fc6-b7e7-7cdcaed7b162",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement described only the first dosage iteration (r=1); the scenario also requires a second G.k.4.r iteration (r=2) for the second dose.",
+   "row": {
+    "statement": "Where a patient received two doses of the same vaccine and both are suspected, report one suspect drug (G.k.1=1, k=1) with two dosage iterations: G.k.4.r r=1 for the first dose (e.g. Dosage Text '1st dose') and r=2 for the second dose (e.g. '2nd dose').",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "0e925c03-50a6-4560-a35a-bcff270a68f6",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "e738c5b8-e02c-4398-a1cd-ffb0c3a85ff6",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "1d98f52c-a4b6-4acd-a2c7-22bd09e9d428",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted the nullFlavor value (UNK) and the context of HA-forwarded ICSRs with minimal primary source information.",
+   "row": {
+    "statement": "When an ICSR is forwarded by a health authority with minimal or no primary source information, C.2.r.4 Qualification should be populated with nullFlavor UNK (and the health authority identified as primary source in C.2.r).",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "69c56371-a12a-426a-82aa-ce75b12759ad",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the context of HA-forwarded ICSRs with no primary source information.",
+   "row": {
+    "statement": "When an ICSR is forwarded by a health authority with minimal or no primary source information, C.1.3 Type of report may be populated with code 4 (Not available to sender (unknown)), if appropriate.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "1327d2cd-b02a-41d0-ba72-0fa2969ed3bf",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement 'must enter the date' did not say which date or when.",
+   "row": {
+    "title": "Always populate C.1.5 date of most recent information, even without follow-up",
+    "statement": "The sender must enter C.1.5 (Date of Most Recent Information) even when only initial information has been received and there is no follow-up.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "c68abf40-dead-4f8e-bd2e-6e6ec07e3a42",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the condition (only initial information received).",
+   "row": {
+    "statement": "If the sender has only initially received information (no follow-up), it should enter in C.1.5 the same date as in C.1.4 (date first received).",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "d6033076-eec1-4911-9493-6812b67c6f73",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted D.10.7.1.r.3 which the source also covers.",
+   "row": {
+    "statement": "The nullFlavors MSK, ASKU, NASK and UNK are allowed for D.7.1.r.3 and D.10.7.1.r.3 (Continuing, patient or parent medical history).",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "4febabc3-c679-4fd2-a48b-390cd8cdd8fd",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "a693059d-ff05-4df8-bd9b-80b7a020546a",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Overlaps the Mandatory row on E.i.3.2 but adds the allowed values."
+  },
+  {
+   "id": "ab2185e4-2487-4653-8462-ad163dafa8ea",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement was a bare fragment without subject.",
+   "row": {
+    "statement": "Where an event is not serious (or the information is unknown), each E.i.3.2 seriousness criterion should be 'left blank' by populating nullFlavor NI.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "c2901408-24c9-40bd-9381-f92a5511fd95",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement dropped the qualifier that this applies even for non-serious reports.",
+   "row": {
+    "statement": "All 6 seriousness criteria in E.i.3.2 should be included in the XML every time, even if the report is non-serious.",
+    "confidence": 92
+   }
+  },
+  {
+   "id": "cf0b6102-124b-4280-b77b-894de4b1e756",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement was a bare conformance fragment without naming the data element.",
+   "row": {
+    "statement": "F.r.3.1 Test Result (code) is optional but must be populated if F.r.2 is populated and neither F.r.3.2 nor F.r.3.4 is populated.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "131f2e1f-0692-4a5f-a7f5-26c5e2d8d731",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "16b9dcd6-ad85-410e-bc19-6501597fb8a2",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "level_correct",
+    "statement_faithful"
+   ],
+   "reason": "'Cannot' expresses a prohibition (Mandatory); statement also did not name F.r.3.2.",
+   "row": {
+    "statement": "Senders must not add a qualifier symbol (<, >, <=, >=) to F.r.3.2 Test Result; ranges are expressed with the IVL_PQ data type using nullFlavors NINF/PINF.",
+    "level": "Mandatory",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "78129193-fa04-4c79-b284-a5ff78581a47",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "f4459e96-689b-4b69-87bd-7bfcd083dfd6",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement dropped the condition 'when no information is obtained'.",
+   "row": {
+    "statement": "D.8.r Relevant Past Drug History can be left blank when no information on past drug history is obtained.",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "4a878241-b1b8-4c88-b588-1188203323f9",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement was a truncated fragment and missed the condition and the UNK allowance.",
+   "row": {
+    "statement": "If any data element in D.8.r is used, D.8.r.1 Name of Drug as Reported must be populated (conditionally required); nullFlavor UNK is allowed when no information is available but D.8.r.1 must be entered.",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "261b47d8-845a-476b-b9b3-cf7058f12db2",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "849e07d5-8050-453a-af08-efa95377bc48",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement 'Radiogram, etc.' dropped the subject (unstructured findings from tests such as CT, MRI).",
+   "row": {
+    "statement": "Unstructured findings from tests and procedures such as CT, MRI or radiogram should be provided as free text in F.r.3.4 (not in F.r.6, which is reserved for reporter comments).",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "86464385-4c08-45a1-a025-40550caa4af2",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted 'during pregnancy' and the scenario (maternal exposure before pregnancy).",
+   "row": {
+    "statement": "Where the mother's drug exposure started before pregnancy, G.k.6 Gestation Period at Time of Exposure should be used to capture the earliest exposure during pregnancy, using clinical judgment to choose the value/unit.",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "d8618f4e-fa90-4cb3-8269-84ec5bfb258a",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement lacked the foetus-report context and that it applies whether exposure was via father or mother.",
+   "row": {
+    "statement": "In a foetus report, regardless of whether the exposure was via the father or the mother, the foetal age information should be provided in D.2.2.1, with parent information in D.10.",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "efcc0cd2-d640-4c22-994f-479e1559a030",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "3c828989-b119-4508-8b22-540690db35e3",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "833803f2-ee4e-4127-9d01-a7bc40c76712",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement omitted the qualifier 'when appropriate, e.g. for legacy data' and the ISO 3166 context.",
+   "row": {
+    "statement": "For ISO 3166 country codes in E2B(R3) messages, codes in the 'Indeterminately reserved' and 'Formerly used' categories (and 'Transitionally reserved') may be used when appropriate, e.g. for legacy data.",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "7da7cfae-f4cd-4991-a3a0-da4345ce9014",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "d13ef36a-1411-4b50-9869-61e550011f35",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "0f741583-f6d6-48b8-8413-af506c55df67",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "98a55dc3-6640-48c8-a53a-392d9a8b1c41",
+   "document_version_id": "59eb72f7-68b0-4389-ba74-50dfa4b1de09",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "2055ba48-930a-4d98-b487-14a64f20b7de",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "81a92e83-2ae9-4cb4-942d-9ec699cc8c61",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "1fccaaba-8a2f-4209-bac8-414ee8565eda",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "f797110f-0c22-4b48-8b36-9b11c32f254f",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "82fac018-71c0-4417-8204-d3d4e253f2e4",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "0cf284b2-a78b-4ab0-ad8a-e614db49a2b1",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "b9125cb4-e32f-4b29-9404-8a598e797ccc",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "'Preferably at the time of approval' is a soft timing preference; acceptable."
+  },
+  {
+   "id": "e3622d73-2375-4c49-a8bb-62bcb37092ad",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "18710fca-3023-44e8-b397-7c9478df8673",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "d5352858-5d11-4a1c-a939-1a38e0f24bcc",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "4b0f293b-d9ce-42bc-813a-b99e76870063",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "4019f881-de5e-418b-a008-2cf30e7c31e5",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "d8d62942-17a1-411d-83ec-60ac26fc6b95",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "3199c3c8-ec30-4be8-812d-77a2be608136",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "8aced2f0-eb02-4165-9e40-d801ea08eee0",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "27a86131-4456-4a55-8b6f-7a46ab32976b",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "ff79b9e6-7c37-45e8-8899-973ca4bbf95a",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "withdraw",
+   "failed_checks": [
+    "company_duty",
+    "statement_faithful"
+   ],
+   "reason": "Background description of possible submission-frequency scenarios across regions; it imposes no company duty (the ad hoc request is covered by the 2.8.2.1 row)."
+  },
+  {
+   "id": "69d2cea7-1310-4619-8397-b7914746cd10",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "506729fe-52af-429e-8b9f-a9c333b9b015",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "withdraw",
+   "failed_checks": [
+    "company_duty",
+    "deadline_ok"
+   ],
+   "reason": "Describes the periodicity that applies in many regions rather than a requirement of this guideline; the frequency is not a deadline."
+  },
+  {
+   "id": "c553b743-ccf3-4c77-aec9-f48d668c78f8",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "2f5e07d4-1e79-4b8e-b8a9-794b6b776f5e",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "378935ca-ba90-44ca-bbb0-a3aa4958d0b5",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "dc600f54-589e-4c76-88d9-218b27b18d4f",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "revise",
+   "failed_checks": [
+    "level_correct",
+    "statement_faithful"
+   ],
+   "reason": "An authority request binds the MAH; restated as the conditional company duty at Mandatory level.",
+   "row": {
+    "title": "Prepare an ad hoc PBRER when a regulatory authority requests one",
+    "statement": "When a regulatory authority requests an ad hoc (\"for cause\") PBRER outside routine reporting, the MAH must prepare it; where no PBRER has been prepared for a number of years, a completely new report is likely to be needed.",
+    "level": "Mandatory",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "76223e95-3de3-4837-9433-a3969809f19a",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "faad6fd3-a0fb-4b33-9441-b56f5c3bf9e8",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "b772ea4f-105b-4315-9432-f273c52b2ec5",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "51153592-4a2d-4314-87d2-b6300bcaa6e1",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "cf06da8d-121a-41ac-bb39-d25633eda7d1",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "64cc6a18-2258-4ce6-9c69-5bd76113c62c",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "3752734d-a0ee-4a9f-98e0-7d5f74b10823",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "cff52b98-433c-4a48-85f7-8bb58578a8ab",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "088af025-6293-4281-8ed1-c8ecb11628dc",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "33e5a0bf-0dd9-4f3c-9e56-951bd435ed7a",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "cd06e297-fc1a-4651-95f3-d45037db6612",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote spans a page break with a footnote line; trivial layout artefact."
+  },
+  {
+   "id": "916a0ead-27da-4f15-b47d-e8766fa25a91",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "9e4e1271-628d-4e4e-915c-7039c70cee9e",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "0c2bd318-4812-4cde-b8ef-ee02cd1f8c37",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "8c11deba-f97f-4fd1-8472-fcbd4c59d6a8",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "aa5f3ee5-dca6-4664-963c-4c975c6f7291",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "34af4d64-fb86-4c5e-ae16-ba84ea4f2d01",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "bf55d177-6c5e-4c81-a46e-447f338e3d42",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "fcf8756c-df34-4717-a9fd-5caa28e201e9",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "e22b27a2-3716-4d1d-ba70-24fd373aac20",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "3eb22335-9b9d-44e1-98d9-e4ecfea33758",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "de65feb2-ca05-42ec-8cdc-6d69b9c59085",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "13e21263-447f-4e51-b4f5-2804607e5ff0",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "926b0b34-e947-43bc-b0db-c94d3ad2a2bd",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "47e72c41-b7c4-4714-aa3d-6f92e2c32446",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "56161146-e1c2-4f36-8266-51cccaabc519",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "5c94200b-fc73-4705-813e-f0e389399aed",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "79e9ad79-50c8-4d34-adf3-e3227300d36a",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "e6eddff2-80cc-497a-9362-ae4ceea803be",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "07bd8097-fd66-405f-ac70-f1fcb539a330",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "1f1b5270-c274-45e0-bd96-76c074bfbe61",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "c9726f22-b6ea-40e2-b541-fa7fc25599f0",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement restated the glossary definition; as it sets the scope of periodic listedness assessment it is restated as the duty.",
+   "row": {
+    "statement": "For periodic reporting of marketed products, the MAH should use the CCSI (core safety information in the CCDS) as the reference to determine whether adverse reactions are listed or unlisted; the CCSI is not the reference for expected/unexpected in expedited reporting.",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "69f76ce8-9810-4619-b979-c5f0945b26d3",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Pure glossary definition in the statement; restated as the duty it scopes (classifying risks in the PBRER).",
+   "row": {
+    "statement": "When characterising risks in the PBRER, the MAH should classify as an identified risk an untoward occurrence for which there is adequate evidence of an association with the product (e.g. confirmed by non-clinical and clinical data, by trials or epidemiological studies, or by well-documented spontaneous reports with strong temporal and biological support).",
+    "confidence": 80
+   }
+  },
+  {
+   "id": "8a5c33e5-cbd5-4383-8648-99513da2ed60",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "9e4b1641-f9c5-441e-868c-d74c3c15746c",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Pure glossary definition in the statement; restated as the duty it scopes (classifying risks in the PBRER).",
+   "row": {
+    "statement": "When characterising risks in the PBRER, the MAH should classify as a potential risk an untoward occurrence for which there is some basis for suspicion of an association with the product that has not been confirmed (e.g. unresolved non-clinical concerns, suggestive but inconclusive trial or study differences, or class effects).",
+    "confidence": 80
+   }
+  },
+  {
+   "id": "697d3327-0358-46c6-aeea-94ba38ebc82f",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Pure glossary definition in the statement; restated as the duty it scopes.",
+   "row": {
+    "statement": "For the PBRER, the MAH should use as Reference Safety Information the safety information in its reference product information that it requires to be listed in all countries where it markets the drug (unless a local authority requires a modification); where the reference product information is the CCDS, the RSI is the CCSI.",
+    "confidence": 80
+   }
+  },
+  {
+   "id": "d2a6eda1-5382-4456-99b9-06376674ef14",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Pure glossary definition in the statement; restated as the duty it scopes (signals reported in Section 16.2).",
+   "row": {
+    "statement": "For PBRER Section 16.2, the MAH should treat as a signal information from one or more sources suggesting a new potentially causal association, or a new aspect of a known association, between the product and an adverse event judged likely enough to justify further action to verify.",
+    "confidence": 80
+   }
+  },
+  {
+   "id": "982ea741-b11b-48a8-83a7-69c98eb028c7",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "ed3b21da-cff4-4c30-ba4c-ca41e5c5cba9",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "bf641a92-4ccf-4ef3-bb75-81b41766ba63",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "112d5811-77fe-4d1f-8cce-947ca3730c8e",
+   "document_version_id": "93980557-e738-43a6-9498-a3225466ccaf",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "ea058d79-1fa5-44a1-ab73-249f519c24be",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "fc423aed-6f8a-47ff-8382-6ffd98ddf5a0",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "6a93c1a0-13ca-4c64-9a82-fa8f7952c805",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "7fe22807-8af0-41b9-a2ac-a664d9333d0a",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "d57e0829-e307-410d-ba15-c4756b528d92",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "39a5688a-4612-4229-ad54-0f3be87ae3ac",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean"
+   ],
+   "reason": "Quote was interleaved with the question column ('DSURs and PBRERs?'); replaced with a clean single-column run.",
+   "row": {
+    "quote": "able to use information across multiple documents. The MAH should first determine the",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "5e63aba9-a1b6-4503-8bf8-6948aa3b6f78",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "d5b192f5-769c-43d9-8cbe-8d24f2e9a69f",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "630185e1-6163-486d-8b5e-92c78595f7af",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "612bd4cf-9662-4b21-b467-4be59eb6c705",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "All checks pass."
+  },
+  {
+   "id": "fa053078-2b2a-479f-885b-f98c1d956e93",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "deadline_ok"
+   ],
+   "reason": "Quote interleaved question-column text; a maximum DSUR period length is not a deadline, so the deadline was cleared.",
+   "row": {
+    "quote": "PBRER, the period covered by the next DSUR should be no longer than one year.",
+    "deadline": "",
+    "deadline_rule": null,
+    "confidence": 85
+   }
+  },
+  {
+   "id": "0c7d2e1f-7d8b-4aa8-b15e-29e5d3cbb2ac",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean"
+   ],
+   "reason": "Quote was interleaved with question-column text; replaced with a clean single-column run.",
+   "row": {
+    "quote": "The MAH should provide all information that is available at the time they prepare the",
+    "confidence": 85
+   }
+  },
+  {
+   "id": "4654b0ff-799a-40ee-b9be-f1bc9f06080d",
+   "document_version_id": "22ab2d38-df06-42a3-96d3-6b9b92979ea6",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean"
+   ],
+   "reason": "Quote was interleaved with question-column text ('PBRERs for these products?'); replaced with a clean run.",
+   "row": {
+    "quote": "accessible, the MAH is advised to base its presentation of efficacy/effectiveness on",
+    "confidence": 85
+   }
+  }
+ ]
+}
