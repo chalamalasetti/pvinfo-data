@@ -54,7 +54,7 @@ jobs:
         with:
           github-token: ${{ secrets.PVINFO_DATA_TOKEN }}
           script: |
-            const fs = require('fs'), { DATA_REPO } = require('./scripts/data-repo.cjs');
+            const fs = require('fs'), { DATA_REPO, BOT_SIGNATURE } = require('./scripts/data-repo.cjs');
             try {
               const r = await github.rest.repos.getContent({...DATA_REPO, path:'fda-feeds.json', ref:'fda-feed-cache'});
               fs.writeFileSync('/tmp/previous-fda.json', Buffer.from(r.data.content, 'base64'));
@@ -71,7 +71,7 @@ jobs:
         with:
           github-token: ${{ secrets.PVINFO_DATA_TOKEN }}
           script: |
-            const fs = require('fs'), { DATA_REPO } = require('./scripts/data-repo.cjs');
+            const fs = require('fs'), { DATA_REPO, BOT_SIGNATURE } = require('./scripts/data-repo.cjs');
             const branch = 'fda-feed-cache';
             try { await github.rest.git.getRef({...DATA_REPO, ref:`heads/${branch}`}); }
             catch(e) {
@@ -82,7 +82,7 @@ jobs:
             let sha;
             try { sha = (await github.rest.repos.getContent({...DATA_REPO, path:'fda-feeds.json', ref:branch})).data.sha; }
             catch(e) { if(e.status !== 404) throw e; }
-            await github.rest.repos.createOrUpdateFileContents({...DATA_REPO, branch, path:'fda-feeds.json', sha,
+            await github.rest.repos.createOrUpdateFileContents({...DATA_REPO, ...BOT_SIGNATURE, branch, path:'fda-feeds.json', sha,
               message:'Refresh privacy-screened official FDA feeds', content:fs.readFileSync('/tmp/fda-feeds.json').toString('base64')});
       - name: Publish complete runtime data snapshot
         id: publish
