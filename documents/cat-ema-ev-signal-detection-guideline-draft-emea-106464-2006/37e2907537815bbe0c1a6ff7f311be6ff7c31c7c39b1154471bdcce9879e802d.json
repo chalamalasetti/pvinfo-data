@@ -1,0 +1,228 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "cat-ema-ev-signal-detection-guideline-draft-emea-106464-2006",
+  "metadata": {
+    "title": "Draft guideline on the use of statistical signal detection methods in the EudraVigilance data analysis system",
+    "country": "EU",
+    "agency": "EMA",
+    "edition": "Draft (EMEA/106464/2006) · Adopted by CHMP for release for consultation 16 November 2006; comments until 16 May 2007",
+    "norm": "Guidance",
+    "topic": "Draft guideline · PV / medicines safety",
+    "lifecycle": "Both",
+    "legal_basis": "Listed in the PV Info document catalog (EMA); the official text governs.",
+    "applicability": "See the official document for scope and applicability.",
+    "published_on": "",
+    "effective_on": "",
+    "source_status": "draft"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/draft-guideline-use-statistical-signal-detection-methods-eudravigilance-data-analysis-system_en.pdf",
+  "original_sha256": "f99915113b4b9be494b77c1da7616e9eea461da312042324987841f23cd1e82d",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 24,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-3-paragraph-4",
+      "statement": "Identified SDRs always need to be evaluated based on (i) quality controls (e.g. presence of potential duplicate reports and controls of data quality in terms of e.g. completeness or coding of data), and (ii) medical/clinical assessments. Only after such initial evaluation can SDRs be considered as ‘potential signals’ related to the safety of medicinal products, which require further steps of analysis .",
+      "context": "In EudraVigilance, new SDRs are screened regularly in relation to Individual Case Safety Reports (ICSRs) originating from health care professionals and associated to authorised medicinal products. These ICSRs refer to spontaneous reports or reports from non- interventional clinical trials. SDRs are considered present when the measures of disproportionality and/or the number of individual cases exceed certain thresholds. The interpretation of SDRs is often complex and requires thorough knowledge of both the data available in the EudraVigilance Data Analysis System and the statistical methods applied. 1. INTRODUCTION (background) On 20 November 2005, in the European Economic Area (EEA), electronic reporting of individual case safety reports (ICSRs) became mandatory, save in exceptional circumstances.",
+      "fingerprint": "4fc721739ecba7cc7627acf6a6b0326503d6d94c2c7b7a5d3acb6010dd480cad",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-3-paragraph-8",
+      "statement": "The term ‘signal’ in pharmacovigilance entails considerable ambiguity. The potential for confusion about the meaning of ‘signal’ may be amplified with increased used of statistical algorithms in ‘signal detection’, each of which has its own model assumptions, metrics and ad hoc thresholds. Therefore, when referring to statistical calculations, devoid of any clinical context, the term ‘Signal of Disproportionate Reporting’ (SDR) should be used rather than ‘signal’. This is to emphasise that results from such approaches may merely reflect reporting tendencies, which could be a function of numerous non-causal factors (confounding, reporting artefacts, statistical noise or some combination of the above). Furthermore these results warrant investigation based on the clinical context.",
+      "context": "The EudraVigilance Data Analysis System is designed to support the pharmacovigilance activities for all types of medicinal products authorised in the Community independent of the authorisation procedure. It provides tools that facilitate the identification, evaluation and ongoing monitoring of ‘potential signals’ related to the safety of medicinal products and the implementation of the EU risk management strategy. In this context, the EudraVigilance Data Analysis System integrates statistical methods with traditional methods used in pharmacovigilance. This guideline also recognises that there are specific aspects on the use of quantitative methods for the detection of potential signals in vaccines and medicines used in children. 1 In line with the ‘EudraVigilance Access Policies’ currently being elaborated by the EV-EWG in accordance with Community legislation.",
+      "fingerprint": "a71174fc1a7bb27b70e693b2d29744aac02cd642c3d07ea620fede99c0a6dc17",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-4-paragraph-2",
+      "statement": "It needs to be emphasised that in accordance with Community legislation the reporting requirements are based on ‘suspected adverse reactions’ related to medicinal products.",
+      "context": "EMEA 2006 4/21 Therefore, the concept of SDR is applied in this guideline to describe a ‘statistical signal’ that has originated from a statistical method. The underlying principle of this method is that a drug –event pair is reported more often than expected relative to an independence model, based on the frequency of ICSRs on the reported drug and the frequency of ICSRs of a specific adverse event. This statistical association does not imply any kind of causal relationship between the administration of the drug and the occurrence of the adverse event. However, this guideline refers to adverse events as defined in the ICH E2A guideline [15] i.e.",
+      "fingerprint": "8e66bb4b285362b71dba94a51ea1cbd6f6d1c88ae1d328deef18f32ac67f1acb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-5-paragraph-3",
+      "statement": "4.1. Signals of disproportionate reporting (SDRs) SDRs refer to statistical associations between medicinal products and adverse events i.e. drug- event pairs. They should be distinguished from ‘potential signals’ that can originate from individual case analysis and formal epidemiological studies. Different statistical methods to generate SDRs are in use. In the EudraVigilance Data Analysis System, the Proportional Reporting Ratio (PRR) has been implemented in the first release. Other methods will be considered for future implementation.",
+      "context": "4. GENERAL CONSIDERATIONS ON POTENTIAL SIGNALS GENERATED BY STATISTICAL METHODS 4.2. The proportional reporting ratio (PRR) The PRR is a statistical method used to detect SDRs in pharmacovigilance databases such as EudraVigilance. This method relies on the principle that when a SDR (involving a particular adverse event) is identified for a medicinal product (referred to medicinal product P), this adverse event is reported relatively more frequently in association with this medicinal product P than with other medicinal products. This relative increase in the adverse event reporting for the medicinal product P is reflected in a table based on the total number of individual cases contained in a pharmacovigilance database, as follows:",
+      "fingerprint": "38908c5d90c92182eb7b354704f0c461eec3d3efc951c537a6628062aae12d63",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-7-paragraph-1",
+      "statement": "EMEA 2006 7/21 (a) The PRR measures a reporting relationship between a medicinal product P and an adverse event R on the basis of a relative increase of the proportion of individual cases related to an adverse event. This does not necessarily imply a causal relationship between the administered medicinal product P and the occurrence of the adverse event R. Such statistical disproportionality may reflect one or more of a number of biases and artefacts inherent in pharmacovigilance data as well as “statistical noise”. Consequently, there is a scientific consensus that SDRs identified with quantitative methods should always be medically assessed [5,6,9,12] .",
+      "context": "99.9 to reflect the presence of a possible SDR. The PRR can be computed at all the levels of the MedDRA hierarchy and the main levels of the medicinal product dictionary (i.e. international non- proprietary name, invented name (recoded or not when applicable) or even formulation level). (b) The initial decision on whether a drug-event combination should be further investigated is based on thresholds applied to the estimates of the PRR and other statistics (e.g. the estimated lower bound of the confidence interval). There is no ‘gold standard’ on the thresholds that should be adopted for SDRs.",
+      "fingerprint": "ea28457c5a8a44a7ea28658ddb19f46589794ab449d2aaed219e238e9ee85588",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-7-paragraph-2",
+      "statement": "(b) The initial decision on whether a drug-event combination should be further investigated is based on thresholds applied to the estimates of the PRR and other statistics (e.g. the estimated lower bound of the confidence interval). There is no ‘gold standard’ on the thresholds that should be adopted for SDRs.",
+      "context": "EMEA 2006 7/21 (a) The PRR measures a reporting relationship between a medicinal product P and an adverse event R on the basis of a relative increase of the proportion of individual cases related to an adverse event. This does not necessarily imply a causal relationship between the administered medicinal product P and the occurrence of the adverse event R. Such statistical disproportionality may reflect one or more of a number of biases and artefacts inherent in pharmacovigilance data as well as “statistical noise”. Consequently, there is a scientific consensus that SDRs identified with quantitative methods should always be medically assessed [5,6,9,12] . (c) The thresholds commonly used to detect SDRs are a trade-off between two options:",
+      "fingerprint": "333f8b6a8af15b27d565927e6547a5648745daadd370eb5c266d9a83da162819",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-7-paragraph-5",
+      "statement": "(d) The PRR involves the comparison of a reporting relationship for a specific medicinal product P with all other medicinal products in a database. Therefore, the value of the PRR and consequently the SDRs identified with this method depend on the data in the database on which the PRR is computed. Therefore the PRR interpretation should take the following elements into account [7]:",
+      "context": "either generating too many ‘false positive signals’ if the threshold is too low or missing ‘potential signals’ if this threshold is too high. - The type of medicinal products included in the database - The medical terminology(ies) applied - The coding practices - The date of the creation of the database - The source of ICSRs (i.e. all unsolicited reports) These elements influence the value of the PRR and may induce masking effects.",
+      "fingerprint": "4bfc56589ad11cf281db99c851d878d4cbb96c86ba1cf4f8164dce9242b1d045",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-7-paragraph-6",
+      "statement": "- The type of medicinal products included in the database - The medical terminology(ies) applied - The coding practices - The date of the creation of the database - The source of ICSRs (i.e. all unsolicited reports) These elements influence the value of the PRR and may induce masking effects.",
+      "context": "List governed by page-7-paragraph-5: (d) The PRR involves the comparison of a reporting relationship for a specific medicinal product P with all other medicinal products in a database. Therefore, the value of the PRR and consequently the SDRs identified with this method depend on the data in the database on which the PRR is computed. Therefore the PRR interpretation should take the following elements into account [7]: Alternatively they may exaggerate the importance of a medicinal product-adverse event statistical association.",
+      "fingerprint": "cc37361f941619c7dd6a671969d8f670cae04678f5a5500405c10ae879c6c5bd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-7-paragraph-8",
+      "statement": "(e) In addition to quantitative aspects it is also important to consider other elements in the selection and prioritisation of SDRs identified in a database. These should be taken into account regardless of whether a PRR has exceeded a pre-defined threshold. The following elements should be evaluated:",
+      "context": "Alternatively they may exaggerate the importance of a medicinal product-adverse event statistical association. - whether the adverse event is labelled/unlabelled - whether the SDR has already been/is currently assessed.",
+      "fingerprint": "4109747a31d22358dc25de21be252d1d4f60acb5757a845f96c4d4bdaa8a4187",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-7-paragraph-9",
+      "statement": "- whether the adverse event is labelled/unlabelled - whether the SDR has already been/is currently assessed.",
+      "context": "List governed by page-7-paragraph-8: (e) In addition to quantitative aspects it is also important to consider other elements in the selection and prioritisation of SDRs identified in a database. These should be taken into account regardless of whether a PRR has exceeded a pre-defined threshold. The following elements should be evaluated: Statistical analysis, if carried out in an undisciplined manner in a database, can entail subjective decisions in the selection, deployment, and interpretation of data mining procedures and outputs and accordingly, results may not be generalizable.",
+      "fingerprint": "c0de397459ebe60c45e8ba48f2bfe355c46f1fdc61f57e165bd9ab2dc02d8ab1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-7-paragraph-12",
+      "statement": "(g) The PRR may be refined using similar techniques to other SDRs (e.g. combining multiple medicinal products and/or adverse events, stratification by age and sex of the patient). The possibility of masking of medicinal product-adverse event relationships by other medicinal products should also be kept in mind when assessing SDRs based on the PRR [10].",
+      "context": "(f) The absence of a SDR does not necessarily exclude the possibility of an association between the medicinal product P and the adverse event R. 4.6. Thresholds defining SDRs in EudraVigilance There is currently no ‘gold standard’ that establishes universal thresholds for ‘statistical signals’. Thresholds used in EudraVigilance are empirical and refer to those published by Evans et al [1]. Further practical experience as well as formal validation studies are necessary to assess which thresholds should be applied routinely in the EudraVigilance Data Analysis System.",
+      "fingerprint": "c0f1a2f4ef4f7c1036ebe353e3729a95d3d6138a474e0fae9406e5d1be0f04b0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-7-paragraph-13",
+      "statement": "4.6. Thresholds defining SDRs in EudraVigilance There is currently no ‘gold standard’ that establishes universal thresholds for ‘statistical signals’. Thresholds used in EudraVigilance are empirical and refer to those published by Evans et al [1]. Further practical experience as well as formal validation studies are necessary to assess which thresholds should be applied routinely in the EudraVigilance Data Analysis System.",
+      "context": "(g) The PRR may be refined using similar techniques to other SDRs (e.g. combining multiple medicinal products and/or adverse events, stratification by age and sex of the patient). The possibility of masking of medicinal product-adverse event relationships by other medicinal products should also be kept in mind when assessing SDRs based on the PRR [10]. However, defining SDRs in terms of absolute values of a PRR or other statistics may prove to be almost impossible. Therefore these statistics have to be considered as one of many",
+      "fingerprint": "c466b0dfcaf9c93c174d5de24847e07bae8e6bce474926197801d9dcc118d48f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-8-paragraph-9",
+      "statement": "The following examples provide an illustration of the data summaries and SDR functionalities available in the EudraVigilance Data Analysis System. For detailed information on how to apply the system to data analysis, the training and user material needs to be consulted.",
+      "context": "- To conduct dedicated analyses on sub-sets of individual cases using different analyses filters. This allows ad-hoc investigation of ‘potential signals’ in an exploratory and descriptive manner. 5.1. Standard outputs of SDRs The ‘Reaction Monitoring Weekly/Monthly’ Report (shown in table 2) is generated at defined intervals (weekly or monthly). The table contains the number of new individual cases (initial case or new follow-up of cases) received during the period covered by the report. The numbers displayed in the table are calculated based on ICSRs related to spontaneous reports and reports from non-interventional clinical trials. Only ‘suspect’ and ‘interacting’ medicinal products are taken into account.",
+      "fingerprint": "8af5cc6920990e0ab7dacb584697667374ff01832b5855b160fa7a791ccedbc2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-16-paragraph-7",
+      "statement": "The mainstay of pharmacovigilance still remains, however, the regular and systematic review of all new ICSRs. Statistical methods, as currently implemented in EudraVigilance, mainly provide tools to prioritise the review of ICSRs and additional factors need to be taken into account. For example, the PRR method does not examine routinely concomitant drug-event pairs for interactions, which have to be assessed by the reviewer. Knowledge of the ‘nature’ of the data available is also vital. This refers for instance to the origin of the ICSRs (EEA or third countries), since the indications for the same medicinal product may vary across countries.",
+      "context": "When a medicinal product is new to the market and only a small number of ICSRs has been received, it is feasible and probably more appropriate to review these ICSRs individually than to rely on statistical methods. This is partly due to the fact that the power of the statistical screening are likely to be limited with low numbers of ICSRs. Furthermore, the knowledge about the safety profile of a medicinal product at early marketing stages is mainly based on the clinical experience and therefore the screening of individual cases may add further value to the monitoring process. The current statistical methods only take into account a limited number of data fields focusing mainly on the drug-event pair and the patient’s characteristics. However, further experience needs to be gained with regard to the sophisticated ICH E2B(M) and M2 data structure and the extensive data fields, thus providi",
+      "fingerprint": "f795c689ef3fb938173c28e8d615cb239c03d1b3cbc08509145291e337c9ca3b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-16-paragraph-8",
+      "statement": "The current statistical methods only take into account a limited number of data fields focusing mainly on the drug-event pair and the patient’s characteristics. However, further experience needs to be gained with regard to the sophisticated ICH E2B(M) and M2 data structure and the extensive data fields, thus providing further opportunities to improve the statistical data analysis.",
+      "context": "The mainstay of pharmacovigilance still remains, however, the regular and systematic review of all new ICSRs. Statistical methods, as currently implemented in EudraVigilance, mainly provide tools to prioritise the review of ICSRs and additional factors need to be taken into account. For example, the PRR method does not examine routinely concomitant drug-event pairs for interactions, which have to be assessed by the reviewer. Knowledge of the ‘nature’ of the data available is also vital. This refers for instance to the origin of the ICSRs (EEA or third countries), since the indications for the same medicinal product may vary across countries. 7.1. Systematic evaluation of SDRs: The critical aspect of the integration of statistical methods with the classical methods of ‘signal detection’ in pharmacovigilance is the systematic evaluation of the SDRs. There is scientific consensus that signa",
+      "fingerprint": "f53f9b554cdf9b83cec6f21c13a1d7faed808ef2f7b6d380f7b17c4b0079b6e5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-16-paragraph-9",
+      "statement": "7.1. Systematic evaluation of SDRs: The critical aspect of the integration of statistical methods with the classical methods of ‘signal detection’ in pharmacovigilance is the systematic evaluation of the SDRs. There is scientific consensus that signals of disproportionate reporting identified with statistical methods should always be medically assessed.",
+      "context": "The current statistical methods only take into account a limited number of data fields focusing mainly on the drug-event pair and the patient’s characteristics. However, further experience needs to be gained with regard to the sophisticated ICH E2B(M) and M2 data structure and the extensive data fields, thus providing further opportunities to improve the statistical data analysis. The steps outlined in diagram 1 provide general guidance on the reviewing process of SDRs, which relies on medical judgment. These steps should include the following aspects:",
+      "fingerprint": "71fcf8859bb25c547e84052dd444f71d94c741965168328d2d3fac20c18f8e0c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-16-paragraph-10",
+      "statement": "The steps outlined in diagram 1 provide general guidance on the reviewing process of SDRs, which relies on medical judgment. These steps should include the following aspects:",
+      "context": "7.1. Systematic evaluation of SDRs: The critical aspect of the integration of statistical methods with the classical methods of ‘signal detection’ in pharmacovigilance is the systematic evaluation of the SDRs. There is scientific consensus that signals of disproportionate reporting identified with statistical methods should always be medically assessed. EMEA 2006 17/ 21 - Identification of potential duplicates: Review of the individual cases related to the SDR in the light of potential duplicates; although EudraVigilance is screened regularly for potential duplicates, there may be situations when an individual case is reported more than once in the database and may not appear initially as a potential duplicate.",
+      "fingerprint": "a6eed333d7afc415625fa0eaa6614862f86a79b3d8e0e8f1201388c10cb5d067",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-17-paragraph-3",
+      "statement": "- Obtaining additional information when appropriate: Taking into account the information available on the individual case, there may be the need to obtain further information from the sender to allow for the assessment of the individual case (e.g.",
+      "context": "- Data quality check: Review of the individual cases related to the SDR with regard to the completeness of the information provided, the coding practices and other factors that could impact on the assessment of the individual case. translation of case narrative if not available in English). - Checking the terms of the marketing authorisation: The summary of product characteristics (SPC) and the Package Leaflet should be checked to obtain further information e.g. on the expectedness of the adverse event, potential known drug-drug interactions.",
+      "fingerprint": "98691bd6afe309d5d833c1493931dcffec3243fc32bfd3ad820ba3b33a163b2e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-17-paragraph-4",
+      "statement": "translation of case narrative if not available in English). - Checking the terms of the marketing authorisation: The summary of product characteristics (SPC) and the Package Leaflet should be checked to obtain further information e.g. on the expectedness of the adverse event, potential known drug-drug interactions.",
+      "context": "- Obtaining additional information when appropriate: Taking into account the information available on the individual case, there may be the need to obtain further information from the sender to allow for the assessment of the individual case (e.g. - Checking additional relevant information: Further information such as the application dossier, the Risk Management Plan, data on Suspected Unexpected Serious Adverse Reactions (SUSARs), Periodic Safety Update Reports (PSURs), post-authorisation commitments and data on post-authorisation studies should be taken into account to assist the evaluation of the SDRs.",
+      "fingerprint": "3e0cbeaa23ee0e319bc06ebea53dbd83a6562a7745d7ca18520fd3e7b5f92eff",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-17-paragraph-5",
+      "statement": "- Checking additional relevant information: Further information such as the application dossier, the Risk Management Plan, data on Suspected Unexpected Serious Adverse Reactions (SUSARs), Periodic Safety Update Reports (PSURs), post-authorisation commitments and data on post-authorisation studies should be taken into account to assist the evaluation of the SDRs.",
+      "context": "translation of case narrative if not available in English). - Checking the terms of the marketing authorisation: The summary of product characteristics (SPC) and the Package Leaflet should be checked to obtain further information e.g. on the expectedness of the adverse event, potential known drug-drug interactions. The different steps of the SDR review process as outlined in diagram 1 should be fully documented and performed in accordance with internationally agreed quality standards to ensure that decisions are made on the principles of a sound medical approach and regulatory decision making [13].",
+      "fingerprint": "2f228e85ba097f7b6e702a2357b41e4aa0dc665146208c4e62bea96db8ff4afa",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-17-paragraph-6",
+      "statement": "The different steps of the SDR review process as outlined in diagram 1 should be fully documented and performed in accordance with internationally agreed quality standards to ensure that decisions are made on the principles of a sound medical approach and regulatory decision making [13].",
+      "context": "- Checking additional relevant information: Further information such as the application dossier, the Risk Management Plan, data on Suspected Unexpected Serious Adverse Reactions (SUSARs), Periodic Safety Update Reports (PSURs), post-authorisation commitments and data on post-authorisation studies should be taken into account to assist the evaluation of the SDRs. EMEA 2006 18/ 21 • Identification of potential duplicates (1) • Data Quality Check (1) • Obtain additional information when appropriate Communicate with relevant stakeholders (2) Diagram 1 Steps of SDR review process Signal of Disproportionate Reporting Check terms of marketing authorisation (SPC, PIL) Information available in other parts of marketing authorisation dossier:",
+      "fingerprint": "6f3631f210443e948dbb1a9e2d345c233e8af8d3b5f68f2de360addd9c8885d7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-18-paragraph-2",
+      "statement": "• Initial Application • SUSARs • PSURs • Post-Authorisation Commitments • Risk Management Plan • Other Post-Authorisation Study (1 ) Performed in addition to routine duplicate and data quality checking (2) Communication with MAH should be done in line with the EU regulatory pharmacovigilance procedure s",
+      "context": "EMEA 2006 18/ 21 • Identification of potential duplicates (1) • Data Quality Check (1) • Obtain additional information when appropriate Communicate with relevant stakeholders (2) Diagram 1 Steps of SDR review process Signal of Disproportionate Reporting Check terms of marketing authorisation (SPC, PIL) Information available in other parts of marketing authorisation dossier:",
+      "fingerprint": "f585799120ce8c778185dd4df76ae43f92c2ff584969a2ccc520ab4ae3ad33e1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-19-paragraph-4",
+      "statement": "8. TARGETED MONITORING AND RISK MANAGEMENT PLANS The detection, monitoring and evaluation of potential risks are addressed in the risk management plan submitted by Applicants or Marketing Authorisation Holders [11]. The adoption of the risk management plan should include specific aspects on the monitoring of identified and potential risks.",
+      "context": "This guideline on quantitative methods in EudraVigilance will be updated according to the evolution of the knowledge and the experience gathered in these areas. To facilitate the monitoring of these risks, Targeted Medical Events (TMEs) based on the safety specification [11] and presented in the Risk Management Plan will be implemented in EudraVigilance as described in table 8. All new ICSRs received in EudraVigilance will be screened against these TMEs.",
+      "fingerprint": "5fc9ece8169cd5294169201788ed6baada0dd0c2444124d903f0ee42377d3807",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-20-paragraph-2",
+      "statement": "The need to adhere to the data quality principles has been included in Volume 9A of the ‘Rules governing the medicinal products in the EU’. These quality standards include the provision of the complete information for an individual case, including case narratives, compliance with the reporting timeframes and adherence to the international and Community standards on the electronic reporting of ICSRs. The use of different Community languages has been identified as a limiting factor in the evaluation of SDRs and has also been addressed in Volume 9A.",
+      "context": "EMEA 2006 20/ 21 The reporting of medicinal product information in the absence of an international standard is an additional challenge to meeting the data quality standards necessary for data analysis.",
+      "fingerprint": "141ab9ebda0894b7c80df63b6526401b7cf8e4431ef73d49bdbf90cf58b8fd68",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-23T02:42:50.975Z"
+}
