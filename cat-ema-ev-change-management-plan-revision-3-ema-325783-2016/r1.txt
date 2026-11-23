@@ -1,0 +1,2186 @@
+22 November 2017
+EMA/325783/2016 Revision 3
+Information Management Division
+
+
+
+
+EudraVigilance stakeholder change management plan
+
+
+
+Project Maintenance Group 1 (for consultation)                                                 15 July 2015
+
+EudraVigilance Expert Working Group (for consultation)                                         23 September 2015
+
+Signal Management Review Technical Working Group (SMART WG) – Work                             7-10 September 2015
+Stream 1 (for consultation)
+
+Pharmacovigilance Risk Assessment Committee (PRAC) (for consultation)                          7-10 September 2015
+
+Implementation Group (IG) (for information)                                                    14 September 2015
+
+
+IT Directors (for information)                                                                 22 October 2015
+
+
+EU Telematics Management Board (EUTMB) (for information)                                       15 September 2015
+
+Endorsement by European Risk Management Facilitation Group (ERMS-FG)                           12 October 2015
+
+Heads of Medicines Agencies (HMA) (for information)                                            22 October 2015
+
+
+
+
+30 Churchill Place ● Canary Wharf ● London E14 5EU ● United Kingdom
+Telephone +44 (0)20 3660 6000 Facsimile +44 (0)20 3660 5555
+Send a question via our website www.ema.europa.eu/contact                                 An agency of the European Union
+
+
+              © European Medicines Agency, 2017. Reproduction is authorised provided the source is acknowledged.
+Contents
+Versions ...................................................................................................... 4
+1. Executive summary ................................................................................. 5
+2. Changes to legislation ............................................................................. 5
+2.1. Legal requirements .......................................................................................... 5
+2.1.1. Post authorisation legal requirement changes........................................................ 6
+2.1.2. Clinical trials ..................................................................................................... 6
+3. Benefits of EudraVigilance 8 .................................................................... 6
+4. Business Process Change Management ................................................... 7
+4.1. Submission of ICSRs within the EEA ................................................................ 7
+4.2. Clinical trial SUSAR reporting ........................................................................... 8
+4.3. EEA case submissions to the WHO UMC ........................................................... 8
+4.4. Signal Management.......................................................................................... 8
+
+5. EudraVigilance system implementation plan ........................................... 9
+5.1. Implementation roadmap .............................................................................. 10
+5.2. EudraVigilance system changes ..................................................................... 11
+5.2.1. EudraVigilance organisation and user management .............................................. 11
+5.2.2. EudraVigilance gateway .................................................................................... 11
+5.2.3. EudraVigilance database management system (EVDBMS) ..................................... 11
+5.2.4. EVWEB reporting application ............................................................................. 12
+5.2.5. EV data analysis system (EVDAS) ...................................................................... 12
+5.2.6. EudraVigilance rerouting rules engine ................................................................ 13
+5.2.7. ICSR download function for MAHs ...................................................................... 13
+5.2.8. EudraVigilance duplicate detection and management system ................................ 14
+5.2.9. EudraVigilance medicinal product recoding application.......................................... 14
+5.2.10. Nullification requests ...................................................................................... 14
+5.3. Supporting documentation for stakeholders .................................................. 15
+5.4. E2B(R3) Stakeholder implementation considerations .................................... 17
+5.5. Testing with the new EudraVigilance system and user training ..................... 17
+5.5.1. Testing process for E2B(R3) & E2B(R2) submissions ............................................ 17
+5.5.2. New EVWEB application user training ................................................................. 18
+5.5.3. EVDAS user training......................................................................................... 18
+5.6. Art 57 – XEVMPD ............................................................................................ 18
+5.7. What to do in case of system failure .............................................................. 18
+5.8. EudraVigilance go-live planning ..................................................................... 19
+5.9. Planned future updates to the EudraVigilance 8 system ................................ 19
+6. Stakeholder Implementation planning .................................................. 19
+6.1. EMA change management planning ............................................................... 20
+6.1.1. EMA IT implementation plan ............................................................................. 20
+6.1.2. Business process changes and resourcing requirements ....................................... 21
+6.1.3. EMA training ................................................................................................... 25
+6.1.4. EMA communications plan ................................................................................ 25
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                                          Page 2/44
+6.1.5. EMA change management planning.................................................................... 27
+6.2. NCA change management planning ................................................................ 28
+6.2.1. NCA IT changes ............................................................................................... 28
+6.2.2. NCA business process changes .......................................................................... 29
+6.2.3. NCA communications ....................................................................................... 31
+6.2.4. NCA training ................................................................................................... 32
+6.2.5. NCA change management plan summary ............................................................ 33
+6.2.6. EudraVigilance Technical Support Plan and NCA checklist ..................................... 34
+6.3. MAH Change management planning ............................................................... 34
+6.3.1. MAH IT changes .............................................................................................. 34
+6.3.2. MAH business process changes.......................................................................... 36
+6.3.3. MAH training ................................................................................................... 37
+6.3.4. MAH communications ....................................................................................... 38
+6.3.5. MAH change management summary .................................................................. 39
+6.3.6. MAH checklist and testing instructions ................................................................ 40
+6.4. Sponsors of clinical trials change management planning ............................... 40
+6.4.1. Sponsor of clinical trials IT changes ................................................................... 40
+6.4.2. Sponsor of clinical trials business process changes ............................................... 41
+6.4.3. Sponsor of clinical trials communications ............................................................ 41
+6.4.4. Sponsor of clinical trials training ........................................................................ 42
+6.4.5. Sponsor of clinical trials change management summary ....................................... 43
+6.4.6. Sponsors of clinical trials checklist and testing instructions ................................... 43
+6.5. WHO-UMC change management planning ...................................................... 44
+6.5.1. Implementing ISO ICSR (E2B(R3)) .................................................................... 44
+6.5.2. Business process change .................................................................................. 44
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                                      Page 3/44
+Versions
+ Date                    Version number             Summary of changes
+
+ 26 October 2015                                    Original document.
+
+ 1 August 2016           1.0                        The first revision of the document has been carried out to
+                                                    include clarifications and updates to:
+
+                                                    •   The EudraVigilance project timeframes
+
+                                                    •   New section on Benefits of the new system
+
+                                                    •   Availability of training materials
+
+                                                    •   The new EudraVigilance helpdesk
+
+                                                    •   Connection of the SPOR project (including ISO IDMP)
+                                                        with EudraVigilance.
+
+ 23 June 2017            2.0                        The second revision of the document has been carried out
+                                                    to include:
+
+                                                    •   Updates on the EudraVigilance project timeframes (high
+                                                        level plan of changes, implementation roadmap, go-live
+                                                        plan) based on the announcement of the EMA
+                                                        Management Board on 22 May 2017 that EudraVigilance
+                                                        has achieved full functionality
+
+                                                    •   Updates on testing with the new EudraVigilance system
+                                                        and user training
+
+                                                    •   Updates on the availability of training materials
+
+                                                    •   A new section dedicated to the EudraVigilance
+                                                        Technical Support Plan and NCA checklist
+
+                                                    •   New sections dedicated to the EudraVigilance testing
+                                                        instructions and checklist for Marketing Authorisation
+                                                        Holders and Sponsors of Clinical Trials in the EEA.
+
+ 22 November             3.0                        The third revision of the document has been carried out to
+ 2017                                               include:
+
+                                                    •   Administrative updates brought by the new
+                                                        EudraVigilance system launch on 22 November 2017
+
+                                                    •   Introduction of links to the recently published GVP
+                                                        modules, the EudraVigilance go-live plan and the
+                                                        technical note
+
+                                                    •   Update on transitional arrangements for MAHs signal
+                                                        validation process.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                                  Page 4/44
+1. Executive summary
+This document details the changes which were implemented in the EudraVigilance system and changes
+to the process of reporting Individual Case Safety Reports (ICSRs) as well as Suspected Unexpected
+Serious Adverse Reactions (SUSARs) related to medicinal products. These changes were brought about
+by changes to the post-authorisation legislation.
+
+The intended audience of this document were the National Competent Authorities (NCAs), Marketing
+Authorisation Holders (MAHs), sponsors of clinical trials and the EMA. This document details the IT and
+business changes that have been made at both European and stakeholder level.
+
+Organisations were advised to use this document as a starting point to develop their own internal plans
+to manage the changes that occurred on 22 November 2017, once the new EudraVigilance system was
+moved into production. Following the implementation of the enhanced EudraVigilance system this
+document will no longer be updated and will be kept for reference purposes.
+
+
+
+
+2. Changes to legislation
+This section provides an overview of the main changes introduced through updates to the legislation
+concerning the EudraVigilance and associated systems.
+
+2.1. Legal requirements
+
+Regulation (EC) No 726/2004, Directive 2001/83/EC, Directive 2001/20/EC, and Regulation (EU) No
+536/2014 outline the electronic reporting requirements to EudraVigilance, the data processing network
+and management system for reporting and evaluating suspected adverse reactions during the
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                     Page 5/44
+development and following the marketing authorisation of medicinal products in the European
+Economic Area (EEA).
+
+2.1.1. Post authorisation legal requirement changes
+
+In December 2010 the pharmacovigilance legislation was updated through amendments to Regulation
+(EC) No 726/2004 and Directive 2001/83/EC. This was followed by the addition of Commission
+Implementing Regulation (EU) No 520/2012 1 in June 2012.
+
+The main changes to electronic reporting requirements that have been brought about by these
+amendments to the legislation are:
+
+•     Usage of ISO standards in the reporting of ICSRs, ISO ICSR standard 27953-2:2011
+
+•     Usage of ISO IDMP terminologies, once available, in the submission of ISO ICSR messages
+
+•     EMA medical literature monitoring service
+
+•     The audit of the EudraVigilance system
+
+•     Simplification of reporting of ICSRs in the EU and forwarding of national cases to the relevant NCA.
+
+There is currently no date from which E2B(R2) cannot be used in the EU, therefore organisations may
+continue receive and send E2B(R2) as well as E2B(R3) format messages following the new
+EudraVigilance system implementation.
+
+2.1.2. Clinical trials
+
+There will be no changes to the reporting of suspected unexpected serious adverse reactions during
+clinical trials until the application of the new Clinical Trial Regulation.
+
+The Clinical Trials Regulation (Regulation (EU) No 536/2014) will apply as from six months after the
+publication of the Commission notice about the full functionality of the EU portal and database.
+According to Article 40 of the Regulation (EU) No 536/2014, the Agency shall set up and maintain an
+electronic database for the reporting of suspected unexpected serious adverse reactions (SUSARs) and
+annual safety reports. The database shall be a module of the EudraVigilance database.
+
+The main changes to electronic reporting requirements that are planned in relation to clinical trials are:
+
+•     Usage of ISO standards in the reporting of SUSARs, ISO ICSR standard 27953-2:2011
+
+•     Usage of ISO IDMP set of standards and terminologies, once available, in the submission of ISO
+      ICSR messages
+
+•     Simplification of reporting SUSARs in the EU
+
+•     Development of a standard web-based structured form for the SUSARs reporting by sponsors to
+      EudraVigilance; this form would be ISO ICSR 27953-2:2011 (E2B(R3)) compliant.
+
+
+3. Benefits of EudraVigilance 8
+The EudraVigilance 8 system will deliver significant benefits to stakeholders including:
+
+
+
+
+1
+    http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:159:0005:0025:EN:PDF
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                         Page 6/44
+New feature                                           Benefit
+
+•    Enhanced signal-detection and data-analysis       •   Better detection of new or changing safety
+     tools to support safety monitoring directly by        issues, enabling rapid action to protect public
+     Member States and marketing authorisation             health
+     holders
+
+•    Improved quality and completeness of ICSR         •   Better searchability and more efficient data
+     data                                                  analysis
+
+•    Enhanced performance/scalability of the           •   Able to support an increased number of ICSRs
+     EudraVigilance system                                 due to the new requirement to report non-
+                                                           serious cases to EudraVigilance
+
+•    Simplified reporting of ICSRs to                  •   Reduced duplication of efforts
+     EudraVigilance and the rerouting of ICSRs to
+                                                       •   Marketing authorisation holders no longer
+     Member States
+                                                           have to provide ICSRs to national competent
+                                                           authorities, but only to EudraVigilance only
+
+•    Provision of data to the World Health             •   Enhanced collaboration between EMA and
+     Organization (WHO) Uppsala Monitoring                 WHO
+     Centre directly from EudraVigilance
+                                                       •   Member States will no longer need to carry
+                                                           out this task
+
+•    Provision of an e-learning curriculum to train    •   Accessible online training available to all users
+     users on the new system                               at any time, tailored to the different users
+                                                           needs (Pharmacovigilance operation,
+                                                           EudraVigilance operation, IT operation)
+
+
+
+The Agency will carry out a benefits assessment with stakeholders in the months following
+implementation. EMA intend to make the benefits report available in 2018.
+
+
+
+
+4.       Business Process Change Management
+It was suggested that all impacted organisations should prepare plans concerning the launch of the
+new EudraVigilance system on 22 November 2017 and the resulting changes that occurred to
+reporting, downloading and analysis of data.
+
+This section highlights the main changes the new system has brought to business processes for all
+stakeholders. Section 6. provides more detailed guidance specific to each stakeholder group.
+
+4.1. Submission of ICSRs within the EEA
+
+Up until the implementation of the new EudraVigilance system there was no change to the process for
+the submission of ICSRs for either authorised medicinal products or investigational medicinal products.
+Following the implementation of the new EudraVigilance system on 22 November 2017, ICSR
+submissions in the EEA should only be made to the EudraVigilance to meet reporting compliance; this
+applies to NCAs and MAHs. Therefore, submissions from MAHs to NCAs and from NCAs to MAHs should
+have stopped from this point forward, for SUSAR submissions see section 4.2. below for details.
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                         Page 7/44
+The EudraVigilance gateway does not prevent stakeholders from sending ICSR to each other. However,
+it should be noted that these types of exchanges are made outside of official support by the EMA.
+Exceptions may apply e.g. NCAs to regional pharmacovigilance centres.
+
+With regards to the post-authorisation pharmacovigilance requirements, in addition to the simplified
+reporting of serious cases, EEA non-serious cases should also be reported to EudraVigilance within 90-
+days of receipt in order to meet reporting obligations. Non-serious non-EEA case should not be
+reported to EudraVigilance unless a case that was previously reported as serious is being amended to a
+non-serious case. It should also be noted that in E2B(R3), seriousness is reported at event level rather
+than at case level in E2B(R2), therefore if any event is considered serious then the whole case should
+be considered serious.
+
+4.2. Clinical trial SUSAR reporting
+
+Until the Clinical Trial Regulation is applicable there is no change to the current process for the
+reporting of suspected unexpected serious adverse reactions during clinical trials 2.
+
+The clinical trials regulation will become applicable six months after the European Commission
+publishes a notice in the Official Journal that the clinical trials EU portal and the EU clinical trials
+database have achieved full functionality and the systems meet the functional specifications. The
+clinical trials regulation will start to apply from this “Application Date”.
+
+Clinical trials already approved through the clinical trials directive 2001/20/EC will continue to have the
+same SUSAR reporting requirements as specified in the directive for a transition period of 3 years after
+the clinical trials regulation is applicable.
+
+In addition, in the 12 months following the clinical trials regulation application date, a sponsor can
+choose to have their trial approved through the clinical trials Directive rather than through the
+Regulation. If so that trial and SUSAR reporting responsibilities will follow the clinical trials Directive for
+up to three years after the clinical trials regulation application date.
+
+Sponsors that have a clinical trial approved through the Clinical Trials Regulation are normally required
+to send SUSARs to EudraVigilance only. The EudraVigilance system will then automatically reroute the
+SUSARs to the concerned NCAs. However, the option remains for small organisations to report SUSARs
+directly to the NCA that has approved the trial through establishing an agreement between the sponsor
+and the NCA concerned. The NCA will then forward any SUSARs reported to them under such
+agreements to the EudraVigilance system.
+
+4.3. EEA case submissions to the WHO UMC
+
+Until the implementation of the new EudraVigilance system there was no change to the process for the
+submission of ICSRs from NCAs to the WHO-UMC. Following the implementation of the new
+EudraVigilance system, ICSR submissions for cases occurring in the EEA should only be made by the
+EudraVigilance system to WHO-UMC. Therefore, NCAs should have stopped their own processes for
+submitting ICSRs to the WHO-UMC after the new EudraVigilance system launch on 22 November 2017.
+
+4.4. Signal Management
+
+Authorised users of the EudraVigilance Data Analysis System (EVDAS) are expected to retrieve data
+and use the available predefined reports included in the newly implemented functionalities to meet
+
+
+2
+  Directive 2001/83/EC of the European Parliament and of the Council of 6 November 2001 on the Community code relating to medicinal products for
+human use (OJ L 311, 28.11.2001, p. 67).
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                                                                Page 8/44
+their data analysis and signal detection obligations. User manuals and training materials were made
+available to support all users of the system. A process has changed for MAHs as they are now granted
+access to the EVWEB and EVDAS to support their obligation to monitor EudraVigilance, detect and
+validate safety signals for the products and substances for which they hold a marketing authorisation.
+In the event of identifying and validating a safety signal, these safety signals should be reported in
+accordance to the revised Good pharmacovigilance practices (GVP) Module IX on “Signal Management”
+(EMA/827661/2011).
+
+The guidance “Screening for adverse reactions in EudraVigilance” (EMA/849944/2016) was published
+in December 2016 and describes routine signal detection methods in EudraVigilance ‘.
+
+
+
+
+5. EudraVigilance system implementation plan
+The EudraVigilance system has been updated to become ISO ICSR 27953-2:2011 (ICH E2B(R3))
+compliant.
+
+On 22 May 2017 EMA Management Board confirmed and announced that the EudraVigilance database
+has achieved full functionality and the system meets the functional specifications that were adopted by
+the Pharmacovigilance Risk Assessment Committee (PRAC) and the Management Board in December
+2013. The confirmation and announcement by the EMA Management Board is based on an independent
+audit and a subsequent favourable recommendation from the PRAC concluding that the updated
+EudraVigilance system is fully functional. Six months after the announcement of the EMA management
+board, the move to simplified reporting took effect, i.e. the enhanced EudraVigilance system was
+launched on 22 November 2017.
+
+There will be no changes to the reporting of suspected unexpected serious adverse reactions during
+clinical trials1 until the application of the Clinical Trial Regulation.
+
+The use of ISO IDMP terminologies will only apply when they become available; therefore these
+terminologies were not part of the new EudraVigilance System update on 22 November 2017. In line
+with the ICH E2B(R3) Implementation Guide, the E2B(R2) code lists or free text (where an E2B(R2)
+code list does not exist) is used in the interim period. Once the terminologies related to the ISO IDMP
+standards will be available, these new terminologies will be implemented in EudraVigilance.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                        Page 9/44
+5.1. Implementation roadmap
+
+The diagram below illustrates the sequence of planned IT and business process changes to the EudraVigilance (transactional system and EVDAS) and the
+impact of these on the EudraVigilance stakeholders.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                 Page 10/44
+5.2. EudraVigilance system changes
+
+The previous EudraVigilance system was made of the following components that have been amended
+as part of the auditable requirements:
+
+•   EV organisation and user management;
+
+•   EV gateway;
+
+•   EV database management system;
+
+•   EVWEB reporting application;
+
+•   EV data analysis system, including the European database of suspected adverse drug reaction
+    reports (http://www.adrreports.eu/);
+
+•   EudraVigilance duplicate detection and management system;
+
+•   EudraVigilance medicinal product recoding application.
+
+Three new components have been added to the system:
+
+•   EV rerouting rules engine;
+
+•   WHO-UMC forwarding functionality;
+
+•   ICSR download functionality for MAHs.
+
+The eXtended EV Medicinal Product Dictionary (XEVMPD) component is no longer an integral part of
+the EudraVigilance system and instead has become an independent system that the EudraVigilance
+system and XEVMPD users can access for information on medicinal products.
+
+5.2.1. EudraVigilance organisation and user management
+
+The EudraVigilance registration process has been simplified with the implementation of the new system
+and published on the dedicated EudraVigilance: how to register webpage. Existing organisation and
+user registrations were automatically transferred to the new system. A new registration process for
+EVDAS users of MAHs has also been implemented.
+
+5.2.2. EudraVigilance gateway
+
+The EudraVigilance gateway has been be configured to accept E2B(R3) files. After the 22 November
+2017, the transmission of ICSRs by MAHs through the gateway to National Competent Authorities
+(NCAs) is no longer supported by the EMA. Gateway users are not prevented from sending ICSRs
+through the gateway to other registered organisations that are connected to the gateway. However,
+organisations performing such transmissions are not able to contact the EMA gateway helpdesk for
+support if issues occur with these transmissions. Following the implementation, organisations should
+be aware that only submissions of ICSRs to the EudraVigilance system are being considered as fulfilling
+the legal obligations of the sender. Therefore, organisations should have ensured that the transition to
+simplified reporting was coordinated with the new system implementation.
+
+5.2.3. EudraVigilance database management system (EVDBMS)
+
+The EudraVigilance database management system has been subject to significant changes as the
+database was updated to support the ICH E2B(R3) structure and data fields. All existing ICH E2B(R2)
+data have been migrated into this new database.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                     Page 11/44
+The XML parser 3 has been replaced and is able to process both E2B(R2) and E2B(R3) messages. If an
+E2B(R2) message is sent to the EudraVigilance system, an E2B(R2) acknowledgement message is
+returned. Likewise, an E2B(R3) acknowledgment is returned for E2B(R3) ICSR messages. If an
+invalid XML message is sent to EudraVigilance, an E2B(R3) acknowledgment will be
+returned.
+
+EudraVigilance applications for Medicinal Product Recoding and Duplicate Detection and management
+have been amended to support the ICH E2B(R3) format. Master cases that are produced by the EMA in
+response to identifying duplicated ICSR in the EudraVigilance system are being produced in E2B(R3)
+format only.
+
+5.2.4. EVWEB reporting application
+
+The EVWEB application has been redesigned using a different technology which enables the application
+to work in additional browsers rather than being restricted to specific versions of Internet Explorer. The
+supported browsers are the latest version of Firefox, Chrome and Internet Explorer; other browsers
+may work with the application but are not supported by the Agency.
+
+The functionalities of the application have been upgraded to only support E2B(R3) ICSR data entry.
+Although the application has similar ICSR functionalities, the user interface has a different appearance
+and the E2B(R3) standard itself introduced additional data elements as well as different ways of
+structuring data. These changes required users of the previous system to undertake training to become
+familiar with these changes. E-learning modules EV-M3b, EV-M3c, EV-M3d and EV-M3e) should have
+been followed. In addition, face-to-face training courses were/are offered to familiarise with the new
+EVWEB functionalities and the use of the new ICH E2B(R3) format based on various case scenarios.
+Training offerings and support were published at the EudraVigilance training and support webpage.
+
+5.2.5. EV data analysis system (EVDAS)
+
+The EVDAS has been updated to the new E2B(R3) data structure. In addition, a new set of
+functionalities and predefined reports (as per level of access defined in the revised EudraVigilance
+Access Policy) were implemented. The subsequent sections provide details on what functionality is
+available for specific stakeholder groups.
+
+5.2.5.1. Healthcare professionals and general public
+
+The European database of suspected adverse drug reaction reports (http://www.adrreports.eu/) has
+been updated and improved to include:
+
+•      Weekly refresh of published data;
+
+•      Publication of data for non-serious cases received in EudraVigilance;
+
+•      Publication of ‘country’ data (in aggregated dashboard);
+
+•      Publication of additional data elements via line listing reports and a new ICSR form.
+
+Please note that several safeguards have been put in place to ensure full compliance with personal
+data protection i.e. to prevent patient identification.
+
+
+
+
+3
+    An application that processes and loads the data held within an XML file into the database
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 12/44
+5.2.5.2. Marketing Authorisation Holders
+
+Access is extended to MAHs for to use the EVDAS signal detection and analytical/reporting functions to
+the extent necessary to comply with their pharmacovigilance obligations. Such functions include:
+
+•   The electronic Reaction Monitoring Report (eRMR) based on the eRMR used within the EU network
+    and the EMA for signal detection activities;
+
+•   The individual case line listing and ICSR form.
+
+The level of access to each ICSR and data elements has been implemented as defined in the revised
+EudraVigilance Access Policy. Several safeguards have been put in place to ensure compliance with
+personal data protection i.e. to prevent patient identification. EVDAS is accessible to MAHs as of 22
+November 2017.
+
+5.2.5.3. Commission, NCAs in the EEA and the EMA
+
+New functionalities and predefined reports have been implemented in EVDAS to support:
+
+•   Signal detection and management activities including eRMRs;
+
+•   ICSR data quality monitoring;
+
+•   Use of Article 57 data.
+
+5.2.6. EudraVigilance rerouting rules engine
+
+The EudraVigilance rerouting rules engine is a new component that forwards ICSRs to the relevant
+NCAs depending on a set of conditions defined by NCAs. As per the EU Individual Case Safety Report
+(ICSR) Implementation Guide, the EudraVigilance system reroutes ICSRs in the format received i.e. no
+conversions are being applied. The rerouting of recoded ICSRs will be put in place as part of the
+implementation of the ISO IDMP terminologies, in a future upgrade of the EudraVigilance system.
+
+5.2.7. ICSR download function for MAHs
+
+After the switch to simplified reporting on 22 November 2017, MAHs are no longer receiving ICSRs
+directly from NCAs. For MAHs to receive ICSRs concerning their medicinal products, the ICSR download
+functionality should be used.
+
+In line with the revised EudraVigilance Access Policy MAHs are able to access ICSRs (Access Policy
+Level 2A) for any substance and medicinal product that has been reported as a suspect or interacting
+drug. The data elements provided for the ICSRs include the elements as defined in the revised
+EudraVigilance Access Policy for Level 2A. Level 2A access is determined on the basis of the active
+substance grouping based on the Article 57 substance and product information submitted to the
+XEVMPD by MAHs.
+
+In addition to Level 2A access to ICSR data, MAHs are able to request the extended Level 2B access in
+support of their pharmacovigilance obligations and signal evaluation (Level 2B includes case narrative
+data elements as per revised EudraVigilance Access Policy) as detailed in the GVP modules VI and IX.
+Requests made by authorised user will be log and the requester will be asked to provide details of the
+reason of such request. In addition, they will be asked to confirm that they will adhere to the
+EudraVigilance Access Policy Confidentiality Undertaking.
+
+ICSRs provided via the EudraVigilance ICSR download functionality are only available in ICH E2B(R3)
+format.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                        Page 13/44
+The download function is available as part of the new EVWEB application.
+
+5.2.8. EudraVigilance duplicate detection and management system
+
+The change to ICH E2B(R3) did not affect the logic of the duplicate detection algorithm as the data
+elements used did not change between ICH E2B(R2) and E2B(R3). The duplicate detection client has
+been amended to handle duplicates existing in both ICH E2B(R2) and E2B(R3) formats and to produce
+valid ICH E2B(R3) messages. The duplicate detection client generates valid ICH E2B(R3) master
+messages including the cluster information.
+
+The management of duplicates required training of EMA staff and its contractors in the new ICH
+E2B(R3) data elements and format along with changes to the duplicate management interface.
+
+NCAs and MAHs were not affected by changes to the system apart from having access to Master cases
+in EudraVigilance created by the EMA in ICH E2B(R3) format.
+
+5.2.9. EudraVigilance medicinal product recoding application
+
+The change to ICH E2B(R3) did not affect the recoding process as the XEVMPD continues to be used
+until ISO IDMP terminologies are available and implemented. The data elements used to describe
+medicinal products and substances did not change between ICH E2B(R2) and E2B(R3) format.
+However, an additional data element for capturing device components of advanced therapies has been
+implemented. The recoding application has been amended to handle both ICH E2B(R2) and E2B(R3)
+formats and the interface has been updated to the new software technology.
+
+These updates to the recoding application required training of EMA staff and its contractors in the new
+ICH E2B(R3) fields, format and the new interface.
+
+The automated recoding also required updates to the new EudraVigilance database structure to reflect
+the changes to data elements and data structures.
+
+NCAs and MAHs were not affected by these changes to the system.
+
+5.2.10. Nullification requests
+
+When an organisation submits a nullification report, EudraVigilance automatically marks an ICSR as
+nullified if the pre-existing case has been submitted by the same organisation or one of its affiliates.
+These nullification reports have the report classification “Nullified report”.
+
+If a nullification request is received for a case that was previously sent by another organisation the
+following two processes applies:
+
+       i.     If the nullification concerns an EEA case, the nullification report is stored and the
+              nullification retransmitted to the concerned NCA. The concerned NCA should then review
+              the nullification. If the nullification is for a valid reason, the NCA should submit nullification
+              for the individual case they have previously submitted to EudraVigilance. The nullification
+              reports from the sending organisation have the report classification “EEA Nullification
+              request”;
+
+       ii.    If the case is from outside the EEA, the case ID must match a case ID that already
+              exists in the EudraVigilance database. If no matching case ID exists, the nullification report
+              is rejected. If a matching case ID is found, the nullification is accepted and stored with the
+              report classification “Nullification request”. The EMA then reviews the nullification request
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                             Page 14/44
+              and if the nullification is for a valid reason, the EMA marks the associated ICSRs as nullified
+              through changing the report classification of the appropriate ICSRs to “Nullified report”.
+
+The first of these two processes (point i) does not require EMA involvement unless the concerned NCA
+has requested not to receive re-routed ICSRs. In such situation, the EMA periodically provides those
+NCAs with details of the nullification requests so that the NCA can submit nullifications if appropriate.
+
+The second process (point ii) does require EMA involvement to approve the nullification of cases held in
+EudraVigilance. Limited training was required at the level of the EMA to support this process. However,
+the number of these types of nullification requests is expected to be low.
+
+5.3. Supporting documentation for stakeholders
+
+ICH E2B(R3) documentation provides the basis for the implementation of the ISO ICSR standard with
+two main documents downloadable from the ICH ESTRI website http://estri.ich.org.
+
+In addition to the ICH Implementation Guide, an EU ICSR Implementation Guide has been developed
+and published. Associated supporting documents, including user guides, training material and
+guidelines have also been developed or updated and are described below. Together these documents
+provide additional information on specific EU regional requirements that are not provided in the ICH
+documentation and are published on the dedicated EudraVigilance: electronic reporting webpage.
+
+Documentation                                       Description                              Date available
+
+ICH implementation guidance
+
+ICH Implementation guide package                    A set of documents including the ICH     Available now -
+                                                    ICSR implementation guide, backwards     ICH
+                                                    and forwards compatibility               Implementation
+                                                    recommendations and element mapping      guide package
+
+ICH E2B(R3) Questions & Answers                     A question and answer document           Available now -
+(Q&As)                                              relevant for technical E2B questions     ICH E2B(R3)
+                                                                                             Questions &
+                                                                                             Answers (Q&As)
+
+EU implementation guidance
+
+EU Individual Case Safety Report                    A guide which describes the additional   Available now - EU
+(ICSR) implementation guide                         EU specific requirements to generate a   Individual Case
+                                                    valid ICSR and Message                   Safety Report
+                                                    acknowledgment to implement EN ISO       (ICSR)
+                                                    ICSR in accordance with ICH E2B(R3)      implementation
+                                                                                             guide
+
+EU ICSR implementation guide                        This spreadsheet includes all the ICH    Available now –
+business rules spreadsheet                          E2B(R3) and EU specific business rules   EU ICSR
+                                                    in a format to help system developers    implementation
+                                                                                             guide business
+                                                                                             rules spreadsheet
+
+EU backwards forwards conversion                    This document describes the              Available now –
+element mapping spreadsheet                         relationship between EU specific data    EU backwards
+                                                    elements in E2B(R3) and E2B(R2). This    forwards
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                              Page 15/44
+Documentation                                       Description                                 Date available
+
+                                                    document is an addition to the ICH          conversion
+                                                    backwards forward conversion rules. It      element mapping
+                                                    covers additional EU specific rules for     spreadsheet
+                                                    the conversion back and forth between
+                                                    E2B(R2) and E2B(R3).
+
+EU backwards forwards conversion tool               Based on the ICH BFC tool it includes       Available now - EU
+v.2.5                                               the additional EU specific data fields      backwards
+                                                                                                forwards
+                                                                                                conversion tool
+
+EU E2B(R3) code lists                               The list of codes for EU specific data      Available now - EU
+                                                    fields                                      E2B(R3) code lists
+
+EU reference instance                               ICH reference instance amended to           Available now - EU
+                                                    include the EU specific data fields         reference instance
+
+EU example instances                                Additional example instances to be used     Available now - EU
+                                                    for testing ICH E2B(R3) transmission to     example instances
+                                                    the enhanced EudraVigilance system
+
+EudraVigilance Access Policy
+
+EudraVigilance Access Policy (Rev3)                 The revised EudraVigilance Access           Available now –
+                                                    Policy, which governs the level of access
+                                                                                                EudraVigilance
+                                                    different stakeholder groups have to
+                                                                                                Access Policy
+                                                    adverse drug reactions reports.
+
+Overview of comments received on                    The comments received on the draft          Available now -
+'Draft revision of EudraVigilance access            revision of the EudraVigilance access       Overview of
+policy for medicines for human use’                 policy during its public consultation       comments
+                                                    between 4 August and 15 September           received on 'Draft
+                                                    2014.                                       revision of
+                                                                                                EudraVigilance
+                                                                                                access policy for
+                                                                                                medicines for
+                                                                                                human use’
+
+Good pharmacovigilance practice (GVP) guidance
+
+GVP Module VI                                       This module addressees the                  Available now –
+                                                    management and reporting of adverse         GVP Module VI
+                                                    reactions to medicinal products             Revision 2
+
+
+
+GVP Module IX                                       This module describes the general           Available now -
+                                                    guidance and requirements on                GVP Module IX
+                                                    structures and processes involved in        Revision 1
+                                                    signal management and how they are
+                                                    applied in the setting of the EU
+                                                    pharmacovigilance and regulatory
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                                 Page 16/44
+Documentation                                       Description                        Date available
+
+                                                    network
+
+
+
+
+5.4. E2B(R3) Stakeholder implementation considerations
+
+Once an organisation submits an ICH E2B(R3) ICSR, it is not permitted for that organisation to submit
+a follow-up to that ICSR in the previous E2B(R2) format. This is to prevent inconsistencies that would
+occur between the two submission formats.
+
+After the new EudraVigilance system launch on 22 November 2017, organisations can submit ICSRs in
+both ICH E2B(R2) and E2B(R3) formats. However, access to ICSR XML data held within EudraVigilance
+is provided in ICH E2B(R3) format only. Organisations should therefore make sure that they have
+systems in place that can process E2B(R3) files. This can be done either by implementing native
+E2B(R3) support in their own pharmacovigilance system or by implementing the published
+Backwards/Forwards conversion (BFC) tool to convert E2B(R3) files into E2B(R2) files. An extended
+version of the ICH E2B(R3) BFC tool that includes the additional EU specific data fields specified in the
+EU implementation guide has been made available in the EU and published on the dedicated
+EudraVigilance: electronic reporting webpage.
+
+5.5. Testing with the new EudraVigilance system and user training
+
+The execution of stakeholder testing with selected MAHs and NCAs occurred in November 2016.
+Following this testing and successful completion of the independent audit, the EudraVigilance test
+system XCOMP was launched on 26 June 2017. All organisations with a registered EudraVigilance test
+account were automatically granted access to the XCOMP environment and could start sending ICH
+E2B(R3) ICSRs as well as downloading ICH E2B(R3) ICSRs based on test data. In addition, users could
+have started using the new EVWEB interface in the XCOMP environment. The go-live of the external
+testing system on 26 June 2017 allowed for a five month period until 22 November 2017 for
+organisations to become familiar with the new system and test their local pharmacovigilance/safety IT
+system and their interoperability with the new EudraVigilance system.
+
+Testing instructions were provided on the EudraVigilance change management webpage and the
+EudraVigilance: electronic reporting webpage.
+
+5.5.1. Testing process for E2B(R3) & E2B(R2) submissions
+
+A set of E2B(R3) example test files as described in the EU ICSR Implementation Guide are available on
+the EudraVigilance: electronic reporting webpage. Testing organisations were expected to upload these
+files into their own pharmacovigilance system and then resubmit these cases to the EudraVigilance
+system. EMA then checked that the original file and resubmitted file were identical in all the fields apart
+from those that can be changed by a re-transmitter e.g. administrative field.
+
+Organisations wishing to test ICH E2B(R2) submissions for a new pharmacovigilance system or
+following a major upgrade of their system also have example test files available and testing follows the
+same process as described above.
+
+Testing instructions published on the EudraVigilance: electronic reporting webpage. A specific testing
+time slot can be booked by contacting EMA at qattesting@ema.europa.eu.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 17/44
+5.5.2. New EVWEB application user training
+
+As described in section 5.5. the new EVWEB application was made available in the XCOMP environment
+as of 26 June 2017. Therefore, organisations which have been using EVWEB and were intending to use
+EVWEB in the future had a period of 5 months to familiarise with the new functionalities.
+
+Users and organisations that have already attended and passed the EVWEB training course did not
+need to re-attend the course. The EMA has published a user guide, online eLearning videos, release
+notes and offers support webinars. In addition, face-to-face training courses were also available since
+12 June 2017. The training materials explained the new E2B(R3) format including the new data
+elements and the new EVWEB functionalities. For users that have never used EVWEB a more
+comprehensive training course to provide a more in depth training of the EVWEB tool was made
+available in the continuation of what was done for the previous EudraVigilance system. The user
+manual, release notes, training materials and face-to-face training courses on the new EudraVigilance
+system are available and published on the EudraVigilance training and support webpage.
+
+5.5.3. EVDAS user training
+
+The EVDAS user manual for pharmacovigilance reports was published on 22 November 2017.
+
+eLearning videos have been created for EVDAS users to highlight new functionalities/reports.
+
+In addition, in 2017 the Agency have organised two dedicated “train-the-trainer” courses for NCAs in
+the EEA on the new EVDAS functionalities.
+
+The materials are available on the EudraVigilance training and support webpage.
+
+5.6. Art 57 – XEVMPD
+
+The new EVWEB application for ICSRs does not include a component for creating and sending XEVPRM
+messages to the Art 57 database. The previous version 7 of the EVWEB application is kept in place for
+the submission of Art 57 data with the same URL. The ICSR related functionalities have been removed
+from EVWEB version 7 at the time of the new EudraVigilance System launch.
+
+The EudraVigilance go-live plan and the Technical Note on the planned EudraVigilance downtime from 8
+to 21 November 2017 were published by the Agency on 4 October 2017. Documents outlined the
+steps, which had been followed during the transition from the previous to the current EudraVigilance
+system.
+
+A separate project to replace the XEVMPD data format with the ISO IDMP format will be considered bu
+EMA in due time.
+
+No changes to the business process or resource requirements are expected until the ISO IDMP format
+is implemented.
+
+5.7. What to do in case of system failure
+
+The process to follow in case of a failure of submission of ICSRs occurring at the sending organisation
+side or at the level of the EMA has changed after the new system was implemented. If the failure
+occurs at the sender’s side, the process of submission of CIOMS forms via fax or other methods is no
+longer supported, and the organisation must submit the cases electronically to EudraVigilance as soon
+as their system is available again. Manual recoding of the official receipt dates by the EMA to the data
+of the fax CIOMS form are no longer continue.
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                      Page 18/44
+If the failure is occurring at the level of EudraVigilance, organisations will need to submit cases within
+two business days after the system failure has been resolved. Cases received late due to the system
+failure at the level of the EudraVigilance system will be excluded from reporting compliance by setting
+the official receive date of the cases submitted in this period within EudraVigilance to the date the
+system became non-available or the Receipt date (A.1.7 E2B(R2) or C.1.5 E2B(R3)), whichever is
+greater. Instructions are also provided at the on the EudraVigilance: electronic reporting webpage.
+
+5.8. EudraVigilance go-live planning
+
+To release the new system in production it was planned that the EudraVigilance production system
+would be unavailable for a defined period of time as described in section 6.1.1. During that period, all
+the data of the previous EudraVigilance production system were migrated to the current EudraVigilance
+system. Following the completion, the new EudraVigilance system components have been installed to
+the production environment and configuration changes have been implemented on the EudraVigilance
+gateway. The new functionalities of EVDAS have also been made available.
+
+During that period, several IT systems were partially disrupted or non-available at all.
+
+To facilitate the transition, the EU Regulatory network’s pharmacovigilance business team has prepared
+a EudraVigilance go-live plan and a technical note in consultation with the Pharmacovigilance Risk
+Assessment Committee (PRAC), the Clinical Trials Facilitation Group (CTFG) and the EudraVigilance
+Expert Working Group.
+
+The plan outlines a set of detailed, sequenced tasks and activities required to launch the new
+EudraVigilance production system, explains the process for handling the legacy data resulting from the
+downtime and describes temporary arrangements.
+
+During the new system implementation period, organisations should have had reconfigured their
+systems to ensure that post-authorisation submissions were made to the EudraVigilance system
+(EVPM) only as it has become the central reporting system for the EEA. Any reports that were required
+submitting during that period of non-availability should have been transmitted electronically to
+EudraVigilance (EVPM) only, as soon as the system was made available again on 22 November 2017.
+
+Further instructions, including detailed information on measures, which were put in place by
+organisations during the EudraVigilance downtime, were published on 4 October 2017, as part of the
+EudraVigilance Go-Live Plan and the Technical note.
+
+5.9. Planned future updates to the EudraVigilance 8 system
+
+The ISO IDMP set of standards and their resulting terminologies were not fully available at the time of
+implementation of the new EudraVigilance system. However, ISO IDMP integration will be planned for
+through a subsequent project. In addition, the Agency will also change the way organisations and
+users are registered to access IT systems and services which will replace the current EudraVigilance
+registration process. Further details on these updates will be discussed with stakeholders in the future.
+
+More details on the ISO IDMP project can be found by clicking on this link. In addition the SPOR
+roadmap can be found by clicking on this link.
+
+
+6. Stakeholder Implementation planning
+This section provides detailed guidance to each stakeholder group on what activities should have been
+planned for the new EudraVigilance system launch on 22 November 2017.
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                        Page 19/44
+6.1. EMA change management planning
+
+This section of the change management plan focuses on the IT and business process changes that had
+been considered by the EMA for the period of time leading up to and after implementation of the new
+EudraVigilance system.
+
+6.1.1. EMA IT implementation plan
+
+6.1.1.1. EudraVigilance Testing
+
+In addition to the internal testing performed at the level of the EMA, external testing was conducted in
+November 2016 with a selected number of stakeholders. The organisations participating in the external
+testing were chosen through a call for volunteers via the EudraVigilance Expert Working Group and the
+Pharmacovigilance Business Team. This testing was performed in advance of the independent audit of
+the EV system. Following this testing, the successful completion of the independent audit and the EMA
+Management Board announcement that the EudraVigilance system meets the required functional
+specifications, the XCOMP environment was released to all stakeholders on 26 June 2017.
+
+6.1.1.2. System Implementation
+
+All ICSRs from the EudraVigilance system have been migrated to the new ICH E2B(R3) compliant
+database.
+
+All registered users at the time of the new EudraVigilance system launch were automatically granted
+access to the new system and therefore there was no action required by existing users. New users will
+need to follow the registration process as described at the EudraVigilance: how to register webpage.
+
+The previously implemented gateway is also used for the new ICH E2B(R3) compliant system. The ICH
+E2B(R2) gateway community also remained the same. For the submission of E2B(R3) messages the
+gateway configuration at the EMA has been updated; these updates may have required organisations
+wishing to submit ICH E2B(R3) messages to also update their own gateway configuration.
+
+The EudraVigilance helpdesk contact details have changed to the following:
+
+•   EudraVigilance Registration
+
+    Email - eudravigilanceregistration@ema.europa.eu
+    Tel - 44 (0) 20 3660 7523
+
+•   EudraVigilance Helpdesk
+
+    EMA IT Service Desk           (For support with EudraVigilance and EMA gateway/webclient)
+
+    Tel.: +44 (0)20 3660 8520 (for urgent technical matters)
+
+Information on how to raise a query through each support method can be found in the EudraVigilance
+Support Guide.
+
+No changes have been made to the existing XEVMPD tool and therefore the functionalities and
+interface remain the same.
+
+The new URL for the new EVWEB reporting application for ICSR(s) is as follows:
+https://eudravigilance-human.ema.europa.eu.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                      Page 20/44
+6.1.2. Business process changes and resourcing requirements
+
+The changes relating to business processes, which occurred after the implementation of the new
+EudraVigilance system are summarised in section 4. The following sections describe these changes in
+relation to the EMA and the potential changes in work load and internal process ownership.
+
+In addition, relevant SOPs and working instructions associated with the business processes described
+in this section have been reviewed and amended.
+
+6.1.2.1. Re-routing of ICSRs from EudraVigilance to NCAs
+
+The configurations of rerouting rules are being directly maintained by the NCAs using the EVWEB
+interface. NCAs have been contacted by the EMA to collect their rerouting requirements so that the
+initial configuration of the rerouting rules could be implemented in advance of the EudraVigilance
+system going live. The re-routing rules as defined by each NCA were available to test from 26 June
+2017 when the XCOMP environment was made available. After the initial configuration settings have
+been entered in the production system by the Agency, little additional work was expected from this
+activity. This initial set up have been performed by EMA.
+
+6.1.2.2. Access to data held in EudraVigilance by MAHs
+
+MAHs have tools to download and analyse data held within EudraVigilance, training materials and user
+manuals were made available at the EudraVigilance training and support webpage. It was therefore
+expected that external organisations would prepare themselves using these published materials and
+through regular communications sent out by the EMA. However, there was an increase in helpdesk
+queries, which led up to the new system implementation and is very likely to continue for a period of
+several months after implementation.
+
+6.1.2.3. EudraVigilance registration requests
+
+The registered users for EudraVigilance were migrated to the new EudraVigilance system with the
+same configuration settings for accessing EVWEB and the secure area of EudraVigilance.
+
+As per updates to the EudraVigilance Access Policy, MAHs have been granted access to the EVDAS.
+MAHs therefore were required to assign specific users the permission to access the EVDAS system in
+addition to EVWEB and the secure area of EudraVigilance. A phased registration approach was initiated
+with EVDAS registration of MAH users starting in 1 June 2017. The effect of this additional work on
+EMA resources had been planned for, taking into account recent improvements to the functionalities to
+user and organisation management.
+
+Additional registrations for the new XCOMP (EVTEST) system occurred, following the new XCOMP
+environment release on 26 June 2017.
+
+The EudraVigilance training environment used in support of face to face training courses has also been
+updated and the process for providing training accounts to the training courses defined.
+
+The organisation and user registration for the submission of XEVMPD data continues with no changes.
+
+The registration process is being performed by the Data and Information Lifecycle Management
+service.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                     Page 21/44
+6.1.2.4. Access to data requests
+
+Access to data requests received from the public, healthcare professionals, research organisations and
+other international regulatory authorities are handled in the same way as the previous process. The
+EudraVigilance Access Policy is being used to identify the data elements that can be provided for such
+requests.
+
+A significant increase in volume of requests is not expected, following the new system implementation.
+The answering of these requests is being performed by the Signal Management service.
+
+6.1.2.5. MAH signal validation and management process
+
+With the access to EudraVigilance MAHs have obligations to monitor the data available in the system in
+accordance with the principles set out in GVP Module IX and to inform the Agency and NCAs about
+validated signals. However, EMA and the European Commission have agreed transitional
+arrangements to streamline the monitoring of EudraVigilance by MAHs.
+
+During a pilot period of one year, MAHs of the active substances included in the list of active
+substances involved in the pilot on signal detection in EudraVigilance will have to monitor them in
+EudraVigilance and inform EMA and national competent authorities of validated signals with their
+medicines.
+
+This requirement will only start on 22 February 2018, effectively granting those MAHs a three-month
+'grace period' to familiarise themselves with the new EudraVigilance system, the new tools to support
+EudraVigilance monitoring and to finalise their own processes.
+
+These transitional arrangements do not apply to obligations on simplified reporting and management of
+individual case safety reports (see Good pharmacovigilance practices (GVP) Module VI and
+EudraVigilance change management).
+
+All other MAHs also have access to EudraVigilance data and are able to integrate the data into their
+own signal management processes. However, during the pilot period they will have no obligation to
+continuously monitor EudraVigilance and inform the regulatory authorities of validated signals.
+
+After one year, EMA will base the next phase of implementation on experience gained through the
+pilot. For updates and further information please visit dedicated Signal Management webpage .
+
+6.1.2.6. Recoding application
+
+The recoding process does not change significantly with the system updates; this will however need to
+be reviewed when ISO IDMP is implemented. The new ICH E2B(R3) format did introduce new data
+elements such as Device ID for advanced therapies and therefore the recoding application has been
+updated. As this process is carried out by a contractor, training had been planned for the contractor.
+This has been carried out through Train the Trainer sessions and webinars.
+
+The activities of monitoring the contractor and providing their training are being performed by the Data
+Standardisation and Analytics service. Apart from the set-up phase, no change to resource
+requirements was foreseen.
+
+6.1.2.7. Duplicate detection
+
+The duplicate detection process does not change with the system updates. The new ICH E2B(R3)
+format including the new data elements and the subsequent changes to the duplicate detection tool do
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                        Page 22/44
+need to be appropriately managed. As this process is carried out by a contractor, training has been
+planned for the contractor. This was being carried out through Train the Trainer sessions and webinars.
+
+The activities of monitoring the contractor and providing their training are being performed by the Data
+Standardisation and Analytics service. Apart from the set-up phase, no change to resource
+requirements was foreseen.
+
+6.1.2.8. Data quality review
+
+The data quality review process currently does not change with the system updates. The new ICH
+E2B(R3) format including the new data elements and the subsequent changes to the EVWEB tool do
+need to be appropriately managed. As this process is carried out by a contractor training has been
+planned for the contractor on both EVWEB and the changes brought in through the implementation of
+ICH E2B(R3). In addition, as data continue to be submitted in ICH E2B(R2) format and the EVWEB
+displays the content in ICH E2B(R3) format, the data quality reviewers required specific training. This
+training provided a detailed understanding on how to assess these two different submission formats in
+a review tool. The training was being carried out through Train the Trainer sessions and followed up
+with webinars.
+
+The activities of monitoring the contractor and providing their training are being performed by the Data
+Standardisation and Analytics service. Apart from the set-up phase, no change to resource
+requirements was foreseen.
+
+6.1.2.9. EudraVigilance testing with organisations
+
+The method for testing of submission of ICSR to EudraVigilance has been simplified. The instructions
+published on the webpage EudraVigilance: electronic reporting should have been followed. The EMA
+has provided a set of sample ICSR files to be uploaded and transmitted to the EudraVigilance external
+testing system along with a testing script to be followed by the testing organisations.
+
+In addition, the test data were made available in a human readable format for manual data entry and
+submission where applicable. The set of sample files cover a range of different reporting scenarios to
+ensure that the sending system has been correctly implemented, including the additional EU specific
+requirements. This applies to organisations testing updates to systems using the ICH E2B(R2)
+specification or for systems that have implemented the ISO ICSR 27953-2:2011 (ICH E2B(R3))
+standard.
+
+The organisation performing the testing is expected to upload these sample files into their
+pharmacovigilance system and follow the test script. Once uploaded, these test files should be
+transmitted to the EudraVigilance external testing system for review by the EMA. Unexpected
+differences between the sample set of ICSR files and the information processed by XCOMP is
+communicated to the testing organisation. Any issues identified are to be addressed before allowing
+the testing organisation to enter into production.
+
+These testing activities are being performed by the Data Standardisation and Analytics service. This
+new testing process should lead to a reduction of work. However, there was a significant rise in testing
+as new pharmacovigilance systems were implemented by MAHs and NCAs.
+
+6.1.2.10. Medical Literature Monitoring Service
+
+The Medical Literature Monitoring Service does not change with the system updates. The new ICH
+E2B(R3) format including the new data elements and the subsequent changes to the EVWEB
+application do need to be appropriately managed. As this process is carried out by a contractor using
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 23/44
+EVWEB, training has been planned for the contractor. This was carried out through Train the Trainer
+sessions and webinars.
+
+The activities of monitoring the contractor and providing their training are being performed by the Data
+Standardisation and Analytics service. Apart from the set-up phase, no change to resource
+requirements was foreseen.
+
+6.1.2.11. WHO-UMC reporting
+
+The reporting of EEA ICSRs to the WHO-UMC is a new process for the EMA as the new EudraVigilance
+system is forwarding relevant ICSRs automatically using a set of predefined rules. Apart from the set-
+up phase, the automation that was put in place means that only limited resources are required to
+support this process. Some checking and monitoring is needed to ensure the successful forwarding of
+ICSRs to the WHO-UMC; in addition, helpdesk support for WHO-UMC queries has been planned
+although the expected workload is very low.
+
+This process is performed by the Data Standardisation and Analytics service. Apart from the set-up
+phase and the annual reconciliation activities, no significant increase in resource requirements was
+foreseen.
+
+6.1.2.12. Helpdesk - business support
+
+No changes were expected to the helpdesk process for EudraVigilance business support. However, an
+increase in queries, leading up to the EudraVigilance system implementation and for several months
+after the implementation, was expected. The following query topics were anticipated:
+
+•   Submission of ICSRs in E2B(R3) format;
+
+•   Testing E2B(R3) submissions;
+
+•   Simplified reporting;
+
+•   MAH downloading of ICSRs;
+
+•   MAH signal reporting;
+
+•   MAH & NCA EudraVigilance data analysis (including eRMR & Art 57 substance groupings);
+
+•   EudraVigilance registrations;
+
+•   New EVWEB interface;
+
+•   European database of suspected adverse drug reaction reports Adrreports.eu.
+
+More EMA resources have been planned for the support of helpdesk activities, however additional staff
+was required to monitor the work, coordinate and train the additional resources. Data Standardisation
+and Analytics service is providing standard answers and links to documents to facilitate the handling of
+helpdesk queries. Additional staff was required to support and coordinate the additional resources.
+
+6.1.2.13. Helpdesk Second-line (IT operations) Support
+
+No changes were expected to the helpdesk process for EudraVigilance (including EVDAS and ADR
+website) second-line support. However, an increase in queries relating to potential system issues at
+the level of the users and the EMA was expected after the new test EV system (XCOMP)
+implementation and again in the period after the production system implementation.
+
+More EMA resources were planned for the support of helpdesk activities.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                     Page 24/44
+6.1.2.14. EVDAS
+
+The main change for EMA users was the implementation of several new functionalities and predefined
+reports in EVDAS to support:
+
+•   Pharmacovigilance activities, including the implementation of a new measure of disproportionality
+    (reporting odds ratio), new functionalities for sub-group analyses and new data elements;
+
+•   Data quality monitoring, including reports on organisations reporting to EudraVigilance, safety
+    report monitoring, expedited reporting timelines compliance monitoring, safety reports data
+    quality;
+
+•   Publication of Article 57 data, including reports on authorised medicinal products, legal entity
+    (MAH) and Qualified Person Responsible for Pharmacovigilance (QPPV) details, approved
+    substances, pharmacovigilance system master file and listings on authorised medicinal products;
+
+•   The eRMR, including the integration with EVDAS, the improvement of data visualisation and the
+    clarification on methodology.
+
+Support to the users was performed by the Data Standardisation and Analytics (DSA).
+
+6.1.3. EMA training
+
+The EVDAS user manual for pharmacovigilance reports has been updated and new user manuals for
+Article 57 reports and data quality reports have been created.
+
+eLearning videos has been created for EMA users of EVDAS that highlight new functionalities/reports or
+changes that have been made to pre-existing reports.
+
+New EMA users will be trained as part of the standard EVDAS training provided to NCAs by the signal
+management service. Training materials has been updated accordingly.
+
+6.1.4. EMA communications plan
+
+A communication plan has been developed to ensure that the necessary information was circulated to
+relevant stakeholders at the appropriate time and to ensure that impacted parties were aware of the
+modifications to the EudraVigilance system. This was to ensure that they are prepared for the IT and
+business changes. Communications were undertaken through both general update communications
+and targeted communications based on key project milestones. Key project milestones and a summary
+of associated communication activities are available at the EudraVigilance change management
+webpage.
+
+6.1.4.1. General update communications
+
+Regular updates on the development and progress of the changes to the EudraVigilance system have
+been/will be communicated via the bulletin ‘What’s new in Pharmacovigilance?’ This bulletin is
+distributed to both pharmaceutical industry and Member State stakeholders i.e., to Industry
+Associations, Qualified Persons for Pharmacovigilance (QPPVs), Heads of Medicines Agency (HMA), the
+Pharmacovigilance Business team, EU Commission, international partners, ENCePP. The bulletins can
+be accessed at the Agency’s Newsletter webpage.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 25/44
+6.1.4.2. Targeted communications based on key milestones
+
+Information on key milestones had been disseminated to relevant stakeholders through the following
+channels:
+
+•   Publication of EMA News Items on the Agency corporate website (shard in advance with NCAs to
+    preparation of local communication at the level of the NCA);
+
+•   Tailored emails to the registered EudraVigilance users;
+
+•   Presentations and teleconferences with Pharmacovigilance Business team, the Pharmacovigilance
+    Risk Assessment Committee (PRAC), the EudraVigilance Expert Working Group (EV-EWG), EU
+    Network Pharmacovigilance Oversight Group (EU-POG), IT Directors Group and the Heads of
+    Medicines Agencies (HMA).
+
+The key project milestones around which the communications had been anchored were/are:
+
+•   The audit of EudraVigilance system;
+
+•   The availability of the conversion tool for ICH E2B(R2)/(R3);
+
+•   The EMA Management Board announcement of results of audit of EudraVigilance system;
+
+•   The availability of the EudraVigilance XCOMP test environment;
+
+•   The publication of the EudraVigilance go-live plan;
+
+•   The move to the ICSR simplified reporting;
+
+•   The availability of the new EVDAS functionalities;
+
+•   The mandatory reporting requirement of non-serious cases in EudraVigilance;
+
+•   The commencement of Agency reporting to WHO;
+
+•   The ability of the EudraVigilance system to receive E2B(R3) messages;
+
+•   The enabling of the EudraVigilance ICSR re-routing;
+
+•   End date of accepting ICH E2B(R2) messages.
+
+Additionally, targeted information announcing e.g. training dates and information days had been
+provided to relevant stakeholders.
+
+Information on key project milestones and the associated communications plan was provided in the
+Key project milestones and summary of associated communication activities.
+
+
+
+
+6.1.4.3. Dedicated EudraVigilance information on the EMA corporate website
+
+The public area of the EudraVigilance website has been decommissioned as of July 2016 and all the
+content has been rewritten into the EMA website.
+
+The restricted area of the EudraVigilance website was switched on 22 November 2017 to a existing
+URL.
+
+The content from the EudraVigilance website can be found in the section dedicated to EudraVigilance
+which can be accessed following the path: Human Regulatory > Pharmacovigilance > EudraVigilance
+
+The pages related to EudraVigilance include:
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                   Page 26/44
+•   System overview: provides an overview of EudraVigilance system components, system
+    functionality, and processes supporting EudraVigilance.
+
+•   Electronic reporting: Provides an introduction to electronic reporting requirements and supporting
+    information for stakeholders e.g. documentation for E2B(R3) implementation.
+
+•   Registration: provides an explanation of the registration process that stakeholders must undergo to
+    use EudraVigilance for the electronic data interchange of pharmacovigilance information.
+
+•   Change management: Provides information regarding changes related to EudraVigilance
+    enhancements e.g. change management plan, communication plan, stakeholder impact.
+
+•   Access to data: Provides information regarding changes related to EudraVigilance enhancements
+    e.g. change management plan, communication plan, stakeholder impact.
+
+•   EudraVigilance training and support: Provides an overview of the EudraVigilance training plan, and
+    details of all existing and upcoming training materials.
+
+•   Security principles and responsibilities: Provides information on the security and confidentiality
+    principles that stakeholders using EudraVigilance need to comply with.
+
+
+
+
+6.1.5. EMA change management planning
+
+The following EMA actions have been grouped by area and whether they were obligatory or
+recommended actions.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                     Page 27/44
+6.2. NCA change management planning
+
+This section of the change management plan focuses on the IT and business process changes that
+should have been considered by NCAs in the period of time leading up to and after implementation of
+the new EudraVigilance system.
+
+6.2.1. NCA IT changes
+
+The implementation of the new EudraVigilance system required the adaptation of existing national IT
+systems to support the use of the new ISO ICSR standard and to process the data. The sections below
+cover specific IT system components that should have been considered at a national level.
+
+6.2.1.1. Implementing ISO ICSR (E2B(R3)) in national pharmacovigilance systems
+
+Following the launch of the new EudraVigilance system, all stakeholders are able to start using the ISO
+ICSR (E2B(R3)) format for the submission of ICSRs. Organisations are also able to use the ICH
+E2B(R2) format for the submission of ICSRs after the 22 November 2017. Those organisations which
+have not implemented fully compliant ISO ICSR system needs to support the receipt and processing of
+ICSRs in the new format. The reason for this is that when cases are forwarded by the EudraVigilance
+system to the NCA that requests them, the format of the message received is not being changed. In
+addition, data processed and entered into EudraVigilance by the EMA (such as Master cases for
+duplicates, cases identified in the Medical Literature and in the future ICSRs recoded against the ISO
+IDMP terminologies) are made available to NCAs in the ISO ICSR (ICH E2B(R3)) format only.
+
+NCAs therefore needed to either implement support for ISO ICSR (ICH E2B(R3)) in their systems or
+implement a backwards/forwards conversion tool to be able to process ICSR messages in the ISO ICSR
+(E2B(R3)) format.
+
+6.2.1.2. EudraVigilance Gateway
+
+NCAs using a local installation of the gateway software provided by the EMA did not need to replace
+this software. Guidance for making configuration changes was provided as part of the EudraVigilance
+Checklist for national Competent Authorities in the EEA and by EMA gateway support.
+
+As of 22 November 2017, the transmission of ICSRs between MAHs and NCAs is no longer supported
+by the EMA. However, the gateway does not prevent organisations exchanging ICSRs, e.g. between
+NCAs and their regional pharmacovigilance centres.
+
+As of 22 November 2017, organisations should be aware that only submissions of ICSRs to the
+EudraVigilance system are being considered as fulfilling the legal obligations of the sender. Therefore
+NCAs should ensure that the transition to simplified reporting is communicated with MAHs within their
+territory.
+
+6.2.1.3. EVWEB
+
+NCAs using EVWEB needed to prepare for the implementation of the new version of the application.
+The application has been upgraded to only support ICH E2B(R3) ICSR data entry. ICH E2B(R3)
+introduced additional data elements and different ways of structuring the data, therefore the user
+interface reflects this and has a different appearance.
+
+These changes required the users within the NCA to undertake training to become familiar with the
+new EVWEB functionalities. Training materials and online training is available at the EudraVigilance
+training and support webpage; please see section 5.5. for details.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                      Page 28/44
+Face to face training courses for NCA users was planned for 2017 based on a survey conducted by EMA
+in March 2017.
+
+6.2.1.4. EudraVigilance rerouting rules engine
+
+The configurations of rerouting rules are being directly maintained by the NCAs using the EVWEB
+interface. NCAs were contacted by the EMA to set up the configuration of the rerouting rules in
+advance of the EudraVigilance system going live. NCAs were therefore invited to decide in advance
+which ICSRs they wish to have forwarded and to test the re-routing in XCOMP as of 26 June 2017.
+Details on the options for rerouting are described in the EU ICSR Implementation Guide.
+
+NCAs are able to update the rerouting rules at any time as of 22 November 2017; however it should be
+noted that changes made may require a few hours to be applied and become active in the system.
+
+6.2.1.5. EudraVigilance duplicate detection and management system
+
+Additional message types have been introduced as part of the EU implementation of the ICH E2B(R3)
+format to support the forwarding of cases created or modified by the EMA e.g. the creation of Master
+cases for identified duplicate cases. NCAs should be aware that these message types did not exist in
+the E2B(R2) specifications and the EU backwards-forwards conversion tool is converting the message
+type for master cases to “masterichicsr” in the field M.1.1 when downgrading an E2B(R3) master case
+message.
+
+6.2.1.6. NCA Testing
+
+As NCAs receive cases rerouted by EudraVigilance, no testing was required with MAHs or sponsors of
+clinical trials that submit cases directly to the new EudraVigilance system. For those NCAs that have
+eSUSAR reporting forms, testing should have been planned to ensure that they are able to send those
+SUSARs without issues to the new EudraVigilance system.
+
+The testing process with the EudraVigilance system has been simplified in accordance with the details
+provided in the EU ICSR Implementation Guide. The EMA has published a set of sample ICSR files to be
+uploaded and transmitted to the EudraVigilance external testing system along with a testing script to
+be followed by the organisation performing the testing.
+
+NCAs were required to test once they were ready to implement a new system supporting the
+submission of ICH E2B(R3) ICSRs. Testing of existing their E2B(R2) system with the new
+EudraVigilance system was not required, however it was encouraged to be performed in advance of 22
+November 2017 to identify any potential issues in the sending or receiving of ICSRs.
+
+Instructions published on the webpage EudraVigilance: electronic reporting should have been followed.
+Please also refer to section 6.2.6. ‘EudraVigilance Technical Support Plan and NCA checklist’.
+
+6.2.2. NCA business process changes
+
+6.2.2.1. Simplified reporting of ICSRs to EudraVigilance
+
+The main change to NCA business processes was that MAHs are no longer submitting ICSRs directly to
+NCAs; instead these cases are being reported to EudraVigilance before being automatically forwarded
+to the concerned NCA depending on the NCA re-routing settings.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 29/44
+Communication planning should have been put in place at national level to inform MAHs about this
+change and to ensure that MAHs are able to report directly to EudraVigilance in advance of the move
+to simplified reporting.
+
+In addition to the reporting of serious cases to EudraVigilance system within 15-days, non-serious
+cases also need to be submitted by the concerned NCAs within 90-days of receipt.
+
+NCAs using EVWEB needed to plan for an increase in resources for the manual data entry of non-
+serious cases into EudraVigilance taking into account that the number of non-serious cases received is
+generally higher than those of serious cases. However, it should be noted that with the implementation
+of simplified reporting, NCAs no longer need to provide ICSRs to MAHs.
+
+6.2.2.2. Reporting of SUSARs to EudraVigilance
+
+Until the clinical trials regulation is applicable there is no change to the current process for the
+submission of SUSARs for clinical trials.
+
+Sponsors that will have a clinical trial approved through the clinical trials regulation will normally be
+required to send SUSARs to EudraVigilance only. Clinical trials approved through the clinical trials
+Directive 2001/20/EC will continue to have the same SUSAR reporting requirements as specified in the
+Directive for a transition period of three-years after the clinical trials regulation is applicable. The
+EudraVigilance system will then automatically reroute SUSARs to the concerned NCAs. However, the
+option will remain for small organisations to report SUSARs directly to the NCA that has approved the
+trial through establishing an agreement between the sponsor and the NCA concerned. The NCA will
+then forward any SUSARs reported to them under such agreements to the EudraVigilance system.
+
+Planning should also be put in place at national level to inform sponsors of these changes and what is
+required at national level for SUSAR reporting once applicable.
+
+6.2.2.3. Nullification requests
+
+As NCAs have previously transmitted cases originally from MAHs, nullification requests may be
+received by EudraVigilance from those MAHs directly for cases that are marked in the system as being
+sent by an NCA. The business rules in the previous EudraVigilance system did not permit such
+nullifications to occur and therefore the new EudraVigilance system has amended rules to not reject
+such submissions.
+
+When an organisation submits a nullification report, the new EudraVigilance system automatically
+marks an ICSR as nullified if the pre-existing case has been submitted by the same organisation or one
+of its affiliates.
+
+If nullification is received for an EEA case where no pre-existing case from the same organisation or
+one of its affiliates is found in EudraVigilance, then the nullification report is stored and the nullification
+retransmitted to the concerned NCA. If an NCA has elected not to receive re-routed cases the EMA is
+periodically providing the details of nullification requests as a report via e-mail to the NCA. The
+concerned NCA should then review the nullification requests; if nullification is for a valid reason, the
+NCA should submit nullification for the case they have previously submitted to EudraVigilance.
+
+Therefore, NCAs needed to establish processes to check if they need to nullify cases they have
+previously forwarded to EudraVigilance.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                             Page 30/44
+6.2.2.4. MAH Signal validation and management process
+
+As described in section 6.1.2.5. the transitional arrangements to streamline the monitoring of
+EudraVigilance by MAHs have been agreed. During a pilot period of one year, MAHs of the active
+substances included in the list of active substances involved in the pilot on signal detection in
+EudraVigilance will have to monitor them in EudraVigilance and inform EMA and national competent
+authorities of validated signals with their medicines. This requirement will only start on 22 February
+2018.
+
+These transitional arrangements do not apply to obligations on simplified reporting and management of
+individual case safety reports (see Good pharmacovigilance practices (GVP Module VI)).
+
+All other MAHs also have access to EudraVigilance data and are able to integrate the data into their
+own signal management processes. However, during the pilot period they will have no obligation to
+continuously monitor EudraVigilance and inform the regulatory authorities of validated signals.
+
+After one year, EMA will base the next phase of implementation on experience gained through the
+pilot. For updates and further information please visit dedicated Signal Management webpage .
+
+6.2.2.5. NCAs reporting to WHO-UMC
+
+The reporting of ICSRs occurring in the EEA to the WHO-UMC is now performed by the EMA instead of
+directly by the NCAs. These ICSRs are being forwarded automatically using predefined rules that have
+been agreed with WHO-UMC as of 22 November 2017.
+
+The main change for NCAs was that they no longer need to perform this activity. NCAs should have
+planned for the last submission of data to occur around the time of the switch to simplified reporting so
+that any data for the WHO-UMC covers the period up until the switch to simplified reporting.
+EudraVigilance submits data prospectively from 22 November 2017.
+
+6.2.2.6. EVDAS
+
+The main change for NCAs was the implementation of several new functionalities and predefined
+reports in EVDAS to support:
+
+•   Pharmacovigilance activities including the implementation of a new measure of disproportionality
+    (reporting odds ratio), new functionalities for sub-group analyses, new reports and new data
+    elements;
+
+•   Data quality monitoring, including reports on organisation reporting to EudraVigilance, safety
+    report monitoring, expedited reporting timelines compliance monitoring;
+
+•   Access to Article 57 data, including reports on authorised medicinal products, legal entity (MAH)
+    and QPPV details, approved substances, pharmacovigilance system master file and listings on
+    authorised medicinal products;
+
+•   The eRMR, including the integration with EVDAS, the improvement of data visualisation and the
+    clarification on methodology.
+
+6.2.3. NCA communications
+
+NCAs needed to develop a communications plan to ensure that the necessary information was
+circulated to their relevant stakeholders at the appropriate time so that impacted parties were aware of
+the changes to the reporting requirements and associated business process. They should have also
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                          Page 31/44
+informed their stakeholders of the need to be prepared for the associated IT changes that were
+required.
+
+
+
+
+6.2.4. NCA training
+
+Training should have been planned for NCA staff on the new business process and new IT systems to
+be ready once the new system is going live on 22 November 2017. If NCAs provided training to its
+stakeholders, these training courses and training materials should have been updated accordingly
+along with plans for when the new training materials were implemented.
+
+A EudraVigilance training plan has been produced by the Agency and published on the EMA website,
+outlining recommended and supporting learning for each stakeholder group. These were categorised by
+subject matter into 3 areas.
+
+•   Pharmacovigilance Operations – modules detailing the key changes in pharmacovigilance
+    legislation, standards and guidelines and the impact of these on pharmacovigilance activities. It
+    includes e-learning on the EudraVigilance Access Policy, the pharmacovigilance legislation, and
+    revised GVP guidelines VI and IX.
+
+•   EudraVigilance Operations – modules describing the EudraVigilance and EVDAS functionalities and
+    components, as well as the various data analysis, submission, visualisation and reporting options.
+    Includes e-learning and user manuals on registration in EudraVigilance and EVDAS, using EVWEB
+    to submit, visualise and export ICSRs and using EVDAS to analyse data.
+
+IT Systems Operations – modules providing instructions on the modifications required to prepare local
+systems for the EudraVigilance system enhancements. It included e-learning on IT development and
+ICSR testing.
+
+NCAs were advised to follow all the recommended e-learnings in each area whether they are new or
+existing users.
+
+In addition to the training modules, optional quizzes have been made available for some training
+modules, allowing users to verify their e-learning. The majority of the training modules and supporting
+material has been published on the EudraVigilance Training and Support webpage.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                     Page 32/44
+6.2.5. NCA change management plan summary
+
+The following NCA actions have been grouped by area and whether they were obligatory or
+recommended actions.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                Page 33/44
+6.2.6. EudraVigilance Technical Support Plan and NCA checklist
+
+To further assist NCAs in preparing for the go-live of the new EudraVigilance (EV) system on 22
+November 2017, the Agency has released a ‘EudraVigilance Technical Support Plan’ and
+‘EudraVigilance Checklist for national Competent Authorities in the EEA’.
+
+The technical support plan described the testing and support activities, while the checklist outlined
+easy to follow steps to assist NCAs in preparing for the technical and business process changes.
+
+The technical support plan and the checklist are complimentary to this EudraVigilance Stakeholder
+Change Management Plan and should have been read in conjunction.
+
+6.3. MAH Change management planning
+
+This section of the change management plan focuses on the IT and business process changes that
+should have been considered by MAHs in the period of time leading up to and after the implementation
+of the new EudraVigilance system.
+
+6.3.1. MAH IT changes
+
+The implementation of the new EudraVigilance system required the adaption of existing IT systems at
+the level of MAHs to support the new ISO ICSR standard and to the changes to the processing of the
+data. The sections below cover specific IT system components that should have been considered by
+MAHs.
+
+6.3.1.1. Implementing ISO ICSR (E2B(R3)) format in MAH’s phV systems
+
+Following the new EudraVigilance system launch on 22 November 2017, MAHs have the choice to start
+using the ISO ICSR (E2B(R3)) format for the submission of ICSRs, assuming that all testing has been
+completed beforehand. MAHs can continue to use the ICH E2B(R2) format for the submission of ICSRs
+after the new system implementation. However, MAHs that chose not to implement a fully compliant
+ISO ICSR system need to support the ability to process the new format. The reason for this is that
+when ICSRs are made available for MAHs to download from EudraVigilance in accordance with the
+EudraVigilance Access Policy, these are in the E2B(R3) format only.
+
+MAHs needed to consider implementing a fully ISO ICSR compliant system or to use a
+backwards/forwards conversion tool to support the processing of ICSRs in the ICH E2B(R3) format and
+the ICSR acknowledgements.
+
+6.3.1.2. Electronic gateway
+
+MAHs using an electronic gateway solution did not need to replace their current software solution.
+However, configuration changes may have been required in order to support the processing of E2B(R3)
+messages including the acknowledgments returned (EudraVigilance will only return E2B(R3)
+acknowledgments). Further guidance was provided as part of the EudraVigilance testing instructions
+and checklist for Marketing Authorisation Holders and Sponsors of Clinical Trials in the EEA published at
+EudraVigilance change management webpage.
+
+With simplified reporting effective, the transmission of ICSRs between MAHs and NCAs is no longer
+supported by the EMA. However, the gateway does not prevent MAHs exchanging ICSRs with other
+MAHs or sponsors of clinical trials. It should be noted that, organisations performing such
+transmissions are not able to contact the gateway helpdesk for support if issues occur with these
+transmissions.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 34/44
+Following the implementation MAHs should be aware that only submissions of ICSRs to the
+EudraVigilance system are considered as fulfilling the MAH’s legal obligations. Therefore, MAHs should
+have ensured that modifications to their submission systems were configured and tested well in
+advance of the planned implementation.
+
+6.3.1.3. EVWEB
+
+MAHs using EVWEB needed to prepare for the implementation of the new version of the application.
+The application has been updated to only support E2B(R3) ICSR data entry. The E2B(R3) standard has
+introduced additional data elements and different ways of structuring the data; therefore the user
+interface has been changed and has a different appearance.
+
+These changes required the users within the MAH organisation to undertake training to become familiar
+with the new system. Training materials, release notes and online training have been made available
+and published on the EudraVigilance training and support webpage (please see section 5.5. for details).
+
+It was recommended that MAHs plan to start training their staff well in advance of the new system
+being implemented.
+
+The results of queries performed in EVWEB are based on access levels defined in the EudraVigilance
+Access Policy.
+
+6.3.1.4. EV downloading ICSRs concerning MAH’s products/substance related products
+
+After the switch to simplified reporting, MAHs no longer receive ICSRs directly from NCAs. In order for
+MAHs to receive ICSRs concerning their products or substances contained in one of their products, the
+ICSR download functionality of EVWEB should be used.
+
+In line with the EudraVigilance Access Policy MAHs are able to request ICSRs (Access Policy Level 2A)
+for any substance contained in one of their medicinal products that have been reported as a suspect or
+interacting drug. The data elements that are provided for the ICSRs are based on the data elements as
+defined in the EudraVigilance Access Policy. The access levels for MAHs of a particular substance are
+determined based on the Article 57 substance and medicinal product information submitted to the
+XEVMPD or future ISO IDMP system.
+
+In addition to Level 2A access to ICSR data, MAHs are able to obtain Level 2B access (including the
+case narrative data elements) in the context of performing signal evaluation as detailed in GVP
+modules VI & IX. Requests made by authorised user are logged and the requester is asked to provide
+details of the signal being evaluated. In addition the requestor has to confirm that they adhere to the
+EudraVigilance Access Policy Confidentiality Undertaking.
+
+It should be noted that the ICSRs that are provided via this download functionality are only available in
+E2B(R3) format.
+
+The download function was made available through the new EVWEB application.
+
+6.3.1.5. Downloading MLM ICSRs
+
+The MLM ICSR Export manager was replaced with the download functionality in the new EVWEB
+application as outlined above. The interface looks different to the previous one, and users needed to
+explicitly choose to include MLM Service cases as part of the download functionality. Otherwise the
+same filtering criteria as previously are available and users can download zip files containing xml
+versions of the cases for further processing in their local pharmacovigilance database as applicable.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                      Page 35/44
+6.3.1.6. MAH Testing
+
+As MAHs only send cases to EudraVigilance, no testing was required with NCAs.
+
+The testing process with the EudraVigilance system has been simplified in accordance with the details
+provided in the EU ICSR Implementation Guide. The EMA has published a set of sample ICSR files to be
+uploaded and transmitted to XCOMP along with a testing script to be followed by the organisation
+testing.
+
+MAHs were required to test once they were ready to implement the new system supporting the
+submission of E2B(R3) ICSRs. Testing of existing E2B(R2) systems with the new EudraVigilance
+system was not required, however it was encouraged in advance of the new system going live to
+identify any potential issues in advance. Therefore, MAHs should have planned to complete any testing
+of their existing systems prior to the new system going live to give time for any issues to be
+addressed.
+
+Instructions published on the webpage EudraVigilance: electronic reporting should have been followed.
+Please also refer to section 6.3.6. ‘Checklist and testing instructions for MAHs and Sponsors of Clinical
+Trials in the EEA’.
+
+A specific testing time slot can be booked by contacting EMA at qattesting@ema.europa.eu. This
+applies only where the testing refers to a new ICH E2B(R3) compliant system or a major update of an
+existing E2B(R2) compliant system that would require retesting with EudraVigilance.
+
+6.3.2. MAH business process changes
+
+6.3.2.1. Simplified reporting of ICSRs to EudraVigilance
+
+The main change to MAH business processes was that MAHs are no longer providing ICSRs directly to
+NCAs. MAHs needed to ensure that all reportable ICSRs were submitted to EudraVigilance only as of 22
+November 2017. In addition to the reporting of serious cases to EudraVigilance within 15-days, non-
+serious cases that occurred in the EEA need to be submitted within 90-days of receipt.
+
+Planning should have been put in place by each MAH to ensure that they are able to report directly to
+EudraVigilance in advance of the move to simplified reporting. Any submissions made by MAHs to
+NCAs after the move to simplified reporting will result in the MAH of not being compliant with their
+legal obligations.
+
+MAHs using EVWEB needed to plan for an increase in resources for the manual data entry of non-
+serious EEA cases into EudraVigilance, taking into account that the number of non-serious cases
+received is generally higher than serious cases.
+
+6.3.2.2. MAH signal validation and management process
+
+The new process for signals validated by MAHs has been designed, discussed and consulted on during
+the first revision of the GVP Module IX on signal management. The revision of GVP Module IX describes
+the MAH signal validation and management process, including information on:
+
+•   MAH responsibility to continuously monitor the safety of their medicinal products and inform the
+    authorities of any new information that might have an impact on the marketing authorisation [DIR
+    Art 23(2), REG Art 16(2)];
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 36/44
+•   MAH responsibility to keep product information up-to-date in the light of scientific knowledge,
+    including the assessments and recommendations made public via the European medicines web-
+    portal [IR Art 11(1)(f), DIR Art 23(3), REG Art 16(3)];
+
+•   Periodicity of monitoring of EudraVigilance data;
+
+•   Notifications and procedural options for signals validated by the MAHs in the EU.
+
+As described in section 6.1.2.5., EMA and the European Commission have agreed transitional
+arrangements to streamline the monitoring of EudraVigilance by MAHs.
+
+During a pilot period of one year, MAHs of the active substances included in the list of active
+substances involved in the pilot on signal detection in EudraVigilance will have to monitor them in
+EudraVigilance and inform EMA and national competent authorities of validated signals with their
+medicines.
+
+This requirement will only start on 22 February 2018, effectively granting those MAHs a three-month
+'grace period' to familiarise themselves with the new EudraVigilance system, the new tools to support
+EudraVigilance monitoring and to finalise their own processes.
+
+These transitional arrangements do not apply to obligations on simplified reporting and management of
+individual case safety reports (see Good pharmacovigilance practices (GVP) Module VI and
+EudraVigilance change management).
+
+All other MAHs also have access to EudraVigilance data and are able to integrate the data into their
+own signal management processes. However, during the pilot period they will have no obligation to
+continuously monitor EudraVigilance and inform the regulatory authorities of validated signals.
+
+After one year, EMA will base the next phase of implementation on experience gained through the
+pilot. For updates and further information please visit dedicated Signal Management webpage .
+
+6.3.2.3. EVDAS
+
+Access was granted to EVDAS by MAHs for the use of signal detection and analytical/reporting
+functions to the extent necessary to comply with their pharmacovigilance obligations. Such functions
+include:
+
+•   eRMRs based on the eRMR used within the EU network and the EMA for signal detection activities;
+
+•   Substance groupings for medicinal products for which MAHs hold a marketing authorisation;
+
+•   Individual case line listings and ICSR forms.
+
+6.3.3. MAH training
+
+Training should have been planned for MAH staff on the new business process and new EudraVigilance
+System functionalities to be ready when the EudraVigilance system launch on 22 November 2017. It
+was advised to start training well in advance of the new system being implemented with refresher
+training planned at regular intervals in the months leading up to implementation.
+
+A EudraVigilance training plan has been produced by the Agency, outlining recommended and
+supporting learning for each stakeholder group. These were categorised by subject matter into 3 areas.
+
+•   Pharmacovigilance Operations – modules detailing the key changes in pharmacovigilance
+    legislation, standards and guidelines and the impact of these on pharmacovigilance activities. This
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                        Page 37/44
+    included e-learnings on the EudraVigilance Access Policy, pharmacovigilance legislation, and the
+    revised GVP guidelines.
+
+•   EudraVigilance Operations – modules describing the EudraVigilance and EVDAS functionalities and
+    components, as well as the various data analysis, submission, visualisation and reporting options.
+    This includes e-learning and user manuals on registration in EudraVigilance and EVDAS, using
+    EVWEB to submit, visualise and export ICSRs and using EVDAS to analyse data. Dedicated
+    modules have been created for MAH users for self-learning on how to access EVDAS and how to
+    use the eRMR in the context of signal detection/validation.
+
+•   IT Systems Operations – modules providing instructions on the modifications required to prepare
+    internal systems for the EudraVigilance system enhancements. This include e-learning on IT
+    development and ICSR testing.
+
+MAHs were advised to follow all the recommended e-learnings in each area whether they are new or
+existing users.
+
+In addition to the training materials, optional quizzes have been made available when relevant for
+some training modules, allowing users to verify their learning.
+
+The key training materials have already been made available on the EudraVigilance Training and
+Support webpage. User manuals were released in the second quarter of 2017.
+
+
+
+
+6.3.4. MAH communications
+
+MAHs should have considered developing a communication plan to ensure that the necessary
+information was circulated within their own organisation and with other organisations that they work
+with. These communications should have been made at appropriate times to ensure that impacted
+parties were aware of the changes to the reporting requirements and associated business process.
+They should have also informed their IT departments of the need to be prepared for the associated IT
+changes that were required to be made.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                    Page 38/44
+6.3.5. MAH change management summary
+
+The following MAH actions have been grouped by area and whether they were obligatory or
+recommended actions.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                Page 39/44
+6.3.6. MAH checklist and testing instructions
+
+To further assist MAHs in preparing for the go-live of the new EudraVigilance (EV) system on 22
+November 2017, the Agency has released a ‘Checklist and testing instructions for Marketing
+Authorisation Holders and Sponsors of Clinical Trials in the EEA’.
+
+This document provided some general testing instructions, easy to follow steps to assist MAHs and
+sponsors in preparing for the technical and business process changes. Reference was also made to the
+training and support offerings, which are available at the dedicated EudraVigilance training and support
+webpage, which provided detailed learnings on how to prepare for the changes to come. The checklist
+is complimentary to this EudraVigilance Stakeholder Change Management Plan and should have been
+read in conjunction.
+
+
+
+
+6.4. Sponsors of clinical trials change management planning
+
+This section of the change management plan focuses on the IT and business process changes that
+should have been considered by sponsors of clinical trials in the period of time leading up to and after
+implementation of the EudraVigilance 8 system.
+
+6.4.1. Sponsor of clinical trials IT changes
+
+6.4.1.1. Implementing ISO ICSR (E2B(R3)) support in clinical trial systems
+
+Following the new EudraVigilance System launch on 22 November 2017, sponsors of clinical trials have
+the choice to start using the ISO ICSR (E2B(R3)) format for the submission of ICSRs, assuming that all
+testing has been completed beforehand.
+
+It should be noted that sponsors can continue to use E2B(R2) for the submission of SUSARs. However,
+sponsors of clinical trials should have planned to develop their systems to support the new format.
+
+6.4.1.2. Electronic gateway
+
+Sponsors of clinical trials using an electronic gateway solution did not need to replace their current
+software solution. However, configuration changes may have been required in order to support the
+processing of E2B(R3) messages including the acknowledgments returned (EudraVigilance will only
+return E2B(R3) acknowledgments). Guidance was provided in the ‘Checklist and testing instructions for
+Marketing Authorisation Holders and Sponsors of Clinical Trials in the EEA’.
+
+With simplified reporting effective in accordance with the Clinical Trials Regulation, the gateway does
+not prevent sponsors of clinical trials exchanging SUSARs with MAHs or other sponsors of clinical trials;
+however, this type of exchange is not supported by the EMA. It should be noted that organisations
+performing such transmissions are not able to contact the gateway helpdesk for support if issues occur
+with these transmissions.
+
+When the Clinical Trials Regulation becomes applicable, sponsors of clinical trials should be aware that
+for trials approved through the clinical trials regulation, only electronic submissions of SUSARs to the
+EudraVigilance system will be considered as fulfilling their legal obligations, unless the sponsor has a
+prior agreement with the concerned NCAs to submit those SUSARs through national systems. Sponsors
+should ensure that modifications to their submission systems are configured and tested well in advance
+of the planned implementation.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                       Page 40/44
+6.4.1.3. EVWEB
+
+Sponsors of clinical trials using EVWEB needed to prepare for the implementation of the new version of
+the application. The application has been updated to only support E2B(R3) ICSR data entry. The
+E2B(R3) standard introduced additional data elements and different ways of structuring the data;
+therefore the user interface has been updated and has a different appearance.
+
+These changes required the users within the sponsor’s organisation to undertake training to become
+familiar with the new system. Training materials and online training has been made available and
+published on the dedicated EudraVigilance training and support webpage; please see section 3.6. for
+details.
+
+It was recommended that sponsors plan to start training their staff six months in advance of the new
+system being implemented, followed by regular refresher training.
+
+6.4.2. Sponsor of clinical trials business process changes
+
+6.4.2.1. Reporting of SUSARs to EudraVigilance
+
+Until the clinical trials regulation (EU No 536/2014)   is applicable there is no change to the current
+process for the submission of SUSARs for clinical trials authorised under the clinical trials directive
+2001/20/EC.
+
+Clinical trials authorised under the clinical trials directive 2001/20/EC will continue to have the same
+SUSAR reporting requirements as specified in the directive for a transition period of 3 years after the
+clinical trials regulation is applicable.
+
+Sponsors that have a clinical trial authorised under the clinical trials regulation are normally required to
+send SUSARs to EudraVigilance only. The EudraVigilance system will then automatically reroute the
+SUSARs to the concerned NCAs. However, the option remains for small organisations to report SUSARs
+directly to the NCA that has approved the trial through establishing an agreement between the sponsor
+and the NCA concerned. The NCA will then forward any SUSARs reported to them under such
+agreements to the EudraVigilance system. It is expected that this will be for the submission of SUSARs
+by small organisations that are not able to create electronic submissions and do not have the resources
+to use EVWEB. The majority of SUSAR submissions are expected to occur through the simplified
+reporting to EudraVigilance and a set of business rules will be put in place for the automated
+forwarding of these SUSARs to the NCA requesting them.
+
+6.4.3. Sponsor of clinical trials communications
+
+Sponsors should have considered developing a communication plan to ensure that the necessary
+information was circulated within their own organisation and with other organisations that they work
+with. These communications should have been made at appropriate times to ensure that impacted
+parties were aware of the changes to the reporting requirements and associated business process.
+They should have also informed their IT departments of the need to be prepared for the associated IT
+changes that were required to be made.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                         Page 41/44
+6.4.4. Sponsor of clinical trials training
+
+Training should have been planned for the staff of sponsors to explain the changes to IT systems to be
+ready for the go-live of the new EudraVigilance System on 22 November 2017. It was advised to start
+training well in advance along with refresher training planned at regular intervals in the months leading
+up to implementation.
+
+A EudraVigilance training plan has been produced by the Agency, outlining recommended and
+supporting learning for each stakeholder group. These were categorised by subject matter into 3 areas.
+
+•   Pharmacovigilance Operations – modules detailing the key changes in pharmacovigilance
+    legislation, standards and guidelines and the impact of these on pharmacovigilance activities. It
+    was recommended that sponsors focus on the new EudraVigilance functionalities and implementing
+    the ISO ICSR/ICH E2B(R3) standard.
+
+•   EudraVigilance Operations – modules describing the EudraVigilance and EVDAS functionalities and
+    components, as well as the various data analysis, submission, visualisation and reporting options.
+    It was recommended to focus on modules related to EVWEB and the reporting of ICSRs.
+
+•   IT Systems Operations – modules providing instructions on the modifications required to prepare
+    internal systems for the EudraVigilance system enhancements. It included e-learning on IT
+    development and ICSR testing.
+
+
+
+Sponsors of clinical trials were advised to follow all the recommended learnings in each area whether
+they are new or existing users.
+
+In addition to the training materials, optional quizzes have been made available for some training
+modules, allowing users to verify their learning.
+
+The key training materials have been made available on the EudraVigilance Training and Support page.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                      Page 42/44
+6.4.5. Sponsor of clinical trials change management summary
+
+The following Sponsor actions have been grouped by area and whether they were obligatory or
+recommended actions.
+
+
+
+
+6.4.6. Sponsors of clinical trials checklist and testing instructions
+
+
+To further assist sponsors of clinical trials (sponsors) in preparing for the go-live of the new
+EudraVigilance (EV) system on 22 November 2017, the Agency has released a ‘Checklist and testing
+instructions for Marketing Authorisation Holders and Sponsors of Clinical Trials in the EEA’.
+
+This document provided some general testing instructions, easy to follow steps to assist MAHs and
+sponsors in preparing for the technical and business process changes. Reference was also made to the
+training and support offerings, which are available at the dedicated EudraVigilance training and support
+webpage, which provided detailed learnings on how to prepare for the changes to come. The checklist
+is complimentary to this EudraVigilance Stakeholder Change Management Plan and should have been
+read in conjunction.
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                         Page 43/44
+6.5. WHO-UMC change management planning
+
+This section of the change management plan focuses on the IT and business process changes that
+should have been considered by the WHO-UMC in the period of time leading up to and after
+implementation of the new EudraVigilance system.
+
+6.5.1. Implementing ISO ICSR (E2B(R3))
+
+As of 22 November 2017, the WHO started to receive ISO ICSR E2B(R3)) format messages from the
+EMA for ICSRs originating in the EEA. Therefore, the WHO-UMC should have ensured that support for
+the new format was implemented and testing conducted before hand.
+
+6.5.2. Business process change
+
+The reporting of ICSRs occurring in the EEA to the WHO-UMC is performed by the EMA instead of
+directly by NCAs. These ICSRs are being forwarded automatically using predefined rules.
+
+The main change for WHO-UMC was that they no longer need to receive ICSRs from EEA NCAs. The
+NCAs provided a last submission of data around the time of the switch to simplified reporting. The
+WHO-UMC received EEA data for the period up until the switch to simplified reporting from EEA NCAs
+and as of 22 November 2017 EudraVigilance submits EEA data to the WHO-UMC prospectively.
+
+
+
+
+EudraVigilance stakeholder change management plan
+EMA/325783/2016 Revision 3                                                                    Page 44/44
+
