@@ -1,0 +1,4160 @@
+Table of Contents 
+
+ SECTION 1 � INTRODUCTION .. 1 
+
+ 1.1 Objectives of this
+Document 1 
+
+ 1.2 Uses of MedDRA .. 2 
+
+ 1.3 How to Use this Document 2 
+
+ 1.4 Preferred Option . 2 
+
+ 1.5 MedDRA Browsing Tools . 2 
+
+ SECTION 2 � GENERAL TERM SELECTION PRINCIPLES .. 3 
+
+ 2.1 Quality of Source Data . 3 
+
+ 2.2 Quality Assurance . 3 
+
+ 2.3 Do Not Alter MedDRA .. 3 
+
+ 2.4 Always Select a Lowest
+Level Term .. 4 
+
+ 2.5 Select Only Current
+Lowest Level Terms . 5 
+
+ 2.6 When to Request a Term .. 5 
+
+ 2.7 Use of Medical
+Judgment in Term Selection . 5 
+
+ 2.8 Selecting More than
+One Term .. 5 
+
+ 2.9 Check the Hierarchy . 6 
+
+ 2.10 Select Terms for All
+Reported Information, Do Not Add Information . 6 
+
+ SECTION 3 � TERM SELECTION POINTS .. 7 
+
+ 3.1 Definitive and
+Provisional Diagnoses with or without Signs and Symptoms . 7 
+
+ 3.2 Death and Other
+Patient Outcomes . 10 
+
+ 3.2.1 Death with ARs/AEs . 10 
+
+ 3.2.2 Death as the only
+reported information . 11 
+
+ 3.2.3 Death terms that add
+important clinical information . 11 
+
+ 3.2.4 Other patient
+outcomes (non-fatal) 12 
+
+ 3.3 Suicide and Self-Harm .. 12 
+
+ 3.3.1 If overdose is
+reported . 12 
+
+ 3.3.2 If self-injury is
+reported . 12 
+
+ 3.3.3 Fatal suicide
+attempt 13 
+
+ 3.4 Conflicting/Ambiguous/Vague
+Information . 13 
+
+ 3.4.1 Conflicting
+information . 13 
+
+ 3.4.2 Ambiguous
+information . 14 
+
+ 3.4.3 Vague information . 14 
+
+ 3.5 Combination Terms . 15 
+
+ 3.5.1 Diagnosis and
+sign/symptom .. 15 
+
+ 3.5.2 One reported
+condition is more specific than the other 15 
+
+ 3.5.3 A MedDRA combination
+term is available . 16 
+
+ 3.5.4 When to �split� into
+more than one MedDRA term .. 16 
+
+ 3.5.5 Event reported with
+pre-existing condition . 17 
+
+ 3.6 Age vs. Event
+Specificity . 17 
+
+ 3.6.1 MedDRA term includes
+age and event information . 17 
+
+ 3.6.2 No available MedDRA
+term includes both age and event information . 17 
+
+ 3.7 Body Site vs. Event
+Specificity . 18 
+
+ 3.7.1 MedDRA term includes
+body site and event information . 18 
+
+ 3.7.2 No available MedDRA
+term includes both body site and event information . 18 
+
+ 3.7.3 Event occurring at
+multiple body sites . 18 
+
+ 3.8 Location-Specific vs.
+Microorganism-Specific Infection . 19 
+
+ 3.8.1 MedDRA term includes
+microorganism and anatomic location 19 
+
+ 3.8.2 No available MedDRA
+term includes both microorganism and anatomic location . 19 
+
+ 3.9 Modification of
+Pre-existing Conditions . 20 
+
+ 3.10 Exposures during
+Pregnancy and Breast Feeding . 21 
+
+ 3.10.1 Events in the mother 21 
+
+ 3.10.2 Events in the child or
+foetus . 22 
+
+ 3.11 Congenital Terms . 23 
+
+ 3.11.1 Congenital conditions . 23 
+
+ 3.11.2 Acquired conditions
+(not present at birth) 23 
+
+ 3.11.3 Conditions not
+specified as either congenital or acquired . 24 
+
+ 3.12 Neoplasms . 25 
+
+ 3.12.1 Do not infer
+malignancy . 25 
+
+ 3.13 Medical and Surgical
+Procedures . 25 
+
+ 3.13.1 Only the procedure is
+reported . 25 
+
+ 3.13.2 Procedure and
+diagnosis are reported . 26 
+
+ 3.14 Investigations . 26 
+
+ 3.14.1 Results of investigations
+as ARs/AEs . 26 
+
+ 3.14.2 Investigation results
+consistent with diagnosis . 27 
+
+ 3.14.3 Investigation results
+not consistent with diagnosis . 28 
+
+ 3.14.4 Grouped investigation
+result terms . 28 
+
+ 3.14.5 Investigation terms
+without qualifiers . 28 
+
+ 3.15 Medication Errors,
+Accidental Exposures and Occupational Exposures . 29 
+
+ 3.15.1 Medication errors . 29 
+
+ 3.15.1.1 Medication errors reported with clinical consequences . 29 
+
+ 3.15.1.2 Medication errors and potential medication errors reported without clinical 
+
+consequences . 29 
+
+ 3.15.1.3 Medication monitoring errors . 29 
+
+ 3.15.1.4 Do not infer a medication error . 29 
+
+ 3.15.2 Accidental exposures
+and occupational exposures . 35 
+
+ 3.16 Misuse, Abuse and
+Addiction . 36 
+
+ 3.16.1 Misuse . 37 
+
+ 3.16.2 Abuse . 37 
+
+ 3.16.3 Addiction . 38 
+
+ 3.16.4 Drug diversion . 39 
+
+ 3.17 Transmission of
+Infectious Agent via Product 39 
+
+ 3.18 Overdose, Toxicity
+and Poisoning . 39 
+
+ 3.18.1 Overdose reported with
+clinical consequences . 40 
+
+ 3.18.2 Overdose reported
+without clinical consequences . 41 
+
+ 3.19 Device-related Terms . 41 
+
+ 3.19.1 Device-related event
+reported with clinical consequences . 41 
+
+ 3.19.2 Device-related event
+reported without clinical consequences . 42 
+
+ 3.20 Drug Interactions . 42 
+
+ 3.20.1 Reporter specifically
+states an interaction . 42 
+
+ 3.20.2 Reporter does not
+specifically state an interaction . 43 
+
+ 3.21 No Adverse Effect and
+�Normal� Terms . 43 
+
+ 3.21.1 No adverse effect 43 
+
+ 3.21.2 Use of �normal� terms . 43 
+
+ 3.22 Unexpected
+Therapeutic Effect 44 
+
+ 3.23 Modification of
+Effect 44 
+
+ 3.23.1 Lack of effect 44 
+
+ 3.23.2 Do not infer lack of
+effect 44 
+
+ 3.23.3 Increased, decreased
+and prolonged effect 45 
+
+ 3.24 Social Circumstances . 45 
+
+ 3.24.1 Use of terms in this
+SOC .. 45 
+
+ 3.24.2 Illegal acts of crime
+or abuse . 46 
+
+ 3.25 Medical and Social
+History . 47 
+
+ 3.26 Indication for
+Product Use . 47 
+
+ 3.26.1 Medical conditions . 47 
+
+ 3.26.2 Complex indications . 48 
+
+ 3.26.3 Indications with
+genetic markers or abnormalities . 49 
+
+ 3.26.4 Prevention and
+prophylaxis . 49 
+
+ 3.26.5 Procedures and
+diagnostic tests as indications . 50 
+
+ 3.26.6 Supplementation and
+replacement therapies . 50 
+
+ 3.26.7 Indication not
+reported . 50 
+
+ 3.27 Off Label Use . 51 
+
+ 3.27.1 Off label use when
+reported as an indication . 51 
+
+ 3.27.2 Off label use when
+reported with an AR/AE .. 52 
+
+ 3.28 Product Quality
+Issues . 53 
+
+ 3.28.1 Product quality issue
+reported with clinical consequences . 53 
+
+ 3.28.2 Product quality issue
+reported without clinical consequences . 54 
+
+ 3.28.3 Product quality issue
+vs. medication error 54 
+
+ SECTION 4 � APPENDIX .. 55 
+
+ 4.1 Versioning . 55 
+
+ 4.1.1 Versioning methodologies . 55 
+
+ 4.1.2 Timing of version
+implementation . 57 
+
+ 4.2 Links and References . 57 
+
+ MedDRA � TERM SELECTION:
+
+POINTS TO CONSIDER 
+
+ ICH-Endorsed Guide for MedDRA Users 
+
+ Release 4.24 
+
+ March 2024 
+
+ Disclaimer and Copyright Notice 
+
+ This document is protected by copyright and may, with
+the exception of the MedDRA and ICH logos, be used, reproduced, incorporated
+into other works, adapted, modified, translated or distributed under a public
+license provided that ICH's copyright in the document is acknowledged at all
+times. In case of any adaption, modification or translation of the document,
+reasonable steps must be taken to clearly label, demarcate or otherwise
+identify that changes were made to or based on the original document. Any
+impression that the adaption, modification or translation of the original
+document is endorsed or sponsored by the ICH must be avoided.
+
+ The document is provided "as is" without
+warranty of any kind. In no event shall the ICH or the authors of the original
+document be liable for any claim, damages or other liability arising from the
+use of the document.
+
+ The above-mentioned permissions do not apply to content supplied
+by third parties. Therefore, for documents where the copyright vests in a third
+party, permission for reproduction must be obtained from this copyright holder.
+
+ MedDRA� trademark is registered by ICH
+
+ TOC \o "1-3" \h \z \u 
+
+SECTION 1 
+ INTRODUCTION 
+
+ The Med ical D ictionary for R egulatory
+ A ctivities terminology ( MedDRA ) was designed for sharing regulatory
+information for human medical products. In order for MedDRA 
+to harmonise the exchange of coded data, users should be consistent in the
+assignment of terms to verbatim reports of symptoms, signs, diseases, etc. 
+
+ This MedDRA Term Selection: Points to Consider (MTS :PTC ) document is an ICH-endorsed guide for MedDRA users. It is updated annually in step with the March
+release of MedDRA (starting with MedDRA 
+Version 23.0) and is support documentation for MedDRA .
+It was developed and is maintained by a working group charged by the ICH
+Management Committee. The working group consists of representatives of ICH
+regulatory and industry members, the World Health Organization, the MedDRA Maintenance and Support Services Organization
+(MSSO), and the Japanese Maintenance Organization (JMO) (see the M1 MedDRA Terminology page under Multidisciplinary Guidelines on the ICH website for a list of
+current members). 
+
+ In addition, the working group has developed a
+condensed version of the MTS :PTC document which focuses
+on the fundamental principles of term selection and is intended to support the
+implementation and use of MedDRA in the ICH regions
+and beyond (see Appendix, Section 4.2). It is available in all MedDRA languages except for English, Japanese, and other
+languages with an available translation of the full MTS :PTC 
+document. The full MTS :PTC document in its various
+translations will continue to be maintained and updated as the complete
+reference document. 
+
+ 1.1 
+ Objectives
+of this Document 
+
+ The objective
+of the MTS :PTC document is to promote accurate and consistent term selection. 
+
+ Organisations
+are encouraged to document their term selection methods and quality assurance
+procedures in organisation-specific coding guidelines which should be consistent
+with the MTS :PTC . 
+
+ Consistent
+term selection promotes medical accuracy for sharing MedDRA -coded
+data and facilitates a common understanding of shared data among academic,
+commercial and regulatory entities. The MTS :PTC could
+also be used by healthcare professionals, researchers, and other parties
+outside of the regulated biopharmaceutical industry. 
+
+ The
+document provides term selection considerations for business purposes and
+regulatory requirements. There may be examples that do not reflect practices and
+requirements in all regions. This document does not specify regulatory
+reporting requirements, nor does it address database issues. As experience with
+ MedDRA increases, and as MedDRA 
+changes, there will be revisions to this document. 
+
+ 1.2 
+ Uses
+of MedDRA 
+
+ Term selection for adverse reactions/adverse
+events (ARs/AEs), device-related events, product quality issues, medication
+errors, exposures, medical history, social history, investigations, misuse and
+abuse, off label use, and indications is addressed in this MTS :PTC document. 
+
+ MedDRA's 
+structure allows for aggregation of those reported terms in medically
+meaningful groupings to facilitate analysis of safety data. MedDRA 
+can also be used to list AR/AE data in reports (tables, line listings, etc.),
+compute frequencies of similar ARs/AEs, and capture and analyse related data
+such as product indications, investigations, and medical and social history. 
+
+ 1.3 
+ How
+to Use this Document 
+
+ The MTS :PTC document does not address every potential term
+selection situation. Medical judgment and common sense should also be applied. 
+
+ This
+document is not a substitute for MedDRA training. It
+is essential for users to have knowledge of MedDRA's 
+structure and content. For optimal MedDRA term
+selection, one should also refer to the MedDRA Introductory
+Guide (see Appendix, Section 4.2). 
+
+ Users are
+invited to contact the MSSO Help Desk with any questions or comments
+about this MTS :PTC document. 
+
+ 1.4 
+ Preferred
+Option 
+
+ In some
+cases, where there is more than one option for selecting terms, a preferred
+option is identified in this document. Designation
+of a preferred option does not limit MedDRA users
+to applying that option. Users should always first consider regional
+regulatory requirements. An organisation should be consistent in the option
+that they choose to use and document that option in internal coding guidelines. 
+
+ 1.5 
+ MedDRA Browsing Tools 
+
+ The MSSO
+provides browsers (the Desktop, Web-Based, and Mobile browsers) that allow for
+searching and viewing the terminology (see Appendix, Section 4.2). Users may
+find these browsers useful aids in term selection. 
+
+ SECTION 2 
+ GENERAL
+TERM SELECTION PRINCIPLES 
+
+ 2.1 
+ Quality
+of Source Data 
+
+ The quality
+of the original reported information directly impacts the quality of data output.
+Clarification should be obtained for data that are ambiguous, confusing, or
+unintelligible. If clarification cannot be obtained, refer to Section 3.4. 
+
+ 2.2 
+ Quality
+Assurance 
+
+ To promote
+consistency, organisations should document their term selection methods and
+quality assurance procedures in coding guidelines consistent with this MTS :PTC document. 
+
+ Clear
+initial data can be promoted through careful design of data collection forms,
+and training of individuals in data collection and follow-up (e.g., investigators,
+drug sales representatives). 
+
+ Term
+selection should be reviewed by a qualified individual, i.e., a person with
+medical background or training who has also received MedDRA 
+training. 
+
+ Human
+oversight of term selection performed by IT tools (such as an autoencoder ) is needed to assure that the end result fully
+reflects the reported information and makes medical sense. 
+
+ For further
+information, please refer to Section 2 of the MedDRA 
+Points to Consider Companion Document which contains detailed examples and
+guidance on data quality (see Appendix, Section 4.2). 
+
+ 2.3 
+ Do
+Not Alter MedDRA 
+
+ MedDRA is
+a standardised terminology with a
+pre-defined term hierarchy that should not be altered. Users must not make ad hoc 
+structural alterations to MedDRA , including changing
+the primary SOC allocation; doing so would compromise the integrity of this
+standard. If terms are found to be incorrectly placed in the MedDRA hierarchy, a change request should be submitted to
+the MSSO. 
+
+ Example 
+
+ Change Request to Re-Assign Primary SOC 
+
+ In a previous version of MedDRA ,
+ PT Factor VIII deficiency was
+ incorrectly assigned to primary SOC Blood
+ and lymphatic system disorders . By means of a Change Request, the PT was
+ re-assigned to primary SOC Congenital,
+ familial and genetic disorders (making SOC Blood and lymphatic system disorders its secondary SOC
+ assignment). 
+
+ 2.4 
+ Always
+Select a Lowest Level Term 
+
+ MedDRA 
+Lowest Level Term(s) (LLT) that most
+accurately reflects the reported verbatim information should be selected. 
+
+ The degree
+of specificity of some MedDRA LLTs may be challenging
+for term selection. Here are some tips for specific instances: 
+
+ A single letter
+ difference in a reported verbatim text can impact the meaning of the word
+ and consequently the term selection 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Lip sore 
+
+ Lip sore (PT Lip pain ) 
+
+ Lip sore s 
+
+ Sores lip (PT Cheilitis ) 
+
+ Sore gums 
+
+ Sore gums (PT Gingival pain ) 
+
+ Sore s gum 
+
+ Sores gum (PT Noninfective gingivitis ) 
+
+ Gender-specific terms 
+
+ MedDRA generally
+excludes terms with demographic descriptors (age, gender, etc.), but some terms
+with gender qualifiers are included if the gender renders the concept unique. 
+
+ Example 
+
+ Distinct Gender-Specific Terms 
+
+ In MedDRA , there
+ are separate LLTs/PTs for 
+
+ Infertility , Infertility female and Infertility
+ male 
+
+ Organisation-specific
+coding guidelines should address instances when it is important to capture
+gender-specific concepts. 
+
+ MedDRA 
+users should also consider the impact of gender-specific terms when comparing
+current data to data coded with a legacy terminology in which such gender
+specificity may not have been available. 
+
+ Example 
+
+ Gender Specificity Legacy Terms vs. MedDRA 
+
+ Consider the impact of selecting gender-specific
+ MedDRA terms for breast cancer (e.g., LLT Breast cancer female ) when comparing
+ data coded in a legacy terminology with only a single Breast cancer term. 
+
+ Postoperative and post procedural terms 
+
+ MedDRA 
+contains some postoperative and post procedural terms. Select the most
+specific term available. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Bleeding after surgery 
+
+ Bleeding postoperative 
+
+ Sepsis occurred after the procedure 
+
+ Post procedural sepsis 
+
+ Newly added terms 
+
+ More specific
+LLTs may be available in a new version of MedDRA . See
+Appendix, Section 4.2. 
+
+ 2.5 
+ Select
+Only Current Lowest Level Terms 
+
+ Non-current
+LLTs should not be used for term selection. 
+
+ 2.6 
+ When
+to Request a Term 
+
+ Do not
+address deficiencies in MedDRA with organisation-specific
+solutions. If there is no MedDRA term available to
+adequately reflect the reported information, submit a change request to MSSO. 
+
+ Example 
+
+ Change Request for a New Term 
+
+ LLT HBV
+ coinfection was added to MedDRA following a
+ user's request. 
+
+ 2.7 
+ Use
+of Medical Judgment in Term Selection 
+
+ If an exact
+match cannot be found, medical judgment 
+should be used to adequately represent the medical concept with an existing MedDRA term. 
+
+ 2.8 
+ Selecting More than One Term 
+
+ When a
+specific medical concept is not represented by a single MedDRA term, consider requesting a
+new term through the change request process (see Section 2.6). Whilst waiting
+for the new term, select one or more existing terms using a consistent approach
+with careful consideration of the impact on data retrieval, analysis, and
+reporting. 
+
+ In some
+cases, it may be appropriate to select more than one MedDRA 
+LLT to represent the reported information. If only one term is selected,
+specificity may be lost; on the other hand, selecting more than one term may
+lead to redundant counts. Established procedures should be documented. 
+
+ Example 
+
+ More Than One LLT
+ Selected 
+
+ There is no single MedDRA 
+ term for metastatic gingival cancer . Therefore,
+ the options are: 
+
+ Select
+ LLT Gingival cancer OR LLT Metastatic carcinoma 
+
+ Select
+ LLT Gingival cancer AND LLT Metastatic carcinoma 
+
+ 2.9 
+ Check
+the Hierarchy 
+
+ When
+considering selecting an LLT, check the hierarchy above the LLT (PT level and
+further up the hierarchy to HLT, HLGT and SOC) to ensure the placement accurately
+reflects the meaning of the reported term. 
+
+ 2.10 
+ Select
+Terms for All Reported Information, Do Not Add Information 
+
+ Select
+terms for every AR/AE reported, regardless of causal association. In addition,
+select terms for device-related events, product quality issues, medication
+errors, medical history, social history, investigations, and indications as
+appropriate. 
+
+ If a
+diagnosis is reported with characteristic signs and symptoms, the preferred option is to select a term
+for the diagnosis only (see Section 3.1 for details and examples). 
+
+ When
+selecting terms, no reported information should be excluded from the term
+selection process; similarly, do not add information by selecting a term for a
+diagnosis if only signs or symptoms are reported. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Abdominal pain, increased serum amylase, and increased serum lipase 
+
+ Abdominal pain 
+
+ It is inappropriate to assign an LLT for
+ diagnosis of pancreatitis 
+
+ Serum amylase increased 
+
+ Lipase increased 
+
+ SECTION 3 
+ TERM
+SELECTION POINTS 
+
+ 3.1 
+ Definitive
+and Provisional Diagnoses with or without Signs and Symptoms 
+
+ The table
+below provides term selection options for definitive and provisional diagnoses
+with or without signs/symptoms reported. Examples are listed below the table. 
+
+ A
+provisional diagnosis may be described as suspicion of , probable ,
+ presumed , likely , rule out , questionable , differential , etc. 
+
+ The preferred option for a single or
+multiple provisional diagnosis( es )
+is to select a term(s) for the diagnosis( es ) and terms for reported signs and
+symptoms. This is because a provisional diagnosis may change while
+signs/symptoms do not. 
+
+ SUMMARY OF PREFERRED
+ AND ALTERNATE OPTIONS 
+
+ SINGLE DIAGNOSIS 
+
+ DEFINITIVE DIAGNOSIS 
+
+ PROVISIONAL
+ DIAGNOSIS 
+
+ Single definitive
+ diagnosis 
+
+ without signs/symptoms 
+
+ Diagnosis
+ (only possible option) 
+
+ Single provisional
+ diagnosis 
+
+ without signs/symptoms 
+
+ Provisional
+ diagnosis (only possible option) 
+
+ Single definitive
+ diagnosis 
+
+ with signs/symptoms 
+
+ Preferred: Diagnosis only 
+
+ Alternate:
+ Diagnosis and signs/symptoms 
+
+ Note: Always include signs/symptoms not associated with diagnosis 
+
+ SEE EXAMPLE 1 
+
+ Single provisional
+ diagnosis 
+
+ with signs/symptoms 
+
+ Preferred: Provisional diagnosis and signs/symptoms 
+
+ Alternate:
+ Signs/symptoms only 
+
+ Note: Always include signs/symptoms not associated with diagnosis 
+
+ SEE EXAMPLE 2 
+
+ MULTIPLE DIAGNOSES 
+
+ DEFINITIVE DIAGNOSES 
+
+ PROVISIONAL
+ DIAGNOSES 
+
+ Multiple definitive
+ diagnoses 
+
+ without signs/symptoms 
+
+ Multiple
+ diagnoses (only possible option) 
+
+ Multiple provisional
+ diagnoses 
+
+ without signs/symptoms 
+
+ Multiple
+ provisional diagnoses (only possible option) 
+
+ Multiple definitive
+ diagnoses 
+
+ with signs/symptoms 
+
+ Preferred: Multiple diagnoses only 
+
+ Alternate:
+ Diagnoses and signs/symptoms 
+
+ Note: Always include signs/symptoms not associated with diagnosis 
+
+ SEE EXAMPLE 3 
+
+ Multiple provisional
+ diagnoses 
+
+ with signs/symptoms 
+
+ Preferred: Multiple provisional diagnoses and
+ signs/symptoms 
+
+ Alternate:
+ Signs/symptoms only 
+
+ Note: Always include signs/symptoms not associated with diagnosis 
+
+ SEE EXAMPLE 4 
+
+ EXAMPLES 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ 1 
+
+ Anaphylactic
+ reaction, rash dyspnoea, hypotension, 
+
+ and laryngospasm 
+
+ Anaphylactic reaction 
+
+ Anaphylactic reaction 
+
+ Rash 
+
+ Dyspnoea 
+
+ Hypotension 
+
+ Laryngospasm 
+
+ 2 
+
+ Possible
+ myocardial infarction with chest pain, 
+
+ dyspnoea, diaphoresis 
+
+ Myocardial infarction 
+
+ Chest pain 
+
+ Dyspnoea 
+
+ Diaphoresis 
+
+ Chest pain 
+
+ Dyspnoea 
+
+ Diaphoresis 
+
+ 3 
+
+ Pulmonary
+ embolism, myocardial infarction, and congestive heart failure with chest
+ pain, cyanosis, shortness of breath, and blood pressure decreased 
+
+ Pulmonary embolism 
+
+ Myocardial infarction 
+
+ Congestive heart failure 
+
+ Pulmonary embolism 
+
+ Myocardial infarction 
+
+ Congestive heart failure 
+
+ Chest pain 
+
+ Cyanosis 
+
+ Shortness of breath 
+
+ Blood pressure decreased 
+
+ 4 
+
+ Chest
+ pain, cyanosis, shortness of breath, and blood pressure decreased. Differential
+ diagnosis includes pulmonary embolism, myocardial infarction, and congestive
+ heart failure. 
+
+ Pulmonary embolism 
+
+ Myocardial infarction 
+
+ Congestive heart failure 
+
+ Chest pain 
+
+ Cyanosis 
+
+ Shortness of breath 
+
+ Blood pressure decreased 
+
+ Chest pain 
+
+ Cyanosis 
+
+ Shortness of breath 
+
+ Blood pressure decreased 
+
+ Always include signs/ symptoms not associated with diagnosis 
+
+ Myocardial infarction, chest pain, dyspnoea,
+ diaphoresis, ECG changes and jaundice 
+
+ Myocardial infarction 
+
+ Jaundice (note that jaundice is not typically
+ associated with myocardial infarction) 
+
+ 3.2 
+ Death
+and Other Patient Outcomes 
+
+ Death,
+disability, and hospitalisation are considered outcomes in the context of safety reporting and not usually considered
+ARs/AEs. Outcomes are typically recorded in a separate manner (data field) from
+AR/AE information. A term for the outcome should be selected if it is the only
+information reported or provides significant clinical information. 
+
+ (For
+reports of suicide and self-harm, see Section 3.3). 
+
+ 3.2.1 
+ Death
+with ARs/AEs 
+
+ Death is an
+outcome and not usually considered an AR/AE. If ARs/AEs are reported along with
+death, select terms for the ARs/AEs. Record the fatal outcome in an appropriate
+data field. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Death due to myocardial infarction 
+
+ Myocardial infarction 
+
+ Record
+ death as an outcome 
+
+ Constipation, ruptured bowel, peritonitis,
+ sepsis; patient died 
+
+ Constipation 
+
+ Perforated bowel 
+
+ Peritonitis 
+
+ Sepsis 
+
+ 3.2.2 
+ Death
+as the only reported information 
+
+ If the only
+information reported is death, select the most specific death term available.
+Circumstances of death should not be inferred but recorded only if stated by
+the reporter. 
+
+ Death terms
+in MedDRA are linked to HLGT Fatal
+outcomes . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient was found dead 
+
+ Found dead 
+
+ Patient died in childbirth 
+
+ Maternal death during childbirth 
+
+ The autopsy report stated that the cause of
+ death was natural 
+
+ Death from natural causes 
+
+ 3.2.3 
+ Death
+terms that add important clinical information 
+
+ Death terms
+that add important clinical information should be selected along with any
+reported ARs/AEs. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient experienced a rash and had sudden
+ cardiac death 
+
+ Rash 
+
+ Sudden cardiac death 
+
+ 3.2.4 
+ Other
+patient outcomes (non-fatal) 
+
+ Hospitalisation,
+disability, and other patient outcomes are not generally considered ARs/AEs. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Hospitalisation due to congestive heart
+ failure 
+
+ Congestive heart failure 
+
+ Record hospitalisation as an outcome 
+
+ If the only
+information reported is the patient outcome, select the most specific term
+available. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient was hospitalised 
+
+ Hospitalisation 
+
+ 3.3 
+ Suicide
+and Self-Harm 
+
+ Accurate
+and consistent term selection for reports of suicide attempts, completed
+suicides, and self-harm is necessary for data retrieval and analysis. If the
+motive for reported injury is not clear, seek clarification from the source. 
+
+ 3.3.1 
+ If
+overdose is reported 
+
+ Do not
+assume that an overdose including an intentional overdose is a suicide
+attempt. Select only the appropriate overdose term (see Section 3.18). 
+
+ 3.3.2 
+ If
+self-injury is reported 
+
+ For reports
+of self-injury that do not mention suicide or suicide attempt, select only the
+appropriate self-injury term. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Self slashing 
+
+ Self
+ inflicted laceration 
+
+ LLT Self inflicted laceration is linked to
+ PT Intentional self-injury 
+
+ Cut her own wrists 
+
+ Cut wrists in a suicide attempt 
+
+ Self inflicted laceration 
+
+ Suicide attempt 
+
+ Took an overdose in an attempt to commit
+ suicide 
+
+ Intentional overdose 
+
+ Suicide attempt 
+
+ If overdose is reported in the context of
+ suicide or a suicide attempt, the more specific LLT Intentional overdose can be selected (see also Section 3.18) 
+
+ 3.3.3 
+ Fatal
+suicide attempt 
+
+ If a
+suicide attempt is fatal, select the term that reflects the outcome instead of
+the attempt only. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Suicide attempt resulted in death 
+
+ Completed suicide 
+
+ Record death as an outcome 
+
+ 3.4 
+ Conflicting/Ambiguous/Vague
+Information 
+
+ When
+conflicting, ambiguous, or vague information is reported, term selection to support
+appropriate data retrieval may be difficult. When this occurs, attempt to
+obtain more specific information. If clarification cannot be achieved, select
+terms as illustrated in the examples below (Sections 3.4.1 through 3.4.3). 
+
+ 3.4.1 
+ Conflicting
+information 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Hyperkalaemia with a serum potassium of 1.6
+ mEq/L 
+
+ Serum potassium abnormal 
+
+ LLT Serum
+ potassium abnormal covers both of the reported concepts (note: serum
+ potassium of 1.6 mEq/L is a low result,
+ not high) 
+
+ 3.4.2 
+ Ambiguous
+information 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ GU pain 
+
+ Pain 
+
+ Effort should be made to obtain clarification
+ of the meaning of "GU" from the source so that more specific term selection
+ may be possible. GU could be either genito-urinary or gastric ulcer . If
+ additional information is not available, then select a term to reflect the
+ information that is known, i.e., LLT Pain 
+
+ 3.4.3 
+ Vague information 
+
+ For
+information that is vague, attempt to obtain clarification. If clarification
+cannot be achieved, select an LLT that reflects the vague nature of the
+reported event. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Turned green 
+
+ Unevaluable event 
+
+ Turned green reported alone is vague; this
+ could refer to a patient condition or even to a product (e.g., pills) 
+
+ Patient had a medical problem of unclear type 
+
+ Ill-defined disorder 
+
+ Since it is known that there is some form of
+ a medical disorder, LLT Ill-defined
+ disorder can be selected 
+
+ 3.5 
+ Combination
+Terms 
+
+ A combination term in MedDRA is a single
+medical concept combined with additional medical wording that provides
+important information on pathophysiology or aetiology. A combination term is an
+internationally recognised, distinct and robust medical concept as illustrated
+in the examples below. 
+
+ Example 
+
+ MedDRA Combination Terms 
+
+ PT Diabetic
+ retinopathy 
+
+ PT Hypertensive
+ cardiomegaly 
+
+ PT Eosinophilic
+ pneumonia 
+
+ A combination
+term may be selected for certain reported ARs/AEs (e.g., a condition due to 
+another condition), keeping the following points in mind (Note: medical
+judgment should be applied): 
+
+ 3.5.1 
+ Diagnosis
+and sign/symptom 
+
+ If a
+diagnosis and its characteristic signs or symptoms are reported, select a term
+for the diagnosis (see Section 3.1). A MedDRA combination term is not needed in
+this instance. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Chest pain due to myocardial infarction 
+
+ Myocardial infarction 
+
+ 3.5.2 
+ One reported
+condition is more specific than the other 
+
+ If two
+conditions are reported in combination, and one is more specific than the
+other, select a term for the more specific condition. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Hepatic function disorder (acute hepatitis) 
+
+ Hepatitis acute 
+
+ Arrhythmia due to atrial fibrillation 
+
+ Atrial fibrillation 
+
+ 3.5.3 
+ A
+MedDRA combination term is available 
+
+ If two
+conditions or concepts are reported in combination, and a single MedDRA combination
+term is available to represent them, select that term. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Retinopathy due to diabetes 
+
+ Diabetic retinopathy 
+
+ Rash with itching 
+
+ Itchy rash 
+
+ Breast cancer (HER2 positive) 
+
+ HER2 positive breast cancer 
+
+ 3.5.4 
+ When
+to split into more than one MedDRA term 
+
+ If splitting the reported
+ARs/AEs provides more clinical information, select more than one MedDRA term.
+For example, in the field of oncology, there may be situations in which it is
+important to capture information not only for the tumour type, but also for the
+associated genetic marker or abnormality because of the implications for
+aetiology, prognosis or treatment. If a combination term that describes a
+genetic marker or abnormality associated with a medical condition is not
+available, separate terms may be selected to represent the genetic marker or
+abnormality as well as the associated medical condition. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Diarrhoea and vomiting 
+
+ Diarrhoea 
+
+ Vomiting 
+
+ Wrist fracture due to fall 
+
+ Wrist fracture 
+
+ Fall 
+
+ BRAF positive malignant melanoma 
+
+ BRAF gene mutation 
+
+ Malignant melanoma 
+
+ Exercise
+medical judgment so that information is not lost when splitting a reported
+term. Always check the MedDRA hierarchy above the selected
+term to be sure it is appropriate for the reported information . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Haematoma due to an animal bite 
+
+ Animal bite 
+
+ Traumatic haematoma 
+
+ LLT Traumatic
+ haematoma is more appropriate than LLT Haematoma (LLT Traumatic
+ haematoma links to HLT Non-site
+ specific injuries NEC and HLT Haemorrhages
+ NEC while LLT Haematoma links
+ only to HLT Haemorrhages NEC ) 
+
+ 3.5.5 
+ Event
+reported with pre-existing condition 
+
+ If an event
+is reported along with a pre-existing condition that has not changed , and if there is not an appropriate
+combination term in MedDRA, select a term for the event only (see Section 3.9
+for pre-existing conditions that have changed). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Shortness of breath due to pre-existing
+ cancer 
+
+ Shortness of breath 
+
+ In this instance, shortness of breath is
+ the event; cancer is the pre-existing condition that has not changed 
+
+ 3.6 
+ Age
+vs. Event Specificity 
+
+ 3.6.1 
+ MedDRA
+term includes age and event information 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Jaundice in a newborn 
+
+ Jaundice of newborn 
+
+ Developed psychosis at age 6 years 
+
+ Childhood psychosis 
+
+ 3.6.2 
+ No
+available MedDRA term includes both age and event information 
+
+ The preferred option is to select a term
+for the event and record the age in
+the appropriate demographic field. 
+
+ Alternatively,
+select terms (more than one) that together reflect both the age of the patient
+and the event. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Pancreatitis
+ in a newborn 
+
+ Pancreatitis 
+
+ Pancreatitis 
+
+ Neonatal disorder 
+
+ 3.7 
+ Body
+Site vs. Event Specificity 
+
+ 3.7.1 
+ MedDRA
+term includes body site and event information 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Skin rash on face 
+
+ Rash on face 
+
+ 3.7.2 
+ No
+available MedDRA term includes both body site and event information 
+
+ Select a
+term for the event , rather than a
+term that reflects a non-specific condition at the body site; in other words,
+the event information generally has
+priority. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Skin rash on chest 
+
+ Skin rash 
+
+ In this instance, there is no
+ available term for a skin rash on the chest 
+
+ However,
+medical judgment is required, and sometimes, the body site information should have
+priority as in the example below. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Cyanosis at injection site 
+
+ Injection site discolouration 
+
+ Cyanosis may suggest a generalised
+ disorder. In this example, selecting LLT Cyanosis
+ would result in loss of important medical information and
+ miscommunication. 
+
+ 3.7.3 
+ Event occurring
+at multiple body sites 
+
+ If an event
+is reported to occur at more than one body site, and if all of those LLTs link
+to the same PT, then select a single LLT that most accurately reflects the
+event; in other words, the event 
+information has priority. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Skin rash on face and neck 
+
+ Skin rash 
+
+ LLT Rash
+ on face, LLT Neck rash, and LLT Skin rash all link to PT Rash 
+
+ Oedema of hands and feet 
+
+ Oedema of extremities 
+
+ LLT Oedema
+ hands and LLT Oedematous feet 
+ both link to PT Oedema peripheral .
+ However, LLT Oedema of extremities 
+ most accurately reflects the event in a single term 
+
+ 3.8 
+ Location-Specific
+vs. Microorganism-Specific Infection 
+
+ 3.8.1 
+ MedDRA
+term includes microorganism and anatomic location 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Pneumococcal pneumonia 
+
+ Pneumococcal pneumonia 
+
+ In this example, the implied anatomic
+ location is the lung 
+
+ 3.8.2 
+ No
+available MedDRA term includes both microorganism and anatomic location 
+
+ The preferred option is to
+select terms for both the microorganism-specific infection and the anatomic location. 
+
+ Alternatively,
+select a term that reflects the anatomic location or select a term that reflects the microorganism-specific
+infection. Medical judgment should be used in deciding whether anatomic
+location or the microorganism-specific infection should take priority. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Comment 
+
+ Klebsiella
+ kidney infection 
+
+ Klebsiella infection 
+
+ Kidney infection 
+
+ Represents both microorganism-specific
+ infection and anatomic location 
+
+ Kidney infection 
+
+ Represents location-specific infection 
+
+ Klebsiella infection 
+
+ Represents microorganism-specific infection 
+
+ 3.9 
+ Modification
+of Pre-existing Conditions 
+
+ Pre-existing
+conditions that have changed may be considered ARs/AEs, especially if the
+condition has worsened or progressed (see Section 3.5.5 for pre-existing conditions that have not changed, and Section
+3.22 for an unexpected improvement of a pre-existing condition). 
+
+ Ways That Pre-existing Conditions May Be Modified 
+
+ Aggravated, exacerbated, worsened 
+
+ Recurrent 
+
+ Progressive 
+
+ Select a
+term that most accurately reflects the modified condition (if such term exists) 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Exacerbation of myasthenia gravis 
+
+ Myasthenia gravis aggravated 
+
+ If no such
+term exists, consider these approaches: 
+
+ Example 1: Select a term for the
+pre-existing condition and record the modification in a consistent, documented
+way in appropriate data fields 
+
+ Example 2: Select a term for the
+pre-existing condition and a second term
+for the modification of the condition (e.g., LLT Condition aggravated , LLT Disease
+progression ). Record the modification in a consistent, documented way in
+appropriate data fields. 
+
+ Example 
+
+ Examples 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Example 1 
+
+ Jaundice aggravated 
+
+ Jaundice 
+
+ Record aggravated in a consistent,
+ documented way. 
+
+ Example 2 
+
+ Jaundice aggravated 
+
+ Jaundice 
+
+ Condition aggravated 
+
+ Record aggravated in a consistent, documented
+ way. Select terms for the pre-existing condition and the modification. 
+
+ 3.10 
+ Exposures
+during Pregnancy and Breast Feeding 
+
+ To select the most appropriate exposure term
+(or terms) from HLT Exposures associated
+with pregnancy, delivery and lactation , first determine if the
+subject/patient who was exposed is the mother, the child/foetus, or the father.
+ If the reported verbatim
+information does not specify who was exposed, then a general term such as LLT Exposure during pregnancy can be
+selected. 
+
+ In addition, MedDRA includes terms indicating a pregnant or
+breastfeeding woman was exposed, which are placed in HLTs other than HLT Exposures associated with pregnancy, delivery and lactation . These terms include e.g., PT Maternal immunisation , PT Maternal
+therapy to enhance foetal lung maturity and PT Maternal-foetal therapy , as well as several PTs relating to
+pregnancy on contraceptive. Selecting pregnancy/breast-feeding exposure terms may be considered in addition,
+depending on the specific circumstances of each case. 
+
+ 3.10.1 
+ Events
+in the mother 
+
+ 3.10.1.1 
+ Pregnant
+patient exposed to medication with clinical consequences 
+
+ If a
+pregnancy exposure is reported with clinical consequences, select terms for
+both the pregnancy exposure and the clinical consequences. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Pregnant patient receiving drug X experienced
+ a pruritic rash 
+
+ Maternal exposure during
+ pregnancy 
+
+ Pruritic rash 
+
+ 3.10.1.2 
+ Pregnant patient exposed to medication without
+clinical consequences 
+
+ If a
+pregnancy exposure report specifically states that there were no clinical
+consequences, the preferred option is to select only a term for the
+pregnancy exposure. Alternatively, a term for the pregnancy exposure and the
+additional LLT No
+adverse effect can be selected (see
+Section 3.21). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Patient received drug X while pregnant (no adverse effect) 
+
+ Maternal exposure
+ during pregnancy 
+
+ Maternal exposure during pregnancy 
+
+ No adverse effect 
+
+ 3.10.2 
+ Events
+in the child or foetus 
+
+ Select
+terms for both the type of exposure and any adverse event(s). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Pregnant woman taking drug X; foetal
+ tachycardia noted on routine examination 
+
+ Maternal exposure during
+ pregnancy 
+
+ Foetal tachycardia 
+
+ Baby born with cleft palate; father had been
+ taking drug X before conception 
+
+ Paternal drug exposure before
+ pregnancy 
+
+ Cleft palate 
+
+ Nursing newborn exposed to drug X through
+ breast milk; experienced vomiting 
+
+ Drug exposure via breast milk 
+
+ Vomiting neonatal 
+
+ 3.11 
+ Congenital
+Terms 
+
+ Congenital 
+= any condition present at birth, whether genetically inherited or occurring in utero 
+(see the MedDRA Introductory Guide). 
+
+ 3.11.1 
+ Congenital
+conditions 
+
+ Select
+terms from SOC Congenital, familial and genetic
+disorders when the reporter describes the condition as congenital or when
+medical judgment establishes that the condition was present at the time of
+birth. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Congenital heart
+ disease 
+
+ Heart disease congenital 
+
+ Child born with
+ heart disease 
+
+ Newborn with phimosis 
+
+ Phimosis 
+
+ A congenital term is not available but
+ LLT/PT Phimosis links to primary SOC Congenital, familial and
+ genetic disorders 
+
+ 3.11.2 
+ Acquired
+conditions (not present at birth) 
+
+ If
+information is available indicating that the condition is not congenital or
+present at birth, i.e., it is acquired, select the non-qualified term for the
+condition, making sure that the non-qualified term does not link to SOC Congenital, familial and genetic disorders . If a non-qualified term is not
+available, select the acquired term for the condition. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Developed night blindness in middle age 
+
+ Night blindness 
+
+ LLT/PT Night blindness links
+ to primary SOC Eye disorders . Do
+ not assume the condition is congenital (LLT/PT Congenital night blindness ). 
+
+ Developed phimosis at age 45 
+
+ Acquired phimosis 
+
+ LLT/PT Phimosis should not
+ be selected because it links to primary SOC Congenital, familial and genetic disorders 
+
+ 34 year old patient diagnosed with an oesophageal web 
+
+ Acquired oesophageal web 
+
+ A non-qualified term Oesophageal web is not available. It cannot be assumed
+ that the condition was present at birth so it is appropriate to select the
+ acquired term. 
+
+ 3.11.3 
+ Conditions
+not specified as either congenital or acquired 
+
+ If a
+condition is reported without any information describing it as congenital or
+acquired, select the non-qualified term for the condition. For conditions or
+diseases existing in both congenital and acquired forms, the following
+convention is applied in MedDRA: the more common form of the condition/disease
+is represented at the PT level without adding a qualifier of either
+ congenital or acquired . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Pyloric stenosis 
+
+ Pyloric stenosis 
+
+ Pyloric stenosis is more commonly
+ congenital than acquired; LLT/PT Pyloric
+ stenosis links to primary SOC Congenital,
+ familial and genetic disorders 
+
+ Hypothyroidism 
+
+ Hypothyroidism 
+
+ Hypothyroidism
+ is more commonly acquired than congenital; LLT/PT Hypothyroidism links to primary SOC Endocrine disorders 
+
+ 3.12 
+ Neoplasms 
+
+ Due to the
+large number of neoplasm types, specific guidance cannot be provided for all
+situations. The MedDRA Introductory Guide describes the use and placement of
+neoplasm terms and related terms in MedDRA. 
+
+ Keep in
+mind the following points: 
+
+ Neoplasms Terms in MedDRA 
+
+ Cancer and carcinoma are synonyms (see
+ online MedDRA Concept Descriptions which can be accessed via the Web-Based
+ Browser and MedDRA Desktop Browser) 
+
+ Tumo(u)r terms refer to neoplasia 
+
+ Lump and mass terms are not 
+ neoplasia 
+
+ If the type
+of neoplasia is not clear, seek clarification from the reporter. Consult
+medical experts when selecting terms for difficult or unusual neoplasms. 
+
+ 3.12.1 
+ Do
+not infer malignancy 
+
+ Select a
+malignancy term only if malignancy is stated by the reporter. Reports of
+ tumo(u)r events should not be assigned a cancer , carcinoma or another
+malignant term unless it is clear that malignancy is present. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Tumour growing on skin 
+
+ Skin tumour 
+
+ Cancer growing on tongue 
+
+ Malignant tongue cancer 
+
+ 3.13 
+ Medical
+and Surgical Procedures 
+
+ Terms in
+SOC Surgical
+and medical procedures are generally not
+appropriate for ARs/AEs. Terms in this SOC are not multiaxial. Be aware of the
+impact of these terms on data retrieval, analysis, and reporting. 
+
+ Keep in mind the following points: 
+
+ 3.13.1 
+ Only
+the procedure is reported 
+
+ If only a
+procedure is reported, select a term for the procedure. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient had transfusion of platelets 
+
+ Platelet transfusion 
+
+ Patient had tonsillectomy in childhood 
+
+ Tonsillectomy 
+
+ 3.13.2 
+ Procedure
+and diagnosis are reported 
+
+ If a
+procedure is reported with a diagnosis, the preferred option is to select terms for both the procedure and
+diagnosis. Alternatively, select a term only for the diagnosis. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Comment 
+
+ Liver
+ transplantation due to liver injury 
+
+ Liver transplantation 
+
+ Liver injury 
+
+ Selecting term for the procedure may indicate
+ severity of the condition 
+
+ Liver injury 
+
+ 3.14 
+ Investigations 
+
+ SOC Investigations includes test names with
+qualifiers (e.g., increased, decreased, abnormal, normal) and without
+qualifiers. Corresponding medical conditions (such as hyper- and hypo- 
+terms) are in other disorder SOCs (e.g., SOC Metabolism and nutrition disorders ). 
+
+ SOC Investigations is not multiaxial; always
+consider the terms in this SOC for data retrieval. 
+
+ 3.14.1 
+ Results
+of investigations as ARs/AEs 
+
+ Keep in
+mind the following points when selecting terms for results of investigations: 
+
+ Selecting terms for a medical
+condition vs. an investigation result 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Hypoglycaemia 
+
+ Hypoglycaemia 
+
+ LLT Hypoglycaemia 
+ links to SOC Metabolism
+ and nutrition disorders 
+
+ Decreased glucose 
+
+ Glucose decreased 
+
+ LLT Glucose
+ decreased links to SOC Investigations 
+
+ Unambiguous investigation result 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Glucose 40 mg/dL 
+
+ Glucose low 
+
+ Glucose is clearly below the reference range 
+
+ Ambiguous investigation result 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ His glucose was 40 
+
+ Glucose abnormal 
+
+ In this example, no units have been reported.
+ Select LLT Glucose abnormal if
+ clarification cannot be obtained 
+
+ 3.14.2 
+ Investigation
+results consistent with diagnosis 
+
+ When investigation
+results are reported with a diagnosis, select only a term for the diagnosis if investigation results are consistent
+with the diagnosis . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Elevated potassium, K 7.0 mmol/L, and
+ hyperkalaemia 
+
+ Hyperkalaemia 
+
+ It is not necessary to select LLT Potassium increased 
+
+ 3.14.3 
+ Investigation
+results not consistent with diagnosis 
+
+ When
+investigation results are reported with a diagnosis, select a term for the
+diagnosis and also select terms for any
+investigation results that are not 
+consistent with the diagnosis. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Alopecia, rash, and elevated potassium 7.0
+ mmol/L 
+
+ Alopecia 
+
+ Rash 
+
+ Potassium increased 
+
+ Elevated potassium is not consistent with the
+ diagnoses of alopecia and rash. Terms for all concepts should be selected. 
+
+ 3.14.4 
+ Grouped
+investigation result terms 
+
+ Select a
+term for each investigation result as reported; do not lump together separate
+investigation results under an inclusive term unless reported as such . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Abnormalities of liver function tests 
+
+ Abnormal liver function tests 
+
+ Increased alkaline phosphatase, increased
+ SGPT, increased SGOT and elevated LDH 
+
+ Alkaline phosphatase increased 
+
+ SGPT increased 
+
+ SGOT increased 
+
+ LDH increased 
+
+ Select four individual terms for the
+ investigation results. A single term such as LLT Liver function tests abnormal should not be selected 
+
+ 3.14.5 
+ Investigation
+terms without qualifiers 
+
+ Terms in
+SOC Investigations without qualifiers are intended to be
+used to record test names when entering diagnostic test data in the ICH E2B
+electronic transmission standard. 
+
+ Example 
+
+ Information/Reported (Verbatim) 
+
+ LLT Selected for Test Name 
+
+ Comment 
+
+ Cardiac output measured 
+
+ Cardiac output 
+
+ Haemoglobin 7.5 g/dL 
+
+ Haemoglobin 
+
+ LLT Haemoglobin
+ decreased should not be
+ selected as it is both a test name and a result* 
+
+ * MedDRA is
+used only for test names, not test results, in the E2B data elements for
+Results of Tests and Procedures 
+
+ Test name
+terms without qualifiers are not intended for use in other data fields
+capturing information such as ARs/AEs and medical history. The use of the
+Unqualified Test Name Term List is optional and may be used to identify the
+inappropriate selection of these terms in data fields other than the test name
+data element. It is available for download from the MedDRA and JMO websites. 
+
+ 3.15 
+ Medication
+Errors, Accidental Exposures and Occupational Exposures 
+
+ 3.15.1 
+ Medication
+errors 
+
+ For the purposes of term selection and analysis
+of MedDRA-coded data ,
+medication errors are defined as any unintentional and preventable event that
+may cause or lead to inappropriate medication use or patient harm while the
+medication is in the control of the health care professional, patient or
+consumer. 
+
+ The online
+Concept Descriptions contain descriptions of the interpretation and use of
+certain medication error terms (e.g., Dispensing error ). 
+
+ For further
+information, please refer to Section 3 of the MedDRA Points to Consider
+Companion Document which contains detailed examples, guidance, and Questions
+and Answers on medication errors (see Appendix, Section 4.2 Links and
+References). 
+
+ Reports of
+medication errors may or may not include information about clinical
+consequences. 
+
+ 3.15.1.1 
+ Medication
+errors reported with clinical consequences 
+
+ If a
+medication error is reported with clinical consequences, select terms for both
+the medication error and the clinical consequences. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Patient was administered wrong drug and
+ experienced hypotension 
+
+ Wrong drug administered 
+
+ Hypotension 
+
+ Because of similar sounding drug names, the
+ wrong drug was dispensed; as a result, the patient took the wrong drug and
+ experienced a rash 
+
+ Wrong drug dispensed 
+
+ Wrong drug administered 
+
+ Drug name sound-alike 
+
+ Rash 
+
+ The originating error (Wrong drug
+ dispensed) and reported additional or consequent errors and contributing
+ factors (Drug name sound-alike) stated in the report should all be coded,
+ while not subtracting or inferring information 
+
+ Insulin preparation was given using the wrong
+ syringe resulting in the administration of an overdose. The patient developed
+ hypoglycaemia. 
+
+ Drug administered in wrong device 
+
+ Accidental overdose 
+
+ Hypoglycaemia 
+
+ If an overdose is reported in the context of
+ a medication error, the more specific term LLT Accidental overdose can be selected (see also Section 3.18) 
+
+ 3.15.1.2 
+ Medication
+errors and potential medication errors reported without clinical
+consequences 
+
+ Medication
+errors without clinical consequences are not ARs/AEs. However, it is important
+to record the occurrence or potential 
+occurrence of a medication error. Select a term that is closest to the
+description of medication error reported. 
+
+ Intercepted medication error : For the purposes of term selection and analysis of MedDRA-coded data,
+an intercepted medication error refers to the situation where a medication
+error has occurred, but is prevented from reaching the patient or consumer. The
+intercepted error term should reflect the stage at which the error occurred,
+rather than the stage at which it was intercepted. 
+
+ If a
+medication error report specifically states that there were no clinical
+consequences, the preferred option is to select only a term for the
+medication error. Alternatively, a term for the medication error and the
+additional LLT No
+adverse effect can be selected (see
+Section 3.21). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Intramuscular
+ formulation medication was given intravenously instead of intramuscularly
+ but the patient did not experience any adverse effects. 
+
+ Intramuscular formulation
+ administered by other route 
+
+ Intramuscular formulation
+ administered by other route 
+
+ No adverse effect 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Pharmacist notices that the names of two
+ drugs look similar and is concerned that this may result in someone getting a wrong drug 
+
+ Drug name look-alike 
+
+ Potential for medication error, wrong
+ drug 
+
+ This example is a potential medication error.
+ LLT Drug name look-alike is a
+ contributing factor, and LLT Potential for medication error, wrong drug indicates that there is a
+ potential medication error including the error type. 
+
+ The
+ physician prescribed the wrong dose of the drug; the error was identified at
+ the time of dispensing 
+
+ Intercepted
+ drug prescribing error 
+
+ Drug
+ dose prescribing error 
+
+ The
+ intercepted error terms reflect the stage at which the error occurred, which is not necessarily the stage at which it was intercepted. 
+
+ Capture the type of error that was intercepted
+ and contributing factors when reported. 
+
+ The pharmacist dispensed the wrong
+ drug because of a similar label design but the patient realised the error and
+ did not take the drug 
+
+ Intercepted drug dispensing error 
+
+ Drug label look-alike 
+
+ Wrong drug dispensed 
+
+ Patient forgot to take his scheduled dose of
+ drug X 
+
+ Forgot to take product 
+
+ LLT Forgot
+ to take product (PT Product dose
+ omission in error ) is an example of an unintentional dose omission/missed
+ dose. See the Points to Consider Companion Document for additional examples
+ of the various scenarios of dose omissions. 
+
+ Patient's scheduled dose of drug X was not
+ administered because he was undergoing surgery that day 
+
+ Intentional dose omission 
+
+ This is an example of an intentional dose
+ omission/missed dose. It is not a medication error. 
+
+ Due to Drug X shortage, patient was unable to
+ take her medication for a week 
+
+ Drug shortage 
+
+ Temporary interruption of therapy 
+
+ This event is neither intentional nor a
+ medication error. Use LLT Temporary
+ interruption of therapy (PT Therapy
+ interrupted , HLT Therapeutic
+ procedures NEC ) and capture the specific external factor which caused the
+ interruption of therapy. 
+
+ 3.15.1.3 
+ Medication
+monitoring errors 
+
+ For the
+purposes of term selection and analysis of MedDRA-coded data, a medication
+monitoring error is an error that occurs in the process of monitoring the
+effect of the medication through clinical assessment and/or laboratory data. 
+
+ It can also
+refer to monitoring errors in following instructions or information pertinent
+to the safe use of the medication, such as the specific scenario regarding the
+term LLT Documented hypersensitivity to
+administered drug in the example below. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Patient with sulfa allergy documented in
+ patient s medical file is administered a sulfonamide-based drug and
+ experienced wheezing 
+
+ Documented hypersensitivity to
+ administered drug 
+
+ Wheezing 
+
+ T his medication error refers to the situation
+ when a patient is administered a drug that is documented in the patient's
+ medical file to cause a hypersensitivity reaction in the patient. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ The patient's liver enzymes were measured
+ every six months instead of the recommended monthly schedule 
+
+ Drug monitoring procedure
+ incorrectly performed 
+
+ The monthly monitoring schedule is in the
+ label for this drug. This is an example of incorrect monitoring of
+ laboratory tests recommended in the use of a drug. 
+
+ Patient taking lithium-based drug did not
+ have his lithium levels measured 
+
+ Therapeutic drug monitoring
+ analysis not performed 
+
+ This is an example of not monitoring the therapeutic
+ drug level to ensure that it is within the therapeutic range as recommended
+ in the label for this drug. 
+
+ There are
+specific medication error situations when the product is prescribed, dispensed,
+or co-administered with specific drugs, with specific foods, or to patients
+with specific disease states, or genetic variants, and the product label
+describes known noxious effects of these interactions. Select a medication
+error term for the type of interaction, such as those listed below. 
+
+ If the
+report indicates that this is intentional misuse or intentional off label use,
+select the appropriate terms representing the intentional nature of the event.
+If the report does not provide information about whether the event was
+accidental or intentional, select an appropriate interaction issue term, e.g.,
+LLT Labelled drug-drug interaction issue . 
+
+ Medication Error Terms Labelled
+ Interactions 
+
+ Labelled
+ drug-drug interaction medication error 
+
+ Labelled
+ drug-food interaction medication error 
+
+ Labelled
+ drug-disease interaction medication error 
+
+ Labelled
+ drug-genetic interaction medication error 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Patient became pregnant whilst taking an
+ antifungal drug and an oral contraceptive. She was unaware of the interaction
+ warning in the label. 
+
+ Labelled drug-drug interaction medication
+ error 
+
+ Pregnancy on oral contraceptive 
+
+ Product is labelled for this drug-drug
+ interaction (see also Section 3.20) 
+
+ Patient drank grapefruit juice by mistake whilst
+ taking a calcium channel blocker. 
+
+ Labelled drug-food interaction
+ medication error 
+
+ Product is labelled for this drug-food
+ interaction with grapefruit juice 
+
+ Patient with renal failure is accidentally
+ prescribed a drug that is contraindicated in renal failure 
+
+ Labelled drug-disease interaction
+ medication error 
+
+ Contraindicated drug prescribed 
+
+ Product is labelled for this drug-disease
+ interaction. LLT Contraindicated drug
+ prescribed provides additional information about the nature of the labelled
+ interaction medication error and the stage at which the error occurred. 
+
+ Patient was inadvertently given a drug that
+ is contraindicated in patients who are cytochrome P450 2D6 poor metabolisers 
+
+ Labelled drug-genetic interaction
+ medication error 
+
+ Contraindicated drug administered 
+
+ CYP2D6 poor metaboliser status 
+
+ Product is labelled for this drug-genetic
+ variant interaction 
+
+ 3.15.1.4 
+ Do
+not infer a medication error 
+
+ Do not
+infer that a medication error has occurred unless specific information is
+provided. This includes inferring that extra dosing, overdose, or underdose has
+occurred (see Section 3.18). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Patient took only half of the minimum recommended dose in the label 
+
+ Underdose 
+
+ Based on this report, it is not known whether the underdose is
+ intentional or accidental. If information is available, select the more
+ specific LLT Accidental underdose 
+ or LLT Intentional underdose as
+ appropriate. 
+
+ 3.15.2 
+ Accidental
+exposures and occupational exposures 
+
+ 3.15.2.1 
+ Accidental
+exposures 
+
+ The
+principles for Section 3.15.1 (Medication errors) also apply to accidental
+exposures. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Child accidentally took grandmother's pills
+ and experienced projectile vomiting 
+
+ Accidental drug intake by child 
+
+ Vomiting projectile 
+
+ Father applying topical steroid to his arms
+ accidentally exposed his child to the drug by carrying her 
+
+ Accidental exposure to product by child 
+
+ Exposure via skin contact 
+
+ The exposure to term captures the agent of
+ exposure, i.e., a product, and the exposure via term captures the
+ route/vehicle of exposure, i.e., skin contact 
+
+ 3.15.2.2 
+ Occupational
+exposures 
+
+ For the
+purposes of term selection and analysis of MedDRA-coded data, occupational
+exposure encompasses the chronic exposure to an agent (including therapeutic
+products) during the normal course of one's occupation, and could include
+additional scenarios in specific regulatory regions. For example, occupational
+exposure may additionally relate to a more acute, accidental form of exposure
+that occurs in the context of one's occupation. In these regions, occupational
+exposure for healthcare workers could be of particular interest. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Physical therapist developed a
+ photosensitivity rash on hands after exposure to an NSAID-containing pain
+ relief cream that she applied to a patient 
+
+ Occupational exposure via skin
+ contact with product 
+
+ Photosensitive rash 
+
+ Pathologist chronically exposed to
+ formaldehyde developed nasopharyngeal carcinoma 
+
+ Occupational exposure to toxic
+ agent 
+
+ Nasopharyngeal carcinoma 
+
+ Exposure to formaldehyde is a known risk
+ factor for this type of malignancy 
+
+ Nurse splashed injectable drug in her own eye
+ resulting in excessive tearing 
+
+ Accidental contact of product
+ with eye 
+
+ Excess tears 
+
+ An alternative term e.g., LLT Occupational exposure to product via eye 
+ could be selected to replace LLT Accidental
+ contact of product with eye , if applicable to regional requirements where
+ acute exposures are considered to be occupational exposures 
+
+ 3.16 
+ Misuse,
+Abuse and Addiction 
+
+ The
+concepts of misuse, abuse and addiction are closely related and can pose
+challenges for term selection since the terms may overlap to some extent; the
+specific circumstances of each case/reported event may help in consideration
+for term selection of these concepts. Medical judgment and regional regulatory
+considerations need to be applied. 
+
+ It may also be useful to consider these
+concepts as shown in the table below: 
+
+ Concept 
+
+ Intentional? 
+
+ By Whom? 
+
+ Therapeutic Use? 
+
+ Additional Sections in this
+ Document 
+
+ Misuse 
+
+ Yes 
+
+ Patient/consumer 
+
+ Yes* 
+
+ 3.16.1 
+
+ Abuse 
+
+ Yes 
+
+ Patient/consumer 
+
+ No 
+
+ 3.16.2 
+
+ Addiction 
+
+ Yes 
+
+ Patient/consumer 
+
+ No 
+
+ 3.16.3 
+
+ The concepts
+ Medication error and Off label use are placed here for comparison reasons: 
+
+ Medication
+ error 
+
+ No 
+
+ Patient/consumer
+ or healthcare professional 
+
+ Yes 
+
+ 3.15 
+
+ Off
+ label use 
+
+ Yes 
+
+ Healthcare
+ professional 
+
+ Yes 
+
+ 3.27 
+
+ * Definitions of misuse may not
+always include the concept of therapeutic use; misuse may be similar to the
+concept of abuse in some regions. 
+
+ Select the most
+specific term available and always check the MedDRA hierarchy above the
+selected term to be sure it is appropriate for the reported information. In
+some cases, it may be appropriate to select more than one MedDRA LLT to
+represent the reported information. 
+
+ 3.16.1 
+ Misuse 
+
+ For the
+purposes of term selection and analysis of MedDRA-coded data, misuse is the intentional use for a therapeutic purpose by a patient or
+consumer of a product over-the-counter or prescription other than as
+prescribed or not in accordance with the authorised product information. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient deliberately took the medication
+ twice daily instead of once daily 
+
+ Intentional misuse in dosing
+ frequency 
+
+ 3.16.2 
+ Abuse 
+
+ For the purposes
+of term selection and analysis of MedDRA-coded data, abuse is the intentional, non-therapeutic use by a patient or
+consumer of a product over-the counter or prescription for a perceived
+reward or desired non-therapeutic effect including, but not limited to,
+ getting high (euphoria). Abuse may occur with a single use, sporadic use or
+persistent use of the product. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Athlete used anabolic steroid preparation to
+ enhance performance 
+
+ Steroid abuse 
+
+ Patient occasionally uses opioid product to
+ get high 
+
+ Opioid abuse, episodic use 
+
+ Patient deliberately ingested the topical
+ medication for its psychoactive effect 
+
+ Drug abuse 
+
+ Intentional use by incorrect route 
+
+ LLT Intentional
+ use by incorrect route (PT Intentional
+ product use issue ) provides additional information about the nature of
+ the drug abuse 
+
+ See Section 3.24.1 and 3.24.2 for additional references to abuse terms
+in MedDRA. 
+
+ 3.16.3 
+ Addiction 
+
+ For the
+purposes of term selection and analysis of MedDRA-coded data, addiction is an overwhelming desire by
+a patient or consumer to take a drug for non-therapeutic purposes together with
+inability to control or stop its use despite harmful consequences. Addiction
+can occur because drug induces physical dependence and consequently a
+withdrawal syndrome, but this is not an essential feature; and addiction can
+occur because of a desire to experience the drug's psychological, behavioural
+or physical effects. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient became dependent on crack cocaine 
+
+ Dependence on cocaine 
+
+ Patient became addicted to a deliberately
+ ingested topical medication for its psychoactive effect 
+
+ Drug addiction 
+
+ Intentional use by incorrect route 
+
+See Section 3.24.1 for additional references to addict/addiction terms in
+MedDRA. 
+
+ 3.16.4 
+ Drug
+diversion 
+
+ For the
+purposes of term selection and analysis of MedDRA-coded data, drug diversion
+means that a drug is diverted from legal and medically necessary uses toward
+illegal uses. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Pharmacist stole medications from the
+ pharmacy and sold them to others for recreational use 
+
+ Drug diversion 
+
+ The patient sold his controlled drug
+ prescription to another person 
+
+ Drug diversion 
+
+ 3.17 
+ Transmission
+of Infectious Agent via Product 
+
+ If a report
+of transmission of an infectious agent via a product is received, select a term
+for the transmission. If the infection is identified, select a second term for
+the specific infection; if appropriate, a product quality issue term can also
+be selected (see Section 3.28). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient received a nasal spray
+ product and later developed a severe acute nasal infection with Burkholderia cepacia. Cultures of unopened
+ containers of the nasal spray grew B. cepacia 
+
+ Transmission of an infectious
+ agent via product 
+
+ Product contamination bacterial 
+
+ Burkholderia cepacia infection 
+
+ Acute rhinitis 
+
+ Patient received a blood
+ transfusion and developed Hepatitis C 
+
+ Transfusion-transmitted
+ infectious disease 
+
+ Hepatitis C 
+
+ Medical judgment should be used if the reporter
+does not explicitly state transmission of an infectious agent via a product but
+this could be implied by other data within the report. In this instance, select LLT Suspected
+transmission of an infectious agent via product . 
+
+ 3.18 
+ Overdose,
+Toxicity and Poisoning 
+
+ Accidental
+overdose terms are grouped under HLT Product
+administration errors and issues ; other overdose terms are grouped under
+HLT Overdoses NEC . Toxicity and poisoning terms are grouped under HLT Poisoning and toxicity . 
+
+ For the purposes of term
+selection and analysis of MedDRA-coded data, overdose is more than the maximum
+recommended dose (in quantity and/or concentration), i.e., an excessive dose
+(see online Concept Descriptions.) 
+
+ If
+overdose, poisoning or toxicity is explicitly reported, select the appropriate
+term. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Patient took an overdose 
+
+ Overdose 
+
+ Based on this report, it is not known whether
+ the overdose is intentional or accidental. If information is available,
+ select the more specific LLT Accidental
+ overdose or LLT Intentional
+ overdose as appropriate. 
+
+ A child was accidentally poisoned when she
+ ingested a chemical cleaning product 
+
+ Accidental poisoning 
+
+ Chemical poisoning 
+
+ Patient deliberately took an overdose of
+ analgesic pills to treat his worsening arthritis 
+
+ Intentional overdose 
+
+ LLT Arthritis aggravated can be selected as the indication for
+ treatment 
+
+ The dose taken was above the recommended
+ maximum dose in the label 
+
+ Overdose 
+
+ Based on this report, it is not known whether
+ the overdose is intentional or accidental. If information is available,
+ select the more specific LLT Accidental
+ overdose or LLT Intentional
+ overdose as appropriate. 
+
+ 3.18.1 
+ Overdose
+reported with clinical consequences 
+
+ Select
+terms for overdose and for clinical consequences reported in association with
+an overdose. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Stomach upset from study drug overdose 
+
+ Overdose 
+
+ Stomach upset 
+
+ 3.18.2 
+ Overdose
+reported without clinical consequences 
+
+ If an
+overdose report specifically states that there were no clinical consequences,
+the preferred option is to select only a term for the overdose. Alternatively, a
+term for the overdose and the additional LLT No adverse effect can be selected (see Section 3.21). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Patient
+ received an overdose of medicine without any adverse consequences 
+
+ Overdose 
+
+ Overdose 
+
+ No adverse effect 
+
+ 3.19 
+ Device-related
+Terms 
+
+ 3.19.1 
+ Device-related
+event reported with clinical consequences 
+
+ If available,
+select a term that reflects both the device-related event and the clinical
+consequence, if so reported. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient with a vascular implant developed an
+ infection of the implant 
+
+ Vascular implant infection 
+
+ Patient noted the prosthesis caused pain 
+
+ Medical device pain 
+
+ If there is
+no single MedDRA term reflecting the device-related event and the clinical
+consequence, select separate terms for both. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Ventricular tachycardia due to malfunction of
+ device 
+
+ Device malfunction 
+
+ Ventricular tachycardia 
+
+ Partial denture fractured leading to tooth
+ pain 
+
+ Dental prosthesis breakage 
+
+ Tooth pain 
+
+ 3.19.2 
+ Device-related
+event reported without clinical consequences 
+
+ If a device-related
+event is reported in the absence of clinical consequences, select the
+appropriate term. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Medical device breakage 
+
+ Device breakage 
+
+ My patch is leaking on my arm 
+
+ Leaking patch 
+
+ 3.20 
+ Drug
+Interactions 
+
+ This term
+includes reactions between drugs and other drugs, food, devices and alcohol. In
+this document, drug includes biologic products. 
+
+ Labelled
+drug interactions may be medication errors (see Section 3.15.1.3). 
+
+ 3.20.1 
+ Reporter
+specifically states an interaction 
+
+ Select an
+interaction term and additional term(s) for any reported medical event. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Torsade de pointes with suspected 
+
+ drug interaction 
+
+ Drug interaction 
+
+ Torsade de pointes 
+
+ Patient drank cranberry juice which interacted
+ with anticoagulant drug causing an INR increase 
+
+ Food interaction 
+
+ INR increased 
+
+ 3.20.2 
+ Reporter
+does not specifically state an interaction 
+
+ Two
+products may be used together, but if the reporter does not specifically state
+that an interaction has occurred, select terms only for the medical events
+reported. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient was started on an anti-seizure
+ medication and a heart medication and developed syncope 
+
+ Syncope 
+
+ Patient was already on an anti-seizure medication
+ and was started on a heart medication, and anti-seizure medication levels
+ increased 
+
+ Anticonvulsant drug level
+ increased 
+
+ 3.21 
+ No
+Adverse Effect and Normal Terms 
+
+ 3.21.1 
+ No
+adverse effect 
+
+ LLT No adverse effect can be used when absence
+of an AR/AE is specifically reported, despite exposure to a product (see
+Sections 3.15.1.2 and 3.18.2). 
+
+ Some
+organisations may want to record LLT No
+adverse effect for administrative purposes (e.g., pregnancy registries,
+overdose and medication error reports). 
+
+ 3.21.2 
+ Use
+of normal terms 
+
+ Terms for
+normal states and outcomes can be used as needed. 
+
+ Examples of Terms for Normal States and Outcomes 
+
+ Sinus rhythm 
+
+ Normal baby 
+
+ Normal electrocardiogram 
+
+ 3.22 
+ Unexpected
+Therapeutic Effect 
+
+ Some organisations
+may want to record reports of a beneficial effect of a product apart from the
+reason it had been given. (Such effects are not usually considered ARs/AEs). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ A bald patient was pleased that he grew hair while
+ using an antihypertensive product 
+
+ Unexpected beneficial therapeutic response 
+
+ Hair growth increased 
+
+ 3.23 
+ Modification
+of Effect 
+
+ It is
+important to record modification of effect (e.g., increased, prolonged)
+although it is not always an AR/AE. 
+
+ 3.23.1 
+ Lack
+of effect 
+
+ The preferred option is to select only the
+ lack of effect term even if consequences are also reported. However, terms
+may also be selected for events associated with the lack of effect. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Patient
+ took drug for a headache, and her headache didn't go away 
+
+ Drug ineffective 
+
+ Drug ineffective 
+
+ Headache 
+
+ Antibiotic didn't work 
+
+ Lack of drug effect 
+
+ Patient
+ took drug for thrombosis prophylaxis but she developed a deep vein thrombosis
+ in her left leg 
+
+ Drug ineffective 
+
+ Drug ineffective 
+
+ Deep vein thrombosis leg 
+
+ 3.23.2 
+ Do
+not infer lack of effect 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ AIDS patient taking anti-HIV drug died 
+
+ Death 
+
+ Do not assume lack of effect in this instance.
+ Select only a term for death (see Section 3.2). 
+
+ 3.23.3 
+ Increased,
+decreased and prolonged effect 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient had increased effect from drug A 
+
+ Increased drug effect 
+
+ Patient had decreased effect from drug A 
+
+ Drug effect decreased 
+
+ Patient had prolonged effect from drug A 
+
+ Drug effect prolonged 
+
+ 3.24 
+ Social
+Circumstances 
+
+ 3.24.1 
+ Use
+of terms in this SOC 
+
+ Terms in
+SOC Social circumstances represent
+social factors and may be suitable to record social and medical history data.
+Such terms are not generally suitable for recording ARs/AEs; however, in
+certain instances, terms in SOC Social
+circumstances are the only available terms for recording ARs/AEs or may add
+valuable clinical information. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient's ability to drive was impaired 
+
+ Impaired driving ability 
+
+ Terms in
+SOC Social circumstances are not
+multiaxial and, unlike terms in other disorder SOCs in MedDRA (e.g., SOC Gastrointestinal disorders ), they
+generally refer to a person , not to
+a medical condition. 
+
+ Be aware of
+the impact that terms in SOC Social
+circumstances may have on data retrieval, analysis and reporting as
+illustrated in the table below: 
+
+ Term in SOC Social circumstances ( person ) 
+
+ Similar term in Disorder 
+ SOC ( condition ) 
+
+ Alcoholic 
+
+ Alcoholism 
+
+ Drug abuser 
+
+ Drug abuse 
+
+ Drug addict 
+
+ Drug addiction 
+
+ Glue sniffer 
+
+ Glue sniffing 
+
+ Smoker 
+
+ Nicotine dependence 
+
+ Note that abuse 
+terms not associated with drugs/substances are in this SOC, regardless of
+whether they refer to the person or to the condition, as illustrated in the
+table below: 
+
+ LLT 
+
+ PT 
+
+ Child abuse 
+
+ Child abuse 
+
+ Child abuser 
+
+ Elder abuse 
+
+ Elder abuse 
+
+ Elder abuser 
+
+ (See
+Section 3.24.2 concerning illegal/criminal acts.) 
+
+ 3.24.2 
+ Illegal
+acts of crime or abuse 
+
+ Terms for
+illegal acts of crime and abuse (excluding those related to drug/substance
+abuse) are in SOC Social circumstances ,
+such as LLT Physical assault . 
+
+ LLTs
+representing the perpetrator are
+linked to PTs describing the unlawful act committed. PTs representing the victim of unlawful acts generally begin
+with Victim of . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Patient's history indicates that patient is a
+ known sexual offender 
+
+ Sexual offender 
+
+ Perpetrator; LLT Sexual offender links to
+ PT Sexual abuse in SOC Social circumstances 
+
+ Patient was a childhood sexual assault victim 
+
+ Childhood sexual assault victim 
+
+ Victim; 
+ LLT Childhood sexual assault victim 
+ links to PT Victim of sexual abuse 
+ in SOC Social circumstances 
+
+ 3.25 
+ Medical
+and Social History 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ History of gastrointestinal bleed and
+ hysterectomy 
+
+ Gastrointestinal bleed 
+
+ Hysterectomy 
+
+ Patient is a cigarette smoker with coronary
+ artery disease 
+
+ Cigarette smoker 
+
+ Coronary artery disease 
+
+ 3.26 
+ Indication
+for Product Use 
+
+ Indications
+can be reported as medical conditions, prophylaxis of conditions, replacement
+therapies, procedures (such as anaesthesia induction) and verbatim terms such
+as anti-hypertension . Terms from almost any MedDRA SOC including SOC Investigations may be selected to
+record indications. 
+
+ Regulatory
+authorities may have specific requirements for certain aspects of term
+selection for indications (e.g., for indications within regulated product
+information). Please refer to the regulatory authority's specific guidance for
+such issues. 
+
+ 3.26.1 
+ Medical
+conditions 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Hypertension 
+
+ Hypertension 
+
+ Anti-hypertensive 
+
+ Chemotherapy for breast cancer 
+
+ Breast cancer 
+
+ I took it for my cold symptoms 
+
+ Cold symptoms 
+
+ If the only
+information reported is the type of therapy, select the most specific term. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Patient received chemotherapy 
+
+ Chemotherapy 
+
+ Patient received antibiotics 
+
+ Antibiotic therapy 
+
+ It may not
+be clear if the reported indication is a medical condition or a desired outcome
+of therapy. The term selected in either case may be the same. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Weight loss 
+
+ Weight loss 
+
+ Unclear if the purpose is to induce weight
+ loss or to treat an underweight patient 
+
+ Immunosuppression 
+
+ Immunosuppression 
+
+ Unclear if the purpose is to induce or to
+ treat immunosuppression 
+
+ 3.26.2 
+ Complex
+indications 
+
+ Term
+selection for some indications (e.g., in regulated product information) may be complex
+and require selection of more than one LLT to represent the information
+completely, depending on the circumstances. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Treatment of aggression in autism 
+
+ Aggression 
+
+ The products
+ do not treat the underlying autism, thalassaemia, or myocardial infarction,
+ but they do address the associated
+ signs/symptoms (aggression, chronic iron overload, atherothrombosis). It may
+ be necessary to select LLT Autism, 
+ LLT Thalassaemia major , or LLT Myocardial infarction based on
+ regional regulatory requirements. 
+
+ Treatment of chronic iron overload in
+ thalassaemia major 
+
+ Chronic iron overload 
+
+ Prevention of atherothrombotic events in
+ patients with myocardial infarction 
+
+ Atherothrombosis prophylaxis 
+
+ 3.26.3 
+ Indications
+with genetic markers or abnormalities 
+
+ For indications that describe a genetic marker or abnormality associated
+with a medical condition, select a combination term that represents both
+concepts, if available. See also examples in Section 3.5 Combination Terms. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Non small cell lung cancer with K&#8209;ras mutation 
+
+ Non-small cell lung cancer 
+
+ K-ras gene mutation 
+
+ 3.26.4 
+ Prevention
+and prophylaxis 
+
+ When an indication
+for prevention or prophylaxis is reported, select the specific MedDRA term, if
+it exists (Note: the words prevention and prophylaxis are synonymous in the
+context of MedDRA). 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Prophylaxis of arrhythmia 
+
+ Arrhythmia prophylaxis 
+
+ Prevention of migraine 
+
+ Migraine prophylaxis 
+
+ If there is
+no MedDRA term containing prevention or prophylaxis , choose one of the
+following options. The preferred option 
+is to select a general prevention/ prophylaxis term and a term for the condition. Alternatively, select a term for the
+condition alone or a
+prevention/prophylaxis term alone. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Comment 
+
+ Prevention
+ of hepatotoxicity 
+
+ Prevention 
+
+ Hepatotoxicity 
+
+ Represents both the prevention/prophylaxis
+ concept and the condition 
+
+ Hepatotoxicity 
+
+ Represents the condition 
+
+ Prevention 
+
+ Represents the prevention/prophylaxis concept 
+
+ 3.26.5 
+ Procedures
+and diagnostic tests as indications 
+
+ Select the appropriate
+term if the product is indicated for performing a procedure or a diagnostic
+test. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Induction of anaesthesia 
+
+ Induction of anaesthesia 
+
+ Contrast agent for angiogram 
+
+ Angiogram 
+
+ Contrast agent for coronary angiogram 
+
+ Coronary angiogram 
+
+ 3.26.6 
+ Supplementation
+and replacement therapies 
+
+ Terms for
+supplemental and replacement therapies are in SOC Surgical and medical procedures (see Section 3.13). If the product
+indication is for supplementation or replacement therapy, select the closest
+term. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Testosterone replacement therapy 
+
+ Androgen replacement therapy 
+
+ Prenatal vitamin 
+
+ Vitamin supplementation 
+
+ 3.26.7 
+ Indication
+not reported 
+
+ If clarification
+cannot be obtained, select LLT Drug use
+for unknown indication . 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Aspirin was taken for an unknown indication 
+
+ Drug use for unknown indication 
+
+ 3.27 
+ Off
+Label Use 
+
+ For the purposes
+of term selection and analysis of MedDRA-coded data, the concept of off label
+use relates to situations where a healthcare professional intentionally
+prescribes, dispenses, or recommends a product for a medical purpose not in
+accordance with the authorised product information (Consider also the table in
+Section REF _Ref150446507 \r \h 3.16 
+ 08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000E0000005F005200650066003100350030003400340036003500300037000000 
+ ). Off-label use terms should only
+be selected when off label use is specifically mentioned in the reported
+verbatim information. For information that is suggestive of off-label use but
+not reported, attempt to obtain clarification. If clarification cannot be
+obtained, do not infer that off-label use occurred. When recording off label
+use, consider that product information and/or regulations/requirements may
+differ between regulatory regions. 
+
+ 3.27.1 
+ Off
+label use when reported as an indication 
+
+ If a medical condition/indication is reported along with off label use , the preferred option is to select terms for
+the medical condition/indication and off label use. Alternatively, select a
+term for the medical condition/indication alone . Select LLT Off label use 
+alone only if it is the only
+information available. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Hypertension;
+ this is off label use 
+
+ Off label use in unapproved indication 
+
+ Hypertension 
+
+ Hypertension 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Used off label 
+
+ Off label use 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Drug approved for use in combination with
+ drug A was used off label in combination with drug B 
+
+ Off label use 
+
+ Drug use for unapproved combination 
+
+ LLT Drug
+ use for unapproved combination provides additional information about the
+ specific type of off label use. The term is not an off label use term or a
+ medication error term; it is a general term that can be used in combination
+ with other terms to capture detail about off label use, misuse, medication
+ errors, etc. 
+
+ 3.27.2 
+ Off
+label use when reported with an AR/AE 
+
+ If an AR/AE occurs in the setting of off label
+use for a medical condition/indication, the preferred option is to select a term for off label use , and a term for the medical
+condition/indication in addition to a term for the AR/AE. Alternatively, select
+a term for the medical condition/indication and a term for the AR/AE. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Preferred Option 
+
+ Patient was administered a drug off label for pulmonary hypertension
+ and suffered a stroke 
+
+ Off label use in
+ unapproved indication 
+
+ Pulmonary
+ hypertension 
+
+ Stroke 
+
+ Pulmonary hypertension 
+
+ Stroke 
+
+ 3.28 
+ Product
+Quality Issues 
+
+ It
+is important to recognise product quality issues as they may have implications
+for patient safety. They may be reported in the context of adverse events or as
+part of a product quality monitoring system. 
+
+ Product
+quality issues are defined as abnormalities that may be introduced during the
+manufacturing/labelling, packaging, shipping, handling or storage of the
+products. They may occur with or without clinical consequences. Such concepts
+may pose a challenge for term selection. 
+
+ Familiarity
+with HLGT Product quality, supply,
+distribution, manufacturing and quality system issues (in SOC Product issues ) is essential for term
+selection. Under this HLGT are categories of specific product quality issues
+such as HLT Product packaging issues ,
+HLT Product physical issues , HLT Manufacturing facilities and equipment
+issues , HLT Counterfeit, falsified
+and substandard products , etc. Navigating down to the appropriate LLTs from
+the MedDRA hierarchy is the optimal approach for term selection. 
+
+ Explanations
+of the interpretations and uses of certain product quality issue terms (e.g.,
+ Product coating incomplete ) are found in the online MedDRA Concept
+Descriptions. 
+
+ 3.28.1 
+ Product
+quality issue reported with clinical consequences 
+
+ If a product quality issue results in clinical consequences, term(s) for
+the product quality issue and the clinical consequences should be selected. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ New bottle of drug tablets have unusual
+ chemical smell that made me nauseous 
+
+ Product smell abnormal 
+
+ Nauseous 
+
+ I switched from one brand to another of my
+ blood pressure medication, and I developed smelly breath 
+
+ Product substitution issue brand to brand 
+
+ Smelly breath 
+
+ Consumer noted that the toothpaste they had purchased
+ caused a stinging sensation in the mouth. Subsequent investigation of the
+ product lot number revealed that the toothpaste was a counterfeit product. 
+
+ Product counterfeit 
+
+ Stinging mouth 
+
+ Patient reported severe burning in his nose
+ after using nasal drops that had a cloudy appearance. An investigation by the
+ manufacturer revealed that impurities were found in the batch of nasal drops
+ and that these had been introduced by a faulty piece of equipment. 
+
+ Nasal burning 
+
+ Product appearance cloudy 
+
+ Product impurities found 
+
+ Manufacturing equipment issue 
+
+ Specific product defects and issues with
+ manufacturing systems may be reported subsequently as part of a root cause
+ analysis 
+
+ 3.28.2 
+ Product
+quality issue reported without clinical consequences 
+
+ It is important to capture the occurrence of product quality issues even
+in the absence of clinical consequences. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Sterile lumbar puncture kit received in
+ broken packaging (sterility compromised) 
+
+ Product sterile packaging disrupted 
+
+ 3.28.3 
+ Product
+quality issue vs. medication error 
+
+ It is important to distinguish
+between a product quality issue and a medication error. 
+
+ Product quality issues are defined as abnormalities that may be
+introduced during the manufacturing/labelling, packaging, shipping, handling or
+storage of the products. They may occur with or without clinical consequences. 
+
+ Medication errors are defined as any unintentional and preventable event
+that may cause or lead to inappropriate medication use or patient harm while
+the medication is in the control of the health care professional, patient or
+consumer. 
+
+ Explanations
+of the interpretations of product quality issue terms are found in the online
+Concept Descriptions. 
+
+ Example 
+
+ Reported 
+
+ LLT Selected 
+
+ Comment 
+
+ Pharmacist dispensing Drug A inadvertently
+ attached a product label for Drug B 
+
+ Wrong label placed on medication during
+ dispensing 
+
+ Medication error 
+
+ The drug store clerk noted that the wrong product
+ label was attached to some bottles in a shipment of mouthwash 
+
+ Product label on wrong product 
+
+ Product quality issue 
+
+ The mother administered an
+ underdose of antibiotic because the lines on the dropper were illegible 
+
+ Product dropper calibration unreadable 
+
+ Accidental underdose 
+
+ Product quality issue and medication error.
+ If underdose is reported in the context of a medication error, the more
+ specific LLT Accidental underdose 
+ can be selected. 
+
+ SECTION 4 
+ APPENDIX 
+
+ 4.1 
+ Versioning 
+
+ Please refer to the most recent version of the MedDRA Best Practices
+document for information on versioning. 
+
+ 4.2 
+ Links
+and References 
+
+ The following documents and tools can be found on the MedDRA website: ( www.meddra.org ): 
+
+ MedDRA
+Term Selection: Points to Consider Condensed Version 
+
+ MedDRA
+Data Retrieval and Presentation: Points to Consider document (also available on
+the JMO website: www.pmrj.jp/jmo/) 
+
+ MedDRA Data Retrieval and Presentation: Points
+to Consider Condensed Version 
+
+ MedDRA
+Points to Consider Companion Document (also available on the JMO website:
+www.pmrj.jp/jmo/) 
+
+ MedDRA
+Introductory Guide 
+
+ MedDRA
+Change Request Information document 
+
+ MedDRA
+Web-Based Browser * 
+
+ MedDRA
+Mobile Browser* 
+
+ MedDRA
+Desktop Browser 
+
+ MedDRA
+Version Report (lists all changes in new version) * 
+
+ MedDRA
+Version Analysis Tool (compares any two versions) * 
+
+ Unqualified
+Test Name Term List 
+
+ MedDRA
+Best Practices 
+
+ Transition
+Date for the Next MedDRA Version 
+
+ * Requires
+user ID and password to access

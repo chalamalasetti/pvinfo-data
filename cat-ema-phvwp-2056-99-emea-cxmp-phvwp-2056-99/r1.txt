@@ -1,0 +1,747 @@
+                                                The European Agency for the Evaluation of Medicinal Products
+                                                Human Medicines Evaluation Unit
+
+                                                                                                London, 18 August, 1999
+                                                                                            EMEA/CXMP/PhVWP/2056/99
+
+
+
+
+           COMMITTEE FOR PROPRIETARY MEDICINAL PRODUCTS
+                              (CPMP)
+                                and
+           COMMITTEE FOR VETERINARY MEDICINAL PRODUCTS
+                              (CVMP)
+
+
+
+
+      NOTE FOR GUIDANCE ON ELECTRONIC EXCHANGE OF
+     PHARMACOVIGILANCE INFORMATION FOR HUMAN AND
+  VETERINARY MEDICINAL PRODUCTS IN THE EUROPEAN UNION
+
+
+
+
+   DISCUSSION AT THE PHARMACOVIGILANCE WORKING PARTY                                                                           April 1999
+   (PhVWP)
+
+   ADOPTION AT THE PHARMACOVIGILANCE WORKING PARTY                                                                              July 1999
+   (PhVWP)
+
+   APPROVAL BY THE CPMP                                                                                                         July 1999
+
+   APPROVAL BY THE CVMP                                                                                                     August 1999
+
+
+
+                                                         BACKGROUND
+
+ Taking into account the new developments related to the efficient electronic exchange of
+ pharmacovigilance information based on the activities of ICH and V-ICH, this document
+ provides a reference for the preparation and electronic submission of Individual Case Safety
+ Reports including the minimum requirements for Periodic Safety Update Reports related to
+ Human and Veterinary Medicinal Products authorised within the European Union.
+
+
+
+
+                                      7 Westferry Circus, Canary Wharf, London, E14 4HB, UK
+                                     Switchboard: (+44-171) 418 8400 Fax: (+44-171) 418 8668
+                                   E_Mail: mail@emea.eudra.org http://www.eudra.org/emea.html
+ EMEA 1999 Reproduction and/or distribution of this document is authorised for non commercial purposes only provided the EMEA is acknowledged
+               ELECTRONIC EXCHANGE OF PHARMACOVIGILANCE
+            INFORMATION FOR HUMAN AND VETERINARY MEDICINAL
+                     PRODUCTS IN THE EUROPEAN UNION
+
+                                                         Table of Contents
+
+
+
+I.      INTRODUCTION ........................................................................................................2
+II.     REFERENCE DOCUMENTS.......................................................................................3
+        II.1 Medicinal Products for Human Use ......................................................................3
+        II.2 Medicinal Products for Veterinary Use .................................................................4
+III.    MESSAGE FORMAT...................................................................................................5
+        III.1 Medicinal Products for Human Use ......................................................................5
+        III.2 Medicinal Products for Veterinary Use .................................................................5
+IV.     TERMS AND DEFINTIONS........................................................................................5
+        IV.1 General Terms......................................................................................................5
+        IV.2 Identification ........................................................................................................6
+        IV.3 Mandatory Information.........................................................................................7
+                IV.3.1. Human Medicinal Products ......................................................................8
+                IV.3.2. Veterinary Medicinal Products .................................................................9
+        IV.4 Community Languages .......................................................................................10
+V.      STANDARD TERMINOLOGY..................................................................................10
+        V.1 Medicinal Products for Human Use ....................................................................10
+        V.2 Medicinal Products for Veterinary Use ...............................................................12
+VII. REGISTRATION PROCESS FOR THE ELECTRONIC TRANSMISSION OF
+     INDIVIDUAL CASE SAFETY REPORTS (ICSRs) ...................................................14
+VIII. ELECTRONIC SUBMISSION OF PERIODIC SAFETY UPDATE REPORTS
+      (PSURs)......................................................................................................................15
+
+
+
+
+CXMP/PhVWP/2056/99                                             1/15
+                                                                                                                       EMEA 1999
+I.     INTRODUCTION
+The rapid and secure exchange of pharmacovigilance information is of utmost importance to
+guarantee the protection of human and animal health within the European Union (EU).
+The agreement on the specifications for the electronic exchange of Individual Case Safety
+Reports (ICSRs) and Periodic Safety Update Reports (PSURs) in line with the
+recommendations of the International Conference of Harmonisation of Technical
+Requirements for Registration of Pharmaceuticals for Human Use (referred as ICH) and the
+recommendations, which will emerge during the early part of 2000 in the V-ICH programme
+for Veterinary Use, will change the current way of conducting pharmacovigilance in the EU
+radically.
+To minimise preparation time and costs of processing submitted data and to achieve
+uniformity and a high quality of submission content and format between all involved partners
+it is the objective to move away from a paper based reporting system towards electronic
+transmission of pharmacovigilance information.
+An important evolution in the concept of pharmacovigilance and in the requirements for
+exchange of information within the EU has been also achieved by the new system for
+marketing authorisation and supervision of medicinal products based on Council Regulation
+(EEC) No. 2309/93 of 22 July 1993.
+According to Article 51, paragraph c, the European Agency for the Evaluation of Medicinal
+Products (EMEA) is responsible for the co-ordination of the supervision of medicinal
+products, which have been authorised within the Community. Furthermore, the EMEA is
+responsible for the provision of advice on the measures necessary to ensure the safe and
+effective use of these products, in particular by evaluating and making available information
+on adverse reactions to the medicinal products in question through a pharmacovigilance
+database.
+Article 24 and 46 of Council Regulation (EEC) 2309/93 of July 1993 state that the EMEA in
+consultation with Member States and the European Commission (EC), shall set up a data-
+processing network for the rapid transmission of data between the Competent Authorities in
+the event of an alert, relating to faulty manufacture, serious adverse reactions and other
+pharmacovigilance data regarding human or veterinary medicinal products marketed in the
+Community.
+The exchange and management of ICSRs and PSURs are based on the obligations and
+activities placed, through legislation, on a number of parties, i.e. the Competent Authorities in
+Member States, the EMEA and the Marketing Authorisation Holders (MAHs).
+To support the fulfilment of these obligations, the EC, in January 1996, launched a project
+called ‘EudraWatch and EudraNet’with two main objectives:
+•     The deployment and operation of EudraNet, a telematic network in the pharmaceutical
+      field between the EC, the EMEA and the National Competent Authorities to allow the
+      fast and secure exchange of information between those parties,
+•     The development and operation of EudraWatch, an EU Pharmacovigilance system, in
+      full compliance with the definition of the data and message models concerning
+      pharmacovigilance information about human and veterinary medicinal products as
+      defined in the relevant ICH and Veterinary guidelines designed to
+     ⇒ support the electronic exchange, the management and the scientific evaluation of
+       ICSRs and PSURs in line with the international harmonisation agreements,
+
+
+CXMP/PhVWP/2056/99                            2/15
+                                                                                       EMEA 1999
+      ⇒ provide a centralised database containing high quality data on adverse reactions
+        occurring within and outside the EU, supporting the Competent Authorities in
+        Member States and the EMEA, responsible jointly for the surveillance of the safety
+        and efficacy of medicinal products, in their pharmacovigilance activities.
+In order to achieve a fast and efficient integration of the substantial changes in how
+pharmacovigilance information is exchanged and managed it is necessary that the Competent
+Authorities in Member States, the EMEA and MAHs work together in a collaborative and co-
+operative manner. This co-operation has to ensure that the electronic transmission of ICSRs
+and later of PSURs when the specifications have been finalised, are performed in a fast and
+quality controlled manner.
+Further, it is necessary to put procedures in place to avoid duplication of data, maintain
+confidentiality and to ensure the quality and compatibility of the established
+pharmacovigilance systems. EudraWatch and the pharmacovigilance systems established by
+the Competent Authorities in Member States will be an important contribution to the
+utilisation of efficient signal generation, scientific analysis and risk assessment on the
+provided data.
+The objective of this document is to provide a reference for the preparation and electronic
+submission of ICSRs including the minimum requirements for PSURs related to Human and
+Veterinary Medicinal Products authorised within the European Union that will support the
+achievements of the goals as set out.
+Taking into account the experience that will be gained by all participating parties during the
+pilot trials that will be initiated in the third quarter of 1999, this guideline will be revised if
+necessary.
+
+II.    REFERENCE DOCUMENTS
+The electronic transmission and management of ICSRs and PSURs will be carried out
+according to the following guidelines and specifications:
+II.1 Medicinal Products for Human Use
+•      The ICH E2A guideline ‘Clinical Data Management: Definition and the Standards
+       for Expedited Reporting’ which presents the standard definitions and terminology for
+       key aspects of clinical safety reporting and provides guidance on the appropriate
+       mechanism for handling expedited reporting in the investigational phase.
+       Implementation: EMEA, November 1994 (CPMP/ICH/377/95)
+•      The ICH E2B guideline ‘Data Elements for the Electronic Transmission of
+       Individual Case Safety Reports’ which extends the above guideline to standardise the
+       data elements for the transmission of all types of ICSRs, regardless of their source and
+       destination.
+       Implementation: EMEA, September 1997 (CPMP/ICH/287/95)
+•      The ICH M2 ‘Specification of the message for the Electronic Transmission of
+       Individual Case Safety Reports’.
+       Implementation: EMEA, April 1999 (CPMP/ICH/285/95 Draft)
+•      The ICH E 2C ‘Note for Guidance on Clinical Safety Data Management: Periodic
+       Safety Update Reports for Marketed Drugs’ which provides guidance on the format
+       and content of safety updates, which need to be provided to regulatory authorities, at
+       defined intervals, after the medicinal products have been authorised. The guideline is
+       intended to ensure that the world wide safety experience is provided to authorities at
+CXMP/PhVWP/2056/99                             3/15
+                                                                                         EMEA 1999
+      defined time intervals after authorisation with maximum efficiency and avoiding
+      duplicating effort.
+      Implementation: EMEA, December 1996 (CPMP/ICH/288/95)
+•     The Medical Dictionary for Regulatory Activities (MedDRA) The new terminology is
+      designed to support the classification, retrieval, presentation and communication of
+      medical information throughout the medicinal product regulatory cycle.
+      MedDRA is available as of March 1, 1999 for general use (first official release is
+      version 2.1). A copy of MedDRA may be obtained by subscribing with the Maintenance
+      and Support Services Organisation (MSSO).
+•     The Standard Terms on Pharmaceutical Dosage Forms
+      For the description of the pharmaceutical dosage forms the ‘Standard Terms on
+      Pharmaceutical Dosage Forms, Routes of Administration and Containers’ as published
+      by the Council of Europe are applicable in the latest version.
+II.2 Medicinal Products for Veterinary Use
+•     The ‘Note for guidance: Pharmacovigilance for Veterinary Medicinal Products’
+      Reference EMEA/CVMP/183/96-Final
+•     The VEDDRA List of Clinical Terms/Terminology (Version 4.0 of 30 March 1999
+      and future amendments) designed to support the classification, retrieval, presentation
+      and communication of adverse reactions in animals related to the administration of
+      veterinary medicinal products.
+      Implementation: adopted by the Veterinary Pharmacovigilance Working Party
+      (PhVWP) on behalf of the CVMP, 12 May 1999, (EMEA/CVMP/413/99)
+•     The VEDDRA Species List designed to support the classification, retrieval,
+      presentation and communication of animal species related to the class, the animal role,
+      the production type and the sex.
+      Implementation: adopted by the Veterinary Pharmacovigilance Working Party
+      (PhVWP)
+      on behalf of the CVMP, 16 April 1999, (EMEA/CVMP/PhvWP/024/99)
+•     The ‘Data Elements for the Electronic Transmission of Veterinary Individual Case
+      Safety Reports’ based on the ‘Note for guidance: Pharmacovigilance for Veterinary
+      Medicinal Products (Reference EMEA/CVMP/183/96-Final)’.
+      Implementation: to be adopted by the CVMP when available
+•     The ‘Specification of the message for the Electronic Transmission of Veterinary
+      Individual Case Safety Reports’ based on the specifications of the ICH M2 EWG and
+      modified to reflect the data elements specific to Veterinary Individual Case Safety
+      Reports.
+      Implementation: to be adopted by the CVMP when available
+•     The Medical Terminology MedDRA to support the classification, retrieval,
+      presentation and communication of adverse reactions in humans related to the
+      administration of veterinary medicinal products (for details please refer to Medicinal
+      Products for Human Use).
+
+
+
+
+CXMP/PhVWP/2056/99                          4/15
+                                                                                    EMEA 1999
+•     The Standard Terms on Pharmaceutical Dosage Forms
+      For the description of the pharmaceutical dosage forms the ‘Standard Terms on
+      Pharmaceutical Dosage Forms, Routes of Administration and Containers’ as published
+      by the Council of Europe are applicable in the latest version.
+
+III. MESSAGE FORMAT
+III.1 Medicinal Products for Human Use
+Safety Messages and Safety Reports related to medicinal products for human use will be
+structured according to the ICH E2B Guideline and the ICH M2 Message Specification for
+the Electronic Transmission of Individual Case Safety Reports.
+III.2 Medicinal Products for Veterinary Use
+The Safety Messages and the Safety Reports related to veterinary medicinal products will
+respond to the guidelines of V-ICH and the CVMP when available.
+
+IV.    TERMS AND DEFINTIONS
+IV.1 General Terms
+
+Individual Case:                   An individual case is the information provided to
+                                   describe suspected adverse drug reaction(s) related to
+                                   the administration of one or more medicinal products to
+                                   an individual patient or to one or more animal(s).
+Case Safety Report:                A case safety report is a document providing the most
+                                   complete information related to an individual case
+                                   available at a certain point of time.
+Reporter:                          The reporter is the primary source of the information,
+                                   i.e. a person who initially reports the facts. This should
+                                   be distinguished from the sender of the message, though
+                                   the reporter could also be a sender (ICH E2B).
+Sender:                            The sender is the person or entity creating the message
+                                   for transmission. Although the reporter and the sender
+                                   may be the same person, the function of the sender
+                                   should not be confused with that of the reporter.
+Receiver:                          The receiver is the intended recipient of the
+                                   transmission.
+Safety Message:                    The safety message is the information provided for
+                                   one/more case safety reports contained in one safety file
+                                   exchanged between one sender and one receiver in one
+                                   transaction.
+Acknowledgement Message:           The acknowledgement message is the information
+                                   provided to acknowledge one safety message and the
+                                   safety report(s) contained in the safety file of this
+                                   message, exchanged between one sender and one
+                                   receiver in one transaction.
+Safety Message File:               The safety message file is the electronic file transmitted
+                                   in one transaction between one sender and one receiver
+                                   containing one safety message.
+Transaction:                       A transaction is a set of actions encompassing the
+                                   electronic transmission of a message.
+
+CXMP/PhVWP/2056/99                        5/15
+                                                                                   EMEA 1999
+IV.2   Identification
+Sender Identifier:                The attribute ‘Sender identifier’ (A.3.1.2, ICH E2B)
+                                  identifies the sender e.g. company name or regulatory
+                                  authority name and is mandatory for each report.
+Message Sender Identifier:        The attribute ‘Message sender identifier’ (M.1.5, ICH
+                                  M2) identifies the sender of the message and should in
+                                  principal coincide with the organisation specified as the
+                                  ‘Sender identifier’ (A.3.1.2, ICH E2B).
+Message Receiver Identifier:      The attribute ‘Message receiver identifier’ (M.1.6, ICH
+                                  M2) identifies the receiver of the ICSR reports, e.g.
+                                  company name or regulatory name and coincides with the
+                                  organisation specified as receiver at report level
+                                  (A.3.2.2a, ICH E2B).
+Recent Info Date:                 The attribute ‘Date of receipt of the most recent
+                                  information for this report’ (A.1.7b, ICH E2B) can be
+                                  defined as the date when the most recent information for
+                                  an individual case report currently being transmitted was
+                                  received by the sender.
+Individual Case Identification:   The case identification (CaseID) is the unique identifier
+                                  defined at the moment of the creation of the case (in a
+                                  database or on paper) by an authorised source and is
+                                  indicated in the A.1.10 block of the report.
+                                  According to the definition of ICH E2B three
+                                  identification numbers are specified. One and only one of
+                                  the following fields must be populated:
+                                  National regulatory authority’s case report number:
+                                  identifier given by a national regulatory authority
+                                  (A.1.10.1, ICH E2B),
+                                  Company’s case report number: identifier given by the
+                                  company (A.1.10.2, ICH E2B),
+                                  Other sender’s case report number: identifier used by
+                                  senders who are not representing either a pharmaceutical
+                                  company or a regulatory authority (A.1.10.3, ICH E2B).
+                                  As indicated in the ICH M2 guideline, that field value
+                                  should remain unchanged all through the life cycle of
+                                  the report.
+                                  The value for these fields must be a concatenation of
+                                  Country code-, organisation code-, report number,
+                                  relative to the organisation that has created the case
+                                  report separated by hyphens.
+
+Safety Report Identification:     A report is identified by the report identification
+                                  (ReportID). The ReportID identifies the document
+                                  describing a case with the most recent and most complete
+                                  information available at a point in time.
+
+
+
+
+CXMP/PhVWP/2056/99                        6/15
+                                                                                  EMEA 1999
+Report Sequence:                      The report sequence (Report SQ) is the sequential
+                                      position of one safety report in one message.
+Local report ID:                      On the receiver side, a local report ID may be assigned to
+                                      each incoming report.
+Message Identification:               The Message(file)ID is defined at the moment of the
+                                      creation of the file.
+Local message ID:                     On the receiver side, a local message ID may be assigned
+                                      to each incoming message.
+Transaction ID:                       The transaction ID should be created at the transaction
+                                      level, eventually by the EDI server. It is common to all
+                                      the messages in the transaction and should contain
+                                      complete information on the sender/receiver, the time the
+                                      information was sent/received, if the transaction was
+                                      successful/unsuccessful. It is included in the EDI
+                                      Interchange header.
+
+For further definitions please refer to the ICH E2B guideline ‘Data Elements for the
+Transmission of Individual Case Safety Reports’, the ICH M2 guideline ‘Electronic
+Transmission of Individual Case Safety Reports Message Specification (ICH ICSR Version
+2.0)’and to the ‘Note for guidance: Pharmacovigilance for Veterinary Medicinal Products’.
+IV.3    Mandatory Information
+It is recognised that it is often difficult to obtain all details on a specific case. However, the
+complete information related to an individual case, that is available to the sender, has to be
+reported in accordance with the legal requirements as set out in the Community legislation.
+This may also include causality assessment if requested by Competent Authorities.
+In addition, whenever more recent information on an individual case is submitted, the
+complete (entire) information on the case has to be provided and not only partial information
+e.g. changes or updates.
+This does not only apply to the submission of follow-up information but also if an ICSR is
+highlighted for nullification. For those ICSRs that are highlighted for nullification (‘Report
+nullification’, A.1.13 ICH E2B, set to ‘yes’) the reasons for nullification must be indicated in
+detail.
+From a procedural point of view the following should be considered:
+•      Sender Identifier (A.3.1.2, ICH E2B)
+       The ‘Sender identifier’ and the ‘Message sender identifier’ are unique for each sender
+       organisation and defined as indicated in the interchange agreement with the EMEA
+       and/or National Competent Authorities.
+       Sender identifier (A.3.1.2, ICH E2B) and the message sender identifier (M 1.5. ICH
+       M2) must, from the receiver’s point of view, be identical.
+•      Date of receipt of the most recent information for this report (A.1.7b, ICH E2B)
+       To allow the check on the recent info date from a technical point of view the sender has
+       to comply with the following rules:
+       In the initial report (describing the case for the first time) the field ‘date of receipt of
+       most recent information for this report’ must be filled in and should contain the same
+       information as the field ‘date report was first received from source’.
+
+CXMP/PhVWP/2056/99                             7/15
+                                                                                         EMEA 1999
+      If more recent information is submitted on the case at a later time the ‘Date of receipt of
+      most recent information for this report’ has to include the date on which the sender
+      actually received the most recent information.
+•     Individual Case Identification Number (A.1.10.1, A.1.10.2, A.1.10.3, ICH E2B)
+      As indicated in the ICH M2 guideline the contents of the A.1.10 elements:
+            National regulatory authority’s case report number (A.1.10.1, ICH E2B)
+            Company’s case report number (section A.1.10.2, ICH E2B)
+            Other sender’s case report number (section A.1.10.3, ICH E2B)
+      should be populated only once and should remain unchanged for any transmission
+      subsequent to the original transmission.
+IV.3.1. Human Medicinal Products
+Based on the definitions as described in the ICH E2B guideline, the fields as specified in the
+table below are regarded as the minimum mandatory information to be provided for human
+safety reports.
+Within the fields of the six sections described in the table below, mandatory (M) indicates
+that information related to this field must be provided in any case. Where a field is specified
+as mandatory optional (MO), it is mandatory to provide at least one or if possible more fields
+within the relevant section. Reports that do not contain this minimum information are not
+considered as valid reports.
+
+ Section-Field Title                                               Mandatory M
+                                                                   Mandatory-Optional
+                                                                   OM
+ Section: Safety Report Identification
+ A.1.7b - Recent Info Date (Report)                                            M
+ A.1.10.1 - National regulatory authority’s case report number                 MO
+ A.1.10.2 - Company’s case report number                                       MO
+ A.1.10.3 - Other sender’s case report number                                  MO
+ Section: Primary Source
+ A.2.1.1.d – Reporter family name                                              MO
+ A.2.1.2.a – Reporter organisation                                             MO
+ A.2.1.2.f – Reporter postcode                                                 MO
+ A.2.1.3 – Reporter country code                                               MO
+ A.2.1.4 – Reporter qualification                                              MO
+ A.2.2 – Literature reference(s)                                               MO
+ A.2.3.1 - Study name                                                          MO
+ Section: Sender
+ A.3.1.2 – Sender Identifier (=sender organisation)                             M
+ Section: Patient
+ B.1.1 – Patient initials                                                      MO
+ B.1.1.1 a – GP medical record number                                          MO
+ B.1.1.1 b – Specialist record number                                          MO
+ B.1.1.1 c – Hospital record number                                            MO
+ B.1.1.1 d – Investigation number                                              MO
+ B.1.2.1 b – Date of Birth                                                     MO
+ B.1.2.2 a – Age value at time of onset reaction/event plus                    MO
+ B.1.2.2 b– Age unit
+ B.1.2.3 – Patient age group                                                   MO
+CXMP/PhVWP/2056/99                            8/15
+                                                                                       EMEA 1999
+ B.1.5 – Sex                                                                  MO
+ Section: Reaction
+ B.2.i.2 – Reaction term using MedDRA LLT codes or terms                       M
+ in
+          English
+ Section: Drug
+ B.4.k.2.1 – Proprietary medicinal product name                               MO
+ B.4.k.2.2 – Active drug substance names in English                           MO
+
+IV.3.2. Veterinary Medicinal Products
+Based on the definitions in the note for guidance ‘Pharmacovigilance for Veterinary
+Medicinal Products’ (Doc.Ref. EMEA/CVMP/183/96-Final) the fields as specified in the
+table below are regarded as the minimum information mandatory for Veterinary safety
+reports.
+Within the fields of the eight sections described in the table below, mandatory (M) indicates
+that information related to this field must be provided in any case. Where a field is specified
+as mandatory optional (MO), it is mandatory to provide at least one or if possible more fields
+within the relevant section. Depending if the report describes a reaction that occurred in a
+human being or in an animal either the relevant sections ‘Animal’ and ‘Animal Reaction’ or
+‘Human Being’and ‘Human Reactions’ need to be completed. Reports that do not contain the
+required minimum information are not considered as valid reports.
+
+ Section-Field Title                                              Mandatory M
+                                                                  Mandatory-Optional
+                                                                  MO
+ Section: Safety Report Identification
+ Recent Info Date (Report)                                                    M
+ National regulatory authority’s case report number                           MO
+ Company’s case report number                                                 MO
+ Other sender’s case report number                                            MO
+ Section: Primary Source
+ Reporter family name                                                         MO
+ Reporter organisation                                                        MO
+ Reporter post code                                                           MO
+ Reporter country                                                             MO
+ Reporter qualification/occupation (e.g. physician, vet                       MO
+ practitioner, pharmacist, animal owner, other)
+ Section: Sender / Final Receiver
+ Sender organisation                                                           M
+ Sender type (e.g. Pharmaceutical Company, Regulatory                          M
+ Authority)
+
+
+
+
+CXMP/PhVWP/2056/99                           9/15
+                                                                                     EMEA 1999
+    Section: Animal                                                                            MO
+    Animal Species                                                                             M
+    Animal Sex                                                                                 MO
+    Animal Age                                                                                 MO
+    Number of Animals treated                                                                  MO
+    Section: Animal Reaction                                                                   MO
+    Reaction term using the LLT of the VEDDRA List of Clinical                                 M
+    Terms (codes or terms in English)
+    Section: Human Being                                                                       MO
+    Patient identifier (Surname and first name of the patient if                               MO
+    available and acceptable under national law, or some other
+    identifier e.g. initials of surname and all forenames)
+    Gender (Sex of the patient)                                                                MO
+    Age (Patient age at time of onset of reaction)                                             MO
+    Section: Human Reaction
+    Reaction term (description of the reaction using MedDRA                                     M
+    LLT level codes or the term in English)
+    Medicinal Product
+    Medicinal product name/brand name                                                          MO
+    Active substance(s) List of ingredient names (composition)                                 MO
+    (INN) in English
+
+IV.4 Community Languages
+The handling of uncoded information (free text) in different languages is an important issue
+for the management and the usability of pharmacovigilance information across the EU.
+It is therefore agreed that the information in the narrative fields (uncoded information) of
+safety reports related to adverse reactions
+•       Occurring within the Community may be provided in one of the official Community
+        languages, whereby English would be the preferred one;1
+•       Occurring in the territory of a third country will be provided in English.
+
+        V.      STANDARD TERMINOLOGY
+ICSRs and PSURs submitted electronically will be compliant with the following codification
+and terminology. Additional information will be found in the ICH E2B and M2 guidelines.
+V.1 Medicinal Products for Human Use
+•       Medicinal Product terms
+The data items:
+    Proprietary Medicinal Product Name                    (B.4.k.2.1 ICH E2B/M2)
+    Active Drug Substance Names                           (B.4.k.2.2 ICH E2B/M2)
+
+in the Safety Report message will be provided for centrally authorised medicinal products in
+compliance with the Community Register of Medicinal Products for Human Use published in
+accordance with Article 12 of Council Regulation (EEC) N°2309/93; medicinal product
+names and active drug substance names which are not part of the Community Register will be
+submitted in compliance with the WHO Drug Dictionary.
+1
+  If the information in the narrative fields is provided in a different Community language besides English, it is
+recommended to submit a summary of the data in English.
+CXMP/PhVWP/2056/99                                     10/15
+                                                                                                         EMEA 1999
+•     Reaction terms
+The data items:
+ Reaction term                                 (B.2.i.2 ICH E2B/M2)
+
+ Disease/Surgical procedure                    (B.1. 7.1a ICH E2B/M2)
+
+ Reported Cause of Death                       (B.1.9.2 ICH E2B/M2)
+
+ Autopsy-determined cause(s) of death          (B1.9.4 ICH E2B/M2)
+
+ Relevant medical history and concurrent       (B.1.10.7.1a ICH E2B/M2)
+ conditions of parent-Disease/Surgical
+ procedure
+ Structured Information (results from          (B.3.1a ICH E2B/M2)
+ tests and procedures) relevant to the
+ investigation of the patient
+ Indication for use in the case                (B.4.k.11 ICH E2B/M2)
+
+ Which reaction recurred (re-challenge)        (B.4.k.17.2 ICH E2B/M2)
+
+ Sender’s diagnosis/syndrome and/or            (B.5.3 ICH E2B/M2)
+ reclassification of reaction
+
+will be provided in compliance with the LLT numeric code or English term of the MedDRA
+medical dictionary.
+•     Routes of administration
+The data items:
+ Route of administration                       (B.4.k.8 ICH E2B/M2)
+ Parent Route of administration                (B.4.k.9 ICH E2B/M2)
+
+will be submitted according to the codes specified by ICH M2 for the values specified by ICH
+E2B.
+•     Pharmaceutical form (Dosage form)
+The data item:
+ Pharmaceutical form (Dosage form)             (B.4.k.7 ICH E2B/M2)
+
+will be submitted according the terminology as defined in the ‘Standard Terms on
+Pharmaceutical Dosage Forms, Routes of Administration and Containers’ as published by the
+Council of Europe.
+•     Dose units
+The data item:
+ Dose unit                                     (B.4.k.5.2 ICH E2B/M2)
+
+will be submitted according to the codes specified by ICH M2 for the values specified by ICH
+E2B.
+•     Country codes
+
+CXMP/PhVWP/2056/99                         11/15
+                                                                                   EMEA 1999
+The data items:
+ Identification of the country of the          (A.1.1 ICH E2B/M2)
+ primary source
+ Identification of the country where the       (A.1.2 ICH E2B/M2)
+ reaction / event occurred
+ Reporter's country                            (A.2.1.3 ICH E2B/M2)
+ Sender’s country code                         (A.3.1.4e ICH E2B/M2)
+ Receiver’s country code                       (A.3.2.3e ICH E2B/M2)
+ Country of authorisation / application        (B.4.k.4.2 ICH E2B/M2)
+
+will be submitted according to the codes specified by ICH M2 for the values specified by ICH
+E2B.
+•     Other codes
+Other data elements will be sent with controlled codes as reflected in the ICH M2
+Specification of the Message for the Electronic Transmission of Individual Case Safety
+Reports.
+V.2 Medicinal Products for Veterinary Use
+•     Medicinal Product terms
+The data items:
+ Medicinal Product Name
+ Active Substance(s)
+ ATCvet Code
+
+in the Safety Report message will be provided for centrally authorised medicinal products in
+compliance with the Community Register of Veterinary Medicinal Products published in
+accordance with Article 34 of Council Regulation (EEC) N°2309/93; active substance(s) and
+ATCvet Codes which are not included in the Community Register will be submitted in
+compliance with the ATCvet classification as provided by the Nordic Council of Europe.
+•     Human Reaction terms
+The data items:
+ Reaction term
+ Reason for treatment
+ Previous reaction term
+
+will be provided in compliance with the LLT numeric code or English term of the MedDRA
+medical dictionary.
+•     Veterinary Reaction terms
+The data items:
+ Reaction term
+ Reason for treatment
+ Previous reaction term
+
+will be provided in compliance with the LLT numeric code or English term of the VEDDRA
+Reaction List.
+•     Animal Species
+CXMP/PhVWP/2056/99                         12/15
+                                                                                   EMEA 1999
+The data item:
+ Species
+ Authorised Target Species
+
+will be provided in compliance with the VEDDRA Species List as adopted by the Veterinary
+Pharmacovigilance Working Party (PhVWP) on behalf of the CVMP.
+•     Routes of administration
+The data item:
+ Route of administration
+
+will be provided in compliance with the definitions of the ‘Standard Terms on Pharmaceutical
+Dosage Forms, Routes of Administration and Containers’ as published by the Council of
+Europe.
+•     Pharmaceutical form (Dosage form)
+The data item:
+ Pharmaceutical form
+
+will be provided in compliance with the definitions of the ‘Standard Terms on Pharmaceutical
+Dosage Forms, Routes of Administration and Containers’ as published by the Council of
+Europe.
+•     Dose units
+The data item:
+ Dose unit of treatment given
+
+will be submitted according to the codes specified by ICH M2 for the values specified by ICH
+E2B.
+•     Country codes
+The data items:
+ Reporting Country
+ Purchase Country
+ Reporter Country
+ Sender Country
+ Receiver Country
+
+will be submitted according to the codes specified by ICH M2 for the values specified by ICH
+E2B.
+Other codes
+Other data elements should be sent with controlled codes as reflected in the ‘Data Elements
+for the Electronic Transmission of Veterinary Individual Case Safety Reports’ based on the
+‘Note for guidance: Pharmacovigilance for Veterinary Medicinal Products’ (Reference
+EMEA/CVMP/183/96-Final).
+
+
+
+
+CXMP/PhVWP/2056/99                         13/15
+                                                                                   EMEA 1999
+VI. ACKNOWLEDGEMENT OF SAFETY REPORTS
+The receiver of Safety Messages will acknowledge the electronic receipt of Safety Reports by
+means of the Acknowledgement message according to the ICH M2 specification ‘Electronic
+Transmission of Individual Case Safety Reports Message Specification (ICH ICSR Version
+2.0 or future releases)’and the Veterinary Guidelines.
+The objective of an acknowledgement is to verify the usability and compliance of the
+transmitted data as per ICH recommendations or Veterinary Guidelines. It also permits the
+sender to track and correct errors, if any, prior to the re-transmission.
+
+VII.    REGISTRATION PROCESS FOR THE ELECTRONIC TRANSMISSION OF
+        INDIVIDUAL CASE SAFETY REPORTS (ICSRs)
+Expedited Safety Reports and Periodic Safety Updates may be sent electronically through
+electronic data interchange (EDI) e.g. E-mail or by CD-ROM/Floppy disk.
+Postal delivery services will be used for submissions using physical media. The postal or
+special delivery receipt will constitute proof of receipt.
+Messages transmitted via EDI will be replied to the sender organisation by an
+acknowledgement with feedback on the data receipt.
+The following steps will be followed in order to register and obtain certification to transmit
+information to the EMEA and/or National Competent Authorities previous to the electronic
+submission of Safety Reports:
+1.     Contact the Electronic Safety Reporting co-ordinator
+Contact the Electronic Safety Reporting co-ordinator at the EMEA and/or the National
+Competent Authorities. Information about the responsible contact person(s) will be published
+on the EMEA/EudraNet homepage.
+2.     Send Letter of Intent
+Send a Letter of Intent for the Electronic Submission of Safety Reports to the EMEA and/or
+National Competent Authorities. A template will be available on the EMEA/EudraNet
+homepage.
+3.     Submit Implementation Plan
+Submit an implementation plan indicating the approach to the generation and transmission of
+Electronic Safety Messages in accordance with the ICH guidelines and the requirements as
+defined in this document.
+4.     Review of the Implementation Plan
+Review the project plan with the Electronic Safety Reporting co-ordinator at the EMEA
+and/or National Competent Authorities. If necessary a meeting can be arranged to outline the
+specific requirements and to clarify open questions.
+5.     Obtain certification (for Internet communication)
+6.     Adopt and sign the Interchange Agreement
+Agree and sign the Interchange Agreement specifying criteria for message identification,
+sender identification, receiver identification, acknowledgement of reports, minimum
+information to be submitted in one report.
+Agree on methods and tools to guarantee secure transmission and processing of information.
+A form will be available on the EMEA/EudraNet homepage.
+
+CXMP/PhVWP/2056/99                          14/15
+                                                                                    EMEA 1999
+7.    Test phase
+Prepare Safety Message files in accordance with the ICH M2 recommendations and ICH E2B
+guidelines/Veterinary guidelines as well as the definitions and specifications set out in this
+document.
+Test the correctness of the SGML files before transmission to ensure compliance with ICH
+ICSR M2/Veterinary specifications: syntax, field lengths, minimum information, data
+dictionaries compliance.
+8.    Operational phase
+Start operational transmission of Safety Reports upon successful completion of the test phase.
+
+VIII. ELECTRONIC SUBMISSION OF PERIODIC SAFETY UPDATE REPORTS
+      (PSURs)
+Periodic Safety Update Reports will be submitted electronically when the corresponding
+specification has been adopted by the ICH Secretariat and the CPMP and CVMP.
+However, until such a time, a full or partial electronic submission of PSURs, which have to
+follow the specifications of ICH E2C, may be discussed with the Competent Authorities in
+Member States and/or the EMEA. Format and method of the electronic submission need to be
+agreed between the MAH and the Competent Authority and/or the EMEA.
+Complete case reports of the line listing of spontaneously reported listed reactions that have
+been collected will be submitted electronically according to the ICH E2B/M2 ICSR
+Specifications and Veterinary Guidelines upon request by a competent authority.
+For the registration process related to the electronic transmission of PSURs please refer to
+chapter VII.
+
+
+
+
+CXMP/PhVWP/2056/99                           15/15
+                                                                                     EMEA 1999
+
