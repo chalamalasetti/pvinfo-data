@@ -225,6 +225,8 @@ jobs:
           node test/browser/jira-send.smoke.cjs
           node test/browser/security-access.smoke.cjs
           node test/browser/company-tenancy.smoke.cjs
+          node test/browser/company-documents.smoke.cjs
+          node test/browser/company-sop-version.smoke.cjs
           node test/browser/role-profile.smoke.cjs
           node test/browser/company-join.smoke.cjs
           node test/browser/onboarding.smoke.cjs
@@ -352,6 +354,10 @@ jobs:
         env:
           PV_SQL_TEST_MODULE: /tmp/pv-evidence-sql/node_modules/@electric-sql/pglite/dist/index.js
         run: node test/collection-evidence.sql-check.mjs
+      - name: Verify company documents SQL (access, looser-than-regulation block, append-only, rollback)
+        env:
+          PV_SQL_TEST_MODULE: /tmp/pv-evidence-sql/node_modules/@electric-sql/pglite/dist/index.js
+        run: node test/company-documents.sql-check.mjs
       - name: Post the result on the PV-Info commit
         if: always()
         uses: actions/github-script@v7
