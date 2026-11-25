@@ -1,0 +1,647 @@
+            STANDARD SAFETY
+       TABLES AND FIGURES:
+                      MUSCLE INJURY
+       TARGETED ANALYSIS GUIDE
+For comments, questions, or feedback regarding the content of this document, please
+                contact ONDBiomedicalinformatics@fda.hhs.gov.
+
+
+
+
+      Center for Drug Evaluation and Research (CDER)
+             Biomedical Informatics and Regulatory
+                   Review Science Team (BIRRS)
+
+
+                                   Version 1.2
+
+                             Version Date: April 2025
+Table of Contents
+Table of Tables ................................................................................................................ i
+Table of Figures ............................................................................................................... ii
+1. Introduction ................................................................................................................ 1
+  1.1. Background .......................................................................................................... 1
+2. Screening Analyses ................................................................................................... 3
+  2.1. Muscle Injury AE Analyses ................................................................................... 3
+  2.2. Laboratory Analyses ............................................................................................. 4
+3. Targeted Analyses ................................................................................................... 10
+  3.1. Muscle Injury AE Analyses ................................................................................. 10
+  3.2. Laboratory Analyses ........................................................................................... 13
+  3.3. Patient-Level Analyses – Graphical Patient Profile............................................. 13
+4. Appendix .................................................................................................................. 15
+  4.1. Muscle Injury Algorithmic OCMQ Description ..................................................... 15
+
+
+
+
+Table of Tables
+Table 1. Subjects With AEs by Muscle Injury Narrow OCMQs and Preferred Term,
+   Safety Population, Pooled Analysis (or Trial X).......................................................... 3
+Table 2. Subjects With AEs by Muscle Injury Broad OCMQs and Preferred Term, Safety
+   Population, Pooled Analysis (or Trial X)..................................................................... 4
+Table 3. Mean Change From Baseline in CPK Over Time by Treatment Arm, Safety
+   Population, Pooled Analysis (or Trial X)..................................................................... 6
+Table 4. Subjects With One or More CPK Values Exceeding Specified Levels, Safety
+   Population, Pooled Analysis (or Trial X)..................................................................... 8
+Table 5. Subjects With Last On-Treatment CPK ≥ Level 2 Criteria by Treatment Arm,
+   Safety Population, Pooled Analysis (or Trial X).......................................................... 8
+Table 6. Subjects With Muscle Injury Algorithmic OCMQs, Safety Population, Pooled
+   Analysis (or Trial X).................................................................................................... 9
+Table 7. Subjects With Medically Important Outcomes Related to Muscle Injury Narrow
+   OCMQs, Safety Population, Pooled Analysis (or Trial X)......................................... 10
+Table 8. Action Taken With Study Drug for Muscle Injury Narrow OCMQ Term, Safety
+   Population, Pooled Analysis (or Trial X)................................................................... 12
+Table 9. Individual Baseline Characteristics of Subjects in Treatment Arm With Muscle
+   Injury, Safety Population, Pooled Analysis (or Trial X) ............................................. 12
+
+
+
+
+                                                                 i
+Table of Figures
+Figure 1. Proportion of Subjects Remaining in Trial at Each Visit by Availability of CPK
+   Result, Safety Population, Pooled Analysis (or Trial X) ............................................. 5
+Figure 2. Mean Change From Baseline in CPK Over Time by Treatment Arm, Safety
+   Population, Pooled Analysis (or Trial X)..................................................................... 7
+Figure 3. Kaplan-Meier Plot: Time to Onset of Muscle Injury, Safety Population, Pooled
+   Analysis (or Trial X).................................................................................................. 11
+Figure 4. Kaplan-Meier Plot: Cumulative Incidence of CPK >5x ULN, Safety Population,
+   Pooled Analysis (or Trial X) ...................................................................................... 13
+Figure 5. Graphical Patient Profile of Subject XXX ....................................................... 14
+
+
+
+
+                                                             ii
+1. Introduction
+Clinical reviewers use tables and figures to investigate potential safety findings in
+marketing applications and present clinical safety data in their reviews. The goal of the
+Standard Safety Tables and Figures Muscle Injury Targeted Analysis Guide (TAG) is to
+provide additional analyses to further investigate a potential muscle injury signal
+identified during the initial clinical safety review or when muscle injury is an adverse
+event of special interest (AESI). The muscle injury TAG is generated upon request by
+the clinical reviewer.
+
+Targeted analyses are provided for exploratory purposes and are not meant to be
+exhaustive. Additional custom analyses not included in the TAG to further characterize
+the potential for muscle injury may also be requested. The determination of which tables
+and figures for inclusion in the clinical safety review is at the discretion of the clinical
+reviewer.
+
+       1.1.    Background
+Skeletal muscle injury results in the release of intracellular contents into the circulation 1
+and has multiple causes, including trauma, prolonged immobilization, marked exertion,
+hyperthermia, infection, toxins, and drugs. Rhabdomyolysis is considered a severe
+manifestation of this type of injury, although there are no consensus criteria that provide
+a specific creatine phosphokinase (CPK) level required for this diagnosis. Commonly
+cited thresholds in the literature are a CPK elevation of at least five to ten times the
+upper limit of normal that is followed by a rapid decrease in CPK to normal levels with
+resolution of the inciting event. 2,3 Other thresholds that have been cited are CPK levels
+of 1,000 or 5,000 U/L, although it is possible for patients to have levels above 100,000
+U/L. 4 If clinical reviewers observe a muscle injury signal, they will need to determine
+whether to characterize the syndrome as rhabdomyolysis based on their analysis of all
+of the data.
+
+This guide includes an OND Custom Medical Query (OCMQ) for muscle injury, which
+has an algorithmic component. OCMQs combine similar adverse event (AE) terms to
+promote safety signal detection during the analysis of clinical trial data. The algorithmic
+component contained in this and other OCMQs is designed to leverage information
+such as the laboratory, concomitant medication, medical history, and temporal
+
+
+
+1 Zimmerman, JL and MC Shen, 2013, Rhabdomyolysis, Chest, 144(3):1058-1065.
+2 Zutt, R, AJ van der Kooi, GE Linthorst, RJ Wanders, and M de Visser, 2014, Rhabdomyolysis: review of
+
+the literature, Neuromuscul Disord, 24(8):651-659.
+3 Chavez, LO, M Leon, S Einav, and J Varon, 2016, Beyond muscle destruction: a systematic review of
+
+rhabdomyolysis for clinical practice, Crit Care, 20(1):135.
+4 Heard, H and J Barker, 2016, Recognizing, diagnosing, and treating rhabdomyolysis, Jaapa, 29(5):29-
+
+32.
+
+                                                   1
+information in addition to the AE data to identify events that may not have been
+captured during clinical trials. The Muscle Injury algorithmic OCMQs includes all
+subjects with an AE of rhabdomyolysis or myoglobinuria, laboratory result of
+myoglobinuria, laboratory CPK level greater than five times the upper limit of normal,
+and those who experience the rhabdomyolysis triad of myalgia, muscular weakness,
+and chromaturia.
+
+
+
+
+                                            2
+2. Screening Analyses
+This section includes screening tables from the Standard Safety Tables & Figures
+Integrated Guide (ST&F IG) for AE analyses that pertain to muscle injury from the to
+facilitate the review of all pertinent analyses in one document. Only the portions of the
+tables and figures that are relevant to muscle injury are included.
+
+         2.1. Muscle Injury AE Analyses
+Example Table
+
+Table 1. Subjects With AEs1 by Muscle Injury Narrow OCMQs and Preferred Term, Safety
+Population, Pooled Analysis (or Trial X)2
+                                               Drug Name
+                                                Dosage A        Control
+OCMQ (Narrow)                                      N=XXX         N=XXX         Risk Difference
+  Preferred Term3                                   n (%)          n (%)          % (95% CI)4,5
+Muscle Injury (Narrow)                               X (Y)         X (Y)               X (Y, Z)
+  PT1                                                X (Y)         X (Y)               X (Y, Z)
+  PT2                                                X (Y)         X (Y)               X (Y, Z)
+  PT3                                                X (Y)         X (Y)               X (Y, Z)
+Source: Extract of Table 31 - Subjects with AEs by Organ System, OND Custom Medical Query (Narrow) and Preferred Term within
+the ST&F Integrated Guide.
+1
+  Treatment-emergent AE defined as [definition]. MedDRA version X.
+2
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+3
+  OCMQs include AEs that are not MedDRA PTs.
+4
+  Risk difference is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs. Control).
+5
+  Table display is ordered by risk difference.
+Abbreviations: CI, confidence interval; OCMQ, OND Custom Medical Query; MedDRA, Medical Dictionary for Regulatory Activities;
+n, number of subjects with at least one event; N, number of subjects in treatment arm; PT, preferred term.
+
+
+For Table 2: Subjects With AEs by Muscle Injury Broad OCMQs and Preferred Term,
+the Broad OCMQs includes both Broad and Narrow PTs.
+
+
+
+
+                                                             3
+Example Table
+
+Table 2. Subjects With AEs1 by Muscle Injury Broad2 OCMQs and Preferred Term, Safety
+Population, Pooled Analysis (or Trial X)3
+                                               Drug Name
+                                                Dosage A         Control
+OCMQ (Broad)                                       N=XXX         N=XXX         Risk Difference
+  Preferred Term4                                    n (%)         n (%)          % (95% CI)5,6
+Muscle Injury (Broad)                                X (Y)         X (Y)               X (Y, Z)
+  PT1                                                X (Y)         X (Y)               X (Y, Z)
+  PT2                                                X (Y)         X (Y)               X (Y, Z)
+  PT3                                                X (Y)         X (Y)               X (Y, Z)
+Source: Extract of Table 43 - Subjects with AEs by Organ System, OND Custom Medical Query (Broad) and Preferred Term within
+the ST&F Integrated Guide.
+1
+  Treatment-emergent AE defined as [definition]. MedDRA version X.
+2
+  Broad OCMQ analysis incorporates Narrow OCMQ preferred terms to maximize sensitivity.
+3
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+4
+  OCMQs include AEs that are not MedDRA PTs.
+5
+  Risk difference is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs. Control).
+6
+  Table display is ordered by risk difference.
+Abbreviations: CI, confidence interval; OCMQ, OND Custom Medical Query; MedDRA, Medical Dictionary for Regulatory Activities;
+n, number of subjects with AE; N, number of subjects in treatment arm; PT, preferred term.
+
+
+
+         2.2. Laboratory Analyses
+This section includes screening tables and figures of muscle injury laboratory
+abnormalities (e.g., CPK) from the Laboratory Analysis module in the ST&F IG to
+facilitate review of all pertinent analyses in one package.
+
+The existing and missing data analysis in Figure 1: Proportion of Subjects Remaining in
+Trial at Each Visit by Availability of CPK Result displays the proportion of existing and
+missing data by study arm. A high proportion of missing data suggests that available
+data is limited, and that the data presented in this package should be interpreted with
+caution. Alternatively, the reviewer may ask the sponsor to address missing data in the
+application before continuing with analyses.
+
+Figure 1 displays the proportion of subjects with CPK data by visit (solid bar) and the
+percentage of subjects remaining in the trial (open bar). This graph should evaluate the
+actual data obtained during the trial, rather than the planned study procedures as stated
+in the protocol.
+
+
+
+
+                                                              4
+Example Figure
+
+Figure 1. Proportion of Subjects Remaining in Trial at Each Visit by Availability of CPK Result,
+Safety Population, Pooled Analysis (or Trial X)1
+
+
+
+
+Source: Extract of Figure 5 - Proportion of Subjects Remaining in Trial at Each Visit by Availability of [Insert Lab Value] Result within
+the ST&F Integrated Guide.
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+Note: The frequency of laboratory measurements presented here is based on actual data collected.
+Note: The time frame (e.g., by day, week, month) that corresponds best with the prespecified visit # is used as the trial visit
+(±protocol-defined # days).
+Note: The solid bar indicates the percent of subjects remaining in the trial with the laboratory result. The open bar indicates the
+percent of subjects remaining in the trial who are missing the laboratory result. The bar height indicates the percent of subjects
+remaining in the trial.
+Abbreviations: CPK, creatine phosphokinase.
+
+
+
+
+                                                                   5
+Example Table
+
+Table 3. Mean Change From Baseline in CPK Over Time by Treatment Arm, Safety Population,
+Pooled Analysis (or Trial X)1
+                                   Drug Name
+                                   Dosage A                   Control
+                                     N=XXX                    N=XXX
+           Study Visit2                        Mean                      Mean Difference in
+           (Study Day,                       Change                   Change           Mean
+           Week, or      n (%) at              From n (%) at             From       Change
+Parameter Month)            Visit3    Mean Baseline    Visit3  Mean Baseline       (95% CI)4
+CPK (U/L) Baseline          X (Y)        X       N/A   X (Y)       X       N/A           N/A
+           Week X           X (Y)        X         X   X (Y)       X         X       X (Y, Z)
+           Week Y           X (Y)        X         X   X (Y)       X         X       X (Y, Z)
+           Week Z           X (Y)        X         X   X (Y)       X         X       X (Y, Z)
+Source: Extract of Table 35 - Mean Change from Baseline for Kidney Function Over Time by Treatment Arm within the ST&F
+Integrated Guide.
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+2
+  The timeframe (e.g., by day, week, month) that corresponds best with the pre-specified visit # is used as the study visit (+/-
+protocol-defined # days).
+3
+  n (%) at Visit refers to subjects with both baseline and postbaseline central lab data
+4
+  Difference in mean change is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs.
+Control).
+Abbreviations: CI, confidence interval; CPK, creatine phosphokinase; n, number of subjects meeting criteria; N, number of subjects
+in treatment arm.
+
+
+
+
+                                                                6
+Example Figure
+
+Figure 2. Mean Change From Baseline in CPK Over Time by Treatment Arm, Safety Population,
+Pooled Analysis (or Trial X)1
+
+
+
+
+Source: Extract of Figure 6 - Mean General Chemistry Data Change From Baseline Over Time by Treatment Arm within the ST&F
+Integrated Guide.
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+Note: If a timepoint is reached where there are only a few subjects remaining in the trial (e.g., less than 5%), consideration should
+be made to truncate this graph as the results would not be considered a reliable indicator of the true mean.
+Note: Laboratory results obtained during unscheduled trial visits that occur outside of a protocol-specified visit window are in the
+data for the nearest protocol-specified visit.
+Note: Subjects with both baseline and postbaseline data available are included in the mean change from baseline calculations at
+each visit. The number of subjects reflects only those included in the mean change from baseline calculations, rather than the total
+number of subjects.
+Note: The vertical bars shown on the plotted lines indicates the 95% confidence interval of the mean change at the corresponding
+time points.
+Note: Only central laboratory data were used for the plot.
+Abbreviations: CI, confidence interval; CPK, creatine phosphokinase.
+
+
+Table 4: Subjects With One or More CPK Values Exceeding Specified Levels provides
+abnormality criteria for the purpose of identifying outliers.
+
+
+
+
+                                                                  7
+Example Table
+
+Table 4. Subjects With One or More CPK Values Exceeding Specified Levels,1 Safety Population,
+Pooled Analysis (or Trial X)2
+                                          Drug Name
+                                           Dosage A           Control
+                                              N=XXX            N=XXX            Risk Difference
+Parameter                                    n/Ns (%)        n/Ns (%)              % (95% CI)3
+CPK, high (U/L)
+  Level 1 (>3x ULN)                           X/Y (Z)          X/Y (Z)                  X (Y, Z)
+  Level 2 (>5x ULN)                           X/Y (Z)          X/Y (Z)                  X (Y, Z)
+  Level 3 (>10x ULN)                          X/Y (Z)          X/Y (Z)                  X (Y, Z)
+Source: Example Table 20 - Subjects with Kidney Function Analyte Values Exceeding Specified Levels within the ST&F Integrated
+Guide.
+1
+  Threshold Levels 1, 2, and 3 as defined by example Table 56 - Abnormality Level Criteria for Chemistry Laboratory Results within
+the ST&F Integrated Guide.
+2
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+3
+  Risk difference is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs. Control).
+Note: Subject counts are cumulative for each abnormality threshold.
+Abbreviations: CI, confidence interval; CPK, creatine phosphokinase; n, number of subjects meeting the specified laboratory criteria;
+N, number of subjects in treatment arm; Ns, total number of subjects with data available for the laboratory test of interest.
+
+
+For Table 5: Subjects With Last On-Treatment CPK ≥ Level 2 Criteria the “last on-
+treatment value” is defined as the last value for any given laboratory parameter obtained
+within a specific timeframe (e.g., 1 to 3 half-lives) following treatment discontinuation,
+regardless of the reason for discontinuation. Therefore, this table includes subjects who
+completed the trial and thus discontinued treatment per protocol as well as subjects who
+discontinued treatment for other reasons. This presentation can be helpful when a study
+drug is causing laboratory abnormalities but the effect is diminished because multiple
+values are being obtained when subjects are no longer receiving the study drug.
+
+Example Table
+
+Table 5. Subjects With Last On-Treatment1 CPK ≥ Level 2 Criteria2 by Treatment Arm, Safety
+Population, Pooled Analysis (or Trial X)3
+                                           Drug Name
+                                            Dosage A         Control Arm
+                                               N=XXX               N=XXX         Risk Difference
+Parameter                                     n/Ns (%)            n/Ns (%)           % (95% CI)4
+CPK, high (U/L) >5x ULN                        X/Y (Z)             X/Y (Z)               X (Y, Z)
+Source: Extract of Table 52 - Subjects with Last On-Treatment Chemistry Value ≥ Level 2 Criteria by Treatment Arm within the
+ST&F Integrated Guide.
+1
+  Last value on-treatment defined as the last value for any given laboratory parameter obtained within a specific time frame (e.g.,
+three half-lives) following treatment discontinuation, regardless of reason for discontinuation.
+2
+  Threshold Level 2 as defined by example Table 56. Abnormality Level Criteria for Chemistry Laboratory Results within the ST&F
+Integrated Guide.
+3
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+4
+  Risk difference is shown between [treatment arms]. (e.g., difference is shown between Drug Name Dosage A vs. Control).
+Abbreviations: CI, confidence interval; CPK, creatine phosphokinase; n, number of subjects meeting the specified laboratory criteria;
+N, number of subjects in treatment arm; Ns, total number of subjects with data available for the CPK laboratory test; ULN, upper limit
+of normal.
+
+
+
+
+                                                                  8
+Example Table
+
+Table 6. Subjects With Muscle Injury Algorithmic OCMQs, Safety Population, Pooled Analysis (or
+Trial X)1
+                                              Drug Name
+                                               Dosage A         Control
+Algorithmic OCMQ                                  N=XXX          N=XXX          Risk Difference
+  Criterion                                        n (%)          n (%)            % (95% CI)2,3
+Subjects with ≥1 algorithmic criterion              X (Y)          X (Y)                X (Y, Z)
+  Any Muscle Injury OCMQ Narrow term                X (Y)          X (Y)                X (Y, Z)
+  Urine myoglobin > ULN                             X (Y)          X (Y)                X (Y, Z)
+  CPK >5x ULN4                                      X (Y)          X (Y)                X (Y, Z)
+  Myalgia + weakness + chromaturia5                 X (Y)          X (Y)                X (Y, Z)
+Source: Table 47 – Subjects with Muscle Injury algorithmic OCMQ, Safety Population within the ST&F Integrated Guide.
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+2
+  Risk difference is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs. Control).
+3
+  Table display is ordered by the risk difference.
+4
+  No CPK-MB/CPK >0.05 within 3 days nor CPK > ULN at baseline.
+5
+  [PT myalgia + PT muscular weakness + (PT myoglobin urine present or PT chromaturia)] within 7 days.
+Abbreviations CI, confidence interval; CPK, creatine phosphokinase; OCMQ, OND Custom Medical Query; MB, myocardial band; n,
+number of subjects meeting criteria; N, number of subjects in group; PT, preferred term; ULN, upper limit of normal.
+
+
+
+
+                                                            9
+3. Targeted Analyses
+Several targeted analyses are provided in this section to further explore a potential
+muscle injury safety signals identified in the ST&F IG.
+
+         3.1. Muscle Injury AE Analyses
+Table 7: Subjects With Medically Important Outcomes Related to Muscle Injury Narrow
+OCMQs, is intended to assess severity of Muscle Injury AEs between active and control
+arms. Table 7 displays the Preferred terms within the Muscle Injury Narrow OCMQ
+category that result in outcomes that are serious, fatal, or result in drug discontinuation.
+
+Example Table
+
+Table 7. Subjects With Medically Important Outcomes Related to Muscle Injury Narrow OCMQs,
+Safety Population, Pooled Analysis (or Trial X)1
+                                                 Drug Name
+                                                  Dosage A        Control
+ Adverse Event Category                              N=XXX        N=XXX        Risk Difference
+    Preferred Term2                                   n (%)          n (%)         % (95% CI)5
+ Any Narrow OCMQ SAEs   3                              X (Y)         X (Y)             X (Y, Z)
+    PT1                                                X (Y)         X (Y)             X (Y, Z)
+    PT2                                                X (Y)         X (Y)             X (Y, Z)
+ Any Narrow OCMQ AEs leading to death4                 X (Y)         X (Y)             X (Y, Z)
+    PT1                                                X (Y)         X (Y)             X (Y, Z)
+    PT2                                                X (Y)         X (Y)             X (Y, Z)
+ Any Narrow OCMQ AE with outcome of drug
+ discontinuation                                       X (Y)         X (Y)             X (Y, Z)
+    PT1                                                X (Y)         X (Y)             X (Y, Z)
+    PT2                                                X (Y)         X (Y)             X (Y, Z)
+Source: [include Applicant source, datasets and/or software tools used].
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+2
+  OCMQs include AEs that are not MedDRA PTs.
+3
+  SAEs classified by Applicant as [insert Applicant’s definition of SAE].
+4
+  Death events as defined in the ADAE dataset.
+5
+  Risk difference is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs. Control).
+Abbreviations: ADAE, adverse event analysis dataset; AE, adverse event; CI, confidence interval; OCMQ, OND Custom Medical
+Query, PT, preferred term; SAE, serious adverse event, n, number of subjects with at least one event; N, number of subjects in
+treatment arm.
+
+
+Figure 3: Time to Onset of Muscle Injury displays the time to muscle injury onset by
+treatment arm as defined by the Muscle Injury Narrow OCMQs. An additional graph
+may be requested from the CDS to display time to muscle injury-related SAEs or time to
+discontinuation of study drug due to muscle injury if there are a substantial number of
+such terms (e.g., >10).
+
+
+
+
+                                                               10
+Example Figure
+
+Figure 3. Kaplan-Meier Plot: Time to Onset of Muscle Injury,1 Safety Population, Pooled Analysis
+(or Trial X)2
+
+
+
+
+Source: [include Applicant source, datasets and/or software tools used].
+1
+  Muscle injury onset defined as the first occurrence for a subject of an AE in the Muscle Injury Narrow OCMQs.
+2
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+Note: The vertical bars shown on the plotted lines indicates the 95% confidence interval of probability of incidence at the
+corresponding time points.
+Note: This figure depicts Kaplan-Meier estimates of the cumulative percentage of subjects that experience the AE being assessed
+by a given time point. If a subject experienced multiple AEs qualifying for this display, the earliest AE start day was used as the
+event time.
+Note: The vertical bars shown on the plotted lines indicates the 95% confidence interval of probability of incidence at the
+corresponding time points.
+Abbreviations: AE, adverse event; OCMQ, OND Custom Medical Query.
+
+
+In Table 8: Action Taken With Study Drug for Muscle Injury Narrow OCMQs, actions
+such as interruption or reduction in dosing generally indicate more concern by the
+investigator about the AE than if there was no change in dosing, and drug withdrawal
+generally indicates the most concern.
+
+
+
+
+                                                                11
+Example Table
+
+Table 8. Action Taken With Study Drug for Muscle Injury Narrow OCMQ Term, Safety Population,
+Pooled Analysis (or Trial X)1,2
+                                   Drug Name
+                                     Dosage A            Control Arm
+ Action Taken With Study Drug           N=XXX                 N=XXX           Risk Difference
+ for Narrow OCMQ Term                     n (%)                 n (%)            % (95% CI)4,5
+ Drug withdrawn                           X (Y)                 X (Y)                 X (Y, Z)
+ Drug interrupted3                        X (Y)                 X (Y)                 X (Y, Z)
+ Dose reduced                             X (Y)                 X (Y)                 X (Y, Z)
+ Dose not changed                         X (Y)                 X (Y)                 X (Y, Z)
+ Dose increased                           X (Y)                 X (Y)                 X (Y, Z)
+ Not applicable                           X (Y)                 X (Y)                 X (Y, Z)
+ Unknown                                  X (Y)                 X (Y)                 X (Y, Z)
+Source: [include Applicant source, datasets and/or software tools used].
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+2
+  Subjects may be counted more than once.
+3
+  Subject-level analyses may be necessary as reported term(s) may include subjects in whom the study drug was temporarily held
+or discontinued the study drug permanently.
+4
+  Risk difference is shown between [treatment arms] (e.g., difference is shown between Drug Name Dosage A vs. Control).
+5
+  Table display is ordered by the risk difference.
+Abbreviations: CI, confidence interval; OCMQ, OND Custom Medical Query, n, number of subjects with at least one action taken; N,
+number of subjects in treatment arm.
+
+
+Comparison of the line listing with the baseline characteristics of the trial in Table 9:
+Individual Baseline Characteristics of Subjects in Treatment Arm With Muscle Injury
+may indicate whether there are potential subject risk factors that increase the likelihood
+of muscle injury following exposure to the investigational product. However, caution
+should be used when interpreting the results of a limited number of cases, and a table
+comparing trial arms for the occurrence of muscle injury across multiple subgroups is
+not routinely provided as the total number of muscle injury cases in a trial is generally
+expected to be low (i.e., less than 10). However, when there are a substantial number of
+cases, the clinical reviewer may wish to request a summary table from the CDS that
+compares the occurrence of muscle injury across treatment arms based on various
+characteristics such as age, sex, weight, and race.
+
+Example Table
+
+Table 9. Individual Baseline Characteristics of Subjects in Treatment Arm With Muscle Injury,1
+Safety Population, Pooled Analysis (or Trial X)2
+                                             Weight                           Country of
+ Subject ID          Age (yrs) Sex               (kg) Race       Ethnicity    Participation
+ X                          X X                    X X           X            X
+ Y                          X X                    X X           X            X
+ Z                          X X                    X X           X            X
+Source: [include Applicant source, datasets and/or software tools used].
+1
+  Defined by the Muscle Injury algorithmic OCMQ provided in Section 4.1.
+2
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+Abbreviations: ID, identifier.
+
+
+
+
+                                                                 12
+         3.2. Laboratory Analyses
+Additional figures may be appropriate to follow-up potential signals, such as the
+cumulative incidence of muscle injury as defined by the Muscle Injury algorithmic
+OCMQs.
+
+Example Figure
+
+Figure 4. Kaplan-Meier Plot: Cumulative Incidence of CPK >5x ULN, Safety Population, Pooled
+Analysis (or Trial X)1
+
+
+
+
+Source: [include Applicant source, datasets and/or software tools used].
+1
+  Duration = [e.g., X-week double-blind treatment period or median and a range of pooled trial durations].
+Note: This figure depicts Kaplan-Meier estimates of the cumulative percentage of subjects that experience a CPK >5x ULN by a
+given time point.
+Note: The vertical bars shown on the plotted lines indicates the 95% confidence interval of probability of incidence at the
+corresponding time points.
+Abbreviations: CPK, creatine phosphokinase; ULN, upper limit of normal.
+
+
+
+         3.3. Patient-Level Analyses – Graphical Patient Profile
+A graphical patient profile (GPP) displays subject-level data over time to provide an
+overview of a subject’s course by combining drug exposure, AEs, concomitant
+therapies, and relevant lab values. Note that not all subjects will need a GPP. The
+clinical reviewer should work with the CDS to identify appropriate subjects for this type
+of display. For instance, a GPP may be helpful for all subjects who experienced muscle
+injury during the trial based on the Muscle Injury algorithmic OCMQs, or for only a
+subset of subjects who received the investigational drug.
+
+
+
+
+                                                              13
+Example Figure
+
+Figure 5. Graphical Patient Profile of Subject XXX
+
+
+
+
+Source: Include source dataset(s) and tools used.
+Abbreviations: ADAE, adverse event analysis dataset; CPK, creatine phosphokinase, ULN, upper limit of normal.
+
+
+
+
+                                                              14
+4. Appendix
+
+       4.1. Muscle Injury Algorithmic OCMQ Description
+The Muscle Injury algorithmic OCMQs includes subjects with an AE of myoglobinuria,
+laboratory result of elevated myoglobin in the urine, laboratory CPK result greater than
+five times the ULN, and those who experience the rhabdomyolysis triad of myalgia,
+muscular weakness, and chromaturia.2 The individual components of the triad are
+required to occur within 7 days of each other to help ensure that they are related to the
+same underlying event. Subjects with elevated CPK levels at baseline are excluded
+from qualifying for the algorithm based on laboratory CPK levels in order to minimize
+false positive muscle injury diagnoses caused by other underlying muscle inflammatory
+disorders. Similarly, subjects with CPK-MB levels greater than 5 percent of the total
+CPK are excluded due to the likelihood of a cardiac cause for the CPK elevation.4
+References in the literature state that the CPK should rapidly return to near normal
+values following resolution of the inciting event, but do not provide specific definitions for
+what should constitute “rapid” or “near normal.” The intent of requiring rapid resolution is
+to exclude chronic muscle disorders. However, given the absence of a standardized
+definition in the literature for rapid resolution and the absence of routinely captured
+information in the clinical trial data regarding the timing of inciting event resolution, no
+requirement regarding the rapidity of CPK resolution was specified in the algorithm.
+Therefore, subjects qualify for the algorithm if they meet any of the following criteria:
+   1. Any Muscle Injury OCMQ Narrow term
+   2. Urine myoglobin > ULN
+   3. CPK >5x ULN and no (CPK-MB/CPK > 0.05 within 3 days or CPK > ULN at
+      baseline)
+   4. [PT myalgia + PT muscular weakness + (PT myoglobin urine present or PT
+      chromaturia)] within 7 days
+
+
+
+
+                                             15
+
