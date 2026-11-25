@@ -303,6 +303,7 @@ jobs:
           node test/browser/requirement-runs.smoke.cjs
           node test/browser/events.smoke.cjs
           node test/browser/refresh-center.smoke.cjs
+          node test/browser/letter-translations.smoke.cjs
       - name: Post the result on the PV-Info commit
         if: always()
         uses: actions/github-script@v7
