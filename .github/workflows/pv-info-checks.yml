@@ -354,6 +354,10 @@ jobs:
         env:
           PV_SQL_TEST_MODULE: /tmp/pv-evidence-sql/node_modules/@electric-sql/pglite/dist/index.js
         run: node test/collection-evidence.sql-check.mjs
+      - name: Verify blog posts RLS, admin-only publishing and SQL set
+        env:
+          PV_SQL_TEST_MODULE: /tmp/pv-evidence-sql/node_modules/@electric-sql/pglite/dist/index.js
+        run: node test/blog-posts.sql-check.mjs
       - name: Verify company documents SQL (access, looser-than-regulation block, append-only, rollback)
         env:
           PV_SQL_TEST_MODULE: /tmp/pv-evidence-sql/node_modules/@electric-sql/pglite/dist/index.js
