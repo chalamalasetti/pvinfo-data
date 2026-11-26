@@ -1,0 +1,132 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-148910",
+  "metadata": {
+    "title": "Adjusting for Covariates in Randomized Clinical Trials for Drugs and Biological Products",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 05/26/2023 · Docket FDA-2019-D-0934",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Biologics, Drugs",
+    "published_on": "2023-05-26",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/148910/download",
+  "original_sha256": "ebbb9ad9cc0ec4ce3f33513ccb7f85a25b25c20f9446a83c0b84a39f2c47f68c",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 12,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-6-paragraph-4",
+      "statement": "• Sponsors should prospectively specify the detailed procedures for executing covariate- adjusted analysis before any unblinding of comparative data. FDA review will emphasize the prespecified primary analysis rather than post-hoc analyses using different models or covariates.",
+      "context": "• Sponsors can adjust for baseline covariates in the analyses of efficacy endpoints in randomized clinical trials. Doing so will generally reduce the variability of estimation of treatment effects and thus lead to narrower confidence intervals and more powerful hypothesis testing. • Covariate adjustment leads to efficiency gains when the covariates are prognostic for the outcome of interest in the trial. Therefore, FDA recommends that sponsors adjust for covariates that are anticipated to be most strongly associated with the outcome of interest. In some circumstances these covariates may be known from the scientific literature. In other cases, it may be useful to use previous studies (e.g., a Phase 2 trial) to select prognostic covariates or form prognostic indices.",
+      "fingerprint": "55995eaabf60c1b5cb72d77a5d7e61144f6bc9c222178bfd12e203519443fe02",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-6-paragraph-8",
+      "statement": "• Randomization is often stratified by baseline covariates. A covariate adjustment model should generally include strata variables and can also include covariates not used for stratifying randomization. In some cases, incorrect stratification may occur and result in actual and as-randomized baseline strata variables. A covariate adjustment model can use either strata variable definition as long as this is prespecified.",
+      "context": "• Covariate adjustment is acceptable even if baseline covariates are strongly associated with each other (e.g., body weight and body mass index). However, adjusting for less correlated baseline covariates generally provides greater efficiency gains. • Sponsors can conduct randomization/permutation tests with covariate adjustment (Rosenbaum 2002).",
+      "fingerprint": "27bd549d307575cdb29c08dff916d8e8a75370e411b67a8357ea6897ace62a1a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-7-paragraph-1",
+      "statement": "• Clinical trials often record a baseline measurement of a defined characteristic and record a later measurement of the characteristic to be used as an outcome. Adjusting for the baseline value rather than (or in addition to) defining the primary endpoint as a change from baseline is generally acceptable. Sponsors proposing to define the outcome as a percentage change rather than an absolute change from baseline should discuss the outcome definition and use of covariate adjustment with the relevant review division. Sponsors proposing to perform noninferiority testing on ratios of treatment group means rather than differences of treatment group means should also discuss change from baseline outcome definitions and use of covariate adjustment with the relevant review division.",
+      "context": "• In a trial that uses covariate adjustment, the sample size and power calculations can be based on adjusted or unadjusted methods. The latter will often lead to a more conservative sample size. • Sponsors should discuss proposals for complex covariate-adaptive randomization, data- adaptive covariate selection, or use of covariate adjustment in an adaptive design with the relevant review division.",
+      "fingerprint": "b0ea38a1784fb8cfcd9127533e7276a19b194c098b68602a5b4f294778c272da",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-7-paragraph-2",
+      "statement": "• Sponsors should discuss proposals for complex covariate-adaptive randomization, data- adaptive covariate selection, or use of covariate adjustment in an adaptive design with the relevant review division.",
+      "context": "• Clinical trials often record a baseline measurement of a defined characteristic and record a later measurement of the characteristic to be used as an outcome. Adjusting for the baseline value rather than (or in addition to) defining the primary endpoint as a change from baseline is generally acceptable. Sponsors proposing to define the outcome as a percentage change rather than an absolute change from baseline should discuss the outcome definition and use of covariate adjustment with the relevant review division. Sponsors proposing to perform noninferiority testing on ratios of treatment group means rather than differences of treatment group means should also discuss change from baseline outcome definitions and use of covariate adjustment with the relevant review division. • The statistical properties of covariate adjustment are best understood when the number of covariates adjusted fo",
+      "fingerprint": "cf6329ff352527d685912551fd5a476537626ca2a04aa6cebb84e1206c414209",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-7-paragraph-4",
+      "statement": "Therefore, sponsors should discuss their proposal with the relevant review division if the number of covariates is large relative to the sample size or if proposing to adjust for a covariate with many levels (e.g., study site in a trial with many sites).",
+      "context": "• The statistical properties of covariate adjustment are best understood when the number of covariates adjusted for in the study is small relative to the sample size (Tsiatis et al. 2008). B. Linear Models • Covariate adjustment through a linear model is an acceptable method for estimating the average treatment effect, which is the difference in expected outcomes between subjects assigned to treatment and control groups. Generally, the outcome is regressed on an intercept, treatment assignment indicator, and baseline covariates, and the model is estimated using ordinary least squares. The resulting estimated regression coefficient for the treatment indicator is the estimate of the average treatment effect.",
+      "fingerprint": "f66330fb7fd8e68ce30cd759a6b8f7ad7e6f600343101b241f5449917d479baa",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-8-paragraph-6",
+      "statement": "Adjustment using nonlinear models is a potentially acceptable method for analyzing these data from a clinical trial. However, there are additional issues described below that should be considered before using nonlinear models.",
+      "context": "C. Nonlinear Models • Covariate adjustment with nonlinear models is often used in the analysis of clinical trial data when the primary outcome of interest is not measured on a continuous scale or is right censored (e.g., binary outcome, ordinal outcome, count outcome, or time-to-event outcome). • In general, treatment effects may differ across subgroups. However, with some parameters such as odds ratios, even when all subgroup treatment effects are identical, this subgroup- specific conditional treatment effect can differ from the unconditional treatment effect (i.e., the effect at the population level from moving the target population from untreated to treated) (Gail et al. 1984). This is termed non-collapsibility (Agresti 2002), which is distinct from confounding and can occur despite randomization and large sample sizes. An example of non-collapsibility of the odds ratio for a hypothe",
+      "fingerprint": "9e4c1963f730cc3b970206cc70716953cf511aba26b549131e80496912fe7278",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-9-paragraph-1",
+      "statement": "Table 1: Non-collapsibility of the Odds Ratio in a Hypothetical Target Population Percentage of target population Success rate Odds ratio New drug Placebo Biomarker- positive 50% 80.0% 33.3% 8.0 Biomarker- negative 50% 25.0% 4.0% 8.0 Combined 100% 52.5% 18.7% 4.8 • As part of the prespecification of the estimand of interest, sponsors should specify whether the treatment effect of interest in an analysis is a conditional or unconditional treatment effect.",
+      "context": "• In general, treatment effects may differ across subgroups. However, with some parameters such as odds ratios, even when all subgroup treatment effects are identical, this subgroup- specific conditional treatment effect can differ from the unconditional treatment effect (i.e., the effect at the population level from moving the target population from untreated to treated) (Gail et al. 1984). This is termed non-collapsibility (Agresti 2002), which is distinct from confounding and can occur despite randomization and large sample sizes. An example of non-collapsibility of the odds ratio for a hypothetical clinical trial is illustrated in Table 1 below. The unconditional odds ratio in the hypothetical target population is 4.8, which is lower than the conditional odds ratio of 8.0 in each of the biomarker-positive and biomarker- negative subgroups. In trials with time-to-event outcomes, the h",
+      "fingerprint": "efaaa00f7ce508ff5b1e7362e4434d009a879fc8384a30962a3cf929a8ccc2f3",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-9-paragraph-4",
+      "statement": "• Sponsors should discuss with the relevant review divisions specific proposals in a protocol or statistical analysis plan containing nonlinear regression to estimate conditional treatment effects for the primary analysis. When estimating a conditional treatment effect through nonlinear regression, the model assumptions will generally not be exactly correct, and results can be difficult to interpret if the model is misspecified and treatment effects substantially differ across subgroups. Interpretability increases with the quality of model specification.",
+      "context": "• Fitting a nonlinear regression of the outcome on treatment and baseline covariates similarly attempts to estimate a conditional treatment effect. Nonlinear models extend Cochran- Mantel-Haenszel methods by allowing adjustment for continuous covariates, such as age. In nonlinear regression models (without treatment by covariate interactions), the treatment effect is assumed to be approximately constant across subgroups defined by baseline covariates in the model and can provide more individualized information than the unconditional treatment effect if the assumption holds (and not otherwise). Nonlinear models such as logistic regression or proportional hazards regression (which can include stratification of the baseline hazard) are commonly used in many clinical settings. Sponsors should discuss any planned assessments of model assumptions and implications for analyses with the relevant",
+      "fingerprint": "6cad48a8f6ff90af0efbc26473d1c88d879472810fb150f4777bd676af2de0bd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-9-paragraph-5",
+      "statement": "Sponsors should discuss any planned assessments of model assumptions and implications for analyses with the relevant review division.",
+      "context": "• Sponsors should discuss with the relevant review divisions specific proposals in a protocol or statistical analysis plan containing nonlinear regression to estimate conditional treatment effects for the primary analysis. When estimating a conditional treatment effect through nonlinear regression, the model assumptions will generally not be exactly correct, and results can be difficult to interpret if the model is misspecified and treatment effects substantially differ across subgroups. Interpretability increases with the quality of model specification. • Sponsors can perform covariate-adjusted estimation and inference for an unconditional treatment effect (e.g., the odds ratio of 4.8 in Table 1) in the primary analysis of data from a randomized trial. The method used should provide valid inference under approximately the same minimal statistical assumptions that would be needed for una",
+      "fingerprint": "9ee2e5c0b9ead912fd610bafa5a533bfc8fbae3ab2e9324fb516ca2bdc1710d9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-9-paragraph-6",
+      "statement": "• Sponsors can perform covariate-adjusted estimation and inference for an unconditional treatment effect (e.g., the odds ratio of 4.8 in Table 1) in the primary analysis of data from a randomized trial. The method used should provide valid inference under approximately the same minimal statistical assumptions that would be needed for unadjusted estimation in a randomized trial. With nonlinear models using a covariate-adjusted estimator for an unconditional treatment effect, sponsors can use an appropriate bootstrap method or standard error formulas justified in the statistical literature for confidence interval construction. A",
+      "context": "Sponsors should discuss any planned assessments of model assumptions and implications for analyses with the relevant review division. variety of statistically reliable methods have been proposed in the literature for covariate adjustment with unconditional treatment effects (Colantuoni and Rosenblum 2015).",
+      "fingerprint": "b0f1c0316d1efe85383ab523fb14ff7f103a0dd0b0956806f6d4b33cdbbf124c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-10-paragraph-2",
+      "statement": "• Covariate-adjusted estimators of unconditional treatment effects that are robust to misspecification of regression models have been proposed for randomized clinical trials with binary outcomes (e.g., Steingrimsson et al. 2017), ordinal outcomes (e.g., D í az et al. 2016), count outcomes (e.g., Rosenblum and van der Laan 2010), and time-to-event outcomes (e.g., Tangen and Koch 1999; Lu and Tsiatis 2008). If a novel method is proposed and statistical properties are unclear, the specific proposal should be discussed with the review division.",
+      "context": "variety of statistically reliable methods have been proposed in the literature for covariate adjustment with unconditional treatment effects (Colantuoni and Rosenblum 2015). • As an example, the following are steps for one reliable method for covariate adjustment for unconditional treatment effects with binary outcomes that produces a resulting estimator (Steingrimsson et al. 2017; Freedman 2008) termed the “standardized,” “plug-in,” or “g- computation” estimator:",
+      "fingerprint": "233526f7461a71da8d99dc57b424fc853ebcc30bc680fec8e6d1fe7169150aaf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-10-paragraph-4",
+      "statement": "(1) Fit a logistic model with maximum likelihood that regresses the outcome on treatment assignments and prespecified baseline covariates. The model should include an intercept term.",
+      "context": "• As an example, the following are steps for one reliable method for covariate adjustment for unconditional treatment effects with binary outcomes that produces a resulting estimator (Steingrimsson et al. 2017; Freedman 2008) termed the “standardized,” “plug-in,” or “g- computation” estimator: (2) For each subject, regardless of treatment group assignment, compute the model-based prediction of the probability of response under treatment using the subject’s specific baseline covariates.",
+      "fingerprint": "b16637275484f50f37c13722c493f1d0a19a44914758cf6c28169451b8731590",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:36:31.912Z"
+}
