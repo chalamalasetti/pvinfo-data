@@ -1,0 +1,380 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-132096",
+  "metadata": {
+    "title": "Specifications for Preparing and Submitting Electronic ICSRs and ICSR Attachments",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 02/14/2020 · Docket None found",
+    "norm": "Guidance",
+    "topic": "Guidance · PV / medicines safety",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Drugs",
+    "published_on": "2020-02-14",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/132096/download",
+  "original_sha256": "6486b3a28e9437302bfda3bc8a9ed3bfce8adbece0854f3fe0c53ad4b1d8f9eb",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 43,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-6-paragraph-3",
+      "statement": "This document discusses the technical specifications for electronic submission of ICSRs and ICSR attachments through the FDA Electronic Submissions Gateway (ESG). 1 ICSRs (and any ICSR attachments) are to be prepared in accordance with the International Council for Harmonisation (ICH) E2B(R2) data elements in extensible markup language (XML) file format for compatibility with the FAERS database. ICSRs for marketed products should not be submitted to the electronic Common Technical Document (eCTD). 2 If you have not previously submitted an ICSR in electronic format to FAERS, you should contact",
+      "context": "prophylactic vaccines, whole blood or components of whole blood, human cells, tissues, and cellular and tissue-based products (HCT/Ps) regulated by FDA. with submission of a test file.",
+      "fingerprint": "90df51f0d3ea490224289b6c6b7f3bf07b3cf1d43160b8def2a0fb8ff4f8eb20",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-7-paragraph-2",
+      "statement": "II. SUBMISSION FILE NAME Each electronic submission of ICSRs or attachments to ICSRs must have a unique filename (e.g., your named file + date and time stamp down to the second: filenameYYYYMMDDHHMMSS).",
+      "context": "Draft Version 1.9 7 • If applicable, add ICSR attachments to ICSRs; see section VI of this document. You may choose your own format to maintain uniqueness.",
+      "fingerprint": "4e552a2a16111d1469f8eb8792704769cd6d86033e92b0c9bc17bb8020c8129b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-7-paragraph-5",
+      "statement": "A. ESG Acknowledgement After submitting an ICSR or ICSR attachment, you should receive an ESG message delivery notice (MDN) notifying the sender of the receipt of their submission, but not acknowledging the acceptance of the submission. If the MDN is not received within 2 hours, go to the ESG System Status web page. If the ESG web page is non-operational, go to the ESG Home Page for further information.",
+      "context": "III. ICSR ACKNOWLEDGEMENTS B. FAERS Acknowledgment The MDN is then followed by a FAERS acknowledgment within 2 hours of the ESG acknowledgement. The FAERS acknowledgement notifies the sender whether their submission has been processed. If you do not receive the FAERS acknowledgement, resubmit the ICSRs without changing the filename.",
+      "fingerprint": "cf465d1a3c59b3ed5a376edf68107c0d6e3f28271c43d6dbf9eb130a6c00c484",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-7-paragraph-9",
+      "statement": "• For a submission consisting of multiple ICSRs, if one or more ICSRs in the submission failed to process, separate those ICSRs from the processed ICSRs, correct them and resubmit only the corrected ICSRs as a new submission with a unique filename. For example, if there were 50 ICSRs in an original submission and 15 of them failed to process, then only those 15 ICSRs must be separated, corrected appropriately, and resubmitted with a new unique filename. The resubmission should not contain any of the previously processed ICSRs.",
+      "context": "• For submission with a single ICSR, resubmit the corrected ICSR with a new unique filename. IV. ELECTRONIC TRANSPORT FORMAT: XML FILES FDA accepts the data elements defined in the “Guidance for Industry E2BM Data Elements for",
+      "fingerprint": "87b3edf880e7172e17f5838b2c2888eab66f58dd1087cefec2d8f31bfffb20f0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-8-paragraph-2",
+      "statement": "A. AS2 Headers and Routing IDs for Postmarketing Safety Report Submissions For postmarketing safety report submissions, the sponsors should include the unique AS2 headers or routing IDs for safety reports and attachments in one of the two ways listed below.",
+      "context": "Draft Version 1.9 8 Transmission of Individual Case Safety Reports (April 2002).” 3 The ICH E2B(R2) guidance provides additional information and clarification of the previously issued guidances. 4 The electronic transport format also known as the Document Type Definition (DTD) for XML files is described in the associated document “XML Formatted DTD” (DTD Version 2.1, DTD Version 2.2 and DTD Version 3.0) (see links to the documents below in section C). • AS2 Headers - Destination: “CDER” - XML files: AERS - PDF’s: AERS_ATTACHMENTS or • Routing IDs - XML files: FDA_AERS - PDF’s: FDA_AERS_ATTACHMENTS",
+      "fingerprint": "69a4e9155f9a1cbfd97c26c4ca82addc9b11523629ed3161eca64cf5218b16ce",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-8-paragraph-4",
+      "statement": "B. AS2 Headers and Routing IDs for Premarketing 5 Safety Report Submissions For premarketing safety report submissions, the sponsors should include the unique AS2 headers or routing IDs for premarketing safety reports and attachments, as listed below, to differentiate these reports between CDER and CBER, and from postmarketing ICSRs.",
+      "context": "• AS2 Headers - Destination: “CDER” - XML files: AERS - PDF’s: AERS_ATTACHMENTS or • Routing IDs - XML files: FDA_AERS - PDF’s: FDA_AERS_ATTACHMENTS 3 For information on Guidance for Industry on E2BM Data Elements for Transmission of Individual Case Safety Reports, please refer to the following:",
+      "fingerprint": "1159cb4f949b2e45c0881ab7fb7317384ba72ea4a806a1fd2c1cad77f21c3a18",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-10-paragraph-11",
+      "statement": "E. ICSR File Extension Use “xml” as the file extension for ICSRs in XML format. The name of the file should be 200 characters or less, excluding the three-digit extension. FDA does not support file names with multiple periods “.” or the use of any special or foreign characters except underscore “_” and dash “-”.",
+      "context": "<messageformatversion>3.0</messageformatversion> V. DATA ELEMENTS FOR ELECTRONIC SUBMISSIONS",
+      "fingerprint": "aaac2aa6b992d8c05d5b6d00edf9f956004e88e82cdf5101d960bef92977225b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-11-paragraph-1",
+      "statement": "Draft Version 1.9 11 Table 1. Minimum Data Elements Element Data B.1 Identifiable Patient A.2 Identifiable Reporter B.2 Reaction or Event B.4 Suspect Drug Product • Adverse event reports submitted for unapproved prescription drug products, unapproved nonprescription drug products and products approved for marketing under an abbreviated new drug application (ANDA), biologics license application (BLA), or new drug application (NDA), including combination products should have, at a minimum, the four data elements listed in Table 1 .",
+      "context": "A. Minimum Data Elements Requirements For a submission to be successfully processed, submit an ICSR with the minimum data elements for reporting that are appropriate for the product type. If a sponsor submits an ICSR without the minimum data elements, they will receive a FAERS acknowledgement code 02 stating that the submission was not processed (see section III.B above). The minimum data elements for reporting are provided in Table 1 and the bullets that follow list the data elements to include in an ICSR by product type. • Adverse event reports for compounded drugs submitted by registered outsourcing facilities should have at a minimum, a suspect product and an adverse event.",
+      "fingerprint": "075e648ad5b3ffff301c27516411f33cc6c901e942310ad20f365ac1fcf1dd36",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-11-paragraph-2",
+      "statement": "• Adverse event reports for compounded drugs submitted by registered outsourcing facilities should have at a minimum, a suspect product and an adverse event.",
+      "context": "Draft Version 1.9 11 Table 1. Minimum Data Elements Element Data B.1 Identifiable Patient A.2 Identifiable Reporter B.2 Reaction or Event B.4 Suspect Drug Product • Adverse event reports submitted for unapproved prescription drug products, unapproved nonprescription drug products and products approved for marketing under an abbreviated new drug application (ANDA), biologics license application (BLA), or new drug application (NDA), including combination products should have, at a minimum, the four data elements listed in Table 1 . • IND safety reports should include, at a minimum, the four data elements listed in Table 1 and the IND number under which the clinical trial where the event occurred is conducted.",
+      "fingerprint": "09de07aa7e742a5239f15e487feed19ffd16f9e69b7e1deeda8ae9ce492e0d55",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-11-paragraph-3",
+      "statement": "• IND safety reports should include, at a minimum, the four data elements listed in Table 1 and the IND number under which the clinical trial where the event occurred is conducted.",
+      "context": "• Adverse event reports for compounded drugs submitted by registered outsourcing facilities should have at a minimum, a suspect product and an adverse event. • Serious adverse event reports from IND-exempt BA/BE studies should include, at a minimum, the four data elements listed in Table 1 and the pre-assigned ANDA number (hereafter referred as, Pre-ANDA number).",
+      "fingerprint": "91e860a6f11c692a61c63c31c1bff9ceeaf53d9158292881780213ebec5635c3",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-11-paragraph-4",
+      "statement": "• Serious adverse event reports from IND-exempt BA/BE studies should include, at a minimum, the four data elements listed in Table 1 and the pre-assigned ANDA number (hereafter referred as, Pre-ANDA number).",
+      "context": "• IND safety reports should include, at a minimum, the four data elements listed in Table 1 and the IND number under which the clinical trial where the event occurred is conducted. B. Administrative and Identification Elements For FDA to successfully process your electronic ICSR submissions, populate the administrative and identification elements as indicated in Table 2 .",
+      "fingerprint": "c0877e9e24d5f688bbe5cd059aa8885067b0cf59613e8d73ca0c839458b3aad9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-13-paragraph-6",
+      "statement": "• Always use the <safetyreportid> that was assigned to the initial ICSR when submitting follow-up reports. If you need to change the <safetyreportid> internally, note the internally reassigned <safetyreportid> in the narrative section of the follow-up report (i.e., element B.5.1) (e.g., “This ICSR has been reassigned to the Company ID number COA12345”). Do not use the internally reassigned <safetyreportid> for any follow-up reports.",
+      "context": "• If the initial ICSR was submitted on paper but its follow-up ICSR is submitted electronically, include the Manufacturer Control Number (MCN) listed in Box G9 of the FDA paper Form 3500A from the initial report in both A.1.0.1 <safetyreportid> and in A.1.10.2 <companynumb> field in the follow-up electronic submission. • In the event that an incorrect <safetyreportid> has been used in a follow-up report,",
+      "fingerprint": "433d2fbf9d8555664199e93243c7e83b0c6ed1a4ebc8410dd9596408d9ea401d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-15-paragraph-5",
+      "statement": "1. Recording Multiple Drugs If you are submitting safety reports for products containing multiple drugs, you should follow these steps:",
+      "context": "† Appendix I lists various examples of correct drug element formats. • List the proprietary drug product name in element (B.4.k.2.1) and/or list the drug substance name in element (B.4.k.2.2).",
+      "fingerprint": "279bb5d31bbb4cce260771dbb090051eac1a55e9e5f9d6e6b0c5dab67d6e12d5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-15-paragraph-6",
+      "statement": "• List the proprietary drug product name in element (B.4.k.2.1) and/or list the drug substance name in element (B.4.k.2.2).",
+      "context": "List governed by page-15-paragraph-5: 1. Recording Multiple Drugs If you are submitting safety reports for products containing multiple drugs, you should follow these steps: • List the characterization of each reported drug’s role, such as suspect, concomitant, interacting, drug not administered, or similar device in element (B.4.k.1).",
+      "fingerprint": "bad9ac5ff5de67be54695224778c674ab1770f01551e4adee22edf74d54c45ed",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-15-paragraph-7",
+      "statement": "• List the characterization of each reported drug’s role, such as suspect, concomitant, interacting, drug not administered, or similar device in element (B.4.k.1).",
+      "context": "List governed by page-15-paragraph-5: 1. Recording Multiple Drugs If you are submitting safety reports for products containing multiple drugs, you should follow these steps: 2. Medicinal Product Name and Active Drug Substance Name FDA validates medicinal product names to the available Structured Product Labeling (SPL) 7 , the submitted label (as ICSR attachment), and the Substance Registration System (SRS). These are further described below:",
+      "fingerprint": "74985bbaa3691d25f0332778f3c30388ec9419c7628dbafdbfe07a59b2cd3a9d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-16-paragraph-4",
+      "statement": "Although the use of only the most widely used medical abbreviations is permissible if necessary, their use should be limited when possible.",
+      "context": "3. Case Narrative a) Initial ICSR Record all case narrative information including clinical course, therapeutic measures, outcome, and all additional relevant information in element (B.5.1). If the information exceeds the field length, consider describing the information using fewer words. b) Follow-up ICSR Record both new information and corrections to previously submitted ICSRs in element (B.5.1).",
+      "fingerprint": "6918de742db79fb8e57ff8142582289e6be32f1bdfbe5b3e0bc2554b2a3148c7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-17-paragraph-4",
+      "statement": "H. Data Elements for Electronic Submissions of Safety Reports for Postmarketing Combination Products To ensure the successful processing of your electronic ICSR submission for a marketed drug- or therapeutic biologic led- combination product (e.g., a combination product containing a drug/biologic and device and marketed under an NDA or a BLA), you should populate the data elements indicated in Table 7 .",
+      "context": "• Test ICSRs: <messagereceiveridentifier>ZZFDATST</messagereceiveridentifier> • Production ICSRs: <messagereceiveridentifier>ZZFDA</messagereceiveridentifier> Note: Some of the DTD descriptors listed in Table 7 are under existing E2B(R2) header elements, and some DTD descriptors are under new data elements. Those data element numbers that are new, have the word “FDA” incorporated into the number and are U.S.-specific regional elements related to reporting on combination products.",
+      "fingerprint": "2433d8c965150691ba2edcb326b23ee29fafc3ad194b4668bae8a12dda9731a0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-18-paragraph-2",
+      "statement": "A.1.FDA.15 <combinationproductreport> Combination Product Report Flag Combination Product Report Flag 1N 1=Yes 2=No A.2 <primarysource> Primary source(s) of information Header/ Entity Area below should be a repeatable block",
+      "context": "Draft Version 1.9 18 Table 7. Combination Product Data Elements Data Element DTD Descriptor 2.2 Title Description Length Element Values for DTD 2.2 Notes M.1.2 <messageformatversion> Message Format Version Version number of Message Format 3AN 2.2 Use value 2.2 if using icsr- xml-v2.2.dtd Use value 2.1 if using icsr- xml-v2.1.dtd A.1 <safetyreport> Header/ Entity Identification of the case safety report A.1.9 <fulfillexpeditecriteria> Does this case fulfill the local criteria for an expedited report 1N 1=Yes 2=No 4=5-Day 5=30-Day Element values= 1 for 15-Day Expedited * and 2 for periodic non-expedited † Element value= 4 for remedial action to prevent an unreasonable risk of substantial harm to the public health Element value= 5 for malfunction with no associated adverse event Do not use element value of 3. Draft Version 1.9 19 Data Element DTD Descriptor 2.2 Title Description Length Elem",
+      "fingerprint": "5503bd765d3eaba63f40d68e0c8396dfa9ff325bd7ff0af2677c8d472bc6b55d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-19-paragraph-1",
+      "statement": "Draft Version 1.9 19 Data Element DTD Descriptor 2.2 Title Description Length Element Values for DTD 2.2 Notes A.2.1 Primary source(s) Header A.2.1.3.FDA.4 <reporteremailaddress> Reporter’s Email Address 100AN B.1.1 <patientinitial> Patient Patient Identifier 10AN If a single report is reported for a malfunction with no adverse event, the element value should be “NONE.” If there are multiple malfunction reports with no adverse event, then the element value should be “SUMMARY.” B.4 <drug> Drug(s) Information Header/ Entity Area below should be a repeatable block B.4.k.1 <drugcharacterization> Characterizat ion of drug role 1N 1=Suspect 2=Concomitant 3=Interacting 5=Similar Device If the product in the report is about a similar device, the element value should be 5=Similar Device.",
+      "context": "A.1.FDA.15 <combinationproductreport> Combination Product Report Flag Combination Product Report Flag 1N 1=Yes 2=No A.2 <primarysource> Primary source(s) of information Header/ Entity Area below should be a repeatable block B.4.k.2 Drug Identification Header B.4.k.2.4.FDA.1a <expirationdateformat> Expiration date format Product Expiration date 3N 102=CCYYMM DD 610=CCYYMM 602=CCYY B.4.k.2.4.FDA.1b <expirationdate> Expiration date Product Expiration date 8N",
+      "fingerprint": "4d349cb23bf455e0c7f6846d434e6805a4449c03df8c7ae93b9e49e560537fa4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-20-paragraph-1",
+      "statement": "Draft Version 1.9 20 Data Element DTD Descriptor 2.2 Title Description Length Element Values for DTD 2.2 Notes B.4.k.2.FDA.5 <productavailableforevaluation> Product available for evaluation Indicate whether product is available for evaluation 1N 1=Yes 2=No 3=Return B.4.k.2.6.FDA.1a <productreturndateformat> Product return date format Date Format 3N 102=CCYYMM DD 610=CCYYMM 602=CCYY B.4.k.2.6.FDA.1b <productreturndate> Product return date Date when Product was returned 8N B.4.k.20.FDA.1 <brandname> Brand Name The trade or proprietary name of the device constituent part of the suspect combination product as used in product labeling or in the catalog 80AN At least one of the 3 must be reported <brandname> or <commondevicename> or <productcode> for the device constituent part B.4.k.20.FDA.2 <commondevicename> Common Device Name Generic or common name of the device constituent part of the suspect combination product or a generally descriptive name 80AN At least one of the 3 must be reported <brandname> or <commondevicename> or <productcode> for device constituent part B.4.k.20.FDA.3 <productcode> Product Code Product code 3AN http://www.acce At least one of the 3 must be",
+      "context": "B.4.k.2 Drug Identification Header B.4.k.2.4.FDA.1a <expirationdateformat> Expiration date format Product Expiration date 3N 102=CCYYMM DD 610=CCYYMM 602=CCYY B.4.k.2.4.FDA.1b <expirationdate> Expiration date Product Expiration date 8N Draft Version 1.9 21 Data Element DTD Descriptor 2.2 Title Description Length Element Values for DTD 2.2 Notes assigned to the device constituent part based upon the medical device product classification ssdata.fda.gov/p remarket/ftparea /foiclass.zip reported <brandname> or <commondevicename> or <productcode> for device constituent part B.4.k.20.FDA.4 <manufacturer> Manufacturer Header/ Entity B.4.k.20.FDA.4a <manufacturername> Device Manufacturer Name Manufacturer name of the device constituent part of the suspect combination product 100AN B.4.k.20.FDA.4b <manufactureraddress> Manufacturer Address Manufacturer address of the device constituent part of th",
+      "fingerprint": "b886f514acc9a426a64ab4062efda890cc2b32b8f749e8d4f11ccb2cba6d1ced",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-26-paragraph-1",
+      "statement": "Draft Version 1.9 26 Data Element DTD Descriptor 2.2 Title Description Length Element Values for DTD 2.2 Notes c FDA request request 2=No B.4.k.20.FDA.18.1 d <followupdeviceevaluation> Device Evaluation Device Evaluation 1N 1=Yes 2=No B.4.k.20.FDA.19 <deviceproblemandevaluation> Device Problem and evaluation codes Header/ Entity Area Below Should be a Repeatable Block B.4.k.20.FDA.19.1 a <evaluationtype> Evaluation Type Type of problem and/or the evaluation 2N 01=Device Problem 02=Method 03=Result 04=Conclusion B.4.k.20.FDA.19.1 b <evaluationvalue> Evaluation Value The FDA code value based on the respective evaluation type 6N The value depends on the respective <evaluationtype> If <evaluationtype> = 01 --> https://www.fda.gov/media/14 6825/download If <evaluationtype> = 02 --> https://www.fda.gov/media/14 6827/download If <evaluationtype> = 03 --> https://www.fda.gov/media/14 6828/download If <evaluationtype> = 04 --> https://www.fda.gov/media/14 6829/download B.4.k.20.FDA.20 <operatorofdevice> Operator of Operator of the 100AN Use the value “Health",
+      "context": "Draft Version 1.9 25 Data Element DTD Descriptor 2.2 Title Description Length Element Values for DTD 2.2 Notes e initiated 2=No B.4.k.20.FDA.14.1 f <remedialactioninspection> Inspection Inspection initiated 1N 1=Yes 2=No B.4.k.20.FDA.14.1 g <remedialactionpatientmonitor> Patient monitoring Patient monitoring 1N 1=Yes 2=No B.4.k.20.FDA.14.1 h <remedialactionmodifyadjust> Modification/ Adjustment Modification/ Adjustment initiated 1N 1=Yes 2=No B.4.k.20.FDA.14.1i <remedialactionother> Other Other Remedial Action initiated 75AN B.4.k.20.FDA.15 <deviceusage> Device Usage Indicate the use of the device constituent part of the suspect combination product 1N 1=Initial Use of Device 2=Reuse 3=Unknown B.4.k.20.FDA.16 <devicelotnumber> Device Lot Number Lot number of the device constituent part of the suspect combination product 35AN B.4.k.20.FDA.17 <malfunction> Malfunction Malfunction of product",
+      "fingerprint": "fd49d348427b0da731614cd2c99ef58fe1e142d902b335e0ae9694f51adb04b0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-28-paragraph-2",
+      "statement": "I. Data Elements for Electronic Submissions of IND Safety Reports To ensure the successful processing of your electronic IND ICSR submission, you should populate the following data elements as described in Table 8 .",
+      "context": "Table 8. Investigational New Drug Clinical Data Elements Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes A.1.4 <reporttype> Type of Report 1N 1=Spontaneous 2=Report from Study 3=Other 4=Not Available to Sender (unknown) Element value= 2 for Report from Study A.1.9 <fulfillexpeditecriteria> Does this case fulfill the local criteria for an expedited report? 1N 1=Yes 2=No 4=5-Day 5=30-Day 6=7-Day Element value=1 for 15- Day Expedited Element value= 6 for 7- Day Expedited A.1.12 <linkreportnumb> Identification Number of the report which is linked to this report 100AN Used to link all individual cases (safetyreportid) that make up an IND Safety Report submitted as a result of an Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events",
+      "fingerprint": "e514960c8398d7ddb9f90dc5b49544714a93752828b3260a2203790dfcfb7cb0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-29-paragraph-1",
+      "statement": "Draft Version 1.9 29 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes submitted as per (312.32(c)(1)(i)(B)) when a Narrative Summary Report is provided, this field should be populated in the IND Safety Report that contains the Narrative Summary Report.",
+      "context": "Table 8. Investigational New Drug Clinical Data Elements Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes A.1.4 <reporttype> Type of Report 1N 1=Spontaneous 2=Report from Study 3=Other 4=Not Available to Sender (unknown) Element value= 2 for Report from Study A.1.9 <fulfillexpeditecriteria> Does this case fulfill the local criteria for an expedited report? 1N 1=Yes 2=No 4=5-Day 5=30-Day 6=7-Day Element value=1 for 15- Day Expedited Element value= 6 for 7- Day Expedited A.1.12 <linkreportnumb> Identification Number of the report which is linked to this report 100AN Used to link all individual cases (safetyreportid) that make up an IND Safety Report submitted as a result of an Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events A.2.3.1 <studyname> Study Name 100AN Study ID_$Abbreviated Trial Name The Study ID should be the same",
+      "fingerprint": "fa9bab9e7f2411c446c8127bab6b3078829ec229179aae26d37ffa924d50ec60",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-29-paragraph-2",
+      "statement": "A.2.3.1 <studyname> Study Name 100AN Study ID_$Abbreviated Trial Name The Study ID should be the same value used in the study tagging file format of the eCTD submission.",
+      "context": "Draft Version 1.9 29 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes submitted as per (312.32(c)(1)(i)(B)) when a Narrative Summary Report is provided, this field should be populated in the IND Safety Report that contains the Narrative Summary Report. A.2.3.2 <sponsorstudynumb> Sponsor Study Number 35AN IND number under which the clinical trial where the event occurred is conducted Use the “Parent” IND number * for reports submitted from an Aggregate Analysis as per (312.32(c)(1)(i)(C)) or for several events Populate this field with the Primary IND in the first block and repeat block A.2 with elements A.2.3.2 and A.2.3.3.as noted below with element value= 5 for sponsor’s other INDs evaluating suspect product (where applicable) Include the acronym \"IND\" followed by a space and then the IND",
+      "fingerprint": "a2d291262ecf9e3f0f464a8c46b9492de05bcb8de5768a7b8bb203b77c25f4cf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-30-paragraph-4",
+      "statement": "The first block of this element in the report must not be 5. If element value 4 is chosen, then A.1.9= 1.",
+      "context": "A.2.3.3 <observestudytype> Study type in which the Reaction(s)/ Event(s) were observed 1N 1= Clinical Trials 2= Individual Patient Use (e.g., ‘Compassionate Use’ or ‘Named Patient Basis’) 3= Other Studies (e.g., Pharmacoepidemiolo gy, Pharmacoeconomics, Intensive Monitoring) 4= Report from Required if element value for A.1.4 is 2=Report from Study Repeat this field as needed with element value= 5 for each Cross- reported IND.",
+      "fingerprint": "4c5f82c7c64a5ad60a3f42a641ad319c26460ead1808f0426cebe187593372bc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-31-paragraph-2",
+      "statement": "B.1.1 <patientinitial> Patient Identifier 10AN For a report from an Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events submitted as per 312.32(c)(1)(i)(B) if a Narrative Summary Report is provided, the element value should be “AGGREGATE” B.4.k.2.1 <medicinalproduct> Proprietary Medicinal Product Name 70AN For investigational drug and biological products without an established name (i.e. INN or USAN",
+      "context": "Draft Version 1.9 31 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events submitted as per 312.32(c)(1)(i)(B) if a Narrative Summary Report is provided 5= Cross-reported IND Safety Report Scenarios) for additional information on how to submit reports from an Aggregate Analysis. Draft Version 1.9 32 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes name), prior to submitting IND safety reports to FAERS, the sponsor should submit a clinical information amendment to the IND, listing the names of the active drug substance/s and the medicinal product as they will be reported in E2B file submissions.",
+      "fingerprint": "02ede3c23a5df58b8373be859fb36de92d224da55de4b68ed4ebffcaa488bc9d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-32-paragraph-1",
+      "statement": "Draft Version 1.9 32 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes name), prior to submitting IND safety reports to FAERS, the sponsor should submit a clinical information amendment to the IND, listing the names of the active drug substance/s and the medicinal product as they will be reported in E2B file submissions.",
+      "context": "B.1.1 <patientinitial> Patient Identifier 10AN For a report from an Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events submitted as per 312.32(c)(1)(i)(B) if a Narrative Summary Report is provided, the element value should be “AGGREGATE” B.4.k.2.1 <medicinalproduct> Proprietary Medicinal Product Name 70AN For investigational drug and biological products without an established name (i.e. INN or USAN The names should fit within the established E2B character length limits.",
+      "fingerprint": "e05b67d6c343c65aac070821b0b0c4be1d63b0d1254529117cab75ce11fdb465",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-32-paragraph-2",
+      "statement": "The names should fit within the established E2B character length limits.",
+      "context": "Draft Version 1.9 32 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes name), prior to submitting IND safety reports to FAERS, the sponsor should submit a clinical information amendment to the IND, listing the names of the active drug substance/s and the medicinal product as they will be reported in E2B file submissions. Use company product code if no established name, for multi- ingredient products, or if name exceeds character length B.4.k.2.2 <activesubstancename> Active Drug Substance Names 100AN B.4.k.18 <drugreactionrelatedness> Relatedness of Drug to For IND Safety Reports, at least one suspect",
+      "fingerprint": "7e9070f0d3912f534d5a4cd806878527270a1289ca253eb0af3ead28b30b1e7e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-33-paragraph-1",
+      "statement": "Draft Version 1.9 33 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes Reaction/ Event product should have relatedness of drug to reaction/ event B.4.k.18.1a <drugreactionassesmeddra version> MedDRA Version for Reaction Assessed 8AN B.4.k.18.1b <drugreactionasses> Reaction Assessed 250AN B.4.k.18.2 <drugassessmentsource> Source of Assessment 60AN Use the value “Sponsor” or “Investigator”. Include sponsor and investigator assessment when reporting both in separate blocks B.4.k.18.3 <drugassessmentmethod> Method of Assessment 35AN Use the value “FDA”.",
+      "context": "Use company product code if no established name, for multi- ingredient products, or if name exceeds character length B.4.k.2.2 <activesubstancename> Active Drug Substance Names 100AN B.4.k.18 <drugreactionrelatedness> Relatedness of Drug to For IND Safety Reports, at least one suspect B.4.k.18.4 <drugresult> Result 35AN 1=Suspected 2=Not suspected For IND Safety Reports, at least one suspect product should have relatedness of drug to reaction/ event B.5.1 <narrativeincludeclinical> Case Narrative Including Clinical 20,000 AN FDA strongly encourages sponsors to construct narratives that fit within the ICH E2B character",
+      "fingerprint": "257dffea0fdf95240e73591dd4bc3a46fd18616b499102d53430a0c4535cb496",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-33-paragraph-2",
+      "statement": "B.4.k.18.4 <drugresult> Result 35AN 1=Suspected 2=Not suspected For IND Safety Reports, at least one suspect product should have relatedness of drug to reaction/ event B.5.1 <narrativeincludeclinical> Case Narrative Including Clinical 20,000 AN FDA strongly encourages sponsors to construct narratives that fit within the ICH E2B character",
+      "context": "Draft Version 1.9 33 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes Reaction/ Event product should have relatedness of drug to reaction/ event B.4.k.18.1a <drugreactionassesmeddra version> MedDRA Version for Reaction Assessed 8AN B.4.k.18.1b <drugreactionasses> Reaction Assessed 250AN B.4.k.18.2 <drugassessmentsource> Source of Assessment 60AN Use the value “Sponsor” or “Investigator”. Include sponsor and investigator assessment when reporting both in separate blocks B.4.k.18.3 <drugassessmentmethod> Method of Assessment 35AN Use the value “FDA”. Draft Version 1.9 34 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes Course, Therapeutic Measures, Outcome, and Additional Relevant Information limit of 20,000 AN. If your narrative exceeds this limit, sponsors should include as much of the narrative",
+      "fingerprint": "67e553e657e29ce303186511fed7a595a9b356d0fb59d1fa3936e7fd4d590ed7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-34-paragraph-1",
+      "statement": "Draft Version 1.9 34 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes Course, Therapeutic Measures, Outcome, and Additional Relevant Information limit of 20,000 AN. If your narrative exceeds this limit, sponsors should include as much of the narrative as possible in this field and submit an ICSR attachment for any text that exceeds the character limit. Sponsors should not submit an ICSR attachment containing the entire narrative and leave the case narrative field empty.",
+      "context": "B.4.k.18.4 <drugresult> Result 35AN 1=Suspected 2=Not suspected For IND Safety Reports, at least one suspect product should have relatedness of drug to reaction/ event B.5.1 <narrativeincludeclinical> Case Narrative Including Clinical 20,000 AN FDA strongly encourages sponsors to construct narratives that fit within the ICH E2B character For reports from Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events submitted as per 312.32(c)(1)(i)(B) where PDF is attached, put “see attached Narrative Summary Report” in this field.",
+      "fingerprint": "e54ec4cd11d44322575d577c408400b2b359720cc773d00afc5c86083b8d3ab1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-35-paragraph-2",
+      "statement": "AN Identification and analysis of previously submitted events (as required by 312.32(c)(1)) should be reported in this field.",
+      "context": "Draft Version 1.9 35 Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD 3.0 Notes B.5.4 <sendercomment> Sender’s Comments * The “parent IND” is the IND under which clinical investigations were initiated in the United States. (If the drug is being evaluated in multiple INDs, this is generally the IND with the lowest number.) NOTE: This may not be the same as the first A.2.3.2 block if the drug is being evaluated under multiple INDs.",
+      "fingerprint": "d140b23c2663ed0851ccb0ea52474df124aae1af4cd1729c4b75649ff48c7872",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 33,
+      "anchor": "page-35-paragraph-5",
+      "statement": "J. Data Elements for Electronic Submissions of ICSRs from IND-Exempt Bioavailability (BA)/ Bioequivalence (BE) Studies For successful processing of your electronic ICSRs submissions for a BA/BE study not conducted under an IND, you should populate the following data elements as described in Table 9 .",
+      "context": "NOTE: See FAERS Webpage for case scenario examples for reporting IND safety reports (e.g., IND safety reports where the sponsor is evaluating suspect product under more than one IND, IND safety reports that are a result of an aggregate analysis, and IND safety reports with unapproved and approved drugs listed as suspect products). Table 9. Data Elements for IND-Exempt BA/BE Studies Data Element DTD Descriptor 3.0 Title Description Field Length Element Values for DTD",
+      "fingerprint": "3e2363bbefbd412cb5d922c33c913b748072056f8c5cc379219cee2927d95e79",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 34,
+      "anchor": "page-38-paragraph-2",
+      "statement": "VI. ELECTRONIC FORMAT FOR ICSR ATTACHMENTS FDA can accept and archive ICSR attachments in PDF format. Currently approved formats for the non- structured component of an ICSR, such as ICSR attachments, are PDF versions 1.4 (current ICH standard) or 1.6 (current version in use at FDA). An ICSR attachment should be electronically submitted to FAERS after the associated ICSR has been submitted and accepted by FAERS.",
+      "context": "A. Converting the ICSR Attachment to PDF Applicants should provide an individual PDF file for each ICSR attachment. If you are submitting multiple ICSR attachments for a particular ICSR, include each attachment in the same PDF file and provide a PDF bookmark to distinguish each attachment. For example, if you are submitting a hospital discharge summary and an autopsy report for a single ICSR, include both in a single PDF file with a bookmark to the hospital discharge summary and a bookmark to the autopsy report.",
+      "fingerprint": "7d71432a16ea302219cee56a1add70fdf77096377265eb744ee86a326705da4a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 35,
+      "anchor": "page-38-paragraph-3",
+      "statement": "A. Converting the ICSR Attachment to PDF Applicants should provide an individual PDF file for each ICSR attachment. If you are submitting multiple ICSR attachments for a particular ICSR, include each attachment in the same PDF file and provide a PDF bookmark to distinguish each attachment. For example, if you are submitting a hospital discharge summary and an autopsy report for a single ICSR, include both in a single PDF file with a bookmark to the hospital discharge summary and a bookmark to the autopsy report.",
+      "context": "VI. ELECTRONIC FORMAT FOR ICSR ATTACHMENTS FDA can accept and archive ICSR attachments in PDF format. Currently approved formats for the non- structured component of an ICSR, such as ICSR attachments, are PDF versions 1.4 (current ICH standard) or 1.6 (current version in use at FDA). An ICSR attachment should be electronically submitted to FAERS after the associated ICSR has been submitted and accepted by FAERS. B. Identification Information in the PDF Document Information Fields Each PDF file contains fields to be completed by the author of the document. FAERS uses these fields to locate and retrieve the attachments to specific ICSRs. To enable FDA to match the attachment(s) to the correct ICSR, applicants should fill in the PDF document information fields with the appropriate E2B(R2) data elements for the ICSR as indicated in Table 10 .",
+      "fingerprint": "675817a03e2bad81455597ff76ee077f17404492d7d2963040b376778096f14b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 36,
+      "anchor": "page-38-paragraph-4",
+      "statement": "B. Identification Information in the PDF Document Information Fields Each PDF file contains fields to be completed by the author of the document. FAERS uses these fields to locate and retrieve the attachments to specific ICSRs. To enable FDA to match the attachment(s) to the correct ICSR, applicants should fill in the PDF document information fields with the appropriate E2B(R2) data elements for the ICSR as indicated in Table 10 .",
+      "context": "A. Converting the ICSR Attachment to PDF Applicants should provide an individual PDF file for each ICSR attachment. If you are submitting multiple ICSR attachments for a particular ICSR, include each attachment in the same PDF file and provide a PDF bookmark to distinguish each attachment. For example, if you are submitting a hospital discharge summary and an autopsy report for a single ICSR, include both in a single PDF file with a bookmark to the hospital discharge summary and a bookmark to the autopsy report. Draft Version 1.9 39 Table 10. Document Information Fields in ICSR Attachments PDF Document Information Field Include/ Optional Document Information* Length Title Include A.1.0.1 <safetyreportid> Sender’s (Case) Safety Report Unique Identifier 100AN Subject Include A.1.10.1 <authoritynumb> Regulatory Authority’s Case Report Number OR A.1.10.2 <companynumb> Other Sender’s Case Rep",
+      "fingerprint": "cc4d0e7e3b0c3e5b4684d2c4148216b4abffd237132a925d7c64014a04d721a3",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 37,
+      "anchor": "page-39-paragraph-5",
+      "statement": "VII. SUBMISSION RULES The submission rules define the condition that shall result in a negative acknowledgement and not be accepted by FAERS.",
+      "context": "10 . If you need assistance, you can contact the FAERS electronic submission coordinator at Draft Version 1.9 40 Table 111. Submission Rules and Acknowledgement Status Data Element DTD Descriptor 2.1/2.2/3.0 Rejection Rule Description Acknowledgement NA NA ICSR submitted via AS2 Header where XML file: AERS or Routing ID where XML file:",
+      "fingerprint": "d73a3535c1ad44dea1e8ac7d0d705d9935517ca1d063d23da3be7f8d6875865e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 38,
+      "anchor": "page-44-paragraph-9",
+      "statement": "1. The guidance states that IND safety reports that are a result of an aggregate analysis should contain a narrative description of the event and the results of the analysis (hereafter referred to as a “narrative",
+      "context": "i. Use data element = 4 in A.2.3.3<observestudytype> ii. Use the term “AGGREGATE” in B.1.1 <patientinitial> b. Section VII.A.2. of the FDA Guidance for Industry – “Safety Reporting Requirements for INDs and BA/BE Studies” (December 2012) discusses several submission requirements for IND safety reports that are a result of an aggregate analysis. The following two sections describe these submission elements and how they are accomplished with electronic submission to FAERS. Final Version 1.7 45 summary report”). For IND reports submitted to FAERS, attach the narrative summary report to the IND safety report as a PDF attachment (do not put the narrative summary report in the E2B narrative field).",
+      "fingerprint": "bdfac5e888d1a8f070f3861fb5c91f8c6ba397c5c35572370e8a57f429124279",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 39,
+      "anchor": "page-45-paragraph-3",
+      "statement": "2. The guidance states that all the individual cases that were analyzed in the aggregate analysis should be submitted. Use the repeatable block A.1.12 to link all the safety report numbers for the individual supportive ICSRs (i.e. the numbers in A.1.0.1 for all the individual cases that are summarized in the narrative summary report).",
+      "context": "a. These instructions also apply to several events submitted as per 312.32(c)(1)(i)(B) if a narrative summary report is provided. a. These instructions also apply to several events submitted as per 312.32(c)(1)(i)(B) if a narrative summary report is provided.",
+      "fingerprint": "cb4677122e4b02fc6b88f9322c81e98c278fafae62460d7172c0c4a4bc422d83",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 40,
+      "anchor": "page-45-paragraph-6",
+      "statement": "c. For IND safety reports previously submitted in eCTD format, the sponsor should list the eCTD sequence number and date of submission in the narrative summary report. (The eCTD sequence number is the unique four-digit number for each IND submission the sponsor submits in the us-regional.xml file for the eCTD submission.) d. IND safety reports previously submitted on paper should be attached to the IND safety report as PDF attachments.",
+      "context": "b. IND safety reports previously submitted as ICSRs to FAERS do not have to be resubmitted (place the safety report numbers for these previously submitted reports in A.1.12). Table 144. Case Scenario 2. For IND Safety Reports Submitted to FAERS Data Element DTD Descriptor 3.0 Title Element Values for DTD A.1.12 <linkreportnumb> Identification number of the report(s) which are linked to this report Used to link all individual cases (safetyreportid) that make up an IND Safety Report submitted as a result of an Aggregate Analysis as per 312.32(c)(1)(i)(C) or for several events submitted as per 312.32(c)(1)(i)(B) if a narrative summary report is provided A.2.3.2 <sponsorstudynumb> Sponsor Study Number IND number under which the Clinical Trial where the event occurred is conducted",
+      "fingerprint": "13ce97e6b0355928c1dd8a46c90136feb06b58a04975d5722f3d844a76bd008b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 41,
+      "anchor": "page-46-paragraph-3",
+      "statement": "Pharmacoepidemiology, Pharmacoeconomics, Intensive Monitoring ) 4= Report from Aggregate Analysis 312.32(c)(1)(i)(C) 5=Cross-reported IND safety report B.1.1 <patientinitial> Patient Identifier For a Report from an Aggregate Analysis, the element value should be “AGGREGATE”",
+      "context": "‘Compassionate Use’ or ‘Named Patient Basis’ ) 3= Other Studies ( e.g. 3. For adverse events that occur with a marketed drug being evaluated under an IND that meets both IND and post-marketing safety reporting requirements (21 CFR 312.32 and 314.80, 600.80, or 310.305), sponsors must submit two separate ICSRs:",
+      "fingerprint": "8a17b79374e397ba2c4b83655ddaa39384b041497bfdfc7c1cf3bc21ebf4bf1a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 42,
+      "anchor": "page-46-paragraph-4",
+      "statement": "3. For adverse events that occur with a marketed drug being evaluated under an IND that meets both IND and post-marketing safety reporting requirements (21 CFR 312.32 and 314.80, 600.80, or 310.305), sponsors must submit two separate ICSRs:",
+      "context": "Pharmacoepidemiology, Pharmacoeconomics, Intensive Monitoring ) 4= Report from Aggregate Analysis 312.32(c)(1)(i)(C) 5=Cross-reported IND safety report B.1.1 <patientinitial> Patient Identifier For a Report from an Aggregate Analysis, the element value should be “AGGREGATE” a. for the marketed drug for the NDA/BLA and b. for the study drug for the IND (IND number in A.2.3.2)",
+      "fingerprint": "6ecbfb5da4f494b9f953505759c539979ff66b8ab52e65a7171a7dccf25cb11a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 43,
+      "anchor": "page-47-paragraph-4",
+      "statement": "Scenario 3: No exposure to a study drug: A serious adverse event a subject experiences after enrollment to the study, but prior to exposure to a study drug, is subject to the expedited safety reporting requirement. To report a serious adverse event with no study drug exposure, the submitter should select values as shown in the Table 15, Scenario 3.",
+      "context": "Scenario 2: Exposure to an other drug : Other drugs are drugs taken by or administered to a subject that are not part of study conduct per protocol. For example, a subject with a diagnosis of hypertension has normal blood pressure while treated with a beta blocker. The subject meets study enrollment criteria and continues to take his beta blocker during study participation. In this situation, the beta blocker is an other drug . Similarly, if a subject develops symptoms of heartburn during participation in a BA/BE study and is permitted, by the investigator, to use a nonprescription antacid or H2 blocker for symptomatic relief, the nonprescription drug taken by the subject is an other drug . Final Version 1.7 48 Table 155. ICH E2B Data Element & Value Selections for IND-Exempt BA/BE Study Exposures Drug Exposure Scenario Data Element Element Values Scenario 1:",
+      "fingerprint": "f07953896b29fc3ef43cd8433c1fe90e9b4bebbac8b77ef541e149ff3aa43163",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:28:40.125Z"
+}
