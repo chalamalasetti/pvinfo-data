@@ -1,0 +1,207 @@
+                              Attachment to
+
+  Guidance on Antiviral Product
+   Development — Conducting
+    and Submitting Virology
+     Studies to the Agency
+        Guidance for Submitting Influenza
+                Resistance Data
+
+
+This guidance represents the Food and Drug Administration’s (FDA’s) current thinking on this topic. It
+does not create or confer any rights for or on any person and does not operate to bind FDA or the public.
+You can use an alternative approach if the approach satisfies the requirements of the applicable statutes
+and regulations. If you want to discuss an alternative approach, contact the FDA staff responsible for
+implementing this guidance. If you cannot identify the appropriate FDA staff, call the appropriate
+number listed on the title page of this guidance.
+
+
+
+
+                        U.S. Department of Health and Human Services
+                                Food and Drug Administration
+                       Center for Drug Evaluation and Research (CDER)
+
+                                              June 2006
+                                        Clinical Antimicrobial
+                                 Contains Nonbinding Recommendations
+
+
+                                    GUIDANCE FOR SUBMITTING
+                                   INFLUENZA RESISTANCE DATA
+
+Sponsors are encouraged to use the following sample format for submitting influenza resistance
+data for microbiology review. Sponsors should begin these analyses in the earliest clinical stages
+of product development so that sample collection, storage, and analyses are well established at
+the time of the initiation of pivotal studies. If sponsors wish to submit additional information,
+they are encouraged to discuss these suggestions with the division in advance.
+
+One dataset combines patient data, virologic data, genotypic data, and phenotypic data. 1
+Selected clinical outcome data can also be included for exploratory analysis (we recommend
+discussion with the division to establish the format for including these data in the dataset). There
+are a number of ways datasets can be subdivided (i.e., by clinical study1, baseline isolates, or
+designated later isolates) and this should be discussed with the division before submission.
+
+For each study, we recommend constructing datasets as SAS transport files containing the
+following information:
+
+•   One record (row) per patient per isolate.
+•   For treatment studies, a row should be included for the initial isolate obtained before starting
+    study drug (baseline isolate), even if virologic studies (e.g., culture, PCR) are negative. In
+    cases where an assay was negative, insert <LLOQ (lower limit of quantification) or <LOD
+    (limit of detection) where the specific numerical value of the LLOQ or LOD is inserted, as
+    appropriate. Other isolates to be included for treatment studies, and inclusion and
+    designation of isolates for prophylaxis studies, should be discussed with the division.
+•   Data in columns (with suggested column headings shown below) 2 on all isolates.
+•   In studies where both treatment and prophylaxis are evaluated, a column should be included
+    identifying the patient as treatment or prophylaxis group.
+•   In most studies it is anticipated that all isolates for virologic analysis will be obtained using
+    the same methodology (e.g., nasal washing, nasopharyngeal swab, throat swab) that will be
+    described in the protocol and study report. If there is a reason for use of more than one
+    method in the same study, discussion with the division is recommended.
+•   Genotypic data should be provided for (at a minimum) baseline isolates of all patients and
+    the predetermined time points of isolate collection on the corresponding record for each
+    patient isolate.
+•   Phenotypic data should be provided for (at a minimum) baseline isolates and the
+    predetermined time points of isolate collection on the corresponding record for each patient
+    isolate. The FDA recognizes the difficulty of phenotypic analysis of influenza virus and the
+    lack of clinical validation of current assays. Sponsors are strongly encouraged to
+    appropriately collect and store isolates for later analysis. If the pathways to resistance as
+
+
+1
+ For datasets containing multiple studies, a column should be added to identify the relevant study in which the
+subject was enrolled.
+2
+ In the SAS transport files, column headings can be given abbreviated column names to fit the SAS format;
+however, it is suggested that a description of column names be provided to the reviewer in the submission.
+
+
+                                                         1
+                                Contains Nonbinding Recommendations
+
+    defined by genotypic analysis are straightforward, phenotypic analysis, after consultation
+    with the division, may not be necessary.
+•   Depending on the timing of serum specimens for antibody determination relative to isolates
+    obtained for viral isolation, the most appropriate incorporation of serologic results into the
+    dataset should be discussed with the division.
+
+Information to Include with Suggested Column Headings 3
+
+I. Patient Data:
+
+•   Patient identification number (ID number should be unique to all clinical studies of the
+    product)
+•   Isolate (e.g., baseline, day 2 (with day 0 being the start of product administration),
+    discontinuation. Multiple isolates from the same visit should be numbered (e.g., baseline 1,
+    baseline 2)). All isolates should be included even if negative for PCR and cell culture.
+•   Date of isolate
+•   Days of study product treatment on day isolate obtained
+•   Days off study product treatment on day isolate obtained
+•   Previous therapeutic products, if any
+•   Treatment group (e.g., specific dose, active control, placebo)
+•   Indication if data were censored (e.g., discontinuation because of adverse event)
+
+II. Virologic Data (culture and PCR results and quantification as appropriate):
+
+The protocol and study report should include a detailed description of assay methodology and
+explanation of units of measurement for any qualitative or quantitative assays used to identify
+viral isolates. Supporting information should be provided to allow review of assay performance;
+however, use of a specified assay in an antiviral product trial does not constitute FDA review,
+approval, or endorsement of the assay.
+
+•   Baseline measurement (e.g., log10 influenza RNA copies/mL of nasal wash at baseline, log10
+    TCID50/mL). (For therapeutic studies, after onset of illness and before receipt of study
+    product.)
+•   Measurements using the same units at predefined time points (e.g., day 2), one column for
+    each time point including baseline (i.e., the measurement throughout the course of infection
+    is repeated for each isolate)
+•   Measurements from additional time points can be included
+
+III. Genotypic Data (for baseline isolates of all patients and predetermined time points):
+
+•   Subtype for influenza A isolates (e.g., H1N1, H3N2); insert “B” for influenza B to confirm
+    typing
+
+
+3
+ In the SAS transport files, column headings can be given abbreviated column names to fit the SAS format;
+however, it is suggested that a description of column names be provided to the reviewer in the submission.
+
+
+                                                        2
+                           Contains Nonbinding Recommendations
+
+
+•   Genotype information for all the relevant coding regions sequenced; one amino acid per
+    column with the wild-type (WT) amino acid as column heading identified using the one
+    amino acid abbreviation. Changes from WT standard sequence indicated (i.e., blanks
+    indicate no change). Known polymorphic amino acid residues should be flagged with an
+    asterisk in the column heading. For neuraminidase inhibitors, genotype information for both
+    the neuraminidase and hemagglutinin proteins would be relevant.
+
+Example (Table 1 highlights how genotype information should be displayed but does not
+include all column headings previously suggested.)
+
+Table 1. Example of Genotype Information Display
+    Patient #    Isolate    Subtype/Type      C-291         R292        D-293          N-294
+      001          BL          H3N2
+      001        Day 2         H3N2                          K
+      001        Day 5         H3N2                          K
+      002          BL          H1N1
+      002         Day 2        H1N1
+      002         Day 3        H1N1
+BL = baseline
+
+IV. Phenotypic Data (minimally for baseline isolates and predetermined time points):
+
+1. Candidate product
+   • Baseline EC50 value for candidate product
+   • EC50 value of reference strain for candidate product (the reference strain should be a
+      widely available standard lab strain)
+   • Fold change of baseline EC50 value compared to EC50 value of reference strain of
+      candidate product
+   • EC50 value at time of subsequent assessment as appropriate for candidate product
+   • Fold change values in EC50 value at time of subsequent assessment as appropriate
+      compared to reference strain for candidate product
+   • Fold change in EC50 value at time of subsequent assessment as appropriate compared to
+      baseline for candidate product
+
+2. Approved or investigational products in the same class
+   • Fold change in EC50 value of baseline compared to reference strain for each of the
+      approved or investigational products in the same class
+   • Fold change in EC50 value at time of subsequent assessment as appropriate compared to
+      reference strain for each of the approved or investigational products in the same class
+   • Fold change in the EC50 value at time of subsequent assessment as appropriate compared
+      to baseline for each of the approved or investigational products in the same class
+
+
+
+
+                                               3
+                               Contains Nonbinding Recommendations
+
+Example (Table 2 highlights how phenotype information should be displayed.)
+
+   Table 2. Example of Phenotype Information Display
+                                                                                   Other Products in
+                                            Product X                             Same Product Class*
+
+                        EC50         Ref strain        Δ resis      Δ resis      Δ resis       Δ resis
+                        value        EC50 value       from ref      from BL       from ref       from BL
+        Isolate       Product X      Product X       Product X     Product X     Product Y      Product Y
+       Baseline
+        Day x
+   Product X = candidate product
+   BL = baseline
+   Day x = predefined time point for subsequent assessment as appropriate (e.g., day 2, day 5)
+   Δ resis = fold resistance change, e.g.: EC50 value of baseline isolate with Product X
+                                           EC50 value of reference strain with Product X
+   Ref strain = reference strain (or WT)
+   *Note: The Δ resis from ref and Δ resis from BL should be included for all approved anti-influenza products.
+
+
+
+
+                                                       4
+

@@ -1,0 +1,1280 @@
+Guidance for Industry
+ Exposure-Response Relationships — Study
+   Design, Data Analysis, and Regulatory
+               Applications
+
+
+
+
+         U.S. Department of Health and Human Services
+                  Food and Drug Administration
+        Center for Drug Evaluation and Research (CDER)
+       Center for Biologics Evaluation and Research (CBER)
+                             April 2003
+                                CP
+Guidance for Industry
+ Exposure-Response Relationships — Study
+   Design, Data Analysis, and Regulatory
+               Applications
+
+                   Additional copies are available from:
+
+                  Office of Training and Communications
+                 Division of Drug Information, HFD-240
+             Center for Drug Evaluation and Research (CDER)
+                       Food and Drug Administration
+                              5600 Fishers Lane
+                            Rockville, MD 20857
+                             (Tel) 301-827-4573
+               http://www.fda.gov/cder/guidance/index.htm
+
+                                    or
+
+  Office of Communication, Training and Manufacturers Assistance, HFM-40
+             Center for Biologics Evaluation and Research (CBER)
+                         Food and Drug Administration
+               1401 Rockville Pike, Rockville, MD 20852-1448
+              Voice Information: 800-835-4709 or 301-827-1800
+                    http://www.fda.gov/cber/guidelines.htm
+
+
+
+
+            U.S. Department of Health and Human Services
+                     Food and Drug Administration
+           Center for Drug Evaluation and Research (CDER)
+          Center for Biologics Evaluation and Research (CBER)
+                                April 2003
+                                                 TABLE OF CONTENTS
+
+I.        INTRODUCTION................................................................................................................. 1
+II. BACKGROUND ................................................................................................................... 2
+III. DRUG DEVELOPMENT AND REGULATORY APPLICATIONS .............................. 2
+     A.      Information to Support the Drug Discovery and Development Processes ............................... 3
+     B.      Information to Support a Determination of Safety and Efficacy .............................................. 3
+IV. DOSE-CONCENTRATION-RESPONSE RELATIONSHIPS
+AND EFFECTS OVER TIME..................................................................................................... 8
+     A.      Dose and Concentration-Time Relationships .............................................................................. 8
+     B.      Concentration-Response Relationships: Two Approaches ....................................................... 9
+V.        DESIGNS OF EXPOSURE-RESPONSE STUDIES ......................................................... 9
+     A.      Population vs. Individual Exposure-Response .......................................................................... 10
+     B.      Exposure-Response Study Design .............................................................................................. 10
+     C.      Measuring Systemic Exposure.................................................................................................... 12
+     D.      Measuring Response .................................................................................................................... 15
+VI. MODELING OF EXPOSURE-RESPONSE RELATIONSHIPS .................................. 16
+     A.      General Considerations ............................................................................................................... 17
+     B.      Modeling Strategy........................................................................................................................ 17
+VII.         SUBMISSION INFORMATION: EXPOSURE-RESPONSE STUDY REPORT... 19
+REFERENCES............................................................................................................................ 21
+APPENDIX A: RELATED GUIDANCES .............................................................................. 22
+APPENDIX B: PEDIATRIC DECISION TREE INTEGRATION OF PK-PD .................. 25
+                           Contains Nonbinding Recommendations
+
+
+                                    Guidance for Industry1
+
+         Exposure-Response Relationships: Study Design, Data Analysis,
+                        and Regulatory Applications
+
+
+
+
+This guidance represents the Food and Drug Administration's (FDA's) current thinking on this topic. It
+does not create or confer any rights for or on any person and does not operate to bind FDA or the public.
+An alternative approach may be used if such approach satisfies the requirements of the applicable statutes
+and regulations. If you want to discuss an alternative approach, contact the FDA staff responsible for
+implementing this guidance. If you cannot identify the appropriate FDA staff, call the appropriate
+number listed on the title page of this guidance.
+
+
+
+
+I.      INTRODUCTION
+
+This document provides recommendations for sponsors of investigational new drugs (INDs) and
+applicants submitting new drug applications (NDAs) or biologics license applications (BLAs) on
+the use of exposure-response information in the development of drugs, including therapeutic
+biologics. It can be considered along with the International Conference on Harmonisation (ICH)
+E4 guidance on Dose-Response Information to Support Drug Registration and other pertinent
+guidances (see Appendix A).
+
+This guidance describes (1) the uses of exposure-response studies in regulatory decision-making,
+(2) the important considerations in exposure-response study designs to ensure valid information,
+(3) the strategy for prospective planning and data analyses in the exposure-response modeling
+process, (4) the integration of assessment of exposure-response relationships into all phases of
+drug development, and (5) the format and content for reports of exposure-response studies.
+
+This guidance is not intended to be a comprehensive listing of all of the situations where
+exposure-response relationships can play an important role, but it does provide a range of
+examples of where such information may be of value.
+
+FDA's guidance documents, including this guidance, do not establish legally enforceable
+responsibilities. Instead, guidances describe the Agency's current thinking on a topic and should
+be viewed only as recommendations, unless specific regulatory or statutory requirements are
+cited. The use of the word should in Agency guidances means that something is suggested or
+recommended, but not required.
+1
+ This guidance has been prepared by the Exposure-Response Working Group under the Medical Policy
+Coordinating Committee, Center for Drug Evaluation and Research (CDER), in cooperation with the Center for
+Biologics Evaluation and Research (CBER) at the Food and Drug Administration (FDA).
+
+
+
+                                                      1
+                         Contains Nonbinding Recommendations
+
+
+
+
+II.    BACKGROUND
+
+Exposure-response information is at the heart of any determination of the safety and
+effectiveness of drugs. That is, a drug can be determined to be safe and effective only when the
+relationship of beneficial and adverse effects to a defined exposure is known. There are some
+situations, generally involving a very well-tolerated drug with little dose-related toxicity, in
+which the drug can be used effectively and safely at a single dose well onto the plateau part of its
+exposure-response curve, with little adjustment for pharmacokinetic (PK) or other influences in
+individuals. In most situations, however, for more toxic drugs, clinical use is based on weighing
+the favorable and unfavorable effects at a particular dose. Sometimes with such drugs, the doses
+can be titrated to effect or tolerability. In most cases, however, it is important to develop
+information on population exposure-response relationships for favorable and unfavorable effects,
+and information on how, and whether, exposure can be adjusted for various subsets of the
+population.
+
+Historically, drug developers have been relatively successful at establishing the relationship of
+dose to blood concentrations in various populations, thus providing a basis for adjustment of
+dosage for PK differences among demographic subgroups or subgroups with impaired
+elimination (e.g., hepatic or renal disease), assuming systemic concentration-response
+relationships are unaltered. Far less attention has been paid to establishing the relationship
+between blood concentrations and pharmacodynamic (PD) responses and possible differences
+among population subsets in these concentration-response (often called PK-PD) relationships.
+These can be critical, as illustrated by the different responses to angiotensin-converting enzyme
+(ACE) inhibitors in both effectiveness and safety between Black and Caucasian populations.
+
+For the purposes of this guidance, we are using the broad term exposure to refer to dose (drug
+input to the body) and various measures of acute or integrated drug concentrations in plasma and
+other biological fluid (e.g., Cmax, Cmin, Css, AUC). Similarly, response refers to a direct
+measure of the pharmacologic effect of the drug. Response includes a broad range of endpoints
+or biomarkers ranging from the clinically remote biomarkers (e.g., receptor occupancy) to a
+presumed mechanistic effect (e.g., ACE inhibition), to a potential or accepted surrogate (e.g.,
+effects on blood pressure, lipids, or cardiac output), and to the full range of short-term or long-
+term clinical effects related to either efficacy or safety. This exposure-response guidance focuses
+on human studies, but exposure-response information in animal pharmacology/toxicology studies
+is also a highly useful component of planning the drug development process (Peck 1994; Lesko
+2000).
+
+III.   DRUG DEVELOPMENT AND REGULATORY APPLICATIONS
+
+This section describes the potential uses of exposure-response relationships in drug development
+and regulatory decision-making. The examples are not intended to be all-inclusive, but rather to
+illustrate the value of a better understanding of exposure-response relationships. We recommend
+that sponsors refer to other ICH and FDA guidances for a discussion of the uses of exposure-
+response relationships (see Appendix A).
+
+
+
+                                                 2
+                         Contains Nonbinding Recommendations
+
+
+
+       A.      Information to Support the Drug Discovery and Development Processes
+
+Many drugs thought to be of potential value in treating human disease are introduced into
+development based on knowledge of in vitro receptor binding properties and identified
+pharmacodynamic effects in animals. Apart from describing the tolerability and PK of a drug in
+humans, Phase 1 and 2 studies can be used to explore the relationship of exposure (whether dose
+or concentration) to a response (e.g., nonclinical biomarkers, potentially valid surrogate
+endpoints, or short-term clinical effects) to (1) link animal and human findings, (2) provide
+evidence that the hypothesized mechanism is affected by the drug (proof of concept), (3) provide
+evidence that the effect on the mechanism leads to a desired short-term clinical outcome (more
+proof of concept), or (4) provide guidance for designing initial clinical endpoint trials that use a
+plausibly useful dose range. Both the magnitude of an effect and the time course of effect are
+important to choosing dose, dosing interval, and monitoring procedures, and even to deciding
+what dosage form (e.g., controlled-release dosage form) to develop. Exposure-response and PK
+data can also define the changes in dose and dosing regimens that account for intrinsic and
+extrinsic patient factors.
+
+       B.      Information to Support a Determination of Safety and Efficacy
+
+Apart from their role in helping design the well-controlled studies that will establish the
+effectiveness of a drug, exposure-response studies, depending on study design and endpoints,
+can:
+
+• Represent a well-controlled clinical study, in some cases a particularly persuasive one,
+   contributing to substantial evidence of effectiveness (where clinical endpoints or accepted
+   surrogates are studied)
+
+• Add to the weight of evidence supporting efficacy where mechanism of action is well
+   understood (e.g., when an effect on a reasonably well-established biomarker/surrogate is used
+   as an endpoint)
+
+• Support, or in some cases provide primary evidence for, approval of different doses, dosing
+   regimens, or dosage forms, or use of a drug in different populations, when effectiveness is
+   already well-established in other settings and the study demonstrates a PK-PD relationship
+   that is similar to, or different in an interpretable way from the established setting
+
+In general, the more critical a role that exposure-response information is to play in the
+establishment of efficacy, the more critical it is that it be derived from an adequate and well-
+controlled study (see 21 CFR 314.126), whatever endpoints are studied. Thus, we recommend
+that critical studies (1) have prospectively defined hypotheses/objectives, (2) use an appropriate
+control group, (3) use randomization to ensure comparability of treatment groups and to
+minimize bias, (4) use well-defined and reliable methods for assessing response variables, and
+(5) use other techniques to minimize bias.
+
+
+
+
+                                                 3
+                        Contains Nonbinding Recommendations
+
+In contrast, some of the exposure-response studies considered in this document include analyses
+of nonrandomized data sets where associations between volunteer or patient exposure patterns
+and outcomes are examined. These analyses are often primarily exploratory, but along with
+other clinical trial data may provide additional insights into exposure-response relationships,
+particularly in situations where volunteers or patients cannot be randomized to different
+exposures, such as in comparing effects in demographic subgroups.
+
+       1.     Contributing to Primary Evidence of Effectiveness and/or Safety
+
+       A dose-response study is one kind of adequate and well-controlled trial that can provide
+       primary clinical evidence of effectiveness. The dose-response study is a particularly
+       informative design, allowing observations of benefits and risks at different doses and
+       therefore providing an ability to weigh the benefits and risks when choosing doses. The
+       dose-response study can help ensure that excessive doses (beyond those that add to
+       efficacy) are not used, offering some protection against unexpected and unrecognized
+       dose-related toxicity. Captopril, for example, was a generally well-tolerated drug that
+       caused dose and concentration-related agranulocytosis. Earlier recognition that daily
+       doses beyond 75-150 milligrams were not necessary, and that renal impairment led to
+       substantial accumulation, might have avoided most cases of agranulocytosis.
+
+       Dose-response studies can, in some cases, be particularly convincing and can include
+       elements of internal consistency that, depending on the size of the study and outcome,
+       can allow reliance on a single clinical efficacy study as evidence of effectiveness. Any
+       dose-response study includes several comparisons (e.g., each dose vs. placebo, each dose
+       vs. lower doses). A consistent ordering of these responses (most persuasive when, for
+       example, several doses are significantly different from placebo and, in addition, show an
+       increasing response with dose) represents at least internal (within-study) replication,
+       reducing the possibility that an apparent effect is due to chance. In principle, being able
+       to detect a statistically significant difference in pairwise comparisons between doses is
+       not necessary if a statistically significant trend (upward slope) across doses can be
+       established, as described in the ICH E4 guidance on dose-response. It may be advisable,
+       however, if the lowest dose tested is to be recommended, to have additional data on that
+       dose.
+
+       In some cases, measurement of systemic exposure levels (e.g., plasma drug
+       concentrations) as part of dose-response studies can provide additional useful
+       information. Systemic exposure data are especially useful when an assigned dose is
+       poorly correlated with plasma concentrations, obscuring an existing concentration-
+       response relationship. This can occur when there is a large degree of interindividual
+       variability in pharmacokinetics or there is a nonlinear relationship between dose and
+       plasma drug concentrations. Blood concentrations can also be helpful when (1) both
+       parent drug and metabolites are active, (2) different exposure measures (e.g., Cmax,
+       AUC) provide different relationships between exposure and efficacy or safety, (3) the
+       number of fixed doses in the dose-response studies is limited, and (4) responses are
+       highly variable and it is helpful to explore the underlying causes of variability of
+       response.
+
+
+
+                                                4
+                 Contains Nonbinding Recommendations
+
+
+
+2.     Providing Support for Primary Efficacy Studies
+
+Exposure-response information can support the primary evidence of safety and/or
+efficacy. In some circumstances, exposure-response information can provide important
+insights that can allow a better understanding of the clinical trial data (e.g., in explaining
+a marginal result on the basis of knowledge of systemic concentration-response
+relationships and achieved concentrations). Ideally, in such cases the explanation would
+be further tested, but in some cases this information could support approval. Even when
+the clinical efficacy data are convincing, there may be a safety concern that exposure-
+response data can resolve. For example, it might be reassuring to observe that even
+patients with increased plasma concentrations (e.g., metabolic outliers or patients on
+other drugs in a study) do not have increased toxicity in general or with respect to a
+particular concern (e.g., QT prolongation). Exposure-response data thus can add to the
+weight of evidence of an acceptable risk/benefit relationship and support approval. The
+exposure-response data might also be used to understand or support evidence of subgroup
+differences suggested in clinical trials, and to establish covariate relationships that
+explain, and enhance the plausibility of, observed subgroup differences in response.
+
+Exposure-response data using short-term biomarkers or surrogate endpoints can
+sometimes make further exposure-response data from clinical endpoint exposure-
+response studies unnecessary. For example, if it can be shown that the short-term effect
+does not increase past a particular dose or concentration, there may be no reason to
+explore higher doses or concentrations in the clinical trials. Similarly, short-term
+exposure-response studies with biomarkers might be used to evaluate early (e.g., first
+dose) responses seen in clinical trials.
+
+3.     Supporting New Target Populations, Use in Subpopulations, Doses/Dosing
+       Regimens, Dosage Forms, and Routes of Administration
+
+Exposure-response information can sometimes be used to support use, without further
+clinical data, of a drug in a new target population by showing similar (or altered in a
+defined way) concentration-response relationships for a well-understood (i.e., the shape
+of the exposure-response curve is known), short-term clinical or pharmacodynamic
+endpoint. Similarly, this information can sometimes support the safety and effectiveness
+of alterations in dose or dosing interval or changes in dosage form or formulation with
+defined PK effects by allowing assessment of the consequences of the changes in
+concentration caused by these alterations. In some cases, if there is a change in the mix
+of parent and active metabolites from one population (e.g., pediatric vs. adult), dosage
+form (e.g., because of changes in drug input rate), or route of administration, additional
+exposure-response data with short-term endpoints can support use in the new population,
+the new product, or new route without further clinical trials.
+
+       a.      New target populations
+
+
+
+
+                                          5
+         Contains Nonbinding Recommendations
+
+A PK-PD relationship or data from an exposure-response study can be used to
+support use of a previously approved drug in a new target patient population, such
+as a pediatric population, where the clinical response is expected to be similar to
+the adult population, based on a good understanding of the pathophysiology of the
+disease, but there is uncertainty as to the appropriate dose and plasma
+concentration. A decision tree illustrating the use of a PK-PD relationship for
+bridging efficacy data in an adult population to a pediatric population is shown in
+Appendix B. Possible use of PK-PD bridging studies assessing a well-described
+PD endpoint (e.g., beta-blockade, angiotensin I or II inhibition) to allow extension
+of clinical trial information performed in one region to another region is discussed
+in the ICH E5 guidance on Ethnic Factors in the Acceptability of Foreign Clinical
+Data.
+
+b.     Adjustment of dosages and dosing regimens in subpopulations defined on
+       the basis of intrinsic and extrinsic factors
+
+Exposure-response information linking dose, concentration, and response can
+support dosage adjustments in patients where pharmacokinetic differences are
+expected or observed to occur because of one or more intrinsic (e.g.,
+demographic, underlying or accompanying disease, genetic polymorphism) or
+extrinsic (e.g., diet, smoking, drug interactions) factors. In some cases, this is
+straightforward, simply adjusting the dose to yield similar systemic exposure for
+that population. In others, it is not possible to adjust the dose to match both Cmax
+and AUC. Exposure-response information can help evaluate the implications of
+the different PK profiles. In some cases, exposure-response information can
+support an argument that PK changes in exposure would be too small to affect
+response and, therefore, that no dose or dose regimen adjustments are appropriate.
+
+c.     New dose regimens, dosage forms and formulations, routes of
+       administration, and minor product changes.
+
+A known exposure-response relationship can be used to (1) interpolate previous
+clinical results to new dosages and dosing regimens not well studied in clinical
+trials, (2) allow marketing of new dosage forms and formulations, (3) support
+different routes of administration, and (4) ensure acceptable product performance
+in the presence of changes in components, composition, and method of
+manufacture that lead to PK differences. Generally, these uses of exposure-
+response information are based on an understanding of the relationship between
+the response and concentration, and between dose and concentration.
+
+Exposure-response data can sometimes be used to support a new dose or dosing
+schedule (e.g., twice a day to once a day) that was not studied in safety and
+efficacy clinical trials. Exposure-response information can provide insight into
+the effect of the change in concentrations achieved with these changes and
+whether or not this will lead to a satisfactory therapeutic response. The new
+regimen would usually be within the range of total doses studied clinically, but in
+
+
+
+                                 6
+         Contains Nonbinding Recommendations
+
+certain circumstances could be used to extend an approved dose range without
+additional clinical safety and efficacy data. For example, a once-daily dosing
+regimen could produce a higher Cmax and a lower Cmin than the same dose
+given as a twice-daily regimen. If exposure-response data were available, it might
+be considered reasonable to increase the recommended daily dose to maintain a
+similar Cmin, even without further studies. Exposure-response data are not likely
+to be useful in lieu of clinical data in supporting new dosing schedules unless the
+relationship of the measured responses to relevant safety and efficacy outcomes is
+well understood.
+
+In some cases, exposure-response data can support the approval of a new drug
+delivery system (e.g., a modified-release dosage form) when the PK profile is
+changed intentionally relative to an approved product, generally an immediate-
+release dosage form. A known exposure-response relationship could be used to
+determine the clinical significance of the observed differences in exposure, and to
+determine whether additional clinical efficacy and/or safety data are
+recommended.
+
+Exposure-response data can also support a new formulation that is unintentionally
+pharmacokinetically different from the formulation used in the clinical trials to
+demonstrate safety, or efficacy and safety. In the case of new drugs, in vitro
+and/or in vivo bioequivalence testing alone is usually used to show that the
+performance of a new formulation (e.g., to-be-marketed formulation) is equivalent
+to that used to generate the primary efficacy and safety data. It is possible to
+demonstrate differences in exposure that are real but not clinically important, even
+when the 90% confidence interval for the bioequivalence measures fall within the
+standard of 80-125%. It is possible for these bioequivalence studies to fail to
+meet the standard bioequivalence acceptance intervals of 80-125%. Rather than
+reformulating the product or repeating the bioequivalence study, a sponsor may be
+able to support the view that use of a wider confidence interval or accepting a real
+difference in bioavailability or exposure would not lead to a therapeutic
+difference. In other cases, where the altered bioavailability could be of clinical
+consequence, adjustment of the marketed dosage strength might be used to adjust
+for the PK difference.
+
+In the case of biological drugs, changes in the manufacturing process often lead to
+subtle unintentional changes in the product, resulting in altered pharmacokinetics.
+In cases in which the change in product can be determined not to have any
+pharmacologic effects (e.g., no effect on unwanted immunogenicity), exposure-
+response information may allow appropriate use of the new product. Exposure-
+response data are not likely to obviate the need for clinical data when formulation
+or manufacturing changes result in altered pharmacokinetics, unless the
+relationships between measured responses and relevant clinical outcomes are well
+understood.
+
+
+
+
+                                 7
+                         Contains Nonbinding Recommendations
+
+               Exposure-response information could also be used to support a change in route of
+               administration of a drug. An established exposure-response relationship would
+               allow interpretation of the clinical significance of the difference in PK related to
+               the different route. Such information about active metabolites could also be
+               important in this situation.
+
+IV.    DOSE-CONCENTRATION-RESPONSE RELATIONSHIPS
+       AND EFFECTS OVER TIME
+
+Depending on the purpose of the study and the measurements made, exposure-response
+information can be obtained at steady state without consideration of the impact of fluctuations in
+exposure and response over time, or can be used to examine responses at the various
+concentrations attained after a single dose during the dosing interval or over the course of
+treatment. Where effectiveness is immediate and is readily measured repeatedly in the course of
+a dosing interval (e.g., analgesia, blood pressure, blood glucose), it is possible to relate clinical
+response to blood concentrations over time, which can provide critical information for choosing
+a dose and dosing interval. This is standard practice with antihypertensives, for example, where
+effect at the end of the dose interval and at the time of the peak plasma concentration is routinely
+assessed and where 24-hour automated BP measurements are often used. Controlled-release
+decongestants have also been assessed for their effects over the dosing interval, especially the
+last several hours of the dosing interval.
+
+Often, however, the clinical measurement is delayed or persistent compared to plasma
+concentrations, resulting in an exposure-response relationship with considerable hysteresis.
+Even in this case, exposure-response relationships can be informative. Furthermore, safety
+endpoints can have a time-dependent concentration-response relationship and it could be
+different from that of the desired effect.
+
+       A.      Dose and Concentration-Time Relationships
+
+As noted in the ICH E4 guidance for industry on Dose-Response Information to Support Drug
+Registration, dose-response information can help identify an appropriate starting dose and
+determine the best way (how often and by how much) to adjust dosage for a particular patient. If
+the time course of response and the exposure-response relationship over time is also assessed,
+time-related effects on drug action (e.g., induction, tolerance, and chronopharmacologic effects)
+can be detected. In addition, testing for concentration-response relationships within a single
+dosing interval for favorable and adverse events can guide the choice of dosing interval and dose
+and suggest benefits of controlled-release dosage forms. The information on the effects of dose,
+concentration, and response can be used to optimize trial design and product labeling.
+
+Although dose is the measurement of drug exposure most often used in clinical trials, it is plasma
+concentration measurements that are more directly related to the concentration of the drug at the
+target site and thus to the effect. Relationships between concentration and response can, of
+course, vary among individuals, but concentration-response relationships in the same individual
+over time are especially informative because they are not potentially confounded by dose-
+selection/titration phenomena and inter-individual PK variability.
+
+
+
+                                                  8
+                         Contains Nonbinding Recommendations
+
+
+
+       B.      Concentration-Response Relationships: Two Approaches
+
+There are two fundamentally different approaches to examining plasma concentration-response
+relationships: (1) observing the plasma concentrations attained in patients who have been given
+various doses of drug and relating the plasma concentrations to observed response; and (2)
+assigning patients randomly to desired plasma concentrations, titrating dose to achieve them, and
+relating the concentration to observed response. In some cases, concentration-response
+relationships obtained from these studies can provide insight over and above that obtained
+through looking at the dose-response relationship.
+
+The first kind of study (# 1 above) is the usual or most common way of obtaining exposure-
+response information, but this kind of study can be misleading unless it is analyzed using
+specialized approaches (e.g., Sheiner, Hashimoto, and Beal 1991). Even when appropriately
+analyzed, potential confounding of the concentration-response relationship can occur and an
+observed concentration-response relationship may not be credible evidence of an exposure-
+response relationship. (See ICH E4). For example, if it were found that patients with better
+absorption, and thus higher concentrations, had greater response, this might not be related to the
+higher concentrations but to another factor causing both the greater absorption and the greater
+response. Similarly, renal failure could simultaneously lead to increased plasma concentrations
+and susceptibility to adverse effects, leading to an erroneous conclusion that concentration is
+related to adverse effects. Also, a study that titrated only nonresponders to higher doses might
+show a lower response with higher concentrations (i.e., a bell-shaped concentration-response (or
+dose-response) curve, a result that would not reflect the true population exposure-response
+relationship). Thus, although it is useful to look in data for such relationships, we suggest that
+they be subjected to further evaluation. The potential problem of interrelated factors leading to
+both an effect on pharmacokinetics and an effect on response and therefore an erroneous
+concentration-response relationship when individuals are not randomized to concentrations
+generally does not occur when concentration-response relationships in the same individual are
+observed over time (e.g., over a dosing interval).
+
+The second kind of study (# 2 above) is the randomized, concentration-controlled trial (e.g.,
+Sanathanan and Peck 1991). While less common than the first kind of study, it is a credible
+controlled effectiveness study. Unlike the first approach, this approach is not affected by the
+potential confounding factors noted above, such as an unrecognized relationship between
+pharmacokinetics and responsiveness, or by the random imbalance of influential factors in the
+way patients are chosen to receive higher doses.
+
+V.     DESIGNS OF EXPOSURE-RESPONSE STUDIES
+
+As noted above, exposure-response studies can examine the relationships between randomly
+assigned dose or plasma concentration and PD response (biomarker, surrogate, or clinical
+endpoint) or examine the relationship between attained plasma concentration and PD response.
+The appropriate designs depend on the study purpose. Randomization of patients to different
+doses or concentrations is an essential aspect of the design of well-controlled studies to establish
+efficacy, but other designs can also be informative or can suggest further study. The designs of
+
+
+
+                                                 9
+                        Contains Nonbinding Recommendations
+
+exposure-response studies discussed here thus also include nonrandomized approaches that can
+assume mechanistic models for relationships and that do not rely on randomization for making
+comparisons.
+
+       A.      Population vs. Individual Exposure-Response
+
+Exposure-response relationships based on data from randomized parallel studies in which each
+treatment group receives a single dose level provide an estimate of the distribution of individual
+responses at that dose, but do not provide information about the distribution of individual dose-
+response relationships. Administration of several dose levels to each study participant (crossover
+study) can provide information about the distribution of individual exposure-response
+relationships. The individual data allow examination of the relative steepness or flatness of an
+individual exposure-response relationship and the distinctions between responders and
+nonresponders. In such crossover studies, it is important to take sequence and duration of dosing
+into account, as well as the possibility of sequence and carryover effects.
+
+       B.      Exposure-Response Study Design
+
+The various exposure-response study designs and their strengths and limitations have been
+extensively discussed in the ICH E4 guidance on Dose Response Information to Support Drug
+Registration. The statistical considerations in designing dose-response studies are briefly
+considered in the ICH E9 guidance on Statistical Principles for Clinical Trials.
+
+In this section, important study design issues for exposure-response analyses are emphasized and
+summarized without repeating details already described in the ICH E4 guidance. In general, the
+rigor of the design (e.g., whether or not the study is adequate and well-controlled) for an
+exposure-response study depends on the purpose of the study. During the drug discovery and
+development stage, the exposure-response studies can be more exploratory, because they are
+intended to gather information for designing later, more definitive studies. In addition, as
+emphasized in the ICH E4 guidance, it is important to examine the entire drug development
+database for potentially interesting exposure-response relationships. For example, sex differences
+in response can sometimes be explained by observed sex-related PK data obtained during trials
+(population PK data) or in studies obtaining blood samples for measuring plasma concentrations
+in patients with adverse effects. When an exposure-response study is designed to support
+regulatory decisions by providing evidence of efficacy, randomization to exposure (dose or
+concentration) is critical.
+
+The strengths and limitations of various exposure-response study designs are described in the
+ICH E4 guidance and are briefly summarized in Table I.
+
+
+
+
+                                               10
+                      Contains Nonbinding Recommendations
+
+
+
+Table 1.     Points for Consideration in Different Study Designs from the
+             Exposure-Response Perspective
+
+
+ Study Design         Points to Consider in Study Design and Exposure-Response
+                      Analysis
+ Crossover, fixed     • For immediate, acute, reversible responses
+ dose, dose           • Provide both population mean and individual exposure-response
+ response                information
+                      • Safety information obscured by time effects, tolerance, etc.
+                      • Treatment by period interactions and carryover effects are
+                         possible; dropouts are difficult to deal with
+                      • Changes in baseline-comparability between periods can be a
+                         problem
+ Parallel, fixed      • For long-term, chronic responses, or responses that are not quickly
+ dose, dose              reversible
+ response             • Provides only population mean, no individual dose response
+                      • Should have a relatively large number of subjects (1 dose per
+                         patient)
+                      • Gives good information on safety
+
+ Titration            •   Provide population mean and individual exposure-response
+                          curves, if appropriately analyzed
+                      •   Confounds time and dose effects, a particular problem for safety
+                          assessment
+ Concentration-       •   Directly provides group concentration-response curves (and
+ controlled, fixed        individual curves, if crossover) and handles intersubject variability
+ dose, parallel, or       in pharmacokinetics at the study design level rather than data
+ crossover                analysis level
+                      •   Requires real-time assay availability
+
+
+
+
+                                            11
+                               Contains Nonbinding Recommendations
+
+
+           C.       Measuring Systemic Exposure
+
+There are many important considerations in selecting one or more active moieties in plasma for
+measurement and in choosing specific measures of systemic exposure. Some of these
+considerations are summarized below.
+
+                    1.       Chemical Moieties for Measurement
+
+                    a.       Active moieties
+
+                    To the extent possible, it is important that exposure-response studies include
+                    measurement of all active moieties (parent and active metabolites) that contribute
+                    significantly to the effects of the drug. This is especially important when the
+                    route of administration of a drug is changed, as different routes of administration
+                    can result in different proportions of parent compound and metabolites in plasma.
+                    Similarly, hepatic or renal impairment or concomitant drugs can alter the relative
+                    proportions of a drug and its active metabolites in plasma.
+
+                    b.       Racemates and enantiomers
+
+                    Many drugs are optically active and are usually administered as the racemate.
+                    Enantiomers sometimes differ in both their pharmacokinetic and
+                    pharmacodynamic properties. Early elucidation of the PK and PD properties of
+                    the individual enantiomers can help in designing a dosing regimen and in deciding
+                    whether it can be of value to develop one of the pure enantiomers as the final drug
+                    product. Further description on how to develop information for a drug with one
+                    or more chiral centers is provided in an FDA Policy Statement, Development of
+                    New Stereoisomeric Drugs.2
+
+                    c.       Complex mixtures
+
+                    Complex drug substances can include drugs derived from animal or plant
+                    materials and drugs derived from traditional fermentation processes (yeast, mold,
+                    bacterium, or other microorganisms). For some of these drug substances,
+                    identification of individual active moieties and/or ingredients is difficult or
+                    impossible. In this circumstance, measurement of only one or more of the major
+                    active moieties can be used as a “marker of exposure” in understanding exposure-
+                    response relationships and can even be used to identify the magnitude of
+                    contribution from individual active moieties.
+
+                    d.       Endogenous ligand measurements
+
+                    The response to a drug is often the result of its competition with an endogenous
+                    ligand for occupancy of a receptor. For example, a beta-blocker exerts its effect
+                    by competing with endogenous catecholamines for receptor sites. Taking into
+2
+    This document is available on the Internet at http://www.fda.gov/cder/guidance/stereo.htm.
+
+
+                                                          12
+          Contains Nonbinding Recommendations
+
+account endogenous catecholamine concentrations as well as drug concentrations
+may help explain the overall physiological response in patients with different
+concentrations of circulating catecholamines. Biorhythms can affect the
+concentrations of endogenous compounds, which can make adjustments in daily
+dosing schedule important, as seen in some treatment regimens for hypertension.
+Consideration of the endogenous ligand concentration and the drug concentration
+in various tissues, and of the relative affinities of the ligand to the drug can be
+important to explain concentration-response relationships.
+
+e.     Unbound drug and/or active metabolite (protein binding)
+
+Most standard assays of drug concentrations in plasma measure the total
+concentration, consisting of both bound and unbound drug. Renal or hepatic
+diseases can alter the binding of drugs to plasma proteins. These changes can
+influence the understanding of PK and PK-PD relationships. Where feasible,
+studies to determine the extent of protein binding and to understand whether this
+binding is or is not concentration-dependent are important, particularly when
+comparing responses in patient groups that can exhibit different plasma protein
+binding (e.g., in various stages of hepatic and renal disease). For highly protein
+bound drugs, PK and PK-PD modeling based on unbound drug concentrations
+may be more informative, particularly if there is significant variation in binding
+among patients or in special populations of patients.
+
+A special case of protein binding is the development of antibodies to a drug.
+Antibodies can alter the pharmacokinetics of a drug and can also affect PK-PD
+relationships by neutralizing the activity of the drug or preventing its access to the
+active site.
+
+2.     Exposure Variables
+
+Pharmacokinetic concentration time curves for a drug and/or its metabolites can
+be used to identify exposure metrics such as AUC, Cmax, or Cmin. These simple
+measurements of exposure ignore the time course of exposure, in contrast to the
+sequential measurement of concentration over time. The most appropriate
+representation of exposure will depend on the study objectives, the study design,
+and the nature of the relationship between exposure and response. If response
+varies substantially with time within a dosage interval, then the maximum
+information on exposure-response will normally be retrieved by relating response
+to concentration within the group and individual subjects. When a single
+pharmacodynamic response is obtained once on a given sampling day, it may be
+more appropriate to represent the exposure by more simplified metrics such as
+AUC, Cmax, or Cmin.
+
+
+
+
+                                  13
+          Contains Nonbinding Recommendations
+
+a.     Area under the concentration-time profiles (AUC)
+
+The area under the concentration-time full profile is a typical pharmacokinetic
+variable used to represent the average drug concentration over a time period. It is
+also a variable that can be used to compare exposure to a drug after multiple doses
+to single dose exposure. It is frequently useful to correlate long-term drug effects
+to steady-state AUC, as the effects usually reflect the daily exposure to drug
+following multiple dosing.
+
+b.     Peak plasma concentrations (Cmax)
+
+Peak plasma concentrations of a drug can be associated with a PD response,
+especially adverse events. There can be large interindividual variability in the
+time to peak concentration, and closely spaced sampling times are often critical to
+determining the peak plasma concentration accurately in individual patients. It is
+important to have a well-designed sampling plan for estimating peak
+concentrations and be able to account for expected differences in PK profiles
+(e.g., in Tmax, time to Cmax) due to demographics, disease states, and food
+effects, if any.
+
+c.     Trough plasma concentrations (Cmin)
+
+During chronic therapy, collection of multiple plasma samples over a dosing
+interval is often not practical. As a substitute, a trough plasma sample can be
+collected just before administration of the next dose at scheduled study visits.
+Trough concentrations are often proportional to AUC, because they do not reflect
+drug absorption processes, as peak concentrations do in most cases. For many of
+the drugs that act slowly relative to the rates of their absorption, distribution, and
+elimination, trough concentration and AUC can often be equally well correlated
+with drug effects.
+
+d.     Sparse plasma concentrations
+
+An increasingly common sampling practice in clinical trials is to obtain plasma
+samples at randomly selected times during the study, or at prespecified but
+different times, to measure drug concentration and, in some cases, response. With
+only two or three samples per subject, the usual pharmacokinetic data analysis
+methods will not be able to make precise estimates of individual PK parameters.
+In these circumstances, a specialized technique, population PK analysis combined
+with Bayesian estimation method, can be used to approximate population and
+individual PK parameters, providing an exposure variable that is more readily
+correlated to response than the sparse plasma concentrations themselves. This
+approach is particularly useful when relatively complete PK information is
+desired, but it is difficult or unethical to sample repeatedly C for example, in
+pediatric and geriatric populations (see the FDA guidance for industry on
+Population Pharmacokinetics).
+
+
+
+                                  14
+                      Contains Nonbinding Recommendations
+
+
+
+            e.      Plasma concentration-time profiles
+
+            In traditional PK studies (not sparse sampling), the concentrations of active
+            moieties are measured over time. This allows not only calculation of AUC but
+            also the determination of concentration versus time profiles over a dosing interval
+            for each individual, as well as the population. This approach yields relatively
+            detailed exposure information that can be correlated to the observed response in
+            individuals. The exposure-response relationship based on concentration-time
+            profiles can provide time-dependent information that cannot be derived from
+            AUC or Cmin.
+
+    D.      Measuring Response
+
+Broadly speaking, both positive (efficacy) and negative (safety) effects of a drug can be
+characterized using a variety of measurements or response endpoints. These effects include
+clinical outcomes (clinical benefit or toxicity), effects on a well-established surrogate (change
+in blood pressure or QT interval), and effects on a more remote biomarker (change in ACE
+inhibition or bradykinin levels) thought to be pertinent to clinical effects. All of these
+measurements can be expected to show exposure-response relationships that can guide
+therapy, suggest efficacy or safety, dose and dosing intervals, or suggest a hypothesis for
+further study.
+
+In many cases, multiple response endpoints are more informative than single endpoints for
+establishing exposure-response relationships. Specifically, less clinically persuasive
+endpoints (biomarkers, surrogates) can help in choosing doses for the larger and more
+difficult clinical endpoint trials and can suggest areas of special concern. In most cases, it is
+important to standardize the measurement of response endpoints across studies and between
+study sites and/or laboratories.
+
+    1.      Biomarkers
+
+    Biological marker (biomarker) refers to a variety of physiologic, pathologic, or anatomic
+    measurements that are thought to relate to some aspect of normal or pathological biologic
+    processes (Temple 1995; Lesko and Atkinson 2001). These biomarkers include
+    measurements that suggest the etiology of, the susceptibility to, or the progress of
+    disease; measurements related to the mechanism of response to treatments; and actual
+    clinical responses to therapeutic interventions. Biomarkers differ in their closeness to the
+    intended therapeutic response or clinical benefit endpoints, including the following:
+
+    •       Biomarkers thought to be valid surrogates for clinical benefit (e.g., blood
+            pressure, cholesterol, viral load)
+    •       Biomarkers thought to reflect the pathologic process and be at least candidate
+            surrogates (e.g., brain appearance in Alzheimer’s Disease, brain infarct size,
+            various radiographic/isotopic function tests)
+
+
+
+
+                                              15
+                       Contains Nonbinding Recommendations
+
+
+      •      Biomarkers reflecting drug action but of uncertain relation to clinical outcome
+             (e.g., inhibition of ADP-dependent platelet aggregation, ACE inhibition)
+      •      Biomarkers that are still more remote from the clinical benefit endpoint (e.g.,
+             degree of binding to a receptor or inhibition of an agonist)
+
+      From a regulatory perspective, a biomarker is not considered an acceptable surrogate
+      endpoint for a determination of efficacy of a new drug unless it has been empirically
+      shown to function as a valid indicator of clinical benefit (i.e., is a valid surrogate).
+      Theoretical justification alone does not meet the evidentiary standards for market access.
+      Many biomarkers will never undergo the rigorous statistical evaluation that would
+      establish their value as a surrogate endpoint to determine efficacy or safety, but they can
+      still have use in drug development and regulatory decision making. Changes in
+      biomarkers typically exhibit a time course that is different from changes in clinical
+      endpoints and often are more directly related to the time course of plasma drug
+      concentrations, possibly with a measurable delay. For this reason, exposure-response
+      relationships based on biomarkers can help establish the dose range for clinical trials
+      intended to establish efficacy. In some cases, these relationships can also indicate how
+      soon titration should occur, and can provide insight into potential adverse effects.
+      Biomarkers can also be useful during the drug discovery and development stage, where
+      they can help link preclinical and early clinical exposure-response relationships and
+      better establish dose ranges for clinical testing.
+
+      2.     Surrogate Endpoint
+
+      Surrogate endpoints are a subset of biomarkers. A surrogate endpoint is a laboratory
+      measurement or physical sign used in therapeutic trials as a substitute for a clinically
+      meaningful endpoint that is expected to predict the effect of the therapy (Temple 1999).
+      A well-validated surrogate endpoint will predict the clinically meaningful endpoint of an
+      intervention (Lesko and Atkinson 2001), with consistent results in several settings. FDA
+      is able to rely on less well-established surrogates for accelerated approval of drugs that
+      provide meaningful benefit over existing therapies for serious or life-threatening illnesses
+      (e.g., acquired immunodeficiency syndrome). In these cases, the surrogates are
+      reasonably likely to predict clinical benefit based on epidemiologic, therapeutic,
+      pathophysiologic, or other scientific evidence. However, generally, in trials examining
+      surrogate endpoints, even where the endpoint is well correlated with a clinical outcome,
+      surrogates will be unable to evaluate clinically relevant effects of the drug unrelated to
+      the surrogate, whether these are beneficial or adverse (Temple 1999).
+
+      3.     Clinical Benefit or Outcome Endpoints
+
+      Clinical benefit endpoints are variables that reflect how a patient feels, functions, or
+      survives. Clinical endpoints reflect desired effects of a therapeutic intervention and are
+      the most credible response measurements in clinical trials.
+
+VI.   MODELING OF EXPOSURE-RESPONSE RELATIONSHIPS
+
+
+
+
+                                               16
+                        Contains Nonbinding Recommendations
+
+
+       A.      General Considerations
+
+Safety information and adequate and well-controlled clinical studies that establish a drug’s
+effectiveness are the basis for approval of new drugs. Exposure-response data can be derived
+from these clinical studies, as well as from other preclinical and clinical studies, and provide a
+basis for integrated model-based analysis and simulation (Machado et al. 2000; Sheiner and
+Steimer 2000). Simulation is a way of predicting expected relationships between exposure and
+response in situations where real data are sparse or absent. There are many different types of
+models for the analysis of exposure-response data (e.g., descriptive PD models (Emax model for
+exposure-response relationships) or empirical models that link a PK model (dose-concentration
+relationship) and a PD model (concentration-response relationship)). Descriptive or empirical
+model-based analysis does not necessarily establish causality or provide a mechanistic
+understanding of a drug’s effect and would not ordinarily be a basis for approval of a new drug.
+Nevertheless, dose-response or PK-PD modeling can help in understanding the nature of
+exposure-response relationships and can be used to analyze adequate and well-controlled trials to
+extract additional insights from treatment responses. Adequate and well-controlled clinical
+studies that investigate several fixed doses and/or measure systemic exposure levels, when
+analyzed using scientifically reasonable causal models, can predict exposure-response
+relationships for safety and/or efficacy and provide plausible hypotheses about the effects of
+alternative doses and dosage regimens not actually tested. This can suggest ways to optimize
+dosage regimens and to individualize treatment in specific patient subsets for which there are
+limited data. Creating a theory or rationale to explain exposure-response relationships through
+modeling and simulation allows interpolation and extrapolation to better doses and responses in
+the general population and to subpopulations defined by certain intrinsic and extrinsic factors.
+
+       B.      Modeling Strategy
+
+In the process of PK-PD modeling, it is important to describe the following prospectively:
+
+       1.      Statement of the Problem
+
+       The objectives of the modeling, the study design, and the available PK and PD data;
+
+       2.      Statement of Assumptions
+
+       The assumptions of the model that can be related to dose-response, PK, PD, and/or one or
+       more of the following:
+
+       •       The mechanism of the drug actions for efficacy and adverse effects
+       •       Immediate or cumulative clinical effects
+       •       Development of tolerance or absence of tolerance
+       •       Drug-induced inhibition or induction of PK processes
+       •       Disease state progression
+       •       Response in a placebo group
+
+
+
+                                               17
+                 Contains Nonbinding Recommendations
+
+
+•      Circadian variations in basal conditions
+•      Influential covariates
+•      Absence or presence of an effect compartment
+•      Presence or absence of active metabolites and their contribution to clinical effects
+•      The PK model of absorption and disposition and the parameters to be estimated
+•      The PD model of effect and the parameters to be estimated
+•      Distribution of PK and PD measures and parameters
+•      Distributions of intra- and inter-individual variability in parameters
+•      Inclusion and/or exclusion of specific patient data
+
+The assumptions can be justified based on previous data or from the results of the current
+analysis.
+
+3.     Selection of the Model
+
+The answer to the question of what constitutes an appropriate model is complex. In
+general, the model selected will be based on the mechanism of action of the drug, the
+assumptions made, and the intended use of the model in decision making. If the
+assumptions do not lead to a mechanistic model, an empirical model can be selected. In
+this case, the validation of the model predictability becomes especially important. The
+available data can also govern the types of models that can be used. The model selection
+process can be a series of trial and error steps. Different model structures or newly added
+or dropped components to an existing model can be assessed by visual inspection and
+tested using one of several objective criteria. New assumptions can be added when
+emerging data indicates that this is appropriate. The final selection of the model will
+usually be based on the simplest model possible that has reasonable goodness of fit, and
+that provides a level of predictability appropriate for its use in decision making.
+
+4.     Validation of the Model
+
+The issue of model validation is not totally resolved. Generally, we recommend that the
+predictive power of a model be dealt with during the study design as well as in the data
+analysis stages and that the study be designed to yield a predictive model. When
+plausible exposure-response models are identified based on prior knowledge of the drug
+before conducting an exposure-response study, the predictive power of the final models
+derived from the study results becomes a function of study design factors, such as
+number of subjects and sampling plan. The predictive power can be estimated through
+simulation, by considering distributions of pharmacokinetic, pharmacodynamic, and
+study design variables. A robust study design will provide accurate and precise model
+parameter estimations that are insensitive to model assumptions.
+
+During the analysis stage of a study, models can be validated based on internal and/or
+external data. The ultimate test of a model is its predictive power and the data used to
+
+
+
+                                        18
+                         Contains Nonbinding Recommendations
+
+       estimate predictability could come from exposure-response studies designed for such a
+       purpose. A common method for estimating predictability is to split the data set into two
+       parts, build the model based on one set of data, and test the predictability of the resulting
+       model on the second set of data. The predictability is especially important when the
+       model is intended to (1) provide supportive evidence for primary efficacy studies, (2)
+       address safety issues, or (3) support new doses and dosing regimens in new target
+       populations or subpopulations defined by intrinsic and extrinsic factors or when there is a
+       change in dosage form and/or route of administration.
+
+VII.   SUBMISSION INFORMATION: EXPOSURE-RESPONSE STUDY REPORT
+
+It is advisable for the general format and content of a clinical study report to be based on that
+presented in the ICH E3 guidance on the Structure and Content of Clinical Study Reports,
+modified to include measurements of exposure and response and planned or actual modeling and
+simulation. It is helpful to include a description of the assay methods used in quantifying drug
+concentrations (if they are components of the exposure measure) as well as assay performance
+(quality control samples), sample chromatograms, standard curves used, where applicable, and a
+description of the validity of the methodologies. The report could also contain:
+
+       •       The response variable and all covariate information
+       •       An explanation of how they were obtained
+       •       A description of the sampling design used to collect the PK and PD measures
+       •       A description of the covariates, including their distributions and, where
+               appropriate, the accuracy and precision with which the responses were measured
+       •       Data quality control and editing procedures
+       •       A detailed description of the criteria and procedures for model building and
+               reduction, including exploratory data analysis
+
+The following components of the data analysis method used in the study would also ordinarily be
+described: (1) the chosen dose-response or PK-PD model, (2) the assumptions and underlying
+rationale for model components (e.g., parameterization, error models), (3) the chosen model-
+fitting method, (4) a description of the treatment of outliers and missing data, where applicable,
+and (5) diagrams, if possible, of the analysis performed and representative control/command files
+for each significant model building and/or reduction step. In presenting results, complete output
+of results obtained for the final dose-response, or PK-PD model, and important intermediate
+steps can be included.
+
+A complete report would include a comprehensive statement of the rationale for model building
+and reduction procedures, interpretation of the results, impact of protocol violations, discussion
+and presentation of supporting graphs, and the ability of the model to predict performance.
+
+It is helpful if an appendix is provided containing the data set used in the dose-response or PK-
+PD analysis, the programming codes along with the printouts of the results of the final model,
+and any additional important plots.
+
+
+
+
+                                                19
+                        Contains Nonbinding Recommendations
+
+Whether the analysis was performed as a result of an add-on to a clinical study or as a stand-
+alone exposure-response study, it is important that the original study protocol and amendments
+be included in the appendix.
+
+The FDA’s Center for Drug Evaluation and Research (CDER) guidance for industry on
+Providing Regulatory Submissions in Electronic Format C NDAs includes information on how
+to submit the exposure-response study report in electronic format. Information on electronic
+submissions to FDA’s Center for Biologics Evaluation and Research (CBER) can be found in the
+guidance for industry on Providing Regulatory Submissions to the Center for Biologics
+Evaluation and Research (CBER) in Electronic Format C Biologics Marketing Applications
+(Biologics License Application (BLA), Product License Application (PLA)/Establishment License
+Application (ELA) and New Drug Application (NDA)). FDA is still actively working on
+standardizing data file formats for exposure-response and other clinical pharmacology data, and
+plans to provide these standards in future versions of the electronic guidance document. In the
+meantime, sponsors are encouraged to submit both the reports and data files with BLA or NDA
+submissions in electronic format. Until the details are included in an electronic BLA or NDA
+guidance document, sponsors can consult the clinical pharmacology and biopharmaceutics
+reviewer or team leader on the data sets to be provided and elements to be included in the data
+sets.
+
+
+
+
+                                               20
+                   Contains Nonbinding Recommendations
+
+
+                                   REFERENCES
+
+
+Lesko, L.J., M. Rowland, C.C. Peck, T.F. Blaschke, 2000, “Optimizing the Science of Drug
+Development: Opportunities for Better Candidate Selection and Accelerated Evaluation in
+Humans,” J. Clin. Pharmacol., 40:803-814.
+
+Lesko, L.J. and A.J. Atkinson, Jr., 2001, “Biomarkers and Surrogate Endpoints – Use in
+Drug Development and Regulatory Decision Making: Criteria, Validation, Strategies,” Ann.
+Rev. Pharmacol. Toxicol., 41:347-366.
+
+Machado, S.G., R. Miller, C. Hu, 1999, “A Regulatory Perspective on
+Pharmacokinetic/Pharmacodynamic Modelling,” Statistical Methods in Medical Research,
+8(3):217-45.
+
+Peck, C.C., W.H. Barr, L.Z. Benet, J. Collins, R.E. Desjardins, D.E. Furst, J.G. Harter, G.
+Levy, T. Ludden, J.H. Rodman, et al., 1994, “Opportunities for Integration of
+Pharmacokinetics, Pharmacodynamics, and Toxicokinetics in Rational Drug Development,”
+J. Clin. Pharmacol., 34(2):111-119.
+
+Sanathanan, L.P. and C.C. Peck, 1991, “The Randomized Concentration-Controlled Trial:
+An Evaluation of Its Sample Size Efficiency,” Controlled Clin. Trials, 12(6):780-94.
+
+Sheiner L.B., Y. Hashimoto, S.L. Beal, 1991, “A Simulation Study Comparing Designs for
+Dose Ranging,” Stat. Med., 10(3):303-21.
+
+Sheiner L.B., J.L. Steimer, 2000, “Pharmacokinetic/Pharmacodynamic Modeling in Drug
+Development,” Ann. Rev. Pharmacol. Toxicol., 40: 67-95.
+
+Sheiner L.B., 1997, “Learning Versus Confirming in Clinical Drug Development,” Clin.
+Pharmacol. Ther., 61(3):275-91.
+
+Temple, R.J., 1995, “A Regulatory Authority’s Opinion About Surrogate Endpoints,” in
+Clinical Measurement in Drug Evaluation, Nimmo and Tucker, Eds., Wiley & Sons.
+
+Temple R.J., 1999, “Are Surrogate Markers Adequate to Assess Cardiovascular Disease
+Drugs?” JAMA, 282(8):790-5.
+
+
+
+
+                                          21
+                           Contains Nonbinding Recommendations
+
+
+                             APPENDIX A: RELATED GUIDANCES3
+
+The use of exposure-response relationships is considered in many FDA guidances for industry as
+well as in various ICH guidances. These guidances can be divided into those that provide
+general advice and those that provide specific recommendations about the use of exposure-
+response information to adjust a dosage regimen based on intrinsic and extrinsic factors. The
+ICH Common Technical Document (ICH M4, Efficacy) suggests a structure to organize the
+submission of exposure-response information. In addition, the statistical considerations for dose-
+response studies are briefly described in the ICH E9 Guidance on Statistical Principles for
+Clinical Trials.
+
+    A. Guidances Providing General Statements
+
+The value of understanding exposure-response has been recognized in numerous domestic and
+international guidances. Brief abstracts of these guidances are provided below to focus on
+exposure-response relationships and the impact of intrinsic and extrinsic factors on these
+relationships.
+
+        1. Providing Clinical Evidence of Effectiveness for Human Drugs and Biological
+           Products
+
+        This guidance provides general information about the efficacy standard (section I) and
+        comments further on the quantity (section II) and quality (section III) of efficacy
+        information needed for a regulatory determination of efficacy based on both statutory and
+        scientific considerations. The guidance focuses on (1) when efficacy for a new product
+        can be extrapolated entirely from existing efficacy studies, (2) when one adequate and
+        well-controlled study of a particular condition, regimen, or dose supported by
+        information from other adequate and well-controlled studies may be appropriate, and (3)
+        when information from a single multicenter study may be appropriate.
+
+        2. Guideline for the Format and Content of the Clinical and Statistical Sections of an
+           Application
+
+        This guidance provides a description of the format and content of the clinical and
+        statistical data package required as part of a new drug application under Title 21, Code of
+        Federal Regulations (CFR) § 314.50. It emphasizes the importance of conducting an
+        integrated analysis of all clinical and preclinical exposure-response data that forms the
+        foundation for dose and dosing regimen determinations and dose adjustments for
+        subpopulations.
+
+        3. ICH E4, Dose Response Information to Support Drug Registration
+
+
+3
+ We update guidances periodically. To make sure you have the most recent version of a guidance, check the CDER
+guidance page at http://www.fda.gov/cder/guidance/index.htm or the CBER guidance page at
+http://www.fda.gov/cber/guidelines.htm.
+
+
+
+                                                     22
+                 Contains Nonbinding Recommendations
+
+This guidance describes the purpose of exposure-response information and the uses of
+dose-response and/or concentration-response data in choosing doses during the drug
+development process. The guidance emphasizes the importance of developing exposure-
+response data throughout development. It further comments on the use of population and
+individual dose-concentration, and concentration- and/or dose-response relationships to
+provide dosage and administration instructions in product labeling. The guidance notes
+that these instructions can include information about both starting dosages and
+subsequent titration steps based on response to the drug, as well as information on how to
+adjust dose in the presence of factors that are intrinsic (age, sex, race, organ dysfunction,
+body size, differences in absorption, distribution, metabolism, and excretion) and extrinsic
+(diet, concomitant medications). The guidance emphasizes the importance of early
+exposure-response data to allow efficient design of later studies and the value of
+examining the entire database to assess exposure-response relationships. The guidance
+further comments on strengths and limitations of various study designs to assess
+exposure-response. The guidance comments briefly on the use of models to amplify
+understanding of exposure-response-relationships and, consistent with 21 CFR 314.126,
+indicates that a well-controlled dose-response study may be one type of study that
+supports efficacy.
+
+4. ICH E5, Ethnic Factors in the Acceptability of Foreign Clinical Data
+
+This guidance provides descriptions of PK and PD studies and expresses PD endpoints as
+safety and/or efficacy measures of activity thought, but not documented, to be related to
+clinical benefit (biomarkers), surrogate endpoints, and clinical benefit endpoints. The
+guidance further defines a PD study as one that describes the relationship between a
+pharmacological effect or clinical benefit effect in relation to dose or drug concentration.
+The guidance establishes a classification system of intrinsic (genetic polymorphism, age,
+sex, height, weight, lean body mass, body composition, and organ dysfunction) and
+extrinsic (medical practice, diet, use of tobacco, use of alcohol, exposure to pollution and
+sunshine, practices in clinical trial design and conduct, socioeconomic status, compliance
+with medication) ethnic factors that can affect safety, efficacy, dosage, and dosage
+regimen determinations. The guidance provides an additional set of factors that indicate
+whether a drug may be sensitive to ethnic factors (linear PK, flat PD curve, wide
+therapeutic range). It focuses on the bridging studies that may be critical for an
+application in a new region based on a clinical data package developed in another region.
+These bridging studies range from those that establish similarity of exposure-response
+relationship in the two regions for a well-established PD effect (e.g., ACE inhibition or
+short-term blood pressure response) to a controlled trial in the new region, preferably a
+dose-response study, using the pertinent clinical endpoint.
+
+
+
+
+                                         23
+                            Contains Nonbinding Recommendations
+
+
+             B. Guidances Providing Specific Statements
+
+    FDA has issued final or draft4 guidances that focus on how to adjust dosages and dosing
+    regimens in the presence of selected intrinsic and extrinsic factors. A general theme of these
+    guidances is that information relating exposure to response can be used to adjust dosages and
+    dosing regimens in the presence of influences on PK such as age, sex (demographic factors),
+    impaired organ function (intrinsic factors), or concomitant medications and diet
+    (extrinsic factors). In many circumstances, where the assumption can be made that the
+    exposure-response relationships are not disturbed by these factors, PK data alone can be used
+    to guide dosages and dosing regimens. This principle is articulated in the following FDA
+    guidances:
+
+        1. ICH E7, Studies in Support of Special Populations: Geriatrics
+
+        2. General Considerations for Pediatric Pharmacokinetic Studies for Drugs and
+           Biological Products (draft)
+
+        3. Pharmacokinetics in Patients with Impaired Renal Function: Study Design, Data
+           Analysis and Impact on Dosing and Labeling
+
+        4. Pharmacokinetics in Patients with Hepatic Insufficiency: Study Design, Data
+           Analysis and Impact on Dosing and Labeling (draft)
+
+        5. In Vivo Metabolism/Drug Interactions Studies: Study Design, Data Analysis and
+           Recommendations for Dosing and Labeling (draft)
+
+        6. Population Pharmacokinetics
+
+
+
+
+4
+ Draft guidances have been included for completeness only. As draft documents, they are not intended to be
+implemented until published in final form.
+
+
+                                                       24
+                 Contains Nonbinding Recommendations
+
+
+  APPENDIX B: PEDIATRIC DECISION TREE INTEGRATION OF PK-PD
+
+
+
+                Pediatric Study Decision Tree
+              Reasonable to assume (pediatrics vs adults)
+               similar disease progression?
+               similar response to intervention?
+               NO                                        YES TO BOTH
+
+•Conduct PK studies                          Reasonable to assume similar
+•Conduct safety/efficacy trials*             concentration-response (C-R)
+                                             in pediatrics and adults?
+         NO                        NO                        YES
+
+ Is there a PD measurement**                 •Conduct PK studies to
+ that can be used to predict                 achieve levels similar to adults
+ efficacy?                                   •Conduct safety trials
+                 YES
+•Conduct PK/PD studies to get            •Conduct safety trials
+C-R for PD measurement
+•Conduct PK studies to achieve
+target concentrations based on C-R
+
+
+
+
+                                        25
+

@@ -1,0 +1,253 @@
+                              Attachment to
+
+  Guidance on Antiviral Product
+   Development — Conducting
+    and Submitting Virology
+     Studies to the Agency
+
+               Guidance for Submitting HIV
+                     Resistance Data
+
+This guidance represents the Food and Drug Administration’s (FDA’s) current thinking on this topic. It
+does not create or confer any rights for or on any person and does not operate to bind FDA or the public.
+You can use an alternative approach if the approach satisfies the requirements of the applicable statutes
+and regulations. If you want to discuss an alternative approach, contact the FDA staff responsible for
+implementing this guidance. If you cannot identify the appropriate FDA staff, call the appropriate
+number listed on the title page of this guidance.
+
+
+
+
+                        U.S. Department of Health and Human Services
+                                Food and Drug Administration
+                       Center for Drug Evaluation and Research (CDER)
+
+                                              June 2006
+                                        Clinical Antimicrobial
+                                   Contains Nonbinding Recommendations
+
+
+                                       GUIDANCE FOR SUBMITTING
+                                         HIV RESISTANCE DATA
+
+Sponsors are encouraged to use the following sample format for submitting HIV resistance data.
+
+One dataset combines patient data, endpoint data, genotypic data, and phenotypic data. There
+are a number of ways datasets can be subdivided (i.e., by clinical study, baseline isolates, or
+virologic failure isolates) and this should be discussed with the division before submission.
+
+For each study, we recommend constructing datasets as SAS transport files containing the
+following information:
+
+•      One record (row) per patient per isolate (e.g., baseline, failure, and other time points).
+•      Data in columns (with suggested column headings shown below) 1 on all isolates.
+•      Genotypic data should be provided on the corresponding record for each patient isolate for
+       baseline isolates of all patients in treatment-experienced studies and the endpoint isolates of
+       virologic failures and discontinuations in all studies. 2 In treatment-naïve studies, a baseline
+       sample should be collected and stored from all patients for future phenotypic and genotypic
+       analysis of virologic failures.
+•      Phenotypic data should be provided on the corresponding record for each patient isolate for
+       baseline isolates and the endpoint isolates of virologic failures and discontinuations.2 In
+       treatment-experienced studies, it is recommended that baseline phenotypic data be obtained
+       for all patients.
+
+The specific criteria for defining virologic failures should be discussed with the division and
+may include multiple primary and secondary protocol endpoints. The endpoints for
+clinical virologic and resistance outcome analyses should be consistent.
+
+Information to Include with Suggested Column Headings1
+
+I. Patient Data:
+
+•      Patient identification number (ID number should be unique for all studies)
+•      Isolate (e.g., baseline, week 24, week 48, discontinuation. Multiple isolates should be
+       numbered.)
+•      Date of isolate
+•      Study day (number of days since the patient started the study product)
+•      Previous therapeutic products where available
+•      Treatment group
+•      Censored for analysis (yes or no)
+
+
+1
+ In the SAS transport files, column headings can be given abbreviated column names to fit the SAS format;
+however, it is suggested that a description of column names be provided to the reviewer in the submission.
+2
+    Treatment and endpoint samples should be collected when the patient is still on the study product.
+
+
+                                                            1
+                                  Contains Nonbinding Recommendations
+
+
+II. Endpoint Data:
+
+•   HIV RNA (copies/mL) at baseline
+•   HIV RNA (copies/mL) at predefined time points (e.g., week 24 and week 48), one column
+    for each time point including baseline (i.e. the viral load throughout the course of the study is
+    provided for each sample)
+•   HIV RNA (copies/mL) at other times (e.g., loss of virologic response or discontinuation
+    because of adverse event)
+•   Endpoint assessment (e.g., mean log change in viral load from baseline)
+•   Other endpoint assessments (e.g., DAVG)
+•   Indication of data were censored for reasons other than virologic failure (e.g., discontinuation
+    because of adverse event)
+•   Outcome (i.e. responder, virologic failure, discontinuation while suppressed, discontinuation
+    before achieving viral suppression)
+•   Reason for discontinuation (i.e., adverse event, pregnancy) or failure (i.e., never suppressed,
+    rebound)
+•   HIV RNA (copies/ml) from additional time points can be included
+
+III. Genotypic Data: 3
+
+•   Clade
+•   Genotype for the RT, protease and gp160 (for products targeting entry only), one amino acid
+    per column with the wild-type (WT) amino acid as column heading. Changes from WT
+    standard sequence indicated (i.e., blanks indicate no change).
+•   Column with total number of PI mutations in patient isolate (for baseline and endpoint
+    isolates). The specific mutations to include should be discussed with the division in advance.
+•   Column with total number of NRTI mutations in patient isolate (for baseline and endpoint
+    isolates). The specific mutations to include should be discussed with the division in advance.
+•   Column with total number of NNRTI mutations in patient isolate (for baseline and endpoint
+    isolates). The specific mutations to include should be discussed with the division in advance.
+
+Example (Table 1 highlights how genotype information can be displayed, but does not include
+all column headings previously suggested.)
+
+
+
+
+3
+  Genotypic data should be provided for baseline isolates of all patients in treatment-experienced studies and the
+endpoint isolates of virologic failures and discontinuations in all studies. In treatment-naïve studies, a baseline
+sample should be collected and stored from all patients for future phenotypic and genotypic analysis of virologic
+failures.
+
+
+                                                           2
+                                    Contains Nonbinding Recommendations
+
+Table 1. Example of Genotype Information Display
+ Patient # Isolate V-82 N-83 I-84 I-85         G-86                 R-87     N-88      L-89 L-90        # PI Mutations
+ 001       BL                                                                S              M/L         2
+ 001       WK48                   V                                          S              M           3
+ 002       BL      A/T            V                                          D              M           4
+ 002       WK48 T                 V                                                         M           3
+ 003       BL      T              V                                                                     2
+ 004       BL                     V                                                            M        2
+BL = baseline
+WK48 = week 48 for investigational product
+
+   IV. Protease Cleavage Sites (for protease inhibitors only):
+
+   •   NC/p1 Gag cleavage sites: show amino acid and position of cleavage site of WT in column
+       headings (as above for genotype) and indicate amino acid change if mutant
+   •   p1/p6 Gag cleavage sites: show amino acid and position of cleavage site of WT in column
+       headings (as above for genotype) and indicate amino acid change if mutant
+
+   V. Phenotypic Data: 4
+
+   1. Information on the investigational product
+      • Baseline EC50 value for investigational product
+      • Baseline EC50 value of reference strain for investigational product
+      • Fold resistant change of baseline EC50 value compared to EC50 value of reference strain
+          of investigational product
+      • EC50 value at time of endpoint assessment or failure for investigational product
+      • Fold change in EC50 value at time of endpoint assessment or failure compared to
+          reference strain for investigational product
+      • Fold change in EC50 value at time of endpoint assessment or failure compared to baseline
+          for investigational product
+      • Replication capacity (if available)
+
+   2. Information on approved and other investigational anti-HIV products (if available) in the
+      same class
+      • Fold change in EC50 value of baseline compared to reference strain for each of the
+          approved and other investigational anti-HIV products (if available)
+      • Fold change in EC50 value at time of endpoint assessment or failure compared to
+          reference strain for each of the approved and other investigational anti-HIV products (if
+          available)
+      • Fold change in EC50 value at time of endpoint assessment or failure compared to baseline
+          for each of the approved and other investigational anti-HIV products (if available)
+
+
+
+   4
+    Phenotypic data should be provided for baseline isolates and the endpoint isolates of virologic failures and
+   discontinuations. In treatment-experienced studies, it is recommended that baseline phenotypic data be obtained for
+   all patients.
+
+
+                                                            3
+                                     Contains Nonbinding Recommendations
+
+3. Information on approved and other investigational products (if available) outside the
+   investigational product’s class with same target protein (e.g., NRTIs and NNRTIs)
+   • Fold change in EC50 value of baseline compared to reference strain for approved and
+       other investigational products (if available) outside the investigational product’s class
+   • Fold change in EC50 value at time of endpoint assessment or failure compared to
+       reference strain for each of the approved and other investigational products (if available)
+       outside the investigational product’s class
+   • Fold change in EC50 value at time of endpoint assessment or failure compared to baseline
+       for each of the approved and other investigational products (if available) outside the
+       investigational product’s class
+
+4. Information on other antiretroviral products in the regimen
+   • Fold change in EC50 value of baseline compared to reference strain for other
+       antiretroviral products in the regimen, one column per product
+   • Fold change in EC50 value at time of endpoint assessment or failure compared to
+       reference strain for other antiretroviral products in the regimen, one column per product
+   • Fold change in EC50 value at time of endpoint assessment or failure compared to baseline
+       for other antiretroviral products in the regimen, one column per product
+
+Example (Table 2 highlights how phenotype information can be displayed, but does not include
+all column headings previously suggested.)
+
+Table 2. Example of Phenotype Information Display
+
+
+                                    Agent X                             Other Agents in the           Other Agents Outside
+                                                                             Same Class*                   Agent Class*
+                  EC50         Ref            Δ        Δ resis        Δ resis     Δ resis          Δ resis    Δ resis
+                  value       strain        resis      from BL         from ref     from BL           from ref    from BL
+    Sample        Agent       EC50          from       Agent X         Agent Y      Agent Y           Agent A Agent A
+                   X          value          ref
+                              Agent         Agent
+                                X             X
+    Baseline
+    Endpoint
+Agent X = candidate agent
+Δ resis = fold resistance change, e.g.:    EC50 value of sample with Agent X
+                                          EC50 value of reference (or baseline) strain with Agent X
+Ref strain = reference strain (or WT)
+Endpoint = predefined time point for endpoint assessment (e.g., week 24, week 48, failure or discontinuation)
+*Note: The Δ resis from ref and Δ resis from BL should be included for all approved anti-HIV products
+
+
+VI. Co-Receptor Usage (for all agents targeting co-receptors):
+
+•   Co-receptor usage of baseline isolates. Indicate R5, X4, D for dual-tropic, M for mixed-
+    tropic, or D/M if the assay cannot distinguish between dual or mixed, in a column.
+•   Baseline R5 tropism assay value (e.g., RLUs).
+•   Baseline X4 tropism assay value (e.g., RLUs).
+
+
+                                                                   4
+                            Contains Nonbinding Recommendations
+
+
+•   Co-receptor usage of virologic failures and end-of-study isolates (on therapy). Indicate R5,
+    X4, D for dual-tropic, M for mixed-tropic, or D/M if the assay cannot distinguish between
+    dual or mixed, in a column.
+•   R5 tropism assay value at failure or end of study (e.g., RLUs).
+•   X4 tropism assay value at failure or end of study (e.g., RLUs).
+
+VII. Therapeutic Drug Monitoring Data (when available):
+
+•   Patient’s Cmin
+•   Serum adjusted IQ (inhibitory quotient = Cmin/serum adjusted EC50 value)
+
+
+
+
+                                                5
+

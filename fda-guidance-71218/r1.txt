@@ -1,0 +1,914 @@
+Guidance for Industry
+E2B(M): Data Elements for
+Transmission of Individual
+   Case Safety Reports
+
+  Questions and Answers
+
+
+
+
+      U.S. Department of Health and Human Services
+               Food and Drug Administration
+     Center for Drug Evaluation and Research (CDER)
+    Center for Biologics Evaluation and Research (CBER)
+
+
+                       March 2005
+                         ICH
+
+                        Revision 2
+Guidance for Industry
+E2B(M): Data Elements for
+Transmission of Individual
+   Case Safety Reports
+
+  Questions and Answers
+                 Additional copies are available from:
+
+                 Office of Training and Communication
+                Division of Drug Information, HFD-240
+               Center for Drug Evaluation and Research
+                     Food and Drug Administration
+                            5600 Fishers Lane
+                          Rockville, MD 20857
+                           (Tel) 301-827-4573
+              http://www.fda.gov/cder/guidance/index.htm
+
+                  Office of Communication, Training and
+                    Manufacturers Assistance, HFM-40
+              Center for Biologics Evaluation and Research
+                       Food and Drug Administration
+             1401 Rockville Pike, Rockville, MD 20852-1448
+                  http://www.fda.gov/cber/guidelines.htm.
+     (Tel) Voice Information System at 800-835-4709 or 301-827-1800
+
+      U.S. Department of Health and Human Services
+               Food and Drug Administration
+     Center for Drug Evaluation and Research (CDER)
+    Center for Biologics Evaluation and Research (CBER)
+
+                            March 2005
+                              ICH
+
+                             Revision 2
+                                               TABLE OF CONTENTS
+
+
+
+I.    INTRODUCTION................................................................................................................. 1
+II.   BACKGROUND ................................................................................................................... 2
+III. QUESTIONS AND ANSWERS........................................................................................... 2
+                                Contains Nonbinding Recommendations
+
+
+                   Guidance for Industry1
+E2B(M): Data Elements for Transmission of Individual Case Safety
+                           Reports
+
+                                     Questions and Answers
+
+
+
+This guidance represents the Food and Drug Administration's (FDA's) current thinking on this topic. It
+does not create or confer any rights for or on any person and does not operate to bind FDA or the public.
+You can use an alternative approach if that approach satisfies the requirements of the applicable statutes
+and regulations. If you want to discuss an alternative approach, contact the FDA staff responsible for
+implementing this guidance. If you cannot identify the appropriate FDA staff, call the appropriate
+number listed on the title page of this guidance.
+
+
+
+
+I.      INTRODUCTION
+
+This question and answer (Q&A) guidance is intended to assist applicants who plan the
+electronic transmission of individual case safety reports (ICSRs) to the Food and Drug
+Administration (FDA). The guidance is a revision of the E2B(M) Q&A guidance that was
+published in May 2004. The guidance provides answers to questions that have arisen since the
+finalization of the ICH E2B(M) guidance, version 4.4.1, and the M2 specification document,
+version 2.3. This Q&A quidance is not meant to be all inclusive, as further questions may be
+addressed in the future. 2 The questions and answers provided here reflect the consensus of the
+ICH parties.
+
+FDA's guidance documents, including this guidance, do not establish legally enforceable
+responsibilities. Instead, guidances describe the Agency's current thinking on a topic and should
+be viewed only as recommendations, unless specific regulatory or statutory requirements are
+cited. The use of the word should in Agency guidances means that something is suggested or
+recommended, but not required.
+
+1
+ This guidance was developed within the E2B(M) Implementation Working Group (IWG) of the International
+Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH)
+and has been subject to consultation by the regulatory parties, in accordance with the ICH process. This document
+has been endorsed by the ICH Steering Committee at Step 4 of the ICH process, June 10 and November 18, 2004,
+updated in January 2005, and corrected in March 2005. At Step 4 of the process, the final draft is recommended for
+adoption to the regulatory bodies of the European Union, Japan, and the United States.
+2
+ The E2B(M) IWG was discontinued in November 2004. Therefore, questions concerning the time frame or
+specific U.S. requirements that are not answered by the E2B(M) guidance should be addressed directly to the FDA.
+Questions requiring immediate answers should be addressed directly to t he FDA.
+
+
+                                                        1
+                                Contains Nonbinding Recommendations
+
+
+
+
+II.       BACKGROUND
+
+The ICH guidance E2B Data Elements for Transmission of Individual Case Safety Reports was
+signed off by the International Conference on Harmonisation (ICH) in July 1997 and issued by
+the FDA in January 1998. ICH subsequently issued a revised guidance, E2B(M), to provide
+additional information and clarification. The revised guidance incorporated adjustments based
+on the successful pilot projects being conducted in the three ICH regions. ICH signed off on
+E2B(M) in November 2001, and the FDA issued the revised guidance in April 2002.
+
+
+III.      QUESTIONS AND ANSWERS
+
+
+Q1:       During the period of transition, as health authorities or pharmaceutical companies
+          migrate from paper to electronic ICSR submissions and exchanges using E2B(M)/M2
+          standards, certain ICSRs will likely be exchanged in both paper and electronic format.
+          This could occur either because the initial ICSR was on paper and the follow-up is in
+          electronic format or because the two parties are in a pilot program where they are
+          exchanging ICSRs in both paper and electronic format. Two questions arise:
+
+          Question 1a: How can two or more exchanges of the same ICSR be linked together to
+          avoid a duplicate report?
+
+          Question 1b: How can the current paper forms accommodate the full ICH format of
+          the worldwide unique case identifier? (E2BM IWG0001)3
+
+A1:       Answer 1a: Compliant with the definition of field A.1.0.1, the ICH format of the
+          worldwide unique case identifier (country code-company or regulator name-report
+          number) should always be used, and copied into field A.1.10.1 or A.1.10.2. as
+          appropriate.
+
+          In the event that the ICSR either has been exchanged by the two parties in the past using
+          a different identifier or that it is exchanged simultaneously with a different identifier, this
+          other identifier should be listed in field A.1.11.2 and the organization’s name should be
+          captured in field A.1.11.1, consistent with the definition of the A.1.11 field for the
+          identification of duplicates.
+
+          This recommendation applies to DTD version 2.0 and DTD version 2.1.
+
+          Answer 1b: In case the ICH conforming worldwide unique case identifier cannot be
+          accommodated on the paper forms, it is recommended that the report number alone
+          (without the country code or the company or regulator name) be used.
+
+3
+    The numbers in parentheses reflect the numbering used by the E2B(M) Implementation Working Group.
+
+
+                                                       2
+                          Contains Nonbinding Recommendations
+
+
+
+
+ Q2: For fields where only one MedDRA coding level is accommodated, should I use PT
+     or LLT?
+
+      Section B.2 contains fields B.2.i.0, B.2.i.1 and B.2.i.2 to capture the verbatim term,
+      LLT and PT, respectively. However, sections B.1.7.1a, B.1.8f, B.1.8g, B.1.9.2, B.1.9.4,
+      B.1.10.7.1a, B.1.10.8f, B.1.10.8g, B.4.k.11, B.4.k.17.2, B.4.k.18.1, B.5.3 contain only
+      one field and do not specify whether the LLT or PT should be used. (E2BMIWG0002)
+
+A2:   For the ICH E2B(M) fields B.1.7.1a, B.1.8f, B.1.8g, B.1.9.2, B.1.9.4, B.1.10.7.1a,
+      B.1.10.8f, B.1.10.8g, B.4.k.11, B.4.k.17.2, B.4.k.18.1, B.5.3 the following should be
+      used:
+         • For EU regulators: LLTs
+         • For FDA: PTs
+         • For MHLW: PTs
+
+Q3:   What is the process to maintain, add, modify, or delete entries in the code lists in
+      attachments 1 and 2 of E2B(M)? (E2BM IWG0003)
+
+A3:   Currently these lists cannot be modified.
+
+
+Q4:   The current definition of B.4.k.7 calls for the use of free text until a controlled
+      vocabulary is available. Is a harmonized vocabulary for pharmaceutical dosage forms
+      available? (E2BM IWG0004)
+
+A4:   There is currently no harmonized vocabulary for pharmaceutical dosage forms.
+      Until an ICH vocabulary is available, the following should be used:
+
+         • For EU Regulators: the European Pharmacopoeia standard list
+         • For FDA: Free text
+         • For MHLW: The list of pharmaceutical forms as made available by MHLW
+
+Q5:   How can I send product-specific registration or other regulatory administrative
+      information to multiple receivers in a single transmission? (E2BM IWG0005)
+
+A5:   A single transmission for administrative information of an ICSR to multiple receivers in
+      the ICH regions is currently not possible.
+
+      Various health authorities have engaged in production or pilot programs to implement
+      E2B(M). A need to capture in more detail registration–related information (similar to the
+      existing paper submission process using fax cover sheets or regulatory forms) became
+
+
+                                                  3
+                           Contains Nonbinding Recommendations
+
+
+      evident. As a consequence, local guidance has been introduced to transmit additional
+      information accompanying each ICSR:
+
+      • For EU Regulators: see E2B section B.4.k.4.
+
+      • For FDA: Field B.4.k.4.1. should contain the NDA, BLA or STN number in the
+         appropriate format.
+
+      • For MHLW: Each ICSR should be accompanied by a corresponding J-file, as detailed
+         in the relevant MHLW guidance documents.
+
+
+Q6:   What language should I use for an ICSR transmission? (E2BM IWG0007)
+
+A6:   For EU Regulators: ICSRs in English are generally accepted. However, there can be
+      local requirements for a translation of the case narrative in the official local language.
+
+      For FDA: English
+
+      For MHLW: Japanese
+
+
+Q7:   How can I submit a causality or scientific assessment in either an algorithmic or text
+      representation in the current E2B(M) format? (E2BM IWG0008)
+
+A7:   The current structure of E2B(M) includes fields B.4.k.18.1-4, which allow the sender to
+      indicate such assessments for each drug-event combination.
+
+      In addition, field B.5.4 can be used to further elaborate the sender’s position or
+      assessment. Local regulatory requirements regarding expedited and periodic reporting
+      determine whether inclusion of sponsor assessments is necessary.
+
+
+Q8:   How can I identify the primary source and the reporter qualification when an ICSR is
+      forwarded by health authorities with minimal or no information on the primary
+      source? (E2BM IWG0009)
+
+A8:   If no information on the primary source is available, section A.2.1 should identify the
+      health authority as the primary source. Field A.2.1.4 “Qualification” should be populated
+      with a code of “3” (Other health professional).
+
+      In addition, field A.1.4 “Type of report” should be populated with a code of “4” (Not
+      available to sender (unknown), if appropriate.
+
+
+
+
+                                                4
+                            Contains Nonbinding Recommendations
+
+
+Q9:    How can I identify the study name, the study number, the patient, and the drug in
+       clinical trials to be reported to the EU regulators and MHLW in the E2B(M) format?
+       (E2BM IWG0010)
+
+A9:    The code list of “Study type” in field A.2.3.3. is very short, so the type of study should
+       be characterized more clearly in the study name. For a more explicit description of the
+       study beyond 100 characters, the full study name should be given in the case narrative. In
+       addition, some regulatory authorities request the additional submission of a regulatory
+       study number (e.g., EUDRACT number). For this situation, the study name in element
+       A.2.3.1 should be a concatenation of the EUDRACT number and the “Study name,” i.e.,
+       EUDRACT number-Study name.
+
+       The “Study number” in field A.2.3.2 should be the sponsor study number.
+
+       The patient identification in a clinical trial can be transmitted in field B.1.1.1d “Patient
+       investigation number.” Note that multiple elements from the source database, like Center-
+       Patient and random number, should be concatenated in this element to ensure a unique
+       patient identification.
+
+       The trial drug identification is possible through the usual elements for the description of
+       the suspected drug B.4.k.2.1 and B.4.k.2.2. For some countries, the project-related
+       regulatory drug identification number can be submitted in field B.4.k.4.
+
+       The present version of E2B(M) allows for the distinction of unblinded vs. blinded
+       information.
+
+
+Q10: There might be cases where, for one drug, and more than one formulation/dosage, lot
+     number and indication are provided. How should this information be presented in the
+     electronic transmission? (E2BM IWG0011)
+
+A10:   The drug section B.4 is a repeatable block.
+
+       If for one drug there is information on multiple dosages/formulations or indications, the
+       entire section should be repeated to capture all the information.
+
+       For lot numbers, the guidance allows for multiple batch/lot numbers in the same field
+       B.4.k.3. However, it is recommended that the drug section B.4 be repeated.
+
+
+Q11: Field B.1.2.1 “Patient birth date” provides for population with a full date format
+     including day, month, year. If incomplete dates are reported, how should these be
+     presented? (E2BM IWG0013)
+
+A11:   If an incomplete date of birth is reported, then the field B.1.2.2. “Age at the time of onset
+       of reaction/event” should be used, as indicated in the user guidance. Alternatively, field
+       B.1.2.3 “Patient age group (as per reporter)” can be used to indicate the age of the patient.
+
+                                                 5
+                             Contains Nonbinding Recommendations
+
+
+
+
+Q12: Do the concepts of parent child reporting as described in the ICH E2B(M) guideline
+     also apply to a fetus or an unborn child? (E2BM IWG0015)
+
+A12:   All reports affecting a fetus or an unborn child should be recorded as parent-child reports
+       with the appropriate sections of E2B(M) completed.
+
+
+Q13: Where in the E2B(M) message should a patient's drug allergy history be reported
+     e.g., reporter has stated that the patient has an allergy to aspirin? There is no
+     indication in the report as to whether the patient previously took the medication as
+     treatment and had an allergic reaction or whether this knowledge came from patch
+     testing.
+
+       In addition, reports of drug allergy history are often subjective and can be erroneous.
+       MedDRA terms are available for allergies to insulin and a few antibiotics
+       (sulfonamide, penicillin) but few drugs are specifically named in conjunction with the
+       allergy. (E2BM IWG0017)
+
+A13:   It might be advisable to obtain additional information from the primary reporter.
+       If it is the first allergic reaction for the patient and allergy testing results are available,
+       they can be recorded along with other ADR-related terms. For example, the reaction
+       itself is coded to the PT “Drug hypersensitivity” (or a more descriptive LLT) in B.2.i.1
+       or B.2.i.2. In addition, the testing results are recorded by use of the PT “Skin test
+       positive” or “Allergy test positive” (or their more descriptive LLTs) in B.2.i.1 or
+       B.2.i.2.
+
+       Relevant past drug history, such as a history of allergy to a particular drug, can be
+       reported in repeatable section B.1.8, using the suspect drug name and MedDRA terms
+       in the indication and reactions fields.
+
+       The information could also be reported in section B.1.7.1, “Structured information on
+       relevant medical history...” by using the PT “Drug hypersensitivity” (or a more
+       descriptive LLT) under “Disease / surgical procedure / etc.,” and the name of the drug
+       under “comments.” This latter field is not searchable in most databases and thus this is
+       not the preferred option.
+
+
+Q14: What is the time frame for a drug to be included in the drug history section or as a
+     concomitant drug? (E2BM IWG0018)
+
+A14:   This is a medical judgment that should be made by the medically trained reporter and
+       evaluator (e.g., in the company or health authority).
+
+
+
+
+                                                   6
+                            Contains Nonbinding Recommendations
+
+
+       The decision should be based on the elimination half-life of the drug and the known
+       pharmacodynamic effects of the drug in that particular patient (for example, a patient
+       with known renal or liver impairment).
+
+       If it is unlikely that the product is still in the body and if there are no biologic effects
+       known or suspected in that patient, the product should be listed in the medical history.
+
+       If the drug is still in the body or if there is a suggestion of biologic activity (even if the
+       kinetics suggest complete elimination already) and if the reporter or the evaluator feel
+       there is a possibility that the product played a role in the AE, then the product should be
+       listed as a suspect drug. If the reporter and evaluator both agree that it is not a suspect
+       drug, it should be listed as a co-medication (concomitant medication).
+
+       It is difficult to give an absolute time interval between the ingestion or use of the drug
+       and the appearance of the AE. This is a medical judgment.
+
+       Overall, a conservative approach should be taken, and if there is any doubt, the product
+       should be considered a suspect drug. If there are critical or controversial issues to be
+       discussed in regard to this judgment, they can be briefly mentioned in the narrative.
+
+       As a general principal, all drugs that were completed/discontinued before the start of the
+       treatment with the suspect(ed) drug(s) should be included in the “Relevant drug history”
+       section (B.1.8). Any drug(s) that are not suspected of causing the event or reaction and
+       that are administered to the patient at the time the case is reported should be listed as
+       concomitant medication.
+
+
+Q15: Based on current experience it has become evident that the information collected for
+     many of the E2B(M) fields is exceeding the current field lengths (e.g., A.1.8.2 “List of
+     documents held by the sender,” A.2.3.1 “Study name,” B.4.k.6 “Dosage text,” B.2.i.0
+     “Reaction/event as reported by primary source,” B.5.1 “Case narrative,” B.5.2
+     “Reporter commen”t).
+
+       As the information can be critical to the report, there is the possibility that the sender
+       organization could get into legal problems. (E2BM IWG0019)
+
+A15:   As a general principle, it is recommended that the sender structure all available
+       information on the case to the highest possible extent in the currently available E2B(M)
+       fields.
+
+       The E2B(M) standards should be adhered to. Each sender is responsible for managing
+       the information in the appropriate way.
+
+Q16: We have an issue on reporting pregnancy cases which we would be very happy to get
+     your opinion on:
+
+
+
+
+                                                  7
+                           Contains Nonbinding Recommendations
+
+
+       We have a study on pregnant women concerning diabetic patients. Up to 60% of
+       these deliver by caesarean section (CS) either planned or emergency.
+
+       We suggest submitting linked serious adverse events reports as follows:
+
+       Scenario 1: Fetal distress and CS: One case on fetus (fetal distress), but none on the
+       mother (CS). Follow-up on fetus: Event can be recoded to e.g., brain hypoxia:
+       Outcome of event on fetus: e.g., recovered or recovered with sequelae of brain
+       damage. If the mother suffers a complication, e.g., an infection in the wound, this
+       could be another adverse event.
+
+       Scenario 2: Mother suffers from pre-eclampsia and the child is fine. One AE of pre-
+       eclampsia on the mother. No event on the child.
+
+       Scenario 3: Mother suffers from pre-eclampsia and the child is small and a
+       complication on the child occurs. One AE of pre-eclampsia on the mother. Just one
+       code of Pre-eclampsia? or two codes one of pre-eclampsia and one of CS, one or
+       more events on the child? (E2BM IWG0022)
+
+A16:   This answer was revised on November 18, 2004; the revision is indicated below in
+       bolded text.
+
+       The User Guidance, section B.1 (patient characteristics) states that in cases where a
+       fetus or nursing infant sustains an adverse reaction/event, information on both the
+       parent and child/fetus should be provided (referred to as parent-child/fetus report). If
+       there has been no reaction/event affecting the child/fetus, the parent-child fetus report
+       does not apply. For those cases describing fetal demise or early spontaneous abortion,
+       only a parent report is applicable. If both the parent and the child/fetus sustain adverse
+       events, two reports should be provided, but they should be linked using sections A.1.12
+       in each report. When only the child/fetus has an adverse reaction/event (other than
+       early spontaneous abortion/fetal demise), the information provided in this section
+       applies to the child/fetus and the characteristics concerning the parent who was the
+       source of exposure should be provided in section B.1.10.
+
+       Scenario 1: As the author of the question suggests, only one SAE report should be
+       completed for the fetus mother, with the AE of fetal distress (recoded later to brain
+       hypoxia). The caesarean section should not be considered an AE for the mother. The
+       mother’s characteristics should be captured in B.1.10.1 with the caesarean section as
+       relevant medical history (B.1.10.7).
+
+       Scenario 2: As the author of the question suggests, only one SAE report should be
+       completed for the mother, with the AE of pre-eclampsia. No events are reported for the
+       child; therefore, a linked SAE report is not called for.
+
+       Scenario 3: Two linked SAE reports should be submitted: The mother’s report should
+       have the AE pre-eclampsia; the report for the fetus should have a term for fetal
+
+
+                                                 8
+                            Contains Nonbinding Recommendations
+
+
+       complication. The term pre-eclampsia would only apply to the mother’s case. Section
+       A.1.12 (ID number of the linked report) should be completed for both the mother and
+       child’s case.
+
+
+Q 17: Can you provide more detailed user guidance on the use of “Term highlighted by the
+      reporter” (B.2.i.3)? (E2BM IWG0026 and 0037)
+
+A17:   All adverse reactions/events that occur at any point after introduction of the suspect
+       drug/vaccine should be reported in E2B(M) section B.2 . Field B.2.i.0 should be used to
+       report all reactions/events. Each reaction/event reported in the field B.2.i.0 should be
+       coded in the fields B.2.i.1 (MedDRA LLT) or B.2.i.2 (MedDRA PT) or both,
+       depending on regional preference. Field B.2.i.3 “Term highlighted by the reporter” is an
+       optional field that, if used, should be correlated with medical concept(s) listed in field
+       B.2.i.0. B.2.i.3 should be used to categorize the reactions/events as to (a) whether the
+       medical concept was the reason the reporter contacted the company and (b) whether the
+       medical concept is serious according to the company. If field B.2.i.3 is used, a single
+       entry is selected from four listed numeric responses (1-4). The optional entries in
+       B.2.i.3 should always map to entries in B.2.i.0.
+
+       This field is intended for the identification of a specific diagnosis as identified by the
+       reporter, e.g., if the reporter specifies flu-like syndrome comprising of fever, chills,
+       sneezing, myalgia and headache, then flu-like syndrome is the highlighted term.
+
+       If only one event is cited in a case report, this one is by implication considered
+       highlighted by the reporter.
+
+       This field is optional for completion in the European Union and the United States but is
+       mandatory in Japan for all complete case report types. For details, please consult
+       MHLW guidance.
+
+
+Q18: When is it intended to introduce a repeatable indication section within the drug
+     section? (E2BM IWG0027)
+
+A18:   DTD version 2.1 cannot currently be modified. Therefore, it is not possible to introduce
+       a repeatable “indication” section within the “Drug(s) information” section B.4.
+
+       If for one drug there is information on multiple indications, the entire section B.4
+       should be repeated to capture all the specified indications (please refer also to user
+       guidance as provided in the answer to question 10 (E2BM IWG0011)).
+
+
+Q19: When is it intended to add the time zone information in M1.7 “Message date”?
+     (E2BM IWG0028)
+
+
+
+
+                                                  9
+                            Contains Nonbinding Recommendations
+
+
+A19:   The fields M.1.7a “Message date format” and M.1.7b “Message date” allow the
+       specification of the exact message date, including year, month, day, hour, minute, and
+       second.
+
+       Information on the time zone cannot currently be accommodated in DTD version 2.0 or
+       2.1 since the specifications cannot be modified.
+
+       In general, the time specified in M.1.7 should always reflect the sender’s time and time
+       zone.
+
+
+Q20: Practical experience has shown that it is important to capture seriousness criteria at
+     reaction/event level.
+
+       How can this be handled within the current E2B(M) guideline? (E2BM IWG0029)
+
+A20:   All seriousness criteria as specified in field A.1.5.2 “Seriousness criteria” apply to the
+       case as a whole.
+
+       Field B.2.i.3 “Term highlighted by the reporter” can be used to identify the seriousness
+       of each reaction/event that the primary source indicated was a major concern or reason
+       for reporting the case.
+
+
+Q21: For some time I have been looking, unfortunately without success, for an official
+     message definition for a message to exchange company profiles including certificates
+     between the organisations.
+
+       Is an official standardized message for this purpose available and if so where can I
+       get the guideline / DTD / schema from? (E2BM IWG0031)
+
+A21:   There is no ICH standard procedure for exchanging certificates (or public keys) of
+       encryption software. However, in general, the use of safe and reliable procedures is
+       recommended.
+
+       The procedures for exchanging certificates and public keys between health authorities
+       and industry are specified in the regional legislation or guidelines.
+
+       EU: http://eudravigilance.emea.eu.int
+
+       Japan: http://www.pharmasys.gr.jp/e2bm2/e2bm2_index.html (Notification
+       No.0630004/No.0630006 dated on 30 June 2003).
+
+       US: http://www.fda.gov/cder/aerssub
+
+
+
+
+                                                 10
+                           Contains Nonbinding Recommendations
+
+
+Q22: ICHE2B(M) refers to the basic elements for developing an electronic Serious
+     Adverse Reaction Form.
+
+       In section B.2, Reaction(s)/Event(s) Description, it seems that more than one reaction
+       could be described.
+
+       Does this mean that a syndrome should be divided into the different
+       symptomatologies defining this syndrome (e.g., should flu syndrome be
+       divided into headache, joint aches, etc.)? In that case, and as far as I understood,
+       there is a concept discrepancy because requirements also say that a different form
+       should be used for each serious adverse event. (E2BM IWG0034)
+
+A22:   The purpose of the E2B(M) document is to standardize the data elements for the
+       transmission of ICSRs. For advice on describing syndromes, please refer to the latest
+       edition of the ICH document “MedDRA Term Selection: Points to Consider” as
+       published at http://www.ich.org. At the time of this writing, advice is provided in
+       sections on “Diagnosis reported with signs and symptoms” and “Provisional
+       diagnoses.”
+
+       B.2.i.1 and B.2.i.2 are repeatable fields, and a separate block should be used for each
+       reaction/event term for the purpose of accommodating multiple reactions within a
+       single report. A separate form should not be used for each serious adverse event
+       occurring in the same patient with the same suspect product.
+
+Q23: A serious case was sent electronically by a company to a Regulatory Authority.
+     Meanwhile, due to follow-up information received at the company, this case is now
+     determined to be non-serious.
+
+       Question 23a: Should the company send a new message indicating that the case is now
+       non-serious?
+
+       Question 23b: Should the company send a new message to nullify the case in the
+       Regulatory Authority's database?
+
+       Question 23c: If the case becomes serious again, should the company send a new
+       message with the same <safetyreportid>? (E2BM IWG0037)
+
+A23:   Answer 23a: Yes, the company should send a new message, updating the previous report
+       with the new information, indicating that the case is now non-serious. The new
+       information should be provided and, in addition, the fields below should be populated as
+       follows:
+
+       A.1.0.1: same identifier as in the initial report
+       A.1.10.2: same identifier as in the initial report
+       A.1.5.1: value = no
+       A.1.7: date of receipt of the most recent information.
+
+
+
+                                                11
+                           Contains Nonbinding Recommendations
+
+
+
+       Answer 23b: The company should not send a new message to nullify the case in the
+       Regulatory Authority's database.
+
+       Answer 23c: Yes, this would be new information, and a follow-up report would be
+       appropriate. The same identifiers A.1.0.1 and A.1.10.2 for the link to the initial ICSR
+       should be used.
+
+Q24: In case of miscarriage:
+
+       Question 24a: Should an ICSR be prepared for the parent, the fetus, or both the
+       parent and the fetus?
+
+       Question 24b: For the ICSR, should the seriousness criterion be “other medically
+       important conditio” rather than “result in death”?
+
+       Question 24c: Should the outcome of the parent’s condition be entered in B.2.i.8
+       (outcome of reaction/event at the time of last observation)? (E2BM IWG0038)
+
+A24:   Answer 24a: See the answer to question 16 (E2BM IWG0022).
+
+       Answer 24b: Since the ICSR should be prepared only for the parent, the seriousness
+       criterion is “other medically important condition.” But, depending on the parent’s
+       condition, the seriousness criterion could be life-threatening and/or hospitalization.
+
+       Answer 24c: Yes, the outcome of the parent’s condition should be entered in B.2.i.8.
+
+Q25: How should field A.1.6 (the date report was first received from source) be populated,
+     taking into consideration the recommendations of the ICH-E2D guideline:
+
+       Question 25a: Is it the date when the MAH receives a case report that fulfills
+       minimum criteria for reporting? Or, the date when the sender receives the information
+       that fulfills minimum criteria regardless of reportability from the primary source?
+
+       Question 25b: For example, what if the initial report was obtained on 01 May for the
+       non-serious case and was not reported to the relevant regulatory agency; then on 10
+       May, what if follow-up information became available that necessitated expedited
+       reporting because the case was determined to be serious and unlabeled? (E2BM
+       IWG0040)
+
+A25:   Answer 25a: Field A.1.6 should be populated with the date the information is received
+       from the source. This information should fulfill the recommendations of the current
+       ICH E2B(M)guideline, Section 1.5, “Minimum information” and the ICH E2D
+       guideline, Section 4.2, “Minimum information for reporting.” The minimum
+       information for the transmission of a report should include at least one identifiable
+
+
+
+
+                                               12
+                            Contains Nonbinding Recommendations
+
+
+       reporter (section A.2), identifiable patient (section B.1), one reaction/event (section B.
+       2), and one suspect drug (section B.4).
+
+       Answer 25b: In this example, in the field A.1.6, the initial report date and the follow-up
+       report date are both 01 May. In the field A.1.7, the most recent information available
+       date is 01 May for the initial report and 10 May for the follow-up report. Whether or
+       not this case safety report should be reported to the relevant regulatory authority will
+       depend on the local authorities.
+
+Q26: What is the difference between releases 1.0 and 2.0 of the v2.1 DTD? Is either one
+     acceptable for use? (E2BM IWG0042)
+
+A26:   Release 1.0 of v2.1 DTD had errors that were corrected, which resulted in release 2.0 of
+       v2.1 DTD. Release 1.0 should not be used. Release 2.0 should be used.
+
+Q27: Case A is linked with Case B.
+     When case B is transmitted in E2B format, should A.1.12 field in the file contain
+     A.1.0.1 Safety Report Id or A.1.10 Company Number for case A? (E2BM IWG0046)
+
+A27:   When a case report A is to be linked to case report B by a company X, the field A.1.12 of
+       both reports should be populated. In case report A the field A.1.12 should capture the
+       value of the field A.1.10.1 (if the sender is a regulator) or A.1.10.2 (if the sender is a
+       company) as the field appears in case report B.
+
+       Similarly, in case report B, the field A.1.12 should capture the value of the field A.1.10.1
+       (if the sender is a regulator) or A.1.10.2 (if the sender is a company) as the field appears
+       in case report A.
+
+Q28: A man started medications before his partner became pregnant. But she has a
+     miscarriage now.
+
+       Question 28a: Is the ADR a miscarriage?
+
+       Question 28b: Is the patient of the report the father or mother?
+
+       Question 28c: Is the route of administration how the father took the medicine? (E2BM
+       IWG0047)
+
+A28:   Answer 28a: Yes. In this case the ADR should be the miscarriage experienced by the
+       mother.
+
+       Answer 28b: The patient should be the mother. Per the user guidance, in case of fetal
+       demise or early spontaneous abortion, only a parent report is applicable. The sections
+       B.1.1 to B.1.8 should be completed.
+
+
+
+
+                                                13
+                           Contains Nonbinding Recommendations
+
+
+       Answer 28c: Yes. The route of administration should be how the father was given the
+       suspect medication. But while the characteristics of the suspect drug should be
+       captured in section B.4, it should be clearly mentioned in field B.4.k.19 (additional
+       information on drug) that the suspect medication was taken by the father. Since it’s a
+       mother’s report, the route of administration (B.4.k.8.) should be indicated as unknown.
+
+
+Q29: A man started medications before his partner became pregnant. The baby was born
+     with ADR. Are the following statements correct?
+
+       Question 29a: A report should be submitted as a parent-child/fetus report.
+
+       Question 29b: B.1.10 captures the data of the father.
+
+       Question 29c: Route of administration is unknown. (E2BM IWG0048)
+
+A29: Answer 29a: Yes. The report should be submitted as a parent-child/fetus report. The
+     patient should be the baby.
+
+       Answer 29b: Yes, B.1.10 should be populated with the father's data.
+
+       Answer 29c: Yes, in this case, not enough information was provided to determine the
+       route of administration of the suspected drug to the baby. The route of administration
+       should be indicated as unknown.
+
+Q30: Given the user guidance in the E2BM guideline and the answer to question 10 (E2BM
+     IWG0011) in the Q&A document, please describe the preferred use of B.4.k.15a for the
+     following two scenarios. The reports are from spontaneous sources and exact dates of
+     drug administration are unknown in both instances:
+
+       Scenario 1: Identifiable patient received drug “X” p.o. in hospital for one week and
+       then the same drug/form/dose for two weeks at home. There was a serious, unexpected
+       event and an identifiable reporter, etc.
+
+       Question 30a: For scenario 1, would it be necessary to repeat B.4.k.15a? That is,
+       should a single entry of <3> populate the duration field (B.4.k.15b units entry <803>
+       week) or should the related field repeat with the drug listed twice with <1> and <2>
+       populating the corresponding B.4.k.15a field, respectively?
+
+       Scenario 2: Identifiable patient received drug “X” i.v. in hospital for one week and
+       then took the same dose but a different formulation of the same drug/dose p.o. for two
+       weeks at home. There was a serious, unexpected event and an identifiable reporter, etc.
+
+       Question 30b: For scenario 2, would B.4.k.15a repeat? That is, should a single entry
+       of <3> populate the duration field or would it be preferable to show the two
+
+
+
+
+                                               14
+                           Contains Nonbinding Recommendations
+
+
+       formulations separately and with two separate entries in the respective duration fields,
+       <1> and <2> for the i.v. and p.o. form/administration?
+
+       Question 30c: Should, for Scenario 2, the drug be listed twice (different forms, per
+       Q&A 10) and the duration for BOTH show as 3?
+
+       Question 30d: Should an adjustment be made in the E2B message if there was a
+       known missed dose/day or two in either scenario (to cover the “intermittent” user
+       guidance)? (E2BM IWG0050)
+
+A30: Answer 30a: For scenario 1, if the drug treatment was continuous, drug “X” should be
+     listed in B.4.k.2 (B.4.k.2.1, Proprietary medicinal product name, and B.4.k.2.2, Active
+     drug substance name) with <3> populating field B.4.k.15a (Duration of drug
+     administration) and <803> (week) populating field B.4.k.15b (Duration of drug
+     administration unit). Fields B.4.k.15a and B.4.k.15b would not need to be repeated.
+     However, if treatment was stopped between hospital and home, it would be preferred to
+     repeat drug “X” in block B.4.k.2 (repeat entries in both field B.4.k.2.1 and field
+     B.4.k.2.2), with values of <1> and <2> populating the corresponding duration fields
+     (B.4.k.15a) and <803> (week) populating the two unit fields (B.4.k.15b).
+
+       Answer 30b: For scenario 2, drug “X” should be listed twice in the repeating block
+       B.4.k.2 with values of <1> and <2> populating the two corresponding duration fields
+       (B.4.k.15a) and <803> populating both of the units fields (B.4.k.15b). The two routes of
+       administration can be indicated by providing separate entries of <042> (Intravenous not
+       otherwise specified) and <048> (Oral) in the corrresponding B.4.k.8 fields (Route of
+       administration).
+
+       Answer 30c: For Scenario 2, a duration value of <3> in field B.4.k.15a would not be
+       considered appropriate.
+
+       Answer 30d: An adjustment in the structured data fields need not be made for a known
+       missed dose/day or two in either scenario (in accordance with the “intermittent” user
+       guidance); descriptive information can be provided in the dosage text field (B.4.k.6).
+
+Q31: ICH E2D states: For regulatory purposes, if an event is spontaneously reported, even
+     if the relationship is unknown or unstated, it meets the definition of an adverse drug
+     reaction.
+
+       Question 31a: In the case of a spontaneous report with an unstated relationship, does
+       that imply that the fields B.4.k.18.1 through B.4.k.18.4 should be populated with the
+       causality assessment “possible” for all the drugs?
+
+       Question 31b: Can the company have a different opinion from the reporter and state
+       the causality with the same drug is unrelated or unlikely? (E2BM IWG0051)
+
+
+
+
+                                               15
+                            Contains Nonbinding Recommendations
+
+
+A31:   Answer 31a: If an event is spontaneously reported to a company about the patient who
+       took that company's drug, and the relationship is unstated, it implies a suspected causal
+       relationship to the drug. However, fields B.4.k.18.1 through B.4.k.18.4 should be left
+       blank unless otherwise required by local regulation.
+
+       Answer 31b: The company's causality assessment can be captured in fields B.4.k.18.1
+       through B.4.k.18.4 and the sender’s comments can be captured in field B.5.4.
+
+Q32: A company wishes to report a fixed combination medicinal product (e.g., ace
+     inhibitor 20 mg and diuretic 12.5 mg). How should we code this information in
+     section B.4, taking into account the need to provide the structured dosage
+     information for this combination? (E2BM IWG0053)
+
+A32:   The proprietary medicinal product name of the fixed combination product should be
+       entered in B.4.k.2.1. The active substance for the ace inhibitor should be entered in
+       B.4.k.2.2.
+
+       B.4.k.2.2 should be repeated and the active substance for the diuretic should be repeated.
+
+       The dosage information should be entered in B.4.k.6 as free text.
+
+       In Japan, codes are available for approved combination drugs and can be used in the
+       appropriate fields: B.4.k.2.1 (proprietary medicinal product name) and B.4.k.2.2 (active
+       substance name).
+
+Q33: If a report is forwarded to a company by a Health Authority, should the company
+     consider that:
+
+       Question 33a: the Health Authority's causality assessment is at least “possible”?
+
+       Question 33b: the reporter’s causality assessment is also at least “possible”? (E2BM
+       IWG0054)
+
+A33:   Answers 33a and 33b: By definition a spontaneous report contains suspected adverse
+       reactions (i.e., a possible causal relationship is suspected but not established). However,
+       there is no universally accepted definition for “possible” in the scale of causality
+       assessment. It is therefore not possible to provide a precise answer to this question. It is
+       up to the company and receiver to define causality assessment method and classify the
+       case-reports accordingly.
+
+Q34: Use of Elements:
+
+       -- B.4.k.5.3 <drugseparatedosagenumb>
+       -- B.4.k.5.4 <drugintervaldosageunitnumb>
+       -- B.4.k.5.5 <drugintervaldosagedefinition>
+
+
+
+
+                                                16
+                           Contains Nonbinding Recommendations
+
+
+
+       Can you confirm that it is the case that if any one of the above three elements is
+       provided then all three must be provided, as sending only some of these elements
+       gives information that cannot be interpreted? (E2BM IWG0055)
+
+A34:   To provide structured information in B.4.k.5 (Structured dosage information), the
+       information should be provided in the relevant fields. However, if the data are
+       incomplete or difficult to structure, the available information should be provided in
+       B.4.k.6 (Dosage text).
+
+
+
+
+                                                17
+

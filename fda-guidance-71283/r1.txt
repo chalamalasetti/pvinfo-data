@@ -1,0 +1,179 @@
+                              Attachment to
+
+  Guidance on Antiviral Product
+   Development — Conducting
+    and Submitting Virology
+     Studies to the Agency
+
+              Guidance for Submitting HBV
+                    Resistance Data
+
+This guidance represents the Food and Drug Administration’s (FDA’s) current thinking on this topic. It
+does not create or confer any rights for or on any person and does not operate to bind FDA or the public.
+You can use an alternative approach if the approach satisfies the requirements of the applicable statutes
+and regulations. If you want to discuss an alternative approach, contact the FDA staff responsible for
+implementing this guidance. If you cannot identify the appropriate FDA staff, call the appropriate
+number listed on the title page of this guidance.
+
+
+
+
+                        U.S. Department of Health and Human Services
+                                Food and Drug Administration
+                       Center for Drug Evaluation and Research (CDER)
+
+                                              June 2006
+                                        Clinical Antimicrobial
+                                 Contains Nonbinding Recommendations
+
+
+                                    GUIDANCE FOR SUBMITTING
+                                      HBV RESISTANCE DATA
+
+Sponsors are encouraged to use the following sample format for submitting HBV resistance data.
+
+One dataset combines patient data, endpoint data, genotypic data, and phenotypic data. There
+are a number of ways datasets can be subdivided (i.e., by clinical study, baseline isolates, or
+virologic failure isolates) and this should be discussed with the division before submission.
+
+For each study, we recommend constructing datasets as SAS transport files containing the
+following information:
+
+•   One record (row) per patient per isolate (e.g., baseline, failure, and other time points).
+•   Data in columns (with suggested column headings shown below) 1 on all isolates.
+•   Genotypic data for baseline isolates of all patients and the endpoint isolates of virologic
+    failures and discontinuations 2 — on the corresponding record for each patient isolate.
+•   Phenotypic data for baseline isolates and the endpoint isolates of virologic failures and
+    discontinuations2 — on the corresponding record for each patient isolate. We recognize the
+    difficulty of phenotypic analysis of HBV. Sponsors are strongly encouraged to appropriately
+    collect and store samples for later analysis if warranted. If the pathway to resistance as
+    defined by genotypic analysis is straightforward (e.g., lamivudine), phenotypic analysis may
+    not be necessary. We recommend that sponsors consult with the division to determine
+    whether phenotypic analysis should be conducted.
+
+The specific criteria for defining virologic failures should be discussed with the division and
+may include multiple primary and secondary protocol endpoints. The endpoints for
+clinical virologic and resistance outcome analyses should be consistent.
+
+Information to Include with Suggested Column Headings1
+
+I. Patient Data:
+
+•   Patient identification number (ID number should be unique for all studies)
+•   Isolate (e.g., baseline, week 24, week 48, discontinuation. Multiple isolates should be
+    numbered.)
+•   Date of isolate
+•   Study day (number of days since the patient started the study product)
+•   Previous therapeutic products where available
+•   Treatment group
+•   Censored for analysis (yes or no)
+
+
+1
+ In the SAS transport files, column headings can be given abbreviated column names to fit the SAS format;
+however, it is suggested that a description of column names be provided to the reviewer in the submission.
+2
+ Samples should be collected from rebound and failure isolates for analysis when the patient is receiving the study
+product.
+
+
+                                                         1
+                            Contains Nonbinding Recommendations
+
+
+II. Endpoint Data:
+
+•   HBV DNA (log10 copies/mL) at baseline
+•   HBV DNA (log10 copies/mL) at predefined time points (e.g., week 24 and week 48), one
+    column for each time point including baseline
+•   HBV DNA (log10 copies/mL) at time of loss of virologic response or discontinuation because
+    of adverse event
+•   Endpoint assessment (e.g., log10 change in viral load from baseline)
+•   Indication of data were censored for reasons other than virologic failure (e.g., discontinuation
+    because of adverse event)
+•   HBV DNA (log10 copies/ml) from additional time points can be included
+
+Note: We recommend that sponsors analyze HBV DNA with a sensitive and specific HBV DNA
+assay with a lower limit of quantification less than 1,000 copies/mL.
+
+III. Genotypic Data:
+
+•   HBV subtype
+•   Genotype information for all the RT or relevant coding region sequenced, one amino acid per
+    column with the wild-type (WT) amino acid as column heading identified using the one
+    amino acid abbreviation. Changes from the baseline sequence should be indicated (i.e.,
+    blanks indicate no change) and known polymorphic amino acid residues flagged in the
+    column heading.
+
+Example (Table 1 highlights how genotype information can be displayed, but does not include
+all column headings as previously suggested.)
+
+        Table 1. Example of Genotype Information Display
+         Patient #    Isolate    Subtype rtY203 rtM204                   rtD205 rtD206
+            001         BL          A
+            001       WK48          A                   V
+            002         BL          C
+            002       WK48          C                    I
+            003         BL          A
+            004         BL          B                   V
+        BL = baseline
+        WK48 = week 48
+
+IV. Phenotypic Data:
+
+1. Information on the investigational product
+   • Baseline EC50 value for investigational product
+   • EC50 value of reference strain for investigational product (a widely available standard
+       laboratory strain is recommended as the reference strain)
+   • Fold change of baseline EC50 value compared to EC50 value of reference strain of
+       investigational product
+
+
+                                                 2
+                                     Contains Nonbinding Recommendations
+
+
+        •    EC50 value at time of endpoint assessment or failure for investigational product
+        •    Fold change values in EC50 value at time of endpoint assessment or failure compared to
+             reference strain for investigational product
+        •    Fold change in EC50 value at time of endpoint assessment or failure compared to baseline
+             for investigational product
+
+2.      Information on approved and other investigational anti-HBV products (if available)
+        • Fold change in EC50 value of baseline compared to reference strain for each of the
+            approved and other investigational anti-HBV products (if available)
+        • Fold change in EC50 value at time of endpoint assessment or failure compared to
+            reference strain for each of the approved and other investigational anti-HBV products (if
+            available)
+        • Fold change in the EC50 value at time of endpoint assessment or failure compared to
+            baseline for each of the approved and other investigational anti-HBV products (if
+            available)
+
+     Example (Table 2 highlights how phenotype information can be displayed, but does not include
+     all column headings previously suggested.)
+
+            Table 2. Example of Phenotype Information Display
+
+                                                                                    Other Agents in Same
+                                                Agent X                                       Class*
+                             EC50       Ref strain Δ resis           Δ resis       Δ resis       Δ resis
+                             value        EC50      from ref         from BL        from ref       from BL
+             Sample          Agent       value     Agent X           Agent X        Agent Y        Agent Y
+                               X        Agent X
+             Baseline
+             Endpoint
+            Agent X = candidate agent
+            BL = baseline
+            Endpoint = predefined time point for endpoint assessment (e.g., week 24, week 48, failure or
+            discontinuation)
+            Δ resis = fold resistance change, e.g., EC50 value of sample with Agent X
+                                                   EC50 value of reference (or baseline) strain with Agent X
+            Ref strain = reference strain (or WT)
+            *Note: The Δ resis from ref and Δ resis from BL should be included for all approved and other
+            investigational anti-HBV products (if available).
+
+
+
+
+                                                              3
+

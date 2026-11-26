@@ -1,0 +1,1444 @@
+Guidance for Industry
+   E2BM Data Elements for
+Transmission Of Individual Case
+        Safety Reports
+
+
+
+
+    U.S. Department of Health and Human Services
+             Food and Drug Administration
+   Center for Drug Evaluation and Research (CDER)
+  Center for Biologics Evaluation and Research (CBER)
+                      April 2002
+
+                        ICH
+                      Revision 1
+Guidance for Industry
+    E2BM Data Elements for
+ Transmission Of Individual Case
+         Safety Reports
+
+                     Additional copies are available from:
+                     Office of Drug Information (HFD-240)
+               Center for Drug Evaluation and Research (CDER),
+                                5600 Fishers Lane,
+                   Rockville, MD 20857 (Tel) 301-827-4573
+                 http://www.fda.gov/cder/guidance/index.htm
+                                        or
+ Office of Communication, Training, and Manufacturers Assistance (HFM-40),
+             Center for Biologics Evaluation and Research (CBER)
+                               1401 Rockville Pike,
+                          Rockville, MD 20852-1448,
+                   http://www.fda.gov/cber/guidelines.htm;
+                     (Fax) 888-CBERFAX or 301-827-3844
+              (Voice Information) 800-835-4709 or 301-827-1800
+
+
+
+
+        U.S. Department of Health and Human Services
+                 Food and Drug Administration
+       Center for Drug Evaluation and Research (CDER)
+      Center for Biologics Evaluation and Research (CBER)
+                          April 2002
+
+                                 ICH
+                               Revision 1
+                                                              Table of Contents
+
+
+
+I.       INTRODUCTION ................................................................................................................. 1
+      1.1 Scope of This Guidance.........................................................................................................1
+      1.2. Background...........................................................................................................................2
+      1.3 Notes on Format of this Document........................................................................................2
+      1.4 Definition of Data Elements ..................................................................................................2
+      1.5 Minimum Information ..........................................................................................................3
+II.      GUIDANCE: CONTENT OF THE DATA ELEMENTS ................................................... 3
+      A. Administrative and Identification Information .........................................................................4
+        A.1 Identification of the case safety report....................................................................................4
+        A.2 Primary sources of information .............................................................................................8
+        A.3 Information on sender and receiver of case safety report .........................................................9
+      B. Information on the Case .....................................................................................................10
+         B.1 Patient characteristics ........................................................................................................10
+         B.2 Reactions or events .............................................................................................................14
+         B.3 Results of tests and procedures relevant to the investigation of the patient..............................16
+         B.4 Drug information................................................................................................................17
+         B.5 Narrative case summary and further information ..................................................................22
+GLOSSARY................................................................................................................................. 24
+ATTACHMENT 1 ....................................................................................................................... 25
+ATTACHMENT 2:...................................................................................................................... 27
+ATTACHMENT 3 ....................................................................................................................... 28
+
+
+
+
+                                                                           1
+                                       Guidance for Industry1
+
+                     E2BM Data Elements For Transmission Of
+                         Individual Case Safety Reports
+
+
+
+
+ This guidance represents the Food and Drug Administration's (FDA's) current thinking on this topic.
+ It does not create or confer any rights for or on any person and does not operate to bind FDA or the
+ public. An alternative approach may be used if such approach satisfies the requirements of the applicable
+ statutes and regulations.
+
+
+
+
+This guidance is intended to assist applicants who plan to submit individual case safety reports
+(ICSRs) to FDA. This guidance revises E2B step 4 document signed off by the International
+Conference on Harmonisation (ICH) in July 1997 and issued by the FDA in January 1998. It provides
+additional information and clarification as well as some modifications of the E2B step 4 document
+signed off on July 17, 1997. The revision incorporates adjustments based on the successful pilot
+projects being conducted in the three ICH regions. It is recommended that the reader review this
+document as well as the M2 ICSR message specification document version 2.3. A new attachment 3
+provides examples of the use of ICSR identifiers.
+
+
+I.      INTRODUCTION
+
+1.1     Scope of This Guidance
+
+The objectives of the working group are to standardize the data elements for transmission of
+individual case safety reports by identifying, and where necessary or advisable, by defining the data
+elements for the transmission of all types of individual case safety reports, regardless of source and
+destination. This includes case safety reports for both pre and postapproval periods and covers both
+adverse drug reaction and adverse event reports. It is not intended that this format be used for cases in
+the integrated safety summary of a marketing license application dossier. For adverse reactions
+
+        1
+           This guidance was developed within the Expert Working Group (Efficacy) of the International Conference
+on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH) and has been
+subject to consultation by the regulatory parties, in accordance with the ICH process. This document was endorsed by
+the ICH Steering Committee at Step 4 of the ICH process, in July 1997. This revision was signed off by ICH on
+November 9, 2000, and a final version was issued by ICH on February 5, 2001.
+
+
+
+                                                         1
+encountered in clinical trials, this format should be used only for those subject to expedited reporting.
+This guidance does not encompass the definition of database structures, the design of a paper report
+form, quality control or quality assurance aspects, or technical security issues.
+
+1.2.   Background
+
+Because of national and international agreements, rules, and regulations, individual case safety reports
+of adverse drug reactions and adverse events need to be transmitted (e.g., 21 CFR 314.80):
+
+•      From identified reporting sources to regulatory authorities and pharmaceutical companies;
+•      Between regulatory authorities;
+•      Between pharmaceutical companies and regulatory authorities;
+•      Within authorities or pharmaceutical companies;
+•      From clinical investigators, via the sponsor, to ethics committees;
+•      From authorities to the World Health Organization (WHO) Collaborating Center for
+       International Drug Monitoring.
+
+The transmission of such individual case safety reports currently relies on paper-based formats (e.g.,
+yellow cards, Council for the International Organizations of Medical Sciences (CIOMS) forms,
+MedWatch) or electronic media (e.g. within pharmaceutical companies, or with WHO), usually by on­
+line access, tape, or file transfer.
+
+Considering the large number of potential participants in a world-wide exchange of information, there
+is a need for an electronic format capable of accommodating direct database to database transmission
+using message transfers.
+
+Successful electronic transmission of information relies on the definition of common data elements,
+provided in this document, and standard transmission procedures to be specified by the ICH
+Electronic Standards for the Transfer of Regulatory Information (ESTRI) Expert Working Group
+(M2).
+
+This document has taken into account the documents provided by ICH sponsors, the ENS-CARE
+Single Case Format, EuroSCaPE format, and the CIOMS IA proposal, and comments received
+following the circulation of these papers.
+
+1.3    Notes on Format of this Document
+
+Section II and its subsections designated A and B contain notes that are directed toward clarifying the
+nature of the data that should be provided. In addition, there are notes to assist in defining the format
+that should be used to transmit the data. These notes are designated as User Guidance.
+
+If a data element has a limited set of choices, these choices are presented in bold Italic type. The
+standard allows for this information to be transmitted in encoded format.
+
+1.4    Definition of Data Elements
+
+
+
+                                                    2
+The format for individual case safety reports includes provisions for transmitting all the relevant data
+elements useful to assess an individual adverse drug reaction or adverse event report. The data
+elements are sufficiently comprehensive to cover complex reports from most sources, different data
+sets, and transmission situations or requirements; therefore, not every data element will be available
+for every transmission. In many, if not most instances, a substantial number of the data elements will
+not be known and therefore not included in the transmission. Where it was deemed important,
+provisions for unknown or not applicable were included (e.g., outcome, route of administration).
+However, since the transmission is intended to be electronic, it was thought to be unnecessary to
+include provisions to assign values of unknown for all data elements. Different ways of including the
+same data have been provided to cope with differing information contents (e.g., age information can
+be sent as date of birth and date of reaction or event, age at the time of reaction or event, or patient age
+group according to the available information; see section B.1.2 and the respective user guidance). In
+this example, age should be provided by using the most precise available data element rather than by
+including multiple elements of redundant data.
+
+Structured data are strongly recommended in electronic transmission, and provisions have been made
+for including information in this way. However, structuring the data also implies the use of
+controlled vocabularies, which are not yet available for some data elements. Electronic transmission
+of individual case safety reports should be implemented with the Medical Dictionary for Regulatory
+Activities (MedDRA) where applicable. When MedDRA terms are used, the version number should
+be provided. MedDRA terms should be provided as either text or code, according to the regional
+preferences, until January 2003 when codes will be used in all regions. In certain instances, there are
+provisions for the transmission of some free text items, including a full text case summary narrative.
+The transmission of other unstructured data, such as full clinical records or images is outside the
+scope of this guidance.
+
+1.5     Minimum Information
+
+The minimum information for the transmission of a report should include at least one identifiable
+patient (section B.1), one identifiable reporter (section A.2), one reaction or event (section B.2), and
+one suspect drug (section B.4). Because it is often difficult to obtain all the information, any one of
+several data elements is considered sufficient to define an identifiable patient (e.g., initials, age, sex)
+or an identifiable reporter (e.g., initials, address, qualification). It is also recognized that the patient
+and the reporter can be the same individual and still fulfill the minimum reporting criteria.
+
+In addition, to properly process the report, the following administrative information should be
+provided: the sender’s (case) safety report unique identifier (A.1.0.1), the date of receipt of the most
+recent information (A.1.7), the worldwide unique case identification number (A.1.10) and the sender
+identifier (A.3.1.2).
+
+II.     GUIDANCE: CONTENT OF THE DATA ELEMENTS
+
+The message content contains header information followed by E2B Data Elements. See the M2 ICSR
+Message Specification for information about the header.
+
+
+
+                                                      3
+The data elements are divided into sections pertaining to:
+
+A: Administrative and Identification Information
+     A.1 - Identification of the case safety report
+     A.2 - Primary source(s) of information
+     A.3 - Information on sender and receiver of case safety report
+
+B: Information on the Case:
+       B.1 - Patient characteristics
+       B.2 - Reaction(s) or event(s)
+       B.3 - Results of tests and procedures relevant to the investigation of the patient
+       B.4 - Drug(s) information
+       B.5 - Narrative case summary and further information
+
+A. Administrative and Identification Information
+
+A.1 Identification of the case safety report
+
+A.1.0.1 Sender’s (case) safety report unique identifier
+
+User Guidance: This identifier should remain constant in subsequent transmissions of the case by the
+same sender. Retransmitters should replace this value with their own unique identifier. The value
+should be a concatenation of country code-company or regulator name-report number. The country
+code is the country of the primary source of the report (A.1.1). The company or regulator name is an
+internationally unique abbreviation or code for the sender’s organization. The report number is the
+organization’s international case number. Each component is separated from the other by a hyphen.
+For example a report transmitted by a company to a regulatory authority concerning a case from
+France would populate A.1.0.1 with “FR-companyname-12345” where 12345 is a company’s unique
+case report number.
+
+A.1.1 Identification of the country of the primary source
+
+User Guidance: Generally, this item would be the only country provided. Provisions have been made
+to include other countries for unusual cases concerning foreign travel and sources of manufactured
+material (A.1.2 and B.4.k.2.3). See the companion document for appropriate country codes.
+
+A.1.2 Identification of the country where the reaction or event occurred
+
+User Guidance: For example, this should be the country where the reaction was detected while the
+patient was traveling, but the report was made by a health professional on the patient’s return.
+
+A.1.3 Date of this transmission
+
+User Guidance: A full precision date should be used (i.e., day, month, year)
+
+A.1.4 Type of report
+
+
+                                                    4
+•         Spontaneous report
+•         Report from study
+•         Other
+•         Not available to sender (unknown)
+
+User Guidance: A separate category for the designation of a literature source is covered in item A.2.2
+and is not duplicated in this section, which is intended to capture the type of report. If the case in the
+literature arises from spontaneous observations, type of report should be Spontaneous report. If the
+case arises from a study, type of report should be Report from study. If it is unclear from the
+literature report whether or not the cases cited are spontaneous observations or arise from a study,
+then this item should be Other.
+
+Differentiation between types of studies (e.g. clinical trials or others should be given in section
+A.2.3.3).
+
+The Not available to sender option allows for the transmission of information by a secondary sender
+(e.g., regulatory authority) where the initial sender did not specify the type of report; it differs from
+Other, which indicates the sender knows the type of report but cannot fit it into the categories
+provided.
+
+A.1.5     Seriousness
+
+A.1.5.1           Serious
+
+Yes or no
+
+A.1.5.2. Seriousness criteria (more than one can be chosen)
+
+•         Results in death
+•         Is life-threatening
+•         Requires inpatient hospitalization or prolongation of existing hospitalization
+•         Results in persistent or significant disability or incapacity (as per reporter's opinion)
+•         Is a congenital anomaly or birth defect
+•         Other medically important condition
+
+User Guidance: The terms life-threatening and other medically important condition are defined in
+the ICH E2A guidance. All the criteria apply to the case as a whole and should not be confused with
+the outcomes of individual reactions or events that are provided in section B.2.i.8. In addition,
+section B.2.i.3 can be used to identify the seriousness of each reaction or event in accordance with the
+user guidance of the item.
+
+A.1.6 Date report was first received from source
+
+User Guidance: For senders dealing with initial information, this should always be the date the
+
+
+                                                     5
+information was received from the primary source. When retransmitting information received from
+another regulatory agency or another company or any other secondary source, A.1.6 is the date the
+retransmitter first received the information. A full precision date should be used (i.e., day, month,
+year).
+
+A.1.7 Date of receipt of the most recent information for this report
+
+User Guidance: Because reports are sent at different times to multiple receivers, the initial (and
+follow up) status is dependent upon the receiver. For this reason, an item to capture follow-up status
+is not included. However, the date of receipt of the most recent information taken together with the
+sender identifier (A.3.1.2) and sender’s (case) report unique identifier (A.1.0.1) provide a
+mechanism for each receiver to identify whether the report being transmitted is an initial or follow-up
+report. For this reason, these items are considered critical for each transmission. A full precision
+date should be used (i.e., day, month, year).
+
+A.1.8 Additional available documents held by sender
+
+A.1.8.1        Are additional documents available?
+
+Yes or no
+
+A.1.8.2 List of documents held by sender
+
+User Guidance: The documents received from the primary source (e.g., clinical records, hospital
+records, autopsy reports) should be listed. These documents may not be obtainable in many instances.
+
+A.1.9 Does this case fulfill the local criteria for an expedited report?
+
+Yes or no
+
+User Guidance: The definition of expedited is dependent upon the local regulatory requirements.
+This item should be used by the sender to indicate if the case fulfills the local expedited requirements.
+When the countries of origin and destination of the transmission differ, the receiver should be aware
+that the information might not be applicable to their regulatory requirements.
+
+A.1.10 Worldwide unique case identification number.
+
+User Guidance: Only A.1.10.1 or A.1.10.2 should be used. No case should ever have more than one
+of these items completed. The contents of whichever item is used should remain unchanged for any
+transmissions subsequent to the original transmission. When a regulator is the initial sender, A.1.10.1
+should be used. When an entity other than a regulator is the initial sender, A.1.10.2 should be used.
+When a sender has not previously received a valid E2B/M2 report electronically, the identifiers
+(content and format) in A.1.0.1 and A.1.10.1 or A.1.10.2 should be identical. Retransmitters should
+use their own sender’s (case) safety report unique identifier (A.1.0.1), but not change A.1.10.1 or
+A.1.10.2. See examples in attachment 3.
+
+
+
+                                                    6
+A.1.10.1 Regulatory authority’s case report number
+
+A.1.10.2 Other sender’s case report number
+
+A.1.11 Other case identifiers in previous transmissions
+
+Yes
+
+User Guidance: This item should be completed only if the answer is yes.
+
+A.1.11.1 Source of the case identifier (e.g., name of the company, name of regulatory agency)
+
+User Guidance: This repeatable item should be used in conjunction with A.1.11.2 to provide all other
+case identifiers electronically transmitted, perhaps by multiple other senders. If the case has been
+received from another sender, all other case identifiers included in A.1.11.1 and A.1.11.2 should be
+present. In addition, the identifier of the previous sender (A.1.0.1) should be included here by the
+retransmitter. See examples in attachment 3.
+
+A.1.11.2 Case identifiers
+
+A.1.12 Identification number of the report that is linked to this report (repeat as necessary)
+
+User Guidance: This section should be used to identify reports or cases that warrant being evaluated
+together. This includes, but is not limited to, a mother-child pair where both had reactions or events,
+siblings with common exposure, several reports involving the same patient (e.g., a report sent via
+paper without a valid E2B/M2 electronic report identifier), several similar reports from the same
+reporter (cluster). This item can also be used when a sender decides to create two or more ICSRs to
+provide individualized information on two or more suspect drugs in a single case (see B.2.i.7 and
+B.4.k.13). See examples in attachment 3.
+
+A.1.13 Report nullification
+
+Yes
+
+User Guidance: This item should be used to indicate that a previously transmitted report should be
+considered completely void (nullified), for example when the whole case was found to be erroneous.
+It is essential to use the same case report number previously submitted.
+
+A.1.13.1 Reason for nullification
+
+A.1.14 Was the case medically confirmed, if not initially from a health professional?
+
+Yes or no
+
+User Guidance: This section should be completed if the primary source of information was a lawyer,
+consumer, or other nonhealth professional. It is important because of regional differences in
+
+
+                                                    7
+regulations concerning lay reports.
+
+A.2 Primary sources of information
+
+The primary source of the information is the person who reports the facts. This person should be
+distinguished from senders (secondary sources) who are transmitting the information, (e.g., industry to
+regulatory authority).
+
+Any or all of the three subsections (A.2.1, A.2.2., A.2.3) can be used. In the case of a published study
+or published individual case, the reporter would be the investigator or first author, and details on
+publication and trial type should also be provided.
+
+A.2.1 Primary sources (repeat as necessary)
+
+A.2.1.1 Reporter identifier (name or initials)
+
+User Guidance: The identification of the reporter may be prohibited by certain national
+confidentiality laws or directives. The information should be provided when it is in conformance
+with the regional confidentiality requirements, and this guidance applies to all the subsections of
+A.2.1. Notwithstanding the above, at least one subsection should be completed to ensure there is an
+identifiable reporter. If only the name of the reporter is known and providing this name is prohibited
+because of confidentiality requirements, initials can be used.
+
+A.2.1.2 Reporter’s address
+
+User Guidance: See the companion document for format specifications.
+
+A.2.1.3 Country
+
+User Guidance: See the companion document for format specifications.
+
+A.2.1.4 Qualification
+
+•      Physician
+•      Pharmacist
+•      Other health professional
+•      Lawyer
+•      Consumer or other nonhealth professional
+
+User Guidance: In some regions, consumer and lawyer reports should be transmitted only when there
+is medical confirmation.
+
+A.2.2 Literature references
+
+User Guidance: References are provided in the Vancouver Convention (known as "Vancouver style")
+as developed by the International Committee of Medical Journal Editors. The standard format as well
+
+
+                                                   8
+as those for special situations can be found in the following reference, which is in the Vancouver
+style. International Committee of Medical Journal Editors. Uniform requirements for manuscripts
+submitted to biomedical journals. N Engl J Med 1997; 336:309-15.
+
+A.2.3 Study identification
+
+A.2.3.1 Study name
+
+A.2.3.2 Sponsor study number
+
+User Guidance: This section would be completed only if the sender is the study sponsor or has been
+informed of the study number by the sponsor.
+
+A.2.3.3 Study type in which the reactions or events were observed
+
+•      Clinical trials
+•      Individual patient use; (e.g., compassionate use or named patient basis)
+•      Other studies (e.g., pharmacoepidemiology, pharmacoeconomics, intensive monitoring, PMS)
+
+A.3 Information on sender and receiver of case safety report
+
+A.3.1 Sender
+
+A.3.1.1 Type
+
+•      Pharmaceutical company
+•      Regulatory authority
+•      Health professional
+•      Regional pharmacovigilance center
+•      WHO collaborating center for international drug monitoring
+•      Other (e.g., distributor, study sponsor, or contract research organization)
+
+User Guidance: In this context, a pharmaceutical company includes biotechnology companies and
+other manufacturers required to submit individual case safety reports.
+
+A.3.1.2 Sender identifier
+
+User Guidance: Identifies the sender, (e.g., company name or regulatory authority name). This item
+should always be completed.
+
+A.3.1.3 Person responsible for sending the report
+
+User Guidance: Name of person in the company or agency who is responsible for the authorization of
+report dissemination. This would usually be the same person who signs the cover memo for paper
+submissions. The inclusion of the name of this person in the transmission may be subject to national
+
+
+                                                    9
+or international regulations.
+
+A.3.1.4 Sender’s address, fax, telephone, and E-mail address
+
+A.3.2 Receiver
+
+User Guidance: See the user guidance concerning the sender (A.3.1).
+
+A.3.2.1 Type
+
+•      Pharmaceutical company
+•      Regulatory authority
+•      Regional pharmacovigilance center
+•      WHO collaborating center for international drug monitoring
+•      Other (e.g., a company affiliate or a partner)
+
+A.3.2.2 Receiver identifier (see glossary)
+
+A.3.2.3 Receiver’s address, fax, telephone, and E-mail address
+
+B.     Information on the Case
+
+B.1 Patient characteristics
+
+User Guidance: In cases where a fetus or suckling infant sustains an adverse reaction or event,
+information on both the parent and the child or fetus should be provided. Reports of these cases are
+referred to as parent-child or parent-fetus report. Several general principles should be used for filing
+these reports. If there has been no reaction or event affecting the child or fetus, the parent-child or
+parent-fetus report does not apply. For those cases describing fetal demise or early spontaneous
+abortion, only a parent report is applicable. If both the parent and the child or fetus sustain adverse
+events, two reports should be provided but they should be linked by using sections A.1.12 in each of
+the reports. When only the child or fetus has an adverse reaction or event (other than early
+spontaneous abortion or fetal demise) the information provided in this section applies to the child or
+fetus, and characteristics concerning the parent who was the source of exposure to the drug should be
+provided in section B.1.10.
+
+B.1.1 Patient (name or initials)
+
+User Guidance: The identification of the patient may be prohibited by certain national confidentiality
+laws or directives. The information should be provided when it is in conformance with the
+confidentiality requirements. This also applies to medical record numbers (B.1.1.1).
+
+B.1.1.1 Patient medical record numbers and the sources of the record number (if allowable)
+
+User Guidance: Record numbers can include the health professional record number, hospital record
+number, or patient or subject identification number in a study. The source of the number should be
+
+                                                   10
+specified to ensure the possibility of retrieval when possible and desirable.
+
+B.1.2 Age information
+
+User Guidance: Only one of the elements describing age should be used. The choice should be based
+upon the most precise information available.
+
+B.1.2.1 Date of birth
+
+User Guidance: A full precision date should be used (i.e., day, month, year). If the full date of birth is
+unknown, an approximate age can be used in section B.1.2.2.
+
+B.1.2.2 Age at time of onset of reaction or event
+
+User Guidance: If several reactions or events are in the report, the age at the time of the first reaction
+or event should be used. For fetal reactions or events the next item B.1.2.2.1 Gestation period when
+reaction or event was observed in the fetus should be used. When providing the age in decades,
+please note that, for example, the 7th decade refers to a person in their 60’s. See the companion
+document for format specifications.
+
+B.1.2.2.1 Gestation period when reaction or event was observed in the fetus
+
+User Guidance: The gestation period at the time of exposure is captured in section B.4.k.10.
+See the companion document for format specifications.
+
+B.1.2.3 Patient age group (as per reporter)
+
+•      Neonate
+•      Infant
+•      Child
+•      Adolescent
+•      Adult
+•      Elderly
+
+User Guidance: The terms are not defined in this document and are intended to be used as they were
+reported by the primary source. This section should be completed only when the age is not provided
+more specifically in sections B.1.2.1 or B.1.2.2.
+
+B.1.3 Weight (kg)
+
+User Guidance: The weight at the time of the event or reaction.
+
+B.1.4 Height (cm)
+
+B.1.5 Sex
+
+
+
+                                                    11
+User guidance: See the companion document for format specifications.
+
+B.1.6 Last menstrual period date
+
+User guidance: Imprecise dates can be included, (i.e., month and year, or year only). See the
+companion document for format specifications.
+
+B.1.7 Relevant medical history and concurrent conditions (not including reaction or event)
+
+B.1.7.1 Structured information on relevant medical history including onset and resolution date as well
+as relevant comments (repeat as necessary).
+
+Disease / surgical procedure / etc.      Start date          Continuing      End date   Comments
+                                                             Y/N/U
+
+
+User Guidance: Medical judgment should be exercised in completing this section. Information
+pertinent to understanding the case is desired, such as diseases, conditions such as pregnancy, surgical
+procedures, and psychological trauma. Each of the items in the table can be repeated as appropriate.
+If precise dates are unknown and a text description aids in understanding the medical history, or if
+concise additional information is helpful in showing the relevance of the past medical history, this
+information can be included in the comments column.
+
+If applicable, MedDRA terms should be used in the main descriptive column for disease or surgical
+procedures. Imprecise dates can be used for both start and end dates. See the companion document
+for format specifications for the continuing column.
+
+B.1.7.2 Text for relevant medical history and concurrent conditions (not including reaction or event)
+
+User Guidance: If structured information is unavailable in the sender’s database, this item should be
+used. Otherwise, it is preferable to send structured data in segment B.1.7.1.
+
+B.1.8 Relevant past drug history (repeat the line as necessary)
+
+Name of drug              Start date    End date           Indication     Reactions
+as reported
+
+
+User Guidance: This segment concerns drugs previously taken, but not those taken concomitantly or
+drugs that may have potentially been involved in the current reaction or event. Information concerning
+concomitant and other suspect drugs should be included in section B4. The information provided here
+can also include previous experience with similar drugs. Medical judgment should be exercised in
+completing this section. When completing the item concerning the name of the drug, it is important to
+use the words provided by the primary source. Trade name, generic name, or class of drug can be
+used. The term none should be used when appropriate (e.g., when there is no previous exposure to
+the drug or vaccine, or no previous reaction following exposure). If applicable, MedDRA terms
+
+
+                                                      12
+should be used in the indication and reaction columns. Imprecise dates can be used for both start and
+end dates.
+
+B.1.9. In case of death
+
+B.1.9.1 Date of death
+
+User Guidance: An imprecise date can be used. See the companion document for format
+specifications.
+
+B.1.9.2 Reported cause of death (repeat as necessary)
+
+User Guidance: MedDRA term should be used if applicable
+
+B.1.9.3 Was autopsy done?
+
+Yes/No/Unknown
+
+B.1.9.4 Autopsy-determined cause of death (repeat as necessary)
+
+User Guidance: MedDRA term should be used if applicable
+
+B.1.10 For a parent-child report or parent-fetus report, information concerning the parent
+
+User Guidance: This section should be used in the case of a parent-child or parent-fetus report where
+the parent had no reaction or event. See user guidance for section B.1. Guidance regarding
+confidentiality is provided in B.1.1 and should be considered before providing the parent
+identification. For the subsections B.1.10.4 through B.1.10.8, the guidances provided for B.1.3
+through B.1.5 and B.1.7 through B.1.8 should be reviewed.
+
+B.1.10.1 Parent identification
+
+B.1.10.2 Parent age information
+
+User Guidance: The date of birth should be used if the precise birthday is known; otherwise the age
+should be used.
+
+B.1.10.2.1 Date of birth of parent
+
+User Guidance: A full precision date should be used. See the companion document for format
+specifications.
+
+B.1.10.2.2 Age of parent
+
+B.1.10.3 Last menstrual period date
+
+
+
+                                                  13
+User Guidance: A full precision date should be used. See the companion document for format
+specifications. If a precise date is unavailable, the gestation period at time of exposure in B.4.k.10
+should be completed.
+
+B.1.10.4 Weight (kg) of parent
+
+B.1.10.5 Height (cm) of parent
+
+B.1.10.6 Sex of parent
+
+B.1.10.7 Relevant medical history and concurrent conditions of parent (not including reaction or
+event)
+
+B.1.10.7.1 Structured information (parent)
+
+Disease / surgical procedure / etc.      Start date          Continuing   End date     Comments
+                                                             Y/N/U
+
+
+B.1.10.7.2 Text for relevant medical history and concurrent conditions of parent (not including
+reaction or event)
+
+B.1.10.8 Relevant past drug history of parent
+
+Name of drug               Start date    End date          Indication       Reactions (if any and known)
+As reported
+
+
+B.2 Reactions or events
+
+User Guidance: The designation of i in this section indicates that each item is repeatable and that it
+carries an appropriate correspondence to the same i in all subsections. A separate block (i) should be
+used for each reaction or event term. For example, if two reactions are observed, the first reaction
+would be described in items B.2.1.0 through B.2.1.8, and the other reaction would be described in
+items B.2.2.0 through B.2.2.8. The reaction or event specified in the first iteration should be the one
+used in assessing the intervals in B.4.k.13.
+
+B.2.i.0 Reaction or event as reported by the primary source
+
+User Guidance: The original reporter's words and/or short phrases used to describe the reaction or
+event. (The original reporter's words and/or short phrases used to describe reaction or event can also
+be included in the narrative B.5.1).
+
+B.2.i.1 Reaction or event in MedDRA terminology (Lowest Level Term)
+
+User Guidance: Only the MedDRA Lowest Level Term (LLT) most closely corresponding to the
+
+
+                                                      14
+reaction or event as reported by the primary source should be provided. In the exceptional
+circumstance when a MedDRA term cannot be found the sender should use good clinical judgment to
+complete this item with the best MedDRA approximation (see MedDRA TERM
+SELECTION:POINTS TO CONSIDER). MedDRA terms should be provided, as either text or code,
+according to the regional preferences until January 2003 when codes should be used in all regions.
+For international transmissions, English is the generally accepted language.
+
+B.2.i.2 Reaction or event in MedDRA terminology (Preferred Term)
+
+User Guidance: The term can be a sign, symptom, or diagnosis. This also applies to the other items of
+structured data such as indication or diseases in past medical history. MedDRA terms are to be
+provided, either as text or code, according to the regional preferences until January 2003 when codes
+should be used in all regions. For international transmissions, English is the generally accepted
+language.
+
+B.2.i.3 Term highlighted by the reporter
+
+1= Yes, highlighted by the reporter, NOT serious
+2= No, not highlighted by the reporter, NOT serious
+3= Yes, highlighted by the reporter, SERIOUS
+4= No, not highlighted by the reporter, SERIOUS
+
+User Guidance: A highlighted term is a reaction or event that the primary source indicated was a
+major concern or reason for reporting the case. If the information is not explicitly provided by the
+initial reporter, the term should not be considered a highlighted term. The seriousness of the reaction
+or event should be based on the ICH E2A criteria.
+
+B.2.i.4 Date of start of reaction or event
+
+User Guidance: See the companion document for format specifications.
+
+B.2.i.5 Date of end of reaction or event
+
+B.2.i.6 Duration of reaction or event
+
+User Guidance: This section can usually be computed from start (or end) of reaction or event. Both
+dates and duration may be useful (e.g., for a reaction or event of short duration such as anaphylaxis or
+arrhythmia). Imprecise dates can be used. See the companion document for format specifications.
+
+B.2.i.7 Time intervals between suspect drug administration and start of reaction or event
+
+User Guidance: The major uses of intervals are to cover circumstances where both the dates are
+known but the interval is very short (e.g., minutes, such as in anaphylaxis) and when only imprecise
+dates are known but more information concerning the interval is known. Dates, if available, should
+always be transmitted in the appropriate fields rather than intervals. B.2.i.7 captures the interval
+between each reaction or event and only the first iteration of the drug in B.4.k.
+
+
+                                                   15
+If there is more than one suspect drug, and it is deemed critical, more than one ICSR can be used to
+provide all the intervals between each reaction or event and all suspect drugs. In this circumstance it
+is advisable to indicate the reports are linked in A.1.12. The complexity of the intervals highlights the
+desirability of providing dates. See the companion document for format specifications.
+
+B.2.i.7.1 Time interval between beginning of suspect drug administration and start of reaction or event
+
+B.2.i.7.2 Time interval between last dose and start of reaction or event
+
+B.2.i.8 Outcome of reaction or event at the time of last observation
+
+•       Recovered/resolved
+•       Recovering/resolving
+•       Not recovered/not resolved
+•       Recovered/resolved with sequelae
+•       Fatal
+•       Unknown
+
+User Guidance: In case of irreversible congenital anomalies the choice, not recovered/not resolved
+should be used. Fatal should be used when death is possibly related to the reaction or event.
+Considering the difficulty of deciding between "reaction/event caused death" and "reaction or event
+contributed significantly to death," both were grouped in a single category. Where the death is
+unrelated, according to both the reporter and the sender, to the reaction or event, death should not be
+selected here, but should be reported only under section B.1.9.
+
+B.3 Results of tests and procedures relevant to the investigation of the patient
+
+User Guidance: This section should capture the tests and procedures performed to diagnose or
+confirm the reaction or event, including those tests done to investigate (exclude) a nondrug cause,
+(e.g., serologic tests for infectious hepatitis in suspected drug-induced hepatitis). Both positive and
+negative results should be reported. Although structured information is preferable, provisions have
+been made to transmit the information as free text in B.3.2.
+
+B.3.1 Structured information (repeat as necessary)
+
+ Date     Test     Result       Unit        Normal low range      Normal high range     More information
+                                                                                        available (Y/N)
+
+
+User Guidance: Imprecise dates can be used, units and normal ranges should be in free text unless
+covered by a controlled vocabulary. The column entitled "more information available" accepts only
+yes or no (see the companion document for the appropriate format). If results and units cannot be
+split, use B.3.2. More than one test can be included in B.3.2.
+
+
+
+                                                   16
+B.3.2 Results of tests and procedures relevant to the investigation
+
+B.4 Drug information
+
+User Guidance: This section covers both suspect drugs and concomitant medications, including
+biologicals. In addition, the section can be used to identify drugs thought to have an interaction. For
+each drug, the characterization of the drug role (B.4.k.1) is that indicated by the primary reporter (i.e.,
+the original source of the information). The designation k in this section indicates that each item is
+repeatable and that it carries an appropriate correspondence to the same k in all subsections. A
+separate block (k) should be used for each drug. The drug specified in the first iteration should be the
+one used in assessing the intervals in item B.2.i.7. Drugs used to treat the reaction or event should not
+be included here.
+
+B.4.k.1 Characterization of drug role
+
+•   Suspect
+•   Concomitant
+•   Interacting
+
+User Guidance: Characterization of the drug as provided by primary reporter. All spontaneous
+reports should have at least one suspect drug (see Section 1.5). If the reporter indicates a suspected
+interaction, interacting should be selected. All interacting drugs are considered to be suspect drugs.
+
+B.4.k.2 Drug identification
+
+User Guidance: Drug substance name and/or proprietary medicinal product name should be provided
+as it was reported. In the case of investigational drugs, only a code may be known and provided. If
+more than one active substance is specified, each should be included as a separate drug in item
+B.4.k.2.2. and the entire drug block (reiteration of “k”) should be repeated rather than as a repeating
+item B.4.k.2.2. An exception can be made when a proprietary medicinal product is provided in
+B.4.k.2.1, in which case the active substances can be specified as a repeating item in B.4.k.2.2.
+
+B.4.k.2.1 Proprietary medicinal product name
+
+User Guidance: The name should be that used by the reporter. It is recognized that a single product
+may have different proprietary names in different countries, even when produced by a single
+manufacturer.
+
+B.4.k.2.2 Active substance names
+
+User Guidance: The International Nonproprietary Names (INN) for Pharmaceutical Substances or
+drug substance name or drug identification code should be provided if no name exists. For
+combination products, each active ingredient should be specified. This information, as well as that
+requested for proprietary medicinal product name (B.4.k.2.1) may not be known for concomitant or
+interacting drugs when the sender is a pharmaceutical company. In the case of blinded trials, in the
+exceptional circumstance when the blind has not been broken, the word blinded should precede the
+
+
+                                                    17
+names of the drugs included in the study. Placebo can be included as a drug.
+
+B.4.k.2.3 Identification of the country where the drug was obtained.
+
+User Guidance: See the companion document for the appropriate codes and format.
+
+B.4.k.3 Batch or lot number
+
+User Guidance: This information is particularly important for vaccines and biologicals. The section
+allows for multiple batch or lot numbers, each separated by a delimiter defined by the transmission
+standard chosen. The most specific information available should be provided. For expiration date
+and other related information, see additional information on drug (B.4.k.19).
+
+B.4.k.4 Holder and authorization or application number of drug
+
+User Guidance: If relevant and known, the name of the holder should be provided with the
+authorization number in the country where the drug was obtained when the case report is sent to that
+country. These items apply to both applications and authorizations. Pharmaceutical companies provide
+this information for their own suspect drugs.
+
+B.4.k.4.1 Authorization or Application Number
+
+B.4.k.4.2 Country of authorization or application
+
+User Guidance: See the companion document for the appropriate codes and format.
+
+B.4.k.4.3 Name of holder or applicant
+
+B.4.k.5 Structured Dosage Information
+
+(e.g., 2 mg three times a day for five days)
+
+B.4.k.5.1 dose (number)                                      2
+B.4.k.5.2 dose (unit)                                        mg
+B.4.k.5.3 number of separate dosages                         3
+B.4.k.5.4 number of units in the interval                    1
+B.4.k.5.5 definition of the interval unit                    day
+B.4.k.5.6 cumulative dose to first reaction (number)         30
+B.4.k.5.7 cumulative dose to first reaction (unit)           mg
+
+User Guidance: Please note the above side-by-side illustration of how the structured dosage is
+provided. For the more complex example of 5 mg (in one dose) every other day for 30 days,
+subsections B.4.k.5.1 through B.4.k.5.7 would be 5, mg, 1, 2, day, 75, mg, respectively. In the same
+way, 50 mg daily for 2 days would be 50, mg, 1, 1, day, 100, mg. For prolonged chronic therapy, the
+sender should consider the need to complete the cumulative dose sections. The cumulative dose
+provided is the total dose administered until the first sign, symptom, or reaction.
+
+
+                                                    18
+In the case of a parent-child or parent-fetus report, the dosage section applies to the parental dose.
+For dosage regimens that involve more than one dosage form and/or changes in dosage, the
+information should be provided in section B.4.k.6 as text. Alternatively, the sender can provide more
+than one iteration (k) for the same drug. Categories for "dose unit" and for "definition of the interval"
+are described in Attachment 1.
+
+B.4.k.6 Dosage text
+
+User Guidance: This item should be used in cases where provision of structured dosage information
+is impossible.
+
+B.4.k.7 Pharmaceutical form (Dosage form)
+
+User Guidance: e.g., tablets, capsules, syrup. Free text until a controlled vocabulary is available.
+
+B.4.k.8 Route of administration
+
+User Guidance: See suggested vocabulary in the route of administration list in Attachment 2. For a
+parent-child or parent-fetus report, this indicates the route of administration of a drug given to the
+child or fetus. This is usually an indirect exposure, such as transmammary, but can include more usual
+routes of administration for other drugs given to the child. The parent’s route of administration should
+be provided in B.4.k.9.
+
+B.4.k.9 Parent route of administration (in case of a parent child or fetus report)
+
+User Guidance: This section should be used in a parent-child or fetus report and linked to parent
+reports to indicate the route of administration to the parent.
+
+B.4.k.10 Gestation period at time of exposure
+
+User Guidance: Use the gestational age at the time of the earliest exposure. Gestation period at time
+of exposure should be expressed by providing both a number and designation of units of days, weeks,
+months, or trimester. See the companion document for format specifications.
+
+B.4.k.11 Indication for use in the case
+
+User Guidance: The indication as reported. For multiple indications for the same drug, repeat the
+entire B.4.k block specifying the same drug for each indication. MedDRA terms should be provided as
+either text or code, according to regional preferences, until January 2003 when codes should be used
+in all regions. B.4.k.19 can be used to provide indications in other terminologies.
+
+B.4.k.12 Date of start of drug
+
+B.4.k.13 Time intervals between drug administration and start of reaction or event
+
+User Guidance: The major uses of intervals are to cover circumstances where both the dates are
+
+
+
+                                                    19
+known but the interval is very short (e.g., minutes, such as in anaphylaxis) and when only imprecise
+dates are known but more information concerning the interval is known. Dates, if available, should
+always be transmitted in the appropriate items, rather than intervals. B.4.k.13 captures the interval
+between each drug and only the reaction or event in the first iteration of B.2.i. If there is more than
+one reaction or event and it is deemed necessary, more than one ICSR can be used to provide all the
+intervals between each suspect drug and all reactions or events. In this circumstance, it is advisable
+to indicate the reports are linked in A.1.12. The complexity of the intervals highlights the desirability
+of providing dates. See the companion document for format specifications.
+
+B.4.k.13.1 Time interval between beginning of drug administration and start of reaction or event
+
+B.4.k.13.2 Time interval between last dose of drug and start of reaction or event
+
+B.4.k.14 Date of last administration
+
+User Guidance: For ongoing drug administration after the onset of the reaction or event, this item
+should be blank and Actions taken with drug (B.4.k.16) should be used.
+
+B.4.k.15 Duration of drug administration
+
+User Guidance: This item should be used if exact dates of drug administration are unavailable at the
+time of the report, but there is information concerning the duration of drug administration. The
+information requested is the overall duration of drug administration and covers intermittent
+administration. See the companion document for the appropriate format.
+
+B.4.k.16 Actions taken with drug
+
+•      Drug withdrawn
+•      Dose reduced
+•      Dose increased
+•      Dose not changed
+•      Unknown
+•      Not applicable
+
+User Guidance: These data, taken together with the outcome of the reaction (B.2.i.8), provide the
+information concerning dechallenge. Not applicable should be used in circumstances such as if the
+patient died or the treatment had been completed prior to the reaction or event.
+
+B.4.k.17 Effect of rechallenge (or re-exposure), for suspect drugs only
+
+B.4.k.17.1 Did reaction recur on readministration?
+
+•   Yes
+•   No
+•   Unknown
+
+
+
+                                                   20
+User Guidance: Unknown indicates that a rechallenge was done, but it is unknown if the event
+recurred. This segment should not be completed if it is unknown whether a rechallenge was done.
+
+B.4.k.17.2 If yes to item B.4.k.17.1, which reactions or events recurred
+
+User Guidance: Use MedDRA terms
+
+B.4.k.18 Relatedness of drug to reactions or events (repeat B.4.k.18.1 through B.4.k.18.4 as
+necessary)
+
+User Guidance: This section provides the means to transmit the degree of suspected relatedness of
+each drug to the reaction or event. The repeating items could also be used to provide the assessment
+of relatedness by different sources or methods of assessment. For the purpose of reporting, there is an
+implied suspicion of causality for spontaneous reports. It is recognized that information concerning
+the relatedness, especially for spontaneous reports, is often subjective and may not be available.
+
+•        The following example illustrates the extensive functionality contained in this section.
+•        Assume a patient being treated with two medications: Drug A and Drug B.
+•        Assume the patient has had three adverse events: Event 1, Event 2, and Event 3
+•        The reporter provided assessment of causality for events 1 and 2 for both Drug A and Drug B,
+         but not for either drug concerning event 3. The reporter’s assessment of causality is based on
+         overall impression, which the sender codes as “global introspection”.
+•        The sender applies two methods of causality assessment, one with an algorithm (coded
+         algorithm), and the other a Bayesian analysis, which provides a decimal probability (coded
+         Bardi), but it does so only for the drug it manufactures (in this case Drug A).
+•        From the above, there are 4 sets of data for the reporter (2drugsX2eventsX1method of
+         assessment) and 6 sets for the sender (1drugX3eventsX2methods of assessment) for a total 10
+         sets of data.
+•        The appropriate item with the information is B.4.k.18 (and its four subfields 1-4). In this
+         example k is replaced by Drug A and Drug B respectively. Please note the subfields 1-4 are
+         repeatable. Thus:
+
+B.4.k.18.1            B.4.k.18.2             B.4.k.18.3                    B.4.k.18.4
+k(1) = DRUG A
+Event1                Reporter               global introspection          related
+Event1                Company                algorithm                     possibly related
+Event1                Company                Bardi                         0.76
+Event2                Reporter               global introspection          not related
+Event2                Company                algorithm                     possibly related
+Event2                Company                Bardi                         0.48
+Event3                Company                algorithm                     unlikely related
+Event3                Company                Bardi                         0.22
+k(2) = DRUG B
+Event1                Reporter               global introspection          not related
+Event2                Reporter               global introspection          not related
+
+
+                                                   21
+The order of the rows is not important since each one represents a complete set, however the E2B
+message and M2 specifications state that all assessments for Drug A (k=1) appear before Drug B
+(k=2).
+
+For subsection B.4.k.18.1 MedDRA terms should be used. Subsections B.4.k.18.2 through B.4.k.18.4
+do not require a controlled vocabulary.
+
+B.4.k.18.1 Reaction assessed
+
+User Guidance: Generally the reactions assessed are ordered from the most important or the most
+serious to the least important.
+
+B.4.k.18.2 Source of assessment (e.g., initial reporter, investigator, regulatory agency, company).
+
+B.4.k.18.3 Method of assessment (e.g., global introspection, algorithm, Bayesian calculation).
+
+B.4.k.18.4 Result
+
+B.4.k.19 Additional information on drug
+
+User Guidance: This should be used to specify any additional information pertinent to the case that is
+not covered by above sections (e.g., beyond expiration date, batch and lot tested and found to be
+within specifications). This item can also be used to provide additional information concerning the
+indication for the drug. Regional requirements may involve the use of a controlled vocabulary to
+provide the additional information concerning indication.
+
+B.5 Narrative case summary and further information
+
+B.5.1 Case narrative including clinical course, therapeutic measures, outcome, and additional relevant
+information.
+
+User Guidance: Focused, factual, and clear description of the case should be given, including the
+words or short phrases used by the reporter.
+
+B.5.2 Reporter's comments
+
+User Guidance: This item should be used to include the reporter's comments on the diagnosis,
+causality assessment, or other issues considered relevant.
+
+B.5.3 Sender's diagnosis or syndrome and/or reclassification of reaction or event
+
+User Guidance: This section provides the sender with an opportunity to combine signs and symptoms
+that were reported into a succinct diagnosis and the reasoning would be included in section B.5.4.
+MedDRA terminology.
+
+
+                                                   22
+B.5.4 Sender's comments
+
+User Guidance: This section provides information concerning the sender's assessment of the case and
+can be used to describe disagreement with, and/or alternatives to the diagnoses given by the initial
+reporter.
+
+
+
+
+                                                 23
+                                            GLOSSARY
+
+Parent-child or parent-fetus report: Report in which the administration of medicines to a parent
+results in a suspected reaction or event in a child or fetus.
+Receiver: The intended recipient of the transmission.
+Reporter: Reporter is the primary source of the information, (i.e., a person who initially reports the
+facts). This should be distinguished from the sender of the message, though the reporter could also be
+a sender.
+Sender: The person or entity creating the message for transmission. Although the reporter and sender
+may be the same person, the function of the sender should not be confused with that of the reporter.
+
+
+
+
+                                                 24
+                                      ATTACHMENT 1
+
+
+Unit List
+Mass
+kg          kilogram(s)
+g           gram(s)
+mg          milligram(s)
+mg          microgram(s)
+ng          nanogram(s)
+pg          picogram(s)
+mg/kg       milligram(s)/kilogram
+mg/kg       microgram(s)/kilogram
+mg/m2       milligram(s)/sq. meter
+mg/ m2      microgram(s)/ sq. meter
+
+
+Radioactivity
+Bq        becquerel(s)
+GBq       gigabecquerel(s)
+MBq       megabecquerel(s)
+Kbq         kilobecquerel(s)
+Ci          curie(s)
+mCi         millicurie(s)
+mCi         microcurie(s)
+nCi         nanocurie(s)
+
+
+Volume
+l           litre(s)
+ml          millilitre(s)
+ml          microlitre(s)
+
+
+Other
+mol         mole(s)
+mmol        millimole(s)
+mmol        micromole(s)
+iu          international unit(s)
+kiu         iu(1000s)
+Miu         iu(1,000,000s)
+iu/kg       iu/kilogram
+mEq         milliequivalent(s)
+%           percent
+gtt         drop(s)
+DF          dosage form
+
+
+                                           25
+User Guidance: This is the suggested list of units. When using other units, transformation is
+recommended if possible. Otherwise the free text field should be used.
+
+Definition of Interval List
+Minutes
+Hours
+Days
+Weeks
+Months
+Years
+Cyclical
+As necessary
+Total
+
+
+
+
+                                             26
+ATTACHMENT 2:
+
+Route of Administration List
+
+                                    Intravenous (not otherwise specified)
+Auricular (otic)                    Intravesical
+Buccal                              Iontophoresis
+Cutaneous                           Nasal
+Dental                              Occlusive dressing technique
+Endocervical                        Ophthalmic
+Endosinusial                        Oral
+Endotracheal                        Oropharingeal
+Epidural                            Other
+Extra-amniotic                      Parenteral
+Hemodialysis                        Periarticular
+Intra corpus cavernosum             Perineural
+Intra-amniotic                      Rectal
+Intra-arterial                      Respiratory (inhalation)
+Intra-articular                     Retrobulbar
+Intra-uterine                       Subconjunctival
+Intracardiac                        Subcutaneous
+Intracavernous                      Subdermal
+Intracerebral                       Sublingual
+Intracervical                       Topical
+Intracisternal                      Transdermal
+Intracorneal                        Transmammary
+Intracoronary                       Transplacental
+Intradermal                         Unknown
+Intradiscal (intraspinal)           Urethral
+Intrahepatic                        Vaginal
+Intralesional
+Intralymphatic
+Intramedullar (bone marrow)
+Intrameningeal
+Intramuscular
+Intraocular
+Intrapericardial
+Intraperitoneal
+Intrapleural
+Intrasynovial
+Intratumor
+Intrathecal
+Intrathoracic
+Intratracheal
+Intravenous bolus
+Intravenous drip
+
+
+                               27
+                                           ATTACHMENT 3
+
+Examples of how to populate fields relevant to identifying cases and their reports
+
+The figure provides an example of how one would populate the fields relevant to identifying cases and
+their reports. Patient XX suffers three separate adverse events (AE1, AE2, AE3) spaced over a time
+period.
+
+Example of a simple single report from a company to a regulator:
+
+Hospital X reports AE1 to Company K who then in turn sends ICSR1 to Regulator. Population of
+relevant fields for this case is illustrated in the first row of the table. Company K populates A.1.0.1 with
+Company K’s (case) safety report unique identifier JP-K-001. Company K populates A.1.10.2 with JP­
+K-001 because company K is the initial sender of the report. Because there has not been a previous
+E2B/M2 electronic report, the identifiers in A.1.0.1 and A.1.10.2 are the same.
+
+Example of company to company to company to regulator transmission
+
+Hospital X reports AE1 to Company B who then in turn sends ICSR2 to Company C. Population of
+relevant fields for this case is illustrated in the second row of the table. Company B populates A.1.0.1
+with Company B’s (case) safety report unique identifier JP-B-001. Company B populates A.1.10.2
+with JP-B-001 because company B considers itself the initial sender of the report because it is unaware
+that Company K also sent an ICSR for this case.
+
+Company C sends ICSR3 to Company D. The third row of the table indicates how Company C populates
+the relevant fields. Company C populates A.1.0.1 with JP-C-001. Company C populates A.1.10.2 with
+JP-B-001, leaving the field unchanged from the way Company B populated it. In addition, Company C
+populates A.1.11.1 (Source of the case identifier) with the name of company B, B. A.1.11.2 is populated
+with Case Identifier in the Previous Transmission by Company B JP-B-001.
+
+Company D sends ICSR4 to regulator. The fourth row of the table indicates how Company D populates
+the relevant fields. Company D populates A.1.0.1 with JP-D-001. Company D retains in fields
+A.1.10.2, A.1.11.1, and A.1.11.2 the information populated by Company C, and Company D adds to the
+retained information in repeatable field A.1.11.1 C to represent that Company C is another source of the
+case identifier, and Company D adds in field A.1.11.2 JP-C-001 to represent Company C’s case
+identifier from the previous transmission.
+
+Example of a simple single report with follow-up from a company to a regulator
+
+Hospital X reports AE1 to Company E who then in turn sends ICSR5 to Regulator. Population of
+relevant fields for this case is illustrated in the fifth row of the table. Company E populates A.1.0.1 with
+Company E’s (case) safety report unique identifier JP-E-001. Company E populates A.1.10.2 with JP­
+E-001 because company E is the initial sender of the report. Because to Company E’s knowledge, there
+has not been a previous E2B/M2 electronic report, the identifiers in A.1.0.1 and A.1.10.2 are the same.
+
+
+
+                                                    28
+       ICH E2BM Data elements for transmission of individual case safety reports         29
+
+ICSR6 represents Hospital X’s follow-up information about AE1 to Company E. Company E submits
+follow-up to ICSR5 to the regulator. The relevant fields, A.1.0.1 and A.1.10.2, are populated the same
+as for ICSR5. ICSR6, a follow-up report, is differentiated from ICSR5 by A.1.7, Date of Receipt of the
+Most Recent Information for this Report.
+
+Example of linking two separate adverse events affecting the same patient
+
+Patient XX later suffers a separate adverse event, AE2. Hospital X reports AE2 to Company K who then
+in turn sends ICSR7 to Regulator. Population of relevant fields for this new case is illustrated in the
+seventh row of the table. Company K populates A.1.0.1 with Company K’s (case) safety report unique
+identifier JP-K-002. Company K assigns a new (case) safety report unique identifier JP-K-002 because
+JP-K-001, as described above, represent a separate adverse event. Company K populates A.1.10.2 with
+JP-K-002 because company K is the initial sender of the report. Because there has not been a previous
+E2B/M2 electronic report, the identifiers in A.1.0.1 and A.1.10.2 are the same. The previous report
+from Company K, JP-K-001, for patient XX should be represented in A.1.12, Identification Number of
+the Report which is Linked to this Report.
+
+In a contrasting example, Hospital X also reports AE2 to Company F. Company F had not previously
+received an AE concerning Patient XX, and therefore there is no linked report and A.1.12 is not
+populated. As in the first example concerning ICSR1, ICSR8 is a simple single report from a company
+to a regulator.
+
+Example of linking three separate adverse events affecting the same patient
+
+Patient XX later suffers a third, separate,and distinct adverse event, AE3. Hospital Y reports AE3 to
+Company K who then in turn sends ICSR9 to Regulator. Population of relevant fields for this new case
+is illustrated in the ninth row of the table. Company K populates A.1.0.1 with Company K’s (case)
+safety report unique identifier JP-K-003. Company K assigns a new (case) safety report unique
+identifier JP-K-003 because JP-K-001 and JP-K-002, as described above, represent separate, adverse
+events. Company K populates A.1.10.2 with JP-K-003 because company K is the initial sender of the
+report. The previous reports from Company K, JP-K-001 and JP-K-002, for patient XX should be
+represented in the repeatable field A.1.12, Identification Number of the Report, which is Linked to this
+Report.
+
+
+
+
+                                                   29
+   ICH E2BM Data elements for transmission of individual case safety reports   30
+
+
+Patient               HP            Company
+  XX                                          ICSR1
+                                      K
+                                          ICSR2        ICSR3       ICSR4
+          AE1          X              B           C            D           R
+
+
+                           FU                 ICSR5(initial)
+                                      E
+  T
+                                              ICSR6(follow-up)
+  i
+  m
+                                              ICSR7
+  e       AE2          X              K
+                                              ICSR8
+                                      F
+
+
+                                              ICSR9
+          AE3          Y              K
+
+
+ AE: Adverse Event report(case)
+ HP: Hospital observing the event
+      Report of AE
+      ICSR report
+ FU : Follow up
+
+
+
+
+                                                  30
+ICH E2BM Data elements for transmission of individual case safety reports       31
+
+
+          Tabular representation of fields contents for the above examples
+
+                    A.1.0.1.    A.1.10.2    A.1.11.1    A.1.11.2      A.1.12
+
+       ICSR1(K)    JP-K-001     JP-K-001
+
+       ICSR2(B)    JP-B-001     JP-B-001
+
+       ICSR3(C)    JP-C-001     JP-B-001        B      JP-B-001
+
+       ICSR4(D)    JP-D-001     JP-B-001        B      JP-B-001
+                                                C      JP-C-001
+
+       ICSR5(E)    JP-E-001     JP-E-001                                         *
+
+       ICSR6(E)    JP-E-001     JP-E-001                                         *
+
+       ICSR7(K)    JP-K-002     JP-K-002                             JP-K-001
+
+       ICSR8(F)    JP-F-001     JP-F-001
+
+       ICSR9(K)    JP-K-003     JP-K-003                             JP-K-001
+                                                                     JP-K-002
+
+
+      *These cases have different dates of most recent information (A.1.7)
+
+
+
+
+                                           31
+
