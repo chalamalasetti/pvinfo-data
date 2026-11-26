@@ -1,0 +1,1532 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-87586",
+  "metadata": {
+    "title": "Reporting of Computational Modeling Studies in Medical Device Submissions: Guidance for Industry and Food and Drug Administration Staff",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 09/21/2016 · Docket FDA-2013-D-1530",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA devices, foods, veterinary and tobacco",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Medical Devices. Topics: Premarket",
+    "published_on": "2016-09-21",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/87586/download",
+  "original_sha256": "dffcc0dc28367f5a4fff187c8605ed828931445a79b83a04f0ac33f73295d36e",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 187,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-5-paragraph-1",
+      "statement": "Scope Computational modeling and simulation studies, together with bench, nonclinical in vivo , and clinical studies, can be used to evaluate the safety and effectiveness of medical devices. In order for the CM&S studies to serve as valid scientific evidence in regulatory submissions, specific details need to be included in the report of such studies. In this guidance, the term “CM&S report” refers to the part of a regulatory submission that provides information about a CM&S study; the term does not describe a new submission requirement.",
+      "context": "FDA's guidance documents, including this guidance, do not establish legally enforceable responsibilities. Instead, guidances describe the Agency's current thinking on a topic and should be viewed only as recommendations, unless specific regulatory or statutory requirements are cited. The use of the word should in Agency guidances means that something is suggested or recommended, but not required. The recommended format provided in this document aims to establish uniformity in reporting CM&S studies. FDA recognizes that the level of detail to be reported will vary and will depend on the context of use for the CM&S studies. Moreover, there are a variety of CM&S modalities and thus the specific details will vary across disciplines. Therefore, we have provided a general outline in the main body of this document and five subject matter appendices for CM&S modalities that are widely used in re",
+      "fingerprint": "8883363ec798cd04aa2e8c0146d0260414062d7768bab180956e287cadbfe6b0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-6-paragraph-6",
+      "statement": "A. Details SQA ensures that the code is functioning correctly and produces repeatable results on specified computer hardware and in a specified software environment. NCV ensures correct implementation and functioning of the numerical code, which is typically accomplished by, for example, comparison to bench-mark solutions, method of manufactured solutions. You should briefly describe the code verification activities.",
+      "context": "III. Code Verification We recommend that you provide a brief description of the software quality assurance (SQA) and numerical code verification (NCV) that you performed. Code verification establishes the correctness of the code used as software tools for CM&S and establishes the correctness and fidelity of the numerical algorithms; this is accomplished through SQA and NCV. Software tools include off-the-shelf, modified-off-the-shelf, or user- developed. Code verification is important, regardless of the software type. You may reference available documentation and verification results from the software developer.",
+      "fingerprint": "43689c4cce1160a909190b88c634528c97bccfb457e80cd7351430f368735566",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-7-paragraph-2",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the applicability of the verified code to your computational domain. If applicable, describe and rationale for differences between the code used for verification and the code used for the context of use.",
+      "context": "You may reference available documentation and verification results from the software developer. Moreover, provide rationale to support the selection of the numerical settings, regardless if the settings are default or modified.",
+      "fingerprint": "f8d7996c18e59851859fd3d523e48ff8ff5dd6d428dd9f50563fb94aab1f22b9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-7-paragraph-6",
+      "statement": "A. Details You should describe the components of the system (e.g., device, in vivo and/or in vitro environment), including appropriately scaled/dimensioned images and/or diagrams.",
+      "context": "IV. System Configuration We recommend that you provide information regarding the system configuration (e.g., the geometry of the device, the computational domain, the structure of a physiological control system, the in vitro test that is modeled). You should describe the methods (e.g., image reconstruction and resolution, computer aided design (CAD)) used to generate the system configuration, including format, and discuss how the configuration was appropriately captured for the intended analysis.",
+      "fingerprint": "f2b6b61a0468eedb1b96bdf320cdca06107a211d442927901295875ddd264670",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-7-paragraph-7",
+      "statement": "You should describe the methods (e.g., image reconstruction and resolution, computer aided design (CAD)) used to generate the system configuration, including format, and discuss how the configuration was appropriately captured for the intended analysis.",
+      "context": "A. Details You should describe the components of the system (e.g., device, in vivo and/or in vitro environment), including appropriately scaled/dimensioned images and/or diagrams. You should describe the software used to generate the system configuration (e.g., CAD software, image segmentation software, control-system simulation software).",
+      "fingerprint": "ee1ce3fcf6f56158d9ce619ab5bb374393a5edf59a76ce0b3dbae71fc309d3a5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-7-paragraph-8",
+      "statement": "You should describe the software used to generate the system configuration (e.g., CAD software, image segmentation software, control-system simulation software).",
+      "context": "You should describe the methods (e.g., image reconstruction and resolution, computer aided design (CAD)) used to generate the system configuration, including format, and discuss how the configuration was appropriately captured for the intended analysis. Describe the imaging modality if image reconstruction was used to generate geometry.",
+      "fingerprint": "226ae6a474b96b7139eee3937e8de12163249a21e29d27810b15a0a84b9a96fe",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-7-paragraph-10",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment. If appropriate, provide a clinical rationale for the in vivo / in vitro models (e.g., size, disease state, mathematical convenience versus clinical relevance).",
+      "context": "Describe the imaging modality if image reconstruction was used to generate geometry. V. Governing Equations/Constitutive Laws We recommend that you provide information regarding the governing equations and/or constitutive laws used to perform the computational analysis.",
+      "fingerprint": "800a0a58558d16bc9ac33f27d12e6629c097468e427119ebaf5bb7d07e4eeebd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-8-paragraph-1",
+      "statement": "You should provide a description of the governing equations/constitutive laws for the system. Provide the actual equations, if appropriate.",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations/constitutive laws chosen to represent the system.",
+      "fingerprint": "567ef3ef0f4730791feaf41b18957ba80a26fbf37ae8cc4d5d787e087a7ea6d6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-8-paragraph-2",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations/constitutive laws chosen to represent the system.",
+      "context": "You should provide a description of the governing equations/constitutive laws for the system. Provide the actual equations, if appropriate. VI. System Properties We recommend that you provide information regarding the biological, chemical, physical and physiological properties of the system, as appropriate.",
+      "fingerprint": "60911449a60c7bcbaf29f6d81d9d37226c95fd0d45642a56e766480548e59c80",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-8-paragraph-4",
+      "statement": "A. Details You should describe and quantify all system properties used in the analysis. These might include biological material properties (e.g., cells, tissues, organs) and/or processes (e.g., cell signals), and/or states (e.g., diseased, healthy), chemical properties, physiological properties and physical properties that define the materials and/or process characteristics. Please also discuss the variability (e.g., temporal, spatial, across individuals/samples) of system properties, if applicable.",
+      "context": "VI. System Properties We recommend that you provide information regarding the biological, chemical, physical and physiological properties of the system, as appropriate. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the source and provide the reference for the properties (e.g., literature, in vivo, ex vivo, in vitro testing).",
+      "fingerprint": "49870264593df1b6cea8eb834c092fbc709173b6fe92fed7b9707fbf52f876f0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-8-paragraph-5",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the source and provide the reference for the properties (e.g., literature, in vivo, ex vivo, in vitro testing).",
+      "context": "A. Details You should describe and quantify all system properties used in the analysis. These might include biological material properties (e.g., cells, tissues, organs) and/or processes (e.g., cell signals), and/or states (e.g., diseased, healthy), chemical properties, physiological properties and physical properties that define the materials and/or process characteristics. Please also discuss the variability (e.g., temporal, spatial, across individuals/samples) of system properties, if applicable. VII. System Conditions We recommend that you provide information regarding the conditions that were imposed on the system. These might include, but are not limited to, the boundary and loading conditions, initial conditions, and other constraints that control the system.",
+      "fingerprint": "054aa78e56b43b339fc3d437720456e800511b75179b01e6afbe7c2e6e4d74d2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-8-paragraph-7",
+      "statement": "A. Details You should describe the system conditions imposed on the model and their variability, if applicable. If appropriate, provide a graphical representation of the conditions, depicting how they are applied to the system.",
+      "context": "VII. System Conditions We recommend that you provide information regarding the conditions that were imposed on the system. These might include, but are not limited to, the boundary and loading conditions, initial conditions, and other constraints that control the system. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation (e.g., literature, test reports, clinical data, medical imaging data).",
+      "fingerprint": "001a967e74fd4b32fa26b84b43521b8c233dcec85dec755cde46f5e0c20c0abf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-8-paragraph-8",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation (e.g., literature, test reports, clinical data, medical imaging data).",
+      "context": "A. Details You should describe the system conditions imposed on the model and their variability, if applicable. If appropriate, provide a graphical representation of the conditions, depicting how they are applied to the system. VIII. System Discretization We recommend that you provide information regarding the discretization and refinement techniques applied to the system for solving it numerically.",
+      "fingerprint": "341c0118f59659f079122658d1f7f612215174f30143c13fa7a5ab0bb3738a9d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-8-paragraph-10",
+      "statement": "A. Details You should describe the system discretization methods and how they were applied to the computational domain. Describe the calculation verification methodology (e.g.,",
+      "context": "VIII. System Discretization We recommend that you provide information regarding the discretization and refinement techniques applied to the system for solving it numerically. mesh refinement study) used to ensure that the computational domain was suitably resolved. If applicable, provide a representative image of the discretization in the areas of interest of the computational domain. You should describe the type and quality of the discretization. As part of the calculation verification process, report the criteria used to determine that the solution was sufficiently resolved.",
+      "fingerprint": "eb2dab9ce01e652942901675bf190615fbc4eea27a23673d2dab6f1b93bfcb7d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-9-paragraph-1",
+      "statement": "mesh refinement study) used to ensure that the computational domain was suitably resolved. If applicable, provide a representative image of the discretization in the areas of interest of the computational domain. You should describe the type and quality of the discretization. As part of the calculation verification process, report the criteria used to determine that the solution was sufficiently resolved.",
+      "context": "A. Details You should describe the system discretization methods and how they were applied to the computational domain. Describe the calculation verification methodology (e.g., B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain. Report the criteria used to determine that the discretization was sufficient to resolve the QOI(s).",
+      "fingerprint": "d624cb1232600d46478e948625ed81b7478e10acb77a448d5f7b1551a0120130",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-9-paragraph-2",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain. Report the criteria used to determine that the discretization was sufficient to resolve the QOI(s).",
+      "context": "mesh refinement study) used to ensure that the computational domain was suitably resolved. If applicable, provide a representative image of the discretization in the areas of interest of the computational domain. You should describe the type and quality of the discretization. As part of the calculation verification process, report the criteria used to determine that the solution was sufficiently resolved. IX. Numerical Implementation We recommend that you provide information regarding the numerical implementation used to solve the governing equations.",
+      "fingerprint": "ae13546b20c502487c46a6628e75b549baaf32a62cabbc643b8af639e6a1bff6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-9-paragraph-4",
+      "statement": "A. Details You should describe the numerical implementation methodology and/or numerical method used to solve the governing equations. State the solver parameters (e.g., tolerance, relaxation) and convergence criteria.",
+      "context": "IX. Numerical Implementation We recommend that you provide information regarding the numerical implementation used to solve the governing equations. B, Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the solver and associated parameters. Note that rationale should be provided for the solver settings, whether they are adjusted from the default settings or not.",
+      "fingerprint": "21b2c0d6ee5354434753473c3ed60a521652218d34301ff9e137eb9db59fcba2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-9-paragraph-5",
+      "statement": "B, Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the solver and associated parameters. Note that rationale should be provided for the solver settings, whether they are adjusted from the default settings or not.",
+      "context": "A. Details You should describe the numerical implementation methodology and/or numerical method used to solve the governing equations. State the solver parameters (e.g., tolerance, relaxation) and convergence criteria. X. Validation We recommend that you provide information regarding the method(s) employed to validate the computational model for the context of use.",
+      "fingerprint": "aefcac0dd5b93cf3230ccafed818d13d738d5452d4c59bcad3a60fab35531b37",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-9-paragraph-7",
+      "statement": "A. Details You should describe the method (e.g., in vivo , ex vivo or in vitro comparator) used to assess the validity of the computational model. Report and compare the QOI(s) from the computational model and the comparator. Describe the sensitivity of the QOI(s) on key parameters and provide a systematic analysis of the uncertainty in relation to the key parameters, as appropriate.",
+      "context": "X. Validation We recommend that you provide information regarding the method(s) employed to validate the computational model for the context of use. B. Assumptions, simplifications, and rationale You should describe and provide the rationale for the assumptions and simplifications of the method (e.g., in vivo , ex vivo or in vitro test) used to validate the computational model. You should discuss why the method of comparison and the degree of agreement between QOI(s) from the comparator and computational model are appropriate for using the computational model in the context of use.",
+      "fingerprint": "39ae674c7264a07097f7dcf026cfcf9a838ebd4f80bbc9844f380326d828304d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-9-paragraph-8",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide the rationale for the assumptions and simplifications of the method (e.g., in vivo , ex vivo or in vitro test) used to validate the computational model. You should discuss why the method of comparison and the degree of agreement between QOI(s) from the comparator and computational model are appropriate for using the computational model in the context of use.",
+      "context": "A. Details You should describe the method (e.g., in vivo , ex vivo or in vitro comparator) used to assess the validity of the computational model. Report and compare the QOI(s) from the computational model and the comparator. Describe the sensitivity of the QOI(s) on key parameters and provide a systematic analysis of the uncertainty in relation to the key parameters, as appropriate. XI. Results We recommend that you present the quantitative results, the QOI(s), from the CM&S study. You should provide the results with sufficient level of detail, including labels and legends. The results may be presented in more than one format (e.g., table, graph).",
+      "fingerprint": "0ddf72a232600327a7f865158ad9df5fb0fe74222b88cc9dc35e2644d538d70b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-10-paragraph-1",
+      "statement": "XI. Results We recommend that you present the quantitative results, the QOI(s), from the CM&S study. You should provide the results with sufficient level of detail, including labels and legends. The results may be presented in more than one format (e.g., table, graph).",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide the rationale for the assumptions and simplifications of the method (e.g., in vivo , ex vivo or in vitro test) used to validate the computational model. You should discuss why the method of comparison and the degree of agreement between QOI(s) from the comparator and computational model are appropriate for using the computational model in the context of use. XII. Discussion We recommend that you discuss how the results from the CM&S study relate to the context of use. If appropriate, discuss the regulatory and/or clinical relevance of the results.",
+      "fingerprint": "a4e991717d6f8d2302694289690cb77d2484a39dcef176fc384ff2042958a0b6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-11-paragraph-6",
+      "statement": "Comparator: the experimental methodology that is used to perform validation. The comparator data can be taken from a laboratory bench-test, an animal study, an imaging study, or a clinical study. The selection of the comparator should be based on the context of use.",
+      "context": "Code Verification: the process of determining that the numerical algorithms are correctly implemented in the computer code and identifying errors in the software. Computational domain: the spatial and/or temporal domain for which the analysis was conducted. See also System Discretization.",
+      "fingerprint": "ba5dd77cb09e305ffe209d7835e36076cb0138917b2586b69513391a0e976c77",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-13-paragraph-3",
+      "statement": "Specific examples provided in this appendix, such as output metrics, are only examples and should not be considered as requirements or recommendations for the type of CM&S studies and validation to complete.",
+      "context": "Introduction/Scope of the Appendix The purpose of this appendix is to provide recommendations on the formatting, organization, and content of reports for computational fluid dynamics and mass transport modeling and simulation studies in medical device regulatory submissions. Outline of the Report In the following section, we provide an outline for reporting the details of your computational modeling and simulation study.",
+      "fingerprint": "4071af61140377c3c038f6a2e0775f004906d1c7ea490c82a787520cdf294759",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-14-paragraph-4",
+      "statement": "The details provided in this section should correspond to the objectives of the analysis, which should be outlined in the context of use statement.",
+      "context": "II. Background/Introduction We recommend that you state the context of use of the analysis, because this will determine the relevant details necessary for review. Provide a brief description of the device, along with its intended use environment and deployment/implantation procedure. III. Code Verification We recommend that you provide a brief description of the software quality assurance (SQA) and numerical code verification (NCV) that you performed on the software used for the CM&S study. Software tools include off-the-shelf, modified-off-the-shelf, or user-developed. Code verification is important, regardless of the software type.",
+      "fingerprint": "0f0690cfb78b7259629fdd2a80dbef2857d07a49a98f4908834e56feddfce5c7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-14-paragraph-6",
+      "statement": "A. Details You should briefly describe the code verification activities and provide the following:",
+      "context": "III. Code Verification We recommend that you provide a brief description of the software quality assurance (SQA) and numerical code verification (NCV) that you performed on the software used for the CM&S study. Software tools include off-the-shelf, modified-off-the-shelf, or user-developed. Code verification is important, regardless of the software type. • comparisons to simplified systems which have an analytical solution;",
+      "fingerprint": "4b765fcd903101e719e7a8b8b1b92c07a3d9af1acee4133c238cf2122a20dbf7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-14-paragraph-7",
+      "statement": "• comparisons to simplified systems which have an analytical solution;",
+      "context": "List governed by page-14-paragraph-6: A. Details You should briefly describe the code verification activities and provide the following: • sensitivity analyses of the discretization scheme and solver parameters performed using the actual system (i.e., timestep, grid size (grid refinement)) and convergence criteria (e.g., 1E-6 vs 1E-7));",
+      "fingerprint": "f2336d35130efcd21542b19667cd4dfae8216192b2b100f62c996fd51a4335a5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-14-paragraph-8",
+      "statement": "• sensitivity analyses of the discretization scheme and solver parameters performed using the actual system (i.e., timestep, grid size (grid refinement)) and convergence criteria (e.g., 1E-6 vs 1E-7));",
+      "context": "List governed by page-14-paragraph-6: A. Details You should briefly describe the code verification activities and provide the following: • a description of how the simulation numerically converged via residual reductions and/or monitoring of physically relevant fluid flow quantity at a probe point or surface location; and • a method to demonstrate that the basic conservation laws were obeyed.",
+      "fingerprint": "3b2cb16ab3691afa177bf86265def5c6ccd03bb85707b6547ac74cb32713da5a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-14-paragraph-9",
+      "statement": "• a description of how the simulation numerically converged via residual reductions and/or monitoring of physically relevant fluid flow quantity at a probe point or surface location; and • a method to demonstrate that the basic conservation laws were obeyed.",
+      "context": "List governed by page-14-paragraph-6: A. Details You should briefly describe the code verification activities and provide the following: B. Assumptions, simplifications and rationale You should describe and provide rationale for the applicability of the verified code to your computational domain. If applicable, describe and rationale for differences between the code used for verification and the code used for the context of use.",
+      "fingerprint": "09bca9bcb481da8bc47d3679a82271ea64854b8c03c7891ada2f9d2548e86eca",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-15-paragraph-2",
+      "statement": "A. Details You should describe the components of the system (e.g., device, vessel, organ, organ system) to be evaluated. Provide all relevant dimensions of the device and geometry.",
+      "context": "We recommend that you provide information regarding the system configuration (e.g., the geometry of the device, the computational domain, the structure of a physiological control system, the in vitro test that is modeled). Include diagrams, schematics, and photos, as needed. You should describe methods/software (e.g., image reconstruction, CAD) used to generate the geometry in order to demonstrate that the configuration was captured appropriately for the intended analysis. In particular, describe any scaling or similarities (e.g., geometric and dynamic similarity).",
+      "fingerprint": "412d1d08e6ed9b27f2fe3798fe613925c17b7cbe120a3e1f6aacff9ffa872bb7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-15-paragraph-3",
+      "statement": "Include diagrams, schematics, and photos, as needed. You should describe methods/software (e.g., image reconstruction, CAD) used to generate the geometry in order to demonstrate that the configuration was captured appropriately for the intended analysis. In particular, describe any scaling or similarities (e.g., geometric and dynamic similarity).",
+      "context": "A. Details You should describe the components of the system (e.g., device, vessel, organ, organ system) to be evaluated. Provide all relevant dimensions of the device and geometry. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment.",
+      "fingerprint": "0c98e1d027542de3bc344a584453ab5bbc220890fd55d81ebd8328d739ad987c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-15-paragraph-4",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment.",
+      "context": "Include diagrams, schematics, and photos, as needed. You should describe methods/software (e.g., image reconstruction, CAD) used to generate the geometry in order to demonstrate that the configuration was captured appropriately for the intended analysis. In particular, describe any scaling or similarities (e.g., geometric and dynamic similarity). For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following:",
+      "fingerprint": "09b77c19dd9dbe362f76f0ab45397cc0bf5eac52ace36c5981052548f1d31d56",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-15-paragraph-5",
+      "statement": "For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following:",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment. • Describe any differences between the model and the actual configuration.",
+      "fingerprint": "04b1c0fa72f242823a6f9b78762e8a286ed3acb2dcfaf3079d65f7280b73a52d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 33,
+      "anchor": "page-15-paragraph-6",
+      "statement": "• Describe any differences between the model and the actual configuration.",
+      "context": "List governed by page-15-paragraph-5: For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following: • Discuss how manufacturing tolerance dimensions might influence the results compared to nominal dimensions.",
+      "fingerprint": "9082234bf166011348bdbaa9c74864298256139efa075d8fd51f1179ca2c0a2c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 34,
+      "anchor": "page-15-paragraph-7",
+      "statement": "• Discuss how manufacturing tolerance dimensions might influence the results compared to nominal dimensions.",
+      "context": "List governed by page-15-paragraph-5: For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following: • Describe how the inlet and outlet geometries were selected and how these might affect the flow regime.",
+      "fingerprint": "f177f0fed7536b070530a2ba2d324ed900f43f266cbadbc0862fcea15642ec00",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 35,
+      "anchor": "page-15-paragraph-8",
+      "statement": "• Describe how the inlet and outlet geometries were selected and how these might affect the flow regime.",
+      "context": "List governed by page-15-paragraph-5: For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following: • If the device has unique geometric features (e.g. surface topography) that might affect the analysis, then describe how those were or were not accounted for in the model.",
+      "fingerprint": "0df5c4c9256fe5606ea42f85209acd96a9c4e5b21e0da7036e1712fdcbec6bab",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 36,
+      "anchor": "page-15-paragraph-9",
+      "statement": "• If the device has unique geometric features (e.g. surface topography) that might affect the analysis, then describe how those were or were not accounted for in the model.",
+      "context": "List governed by page-15-paragraph-5: For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following: • Include relevant information on limitations and assumptions (e.g., scaling) image resolution, smoothing, image segmentation errors, as related to the geometry.",
+      "fingerprint": "fbb82d3b09e143863e9cb3a603bf5d8a3b07ae0a2d2bd7e4bbe7e382873a32cc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 37,
+      "anchor": "page-15-paragraph-10",
+      "statement": "• Include relevant information on limitations and assumptions (e.g., scaling) image resolution, smoothing, image segmentation errors, as related to the geometry.",
+      "context": "List governed by page-15-paragraph-5: For example, if the entire device system was not modeled or if simplifications were made to the geometry, you should provide rationale for the system geometry that was analyzed (e.g., the use of symmetry, only a portion of device, or representative inlet and outlet geometries), including the following: V. Governing Equations/Constitutive Laws We recommend that you provide information regarding the governing equations and/or constitutive laws used to perform the computational analysis.",
+      "fingerprint": "9baf4bbfd6eea2c3ff80c2ab32fc0008a7f512a2843fbfb742fec7b58837d84d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 38,
+      "anchor": "page-15-paragraph-12",
+      "statement": "A. Details You should provide the governing equations/constitutive laws for the system, including the following:",
+      "context": "V. Governing Equations/Constitutive Laws We recommend that you provide information regarding the governing equations and/or constitutive laws used to perform the computational analysis. • the equations defining the model (e.g., Navier-Stokes equations for fluid flow, Fick’s equations for diffusion, Darcy’s equations for porous flow);",
+      "fingerprint": "6f31d43554065e181ecce015bcd7731060caeb1b092d2d82ee285ca08063228d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 39,
+      "anchor": "page-15-paragraph-13",
+      "statement": "• the equations defining the model (e.g., Navier-Stokes equations for fluid flow, Fick’s equations for diffusion, Darcy’s equations for porous flow);",
+      "context": "List governed by page-15-paragraph-12: A. Details You should provide the governing equations/constitutive laws for the system, including the following: • the constitutive relationships used in the simulation (e.g., the relation between shear stress and velocity gradient for fluid flow, the relation between diffusive flux and concentration gradient for diffusion, the relation between discharge flux and pressure gradient for porous flow);",
+      "fingerprint": "41dc218435c7920c1e1efc325db1f894505d169b82b4d0c988b84deb47c8d5bb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 40,
+      "anchor": "page-16-paragraph-1",
+      "statement": "• the constitutive relationships used in the simulation (e.g., the relation between shear stress and velocity gradient for fluid flow, the relation between diffusive flux and concentration gradient for diffusion, the relation between discharge flux and pressure gradient for porous flow);",
+      "context": "List governed by page-15-paragraph-12: A. Details You should provide the governing equations/constitutive laws for the system, including the following: • the turbulence modeling used, if any, including any specialized wall functions used; and • any other specialized mathematical modeling employed (e.g., blood damage models).",
+      "fingerprint": "183ff5062b65566e566dcff090c660d2accd2f4ece48136619daa63f6baa2e81",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 41,
+      "anchor": "page-16-paragraph-2",
+      "statement": "• the turbulence modeling used, if any, including any specialized wall functions used; and • any other specialized mathematical modeling employed (e.g., blood damage models).",
+      "context": "List governed by page-15-paragraph-12: A. Details You should provide the governing equations/constitutive laws for the system, including the following: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations and constitutive laws chosen to represent the system, including the following:",
+      "fingerprint": "eaf3c79eb11eb7a5e1492a7620ddb5d0304bd84fa9fd6f478cf49f2c8f9c7e29",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 42,
+      "anchor": "page-16-paragraph-3",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations and constitutive laws chosen to represent the system, including the following:",
+      "context": "• the turbulence modeling used, if any, including any specialized wall functions used; and • any other specialized mathematical modeling employed (e.g., blood damage models). • the simplifications of the basic mathematical equations based on assumptions and rationale (purpose) of the simulation being undertaken;",
+      "fingerprint": "559bb3cffc13a6af20fbe690b820c8f7eb7c07b9d48f62c36d926f2d71d3f586",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 43,
+      "anchor": "page-16-paragraph-4",
+      "statement": "• the simplifications of the basic mathematical equations based on assumptions and rationale (purpose) of the simulation being undertaken;",
+      "context": "List governed by page-16-paragraph-3: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations and constitutive laws chosen to represent the system, including the following: • the assumptions and rationale involved in simplifying the governing equations (e.g., use of steady rather than unsteady flow);",
+      "fingerprint": "c2755db28743478e95ec0dc1d573bd8392c5c612f76aca91ffcd36460340682a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 44,
+      "anchor": "page-16-paragraph-5",
+      "statement": "• the assumptions and rationale involved in simplifying the governing equations (e.g., use of steady rather than unsteady flow);",
+      "context": "List governed by page-16-paragraph-3: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations and constitutive laws chosen to represent the system, including the following: • the information that confirms that the constitutive model(s) captures the actual behavior being modeled; and • the use of any turbulence model or wall functions, as well as other equations used to capture additional phenomena (e.g., blood damage models).",
+      "fingerprint": "758f4ed13fe0c3babbebc5762d577931aae1694fe20c3ff3c3e816c228394ff1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 45,
+      "anchor": "page-16-paragraph-6",
+      "statement": "• the information that confirms that the constitutive model(s) captures the actual behavior being modeled; and • the use of any turbulence model or wall functions, as well as other equations used to capture additional phenomena (e.g., blood damage models).",
+      "context": "List governed by page-16-paragraph-3: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations and constitutive laws chosen to represent the system, including the following: VI. System Properties We recommend that you provide information regarding the biological, chemical, and physical properties of the system.",
+      "fingerprint": "663f9e16b8358d94d1f3b62e38778fa7629bb8a25c88755982391c3b8f622dd1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 46,
+      "anchor": "page-16-paragraph-8",
+      "statement": "A. Details You should provide, preferably in a tabular form, all physical properties, coefficients, and descriptive equations used in the simulation and post processing, such as:",
+      "context": "VI. System Properties We recommend that you provide information regarding the biological, chemical, and physical properties of the system. • fluid viscosity and density • gas solubility and diffusivity • diffusion and reaction coefficients of constituents • permeability and porosity • temperature dependence of properties if the simulation is not isothermal You should provide a report of any testing conducted to generate the system properties, if available.",
+      "fingerprint": "857e227627eb4125a90357d95d9ebd16a37604e4a13baf14bd3377d2c367e305",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 47,
+      "anchor": "page-16-paragraph-9",
+      "statement": "• fluid viscosity and density • gas solubility and diffusivity • diffusion and reaction coefficients of constituents • permeability and porosity • temperature dependence of properties if the simulation is not isothermal You should provide a report of any testing conducted to generate the system properties, if available.",
+      "context": "List governed by page-16-paragraph-8: A. Details You should provide, preferably in a tabular form, all physical properties, coefficients, and descriptive equations used in the simulation and post processing, such as: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the sources of the physical properties and coefficients adopted (e.g., literature, in vivo , ex vivo , in vitro testing).",
+      "fingerprint": "5c0f748a95cae7f06ea5dd04f45c97308e32cbe87271ad1845b97e67095c2c58",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 48,
+      "anchor": "page-16-paragraph-10",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the sources of the physical properties and coefficients adopted (e.g., literature, in vivo , ex vivo , in vitro testing).",
+      "context": "• fluid viscosity and density • gas solubility and diffusivity • diffusion and reaction coefficients of constituents • permeability and porosity • temperature dependence of properties if the simulation is not isothermal You should provide a report of any testing conducted to generate the system properties, if available. If literature data are cited, discuss their applicability to the specific conditions. If testing is conducted to determine the parameters, then provide appropriate details regarding the test. If applicable, discuss any relevant aspects related to the tissue physiology used (e.g., young versus mature, healthy versus diseased).",
+      "fingerprint": "ad98bff8a0d32b6d80cb8df60d82e90868235eae6014f534c8a5e9edb81b7ad5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 49,
+      "anchor": "page-17-paragraph-3",
+      "statement": "A. Details You should describe the boundary conditions (e.g., inlet and outlet, walls) of the model. You should describe any global boundary conditions used to represent the simulation in global terms (e.g., pressure drop, mass flow rates, revolutions per minute).",
+      "context": "VII. Boundary and Initial Conditions (System Conditions) We recommend that you provide information regarding the conditions that were imposed on the system. These might include, but are not limited to, the boundary and loading conditions, initial conditions, and other constraints that control the system. If the model was time dependent, provide the following: • the initial conditions;",
+      "fingerprint": "76dd3002a8b3ef0d1e1a8546aa5cd7485e5f01c694e6a5f6405066797101dcda",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 50,
+      "anchor": "page-17-paragraph-8",
+      "statement": "You should provide any relevant nondimensional numbers, such as: • Reynolds number • Strouhal or Womersley number (pulsatile flows) • Peclet or Sherwood number (diffusion/convection) • Dean number (curved flow) If symmetry was used to reduce the size of the model, then you should describe the symmetry boundary conditions.",
+      "context": "• any unsteady model(s) employed as an adjunct to a steady model using a rotating or moving frame of reference (e.g., for blood pump); and • a description of how the natural development and physical character of the flow was unaffected by the boundaries of the simulation; If a turbulence model was used, then you should provide the turbulence boundary conditions.",
+      "fingerprint": "676385fc81c55cfc6a3b2262ba144aa95de04ea050d5033608490ae3b5b6ba43",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 51,
+      "anchor": "page-17-paragraph-9",
+      "statement": "If a turbulence model was used, then you should provide the turbulence boundary conditions.",
+      "context": "You should provide any relevant nondimensional numbers, such as: • Reynolds number • Strouhal or Womersley number (pulsatile flows) • Peclet or Sherwood number (diffusion/convection) • Dean number (curved flow) If symmetry was used to reduce the size of the model, then you should describe the symmetry boundary conditions. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation the system conditions (e.g., literature, test reports, clinical data, medical imaging data).",
+      "fingerprint": "c05e1b603b82c9818d2ff30b0823f90da13b120576721fdec67c603137771fd4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 52,
+      "anchor": "page-17-paragraph-10",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation the system conditions (e.g., literature, test reports, clinical data, medical imaging data).",
+      "context": "If a turbulence model was used, then you should provide the turbulence boundary conditions. In particular, you should describe any differences or simplifications between the simulation environment and the actual environment, such as, • choice of initial and boundary conditions used;",
+      "fingerprint": "384db908b77aa586b5a5e0e84f475bd6064a524f8338feb7efe0157e357c0eed",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 53,
+      "anchor": "page-17-paragraph-11",
+      "statement": "In particular, you should describe any differences or simplifications between the simulation environment and the actual environment, such as, • choice of initial and boundary conditions used;",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation the system conditions (e.g., literature, test reports, clinical data, medical imaging data). • operating conditions of the simulation, especially if the simulation did not cover the expected range of use of the device; and • other simplifications (e.g., use of symmetry, use of rotating frame of reference instead of unsteady simulation for centrifugal pump).",
+      "fingerprint": "d9570c4a7f5a33eee1b06551de2d003e5559dd3bccc993be0127e59d8d13e88a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 54,
+      "anchor": "page-18-paragraph-3",
+      "statement": "A. Details You should describe the following regarding the spatial and temporal discretization:",
+      "context": "VIII. System Discretization We recommend that you provide information regarding the discretization and refinement techniques utilized during the numerical solution as outlined below. • the software used for generating the mesh; • the mesh in all regions of the computational domain (e.g., device, fluid, surrounding tissue);",
+      "fingerprint": "c12622fa5b2a531073d4ef0e8529eea7218ac463c99e21a29c43035d1f85acbb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 55,
+      "anchor": "page-18-paragraph-4",
+      "statement": "• the software used for generating the mesh; • the mesh in all regions of the computational domain (e.g., device, fluid, surrounding tissue);",
+      "context": "List governed by page-18-paragraph-3: A. Details You should describe the following regarding the spatial and temporal discretization: • the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (i.e., aspect ratios));",
+      "fingerprint": "d778c25e0e3edd10cb8cbe5ed4bc7b3c1e163433c53232e41f2ece9b73f2fc89",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 56,
+      "anchor": "page-18-paragraph-5",
+      "statement": "• the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (i.e., aspect ratios));",
+      "context": "List governed by page-18-paragraph-3: A. Details You should describe the following regarding the spatial and temporal discretization: • the local mesh refinement in areas of interest (e.g., areas of high shear stress, recirculation zones, critical concentrations, interactions between the device and the body), and provide representative images of the mesh in these areas;",
+      "fingerprint": "ee51fc95b9b7e2826462aa668f50223bef8d4539d487f042eecfbdc3c949b609",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 57,
+      "anchor": "page-18-paragraph-6",
+      "statement": "• the local mesh refinement in areas of interest (e.g., areas of high shear stress, recirculation zones, critical concentrations, interactions between the device and the body), and provide representative images of the mesh in these areas;",
+      "context": "List governed by page-18-paragraph-3: A. Details You should describe the following regarding the spatial and temporal discretization: • any special elements/cells used if a turbulence model (or any other numerical method requiring special elements/cells) was used; and • for unsteady models, describe how time steps were determined and were deemed appropriate for the analysis (e.g., time step refinement study).",
+      "fingerprint": "5e89356ab1f675aa721ec85a486ba1047d0d021cb70d9532c728417a0ac9b87d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 58,
+      "anchor": "page-18-paragraph-7",
+      "statement": "• any special elements/cells used if a turbulence model (or any other numerical method requiring special elements/cells) was used; and • for unsteady models, describe how time steps were determined and were deemed appropriate for the analysis (e.g., time step refinement study).",
+      "context": "List governed by page-18-paragraph-3: A. Details You should describe the following regarding the spatial and temporal discretization: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the following regarding the mesh refinement study that supports the mesh:",
+      "fingerprint": "546154736856a5552a966c4baca8294a1f35e6f2696e5296ceb0cd03098d2758",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 59,
+      "anchor": "page-18-paragraph-8",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the following regarding the mesh refinement study that supports the mesh:",
+      "context": "• any special elements/cells used if a turbulence model (or any other numerical method requiring special elements/cells) was used; and • for unsteady models, describe how time steps were determined and were deemed appropriate for the analysis (e.g., time step refinement study). • any adaptive meshing or automatic mesh refinement used; • the methods of the mesh refinement study, and provide representative images of the meshes used in the refinement study;",
+      "fingerprint": "a97c371d62f55f6c08ece7153a5016da7ce7fd151cb0e0d93f21b43f1d3d5b93",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 60,
+      "anchor": "page-18-paragraph-9",
+      "statement": "• any adaptive meshing or automatic mesh refinement used; • the methods of the mesh refinement study, and provide representative images of the meshes used in the refinement study;",
+      "context": "List governed by page-18-paragraph-8: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the following regarding the mesh refinement study that supports the mesh: • the mesh sensitivity analysis performed to justify the production mesh used for the subsequent simulations, that is, to demonstrate that the mesh density did not affect the numerical results;",
+      "fingerprint": "02c77530a28aadb5698b97c67e0472fa1c3878ca3c41d024845d04f3bebb8a4a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 61,
+      "anchor": "page-18-paragraph-10",
+      "statement": "• the mesh sensitivity analysis performed to justify the production mesh used for the subsequent simulations, that is, to demonstrate that the mesh density did not affect the numerical results;",
+      "context": "List governed by page-18-paragraph-8: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the following regarding the mesh refinement study that supports the mesh: • the numerical metrics (e.g., shear rates, concentration gradients) chosen to establish the mesh density; and • the algorithm for assigning the mesh density or distribution.",
+      "fingerprint": "682ec1247283637a60cdd8ea7086158f97adee0e0c4c4ca885fdf7177dd4b3eb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 62,
+      "anchor": "page-18-paragraph-11",
+      "statement": "• the numerical metrics (e.g., shear rates, concentration gradients) chosen to establish the mesh density; and • the algorithm for assigning the mesh density or distribution.",
+      "context": "List governed by page-18-paragraph-8: B. Assumptions, simplifications, and rationale You should describe and provide rationale for the following regarding the mesh refinement study that supports the mesh: IX. Numerical Implementation We recommend that you provide information regarding the numerical implementation used to solve the governing equations.",
+      "fingerprint": "cb865b6b38062d76a3a5c6bb413680fc7a2226e32a58ab01a5cc0c01b821b27a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 63,
+      "anchor": "page-18-paragraph-13",
+      "statement": "A. Details You should describe the discretization of the equations, including:",
+      "context": "IX. Numerical Implementation We recommend that you provide information regarding the numerical implementation used to solve the governing equations. • numerical method used (e.g., finite element, finite volume, finite difference);",
+      "fingerprint": "8aed21b218ed03f700c2cba16627ae42b05a8e40f5e80ec92042e75850762062",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 64,
+      "anchor": "page-18-paragraph-14",
+      "statement": "• numerical method used (e.g., finite element, finite volume, finite difference);",
+      "context": "List governed by page-18-paragraph-13: A. Details You should describe the discretization of the equations, including: • temporal discretization, if any (e.g., explicit, implicit, semi-implicit);",
+      "fingerprint": "6f7239f8b1e07260a147ece2c815f5632e4eedf06666972a528d7553ac31e219",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 65,
+      "anchor": "page-18-paragraph-15",
+      "statement": "• temporal discretization, if any (e.g., explicit, implicit, semi-implicit);",
+      "context": "List governed by page-18-paragraph-13: A. Details You should describe the discretization of the equations, including: • spatial discretization (i.e., interpolation of field variables between grid points);",
+      "fingerprint": "06e73f1c80ef34fb7559e799a46fbfd2353456153240ab9ac3eef9e2bbcea05b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 66,
+      "anchor": "page-19-paragraph-1",
+      "statement": "• spatial discretization (i.e., interpolation of field variables between grid points);",
+      "context": "List governed by page-18-paragraph-13: A. Details You should describe the discretization of the equations, including: and • method for interpolating from face to nodes or vice versa (e.g., upwind, power law).",
+      "fingerprint": "cb84c0841832b673c511e81e0fd44b3eefb8b957abd2f6d4a758ea9d20768fd6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 67,
+      "anchor": "page-19-paragraph-3",
+      "statement": "You should describe the solution methods and provide the following: • solver method (e.g., Newton, multigrid);",
+      "context": "and • method for interpolating from face to nodes or vice versa (e.g., upwind, power law). • solver parameters (e.g., linear solver and tolerance, preconditioners, analytic or numerical Jacobian);",
+      "fingerprint": "c9cf8b6a108b7416711c358013817cee84cea979b2f5b695303b6a303e10d174",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 68,
+      "anchor": "page-19-paragraph-7",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the solver and associated parameters. For example, provide rationale for the discretization/solver choices made (i.e., benefits over other choices) and discuss the ramifications of the particular choice (i.e., discretization errors).",
+      "context": "• details regarding code verification of the user-supplied subroutines/code; and • convergence criteria (e.g., error method, error threshold, sampling locations and variables used). X. Validation We recommend that you provide information regarding the method(s) employed to validate the computational model [1]. We recommend the following format for presenting that information.",
+      "fingerprint": "824ed2ae86d16129d4d61b53cc52ab8f7b152cbd1e7467c952d1ee3afb7d945c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 69,
+      "anchor": "page-19-paragraph-9",
+      "statement": "A. General Description • You should describe, if any, the experimental or analytical comparator that was used for model validation study (e.g., velocity, wall shear stress calculations, hydrodynamic pressure loss). If a comparator was used, describe if the comparison was made in a quantitative (preferred) or qualitative manner.",
+      "context": "X. Validation We recommend that you provide information regarding the method(s) employed to validate the computational model [1]. We recommend the following format for presenting that information. • You should describe experimental uncertainty estimates if an experimental comparison is performed.",
+      "fingerprint": "8a8b81968277a1947e7959cbef554cd3ddacdf00dbc820a9c5935fe78dec090a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 70,
+      "anchor": "page-19-paragraph-10",
+      "statement": "• You should describe experimental uncertainty estimates if an experimental comparison is performed.",
+      "context": "A. General Description • You should describe, if any, the experimental or analytical comparator that was used for model validation study (e.g., velocity, wall shear stress calculations, hydrodynamic pressure loss). If a comparator was used, describe if the comparison was made in a quantitative (preferred) or qualitative manner. B. Methods • You should describe the validation test conditions and geometry.",
+      "fingerprint": "c7e4320ce8c8800da74a87d578b6919b8bd886be4f955ee70c9358e4aac63d49",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 71,
+      "anchor": "page-19-paragraph-11",
+      "statement": "B. Methods • You should describe the validation test conditions and geometry.",
+      "context": "• You should describe experimental uncertainty estimates if an experimental comparison is performed. • You should describe the region of interest where validation(s) are performed.",
+      "fingerprint": "7726b460dde943fa07868a38a1ba900987d215c8f1838dbd74a6471b7d41db84",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 72,
+      "anchor": "page-19-paragraph-12",
+      "statement": "• You should describe the region of interest where validation(s) are performed.",
+      "context": "B. Methods • You should describe the validation test conditions and geometry. • You should provide diagrams and data to support the assessment of the model.",
+      "fingerprint": "d9767e2dd4e400e234b99c81845909ac14f34cfbc1b07a92bd481fb3bbd0b0db",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 73,
+      "anchor": "page-19-paragraph-13",
+      "statement": "• You should provide diagrams and data to support the assessment of the model.",
+      "context": "• You should describe the region of interest where validation(s) are performed. • You should describe instrumentation and calibration. • If a biological process was modeled (e.g., hemolysis, platelet damage, binding of drug in vessel tissue), then you should describe how the biological calculations were verified and validated.",
+      "fingerprint": "82972bad575efe2ed27f9b57abee5286ac1bc223d59793e7abca0c9607221f92",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 74,
+      "anchor": "page-19-paragraph-14",
+      "statement": "• You should describe instrumentation and calibration. • If a biological process was modeled (e.g., hemolysis, platelet damage, binding of drug in vessel tissue), then you should describe how the biological calculations were verified and validated.",
+      "context": "• You should provide diagrams and data to support the assessment of the model. C. Assumptions and Rationale • You should describe any simplifications for experimental comparator (e.g., use of surrogates when biological information is lacking).",
+      "fingerprint": "303e720042486533c58ed7c3ba237271765666a882c1373fc37e7902dd6fd992",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 75,
+      "anchor": "page-19-paragraph-15",
+      "statement": "C. Assumptions and Rationale • You should describe any simplifications for experimental comparator (e.g., use of surrogates when biological information is lacking).",
+      "context": "• You should describe instrumentation and calibration. • If a biological process was modeled (e.g., hemolysis, platelet damage, binding of drug in vessel tissue), then you should describe how the biological calculations were verified and validated. You should provide a rationale to support any differences between the operating and boundary conditions of the comparator experiments and simulations.",
+      "fingerprint": "269c6f8943e210af5f8be2fd6dc2e3f17859a8d6dbee58c2e3cc657c1d41c39c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 76,
+      "anchor": "page-20-paragraph-1",
+      "statement": "You should provide a rationale to support any differences between the operating and boundary conditions of the comparator experiments and simulations.",
+      "context": "C. Assumptions and Rationale • You should describe any simplifications for experimental comparator (e.g., use of surrogates when biological information is lacking). • You should describe any sensitivity analysis performed to determine how the solution varied as a function of parameters that are not well known (e.g., parameters contained in turbulence models, boundary conditions, fluid properties).",
+      "fingerprint": "6a04ef1a02a0e77862cc83db2833c4d1ef4439ccf213304cdfdb0abc53f5a064",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 77,
+      "anchor": "page-20-paragraph-2",
+      "statement": "• You should describe any sensitivity analysis performed to determine how the solution varied as a function of parameters that are not well known (e.g., parameters contained in turbulence models, boundary conditions, fluid properties).",
+      "context": "You should provide a rationale to support any differences between the operating and boundary conditions of the comparator experiments and simulations. • You should provide a rationale for any geometric and dynamic scaling assumptions.",
+      "fingerprint": "e3fc0756c29ce208ccb747c5986e8a58c5a6e916e6a2b968018efd5d89510611",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 78,
+      "anchor": "page-20-paragraph-3",
+      "statement": "• You should provide a rationale for any geometric and dynamic scaling assumptions.",
+      "context": "• You should describe any sensitivity analysis performed to determine how the solution varied as a function of parameters that are not well known (e.g., parameters contained in turbulence models, boundary conditions, fluid properties). D. Validation Study Results • You should provide qualitative comparisons between the QOI from the computational model and experimental results. For example, images that directly compare model and experimental results (e.g., velocity or shear stress) can provide an overall qualitative assessment of how well the model can capture relevant behavior.",
+      "fingerprint": "60801aa0babcd3714e6d0aa8b9b46e54cb54b2ad4bacd0f0c3c9b564779b0b20",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 79,
+      "anchor": "page-20-paragraph-4",
+      "statement": "D. Validation Study Results • You should provide qualitative comparisons between the QOI from the computational model and experimental results. For example, images that directly compare model and experimental results (e.g., velocity or shear stress) can provide an overall qualitative assessment of how well the model can capture relevant behavior.",
+      "context": "• You should provide a rationale for any geometric and dynamic scaling assumptions. • You should provide quantitative comparisons for critical areas of relevance to the goals of the study [2, 3].",
+      "fingerprint": "730c2a68262f21e2a43d409290887f6ccab6eb7801576911ca60bef42c640f09",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 80,
+      "anchor": "page-20-paragraph-5",
+      "statement": "• You should provide quantitative comparisons for critical areas of relevance to the goals of the study [2, 3].",
+      "context": "D. Validation Study Results • You should provide qualitative comparisons between the QOI from the computational model and experimental results. For example, images that directly compare model and experimental results (e.g., velocity or shear stress) can provide an overall qualitative assessment of how well the model can capture relevant behavior. E. Discussion • You should discuss the degree of agreement between the computational and experimental results.",
+      "fingerprint": "37b4c4fb798697973f614c4f5a83db4b97e274e4001f189b0f3a42139e1fdc1d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 81,
+      "anchor": "page-20-paragraph-6",
+      "statement": "E. Discussion • You should discuss the degree of agreement between the computational and experimental results.",
+      "context": "• You should provide quantitative comparisons for critical areas of relevance to the goals of the study [2, 3]. • You should discuss the relevance of your validation experiment to expected clinical loading conditions, implications of model and experimental assumptions on the results, limitations on the agreement between the validation model and experiment, and the extent of predictability to your device or device-tissue model.",
+      "fingerprint": "06d40fe68dd71381ef58b239b15e6dcf18f7dd3cbafe2b8d75220142129642f8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 82,
+      "anchor": "page-20-paragraph-7",
+      "statement": "• You should discuss the relevance of your validation experiment to expected clinical loading conditions, implications of model and experimental assumptions on the results, limitations on the agreement between the validation model and experiment, and the extent of predictability to your device or device-tissue model.",
+      "context": "E. Discussion • You should discuss the degree of agreement between the computational and experimental results. • If predictions of behavior are given in areas that are not accessible by experiment, you should provide a measure of confidence, as well as the risk associated and how it influenced your decision.",
+      "fingerprint": "b86bc223b72a9e5ccea8220ab741ba8be13233976a66464218822a5771c5fc07",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 83,
+      "anchor": "page-20-paragraph-8",
+      "statement": "• If predictions of behavior are given in areas that are not accessible by experiment, you should provide a measure of confidence, as well as the risk associated and how it influenced your decision.",
+      "context": "• You should discuss the relevance of your validation experiment to expected clinical loading conditions, implications of model and experimental assumptions on the results, limitations on the agreement between the validation model and experiment, and the extent of predictability to your device or device-tissue model. XI. Results We recommend that you present the quantitative results from the computational modeling study. You should provide the results with sufficient level of details, including labels and legends. The results may be presented in more than one format (e.g., table, graph, plot).",
+      "fingerprint": "3bce64f0a088f13832633253ddac661aefcce32cf38a19b9a4effcc8f553465b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 84,
+      "anchor": "page-20-paragraph-9",
+      "statement": "XI. Results We recommend that you present the quantitative results from the computational modeling study. You should provide the results with sufficient level of details, including labels and legends. The results may be presented in more than one format (e.g., table, graph, plot).",
+      "context": "• If predictions of behavior are given in areas that are not accessible by experiment, you should provide a measure of confidence, as well as the risk associated and how it influenced your decision. Specifically, we recommend that you present the results in regions of interest graphically and quantitatively. Additionally, please consider providing the following, as applicable:",
+      "fingerprint": "bd16c531af587315d844a2f921287e857f7325707eb6da55530da8911553a5c1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 85,
+      "anchor": "page-21-paragraph-3",
+      "statement": "For example, it is important to know whether the simulation of blood flow through a small gap in a blood pump was based on the nominal dimensions or whether it includes the limits of the manufactured component tolerances. If you believe that your results are significantly dependent on the assumptions and/or simplifications in your model, you should consider performing sensitivity analyses on the computational model parameters associated with the assumptions and simplifications.",
+      "context": "Because assumptions and simplifications are made in the generation of the model device, in the performance of the simulation, and in the interpretation of the analysis, it is important to describe the limitations of the use of the computational model and the interpretation of the results. Therefore, we recommend that you discuss how the assumptions/simplifications might affect the output of the model and simulation and the interpretation of its relevance to device performance and safety. XIII. Discussion/Conclusion We recommend that you summarize the CM&S study with respect to the context of use and how it relates to the regulatory submission (e.g., selecting the device size that is expected to perform the worst under the simulated use conditions, establishing the loading conditions for bench testing). Discuss how the results compare with experimental results, literature results and/or p",
+      "fingerprint": "7445ad698acdd5f1020b83f12d148ea017c39dd57b5569bdfe78c14aa64edb02",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 86,
+      "anchor": "page-22-paragraph-4",
+      "statement": "The scope of this appendix is limited to finite element analysis (FEA). FDA acknowledges that there are other types of computational modeling modalities that can be used to evaluate the mechanics and kinematics of medical devices. Additionally, FDA acknowledges the issues and considerations for non-finite element analyses are similar to those raised for FEA and aspects of this guidance might be applicable. However, there might be aspects of the non-FEA approaches that are distinct from FEA and could present other issues which are not addressed in this appendix but should be included in the reporting of those studies.",
+      "context": "Specific examples provided in this appendix, such as output metrics, are only examples and should not be considered as requirements or recommendations for the type of CM&S studies and validation to complete. Outline of the Report In the following section, we provide an outline for reporting the details of your computational modeling and simulation study.",
+      "fingerprint": "34d30ad6689f734a4b0e52a3f55c30128b01fc665088dabe9861b5493b532cf7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 87,
+      "anchor": "page-22-paragraph-7",
+      "statement": "• You should briefly summarize the context of use of the CM&S study with respect to the regulatory submission, scope and quantities of interest of the analysis.",
+      "context": "I. Executive Report Summary We recommend that you provide a concise, high-level overview of the entire report including the following: • You should briefly summarize the model, including geometry, material properties, and boundary conditions.",
+      "fingerprint": "32dbc972e0685ffce098066ae756e5c61f9d117d0b336062554ae661b8a5b473",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 88,
+      "anchor": "page-22-paragraph-8",
+      "statement": "• You should briefly summarize the model, including geometry, material properties, and boundary conditions.",
+      "context": "• You should briefly summarize the context of use of the CM&S study with respect to the regulatory submission, scope and quantities of interest of the analysis. • You should state the code/software used. • You should briefly summarize the validation method and results.",
+      "fingerprint": "0bc3abd92e4275ff3d852bcf016873f6e6eb2f0ea1cf8a394e5fd7bf777c58bf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 89,
+      "anchor": "page-22-paragraph-9",
+      "statement": "• You should state the code/software used. • You should briefly summarize the validation method and results.",
+      "context": "• You should briefly summarize the model, including geometry, material properties, and boundary conditions. • You should discuss the simulation results and how they relate to the regulatory purpose of the CM&S study.",
+      "fingerprint": "7ea6680ad95105be51f24e5ece352de127146ffc7a9bd1e39197e1e3a1259c75",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 90,
+      "anchor": "page-22-paragraph-10",
+      "statement": "• You should discuss the simulation results and how they relate to the regulatory purpose of the CM&S study.",
+      "context": "• You should state the code/software used. • You should briefly summarize the validation method and results. • You should briefly summarize the conclusion(s). • Keywords - please provide up to five keywords or key phrases that describe the modeling modality, the device product code, any relevant materials of the device,",
+      "fingerprint": "7f6a88fe10cf665d83fb4b064d4009586b5240ab29206a11f878bf778ffa2ec4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 91,
+      "anchor": "page-22-paragraph-11",
+      "statement": "• You should briefly summarize the conclusion(s). • Keywords - please provide up to five keywords or key phrases that describe the modeling modality, the device product code, any relevant materials of the device,",
+      "context": "• You should discuss the simulation results and how they relate to the regulatory purpose of the CM&S study. analysis type, and location in the body for intended use (e.g., finite element analysis, MIH, nitinol, fatigue safety factors, aorta).",
+      "fingerprint": "7ccaaa167c28b5da652f331edb222142e1bbb7e0725a9df0400853d344e0b6e6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 92,
+      "anchor": "page-23-paragraph-2",
+      "statement": "II. Background/Introduction You should describe the context of use of the CM&S study, as this will dictate the relevant details necessary for review. We recommend that you give a brief device description along with its intended use environment, specifically noting all causes of loading/deformation on/from the device.",
+      "context": "analysis type, and location in the body for intended use (e.g., finite element analysis, MIH, nitinol, fatigue safety factors, aorta). III. Code Verification We recommend that you provide a brief description of the software quality assurance (SQA) and numerical code verification (NCV) that you performed on the software used for the CM&S study. Software tools include off-the-shelf, modified-off-the-shelf, or user-developed. Code verification is important, regardless of the software type.",
+      "fingerprint": "ba65944e98445b0dda4133e97f84f32eb4a857c2649bc7ad9fb9303447b60dd6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 93,
+      "anchor": "page-23-paragraph-4",
+      "statement": "A. Details You should briefly describe the code verification activities. You may reference available documentation and verification results from the software developer.",
+      "context": "III. Code Verification We recommend that you provide a brief description of the software quality assurance (SQA) and numerical code verification (NCV) that you performed on the software used for the CM&S study. Software tools include off-the-shelf, modified-off-the-shelf, or user-developed. Code verification is important, regardless of the software type. B. Assumptions, simplifications and rationale You should describe and provide rationale for the applicability of the verified code to your computational domain. If applicable, describe and rationale for differences between the code used for verification and the code used for the context of use.",
+      "fingerprint": "fe84506921c0b9401868ea21dfe16d1bf1a20c45c8f2f2b83757cc68076fa1f1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 94,
+      "anchor": "page-23-paragraph-10",
+      "statement": "B. Assumptions, simplifications, and rationale If you did not model the entire device, you should describe and provide rationale for the portion of the device that was modeled (e.g., utilized symmetry). If the device is available in different sizes or configurations, describe which sizes or configurations were modeled and provide rationale to support the analysis of those sizes. If the device and/or tissue has unique geometric features that might affect the analysis (e.g.,",
+      "context": "A. Details We recommend that you provide details regarding the device and/or tissue geometry that was modeled and the method used to create the computational representation of your geometry. This section might include CAD drawings or reconstructed digital images. surface topography) then you should describe how those were or were not accounted for in the model. Finally, regarding the method of construction, please include relevant information on limitations and assumptions (e.g., image resolution and smoothing) as related to the geometry.",
+      "fingerprint": "937f527ee38f58121a9b86dc51eda5bf7043dfbd83a62e6c5438c73a0e79c974",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 95,
+      "anchor": "page-24-paragraph-1",
+      "statement": "surface topography) then you should describe how those were or were not accounted for in the model. Finally, regarding the method of construction, please include relevant information on limitations and assumptions (e.g., image resolution and smoothing) as related to the geometry.",
+      "context": "B. Assumptions, simplifications, and rationale If you did not model the entire device, you should describe and provide rationale for the portion of the device that was modeled (e.g., utilized symmetry). If the device is available in different sizes or configurations, describe which sizes or configurations were modeled and provide rationale to support the analysis of those sizes. If the device and/or tissue has unique geometric features that might affect the analysis (e.g., V. Constitutive Laws We recommend that you provide details for all of the constitutive relationships used to describe the mechanical behavior of the device material(s) and, if appropriate, the surrounding anatomy.",
+      "fingerprint": "4454a57875ad8774df4c919e4c59dfd16742caefbfa2bf7e87ced2872c143b9f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 96,
+      "anchor": "page-24-paragraph-3",
+      "statement": "A. Details You should describe the stress-strain relationship, including any material nonlinearities that were included in the model (e.g., linear, hyperelastic, elastic- plastic, viscoelastic, poroelastic) of the device and/or tissue material(s). Specify the degree of anisotropy (e.g., isotropic, orthotropic) of the material(s). If appropriate, the constitutive relationships may be presented graphically and/or with equations. The numerical inputs for the parameters within the constitutive model should be provided in Section VI – Material Properties.",
+      "context": "V. Constitutive Laws We recommend that you provide details for all of the constitutive relationships used to describe the mechanical behavior of the device material(s) and, if appropriate, the surrounding anatomy. B. Assumptions, simplifications, and rationale You should provide rationale for the constitutive relationship chosen to represent the material behavior and discuss why the assumptions are appropriate. For example, if you employed linear elastic constitutive laws then, in general, only small-strain deformations should be presented. A rationale should be presented if post-yield stresses are observed and plasticity is omitted.",
+      "fingerprint": "6baed19ec772869f4a3bdf9d2d0b9213197f59b42ce2a3fc53bcca076a36285f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 97,
+      "anchor": "page-24-paragraph-4",
+      "statement": "B. Assumptions, simplifications, and rationale You should provide rationale for the constitutive relationship chosen to represent the material behavior and discuss why the assumptions are appropriate. For example, if you employed linear elastic constitutive laws then, in general, only small-strain deformations should be presented. A rationale should be presented if post-yield stresses are observed and plasticity is omitted.",
+      "context": "A. Details You should describe the stress-strain relationship, including any material nonlinearities that were included in the model (e.g., linear, hyperelastic, elastic- plastic, viscoelastic, poroelastic) of the device and/or tissue material(s). Specify the degree of anisotropy (e.g., isotropic, orthotropic) of the material(s). If appropriate, the constitutive relationships may be presented graphically and/or with equations. The numerical inputs for the parameters within the constitutive model should be provided in Section VI – Material Properties. VI. Material Properties (System Properties) We recommend that you provide details regarding all materials used in the CM&S study.",
+      "fingerprint": "c6ce0418f05bc34da62ba29313f7a1ca3c797311111dfc61586628815b92058e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 98,
+      "anchor": "page-24-paragraph-6",
+      "statement": "A. Details For all materials modeled, you should report the numerical inputs necessary to fully characterize the mechanical behavior. Some examples of important material inputs include:",
+      "context": "VI. Material Properties (System Properties) We recommend that you provide details regarding all materials used in the CM&S study. • constitutive law coefficients • elastic modulus • ultimate tensile strength • fatigue life/endurance limit • plateau stresses and elastic strain limits for shape memory or superelastic materials (e.g., Nitinol) • strain at break • viscoelastic properties",
+      "fingerprint": "17ff6ab8a72b99dfc6074400ba6f73c0e1e656f9ede3a9b1dcfa42589c88f81f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 99,
+      "anchor": "page-24-paragraph-7",
+      "statement": "• constitutive law coefficients • elastic modulus • ultimate tensile strength • fatigue life/endurance limit • plateau stresses and elastic strain limits for shape memory or superelastic materials (e.g., Nitinol) • strain at break • viscoelastic properties",
+      "context": "List governed by page-24-paragraph-6: A. Details For all materials modeled, you should report the numerical inputs necessary to fully characterize the mechanical behavior. Some examples of important material inputs include: B. Assumptions, simplifications, and rationale You should provide rationale for the sources of material inputs, and state any assumptions or limitations that were inherent from the sources you reference or the testing that you conducted.",
+      "fingerprint": "1fa80c5de7ebff33795cd69959e3d8a2ae1483055a094ffc28c2bead90751675",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 100,
+      "anchor": "page-24-paragraph-8",
+      "statement": "B. Assumptions, simplifications, and rationale You should provide rationale for the sources of material inputs, and state any assumptions or limitations that were inherent from the sources you reference or the testing that you conducted.",
+      "context": "• constitutive law coefficients • elastic modulus • ultimate tensile strength • fatigue life/endurance limit • plateau stresses and elastic strain limits for shape memory or superelastic materials (e.g., Nitinol) • strain at break • viscoelastic properties If the inputs were obtained from testing, you should provide a description of the testing (e.g., uniaxial tension, 3-point bend, in vivo imaging, implanted sensor) including sample conditions (e.g., geometry, processing, heat treatment), protocol (e.g., loading rate, frequency, mean strain), environment (e.g., temperature, humidity, solution), and, if necessary, the method(s) used to determine the material properties from the test data.",
+      "fingerprint": "21e9054060452e3dbe03a75303d3119b39af3e9d7f3b0449ffe013d8143bb0b7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 101,
+      "anchor": "page-25-paragraph-1",
+      "statement": "If the inputs were obtained from testing, you should provide a description of the testing (e.g., uniaxial tension, 3-point bend, in vivo imaging, implanted sensor) including sample conditions (e.g., geometry, processing, heat treatment), protocol (e.g., loading rate, frequency, mean strain), environment (e.g., temperature, humidity, solution), and, if necessary, the method(s) used to determine the material properties from the test data.",
+      "context": "B. Assumptions, simplifications, and rationale You should provide rationale for the sources of material inputs, and state any assumptions or limitations that were inherent from the sources you reference or the testing that you conducted. Additionally, for the material properties of the device, state whether testing was conducted on finished devices; if it was not, provide rationale. Similarly, for the material properties of the surrounding biological materials, you should state whether the materials tested capture the important aspects of the target patient population (e.g., healthy versus diseased, young versus mature); if they do not, provide rationale.",
+      "fingerprint": "8b6c6cb86b643586320ace1c78e19477f9b498b71c3555227d35cb387a6a6acf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 102,
+      "anchor": "page-25-paragraph-2",
+      "statement": "Additionally, for the material properties of the device, state whether testing was conducted on finished devices; if it was not, provide rationale. Similarly, for the material properties of the surrounding biological materials, you should state whether the materials tested capture the important aspects of the target patient population (e.g., healthy versus diseased, young versus mature); if they do not, provide rationale.",
+      "context": "If the inputs were obtained from testing, you should provide a description of the testing (e.g., uniaxial tension, 3-point bend, in vivo imaging, implanted sensor) including sample conditions (e.g., geometry, processing, heat treatment), protocol (e.g., loading rate, frequency, mean strain), environment (e.g., temperature, humidity, solution), and, if necessary, the method(s) used to determine the material properties from the test data. VII. Boundary & Initial Conditions (System Conditions) We recommend that you provide information regarding the boundary and loading conditions, initial conditions, and other constraints that control the system.",
+      "fingerprint": "18e8115b3d7e95db60da7d10fa712f880d4e8c98a0bbeab37ec691b139e64bc8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 103,
+      "anchor": "page-25-paragraph-4",
+      "statement": "A. Details You should describe the conditions of the computational model. Examples include, but are not limited to, stresses and strains imposed from manufacturing (residual), implantation, and physiologic/pathologic loading. If applicable, we recommend the following for each analysis step:",
+      "context": "VII. Boundary & Initial Conditions (System Conditions) We recommend that you provide information regarding the boundary and loading conditions, initial conditions, and other constraints that control the system. • You should provide an overall schematic or diagram that clearly depicts the location and direction of the imposed boundary conditions.",
+      "fingerprint": "47da0413d0b13e7d4aed1387442776bcf75288ef5969ad14ee4ebd1ce7edb6ea",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 104,
+      "anchor": "page-25-paragraph-5",
+      "statement": "• You should provide an overall schematic or diagram that clearly depicts the location and direction of the imposed boundary conditions.",
+      "context": "List governed by page-25-paragraph-4: A. Details You should describe the conditions of the computational model. Examples include, but are not limited to, stresses and strains imposed from manufacturing (residual), implantation, and physiologic/pathologic loading. If applicable, we recommend the following for each analysis step: • You should specify the three-dimensional magnitude and direction of the applied displacements, forces, pressures, or moments.",
+      "fingerprint": "ac00e2b4a9c5449d418229f2001b4e53bdb5cfe564dd92a3202f463640e4e323",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 105,
+      "anchor": "page-25-paragraph-6",
+      "statement": "• You should specify the three-dimensional magnitude and direction of the applied displacements, forces, pressures, or moments.",
+      "context": "List governed by page-25-paragraph-4: A. Details You should describe the conditions of the computational model. Examples include, but are not limited to, stresses and strains imposed from manufacturing (residual), implantation, and physiologic/pathologic loading. If applicable, we recommend the following for each analysis step: • You should describe any constraints used in the model, including the location(s) and the degrees of freedom for each fixed or free constraint.",
+      "fingerprint": "f35c55cd38434d9e64cb8914b3d5a5327a788170833ba55af69403740a1a71fe",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 106,
+      "anchor": "page-25-paragraph-7",
+      "statement": "• You should describe any constraints used in the model, including the location(s) and the degrees of freedom for each fixed or free constraint.",
+      "context": "List governed by page-25-paragraph-4: A. Details You should describe the conditions of the computational model. Examples include, but are not limited to, stresses and strains imposed from manufacturing (residual), implantation, and physiologic/pathologic loading. If applicable, we recommend the following for each analysis step: • You should explain how the components are expected to interact. We recommend that you provide a description of the interaction (i.e., contact) between the device and other components within the model, as well as those components that self-contact (e.g., stent struts under axial compression).",
+      "fingerprint": "3a14e8edde473a248795bd2814d1347d7de460b354f953e71c11ed854a035554",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 107,
+      "anchor": "page-25-paragraph-8",
+      "statement": "• You should explain how the components are expected to interact. We recommend that you provide a description of the interaction (i.e., contact) between the device and other components within the model, as well as those components that self-contact (e.g., stent struts under axial compression).",
+      "context": "List governed by page-25-paragraph-4: A. Details You should describe the conditions of the computational model. Examples include, but are not limited to, stresses and strains imposed from manufacturing (residual), implantation, and physiologic/pathologic loading. If applicable, we recommend the following for each analysis step: B. Assumptions, simplifications, and rationale You should provide rationale that describes how each imposed condition is appropriate for the relevant aspect of the context of use. You should describe the sources and/or methods used to obtain the loading mode and magnitude (e.g., literature data, standards, imaging, other analytic methods).",
+      "fingerprint": "4903bad9af8f3f54b6f78e48a27357519724c0b8b1dce3991c25015303d20e43",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 108,
+      "anchor": "page-25-paragraph-9",
+      "statement": "B. Assumptions, simplifications, and rationale You should provide rationale that describes how each imposed condition is appropriate for the relevant aspect of the context of use. You should describe the sources and/or methods used to obtain the loading mode and magnitude (e.g., literature data, standards, imaging, other analytic methods).",
+      "context": "• You should explain how the components are expected to interact. We recommend that you provide a description of the interaction (i.e., contact) between the device and other components within the model, as well as those components that self-contact (e.g., stent struts under axial compression). VIII. Mesh (System Discretization)",
+      "fingerprint": "cb30ec37da6bab12b5f5547ad1a816b36301a72e28ecef772db58a7b53a43ab5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 109,
+      "anchor": "page-26-paragraph-2",
+      "statement": "• You should provide details of the mesh refinement or convergence analysis used to demonstrate that the QOI are independent of element size.",
+      "context": "relevant scales, especially in transition regions or regions of complex geometry and regions of high stress or strain. − Report the number of mesh densities used to demonstrate convergence stability of the QOI with respect to element size.",
+      "fingerprint": "7e6820f483cc69e7c4e23ac1219ade55825942334081f9de576ae6f2bc6a9050",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 110,
+      "anchor": "page-26-paragraph-5",
+      "statement": "B. Assumptions, simplifications, and rationale Regarding the mesh refinement study, you should provide rationale for the type of element selected and for the numerical criterion chosen (e.g., principal stress, displacement) to evaluate the mesh density.",
+      "context": "− Report the metric(s) of the mesh refinement analysis in graphical or tabular format and clearly identify the mesh chosen for the analysis against the criterion. IX. Solver (Numerical Implementation) We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis.",
+      "fingerprint": "fa517d2c48c040122b73f47402a3c6fadcf85dbe736a42f9c543d037236a6c7b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 111,
+      "anchor": "page-26-paragraph-7",
+      "statement": "• You should provide the name (including version number) of the software used to solve the model(s).",
+      "context": "IX. Solver (Numerical Implementation) We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis. • If custom subroutines are used, you should provide information on code verification (e.g., test case) and details of the implementation.",
+      "fingerprint": "f109e693e4e5ee67a4f2d7758b68780383e3dc97977fe3c1703d38e17bc89798",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 112,
+      "anchor": "page-26-paragraph-8",
+      "statement": "• If custom subroutines are used, you should provide information on code verification (e.g., test case) and details of the implementation.",
+      "context": "• You should provide the name (including version number) of the software used to solve the model(s). • You should describe the type of analysis completed (e.g., static structural, vibration, buckling).",
+      "fingerprint": "bbbb345ba7b22b89a391acaa7bcbd1acd2c1ba8a646bf05ecea5779b9d53b361",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 113,
+      "anchor": "page-26-paragraph-9",
+      "statement": "• You should describe the type of analysis completed (e.g., static structural, vibration, buckling).",
+      "context": "• If custom subroutines are used, you should provide information on code verification (e.g., test case) and details of the implementation. • You should provide details on the solver routine used including, at a minimum, the following parameters:",
+      "fingerprint": "62fdbcf2bf98b96663e9e1c0a6af919ccfac34c079ecdde7dc3bc2a5f5b366d4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 114,
+      "anchor": "page-26-paragraph-10",
+      "statement": "• You should provide details on the solver routine used including, at a minimum, the following parameters:",
+      "context": "• You should describe the type of analysis completed (e.g., static structural, vibration, buckling). − state whether the solver is implicit or explicit. If the latter, include and provide rationale for the analysis time frame, time step size, material(s) density and any mass scaling used − indicate if the solver accounted for nonlinear geometric changes.",
+      "fingerprint": "67ad6d6f9382449377ee72ab7a0e7139970916b839de533f2dec4a5fb39ffd64",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 115,
+      "anchor": "page-26-paragraph-14",
+      "statement": "You should describe how the validation study supports the context of use of the CM&S study. Specify the QOI(s) from the validation experiment and their relationship to computational model of the validation experiment. We suggest the following format for reporting the validation study.",
+      "context": "X. Validation We recommend that you provide information regarding the methods employed to validate the computational model [1]. The results of a validation study support the choice of the input parameters to the computational model. A. Details i. Comparator You should describe the comparator (e.g., physical test, in vivo study, literature) used for validation. Include the following:",
+      "fingerprint": "4f9863b8b90c71466a21fa27e9aad46594faea35b047dccb121810f19044bbe3",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 116,
+      "anchor": "page-26-paragraph-15",
+      "statement": "A. Details i. Comparator You should describe the comparator (e.g., physical test, in vivo study, literature) used for validation. Include the following:",
+      "context": "You should describe how the validation study supports the context of use of the CM&S study. Specify the QOI(s) from the validation experiment and their relationship to computational model of the validation experiment. We suggest the following format for reporting the validation study. a. mode of loading; b. boundary and loading conditions including the loading and unloading path, as applicable;",
+      "fingerprint": "b090c13fe9b4fd7d7e2dc5ca4cd57f680dfafaa0a51f3e74a3122a69b88c34fe",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 117,
+      "anchor": "page-27-paragraph-3",
+      "statement": "You should describe the apparatus used to capture data during the experiment, the level of measurement accuracy and uncertainty. For example, if the validation study compares uniaxial force-extension data between the computational model and an experiment, present the capacity and accuracy of the load cell used to measure force data.",
+      "context": "c. environmental parameters within the experiment (e.g., temperature, humidity); and d. manufacturing processes or pre-conditioning applied to the device prior to conducting the experiment, if applicable. For example, if the model is designed to predict safety of a nitinol cardiovascular stent, specify if the device was loaded onto a delivery systems and tracked through a representative anatomical model prior to experimental measurements. You should describe the locations on the device or tissue where the experimental measurements were acquired. For example, if your study is designed to analyze strain in a hip stem, describe where strain gauges were placed to acquire the data.",
+      "fingerprint": "28460ec8f77e31ed88d0225fcb709318218f1579d7b2b24069765f0a90c3009c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 118,
+      "anchor": "page-27-paragraph-4",
+      "statement": "You should describe the locations on the device or tissue where the experimental measurements were acquired. For example, if your study is designed to analyze strain in a hip stem, describe where strain gauges were placed to acquire the data.",
+      "context": "You should describe the apparatus used to capture data during the experiment, the level of measurement accuracy and uncertainty. For example, if the validation study compares uniaxial force-extension data between the computational model and an experiment, present the capacity and accuracy of the load cell used to measure force data. ii. Computational model of the Validation Setting You should describe the boundary and loading conditions used for the validation model and describe how they relate to the experimental comparator. For example, the rate and magnitude of applied torsion to a pedicle screw system in the computational model should match that applied to the device mounted on a mechanical testing system.",
+      "fingerprint": "42b3e97b181a21e67aba03d88ce66829a6cf1369b83dfa3ea312e5a784a157cb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 119,
+      "anchor": "page-27-paragraph-5",
+      "statement": "ii. Computational model of the Validation Setting You should describe the boundary and loading conditions used for the validation model and describe how they relate to the experimental comparator. For example, the rate and magnitude of applied torsion to a pedicle screw system in the computational model should match that applied to the device mounted on a mechanical testing system.",
+      "context": "You should describe the locations on the device or tissue where the experimental measurements were acquired. For example, if your study is designed to analyze strain in a hip stem, describe where strain gauges were placed to acquire the data. You should describe the validation model QOI. If applicable, describe any post-processing calculations.",
+      "fingerprint": "0580647a07b9174db424de6692dcffff35e07db445bfed19bf6f7de71a7fe267",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 120,
+      "anchor": "page-27-paragraph-6",
+      "statement": "You should describe the validation model QOI. If applicable, describe any post-processing calculations.",
+      "context": "ii. Computational model of the Validation Setting You should describe the boundary and loading conditions used for the validation model and describe how they relate to the experimental comparator. For example, the rate and magnitude of applied torsion to a pedicle screw system in the computational model should match that applied to the device mounted on a mechanical testing system. Include images that directly compare the validation model and experimental QOIs (e.g., deformation or stress contours) to demonstrate that the computational model is able to capture relevant behavior.",
+      "fingerprint": "b3c4014c5340233a240580efc3528f065d63f18076d28f8c8c9352d9ca60efe5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 121,
+      "anchor": "page-27-paragraph-8",
+      "statement": "You should present a quantitative comparison of the QOI from the computational model and experimental at relevant steps in the analysis. For example, if the validation study compared the radial force generated by the stent during the step of being loaded on to the delivery system, it might be more insightful to compare this force at several diameters between nominal and loaded diameter rather than at the final loaded diameter.",
+      "context": "Include images that directly compare the validation model and experimental QOIs (e.g., deformation or stress contours) to demonstrate that the computational model is able to capture relevant behavior. B. Assumptions, simplifications and rationale You should discuss the relevance of the validation experiment to expected loading conditions as described in the context of use, implications of model and experimental",
+      "fingerprint": "9e1bab3fa7dbd11ced2bce5fbca3b3e55d57c60c5ed613290aaaaed15f936025",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 122,
+      "anchor": "page-27-paragraph-9",
+      "statement": "B. Assumptions, simplifications and rationale You should discuss the relevance of the validation experiment to expected loading conditions as described in the context of use, implications of model and experimental",
+      "context": "You should present a quantitative comparison of the QOI from the computational model and experimental at relevant steps in the analysis. For example, if the validation study compared the radial force generated by the stent during the step of being loaded on to the delivery system, it might be more insightful to compare this force at several diameters between nominal and loaded diameter rather than at the final loaded diameter. assumptions on the results, limitations on the agreement between the validation model and experiment, and the extent of predictive capability of the general model.",
+      "fingerprint": "504cc6f32903b096164227d00113a62844dca360d0cdaed267cae8cd8d33c99f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 123,
+      "anchor": "page-28-paragraph-2",
+      "statement": "If the validation model parameters are different from those used in the computational model for the context of use, you should provide rationale for the differences.",
+      "context": "assumptions on the results, limitations on the agreement between the validation model and experiment, and the extent of predictive capability of the general model. You should list and discuss the assumptions for the validation model (i.e., neglecting viscous behavior if you are comparing instantaneous force values).",
+      "fingerprint": "afab9f089bc4717c77aeb0e0a3a918e1f4fdc496d9acf38afb103afe57845a4c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 124,
+      "anchor": "page-28-paragraph-3",
+      "statement": "You should list and discuss the assumptions for the validation model (i.e., neglecting viscous behavior if you are comparing instantaneous force values).",
+      "context": "If the validation model parameters are different from those used in the computational model for the context of use, you should provide rationale for the differences. You should list and discuss the simplifications for the validation model. These simplifications might include geometric, such as axisymmetry, or may consist of explanations for testing device sub-components (e.g., validating the wear scar on articulating components in a total disc replacement device may not necessitate modeling of the device-bone interface).",
+      "fingerprint": "f9128cdcec8d6f59dba19952b27456cd32775365a7648d6511958d5001866e8e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 125,
+      "anchor": "page-28-paragraph-4",
+      "statement": "You should list and discuss the simplifications for the validation model. These simplifications might include geometric, such as axisymmetry, or may consist of explanations for testing device sub-components (e.g., validating the wear scar on articulating components in a total disc replacement device may not necessitate modeling of the device-bone interface).",
+      "context": "You should list and discuss the assumptions for the validation model (i.e., neglecting viscous behavior if you are comparing instantaneous force values). You should provide a discussion of the extent to which the validation model captures the observed validation experimental behavior and its limitations.",
+      "fingerprint": "66de5aab49ae54165d69d097e98347d32d85b200740a6de90f61bc706c83db4d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 126,
+      "anchor": "page-28-paragraph-5",
+      "statement": "You should provide a discussion of the extent to which the validation model captures the observed validation experimental behavior and its limitations.",
+      "context": "You should list and discuss the simplifications for the validation model. These simplifications might include geometric, such as axisymmetry, or may consist of explanations for testing device sub-components (e.g., validating the wear scar on articulating components in a total disc replacement device may not necessitate modeling of the device-bone interface). XI. Results We recommend that you provide the following for each analysis step:",
+      "fingerprint": "ae3a11bab7b79c443ff280eba0f02f754fb0ae4f37acb2f2a48147eb6930fae0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 127,
+      "anchor": "page-29-paragraph-8",
+      "statement": "XIII. Discussion/Conclusion You should state the overall conclusions of the CM&S study and whether the objective(s) outlined in the context of use have been met.",
+      "context": "If the conclusions of the analysis are significantly dependent on the assumptions and/or simplifications of the computational model, we recommend that you report on a sensitivity analysis of the parameters associated with those assumptions and/or simplifications. We recommend that you discuss the results with respect to the context of use. For example, discuss how critical stresses or strains obtained from the computational model relate to failure locations observed in bench testing and/or the potential consequences of failure at locations of minimum safety factor.",
+      "fingerprint": "2772b19c43055d4716e46cc70910e31f963ed08761b4576b17c9e1f836893b8e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 128,
+      "anchor": "page-31-paragraph-6",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the applicability of the verified code to your computational domain. If applicable, describe and rationalize the differences between the code used for verification and the code used for the context of use.",
+      "context": "A. Details You should briefly describe the code verification activities. You may reference available documentation and verification results from the software developer. Moreover, You should provide rationale to support the selection of the numerical settings, either default or modified.",
+      "fingerprint": "76770419aa88488e0cd5b87aa402e1f7afd36918dde34f39030b0bd326a0d922",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 129,
+      "anchor": "page-31-paragraph-7",
+      "statement": "Moreover, You should provide rationale to support the selection of the numerical settings, either default or modified.",
+      "context": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the applicability of the verified code to your computational domain. If applicable, describe and rationalize the differences between the code used for verification and the code used for the context of use. Note that the details regarding calculation verification, the other component to the verification process, are provided in Section VIII System Discretization and Section IX Numerical Implementation, respectively",
+      "fingerprint": "14c542a7996888febbcb0a8b7d704aaa69366a3519fc162ec81125253cacdfc5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 130,
+      "anchor": "page-32-paragraph-1",
+      "statement": "You should describe the components of the system (e.g., device, in vivo or in vitro environment) to be evaluated. Include images, diagrams (with appropriate scaling bar or dimensions), and a brief description of the model.",
+      "context": "You should describe the methods (e.g., image reconstruction, computer aided design) used to generate the system configuration and discuss how the configuration was captured appropriately for the intended analysis. If image reconstruction was used to generate geometry, describe the imaging modality.",
+      "fingerprint": "5e0b2bfb83c6a04d75753ed9b3b5a24ac7fafd02092f304825303e6e538b2437",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 131,
+      "anchor": "page-32-paragraph-2",
+      "statement": "You should describe the methods (e.g., image reconstruction, computer aided design) used to generate the system configuration and discuss how the configuration was captured appropriately for the intended analysis. If image reconstruction was used to generate geometry, describe the imaging modality.",
+      "context": "You should describe the components of the system (e.g., device, in vivo or in vitro environment) to be evaluated. Include images, diagrams (with appropriate scaling bar or dimensions), and a brief description of the model. You should describe the software used to generate the system configuration (e.g., computer aided design software, image segmentation software) and describe the methods used to verify the software.",
+      "fingerprint": "ac10f5ec009965a33196ac761364d5b08bd0234e7d28ac6a930418f7794a0d28",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 132,
+      "anchor": "page-32-paragraph-3",
+      "statement": "You should describe the software used to generate the system configuration (e.g., computer aided design software, image segmentation software) and describe the methods used to verify the software.",
+      "context": "You should describe the methods (e.g., image reconstruction, computer aided design) used to generate the system configuration and discuss how the configuration was captured appropriately for the intended analysis. If image reconstruction was used to generate geometry, describe the imaging modality. You should describe the geometrical characteristics necessary for a comprehensive description of the methodology.",
+      "fingerprint": "ef0106e023acb075e1a32770a2d00a111178d94bf4b5491bec4426cfd3298d68",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 133,
+      "anchor": "page-32-paragraph-4",
+      "statement": "You should describe the geometrical characteristics necessary for a comprehensive description of the methodology.",
+      "context": "You should describe the software used to generate the system configuration (e.g., computer aided design software, image segmentation software) and describe the methods used to verify the software. Because there are different applications of computational EM and optical modeling, we have provided the following examples.",
+      "fingerprint": "a34cc67e392e460452220d079ac359c31028f430132f26f8cf50bce8968881d4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 134,
+      "anchor": "page-33-paragraph-2",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration (e.g., excluding static field magnet or gradient field coil in MRI RF models, assuming the tissue has a flat interface between two layers in the model) as compared to the actual device, tissue object, and environment. If appropriate, provide clinical rationale for the in vivo / in vitro models (e.g., size, disease state, mathematical convenience versus clinical relevance).",
+      "context": "implementation of this geometry (e.g., tissue types represented, layers or structures present, and simulated conditions such as normal, metaplastic or neoplastic tissue). V. Governing Equations/Constitutive Laws We recommend that you provide information regarding the governing equations and/or constitutive laws used to perform the computational analysis.",
+      "fingerprint": "00720223df12bb02a7c196feb9aa294a5e3011b3e4e82152cddc3a1d3e2adb6a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 135,
+      "anchor": "page-33-paragraph-4",
+      "statement": "A. Details You should provide the governing equations/constitutive laws for the system.",
+      "context": "V. Governing Equations/Constitutive Laws We recommend that you provide information regarding the governing equations and/or constitutive laws used to perform the computational analysis. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations (e.g., Laplace, Maxwell, Radiative Transport) or constitutive laws chosen to represent the system. If a thermal analysis is included, please report the results as recommended in Appendix V Computational Heat Transfer.",
+      "fingerprint": "869b0b37cc0567b9918e229fc16b92039a3f1738908a58fc971835607fa4d5bd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 136,
+      "anchor": "page-33-paragraph-5",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the governing equations (e.g., Laplace, Maxwell, Radiative Transport) or constitutive laws chosen to represent the system. If a thermal analysis is included, please report the results as recommended in Appendix V Computational Heat Transfer.",
+      "context": "A. Details You should provide the governing equations/constitutive laws for the system. VI. System Properties We recommend that you provide information regarding the relevant system properties (e.g., biological, chemical, physiological, physical).",
+      "fingerprint": "c236ead1391c479a6e38ca4db82e55541c5968f65976a69fa406eef2ee462ab8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 137,
+      "anchor": "page-33-paragraph-7",
+      "statement": "A. Details You should provide the parameters used in the analysis that define the material and/or process characteristics, and their variability, if applicable. These might include properties of biological materials (e.g., cells, tissues, organs), non-biological materials (device components, implants, contrast agents), and/or processes (e.g., cell signals), such as states (e.g., diseased, healthy), biological properties, chemical properties, and physical properties. Identify the source of biological, chemical, and physical properties (e.g., literature, in vivo, in vitro testing).",
+      "context": "VI. System Properties We recommend that you provide information regarding the relevant system properties (e.g., biological, chemical, physiological, physical). Specifically please provide the following inputs, when appropriate for your simulation.",
+      "fingerprint": "94b0729163a294062dce82d1eab52b433aceff560799ed6663d7345fdbd1a0b0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 138,
+      "anchor": "page-34-paragraph-8",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. If the properties are derived from literature data, please provide a reference to the publications and discuss their applicability to the specific study (e.g. ex-vivo vs. in-vivo ). If the properties are derived from bench testing, please provide a full and comprehensive report of the test.",
+      "context": "• specify any non-linear or coupling between EM/optical and thermal models. You should describe any assumptions made with respect to the variation of the object system (tissue or non-tissue) properties with position, direction, time, wavelength, light intensity, temperature, and thermal damage. Please describe any assumptions made with respect to the nonlinearity of system properties incorporated in the model and whether they may affect the modeling results. Please specify any spatial heterogeneity, including anisotropy, and any time dependence. Please describe the sensitivity of outcome results on key parameters and provide a systematic analysis of data uncertainty in relation to system properties.",
+      "fingerprint": "c895b193e689c069008696818a7a52562a848a1728f68c4cffe33151c65a7248",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 139,
+      "anchor": "page-34-paragraph-9",
+      "statement": "You should describe any assumptions made with respect to the variation of the object system (tissue or non-tissue) properties with position, direction, time, wavelength, light intensity, temperature, and thermal damage. Please describe any assumptions made with respect to the nonlinearity of system properties incorporated in the model and whether they may affect the modeling results. Please specify any spatial heterogeneity, including anisotropy, and any time dependence. Please describe the sensitivity of outcome results on key parameters and provide a systematic analysis of data uncertainty in relation to system properties.",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. If the properties are derived from literature data, please provide a reference to the publications and discuss their applicability to the specific study (e.g. ex-vivo vs. in-vivo ). If the properties are derived from bench testing, please provide a full and comprehensive report of the test. VII. System Conditions We recommend that you provide information regarding the conditions that were imposed on the system. These might include, but are not limited to, the boundary and loading conditions, initial conditions, and other constraints that control the system.",
+      "fingerprint": "cc84adf59933367265afcbe1a1829e5c67167dd1b1b49ed5b64cbab4d5055306",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 140,
+      "anchor": "page-35-paragraph-2",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation (e.g., literature, test reports, clinical data, medical imaging data) to support the system conditions.",
+      "context": "A. Details You should describe the system conditions imposed on the model and their variability, if applicable. If appropriate, provide a graphical representation of the conditions, depicting how they are applied to the system. Specifically, state whether the boundary conditions of the simulations represent a true physical boundary. You should provide evidence demonstrating that boundary conditions do not cause the simulation to generate non-physical results. Moreover, where relevant, you should describe how the physical properties of surrounding materials between device and tissue (e.g., air, water) will affect the boundary conditions and how the boundary condition will in turn affect the simulation results.",
+      "fingerprint": "b581ad8fad3aa4952b5fc5d57d0e89567866e250ec208a27ca417ff0af0a95bd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 141,
+      "anchor": "page-35-paragraph-3",
+      "statement": "Specifically, state whether the boundary conditions of the simulations represent a true physical boundary. You should provide evidence demonstrating that boundary conditions do not cause the simulation to generate non-physical results. Moreover, where relevant, you should describe how the physical properties of surrounding materials between device and tissue (e.g., air, water) will affect the boundary conditions and how the boundary condition will in turn affect the simulation results.",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the conditions applied on the system. Provide appropriate documentation (e.g., literature, test reports, clinical data, medical imaging data) to support the system conditions. For simulations of optical systems with the purpose of calculating light intensity or energy delivered to human tissue, you should provide information on all the assumptions made to model each optical element. For example, light intensity or energy attenuated by each optical element due to reflection, absorption, and scattering at certain wavelength or incident angle, should be specified to properly obtain light intensity and energy delivered to the human tissue.",
+      "fingerprint": "586e432ac76001d12a355f9e08fd2359fc01614ba10e521bf833f2edb01003f2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 142,
+      "anchor": "page-35-paragraph-4",
+      "statement": "For simulations of optical systems with the purpose of calculating light intensity or energy delivered to human tissue, you should provide information on all the assumptions made to model each optical element. For example, light intensity or energy attenuated by each optical element due to reflection, absorption, and scattering at certain wavelength or incident angle, should be specified to properly obtain light intensity and energy delivered to the human tissue.",
+      "context": "Specifically, state whether the boundary conditions of the simulations represent a true physical boundary. You should provide evidence demonstrating that boundary conditions do not cause the simulation to generate non-physical results. Moreover, where relevant, you should describe how the physical properties of surrounding materials between device and tissue (e.g., air, water) will affect the boundary conditions and how the boundary condition will in turn affect the simulation results. VIII. System Discretization We recommend that you provide information regarding the discretization and refinement techniques applied to the system for solving it numerically.",
+      "fingerprint": "6ac4d7d4e17e37641e8bb80e795057b1e60cebcd3c34412836f867a584c25895",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 143,
+      "anchor": "page-35-paragraph-6",
+      "statement": "A. Details You should describe the system discretization methods and how they were applied to the computational domain. Describe the methodology (e.g., mesh refinement study) used to verify proper numerical discretization. If applicable, provide a representative image of the discretization in the areas of interest of the computational domain.",
+      "context": "VIII. System Discretization We recommend that you provide information regarding the discretization and refinement techniques applied to the system for solving it numerically. Report the criteria used to determine that the discretization was sufficient to resolve the physics of interest.",
+      "fingerprint": "db0ac87de2271b05cfe829b9c34d6293f43b53f10445a4186afebf63f1ff1486",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 144,
+      "anchor": "page-35-paragraph-8",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain.",
+      "context": "Report the criteria used to determine that the discretization was sufficient to resolve the physics of interest. IX. Numerical Implementation We recommend that you provide information regarding the numerical implementation strategy that yielded the solution to the governing equations.",
+      "fingerprint": "23bc5f95caf5e0be670ba9ead4b3721b0f873fa78f8b5afffb781b6ec9832d03",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 145,
+      "anchor": "page-36-paragraph-1",
+      "statement": "A. Details You should describe the numerical implementation methodology (e.g., boundary element method, finite difference time domain, methods of moments, finite element method, and Monte Carlo simulation) and numerical solver employed to yield the solution to the governing equation. Explain the calculation verification process used to ensure the governing equations were solved correctly. State the solver parameters (e.g., tolerance, relaxation) and convergence criteria, and describe any stability criteria required. For integral models (e.g., Arrhenius equation), discuss the method of numerical integration.",
+      "context": "IX. Numerical Implementation We recommend that you provide information regarding the numerical implementation strategy that yielded the solution to the governing equations. B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to choose the solver and associated parameters. Specifically, please provide rationale quantitative analysis demonstrating that the parameters selected are sufficient to achieve a convergent solution appropriate for the context of use, specify the convergence criteria and describe why it was appropriate (e.g., time-steps used for finite difference time domain; simulation stopping criteria such as number of photons for Monte Carlo simulation).",
+      "fingerprint": "0b795c8b91fcbeb485dd990f945f58f665f022a1f9750aac15fca761201e0bdb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 146,
+      "anchor": "page-36-paragraph-2",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to choose the solver and associated parameters. Specifically, please provide rationale quantitative analysis demonstrating that the parameters selected are sufficient to achieve a convergent solution appropriate for the context of use, specify the convergence criteria and describe why it was appropriate (e.g., time-steps used for finite difference time domain; simulation stopping criteria such as number of photons for Monte Carlo simulation).",
+      "context": "A. Details You should describe the numerical implementation methodology (e.g., boundary element method, finite difference time domain, methods of moments, finite element method, and Monte Carlo simulation) and numerical solver employed to yield the solution to the governing equation. Explain the calculation verification process used to ensure the governing equations were solved correctly. State the solver parameters (e.g., tolerance, relaxation) and convergence criteria, and describe any stability criteria required. For integral models (e.g., Arrhenius equation), discuss the method of numerical integration. X. Validation We recommend that you provide information regarding the methods employed to validate the computational model [1].",
+      "fingerprint": "469b347bb6cf9a766545d5dc398728aa06d61b60c7e1b8d439aadf80bcf42930",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 147,
+      "anchor": "page-36-paragraph-4",
+      "statement": "A. Details You should describe the method used to assess the predicative capability of the computational model (e.g., in vivo or in vitro comparator) for the context of use. You should provide sufficient details that describe how the measurements were taken from the comparator and post-processing of the computational model, and used to assess the accuracy of the predicted numerical output. For example, validation for RF simulations in MRI may be conducted with respect to B1 field, validation for optical modeling might be conducted with respect to detected light intensity, and validation for optical/thermal or radiofrequency/thermal modeling might be conducted with respect to temperature or thermal damage. Please demonstrate that the error level provides sufficient accuracy for the given application. If an analytical closed-form equation is used to support the validation, please provide the source of the equation.",
+      "context": "X. Validation We recommend that you provide information regarding the methods employed to validate the computational model [1]. B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications of the method used to validate the computational model. Explain the difference between the measured and predicted value, and discuss its significance with respect to the purpose of the analysis.",
+      "fingerprint": "b462413c7332204d431f01c96d5f5e0634e534afcbebec4e6b9a242178a1fe35",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 148,
+      "anchor": "page-36-paragraph-5",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications of the method used to validate the computational model. Explain the difference between the measured and predicted value, and discuss its significance with respect to the purpose of the analysis.",
+      "context": "A. Details You should describe the method used to assess the predicative capability of the computational model (e.g., in vivo or in vitro comparator) for the context of use. You should provide sufficient details that describe how the measurements were taken from the comparator and post-processing of the computational model, and used to assess the accuracy of the predicted numerical output. For example, validation for RF simulations in MRI may be conducted with respect to B1 field, validation for optical modeling might be conducted with respect to detected light intensity, and validation for optical/thermal or radiofrequency/thermal modeling might be conducted with respect to temperature or thermal damage. Please demonstrate that the error level provides sufficient accuracy for the given application. If an analytical closed-form equation is used to support the validation, please provide t",
+      "fingerprint": "e4fabf3f1d18345405e80bf7343ad5a66d644f71b7568a1a73f53682b0a93708",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 149,
+      "anchor": "page-36-paragraph-6",
+      "statement": "XI. Results We recommend that you present the quantitative results from the computational modeling study. You should provide the results with sufficient level of details, including labels and",
+      "context": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications of the method used to validate the computational model. Explain the difference between the measured and predicted value, and discuss its significance with respect to the purpose of the analysis. legends. The results may be presented in more than one format (e.g., tables, graphs, plots).",
+      "fingerprint": "892201c7e23a7f7c071d37083261eb3f903a0cf1093433e5548c0f0a1ad75af1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 150,
+      "anchor": "page-37-paragraph-5",
+      "statement": "XV. References You should provide a list of the appropriate references used to support the CM&S study.",
+      "context": "XIV. Conclusions We recommend that you summarize the computational study with respect to the purpose of the study and how it relates to the regulatory submission. Bibliography [1] IEEE 1597.1-2008 - IEEE Standard for Validation of Computational Electromagnetics Computer Modeling and Simulations",
+      "fingerprint": "e1a5c8cd30a175e38cdc0a60a25bf88db71179b492ad334360417dc427b5f7a2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 151,
+      "anchor": "page-38-paragraph-8",
+      "statement": "Additionally, describe the purpose and scope of the analysis, as this will dictate the relevant details necessary for review. The details provided in this section should correspond to the objectives of your analysis.",
+      "context": "II. Background/Introduction We recommend that you provide a brief device description along with its intended use environment, deployment/implantation procedure and patient population, as appropriate.",
+      "fingerprint": "c0c880339cd55e6e8a65ad3df46c5500605d1da1c0b56f594cc6e8d5c391d50b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 152,
+      "anchor": "page-39-paragraph-7",
+      "statement": "A. Details You should describe the components of the system (e.g., device, in vivo and/or in vitro environment) to be evaluated.",
+      "context": "IV. System Geometry (System Configuration) We recommend that you provide details regarding the device and/or tissue geometry that was modeled. The configuration defines the geometry of the device, computational domain and the anatomical structure included within the computational domain. Regarding the ultrasound source, you should include images, diagrams (with appropriate scaling bar or dimensions), and a brief description of the model(s).",
+      "fingerprint": "d8111e58bb5b302fc5989dc34d8da64709b18508107971021e4010436edc9bb2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 153,
+      "anchor": "page-39-paragraph-8",
+      "statement": "Regarding the ultrasound source, you should include images, diagrams (with appropriate scaling bar or dimensions), and a brief description of the model(s).",
+      "context": "A. Details You should describe the components of the system (e.g., device, in vivo and/or in vitro environment) to be evaluated. Specifically, discuss whether the ultrasound source is a spherical bowl or phased- array transducer. If it is the latter, include a scaled diagram indicating the arrangement of the elements. Finally, provide the dimensions of the device and its geometry.",
+      "fingerprint": "1dcb5d72a08f0540373cf7bf0bf6d3989ecfa6898ffc7baa497ad372c016b920",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 154,
+      "anchor": "page-39-paragraph-10",
+      "statement": "Regarding the anatomy, you should describe the methods (e.g., image reconstruction) used to generate the simulated anatomy and discuss the techniques used to demonstrate that the configuration was captured appropriately for the intended analysis, if applicable. For example, if bone is included in the computational domain, describe how it was modeled. If blood vessel are included in the computational domain, describe the blood vessels that were modeled and represented (e.g., statistically versus simulating a single representative geometry). Indicate how other anatomical features are included. Finally, describe any scaling or similarities used in the modeling approach.",
+      "context": "Specifically, discuss whether the ultrasound source is a spherical bowl or phased- array transducer. If it is the latter, include a scaled diagram indicating the arrangement of the elements. Finally, provide the dimensions of the device and its geometry. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment. If the entire device system was not modeled or if simplifications were made to the geometry, then provide rationale for the system geometry that was analyzed (e.g., use of symmetry). You should describe the difference between the model and the real situation as it pertains to the purpose of the computational modeling study. For example, if bones are present, describe if the shear-wave propagation (and heating due shear-w",
+      "fingerprint": "c280403f1040a498aac8529da6a8be8ca1076c209817fb2fcd0226543a92b776",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 155,
+      "anchor": "page-40-paragraph-1",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment. If the entire device system was not modeled or if simplifications were made to the geometry, then provide rationale for the system geometry that was analyzed (e.g., use of symmetry). You should describe the difference between the model and the real situation as it pertains to the purpose of the computational modeling study. For example, if bones are present, describe if the shear-wave propagation (and heating due shear-wave absorption) was modeled. Indicate the transducer apodization. If integral methods are used, discuss how acoustic diffraction affects the solution. Additionally, as manufacturing tolerances can affect device functionality, describe how the range of design and manufacturing tolerance dimensions influence the results compared to nominal dimensions.",
+      "context": "Regarding the anatomy, you should describe the methods (e.g., image reconstruction) used to generate the simulated anatomy and discuss the techniques used to demonstrate that the configuration was captured appropriately for the intended analysis, if applicable. For example, if bone is included in the computational domain, describe how it was modeled. If blood vessel are included in the computational domain, describe the blood vessels that were modeled and represented (e.g., statistically versus simulating a single representative geometry). Indicate how other anatomical features are included. Finally, describe any scaling or similarities used in the modeling approach. V. Governing Equations We recommend that you provide information regarding the governing equations used to perform the computational analysis.",
+      "fingerprint": "60cab2eb740d541e027b13410f5f18157e652c43815d979a4988d86a875c2d46",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 156,
+      "anchor": "page-40-paragraph-3",
+      "statement": "A. Details You should describe the basic equations used in the simulation. Specifically, state whether the propagation model is full-wave or parabolic, and linear or nonlinear. For nonlinear or broadband modeling, discuss the frequency dependence of acoustic attenuation. Indicate whether the pressure wave or displacement wave is modeled, and whether shear waves are taken into account. If acoustic streaming, mechanical, and/or thermal effects are included, discuss the coupling of the system.",
+      "context": "V. Governing Equations We recommend that you provide information regarding the governing equations used to perform the computational analysis. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the basic mathematical equations that were implemented for the model and simulation, specifically regarding the type of propagation model employed.",
+      "fingerprint": "1fe69a6629459e1c72e73f8d708e8ac91680f4705da669779ef60648e15d2a62",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 157,
+      "anchor": "page-40-paragraph-4",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the basic mathematical equations that were implemented for the model and simulation, specifically regarding the type of propagation model employed.",
+      "context": "A. Details You should describe the basic equations used in the simulation. Specifically, state whether the propagation model is full-wave or parabolic, and linear or nonlinear. For nonlinear or broadband modeling, discuss the frequency dependence of acoustic attenuation. Indicate whether the pressure wave or displacement wave is modeled, and whether shear waves are taken into account. If acoustic streaming, mechanical, and/or thermal effects are included, discuss the coupling of the system. VI. System Properties We recommend that you provide, preferably in tabular format, all physical properties, coefficients, descriptive equations used in the simulation and post processing.",
+      "fingerprint": "0e4af997e981dba62f05d4128352e0a5b7c7f09a7d37bfa45597ca6e394d0b61",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 158,
+      "anchor": "page-41-paragraph-2",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the sources of the physical properties and coefficients adopted (e.g., literature, in vivo, ex vivo, in vitro testing).",
+      "context": "Heat capacity Thermal conductivity Perfusion rate Transducer characteristics We recommend that you indicate the dependence of properties on other variables, such as temperature, frequency, thermal dose and location, if included. If literature data are cited and the data are condition-specific, discuss their applicability to the model. If testing is conducted to determine the parameters, you should describe describe the test methods and results as applicable to the model.",
+      "fingerprint": "c50cbe86c2b3de1b47ee2a960d40e05c66f418a3b2c9292b8712f79d1d55fe0b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 159,
+      "anchor": "page-41-paragraph-3",
+      "statement": "If literature data are cited and the data are condition-specific, discuss their applicability to the model. If testing is conducted to determine the parameters, you should describe describe the test methods and results as applicable to the model.",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the sources of the physical properties and coefficients adopted (e.g., literature, in vivo, ex vivo, in vitro testing). If there are uncertainties associated with the data (i.e., due to accuracies, simplifications, or variations), perform a sensitivity analysis, if appropriate, to address the effect of the uncertainties on the simulation results.",
+      "fingerprint": "268d6bbe8d84d03d95d003b56a62c7903dbed5720d7917c3ff63375cf52711ba",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 160,
+      "anchor": "page-41-paragraph-5",
+      "statement": "VII. Boundary & Initial Conditions (System Conditions) We recommend that you provide a complete description of the initial and boundary conditions that are imposed on the model. These include, but are not limited to, absorbing boundaries and transducer loading. If absorbing boundaries are used, discuss the details of the implementation and show their effectiveness. You should provide a rationale for the choice of the initial/boundary conditions and if appropriate, provide a graphical representation of the conditions, depicting how they are applied to the system.",
+      "context": "If there are uncertainties associated with the data (i.e., due to accuracies, simplifications, or variations), perform a sensitivity analysis, if appropriate, to address the effect of the uncertainties on the simulation results. VIII. System Discretization We recommend that you provide the following details regarding the spatial discretization.",
+      "fingerprint": "3a157ae48788800123d2e3fba08abd50528b243e4d5f2b83bf21655f69b7aa3b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 161,
+      "anchor": "page-41-paragraph-7",
+      "statement": "A. Details You should describe the spatial discretization method and, if applicable, the technique used to integrate the evolution variable. If complex geometry requires the use of a non-uniform mesh, provide images/diagrams of the mesh. Additionally, you should indicate the details of the mesh. Specifically, Characteristic Numerical value Unit Acoustic power Frequency Pressure/phase distribution",
+      "context": "VIII. System Discretization We recommend that you provide the following details regarding the spatial discretization. • you should describe and provide rationale for the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (e.g., aspect ratios) and formulations chosen for the production mesh for the analysis domain); and.",
+      "fingerprint": "58bb9a71c7bbe8e3bc169cc7c4855241a4e5e58f407e8b1a02e93f241e41d3c2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 162,
+      "anchor": "page-42-paragraph-1",
+      "statement": "• you should describe and provide rationale for the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (e.g., aspect ratios) and formulations chosen for the production mesh for the analysis domain); and.",
+      "context": "A. Details You should describe the spatial discretization method and, if applicable, the technique used to integrate the evolution variable. If complex geometry requires the use of a non-uniform mesh, provide images/diagrams of the mesh. Additionally, you should indicate the details of the mesh. Specifically, Characteristic Numerical value Unit Acoustic power Frequency Pressure/phase distribution • you should discuss mesh refinement in areas of interest, for example, where the field changes rapidly in space.",
+      "fingerprint": "0231c25923d9d7355974c2ff167e628f149c9e5ae92115ae6adc197fc16da575",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 163,
+      "anchor": "page-42-paragraph-2",
+      "statement": "• you should discuss mesh refinement in areas of interest, for example, where the field changes rapidly in space.",
+      "context": "• you should describe and provide rationale for the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (e.g., aspect ratios) and formulations chosen for the production mesh for the analysis domain); and. If adaptive meshing refinement techniques were employed, then you should discuss the methods and provide details regarding the finished mesh.",
+      "fingerprint": "63f57051ce5494f7b2c662e6019a21b943f18e04726b6548f9f88ddf79720c8b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 164,
+      "anchor": "page-42-paragraph-3",
+      "statement": "If adaptive meshing refinement techniques were employed, then you should discuss the methods and provide details regarding the finished mesh.",
+      "context": "• you should discuss mesh refinement in areas of interest, for example, where the field changes rapidly in space. B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain and, if applicable, the integration scheme. Perform a convergence analysis (solution as a function of mesh density) and provide details that demonstrate that discretization adequately resolved the physics of interest.",
+      "fingerprint": "1bf071d4f98015b283667a8adb24f477842c23bb56952e751a158bc415e8c292",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 165,
+      "anchor": "page-42-paragraph-4",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain and, if applicable, the integration scheme. Perform a convergence analysis (solution as a function of mesh density) and provide details that demonstrate that discretization adequately resolved the physics of interest.",
+      "context": "If adaptive meshing refinement techniques were employed, then you should discuss the methods and provide details regarding the finished mesh. IX. Numerical Implementation We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis. For models using differential equations, discuss the method used to solve the discrete equations. For integral models, discuss the method of numerical integration. You should provide a rationale for the choice of the methods used and possible effects on the solution. Finally, you should describe and provide rationale for any techniques used to accelerate the computation, such as neglecting terms in regions where they have subleading order, adaptive time-stepping or variable number of harmonics.",
+      "fingerprint": "d689989ba5d4e4a1a59ae43212578bd03bc1fc2ec38f03ed529ad4b5d418a737",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 166,
+      "anchor": "page-42-paragraph-5",
+      "statement": "IX. Numerical Implementation We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis. For models using differential equations, discuss the method used to solve the discrete equations. For integral models, discuss the method of numerical integration. You should provide a rationale for the choice of the methods used and possible effects on the solution. Finally, you should describe and provide rationale for any techniques used to accelerate the computation, such as neglecting terms in regions where they have subleading order, adaptive time-stepping or variable number of harmonics.",
+      "context": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain and, if applicable, the integration scheme. Perform a convergence analysis (solution as a function of mesh density) and provide details that demonstrate that discretization adequately resolved the physics of interest. X. Validation We recommend that you provide information regarding the methods employed to validate the computational model. Specifically, you should describe the method(s) used to assess the predictive capability of the computational model with appropriate bench methods, conserved quantities and known analytical solutions. You should provide diagrams and data to support the assessment of the model. You should provide details on how the measurements were taken from the bench test and compared to the comput",
+      "fingerprint": "01d743df9fe88aa13d7aa6d18715bb1535ff2419c5d1d9408554b4216fa46765",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 167,
+      "anchor": "page-42-paragraph-6",
+      "statement": "X. Validation We recommend that you provide information regarding the methods employed to validate the computational model. Specifically, you should describe the method(s) used to assess the predictive capability of the computational model with appropriate bench methods, conserved quantities and known analytical solutions. You should provide diagrams and data to support the assessment of the model. You should provide details on how the measurements were taken from the bench test and compared to the computational model.",
+      "context": "IX. Numerical Implementation We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis. For models using differential equations, discuss the method used to solve the discrete equations. For integral models, discuss the method of numerical integration. You should provide a rationale for the choice of the methods used and possible effects on the solution. Finally, you should describe and provide rationale for any techniques used to accelerate the computation, such as neglecting terms in regions where they have subleading order, adaptive time-stepping or variable number of harmonics. Discuss any differences between bench testing/known solutions and results from the computational model.",
+      "fingerprint": "71faa97bcc2cec4de7ef2cc0cac304e61189e29b50f050ec6367b7ef6af7cae4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 168,
+      "anchor": "page-42-paragraph-8",
+      "statement": "XI. Results We recommend that you present the quantitative results from the computational modeling study over the range of intended use parameters. You should provide the results with a sufficient level of details, including labels and legends. The results may be presented in more than one format (e.g., table, graph, plot).",
+      "context": "Discuss any differences between bench testing/known solutions and results from the computational model. XII. Discussion We recommend that you discuss how the results relate to the context of use of the CM&S study, and if appropriate the clinical relevance and how the results compare with experimental and literature results, if these results exist.",
+      "fingerprint": "3dccd7befe6bf101c2f09f72815e8bbdf8386c76d7b8197a950761fc776174b2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 169,
+      "anchor": "page-43-paragraph-1",
+      "statement": "XIII. Limitations Describe the assumptions/simplifications made in the model generation, simulation and analysis. Discuss how those assumptions/simplifications might affect the output of the model and the interpretation of its relevance to the device and safety. You should describe the outcomes and implications of all the available uncertainty analyses performed on the system properties and conditions.",
+      "context": "XII. Discussion We recommend that you discuss how the results relate to the context of use of the CM&S study, and if appropriate the clinical relevance and how the results compare with experimental and literature results, if these results exist. XIV. Conclusions We recommend that you summarize the CM&S study with respect to the context of use and how it relates to the regulatory submission.",
+      "fingerprint": "3e0efadf8e9cb50429f94f01f83552109824761bdd1f3138579addb15a0158bf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 170,
+      "anchor": "page-44-paragraph-8",
+      "statement": "Additionally, you should describe the purpose and scope of the analysis, as this will",
+      "context": "II. Background/Introduction We recommend that you provide a brief device description along with its intended use environment, deployment/implantation procedure and patient population, as appropriate. dictate the relevant details necessary for review. The details provided in this section should correspond to the objectives of your analysis.",
+      "fingerprint": "d50459a71c4c53c2cf3e175801f0f0dfe9f26add8aef265cc1c2455b41c4aa82",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 171,
+      "anchor": "page-45-paragraph-1",
+      "statement": "dictate the relevant details necessary for review. The details provided in this section should correspond to the objectives of your analysis.",
+      "context": "Additionally, you should describe the purpose and scope of the analysis, as this will III. Code Verification We recommend that you provide a brief description of the software quality assurance (SQA) and numerical code verification (NCV) that you performed on the software used for the CM&S study. Software tools include off-the-shelf, modified-off-the-shelf, or user-developed. Code verification is important, regardless of the software type.",
+      "fingerprint": "ad8b3f453f593f4373e0e52152722d08cbf9abf3c76e4b1a7996a8a14781c884",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 172,
+      "anchor": "page-45-paragraph-9",
+      "statement": "Regarding the heat source, you should include images, diagrams (with appropriate scaling bar or dimensions) and a brief description of the model(s). Additionally, provide dimensions of device and geometry.",
+      "context": "A. Details You should describe the components of the system (e.g., device, in vivo and/or in vitro environment) to be evaluated. Regarding the anatomy, you should describe the methods (e.g., image reconstruction) used to generate the simulated anatomy and discuss the techniques used to demonstrate that the configuration was captured appropriately for the intended analysis, if applicable. Finally, describe any scaling or similarities used in the modeling approach.",
+      "fingerprint": "b7a8ed1a9a84c7a7ee390853e5e83425fe3ae7112fc3e90d3cc87bedcb60347a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 173,
+      "anchor": "page-45-paragraph-10",
+      "statement": "Regarding the anatomy, you should describe the methods (e.g., image reconstruction) used to generate the simulated anatomy and discuss the techniques used to demonstrate that the configuration was captured appropriately for the intended analysis, if applicable. Finally, describe any scaling or similarities used in the modeling approach.",
+      "context": "Regarding the heat source, you should include images, diagrams (with appropriate scaling bar or dimensions) and a brief description of the model(s). Additionally, provide dimensions of device and geometry. You should describe the methods for quantifying temperature-induced bioeffects such as phase change or thermal damage.",
+      "fingerprint": "477f92ca251cf8a75765e2c53e987b7b630c86da685b676b0b7cd40f2f2f0a53",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 174,
+      "anchor": "page-45-paragraph-11",
+      "statement": "You should describe the methods for quantifying temperature-induced bioeffects such as phase change or thermal damage.",
+      "context": "Regarding the anatomy, you should describe the methods (e.g., image reconstruction) used to generate the simulated anatomy and discuss the techniques used to demonstrate that the configuration was captured appropriately for the intended analysis, if applicable. Finally, describe any scaling or similarities used in the modeling approach. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment. If the entire device system was not modeled or if simplifications were made to the geometry, then provide rationale for the system geometry that was analyzed (e.g., use of symmetry). You should describe the difference between the model and the real situation as it pertains to the purpose of the computational modeling study. Additionally,",
+      "fingerprint": "72029595c89af028e39589960cf10960c9f53f11690c6d967478b4179f48e9b8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 175,
+      "anchor": "page-46-paragraph-1",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to generate the system configuration as compared to the actual device and environment. If the entire device system was not modeled or if simplifications were made to the geometry, then provide rationale for the system geometry that was analyzed (e.g., use of symmetry). You should describe the difference between the model and the real situation as it pertains to the purpose of the computational modeling study. Additionally, as manufacturing tolerances can affect device functionality, describe how the range of design and manufacturing tolerance dimensions influence the results compared to nominal dimensions.",
+      "context": "You should describe the methods for quantifying temperature-induced bioeffects such as phase change or thermal damage. V. Governing Equations We recommend that you provide information regarding the governing equations used to perform the computational analysis.",
+      "fingerprint": "4c321b4664bf83150b6ae89a8966ab0fee33e0d99e8a19859ba8f758bc1980e8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 176,
+      "anchor": "page-46-paragraph-3",
+      "statement": "A. Details You should describe the basic equations used in the simulation. Specifically, state whether materials are isotropic and if not, describe how anisotropy is addressed. You should describe the coupling to other physical processes (i.e., fluid flow, heat sources in domain or on boundary) that were included in the model.",
+      "context": "V. Governing Equations We recommend that you provide information regarding the governing equations used to perform the computational analysis. B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the basic mathematical equations that were implemented for the model and simulation, as well as the methods for quantifying thermal damage.",
+      "fingerprint": "37b73b4089d81ed0f26a5da86211c27ea1eff9e6463a3230a7f1461f4ad671ed",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 177,
+      "anchor": "page-46-paragraph-4",
+      "statement": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications of the basic mathematical equations that were implemented for the model and simulation, as well as the methods for quantifying thermal damage.",
+      "context": "A. Details You should describe the basic equations used in the simulation. Specifically, state whether materials are isotropic and if not, describe how anisotropy is addressed. You should describe the coupling to other physical processes (i.e., fluid flow, heat sources in domain or on boundary) that were included in the model. VI. System Properties We recommend that you provide, preferably in tabular format, all physical properties, coefficients and descriptive equations used in the simulation and post processing.",
+      "fingerprint": "77f53a8dbcb1d5367dfca04ced436258bba96c9c20e3832818928d9057e2cc9f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 178,
+      "anchor": "page-47-paragraph-2",
+      "statement": "If literature data are cited and the data are condition specific, you should discuss their applicability to the model. If testing is conducted to determine the parameters, you should describe the test methods and results as applicable to the model.",
+      "context": "B. Assumptions, simplifications, and rationale You should describe and provide rationale for the assumptions and simplifications used to determine the system properties. Identify the sources of the physical properties and coefficients adopted (e.g., literature, in vivo, ex vivo, in vitro testing). If there are uncertainties associated with the data (i.e., due to accuracies, simplifications or variations), perform sensitivity analysis, if appropriate, to address the effect of the uncertainties on the simulation results.",
+      "fingerprint": "2803dc6291948ba9f9c055b7b46ae2b93e190e9a766469c7420539730bd1bdce",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 179,
+      "anchor": "page-47-paragraph-4",
+      "statement": "VII. Boundary & Initial Conditions (System Conditions) We recommend that you provide a complete description of the initial and boundary conditions that are imposed on the model. You should provide rationale for the choice of the initial/boundary conditions and if appropriate, provide a graphical representation of the conditions, depicting how they are applied to the system.",
+      "context": "If there are uncertainties associated with the data (i.e., due to accuracies, simplifications or variations), perform sensitivity analysis, if appropriate, to address the effect of the uncertainties on the simulation results. VIII. System Discretization We recommend that you provide the following details regarding the spatial discretization.",
+      "fingerprint": "98cbf4c195c762a1ba083ce42b78bbe2ecb76ae69b306722ed681f38ff06a518",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 180,
+      "anchor": "page-47-paragraph-6",
+      "statement": "A. Details You should describe the spatial discretization method and, if applicable, the technique used to integrate the evolution variable. If complex geometry requires the use of a non-uniform mesh, provide images/diagrams of the mesh. Additionally, indicate the details of the mesh. Specifically, you should:",
+      "context": "VIII. System Discretization We recommend that you provide the following details regarding the spatial discretization. • describe and provide rationale for the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (e.g., aspect ratios) and formulations chosen for the production mesh for the mesh of the analysis domain); and.",
+      "fingerprint": "da4af9dd098931fdd034849ca5cbaa5980c69e868e15ab4d3ba0465cc6bede34",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 181,
+      "anchor": "page-47-paragraph-7",
+      "statement": "• describe and provide rationale for the quality of the mesh (e.g., element/cell types, sizes, shapes, quality metrics (e.g., aspect ratios) and formulations chosen for the production mesh for the mesh of the analysis domain); and.",
+      "context": "List governed by page-47-paragraph-6: A. Details You should describe the spatial discretization method and, if applicable, the technique used to integrate the evolution variable. If complex geometry requires the use of a non-uniform mesh, provide images/diagrams of the mesh. Additionally, indicate the details of the mesh. Specifically, you should: • discuss mesh refinement in areas of interest, for example, where the field changes rapidly in space.",
+      "fingerprint": "94518732209e6b6d85c38eefdebaa9919d327f0d1a4f0255eec70c144eacd58a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 182,
+      "anchor": "page-47-paragraph-8",
+      "statement": "• discuss mesh refinement in areas of interest, for example, where the field changes rapidly in space.",
+      "context": "List governed by page-47-paragraph-6: A. Details You should describe the spatial discretization method and, if applicable, the technique used to integrate the evolution variable. If complex geometry requires the use of a non-uniform mesh, provide images/diagrams of the mesh. Additionally, indicate the details of the mesh. Specifically, you should: If adaptive meshing refinement techniques were employed, then you should discuss the methods and provide details regarding the finished mesh.",
+      "fingerprint": "0f1e2a9900a1cb3bda44272bf9248e738e226a7d7ffcd05e85bbd86c7ea53402",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 183,
+      "anchor": "page-47-paragraph-10",
+      "statement": "B. Assumptions, simplifications and rationale You should describe and provide rationale for the assumptions and simplifications used to discretize the computational domain and, if applicable, the integration scheme. You should perform a convergence analysis (solution as a function of mesh density), a stability analysis where applicable, and provide details that demonstrate that the discretization adequately resolved the physics of interest.",
+      "context": "If adaptive meshing refinement techniques were employed, then you should discuss the methods and provide details regarding the finished mesh. IX. Numerical Implementation We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis. For models using differential equations, discuss the method used to solve the discrete equations. For integral models, discuss the",
+      "fingerprint": "108c2661d1409b229e8941dcc03ee3be22de97aa64cdb755e759cc8840ee83dc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 184,
+      "anchor": "page-48-paragraph-1",
+      "statement": "method of numerical integration. You should provide a rationale for the choice of the methods used and possible effects on the solution. Finally, you should describe and provide rationale for any techniques used to accelerate the computation, such as neglecting terms in regions where they have subleading order, adaptive stepping, etc.",
+      "context": "IX. Numerical Implementation We recommend that you provide the following details regarding the software used in the numerical implementation of the analysis. For models using differential equations, discuss the method used to solve the discrete equations. For integral models, discuss the X. Validation We recommend that you provide information regarding the methods employed to validate the computational model. Specifically, you should describe the method(s) used to assess the predictive capability of the computational model with appropriate bench methods, conserved quantities and known analytical solutions. Provide diagrams and data to support the assessment of the model. Provide details on how the measurements were taken from the bench test and compared to the computational model. Discuss any differences between bench testing/known solutions and results from the computational model.",
+      "fingerprint": "0638a03cc650c3a48f9a49e2c66ccf46bd30901383d3ec201faa422b8891f80b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 185,
+      "anchor": "page-48-paragraph-2",
+      "statement": "X. Validation We recommend that you provide information regarding the methods employed to validate the computational model. Specifically, you should describe the method(s) used to assess the predictive capability of the computational model with appropriate bench methods, conserved quantities and known analytical solutions. Provide diagrams and data to support the assessment of the model. Provide details on how the measurements were taken from the bench test and compared to the computational model. Discuss any differences between bench testing/known solutions and results from the computational model.",
+      "context": "method of numerical integration. You should provide a rationale for the choice of the methods used and possible effects on the solution. Finally, you should describe and provide rationale for any techniques used to accelerate the computation, such as neglecting terms in regions where they have subleading order, adaptive stepping, etc. XI. Results We recommend that you present the quantitative results from the computational modeling study over the range of intended use parameters. You should provide the results with sufficient level of details, including labels and legends. The results may be presented in more than one format (e.g., table, graph, plot).",
+      "fingerprint": "ea8852608b7cde7315c0244d3cbbd9baa94f839ba60765429b4d8308dd2b30a7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 186,
+      "anchor": "page-48-paragraph-3",
+      "statement": "XI. Results We recommend that you present the quantitative results from the computational modeling study over the range of intended use parameters. You should provide the results with sufficient level of details, including labels and legends. The results may be presented in more than one format (e.g., table, graph, plot).",
+      "context": "X. Validation We recommend that you provide information regarding the methods employed to validate the computational model. Specifically, you should describe the method(s) used to assess the predictive capability of the computational model with appropriate bench methods, conserved quantities and known analytical solutions. Provide diagrams and data to support the assessment of the model. Provide details on how the measurements were taken from the bench test and compared to the computational model. Discuss any differences between bench testing/known solutions and results from the computational model. XII. Discussion We recommend that you discuss how the results relate to the context of use of the CM&S study, and if appropriate the clinical relevance and how the results compare with experimental and literature results, if these results exist.",
+      "fingerprint": "a92b3c951459ee54009c0791e9c52953e7ae3bfd264d1571ce0a154c9f0f3546",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 187,
+      "anchor": "page-48-paragraph-5",
+      "statement": "XIII. Limitations You should describe the assumptions/simplifications made in the model generation, simulation and analysis. Discuss how those assumptions/simplifications might affect the output of the model and the interpretation of its relevance to the device and safety.",
+      "context": "XII. Discussion We recommend that you discuss how the results relate to the context of use of the CM&S study, and if appropriate the clinical relevance and how the results compare with experimental and literature results, if these results exist. Describe the outcomes and implications of all the available uncertainty analyses performed on the system properties and conditions.",
+      "fingerprint": "167a3e3c3f16c1356d0aa7cd44534a7b1873c8a7b72d5ee80173726efea0f086",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T18:02:21.789Z"
+}
