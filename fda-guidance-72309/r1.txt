@@ -1,0 +1,1254 @@
+Guidance for Industry
+      Estimating the Maximum Safe
+  Starting Dose in Initial Clinical Trials
+    for Therapeutics in Adult Healthy
+               Volunteers
+
+
+
+
+                               U.S. Department of Health and Human Services
+                                       Food and Drug Administration
+                              Center for Drug Evaluation and Research (CDER)
+
+                                               July 2005
+                                       Pharmacology and Toxicology
+
+
+
+J:\!GUIDANC\5541fnlcln1.doc
+07/06/05
+Guidance for Industry
+    Estimating the Maximum Safe
+Starting Dose in Initial Clinical Trials
+  for Therapeutics in Adult Healthy
+             Volunteers
+                  Additional copies are available from:
+
+                  Office of Training and Communications
+                 Division of Drug Information, HFD-240
+                Center for Drug Evaluation and Research
+                      Food and Drug Administration
+                              5600 Fishers Lane
+                            Rockville, MD 20857
+                             (Tel) 301-827-4573
+               http://www.fda.gov/cder/guidance/index.htm
+
+
+
+
+         U.S. Department of Health and Human Services
+                 Food and Drug Administration
+        Center for Drug Evaluation and Research (CDER)
+
+                         July 2005
+                 Pharmacology and Toxicology
+                                                        TABLE OF CONTENTS
+
+I.          INTRODUCTION............................................................................................................. 1
+II.         BACKGROUND ............................................................................................................... 2
+III.        OVERVIEW OF THE ALGORITHM ........................................................................... 3
+IV.         STEP 1: NO OBSERVED ADVERSE EFFECT LEVEL DETERMINATION........ 5
+V.          STEP 2: HUMAN EQUIVALENT DOSE CALCULATION...................................... 6
+     A.     Conversion Based on Body Surface Area .................................................................................... 6
+     B.     Basis for Using mg/kg Conversions .............................................................................................. 7
+     C.     Other Exceptions to mg/m2 Scaling Between Species ................................................................. 8
+VI.         STEP 3: MOST APPROPRIATE SPECIES SELECTION......................................... 9
+VII.        STEP 4: APPLICATION OF SAFETY FACTOR ....................................................... 9
+     A.     Increasing the Safety Factor ....................................................................................................... 10
+     B.     Decreasing the Safety Factor ...................................................................................................... 11
+VIII. STEP 5: CONSIDERATION OF THE PHARMACOLOGICALLY ACTIVE
+      DOSE................................................................................................................................ 12
+IX.         SUMMARY ..................................................................................................................... 12
+REFERENCES............................................................................................................................ 13
+GLOSSARY................................................................................................................................. 15
+APPENDIX A:............................................................................................................................. 16
+     Analysis of Allometric Exponent on HED Calculations.................................................................... 16
+APPENDIX B:............................................................................................................................. 18
+     Analysis of Body Weight Effects on HED Calculations .................................................................... 18
+APPENDIX C:............................................................................................................................. 24
+     Derivation of the Interspecies Scaling Factor (Wa/Wh)(1-b)................................................................ 24
+APPENDIX D:............................................................................................................................. 25
+     Examples of Calculations for Converting Animal Doses to Human Equivalent Doses.................. 25
+APPENDIX E:............................................................................................................................. 27
+     Selection of Maximum Recommended Starting Dose for Drugs Administered Systemically to
+     Normal Volunteers ............................................................................................................................... 27
+                               Contains Nonbinding Recommendations
+
+                        Guidance for Industry1
+     Estimating the Maximum Safe Starting Dose in Initial Clinical
+          Trials for Therapeutics in Adult Healthy Volunteers
+
+
+
+This guidance represents the Food and Drug Administration’s (FDA’s) current thinking on this topic. It
+does not create or confer any rights for or on any person and does not operate to bind FDA or the public.
+You can use an alternative approach if the approach satisfies the requirements of the applicable statutes
+and regulations. If you want to discuss an alternative approach, contact the FDA staff responsible for
+implementing this guidance. If you cannot identify the appropriate FDA staff, call the appropriate
+number listed on the title page of this guidance.
+
+
+
+
+I.      INTRODUCTION
+
+This guidance outlines a process (algorithm) and vocabulary for deriving the maximum
+recommended starting dose (MRSD) for first-in-human clinical trials of new molecular entities
+in adult healthy volunteers, and recommends a standardized process by which the MRSD can be
+selected. The purpose of this process is to ensure the safety of the human volunteers.
+
+The goals of this guidance are to: (1) establish a consistent terminology for discussing the
+starting dose; (2) provide common conversion factors for deriving a human equivalent dose
+(HED); and (3) delineate a strategy for selecting the MRSD for adult healthy volunteers,
+regardless of the projected clinical use. This process is depicted in a flow chart that presents the
+decisions and calculations used to generate the MRSD from animal data (see Appendix E).
+
+FDA’s guidance documents, including this guidance, do not establish legally enforceable
+responsibilities. Instead, guidances describe the Agency’s current thinking on a topic and should
+be viewed only as recommendations, unless specific regulatory or statutory requirements are
+cited. The use of the word should in Agency guidances means that something is suggested or
+recommended, but not required.
+
+
+
+
+1
+ This guidance has been prepared by the Office of New Drugs in the Center for Drug Evaluation and Research
+(CDER) at the Food and Drug Administration.
+
+
+                                                       1
+                                 Contains Nonbinding Recommendations
+
+II.      BACKGROUND
+
+The process identified in this guidance pertains to determining the MRSD for adult healthy
+subjects when beginning a clinical investigation of any new drug or biological therapeutic that
+has been studied in animals. This guidance is not pertinent to endogenous hormones and
+proteins (e.g., recombinant clotting factors) used at physiologic concentrations or prophylactic
+vaccines. The process outlined in this guidance pertains primarily to drug products for which
+systemic exposure is intended; it does not address dose escalation or maximum allowable doses
+in clinical trials.
+
+Although the process outlined in this guidance uses administered doses, observed toxicities, and
+an algorithmic approach to calculate the MRSD, an alternative approach could be proposed that
+places primary emphasis on animal pharmacokinetics and modeling rather than dose (Mahmood
+et al. 2003; Reigner and Blesch 2002). In a limited number of cases, animal pharmacokinetic
+data can be useful in determining initial clinical doses.2 However, in the majority of
+investigational new drug applications (INDs), animal data are not available in sufficient detail to
+construct a scientifically valid, pharmacokinetic model whose aim is to accurately project an
+MRSD.
+
+Toxicity should be avoided at the initial clinical dose. However, doses should be chosen that
+allow reasonably rapid attainment of the phase 1 trial objectives (e.g., assessment of the
+therapeutic’s tolerability, pharmacodynamic or pharmacokinetic profile). All of the relevant
+preclinical data, including information on the pharmacologically active dose, the full toxicologic
+profile of the compound, and the pharmacokinetics (absorption, distribution, metabolism, and
+excretion) of the therapeutic, should be considered when determining the MRSD. Starting with
+doses lower than the MRSD is always an option and can be particularly appropriate to meet some
+clinical trial objectives.
+
+2
+  If the parent drug is measured in the plasma at multiple times and is within the range of toxic exposures for two or
+more animal species, it may be possible to develop a pharmacokinetic model predicting human doses and
+concentrations and to draw inferences about safe human plasma levels in the absence of prior human data. Although
+quantitative modeling for this purpose may be straightforward, the following points suggest this approach can
+present a number of difficulties when estimating a safe starting dose. Generally, at the time of IND initiation, there
+are a number of unknowns regarding animal toxicity and comparability of human and animal pharmacokinetics and
+metabolism: (1) human bioavailability and metabolism may differ significantly from that of animals; (2)
+mechanisms of toxicity may not be known (e.g., toxic accumulation in a peripheral compartment); and/or (3)
+toxicity may be due to an unidentified metabolite, not the parent drug. Therefore, relying on pharmacokinetic
+models (based on the parent drug in plasma) to gauge starting doses would require multiple untested assumptions.
+Modeling can be used with greatest validity to estimate human starting doses in special cases where few underlying
+assumptions would be necessary. Such cases are exemplified by large molecular weight proteins (e.g., humanized
+monoclonal antibodies) that are intravenously administered, are removed from circulation by endocytosis rather than
+metabolism, have immediate and detectable effects on blood cells, and have a volume of distribution limited to the
+plasma volume. In these cases, allometric, pharmacokinetic, and pharmacodynamic models have been useful in
+identifying the human mg/kg dose that would be predicted to correlate with safe drug plasma levels in nonhuman
+primates. Even in these cases, uncertainties (such as differences between human and animal receptor sensitivity or
+density) have been shown to affect human pharmacologic or toxicologic outcomes, and the use of safety factors as
+described in this guidance is still warranted.
+
+
+                                                          2
+                             Contains Nonbinding Recommendations
+
+
+The remainder of this guidance focuses on the recommended algorithmic process for starting
+dose extrapolation from animals to humans based on administered doses, since this method will
+likely be useful for the majority of INDs seeking to investigate new drugs in healthy volunteers.
+Some classes of drugs (e.g., many cytotoxic or biological agents) are commonly introduced into
+initial clinical trials in patient volunteers rather than healthy volunteers. Typically, patients are
+used instead of healthy volunteers when a drug is suspected or known to be unavoidably toxic.
+This guidance does not address starting doses in patients. However, many principles and some
+approaches recommended here may be applicable to designing such trials.
+
+
+III.   OVERVIEW OF THE ALGORITHM
+
+The recommended process for selecting the MRSD is presented in Appendix E and described in
+this section. The major elements (i.e., the determination of the no observed adverse effect levels
+(NOAELs) in the tested animal species, conversion of NOAELs to HED, selection of the most
+appropriate animal species, and application of a safety factor) are all discussed in greater detail in
+subsequent sections. Situations are also discussed in which the algorithm should be modified.
+The algorithm is intended to be used for systemically administered therapeutics. Topical,
+intranasal, intratissue, and compartmental administration routes and depot formulations can have
+additional considerations, but similar principles should apply.
+
+The process of calculating the MRSD should begin after the toxicity data have been analyzed.
+Although only the NOAEL should be used directly in the algorithm for calculating an MRSD,
+other data (exposure/toxicity relationships, pharmacologic data, or prior clinical experience with
+related drugs) can affect the choice of most appropriate species, scaling, and safety factors.
+
+The NOAEL for each species tested should be identified, and then converted to the HED using
+appropriate scaling factors. For most systemically administered therapeutics, this conversion
+should be based on the normalization of doses to body surface area. Although body surface area
+conversion is the standard way to approximate equivalent exposure if no further information is
+available, in some cases extrapolating doses based on other parameters may be more appropriate.
+This decision should be based on the data available for the individual case. The body surface
+area normalization and the extrapolation of the animal dose to human dose should be done in one
+step by dividing the NOAEL in each of the animal species studied by the appropriate body
+surface area conversion factor (BSA-CF). This conversion factor is a unitless number that
+converts mg/kg dose for each animal species to the mg/kg dose in humans, which is equivalent to
+the animal’s NOAEL on a mg/m2 basis. The resulting figure is called a human equivalent dose
+(HED). The species that generates the lowest HED is called the most sensitive species.
+
+When information indicates that a particular species is more relevant for assessing human risk
+(and deemed the most appropriate species), the HED for that species may be used in subsequent
+calculations, regardless of whether this species is the most sensitive. This situation is more
+applicable to biologic therapies, many of which have high selectivity for binding to human target
+
+
+                                                  3
+                               Contains Nonbinding Recommendations
+
+proteins and limited reactivity in species commonly used for toxicity testing. In such cases, in
+vitro binding and functional studies should be conducted to select an appropriate, relevant
+species before toxicity studies are designed (refer to ICH guidance for industry S6 Preclinical
+Safety Evaluation of Biotechnology-Derived Pharmaceuticals for more details3). (However, if
+serious toxicities are observed in an animal species considered less relevant, those toxicities
+should be taken into consideration in determining the species to be used to calculate an HED.
+For example, in one particular case, dog was selected as the animal species used for calculation
+of an HED because of unmonitorable cardiac lesions, even though the rat was considered the
+most relevant species based on pharmacological activity data.) Additionally, a species might be
+considered an inappropriate toxicity model for a given drug if the dose-limiting toxicity in that
+species was concluded to be of limited value for human risk assessment, based on historical
+comparisons of toxicities in the animal species to those in humans across a therapeutic class (i.e.,
+the dose-limiting toxicity is species-specific). In this case, data from that species should not be
+used to derive the HED. Without any additional information to guide the choice of the most
+appropriate species for assessing human risk, the most sensitive species is designated the most
+appropriate, because using the lowest HED would generate the most conservative starting dose.
+
+A safety factor should then be applied to the HED to increase assurance that the first dose in
+humans will not cause adverse effects. The use of the safety factor should be based on the
+possibility that humans may be more sensitive to the toxic effects of a therapeutic agent than
+predicted by the animal models, that bioavailability may vary across species, and that the models
+tested do not evaluate all possible human toxicities. For example, ocular disturbances or pain
+(e.g., severe headaches) in humans can be significant dose-limiting toxicities that may go
+undetected in animal studies.
+
+In general, one should consider using a safety factor of at least 10. The MRSD should be
+obtained by dividing the HED by the safety factor. Safety concerns or design shortcomings
+noted in animal studies may increase the safety factor, and thus reduce the MRSD further.
+Alternatively, information about the pharmacologic class (well-characterized classes of
+therapeutics with extensive human clinical and preclinical experience) may allay concerns and
+form the basis for reducing the magnitude of the default safety factor and increasing the MRSD.
+Although a dose lower than the MRSD can be used as the actual starting dose, the process
+described in this guidance will derive the maximum recommended starting dose. This algorithm
+generates an MRSD in units of mg/kg, a common method of dosing used in phase 1 trials, but the
+equations and conversion factors provided in this guidance (Table 1, second column) can be used
+to generate final dosing units in the mg/m2 form if desired.
+
+As previously stated, for purposes of initial clinical trials in adult healthy volunteers, the HED
+should ordinarily be calculated from the animal NOAEL. If the HED is based on an alternative
+index of effect, such as the pharmacologically active dose (PAD), this exception should be
+prominently stipulated in descriptions of starting dose calculations.
+
+
+3
+ We update guidances periodically. To make sure you have the most recent version of a guidance, check the CDER
+guidance Web page at http://www.fda.gov/cder/guidance/index.htm.
+
+
+                                                      4
+                            Contains Nonbinding Recommendations
+
+The remainder of this guidance provides a description of the individual steps in the
+recommended process and the reasoning behind each step.
+
+
+IV.    STEP 1: NO OBSERVED ADVERSE EFFECT LEVEL DETERMINATION
+
+The first step in determining the MRSD is to review and evaluate the available animal data so
+that a NOAEL can be determined for each study. Several definitions of NOAEL exist, but for
+selecting a starting dose, the following is used: the highest dose level that does not produce a
+significant increase in adverse effects in comparison to the control group. In this context,
+adverse effects that are biologically significant (even if they are not statistically significant)
+should be considered in the determination of the NOAEL. The NOAEL is a generally accepted
+benchmark for safety when derived from appropriate animal studies and can serve as the starting
+point for determining a reasonably safe starting dose of a new therapeutic in healthy (or
+asymptomatic) human volunteers.
+
+The NOAEL is not the same as the no observed effect level (NOEL), which refers to any effect,
+not just an adverse one, although in some cases the two might be identical. The definition of the
+NOAEL, in contrast to that of the NOEL, reflects the view that some effects observed in the
+animal may be acceptable pharmacodynamic actions of the therapeutic and may not raise a safety
+concern. The NOAEL should also not be confused with lowest observed adverse effect level
+(LOAEL) or maximum tolerated dose (MTD). Both of the latter concepts are based on findings
+of adverse effects and are not generally used as benchmarks for establishing safe starting doses
+in adult healthy volunteers. (The term level refers to dose or dosage, generally expressed as
+mg/kg or mg/kg/day.)
+
+Initial IND submissions for first-in-human studies by definition lack in vivo human data or
+formal allometric comparison of pharmacokinetics. Measurements of systemic levels or
+exposure (i.e., AUC or Cmax) cannot be employed for setting a safe starting dose in humans, and
+it is critical to rely on dose and observed toxic response data from adequate and well-conducted
+toxicology studies. However, there are cases where nonclinical data on bioavailability,
+metabolite profile, and plasma drug levels associated with toxicity may influence the choice of
+the NOAEL. One such case is when saturation of drug absorption occurs at a dose that produces
+no toxicity. In this instance, the lowest saturating dose, not the highest (nontoxic) dose, should
+be used for calculating the HED.
+
+There are essentially three types of findings in nonclinical toxicology studies that can be used to
+determine the NOAEL: (1) overt toxicity (e.g., clinical signs, macro- and microscopic lesions);
+(2) surrogate markers of toxicity (e.g., serum liver enzyme levels); and (3) exaggerated
+pharmacodynamic effects. Although the nature and extent of adverse effects can vary greatly
+with different types of therapeutics, and it is anticipated that in many instances, experts will
+disagree on the characterization of effects as being adverse or not, the use of NOAEL as a
+benchmark for dose-setting in healthy volunteers should be acceptable to all responsible
+investigators. As a general rule, an adverse effect observed in nonclinical toxicology studies
+
+
+                                                 5
+                            Contains Nonbinding Recommendations
+
+used to define a NOAEL for the purpose of dose-setting should be based on an effect that would
+be unacceptable if produced by the initial dose of a therapeutic in a phase 1 clinical trial
+conducted in adult healthy volunteers.
+
+
+V.     STEP 2: HUMAN EQUIVALENT DOSE CALCULATION
+
+       A.      Conversion Based on Body Surface Area
+
+After the NOAELs in the relevant animal studies have been determined, they are converted to
+HEDs. A decision should be made regarding the most appropriate method for extrapolating the
+animal dose to the equivalent human dose. Toxic endpoints for therapeutics administered
+systemically to animals, such as the MTD, are usually assumed to scale well between species
+when doses are normalized to body surface area (i.e., mg/m2) (EPA 1992; Lowe and Davis
+1998). The basis for this assumption lies primarily with the work of Freireich et al. (1966) and
+Schein et al. (1970). These investigators reported that, for antineoplastic drugs, doses lethal to
+10 percent of rodents (LD10s) and MTDs in nonrodents both correlated with the human MTD
+when the doses were normalized to the same administration schedule and expressed as mg/m2.
+Despite the subsequent analyses showing that the MTDs for this set of drugs scale best between
+species when doses are normalized to W0.75 rather than W0.67 (inherent in body surface area
+normalization) (Travis and White 1988; Watanabe et al. 1992), normalization to body surface
+area has remained a widespread practice for estimating an HED based on an animal dose.
+
+An analysis of the affect of the allometric exponent on the conversion of an animal dose to the
+HED was conducted (see Appendix A). Based on this analysis and on the fact that correcting for
+body surface area increases clinical trial safety by resulting in a more conservative starting dose
+estimate, it was concluded that the approach of converting NOAEL doses to an HED based on
+body surface area correction factors (i.e., W0.67) should be maintained for selecting starting doses
+for initial studies in adult healthy volunteers. Nonetheless, use of a different dose normalization
+approach, such as directly equating the human dose to the NOAEL in mg/kg, may be appropriate
+in some circumstances. Deviations from the body surface area approach, when describing the
+conversion of animal dose to HED, should be justified. The basis for justifying direct mg/kg
+conversion and examples in which other normalization methods are appropriate are described in
+the following subsection.
+
+Although normalization to body surface area is an appropriate method for extrapolating doses
+between species, consistent factors for converting doses from mg/kg to mg/m2 have not always
+been used. Given that body surface area normalization provides a reasonable approach for
+estimating an HED, the factors used for converting doses for each species should be
+standardized. Since body surface area varies with W0.67, the conversion factors are dependent on
+the weight of the animals in the studies. However, analyses conducted to address the effect of
+body weight on the actual BSA-CF demonstrated that a standard factor provides a reasonable
+estimate of the HED over a broad range of human and animal weights (see Appendix B). The
+conversion factors and divisors shown in Table 1 are therefore recommended as the standard
+
+
+                                                 6
+                               Contains Nonbinding Recommendations
+
+values to be used for interspecies dose conversions for NOAELs. (These factors may also be
+applied when comparing safety margins for other toxicity endpoints (e.g., reproductive toxicity
+and carcinogenicity) when other data for comparison (i.e., AUCs) are unavailable or are
+otherwise inappropriate for comparison.)
+
+               Table 1: Conversion of Animal Doses to Human Equivalent Doses
+                                Based on Body Surface Area
+                                     To Convert              To Convert Animal Dose in mg/kg
+                                     Animal Dose in              to HEDa in mg/kg, Either:
+            Species                  mg/kg to Dose in             Divide         Multiply
+                                     mg/m², Multiply         Animal Dose By Animal Dose By
+                                     by km
+            Human                            37                       ---                   ---
+               Child (20 kg)b                25                       ---                   ---
+            Mouse                            3                       12.3                  0.08
+            Hamster                          5                       7.4                   0.13
+            Rat                               6                       6.2                  0.16
+            Ferret                           7                       5.3                   0.19
+            Guinea pig                       8                        4.6                  0.22
+            Rabbit                           12                       3.1                  0.32
+            Dog                              20                       1.8                  0.54
+            Primates:
+               Monkeysc                        12                     3.1                  0.32
+               Marmoset                        6                      6.2                  0.16
+              Squirrel monkey                   7                     5.3                  0.19
+               Baboon                          20                     1.8                  0.54
+            Micro-pig                          27                     1.4                  0.73
+            Mini-pig                           35                     1.1                  0.95
+         a
+           Assumes 60 kg human. For species not listed or for weights outside the standard ranges,
+         HED can be calculated from the following formula:
+                HED = animal dose in mg/kg x (animal weight in kg/human weight in kg)0.33.
+         b
+           This km value is provided for reference only since healthy children will rarely be volunteers
+         for phase 1 trials.
+         c
+           For example, cynomolgus, rhesus, and stumptail.
+
+       B.       Basis for Using mg/kg Conversions
+
+The factors in Table 1 for scaling animal NOAEL to HEDs are based on the assumption that
+doses scale 1:1 between species when normalized to body surface area. However, there are
+occasions for which scaling based on body weight (i.e., setting the HED (mg/kg) = NOAEL
+(mg/kg)) may be more appropriate. To consider mg/kg scaling for a therapeutic, the available
+data should show that the NOAEL occurs at a similar mg/kg dose across species. The following
+circumstances should exist before extrapolating to the HED on a mg/kg basis rather than using
+
+
+                                                        7
+                             Contains Nonbinding Recommendations
+
+the mg/m2 approach. Note that mg/kg scaling will give a twelve-, six-, and twofold higher HED
+than the default mg/m2 approach for mice, rats, and dogs, respectively. If these circumstances do
+not exist, the mg/m2 scaling approach for determining the HED should be followed as it will lead
+to a safer MRSD.
+
+   1. NOAELs occur at a similar mg/kg dose across test species (for the studies with a given
+      dosing regimen relevant to the proposed initial clinical trial). (However, it should be
+      noted that similar NOAELs on a mg/kg basis can be obtained across species because of
+      differences in bioavailability alone.)
+
+   2. If only two NOAELs from toxicology studies in separate species are available, one of the
+      following should also be true:
+
+       •    The therapeutic is administered orally and the dose is limited by local toxicities.
+            Gastrointestinal (GI) compartment weight scales by W0.94 (Mordenti 1986). GI
+            volume determines the concentration of the therapeutic in the GI tract. It is then
+            reasonable that the toxicity of the therapeutic would scale by mg/kg (W1.0).
+
+       •    The toxicity in humans (for a particular class) is dependent on an exposure parameter
+            that is highly correlated across species with dose on a mg/kg basis. For example,
+            complement activation by systemically administered antisense oligonucleotides in
+            humans is believed to be dependent upon Cmax (Geary et al. 1997). For some
+            antisense drugs, the Cmax correlates across nonclinical species with mg/kg dose and in
+            such instances mg/kg scaling would be justified.
+
+       •    Other pharmacologic and toxicologic endpoints also scale between species by mg/kg
+            for the therapeutic. Examples of such endpoints include the MTD, lowest lethal dose,
+            and the pharmacologically active dose.
+
+       •    There is a robust correlation between plasma drug levels (Cmax and AUC) and dose in
+            mg/kg.
+
+       C.      Other Exceptions to mg/m2 Scaling Between Species
+
+Scaling between species based on mg/m2 is not recommended for the following categories of
+therapeutics:
+
+   1. Therapeutics administered by alternative routes (e.g., topical, intranasal, subcutaneous,
+      intramuscular) for which the dose is limited by local toxicities. Such therapeutics should
+      be normalized to concentration (e.g., mg/area of application) or amount of drug (mg) at
+      the application site.
+
+   2. Therapeutics administered into anatomical compartments that have little subsequent
+      distribution outside of the compartment. Examples are intrathecal, intravesical,
+
+
+                                                  8
+                             Contains Nonbinding Recommendations
+
+         intraocular, or intrapleural administration. Such therapeutics should be normalized
+         between species according to the compartmental volumes and concentrations of the
+         therapeutic.
+
+      3. Proteins administered intravascularly with Mr > 100,000 daltons. Such therapeutics
+         should be normalized to mg/kg.
+
+
+VI.      STEP 3: MOST APPROPRIATE SPECIES SELECTION
+
+After the HEDs have been determined from the NOAELs from all toxicology studies relevant to
+the proposed human trial, the next step is to pick one HED for subsequent derivation of the
+MRSD. This HED should be chosen from the most appropriate species. In the absence of data
+on species relevance, a default position is that the most appropriate species for deriving the
+MRSD for a trial in adult healthy volunteers is the most sensitive species (i.e., the species in
+which the lowest HED can be identified).
+
+Factors that could influence the choice of the most appropriate species rather than the default to
+the most sensitive species include: (1) differences in the absorption, distribution, metabolism,
+and excretion (ADME) of the therapeutic between the species, and (2) class experience that may
+indicate a particular animal model is more predictive of human toxicity. Selection of the most
+appropriate species for certain biological products (e.g., human proteins) involves consideration
+of various factors unique to these products. Factors such as whether an animal species expresses
+relevant receptors or epitopes may affect species selection (refer to ICH guidance for industry S6
+Preclinical Safety Evaluation of Biotechnology-Derived Pharmaceuticals for more details).
+
+When determining the MRSD for the first dose of a new therapeutic in humans, absorption,
+distribution, and elimination parameters will not be known for humans. Comparative
+metabolism data, however, might be available based on in vitro studies. These data are
+particularly relevant when there are marked differences in both the in vivo metabolite profiles
+and HEDs in animals. Class experience implies that previous studies have demonstrated that a
+particular animal model is more appropriate for the assessment of safety for a particular class of
+therapeutics. For example, in the nonclinical safety assessment of the phosphorothioate
+antisense drugs, the monkey is considered the most appropriate species because monkeys
+experience the same dose limiting toxicity as humans (e.g., complement activation) whereas
+rodents do not. For this class of therapeutics, the MRSD would usually be based on the HED for
+the NOAEL in monkeys regardless of whether it was lower than that in rodents, unless unique
+dose limiting toxicities were observed with the new antisense compound in the rodent species.
+
+
+VII.     STEP 4: APPLICATION OF SAFETY FACTOR
+
+Once the HED of the NOAEL in the most appropriate species has been determined, a safety
+factor should then be applied to provide a margin of safety for protection of human subjects
+receiving the initial clinical dose. This safety factor allows for variability in extrapolating from
+
+                                                  9
+                            Contains Nonbinding Recommendations
+
+animal toxicity studies to studies in humans resulting from: (1) uncertainties due to enhanced
+sensitivity to pharmacologic activity in humans versus animals; (2) difficulties in detecting
+certain toxicities in animals (e.g., headache, myalgias, mental disturbances); (3) differences in
+receptor densities or affinities; (4) unexpected toxicities; and (5) interspecies differences in
+ADME of the therapeutic. These differences can be accommodated by lowering the human
+starting dose from the HED of the selected species NOAEL.
+
+In practice, the MRSD for the clinical trial should be determined by dividing the HED derived
+from the animal NOAEL by the safety factor. The default safety factor that should normally be
+used is 10. This is a historically accepted value, but, as described below, should be evaluated
+based on available information.
+
+A safety factor of 10 may not be appropriate for all cases. The safety factor should be raised
+when there is reason for increased concern, and lowered when concern is reduced because of
+available data that provide added assurance of safety. This can be visualized as a sliding scale,
+balancing findings that mitigate the concern for harm to healthy volunteers with those that
+suggest greater concern is warranted. The extent of the increase or decrease is largely a matter of
+judgment, using the available information. It is incumbent on the evaluator to clearly explain the
+reasoning behind the applied safety factor when it differs from the default value of 10,
+particularly if it is less than 10.
+
+       A.      Increasing the Safety Factor
+
+The following considerations indicate a safety concern that might warrant increasing the safety
+factor. In these circumstances, the MRSD would be calculated by dividing the HED by a safety
+factor that is greater than 10. If any of the following concerns are defined in review of the
+nonclinical safety database, an increase in the safety factor may be called for. If multiple
+concerns are identified, the safety factor should be increased accordingly.
+
+   •   Steep dose response curve. A steep dose response curve for significant toxicities in the
+       most appropriate species or in multiple species may indicate a greater risk to humans.
+
+   •   Severe toxicities. Qualitatively severe toxicities or damage to an organ system (e.g.,
+       central nervous system (CNS)) indicate increased risk to humans.
+
+   •   Nonmonitorable toxicity. Nonmonitorable toxicities may include histopathologic
+       changes in animals that are not readily monitored by clinical pathology markers.
+
+   •   Toxicities without premonitory signs. If the onset of significant toxicities is not
+       reliably associated with premonitory signs in animals, it may be difficult to know when
+       toxic doses are approached in human trials.
+
+
+
+
+                                                 10
+                            Contains Nonbinding Recommendations
+
+   •   Variable bioavailability. Widely divergent or poor bioavailability in the several animal
+       species, or poor bioavailability in the test species used to derive the HED, suggest a
+       greater possibility for underestimating the toxicity in humans.
+
+   •   Irreversible toxicity. Irreversible toxicities in animals suggest the possibility of
+       permanent injury in human trial participants.
+
+   •   Unexplained mortality. Mortality that is not predicted by other parameters raises the
+       level of concern.
+
+   •   Large variability in doses or plasma drug levels eliciting effect. When doses or
+       exposure levels that produce a toxic effect differ greatly across species or among
+       individual animals of a species, the ability to predict a toxic dose in humans is reduced
+       and a greater safety factor may be needed.
+
+   •   Nonlinear pharmacokinetics. When plasma drug levels do not increase in a dose-
+       related manner, the ability to predict toxicity in humans in relation to dose is reduced and
+       a greater safety factor may be needed.
+
+   •   Inadequate dose-response data. Poor study design (e.g., few dose levels, wide dosing
+       intervals) or large differences in responses among animals within dosing groups may
+       make it difficult to characterize the dose-response curve.
+
+   •   Novel therapeutic targets. Therapeutic targets that have not been previously clinically
+       evaluated may increase the uncertainty of relying on the nonclinical data to support a safe
+       starting dose in humans.
+
+   •   Animal models with limited utility. Some classes of therapeutic biologics may have
+       very limited interspecies cross-reactivity or pronounced immunogenicity, or may work by
+       mechanisms that are not known to be conserved between (nonhuman) animals and
+       humans; in these cases, safety data from any animal studies may be very limited in scope
+       and interpretability.
+
+       B.      Decreasing the Safety Factor
+
+Safety factors of less than 10 may be appropriate under some conditions. The toxicologic testing
+in these cases should be of the highest caliber in both conduct and design. Most of the time,
+candidate therapeutics for this approach would be members of a well-characterized class. Within
+the class, the therapeutics should be administered by the same route, schedule, and duration of
+administration; should have a similar metabolic profile and bioavailability; and should have
+similar toxicity profiles across all the species tested including humans. A smaller safety factor
+might also be used when toxicities produced by the therapeutic are easily monitored, reversible,
+predictable, and exhibit a moderate-to-shallow dose-response relationship with toxicities that are
+
+
+
+                                                11
+                            Contains Nonbinding Recommendations
+
+consistent across the tested species (both qualitatively and with respect to appropriately scaled
+dose and exposure).
+
+A safety factor smaller than 10 could be justified when the NOAEL was determined based on
+toxicity studies of longer duration compared to the proposed clinical schedule in healthy
+volunteers. In this case, a greater margin of safety should be built into the NOAEL, as it was
+associated with a longer duration of exposure than that proposed in the clinical setting. This
+assumes that toxicities are cumulative, are not associated with acute peaks in therapeutic
+concentration (e.g., hypotension), and did not occur early in the repeat dose study.
+
+
+VIII. STEP 5: CONSIDERATION OF THE PHARMACOLOGICALLY ACTIVE
+      DOSE
+
+Selection of a PAD depends upon many factors and differs markedly among pharmacological
+drug classes and clinical indications; therefore, selection of a PAD is beyond the scope of this
+guidance. However, once the MRSD has been determined, it may be of value to compare it to
+the PAD derived from appropriate pharmacodynamic models. If the PAD is from an in vivo
+study, an HED can be derived from a PAD estimate by using a BSA-CF. This HED value should
+be compared directly to the MRSD. If this pharmacologic HED is lower than the MRSD, it may
+be appropriate to decrease the clinical starting dose for pragmatic or scientific reasons.
+Additionally, for certain classes of drugs or biologics (e.g., vasodilators, anticoagulants,
+monoclonal antibodies, or growth factors), toxicity may arise from exaggerated pharmacologic
+effects. The PAD in these cases may be a more sensitive indicator of potential toxicity than the
+NOAEL and might therefore warrant lowering the MRSD.
+
+
+IX.    SUMMARY
+
+A strategy has been proposed to determine the maximum recommended starting dose for clinical
+trials of new therapeutics in adult healthy volunteers. In summary, usually NOAELs from the
+relevant animal studies should be converted to the HEDs using the standard factors presented in
+Table 1. Using sound scientific judgment, a safety factor should be applied to the HED from the
+most appropriate species to arrive at the MRSD. This process is meant to define the upper limit
+of recommended starting doses and, in general, lower starting doses can be appropriate. The
+process described in this guidance should foster consistency among sponsors and Agency
+reviewers.
+
+
+
+
+                                                 12
+                          Contains Nonbinding Recommendations
+
+                                      REFERENCES
+
+Boxenbaum, H and C DiLea, 1995, First-Time-in-Human Dose Selection: Allometric Thoughts
+and Perspectives, Journal of Clinical Pharmacology, 35:957-966.
+
+Burtles, SS, DR Newell, REC Henrar, and TA Connors, 1995, Revisions of General Guidelines
+for the Preclinical Toxicology of New Cytotoxic Anticancer Agents in Europe, European Journal
+of Cancer, 31A:408-410.
+
+Contrera, JF, AC Jacobs, RP Hullahalli, M Mehta, WJ Schmidt, and JA DeGeorge, 1995,
+Systemic Exposure — Based Alternative to the Maximum Tolerated Dose for Carcinogenicity
+Studies of Human Therapeutics, Journal of American College of Toxicology, 14:1-10.
+
+EPA, 1992, A Cross-Species Scaling Factor for Carcinogen Risk Assessment Based on
+Equivalence of Mg/Kg0.75/Day, Federal Register, 57:24152-24173.
+
+Freireich, EJ, EA Gehan, DP Rall, LH Schmidt, and HE Skipper, 1966, Quantitative Comparison
+of Toxicity of Anticancer Agents in Mouse, Rat, Hamster, Dog, Monkey, and Man, Cancer
+Chemotherapy Reports, 50:219-244.
+
+Geary, RS, JM Leeds, SP Henry, DK Monteith, and AA Levin, 1997, Antisense Oligonucleotide
+Inhibitors for the Treatment of Cancer: 1. QUESTION Pharmacokinetic Properties of
+Phosphorothioate Oligodeoxynucleotides, Anti-Cancer Drug Design, 12:383-393.
+
+Lowe, MC and RD Davis, 1998, The Current Toxicology Protocol of the National Cancer
+Institute, in K Hellman and SK Carter (eds.), Fundamentals of Cancer Chemotherapy, pp. 228-
+235, New York: McGraw Hill.
+
+Mahmood, I, MD Green, and JE Fisher, 2003, Selection of the First-Time Dose in Humans:
+Comparison of Different Approaches Based on Interspecies Scaling of Clearance, 43(7):692-697.
+
+Mordenti, J, 1986, Man Vs. Beast: Pharmacokinetic Scaling in Mammals, Journal of
+Pharmaceutical Sciences, 75:1028-1040.
+
+Reigner, BG and KS Blesch, 2002, Estimating the Starting Dose for Entry into Humans:
+Principles and Practice, European Journal of Clinical Pharmacology, 57:835-845.
+
+Schein, PS, RD Davis, S Carter, J Newman, DR Schein, and DP Rall, 1970, The Evaluation of
+Anticancer Drugs in Dogs and Monkeys for the Prediction of Qualitative Toxicities in Man,
+Clinical Pharmacology and Therapeutics, 11:3-40.
+
+Spector, WS (ed.), 1956, Handbook of Biological Data, pp. 175, Philadelphia: W.B. Saunders
+Co.
+
+
+
+
+                                             13
+                          Contains Nonbinding Recommendations
+
+Stahl, WR, 1967, Scaling of Respiratory Variables in Mammals, Journal of Applied Physiology,
+22:453-460.
+
+Travis, CC and RK White, 1988, Interspecies Scaling of Toxicity Data, Risk Analysis, 8:119-
+125.
+
+Watanabe, K, FY Bois, and L Zeise, 1992, Interspecies Extrapolation: A Reexamination of
+Acute Toxicity Data, Risk Analysis, 12:301-310.
+
+International Conference on Harmonisation Guidances
+
+ICH guidance for industry S6 Preclinical Safety Evaluation of Biotechnology-Derived
+Pharmaceuticals
+
+ICH guidance for industry S3A Toxicokinetics: The Assessment of Systemic Exposure in Toxicity
+Studies
+
+ICH guidance for industry M3 Nonclinical Safety Studies for the Conduct of Human Clinical
+Trials for Pharmaceuticals
+
+
+
+
+                                              14
+                            Contains Nonbinding Recommendations
+
+                                           GLOSSARY
+
+b: Allometric exponent
+Body surface area conversion factor (BSA-CF): A factor that converts a dose (mg/kg) in an
+animal species to the equivalent dose in humans (also known as the human equivalent dose),
+based on differences in body surface area. A BSA-CF is the ratio of the body surface areas in the
+tested species to that of an average human.
+
+Human equivalent dose (HED): A dose in humans anticipated to provide the same degree of
+effect as that observed in animals at a given dose. In this guidance, as in many communications
+from sponsors, the term HED is usually used to refer to the human equivalent dose of the
+NOAEL. When reference is made to the human equivalent of a dose other than the NOAEL
+(e.g., the PAD), sponsors should explicitly and prominently note this usage.
+
+K: A dimensionless factor that adjusts for differences in the surface area to weight ratio of
+species because of their different body shapes.
+
+km: Factor for converting mg/kg dose to mg/m2 dose
+
+Lowest observed adverse effect level (LOAEL): The lowest dose tested in an animal species
+with adverse effects.
+
+Maximum recommended starting dose (MRSD): The highest dose recommended as the initial
+dose in a clinical trial. In clinical trials of adult healthy volunteers, the MRSD is predicted to
+cause no adverse reactions. The units of the dose (e.g., mg/kg or mg/m2) may vary depending on
+practices employed in the area being investigated.
+
+Maximum tolerated dose (MTD): In a toxicity study, the highest dose that does not produce
+unacceptable toxicity.
+
+No observed adverse effect level (NOAEL): The highest dose tested in an animal species that
+does not produce a significant increase in adverse effects in comparison to the control group.
+Adverse effects that are biologically significant, even if not statistically significant, should be
+considered in determining an NOAEL.
+
+No observed effect level (NOEL): The highest dose tested in an animal species with no
+detected effects.
+
+Pharmacologically active dose (PAD): The lowest dose tested in an animal species with the
+intended pharmacologic activity.
+
+Safety factor (SF): A number by which the HED is divided to introduce a margin of safety
+between the HED and the maximum recommended starting dose.
+
+W: Body weight in kg
+
+
+                                                 15
+                               Contains Nonbinding Recommendations
+
+                                          APPENDIX A:
+                          Analysis of Allometric Exponent on HED Calculations
+
+An analysis was conducted to determine the effect of the allometric exponent on the conversion
+of an animal dose to the HED. One can derive the following equation (see Appendix C) for
+converting animal doses to the HED based on body weights and the allometric exponent (b):
+
+       HED = animal NOAEL x (Wanimal/Whuman)(1-b)
+
+Conventionally, for a mg/m2 normalization b would be 0.67, but a number of studies (including
+the original Freireich data) have shown that MTDs scale best across species when b = 0.75. The
+Interagency Pharmacokinetics Group has recommended that W0.75 be used for interspecies
+extrapolation of doses in carcinogenicity studies (EPA 1992). There are no data, however, to
+indicate the optimal method for converting NOAELs to HEDs. Conversion factors were
+calculated over a range of animal and human weights using (Wanimal/Whuman)0.33 or
+(Wanimal/Whuman)0.25 to assess the effect on starting dose selection of using b = 0.75 instead of b =
+0.67. The results are shown in Table 2. Using an allometric exponent of 0.75 had a big effect on
+the conversion factor for the smaller species mice and rats. Nonetheless, mice are not commonly
+used for toxicology studies to support the first-in-human clinical trials. In addition, there is
+evidence that the area under the plasma concentration versus time curves in rats and humans
+correlates reasonably well when doses are normalized to mg/m2 (Contrera et al. 1995). We
+conclude that the approach of converting NOAEL doses to an HED based on body surface area
+correction factors (i.e., b = 0.67) should be maintained for selecting starting doses for initial
+studies in healthy volunteers since: (1) mg/m2 normalization is widely used throughout the
+toxicology and pharmacokinetic research communities; (2) mg/m2 normalization provides a more
+conservative conversion; (3) there are no data to suggest a superior method for converting
+NOAELs; and (4) CDER has significant experience in establishing safe starting doses based on
+mg/m2, and it is readily calculated.
+
+                      Table 2: Effect of Allometric Exponent on Conversion Factora
+                                                    Conversion Factorsc          Ratio of
+                                                                               0.75 to 0.67
+               Species     Weight Rangeb Standard b = 0.67           b = 0.75
+                                 (kg)
+               Mouse         0.018-0.033         0.081       0.075       0.141         1.88
+               Rat            0.09-0.40          0.162       0.156       0.245         1.57
+               Rabbit            1.5-3           0.324        0.33        0.43         1.30
+               Monkey            1.5-4           0.324        0.37        0.47         1.27
+               Dog             6.5-13.0          0.541        0.53        0.62         1.17
+           a
+             conversion factor = (Wanimal/Whuman)(1-b)
+           b
+             human weight range used was 50-80 kg (110-176 lb)
+           c
+             mean conversion factor calculated across entire animal weight range and human weight
+           range
+
+
+
+
+                                                     16
+                           Contains Nonbinding Recommendations
+
+The following summarizes the analysis of the effects of the allometric exponent on HED
+calculations:
+
+   •   Changing the allometric exponent from 0.67 to 0.75 had a big effect on the conversion
+       factor for the smaller rodent species; for mice the conversion factors differed by a factor
+       of almost 2.
+
+   •   Converting doses based on an exponent of 0.75 would lead to higher, more aggressive
+       and potentially more toxic starting doses.
+
+   •   The limited data available suggest that the most accurate allometric exponent for
+       normalizing MTDs of antineoplastic agents for interspecies extrapolation is b = 0.75, but
+       there are no data to indicate the optimal normalization method for interspecies
+       extrapolation of NOAELs in a broad range of therapeutic classes. Using mg/m2 is widely
+       adopted throughout the drug development community.
+
+   •   Unless evidence is provided to the contrary, HED calculations should be based on b =
+       0.67 (i.e., the standard conversions based on mg/m2 relationships).
+
+   •   There was no notable effect of body weight on calculation of the HED within the weight
+       ranges examined.
+
+
+
+
+                                                17
+                           Contains Nonbinding Recommendations
+
+                                      APPENDIX B:
+                       Analysis of Body Weight Effects on HED Calculations
+
+Accurate conversion of a mg/kg dose to a mg/m2 dose depends on the actual weight (and surface
+area) of the test species. A popular formula for converting doses is:
+
+       (i)     mg/m2 = km × mg/kg
+               where km = 100/K × W0.33 where K is a value unique to each species (Freireich et
+                     al. 1966)
+                     or      km = 9.09 × W0.35 where a K value unique to each species is not
+                     needed (Boxenbaum and DiLea 1995; Burtles et al. 1995; Stahl 1956).
+
+The km value is not truly constant for any species, but increases within a species as body weight
+increases. The increase is not linear, but increases approximately proportional to W2/3. For
+example, the km value in rats varies from 5.2 for a 100 g rat to 7.0 for a 250 g rat. Strictly
+speaking, the km value of 6 applies only to rats at the reference weight of 150 g. For
+standardization and practical purposes, a fixed km factor for each species is preferred. An
+analysis was undertaken to determine the effect of different body weights within a species on the
+conversion of an animal dose to the HED using km factors. The km factor was calculated for a
+range of body weights using km = 100/K × W0.33. In Table 3, a working weight range is shown
+next to the reference body weight. This is the range within which the HED calculated by using
+the standard km value will not vary more than ±20 percent from that which would be calculated
+using a km value based on exact animal weight. This is a relativity small variance considering
+dose separation generally used in deriving the NOAEL, in toxicology studies, which are often
+twofold separations. For example, suppose a NOAEL in rats is 75 mg/kg and the average rat
+weight is 250 g. The km value for a 250 g rat is 7.0.
+
+                      HED = 75 × (7/37) = 14 mg/kg in humans.
+               Using the standard km value of 6 for rats,
+                      HED = 75 × (6/37) = 12 mg/kg in humans.
+
+The HED calculated with the standard km value of 6 is within 15 percent of the value calculated
+using the actual km value of 7. As shown in Table 3, the body weights producing km factors for
+which the nominal, integer conversion factor was within 20 percent of the calculated factor
+covered a broad range. This working weight range encompassed the animal weights expected
+for the majority of studies used to support starting doses in humans.
+
+
+
+
+                                               18
+                                                   Contains Nonbinding Recommendations
+
+
+                     Table 3: Conversion of Animal Doses to Human Equivalent Doses Based on Body Surface Area
+
+                                                                                       To Convert Dose in       To Convert Animal Dose in mg/kg
+                            Reference        Working Weight         Body Surface        mg/kg to Dose in            to HEDb in mg/kg, Either
+Species                    Body Weight        Rangea (kg)            Area (m²)        mg/m² Multiply by km          Divide          Multiply
+                               (kg)                                                                             Animal Dose By Animal Dose By
+Human                           60                  ---                 1.62                    37                    ---              ---
+   Childc                       20                  ---                 0.80                    25                    ---              ---
+Mouse                         0.020             0.011-0.034             0.007                    3                   12.3             0.081
+Hamster                       0.080             0.047-0.157             0.016                    5                    7.4             0.135
+Rat                           0.150             0.080-0.270             0.025                    6                    6.2             0.162
+Ferret                        0.300             0.160-0.540             0.043                    7                    5.3             0.189
+Guinea pig                    0.400             0.208-0.700             0.05                     8                    4.6             0.216
+Rabbit                          1.8               0.9-3.0               0.15                    12                    3.1             0.324
+Dog                             10                 5-17                 0.50                    20                    1.8             0.541
+Primates:
+   Monkeysd                      3                1.4-4.9                0.25                   12                     3.1                0.324
+   Marmoset                    0.350            0.140-0.720              0.06                    6                     6.2                0.162
+   Squirrel monkey             0.600            0.290-0.970              0.09                    7                     5.3                0.189
+   Baboon                       12                 7-23                  0.60                   20                     1.8                0.541
+Micro-pig                       20                 10-33                 0.74                   27                     1.4                0.730
+Mini-pig                        40                 25-64                 1.14                   35                     1.1                0.946
+a
+  For animal weights within the specified ranges, the HED for a 60 kg human calculated using the standard km value will not vary more than ±20 percent
+from the HED calculated using a km value based on the exact animal weight.
+b
+  Assumes 60 kg human. For species not listed or for weights outside the standard ranges, human equivalent dose can be calculated from the formula:
+HED = animal dose in mg/kg x (animal weight in kg/human weight in kg)0.33.
+c
+  The km value is provided for reference only since healthy children will rarely be volunteers for phase 1 trials.
+d
+  For example, cynomolgus, rhesus, and stumptail.
+
+
+
+
+                                                                           19
+                           Contains Nonbinding Recommendations
+
+
+For the typical species used in nonclinical safety studies, Table 3 also shows the body surface
+area in m2 for an animal at a particular reference weight. For example, a 400 g guinea pig has a
+body surface area of approximately 0.05 m2. These values come from published sources with
+surface area determined experimentally by various methods. Compilations of this type of data
+can be found in published references (Spector 1956).
+
+For animal weights outside the working weight range in Table 3, or for species not included in
+the table, an alternative method is available for calculating the HED. In these cases the
+following formula can be used:
+
+HED = Animal dose (mg/kg) × [animal weight (kg) ÷ human weight (kg)]0.33
+
+For example, assume that a NOAEL of 25 mg/kg was determined in a study using rabbits
+weighing 4.0 kg. The 4.0 kg animals are outside the working range for rabbits of 0.9 to 3.0 kg
+indicated in Table 3.
+
+HED = 25 mg/kg × (4.0 ÷ 60)0.33 = 25 × (0.41) = 10 mg/kg
+
+Alternatively, if the standard conversion factor was used to calculate the HED
+
+HED = 25 mg/kg ÷ 3.1 = 8.1 mg/kg
+
+The value of 10 mg/kg for the HED is 25 percent greater than the value of 8.1 mg/kg that would
+be calculated using the standard conversion factor. For example, assume that a NOAEL of 25
+mg/kg was determined in a study using rabbits weighing 4.0 kg. The 4.0 kg animals are outside
+the working range for rabbits of 0.9 to 3.0 kg indicated in Table 3.
+
+HED = 25 mg/kg × (4.0 ÷ 60)0.33 = 25 × (0.41) = 10 mg/kg
+
+Alternatively, if the standard conversion factor was used to calculate the HED
+
+HED = 25 mg/kg ÷ 3.1 = 8.1 mg/kg
+
+The value of 10 mg/kg for the HED is 25 percent greater than the value of 8.1 mg/kg that would
+be calculated using the standard conversion factor.
+
+The km analysis addresses only half of the HED conversion process. The range of human sizes
+should also be considered to convert the mg/m2 dose back to an HED dose in mg/kg. To
+examine the effect of both animal and human weights on the conversion factor, the principle of
+allometry was used. Interspecies biologic parameters are often related by the power function Y =
+aWb where W is body weight and b (allometric exponent) is the slope of the log-log plot, logy =
+b × logW + C. Using algebraic manipulation (see Appendix C), one can derive an equation for
+converting an animal dose to the HED based on the body weights of the human and the animals
+for a given allometric exponent. For converting an animal NOAEL in mg/kg to the HED in
+mg/kg, the equation is:
+
+
+
+
+                                               20
+                               Contains Nonbinding Recommendations
+
+
+       (ii)     HED = animal NOAEL x (Wanimal/Whuman)(1-b)
+
+Since body surface area is believed to scale with an allometric exponent (b) of 0.67, one can
+explore how the animal and human body weights affect the conversion factor
+(Wanimal/Whuman)0.33.
+
+The conversion factor was calculated over a range of animal weights and a range of human
+weights from 50-80 kg. The results are summarized in Table 4. Column B is the weight range
+of the animals used to calculate, in conjunction with the 50-80 kg range in humans, the
+conversion factor. The extremes of the conversion factors for the permutations chosen are
+shown in columns C and D. The proposed standard conversion factors are shown in column E.
+The percentage difference of these extremes from the standard is shown in column F. Finally,
+the range of animal weights that produced a conversion factor for a 60 kg human within 20
+percent of the standard factor is shown in column G. The ±10 percent and ±20 percent intervals
+across the entire range of weights are graphically illustrated for rats in Table 5.
+
+           Table 4: Effect of Body Weight on Human Equivalent Dose Conversionsa
+       A           B            C         D            E          F               G
+                                                   c
+                                  Conversion Factor          % Difference ±20% Rangef for
+                                                           d            e
+   Species     Animal      sm animal lg animal Standard of Extreme         60 kg Human
+               Weight       lg human sm human                   from            (kg)
+             Rangeb (kg)                                      Standard
+   Mouse     0.018-0.033      0.060     0.089        0.081      -22%        0.015-0.051
+   Rat       0.090-0.400      0.106     0.213        0.162      -35%        0.123-0.420
+   Rabbit       1.5-3.0       0.269     0.395        0.324      +22%           1.0-3.4
+   Monkey       1.5-4.0       0.319     0.435        0.324      +34%           1.0-3.4
+   Dog         6.5-13.0       0.437     0.641        0.541      -19%          4.7-16.2
+   a
+     conversion factor = (Wanimal/Whuman)0.33
+   b
+     human weight range used was 50-80 kg (110-176 lb)
+   c
+     HED in mg/kg equals animal dose in mg/kg multiplied by this value
+   d
+     See Table 1
+   e
+     extreme from column C or D
+   f
+     range of animal weights that produced a calculated conversion factor within 20 percent of the standard
+   factor (column E) when human weight was set at 60 kg
+
+
+
+
+                                                       21
+                            Contains Nonbinding Recommendations
+
+
+Table 5: Human and Rat Body Weights Producing Body Surface Area Dose Conversion Factors
+             Within 10 Percent and 20 Percent of the Standard Factor (0.162)
+
+    EFFECT OF BODY WEIGHT ON BSA-CF
+    HED = animal NOAEL· (Wanimal/Whuman)exp(1-b), b = 0.67 for mg/m2 conversion
+              Standard conversion to mg/kg = 0.162 ± 10%             0.146-0.178
+                                                   ± 20%             0.130-0.194
+    Rat Body                                Human Body Weight (kg)
+    Weight (kg)      50         55          60        65          70          75     80
+       0.090        0.124      0.120      0.117        0.114     0.111      0.109   0.106
+       0.100        0.129      0.125      0.121        0.118     0.115      0.113   0.110
+       0.110        0.133      0.129      0.125        0.122     0.119      0.116   0.114
+       0.120        0.137      0.132      0.129        0.125     0.122      0.119   0.117
+       0.130        0.140      0.136      0.132        0.129     0.126      0.123   0.120
+       0.140        0.144      0.139      0.135        0.132     0.129      0.126   0.123
+       0.150        0.147      0.142      0.138        0.135     0.132      0.129   0.126
+       0.160        0.150      0.146      0.141        0.138     0.134      0.131   0.129
+       0.170        0.153      0.149      0.144        0.141     0.137      0.134   0.131
+       0.180        0.156      0.151      0.147        0.143     0.140      0.137   0.134
+       0.190        0.159      0.154      0.150        0.146     0.142      0.139   0.136
+       0.200        0.162      0.157      0.152        0.148     0.145      0.141   0.138
+       0.210        0.164      0.159      0.155        0.151     0.147      0.144   0.141
+       0.220        0.167      0.162      0.157        0.153     0.149      0.146   0.143
+       0.230        0.169      0.164      0.159        0.155     0.152      0.148   0.145
+       0.240        0.172      0.166      0.162        0.157     0.154      0.150   0.147
+       0.250        0.174      0.169      0.164        0.160     0.156      0.152   0.149
+       0.260        0.176      0.171      0.166        0.162     0.158      0.154   0.151
+       0.270        0.179      0.173      0.168        0.164     0.160      0.156   0.153
+       0.280        0.181      0.175      0.170        0.166     0.162      0.158   0.155
+       0.290        0.183      0.177      0.172        0.168     0.164      0.160   0.157
+       0.300        0.185      0.179      0.174        0.179     0.165      0.162   0.158
+       0.310        0.187      0.181      0.176        0.171     0.167      0.163   0.160
+       0.320        0.189      0.183      0.178        0.173     0.169      0.165   0.162
+       0.330        0.191      0.185      0.180        0.175     0.171      0.167   0.163
+       0.340        0.193      0.187      0.181        0.177     0.172      0.169   0.165
+       0.350        0.194      0.188      0.183        0.178     0.174      0.170   0.167
+       0.360        0.196      0.190      0.185        0.180     0.176      0.172   0.168
+       0.370        0.198      0.192      0.187        0.182     0.177      0.173   0.170
+       0.380        0.200      0.194      0.188        0.183     0.179      0.175   0.171
+       0.390        0.202      0.195      0.190        0.185     0.180      0.176   0.173
+       0.400        0.203      0.197      0.191        0.186     0.182      0.178   0.174
+       0.410        0.205      0.199      0.193        0.188     0.183      0.179   0.175
+       0.420        0.207      0.200      0.194        0.189     0.185      0.181   0.177
+       0.430        0.208      0.202      0.196        0.191     0.186      0.182   0.178
+       0.440        0.210      0.203      0.197        0.192     0.188      0.183   0.180
+       0.450        0.211      0.205      0.199        0.194     0.189      0.185   0.181
+       0.460        0.213      0.206      0.200        0.195     0.190      0.186   0.182
+
+
+
+
+                                                  22
+                           Contains Nonbinding Recommendations
+
+
+The following are conclusions from these analyses:
+   • The ±20 percent interval around the standard conversion factor includes a broad range of
+       animal and human weights.
+
+   •   Given that the human weights will vary broadly, it is not usually necessary to be
+       concerned about the affect of the variation of animal weights within a species on the
+       HED calculation.
+
+   •   If an extreme animal weight is encountered in a toxicology study, one can calculate an
+       accurate conversion factor using (Wanimal/Whuman)0.33.
+
+
+
+
+                                               23
+                            Contains Nonbinding Recommendations
+
+
+                                         APPENDIX C:
+                       Derivation of the Interspecies Scaling Factor (Wa/Wh)(1-b)
+
+Power equation         (mg) = aWb
+                       log(mg) = log(a) + bClog(W) = bClog(W) + c
+
+Given the weights of animal and human, and animal dose in mg/kg, solve for HED in mg/kg:
+        Let    H = mg/kg dose in humans
+               A = mg/kg dose in animals
+               Wh = weight of human
+               Wa = weight of animal
+
+        for animal     log(mg) = log(a) + bClog(Wa) = bClog(Wa) + c
+        replace mg     log(ACWa) = bClog(Wa) + c
+        solve for c    c = log(ACWa) - bClog(Wa)
+                        = log(A) + log(Wa) - bClog(Wa)
+                        = log(A) + (1-b)log(Wa)
+
+likewise for human     c = log(H) + (1-b)log(Wh)
+
+equate two equations   log(A) + (1-b)log(Wa) = log(H) + (1-b)log(Wh)
+solve for log(H)       log(H) = log(A) + (1-b)log(Wa) - (1-b)log(Wh)
+                               = log(A) + (1-b)[log(Wa) - log(Wh)]
+                               = log(A) + log[(Wa/Wh)(1-b)]
+                       log(H) = log[AC(Wa/Wh)(1-b)]
+
+solve for H            H = AC(Wa/Wh)(1-b)
+
+For example, using mg/m2 normalization (b = 0.67) the predicted human MTD in mg/kg based
+on a rat LD10 in mg/kg is MTD = LD10 C(Wa/Wh)0.33.
+
+Likewise the HED in mg/kg based on a surface area conversion given an animal NOAEL is
+HED = NOAEL C(Wa/Wh)0.33.
+
+
+
+
+                                                   24
+                            Contains Nonbinding Recommendations
+
+
+                                      APPENDIX D:
+                       Examples of Calculations for Converting Animal Doses
+                                   to Human Equivalent Doses
+
+This appendix provides examples of specific calculations to be taken in deriving an HED based
+on standardized factors.
+
+Tables 1 and 3 provide standardized conversion factors for changing animal or human doses
+expressed as mg/kg to doses expressed as mg/m2. Tables 1 and 3 also have factors (and divisors)
+for converting animal doses in mg/kg to the human dose in mg/kg that is equivalent to the animal
+dose if both were expressed on a mg/m2 basis. This human dose in mg/kg is referred to as the
+HED.
+
+
+Example 1: Converting to mg/m2 HED
+
+To convert an animal or human dose from mg/kg to mg/m2, the dose in mg/kg is multiplied by
+the conversion factor indicated as km (for mass constant). The km factor has units of kg/m2; it is
+equal to the body weight in kg divided by the surface area in m2.
+
+       formula:                                              mg/kg × km = mg/m2
+       to convert a dose of 30 mg/kg in a dog:               30 × 20 = 600 mg/m2
+       to convert a dose of 2.5 mg/kg in a human:            2.5 × 37 = 92.5 mg/m2
+
+
+Example 2: Converting to mg/kg HED in two steps
+
+To calculate the HED for a particular dose in animals, one can calculate the animal dose in
+mg/m2 by multiplying the dose in mg/kg by the km factor for that species as described in
+Example 1. The dose can then be converted back to mg/kg in humans by dividing the dose in
+mg/m2 by the km factor for humans.
+
+       formula:        (animal mg/kg dose × animal km) ÷ human km = human mg/kg dose
+       to calculate the HED for a 15 mg/kg dose in dogs:
+               (15 × 20) ÷ 37 = 300 mg/m² ÷ 37 = 8 mg/kg
+
+
+Example 3: Converting to mg/kg HED in one step
+
+The calculation in Example 2 can be simplified by combining the two steps. The HED can be
+calculated directly from the animal dose by dividing the animal dose by the ratio of the
+human/animal km factor (third column in Table 1) or by multiplying by the ratio of the
+animal/human km factor (fourth column in Table 1).
+
+
+
+
+                                                25
+                        Contains Nonbinding Recommendations
+
+
+Division method
+              NOAEL                   calculation                  HED
+                                      mg/kg ÷ [kmhuman/kmanimal]
+             15 mg/kg in dogs         15 mg/kg ÷ 1.8 =             8 mg/kg
+             50 mg/kg in rats         50 mg/kg ÷ 6.2 =             8 mg/kg
+             50 mg/kg in monkeys      50 mg/kg ÷ 3.1 =             16 mg/kg
+
+
+Multiplication method
+               NOAEL                  calculation                  HED
+                                      mg/kg × [kmanimal/kmhuman]
+             15 mg/kg in dogs         15 mg/kg × 0.541 =           8 mg/kg
+             50 mg/kg in rats         50 mg/kg × 0.162 =           8 mg/kg
+             50 mg/kg in monkeys      50 mg/kg × 0.324 =           16 mg/kg
+
+
+
+
+                                        26
+      Contains Nonbinding Recommendations
+
+
+                   APPENDIX E:
+    Selection of Maximum Recommended Starting Dose
+for Drugs Administered Systemically to Normal Volunteers
+
+
+
+
+                       27
+

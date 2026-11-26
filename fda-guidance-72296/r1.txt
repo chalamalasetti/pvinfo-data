@@ -1,0 +1,2341 @@
+      Guidance for Industry
+      Statistical Aspects of the Design,
+    Analysis, and Interpretation of Chronic
+     Rodent Carcinogenicity Studies of
+               Pharmaceuticals
+
+                                     DRAFT GUIDANCE
+    This guidance document is being distributed for comment purposes only.
+Comments and suggestions regarding this draft document should be submitted within 90 days of publication in the
+Federal Register of the notice announcing the availability of the draft guidance. Submit comments to Dockets
+Management Branch (HFA-305), Food and Drug Administration, 12420 Parklawn Dr., rm. 1-23, Rockville, MD
+20857. All comments should be identified with the docket number listed in the notice of availability.
+
+For questions regarding this draft document contact (CDER) Karl K. Lin, Ph.D., 301-827-3093, e-mail link
+@cder.fda.gov.
+
+
+
+
+                    U.S. Department of Health and Human Services
+                            Food and Drug Administration
+                   Center for Drug Evaluation and Research (CDER)
+
+                                                 May 2001
+
+                                                Pharm/Tox
+
+
+G:\815dft.doc
+04/23/01
+                             Draft — Not for Implementation
+
+
+
+
+      Guidance for Industry
+      Statistical Aspects of the Design,
+    Analysis, and Interpretation of Chronic
+     Rodent Carcinogenicity Studies of
+               Pharmaceuticals
+
+
+                              Additional copies are available from:
+
+                              Office of Training and Communications
+                             Division of Communications Management
+                                Drug Information Branch, HFD-210
+                        Center for Drug Evaluation and Research (CDER)
+                                         5600 Fishers Lane
+                                        Rockville, MD 20857
+                                         (Tel) 301-827-4573
+                      (Internet) http://www.fda.gov/cder/guidance/index.htm
+
+
+
+
+                 U.S. Department of Health and Human Services
+                         Food and Drug Administration
+                Center for Drug Evaluation and Research (CDER)
+
+
+                                         May 2001
+
+                                        Pharm/Tox
+
+
+
+
+G:\815dft.doc
+04/23/01
+                                                               Draft — Not for Implementation
+
+
+                                                                         TABLE OF CONTENTS
+
+
+
+
+I.        INTRODUCTION................................................................................................................................................................1
+
+II.       BACKGROUND...................................................................................................................................................................1
+
+III.         VALIDITY OF THE DESIGN......................................................................................................................................2
+
+IV.          METHODS OF STATISTICAL ANALYSIS ...........................................................................................................4
+     A.  A N OVERVIEW OF COMPLEXITIES OF STATISTICAL A NALYSIS OF TUMOR DATA..................................................... 4
+     B.  A DJUSTMENT OF TUMOR RATES FOR INTERCURRENT M ORTALITY ............................................................................ 6
+     C.  STATISTICAL A NALYSIS OF TUMOR DATA W ITH INFORMATION A BOUT CAUSE OF DEATH, TUMOR LETHALITY,
+     BUT WITHOUT M ULTIPLE SACRIFICES...................................................................................................................................... 8
+       1. Role of the Tumor in Animal’s Death (Contexts of Observation of Tumor Types).............................................8
+       2. Statistical Analysis of Incidental Tumors...................................................................................................................9
+       3. Statistical Analysis of Fatal Tumors.........................................................................................................................15
+       4. Statistical Analysis of Tumors Observed in Both Incidental and Fatal Contexts.............................................16
+       5. Statistical Analysis of Mortality Independent Tumors...........................................................................................16
+       6. Exact Methods ..............................................................................................................................................................17
+     D. STATISTICAL A NALYSIS OF DATA W ITHOUT INFORMATION A BOUT CAUSE OF DEATH AND W ITHOUT
+     M ULTIPLE SACRIFICES .............................................................................................................................................................. 21
+     E. STATISTICAL A NALYSIS OF DATA FROM STUDIES W ITH DUAL CONTROLS............................................................ 25
+V.        INTERPRETATION OF STUDY RESULTS.............................................................................................................26
+     A.      A DJUSTMENT FOR THE EFFECT OF M ULTIPLE TESTS (CONTROL OVER FALSE POSITIVE ERROR)........................ 27
+     B.      CONTROL OVER FALSE NEGATIVE ERROR.................................................................................................................... 30
+     C.      THE USE OF HISTORICAL CONTROL DATA ................................................................................................................... 30
+     D.      EVALUATION OF VALIDITY OF DESIGNS OF NEGATIVE STUDIES............................................................................... 32
+VI.          PRESENTATION OF RESULTS AND DATA SUBMISSION........................................................................32
+
+REFERENCES .............................................................................................................................................................................38
+
+
+
+
+G:\815dft.doc
+04/23/01
+                                           Draft — Not for Implementation
+
+
+1                               Guidance for Industry 1
+2          Statistical Aspects of the Design, Analysis, and Interpretation of
+ 3           Chronic Rodent Carcinogenicity Studies of Pharmaceuticals
+ 4
+ 5
+ 6
+ 7
+ 8          This draft guidance, when finalized, will represent the Food and Drug Administration's current
+ 9          thinking on this topic. It does not create or confer any rights for or on any person and does not
+10          operate to bind FDA or the public. An alternative approach may be used if such approach
+11          satisfies the requirements of the applicable statutes and regulations.
+12
+13
+14
+15
+16
+17
+18
+19   I.         INTRODUCTION
+20
+21   This document is intended to provide guidance to sponsors on the design of animal
+22   carcinogenicity experiments, methods of statistical analysis of tumor data, interpretation of study
+23   results, presentation of data and results in reports, and the submission of tumor data to FDA
+24   statistical reviewers at the Food and Drug Administration (FDA). A brief background
+25   description of the operation of statistical review of carcinogenicity studies in FDA's Center for
+26   Drug Evaluation and Research (CDER) is given in section II. A discussion of the validity of the
+27   design of the experiment is given in Section III. Section IV discusses methods of statistical
+28   analysis. Section V discusses how the results should be interpreted, and Section VI discusses
+29   data presentation and submission.
+30
+31
+32   II.        BACKGROUND
+33
+34   Assessment of the risk of drug exposure in humans includes an assessment of carcinogenicity in
+35   tests in rodents. The Division of Biometrics in the Office of Biostatistics, Center for Drug
+36   Evaluation and Research (CDER), Food and Drug Administration (FDA), is responsible for
+37   conducting statistical reviews of long-term animal (rodent) carcinogenicity studies of
+38   pharmaceuticals submitted by drug sponsors to FDA. In a carcinogenicity study of a new drug
+39   using a series of increasing dose levels, statistical tests for positive trends in tumor rates are
+40   usually of greatest interest, but as discussed in this document, in some situations, pairwise
+41   comparisons are considered to be more indicative of drug effects than trend tests.
+42
+
+
+
+
+     1
+      This guidance has been prepared by the Office of Biostatistics with the participation of the Office of Review
+     Management, Center for Drug Evaluation and Research (CDER), Food and Drug Administration.
+     G:\815dft.doc                                           1
+     04/23/01
+                                          Draft — Not for Implementation
+
+
+43   In statistical reviews of carcinogenicity studies, statisticians evaluate the validity of the designs
+44   and the appropriateness of methods of data analysis used by the sponsor. They also use raw
+45   study data in electronic form to perform additional statistical analyses.
+46
+47   The recommendations that follow are based on FDA’s assessment of current literature,
+48   consultations with outside experts, and internal research.
+49
+50
+51   III.      VALIDITY OF THE DESIGN
+52
+53   Many factors determine the adequacy of a carcinogenicity study, including the species and strain
+54   of the animals, sample size, dose selection, method of allocation of animals, route of
+55   administration, animal care and diet, caging, drug stability, and study duration. Of particular
+56   interest to statisticians are the methods used to allocate animals to treatment groups and caging
+57   rotation, the determination of sample size, and the duration of the study.
+58
+59   Although not generally a statistical issue, dose selection is particularly critical. The premise of
+60   carcinogenicity testing most directly applicable to genotoxic mechanisms (when there may not
+61   be a pharmacological threshold, or identification of a threshold is difficult) is that long exposure
+62   duration and large doses in a small number of animals will be informative about the much
+63   smaller risks of lower doses and shorter durations of exposure in humans. As a result, the
+64   general goal should be to maximize rodent exposure by testing at maximum tolerated doses.
+65
+66   The International Conference on Harmonization (ICH) guidance entitled S1C Dose Selection for
+67   Carcinogenicity Studies of Pharmaceuticals (S1C) is an internationally accepted guidance for
+68   dose selection for carcinogenicity studies, and sponsors are advised to consult this document.
+69   The guidance allows for approaches to high dose selection based on toxicity endpoints (Sontag,
+70   Page, and Saffiotti 1976; Chu, Cueto, and Ward 1981), pharmacokinetic endpoints (multiple of
+71   maximum human exposure), pharmacodynamic endpoints, and maximal feasible dose. For
+72   further clarification, the appropriate medical review division should be consulted. 2
+73
+74   Randomization should be used to allocate animals to treatment groups. Random assignment of
+75   experimental animals to different treatment groups allows the assumption that treatments will not
+76   be continually favored or handicapped by extraneous sources of variation over which the
+77   experimenter has no control (i.e., that possible bias will be minimized).
+78
+79   One area where bias can still be introduced, however, is in the microscopic evaluation of tissues.
+80   Currently, open or nonblinded microscopic evaluation of tissues from experimental animals is
+81   the routine practice adopted by veterinary pathologists in the generation of histopathological data
+82   in carcinogenicity studies. Veterinary pathologists do not favor blinded readings of slides of
+
+     2
+       Sponsors can seek CDER’s advance concurrence on carcinogenicity protocols and should consult other available
+     guidance (e.g., ICH guidances S1A, S1B, S1C, S1C(R)). In addition, a draft guidance titled Carcinogenicity Study
+     Protocal Submissions published in November 2000. Once finalized, that guidance will represent the Agency's
+     thinking on that topic.
+
+     G:\815dft.doc                                           2
+     04/23/01
+                                      Draft — Not for Implementation
+
+
+ 83   animal tissues/organs because they believe that blinded reading results in loss of information
+ 84   critical to interpretation, such as the ability to relate observations in different tissues.
+ 85   Furthermore, they argue that the variables constitute the baseline that defines the experimental
+ 86   control and that it is impractical to perform blinded slide readings because there are so many
+ 87   tissues from each animal. Mistakes can be easily made when assigning, opening codes, and
+ 88   recording results in blinded reading (Iatropoulos 1988; Prasse et al. 1986). There are others,
+ 89   however, who have argued that blinded evaluation should be used to prevent the bias that can be
+ 90   introduced by the pathologists’ knowledge of the treatment groups of the tested animals (Temple,
+ 91   Fairweather, Glocklin, and O'Neill 1988). Certainly, blinded re-readings are common in close or
+ 92   disputed cases.
+ 93
+ 94   The number of animals remaining in a study for the full duration is an important statistical
+ 95   consideration. A sufficient number of animals should be used in an experiment to ensure
+ 96   reasonable power of statistical tests to detect true carcinogenic effects. It has been recommended
+ 97   that each dose and concurrent control group contain at least 50-60 animals of each sex. If
+ 98   interim sacrifices are planned, the initial number of animals should be increased by the number
+ 99   of animals scheduled for interim sacrifice. Prior assignments of treatment and designations for
+100   sacrifice of the animals should be made (Bannasch et al. 1986).
+101
+102   Animals are usually exposed to the test substance for essentially their entire normal life span,
+103   generally 24 months for rats and mice. The vast majority of carcinogenicity studies of
+104   pharmaceuticals using rats that are submitted to CDER for review have durations of 24 months
+105   and have reasonable survival. The duration of mouse studies ranges from 18 to 24 months, with
+106   many lasting only 18 or 21 months even though they have very low mortality at terminal
+107   sacrifice. One reason for using shorter durations in mouse studies appears to be a 1985 federal
+108   government publication stating that carcinogenicity studies should be conducted at least 18
+109   months in mice and 24 months in rats (OFR 1985). The publication, however, goes on to say
+110   that a longer duration may be appropriate if cumulative mortality at the planned terminal
+111   sacrifice is low. CDER recommends that drug sponsors also conduct mouse studies for 24
+112   months, unless there is excessive mortality as described below. Results of a recent study of the
+113   effect of shortened duration on the statistical power of carcinogenicity studies by Kodell, Lin,
+114   Thorn, and Chen (2000) support the CDER recommendation. The study showed that stopping at
+115   18 months would reduce power to an unacceptable level for a variety of models of the
+116   tumorigenicity, and that the loss of power is too great to warrant an early stopping at 21 months,
+117   absent effects on survival.
+118
+119   However, early termination of a study for mortality, even if unavoidable, may render a study
+120   uninformative, leaving too few animals living long enough to represent adequate exposure to the
+121   chemical. This is especially important in the evaluation of the design validity of a negative
+122   study. In general, a 50 percent survival rate to weeks 80 to 90 of the 50 initial animals in any
+123   treatment group is considered adequate. The percentage can be lower or higher if the number of
+124   animals used in each treatment/sex group is larger or smaller than 50, but between 20 to 30
+125   animals should be still alive during these weeks (Lin and Ali 1994). Whether a study could be
+126   terminated before the scheduled termination date if the survival of any treatment group goes
+127   below 50 percent or 20 to 30 surviving animals (provided that sufficient numbers of animals
+      G:\815dft.doc                                   3
+      04/23/01
+                                             Draft — Not for Implementation
+
+
+128   were exposed through week 80 to 90) depends on the situation. For example, there is no reason
+129   to stop a study if the survival of only the low-dose group and/or the medium-dose group is
+130   altered, because the control vs. high-dose comparison will still be informative. If the survival of
+131   the high-dose group falls below 50 percent or 20-30 surviving animals after week 80, the study
+132   should be continued, either stopping dosing of animals in the high-dose group or terminating
+133   only the high-dose group, because the comparison of at least the control and low/middle doses
+134   would still be informative (the high-dose comparison would depend on the situation). A study
+135   could be terminated early if the survival of the control group (or groups) goes below 50 percent
+136   or 20-30 surviving animals after weeks 80 to 90, as the later comparisons would not be
+137   informative. Others have suggested, for example, that an experiment be terminated early when
+138   the survival of the control or the low-dose group is reduced to 20-25 percent of the original
+139   number of animals. If the mortality is increased only in the high-dose group, consideration can
+140   be given to early termination of that group (OFR 1985). 3 Because early study termination poses
+141   complex problems, it is strongly recommended that a decision to terminate a study or a study
+142   group early be made with input from the Center and the medical division responsible for the
+143   review of the associated application.
+144
+145   If in discussions with CDER, the Center approves the early termination of a study under this
+146   recommendation, the study’s sponsor can be assured that the study will be considered by the
+147   Center as valid in terms of adequate duration of drug exposure.
+148
+149
+150   IV.        METHODS OF STATISTICAL ANALYSIS
+151
+152              A.     An Overview of Complexities of Statistical Analysis of Tumor Data
+153
+154              The primary purpose of a long-term rodent carcinogenicity study of a new drug is to
+155              evaluate the oncogenic potential of the drug when it is administered to animals for most
+156              of their normal life span. The drug, however, may effect the mortality of different
+157              treatment groups. Test animals living longer are more likely to develop tumors than
+158              those dying early, as demonstrated by examples in the next section, and comparisons of
+159              tumor incidence rates among treatment groups based solely on the crude proportions of
+160              animals with tumors and failure to consider the rates at which animals develop tumors
+161              can cause serious bias in the analysis (Petro et al. 1980; McKight and Crowley 1984; Gart
+162              et al. 1986). Therefore, it is essential to make adjustment for the differences in mortality
+163              among treatment groups in the analysis of tumor data.
+164
+165              Tumor incidence (i.e., the rate of tumor onset among the previously tumor-free
+166              population) is the most appropriate measure of tumorigenesis for two reasons (Dinse
+167              1994; McKight and Crowley 1984; and Malani and Van Ryzin 1988): (1) the tumor
+168              incidence rate reduces biases in the crude incidence proportion of animals with tumors
+169              that could arise from differences in mortality by adjusting for time differences and by
+170              conditioning the rate at each time point on the likelihood that an animal is still alive, and
+
+      3
+        This article also appeared in Gart, J.J., D. Krewski, P. N. Lee, R. E. Tarone, and J. Wahrendorf, 1986, U.S.
+      Interagency Staff Group on Carcinogens.
+      G:\815dft.doc                                               4
+      04/23/01
+                                           Draft — Not for Implementation
+
+
+171              (2) unlike the death rate with or from tumors, the tumor incidence rate does not confound
+172              information about the course of tumors with information about the onset of tumors. Most
+173              tumors except those such as skin and mammary tumors, which can be detected by
+174              palpation and visual inspection, are occult and discovered only at the time of the animal’s
+175              death. The exact tumor onset times are unknown.
+176
+177              The analysis of tumor data is complicated when adjustments are made for differences in
+178              mortality among treatment groups because of the lack of the observable onset time of
+179              occult tumors discussed above. A huge number of statistical procedures aiming to deal
+180              with these complexities have been proposed in the literature. They followed, in general,
+181              the strategy that “without direct observations of the tumor onset times, the desired
+182              survival adjustment usually is accomplished by making assumptions concerning tumor
+183              lethality, cause of death, multiple sacrifices, or parametric models” (Dinse 1994).
+184
+185              The prevalence method (Hoel and Walburg 1972; Peto et al. 1980), the death-rate method
+186              (Tarone 1975; Peto et al. 1980), and the onset-rate (Peto et al. 1980), discussed in Section
+187              C below, for analyzing nonlethal, lethal, and observable tumors, respectively, are based
+188              on an assumption, or information about tumor lethality. The Peto test (Peto et al. 1980),
+189              also discussed in Section C, for analyzing data of a tumor that is considered nonlethal to a
+190              subset of animals and lethal to the rest of the animals is also based on an assumption or
+191              information as to whether the tumor caused an animal’s death. The analyses will become
+192              biased if the assumption or information on tumor lethality and cause of death is not valid
+193              or accurate (Dinse 1994).
+194
+195              Data from carcinogenicity studies do not always contain information of tumor lethality
+196              and cause of death. Even when such information is provided, the difficulty and
+197              subjectivity in the determination of cause of death and lethality of a tumor may render the
+198              information too inaccurate and unobjective to allow valid analysis using the above
+199              statistical methods. Another way of analyzing the tumor incidence rates without relying
+200              on the tumor lethality and cause-of-death information is to use a design with multiple
+201              sacrifices at different time points. Without cause-of-death information or simplifying
+202              assumptions, multiple sacrifices of groups of animals are necessary to identify tumor
+203              incidence rates of occult tumors from the bioassay data (McKight and Crowley 1984;
+204              Kodell and Ahn 1997; Dinse 1994). Statistical methods have been proposed for
+205              analyzing tumor incidence rates on the information from multiple sacrifices rather than
+206              on the information on cause of death and tumor lethality. 4 In reality, however, very few
+207              studies are conducted with multiple sacrifices because of the cost and complexity
+208              involved. Since it is rarely used in practice, no recommendations on analysis of data with
+209              multiple sacrifices are given in this guidance.
+210
+
+
+
+      4
+       See, for example, Berlin, Brodsky, and Clifford 1979; Dewanji and Kalbfleisch 1986; Portier and Dinse 1987;
+      Dinse 1988; Malani and Van Ryzin 1988; Willams and Portier 1992; Malani and Lu 1993; Ahn and Kodell 1995;
+      Kodell and Ahn 1996 and 1997; and Ahn, Kodell, and Moon 2000)
+      G:\815dft.doc                                           5
+      04/23/01
+                                         Draft — Not for Implementation
+
+
+211             Finally, for data from bioassays with no information (or assumptions) regarding tumor
+212             lethality or cause-of-death and no interval sacrifices, Dinse (1991) and Lindsey and Ryan
+213             (1993 and 1994) have proposed survival-adjusted statistical tests that focus on tumor
+214             incidence for dose-related trends by making some parametric assumptions. Dinse’s test
+215             is based on the assumption of a constant difference between the death rates of animals
+216             with and without a tumor while Lindsey and Ryan’s test assumes a constant ratio for
+217             those death rates. Recently, other statistical procedures of this type have been proposed
+218             in the literature for dealing with the complexities of analysis of tumor data. Those
+219             procedures do not require data on tumor lethality and cause of death, or the use of
+220             multiple sacrifices. Among those procedures, the poly-3 (in general poly-k) tests (Bieler
+221             and Portier 1988; Dinse 1994), and the ratio trend test (a modified poly-k test) (Bieler and
+222             Williams 1993; Dinse 1994) have been most extensively studied and shown to perform
+223             well under actual study conditions. Detailed discussions of the poly-k tests and the ratio
+224             trend test are given in Section D.
+225
+226             Some of the recently proposed statistical procedures, such as those described by Kodell,
+227             Pearce, Turturro, and Ahn (1997), and Moon, Ahn, and Kodell (2000), deal with the
+228             complexities of the tumor data analysis from a somewhat different direction. These
+229             procedures use a constrained nonparametric maximum likelihood estimation method to
+230             impute (estimate) incidence rates of fatal tumors and nonfatal tumors for time intervals
+231             preceding the final time interval of terminal sacrifice. These procedures do not require
+232             tumor lethality and cause-of-death information and are applicable to studies with only a
+233             single sacrifice. The imputed tumor incidence rates can then be used in the death-rate
+234             method, prevalence method, or the Peto test. The properties of these procedures have not
+235             yet been widely studied, and they involve extensive computations.
+236
+237             B.     Adjustment of Tumor Rates for Intercurrent Mortality
+238
+239             Intercurrent mortality refers to all deaths other than those resulting from a tumor being
+240             analyzed for evidence of carcinogenicity. Like human beings, older rodents have a many
+241             fold higher probability of developing or dying of tumors than those of a younger age.
+242             Therefore, in the analysis of tumor data, it is essential to identify and adjust for possible
+243             differences in intercurrent mortality among treatment groups to eliminate or reduce biases
+244             caused by these differences. It has been pointed out that “the effects of differences in
+245             longevity on numbers of tumor-bearing animals can be very substantial, and so, whether
+246             or not they (the effects) appear to be, they should routinely be corrected when presenting
+247             experimental results” (Peto et al. 1980). The following examples demonstrate this point.
+248
+249             Example 1 (Peto et al. 1980). Consider a mouse study consisting of one control group
+250             and one treated group of 100 animals each. A very toxic but not carcinogenic new drug
+251             is administered to the animals in the diet for 2 years. Assume that the spontaneous
+252             incidental tumor rates for both groups are 30 percent at 15 months and 80 percent at 18
+253             months and that the mortality rates at 15 months for the control and the treated groups are
+254             20 percent and 60 percent, respectively, due to the toxicity of the drug. The results of this
+255             experiment are summarized in Table 1.
+      G:\815dft.doc                                       6
+      04/23/01
+                                          Draft — Not for Implementation
+
+
+256
+257         Table 1: Effects of Differences in Mortality on Tumor Incidence Rates, Example 1
+258
+                                         Control                                    Treated
+
+                              T             D             %                 T          D             %
+
+       15 Months              6            20            30            18             60            30
+
+       18 Months            64             80            80            32             40            80
+
+        Totals              70            100            70            50            100            50
+259   Note: T = Incidental Tumors Found at Necropsy.           D = Deaths
+260
+261
+262              If one looks only at the overall tumor incidence rates of the control and the treated groups
+263              (70 percent and 50 percent, respectively) without considering the significantly higher
+264              early deaths in the treated group caused by the toxicity of this new drug, one can
+265              misinterpret the apparent significance (p = 0.002, 1-tailed) as showing a decrease in the
+266              treated group in this tumor type. The one-tailed p-value is 0.5, however, showing no
+267              effect of treatment when the survival-adjusted prevalence method is used.
+268
+269              Example 2 (Gart, Krewski, Lee, Tarone, and Wahrendorf 1986). Assume that the design
+270              used in this experiment is the same as the one used in the experiment in Example 1.
+271              Also, assume that the tested new drug in this example induces an incidental tumor that
+272              does not directly or indirectly cause animal deaths, in addition to having severe toxicity
+273              as in the previous example. Assume further that the incidental tumor prevalence rates for
+274              the control and treated groups are 5 percent and 20 percent, respectively, before 15
+275              months of age, and 30 percent and 70 percent, respectively, after 15 months of age; and
+276              that the mortality rates at 15 months are 20 percent and 90 percent for the control and the
+277              treated groups, respectively. The results of this experiment are summarized in Table 2.
+278
+279
+280         Table 2: Effects of Differences in Mortality on Tumor Incidence Rates, Example 2
+281
+                                         Control                                    Treated
+
+                              T             D             %                 T          D             %
+
+       Before 15
+       Months                 1             20            5             18            90             20
+
+       After 15
+       Months                24             80            30                7         10             70
+
+        Totals               25            100            25            25           100             25
+282   Note: T = Incidental Tumors Found at Necropsy.           D = Deaths
+283
+284
+      G:\815dft.doc                                       7
+      04/23/01
+                                        Draft — Not for Implementation
+
+
+285             The age-specific tumor incidence rates are significantly higher in the treated group than
+286             those in the control group. The survival-adjusted prevalence method yielded a one-tailed
+287             p-value of 0.003, revealing a clear tumorigenic effect of the new drug. The overall tumor
+288             incidence rates, however, are 25 percent for the two groups. Without adjusting the
+289             significantly higher early mortality in the treated group, the positive finding would be
+290             missed.
+291
+292             Peto et al. (1980) recommend that, whether or not survival among treatment groups is
+293             significantly different, tumor rates should routinely be adjusted for survival when
+294             presenting experimental results. The Cox test (Cox 1972; Thomas, Breslow, and Gart
+295             1977; Gart et al. 1986); the generalized Wilcoxon or Kruskal-Wallis test (Breslow 1970;
+296             Gehan 1965; Thomas, Breslow, and Gart 1977); and the Tarone trend tests (Cox 1959;
+297             Peto et al. 1980; Tarone 1975) are routinely used to test for heterogeneity in survival
+298             distributions and significant dose-response relationships (trends) in survival.
+299
+300
+301             C.     Statistical Analysis of Tumor Data With Information About Cause of Death,
+302                    Tumor Lethality, but Without Multiple Sacrifices
+303
+304                    1.     Role of the Tumor in Animal’s Death (Contexts of Observation of Tumor
+305                           Types)
+306
+307                    One way to choose the appropriate survival-adjusted methods in the analysis of
+308                    tumor data is to base analysis on the role that a tumor plays in causing the
+309                    animal’s death. Tumors can be classified as incidental, fatal, and mortality
+310                    independent or (observable) according to the contexts of observation described in
+311                    Peto et al. (1980). Tumors that are not directly or are indirectly responsible for an
+312                    animal’s death, but are merely observed at the autopsy of the animal after it has
+313                    died of an unrelated cause, are said to have been observed in an incidental
+314                    context. Tumors that kill the animal, either directly or indirectly, are said to have
+315                    been observed in a fatal context. Tumors, such as skin tumors, for which
+316                    detection occurs at times other than when the animal dies are said to have been
+317                    observed in a mortality independent (or observable) context. To apply a survival-
+318                    adjusted method correctly based on such information, it is essential that the role of
+319                    a tumor in an animal’s death (or the context of observation of a tumor) be
+320                    determined as accurately as possible.
+321
+322                    Different statistical techniques have been proposed for analyzing data of tumors
+323                    when information about the role of a tumor in causing death is available. For
+324                    example, the prevalence method, the death rate method, and the onset rate method
+325                    are recommended for analyzing data on tumors observed in incidental, fatal, and
+326                    mortality independent contexts of observation, respectively (Peto et al. (1980)).
+327                    In that paper, Peto et al. demonstrate the possible biases resulting from
+328                    misclassification of incidental tumors as fatal tumors, or of fatal tumors as
+329                    incidental tumors.
+330
+      G:\815dft.doc                                      8
+      04/23/01
+                                        Draft — Not for Implementation
+
+
+331                   The determination of whether a tumor is incidental, fatal or mortality independent
+332                   is often difficult, especially for the first two classifications, as it is often hard to
+333                   tell whether a tumor caused an animal’s death. According to Haseman (1999), in
+334                   practice, a continuum exists between these two extremes: many tumors contribute
+335                   ultimately to an animal’s death, but are not instantly (or even rapidly lethal).
+336                   Such tumors technically are neither incidental nor fatal, and it remains unclear
+337                   how such tumors should be regarded. Even if the information on the
+338                   circumstances of individual animals and tumors is reliable and available, it is
+339                   overly simplistic to assume that all tumors of a given type are 100 percent fatal or
+340                   100 percent incidental. It is likely that there will be a mixture of incidental and
+341                   fatal tumors.
+342
+343                   As noted above, alternative survival-adjusted statistical procedures that do not
+344                   need such information have been developed and used for tumor data analysis.
+345                   Some of the procedures are discussed briefly in the Section IV.C.1 and in detail in
+346                   Section IV.D. The alternative procedures should be used to replace the
+347                   procedures proposed by Peto et al. (1980) in the analysis of tumor data when there
+348                   is no information available or the information is not accurate enough to perform a
+349                   meaningful statistical analysis.
+350
+351                   2.      Statistical Analysis of Incidental Tumors
+352
+353                   The prevalence method described in the paper by Peto et al. (1980) should be
+354                   used in testing for positive trends in prevalence rates of incidental tumors. The
+355                   method is described briefly here.
+356
+357                   The method focuses on the age-specific tumor prevalence rates to correct for
+358                   intercurrent mortality differences among treatment groups in the test for positive
+359                   trends or differences in incidental tumors. The experiment period is partitioned
+360                   into a set of intervals plus interim (if any) and terminal sacrifices. The incidental
+361                   tumors are then stratified by those intervals of survival times. The selection of the
+362                   partitions of the experiment period does not matter very much as long as the
+363                   intervals are “not so short that the prevalence of incidental tumors in the autopsies
+364                   they contain is unstable, nor yet so large that the real prevalence in the first half of
+365                   one interval could differ markedly from the real prevalence in the second half”
+366                   (Peto, et al. 1980).
+367
+368                   In each time interval, for each group, the observed and the expected numbers of
+369                   animals with a particular tumor type found in necropsies are compared. The
+370                   expected number is calculated under the null hypothesis that there is no dose-
+371                   related trend. Finally, the differences between the observed and the expected
+372                   numbers of animals found with the tumor type after their deaths are combined
+373                   across all time intervals to yield an overall test statistic using the method
+374                   described in a paper by Mantel and Haenszel (1959).
+375
+
+      G:\815dft.doc                                      9
+      04/23/01
+                                           Draft — Not for Implementation
+
+
+376                   The following derivation of the Peto prevalence test statistic uses the notations in
+377                   Table 3. Let the experiment period be partitioned into the following m intervals
+378                   I1 , I2 , …, Im. As mentioned before, interim (if any) and terminal sacrifices should
+379                   be treated as separate intervals.
+380
+381                   Let Rk be the number of animals that have not died of the tumor type of interest
+382                   but come to autopsy in time interval k, Pik be the proportion of Rk in group i, and
+383                   Oik be the observed number of autopsied animals in group i and interval k found
+384                   to have the incidental tumor type.
+385
+386                   Define O.k = ∑iOik .
+387
+388                   The number of autopsied animals expected to have the particular incidental tumor
+389                   in group i and interval k, under the null hypothesis that there is no treatment
+390                   effect, is:
+391
+392                            Eik = O.k Pik .
+393
+394                   The variance-covariance of (O ik – Eik ) and (O jk – Ejk ) is:
+395
+396                            Vijk = αk Pik (δ ij – Pjk )
+397
+398                   where
+399
+400                            αk = O.k(Rk - O .k) / (Rk – 1)
+401                   and
+402
+403                            1   if i = j,
+404                   δ ij =
+405                            0 otherwise
+406
+407                   Define
+408
+409                            Oi = ∑k Oik
+410
+411                            Ei = ∑k Vijk .
+412
+413                   and      Vij = ∑k Vijk .
+414
+415                   The test statistic T for the positive trend in the incidental tumor is defined as:
+416
+417                            T = ∑i Di (O i – Ei)
+418
+419                   with estimated variance
+420
+
+      G:\815dft.doc                                          10
+      04/23/01
+                                        Draft — Not for Implementation
+
+
+421                          V(T) = ∑i ∑j Di Dj Vij
+422
+423                   where Di is the dose level of the ith group.
+424
+425                   Under the null hypothesis of equal prevalence rates among the treatment groups,
+426                   the statistic
+427
+428                          Z = T / [V(T)]1/2
+429
+430                   is approximately distributed as a standard normal.
+
+
+
+
+      G:\815dft.doc                                     11
+      04/23/01
+                                                Draft — Not for Implementation
+
+
+431               Table 3: Notations Used in the Derivation of Peto Prevalence Test Statistics
+432
+
+                Interval        Group      0          1           . . .       i           . . .       r             Sum
+
+                                Dose       D0         D1          . . .       Di          . . .       Dr
+
+           I1              R1              O01        O11         . . .       Oi1         . . .       Or1            O.1
+
+                                           P01        P11         . . .       Pi1         . . .       Pr1            P.1
+
+
+           I2              R2              O02        O12         . . .       Oi2         . . .       Or2            O.2
+
+                                           P02        P12         . . .       Pi2         . . .       Pr2            P.2
+
+
+            .              .               .          .           . . .       .           . . .       .               .
+                                                                                                                      .
+            .              .               .          .           . . .       .           . . .       .               .
+                                                                              .
+            .              .               .          .           . . .       .           . . .       .               .
+
+
+
+           Ik              Rk              O0k        O1k         . . .       Oik         . . .       Ork            O.k
+
+                                           P0k        P1k         . . .       Pik         . . .       Prk            P.k
+
+
+
+            .              .               .          .           . . .       .           . . .       .               .
+                                                                                                                      .
+            .              .               .          .           . . .       .           . . .       .               .
+
+            .              .               .          .           . . .       .           . . .       .               .
+
+
+
+           Im              Rm              O0m        O1m         . . .       Oim         . . .       Orm           O.m
+
+                                           P0m        P1m         . . .       Pim         . . .       Prm            P.m
+
+
+
+433
+434   Notes:
+435   Rk :      Number of animals that have not died of the tumor type of interest, but come to autopsy in time interval k.
+436   Pik :     Proportion of Rk in group i.
+437   Oik :     Observed number of autopsied animals in group i and interval k found to have the incidental tumor type.
+438   O.k :     3 i Oik .
+439
+440
+
+
+
+
+      G:\815dft.doc                                             12
+      04/23/01
+                                              Draft — Not for Implementation
+
+
+441                       As noted above, to use the prevalence method, the experimental period should be
+442                       partitioned into a set of intervals plus interim (if any) and terminal sacrifices. The
+443                       following partitions (in weeks) are used most often by statisticians in CDER in 2-
+444                       year studies: (1) 0 – 50, 51 – 80, 81 – 104, interim sacrifice (if any), and terminal
+445                       sacrifice; (2) 0 – 52, 53 – 78, 79 – 92, 93 – 104, interim sacrifice (if any), and
+446                       terminal sacrifice (proposed by National Toxicology Program); and (3) partition
+447                       determined by the ad hoc runs procedure described in Peto et al. (1980).
+448
+449                       The data for liver hepatocellular adenoma in male mice from a carcinogenicity
+450                       study are used as an example to explain the prevalence method for testing the
+451                       positive trend in tumor rates of an incidental tumor. There were four treatment
+452                       groups. The control group had 100 animals, the three treated had 50 animals
+453                       each. The dose levels used were 0, 10, 20, and 40 mg/kg/day for the control,
+454                       low-, medium-, and high-dose groups, respectively. The study lasted for 106
+455                       weeks. In this example, the study period was partitioned into four intervals, 0 –
+456                       50, 51 – 80, 81 – 106, and terminal sacrifice. The numbers of animals died and
+457                       necropsied, and the numbers of necropsied animals with liver hepatocellular
+458                       adenoma by treatment group in each interval are included in Table 4.
+459
+460
+461                       Table 4: Data of Liver Hepatocellular Adenoma of Male Mice
+462
+
+               Time                                                     Groups
+             Intervals
+             (Weeks)                Control               Low                    Medium             High
+
+                               T      N        %    T      N        %       T      N      %    T     N      %
+
+              0 – 50           0      6        0    0      2        0       0      2      0    0     4      0
+
+              51 – 80          1      26       4    1     18        6       3      17     18   1     13     8
+
+             81 – 106          4      37      11    2     14        14      2      14     14   7     19     37
+
+             Terminal          2      31       6    5     16        31      3      17     18   4     14     29
+              Sacrifice
+
+               Total           7     100       7    8     50        16      8      50     16   12    50     24
+463   Notes: T = Number of necropsies with the above tumor.
+464          N = Number of necropsies during a time interval.
+465         % = Percent of necropsies with the above tumor.
+466
+467
+468                       The observed incidences and the expected incidences of the tumor type calculated
+469                       under the null hypothesis that there is no trend (or drug induced increase) are
+470                       shown in Table 5. The expected tumor rates in each interval were calculated in
+471                       the following way. First, the tumor rate for the interval using data of all treatment
+472                       groups in the interval was estimated. For example, the estimated tumor rate for
+      G:\815dft.doc                                            13
+      04/23/01
+                                            Draft — Not for Implementation
+
+
+473                      the interval 51 – 80 weeks was 6/74 = 0.0811. Second, the expected incidences
+474                      for individual groups in the interval were calculated by multiplying the numbers
+475                      of necropsies by the estimated tumor rate. For the interval 51 – 80 weeks, the
+476                      expected tumor rates for the control, low-, medium-, and high-dose groups were
+477                      26x(6/74)=2.11, 18x(6/74)=1.46, 17x(6/74)=1.38, and 13x(6/74)=1.05,
+478                      respectively.
+479
+480                         Table 5: Observed and Expected Tumor Incidences Liver
+481                                  Hepatocellular Adenoma of Male Mice
+482
+
+               Time            Observed &                                      Groups
+             Intervals          Expected
+             (Weeks)           Incidences         Control             Low               Medium        High
+
+              0 – 50            Observed             0                  0                   0          0
+
+                                Expected             0                  0                   0          0
+
+             51 – 80            Observed             1                  1                   3          1
+
+                                Expected            2.11              1.46                 1.38       1.05
+
+                                Observed             4                  2                   2          7
+
+                                Expected            6.61              2.50                 2.50       3.39
+
+            Terminal            Observed             2                  5                   3          4
+            Sacrifice
+                                Expected            5.56              2.87                 3.05       2.51
+
+              Total             Observed             7                  8                   8          12
+
+                                Expected           14.28              6.83                 6.93       6.95
+483   Note: The expected tumor incidences were calculated under the null hypothesis that
+484         there is no trend.
+485
+486
+487                      The test statistics T’s and their variances V(T)’s for the data of the 5 intervals
+488                      calculated by the formulas listed above are included in Table 6. It is noted that
+489                      the first interval, 0 - 50 weeks, did not contribute anything to the overall test result
+490                      since none of the 14 animals that died during the first time interval developed
+491                      liver hepatocellular adenoma. The overall result shows a statistically significant
+492                      positive trend in tumor rates of this tumor (with one-sided p-value 0.002).
+493
+494
+495
+496
+
+
+
+
+      G:\815dft.doc                                          14
+      04/23/01
+                                              Draft — Not for Implementation
+
+
+497                        Table 6: Test Statistics, Their Variances, z-values, and P-value of
+498                                 Peto Prevalence Analysis of Incidental Tumors
+499
+500                                       Liver Hepatocellular Adenoma of Male Mice
+
+                 Time                   T-Stat            Variance of                 T             P-Value
+               Intervals                  T                 T-Stat               z = ----------
+               (Weeks)                                       V(T)                   [V(T)]0.5
+
+                 0 - 50                   -                    -                       -                 -
+
+                51 - 80                25.6756             1116.583                0.7683              0.2211
+
+               81 - 106               129.2857             3091.314                2.3253              0.0100
+
+             Term. Sacr.               79.7435             2445.855                1.6124              0.0534
+
+            Overall Total             234.7048             6653.752                2.8773              0.0020
+501   Note: The z and p-value columns do not add up to the totals. The z and p-value of
+502        overall total row were calculated based on the T and V(T) of the row.
+503
+504
+505                        Also as noted above, this method used normal approximation in the test for
+506                        positive trend or difference in tumor prevalence rates. The accuracy of the normal
+507                        approximation depends on the number of tumor occurrences in each group in each
+508                        interval, the number of intervals used in the partitioning, and the mortality
+509                        patterns. The approximation may not be stable and reliable when the numbers of
+510                        tumor occurrences across treatment groups are small. In this situation, an exact
+511                        permutation trend test based on an extension of the hypergeometric distribution
+512                        (to be discussed in Subsection III.C.6) should be used to test for the positive trend
+513                        in tumor prevalence rates.
+514
+515                        3.      Statistical Analysis of Fatal Tumors
+516
+517                        It is recommended that the death rate method described in Peto et al. (1980) be
+518                        routinely used to test for the positive trend or difference in incidence of tumors
+519                        observed in a fatal context.
+520
+521                        The notations of Subsection III.C.2 with some modifications will be used in this
+522                        section to derive the test statistic of the death rate method. Now let t1 <t2 < …<tm
+523                        be the time points when one or more animals died of the fatal tumor of interest.
+524                        These time points are used to replace the intervals used in the prevalence method.
+525                        The notations in Table 3 are redefined as follows:
+526
+527                                Rk : The number of animals at risk of all groups just before tk .
+528
+529                                Pik : (The same as in the prevalence method) Proportion of Rk in Group i.
+530
+
+
+      G:\815dft.doc                                           15
+      04/23/01
+                                        Draft — Not for Implementation
+
+
+531                          Oik : Observed number of animals in Group i dying of the fatal tumor of
+532                                interest at time tk .
+533
+534                          O.k = ∑i Oik .
+535
+536                   As in the prevalence method, the test statistic T for the positive trend in the fatal
+537                   tumor is defined as:
+538
+539                          T = ∑i Di(O i – Ei )
+540
+541                   with estimated variance
+542
+543                          V(T) = ∑i ∑j Di Dj Vij.
+544
+545                   where Di, Oi, Ei, and Vij are defined similarly as in Subsection III. C.2.
+546
+547                   Under the null hypothesis of equal tumor rates across the treatment groups, the
+548                   statistic
+549
+550                          Z = T / [V(T)]1/2
+551
+552                   is distributed approximately as standard normal.
+553
+554                   4.     Statistical Analysis of Tumors Observed in Both Incidental and Fatal
+555                          Contexts
+556
+557                   When a tumor is fatal for some animals and is incidental for other animals in the
+558                   experiment, data for the incidental and fatal tumors should be analyzed separately
+559                   by the prevalence and the death rate methods. Results from the different methods
+560                   can then be combined to yield an overall result. The combined overall result can
+561                   be obtained simply by adding together either the separate observed frequencies,
+562                   the expected frequencies, and the variances, or the separate T statistics and their
+563                   variances (Peto et al. 1980).
+564
+565                   5.     Statistical Analysis of Mortality Independent Tumors
+566
+567                   Tumors that are mortality independent, such as skin tumors and mammary gland
+568                   tumors, which are visible and/or can be detected by palpation in living animals,
+569                   are analyzed by CDER statistical reviewers using the onset rate method. The
+570                   onset rate method for mortality independent tumors and the death rate method for
+571                   fatal tumors are essentially the same in principle except that the endpoint in the
+572                   onset rate method is the occurrence of such a tumor (e.g., skin tumor reaching
+573                   some prescpecified size) rather than the time or cause of the animal’s death.
+574
+
+
+      G:\815dft.doc                                     16
+      04/23/01
+                                         Draft — Not for Implementation
+
+
+575                   In the onset rate method, all those animals that, although still alive, have
+576                   developed the particular mortality independent tumor and hence are no longer at
+577                   risk for such a tumor are excluded from the calculation of the numbers of animals
+578                   at risk. The Rk , Pik , and Oik described in Section III.C.3 are now redefined as
+579                   follows for the onset rate method:
+580
+581                            Rk :    The number of animals alive and free of the mortality independent
+582                                    tumor of interest in all groups just before tk .
+583
+584                            Pik :   (The same as in the death rate method) Proportion of Rk in Group i.
+585
+586                            Oik :   Observed number of animals in Group i found to have developed
+587                                    the mortality independent tumor of interest at time tk .
+588
+589                   The test statistic T and its estimated variance V(T) are the same as those defined
+590                   in the death rate method.
+591
+592                   6.      Exact Methods
+593
+594                   As noted in previous sections, the prevalence method, the death rate method, and
+595                   the onset rate method used normal approximation in the test for the positive trend
+596                   in tumor incidence rates. Mortality patterns, the number of intervals used in the
+597                   partitioning of the study period, and the numbers and patterns of tumor
+598                   occurrence in each individual interval have effects on the accuracy of the normal
+599                   approximation. It is also well known that the approximation results may not be
+600                   stable and reliable, and tend to underestimate the exact p-values when the total
+601                   numbers of tumor occurrence across treatment groups are small (Ali 1990). In
+602                   this situation, the exact permutation trend test should be used to test for the
+603                   positive trend (Gart et al. 1986; Goldberg 1985). The exact permutation trend test
+604                   is a generalization of the Fisher’s exact test to a sequence of 2x(r+1) tables. The
+605                   exact permutation trend test procedure described below is for tumors observed in
+606                   an incidental context. However, the positive trends in incidence rates of tumors
+607                   observed in a fatal or in a mortality independent context can be tested in a similar
+608                   way. In those cases, the number of 2x(r+1) tables will be equal to the number of
+609                   time points when one or more animals died of a particular fatal tumor, or when
+610                   one or more animals developed a particular mortality independent tumor.
+611                   Fairweather et al. (1998) contains a discussion on the limitations of applying
+612                   exact methods to fatal tumors.
+613
+614                   The exact method is derived by conditioning on the row and column marginal
+615                   totals of each of the 2x(r+1) tables formed from the partitioned data set of Table
+616                   3. Consider the k-th interval Ik (in Table 3) and rewrite it as in Table 7. Let the
+617                   column totals C0k , C1k , …, Crk and the row totals O.k and A.k be fixed. Define Pik
+618                   = Cik /Rk . Then the quantities Eik = O.k Pik , Vijk = α k Pik (δ ij-Pjk ), Ei, and V(T)
+619                   (defined in Subsection III.C.2) are all known constants.
+620
+      G:\815dft.doc                                      17
+      04/23/01
+                                         Draft — Not for Implementation
+
+
+621
+622
+623            Table 7: The Data in the k-th Time Interval Ik Is Written as a 2 x (r + 1) Table
+624
+                       Group               0      1      . . .   i    . . .    r
+
+                       Dose                D0     Dl     . . .   Di   . . .    Dr     Total
+
+                      # w tumor            O0k    Olk . . . Oik . . .          Ork     O.k
+
+                      # w/o tumor          A 0k   A lk    . . . A ik . . .     A rk    A .k
+
+                        Total              C0k    Clk . . . Cik        . . .   Crk     Rk
+625
+626
+627
+628                   Now let y be the observed value of Y = ∑DiOi, where Oi = ∑k Oik , the total
+629                   number of tumor bearing animals of the tumor of interest in treatment group i.
+630                   Then (under conditioning on the column and row marginal totals in each table)
+631                   the observed significance level or
+632
+633                             p-value = P[∑DiOi>=y] = P(∑iDi ∑k Oik >=y) = P(∑k ∑iDiOik >=y)
+634
+635                                    = P(∑k Yk >=∑yk ) = P(Y>=y),
+636
+637                             where Y = ∑Yk = ∑k ∑iDiOik and y = ∑yk , the observed value of Y.
+638
+639                   This p-value (P(Y>=y) is computed from the exact permutational distribution of
+640                   Y. Given the observed row and column marginal totals in a 2x(r+1) table, all
+641                   possible tables having the same marginal totals can be generated. Let Sk
+642                   (k=1,2,…,K) be the set of all such tables generated from the k-th observed table.
+643                   From a set of K tables taking one from each Sk and assuming independence
+644                   between the K tables, the above expression for the p-value can now be written as
+645
+646                             p-value = ∑[P(Y1 = yi) … P(Yk = yk )]
+647
+648                   where yk =∑iDiOik (k=1,2,…,K), the sum is over all sets of K tables such that
+649                   yi+y2 +…+yk >=y, the observed value of Y, and P(Yk =yk ) is the conditional
+650                   probability given the marginal totals in the k-th table, i.e.,
+
+
+
+
+      G:\815dft.doc                                         18
+      04/23/01
+                                          Draft — Not for Implementation
+
+
+651
+                                              C0k   C1k   Crk               Rk 
+652                             P(Yk =yk ) =     . . .                      
+                                              O0k   O1k   Ork               Ok 
+653
+654
+655                     Example (Lin and Ali 1994). Consider an experiment with 3 treatment groups
+656                     (control, low-, and high-dose) with dose levels D0 =0, D1 =1, and D2 =2,
+657                     respectively. Suppose the study period is partitioned into the intervals 0-50, 51-
+658                     80, 81-104 weeks, and the terminal sacrifice week. Consider a tumor type
+659                     (classified as incidental) with data in Table 8.
+660
+661
+662
+663                   Table 8: Hypothetical Tumor Data for Exact Permutation Trend Test
+664
+
+                                                                Dose levels
+                           Time intv.                      0        1         2              Total
+
+                            0 - 50              O          0         0        0               0
+                                                C          1         3        3               7
+
+                            51 - 80             O          0         0        0               0
+                                                C          4         5        7              16
+
+                            81 - 104            O         0         0          2              2
+                                                C        10         12        15             37
+
+                          Term. Sacr.           O         0          1         0              1
+                                                C        35         30        25             90
+665                             O = observed tumor count, C = number of animals necropsied
+666
+667
+668
+669                     Since all the observed tumor counts (i.e., O’s) in the first two time intervals are
+670                     zeros, the data for these intervals will not contribute anything to the test statistic,
+671                     and these intervals may be ignored. The observed subtables formed from the last
+672                     two intervals are given in Table 9.
+673
+674                     Now, generate all possible tables from observed subtable 1. Since the marginal
+675                     totals are fixed, these tables may be generated by distributing the total tumor
+676                     frequency O.1(=2) among the three treatment groups. Thus, each table will
+677                     correspond to a configuration of this distribution of O.1. The configurations, the
+678                     values of Y1 , and the P(Y1 =y1 ) are shown in Table 10.
+679
+680
+681
+
+
+      G:\815dft.doc                                        19
+      04/23/01
+                                                Draft — Not for Implementation
+
+
+682                   Table 9: Observed Subtables From the Above Hypothetical Tumor Data
+                           Observed subtable 1                                    Observed subtable 2
+
+       Dose            0         1          2          Total          Dose   0            1       2     Total
+
+       O               0         0          2          2=O.1          O      0            1       0     1=O.2
+
+       A              10        12         13          35=A .1        A      35         29       25     89=A .2
+
+       C              10        12         15          37=R1          C      35         30       25     90=R2
+683
+684
+685
+686                              Table 10: All Possible Configurations of o.1 and the
+687                                Corresponding Hypergeometric Probabilities
+                                  Configurations                 y1               P(Y1 =y 1 )
+
+                                      0, 0, 2                    4                 .15766
+                                      0, 2, 0                    2                 .09910
+                                      2, 0, 0                    0                 .06757
+                                      0, 1, 1                    3                 .27027
+                                      1, 0, 1                    2                 .22523
+                                      1, 1, 0                    1                 .18018
+
+688
+689
+690                        To illustrate the computation of y1 and P(Y1 =y1 ) consider the last row. Here y1 =
+691                        D0 x1 + D1 x1 + D2 x0 = 0x1 + 1x1 + 2x0 = 1, and
+692
+                                           10 12     15                37
+693                             P(Y1 =1) =     . . .                    = 0.18018
+                                            1   1     0                2
+694
+695                        The configurations and probabilities obtained from observed subtable 2 are given
+696                        in Table 11.
+697
+698                        Note that the first configuration (0,0,2) in Table 8 corresponds to the observed
+699                        subtable 1 with a value of y1 = (0x0)+(2x2)=4 and a probability of .15766, and the
+700                        second configuration (0,1,0) in Table 8 corresponds to the observed subtable 2
+701                        with a value of y2 = (0x0)+(1x1)+(0x0)=1 and a probability of .33333. Thus, the
+702                        observed value of y = y1 +y2 = 4+1=5. Now the exact p-value (right-tailed) is
+703                        calculated as follows:
+704
+705
+706                               P(Y = Y1 +Y2 >=5) = P(Y1 =4,Y2 =1)+P(Y1 =4, Y2 =2)+P(Y1 =3, Y2 =2)
+707
+708                               = .15766 x .33333 + .15766 x .27778 + .27027 x .27778
+709
+      G:\815dft.doc                                              20
+      04/23/01
+                                             Draft — Not for Implementation
+
+
+710                            = .17142
+711
+712
+713
+714                           Table 11: All Possible Configurations of O.2 and the
+715                             Corresponding Hypergeometric Probabilities
+                               Configurations             y1               P(Y1 =y 1 )
+
+                                   0, 0, 1                 2                  .27778
+                                   0, 1, 0                 1                  .33333
+                                   1, 0, 0                 0                  .38889
+
+716
+717
+718                    For the purpose of comparison, it should be noted that the normal approximated
+719                    p-value for the data set in the above example is .0927.
+720
+721
+722             D.     Statistical Analysis of Data Without Information About Cause of Death and
+723                    Without Multiple Sacrifices
+724
+725             As noted previously, in the analysis of tumor data, it is essential to identify and adjust for
+726             possible differences in intercurrent mortality among treatment groups to eliminate or
+727             reduce biases caused by these differences. It is also necessary for the analysis to
+728             appropriately account for tumor lethality. The widely used prevalence method, the death
+729             rate method, and the onset rate methods for analyzing incidental, fatal, and mortality
+730             independent tumors, respectively, described in previous sections rely on good
+731             information on tumor lethality and cause of death. There are situations in which sponsors
+732             have not included tumor lethality and cause of death information in their statistical
+733             analyses and electronic data sets. Under those situations, statistical reviewers in CDER
+734             either treated all tumors as incidental or relied on cause of death assessments by the
+735             reviewing pharmacologists and toxicologists in the Center. There are consequences in
+736             misclassifying tumors as lethal or not in survival adjusted statistical tests. The prevalence
+737             method will reject the null hypothesis of no positive trend less frequently than it should
+738             as the lethality of a tumor increases (Peto et al. 1980; Dinse 1994). This will increase the
+739             probability of failing to detect true carcinogens.
+740
+741             The Bailer-Portier poly-3, and poly-6 (in general poly-k) tests (Bailer and Portier 1988;
+742             Dinse 1994) have been proposed for testing linear trends in tumor rates. These tests are
+743             basically modifications of the survival unadjusted Cochran-Armitage test (Cochran 1954;
+744             Armitage 1955, 1971) for linear trend in tumor rate. If the entire study period is
+745             considered as one interval, the data for a particular tumor type will be in the form of
+746             Table 12. The notations in Table 12 to be used to explain these tests are the same as
+747             those in Table 7 except that the k-th interval now is the entire study period. The second
+748             subscript, k, for the k-th interval was dropped from the notations.
+749
+      G:\815dft.doc                                       21
+      04/23/01
+                                             Draft — Not for Implementation
+
+
+750
+751                   Table 12: The Data Using the Entire Study Period as an Interval
+752
+
+                        Group                  0      1     . . .    i    . . .   r
+
+                        Dose                  D0      Dl     . . .   Di   . . .   Dr     Total
+
+                      # w. tumor              O0      Ol    . . .    Oi   . . .   Or          O
+
+                      # w/o tumor             A0      Al    . . .    Ai   . . .   Ar          A
+
+                        Total                 C0      Cl   . . .     Ci   . . .   Cr          R
+753
+754
+755
+756
+757             The Cochran-Armitage test statistic for linear tend in tumor rate is defined as (Armitage
+758             1955):
+759
+760                                    R { R ∑ Oi Di – O ∑ Ci Di } 2
+761                    χCA = ---------------------------------------------------------
+                          2
+                                                                                         or
+762                               O (R – O) { R ∑ Ci Di2 – { ∑ Ci Di) 2 }
+763
+764
+765                                      { ∑ Di (O i – Ei) }
+766                             = ---------------------------------------
+767                                  ∑ Ei Di2 – ( ∑ Ei Di) 2 / O
+768
+769             Where O = ∑ Oi, A = ∑ Ai, R= ∑ Ci, Ei = O Ci / R.
+770
+771             The test statistic χCA2 is distributed approximately as χ2 on one degree of freedom.
+772
+773             The Cochran-Armitage linear trend test is based on a binomial assumption that all
+774             animals in the same treatment group have the same risk of developing the tumor over the
+775             duration of the study. However, as noted previously, the animal’s risk of developing the
+776             tumor increases as study time increases. The assumption is thus no longer valid if some
+777             animals die earlier than others. It has been shown that as long as the mortality patterns
+778             are similar across treatment groups, the Cochran-Armitage test is still valid, although it
+779             may be slightly less efficient than a survival adjusted test (Dinse 1994). However, if the
+780             mortality patterns are different across treatment groups, the Cochran-Armitage test can
+781             give very misleading results.
+782
+783             The Bailer-Portier poly-3 test adjusts for differences in mortality among treatment groups
+784             by modifying the number of animals at risk in the denominators in the calculations of
+785             overall tumor rates in the Cochran-Armitage test to reflect “less-than-whole-animal
+786             contributions for decreased survival” (Bailer and Portier 1988). The modification is
+      G:\815dft.doc                                            22
+      04/23/01
+                                            Draft — Not for Implementation
+
+
+787             made by defining a new number of animals at risk for each treatment group. The number
+788             of animals at risk for the i-th treatment group C* i is defined as
+789
+790                             C* i = ∑ W ij
+791
+792             where w ij the weight for the j-th animal in the i-th treatment group, and the sum is over
+793             all animals in the group.
+794
+795             Bailer and Portier (1988) proposed the weight w ij as follows:
+796
+797                             w ij = 1 to animals dying with the tumor, and
+798
+799                             w ij = ( tij / tsacr )3 to animals dying without the tumor
+800
+801             where tij is the time of death of the j-th animal in the i-th treatment group, and t sacr is the
+802             time of terminal sacrifice.
+803
+804             The power of 3 used in the weighting is from the observation that tumor incidence can be
+805             modeled as a polynomial of order 3. Similarly the poly-6 test (or the general poly-k test)
+806             assigns the weight w ij = (tij / t sacr )6 (or w ij = ( tij / t sacr )k ) to animals dying without
+807             the tumor when the tumor incidence is close to a polynomial of order 6 (or order k).
+808
+809             The class of Bailer-Portier poly-k tests are carried out by replacing the Ci’s by the new
+810             numbers of animals at risk C* i’s in the calculation of the above Cochran-Armitage test
+811             statistic.
+812
+813             The class of Bailer-Portier poly-k tests adjust differences in survival, do not need the
+814             information about cause of death, and call for only a (the terminal) sacrifice. Results of
+815             simulation studies by Bailer and Portier (1988), and Dinse (1994) show that the tests
+816             performed very well under many conditions simulated. They are also relatively robust to
+817             (not affected greatly by) tumor lethality.
+818
+819             Bieler and Williams (1993) pointed out that, since animal survival time is generally not a
+820             fixed quantity, the numerators and denominators of the adjusted quantal response
+821             estimates
+822
+823                             p* i = Oi / C* i
+824
+825             are both subject to random variation.
+826
+827             Bieler and Williams (1993) proposed a test called the ratio trend test (also called Bieler-
+828             Williams poly-3 test), which is another modification to the Cochran-Armitage linear
+829             trend test. The ratio trend test employs the adjusted quantal response rates calculated in
+830             Bailer and Portier (1988) and the delta method (Woodruff 1971) in the estimation of the
+831             variance of the adjusted quantal response rates p* i = Oi / C* i.
+      G:\815dft.doc                                        23
+      04/23/01
+                                                 Draft — Not for Implementation
+
+
+832
+833             The computational formula for Bieler-Williams ratio trend (modified C-A) test statistic is
+834             given as follows:
+835
+836
+837                                               ∑ mi p* i Di – (∑ mi Di) (∑mi p* i) / ∑mi
+838                                  χ2 BW = ----------------------------------------------------
+839                                                {c [∑ mi Di 2 - (∑ mi Di )2 / ∑ mi]} 1/2
+840
+841             where
+842
+843             c = ∑∑ (rij – ri.)2 / [R – (r + 1)]
+844
+845             mi = (C I* )2 / Ci
+846
+847             rij = yij - p* wij
+848
+849             ri. = ∑ rij / Ci
+850
+851             yij = tumor response indicator (0 = absent at death, 1 = present at death) for the jth
+852             animal in the ith group.
+853
+854             Bieler and Williams (1993) showed that the Bailer-Portier poly-3 trend test is anti-
+855             conservative when tumor incidence rates are low and treatment toxicity is high. Their
+856             study also showed that for tumors with low background rates, the ratio trend test (Bieler-
+857             Williams poly-3 test) yielded actual Type I errors close to the nominal levels used and
+858             was observed to be less sensitive than the Bailer-Portier poly-3 trend test to
+859             misspecification of the shape of tumor incidence function and the magnitude of treatment
+860             toxicity.
+861
+862             A more recent simulation study by Chen, Lin, Juque, and Arani (2000) showed the
+863             following additional results about the characteristics of the Bailer-Portier poly-3 and the
+864             ratio trend tests (Bieler-William poly-3 test). For individual tumor types, the two tests for
+865             trend yield attained Type I errors around the nominal levels (5 percent and 1 percent) for
+866             tumors with spontaneous rates in the range between 2 percent to 20 percent. When
+867             spontaneous rates are below the range, the two tests become conservative (i.e., less likely
+868             to show statistically significant results). For tumors with spontaneous rates above 20
+869             percent to 60 percent (the upper rate used in the simulation), the ratio trend test still
+870             maintains the attained Type I error rates close to the nominal levels, but the Bailer-Portier
+871             poly-3 test becomes more and more conservative as the rates go up. The introduction of
+872             the compound symmetric correlation structure (although a not very realistic structure)
+873             among tumors corrects the problem of conservativeness somewhat in the Bailer-Portier
+874             poly-3 test, but the patterns of conservativeness continue to exist.
+875
+
+      G:\815dft.doc                                                24
+      04/23/01
+                                          Draft — Not for Implementation
+
+
+876             The ratio trend test (Bieler-William poly-3 test), like the Bailer-Portier poly-3 test,
+877             adjusts differences in survival, does not need the information about cause of death, and
+878             results only in a (the terminal) sacrifice. Results of simulation studies (Bieler and
+879             Williams 1993; Chen, Lin, Huque, and Arani 2000) show that the tests performed very
+880             well under many simulated conditions. It is also shown to be relatively robust to (not
+881             affected greatly by) tumor lethality, misspecification of the shape of tumor incidence
+882             function, and the magnitude of treatment toxicity. The ratio trend test (Bieler-William
+883             poly-3 test) should be used to replace the asymptotic tests that depend on the information
+884             of tumor lethality and cause of death when the information is unavailable.
+885
+886             Theoretically, exact versions of the class of tests can be developed for testing data of
+887             studies with small numbers of tumor bearing animals by applying the test procedures to
+888             all possible permuted configurations of the outcome. However, because these tests use
+889             risk sets based on all animals in each treatment group, the computations involved in the
+890             exact tests will be extensive. Therefore, for studies with small numbers of tumor bearing
+891             animals, the current practice of treating them as incidental tumors and applying the exact
+892             permutation trend test should continue.
+893
+894             E.     Statistical Analysis of Data From Studies With Dual Controls
+895
+896             There are two categories of studies with dual control groups. The first category usually
+897             consists of studies using an untreated control group and a vehicle control group (Category
+898             A). Other variations of nonidentically treated, nondrug treatment controls groups are also
+899             occasionally used and are included in Category A for statistical purposes. The second
+900             category (Category B) includes studies that use two identical control groups (Society for
+901             Toxicology 1982; Haseman, Winbush, and O’Donnell 1986).
+902
+903             The main reasons for using two differently treated controls, generally an untreated
+904             control and a vehicle control in a study in Category A are to determine whether the
+905             vehicle has effects on tumor incidence and pattern, body weight, and food consumption
+906             (in dietary studies) on the test animals, and to make sure that the control animals are
+907             subjected to the same influences (e.g., gavage or injection) as the drug treated animals, so
+908             that all animals will be subject to equal physiological response and stress (i.e., to isolate
+909             the treatment effect from other possible effects) (Gart et al. 1986; Dayan 1988).
+910
+911             There are arguments for and against using two identical control groups in a study
+912             (Category B). The arguments for this design are that the results from the two identical
+913             controls can be used as a mechanism for identifying the extent of control variability (Gart
+914             et al. 1986) and the results can be used to help evaluate the biological significance of
+915             increases in tumor incidence in the treated groups (i.e., true increases versus noise).
+916             From the biological perspective, the dual control data can be viewed as equivalent to
+917             having contemporary historical data. In this case, consideration of other appropriate
+918             historical control data is essential if the results with the two contemporary controls are
+919             different. As described below, however, there may be difficulties in statistical analysis of
+920             data from a study using this design.
+      G:\815dft.doc                                      25
+      04/23/01
+                                           Draft — Not for Implementation
+
+
+921             Statisticians and pharmacologists/toxicologists should decide collaboratively which of the
+922             two control groups is appropriate for the analysis of data from a study in Category A.
+923             Ordinarily, analyses of data of the vehicle control and the treated groups are the most
+924             meaningful assessment of drug effect. Even in this case, however, the untreated control
+925             can give information about spontaneous variability. There are other situations in which
+926             three analyses – control 1 versus treated groups, control 2 versus treated groups, and
+927             control 1 plus control 2 versus treated groups – are performed. Because concerns about
+928             the possible effects of the vehicle substance on the test animals are the reason for using
+929             the vehicle control in addition to the untreated control, it is also of interest to compare the
+930             mortality, tumor rates, body weight, and food consumption (in dietary studies) between
+931             the two control groups.
+932
+933             Data from dual identical control groups may or may not be combined for statistical
+934             analysis of data. If comparisons of the controls for Category B studies show no large
+935             differences in mortality and tumor rate, the data from the two control groups are usually
+936             combined to form a single control group in subsequent analyses (Haseman et al. 1990).
+937             If the data show evidence of differences in mortality or tumor incidence between the
+938             identical controls, three tests – control 1 versus treated groups, control 2 versus treated
+939             groups, and control 1 plus control 2 versus treated groups – for each tumor/organ
+940             combination should be carried out.
+941
+942             In the second case, the question of how to interpret the results of a study in Category B
+943             can be approached from two perspectives. First, a trend or a difference in tumor rate
+944             could be considered significant only if it is significant for both of the controls. The basis
+945             for this conclusion would be that a real finding should be reproducible. Alternatively, the
+946             trend or the difference in tumor rate between groups could be considered significant as
+947             long as any one of the three tests (i.e., drug vs. control 1, drug vs. control 2, and drug vs.
+948             pooled control) either control and pooled control shows a significant result, assuming that
+949             most carcinogenicity studies are relatively under powered. The first approach is
+950             conservative in the sense that the null hypothesis will be rejected less often. The second
+951             approach, on the other hand, will result in an increased false positive rate.
+952
+953             Currently, no good information exists about how to appropriately adjust the significance
+954             levels for the above two approaches to maintain the 10 percent overall false positive rate
+955             used by the Center. In general, the test result could be regarded as providing only
+956             equivocal evidence of a positive finding unless all the three tests yield consistent results
+957             (i.e., all statistically significant or all not statistically significant) (Haseman et al. 1990).
+958             In such instances, from a biological prospective it is particularly important to evaluate the
+959             control response relative to a historical control.
+960
+961
+962   V.        INTERPRETATION OF STUDY RESULTS
+963
+964   Interpreting results of carcinogenicity experiments is a complex process, and there are risks of
+965   both false negative and false positive results. The relatively small number of animals used and
+      G:\815dft.doc                                        26
+      04/23/01
+                                          Draft — Not for Implementation
+
+
+ 966   low tumor incidence rates can result in the failure to detect the carcinogenicity of a drug (i.e., a
+ 967   false negative). Because of the large number of comparisons involved (usually 2 species, 2
+ 968   sexes, and 30 or more tissues examined), a great potential exists for finding statistically
+ 969   significant positive trends or treatment-placebo differences due to chance alone (i.e., a false
+ 970   positive). Therefore, it is important that an overall evaluation of the carcinogenic potential of a
+ 971   drug take into account the multiplicity of statistical tests of significance for both trends and
+ 972   pairwise comparisons. The evaluation should also make use of historical information and other
+ 973   information related to biological relevance (e.g., positive findings at the same site in the other
+ 974   sex and/or in the other species, and evidence of increased preneoplastic lesions at the target
+ 975   organs/tissues).
+ 976
+ 977             A.     Adjustment for the Effect of Multiple Tests (Control Over False Positive
+ 978                    Error)
+ 979
+ 980             It is well known that, for a multi-group study (e.g., 3 doses and placebo), trend tests are
+ 981             more powerful (i.e., more likely to detect an effect) than pairwise comparisons. Tests for
+ 982             trend instead of pairwise comparison tests between control and high-dose groups are
+ 983             therefore the primary tests in the evaluation of drug related increases in tumor rate.
+ 984
+ 985             Statistical and nonstatistical procedures have been proposed for controlling the overall
+ 986             false positive rate. Surveys of some of those procedures can be found in Lin and Ali
+ 987             (1994), and Fairweather et al. (1998). In this guidance document, only the statistical
+ 988             decision rules for controlling the overall false positive rates associated with trend tests
+ 989             and pairwise comparisons used by the Center in interpreting the final results of
+ 990             carcinogenicity studies are discussed. The decision rules were developed based on
+ 991             historical control data of CD rats and CD mice (strains that are most widely used in
+ 992             studies of pharmaceuticals) to achieve an overall false positive rate of around 10 percent
+ 993             for the standard two-species, two-sex in-vivo studies and the alternative ICH one-species,
+ 994             two-sex in-vivo studies.
+ 995
+ 996             In the past, statisticians in CDER used the statistical decision rule described in Haseman
+ 997             (1983) in tests for significance of trends in tumor incidence. The decision rule was
+ 998             originally developed for pairwise comparison tests in tumor incidence between the
+ 999             control and the high-dose groups and was derived from results of carcinogenicity studies
+1000             conducted at National Toxicology Program (NTP). Strains of Fischer 344 rats and
+1001             B6C3F1 mice were used in the NTP studies. Like most studies of pharmaceuticals, four
+1002             treatment/sex groups with 50 animals in each group were used in the NTP studies. All of
+1003             the NTP studies lasted for 2 years. The decision rule tests the significant differences in
+1004             tumor incidence between the control and the dose groups at 0.05 level for rare tumors and
+1005             at 0.01 level for common tumors. A tumor type with a background rate of 1 percent or
+1006             less is classified as rare by Haseman; more frequent tumors are classified as common.
+1007             Haseman’s original study and a second study using more recent data with higher tumor
+1008             rates show that the use of this decision rule in the control-high pairwise comparison tests
+1009             would results in an overall false positive rate between 7 to 8 percent and between 10 to
+1010             11 percent, respectively (Haseman 1983, 1984a, 1991).
+       G:\815dft.doc                                     27
+       04/23/01
+                                        Draft — Not for Implementation
+
+
+1011
+1012          Concerns have been raised that applying the rule described by Haseman (1983) to
+1013          analyses of trend tests would lead to an excessive overall false positive error rate as data
+1014          from all treatment groups are used in the tests and considerably lower tumor rates can
+1015          yield a wrongly significant result. Results from recent studies within and outside FDA
+1016          show that this concern is valid. Based on studies conducted by CDER and NTP, the
+1017          overall false positive error resulting from interpreting trend tests by use of the above
+1018          decision rule is about twice as large as that associated with control-high pairwise
+1019          comparison tests.
+1020
+1021          Based on recent studies using real historical control data of CD mice and CD rats from
+1022          Charles River Laboratory and simulation studies conducted internally and in
+1023          collaboration with NTP, a new statistical decision rule for tests for a positive trend in
+1024          tumor incidence has been developed. This new decision rule tests the positive trend in
+1025          incidence rates in rare and common tumors at 0.025 and 0.005 levels of significance,
+1026          respectively. The new decision rule achieves an overall false positive rate of around 10
+1027          percent in a standard two-species and two-sex study (Lin 1995, 1997; Lin and Rahman
+1028          1998a, 1998b). The 10 percent overall false positive rate is seen by CDER statisticians as
+1029          appropriate in a new drug regulatory setting.
+1030
+1031          Regulatory statistical literature emphasizes methods for testing for positive trends in
+1032          tumor rate (Lin 1988, 2000); Lin and Ali 1994; Chen and Gaylor 1986; Dinse and
+1033          Haseman 1986; and Dinse and Lagokos 1983). There are situations, however, in which
+1034          pairwise comparisons between control and individual treated groups may be more
+1035          appropriate than trend tests because trend tests assume that a carcinogenic effect is
+1036          related to doses or systemic exposure weights, or ranks. The assumption may be true for
+1037          simple direct acting carcinogens in studies not complicated by excessive toxicity.
+1038          However, there are many cases in which the response is to a drug metabolite, is mediated
+1039          through a receptor (or enzyme) that may be saturated even at the low dose, is
+1040          compounded by dose-related toxicity, or is complicated by other nonlinear effects. Under
+1041          those situations, pairwise comparisons may be appropriate and the decision rule described
+1042          in Haseman (1983) should be used in interpreting the results of the pairwise comparison
+1043          tests.
+1044
+1045          Sponsors should conduct both trend tests and pairwise comparison tests and present the
+1046          results of these two types of tests in the formats used in Table 15. A recent complication
+1047          to the use of the trend test is the choice by a sponsor not to do histopathologic evaluation
+1048          of all treatment groups. Although studies conducted using this design have been
+1049          evaluated by CDER, such an approach is not usually recommended.
+1050
+1051              The high cost (between 1 and 2 million dollars) and long time (a minimum of 3 years) it
+1052              takes to conduct a standard long-term, in-vivo carcinogenicity study and the increased
+1053              insight into the mechanisms of carcinogenicity provided by advances in molecular
+1054              biology have led to alternative in-vivo approaches to the assessment of carcinogenicity.
+1055              The International Conference on Harmonization (ICH) has developed guidance for use in
+       G:\815dft.doc                                       28
+       04/23/01
+                                          Draft — Not for Implementation
+
+
+1056             the United States and in other regions entitled S1B Testing for Carcinogenicity of
+1057             Pharmaceuticals (1998). This guidance outlines experimental approaches to the
+1058             evaluation of carcinogenic potential that may obviate the need for the routine use of two
+1059             long-term rodent carcinogenicity studies and allows for the alternative approach of
+1060             conducting one long-term rodent carcinogenicity study together with a short- or medium-
+1061             term rodent test. The short- or medium-term rodent test systems include such studies as
+1062             initiation-promotion in rodents, transgenic rodents, or newborn rodents, which provide
+1063             rapid observation of carcinogenic endpoints in-vivo. In general, these studies do not
+1064             produce false positive results because tumor background rates are very low. False
+1065             positives therefore arise primarily from the 2-year rodent study. Results from an agency
+1066             study using historical control data of CD rats and CD mice (Lin 1997; Lin and Rahman
+1067             1998b) showed that the use of significance levels of 0.05 and 0.01 in tests for positive
+1068             trend in incidence rates of rare tumors and common tumors, respectively, will result in an
+1069             overall false positive rate around 10 percent in a study in which only one 2-year rodent
+1070             bioassay (plus the shorter rodent study) is conducted.
+1071
+1072             The decision rules for testing positive trend or differences between control and individual
+1073             treated groups in incidence rates for standard studies using two species and two sexes as
+1074             well as studies following ICH guidance and using only one 2-year rodent bioassay are
+1075             summarized in Table 13.
+1076
+1077             The developed decision rules for tests for positive trend and for difference in pairwise
+1078             comparisons are based on the proposition that the carcinogenic effect of a drug is
+1079             considered positive if one or more tumor types tested in any of the four experiments (or
+1080             two experiments under an alternative ICH study) of species/sex combination show a
+1081             significant positive trend in tumor incidence rates (or one or more tumor types show a
+1082             significant difference in tumor incidence rates when the results of the control-high
+1083             pairwise comparisons are used in the final interpretation). The decision rules were
+1084             developed assuming the use of the two-species-and-two-sex (or one-species-and-two-sex)
+1085             standard design of a two-year study with 50 animals in each of the four treatment/sex
+1086             groups.
+1087
+
+
+
+
+       G:\815dft.doc                                     29
+       04/23/01
+                                             Draft — Not for Implementation
+
+
+1088                   Table 13: Statistical Decision Rules for Controlling the Overall False
+1089                     Positive Rates Associated With Tests for Positive Trend or With
+1090                      Control-High Pairwise Comparisons in Tumor Incidences to
+1091                    Around 10 Percent in Carcinogenicity Studies of Pharmaceuticals
+1092
+1093
+                                                  Tests for Positive Trend         Control-High Pairwise
+                                                                                       Comparisons
+
+                Standard 2-Year Studies       Common and rare tumors          Common and rare tumors
+                with 2 Species and 2 Sexes    are tested at 0.005 and 0.025   are tested at 0.01 and 0.05
+                                              significance levels,            significance levels, respectively.
+                                              respectively.
+
+                Alternative ICH Studies       Common and rare tumors          Under development and not yet
+                (One Two-Year Study in        are tested at 0.01 and 0.05     available.
+                One Species and One Short-    significance levels,
+                or Medium-Term Study,         respectively.
+                Two Sexes)
+1094
+1095
+1096
+1097             B.      Control Over False Negative Error
+1098
+1099             To make sure that the false negative rate is not excessive, reviewing pharmacologists,
+1100             pathologists, and medical officers evaluate the adequacy of the gross and histological
+1101             examination of both control and treated groups, the adequacy of the dose selection, the
+1102             duration of the experiment in relation to the normal life span of the tested animals, and
+1103             the survival of animals in the study.
+1104
+1105             C.      The Use of Historical Control Data
+1106
+1107             The concurrent control group is always the most appropriate and important in testing
+1108             drug related increases in tumor rates in a carcinogenicity experiment. However, if used
+1109             appropriately, historical control data can be very valuable in the final interpretation of the
+1110             study results. Large differences between studies can result from differences in
+1111             nomenclature, pathologists reading slides, the specific animal strain used and laboratory
+1112             conditions. It is therefore extremely important that the historical control data chosen be
+1113             from studies comparable to the current study, generally recent studies from the same
+1114             laboratory using the same strain of rodent.
+1115
+1116             Historical control data are particularly useful in classifying tumors as rare or common. A
+1117             statistically significant increase in a rare tumor is unlikely as a chance occurrence so that
+1118             it is critical to decide whether a tumor is rare or not. Rare tumors are generally tested
+1119             with less stringent statistical decision rules (see Table 13). Historical control data can
+1120             also be used as a quality control mechanism for a carcinogenicity experiment by
+1121             assessing the reasonableness of the spontaneous tumor rates in the concurrent control
+       G:\815dft.doc                                          30
+       04/23/01
+                                         Draft — Not for Implementation
+
+
+1122          group (Haseman 1984b; Haseman, Huff, and Boorman 1984), and for evaluation of
+1123          disparate findings in dual concurrent controls.
+1124
+1125          For common tumors, in cases of marginally significant trends or differences, historical
+1126          control data can help investigators determine whether the findings are real or false
+1127          positives. Historical control data can also help investigators determine whether
+1128          nonsignificant findings in rare tumors are true negative or false negative results due to the
+1129          lack of power in the statistical tests used. A widely used informal method is to determine
+1130          whether the tumor rates in the treated groups in the experiment are within the range of
+1131          reliable historical control data. If they are, a marginally significant finding for a common
+1132          tumor may be discounted as resulting from a random occurrence of a low concurrent
+1133          control rate. Similarly, a nonsignificant increase for a rare tumor can be considered truly
+1134          negative if the treated tumor rates are within the historical range.
+1135
+1136          The above informal method of using historical control data in the interpretation of
+1137          statistical test results is not very satisfactory because the range of historical control rates
+1138          is usually too wide. This is especially true in situations in which the historical tumor
+1139          rates of most studies used are clustered together, but a few other studies give rates far
+1140          away from the cluster. When the range of historical control data is simply calculated as
+1141          the difference between the maximum and the minimum of the historical control rates.
+1142          The range does not consider the shape of the distribution of the rates. The upper
+1143          confidence intervals for binomial proportions constructed by the methods described in
+1144          Louis (1981), Blyth (1986), Vollset (1993), Jovanovic and Viana (1996), and Jovanovic
+1145          and Levy (1997) should probably replace the historical range in the above informal
+1146          method.
+1147
+1148          In addition to the informal use of historical control data in the interpretation of the
+1149          statistical testing results mentioned above, more formal statistical procedures have been
+1150          proposed that allow the incorporation of appropriate historical control data in tests for
+1151          trend in tumor rate. For example, Tarone (1982), Hoel (1983), Hoel and Yanagawa
+1152          (1986), Tamura and Young (1986, 1987), and Prentice et al. (1992) proposed some
+1153          empirical procedures using the beta-binomial distribution to model historical control
+1154          tumor rates and to derive approximate and exact tests for trend. The results from those
+1155          studies show that the incorporation of the historical control data improves the power of
+1156          the tests. The greatest improvement of power is shown in the tests of rare tumors.
+1157          Dempster et al (1983) proposed a Bayesian procedure to incorporate historical control
+1158          data into statistical analysis. The procedure uses the assumption that the logits of the
+1159          historical control tumor rates were normally distributed.
+1160
+1161              These formal statistical procedures work well in situations in which historical data from a
+1162              large number of studies with relatively large control groups are available to provide
+1163              reliable estimations of the parameters of the prior distributions. However, the maximum
+1164              likelihood estimators (MLEs) of the prior parameters were shown to be unstable, and the
+1165              distributions of the MLEs were skewed to the right (i.e., with bunching above the mean
+1166              and a long tail below the mean). The skewness was severe in cases in which only
+       G:\815dft.doc                                       31
+       04/23/01
+                                           Draft — Not for Implementation
+
+
+1167             historical data of a few small control groups were available. The skewness of the MLEs
+1168             inflated the Type I error of the tests. Also, these procedures were developed to
+1169             incorporate historical control data into the Cochran-Armitage test for linear trend in
+1170             tumor incidence. Since the Cochran-Armitage test is a survival-unadjusted procedure,
+1171             these procedures cannot be applied to studies with significant differences in survival
+1172             among treatment groups. Recently, Ibrahim and Ryan (1996) developed a method for
+1173             incorporating historical control information into survival-adjusted tests for trend in tumor
+1174             incidence. When using this method, the study period should be partitioned into intervals.
+1175             In each interval, the multinomial distribution should be used to model the observed
+1176             numbers of animals dying with the tumor, and Dirichlet distribution should be used as the
+1177             prior distribution for the historical control tumor rates. This method applies only to fatal
+1178             tumors.
+1179
+1180             D.      Evaluation of Validity of Designs of Negative Studies
+1181
+1182             In negative or equivocal studies, that is, studies for which either the sponsor’s or FDA’s
+1183             statisticians detected no statistically significant positive trend or difference in tumor rate,
+1184             the statistical reviewers will perform a further evaluation of the validity of the design of
+1185             the experiment to see if there were sufficient numbers of animals living long enough to
+1186             provide adequate exposure to the chemical and to be at risk of forming late-developing
+1187             tumors. The reviewers also want to see if the doses used were adequate to present a
+1188             reasonable tumor challenge to the tested animals (Haseman 1985).
+1189
+1190             As a rule of thumb, a 50 percent survival rate of the 50 initial animals in any treatment
+1191             group between weeks 80 to 90 of a 2-year study would be considered to yield a sufficient
+1192             number of animals with adequate exposure. The percentage can be lower or higher if the
+1193             number of animals used in each treatment/sex group is larger or smaller than 50, but
+1194             between 20 to 30 animals should be still alive during these weeks.
+1195
+1196             The adequacy of doses selected and of the animal tumor challenge in long-term
+1197             carcinogenicity experiments is evaluated by pharmacologists and the CDER
+1198             Carcinogenicity Assessment Committee (CAC) based on the previously described ICH
+1199             approaches as well as on the results of the long-term carcinogenicity experiments. To
+1200             assist the evaluation, CDER statistical reviewers are often asked to provide analyses of
+1201             body weight and mortality differences and, occasionally, other differences between
+1202             treated and control groups.
+1203
+1204
+1205   VI.       PRESENTATION OF RESULTS AND DATA SUBMISSION
+1206
+1207   To facilitate the statistical reviews, sponsors should present study results and data in such a way
+1208   that FDA statistical reviewers are able to verify the sponsors’ calculations, to validate their
+1209   statistical methods, and to trace back the sponsors’ conclusions through their summaries and
+1210   analyses of the raw data (FDA 1987).
+1211
+       G:\815dft.doc                                       32
+       04/23/01
+                                         Draft — Not for Implementation
+
+
+1212   In the sponsor’s report, in addition to the volumes containing study data of individual animals, a
+1213   statistical analysis section should be included containing summary statistics of the study data,
+1214   results of statistical analyses of the data, results and findings, and main conclusions of the study.
+1215   In the statistical analysis section, the sponsor should include descriptions of the statistical
+1216   procedures used and pertinent literature references. The descriptions of statistical methodology
+1217   and references are particularly important if the sponsor decides to use designs and methods of
+1218   analysis and interpretation other than those recommended in this guidance document.
+1219
+1220   Tables 14, 15, and 16 include examples of formats for presenting summaries and results of
+1221   analyses of survival and tumor data. Presentations of data summaries and analyses results should
+1222   be made for each species/sex combination. Descriptive statistics such as mean, standard
+1223   deviation, and range, which are important in characterizing the distinctive and essential features
+1224   of a study, should also be reported by species/sex combination. Graphics that are useful and
+1225   informative in presenting study results should be used to display summary data, especially
+1226   summary statistics over time.
+1227
+1228   Two sets of formats and specifications were previously used regularly by the Divisions of
+1229   Biometrics, Office of Biostatistics. They were (a) the Divisions of Biometric Formats and
+1230   Specifications for Submission of Animal Carcinogenicity Study Data, and (b) the Submitters
+1231   Toxicological Uniform Data Information Exchange Standard (STUDIES). Because mistakes
+1232   have often been made by sponsors in data sets using the STUDIES formats, the Office of
+1233   Biostatistics now recommends that sponsors submit the data sets in the simpler divisions of
+1234   biometrics formats and specifications described in Lin (1998). Discussions of the statistical
+1235   analyses on which the formats were developed can be found in Lin (1998).
+1236
+1237   Data sets described in the above Divisions of Biometrics formats and specifications document
+1238   are divided into two groups, Group A and Group B, depending on whether the data will be used
+1239   immediately in the statistical review and evaluation of the carcinogenicity studies. Group A
+1240   includes data sets that are always used by statisticians performing a statistical review and
+1241   evaluation of the carcinogenicity studies. Group B includes data sets that may be used by
+1242   medical officers, pharmacologists, toxicologists, and statisticians in their final interpretations of
+1243   the study results. Sponsors are urged to submit the two groups of data sets together with their
+1244   original, initial submissions of the hardcopy NDA or IND. However, if a sponsor under some
+1245   special circumstances cannot submit the two groups of data sets together, the Group A data sets
+1246   should be submitted first.
+1247
+1248   The FDA has issued a guidance document (1999) to encourage and assist drug applicants in
+1249   submitting an electronic archival copy of a new drug applications (NDAs), including
+1250   amendments and supplements. The Agency’s effort to encourage applicants to submit
+1251   applications electronically is an integrated part of the Agency’s Electronic Records; Electronic
+1252   Signatures regulation (Electronic Records; Electronic Signatures, Office Federal Register, March
+1253   20, 1997). The above submission of data from carcinogenicity studies to statisticians should be a
+1254   part of an electronic NDA. The information in the formats and specifications, discussed above,
+1255   have been incorporated into the Agency’s guidance on regulatory submission of electronic
+1256   applications (FDA 1999). Drug sponsors should follow the guidance and recommendations
+       G:\815dft.doc                                     33
+       04/23/01
+                                            Draft — Not for Implementation
+
+
+1257   included in the nonclinical pharmacology and toxicology section of the guidance in their
+1258   preparation and submission of electronic carcinogenicity study data.
+1259
+1260    Table 14: Example Format for Showing Summary of Deaths and Sacrifices of Male Mice
+1261
+1262
+1263                        Control              Low                     Medium                   High
+1264
+1265      Week         E D S N NP            E D S N NP               E D S N NP              E D S N NP
+1266       34          70 -- -- -- --       70 -- -- -- --           70 -- -- -- --          70 -- -- -- --
+1267
+1268        35         70   1 1 1 1          70 -- -- -- --          70 -- -- -- --          70       -- -- -- --
+1269        36         68   -- -- -- --      70 1 -- -- 1            70 -- -- -- --          70       -- -- -- --
+1270
+1271        39         68   -- -- -- --      69 -- -- -- --          70 -- -- -- --          70       1   -- 1 --
+1272
+1273        41         68   -- -- -- --      69 -- -- -- --          70 1      -- -- 1        69      -- -- -- --
+1274
+1275        43         68   -- -- -- --      69 -- -- -- --          69 1      -- 1 --       69       -- -- -- --
+1276
+1277        49         68   -- -- -- --      69 -- -- -- --          68 -- -- -- --          69       1   -- -- --
+1278
+1279        52*        68   -- 10 10 --      69 -- 10 10 --          68 -- 10 10 --           68 -- 10 10 --
+1280
+1281        53         58   1   -- 1 --      59 --     -- -- --      58 -- -- -- --           58      -- -- -- --
+1282
+1283        58         57   -- -- -- --      59 -- -- -- --          58 3      -- 3 --       58       -- -- -- --
+1284
+1285        62         57   1   -- 1 --      59 -- -- -- --          55 -- -- -- --           58      1 -- 1 --
+1286
+1287        65         56   -- -- -- --      59 -- -- -- --          55 -- -- -- --          57       1 -- 1 --
+1288
+1289        70         56     -- -- -- --    59 -- -- -- --          55 3      -- 3 --       56       1 -- 1 --
+1290
+1291        71         56   -- 1    1 --     59 1     1 2     --     52 1      -- 1 --       55       -- -- -- --
+1292
+1293   (Continue to the end of the study)
+1294
+1295
+1296    Term*          41     2 39 41 --     40 -- 40 40 --          36 -- 36 -- --           38      1 37 36 2
+1297   Mean
+1298
+1299   survival         668                   680                    650                       632
+1300   Notes: E = Number of animals entering the period; D = Deaths; S = Sacrificed moribund;
+1301            N = At least one tissue was examined microscopically; NP = No tissues were examined
+1302            microscopically; * = Scheduled and terminal sacrifices.
+1303
+1304
+
+
+       G:\815dft.doc                                         34
+       04/23/01
+                                         Draft — Not for Implementation
+
+
+1305            Table 15: Example Format for Showing Summary of Incidences and Results of
+1306                   Statistical Tests (P-values) of Neoplastic Lesions (in Male Mice)
+1307
+1308
+1309       Organ/Tissue                                      Control      Low    Medium   High
+1310
+1311       And Tumor
+1312
+1313   Number of animals at the beginning                      50         50       50       50
+1314
+1315   Liver                                                  (40)        (45)    (50)    (43)
+1316
+1317     Hepatocellular adenoma                                 4          5       7        10
+1318     (Context of obser. of the tumor)#
+1319
+1320      Unadjusted P-values## :
+1321       Exact test                                          P=         P=      P=       P=
+1322       Asymptotic test                                     P=         P=      P=       P=
+1323     Hepatocellular carcinoma                               2          2       5        3
+1324     (Context of obser. of the tumor)#
+1325
+1326      Unadjusted P-values## :
+1327       Exact test                                          P=         P=      P=       P=
+1328       Asymptotic test                                     P=         P=      P=       P=
+1329     Hemangioma                                             0          0       2        3
+1330     (Context of obser. of the tumor)#
+1331
+1332      Unadjusted P-values## :
+1333       Exact test                                          P=         P=      P=       P=
+1334       Asymptotic test                                     P=         P=      P=       P=
+1335     Hepatoma                                               0          1       1        2
+1336     (Context of obser. of the tumor)#
+1337
+1338       Unadjusted P-values## :
+1339        Exact test                                         P=         P=      P=       P=
+1340        Asymptotic test                                    P=         P=      P=       P=
+1341
+1342
+1343   See the footnotes on next page.
+
+
+
+
+       G:\815dft.doc                                  35
+       04/23/01
+                                               Draft — Not for Implementation
+
+
+1344          Table 15 (Continued): Example Format for Showing Summary of Incidences and
+1345             Results of Statistical Tests (P-values) of Neoplastic Lesions (in Male Mice)
+1346
+1347
+1348       Organ/Tissue                                                    Control         Low        Medium   High
+1349
+1350       And Tumor
+1351
+1352   Lung                                                                  (45)          (47)         (49)   (45)
+1353
+1354     Bronchiolar/alveolar adenoma                                          2              1            4     8
+1355     (Context of obser. of the tumor)#
+1356
+1357       Unadjusted P-values## :
+1358        Exact test                                                        P=            P=           P=     P=
+1359        Asymptotic test                                                   P=            P=           P=     P=
+1360
+1361     Bronchiolar/alveolar carcinoma                                        2             2            5      4
+1362     (Context of obser. of the tumor)#
+1363
+1364       Unadjusted P-values## :
+1365        Exact test                                                        P=            P=           P=     P=
+1366        Asymptotic test                                                   P=            P=           P=     P=
+1367
+1368
+1369                            (List the numbers of animals with the tissues examined,
+1370                              overall tumor incidences, and the p-values of trend
+1371                      tests and pairwise comparisons for all organs/tissues and tumo rs.)
+1372
+1373
+1374   Notes: Numbers in parentheses are numbers of animals with the tissues examined
+1375                 microscopically.
+1376          The p-values under the control group are from trend tests.
+1377          The p-values under each dosed group are from pairwise comparisons between that dosed
+1378                 group and the control group.
+              #
+1379            Contexts of observation of the tumor, if information is available, should be one of the
+1380                  four possibilities: fatal, incidental, mortality independent, and mixture of fatal and
+1381                  incidental. Use N.A. to indicate that the information is not available.
+                ##
+1382               Unadjusted P-values are the p-values unadjusted for effect of multiple tests.
+1383
+1384
+1385
+
+
+
+
+       G:\815dft.doc                                              36
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1386           Table 16: Example Format for Showing Historical Control Data (in Male Rats)
+1387
+1388   The historical control data are based on the carcinogenicity studies conducted at XYZ
+1389   Laboratory between 1995 and 2000.
+1390
+1391
+1392                          Species: Mouse, Sex: Male, Strain: Crl:CD-1 Mice
+1393
+1394                                                 Historical Control Incidences
+1395
+1396         Studies                  Tumor type 1       Tumor type 2      ...     Tumor type T
+1397
+1398   Study #1 (1992)                     1/49               4/49         ...         8/50
+1399
+1400   Study #2 (1992)                     1/50              3/50         ...          4/50
+1401
+1402     .                                 .                 .            ...          .
+1403     .                                 .                 .            ...          .
+1404     .                                 .                 .            ...          .
+1405
+1406   Study #n (1996)                     0/50              2/50         ...          5/50
+1407
+1408   Total                               2/347             23/417       ...          34/417
+1409
+1410   Standard
+1411   Deviation                           1.0%              3,2%         ...          4.0%
+1412
+1413   Range                               0%-2%             0%-10%       ...          3%-17%
+1414
+1415
+1416
+1417
+
+
+
+
+       G:\815dft.doc                                  37
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1418
+1419
+1420                                           REFERENCES
+1421
+1422   Ahn, H., and R.L. Kodell (1995), “Estimation and Testing of Tumor Incidence Rates in
+1423   Experiments Lacking Cause-of-Death Data,” Biometrical Journal, 37, 745-763.
+1424
+1425   Ahn, H., and R.L. Kodell, and H. Moon (2000), "Attribution of Tumor Lethality and Estimation
+1426   of Time to Onset of Occult Tumors in the Absence of Cause-of-Death Information," Applied
+1427   Statistics, 49, 157-169.
+1428
+1429   Ali, M.W. (1990) "Exact Versus Asymptotic Tests of Trend of Tumor Prevalence in
+1430   Tumorigenicity Experiments: A Comparison of P-values for Small Frequency of Tumors," Drug
+1431   Information Journal, 24, 727-737.
+1432
+1433   Armitage, P. (1955), “Tests for Linear Trends in Proportions and Frequencies,” Biometrics, 11,
+1434   375-386.
+1435
+1436   Armitage, P. (1971), Statistical Methods in Medical Research, John Wiley, New York.
+1437
+1438   Bailer, A., and C. Portier (1988), “Effects of Treatment-Induced Mortality on Tests for
+1439   Carcinogenicity in Small Samples,” Biometrics, 44, 417-431.
+1440
+1441   Bannasch, P., R.A. Griesemer, F. Anders, B. Becker, J.R. Cabral, G.D. Porta, V.J. Feron, D.
+1442   Henschler, N. Ito, R. Kroes, P.N. Magee, B. McKnight, U. Mohr, R. Montesano, N.P. Napalkov,
+1443   S. Nesnow, A.E. Pegg, G.N. Rao, V.S. Turusov, J. Wahrdrendorf, and J. Wilbourn (1986),
+1444   “Long-Term Assays for Carcinogenicity in Animals,” in Long-Term and Short-Term Assays for
+1445   Carcinogens: A Critical Appraisal, Editors, R. Montesano, H. Bartsch, H. Vainio, J. Wilbourn,
+1446   and H. Yamasaki, IARC Scientific Publications No. 83, Lyon, France.
+1447
+1448   Berlin, B., J. Brodsky, and P. Clifford (1979), "Testing Disease Dependence in Survival
+1449   Experiments with Serial Sacrifice," Journal of American Statistical Association, 74, 5-14.
+1450
+1451   Bieler, G.S., and R.L. Williams (1993), “Ratio Estimates, the Delta Method, and Quantal
+1452   Response Tests for Increased Carcinogenicity,” Biometrics, 49, 793-801.
+1453
+1454   Blyth, C.R. (1986), "Approximate Binomial Confidence Limits," Journal of American Statistical
+1455   Association, 81, 843-855.
+1456
+1457   Breslow, N. (1970), "A Generalized Kruskal-Wallis Test for Comparing K Samples Subject to
+1458   Unequal Patterns of Censorship," Biometrics, 57, 579-594.
+1459
+1460   Chen, J.J., K.K. Lin, M.F. Huque, and R.B. Arani (2000), "Weighted P-Value for Animal
+1461   Carcinogenicity Trend Test," Biometrics, 56, 586-592.
+1462
+
+
+
+
+       G:\815dft.doc                                  38
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1463   Chen, J.J., and D.W. Gaylor (1986), "The Upper Percentiles of the Distribution of the Logrank
+1464   Statistics for Small Numbers of Tumors," Communications in Statistics - Simulation and
+1465   Computation, 15, 991-1002.
+1466
+1467   Chu, K.C., C. Cueto, and J.M. Ward (1981), "Factors in the Evaluation of 200 National Cancer
+1468   Institute Carcinogen Bioassays," Journal of Toxicology and Environmental Health, 8, 251-280.
+1469
+1470   Cochran, W. (1954), “Some Methods for Strengthening the Common χ2 Tests,” Biometrics, 10,
+1471   417-451.
+1472
+1473   Cox, D.R. (1959), "The Analysis of Exponentially Distributed Life-times with Two Types of
+1474   Failures," Journal of Royal Statistical Society, Series B, 21, 4121-421.
+1475
+1476   Cox, D.R. (1972), "Regression Models and Life Tables (with discussion)," Journal of Royal
+1477   Statistical Society, Series B, 34, 187-220.
+1478
+1479   Dayan, A.D. (1988), “Biological Assumptions in Analysis of the Bioassay,” in Carcinogenicity,
+1480   The Design, Analysis and Interpretation of Long-Term Animal Studies, an International Life
+1481   Sciences Institute (ILSI) monograph, edited by H,C. Grice and J.L. Ciminera, Springer-Verlag,
+1482   New York.
+1483
+1484   Dempster, A.P., M.R. Selwyn, and B.J. Weeks (1983), “Combining Historical and Randomized
+1485   Controls for Assessing Trends in Proportions,” Journal of the American Statistical Association,
+1486   78, 221-227.
+1487
+1488   Dewanji, Anup and J.D. Kalbfleisch (1986), "Nonparametric Methods for Survival/Sacrifice
+1489   Experiments," Biometrics, 42, 325-341.
+1490
+1491   Dinse. G.E. (1988), "Estimating Tumor Incidence Rates in Animal Carcinogenicity
+1492   Experiments," Biometrics, 44, 405-415.
+1493
+1494   Dinse, G.E. (1991), "Constant Risk Differences in the Analysis of Animal Tumorigenicity Data,"
+1495   Biometrics, 47, 681-700.
+1496
+1497   Dinse, G.E. (1994), "A Comparison of Tumor Incidence Analyses Applicable in Single-
+1498   Sacrifice Animal Experiments," Statistics in Medicine, 13, 689-708.
+1499
+1500   Dinse, G.E., and J.K. Haseman (1986), "Logistic Regression Analysis of Incidental-Tumor Data
+1501   from Animal Carcinogenicity Experiments," Fundamental and Applied Toxicology, 6, 751-770.
+1502
+1503   Dinse, G.E., and S.W. Lagokos (1983), "Regression Analysis of Tumor Prevalence Data," The
+1504   Journal of the Royal Statistical Society, Series C, 32, 236-248.
+1505
+1506   Fairweather, W.R., A. Bhattacharyya, P.P. Ceuppens, G. Heimann, L.A. Hothorn, R.L. Kodell,
+1507   K.K. Lin, H. Mager, B.J. Middleton, W. Slob, K.A. Soper, N. Stallard, J. Ventre, and J. Wright
+
+
+
+       G:\815dft.doc                                  39
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1508   (1998), “Biostatistical Methodology in Carcinogenicity Studies,” Drug Information Journal, 32,
+1509   401-421.
+1510
+1511   Food and Drug Administration (FDA), (1987), Guideline for the Format and Content of the
+1512   Nonclinical/Pharmacology/Toxicology Section of An Application.
+1513
+1514   FDA (1997), Formats and Specifications for Submission of Animal Carcinogenicity Study Data,
+1515   Divisions of Biometrics I, II, III, and IV, Center for Drug Evaluation and Research. Rockville,
+1516   Maryland; March 12, 1997.
+1517
+1518   FDA (1999), Guidance for Industry, Providing Regulatory Submissions in Electronic Formats ---
+1519   NDAs, Center for Drug Evaluation and Research.
+1520
+1521   Gart, J.J., D. Krewski, P.N. Lee, R.E. Tarone, and J. Wahrendorf (1986), Statistical Methods in
+1522   Cancer Research, Volume III - The Design and Analysis of Lo ng-Term Animal Experiments,
+1523   International Agency for Research on Cancer, World Health Organization.
+1524
+1525   Gehan, E.A. (1965), "A Generalized Wilcoxon Test for Comparing K Samples Subject to
+1526   Unequal Patterns of Censorship," Biometrika, 52, 203-223.
+1527
+1528   Goldberg, K.M. (1985), "An Algorithm for Computing An Exact Trend Test for Multiple 2 x K
+1529   Contingency Tables," a paper presented at Symposium On Long-Term Animal Carcinogenicity
+1530   Studies.
+1531
+1532   Haseman, J.K. (1983), "A Reexamination of False-Positive Rates for Carcinogenesis Studies,"
+1533   Fundamental and Applied Toxicology, 3, 334-339.
+1534
+1535   Haseman, J.K. (1984a), "Statistical Issues in the Design, Analysis and Interpretation of Animal
+1536   Carcinogenicity Studies," Environmental Health Perspective, 58, 385-392.
+1537
+1538   Haseman, J.K. (1984b), “Use of Historical Control Data in Carcinogenicity Studies in Rodents,”
+1539   Toxicologic Pathology, 12, 126-135.
+1540
+1541   Haseman, J.K. (1985), "Issues in Carcinogenicity Testing: Dose Selection," Fundamental and
+1542   Applied Toxicology, 5, 66-78.
+1543
+1544   Haseman, J.K. (1991), a personal communication to Robert Temple, M.D., CDER, FDA.
+1545
+1546   Haseman, J.K., J. Huff, and G.A. Boorman (1984), "Use of Historical Control Data in
+1547   Carcinogenicity Studies in Rodents," Toxicologic Pathology, 12, 126-135.
+1548
+1549   Haseman, J.K., J.S. Winbush, and M.W. O’Donnell (1986), “Use of Dual Control Groups to
+1550   Estimate False Positive Rates in Laboratory Animal Carcinogenicity Studies,” Fundamental and
+1551   Applied Toxicology, 7, 573-584.
+1552
+
+
+
+
+       G:\815dft.doc                                  40
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1553   Haseman, J.K., G. Hajian, K.S. Crump, M.R. Selwyn, and K.E. Peace (1990), “Dual Control
+1554   Groups in Rodent Carcinogenicity Studies,” in Statistical Issues in Drug Research and
+1555   Development, K. E. Peace, Editor, Marcel Dekker, New York.
+1556
+1557   Haseman, J.K. (1999), personal communication to the author.
+1558
+1559   Hoel, D.G. (1983), “Conditional Two Sample Tests with Historical Controls,”     in Contributions
+1560   to Statistics, P.K. Sen, Editor, North-Holland Publishing Company.
+1561
+1562   Hoel, D.G., and T. Yanagawa (1986), “Incorporating Historical Controls in Testing for a Trend
+1563   in Proportions,” Journal of the American Statistical Association, 81, 1095-1099.
+1564
+1565   Hoel, D., and H. Walburg (1972), “Statistical Analysis of Survival Experiments,” Journal of the
+1566   National Cancer Institute, 49, 361-372.
+1567
+1568   Iatropoulos, M.J. (1988), “Society of Toxicologic Pathologists Position Paper: “Blinded”
+1569   Microscopic Examination of Tissues from Toxicologic or Oncogenic Studies,” in
+1570   Carcinogenicity, The Design, Analysis, and Interpretation of Tong-Term Animal Studies, edited
+1571   by H.C. Grice and J.L. Ciminera, ILSI Monographs, Spring-Verlag, New York.
+1572
+1573   ICH (1995), S1C Dose Selection for Carcinogenicity Studies of Pharmaceuticals, ICH - S1C.
+1574
+1575   ICH (1998), S1B Testing for Carcinogenicity of Pharmaceuticals, ICH - S1B, Federal Register,
+1576   vol. 63, 8983-8986, 1998.
+1577
+1578   Ibrahim, J.G., and L.M. Ryan (1996), "Use of Historical Controls in Time-Adjusted Trend Tests
+1579   for Carcinogenicity," Biometrics, 52, 1478-1485.
+1580
+1581   Jovanovic, B.D. and M.A.G. Viana (1996), “Upper Confidence Bounds for Binomial Probability
+1582   in Safety Evaluation,” American Statistical Association 1996 Proceedings of the
+1583   Biopharmaceutical Section, 140-144.
+1584
+1585   Jovanovic, B.D. and P.S. Levy (1997), "A Look at the Rule of Three," The American
+1586   Statistician, 51, No.2, 137-139.
+1587
+1588   Kodell, R.L., and H. Ahn (1996), "Nonparametric Trend Test for the Cumulative Tumor
+1589   Incidence Rates," Communications in Statistics - Theory and Methods, 25, 1677- 1692.
+1590
+1591   Kodell, R.L., and H. Ahn (1997), "An Age-Adjusted Trend Test for the Tumor Incidence Rate,"
+1592   Biometrics, 53, 1467-1474.
+1593
+1594   Kodell, R.L., B.A. Pearce, A. Turturro, and H. Ahn (1997), "An Age-Adjusted Trend Test for the
+1595   Tumor Incidence Rate for Single-Sacrifice Experiments," Drug Information Journal, 31, 471-
+1596   487.
+1597
+
+
+
+
+       G:\815dft.doc                                  41
+       04/23/01
+                                      Draft — Not for Implementation
+
+
+1598   Kodell, R.L., K.K. Lin, B.T. Thorn, and J.J. Chen (2000), “Bioassays of Shortened Duration for
+1599   Drugs: Statistical Implications,” Toxicological Sciences, 55, 415-432.
+1600
+1601   Lin, K.K. (1988), "Peto Prevalence Method Versus Regression Methods in Analyzing Incidental
+1602   Tumor Data from Animal Carcinogenicity Experiments: An Empirical Study," in the 1988
+1603   American Statistical Association Annual Meeting Proceedings (Biopharmaceutical Section),
+1604   New Orleans, Louisiana.
+1605
+1606   Lin, K.K. (1995), “A Regulatory Perspective on Statistical Methods for Analyzing New Drug
+1607   Carcinogenicity Study Data,” Bio/Pharam Quarterly, Vol. 1, Issue 2, 18-20.
+1608
+1609   Lin, K.K. (1997), “Control of Overall False Positive Rates in Animal Carcinogenicity Studies of
+1610   Pharmaceuticals,” presented at 1997 FDA Forum on Regulatory Sciences, December 8-9, 1997,
+1611   Bethesda, Maryland.
+1612
+1613   Lin, K.K. (2000), “Carcinogenicity Studies of Pharmaceuticals,” in Encyclopedia of
+1614   Biopharmaceutical Statistics, edited by S.C. Chow, Marcel Dekker, New York, 88-103.
+1615
+1616   Lin, K.K., and M.W. Ali (1994), "Statistical Review and Evaluation of Animal Tumorigenicity
+1617   Studies," in Statistics in the Pharmaceutical Industry, Second Edition, Revised and Expanded,
+1618   edited by C.R. Buncher and J.Y. Tsay, Marcel Dekker, Inc., New York.
+1619
+1620   Lin, K. K. and M. A. Rahman (1998a), “Overall False Positive Rates in Tests for Linear Trend in
+1621   Tumor Incidence in Animal Carcinogenicity Studies of New Drugs,” Journal of Pharmaceutical
+1622   Statistics, with discussions, 8(1), 1-22.
+1623
+1624   Lin, K. K. and M. A. Rahman (1998b), “False Positive Rates in Tests for Trend and Differences
+1625   in Tumor incidence in Animal Carcinogenicity Studies of Pharmaceuticals under ICH Guidance
+1626   S1B,” unpublished report, Division of Biometrics 2, Center for Drug Evaluation and Research,
+1627   Food and Drug Administration.
+1628
+1629   Lin, K.K. (1998), “CDER/FDA Formats for Submission of Animal Carcinogenicity Study
+1630   Data,” Drug Information Journal, 32, 43-52.
+1631
+1632   Lindsey, J., and L. Ryan (1993), "A Three-State Multiplicative Model for Rodent
+1633   Tumorigenicity Experiments," Journal of Royal Statistical Society, Series C, 42, 283-300.
+1634
+1635   Lindsey, J., and L. Ryan (1994), "A Comparison of Continuous- and Discrete-Time Three-State
+1636   Models for Rodent Tumorigenicity Experiments," Environmental Health Perspectives, 102
+1637   (Suppl. 1), 9-17.
+1638
+1639   Louis, T.A. (1981), "Confidence Intervals for a Binomial Parameter After Observing No
+1640   Success," The American Statistician, 35, No. 3, 154-154.
+1641
+1642   Malani, H.M., and J. Van Ryzin (1988), "Comparison of Two Treatments in Animal
+1643   Carcinogenicity Experiments," Journal of American Statistical Association, 83, 1171-1177.
+
+
+       G:\815dft.doc                                 42
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1644
+1645   Mantel, N., and W. Haenszel (1959), "Statistical Aspects of the Analysis of Data from
+1646   Retrospective Studies of Disease," Journal of National Cancer Research, 22, 719-748.
+1647
+1648   Malani, H.M., and Y. Lu (1993), "Animal Carcinogenicity Experiments with and without Series
+1649   Sacrifices," Communications in Statistics - Theory and Methods, 22, 1557-1584.
+1650
+1651   McKnight, B., and J. Crowley (1984), "Tests for Differences in Tumor Incidence Based on
+1652   Animal Carcinogenesis Experiments," Journal of American Statistical Association, 79, 639-648.
+1653
+1654   Moon, H., H. Ahn, and R.L. Kodell (2000), "Testing Incidence of Occult Tumors by Attributing
+1655   Tumor Lethality in the Absence of Cause-of-Death Information," submitted to Biometrics.
+1656
+1657   OFR (Office of the Federal Register), (1985), "Chemical Carcinogens; A Review of the Science
+1658   and Its Associated Principles," in Part II, Office of Science and Technology Policy, Federal
+1659   Register, March 14, 1985, 47-58.
+1660
+1661   OFR, (1995), “Dose Selection for Carcinogenicity Studies of Pharmaceuticals,” in Part III,
+1662   Department of Health and Human Services, Food and Drug Administration, Federal Register,
+1663   March 1, 1995, Vol. 60, No. 40, 11278-11281.
+1664
+1665   OFR, (1997), “Electronic Records; Electronic Signatures,” Federal Register, March 20, 1997.
+1666
+1667   Peto, R., M.C. Pike, N.E. Day, R.G. Gray, P.N. Lee, S. Parish, J. Peto, S. Richards, and J.
+1668   Wahrendorf (1980), "Guidelines for Simple, Sensitive Significance Tests for Carcinogenic
+1669   Effects in Long-term Animal Experiments," in Long-term and Short-term Screening Assays for
+1670   Carcinogens: An Critical Appraisal, World Health Organization.
+1671
+1672   Portier, C.J., and G.E. Dinse (1987), "Semiparametric Analysis of Tumor Incidence Rates in
+1673   Survival/Sacrifice Experiments," Biometrics, 43, 107-114.
+1674
+1675   Prasse, K. (1986), “Letter to the Editor (on blinded microscopic evaluation of slides from
+1676   toxicity and carcinogenicity studies),” Toxicology and Applied Pharmacology, 83, 184-185.
+1677
+1678   Prentice, R.L., R.T. Smythe, D.Krewski, and M.Mason (1992), "On the Use of Historical Control
+1679   Data to Estimate Dose Response Trends in Quantal Bioassay," Biometrics, 48, 459-478.
+1680
+1681   Society for Toxicology (1982), “Animal Data in Harzard Evaluation: Paths and Pitfalls,”
+1682   Fundamental and Applied Toxicology, 2,101-107.
+1683
+1684   Sontag, J.A., N.P. Page, and U. Saffiotti (1976), Guidelines for Carcinogen Bioassay in Small
+1685   Rodents, Carcinogenesis Technical Report, DHEW Publication (NIH), 76-801.
+1686
+1687   Tamura, R.N, and S.S. Young (1986), “The Incorporation of Historical Information in Tests of
+1688   Proportions: Simulation Study of Tarone’s Procedure,” Biometrics, 42, 343-349.
+1689
+
+
+
+       G:\815dft.doc                                  43
+       04/23/01
+                                       Draft — Not for Implementation
+
+
+1690   Tamura, R.N, and S.S. Young (1987), “A Stabilized Moment Estimator for the Beta-Binomial
+1691   Distribution,” Biometrics, 43, 813-824.
+1692
+1693   Tarone, R.E. (1975), "Tests for Trend in Life Table Analysis," Biometrika, 62, 679-682.
+1694
+1695   Tarone, R.E. (1982), “The Use of Historical Control Information in Testing for a Trend in
+1696   Proportions.” Biometrics, 38, 215-220.
+1697
+1698   Temple, R.T., W.R. Fairweather, V.C. Glocklin, and R.T. O'Neill (1988) “The Case for
+1699   Blinded Slide Reading,” Comments on Toxicology, 2:99-109.
+1700
+1701   Thomas, D.G., N. Breslow, and J.J. Gart (1977), "Trend and Homogeneity Analyses of
+1702   Proportions and Life Table Data," Computer and Biomedical Research, 10, 373-381.
+1703
+1704   U.S. Interagency Staff Group on Carcinogens (1986), "Chemical Carcinogens; A Review of the
+1705   Science and Its Associated Principles," Environmental Health Perspectives, 67, 201-282.
+1706
+1707   Vollset, S.E. (1993), "Confidence Intervals for Binomial Proportion," Statistics in Medicine, 12,
+1708   809-824.
+1709
+1710   Williams, P.L., and C.J. Portier (1992), "Analytic Expressions for Maximum Likelihood
+1711   Estimation in a Nonparametric Model of Tumor Incidence and Death," Communications in
+1712   Statistics - Theory and Methods, 21, 711-732.
+1713
+1714   Woodruff, R.S. (1971), “A Simple Method for Approximating the Variance of a Complicated
+1715   Estimate,” Journal of the American Statistical Association, 66, 411-414.
+1716
+1717
+1718
+1719
+
+
+
+
+       G:\815dft.doc                                   44
+       04/23/01
+

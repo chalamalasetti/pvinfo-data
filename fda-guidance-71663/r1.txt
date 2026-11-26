@@ -1,0 +1,1602 @@
+                  ICH Consensus Guideline
+          Released for Consultation on 10 May 2005,
+                 at Step 2 of the ICH Process
+
+
+          Data Elements and Standards for Drug
+                     Dictionaries
+                          M5
+
+                           Recommended for Adoption
+                          at Step 2 of the ICH Process
+                                 on 10 May 2005
+                         by the ICH Steering Committee
+
+
+
+
+   This guideline has been developed by the appropriate ICH Expert
+  Working Group and is subject to consultation in accordance with the
+                             ICH process.
+
+
+
+
+This draft guidance, when finalized, will represent the Food and Drug Administration's (FDA's)
+current thinking on this topic. It does not create or confer any rights for or on any person and does not
+operate to bind FDA or the public. You can use an alternative approach if the approach satisfies the
+requirements of the applicable statutes and regulations. If you want to discuss an alternative approach,
+contact the FDA staff responsible for implementing this guidance. If you cannot identify the
+appropriate FDA staff, call the appropriate number listed on the title page of this guidance.
+
+
+
+For questions regarding this draft document contact (CDER) Randy Levin at 301-827-7784
+or (CBER) Ann Schwartz at 301-827-3070.
+
+
+
+
+                                                   1
+Topic Reference:    Data Elements and Standards for Drug Dictionaries
+
+Version:             2.0
+Dated:              10 May 2005
+
+
+
+
+Comments to be sent to the Rapporteur:
+
+Name:               Dr. Sabine Brosch
+
+Address:            European Medicines Agency (EMEA)
+
+                    7 Westferry Circus, Canary Wharf
+
+                    London E14 4HB UK
+
+Fax                 + 44 (0) 207 418 8668
+
+
+
+Circulation list:
+      ICH Coordinators
+      ICH Secretariat
+      Experts:
+
+
+           Dr. Sabine Bosch, Mr. Fabrizio Abbinante, .............            EU
+
+           Mr. Hans Georg Wagner ..........................................   EU
+
+           Mr. Barry Hammond, Dr. Cor Jol, Mrs. Raj Long ....                 EFPIA
+
+           Dr. Gaby Danan, Dr. Isabelle de Zegher ..................          EFPIA
+
+           Ms. Chie Kojima, Mr. Masahiko Yokota ...................           MHLW
+
+           Mr. Keiji Sawamukai, Mr. Manabu Inoue, Mr. Jiro Shimada            JPMA
+
+           Dr. Randy Levin, Dr. Ann Schwartz, Dr. Roger Goetsch               FDA
+
+           Mr. Kostas Kidos, Dr. William Gregory ....................         PhRMA
+
+           Ms. Heather Sutcliffe ……………………………………………Health Canada
+
+           Dr. Marie Lindquist, Ms. Jessica Nilsson ................          WHO
+
+
+
+
+                                                2
+                                          Table of Content
+
+1.  INTRODUCTION............................................................................................................ 4
+  1.1 Objectives of the Guideline ................................................................................. 4
+  1.2 Background .............................................................................................................. 5
+  1.3 Scope of the Guideline .......................................................................................... 5
+2. GUIDELINE..................................................................................................................... 6
+  2.1 Medicinal Product and Term Identifiers ......................................................... 6
+    2.1.1   Medicinal Product Identifier (MedID) ..................................................... 6
+    2.1.2   Pharmaceutical Product Identifier (PhPID) .......................................... 7
+    2.1.3   Controlled Vocabulary Term Identifier (TermID)................................ 7
+  2.2 Controlled Vocabulary .......................................................................................... 8
+    2.2.1   Background .................................................................................................... 8
+    2.2.2   Active Ingredients Controlled Vocabulary ............................................ 8
+    2.2.3   Pharmaceutical Dose Form Controlled Vocabulary ........................ 10
+    2.2.4   Routes of Administration Controlled Vocabulary ............................ 11
+    2.2.5   Units and Measurements Controlled Vocabulary............................ 12
+  2.3 Data Elements ....................................................................................................... 13
+    2.3.1   Medicinal Product Identifier.................................................................... 15
+    2.3.2   Medicinal Product Administrative Section ......................................... 15
+    2.3.3   Marketing Authorization Holder/Manufacturer/Distributor
+    Section 17
+    2.3.4   Marketing Authorization Section ........................................................... 18
+    2.3.5   Pharmaceutical Product Section ........................................................... 20
+    2.3.6   Active Ingredient(s) Section..................................................................... 21
+    2.3.7   Pharmaceutical Dose Form Section ..................................................... 24
+    2.3.8   Route of Administration Section ........................................................... 25
+    2.3.9   Maintenance Section ................................................................................. 25
+3. GLOSSARY.................................................................................................................... 27
+4. REFERENCES ............................................................................................................. 29
+
+
+
+
+                                                               3
+          Data Elements and Standards for Drug
+                     Dictionaries
+
+1. INTRODUCTION
+
+ 1.1 Objectives of the Guideline
+   It is desirable for regulators and pharmaceutical industry to engage in an
+   intensive information exchange during the drug development phase, the drug
+   evaluation and approval phase and the post-authorization phase. The
+   standardization of medicinal product information is regarded as one of the key
+   elements of this information flow.
+   However, regulators in the ICH regions and observer countries have established
+   their own procedures and applications with standards that differ in data format,
+   content, language and applied terminology (e.g. terminology used for active
+   ingredients, routes of administration, pharmaceutical dose forms).
+   Due to the lack of a common and harmonized approach, both regulators and
+   pharmaceutical industry are confronted with the following issues:
+      -   No possibility to exchange medicinal product information between
+          regulators and industry in a structured and efficient way;
+      -   Difficulties in ensuring data consistency and in evaluating and comparing
+          medicinal product-related information across the ICH regions due to the
+          lack of harmonized definitions of terminologies and data sets. This
+          currently impairs pharmacovigilance activities in particular;
+      -   For the pharmaceutical industry, major administrative burdens and
+          duplication of efforts requiring substantial human and financial
+          resources to comply with and handle different regional requirements.
+      -   Lack of consistency in the use of terminology in the health care
+          community.
+
+   The objectives of this guideline are to address the issues outlined above by
+   developing harmonized standards that build on the processes currently
+   established in the three ICH regions and the observer countries and to support
+   the population of existing systems/applications with fully reliable regulatory
+   medicinal product information. More specifically, the objectives focus on the
+   development of:
+      -   ‘Unique identifiers’ at the level of
+              Medicinal products: Medicinal Product Identifiers (MedIDs)
+              Pharmaceutical products: Pharmaceutical Product Identifiers
+                (PhPIDs)
+              The controlled vocabulary: Terminology Identifiers (TermIDs)
+
+      -   ‘Controlled vocabulary’ as a standard for the electronic transmission of
+          core sets of medicinal product information related to the following
+          terminologies:
+
+
+
+                                         4
+             Active ingredients
+             Pharmaceutical dose forms
+             Routes of administration
+             Units and measurements
+     -   ‘Data elements’ for the electronic transmission of core sets of medicinal
+         product information based on the following data set:
+             Proprietary medicinal product name
+             Active ingredient(s)
+             Pharmaceutical dose form(s)
+             Strength of the active ingredient(s)
+             Route(s) of administration
+             Marketing authorization holder
+             Marketing authorization number
+             Country of authorization
+
+         The ‘Data elements’ have been developed for the electronic transmission
+         of MedIDs and the related core medicinal product information.
+
+  This guideline does not cover the establishment and maintenance of a drug
+  dictionary.
+
+1.2 Background
+
+  The lack of internationally harmonized standards related to core sets of
+  medicinal product information and medicinal product terminology is hindering
+  the scientific evaluation and comparison of product data as well as healthcare.
+  This applies in particular to the area of pharmacovigilance, where the exchange
+  and management of medicinal product information in expedited and periodic
+  adverse reaction reports at the international level is a key aspect of ensuring
+  drug safety.
+  This document provides guidance on the harmonized standards that are being
+  proposed by the ICH M5 EWG to facilitate the exchange and practical use of
+  medicinal product data by regulators and pharmaceutical industry.
+
+1.3 Scope of the Guideline
+
+  This guideline refers to approved medicinal products. Homeopathic medicinal
+  products and investigational medicinal products are excluded from this
+  guideline.
+
+
+
+
+                                        5
+2. GUIDELINE
+
+ 2.1 Medicinal Product and Term Identifiers
+
+
+        2.1.1 Medicinal Product Identifier (MedID)
+
+    Definition:
+                  An identifier assigned to a medicinal product by the regulator of the
+                  country/territory of authorization.
+
+    General Conventions:
+              The regulators in the regions and observer countries have various
+              processes established to identify individual medicinal products.
+              Because     medicinal    product   information    is   exchanged
+              internationally, worldwide unique medicinal product identifiers
+              (MedIDs) are desirable.
+
+                  Regulators intend to assign MedIDs as follows:
+
+                          At the ‘medicinal product level’, which means that a
+                           specific medicinal product has only one identifier for
+                           different pack sizes.
+                           For example, the medicinal product ‘TRADENAME X’ has
+                           the same MedID related to two different presentations; a
+                           pack size of 50 tablets and a pack size of 100 tablets.
+                  or
+                          At ‘medicinal product package level’, which means that
+                           for each package presentation of the medicinal product a
+                           different MedID is assigned.
+                           For example, the medicinal product ‘TRADENAME Y’ has
+                           two different MedIDs for each of the two different
+                           presentations available: a MedID for the pack size of 50
+                           tablets and a MedID for the pack size of 100 tablets.
+
+    Methodology:
+              The world-wide unique MedID is constructed as follows:
+
+                          Prefix of the country code of that region followed by
+                          The regionally-assigned identifier followed by
+                          An error detection code
+
+                  The regionally-assigned identifier refers to the medicinal product
+                  level or to the medicinal product package level. As a general rule,
+                  the MedID should accompany the exchange of the medicinal
+                  product information.
+
+
+
+
+                                              6
+Examples:
+                  EU-EU/1/2342323/001-K
+                  FR-123456-X
+                  JP-123456789-Y
+                  US-0123456789-Z
+                  CA-2323232-V
+
+
+     2.1.2 Pharmaceutical Product Identifier (PhPID)
+
+Definition:
+          An identifier assigned at the level of the pharmaceutical product
+          based on the active ingredient(s), the strength(s) of the ingredient(s)
+          and the pharmaceutical dose form.
+Methodology:
+          PhPIDs represent the pharmaceutical product at four levels as
+          defined as follows:
+
+              -   PhPID4 = Ingredient(s) - Strength(s) - Strength unit(s) -
+                           Pharmaceutical Dose Form
+              -   PhPID3 = Ingredient(s) - Pharmaceutical Dose Form
+              -   PhPID2 = Ingredient(s) - Strength(s) - Strength unit(s)
+              -   PhPID1 = Ingredient(s)
+
+              Each PhPID is a unique, non-semantic, alphanumeric code and is
+              derived from the ICH M5 data elements, but is not part of these
+              data elements.
+
+Examples:
+              Medicinal products with the same active ingredients, strengths and
+              pharmaceutical dose form share a common PhPID4.
+              Medicinal products with the same active ingredients and
+              pharmaceutical dose form share a common PhPID3.
+              Medicinal products with the same active ingredients and strengths
+              share a common PhPID2.
+              Medicinal products with the same active ingredients share a
+              common PhPID1.
+
+
+
+
+     2.1.3 Controlled Vocabulary Term Identifier (TermID)
+
+Definition:
+           An identifier assigned at the level of each term of the controlled
+           vocabulary (active ingredients, pharmaceutical dose forms, routes of
+           administrations and units and measurements).
+
+Methodology:
+         The TermID is a unique, non-semantic, alphanumeric code assigned
+         for each term of the controlled vocabulary.
+
+
+
+
+                                       7
+2.2 Controlled Vocabulary
+    2.2.1 Background
+
+  Different regulatory standard terminologies are in place in the ICH regions and
+  observer countries, which makes it difficult to exchange this information at the
+  international level. These terminology differences complicate specifically
+  activities in the area of pharmacovigilance and healthcare and the management
+  of medicinal product information.
+
+  To address the identified terminology differences, the ICH M5 EWG is developing
+  controlled vocabularies for active ingredient(s), pharmaceutical dose form(s),
+  route(s) of administrations and unit(s) and measurement(s) using the following
+  methodology:
+
+     -     Preparing an inventory of the different regulatory standard terminologies
+           including those defined in the ICH E2B(M) guideline (version 4.4.1
+           includes the Post Step 4 corrections agreed by the Steering Committee on
+           5 February 2001);
+     -     Analyzing definitions for the different regulatory standard terminologies;
+     -     Developing a controlled vocabulary that supports good terminological
+           practice;
+     -     Defining mapping procedures to determine unique terms and related
+           synonym terms on the basis of the regional definitions in place;
+     -     Mapping the individual terms;
+     -     Assigning unique TermIDs.
+
+  The Active Ingredients Controlled Vocabulary, the Pharmaceutical Dose Forms
+  Controlled Vocabulary, the Routes of Administration Controlled Vocabulary and
+  the Units and Measurements Controlled Vocabulary will be made available on
+  the ICH website.
+
+
+    2.2.2 Active Ingredients Controlled Vocabulary
+
+Scope:
+         The Active Ingredients Controlled Vocabulary includes active ingredient
+         terms related to approved     medicinal products. Excluded are active
+         ingredients related to homeopathic medicinal products and investigational
+         medicinal products.
+
+Definitions:
+      An active ingredient is defined as a substance that alone or in combination
+      with one or more other ingredients produces the intended activity of a
+      medicinal product.
+
+      A substance is any matter and can be of human, animal, vegetable or
+      chemical (natural, semi-synthetic or synthetic) origin.
+
+      An active moiety is the portion of the active ingredient that is responsible
+      for the effect.
+
+
+
+
+                                          8
+Methodology:
+     A comprehensive list of active ingredient terms has been collected based on
+     the standard terminologies currently used by the EMEA, FDA, MHLW and
+     Health Canada.
+
+     The active ingredient terms are limited to English language terms, with the
+     exception of herbal active ingredients, for which the Latin language terms
+     and/or Japanese language terms are also included.
+
+     Within the list, the indication of the provenance of the term (i.e. its source) is
+     also included.
+
+     An active ingredient TermID will be assigned to each unique term.
+
+     The following approach will be used for the mapping:
+            - Chemical Abstract Service Number (CAS Number)
+            - Reference Source for each active ingredient name (e.g. USAN, INN,
+               JAN) that is linked to the chemical structure by the organizations
+            - Chemical name (e.g. following the IUPAC nomenclature)
+
+     Mapping of synonyms will be performed on the level of both the active moiety
+     and the active ingredient where applicable.
+
+     Herbal substances will be mapped on the following principles:
+         - Botanical scientific name according to the Latin binomial system
+             (genus + species)
+         - The author (e.g., Linnaeus, abbreviated L.) if known,
+         - The plant parts (if known) and
+         - The process (when applicable, and if known)
+
+     Herbal preparations will be mapped on the basis of the standardized
+     treatments (for instance extraction, distillation, expression, fractionation,
+     purification, concentration or fermentation) as described in the official
+     Pharmacopoeias of the three regions. For extractions, the solvent will also be
+     specified.
+
+     For vaccine antigens the mapping of active substances will be based on the
+     following principles:
+           - Conformity with the pharmacopoeia monograph terminology for
+               vaccine antigens in the regions;
+           - For non-pharmacopoeia active substances, according to the formal
+               Latin/Greek name and/or the disease being protected against.
+
+     For bacteria and viruses, the strain serotype or other appropriate sub­
+     species the designation will also be mapped with the name of each antigen, if
+     relevant.
+
+     In addition, the nature of any cellular system(s) used for production, and if
+     relevant the use of recombinant DNA technology (including the use of the
+     expression ‘produced in XXX cells <by recombinant DNA technology>) will be
+     mapped, following the pattern set by the following examples:
+          - ‘produced in human diploid (MRC-5) cells’
+          - ‘produced in Escherichia coli cells by recombinant DNA technology’
+          - ‘produced in chick-embryo cells’
+
+
+
+                                         9
+      The inclusion of a mention of the production process in vaccine active
+      substance names will be mapped at the level of the following terms:
+           - ‘live, attenuated’ (in the case of vaccines containing living micro­
+              organisms)
+           - ‘inactivated’ (in the case of vaccines containing killed micro­
+              organisms).
+
+
+    2.2.3 Pharmaceutical Dose Form Controlled Vocabulary
+
+Scope:
+         The Pharmaceutical Dose Form Controlled Vocabulary includes
+         pharmaceutical dose form terms of standard terminologies in use by the
+         regulators in the ICH regions and observer countries.
+
+Definitions:
+         A Dose Form is defined as the physical manifestation [“entity”] that
+         contains the active and/or inactive ingredients that deliver a dose of the
+         medicinal product. The key defining characteristics of the Dose Form
+         can be the state of matter, delivery method, release characteristics, and
+         the administration site or route for which the product is formulated.
+
+         A Pharmaceutical Dose Form is the form in which a pharmaceutical
+         product is presented in the medicinal product package as supplied by the
+         marketing authorization holder/manufacturer/distributor.
+
+Methodology:
+
+         A comprehensive list of Dose Form terms has been collected, which
+         includes:
+                 - European Pharmacopoeia Standard terms
+                 - United States Pharmacopeia (USP) terms
+                 - Japanese Pharmacopoeia terms
+                 - MHLW terms
+                 - Health Canada terms
+
+         Within the list, the indication of the provenance of the term (i.e. its
+         source) will also be included.
+
+         Tasks to be undertaken include:
+            - A term identifier will be allocated to each term (entry) in the list,
+               enabling linkage with original dose form lists.
+            - Each term will initially be identified as a “dose form concept”,
+               pending identification of synonymy.
+            - Synonymous terms will be identified and “annotated” e.g. “otic
+               drops” and “ear drops”.
+            - Terms that do not fit (for example, device terms) will be identified
+               and annotated, as will be all terms that do not fit within the
+               agreed definition (for example, dose forms that describe aspects of
+               medication such as strength or shape or indication).
+            - Each of the “dose form concepts” will be analyzed against the
+               agreed defining characteristics to create a logical description
+               pattern.    This pattern will assist in the identification of
+               unrecognized synonymy and hence will ensure that the resulting
+
+
+                                       10
+                   Dose Form concepts are unique and unambiguous. A description
+                   logic will enable concepts to be defined by the pattern or “graph” of
+                   their relationships with other concepts.
+               -   Having analyzed all the “dose form concepts”, any concepts found
+                   to be sharing an identical “set” of characteristics will again be
+                   reviewed; additional “distinguishing” characteristics will be added
+                   as appropriate.
+
+         The dose form description applies to only one concept at a time.
+         Therefore, items that are marketed as packs containing more than one
+         medicinal product will not themselves have a “combination dose form”,
+         but each medicinal product within them will have a dose form
+         description. This will avoid terms such as “pessary + cream” or “powder
+         + solvent”.
+
+
+    2.2.4 Routes of Administration Controlled Vocabulary
+
+Scope:
+         The Routes of Administration Controlled Vocabulary includes routes of
+         administration terms of standard terminologies in use by the regulators
+         in the ICH regions and observer countries and defined in the ICH E2B(M)
+         guideline (version 4.4.1 includes the Post Step 4 corrections agreed by
+         the Steering Committee on 5 February 2001).
+
+Definitions:
+         The Route of Administration indicates the part of the body through or
+         into which, or the way in which, the medicinal product is intended to be
+         introduced.
+         In some cases a medicinal product can be intended for more than one
+         route and/or method of administration.
+Methodology:
+         A comprehensive list of Route of Administration terms has been collected
+         and includes:
+                 - European Pharmacopoeia Standard terms;
+                 - United States Pharmacopeia (USP) terms;
+                 - Health Canada terms;
+                 - MHLW terms;
+                 - ICH E2B(M) Routes of Administration List
+
+         Each term is given an identifier, a description and relationships to other
+         terms within the terminology.
+
+         Tasks undertaken include:
+            - A term identifier is allocated to each term (entry) in the list,
+               enabling linkage with the original route of administration term
+               lists.
+            - Within the list there is an indication of the provenance of the term
+               (i.e. its source). A formal definition from the source vocabulary is
+               included, where necessary.
+         Synonymous terms are identified and “annotated” e.g. ocular use and
+         ophthalmic use.
+            - The route of administration terms are mapped on the basis of the
+               same or the equivalent meaning for route of administration
+
+
+
+                                           11
+                purposes e.g. ocular, ophthalmic. In specific cases the regional
+                definitions were crosschecked to clarify the meaning.
+            -   An adjective is used to describe the route of administration where
+                a suitable adjective is available, e.g. inhalational not inhalation.
+            -   The descriptor 'use' is generally not supported unless it adds a
+                specific meaning e.g. ‘oral’ was used instead of ‘oral use’.
+            -   Where a prefix and a main word in the terms are concatenated,
+                the concatenated word is hyphenated only if the ending of the
+                prefix and the beginning of the next word were both vowels (a, e, i,
+                o, u).
+            -   Where a suitable ICH E2B(M) route of administration term exists,
+                this is used as the basis for the official ICH M5 Route of
+                Administration Controlled Vocabulary term. Where a suitable ICH
+                E2B(M) route of administration term is not available to represent
+                the route concept, a new term is added to the vocabulary. In either
+                case, the above procedures are applied.
+            -   The Routes of Administration Controlled Vocabulary presents the
+                corresponding terms (translations) applicable in the different
+                regions and in the E2B(M) list as follows:
+                    o MedID: e.g. 001
+                    o ICH M5 Route of Administration Term e.g. Auricular (OTIC)
+                    o Regional Standard Terms:
+                            EU e.g. Auricular Use
+                            FDA e.g. Auricular (OTIC)
+                            MHLW e.g. Otological Agent
+                            Health Canada e.g. OTIC
+                            E2B(M) e.g. Auricular (OTIC)
+            -   Where, within one region, two or more terms (e.g. a current term
+                and a historic non-current term) refer to the same route of
+                administration, these terms were specified in sequence and
+                separated by the symbol "/". The preferred or current term is
+                specified as the first term, e.g. ocular use/ophthalmic use for EU
+                or unknown/unassigned for the US.
+            -   A draft translation for the ICH M5 Routes of Administration
+                Controlled Vocabulary in Japanese has been included.
+
+
+   2.2.5 Units and Measurements Controlled Vocabulary
+
+Scope:
+         The Units and Measurements Controlled Vocabulary includes units and
+         measurements in use by the regulators in the ICH regions and observer
+         countries and defined in the ICH E2B(M) guideline (version 4.4.1
+         includes the Post Step 4 corrections agreed by the Steering Committee on
+         5 February 2001).
+
+General Conventions:
+         The International System of Units (SI) and the Units and Measurements
+         as described in the E2B(M) guideline, (version 4.4.1 includes the Post
+         Step 4 corrections agreed by the Steering Committee on 5 February 2001)
+         are followed in the ICH regions and observer countries. Additional, region
+         specific units are in use specifically regarding biological and
+         microbiological units.
+
+
+
+
+                                        12
+Methodology:
+                A comprehensive list of Units and Measurements has been collected and
+                includes:
+                        - International System of Units (SI)
+                        - Units and Measurements as described in the E2B(M)
+                          guideline1
+                        - Region specific units and measurements (CA, EU, JP, US)
+
+                Each unit and measurement is given an identifier, a description, a
+                symbol and relationships to other terms within the terminology.
+
+                Tasks undertaken include:
+                   - A term identifier is allocated to each unit and measurement (entry)
+                      in the list, enabling linkage with the original unit and
+                      measurement entries in the lists.
+                   - Within the list there is an indication of the provenance of the term
+                      (i.e. its source) and a formal definition from the source vocabulary
+                      is included, where appropriate.
+                   - Synonymous entries are identified and “annotated” e.g. %(v/v) and
+                      (v/v)%.
+                   - The mapping of Units and Measurements is based on the
+                      International System of Units (SI) and its abbreviations and
+                      definitions. The definitions of the SI base units refer to the NIST
+                      Special Publication 330 (SP 330).
+                   - Lower case has been used for the term description.
+                   - Exponents of symbols are not expressed in superscript format; e.g.
+                      the symbol ‘m2’ has been used for square meters.
+                   - Some important and widely used units outside the International
+                      System have been added with regard to biological and
+                      microbiological units. Descriptions of these units and their
+                      abbreviations were added as appropriate.
+
+
+2.3 Data Elements
+
+This chapter describes the data elements for the electronic transmission of a core
+set of medicinal product information.
+
+The data elements as presented in this guideline refer to the consolidated core data
+sets of medicinal products as defined in the scope of this guideline, chapter 1.3.
+
+These data elements are based on the regional standards already established by
+these regulators to support the local data collection process and do not replace or
+supersede the regional standards or legal requirements for data collection between
+the regulators and pharmaceutical companies.
+
+As a result, a medicinal product is characterized in the frame of this guideline as
+follows:
+
+          A Medicinal Product has:
+              o One and only one MedID
+              o One and only one Medicinal Product Name
+
+1
+    Version 4.4.1 includes the Post Step 4 corrections agreed by the Steering Committee on 5 February 2001
+
+
+                                                        13
+                    o    One and only one Marketing Authorization Holder
+                    o    One and only one Marketing Authorization (number)
+                    o    One or more Pharmaceutical Products
+
+               A Pharmaceutical Product has
+                   o One or more Active Ingredients with a specific strength (the same
+                      active ingredient with a different strength is considered a different
+                      pharmaceutical product)
+                   o One and only one Pharmaceutical Dose Form
+                   o One or more possible Routes of Administration
+
+In order to facilitate the understanding of the relationship of the d ata elements described in th is
+chapter, a conceptual model is included as follows:
+
+
+
+
+               Figure 1 - Conceptual Model of the ICH M5 MedID and Data Element Set
+
+
+     This conceptual model does not define the actual message specifications for the
+     exchange format of MedIDs and the related ICH M5 data elements.
+
+     The figure provides the relationship between the ICH M5 data elements and the
+     MedID.
+         All data elements are grouped as elements or attributes within a section.
+         A section defines a concept which is further described by its data elements or
+            attributes.
+         The data elements are flagged as Mandatory2 (M:) or Optional (O:).
+
+
+
+     2
+         The use of ‘Mandatory’ in the remainder of this document refers to technical and not legal requirements.
+
+
+                                                              14
+       The data elements for which the entry is strictly controlled by a list of values
+        (e.g. ISO Country Code 3166) or by the ICH M5 Controlled Vocabulary are in
+        italics.
+
+There are relationships between entities, with a specific cardinality.
+    The relationship with cardinality 1..1 means that, for example,                  a
+      Pharmaceutical Product has precisely one pharmaceutical dose form.
+    The relationship with cardinality 1..n means that, for example,                  a
+      Pharmaceutical Product has one or more Active Ingredients.
+
+Each section and each element of the ICH M5 data element set is described in the
+following paragraphs.
+
+As a general principle, it should be noted that depending on regional laws and
+regulations a formal marketing authorization might not be required for certain
+categories of medicinal products (e.g. certain OTC drugs, ‘grandfather’ drugs). For
+these medicinal products the same principles apply as for ‘authorised’ medicinal
+products.
+
+
+       2.3.1 Medicinal Product Identifier
+
+2.3.1.1       Medicinal Product Identifier (MedID)
+
+User Guidance:
+          The MedID as defined in chapter 2.1.1 of the medicinal product and as
+          presented in the ICH M5 data element set should be provided in this
+          field.
+          As a general rule, the MedID should be maintained in any re-
+Type:
+           Mandatory
+Example:
+           FR-123456-X
+           EU-EU/1/2342323/001-K
+           JP-123456789-Y
+           US-0123456789-Z
+          CA-2323232-V
+
+
+       2.3.2 Medicinal Product Administrative Section
+
+2.3.2.1       Medicinal Product Name
+
+Definition:
+                The name assigned to a medicinal product as approved by the
+                regulator of the country of authorization.
+
+User Guidance:
+                The naming of a medicinal product differs in the ICH regions and
+                observer countries.
+
+                The full and complete medicinal product name as approved by the
+                regulator of the country or territory of authorization and as
+
+
+                                           15
+               appearing on the package of the medicinal product, the container or
+               the package insert should be provided in this field.
+
+               For medicinal products which do not require prior marketing
+               authorization under regional law, the full and complete medicinal
+               product name as appearing on the package of the medicinal product,
+               the container or the package insert should be provided in this field.
+Synonyms:
+               Proprietary Medicinal Product Name (ICH E2B(M))
+               Name of the Medicinal Product
+               Product Name
+Type:
+               Mandatory
+Examples:
+               Lithium Carbonate liq. Paediatric Company D
+               ABC Tabs 500 Company B
+               Vinblastine Sulphate Injection Solution 10mg/ml
+               Tri-Product C Forte
+               Product X Oral Gel
+               BRANDX 100 U/ml Concentrate for solution for infusion-Intravenous
+               use Vial (glass) 5 ml (100 U/ml) 1 vial
+
+
+2.3.2.2       Medicinal Product Short Name
+
+Definition:
+               The medicinal product name without the trademark or the name of
+               the marketing authorization holder or any other descriptor (e.g.
+               strength, dosage form, user group, route of administration).
+User Guidance:
+               The name assigned to a medicinal product as approved by the
+               regulator of the country or territory of authorization, without the
+               trademark or the name of the marketing authorization holder or any
+               other descriptor should be provided in this field.
+
+               For medicinal products which do not require prior marketing
+               authorization under regional law, the medicinal product name
+               without the trademark or the name of the manufacturer/distributor
+               or any other descriptor should be provided in this field.
+Synonyms:
+               Trade Name
+               Brand Name
+               Scientific Name
+               Common Name
+               Invented Name
+Type:
+               Optional
+Example:
+               Lithium Carbonate
+               ABC
+               Vinblastine Sulphate
+               Tri-Product C
+               Product X
+
+
+                                         16
+            BRANDX
+
+
+
+    2.3.3 Marketing Authorization Holder/Manufacturer/Distributor
+          Section
+
+Definitions:
+           Marketing Authorization Holder (MAH)
+          Natural or legal person in possession of the marketing authorization or
+          license for a medicinal product within a given country/territory.
+
+          Manufacturer (MF)
+          Natural or legal person in possession of a license for manufacturing a
+          medicinal product within a given country/territory.
+
+          Distributor
+          Natural or legal person in possession of a license covering the
+          procuring, holding, supplying or exporting of medicinal products, apart
+          from supplying medicinal products to the public.
+          Such activities are carried out with manufacturers or their
+          depositories, importers, other wholesale distributors or with
+          pharmacists and persons authorized or entitled to supply medicinal
+          products to the public within a given country/territory.
+
+
+2.3.3.1   Name of the Marketing Authorization Holder or
+       Manufacturer or Distributor
+
+User Guidance:
+          The full and complete name of the marketing authorization holder of an
+          authorized medicinal product as appearing on the package of a
+          medicinal product, the container or the package insert should be
+          provided in this field.
+
+          For medicinal products which do not require prior marketing
+          authorization under regional law, the full and complete name of the
+          manufacturer/distributor, as appearing on the package, the container
+          or the package insert, should be provided in this field.
+Type:
+          Mandatory
+
+
+2.3.3.2     Marketing Authorization Holder or Manufacturer or
+       Distributor Identifier
+
+User Guidance:
+          The identifier assigned by a regulator of a region or observer country to
+          a marketing authorization holder for authorized medicinal products, or
+          to the manufacturer/distributor for medicinal products that do not
+          require prior marketing authorization, should be provided in this field.
+Type:
+
+
+
+                                       17
+              Optional
+
+
+2.3.3.3   Country of the Marketing Authorization Holder or
+       Manufacturer or Distributor
+
+User Guidance:
+              The two letter ISO 3166 country code of the country in which the
+              marketing authorization holder is located should be provided in this
+              field.
+
+              For medicinal products that do not require prior marketing
+              authorization under regional law, the two letter ISO 3166 country code
+              of the country in which the manufacturer/distributor is located should
+Type:
+              Mandatory
+
+
+    2.3.4 Marketing Authorization Section
+Definitions:
+              The marketing authorization information of the medicinal product as
+              granted by the regulator in the respective territory/country should be
+              provided.
+
+              For medicinal products that do not require prior marketing
+              authorization under regional law, the section should be completed as
+              specified.
+
+2.3.4.1       Marketing Authorization Number
+
+Definition:
+              The marketing authorization number of the medicinal product as
+              granted by the regulator in the respective territory/country.
+User Guidance:
+              The marketing authorization number of the medicinal product as
+              granted by the regulator in the respective territory/country should be
+              provided.
+
+              For medicinal products that do not require prior marketing
+              authorization under regional law, a unique identifier should be
+Synonyms:
+              Authorization Number
+              License Number
+              Identifier
+Type:
+              Mandatory
+
+
+2.3.4.2       Marketing Authorization Country
+
+Definition:
+               The marketing authorization country refers to the country/territory
+               in which the marketing authorization was granted by the regulator of
+
+
+                                          18
+               this country/territory.
+User Guidance:
+               The medicinal product authorization country for the medicinal
+               product should be provided as a two letter country code (ISO 3166).
+
+               For medicinal products in the United States and Japan the country
+               code will be set as default to US or JP. For centrally authorized
+               medicinal products in the European Union, the country code will be
+               set to EU.
+
+               For medicinal products that do not require prior marketing
+               authorization under regional law, the country of marketing should be
+               specified in this field.
+
+Synonyms:
+               Authorization Country
+               License Country
+Type:
+               Mandatory
+
+
+2.3.4.3       Marketing Authorization Date
+
+Definition:
+              The date on which the marketing authorization was granted by the
+              regulator of the respective country/territory.
+User Guidance:
+              The date on which the authorization for the medicinal product was
+              granted by the regulator should be provided in this field. A complete
+              date consisting of day, month and year should be specified.
+
+              For medicinal products that do not require prior marketing
+              authorization under regional law, a default date will be provided by the
+              regulator of the region in this field.
+Synonyms:
+              Authorization Date
+              License Date
+Type:
+              Mandatory
+
+2.3.4.4       Marketing Authorization Withdrawal Date
+
+Definition:
+               The date on which the authorization for the medicinal product was
+               withdrawn/revoked by the regulator of the country/territory or by the
+               marketing authorization holder/manufacturer/distributor, depending
+               on the regulatory requirements in the region or observer countries.
+User Guidance:
+               The date on which the authorization for the medicinal product was
+               withdrawn/revoked      by    the   regulator   of   the   respective
+               country/territory    or     by    the    marketing     authorization
+               holder/manufacturer/distributor should be provided in this field. A
+               complete date consisting of day, month and year should be specified.
+
+
+
+                                          19
+              For medicinal products that do not require prior marketing
+              authorization under regional law, this field is not applicable.
+
+              This information should be provided if applicable.
+
+Synonyms:
+              Withdrawal Date
+              License Withdrawal Date
+              Revocation Date
+Type:
+              Optional
+
+
+    2.3.5 Pharmaceutical Product Section
+
+Definition:
+            The pharmaceutical product section reflects the active ingredient(s),
+            strength(s),  pharmaceutical/dosage        form(s)   and routes    of
+            administration(s) that constitute a medicinal product.
+            A medicinal product can consist of one or several pharmaceutical
+            products, given to (or taken by) a patient with a therapeutic or
+User Guidance:
+            The Pharmaceutical Product Section is repeatable to allow for the entry
+            of each pharmaceutical product that constitutes the medicinal product.
+
+            The exact composition at the level of the active ingredient(s), the
+            strength of the ingredient(s), the pharmaceutical dose form and the
+            route(s) of administration should be provided for each pharmaceutical
+            product.
+            The majority of medicinal products contain only one pharmaceutical
+Examples:
+            Product A
+            consists of one pharmaceutical product as follows:
+
+                   Pharmaceutical Product:
+                   Active Ingredient: Acetaminophen
+                   Strength of the Active Ingredient: 500 mg
+                   Pharmaceutical/Dosage Form: Tablet
+                   Route of Administration: Oral Use
+
+
+
+
+                                        20
+                   Product Z ®
+                   consists of two tablets with different composition as follows:
+                          White tablet with Estradiol 2mg
+                          Pink tablet with Estradiol 2mg and Levonorgestrel 0.075mg
+
+                             Pharmaceutical Product 1:
+                             Active Ingredient: Estradiol
+                             Strength of the Active Ingredient: 2 mg
+                             Pharmaceutical/Dosage Form: Tablet
+                             Route of Administration: Oral Use
+
+                             Pharmaceutical Product 2:
+                             Active Ingredient: Estradiol
+                             Strength of the Active Ingredient: 2 mg
+                             Active Ingredient: Levonorgestrel
+                             Strength of the Active Ingredient: 0.075mg
+                             Pharmaceutical/Dosage Form: Tablet
+                             Route of Administration: Oral Use
+
+
+                   Product Combi ®3
+                   consists of two pharmaceutical products as follows:
+
+                             Pharmaceutical Product 1:
+                             Active Ingredient: Clotrimazole
+                             Strength of the Active Ingredient: 500 mg
+                             Pharmaceutical/Dosage Form: Pessary
+                             Route of Administration: Vaginal Use
+
+                          Pharmaceutical Product 2:
+                          Active Ingredient: Clotrimazole
+                          Strength of the Active Ingredient: 2% w/w
+                          Pharmaceutical/Dosage Form: Cream
+                   Route of Administration: Cutaneous Use
+
+
+         2.3.6 Active Ingredient(s) Section
+
+User Guidance:
+                   The active ingredient section is a repeatable section.
+
+                   If a pharmaceutical product contains more than one active ingredient,
+                   the section should be repeated for each active ingredient.
+Type:
+                   Mandatory
+
+
+2.3.6.1             Active Ingredient Term
+
+User Guidance:
+                   The active ingredient as reflected in the medicinal product labeling
+                   should be provided as a standard term in line with the ICH M5 Active
+
+3
+    This type of medicinal product is not available in Japan.
+
+
+                                                          21
+             Ingredients Controlled Vocabulary in this field.
+Type:
+             Mandatory
+
+
+2.3.6.2        Active Ingredient TermID
+
+User Guidance:
+             The ICH M5 Active Ingredients Controlled Vocabulary TermID for the
+             active ingredient term should be provided in this field.
+Type:
+             Mandatory
+
+2.3.6.3       Strength Section
+
+Definition:
+                The content of the active ingredient expressed quantitatively per
+                dosage unit, per unit of volume or per unit of weight, according to
+                the pharmaceutical dose form.
+User Guidance:
+                This section includes the strength of the active ingredient.
+Synonyms:
+                Concentration, Unit dose
+Type:
+                Mandatory
+Example:
+                Solid forms:
+                       the strength is defined as the amount of active ingredient per
+                unit dose;
+                Liquid ready-to-use preparations:
+                       the strength is identical to the concentration;
+                Powder for reconstitution, powder for oral solution, etc.:
+                       as a general principle, the strength is identical to the
+                concentration        after reconstitution to the volume recommended.
+
+
+2.3.6.3.1     Strength Type
+
+Definition:
+           Descriptor that specifies the strength type of the active ingredient of a medicinal
+           product.
+User Guidance:
+             For some medicinal products, the exact dose strength cannot be
+             indicated and is therefore expressed as a concentration range or as ‘not
+             greater than’ or as ‘not less than’ a particular value.
+
+             The following four descriptors are available to express the strength of
+             an active ingredient:
+
+             Equal:
+                The dose strength is indicated as a unique value in the ‘Strength
+                Value 1’ field.
+
+
+
+                                             22
+            Range:
+                If the strength is expressed as a range, the minimum value and the
+                maximum value of the dose strength are indicated in the ‘Strength
+                Value 1’ field and in the ‘Strength Value 2’ field.
+            Not greater than:
+                If the dose strength is expressed as “not greater than”, the
+            maximum       dose strength is indicated in the ‘Strength Value 1’ field.
+            Not less than:
+                If the dose strength is expressed as “not less than”, the minimum
+            dose strength is indicated in the ‘Strength Value 1’ field.
+
+            If the dose strength is expressed as a range where both an upper and
+            lower value are designated, and only one value can be provided, the
+            strength value should be specified in the field ‘Strength Value 1’.
+Type:
+            Mandatory
+
+
+2.3.6.3.2    Strength Value 1
+
+User Guidance:
+            The numeric value of the dose strength of the active ingredient as
+            specified in the medicinal product labeling should be indicated in this
+            field. For numeric values with decimal fractions, a full stop should be
+            used.
+            If the strength is expressed as a range, the minimum value of the dose
+            strength should be specified in the field ‘Strength Value 1’.
+            If the dose strength is expressed as a range where both an upper and
+            lower value is designated, and only one value can be provided, the
+Type:
+            Mandatory
+
+
+2.3.6.3.3    Strength Value 2
+
+User Guidance:
+            The numeric value of the dose strength of the active ingredient as
+            specified in the medicinal product labeling should be indicated in this
+            field. For numerical values with decimal fractions, a full stop should be
+            used.
+            If the strength is expressed as a range, the maximum value of the dose
+Type:
+            Optional
+
+
+2.3.6.3.4    Strength Unit Term
+
+User Guidance:
+            The strength unit symbol should be specified as the corresponding
+            descriptor of the ICH M5 Units and Measurements Controlled
+            Vocabulary.
+Type:
+
+
+                                         23
+            Mandatory
+
+
+2.3.6.3.5   Strength Unit TermID
+
+User Guidance:
+            The Unit and Measurement Controlled Vocabulary TermID of the
+            corresponding unit and measurement term should be provided in this
+Type:
+            Mandatory
+
+
+2.3.6.3.6   Strength Description
+
+User Guidance:
+          This free text field can be used to describe a concentration range for
+            some medicinal products where the exact dose strength cannot be
+            structured in the Strength Section.
+Type:
+            Optional
+
+    2.3.7 Pharmaceutical Dose Form Section
+
+User Guidance:
+            This section refers to the pharmaceutical dose form. Each
+            pharmaceutical product can have only one pharmaceutical dose form.
+            Therefore, this section is not repeatable.
+
+
+
+2.3.7.1     Pharmaceutical Dose Form Term
+
+User Guidance:
+              The pharmaceutical dose form as reflected in the medicinal product
+              labeling should be provided as standard term in line with the ICH M5
+              Pharmaceutical Dose Form Controlled Vocabulary in this field.
+
+Synonyms:
+              Pharmaceutical Form E2B(M)
+              Dosage Form E2B(M)
+Type:
+              Mandatory
+
+
+2.3.7.2     Pharmaceutical Dose Form TermID
+
+User Guidance:
+            The ICH M5 Pharmaceutical Dose Form Controlled Vocabulary TermID
+            of the corresponding pharmaceutical dose form term should be
+            provided in this field.
+
+Type:
+            Mandatory
+
+
+                                       24
+     2.3.8 Route of Administration Section
+
+User Guidance:
+            This section refers to the route(s) of administration of the
+            pharmaceutical product. The route of administration section is a
+            repeatable section.
+
+2.3.8.1       Route(s) of Administration Term
+
+User Guidance:
+            The route of administration as reflected in the medicinal product
+            labeling should be provided as standard term in line with the ICH M5
+            Route of Administrations Controlled Vocabulary in this field.
+Type:
+            Mandatory
+
+
+2.3.8.2       Route of Administration TermID
+
+User Guidance:
+          The ICH M5 Routes of Administration Controlled Vocabulary TermID of the
+          corresponding pharmaceutical dose form term should be provided in this field.
+Type:
+            Mandatory
+
+
+     2.3.9 Maintenance Section
+
+User Guidance:
+              This section contains information related to the maintenance of
+              MedIDs and the medicinal product information as specified in the ICH
+              M5 data element set.
+
+2.3.9.1       Maintenance Operator
+
+Definition:
+              The maintenance operator:
+                  Refers to the ICH M5 data element set for a specific medicinal
+                   product and to the MedID assigned by the regulator for that
+                   product
+                  Specifies the operation type regarding the ICH M5 data element
+                   set and the MedID for a specific medicinal product.
+
+              Three types of maintenance operators are available:
+                  New
+                     This operator applies for the initial transmission of the MedID
+                 and       the related ICH M5 data elements for a specific medicinal
+                     product.
+
+                    Update
+                     This operator applies for the transmission of the MedID and the
+                     related ICH M5 data elements for a specific medicinal product,
+                     when previously transmitted information needs to be updated.
+
+                    Nullify
+
+
+                                          25
+                     This operator applies for the transmission of the MedID and the
+                     related ICH M5 data elements for a specific medicinal product,
+                     when previously transmitted information needs to be nullified.
+User Guidance:
+                    As a general principle, the complete information available for a
+                     medicinal product in line with the ICH M5 data element set
+                     should be provided for any maintenance operator i.e. New,
+                     Update and Nullify.
+
+                    The maintenance operator ‘New’ should be used in line with the
+                     assignment of the MedID. Every time a new MedID is assigned
+                     by a regulator in a country/territory the full information of the
+                     medicinal product with the corresponding MedID and the
+                     complete ICH M5 data element set should be transmitted with
+                     the maintenance operator set to New.
+                     In this case the status of the MedID and the complete ICH M5
+                     data element set is ‘Current’.
+
+                    The maintenance operator ‘Update’ should be used any time
+                     any information related to the ICH M5 data element set needs to
+                     be updated for an existing MedID.
+                     In this case the status of the most recently transmitted ICH M5
+                     data element set for the MedID is ‘Current’.
+                     The status of the previous ICH M5 data element set(s) is
+                     ‘Replaced’.
+
+                     The maintenance operator ‘Nullify’ should be used if an existing
+                      MedID and any of the related ICH M5 data elements are void or
+                      erroneous and need to be deleted.
+                      In particular the maintenance operator ‘Nullify’ should be used
+                 if a        MedID previously reported is wrong.
+              The status of the MedID and the ICH M5 data element set is ‘Nullified’
+Type:
+               Mandatory
+
+2.3.9.2       Operation Date
+
+Definition:
+              The date at which the maintenance operation is effective.
+User Guidance:
+               The operation date should be specified for any transmission of a
+               MedID and the related ICH M5 data element set including the
+               applicable maintenance operator.
+               Based on the maintenance operator and the operation date, the
+               status of each MedID and the related ICH M5 data element set can
+               be maintained i.e. entries can be flagged as ‘Current’, ‘Replaced’ or
+Type:
+               Mandatory
+
+
+2.3.9.3       Operation Comments
+
+User Guidance:
+
+
+                                          26
+              Comments on the maintenance operator can be provided, e.g. the
+              reason for an update or a nullification of a MedID and the ICH M5
+              data element set.
+ Type:
+              Optional
+
+
+
+
+3. GLOSSARY
+    This glossary defines the way in which certain terms are used for the purpose of
+    the guideline and for which no specific definition has been provided within the
+    guideline itself.
+
+    In addition this glossary provides an overview of acronyms used throughout the
+    document.
+
+
+
+                               Glossary of Terms
+    Medicinal Product Package
+
+    Definition:
+          Delivery unit of a medicinal product in an outer container.
+    Synonyms:
+          Package presentation
+
+
+    Country or Territory
+
+    Definition:
+          A country or territory is defined as geographical, political or
+          economic area.
+
+
+
+
+                                     Acronyms
+    CA
+           Canada
+    CAS
+           Chemical Abstract Service Number
+    EMEA
+           European Medicines Agency, EU
+    EU
+           European Union
+    FDA
+           Food and Drug Administration, US
+    HL7
+           Health Level 7
+    ICH
+           International Conference on Harmonisation of Technical Requirements
+           for Registration of Pharmaceuticals for Human Use
+
+
+
+                                          27
+ICH M5 EWG
+      International Conference on Harmonization of Technical Requirements
+      for Registration of Pharmaceuticals for Human Use M5 Data Elements
+      and Standards for Drug Dictionaries Expert Working Group
+ICH E2B (M)
+      International Conference on Harmonization of Technical Requirements
+      for Registration of Pharmaceuticals for Human Use E2B(M): Clinical
+      Data Management: Data Elements for Transmission of Individual Case
+      Safety Reports
+INN
+      International Non-proprietary Name
+ISO
+      International Organization for Standardization
+IUPAC
+      International Union of Pure and Applied Chemistry
+JAN
+      Japanese Accepted Name
+JP
+      Japan
+MAH
+      Marketing Authorization Holder
+MedID
+      Medicinal Product Identifier
+MF
+      Manufacturer
+MHLW
+      Ministry of Health, Labour and Welfare, Japan
+NDC
+      National Drug Code
+NIST
+      National Institute of Standards and Technology
+OTC
+      Over the Counter
+PhPID
+      Pharmaceutical Product Identifier
+SI
+      International System of Units
+TermID
+      Terminology Identifier of the ICH M5 controlled Vocabulary
+US
+      United States
+USAN
+      United States Adopted Name
+USP
+      United States Pharmacopoeia
+
+
+
+
+                                  28
+4. REFERENCES
+
+ Canada
+      The Food and Drugs Act and Regulations and related Health Canada
+      Guidelines:
+      http://www.hc-sc.gc.ca/hpfb-dgpsa/tpd-dpt/index_e.html
+      :
+      The Natural Health Product Regulations and related Health Canada
+      Guidelines:
+      http://www.hc-sc.gc.ca/hpfb-dgpsa/nhpd-dpsn/index_e.html
+
+
+
+ European Union
+      Directive 2001/83/EC of the European Parliament and of the Council of 6
+      November 2001 on the Community code relating to medicinal products for
+      human use (Official Journal L 311, 28/11/2001 p. 67 - 128)
+      http://pharmacos.eudra.org/F2/eudralex/vol­
+      1/DIR_2001_83/DIR_2001_83_EN.pdf
+
+      Directive 2004/24/EC of the European Parliament and of the Council of
+      31 March 2004 amending, as regards traditional herbal medicinal
+      products, Directive 2001/83/EC on the Community code relating to
+      medicinal products for human use (Official Journal L 136, 30/4/2004, p.
+      85 - 90).
+      http://pharmacos.eudra.org/F2/eudralex/vol­
+      1/DIR_2004_24/DIR_2004_24_EN.pdf
+
+      Consolidated Directive 2001/83/EC of the European Parliament and of
+      the Council of 6 November 2001 on the Community code relating to
+      medicinal products for human use as amended by Directive 2002/98/EC,
+      Directive 2004/24/EC and Directive 2004/27/EC)
+      http://pharmacos.eudra.org/F2/eudralex/vol­
+      1/CONSOL_2004/Human%20Code.pdf
+
+      Notice to Applicants Volume 2 A, Medicinal Products for Human Use,
+      Version 2 - December 2004
+      http://pharmacos.eudra.org/F2/eudralex/vol-2/home.htm
+
+      A Guideline on Summary of Product Characteristics, December 1999,
+      (Doc. Ref. Notice to Applicants, Final – revision 0)
+      http://pharmacos.eudra.org/F2/eudralex/vol-2/C/SPCGuidRev0-Dec99.pdf
+
+      Guideline on Pharmaceutical Aspects of the Product Information for
+      Human      Vaccines,    26     November     2003     (Doc.    Ref.
+      EMEA/CPMP/BWP/2758/02)
+      http://www.emea.eu.int/pdfs/human/bwp/275802en.pdf
+
+      Guideline on the Acceptability of Invented Names for Human Medicinal
+      Products Processed through the Centralized Procedure, London, 14
+      September 2004 (Doc. Ref. CPMP/328/98, Revision 4)
+      http://www.emea.eu.int/pdfs/human/regaffair/032898r4en.pdf
+
+
+
+
+                                        29
+        Guideline on the Chemistry of new Active Substances, 17 December 2003
+        (Doc. Ref. CPMP/QWP/130/96 Rev. 1)
+        http://www.emea.eu.int/pdfs/human/qwp/013096en.pdf
+
+        Standard Terms: Dosage Forms, Routes of Administration and Containers,
+        EDQM, Fifth Edition, December 2004, Version 5.0.0
+        http://st.pheur.org/entry.htm
+        EudraVigilance Medicinal Product Dictionary (EVMPD) Version 2.0
+        Technical Specifications, 9 November 2004 (Doc. Ref.
+        EMEA/140190/2004)
+        http://eudravigilance.emea.eu.int/human/docs/EVMPD%20Technical%2
+        0Specifications.pdf
+
+        EudraVigilance Medicinal Product Dictionary (EVMPD) Version 2.0
+        Message and Acknowledgement Specifications, 8 December 2004 (Doc.
+        Ref. EMEA/178966/2004)
+        http://eudravigilance.emea.eu.int/human/docs/EVMPD%20Message%20
+        and%20%20Acknowledgement%20Description.pdf
+
+        EudraVigilance (EV) Access simple Database Version 2.0 8 November 2004
+        (Doc. Ref: EMEA/140327/2004)
+        http://eudravigilance.emea.eu.int/human/docs/EV%20Access%20Simple
+        %20Database%202.0%20-%20Tables%20Documentation.pdf
+
+        EudraVigilance (EV) Access Simple Database Version 2.0 Forms
+        Documentation, 31 January 2005, (Doc. Ref: EMEA/35416/2005)
+        http://eudravigilance.emea.eu.int/human/docs/EVAccessSimple%20Dat
+        abase_v20_Formsdocumentation.pdf
+
+        EudraVigilance (EV) Access Simple Database Version 2.0 Step by Step
+        Guide
+        8 December 2004, (Doc. Ref: EMEA/191986/2004)
+        http://eudravigilance.emea.eu.int/human/docs/EV%20Access%20Simple
+        %20Database%202.0%20-%20Step%20by%20Step%20Guide.pdF
+
+Japan
+        Japanese Pharmacopoeia, Fourteenth Edition, Part 1, General Rules For
+        Preparation
+        http://jpdb.nihs.go.jp/jp14e/14data/General_Rules_for_Prepart1.pdf
+
+
+United States
+        Guidance for Industry Providing Regulatory Submissions in Electronic
+        Format — Content of Labeling
+        http://www.fda.gov/cder/regulatory/guidance
+
+        Release Notes for SPL Schema PORR_MT050020 (3.20.05)
+        FDA SPL Schema for Implementation
+        http://www.fda.gov/oc/datacouncil/spl.html
+
+        CaCore 2.0 Technical Guide, National Cancer Institute, Center for
+        Bioinformatics, U.S. Department of Health and Human Services
+        ftp://ftp1.nci.nih.gov/pub/cacore/caCORE2.0_Tech_Guide.pdf
+
+        A guide to RXNorm, United States National Library of Medicine, National
+
+
+
+                                         30
+Institute of Health
+http://www.nlm.nih.gov/research/umls/rxnorm_guide.pdf
+
+
+
+
+                                31
+
