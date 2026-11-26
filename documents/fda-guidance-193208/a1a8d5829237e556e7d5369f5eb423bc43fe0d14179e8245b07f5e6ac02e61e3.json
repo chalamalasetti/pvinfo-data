@@ -1,0 +1,292 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-193208",
+  "metadata": {
+    "title": "Submitting Clinical Trial Datasets to Evaluate the Impact of Immunogenicity on the Pharmacokinetics of a Drug",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 06/18/2026 · Docket FDA-2017-D-6821",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Drugs",
+    "published_on": "2026-06-18",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/193208/download",
+  "original_sha256": "809876d97da33a7efe694c1daa871de5d8e3e1f9919270cc61865983f141a7ba",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 32,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-5-paragraph-8",
+      "statement": "Some variables may not be appropriate for all clinical trials. If a sponsor’s trial did not collect the data necessary to create a specified variable, then it is acceptable to omit the variable in the datasets. It is acceptable to include additional variables to capture information about the study design, the immunogenicity results, etc. when needed. Variables that have been omitted or added should be documented in the Define.xml file and itemized in the Analysis Data Reviewer Guide as a separate table.",
+      "context": "2.0 OVERVIEW OF THE DATASET SPECIFICATION The sections below describe the desired content of the datasets, ADIS, ADPC, and ADSL. The variable names and associated metadata are based on current Clinical Data Interchange Standards Consortium (CDISC) 6 standards for Study Data Tabulation Model (SDTM) and Analysis Data Model (ADaM), where possible. Each specification includes a column (i.e., the Comment column) that contains information about the variables, such as the expected content, derivation considerations, or assumptions. If any variable is unclear, sponsors are encouraged to discuss expectations with the FDA via the applicable review division. 6 See https://www.cdisc.org/ .",
+      "fingerprint": "60c6341580ce2f5114d6db5534425491967d918d28ad47d1168fafc188b8000f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-6-paragraph-1",
+      "statement": "Sponsors should also submit programs that were used to create these datasets (see technical specification document Study Data Technical Conformance Guide (March 2026), section 4.1.2.10). Consistency in controlled terminology across SDTM and ADaM as well as across ADaM datasets is important to facilitate traceability and support analyses. Use of standard controlled terminology is preferred where applicable (e.g., Medical Dictionary for Regulatory Activities (MedDRA), CDISC-controlled terminology). For variables without standard controlled terminology, where appropriate and to the degree possible, sponsor-defined controlled terminology should also be consistent across SDTM and ADaM datasets.",
+      "context": "6 See https://www.cdisc.org/ . The ability to efficiently analyze or trace data can depend on the use of consistent controlled terminology across datasets. For this reason, the specifications explicitly identify certain parameters and variables where consistent controlled terminology across datasets is expected.",
+      "fingerprint": "4ca3ac76412a7d722a54eff23601610d97d274195c3fc816c5c243105088777c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-6-paragraph-3",
+      "statement": "For example, to support analyses, the sponsor-defined controlled terminology for variables such as AVISIT, ATPT, and others should be consistent across ADIS and ADPC or, to support traceability between SDTM and ADaM, the value of PARAM in ADIS should be equivalent to the value of the corresponding ISTEST for parameters that are not derived. In all cases, the variable labels and the variable type noted in the specifications should be used.",
+      "context": "The ability to efficiently analyze or trace data can depend on the use of consistent controlled terminology across datasets. For this reason, the specifications explicitly identify certain parameters and variables where consistent controlled terminology across datasets is expected. 3.0 DESCRIPTION OF ANALYSIS VARIABLES AND DATA SPECIFICATIONS",
+      "fingerprint": "487cd0430aea1b3cb6a7f1d6bd010e8313b52798991b193cfef5471d722bc0ac",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-6-paragraph-6",
+      "statement": "Each test type for the ISTEST variable with the test details (ISTSTDTL or ISTSTOPO) in the IS dataset should be represented under the PARAM variable in the ADIS dataset. Examples of PARAM variables are “ADA screening,” 7 “ADA confirmatory,” “ADA titer,” “neutralizing antibodies,” and “neutralizing antibodies titer.” Under the PARAM variable, “ADA conclusion” is an additional parameter recommended for reporting the ADA status of each sample. Each immunogenicity test result described under the ISTRESC variable in the IS dataset should be represented under the AVALC variable in the ADIS dataset. Examples of AVALC variables may include character strings (e.g., such as “negative,” “positive,” “missing,” or floating text (e.g., for “ADA titer” and “neutralizing antibody titer”)). Each numerical result of the immunogenicity test described in the ISTRESN variable in the IS dataset should be represented under the AVAL variable in the ADIS dataset.",
+      "context": "3.1 Analysis Dataset of Immunogenicity Specimen The ADIS contains one record per subject per parameter per time point and provides a comprehensive set of variables pertaining to the subject and their antidrug antibody (ADA) measures. This dataset is based on the ADaM Basic Data Structure (BDS) and derived from Immunogenicity Specimen Assessments (IS) domain described in the SDTMIG v3.4 of the CDISC. Each immunogenicity specimen (sample) should have a final ADA status based on the results from “ADA screening” and “ADA confirmatory” tests. The final ADA status should be reported",
+      "fingerprint": "7ad8c9e58c610ac65ef0dfd105b060fe2197ce15750545483476e58820c2ca26",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-6-paragraph-7",
+      "statement": "Each immunogenicity specimen (sample) should have a final ADA status based on the results from “ADA screening” and “ADA confirmatory” tests. The final ADA status should be reported",
+      "context": "Each test type for the ISTEST variable with the test details (ISTSTDTL or ISTSTOPO) in the IS dataset should be represented under the PARAM variable in the ADIS dataset. Examples of PARAM variables are “ADA screening,” 7 “ADA confirmatory,” “ADA titer,” “neutralizing antibodies,” and “neutralizing antibodies titer.” Under the PARAM variable, “ADA conclusion” is an additional parameter recommended for reporting the ADA status of each sample. Each immunogenicity test result described under the ISTRESC variable in the IS dataset should be represented under the AVALC variable in the ADIS dataset. Examples of AVALC variables may include character strings (e.g., such as “negative,” “positive,” “missing,” or floating text (e.g., for “ADA titer” and “neutralizing antibody titer”)). Each numerical result of the immunogenicity test described in the ISTRESN variable in the IS dataset should be repr",
+      "fingerprint": "75206ce9484acd8ef77520b940718e558a0e3d17e02883b01120b760c49c6181",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-7-paragraph-1",
+      "statement": "as “ADA conclusion.” See Table 1 for the proposed definition for “ADA conclusion” which aligns with the whitepaper by Shankar et al. 8 Each “ADA screening” result should have an associated “ADA conclusion” result, therefore, the total number of samples with “ADA conclusion” status should be the same as the total number of samples with “ADA screening” status. The output of “ADA conclusion,” AVALC, should take only a definitive value in floating text of either “negative” or “positive” when the assay has an adequate drug tolerance relative to the drug concentration. If the assay drug tolerance is not adequate, the AVALC value should be reported as “inconclusive.” The “ADA conclusion” output should not contain numerical results, but rather, “blank,” “NA,” etc. If the “ADA conclusion” output cannot be determined, the AVALC value should be reported as “missing,” and the reason should be provided under the ISSTAT variable. The ADA status reported in the “ADA conclusion” will be used to assess the impact of ADA on pharmacokinetics. When it is necessary to provide further details of a positive finding for “ADA conclusion,” a derived character variable (AVALC2) may be used. See Table",
+      "context": "7 Quotation marks are used in this guidance to indicate that the enclosed text represents the exact character result or test type values, as opposed to a description or characterization. See AVALC and PARAM entries in Table 1. 1 for potential utility of AVALC2. The variable ADASUBJ in the dataset is for reporting subject-level ADA status, which is derived from the status of all ADA samples. Typically, each subject would have the same value for this variable at all visits (e.g., ADA negative, ADA positive, ADA inconclusive), unless otherwise called for by specific study design features. Definition of the ADASUBJ results (i.e., the derivation of ADASUBJ from the “ADA conclusion” results of all ADA samples of each subject) should be provided in the Define.xml file. For example, the definition of the ADASUBJ results can be one of the following:",
+      "fingerprint": "fd93f33f9c7429bb2902188691b3b16d0efefd5f475c72d75c1613c31fafca69",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-7-paragraph-2",
+      "statement": "1 for potential utility of AVALC2. The variable ADASUBJ in the dataset is for reporting subject-level ADA status, which is derived from the status of all ADA samples. Typically, each subject would have the same value for this variable at all visits (e.g., ADA negative, ADA positive, ADA inconclusive), unless otherwise called for by specific study design features. Definition of the ADASUBJ results (i.e., the derivation of ADASUBJ from the “ADA conclusion” results of all ADA samples of each subject) should be provided in the Define.xml file. For example, the definition of the ADASUBJ results can be one of the following:",
+      "context": "as “ADA conclusion.” See Table 1 for the proposed definition for “ADA conclusion” which aligns with the whitepaper by Shankar et al. 8 Each “ADA screening” result should have an associated “ADA conclusion” result, therefore, the total number of samples with “ADA conclusion” status should be the same as the total number of samples with “ADA screening” status. The output of “ADA conclusion,” AVALC, should take only a definitive value in floating text of either “negative” or “positive” when the assay has an adequate drug tolerance relative to the drug concentration. If the assay drug tolerance is not adequate, the AVALC value should be reported as “inconclusive.” The “ADA conclusion” output should not contain numerical results, but rather, “blank,” “NA,” etc. If the “ADA conclusion” output cannot be determined, the AVALC value should be reported as “missing,” and the reason should be provid",
+      "fingerprint": "9b2cc2fafc2405b8448ea2c0317bb50a263c0b7853673cde58eaed42fa9c2a02",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-8-paragraph-3",
+      "statement": "AVISIT Analysis Visit Char Derived. Data source is SDTM.IS.VISIT. Protocol-defined description of a clinical encounter. It should be coded consistently to allow the mapping of time-matched measures between ADIS and ADPC datasets.",
+      "context": "USUBJID Unique Subject Identifier Char Unique identifier for a subject across all studies for all applications or submission involving the products. For example, AVISIT may be described as a protocol visit number, a treatment cycle number and day number, or any other character value logically related to a clinical encounter.",
+      "fingerprint": "f1aa359a55f40e19e0d51add31aaaf9e19be1d6918600a16df12dd950c801adc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-8-paragraph-6",
+      "statement": "Numeric version of AVISIT that represents the time point associated with the visit. The value should be unique for each AVISIT. It helps with the plotting and interpretation of the values.",
+      "context": "AVISITN Analysis Visit N Num Derived. Data source is SDTM.IS.VISITNUM. ADY Study Day of Visit/ Collection Time Num Derived. Data source is SDTM.IS.ISDY.",
+      "fingerprint": "6f2b311a3aee91575a7d684337a776179fa79ce4fd1e0fc391b8827078a3f1e4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-8-paragraph-9",
+      "statement": "ATPT Analysis Time Point Char Derived. Data source is SDTM.IS.ISTPT. ADIS.ATPT and ADPC.ATPT should be coded in a consistent fashion.",
+      "context": "Actual study day of visit/collection/exam expressed in integer days relative to sponsor- defined Subject Reference Start Date/Time (RFSTDTC) in Demographics. ATPTN Analysis Time Point N Num ATPTN provides a numeric representation of ATPT. Defining ATPTN so that its values represent the planned time point in a consistent unit. It helps with the plotting and interpretation of values. ATPTN should have a one-to-one relationship with ATPT.",
+      "fingerprint": "42204d7e5ba1f2d67e3911c331dc24ec69460c68e7c3d3c865a87630129ab671",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-8-paragraph-10",
+      "statement": "ATPTN Analysis Time Point N Num ATPTN provides a numeric representation of ATPT. Defining ATPTN so that its values represent the planned time point in a consistent unit. It helps with the plotting and interpretation of values. ATPTN should have a one-to-one relationship with ATPT.",
+      "context": "ATPT Analysis Time Point Char Derived. Data source is SDTM.IS.ISTPT. ADIS.ATPT and ADPC.ATPT should be coded in a consistent fashion. ISDTC Date/Time of Collection Char Derived. Data source is SDTM.IS.ISDTC.",
+      "fingerprint": "5df181333989346fa697b7deaf10c06189056479b9507ebe5a035c4aa1b82386",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-9-paragraph-6",
+      "statement": "PARAMCD Parameter Code: Immunogenicity Test/ Exam Short name Char Derived. The base data source is SDTM.IS.ISTESTCD. The assignment of PARAMCD should consider SDTM.IS.ISTSTDTL or SDTM.IS.ISTSTOPO.",
+      "context": "“ADA conclusion” is further derived from the combined results of “ADA screening,” and “ADA confirmatory.” See AVALC for additional description. Each PARAM should have a unique PARAMCD. PARAMCD should be abbreviated up to a maximum length of 8 characters.",
+      "fingerprint": "cf4de9e6e860db3255c6d2de59b522e1bdaee461fc6b70bb473077b775c88803",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-9-paragraph-7",
+      "statement": "Each PARAM should have a unique PARAMCD. PARAMCD should be abbreviated up to a maximum length of 8 characters.",
+      "context": "PARAMCD Parameter Code: Immunogenicity Test/ Exam Short name Char Derived. The base data source is SDTM.IS.ISTESTCD. The assignment of PARAMCD should consider SDTM.IS.ISTSTDTL or SDTM.IS.ISTSTOPO.",
+      "fingerprint": "4b5a02eac09ab9e3c8c1f04fad4eb07d94251e54a99f4b98685a8e4b0b8252ea",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-10-paragraph-5",
+      "statement": "The preferred response can be “positive” or “negative” or “inconclusive” (for “ADA screening,” “ADA confirmatory,” “ADA conclusion,” and “neutralizing antibodies”), or titer value (for “ADA titer” and “neutralizing antibodies titer”). The reason for an inconclusive result should be explained in the Define.xml file.",
+      "context": "Character result is in the standard format for reporting the immunogenicity test results under PARAM. “ADA conclusion” is assigned “positive” or “negative” or “inconclusive” based on the combined results of “ADA screening” and “ADA confirmatory.” (See Appendix section for an example derivation of “ADA conclusion.”) AVALU Standard Units of Analysis Value Char Derived. Data source is SDTM.IS.ISSTRESU.",
+      "fingerprint": "025dd4a7662ac9f09320c8b6550fd838f9acf56b54536c62c389592bfa324752",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-10-paragraph-7",
+      "statement": "These are standardized units for AVAL and AVALC and should have the same value as those used for ISSTRESC and ISSTRESN.",
+      "context": "“ADA conclusion” is assigned “positive” or “negative” or “inconclusive” based on the combined results of “ADA screening” and “ADA confirmatory.” (See Appendix section for an example derivation of “ADA conclusion.”) AVALU Standard Units of Analysis Value Char Derived. Data source is SDTM.IS.ISSTRESU. PKADAFL IS Matching Pharmacokinetic Flag Char Populate with “Y” if there is a matching nominal pharmacokinetic sample time point for the nominal IS time point (e.g., if there are time-matched pharmacokinetic measures in ADPC) or null otherwise.",
+      "fingerprint": "86be38f936bf55ccb210e4eaaf06b5fd1a1ad986a0a84388d512c7e15a5823a2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-11-paragraph-1",
+      "statement": "Table 1, Continued Variable Name Variable Label Type Comments AVALC2 Analysis Value (C) for sample ADA status relative to baseline ADA sample Derived character variable. The purpose of this variable is to describe whether a post-dose ADA sample with “ADA conclusion = positive” in AVALC variable belongs to the category of either “treatment-induced ADA” or “treatment-boosted ADA” or “ADA negative.” Another categorization could be “treatment-emergent ADA” (for “treatment- induced ADA” and “treatment-boosted ADA” combined) or “non-treatment-emergent ADA” (for samples with “ADA confirmatory = positive” without an increase in ADA titer from baseline greater than the prespecified magnitude). A definition of these results categories should be provided in the Define.xml file.",
+      "context": "When a post-dose ADA sample has an ADA conclusion of “negative” or “inconclusive” in AVALC variable, AVALC2 will take the same value as AVALC.",
+      "fingerprint": "fd75e2fe6ac6f12547d145ccb3a99ef44a231ba6213bfb5bf57e1763d4fead1b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-11-paragraph-3",
+      "statement": "ADASUBJ Subject level Char Derived character variable as an indicator of subject-level ADA status; possible results could be “ADA negative,” “ADA positive,” “ADA inconclusive,” or “not evaluable.” Typically, each subject would have the same value for this variable at all visits, unless otherwise called for by specific study design features. A definition of these results categories should be provided in the Define.xml file.",
+      "context": "When a post-dose ADA sample has an ADA conclusion of “negative” or “inconclusive” in AVALC variable, AVALC2 will take the same value as AVALC. ABLFL ADA Baseline Record Flag Derived. Data source is SDTM.IS.ISBLFL.",
+      "fingerprint": "b96f33284f0fc30afe7b98f79e5f8a4d8704f5d518431727722c92d65da7a65b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-11-paragraph-5",
+      "statement": "Indicator used to identify a baseline value. Should be \"Y\" or null. ISNAM Vendor name Char Derived. Data source is SDTM.IS.ISNAM.",
+      "context": "ABLFL ADA Baseline Record Flag Derived. Data source is SDTM.IS.ISBLFL. Name or identifier of the laboratory or vendor who provided the test results.",
+      "fingerprint": "6738a8fcd9d29e55b859c89179101fd518a5f43956f6f7b16ae61ed981027877",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-12-paragraph-4",
+      "statement": "TRTPN Planned Treatment N Num The numeric code for TRTP. One-to-one mapping within ADIS to TRTP. The mapping should be the same in ADIS and ADPC.",
+      "context": "Method of the test or examination. TRTP Planned Treatment Char Planned treatment arm. TRTSEQP Planned Sequence of Treatments Char Planned sequence of treatments.",
+      "fingerprint": "ae8784d832dd10df6ac77f2204e8d3ef5c741eeb73655c8995820f38ea269e35",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-12-paragraph-7",
+      "statement": "One-to-one mapping within ADIS to TRTA. The mapping should be the same in ADIS and ADPC.",
+      "context": "TRTA Actual Treatment Char Actual treatment arm. TRTAN Actual Treatment N Num The numeric code for TRTA. TRTSEQA Actual Sequence of Treatments Char Actual sequence of treatments.",
+      "fingerprint": "6c144a84b8c391439159bf77e1d7ad0fabde654621e93b50de3443efb34f1259",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-13-paragraph-1",
+      "statement": "Table 1, Continued Variable Name Variable Label Type Comments PARCAT Parameter Category Char Used to group parameters into categories and must have a one-to-many relationship with PARAM. This variable enables multiple groupings of PARAM. Multiple PARCATs, like PARCAT1, PARCAT2, etc., can be created to align with various grouping as needed. It should be defined based on a thorough review of all parameters and the intended analysis grouping.",
+      "context": "Used to define a category of topic variable values across subjects. Continued For example, PARCAT can be the name of the analyte, e.g., ADA against the drug and ADA against a specific component of the drug.",
+      "fingerprint": "5cf0c287367a40be912dc4acc461d757ab4b83e417bdd39dc478357cbf96c58e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-13-paragraph-4",
+      "statement": "The ADaM-compliant ADPC dataset allows for an analysis of changes in concentration over time. The information, combined with immunogenicity information in the ADIS dataset, allows for stratification to inform the impact of immunogenicity on a drug’s pharmacokinetics. Thus, to allow for proper mapping of time-matched pharmacokinetics and IS rows, the time variables presented in both ADIS and ADPC (e.g., AVISIT) should be coded consistently. The variables and specific derivations from the standard ADaM-compliant ADPC dataset are described in Table 2.",
+      "context": "3.2 Analysis Dataset for Pharmacokinetic Concentrations The ADPC contains one record per subject per pharmacokinetic concentration per time point and provides a comprehensive set of variables pertaining to the subject and their quantitative pharmacokinetic measures. This dataset is based on the ADaM BDS and derived from Pharmacokinetics Concentration (PC) domain described in the SDTMIG v3.4 of CDISC. Table 2. Analysis variables metadata for ADPC Variable Name Variable Label Type Comments STUDYID Study Identifier Char Unique identifier for a study.",
+      "fingerprint": "d0cd345fa2a4233cf9a134ca5cd7f8058dd2508d460134130deaee2fec9a920e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-14-paragraph-1",
+      "statement": "Table 2, Continued Variable Name Variable Label Type Comments AVISIT Analysis Visit Char Derived. Data source is SDTM.PC.VISIT. Protocol-defined description of a clinical encounter. It should be coded consistently to allow the mapping of time-matched measures.",
+      "context": "AVISITN Analysis Visit N Num Derived. Data source is SDTM.PC.VISITNUM.",
+      "fingerprint": "4cb77d934e55a81a56d67a0f9a94a8e4fb9fbb5e6027569251c4e0263d3281fd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-14-paragraph-8",
+      "statement": "ATPT Analysis Planned PC Time Point Char Derived. Data source is SDTM.PC.PCTPT. Text description of the time when specimen should be taken. This could be represented as an elapsed time of last dose. Examples:",
+      "context": "Alternatively, AVISITN may be a protocol visit number, a cycle number, an analysis visit number, or any other number logically related to AVISIT or useful for sorting that is needed for analysis (see ADaM Implementation Guide, (ADaM IG)). “start,” “5 min post.” IS. ISTPT and PC. PCTPT and the corresponding ADIS.ATPT and ADPC.ATPT should be coded in a consistent fashion so mapping of time-matched measures can be performed.",
+      "fingerprint": "6ba153192dfd52b0940143d419fbb5b9aa8a22823832028655ea9d70a3258029",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-14-paragraph-9",
+      "statement": "“start,” “5 min post.” IS. ISTPT and PC. PCTPT and the corresponding ADIS.ATPT and ADPC.ATPT should be coded in a consistent fashion so mapping of time-matched measures can be performed.",
+      "context": "ATPT Analysis Planned PC Time Point Char Derived. Data source is SDTM.PC.PCTPT. Text description of the time when specimen should be taken. This could be represented as an elapsed time of last dose. Examples:",
+      "fingerprint": "abe98905694090acd1eeff739abff306223bd70a1edd579ace93c1f1ffab9e26",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-15-paragraph-2",
+      "statement": "ATPTN provides a numeric representation of ATPT. Defining ATPTN so that its values represent the planned time points in a consistent unit (e.g., minutes or hours after dosing) is not required but can facilitate plotting and interpretation of the values. There should be a one- to-one mapping between ATPT and ATPTN (see ADaM IG). As for ATPT, the coding of ATPTN should be the same for ADIS.ATPTN and ADPC.ATPTN.",
+      "context": "Table 2, Continued Variable Name Variable Label Type Comments ATPTN Analysis PC Time Point Number Num Derived. Data source is SDTM.PC.PCTPTNUM. ADY Analysis Relative Day Num Derived. Data source is SDTM.PC. PCDY. Study day of specimen collection, measured as integer days.",
+      "fingerprint": "c284c91300fd28f1de40cfc981e7a83e22b949352fabc727272da52f4e149e26",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-15-paragraph-6",
+      "statement": "AVAL Analysis Value Num Derived. Data source is SDTM.PC.PCSTRESN. PCSTRESN should store all numeric test results or findings.",
+      "context": "PARAMCD Parameter Code Char Derived. Data source is SDTM.PC.PCTESTCD. Parameter code with a maximum length of 4 characters. One-to-one correspondence with PCTEST. AVALC Analysis Value (C) Char Derived. Data source is SDTM.PC.PCSTRESC.",
+      "fingerprint": "dab813fa35d38a32cc9f39851fddba60fc0ff09fae54857b392c716999e586e8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-15-paragraph-9",
+      "statement": "Standard unit for PCSTRESN and PCSTRESC. PCLLOQ Lower Limit of Quantitation Num Indicates the lower limit of quantitation for an assay. Units should be those used in PCSTRESU.",
+      "context": "AVALU Unit of Analysis Value Char Derived. Data source is SDTM.PC.PCTRESU. PCCAT Sub-category of PC Test Char A further categorization of a test category.",
+      "fingerprint": "a455faf2efbf57146e036ec974f92e04dd1277c3df7ef61dc15d89075a76dd97",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-16-paragraph-2",
+      "statement": "TRTA Actual Treatment Char Actual treatment arm. TRTAN Actual Treatment N Num The numeric code for TRTA. One-to-one mapping within ADPC to TRTA. The mapping should be the same in ADIS and ADPC.",
+      "context": "Table 2, Continued Variable Name Variable Label Type Comments PCDTC Date/Time of Specimen Collection Char Date/time of specimen collection represented in ISO 8601character format. TRTSEQA Actual Sequence of Treatments Char Actual sequence of treatments.",
+      "fingerprint": "16198747895c0293111cb8ec20e52d6e5768c71581704d4811e90b4cd33f2e15",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-16-paragraph-4",
+      "statement": "TRTP Planned Treatment Char Planned treatment arm. TRTPN Planned Treatment N Num The numeric code for TRTP. One-to-one mapping within ADIS to TRTP. The mapping should be the same in ADIS and ADPC.",
+      "context": "TRTSEQA Actual Sequence of Treatments Char Actual sequence of treatments. TRTSEQP Planned Sequence of Treatments Char Planned sequence of treatments.",
+      "fingerprint": "9d25d790018893a97052170a64379e84d664d240d84f458bc71d331dbc8ed3cd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-16-paragraph-9",
+      "statement": "3.3 Subject-Level Analysis Dataset The Subject-Level Analysis Dataset (ADSL) contains one record per subject and provides variables such as subject-level population flags, planned and actual treatments for each period, demographic information, stratification and subgrouping variables, important dates, etc. This dataset should be an ADaM-compliant ADSL as described in the ADaM Implementation Guide (ADaM IG) and discussed in the technical specification document Study Data Technical Conformance Guide (March 2026), Section 4.1.2.4.",
+      "context": "CISANLFL Concentration IS Analysis Flag Char Character flag variable set to “Y” if the record is used in the concentration-IS analysis or null otherwise. The variables and specific derivations from the standard ADaM-compliant ADSL dataset are described in Table 3. The treatment assignments contained in this dataset are essential for the analysis of immunogenicity data from clinical trials in which subjects may receive a different",
+      "fingerprint": "d34d95b98467f1668fb86efdddad3709603b317f46b52b061fc1c5aa0762700b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-22-paragraph-3",
+      "statement": "Merging of the ADIS dataset and ADPC dataset is necessary to facilitate the evaluation of ADA effect on pharmacokinetics at individual timepoints (i.e., using time-matched data). Therefore, time information for both ADA and pharmacokinetic samples should be consistent in the ADIS and ADPC definitions (e.g., using the same variable names and the same value for each time point either in character or numeric format). Additionally, the format allows for time points without both ADA and pharmacokinetic samples that may be necessary for other types of analyses outside of the scope of this guidance.",
+      "context": "As Table A shows, there are more pharmacokinetic samples than immunogenicity samples in the schedule of assessment, and several time points have both immunogenicity samples and pharmacokinetic samples (i.e., time-matched pharmacokinetics and ADA samples). Table D. Illustrative ADPC Dataset with Data to Demonstrate the Corresponding Time-Related Variables in the ADIS Dataset Corresponding variables in ADIS dataset with time-related variables in italic font USUBJID TRTA AVISIT AVISITN ATPT ATPTN ADY ADPC data variables USUBJID TRTA AVISIT AVISITN ATPT ATPTN ADY PARAM AVALC AVAL PCSTATUS PCLLOQ",
+      "fingerprint": "c85135206943c0bea92754e6bbacaecc0528c34339bd819801fe8790ba1d8611",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T16:11:39.701Z"
+}
