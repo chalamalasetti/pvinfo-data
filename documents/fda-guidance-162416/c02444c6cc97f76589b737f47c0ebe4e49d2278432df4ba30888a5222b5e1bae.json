@@ -1,0 +1,260 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-162416",
+  "metadata": {
+    "title": "Multiple Endpoints in Clinical Trials: Guidance for Industry",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 10/21/2022 · Docket FDA-2016-D-4460",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Drugs",
+    "published_on": "2022-10-21",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/162416/download",
+  "original_sha256": "40284a050aab0037799072b2340e37d4b02ab6f7f2339fff6ea1cd55673a9563",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 28,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-5-paragraph-4",
+      "statement": "Because most diseases can potentially cause more than one clinical event, symptom, and/or altered function, many trials are designed to examine the effect of a drug on more than one aspect of the disease. In some cases, efficacy cannot be adequately established based on a single disease aspect, and the study should use either an endpoint that incorporates multiple aspects of the disease into a single endpoint or effects should be demonstrated on multiple endpoints. In other cases, an effect on any of several endpoints could be sufficient to support approval of a marketing application.",
+      "context": "II. BACKGROUND AND SCOPE Efficacy endpoints are measures designed to reflect the intended effects of a drug. They include assessments of clinical events (e.g., mortality, stroke, pulmonary exacerbation, venous thromboembolism), symptoms (e.g., pain, dyspnea, symptoms of depression), measures of function (e.g., ability to walk or exercise), or surrogate endpoints that are reasonably likely or expected to predict a clinical benefit. Failure to account for multiplicity when there are several endpoints evaluated in a study can increase the chance of false conclusions regarding the effects of the drug. The regulatory concern regarding multiplicity arises principally in the evaluation of clinical trials intended to demonstrate effectiveness supporting drug approval and claims in FDA-approved labeling;",
+      "fingerprint": "b8683a51ac6b1605b32065ead23f1b4ad4fdaa69b82505d47c32f4d6af5121a0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-6-paragraph-1",
+      "statement": "A. Demonstrating the Study Objective of Effectiveness A conclusion that a study has demonstrated an intended effect of a drug is critical to meeting the legal standard for substantial evidence of effectiveness required to support approval of a new drug (i.e., “… adequate and well-controlled investigations…on the basis of which it could fairly and responsibly be concluded…that the drug will have the effect it purports…to have…”) (section 505(d) of the FD&C Act). 4 FDA regulations further establish that to be adequate and well controlled, a clinical study of a drug must include, among other things, “an analysis of the results of the study adequate to assess the effects of the drug,” a requirement that furthers the “purpose of conducting clinical investigations of a drug,” which is “to distinguish the effect of a drug from other influences, such as spontaneous change in the course of the disease, placebo effect, or biased observation.” 5 There are also other important factors (e.g., clinical relevance of the endpoint and estimated effect, relevant external information) that are considered in evaluating substantial evidence of effectiveness beyond the results of hypothesis tests in a single trial. A more general discussion of demonstrating substantial evidence of effectiveness can be found in other FDA guidance documents 6 and is outside the scope of this document.",
+      "context": "3 See the ICH Guidance for Industry E9(R1) Statistical Principles for Clinical Trials: Addendum: Estimands and Sensitivity Analysis in Clinical Trials (May 2021). Hypothesis testing is commonly used to address the uncertainty in the assessment of a treatment effect on a chosen endpoint. This approach begins with stating the relevant hypotheses for a chosen endpoint. In the simplest situation where the aim is to demonstrate the superiority of a test drug over control, two mutually exclusive hypotheses are specified for the endpoint in advance of conducting a clinical trial:",
+      "fingerprint": "53507a0fdc75cca4c75c8597a360e3c08f6043cd57096980776ccd7e5427d4b8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-7-paragraph-2",
+      "statement": "This guidance focuses on a statistical framework based on hypothesis testing. Sponsors should discuss early with FDA plans to use other approaches (e.g., Bayesian approaches) for a specific development program such as for pediatrics.",
+      "context": "Sometimes (e.g., in some vaccine trials), demonstration of an effect of at least some minimum size is considered critical for approval of a drug. In this case, if formal statistical testing is used for the demonstration, the null hypothesis might be modified to incorporate the smallest clinically meaningful effect that could be accepted. B. Type I Error The rejection of the null hypothesis supports the study conclusion that there is a difference between treatment groups but does not constitute absolute proof that the null hypothesis is false.",
+      "fingerprint": "e206b391b3439a9b08083bbd8c32453c4886dcfa997674318f20fcaacc11f8a2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-7-paragraph-4",
+      "statement": "There is always some possibility of mistakenly rejecting the null hypothesis when it is, in fact, true. Such an erroneous conclusion is called a Type I error. For an endpoint, the probability of falsely rejecting its null hypothesis and, thus, concluding that there is a treatment effect due to the drug on this endpoint when, in fact, there is none, is called the Type I error probability or Type I error rate for this endpoint. The significance level, denoted as alpha (  ), is the threshold below which the Type I error rate should be controlled. Null hypothesis rejection is based on a determination that the probability of observing a result at least as extreme as the result of the study assuming the null hypothesis is true (the p-value) is sufficiently low (usually no larger than  ).",
+      "context": "B. Type I Error The rejection of the null hypothesis supports the study conclusion that there is a difference between treatment groups but does not constitute absolute proof that the null hypothesis is false. The alternative hypothesis can be one-sided or two-sided, and statistical tests are performed accordingly. For two-sided hypothesis statistical tests, the Type I error probability refers to the probability of concluding that there is a difference (beneficial or harmful) between the drug and control when there is no difference. For one-sided hypothesis tests, the Type I error probability refers to the probability of concluding specifically that there is a beneficial difference due to the drug when there is not. The most widely used values for  are 0.05 for two-sided tests and 0.025 for one-sided tests. In the case of two-sided tests, an  of 0.05 means that the probability of falsel",
+      "fingerprint": "dfb01c18c4a15722400f22bad7caabf8821a490f70904982e95e225d885021cd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-8-paragraph-4",
+      "statement": "For a study with multiple endpoints, the analysis plan should describe the testing procedure for the hypotheses being tested with a proper control of overall Type I error rate.",
+      "context": "• all data analyses that will be performed to test hypotheses about the prespecified endpoints, regardless of whether they are considered primary or secondary. C. Multiplicity In a clinical trial with a single endpoint tested at two-sided α = 0.05, the probability of finding a difference between the treatment group and a control group in favor of the treatment group when no difference exists in the population is 0.025 (a 2.5% chance). That is, there is a 97.5% chance of appropriately not finding a favorable effect if there is no true effect for this endpoint. By contrast, if there are two independent endpoints, each tested at two-sided α = 0.05, and if success on either endpoint by itself would lead to a conclusion of a drug effect, the chance of appropriately not finding a favorable effect on both endpoints together is thus 0.975 * 0.975, which is approximately 0.95, and so the probabil",
+      "fingerprint": "5121d9bdca19c489191c348f94cdec48c447be5e7312e1a16a8b662dc3c1fe5b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-9-paragraph-1",
+      "statement": "specified, appropriate adjustments for multiple endpoints and analyses can be selected, prespecified, and applied, as appropriate. Changes in the analytic plan to perform additional analyses can reintroduce a multiplicity problem that can negatively impact the ability to interpret the study’s results unless these changes are made prior to data analysis and appropriate multiplicity adjustments are performed. The statistical analysis plan should not be changed after unmasking of treatment assignments and performing statistical analyses.",
+      "context": "For controlling multiplicity, an important principle is to first prospectively specify all planned endpoints, time points, analysis populations, doses, and analyses; then, once these factors are A focus of this guidance is control of the Type I error rate for the prespecified set of endpoints (i.e., primary and secondary endpoints) of a clinical trial to ensure that the major findings of a clinical trial are well supported, and the effects of the drug have been demonstrated. Analyses that explicate the characteristics of an effect on an endpoint that has been demonstrated—such as time of onset, distribution of effect sizes across the population, effects in subgroups, and effects on the components of a composite endpoint—are all descriptive to provide a deeper understanding of the nature of that endpoint finding, and do not extend to effects outside of that endpoint. These descriptive ana",
+      "fingerprint": "15a7fd66130bfd664aa39ebb2f79013ca42dab5951ed769a817e06422f20a515",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-9-paragraph-3",
+      "statement": "Of note, there is not always a clear-cut distinction between an analysis closely related to a major finding and one that demonstrates additional effects. Therefore, when definitive conclusions are to be drawn, such analyses should be prespecified and appropriately included in the prespecified multiple-testing strategy. A descriptive analysis that is not included in the prespecified multiple- testing strategy should not be presented in FDA-approved labeling in ways that imply a statistically rigorous conclusion or convey certainty about the effects that are not supported by that trial. Descriptive analyses are not the subject of this guidance and are not addressed in detail.",
+      "context": "A focus of this guidance is control of the Type I error rate for the prespecified set of endpoints (i.e., primary and secondary endpoints) of a clinical trial to ensure that the major findings of a clinical trial are well supported, and the effects of the drug have been demonstrated. Analyses that explicate the characteristics of an effect on an endpoint that has been demonstrated—such as time of onset, distribution of effect sizes across the population, effects in subgroups, and effects on the components of a composite endpoint—are all descriptive to provide a deeper understanding of the nature of that endpoint finding, and do not extend to effects outside of that endpoint. These descriptive analyses can be considered for inclusion in the FDA-approved labeling without presenting p-values. III. MULTIPLE ENDPOINTS: GENERAL PRINCIPLES",
+      "fingerprint": "32eef60166e1f8aff1dc8aca6eb9ab9ee00c5f4811cf4c62eff6f29e1f920505",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-10-paragraph-6",
+      "statement": "3. Selecting and Interpreting the Endpoints in the Primary and Secondary Endpoint Families Positive results on the secondary endpoints can be interpretable if there is first a demonstration of a treatment effect on the primary endpoint family (O’Neill 1997). The overall Type I error rate should control for the primary and secondary endpoint families all together.",
+      "context": "Exploratory endpoints do not need multiplicity adjustment because they are generally not used to support conclusions. Occasionally, there are trials where a clinically important endpoint (e.g., mortality or irreversible morbidity) is expected to have too few events to provide adequate power for the trial, while a",
+      "fingerprint": "05e961574cd0f8173c9b2acd99a3d32b6cb1ab168c13b1b8bf57927c6698639a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-11-paragraph-3",
+      "statement": "The sample size of a study is generally chosen to provide a reasonably high power to show a treatment effect if an effect of a specified size on the primary endpoint(s) is in fact present. The sample size calculation may need to account for the statistical adjustments to control the Type I error rate for multiplicity. For example, if a lower  level is used for a study endpoint, then the sample size should be adjusted to provide desired statistical power for this endpoint.",
+      "context": "B. Type II Error Rate and Sample Size FDA is also concerned with the risk of making a Type II error, which is failing to show an effect of a drug where there actually is one. The study power is the probability that the study will be successful if a treatment effect of a specified size is in fact present. The desired power is an important factor in determining the sample size, especially for the primary endpoints. Using two or more endpoints for which demonstration of an effect on each is recommended to support regulatory approval (called co-primary endpoints; see section III.C.1. below) will increase the Type II error rate and decrease study power. For example, assume two endpoints have the same effect size and the study sample size is selected to provide 80% power to show success on each of these two endpoints. If the endpoints are independent, the power to show success on both will be",
+      "fingerprint": "a207fae66c02abcc31121a27d0d7770dc8a0df4d6b8077dedd22d8c4ed2602e5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-12-paragraph-5",
+      "statement": "As discussed in section III.B., there is no multiplicity problem when the study is designed to demonstrate efficacy on all of the separate endpoints. However, co-primary endpoint testing increases the Type II error rate. In general, unless clinically very important, the use of more than two co-primary endpoints should be carefully considered because of the loss of power.",
+      "context": "These vaccine trials are typically designed and powered for demonstration of a successful outcome on effectiveness endpoints for each pathogen against which the vaccine is intended to provide protection. There have been suggestions that the statistical testing criteria for each co-primary endpoint could be increased (e.g., testing at an  of 0.06 or 0.07) when the targeted  is 0.05 to accommodate the loss in statistical power arising from the need to show an effect on both endpoints. Increasing  for each co-primary endpoint is not acceptable because doing so may undermine the ability to interpret a treatment effect on each disease aspect considered critical to show that the drug is effective in support of approval.",
+      "fingerprint": "62485e2764f8a3c9adaf2a0e0b71f6a1426849f4a48f8952b653ebcd91bafcf2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-12-paragraph-6",
+      "statement": "There have been suggestions that the statistical testing criteria for each co-primary endpoint could be increased (e.g., testing at an  of 0.06 or 0.07) when the targeted  is 0.05 to accommodate the loss in statistical power arising from the need to show an effect on both endpoints. Increasing  for each co-primary endpoint is not acceptable because doing so may undermine the ability to interpret a treatment effect on each disease aspect considered critical to show that the drug is effective in support of approval.",
+      "context": "As discussed in section III.B., there is no multiplicity problem when the study is designed to demonstrate efficacy on all of the separate endpoints. However, co-primary endpoint testing increases the Type II error rate. In general, unless clinically very important, the use of more than two co-primary endpoints should be carefully considered because of the loss of power. 2. When Demonstration of a Treatment Effect on at Least One of Several Primary Endpoints Is Sufficient Many diseases have multiple sequelae, and an effect demonstrated on any one of these aspects could support a conclusion of effectiveness. Selection of a single primary endpoint may be difficult, however, if the aspect of a disease that will be responsive to the drug or the evaluation",
+      "fingerprint": "50877da8d51c09fee5a2d1fd2a4fe2905df4f8af649b3d0cbc7c1d0053766a9d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-13-paragraph-7",
+      "statement": "The choice of the components of a composite endpoint should be made carefully. The treatment effect on the composite event rate can be interpreted as characterizing the overall clinical effect when the individual events all have reasonably similar clinical importance. The effect on the composite endpoint, however, will not be a reasonable indicator of the effect on all of the components or an accurate description of the drug’s benefit if the clinical importance of different components is substantially different and the treatment effect is chiefly on the least important event. Furthermore, it is possible that a component with greater importance would be adversely affected by the treatment, even if one or more event types of lesser importance are favorably affected, so that although the overall outcome still has a favorable statistical result, doubt may arise about the treatment’s clinical value. In this case, although the overall statistical analysis",
+      "context": "One possible reason for using a composite endpoint is that the incidence of each of the events may be too low to allow a study of reasonable size to have adequate power; the composite endpoint can provide a substantially higher overall event rate that allows a study with a reasonable sample size and study duration to have adequate power. Composite endpoints are often used when the goal of treatment is to prevent or delay occurrence of one of several clinically important and related events (e.g., use of an anti-platelet drug in subjects with coronary artery disease to prevent myocardial infarction, stroke, or death), possibly without knowledge of which event(s) may be affected. indicates the treatment is beneficial, careful examination of the data could call this conclusion into question. For this reason, as well as for a greater depth of understanding of the treatment’s effects, analyses",
+      "fingerprint": "79ba931839196b30347494123e3ea9bd33708929ff025689d018399c31ecd628",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-14-paragraph-1",
+      "statement": "indicates the treatment is beneficial, careful examination of the data could call this conclusion into question. For this reason, as well as for a greater depth of understanding of the treatment’s effects, analyses of the components of the composite endpoint are important (see section III.D.) and can influence interpretation of the overall study results. The examination of the components is always necessary, but whether multiplicity adjustment should be made depends on the purpose. If the intent is to better understand the demonstrated effect on the composite, then no adjustment is recommended. In that case, clinical judgment is used to decide whether the benefit is clinically meaningful and exceeds risk, and how it will be described in the FDA-approved labeling. If the intent is to establish additional effects of the drug, then multiplicity adjustment should be made.",
+      "context": "The choice of the components of a composite endpoint should be made carefully. The treatment effect on the composite event rate can be interpreted as characterizing the overall clinical effect when the individual events all have reasonably similar clinical importance. The effect on the composite endpoint, however, will not be a reasonable indicator of the effect on all of the components or an accurate description of the drug’s benefit if the clinical importance of different components is substantially different and the treatment effect is chiefly on the least important event. Furthermore, it is possible that a component with greater importance would be adversely affected by the treatment, even if one or more event types of lesser importance are favorably affected, so that although the overall outcome still has a favorable statistical result, doubt may arise about the treatment’s clinical",
+      "fingerprint": "c064d9fbfd5b28a5129a908f5c33f6021c0e1269799b69717bd2202267993f2e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-14-paragraph-4",
+      "statement": "There are more complex endpoint formulations where several, but not all, different features of a disease must be positively affected for a subject to be regarded as receiving benefit. For example, a positive response for an individual subject might be defined as a certain degree of improvement in two specific aspects of a disease along with improvement in at least three out of five additional disease features, as in the American College of Rheumatology (ACR) scoring system for rheumatoid arthritis.",
+      "context": "A single overall rating can be formed by some kind of average (either weighted or unweighted) across the individual domain scores. An example of a multi-component endpoint is the Positive and Negative Syndrome Scale (PANSS) in schizophrenia research. A multi-component endpoint can also be a dichotomous (response) endpoint corresponding to an individual subject achieving specified criteria on each of the multiple components. For example, the primary endpoint in clinical trials of allogeneic pancreatic islet cells for Type 1 diabetes mellitus can be a response rate in which subjects are considered responders only if they meet two dichotomous response criteria: normal range of HbA1c and elimination of hypoglycemia. The use of within-subject multi-component endpoints may be efficient if the treatment effects on the different components are generally trending in the same direction within a su",
+      "fingerprint": "2d32732cd223723c8df31543e8eda1b7024b70098ba74b3ba466b0c6768d5a5a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-14-paragraph-6",
+      "statement": "Although multi-component endpoints can provide some gains in efficiency compared to co- primary endpoints, the appropriateness of a particular within-subject multi-component endpoint is generally determined by clinical, rather than statistical, considerations. Similar to the assessment of the component endpoints of a composite endpoint in section III.C.3., evaluation of the components of a multi-component endpoint may be important but should be subject to pre- specification and multiplicity adjustment if the intent is to support specific conclusions on how a treatment affects specific components (see section III.D.).",
+      "context": "The use of within-subject multi-component endpoints may be efficient if the treatment effects on the different components are generally trending in the same direction within a subject. Study power can be adversely affected, however, if there is limited concordance among the endpoints. 5. Clinically Critical Endpoints Too Infrequent for Use as a Primary Endpoint For many serious diseases, there is an endpoint of such great clinical importance that it is unreasonable not to collect and analyze the endpoint data; the usual example is mortality or major morbidity events (e.g., stroke, fracture, pulmonary exacerbation). Even if relatively few of these events are expected to occur in the trial, they can be included in a composite endpoint (see section III.C.3.) and also designated as a planned secondary endpoint to potentially support a conclusion regarding effect on that separate endpoint, if",
+      "fingerprint": "f00cdd1c1188f58660e068050de89a4be412a6495b988c1248617edc73aac438",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-15-paragraph-3",
+      "statement": "1. Evaluating and Reporting the Results of Composite Endpoints For composite endpoints whose components correspond to events, an event is usually defined as the first occurrence of any of the designated component events. Such composites can be analyzed either with comparisons of proportions between study groups at the end of the study or using time-to-event analyses. The time-to-event method of analysis is the more common method when, within the study’s timeframe of observation, the duration of being event-free is clinically meaningful. Although there may be an expectation that the drug will have a favorable effect on all the components of a composite endpoint, that is not a certainty. Results for each component event should therefore be individually examined and should be included in study reports. These analyses will not alter a conclusion about the statistical significance of the composite primary endpoint; however, interpretation of the result of the composite endpoint can be uncertain (see section III.C.3.). If there is an interest in analyzing one or more of the components of a composite endpoint as distinct hypotheses to demonstrate effects of the drug, the hypotheses should be part of the prospectively specified statistical analysis plan that accounts for the multiplicity this analysis will entail, as described above, for mortality. However, testing for individual component endpoints is likely to be underpowered as the sample size or total number of events is usually planned for testing the composite endpoint.",
+      "context": "D. The Individual Components of Composite and Multi-Component Endpoints Decomposition of the first composite event is often presented to depict how the component events constitute the composite event in terms of proportion. For example, in the RENAAL trial (Brenner et al. 2001), the primary efficacy endpoint was the first occurrence of the composite endpoint of doubling of serum creatinine, end-stage renal disease, or death. Based on such decomposition, 52% of the first composite events were doublings of serum creatinine, 19% were end-stage renal disease events, and 29% were deaths. However, subjects may experience more than one event type. For these subjects, events occurring after the first composite event (e.g., end-stage renal disease or death occurring after a doubling of serum creatinine) would not be counted in the decomposition. Therefore, evaluation of the individual event types",
+      "fingerprint": "4ea0e046462ebe77b31e80ba280c0be9d2d3a222463d2cf3745dab3a904f8a2d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-16-paragraph-1",
+      "statement": "As with composite endpoints, understanding which components of a within-subject multi- component endpoint have contributed most to the overall statistical significance could be important to correctly understanding the clinical effects of the drug. Consequently, analysis of the study results on the individual components is usually important but, as stated previously, if undertaken, should not be presented in FDA-approved labeling in ways that imply a statistically rigorous conclusion or convey certainty about the effects that are not supported by that trial. For many of these multi-component endpoints, the overall score is regarded as comprehensive and clinically interpretable. The individual component scales, however, may or may not be independently clinically interpretable. Analyses of specific components or subdomains of a clinical outcome assessment as explicit endpoints in the primary or secondary endpoint families can be reasonable, contingent on the endpoint being clinically interpretable. Pre-specification of specific components or subdomains as endpoints with appropriate multiplicity control is recommended if the intent is to demonstrate an effect of a drug on one or more of these endpoints in addition to the overall multi-component endpoint.",
+      "context": "2. Evaluating and Reporting the Results on Other Multi-Component Endpoints IV. METHODOLOGICAL CONSIDERATIONS A variety of situations in which multiplicity arises have been discussed in sections II. and III.",
+      "fingerprint": "4f8f30fdf200c64fb944cbfc91e3f11cba7f08f74e1486ff68b98879402ab7cf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-17-paragraph-1",
+      "statement": "In some cases, a primary endpoint can be tested for non-inferiority (with a fixed margin), followed by testing it for superiority. If this endpoint is the only endpoint being tested, then non- inferiority and superiority can be tested without multiplicity adjustment because the null hypotheses of non-inferiority and superiority are naturally ordered, and the two tests apply to the one hierarchy considered for this endpoint. However, if at least one more endpoint is included for testing, then multiplicity issues arise, and adjustments should be made to control the overall Type I error probability. For example, the tests could be ordered in a single hierarchy where the additional endpoint(s) are tested after the superiority hypothesis for the primary endpoint. Or, alternatively, testing could proceed to both the superiority hypothesis for the primary endpoint and to the hypotheses for the additional endpoints, with alpha allocation across these multiple hypotheses. To see why such alpha allocation can be applicable, suppose the drug is non-inferior to the active control with respect to the primary endpoint, but the drug is neither superior to the active control for the primary endpoint nor non-inferior to the active control for the secondary endpoint. Thus, a Type I error could occur with either of these hypothesis tests. If both of these were tested at 0.05, the probability of at least one of these leading to a spurious conclusion would be greater than 0.05. Thus, there should be appropriate control in some manner (e.g., test the secondary endpoint only if the primary endpoint superiority is shown or split alpha between the",
+      "context": "2009) and mixture gatekeeping procedures (Dmitrienko et al. 2008). The graphical method has a sequential testing algorithm and makes it possible to visualize the testing process via a graph. two tests). Additional discussion on this special case and on other methodological considerations is provided in the appendix.",
+      "fingerprint": "09a3fbfc6ccb03af9e016b35e564452171468efd7a60c386f81eba70c10253a0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-17-paragraph-5",
+      "statement": "There are many strategies and methods that can be used, as appropriate, as described in this guidance. Each of these methods has advantages and disadvantages, and the selection of suitable strategies and methods is a challenge that should be addressed at the study-planning stage.",
+      "context": "As the number of endpoints or analyses increases, the Type I error rate can increase well beyond 2.5% due to multiplicity. Multiplicity adjustments, as described in this guidance, provide means for controlling the Type I error rate when the drug effect is evaluated in multiple endpoints. Statistical expertise should be enlisted to help choose the most appropriate approach. Failing to appropriately control the Type I error rate may increase the risk of a false positive conclusion;",
+      "fingerprint": "35dfa0d1053c37e27d3a5f14c02d3d8706a9420d366b494d99b273c6f0e05298",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-17-paragraph-6",
+      "statement": "Statistical expertise should be enlisted to help choose the most appropriate approach. Failing to appropriately control the Type I error rate may increase the risk of a false positive conclusion;",
+      "context": "There are many strategies and methods that can be used, as appropriate, as described in this guidance. Each of these methods has advantages and disadvantages, and the selection of suitable strategies and methods is a challenge that should be addressed at the study-planning stage. this guidance is intended to clarify when and how multiplicity due to multiple endpoints should be managed to avoid reaching such false conclusions.",
+      "fingerprint": "cede92faaac9eab2990d106ed08f3e741de822c2815d83462b0363bffb2dde9c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-17-paragraph-7",
+      "statement": "this guidance is intended to clarify when and how multiplicity due to multiple endpoints should be managed to avoid reaching such false conclusions.",
+      "context": "Statistical expertise should be enlisted to help choose the most appropriate approach. Failing to appropriately control the Type I error rate may increase the risk of a false positive conclusion;",
+      "fingerprint": "92a30c37435aadd44254b3b48f153d280c6ab4f2b93925d552e220e725a5bc0a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-21-paragraph-2",
+      "statement": "This appendix presents some commonly used statistical methods and approaches for addressing 104 multiplicity problems in controlled clinical trials that evaluate treatment effects on multiple 105 endpoints. The methods listed in this appendix are not intended to be a comprehensive list of 106 methods for controlling multiplicity; other approaches could be appropriate for specific 107 situations. The choice of the method to use for a specific clinical trial will depend on the 108 objectives and the design of the trial, as well as the knowledge of the drug being developed and 109 the clinical setting. The method, however, should be decided upon prospectively. Because the 110 considerations that go into the choice of multiplicity adjustment method can be complex and 111 specific to individual product development programs, this guidance does not attempt to 112 recommend any one method over another in most cases. Sponsors should consider the variety of 113 methods available and in the prospective analysis plan select the most powerful method that is 114 suitable for the design and objective of the study and maintains Type I error rate control. 115",
+      "context": "APPENDIX: STATISTICAL METHODS 102 1. The Bonferroni Method 117",
+      "fingerprint": "bd16458493aab308c317c67c31b29bbaa8abbe740f9396a369999c8942e630a7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-21-paragraph-6",
+      "statement": "0.025. The Bonferroni test can also be performed with different weights assigned to endpoints, 131 with the sum of the relative weights equal to 1.0 (e.g., 0.4, 0.3, 0.2, and 0.1 for four endpoints). 132 These weights should be prespecified in the design of the trial, taking into consideration the 133 clinical importance of the endpoints, the likelihood of success, or other factors. 134",
+      "context": "The most common form of the Bonferroni method divides the available total  (typically 0.05 127 two-sided) equally among the chosen endpoints. The method then concludes that a treatment 128 effect is significant at the  level for each one of the m endpoints for which the endpoint’s p- 129 value is less than α / m . Thus, with two endpoints, the critical  for each endpoint is two-sided 130 2. The Holm Procedure 136",
+      "fingerprint": "d8a5c9adc096ca94929a782a6f5419114e6baf230b9896bae228cbdf65229ff5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-23-paragraph-3",
+      "statement": "The Prospective Alpha Allocation Scheme (PAAS) (Moye 2000) is a single-step method that has 202 a slight advantage in power over the Bonferroni method. The method allows equal or unequal 203 alpha allocations to all endpoints, but, as with the Bonferroni method, each specific endpoint 204 receives a prospective allocation of a specific amount of the overall alpha. The alpha allocations 205 are required to satisfy the equation: 206",
+      "context": "4. Prospective Alpha Allocation Scheme 200 (1 - α 1 )(1 – α 2 ) … (1 – α k ) … (1 – α m ) = (1- α ). 208",
+      "fingerprint": "ef842df27ba8ff7b8e5e34413ddda83b914effb0f05aa822e2781f6e74eb7a2e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-23-paragraph-5",
+      "statement": "Each element in this equation, (1 – α k ), is the probability of correctly not rejecting the null 210 hypothesis for the k th endpoint, when it is tested at the allocated alpha α k . This procedure is valid 211 when the endpoints are independent or positively correlated, but the Type I error rate may be 212 inflated when the endpoints are negatively correlated. This equation states the requirement that 213 probability of correctly not rejecting all of the individual null hypotheses, calculated by 214 multiplying each of the m probabilities together, should equal the selected goal (e.g., 0.95). The 215 alpha allocation for any of the individual endpoint tests can be arbitrarily assigned, if desired, but 216 the total group of allocations should always satisfy the above equation. In general, when arbitrary 217 alpha allocations are made for some endpoints, at least the last endpoint’s alpha should be 218 calculated in order to satisfy the overall equation. As stated earlier, the Bonferroni method relies 219 upon a similar constraint-defining equation, except that for the Bonferroni method the sum of all 220 the individual alphas should equal the overall alpha. 221",
+      "context": "(1 - α 1 )(1 – α 2 ) … (1 – α k ) … (1 – α m ) = (1- α ). 208 5. The Fixed-Sequence Method 223",
+      "fingerprint": "c196b3ad77875a4271b875ecd3454ec9bdcfbbe3037ca470b6c32b01c9e10de5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-26-paragraph-1",
+      "statement": "331 Figure A1: Example of a flow diagram for non-inferiority and superiority tests for endpoints one and two of a trial 332 with logical restrictions, where α 1 + α 2 = α. To test for superiority for Endpoint 1 and/or 2, one should first establish 333 non-inferiority for that endpoint. 334",
+      "context": "The following diagram shows the decision structure of the test strategy. In this diagram, each 325 block (or node) states the null hypothesis that it tests. 326 Thus, the above test strategy has a two-dimensional hierarchical structure, one dimension for the 336 two different endpoints and the other for the non-inferiority and superiority tests, with the logical 337 restrictions as stated above. Note that for this type of procedure, if multiple branches split off 338 from a single node, the alpha should be split across the multiple branches. 339",
+      "fingerprint": "f4feeb46c35c88fdfea1624e3c67c2e8489697af95e159cb500dbf95f7703622",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-26-paragraph-2",
+      "statement": "Thus, the above test strategy has a two-dimensional hierarchical structure, one dimension for the 336 two different endpoints and the other for the non-inferiority and superiority tests, with the logical 337 restrictions as stated above. Note that for this type of procedure, if multiple branches split off 338 from a single node, the alpha should be split across the multiple branches. 339",
+      "context": "331 Figure A1: Example of a flow diagram for non-inferiority and superiority tests for endpoints one and two of a trial 332 with logical restrictions, where α 1 + α 2 = α. To test for superiority for Endpoint 1 and/or 2, one should first establish 333 non-inferiority for that endpoint. 334 8. Graphical Approaches Based on Sequentially Rejective Tests 341",
+      "fingerprint": "174151087d9b6c66a932a473d5a784ac51baa5a40574d8398bbf8087891c6efa",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-27-paragraph-1",
+      "statement": "along that path to the receiving hypothesis, when the hypothesis at the tail end of the path is 366 successful (i.e., is rejected). The sum of the weights across all the paths leaving a vertex should 367 be 1.0, so that the entire preserved alpha is used in testing subsequent hypotheses. All study 368 hypotheses that are intended to potentially provide firm conclusions of efficacy are shown in the 369 graph. 370",
+      "context": "Another feature of the figure (graph) is a set of directed edges. Each directed edge (or arrow) 363 connects two hypotheses and is assigned a value between 0 and 1, called a weight for that edge 364 and shown above the arrow, which indicates the fraction of the preserved alpha to be shifted 365 H 3 : treatment inferior to control for Endpoint 2 (i.e., test for non - inferiority) H 2 : treatment not superior to control for Endpoint 1 (i.e., test for superiority) H 1 : treatment inferior to control for Endpoint 1 (i.e., test for non - inferiority) H 4 : treatment not superior to control for Endpoint 2 (i.e., test for superiority) α 1 α 2 α 2 Several examples of the graphical method follow to help illustrate the concept, construction, 372 interpretation, and application of these diagrams. 373",
+      "fingerprint": "3ef56792a18c10063dd03ead86e3939a84ff90c6c5cf509b0df4a113baa43e7f",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:47:49.775Z"
+}
