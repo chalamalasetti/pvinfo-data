@@ -1,0 +1,1371 @@
+ Development and
+Submission of Near
+Infrared Analytical
+    Procedures
+ Guidance for Industry
+
+
+
+
+    U.S. Department of Health and Human Services
+            Food and Drug Administration
+   Center for Drug Evaluation and Research (CDER)
+
+                   August 2021
+            Pharmaceutical Quality/CMC
+ Development and
+Submission of Near
+Infrared Analytical
+    Procedures
+     Guidance for Industry
+                         Additional copies are available from:
+
+
+                 Office of Communications, Division of Drug Information
+                         Center for Drug Evaluation and Research
+                              Food and Drug Administration
+                 10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                              Silver Spring, MD 20993-0002
+Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353; Email: druginfo@fda.hhs.gov
+ https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+
+
+
+             U.S. Department of Health and Human Services
+                     Food and Drug Administration
+            Center for Drug Evaluation and Research (CDER)
+
+                               August 2021
+                        Pharmaceutical Quality/CMC
+                                          Contains Nonbinding Recommendations
+
+
+                                                     TABLE OF CONTENTS
+
+I.        INTRODUCTION............................................................................................................. 1
+II.       BACKGROUND ............................................................................................................... 2
+III.      GENERAL MODES OF MEASUREMENT FOR NIR IMPLEMENTATION......... 4
+     A.   Off-Line or At-Line........................................................................................................................ 4
+     B.   On-Line or In-Line ........................................................................................................................ 5
+IV.       DEVELOPMENT OF NIR MODELS ............................................................................ 6
+     A.   Construction of a Calibration Set ................................................................................................. 6
+     B.   Presentation of Samples ................................................................................................................ 8
+     C.   Development of Chemometric Models ......................................................................................... 8
+     D.   Internal Validation of Identification Libraries ........................................................................... 9
+     E.   Internal Validation of Quantitative Calibration Models............................................................ 9
+     F.   Development of Rate-of-Change Models ................................................................................... 10
+V.        EXTERNAL VALIDATION OF NIR ANALYTICAL PROCEDURES .................. 11
+     A.   Qualitative Analytical Procedures.............................................................................................. 11
+     B.   Quantitative Analytical Procedures ........................................................................................... 12
+     C.   Rate-of-Change Procedures ........................................................................................................ 13
+VI.       IMPLEMENTING AND MAINTAINING NIR ANALYTICAL PROCEDURES .. 13
+VII.      INFORMATION SUBMITTED IN AN APPLICATION........................................... 14
+     A.   Procedural Information............................................................................................................... 15
+     B.   Development Information ........................................................................................................... 16
+     C.   Validation Information................................................................................................................ 17
+VIII. LIFE CYCLE MANAGEMENT ................................................................................... 18
+     A.   Major Changes ............................................................................................................................. 20
+     B.   Moderate Changes ....................................................................................................................... 20
+     C.   Minor Changes ............................................................................................................................. 21
+     D.   Other Minimal Changes .............................................................................................................. 22
+GLOSSARY................................................................................................................................. 23
+                                Contains Nonbinding Recommendations
+
+
+                         Development and Submission of Near
+                           Infrared Analytical Procedures
+                               Guidance for Industry 1
+
+
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+I.      INTRODUCTION
+
+This guidance provides recommendations to applicants to aid the development, validation, and
+use of near infrared (NIR)-based analytical procedures in evaluating the identity, strength,
+quality, purity, and potency of drug substances and drug products. The recommendations apply
+to new drug applications (NDAs), abbreviated new drug applications (ANDAs), and
+supplemental NDAs and ANDAs for small molecule drugs. The principles in this guidance also
+apply to drug substances and drug products covered in Type II drug master files. FDA intends to
+issue recommendations specific to NIR methods used for biological products under biologics
+license applications in a future revision to this guidance. This guidance provides
+recommendations to applicants for applying the concepts described in the guidance for industry
+PAT — A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality
+Assurance (September 2004) (PAT guidance) and the International Council for Harmonisation
+(ICH) guidance for industry Q2(R1) Validation of Analytical Procedures: Text and Methodology
+(November 2005) 2 to NIR analytical procedures that use chemometric models. 3 This guidance
+also provides recommendations for submitting NIR documentation in applications. 4
+
+1
+ This guidance has been prepared by the Office of Pharmaceutical Quality in the Center for Drug Evaluation and
+Research at the Food and Drug Administration.
+2
+ In November 2005, the ICH incorporated both the ICH guidance for industry Q2A Text on Validation of Analytical
+Procedures and the ICH guidance for industry Q2B Validation of Analytical Procedures: Methodology into ICH
+Q2(R1). Although the FDA guidance web page separately lists ICH Q2A and ICH Q2B, any references to ICH
+Q2(R1) in this guidance, unless otherwise indicated, refer to both ICH Q2A and ICH Q2B.
+3
+ We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page
+at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+4
+ This guidance contains technical and scientific recommendations that may be useful during development of NIR-
+based analytical procedures for nonprescription drugs to which the application submission recommendations in this
+guidance do not apply.
+
+
+                                                        1
+                                Contains Nonbinding Recommendations
+
+
+
+Additionally, NIR implementation at commercial manufacturing sites must be in accordance
+with current good manufacturing practice (CGMP) regulations at 21 CFR parts 210 and 211 for
+drug products 5 and should be in accordance with the ICH guidance for industry Q7 Good
+Manufacturing Practice Guidance for Active Pharmaceutical Ingredients (September 2016)
+recommendations for drug substances.
+
+This guidance pertains only to the development and validation of NIR analytical procedures and
+does not provide recommendations concerning the setup, qualification, maintenance, or
+calibration of NIR instruments. Although this guidance specifically addresses NIR spectroscopy,
+this guidance’s concepts of validation can be applied to other process analytical technologies
+(PATs), including, for example, Raman, focused beam reflection measurement, particle imaging,
+and X-ray.
+
+The contents of this document do not have the force and effect of law and are not meant to bind
+the public in any way, unless specifically incorporated into a contract. This document is
+intended only to provide clarity to the public regarding existing requirements under the law.
+FDA guidance documents, including this guidance, should be viewed only as recommendations,
+unless specific regulatory or statutory requirements are cited. The use of the word should in
+Agency guidances means that something is suggested or recommended, but not required.
+
+
+II.       BACKGROUND
+
+NIR analytical procedures are increasingly being used in the pharmaceutical industry (1) for
+identification testing and assay measurements performed on pharmaceutical starting materials,
+intermediates, and finished products, and (2) for monitoring and controlling manufacturing
+processes. Therefore, to ensure the quality of pharmaceuticals, it is important for applicants who
+use these procedures to develop robust NIR analytical procedures and to understand both the
+factors that can affect the performance and suitability of these procedures and the approaches
+that can be used to validate them.
+
+The PAT guidance and ICH Q2(R1) provide information about analytical procedures, such as
+those used for NIR. The PAT guidance explains the different modes of measurement that can be
+used by a process analyzer during the manufacturing process to measure a chemical or physical
+property of interest based on vibrational spectroscopy (e.g., NIR or Raman). ICH Q2(R1)
+provides:
+
+      •   A “discussion of the characteristics that should be considered during the validation of
+          analytical procedures”
+
+
+
+
+5
+  Although NIR procedures could be used in positron emission tomography drug production, it is not typical.
+Therefore, references to 21 CFR part 212, Current Good Manufacturing Practice for PET Drugs, are not included in
+this guidance.
+
+
+                                                       2
+                                  Contains Nonbinding Recommendations
+
+
+      •   “[G]uidance and recommendations on how to consider the various validation
+          characteristics for each analytical procedure”
+
+      •   An “indication of the data that should be presented in a new drug application” 6
+
+Although many of the concepts described in ICH Q2(R1) can apply to a wide variety of
+analytical methodologies, ICH Q2(R1) does not address some characteristics unique to NIR
+analytical procedures. 7 NIR analytical procedures typically combine the following features:
+
+      •   Instrumentation elements (e.g., an analyzer consisting of an NIR spectrophotometer, a
+          reflectance or transmission probe, or spectral analysis software)
+
+      •   Acquisition parameters
+
+      •   A sample presentation (interface)
+
+      •   A sampling scheme for process applications
+
+      •   The composition of spectral datasets
+
+      •   Spectral pretreatments
+
+      •   Wavelength ranges
+
+      •   A chemometric model
+
+This guidance addresses the NIR-specific features listed above that are not addressed in ICH
+Q2(R1).
+
+
+
+
+6
+    See ICH Q2B, p. 1.
+7
+  At the time of this guidance’s publication, the ICH Q2(R2)/Q14 expert working group planned to develop a new
+ICH quality guideline, ICH Q14, on analytical procedure development, and revise the ICH Q2(R1) guideline on
+validation of analytical procedures, with a view to potentially combine both documents into one, for simplification
+and clarity. See https://www.ich.org/page/quality-guidelines. ICH is a consensus-driven process that involves
+technical experts from regulatory authorities and industry parties in detailed technical and science-based
+harmonization work that results in the development of ICH guidelines. The commitment to consistent adoption of
+these consensus-based guidelines by regulators around the globe is critical to realizing the benefits of safe, effective,
+and high-quality drug products for patients as well as for industry. As a Founding Regulatory Member of ICH, FDA
+plays a major role in the development of each of the ICH guidelines, which FDA then adopts and issues as guidance
+to industry.
+
+
+                                                           3
+                                Contains Nonbinding Recommendations
+
+
+III.       GENERAL MODES OF MEASUREMENT FOR NIR IMPLEMENTATION
+
+For NIR-based process analyzers, the following modes of measurement are commonly used for
+process understanding, monitoring, and control: 8
+
+       •   Off-line, where the sample is analyzed away from the process stream or reactor (e.g., the
+           identity testing of raw material samples by NIR in the quality control lab)
+
+       •   At-line, where the sample is removed, isolated from, and analyzed in close proximity to
+           the process stream or reactor (e.g., a measurement of a tablet assay or content uniformity
+           by NIR where the NIR analyzer is located next to the tablet press and fed manually or
+           automatically)
+
+       •   On-line, where the sample is diverted to a side stream off the main manufacturing process
+           and may be returned to the process stream or reactor (e.g., a measurement of cell density
+           in an anaerobic fermentation process using a flow-through cell)
+
+       •   In-line, where the sample is not removed from the process stream or reactor (e.g., an in-
+           line monitoring of blend uniformity by NIR where the NIR analyzer is interfaced with the
+           blender through a window and takes continuous spectra measurements)
+
+The following subsections describe some specific features that applicants should consider during
+development when selecting the appropriate mode of measurement for NIR implementation.
+
+           A.     Off-Line or At-Line
+
+Generally, off-the-shelf NIR interfaces are used for off-line or at-line measurements. However,
+customized sample holders can be used when indicated for a specific application. Applicants
+should consider the following factors while developing off-line or at-line measurements:
+
+       •   Measurement. NIR instruments typically allow for transmission measurements and for
+           reflectance measurements, but selection of the appropriate measurement type should be
+           based on both the optical properties of the sample and the intended application. For
+           example, although a transmission measurement probes the bulk of the sample, a
+           transmission measurement’s useful spectral range is often more limited than a reflectance
+           measurement’s useful range, and a transmission measurement’s spectra may contain
+           more noise than a reflectance measurement’s spectra. Similarly, although a reflectance
+           measurement includes a surface signal component, that reflectance measurement
+           typically produces less noise and a wider useful spectral range than a transmission
+           measurement. Therefore, applicants should carefully choose the NIR instrument that
+           balances these issues.
+
+
+
+
+8
+  When used for monitoring or control of the drug product during commercial manufacturing, each of these sample
+testing modes must satisfy existing CGMP requirements (see, for example, 21 CFR 211.110 and 21 CFR 211.165).
+
+
+                                                       4
+                                Contains Nonbinding Recommendations
+
+
+    •   Spectral Acquisition Time. A spectral acquisition time that simultaneously optimizes
+        both the signal-to-noise ratio and the measurement duration for a given application
+        should be selected.
+
+    •   Sampling.9 A sampling plan should be developed that ensures that the samples
+        (1) represent the processed materials, (2) are based on rational criteria, and (3) accurately
+        portray the material being sampled. Additionally, the sampling plan should involve time-
+        and location-based sampling.
+
+    •   Sample Preparation. Generally, there is no need to prepare (or change) the physical
+        characteristics of the sample (e.g., through grinding) to make the sample more suitable
+        for NIR analysis. However, if samples are prepared before spectral acquisition, the same
+        sample preparation should be used both for calibrating and validating the sample and for
+        analyzing the production batches.
+
+        B.       On-Line or In-Line
+
+Typically, on-line or in-line measurements use a custom-built interface to provide an acceptable
+signal-to-noise ratio and spectral acquisition time. Therefore, the following factors during the
+development of on-line or in-line measurements should be considered:
+
+    •   Interface. First, the appropriate measurement interface depends on the application. For
+        example, to monitor blending in a rotary blender or mixer, a sapphire window is often
+        built into the blender or mixer wall or lid with an analyzer bolted outside the mixer to
+        ensure that the analyzer will not be dislodged by the rotary motion of the equipment. For
+        other types of measurements (e.g., for measuring the solvent’s content during drying), a
+        probe connected to the analyzer by a fiber optic cable can be used. (However, an NIR
+        signal transmitted through a fiber optic cable should be adequate for the intended
+        measurement.) Second, the location of the interface (e.g., the interface’s position,
+        distance, and depth) should ensure that spectra that represent the properties of the entire
+        processed materials are obtained. Finally, NIR interface consistency and cleanliness
+        should be maintained throughout the entire data acquisition process to ensure data
+        integrity.
+
+    •   Spectral Acquisition. The interface should be designed to minimize the interference of
+        spectral acquisition. To accurately monitor an operation unit, the interface should be
+        exposed to the material being processed throughout the entire spectral acquisition time.
+        For rotary blenders, spectral acquisition time and frequency should be adjusted so that
+        sample spectra are obtained only while the interface is exposed to the material being
+        blended or mixed. (For example, triggers based on chronometry or gravity should be
+        used to synchronize the start or stop of spectral acquisition.) For liquid samples, the
+        effect of bubble formation should be evaluated.
+
+
+9
+ When used for monitoring or control of the drug product during commercial manufacturing, each of these
+sampling approaches must satisfy existing CGMP requirements at 21 CFR 211.110, 21 CFR 211.160, and
+21 CFR 211.165.
+
+
+                                                       5
+                              Contains Nonbinding Recommendations
+
+
+          During development of the interface, it should be confirmed that the material does not
+          stick or bind to the interface window. Additionally, applicants should understand and
+          characterize the material properties within the unit operation to ensure that the material
+          analyzed at interface is representative of the material as a whole.
+
+      •   Data Collection. If wireless communication is used to transmit the NIR signal to the
+          controller, hardware and software that ensures the robustness and integrity of the data
+          transmission should be installed.
+
+      •   Sampling. The assessment of an effective sample size is important for some applications
+          (e.g., for a blend uniformity analysis). Applicants can determine if a sample size is
+          effective for NIR measurements by evaluating the diameter of the NIR beam, the beam’s
+          depth of penetration, and the density of the sample. Generally, an effective sample size is
+          small because the NIR beam would then illuminate a small sample volume. Specifically,
+          for monitoring blend homogeneity, the effective sample size should be comparable to a
+          unit dose of the finished drug product.
+
+      •   Reference Measurement. Ideally, spectral acquisition and reference analysis should be
+          performed on the same samples that will be used to develop the calibration model. It
+          may be difficult, however, to use the same samples, particularly for in-line
+          measurements. Therefore, when identical samples cannot be used, applicants should
+          justify the pairing of the spectra with the reference results.
+
+
+IV.       DEVELOPMENT OF NIR MODELS
+
+An NIR model is an integral part of an NIR procedure. NIR models can be categorized as either
+quantitative (e.g., for assay) or qualitative (e.g., for identification or for limit testing for the
+absence of polymorphs). Typically, the development of an NIR model is based on chemometrics
+and should involve the following steps.
+
+          A.     Construction of a Calibration Set
+
+An essential part of developing an NIR model is the construction of a calibration set. The
+spectra that comprise the calibration set are acquired from the calibration samples. To create a
+robust model, applicants should build a calibration set with samples that: (1) include an
+appropriate concentration range for the component to be analyzed; (2) address potential sources
+of variability (e.g., a variation in the processes, the analyzer, the physical characteristics of the
+materials, the water content, or the temperature); and (3) cover the expected variations in process
+parameters (e.g., in-design space parameters) that have a potential to influence the spectral
+response.
+
+Calibration samples should mimic as closely as possible the samples that are expected to be
+representative of the commercial process; calibration samples from batches that are either
+produced at the intended commercial scale or representative of the commercial process are ideal
+because they generally exhibit the expected process variability. If the samples obtained from the
+
+
+
+                                                    6
+                            Contains Nonbinding Recommendations
+
+
+process do not provide a sufficient range of variability, additional samples can be prepared under
+laboratory conditions. When preparing calibration samples, applicants should consider the
+following factors, including, but not limited to:
+
+   •   Variations from sample preparations (e.g., lack of batch homogeneity) can affect the
+       calibration results.
+
+   •   The physical attributes of the prepared samples should ensure a spectral response similar
+       to the response of materials manufactured with the use of a commercial process. For
+       example, tablets prepared in a laboratory should have physical characteristics equivalent
+       to tablets prepared with a commercial process.
+
+   •   Spectral preprocessing should adequately minimize the influence of the difference in
+       physical attributes for the laboratory-prepared and production samples on the measured
+       spectra.
+
+   •   To capture the expected material variabilities calibration samples of qualified materials
+       from multiple vendors or from different manufacturing lots should be used.
+
+   •   For quantitative NIR models, concentrations of the analyte of interest should span a range
+       that is wider than the acceptable specification limit to ensure that the model can
+       characterize nonconforming materials.
+
+   •   When the NIR procedure is intended to simultaneously characterize multiple analytes, the
+       design of the experiment methodology can be used to select the optimum combination of
+       the concentrations of analytes in the calibration samples.
+
+   •   Any potential variability from the sample presentation should be built into the calibration
+       set.
+
+   •   Environmental variability can be addressed either by measuring spectra under different
+       environmental conditions or by maintaining constant environmental conditions during
+       sample acquisition and spectral measurement.
+
+   •   Inclusion of spectra from multiple instruments of the same type can facilitate future
+       extensions of the calibration to a new instrument or to a new site.
+
+   •   Instrument characteristics may introduce a significant source of variability. This
+       variability can be lowered by activating standardization options, which are often available
+       in the software associated with NIR instruments. The design of calibration sets to
+       support this standardization can facilitate future extension of the calibration model to new
+       instruments or to new sites.
+
+
+
+
+                                                7
+                            Contains Nonbinding Recommendations
+
+
+       B.      Presentation of Samples
+
+For both qualitative and quantitative analyses, the presentation of samples to the NIR instrument
+can influence the instrument’s spectral quality, which would therefore affect the performance of
+the NIR analytical procedure. A typical NIR analyzer offers multiple options for the
+presentation of samples (e.g., diverse reflectance and transmission measurements, single and
+multiple sample holders, different probe window sizes, and a variety of individual fibers in a
+fiber cable); applicants should decide which option best fits the requirements of the NIR
+procedure to their processes and properties of interest. In addition, applicants should:
+
+   •   Use an equivalent interface and sample presentation to obtain calibration and routine
+       production sample spectra
+
+   •   Ensure that, if sample holders are used that provide for multiple positions (e.g., tablet
+       wheels or trays), the location of their samples in those holders does not affect the
+       obtained spectra
+
+   •   Ensure that, if the obtained spectra depend on which side of a tablet is presented to the
+       spectrometer, the same side of the tablet is presented to the spectrometer for each scan
+
+   •   Include replicate scans of the same materials if hand-held probes are used
+
+   •   Perform a replicate scanning of the samples that are placed in vials if those samples are
+       scanned through the vial to reduce the interference of vial variability
+
+       C.      Development of Chemometric Models
+
+For NIR analytical procedures, chemometric models are usually built upon predictor variables
+that are either wavelength-dependent spectral intensities or the linear combinations of those
+wavelength-dependent spectral intensities. Chemometric models are usually developed using
+common chemometric algorithms such as principal component analysis, partial least square, and
+principal component regression, which are all typically included with commercially available
+chemometric software.
+
+Applicants should consider the following factors when developing chemometric models:
+
+   •   The wavelength range of the spectral data used to construct the chemometric model does
+       not need to include the full range of the analyzer. However, restricting the calibration
+       wavelength range to cover only narrow regions around an analyte peak can compromise
+       the model’s robustness; therefore, model performance should be tested rigorously using
+       both narrow and full ranges.
+
+   •   Usually, raw NIR spectra should be pretreated to reduce their variability and to enhance
+       spectral effects related to chemical composition. For example, impact of particle size or
+       compression force on the intensity of scattered light can be significantly reduced through
+
+
+
+                                                 8
+                             Contains Nonbinding Recommendations
+
+
+       spectral pretreatment. However, inappropriate pretreatments can introduce artifacts or
+       reduce the signal-to-noise ratio.
+
+   •   The appropriate number of factors or latent variables should be chosen to avoid
+       underfitting or overfitting the model. Most chemometric software packages include
+       statistical tools to help determine the optimal number of factors. Establishing the number
+       of factors based on the number of components in the analyte sample is not considered to
+       be a suitable substitute for the use of these tools. Overfitting the data with too many
+       fitting parameters can lower the robustness of the model and lead to poor predictive
+       performance of the calibration model.
+
+   •   Potential outliers in the calibration set (e.g., samples with high leverages or high residuals
+       or atypical NIR spectra or reference results), which can often be identified either by
+       visual inspection of the data or during internal validation, should be investigated. Most
+       software programs contain outlier and model diagnostics during prediction. Data
+       resulting from spectral acquisition or reference analysis errors should be considered
+       confirmed outliers and therefore rejected. Any inclusion or exclusion of outliers should
+       be justified.
+
+   •   To increase the accuracy of the NIR measurement of the active ingredient content of a
+       tablet, the calibration model should be developed using reference assay values from
+       individual tablets based on the matched weight and concentration for each tablet.
+       Conversely, during a routine analysis of the model, the NIR concentration result from
+       each tablet should be corrected for the weight of that tablet to obtain the assay value. If
+       weight correction is not feasible, an alternative approach should be justified.
+
+   •   The preprocessing regimen, the spectral range, and the number of latent variables should
+       be optimized to improve the model’s performance and robustness through internal
+       validation.
+
+       D.      Internal Validation of Identification Libraries
+
+Identification libraries based on the chemometric models should be internally validated (1) to
+verify the proper assignment of spectra, (2) to ensure that there are no conflicts among library
+products, and (3) to confirm that the library threshold is appropriately set. This internal
+validation should be performed by treating each spectrum in the library as an unknown and by
+determining whether each spectrum is correctly and uniquely identified by the library.
+
+       E.      Internal Validation of Quantitative Calibration Models
+
+Two common approaches for internally validating quantitative calibration models include
+(1) cross-validation using the calibration set, and (2) validation using an internal validation set.
+
+   (1) Cross-Validation Using the Calibration Set. The cross-validation process involves the
+       following steps:
+
+
+
+
+                                                  9
+                               Contains Nonbinding Recommendations
+
+
+         (a) Removing one or more spectra from the calibration set
+         (b) Creating a model based on the remaining spectra
+         (c) Applying that model to the spectra that have been removed
+         (d) Calculating the differences between the known reference values and the values
+             predicted by the model (i.e., the residuals)
+
+         These steps should be sequentially applied to the entire calibration set, and the resulting
+         residuals can be used to calculate the root mean square error of cross-validation.
+
+     (2) Validation Using an Internal Validation Set. Validation using an internal validation
+         set involves applying one or more of the models that were obtained from the calibration
+         set to the internal validation set. The resulting residuals can be used to calculate the
+         standard error of prediction (SEP).
+
+The root mean square error of cross-validation or SEP can be used as one criterion for model
+optimization. The optimum model for the analytical procedure usually exhibits an acceptable
+error but minimizes the sensitivity of the error to small variations in either sample characteristics
+or model parameters.
+
+At the end of the optimization process, the standard error of calibration (SEC) should ensure that
+the measurement is performed with the accuracy necessary for the intended purpose of the
+analytical procedure, such that the accuracy of the NIR method is comparable to that of the
+reference method.
+
+         F.      Development of Rate-of-Change Models
+
+Typically, rate-of-change models are used to monitor and detect the endpoint of dynamic
+processes (e.g., blending or mixing). 10 If these models are used, the endpoint usually will
+coincide with the measured rate of change reaching a predefined threshold that indicates that the
+process is complete. These models can be based on a change in the (1) concentration of the
+active ingredient or other component, or (2) spectral magnitude related to the component of
+interest.
+
+Applicants should consider the following when developing rate-of-change models:
+
+     •   The endpoint criteria should provide assurance that the detected endpoint is not a
+         transient phenomenon. For example, applicants can specify that the rate of change
+         remains below the endpoint value for a predetermined time or number of blender
+         revolutions.
+
+
+
+
+10
+  When used for monitoring or control of the drug product during commercial manufacturing, the implementation
+of the processing endpoint must satisfy the CGMP requirements (see, for example, 21 CFR 211.110) and be
+validated (see 21 CFR 211.100 and 21 CFR 211.160).
+
+
+                                                      10
+                              Contains Nonbinding Recommendations
+
+
+     •   For endpoint criteria that are based on statistical considerations (e.g., the F-value between
+         consecutive blocks of spectra), any underlying assumptions (e.g., data normality) should
+         be met.
+
+     •   For blends in which a component of interest is present in a low concentration, risk exists
+         that the endpoint represents a uniformity of the major components. For these blends, the
+         endpoint criteria should indicate a uniform distribution of the low-level component of
+         interest.
+
+     •   If a rate-of-change model for blend uniformity (e.g., blending or mixing) is based on a
+         quantitative model for either the active ingredient or another component, the rate-of-
+         change model and the quantitative model should separately be developed and validated to
+         ensure an accurate and reliable endpoint detection.
+
+
+V.       EXTERNAL VALIDATION OF NIR ANALYTICAL PROCEDURES
+
+Applicants should perform validation after their chemometric models are developed. This
+validation is sometimes referred to as external validation. Internal validation of the chemometric
+model is not considered a substitute for external validation.
+
+The samples used by applicants for external validation should: (1) span a suitable range of
+operating conditions (including the range expected during commercial production); (2) be
+independent from the calibration and internal validation samples used during the development of
+the NIR models; (3) be of a sufficiently large number to provide statistically meaningful results;
+and (4) either be produced at the intended commercial scale or represent the commercial process.
+Also, results should be acquired either (1) from the NIR and reference analytical procedures
+using the same sample when feasible, or (2) by using representative samples and providing a
+justification for those samples.
+
+Qualitative analytical, quantitative analytical, and rate-of-change procedures should be validated
+as follows.
+
+         A.     Qualitative Analytical Procedures
+
+Qualitative NIR procedures based on identification libraries should be validated for specificity
+and robustness. Specificity normally involves demonstrating that positive and negative controls
+yield the correct pass or fail results. Positive controls usually comprise samples of known
+identity, and acceptance of the sample’s quality should be confirmed by independent reference
+testing. Placebos or other samples that show spectral similarities to the tested material can be
+used as negative controls.
+
+
+
+
+                                                  11
+                              Contains Nonbinding Recommendations
+
+
+          B.      Quantitative Analytical Procedures
+
+Applicants should validate quantitative procedures for accuracy, precision, specificity, linearity,
+range, detection and quantitation limits, and robustness. 11
+
+      •   Accuracy. The accuracy of the NIR procedure should be determined by comparing the
+          results from the NIR analytical procedure using external validation samples with the
+          results from a suitable reference analytical procedure.
+
+          The SEP can be calculated as a measure of accuracy relative to the external validation set.
+          Significant differences between the SEC and SEP, as well as significant biases, could
+          indicate either differences between the calibration samples and the validation samples or
+          an inadequately optimized calibration model, both of which should be appropriately
+          investigated and rectified.
+
+          The independent validation set used to determine the accuracy of the NIR procedure
+          should span a suitable range of sample concentrations.
+
+      •   Precision. The standard deviation of repeat measurements (i.e., repeatability) can be a
+          useful measure of precision. Samples for repeatability measurements should cover the
+          expected range of sample variation. Multiple measurements should be made of each
+          sample. If possible, the sample should be repositioned in the sample holder or on the
+          sample presentation module after each measurement. Intermediate precision, which
+          involves different analysts or different days, should also be determined.
+
+      •   Specificity. Specificity is conventionally considered to be verified if the main features of
+          the loadings plots correspond to the loadings plots of the NIR spectrum of the analyte of
+          interest. The NIR spectrum should be pretreated in the same way as spectra used in the
+          model. Another element of specificity is the ability of the method to reject outliers (e.g.,
+          samples with high leverages or high residuals).
+
+      •   Linearity. To evaluate linearity, analytical results for the external validation samples
+          obtained using the NIR analytical procedure should be compared to the results obtained
+          using the reference analytical procedure. If the resulting values are plotted over a
+          suitable range, a correlation coefficient close to 1 and, where applicable, a y-intercept
+          close to 0 indicate an acceptable linearity.
+
+      •   Range. As recommended in ICH Q2(R1), the appropriate range for validation studies
+          should depend on the attribute being evaluated.
+
+      •   Detection and Quantitation Limits. If the NIR analytical procedure will be used near
+          the limit of its detection capability, detection limit and quantitation limit should be
+          determined by, for example, analyzing minor components or detecting the endpoint for
+          drying.
+
+11
+     See ICH Q2(R1).
+
+
+
+                                                   12
+                                Contains Nonbinding Recommendations
+
+
+
+       •   Robustness. Robustness can be addressed during the calibration model’s development
+           by including anticipated sources of variability (e.g., raw materials and operating and
+           environmental conditions). Robustness can be confirmed during validation by using
+           validation samples that include sources of variability that may occur during commercial
+           production.
+
+           C.        Rate-of-Change Procedures
+
+To validate rate-of-change procedures (e.g., blending or mixing), manufacturers should
+demonstrate both the adequacy of the NIR endpoint criteria and the specificity of the NIR
+procedure for components of interest. First, the adequacy of the endpoint criteria should be
+confirmed with an appropriate reference methodology (e.g., a traditional blend uniformity
+analysis). During the validation of the rate-of-change procedure (e.g., blending or mixing), the
+procedure should be stopped as soon as the endpoint criteria are achieved; otherwise, misleading
+results may occur. Second, specificity can be demonstrated by showing that the wavelength
+region used for the NIR procedure included major bands of the components of interest.
+
+
+VI.        IMPLEMENTING AND MAINTAINING NIR ANALYTICAL PROCEDURES
+
+Applicants must ensure that NIR analytical procedures are appropriately followed, maintained,
+and updated as needed throughout the drug product’s life cycle in accordance with CGMP
+requirements. 12 The CGMP regulations for finished pharmaceuticals require that drug product
+manufacturers establish procedures to:
+
+       •   Appropriately maintain hardware (by, for example, conducting reliability testing to
+           estimate the mean time to failure and the mean time between failure, performing
+           suitability testing, and creating and following a maintenance and repair schedule) 13
+
+       •   Monitor calibration model predictions and model diagnostics to detect changes, including
+           trends and shifts; 14 continual monitoring is recommended to ensure rapid detection and
+           timely intervention to prevent product failure
+
+       •   Recognize circumstances, such as the following, that may warrant revision of the
+           calibration model: 15
+
+
+
+
+12
+   When used for monitoring or control of the drug product during commercial manufacturing, CGMP requirements
+at, for example, 21 CFR 211.110, 21 CFR 211.68, and 21 CFR 211.160 apply.
+13
+     21 CFR 211.68
+14
+     21 CFR 211.100(b); 21 CFR 211.110; 21 CFR 211.160(b)(4)
+15
+     21 CFR 211.68; 21 CFR 211.160(b)(4)
+
+
+                                                      13
+                                Contains Nonbinding Recommendations
+
+
+
+          −   Significant changes of materials, equipment, and/or manufacturing processes
+          −   Unusual or erroneous NIR results
+          −   Failure to meet routine method verification criteria
+          −   Transfer of the NIR analytical procedure
+          −   Major repair of the analyzer
+
+      •   Revise and revalidate the calibration model 16
+
+The extent of the model’s maintenance (e.g., periodic verification) should be dependent on the
+effect of the model on the drug product’s quality. Retention of development and maintenance of
+NIR analytical procedures and calibration model must be consistent with record retention
+requirements in the regulations. 17 The calibration model should be retained in a knowledge
+management system for as long as the information is useful in evaluating the model’s
+performance and history of use that is relevant to any product released using this model. 18
+
+Applicants should consider developing contingency procedures to follow if their NIR equipment
+fails before or in the middle of measurements or ongoing operations. This could reduce the need
+to reject drug material and limit production delays. These contingency procedures are
+particularly important for the on-line or in-line implementation of an NIR analytical procedure
+when the measurement is to be used to satisfy a CGMP requirement.
+
+
+VII.      INFORMATION SUBMITTED IN AN APPLICATION
+
+An applicant must provide information about every NIR analytical procedure that is included in
+its commercial control strategy, 19 as well as information about the development and validation of
+these procedures (as detailed in sections VII.A. through VII.C.). 20 Additionally, applicants
+should provide high-level summaries of their plans for the life cycle maintenance of models
+associated with NIR analytical procedures. Detailed life cycle maintenance plans, as well as
+records of any changes in software versions over the life cycle, must be maintained at the
+manufacturing site as part of the manufacturing site’s quality systems risk and knowledge
+management programs and available for inspection. 21 Information about the NIR procedures
+
+
+16
+     21 CFR 211.68; 21 CFR 211.180(e)
+17
+  21 CFR 211.68; 21 CFR 211.180. NIR model information should be retained for active pharmaceutical
+ingredients consistent with ICH Q7 and as described here.
+
+18
+  See the ICH guidance for industry Q10 Pharmaceutical Quality System (April 2009) about knowledge
+management.
+19
+     21 CFR 314.50(d)
+20
+     See ICH Q2(R1).
+21
+     21 CFR 211.180
+
+
+                                                     14
+                           Contains Nonbinding Recommendations
+
+
+used only for developmental or informational purposes does not need to be included in the
+application.
+
+If NIR and another equivalent method are both submitted, the applicant should indicate the role
+of each method to provide clarity for decisions concerning in-process/intermediate material and
+finished batch disposition. Specifically, the applicant should indicate which method will be used
+for the routine release and, if applicable, which will be considered the alternate method per 21
+CFR 314.50(d)(1)(i) (for drug substances) and 21 CFR 314.50(d)(1)(ii)(a) (for drug products).
+
+       A.     Procedural Information
+
+For NIR analytical procedures, applicants should provide at least the following information:
+
+   •   The purpose of the procedure, including:
+
+       − The location within the process (i.e., which unit operation)
+
+       − The mode of measurement (i.e., in-line, on-line, at-line, or off-line)
+
+       − The property or attribute of interest to be measured
+
+       − The intended use (e.g., for in-process or end-product release testing)
+
+   •   The analyzer and software specifications, such as:
+
+       − The instrument manufacturer, model, and type (e.g., dispersive or Fourier Transform)
+
+       − Whether custom-made software will be used for spectral acquisition, model
+         development, and routine prediction
+
+       − Data acquisition, including the measurement principles (e.g., the transmission or
+         reflectance mode), the acquisition times, the number of spectra averaged, the number
+         of scans, the number of replicates, and the wavelength ranges, among others
+
+       − The sampling accessories
+
+       − The sample’s orientation (e.g., random, with indentation up or down) if a specialized
+         sample holder is used
+
+   •   The steps for the sample’s analysis, including, when relevant:
+
+       − The reference (background) spectrum collection
+
+       − The sample presentation
+
+       − The sample preparation or conditioning
+
+
+                                               15
+                            Contains Nonbinding Recommendations
+
+
+
+       − A system suitability description
+
+       − The tablet weight measurement for assay and content uniformity
+
+For in-line or on-line methods, applicants should also provide information, as applicable,
+regarding:
+
+   •   How the NIR instrument is interfaced to the process
+
+   •   The system or procedure followed to ensure that the interface remains clean and free of
+       adherent material
+
+   •   For on-line blending or mixing, the system used to trigger spectral acquisition to ensure
+       that the interface window remains covered by the blend throughout the acquisition
+
+   •   The endpoint criteria of a process, such as blending or mixing
+
+   •   Any contingency plan that addresses both a potential failure of the NIR analyzer and a
+       potential failure of an in-process NIR procedure to detect the pre-established endpoint
+
+       B.      Development Information
+
+For the development of NIR analytical procedures, applicants should provide at least the
+following information:
+
+   •   For calibration and internal validation sets:
+
+       − The associated batches, including the number of batches, the batch size, and the
+         number of samples from each batch that were used to create the calibration set
+
+       − If an internal validation set is used, the method used for distinguishing the calibration
+         set from the internal validation spectra
+
+       − For quantitative procedures, the distribution of the reference values in the calibration
+         and internal validation sets (which can also be shown in the form of predicted versus
+         reference results or in residual plots)
+
+       − If some samples are prepared in small batches to represent a known concentration of
+         the analyte, any differences in appearance (such as in shape, size, dimension, or
+         indentation) between the small batch samples and the production samples
+
+       − Any sources of variation included in the calibration set and how these variations
+         relate to potential variations in the raw materials and process parameters expected
+         during commercial production
+
+
+
+                                                 16
+                                 Contains Nonbinding Recommendations
+
+
+     •   For chemometric models:
+
+         − A rationale for using a particular wavelength range, spectral pretreatment, 22
+           algorithm, and threshold
+
+         − For quantitative methods, the internal model validation conducted to justify the
+           number of latent variables, including a predicted residual error sum of squares
+           (PRESS) plot or other diagnostic to demonstrate that the model is not overfit
+
+         − For a qualitative model (identification library), the positive predictive value used,
+           such as the distances (match values) between all library products for small libraries or
+           a graphical representation for large libraries
+
+         − The applicant’s handling of outliers
+
+         − Raw and pretreated spectra, including pure component spectra, if available
+
+     •   For in-line or on-line methods, as applicable:
+
+         − Data that demonstrate the suitability of the probe window location
+
+         − Data that support a contingency plan for the potential failure of the in-process NIR
+           method to detect the pre-established endpoint even after prolonged processing
+
+     •   For on-line and in-line methods for blending or mixing, as applicable:
+
+         − An estimation of and a rationale for the effective sample size, including the
+           applicant’s consideration of the sample’s potential movement during spectral
+           acquisition
+
+         − A justification for using a rate-of-change-based method, as well as any data
+           supporting the endpoint criteria of the blending or mixing process
+
+         C.      Validation Information
+
+For the validation of NIR analytical procedures, applicants should provide at least the following
+information:
+
+     •   The external validation set, including:
+
+         − The associated batches, including the number of batches, the batch size, and the
+           number of samples from each batch that were used to create the external validation
+           set
+
+22
+  For spectral pretreatments, applicants should also provide information about the order that the processing was
+applied.
+
+
+                                                         17
+                                    Contains Nonbinding Recommendations
+
+
+
+           − For quantitative procedures, the distribution of the reference values in the external
+             validation set (which can also be shown in the form of predicted versus reference
+             results or in residual plots)
+
+       •   The specificity, linearity, accuracy, precision, and robustness of the quantitative
+           procedures used, as appropriate 23
+
+       •   A validation of the qualitative method used, including testing for specificity of that
+           method
+
+       •   The reference analytical procedure and its standard error
+
+       •   Data that demonstrate that the model is valid at commercial scale (e.g., the use of
+           commercial-scale data during development of the procedure)
+
+       •   The procedure’s maintenance over the drug product’s life cycle, which can be written as
+           a high-level summary and include, for example:
+
+           − The frequency of, methods for, and acceptance criteria for periodic model verification
+
+           − Any possible triggers for method verification to be conducted outside of the regular
+             schedule
+
+For in-line blending or mixing, applicants should also provide validation information about their
+sampling strategies for the reference analytical procedure and the test results used to verify the
+blend uniformity as determined by NIR.
+
+For measuring assay and content uniformity, applicants should also, when feasible, provide
+validation information comparing their NIR results (including any tablet weight correction) with
+the reference analytical procedure results for the same samples. This comparison should be
+performed on a statistically significant number of individual samples from commercial-scale
+batches.
+
+
+VIII. LIFE CYCLE MANAGEMENT
+
+This section provides recommendations to applicants for the life cycle management of their
+qualitative and quantitative NIR analytical procedures. Because of the unique characteristics and
+complexity of NIR procedures, as compared to conventional analytical procedures, FDA’s
+recommendations for reporting postapproval changes to NIR procedures are detailed.
+
+After an applicant successfully validates and implements its NIR procedure, it should
+periodically evaluate the procedure during the life cycle of the drug product to continually ensure
+
+23
+     See section V.B. of this guidance.
+
+
+                                                    18
+                                    Contains Nonbinding Recommendations
+
+
+that the procedure remains fit for its intended purpose. This periodic evaluation is particularly
+important because NIR procedures (1) are highly sensitive to the manufacturing process and to
+the incoming material’s attributes, and (2) offer only limited availability of real-time reference
+standards.
+
+Changes to NIR procedures used for commercial manufacturing must be handled in accordance
+with CGMP 24 and should be managed under the manufacturing site’s pharmaceutical quality
+system (PQS). 25
+
+An applicant should determine an appropriate mechanism for reporting each postapproval
+change to its NIR procedure based on the potential impact the change has on:
+
+       •   The performance of the procedure (e.g., the procedure’s accuracy or specificity)
+       •   The identity, strength, quality, purity, or potency of the drug substance and drug product
+
+The significance of that impact (i.e., low, medium, or high) depends on the role of the procedure
+in the applicant’s overall control strategy. For example, a failure of the procedure used for the
+real-time release testing (RTRT) 26 of a finished drug product can have a high impact on drug
+product quality.
+
+The following table is a schematic representation of how applicants can evaluate the potential
+impact of a change to the NIR procedure and the appropriate corresponding reporting mechanism
+(i.e., managed solely under the manufacturing site’s PQS, an annual report (AR), a changes
+being effected in 30 days supplement (CBE-30), or a prior approval supplement (PAS)). The
+reporting categories suggested in this table apply when the corresponding supportive criteria are
+met as exemplified in section VIII.A. through D. of this guidance.
+
+Table: Levels of Changes and Reporting Mechanisms
+                                                Potential Impact of a Change on the Procedure’s
+                                                                 Performance
+                                                   Low                     Medium                       High
+    Potential Impact of Low                Minimal change               Minor change            Moderate change
+    a Change on the                            (PQS2)                      (AR)                   (CBE-30)
+    Product’s Quality1
+                        High                 Minor change             Moderate change             Major change
+                                                (AR)                    (CBE-30)                     (PAS)
+1
+    This potential impact depends on the role of the procedure in the applicant’s overall control strategy.
+2
+    This implies that no regulatory reporting (AR, CBE, PAS) is needed.
+
+
+
+
+24
+     21 CFR 211.22(c); 21 CFR 211.100(b); 21 CFR 211.166(a)
+25
+     See ICH Q10.
+26
+     See the ICH guidance for industry Q8(R2) Pharmaceutical Development (November 2009).
+
+
+                                                            19
+                                Contains Nonbinding Recommendations
+
+
+The following subsections describe types of postapproval changes and provide recommendations
+for appropriate reporting mechanisms. These recommendations are written to be generally
+appropriate for any applicant and are not intended to address all possible scenarios for managing
+postapproval changes. If applicants implement a postapproval change not mentioned below, they
+can either use a strategy similar to the ones listed to determine the appropriate filing mechanism
+or, for special cases, request additional guidance from the relevant FDA review division.
+Applicants can also choose to use tools outlined in the ICH guidance for industry Q12 Technical
+and Regulatory Considerations for Pharmaceutical Product Lifecycle Management (May 2021),
+such as established conditions and comparability protocols (referred to in ICH Q12 as
+postapproval change management plans), 27 which can leverage increased product and process
+knowledge to support alternate approaches to identifying postapproval changes that require
+reporting along with the associated reporting categories.
+
+          A.      Major Changes
+
+Major changes to an NIR procedure could potentially have a high impact on the procedure’s
+performance and on the quality of the drug substance or drug product. For example, FDA would
+expect the following changes to NIR analytical procedures to have a substantial potential to have
+an adverse effect on the identity, strength, quality, purity, and potency of drug products:
+
+      •   The addition of a new NIR analytical procedure that will be used for the RTRT of drug
+          substances or drug products.
+
+      •   The replacement of an analyzer or a sample interface that will necessitate a new spectral
+          set and a new calibration model for the NIR analytical procedure that is used for the
+          RTRT of drug substances or drug products. (When the acceptance criteria for validation
+          of the updated procedure are equivalent to those of the approved procedure, a reduced
+          reporting category could be considered.)
+
+      •   Significant changes to the in-process procedures used for the RTRT of drug substances or
+          drug products where the acceptance criteria for validation of the revised procedure are
+          not equivalent to those of the approved procedure.
+
+Major changes, as described in the examples above, must be reported in a PAS. 28
+
+          B.      Moderate Changes
+
+Moderate changes to an NIR procedure could potentially elicit either (1) a high impact on the
+procedure’s performance but a low impact on the drug product’s quality, or (2) a medium impact
+on the procedure’s performance but a high impact on the drug product’s quality. For example,
+FDA would expect the following change to an NIR analytical procedure to have a moderate
+
+27
+   See also the draft guidance for industry Comparability Protocols for Human Drugs and Biologics: Chemistry,
+Manufacturing, and Controls Information (April 2016). When final, this guidance will represent FDA’s current
+thinking on this topic).
+28
+     21 CFR 314.70(b)
+
+
+                                                       20
+                              Contains Nonbinding Recommendations
+
+
+potential to have an adverse effect on the identity, strength, quality, purity, and potency of drug
+products:
+
+      •   The establishment of a new chemometric model resulting from a new calibration set for
+          an NIR analytical procedure that will be used for testing raw materials, in-process
+          materials, or intermediates for a drug substance or a drug product
+
+Such changes must be reported in a CBE-30 supplement. 29
+
+          C.      Minor Changes
+
+Minor changes to an NIR procedure could potentially elicit (1) a medium impact on the
+procedure’s performance but a low impact on the drug product’s quality, or (2) a low impact on
+the procedure’s performance but potentially a high impact on the drug product’s quality. For
+example, FDA would expect the following changes to NIR analytical procedures to have a
+minimal potential to have an adverse effect on the identity strength, quality, purity, and potency
+of drug products:
+
+      •   The addition of a new product (material) to a validated identification library, provided
+          that the acceptance criteria are identical to the criteria used in the validation of the
+          original procedure
+
+      •   A minor change to the NIR procedure used for RTRT of the drug substance or drug
+          product (e.g., addition or subtraction of few spectra, small change in a wavelength range)
+          providing the following conditions are met:
+
+          − The size, composition, distribution, and variation of the calibration and validation sets
+            are equivalent to those used for the originally approved procedure
+
+          − The spectral data are pretreated using the same method that was used for the original
+            procedure
+
+          − The number of factors is established using an approach that is the same (or similar) to
+            the approach that was used in the original procedure
+
+          − The validation of a revised NIR procedure covers at a minimum the same attributes
+            with the same or improved acceptance limits as those used in the original procedure
+
+Such changes must be reported in an AR. 30
+
+
+
+
+29
+     21 CFR 314.70(c)
+30
+     21 CFR 314.70(d)
+
+
+                                                   21
+                                Contains Nonbinding Recommendations
+
+
+           D.       Other Minimal Changes
+
+Minimal changes to an NIR procedure are those that have no or a low potential to impact the
+procedure’s performance and the drug product quality. These changes would not require any
+regulatory notification; however, all changes should be managed and documented within the
+PQS 31 and must be approved by the site’s quality unit. 32 For example, FDA would expect the
+following changes to NIR analytical procedures to have no potential adverse impact on the
+identity strength, quality, purity, and potency of drug products:
+
+       •   Addition of a few spectra to augment variation in the calibration set, when major
+           calibration parameters and scope of validation remains the same as in the original
+           calibration model
+
+       •   Repairs to an existing NIR instrument(s) when there is no change in the calibration model
+
+       •   Update to existing software associated with the NIR procedure when verification shows
+           there are no changes in the predictive performance of the method
+
+
+
+
+31
+     See ICH Q10.
+32
+     21 CFR 211.22, 21 CFR 211.100, and 21 CFR 211.160.
+
+
+                                                      22
+                            Contains Nonbinding Recommendations
+
+
+                                          GLOSSARY
+
+Accuracy: As defined in ICH Q2(R1), “[t]he accuracy of an analytical procedure expresses the
+closeness of agreement between the value which is accepted either as a conventional true value
+or an accepted reference value and the value found.” 33 For NIR procedures, the accepted
+reference value is usually obtained from a reference procedure.
+
+Calibration Model: A model used to predict characteristics or properties of unknown samples.
+
+Calibration Set: A set of spectra with corresponding physical characteristics and known
+concentrations.
+
+Chemometric Models: Multivariate models that describe the relationship between the spectral
+variation in the calibration set and the sample’s characteristics (e.g., the sample’s drug
+concentration and identity).
+
+Chemometrics: Multivariate methods to analyze, extract, or compare data from chemical
+systems.
+
+Detection Limit: The lowest amount of analyte in a sample that can be detected at a specified
+confidence level but not necessarily quantitated with suitable precision and accuracy.
+
+External Validation: For quantitative models, external validation involves confirming the NIR
+calibration model’s performance with an independent (or naïve) dataset. For identification
+libraries, external validation involves analyzing samples (challenges) not represented in the
+library to demonstrate the discriminative ability of the library model.
+
+External Validation Set: A set of spectra and the related reference values that are (1) separate
+from the calibration set and internal validation set, and (2) used to give an independent
+assessment of the performance of the calibration model. Ideally, the range of the validation set
+should be similar to that of the calibration set.
+
+Identification Test: A qualitative implementation of NIR spectroscopy for NIR procedures
+where an unknown sample spectrum is compared to one or more spectra representing materials
+of known identity included in a spectral library.
+
+Internal Validation: A part of the model optimization process that involves a comparison of
+NIR predictions with corresponding reference values. Internal validation can be accomplished
+using an internal validation set (test set) or the calibration data by cross-validation. Internal
+validation is not a substitute for the external validation of the model. Although this guidance
+uses the term internal validation, other publications might use the terms internal model testing or
+model optimization instead, in particular when referring to multivariate methods in general.
+
+
+
+33
+     See ICH Q2A, p. A-1.
+
+
+
+                                                23
+                                 Contains Nonbinding Recommendations
+
+
+Internal Validation Set: A set of spectra with corresponding physical characteristics and
+known concentrations obtained from samples that have physical and chemical characteristics that
+span a range of variabilities similar to the samples used to construct the calibration set. Note that
+this guidance uses the term internal validation set for consistency; however, the equivalent terms
+test set or internal test set can be found in other publications. 34
+
+Linearity: The ability of the NIR procedure (within a given range) to achieve predictions that
+are proportional to the concentration of the analyte in the sample (i.e., the reference
+concentration).
+
+NIR Model: A mathematical expression that describes how the NIR spectral data are related to
+the analyte property of interest.
+
+Precision: The closeness of agreement between a series of measurements obtained from
+multiple sampling of the same homogeneous sample under the measurement’s prescribed
+conditions. Precision is determined by three factors: (1) repeatability (intra-assay precision);
+(2) intermediate precision (within laboratory); and (3) reproducibility (between laboratories).
+
+Predicted Residual Error Sum of Squares (PRESS) Plot: A function of the number of latent
+variables. PRESS values decrease initially with an increasing number of latent variables, reach a
+minimum, and then increase again or remain stable. PRESS plots are used to estimate an optimal
+number of latent variables to avoid overfitting.
+
+Quantitation Limit: The lowest amount of analyte in a sample that can be quantitatively
+determined with the desired precision and accuracy.
+
+Rate-of-Change Model: An NIR procedure based on observed changes in (1) the concentration
+of the active ingredient, (2) the other ingredients (i.e., the ingredients of primary interest), or (3)
+the spectral magnitude. This model is typically used for blending monitoring where the endpoint
+is often related to the rate of change falling below a certain threshold.
+
+Real-Time Release Testing (RTRT): The ability to evaluate and ensure the quality of the in-
+process and/or final product based on process data, which typically include a valid combination
+of measured material attributes and process controls.
+
+Reference Method: An analytical procedure (e.g., a high-performance liquid chromatography
+test) to obtain the reference values of the calibration and validation samples.
+
+Reference Values: Numerical results obtained from a reference method.
+
+Robustness: The capacity of NIR model predictions to remain unaffected by small variations in
+manufacturing and environmental conditions. Robustness indicates the procedure’s reliability
+during its normal usage.
+
+
+
+34
+     See, for example, United States Pharmacopeia General Chapter <1039> Chemometrics.
+
+
+                                                       24
+                            Contains Nonbinding Recommendations
+
+
+Specificity: The ability to unequivocally assess the analyte in the presence of components that
+may be expected to be present (e.g., impurities, degradants, or matrices). 35
+
+Spectral Acquisition Time: The period during which a specified number of scans are averaged
+into a sample spectrum.
+
+Standard Error of Calibration (SEC): A measure of the difference between the NIR values
+and reference values of the same calibration set. SEC is shown by the following equation:
+
+                                                                              2
+                                                ∑𝑛𝑛𝑖𝑖=1�𝑦𝑦𝐶𝐶,𝑖𝑖 − 𝑌𝑌𝐶𝐶,𝑖𝑖 �
+                                   𝑆𝑆𝑆𝑆𝑆𝑆 = �
+                                                      𝑛𝑛 − 𝑝𝑝 − 1
+
+
+Where Yc = NIR predicted value obtained from a calibration set sample; yc = reference value
+from the same calibration set sample; n = number of samples; and p = number of coefficients in
+the model (e.g., wavelength (such as multiple linear regression), principle components (such as
+principal component analysis or principal component regression), or factors (such as partial least
+square)).
+
+Standard Error of Prediction (SEP): A measure of the difference between the NIR values and
+reference values of the validation set. SEP is shown by the following equation:
+
+                                                                              2
+                                            � ∑𝑛𝑛𝑖𝑖=1�𝑦𝑦𝑉𝑉,𝑖𝑖 − 𝑌𝑌𝑉𝑉,𝑖𝑖 �
+                                   𝑆𝑆𝑆𝑆𝑆𝑆 =
+                                                          𝑛𝑛
+
+
+Where Yv = NIR predicted value from a validation set sample obtained using the established NIR
+calibration model; yv = reference value of the same validation set sample; and n = number of
+samples.
+
+
+
+
+35
+     See ICH Q2A, p. A-1.
+
+
+                                                     25
+
