@@ -1,0 +1,324 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-112581",
+  "metadata": {
+    "title": "Submitting Study Datasets for Vaccines to the Office of Vaccines Research and Review: Guidance for Industry; Technical Specifications Document",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 12/20/2019 · Docket FDA-2018-D-1216",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Biologics. Topics: Electronic Submissions",
+    "published_on": "2019-12-20",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/112581/download",
+  "original_sha256": "9b56e9e3c4984a44bac4ae304604ed570d08ccf80195d92f2c59c1ee9ab5540e",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 36,
+  "excluded_paragraphs": 1,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-4-paragraph-4",
+      "statement": "standardized trial data, the sponsor should refer to the FDA Study Data Technical Conformance Guide.",
+      "context": "If there is a question regarding a specific submission or implementation of a particular data standard, the sponsor should contact the appropriate review division in OVRR for specific submission questions or the appropriate contact for data standards issues at cber- FDA’s guidance documents, including this guidance, do not establish legally enforceable responsibilities. Instead, guidance describes the FDA’s current thinking on a topic and should be viewed only as recommendations unless specific regulatory or statutory requirements are cited.",
+      "fingerprint": "2cc31d0bce6f1141950bc414e35bb32019f695074a7dfdcf68bafbeb82a00849",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-4-paragraph-6",
+      "statement": "The use of the word should in FDA’s guidance means that something is suggested or recommended but not required.",
+      "context": "FDA’s guidance documents, including this guidance, do not establish legally enforceable responsibilities. Instead, guidance describes the FDA’s current thinking on a topic and should be viewed only as recommendations unless specific regulatory or statutory requirements are cited. 1 https://www.fda.gov/media/122913/download",
+      "fingerprint": "1afe317b641fd431ae1f6a3b422d2153216ca013f2d395126b35046d6830e87c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-5-paragraph-1",
+      "statement": "2.0 SUBMISSION OF DATA FOR VACCINE TRIALS The domains to be utilized in all Study Data Tabulation Model (SDTM) datasets submitted to OVRR include: Trial Summary (TS), Demographics (DM), Subject Visits (SV), Concomitant Medications (CM), Exposure (EX), Disposition (DS), Protocol Deviations (DV), and Medical History (MH). If a physical exam is included in the protocol, the information should be included in the Physical Exam (PE) domain. Similarly, if safety labs are included in the protocol, the information should be included in the Laboratory Test Results (LB) domain. Usage of the Adverse Event (AE), Clinical Event (CE), Findings About (FA), Vital Signs (VS), and Microbiology Specimen (MB) domains will be detailed below.",
+      "context": "2 https://www.cdisc.org/standards/therapeutic-areas/vaccines This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible for this guidance as listed on the title page. The DS domain should always include the Standardized Disposition Name (DECOD), Reported Term (TERM), Category (CAT), and Start Date/Time of Event (STDTC) variables. If relevant (i.e., multiple doses administered over time), the DS domain should include the use of the Order of Element within Arm (TAETORD) timing variable. The TAETORD timing variable should also be included in other domains when the vaccin",
+      "fingerprint": "0ccacc68bb3ad206775b3a038725ad1be73b3c69062a2f1427b86ca72db1eb46",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-5-paragraph-2",
+      "statement": "The DS domain should always include the Standardized Disposition Name (DECOD), Reported Term (TERM), Category (CAT), and Start Date/Time of Event (STDTC) variables. If relevant (i.e., multiple doses administered over time), the DS domain should include the use of the Order of Element within Arm (TAETORD) timing variable. The TAETORD timing variable should also be included in other domains when the vaccine is multi-dose.",
+      "context": "2.0 SUBMISSION OF DATA FOR VACCINE TRIALS The domains to be utilized in all Study Data Tabulation Model (SDTM) datasets submitted to OVRR include: Trial Summary (TS), Demographics (DM), Subject Visits (SV), Concomitant Medications (CM), Exposure (EX), Disposition (DS), Protocol Deviations (DV), and Medical History (MH). If a physical exam is included in the protocol, the information should be included in the Physical Exam (PE) domain. Similarly, if safety labs are included in the protocol, the information should be included in the Laboratory Test Results (LB) domain. Usage of the Adverse Event (AE), Clinical Event (CE), Findings About (FA), Vital Signs (VS), and Microbiology Specimen (MB) domains will be detailed below. In addition, the domains and variables to be utilized for safety, immunogenicity, and efficacy (i.e., clinical disease endpoint) data are detailed below.",
+      "fingerprint": "93aa6d59613e171fb2cdf1b2871533c36ee985c355c60f6ff5965279066dba63",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-5-paragraph-4",
+      "statement": "3.0 SUBMISSION OF SAFETY DATA FOR VACCINE TRIALS Safety data submitted for vaccine clinical trials should include reactogenicity data (i.e., a set of prespecified AEs collected within a prespecified time frame, often referred to as solicited AEs or reactions), unsolicited AEs, medically attended adverse events (MAAEs), and death. The sections below will detail the usage of domains and variables expected in submissions to OVRR.",
+      "context": "In addition, the domains and variables to be utilized for safety, immunogenicity, and efficacy (i.e., clinical disease endpoint) data are detailed below. Any usage of domains and variables that differ from these recommendations will need to be agreed upon prior to submission of datasets.",
+      "fingerprint": "d80194bc149a3ff7b1494e82ad9702084b585c8e170a8c2ea547e48bb8ed69e8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-5-paragraph-5",
+      "statement": "Any usage of domains and variables that differ from these recommendations will need to be agreed upon prior to submission of datasets.",
+      "context": "3.0 SUBMISSION OF SAFETY DATA FOR VACCINE TRIALS Safety data submitted for vaccine clinical trials should include reactogenicity data (i.e., a set of prespecified AEs collected within a prespecified time frame, often referred to as solicited AEs or reactions), unsolicited AEs, medically attended adverse events (MAAEs), and death. The sections below will detail the usage of domains and variables expected in submissions to OVRR. 3.1 Reactogenicity Data Reactogenicity data should be represented primarily in the CE domain with the Findings About Clinical Event (FACE) domain and VS domain to provide the specific information for each event. A more detailed description of how reactogenicity data should be collected is described in the Vaccine TAUG2. We prefer that the Vaccine TAUG “flat model” be utilized, i.e., that data for each day be included, even if a subject never experienced a particula",
+      "fingerprint": "2550d461ca81feae20bf5150b986d289c8a6a7250580af94d727178f2066ba9b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-5-paragraph-6",
+      "statement": "3.1 Reactogenicity Data Reactogenicity data should be represented primarily in the CE domain with the Findings About Clinical Event (FACE) domain and VS domain to provide the specific information for each event. A more detailed description of how reactogenicity data should be collected is described in the Vaccine TAUG2. We prefer that the Vaccine TAUG “flat model” be utilized, i.e., that data for each day be included, even if a subject never experienced a particular event. However, the “nested model,” which includes only a summary record for a particular event if a subject never experienced that event, may be necessary for large trials with significant amounts of data. Sponsors should discuss which model is appropriate with their review team prior to beginning their clinical trial.",
+      "context": "Any usage of domains and variables that differ from these recommendations will need to be agreed upon prior to submission of datasets. In the flat model, the CE dataset should include a record for each event for each subject, with the Clinical Event Reported Term (CETERM) as the event name and the Clinical Event Occurrence (CEOCCUR) = “Y” or “N.” CEOCCUR is “null” if the reactogenicity event was not measured on a particular day (i.e., data are missing) and none of the other assessment days for that subject are “Y.” If an event occurred, the clinical event start day/date (CESTDY/CESTDTC) and end day/date (CEENDY/CEENDTC) of the reactogenicity event should be collected and included in the dataset. If it is unknown",
+      "fingerprint": "42aec2dbbf0184241349c3afdd011d8eaaaacf48de7403c0b5a7fa670e641cba",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-5-paragraph-7",
+      "statement": "In the flat model, the CE dataset should include a record for each event for each subject, with the Clinical Event Reported Term (CETERM) as the event name and the Clinical Event Occurrence (CEOCCUR) = “Y” or “N.” CEOCCUR is “null” if the reactogenicity event was not measured on a particular day (i.e., data are missing) and none of the other assessment days for that subject are “Y.” If an event occurred, the clinical event start day/date (CESTDY/CESTDTC) and end day/date (CEENDY/CEENDTC) of the reactogenicity event should be collected and included in the dataset. If it is unknown",
+      "context": "3.1 Reactogenicity Data Reactogenicity data should be represented primarily in the CE domain with the Findings About Clinical Event (FACE) domain and VS domain to provide the specific information for each event. A more detailed description of how reactogenicity data should be collected is described in the Vaccine TAUG2. We prefer that the Vaccine TAUG “flat model” be utilized, i.e., that data for each day be included, even if a subject never experienced a particular event. However, the “nested model,” which includes only a summary record for a particular event if a subject never experienced that event, may be necessary for large trials with significant amounts of data. Sponsors should discuss which model is appropriate with their review team prior to beginning their clinical trial. when an event started and/or ended (e.g., because the diary card was not completed), the variable(s) CESTDT",
+      "fingerprint": "ed0730bda71412072e54aea53d1bad46c99e6ba91439b0b74470c71987281cbb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-6-paragraph-1",
+      "statement": "when an event started and/or ended (e.g., because the diary card was not completed), the variable(s) CESTDTC and/or CEENDTC should be null, and a comment should be provided in the Comments (CO) domain. The pattern of the event (i.e., continuous or intermittent) can be noted by using the Clinical Event Pattern of Events (CEPATT) variable, if collected. In both cases, the daily records are represented in FACE. All daily temperature measurements are represented in the VS domain. Standard units should either be Celsius ( o C) or Fahrenheit ( o F), but not both within a dataset. A dataset-level relationship in Related Records (RELREC) should be used to represent relationships between CE and FACE and between VS and assessments of fever in CE.",
+      "context": "In the flat model, the CE dataset should include a record for each event for each subject, with the Clinical Event Reported Term (CETERM) as the event name and the Clinical Event Occurrence (CEOCCUR) = “Y” or “N.” CEOCCUR is “null” if the reactogenicity event was not measured on a particular day (i.e., data are missing) and none of the other assessment days for that subject are “Y.” If an event occurred, the clinical event start day/date (CESTDY/CESTDTC) and end day/date (CEENDY/CEENDTC) of the reactogenicity event should be collected and included in the dataset. If it is unknown The annotated Case Report Form (CRF) should include a check box to indicate whether the reactogenicity event did or did not occur, during the prespecified time frame. A check box in the annotated CRF should also capture whether the reactogenicity event was collected every day, during the assessment interval for",
+      "fingerprint": "4fae1e5918f7c9f415136e0f4f3f507de9af42ba5b4e70e06b3e01c5bd7da1fc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-6-paragraph-2",
+      "statement": "The annotated Case Report Form (CRF) should include a check box to indicate whether the reactogenicity event did or did not occur, during the prespecified time frame. A check box in the annotated CRF should also capture whether the reactogenicity event was collected every day, during the assessment interval for a subject. If the Occurrence (OCCUR) variable is null, the Completion Status (--STAT) and Reason Not Done (-- REASND) variables in FACE and VS and CE (covering the assessment interval) should be utilized.",
+      "context": "when an event started and/or ended (e.g., because the diary card was not completed), the variable(s) CESTDTC and/or CEENDTC should be null, and a comment should be provided in the Comments (CO) domain. The pattern of the event (i.e., continuous or intermittent) can be noted by using the Clinical Event Pattern of Events (CEPATT) variable, if collected. In both cases, the daily records are represented in FACE. All daily temperature measurements are represented in the VS domain. Standard units should either be Celsius ( o C) or Fahrenheit ( o F), but not both within a dataset. A dataset-level relationship in Related Records (RELREC) should be used to represent relationships between CE and FACE and between VS and assessments of fever in CE. Reactogenicity events should be indicated by using “reactogenicity” in the variable Clinical Event Category (CECAT). It should be further subcategorized",
+      "fingerprint": "e250b8ba894a9874fdb74fe4ee66df800a195097144b0fb399c443b16176a75c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-6-paragraph-3",
+      "statement": "Reactogenicity events should be indicated by using “reactogenicity” in the variable Clinical Event Category (CECAT). It should be further subcategorized into “administration site” or “systemic,” using the variable Clinical Event Subcategory (CESCAT).",
+      "context": "The annotated Case Report Form (CRF) should include a check box to indicate whether the reactogenicity event did or did not occur, during the prespecified time frame. A check box in the annotated CRF should also capture whether the reactogenicity event was collected every day, during the assessment interval for a subject. If the Occurrence (OCCUR) variable is null, the Completion Status (--STAT) and Reason Not Done (-- REASND) variables in FACE and VS and CE (covering the assessment interval) should be utilized. If a reactogenicity event should happen to continue beyond the assessment interval, it should also be represented in the AE domain, with the CE domain record indicating that the event extended beyond the assessment interval, using the variables Clinical Event End Reference Time Point (CEENTPT) (e.g., “Day 7”) and Clinical Event End Relative to Reference Time Point (CEENRTPT) (“On",
+      "fingerprint": "3711341700ab8516252f4bc304678e9e6251bb55d358a8f016b0d671049fc403",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-6-paragraph-4",
+      "statement": "If a reactogenicity event should happen to continue beyond the assessment interval, it should also be represented in the AE domain, with the CE domain record indicating that the event extended beyond the assessment interval, using the variables Clinical Event End Reference Time Point (CEENTPT) (e.g., “Day 7”) and Clinical Event End Relative to Reference Time Point (CEENRTPT) (“Ongoing”). A check box in the CRF, indicating whether the reactogenicity event is ongoing after the assessment period, is recommended.",
+      "context": "Reactogenicity events should be indicated by using “reactogenicity” in the variable Clinical Event Category (CECAT). It should be further subcategorized into “administration site” or “systemic,” using the variable Clinical Event Subcategory (CESCAT). The event should be categorized in the Adverse Event Category (AECAT) variable as “reactogenicity.” The start day/date (--STDY/--STDTC) and the end day/date (--ENDY/- -ENDTC) of the reactogenicity event should be identical in both the CE and AE domain;",
+      "fingerprint": "6ddd04ccb885a0baa91cfceb28674831f2764c968b69b956f8806be01492b242",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-6-paragraph-5",
+      "statement": "The event should be categorized in the Adverse Event Category (AECAT) variable as “reactogenicity.” The start day/date (--STDY/--STDTC) and the end day/date (--ENDY/- -ENDTC) of the reactogenicity event should be identical in both the CE and AE domain;",
+      "context": "If a reactogenicity event should happen to continue beyond the assessment interval, it should also be represented in the AE domain, with the CE domain record indicating that the event extended beyond the assessment interval, using the variables Clinical Event End Reference Time Point (CEENTPT) (e.g., “Day 7”) and Clinical Event End Relative to Reference Time Point (CEENRTPT) (“Ongoing”). A check box in the CRF, indicating whether the reactogenicity event is ongoing after the assessment period, is recommended. whereas the duration (--DUR) should report the time that the event occurred as part of the assessment interval and as part of the continuance separately (e.g., an event that lasted 6 days in the assessment interval and 3 days beyond the assessment would be reported as Clinical Event Duration (CEDUR) = 6 days and Adverse Event Duration (AEDUR) = 3 days). We recommend one or more chec",
+      "fingerprint": "1fe56d1d1afa35d022b904629d4ee21f42c0331df54d432bbebc0819f10b2d07",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-6-paragraph-6",
+      "statement": "whereas the duration (--DUR) should report the time that the event occurred as part of the assessment interval and as part of the continuance separately (e.g., an event that lasted 6 days in the assessment interval and 3 days beyond the assessment would be reported as Clinical Event Duration (CEDUR) = 6 days and Adverse Event Duration (AEDUR) = 3 days). We recommend one or more check boxes in the CRF, indicating the duration of the reactogenicity event in the assessment period and the duration of the reactogenicity event beyond the assessment period. If a reactogenicity event rises to the level of a Serious AE (SAE) during the prespecified assessment interval, it should be reported in the AE domain, and the Serious Adverse Event (AESER) variable should be utilized, as well as the CESER variable. The event should be categorized in the AECAT as “reactogenicity.” The day and date that the reactogenicity event becomes serious should be reported in supplemental AE (suppae) domain Qualifier Variable Names (QNAM) = “SAEDY” and “SAEDTC,” Qualifier Variable Labels (QLABEL) = “SAE day” and “SAE date,” and Supplemental Qualifier Values (QVAL) = day/date that reactogenicity event became serious. A dataset-level relationship in RELREC should be used for each case. We prefer that, in both cases, FACE (and/or VS) be utilized to provide the day-to- day data for the reactogenicity event from start to end.",
+      "context": "The event should be categorized in the Adverse Event Category (AECAT) variable as “reactogenicity.” The start day/date (--STDY/--STDTC) and the end day/date (--ENDY/- -ENDTC) of the reactogenicity event should be identical in both the CE and AE domain; If a reactogenicity event is assessed by the investigator as unrelated to the vaccine, but instead related to another diagnosis (e.g., Viral Infection), the definitive diagnosis would be recorded in the AE domain with the day-to-day signs and symptoms reported in the Findings About Adverse Event (FAAE) domain. However, the reactogenicity event(s)) (i.e., symptoms), would still be reported in the CE (and FACE/VS) if obtained from the diary because the event(s) are prespecified and occur during the solicited assessment period. In this case CEREL (causality) can be reported as “N” as there is a plausible reason for the event that is not due t",
+      "fingerprint": "b365dc8f6fc907d4a05f39b8e54567ebe0cbfd57e19f56bc2021e46055c2b2a5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-7-paragraph-1",
+      "statement": "If a reactogenicity event is assessed by the investigator as unrelated to the vaccine, but instead related to another diagnosis (e.g., Viral Infection), the definitive diagnosis would be recorded in the AE domain with the day-to-day signs and symptoms reported in the Findings About Adverse Event (FAAE) domain. However, the reactogenicity event(s)) (i.e., symptoms), would still be reported in the CE (and FACE/VS) if obtained from the diary because the event(s) are prespecified and occur during the solicited assessment period. In this case CEREL (causality) can be reported as “N” as there is a plausible reason for the event that is not due to vaccine administration. AEREL would also be reported as “N”. The relationship between AE and CE in the subject should be established using RELREC.",
+      "context": "whereas the duration (--DUR) should report the time that the event occurred as part of the assessment interval and as part of the continuance separately (e.g., an event that lasted 6 days in the assessment interval and 3 days beyond the assessment would be reported as Clinical Event Duration (CEDUR) = 6 days and Adverse Event Duration (AEDUR) = 3 days). We recommend one or more check boxes in the CRF, indicating the duration of the reactogenicity event in the assessment period and the duration of the reactogenicity event beyond the assessment period. If a reactogenicity event rises to the level of a Serious AE (SAE) during the prespecified assessment interval, it should be reported in the AE domain, and the Serious Adverse Event (AESER) variable should be utilized, as well as the CESER variable. The event should be categorized in the AECAT as “reactogenicity.” The day and date that the r",
+      "fingerprint": "7a1df042d7534c7517778c52fb88e0adeff2b874750aac81c07655a7f75064a5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-7-paragraph-2",
+      "statement": "Please note it would be considered recall data, if you are reporting selected AE preferred terms (PT) from the CRF that are synonymous with solicited local administration/systemic reactogenicity events which “occurred” during the pre-specified reporting time period post-vaccination but were actually collected from the investigator in a follow-up visit. If you intend to report data based on recall (and not obtained from the diary), please minimize potential bias by including a reconstructed data flag in supplemental CE (suppce) using QNAM = “RECON,” (QLABEL) = “reconstructed data” and (QVAL) “Y” in your dataset. Reconstruction should be limited to investigators who are still blinded to treatment group in a randomized, controlled trial using a scripted query for parameters (but perhaps not grading severity) if applied during a specified time period post-vaccination. A “reconstructed data” flag might support a comparison of results generated based on different types of data collection (e.g. diary card vs eCRF) as well as overall compiled safety data; and may be used to determine if randomization was preserved in “reconstructed” data to get a gross sense of whether the investigators were truly blinded as they queried subjects and whether all treatment groups had the expected representation in both the “purest” collection of the safety data (i.e., directly from the diary) and the “reconstructed” as well as whether there were differences between sites.",
+      "context": "If a reactogenicity event is assessed by the investigator as unrelated to the vaccine, but instead related to another diagnosis (e.g., Viral Infection), the definitive diagnosis would be recorded in the AE domain with the day-to-day signs and symptoms reported in the Findings About Adverse Event (FAAE) domain. However, the reactogenicity event(s)) (i.e., symptoms), would still be reported in the CE (and FACE/VS) if obtained from the diary because the event(s) are prespecified and occur during the solicited assessment period. In this case CEREL (causality) can be reported as “N” as there is a plausible reason for the event that is not due to vaccine administration. AEREL would also be reported as “N”. The relationship between AE and CE in the subject should be established using RELREC. Any plans to include reconstructed data in your submission should be discussed with the review team prio",
+      "fingerprint": "1bac42696d578843b63a09db2b1346146e73614faab2e3533d2d3e9bf1a3fe03",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-7-paragraph-3",
+      "statement": "Any plans to include reconstructed data in your submission should be discussed with the review team prior to submission.",
+      "context": "Please note it would be considered recall data, if you are reporting selected AE preferred terms (PT) from the CRF that are synonymous with solicited local administration/systemic reactogenicity events which “occurred” during the pre-specified reporting time period post-vaccination but were actually collected from the investigator in a follow-up visit. If you intend to report data based on recall (and not obtained from the diary), please minimize potential bias by including a reconstructed data flag in supplemental CE (suppce) using QNAM = “RECON,” (QLABEL) = “reconstructed data” and (QVAL) “Y” in your dataset. Reconstruction should be limited to investigators who are still blinded to treatment group in a randomized, controlled trial using a scripted query for parameters (but perhaps not grading severity) if applied during a specified time period post-vaccination. A “reconstructed data”",
+      "fingerprint": "a5013ba2d8c0e1f89128638d373097e15d1a8c26128080d41657ab0ee60fd46a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-7-paragraph-4",
+      "statement": "If an analgesic/antipyretic is used for prevention or treatment of pain and/or fever associated with vaccine administration, please report this in the CM domain using the appropriate variables to report the date and time in ISO 8601 format or other character format with reference time point. The CMCAT (Concomitant Medication Category) should be used to differentiate “Prevention” versus “Treatment.” Additionally, you should flag if analgesic/antipyretic administered (Y/N) using the variable CECONTRT (Clinical Event Concomitant or Additional Treatment Given).",
+      "context": "Any plans to include reconstructed data in your submission should be discussed with the review team prior to submission. A telephone contact that is used to ensure diary reporting compliance and/or to ascertain if any unsolicited AEs have occurred is considered a subject visit. Please report the study day of start of visit (SVSTDY), the visit number (VISITNUM) and the visit name (VISIT) as “telephone contact 1 (or 2 or 3, etc.)” for each subject.",
+      "fingerprint": "66f5431109bd0329b0e0179d5f5fea756c8914e3b28d8f90ad19a57f920e5009",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-8-paragraph-1",
+      "statement": "3.2 Unsolicited Adverse Events (AEs) Unsolicited AEs should be represented in the AE domain, regardless of whether they occurred during the prespecified assessment interval or after the prespecified assessment interval. The clinical details of the AE should be represented in the FAAE domain and possibly in the VS, CM, Procedures (PR), Healthcare Encounter (HO), and Death Detail (DD) domains. The following variables should be utilized in the AE domain: --SEV (Severity) (or –TOXGR (Standard Toxicity Grade)), --LLT (Lowest Level Term), -- LLTCD (Lowest Level Term Code), --HLT (High Level Term), --HLTCD (High Level Term Code), --HLGT (High Level Group Term), --HLGTCD (High Level Group Term Code), --SOC (Primary System Organ Class) and --SOCCD (Primary System Organ Class Code). Additionally, you should report in the AETRTREF (Time Point Reference) variable the reference time point of “Dose 1, 2, or 3 etc.” and AEELTM (Planned Elapsed Time from Time Point Reference) variable to indicate the beginning of the event (in days, hours/minutes if necessary) from the last vaccination administered (referenced as dose 1, 2, or 3 etc.).",
+      "context": "A telephone contact that is used to ensure diary reporting compliance and/or to ascertain if any unsolicited AEs have occurred is considered a subject visit. Please report the study day of start of visit (SVSTDY), the visit number (VISITNUM) and the visit name (VISIT) as “telephone contact 1 (or 2 or 3, etc.)” for each subject. In the AE domain, there should be one record per AE per subject for each unique event.",
+      "fingerprint": "bcc8f9bdb6e475a225939b9540c28543fbdd56df5d248652abcce03e0b1e3bdd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-8-paragraph-2",
+      "statement": "In the AE domain, there should be one record per AE per subject for each unique event.",
+      "context": "3.2 Unsolicited Adverse Events (AEs) Unsolicited AEs should be represented in the AE domain, regardless of whether they occurred during the prespecified assessment interval or after the prespecified assessment interval. The clinical details of the AE should be represented in the FAAE domain and possibly in the VS, CM, Procedures (PR), Healthcare Encounter (HO), and Death Detail (DD) domains. The following variables should be utilized in the AE domain: --SEV (Severity) (or –TOXGR (Standard Toxicity Grade)), --LLT (Lowest Level Term), -- LLTCD (Lowest Level Term Code), --HLT (High Level Term), --HLTCD (High Level Term Code), --HLGT (High Level Group Term), --HLGTCD (High Level Group Term Code), --SOC (Primary System Organ Class) and --SOCCD (Primary System Organ Class Code). Additionally, you should report in the AETRTREF (Time Point Reference) variable the reference time point of “Dose 1,",
+      "fingerprint": "383947cc910c6499021bcbe802ca8b15f6b198d2189525ac4181176f997fe502",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-8-paragraph-3",
+      "statement": "The AE record reported by the investigator is submitted as a summary record, “collapsed” to the highest level of severity, causality, seriousness, and final outcome. The variables for study day/date should be utilized (AESTDY/AESTDTC and AEENDY/AEENDTC).",
+      "context": "In the AE domain, there should be one record per AE per subject for each unique event. The FAAE domain should be used to report the day-to-day information, concerning the AE. The CM, PR, HO, and/or DD domains should be utilized if the corresponding variables in AE are marked as “yes.” A dataset-level relationship in RELREC should be provided.",
+      "fingerprint": "d2c122a02e57aab7fbbda635fac93832ee8b40cecd33d5f862f0f5fcf7bfb37b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-8-paragraph-4",
+      "statement": "The FAAE domain should be used to report the day-to-day information, concerning the AE. The CM, PR, HO, and/or DD domains should be utilized if the corresponding variables in AE are marked as “yes.” A dataset-level relationship in RELREC should be provided.",
+      "context": "The AE record reported by the investigator is submitted as a summary record, “collapsed” to the highest level of severity, causality, seriousness, and final outcome. The variables for study day/date should be utilized (AESTDY/AESTDTC and AEENDY/AEENDTC). 3.3 Laboratory Safety Assessments Laboratory safety assessment of clinical chemistry, hematology, and urine should be included in the LB domain. If the laboratory result for a particular assessment for a subject is outside the normal range, it should additionally be reported in the AE domain, with the highest level noted. A dataset-level relationship in RELREC should be used.",
+      "fingerprint": "553535b64a9746b425ce81a2e0b05344bdb4700e938fd9d1acabe7afb2eaeeaf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-8-paragraph-5",
+      "statement": "3.3 Laboratory Safety Assessments Laboratory safety assessment of clinical chemistry, hematology, and urine should be included in the LB domain. If the laboratory result for a particular assessment for a subject is outside the normal range, it should additionally be reported in the AE domain, with the highest level noted. A dataset-level relationship in RELREC should be used.",
+      "context": "The FAAE domain should be used to report the day-to-day information, concerning the AE. The CM, PR, HO, and/or DD domains should be utilized if the corresponding variables in AE are marked as “yes.” A dataset-level relationship in RELREC should be provided. 3.4 Medically Attended Adverse Events (MAAEs) MAAEs should be reported in the AE and HO domain, and if needed, additional data should be reported in the FAAE, VS, and/or DD domains.",
+      "fingerprint": "15796cea2b962d6674f0074b426dfb3e56d4dec6d6e8afa2ae640630f5a8ba9b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-8-paragraph-6",
+      "statement": "3.4 Medically Attended Adverse Events (MAAEs) MAAEs should be reported in the AE and HO domain, and if needed, additional data should be reported in the FAAE, VS, and/or DD domains.",
+      "context": "3.3 Laboratory Safety Assessments Laboratory safety assessment of clinical chemistry, hematology, and urine should be included in the LB domain. If the laboratory result for a particular assessment for a subject is outside the normal range, it should additionally be reported in the AE domain, with the highest level noted. A dataset-level relationship in RELREC should be used. In certain circumstances, OVRR may request that a clinical trial protocol include collection of data relating to specific MAAEs, particularly autoimmune or auto- inflammatory diseases, among subjects in all treatment groups through 12 months or longer, following the last study vaccination. Since the request for this information is based on a theoretical potential, CBER considers the occurrence of a vaccine-related potential immune-mediated medical conditions (PIMMC) to be unexpected.",
+      "fingerprint": "45958ab591b746b9c70d60bde13820655817a0a2b27d16d906a89de13127fe5f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-8-paragraph-8",
+      "statement": "When a particular MAAE is noted as a new onset of a chronic disease (NOCD) or a PIMMC it should be reported in the AE domain and categorized in CAT with “NOCD” or “PIMMC,” respectively.",
+      "context": "In certain circumstances, OVRR may request that a clinical trial protocol include collection of data relating to specific MAAEs, particularly autoimmune or auto- inflammatory diseases, among subjects in all treatment groups through 12 months or longer, following the last study vaccination. Since the request for this information is based on a theoretical potential, CBER considers the occurrence of a vaccine-related potential immune-mediated medical conditions (PIMMC) to be unexpected. If a chronic disease is exacerbated, following a vaccination, the MH domain should contain information on the disease, prior to the first day of vaccination, and the AE domain should contain information on the disease, following vaccination. The CAT and Subcategory (-SCAT) variables should be populated in both domains with a categorization/subcategorization of the chronic disease, e.g., kidney failure would",
+      "fingerprint": "ebe729ca0779918defad7e373d7822b204df325eee1034add0cf55a9605e8b6a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-9-paragraph-1",
+      "statement": "If a chronic disease is exacerbated, following a vaccination, the MH domain should contain information on the disease, prior to the first day of vaccination, and the AE domain should contain information on the disease, following vaccination. The CAT and Subcategory (-SCAT) variables should be populated in both domains with a categorization/subcategorization of the chronic disease, e.g., kidney failure would be categorized as “renal medical history” and subcategorized as “renal failure.” A dataset- level relationship in RELREC should be used.",
+      "context": "When a particular MAAE is noted as a new onset of a chronic disease (NOCD) or a PIMMC it should be reported in the AE domain and categorized in CAT with “NOCD” or “PIMMC,” respectively. 3.5 Deaths When a death occurs, it should be reported in the AE domain with supplemental death detail information provided in the DD domain. The DM domain should also indicate that a death has occurred, using the flag variable (DTHFL) and date/time of death variable (DTHDTC).",
+      "fingerprint": "4722dec61bc3065840f45855e846fa501dcf3adad9d14dd8812a56a39c3bc8cd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-9-paragraph-2",
+      "statement": "3.5 Deaths When a death occurs, it should be reported in the AE domain with supplemental death detail information provided in the DD domain. The DM domain should also indicate that a death has occurred, using the flag variable (DTHFL) and date/time of death variable (DTHDTC).",
+      "context": "If a chronic disease is exacerbated, following a vaccination, the MH domain should contain information on the disease, prior to the first day of vaccination, and the AE domain should contain information on the disease, following vaccination. The CAT and Subcategory (-SCAT) variables should be populated in both domains with a categorization/subcategorization of the chronic disease, e.g., kidney failure would be categorized as “renal medical history” and subcategorized as “renal failure.” A dataset- level relationship in RELREC should be used. 4.0 SUBMISSION OF CLINICAL DISEASE ENDPOINT EFFICACY DATA FOR VACCINE TRIALS For clinical trials in which efficacy against clinical disease is an objective, efficacy data will primarily be reported in the CE domain with specific information provided in the MB domain, FACE domain, VS domain, and PE domain (if necessary).",
+      "fingerprint": "bbf9102101b10a95eadc422d015331ed91afcd2cffa684233f0bdc0b730771e2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-9-paragraph-4",
+      "statement": "To differentiate an efficacy clinical event (i.e., case of the disease of interest) from other clinical events, the variable CECAT should be utilized, and “efficacy” should be stated. Since efficacy is pre-specified, the variables CEOCCUR, Clinical Event Completion Status (CESTAT), and Clinical Event Reason Not Collected (CEREASND) should be included. The CETERM for the efficacy clinical event should be indicative of the disease, e.g., for an influenza vaccine, “influenza-like illness or ILI;” or for a human papillomavirus vaccine, “cervical intraepithelial neoplasia or CIN. Test results from assays conducted to confirm the presence of the microbe of interest (e.g., polymerase chain reaction (PCR), enzyme-linked immunosorbent assay (ELISA), cell culture, etc.) should be reported in the MB domain. If the disease of interest is confirmed (e.g., by the clinical investigator or by an adjudication committee, using the information from a clinical assessment and the results of confirmatory tests), it should be reported in CE variable CEDECOD (e.g., Influenza), and flagged in a supplemental DM domain with QNAM = “CDECASE,” (QLABEL) = “clinical disease endpoint case flag,” and (QVAL) = “Y.” If the disease of interest is not confirmed by either the clinical investigator or by an adjudication committee, the results should be flagged in a supplemental DM domain with QNAM = “CDECASE,” QLABEL = “clinical endpoint case flag,” and QVAL = “N.” The manner in which the occurrence of a disease of interest is confirmed (e.g., by an adjudication committee or by the clinical investigator or by another mechanism) should be clearly delineated in the clinical",
+      "context": "4.0 SUBMISSION OF CLINICAL DISEASE ENDPOINT EFFICACY DATA FOR VACCINE TRIALS For clinical trials in which efficacy against clinical disease is an objective, efficacy data will primarily be reported in the CE domain with specific information provided in the MB domain, FACE domain, VS domain, and PE domain (if necessary). protocol. A check box in the CRF, indicating the status of the disease of interest, is recommended.",
+      "fingerprint": "9918efb1dca1785f74e311d39834dbfda5bd47a2d979ef5fe32909b39cdc7a2b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-9-paragraph-6",
+      "statement": "If hospitalization occurs during the clinical trial because of occurrence of the “disease of interest,” the CE domain variable Clinical Event Requires or Prolongs Hospitalization (CESHOSP) should be marked with “Y.” Additional data regarding the hospitalization and/or other healthcare encounter should be provided in the HO domain.",
+      "context": "protocol. A check box in the CRF, indicating the status of the disease of interest, is recommended. If concomitant or additional treatment is prescribed to alleviate the severity of the disease of interest, the CE domain variable Clinical Event Concomitant or Additional Treatment Given (CECONTRT) should be utilized.",
+      "fingerprint": "5e72fc2bb31263c055f638e20fd5fd63d03d1aa9210e827c6ea7a6cda83cc9c7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-10-paragraph-1",
+      "statement": "If concomitant or additional treatment is prescribed to alleviate the severity of the disease of interest, the CE domain variable Clinical Event Concomitant or Additional Treatment Given (CECONTRT) should be utilized.",
+      "context": "If hospitalization occurs during the clinical trial because of occurrence of the “disease of interest,” the CE domain variable Clinical Event Requires or Prolongs Hospitalization (CESHOSP) should be marked with “Y.” Additional data regarding the hospitalization and/or other healthcare encounter should be provided in the HO domain. Variables available in AE that are also available for use in CE consist of Serious (SER), Outcome of Event (OUT), Involves Cancer (SCAN), Congenital Anomaly or Birth Defect (SCONG), Persistent or Significant Disability/Incapacity (SDISAB), Is Life Threatening (SLIFE), Results in Death (SDTH), and Occurred with Overdose (SOD).",
+      "fingerprint": "18030e0c5d5d98060a52d1d7eea9b6431693c3ffaa2213771d599d2ac486006c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-10-paragraph-3",
+      "statement": "5.0 SUBMISSION OF IMMUNOGENICITY DATA FOR VACCINE TRIALS Data related to the assessment of immunogenicity should be reported in the Immunogenicity Specimen (IS) domain. The LB domain should not be used for immunogenicity data.",
+      "context": "Variables available in AE that are also available for use in CE consist of Serious (SER), Outcome of Event (OUT), Involves Cancer (SCAN), Congenital Anomaly or Birth Defect (SCONG), Persistent or Significant Disability/Incapacity (SDISAB), Is Life Threatening (SLIFE), Results in Death (SDTH), and Occurred with Overdose (SOD). 6.0 SUBMISSION OF COMCOMITANT MEDICATION DATA FOR VACCINE TRIALS Previous immunizations should be reported in the CM domain. You should include the variable CMPRESP along with the accompanying variables -OCCUR, -STAT and -REASND, if the particular immunization is prespecified.",
+      "fingerprint": "dead0e3cc4170c3adfe62452999f146694f690b94d5202b7525d13ea3fa41c81",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-10-paragraph-4",
+      "statement": "6.0 SUBMISSION OF COMCOMITANT MEDICATION DATA FOR VACCINE TRIALS Previous immunizations should be reported in the CM domain. You should include the variable CMPRESP along with the accompanying variables -OCCUR, -STAT and -REASND, if the particular immunization is prespecified.",
+      "context": "5.0 SUBMISSION OF IMMUNOGENICITY DATA FOR VACCINE TRIALS Data related to the assessment of immunogenicity should be reported in the Immunogenicity Specimen (IS) domain. The LB domain should not be used for immunogenicity data. 7.0 SUBMISSION OF DATA FOR MATERNAL IMMUNIZATION TRIALS The relationship between the mother and child should be represented in Relationship of Study Subjects (RELSUB). To allow for the possibility that a mother is treated before the number of fetuses is known, fetuses are given a Unique Subject Identifier (USUBJID) value that appends an A or B to the mother’s USUBJID.",
+      "fingerprint": "e68a9dccd25dc1238c48460ad51358986bede2a9cefb3a6bafec7dc757df1a72",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 33,
+      "anchor": "page-10-paragraph-5",
+      "statement": "7.0 SUBMISSION OF DATA FOR MATERNAL IMMUNIZATION TRIALS The relationship between the mother and child should be represented in Relationship of Study Subjects (RELSUB). To allow for the possibility that a mother is treated before the number of fetuses is known, fetuses are given a Unique Subject Identifier (USUBJID) value that appends an A or B to the mother’s USUBJID.",
+      "context": "6.0 SUBMISSION OF COMCOMITANT MEDICATION DATA FOR VACCINE TRIALS Previous immunizations should be reported in the CM domain. You should include the variable CMPRESP along with the accompanying variables -OCCUR, -STAT and -REASND, if the particular immunization is prespecified. In the DM domain, the informed consent and vaccination administration date for the fetus are the same as for the mother. The age of enrollment will be a negative number in weeks. The birth date for the infant should be reported, using the variable Date/Time of Birth (BRTHDTC).",
+      "fingerprint": "e6bd4500efa7266712434c20af812040c40e41887ae04817e3f0dd37af82543f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 34,
+      "anchor": "page-10-paragraph-6",
+      "statement": "In the DM domain, the informed consent and vaccination administration date for the fetus are the same as for the mother. The age of enrollment will be a negative number in weeks. The birth date for the infant should be reported, using the variable Date/Time of Birth (BRTHDTC).",
+      "context": "7.0 SUBMISSION OF DATA FOR MATERNAL IMMUNIZATION TRIALS The relationship between the mother and child should be represented in Relationship of Study Subjects (RELSUB). To allow for the possibility that a mother is treated before the number of fetuses is known, fetuses are given a Unique Subject Identifier (USUBJID) value that appends an A or B to the mother’s USUBJID. Since the amount of vaccine that reaches the fetus is unknown, the Dose Description (DOSTXT) variable in EX is utilized, and “Fetal Exposure” should be noted instead of populating the variable Dose (DOSE).",
+      "fingerprint": "97a61e0a59bc0b6cbefc8749a11017140bdc1e0557dbb939937063e93adcfe3b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 35,
+      "anchor": "page-10-paragraph-7",
+      "statement": "Since the amount of vaccine that reaches the fetus is unknown, the Dose Description (DOSTXT) variable in EX is utilized, and “Fetal Exposure” should be noted instead of populating the variable Dose (DOSE).",
+      "context": "In the DM domain, the informed consent and vaccination administration date for the fetus are the same as for the mother. The age of enrollment will be a negative number in weeks. The birth date for the infant should be reported, using the variable Date/Time of Birth (BRTHDTC). The reproductive findings (RP) domain should be used to report the maternal date of last menstrual period, and from this, the gestational age at exposure can be calculated and reported in RP.",
+      "fingerprint": "a34162aae92e87aea46723cc4e72889d918cd18fd34e8f69ecb7d8674619b61f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 36,
+      "anchor": "page-10-paragraph-8",
+      "statement": "The reproductive findings (RP) domain should be used to report the maternal date of last menstrual period, and from this, the gestational age at exposure can be calculated and reported in RP.",
+      "context": "Since the amount of vaccine that reaches the fetus is unknown, the Dose Description (DOSTXT) variable in EX is utilized, and “Fetal Exposure” should be noted instead of populating the variable Dose (DOSE).",
+      "fingerprint": "51e567feedaa688fa0406198603d748e13711e875771120aa8a429d893ec743d",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:08:51.447Z"
+}
