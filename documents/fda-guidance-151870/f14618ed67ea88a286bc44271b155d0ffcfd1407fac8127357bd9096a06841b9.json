@@ -1,0 +1,884 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-151870",
+  "metadata": {
+    "title": "Technical Specifications for Submitting Clinical Trial Data Sets for Treatment of Noncirrhotic Nonalcoholic Steatohepatitis (NASH): Guidance for Industry Technical Specifications Document",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 12/13/2024 · Docket FDA-2018-D-1216",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Drugs",
+    "published_on": "2024-12-13",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/151870/download",
+  "original_sha256": "87c62f562de97a087839bb28779484cb5df987c588bb4bba4dfc0c4d7b0cfcbd",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 106,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-5-paragraph-4",
+      "statement": "In general, FDA’s guidance documents do not establish legally enforceable responsibilities. 57 Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only 58 as recommendations, unless specific regulatory or statutory requirements are cited. The use of 59 the word should in Agency guidance means that something is suggested or recommended, but 60 not required. 61",
+      "context": "The recommendations outlined in the guidance pertain to submission of the sponsor’s tabulated 49 and analysis data sets in order to improve reviewability. These specifications also provide an 50 opportunity for dialogue between the sponsor and DHN to discuss issues related to trial design or 51 conduct that may affect the content of these data sets. These specifications are intended to 52 support the draft guidance for industry Noncirrhotic Nonalcoholic Steatohepatitis With Liver 53 Fibrosis: Developing Drugs for Treatment (NASH Guidance) and reflect the data standards and 54 processes described in the FDA Study Data Technical Conformance Guide . 5",
+      "fingerprint": "8a15d6c9a011f776b655129cac07bd7b2e589779cdab353a75ce942060d66e97",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-7-paragraph-4",
+      "statement": "Sponsors should review the FDA Data Standards Catalog to ensure data submissions follow 74 FDA-supported standards. 75",
+      "context": "This technical specification has been drafted in accordance with the currently supported versions 68 of the Study Data Tabulation Model (SDTM) Implementation Guide and Analysis Data Model 69 (ADaM) Implementation Guide as noted in the FDA Data Standards Catalog. 6 As new versions 70 of the respective implementation guides become available and supported by FDA, this technical 71 specification may change to align to the newly supported implementation guide(s). 72 4.0 OVERVIEW OF DATA SETS 77",
+      "fingerprint": "de5a438200b0c39a9f9335882e8e0e7307781a54e00db4a2fc661ae9fe045a68",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-7-paragraph-6",
+      "statement": "This technical specification contains guidance for 21 data sets (14 SDTM domains and 7 ADaM 79 data sets) relevant to noncirrhotic NASH development programs briefly described below. The 80 subsequent sections provide more detailed descriptions regarding the information to be collected 81 and stored in each domain and/or data set. Sponsors should submit all data sets in accordance 82 with the Study Data Technical Conformance Guide, including those not discussed in this 83 technical specification. 7",
+      "context": "4.0 OVERVIEW OF DATA SETS 77",
+      "fingerprint": "5a880ce41cf9d718bd1cabe80f6ada9ca297bea02b418843d68751cd82dfaee8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-7-paragraph-8",
+      "statement": "This technical specification provides guidance for providing 14 SDTM domains. Sponsors 88 should still provide standard SDTM domains in addition to those listed below, including but not 89 limited to Demographics (DM), Adverse Events (AE), Disposition (DS), Death Details (DD), 90 Subject Visits (SV), Exposure (EX), Comments (CO), etc. 91",
+      "context": "Biospecimen Events (BE) domain : This domain contains information related to 93 collecting, handling, and processing biological specimens. It is an events domain 94 structured as one record per subject, per biospecimen event, per biospecimen identifier 95 and links to the Biospecimen Findings (BS) domains. 96",
+      "fingerprint": "7c2a8c4c790fe227e67c0be65eeb67485ba07b8d0814843e5d915a5154803d6e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-8-paragraph-3",
+      "statement": "Supplemental Microscopic Findings (SUPPMI) domain : This domain contains 108 supplemental information related to the biopsies, specifically the sponsors’ assessment of 109 slide adequacy. Justification should be provided in this domain for specimens deemed 110 inadequate. 111",
+      "context": "Microscopic Findings (MI) domain : This domain contains all information related to 104 histological characteristics of liver biopsies. This domain is structured as one record per 105 subject, per biopsy parameter, per evaluator, per collection. 106 Disease Response and Clinical Classifications (RS) domain : This domain contains 113 information related to disease response to therapy that includes clinical classification 114 based on published criteria and captures results of Model for End-Stage Liver Disease 115 (MELD) scoring 8 and Child-Pugh Classification. This findings domain is structured as 116 one record per subject, per response or clinical classification assessment time point, per 117 medical evaluator. 118",
+      "fingerprint": "4c04457ced64277cf3b1054dad7a8625e5387c166176b95fb154c0f8e4e24740",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-8-paragraph-9",
+      "statement": "ADaM data sets include variables that represent derived study days. It is assumed that the anchor 138 date for study day 1 is Date of First Exposure to Treatment (TRTSDT) and this date of first dose 139 is identical to Date of Randomization (RANDDT). If the Date of First Exposure to Treatment 140 and Date of Randomization differ, sponsors should provide an explanation for this discrepancy. 141 All ADaM data sets should be accompanied by informative metadata, as provided in a compliant 142 ADaM define.xml document and Analysis Data Reviewers Guide (ADRG) that describes the 143",
+      "context": "8 Individual components of MELD scoring are captured elsewhere, but final calculation for MELD is placed in the RS domain.",
+      "fingerprint": "3002c90bc14c69c819697000b23174e16f3f597b00475e2b3e28ab625e217c23",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-9-paragraph-1",
+      "statement": "source and derivation of the variables. In addition, programs used to create ADaM data sets 144 should be submitted. 145",
+      "context": "8 Individual components of MELD scoring are captured elsewhere, but final calculation for MELD is placed in the RS domain. Subject-Level Analysis Data Set (ADSL) : This data set contains one record per subject. 147 This data set provides information about the subjects’ demographics, treatment arm, trial 148 start and end dates, and summary baseline characteristics. Many of the baseline 149 characteristic variables in this data set are calculated or derived values from other data 150 sets (e.g., baseline alanine aminotransferase (ALT)) and an associated categorization of 151 that value. The notes in the ADSL table provided within this document should be 152 considered a guide and a baseline instruction set; sponsors should submit additional 153 variables and derivations as they see fit. Specific sections of the ADSL should be carried 154 into other ADaM data sets for analysis purposes (e.",
+      "fingerprint": "65693648df42790b4875e4c1ee9b995e475efba524ef467b86abdc5bc7a7f644",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-9-paragraph-2",
+      "statement": "Subject-Level Analysis Data Set (ADSL) : This data set contains one record per subject. 147 This data set provides information about the subjects’ demographics, treatment arm, trial 148 start and end dates, and summary baseline characteristics. Many of the baseline 149 characteristic variables in this data set are calculated or derived values from other data 150 sets (e.g., baseline alanine aminotransferase (ALT)) and an associated categorization of 151 that value. The notes in the ADSL table provided within this document should be 152 considered a guide and a baseline instruction set; sponsors should submit additional 153 variables and derivations as they see fit. Specific sections of the ADSL should be carried 154 into other ADaM data sets for analysis purposes (e.g., Basic Demographic Variables, 155 Treatment Arms, etc.), and are noted in the full description of the ADaM data sets. All 156 derivations should be noted in the define.xml file, and additional notes about the data set 157 included in the ADRG. 158",
+      "context": "source and derivation of the variables. In addition, programs used to create ADaM data sets 144 should be submitted. 145 Adverse Event Analysis Data Set (ADAE) : This data set contains one record per 160 subject, per adverse event, per collection. All AEs reported for a subject during their 161 participation in the trial should be recorded. It also includes additional relevant variables 162 to the review, such as sponsor derived Standardized Medical Dictionary for Regulatory 163 Activities Query (MedDRA SMQ) flags and/or custom MedDRA queries for DILI. 164",
+      "fingerprint": "4584104f0ceda13db0b8a89e950da88e940f578fade3d6e15023638a2637b796",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-9-paragraph-3",
+      "statement": "Adverse Event Analysis Data Set (ADAE) : This data set contains one record per 160 subject, per adverse event, per collection. All AEs reported for a subject during their 161 participation in the trial should be recorded. It also includes additional relevant variables 162 to the review, such as sponsor derived Standardized Medical Dictionary for Regulatory 163 Activities Query (MedDRA SMQ) flags and/or custom MedDRA queries for DILI. 164",
+      "context": "Subject-Level Analysis Data Set (ADSL) : This data set contains one record per subject. 147 This data set provides information about the subjects’ demographics, treatment arm, trial 148 start and end dates, and summary baseline characteristics. Many of the baseline 149 characteristic variables in this data set are calculated or derived values from other data 150 sets (e.g., baseline alanine aminotransferase (ALT)) and an associated categorization of 151 that value. The notes in the ADSL table provided within this document should be 152 considered a guide and a baseline instruction set; sponsors should submit additional 153 variables and derivations as they see fit. Specific sections of the ADSL should be carried 154 into other ADaM data sets for analysis purposes (e.g., Basic Demographic Variables, 155 Treatment Arms, etc.), and are noted in the full description of the ADaM data sets. Al",
+      "fingerprint": "6e2d2a3f21487d1c36e3484fc0f923f7d858cade69d180fa64afce1d96c5df46",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-9-paragraph-4",
+      "statement": "Laboratory Analysis Data Set (ADLB) : This data set contains one record per subject, 166 per lab test, per collection. The laboratory tests of most interest are noted below in the 167 full description for SDTM.LB, but this specification contains additional analysis 168 variables to be submitted in ADLB. However, it is acceptable for additional laboratory 169 tests to be included. If the submitted data set is greater than 5 GB, the data set should be 170 split according to laboratory panels of hematology, chemistry, urinalysis, and other (if 171 necessary, for miscellaneous tests). This data set is designed to be equivalent to an ADaM 172 compliant Basic Data Structure (BDS) laboratory data set with additional review division 173 specific variables. An additional custom data set ADLC structured identically to ADLB 174 containing conventional units should be submitted. It is ideal if both conventional and SI 175 units come directly from the lab vendor and should include all results from unscheduled 176 tests or visits, and local laboratories. Reference ranges used for specific populations 177 should be identified in the SDRG and ADRG. 178",
+      "context": "Adverse Event Analysis Data Set (ADAE) : This data set contains one record per 160 subject, per adverse event, per collection. All AEs reported for a subject during their 161 participation in the trial should be recorded. It also includes additional relevant variables 162 to the review, such as sponsor derived Standardized Medical Dictionary for Regulatory 163 Activities Query (MedDRA SMQ) flags and/or custom MedDRA queries for DILI. 164 Drug-Induced Liver Injury Analysis Data Set (ADDILI) : This custom data set 180 contains one record per subject, per parameter, per collection, where each subject should 181 have a minimum of one parameter to evaluate potential DILI. Subjects deemed to have 182 potential DILI should have two additional parameters: one to list the action taken and 183 another to list the outcome. This data set also contains variables derived from pertinent 184 data from t",
+      "fingerprint": "b97db90ecc4db686b6242735112e77d84f1cb06a411566a0a1da36e47a56b474",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-9-paragraph-5",
+      "statement": "Drug-Induced Liver Injury Analysis Data Set (ADDILI) : This custom data set 180 contains one record per subject, per parameter, per collection, where each subject should 181 have a minimum of one parameter to evaluate potential DILI. Subjects deemed to have 182 potential DILI should have two additional parameters: one to list the action taken and 183 another to list the outcome. This data set also contains variables derived from pertinent 184 data from the ADLB data set, such as post-baseline maximum values for each of the liver 185 enzymes. In addition, this data set contains flags to indicate any additional work-up 186 conducted to evaluate potential DILI. Sponsors may create new variables to support the 187 analysis or additional parameters using the existing variables (or both) in consultation 188 with FDA. 189",
+      "context": "Laboratory Analysis Data Set (ADLB) : This data set contains one record per subject, 166 per lab test, per collection. The laboratory tests of most interest are noted below in the 167 full description for SDTM.LB, but this specification contains additional analysis 168 variables to be submitted in ADLB. However, it is acceptable for additional laboratory 169 tests to be included. If the submitted data set is greater than 5 GB, the data set should be 170 split according to laboratory panels of hematology, chemistry, urinalysis, and other (if 171 necessary, for miscellaneous tests). This data set is designed to be equivalent to an ADaM 172 compliant Basic Data Structure (BDS) laboratory data set with additional review division 173 specific variables. An additional custom data set ADLC structured identically to ADLB 174 containing conventional units should be submitted. It is ideal if both",
+      "fingerprint": "0cddcde9ea9c3f2d31f233bc34d89ac4ac9e7886060495d8990e40857d730d48",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-10-paragraph-1",
+      "statement": "Microscopic Findings Analysis Data Set (ADMI) : This data set contains one record per 191 subject, per biopsy parameter, per evaluator, per collection. If re-read of biopsies is 192 performed, this data set should include flags to indicate different readings for the same 193 biopsy. This data set is meant to capture all source biopsy records and evaluate subjects 194 with respect to the histological endpoints as designated by the study protocol. Each 195 histological endpoint is given its own parameter and evaluated in AVALC (e.g., ‘Y’ or 196 ‘N’). Additional criteria and analysis flags should also be included as needed from the 197 sponsor. This data should be submitted when the histological data are collected and 198 reported to FDA. 199",
+      "context": "Drug-Induced Liver Injury Analysis Data Set (ADDILI) : This custom data set 180 contains one record per subject, per parameter, per collection, where each subject should 181 have a minimum of one parameter to evaluate potential DILI. Subjects deemed to have 182 potential DILI should have two additional parameters: one to list the action taken and 183 another to list the outcome. This data set also contains variables derived from pertinent 184 data from the ADLB data set, such as post-baseline maximum values for each of the liver 185 enzymes. In addition, this data set contains flags to indicate any additional work-up 186 conducted to evaluate potential DILI. Sponsors may create new variables to support the 187 analysis or additional parameters using the existing variables (or both) in consultation 188 with FDA. 189 Non-Invasive Serum Biomarkers of Liver Fibrosis and NASH Analysis Data Se",
+      "fingerprint": "3e12cfb765671c111a19f7f3a9b47feb4788799af7d6dd1ccb34e35c0ff1fb68",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-10-paragraph-2",
+      "statement": "Non-Invasive Serum Biomarkers of Liver Fibrosis and NASH Analysis Data Set 201 (ADRS) : The ADRS data set contains the non-invasive NASH and fibrosis serum 202 biomarkers sponsors may wish to evaluate such as Cytokeratin-18 (CK-18), MELD 203 score, Enhanced Liver Fibrosis (ELF) score, Liver Fibrosis (FIB-4) score, Aspartate 204 Aminotransferase-to-Platelet Ratio Index (APRI), etc. Measurements may be derived as 205 calculations from data points in other data sets such as SDTM.LB or SDTM.RS. This 206 data set follows the same structure as the SDTM.RS domain but contains additional 207 parameters; each non-invasive endpoint (e.g., MELD Score from Baseline <12 to >=15 208 post-baseline) is given its own parameter and evaluated in AVALC (e.g., ‘Y’ or ‘N’). 209 Additional criteria and analysis flags should be included as the sponsor sees fit. This data 210 should be submitted when the non-invasive serum biomarkers are collected and reported 211 to FDA. 212",
+      "context": "Microscopic Findings Analysis Data Set (ADMI) : This data set contains one record per 191 subject, per biopsy parameter, per evaluator, per collection. If re-read of biopsies is 192 performed, this data set should include flags to indicate different readings for the same 193 biopsy. This data set is meant to capture all source biopsy records and evaluate subjects 194 with respect to the histological endpoints as designated by the study protocol. Each 195 histological endpoint is given its own parameter and evaluated in AVALC (e.g., ‘Y’ or 196 ‘N’). Additional criteria and analysis flags should also be included as needed from the 197 sponsor. This data should be submitted when the histological data are collected and 198 reported to FDA. 199 Analysis Time to Event Data Set (ADTTE) : This data set is one record per subject, per 214 parameter, per time point. Sponsors should use this data se",
+      "fingerprint": "c10afc466a552a0645548f6ccd3d1e50994e7f7711fdb757731b1204e856f72b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-10-paragraph-3",
+      "statement": "Analysis Time to Event Data Set (ADTTE) : This data set is one record per subject, per 214 parameter, per time point. Sponsors should use this data set to evaluate time-to-event 215 endpoints for all subjects. This guidance contains sample parameters, but sponsors should 216 consult with FDA on the specific parameters relevant to their program. 217",
+      "context": "Non-Invasive Serum Biomarkers of Liver Fibrosis and NASH Analysis Data Set 201 (ADRS) : The ADRS data set contains the non-invasive NASH and fibrosis serum 202 biomarkers sponsors may wish to evaluate such as Cytokeratin-18 (CK-18), MELD 203 score, Enhanced Liver Fibrosis (ELF) score, Liver Fibrosis (FIB-4) score, Aspartate 204 Aminotransferase-to-Platelet Ratio Index (APRI), etc. Measurements may be derived as 205 calculations from data points in other data sets such as SDTM.LB or SDTM.RS. This 206 data set follows the same structure as the SDTM.RS domain but contains additional 207 parameters; each non-invasive endpoint (e.g., MELD Score from Baseline <12 to >=15 208 post-baseline) is given its own parameter and evaluated in AVALC (e.g., ‘Y’ or ‘N’). 209 Additional criteria and analysis flags should be included as the sponsor sees fit. This data 210 should be submitted when the non-inv",
+      "fingerprint": "b92a4cd3ff42c0c0fa00c156257ef873d89faf0d452bc4b08b2966279645a4e8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-10-paragraph-6",
+      "statement": "Sponsors are strongly encouraged to seek DHN input for additional custom data sets and 226 variables to support determination of efficacy and/or safety. Though sponsors should consider 227 the data sets referenced in this guidance as FDA’s recommendation to support regulatory review, 228 some variables may not be appropriate for all clinical trials. 229",
+      "context": "Each section below provides specifications and/or appropriate CDISC Controlled Terminology 221 that describes the desired content and structure of the data set. The variable names and associated 222 metadata are based on current CDISC SDTM and ADaM standards where possible. If any 223 variable is unclear, sponsors are encouraged to discuss the expectations with DHN. 224 CDISC Controlled Terminology developed and maintained by CDISC and National Cancer 231 Institute Enterprise Vocabulary Services ( NCI EVS ) 9 should be used where applicable, but 232 codelists may be extensible. If a submission used alternate controlled terminology or extended 233 any codelist, then sponsors should indicate this in the define.xml document as well as the SDRG 234",
+      "fingerprint": "9da2f4bd2ff439670d8171d17859ea66cc4e6eb5d31ebddcbd32f00061f227a0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-10-paragraph-7",
+      "statement": "CDISC Controlled Terminology developed and maintained by CDISC and National Cancer 231 Institute Enterprise Vocabulary Services ( NCI EVS ) 9 should be used where applicable, but 232 codelists may be extensible. If a submission used alternate controlled terminology or extended 233 any codelist, then sponsors should indicate this in the define.xml document as well as the SDRG 234",
+      "context": "Sponsors are strongly encouraged to seek DHN input for additional custom data sets and 226 variables to support determination of efficacy and/or safety. Though sponsors should consider 227 the data sets referenced in this guidance as FDA’s recommendation to support regulatory review, 228 some variables may not be appropriate for all clinical trials. 229 9 Available at https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.pdf .",
+      "fingerprint": "9ebe3d71149d47997d1fd5bc14119e7f08d354cb659175ada1eb9fda2a97e1f9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-11-paragraph-1",
+      "statement": "and ADRG. The variable labels and the variable type noted in the specifications should be used. 235 As updates are made to CDISC Controlled Terminology, sponsors should use the current version 236 provided by CDISC and NCI EVS. 237",
+      "context": "9 Available at https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.pdf .",
+      "fingerprint": "0e1b3e9144f36dc877a76dca2d0fc1de5d583260dc2c5c39c0afda422d5463d2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-11-paragraph-4",
+      "statement": "The BE domain should contain information regarding the collection of specimens that are used 243 for histological assessment within the Microscopic Findings (MI) domain, including the 244 anatomic location from which the specimen was collected. The collection event is linked to the 245 Biospecimen Findings (BS) domain that stores information regarding any measurements 246 performed on the specimens. For example, a tissue sample that is collected, extracted, frozen, 247 shipped, and thawed should have five records, each with a BEDECOD value of 248 ‘COLLECTING’, ‘EXTRACTING’, ‘FREEZING’, ‘SHIPPING’ and ‘THAWING’ respectively. 249",
+      "context": "5.1.1 Biospecimen Events (BE) Domain 241 5.1.2 Biospecimen Findings (BS) Domain 251",
+      "fingerprint": "cb7c6605c38d5466648e79b29077336588a31ab6e7f6f10a406eef6c1bb9dcbe",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-11-paragraph-6",
+      "statement": "Sponsors should provide a complete listing of all characteristics of biospecimens and derived 253 samples used for analysis in the Microscopic Findings (MI) domain. These measurements are 254 used to assess the adequacy and integrity of the samples collected. Sponsors should collect and 255 submit information for the following Biospecimen Characteristics Test Name (BSTEST) values: 256",
+      "context": "5.1.2 Biospecimen Findings (BS) Domain 251 Table 1: Biospecimen Domain Test Values 258",
+      "fingerprint": "6446032bda921d22cc65545696891cb62496317c394359acef74402c9753649c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-11-paragraph-9",
+      "statement": "LENGTH Length The result should be reported in millimeters (mm).",
+      "context": "BSTESTCD BSTEST BSORRES Notes DIAMETER Diameter This test is extended from the BSTEST codelist. It is important to note that sponsors may submit additional tests to support the decision to include 261 or exclude the sample from analysis. In addition, sponsors may use the Related Records 262 (RELREC) domain to connect the specimens between the BS and MI domains. 263",
+      "fingerprint": "e30782b047fb8e1aef20673658bcf48330355376406c7e6647fbf3c4ad3ddfa0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-11-paragraph-12",
+      "statement": "Currently, the surrogate endpoints that are acceptable to DHN for a phase 3 trial to support 267 approval for treatment of noncirrhotic NASH with fibrosis are biopsy-based under 21 CFR 314 268 Subpart H - Accelerated Approval of New Drugs for Serious or Life-Threatening Illnesses. A 269 semi-quantitative scoring system that considers a core set of histological features known as the 270 NASH Clinical Research Network (CRN) Scoring System is used to assess NASH. Sponsors 271 may provide data for additional scoring systems conforming to CDISC standards. 10 Details on 272 alternative scoring should be described in the SDRG and ADRG. 273",
+      "context": "5.1.3 Microscopic Findings (MI) Domain 265 10 Available at https://www.cdisc.org/standards .",
+      "fingerprint": "4cc3ce1d14a78f7c735b952e5951e7cbe7f4a4e098cc71765638f8a76c6027a8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-12-paragraph-1",
+      "statement": "Subjects should have an overall histological diagnosis of NASH with liver fibrosis before the 275 NASH CRN Score applies. The NASH CRN Scoring System consists of an evaluation of fibrosis 276 using the NASH CRN Fibrosis Stage and the NAFLD Activity Score (NAS), where NAS 277 combines scores of steatosis, lobular inflammation, and hepatocellular ballooning. 11 For drug 278 development programs intended for treatment of noncirrhotic NASH with liver fibrosis, FDA has 279 accepted as critical inclusion criteria in NASH trials a NAS greater than or equal to 4 with at 280 least 1 point each in inflammation and ballooning along with a NASH CRN fibrosis score greater 281 than stage 1 fibrosis but less than stage 4 fibrosis. 282",
+      "context": "10 Available at https://www.cdisc.org/standards . Liver biopsy data can be tabulated using CDISC’s MI Domain. The MI domain is designed to 284 hold information generated from histological, pathological, and immunohistological images 285 obtained via microscopic evaluations of tissue samples. The MI domain provides a record for 286 each microscopic finding observed, where multiple microscopic tests on a specimen may be 287 conducted. 288",
+      "fingerprint": "79c034a1d9f74675b48245b352ecaa4d2527ead06fcb6afc8a886bda26b98da2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-12-paragraph-3",
+      "statement": "As the biopsy tissue may be processed into multiple slides prior to histopathological evaluation, 290 each individual slide may be assessed for individual NASH components. Sponsors should 291 determine whether or not the individual slides are adequate for assessment and record those 292 results in the Supplemental MI (SUPPMI) domain. Sponsors should also link records within the 293 MI, BS, and BE domains via a RELREC domain. Based on the specifications of the MI domain 294 and the CDISC Controlled Terminology approved thus far for liver fibrosis scoring, each specific 295 component of the NAS should be recorded using the Microscopic Findings Test Detail 296 (MITSTDTL) variable. Likewise, the total NAS score is represented with MITSTDTL of ‘Total 297 Score’ with the criteria (NAS) being held in Microscopic Findings Test Code (MITESTCD) and 298 Microscopic Findings Test (MITEST) variables, to group the individual components and total 299 score of NAS. 300",
+      "context": "Liver biopsy data can be tabulated using CDISC’s MI Domain. The MI domain is designed to 284 hold information generated from histological, pathological, and immunohistological images 285 obtained via microscopic evaluations of tissue samples. The MI domain provides a record for 286 each microscopic finding observed, where multiple microscopic tests on a specimen may be 287 conducted. 288 Given that histological assessments of NAFLD and NASH are subject to inter- and intra- 302 observer variability, 12 sponsors should capture the observer details in the MI domain using the 303 Evaluator (MIEVAL) and Evaluator ID (MIEVALID) variables. The measure evaluator is stored 304 in MIEVAL and within the MIEVALID variable when distinction between multiple evaluators 305 with the same role is necessary. Where MIEVALID is populated, MIEVAL should exist and 306 have a non-null value. CDISC Controlled T",
+      "fingerprint": "b7db2df35e5cf15ff2109d72ef6f18c6025d234a8ad51cf3719cb5e344e326e4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-12-paragraph-4",
+      "statement": "Given that histological assessments of NAFLD and NASH are subject to inter- and intra- 302 observer variability, 12 sponsors should capture the observer details in the MI domain using the 303 Evaluator (MIEVAL) and Evaluator ID (MIEVALID) variables. The measure evaluator is stored 304 in MIEVAL and within the MIEVALID variable when distinction between multiple evaluators 305 with the same role is necessary. Where MIEVALID is populated, MIEVAL should exist and 306 have a non-null value. CDISC Controlled Terminology should be used to populate the values for 307 these variables. In cases where multiple evaluators provide assessments for a given time point 308 measurement or for an overall assessment, an independent assessor identifies one of multiple 309 measurements to be the accepted one and should be indicated through use of the Accepted 310 Record Flag variable (MIACPTFL). Values for this variable are not meant to be derived by the 311 sponsor. 312",
+      "context": "As the biopsy tissue may be processed into multiple slides prior to histopathological evaluation, 290 each individual slide may be assessed for individual NASH components. Sponsors should 291 determine whether or not the individual slides are adequate for assessment and record those 292 results in the Supplemental MI (SUPPMI) domain. Sponsors should also link records within the 293 MI, BS, and BE domains via a RELREC domain. Based on the specifications of the MI domain 294 and the CDISC Controlled Terminology approved thus far for liver fibrosis scoring, each specific 295 component of the NAS should be recorded using the Microscopic Findings Test Detail 296 (MITSTDTL) variable. Likewise, the total NAS score is represented with MITSTDTL of ‘Total 297 Score’ with the criteria (NAS) being held in Microscopic Findings Test Code (MITESTCD) and 298 Microscopic Findings Test (MITEST) variables,",
+      "fingerprint": "ad50a8360def2faba4e697dd2bf7a39004544a6bab336cda7240549b35e21e06",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-13-paragraph-1",
+      "statement": "CDISC Controlled Terminology provides values of ‘Fibrosis’ within MITESTCD and MITEST. 314 While there is currently no specified terminology published by CDISC for the NASH CRN 315 Fibrosis Stage, CDISC does provide terminology for other liver fibrosis scoring criteria for use 316 with the Microscopic Findings Test Detail (MITSTDTL) variable. MITSTDTL is a qualifier 317 variable for MITESTCD and MITEST. Based on this, sponsors should specify NASH CRN 318 Fibrosis Stage in MITSTDTL, used in conjunction with MITESTCD and MITEST of ‘Fibrosis.’ 319 Results from the biopsy can be specified using the Microscopic Findings Original Result 320 (MIORRES) variable. 321",
+      "context": "12 DE Kleiner and HR Makhlouf, 2016, Histology of Nonalcoholic Fatty Liver Disease and Nonalcoholic Steatohepatitis in Adults and Children, Clin Liver Dis, 20(2):293–312. Tables 2 (recommended) and 3 (permissible) below contain a representation of concepts for the 323 MI domain. Sponsors should discuss with the review division if any of the permissible tests are 324 required for an individual trial. Sponsors should store any comments about the biopsy or slide 325 readings in a Comments (CO) domain. 326",
+      "fingerprint": "1b606c2a2c900ae9fa4d433aec88eb7a75383456c24c6d3347de490c7bfdfdfb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-13-paragraph-2",
+      "statement": "Tables 2 (recommended) and 3 (permissible) below contain a representation of concepts for the 323 MI domain. Sponsors should discuss with the review division if any of the permissible tests are 324 required for an individual trial. Sponsors should store any comments about the biopsy or slide 325 readings in a Comments (CO) domain. 326",
+      "context": "CDISC Controlled Terminology provides values of ‘Fibrosis’ within MITESTCD and MITEST. 314 While there is currently no specified terminology published by CDISC for the NASH CRN 315 Fibrosis Stage, CDISC does provide terminology for other liver fibrosis scoring criteria for use 316 with the Microscopic Findings Test Detail (MITSTDTL) variable. MITSTDTL is a qualifier 317 variable for MITESTCD and MITEST. Based on this, sponsors should specify NASH CRN 318 Fibrosis Stage in MITSTDTL, used in conjunction with MITESTCD and MITEST of ‘Fibrosis.’ 319 Results from the biopsy can be specified using the Microscopic Findings Original Result 320 (MIORRES) variable. 321 Table 2. Recommended Microscopic Findings Test Codes, Tests, Test Details and Results 13",
+      "fingerprint": "fb8218283fb79d4a7bc2bfc5d5b491fb37845eafe85d78603b71236f5e0122e0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-14-paragraph-5",
+      "statement": "Sponsors should provide a Supplemental Microscopic Findings (SUPPMI) domain with a 336 parameter to assess the adequacy of biopsy sample(s) collected for analysis. Adequacy of the 337 slide(s) created for evaluating the histopathological features (e.g., steatosis, inflammation, 338 ballooning) should be established based on results collected in the BS and MI domains. Sponsors 339 should provide their rationale in the supplemental qualifier ‘Image Condition’ for slides 340 determined to be not adequate for analysis. If there are multiple reasons, ‘Image Condition’ 341 should take a value of ‘MULTIPLE’ with the individual reasons listed in QVAL for ‘Image 342 Condition 1’ and ‘Image Condition 2.’ Sponsors may provide additional slide-level data points in 343 the SUPPMI domain as they see fit (e.g., evaluator name, container name). The table below 344 provides the variables and terminology to be used for assessing adequacy of the sample. 345",
+      "context": "5.1.4 Supplemental Microscopic Findings (SUPPMI) Domain 334 Table 4. Terminology for SUPPMI Domain 347",
+      "fingerprint": "a7b16408c4ad10ea4fe5006d3d1b82b3eae742d78c4d1372215181ea656e3b98",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-15-paragraph-4",
+      "statement": "and Child-Pugh Classification 17 in the RS domain. 353 • MELD Related Scores (e.g., MELD, MELD Sodium (MELD-Na), MELD 3.0): While 354 there are no current CDISC guidance for MELD-related scores, sponsors should follow a 355 similar modeling strategy as MELD scoring as shown in Table 5. Individual laboratory 356 test result values (e.g., Creatinine, Bilirubin, INR) and patient sex should be represented 357 in the LB domain and composite scoring in the RS domain where the linkage is 358 represented using the --LNKID variable. The relationship between the two domains is 359 stored in the RELREC domain. 360",
+      "context": "5.1.5 Disease Response and Clinical Classifications (RS) Domain 350 CDISC provides specific guidance for characterizing and recording clinical indicators of hepatic 351 disease progression including MELD Scoring , 15 West Haven Hepatic Encephalopathy Grade , 16 • West Haven Hepatic Encephalopathy Grade : The measure evaluator is stored in 362 Evaluator (RSEVAL), and if distinction between multiple evaluators with the same role 363 is necessary, this information is stored within the Evaluator ID (RSEVALID) variable. 364 Where RSEVALID is populated, RSEVAL should exist and have a non-null value. 365 Results should be populated in the Original (RSORRES) and Standard Character 366 (RSSTRESC) Results variables and take values of ‘GRADE 0’, ‘GRADE 1’, ‘GRADE 367 2’, ‘GRADE 3’, or ‘GRADE 4’. 368",
+      "fingerprint": "3a4d7a19eebb0d706fc9c48b40b2f3a1b16d1e224a8fa7aa215d1d7230a42a4b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-15-paragraph-5",
+      "statement": "• West Haven Hepatic Encephalopathy Grade : The measure evaluator is stored in 362 Evaluator (RSEVAL), and if distinction between multiple evaluators with the same role 363 is necessary, this information is stored within the Evaluator ID (RSEVALID) variable. 364 Where RSEVALID is populated, RSEVAL should exist and have a non-null value. 365 Results should be populated in the Original (RSORRES) and Standard Character 366 (RSSTRESC) Results variables and take values of ‘GRADE 0’, ‘GRADE 1’, ‘GRADE 367 2’, ‘GRADE 3’, or ‘GRADE 4’. 368",
+      "context": "and Child-Pugh Classification 17 in the RS domain. 353 • MELD Related Scores (e.g., MELD, MELD Sodium (MELD-Na), MELD 3.0): While 354 there are no current CDISC guidance for MELD-related scores, sponsors should follow a 355 similar modeling strategy as MELD scoring as shown in Table 5. Individual laboratory 356 test result values (e.g., Creatinine, Bilirubin, INR) and patient sex should be represented 357 in the LB domain and composite scoring in the RS domain where the linkage is 358 represented using the --LNKID variable. The relationship between the two domains is 359 stored in the RELREC domain. 360 15 Available at https://www.cdisc.org/standards/foundational/qrs/model-end-stage-liver-disease .",
+      "fingerprint": "92e4e337a5052e774846ecc6be0db6d44d4ff64139fa1e290df46cfdec8d7ae8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-17-paragraph-6",
+      "statement": "Sponsors may choose to conduct imaging procedures to further investigate the liver during the 393 clinical trial, including measurements for liver steatosis, inflammation, and/or fibrosis. Imaging- 394 based biomarkers are currently not accepted by DHN to support primary efficacy assessments in 395 trials intending to support a marketing application; however, they can be used to assess 396 preliminary efficacy in early phase trials and as exploratory or secondary endpoints to provide 397 supportive evidence. It is therefore important for these data points to be submitted consistently. 398 The procedure itself should be recorded in the Procedures (PR) domain and results of the 399 procedure should be recorded in this custom Imaging Results (ZI) domain. 400",
+      "context": "The custom ZI domain captures results of liver imaging procedures (e.g., MRI or CT scan). 391 The ZI domain takes the structure of a findings domain and should contain variables such as 402 Imaging Results Test (ZITEST), Imaging Results Test Code (ZITESTCD), and Imaging Results 403 Original Result (ZIORRES). Sponsors may use their discretion regarding which data points to 404 collect and submit from the imaging procedure(s). Recording of the procedure in the PR domain 405 and results of that procedure in the ZI domain may be linked via the RELREC domain. 406",
+      "fingerprint": "42ac528c1fc46dbeab030b173aacc756385f83d463d2da9a1f427f1a8124bc39",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-17-paragraph-7",
+      "statement": "The ZI domain takes the structure of a findings domain and should contain variables such as 402 Imaging Results Test (ZITEST), Imaging Results Test Code (ZITESTCD), and Imaging Results 403 Original Result (ZIORRES). Sponsors may use their discretion regarding which data points to 404 collect and submit from the imaging procedure(s). Recording of the procedure in the PR domain 405 and results of that procedure in the ZI domain may be linked via the RELREC domain. 406",
+      "context": "Sponsors may choose to conduct imaging procedures to further investigate the liver during the 393 clinical trial, including measurements for liver steatosis, inflammation, and/or fibrosis. Imaging- 394 based biomarkers are currently not accepted by DHN to support primary efficacy assessments in 395 trials intending to support a marketing application; however, they can be used to assess 396 preliminary efficacy in early phase trials and as exploratory or secondary endpoints to provide 397 supportive evidence. It is therefore important for these data points to be submitted consistently. 398 The procedure itself should be recorded in the Procedures (PR) domain and results of the 399 procedure should be recorded in this custom Imaging Results (ZI) domain. 400 5.1.7 Adjudication (ZA) Domain 408",
+      "fingerprint": "ea526d831ab23ab2e37ac04291b350ab5131501b3f6bc0a6ba476b21646d44ee",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-17-paragraph-9",
+      "statement": "Sponsor protocols may specify for certain events and/or clinical outcomes to be adjudicated by 410 investigator(s) and/or committee(s). Sponsors should create a custom ZA domain to provide 411 assessments by individual adjudicators as it relates to certain events (e.g., DILI). Examples of 412 adjudicated events in NASH development programs may include DILI, Liver-Related Death, 413 Hepatic Decompensation Events, Major Adverse Cardiac Events (MACE), and Cardiac-Related 414 Death. All potential events sent for adjudication should be included in the data set regardless of 415 the adjudication outcome. 416",
+      "context": "5.1.7 Adjudication (ZA) Domain 408 The ZA domain should follow the structure of a Findings About Events or Interventions (FA) 418 domain. An FA domain utilizes the SDTM findings class structure with the addition of an 419",
+      "fingerprint": "0032fec8455fb4f861b6acde56ec803158e11cee10422ad655a1486ab1a7de44",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 33,
+      "anchor": "page-17-paragraph-10",
+      "statement": "The ZA domain should follow the structure of a Findings About Events or Interventions (FA) 418 domain. An FA domain utilizes the SDTM findings class structure with the addition of an 419",
+      "context": "Sponsor protocols may specify for certain events and/or clinical outcomes to be adjudicated by 410 investigator(s) and/or committee(s). Sponsors should create a custom ZA domain to provide 411 assessments by individual adjudicators as it relates to certain events (e.g., DILI). Examples of 412 adjudicated events in NASH development programs may include DILI, Liver-Related Death, 413 Hepatic Decompensation Events, Major Adverse Cardiac Events (MACE), and Cardiac-Related 414 Death. All potential events sent for adjudication should be included in the data set regardless of 415 the adjudication outcome. 416 19 Note: Future releases of the SDTMIG may contain a Gastrointestinal System Findings (GI) domain as discussed in the Crohn’s Disease Therapeutic Area User Guide (TAUG). If and when the GI domain becomes available in a future version of the SDTMIG and if FDA supports that new version, spon",
+      "fingerprint": "ec00062d34b1db7a564be80af33bca767e609de39b473238698accb0f51f3bcf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 34,
+      "anchor": "page-18-paragraph-2",
+      "statement": "Sponsors should specify in their protocol and in the ZA domain the event that is being 423 adjudicated, type of investigator assessing the event as well as the committee responsible for 424 resolving any discrepancies between individual adjudicators. For example, the custom ZA 425 domain may provide DILI assessments and/or Liver-Related Death/Clinical Outcomes by 426 individual hepatologists and a Hepatic Adjudication Committee (HAC), if applicable. MACE 427 and Cardiac-Related Death events may be adjudicated by a Cardiac Adjudication Committee 428 (CAC). 429",
+      "context": "‘Object’ (--OBJ) variable that serves to specialize the topic being measured within the -- 420 TESTCD/--TEST variable. 421 The date of the adjudicator’s assessment may be stored in ZADTC. The earliest date that the 431 assessor determines the subject to have met the criteria should be modeled as its own record with 432 ZATEST value of ‘EVALUATED EVENT ONSET DATE’ with the date value stored in 433 ZAORRES. The Object (ZAOBJ) variable should hold the name of the event being evaluated, 434 such as ‘DILI’ or ‘CARDIAC MACE.’ Each block of records resulting from assessment of a 435 single adjudication event should be grouped using a unique Repetition Number (ZAREPNUM) 436 variable. The Category (ZACAT) variable may be used to distinguish if the adjudication is a 437 ‘FIRST ADJUDICATION’ or a ‘READJUDICATION.’ 438",
+      "fingerprint": "945e1b812ecaad0504195e9556e0ccd457a65ddbb8554e4c012c1f7c992b1a17",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 35,
+      "anchor": "page-18-paragraph-3",
+      "statement": "The date of the adjudicator’s assessment may be stored in ZADTC. The earliest date that the 431 assessor determines the subject to have met the criteria should be modeled as its own record with 432 ZATEST value of ‘EVALUATED EVENT ONSET DATE’ with the date value stored in 433 ZAORRES. The Object (ZAOBJ) variable should hold the name of the event being evaluated, 434 such as ‘DILI’ or ‘CARDIAC MACE.’ Each block of records resulting from assessment of a 435 single adjudication event should be grouped using a unique Repetition Number (ZAREPNUM) 436 variable. The Category (ZACAT) variable may be used to distinguish if the adjudication is a 437 ‘FIRST ADJUDICATION’ or a ‘READJUDICATION.’ 438",
+      "context": "Sponsors should specify in their protocol and in the ZA domain the event that is being 423 adjudicated, type of investigator assessing the event as well as the committee responsible for 424 resolving any discrepancies between individual adjudicators. For example, the custom ZA 425 domain may provide DILI assessments and/or Liver-Related Death/Clinical Outcomes by 426 individual hepatologists and a Hepatic Adjudication Committee (HAC), if applicable. MACE 427 and Cardiac-Related Death events may be adjudicated by a Cardiac Adjudication Committee 428 (CAC). 429 For assessing potential DILI, each adjudicator’s assessment should include a category of 440 likelihood that the investigational or study product caused DILI. We recommend the likelihood 441 categories used by the Drug-Induced Liver Injury Network’s numeric score of 1 to 6 (1 = 442 Definite, 2 = Highly Likely, 3 = Probable, 4 = Poss",
+      "fingerprint": "c8c90de85e409f3c148670de97b3a8e629094e614d8baafa7fdbbac13610a66c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 36,
+      "anchor": "page-18-paragraph-4",
+      "statement": "For assessing potential DILI, each adjudicator’s assessment should include a category of 440 likelihood that the investigational or study product caused DILI. We recommend the likelihood 441 categories used by the Drug-Induced Liver Injury Network’s numeric score of 1 to 6 (1 = 442 Definite, 2 = Highly Likely, 3 = Probable, 4 = Possible, 5 = Unlikely, or 6 = Indeterminate). 20 If 443 a HAC was used, then consensus assignment of likelihood category should also be provided (and 444 noted in the ZAEVAL variable). If the adjudicator is reviewing lab data to determine whether the 445 subject meets potential DILI injury, the records from the LB domain and the record(s) in the ZA 446 domain may be linked using the RELREC domain. 447",
+      "context": "The date of the adjudicator’s assessment may be stored in ZADTC. The earliest date that the 431 assessor determines the subject to have met the criteria should be modeled as its own record with 432 ZATEST value of ‘EVALUATED EVENT ONSET DATE’ with the date value stored in 433 ZAORRES. The Object (ZAOBJ) variable should hold the name of the event being evaluated, 434 such as ‘DILI’ or ‘CARDIAC MACE.’ Each block of records resulting from assessment of a 435 single adjudication event should be grouped using a unique Repetition Number (ZAREPNUM) 436 variable. The Category (ZACAT) variable may be used to distinguish if the adjudication is a 437 ‘FIRST ADJUDICATION’ or a ‘READJUDICATION.’ 438 For assessing whether a subject meets given criteria (e.g., cardiac-related death), sponsors should 449 include in their study protocol the specific criteria being used for the event being adjudicated. 45",
+      "fingerprint": "5fafabb00de49fc17e6a328ce31a01b3ab4cdd7a9f8c6fe6fdd7787fc4e4a4f9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 37,
+      "anchor": "page-18-paragraph-5",
+      "statement": "For assessing whether a subject meets given criteria (e.g., cardiac-related death), sponsors should 449 include in their study protocol the specific criteria being used for the event being adjudicated. 450 The Test (ZATEST) variable may take a value such as ‘EVENT CRITERIA MET’ with the 451 event itself stored in the ZAOBJ variable. The result variable (ZAORRES) may take values of 452 ‘Yes’ or ‘No.’ Any comments made by an adjudicator or an adjudication committee the sponsor 453 wishes to submit should be stored in the Comments (CO) domain, linked to the ZA domain by 454 means of the variables RDOMAIN (related domain), IDVAR (Identifying Variable), and 455 IDVARVAL (Identifying Variable Value) within the CO domain. Linking a comment to an 456 individual record in the ZA domain, use RDOMAIN = ‘ZA’, IDVAL = ‘ZASEQ’ and the 457 appropriate value of ZASEQ in IDVARVAL. 458",
+      "context": "For assessing potential DILI, each adjudicator’s assessment should include a category of 440 likelihood that the investigational or study product caused DILI. We recommend the likelihood 441 categories used by the Drug-Induced Liver Injury Network’s numeric score of 1 to 6 (1 = 442 Definite, 2 = Highly Likely, 3 = Probable, 4 = Possible, 5 = Unlikely, or 6 = Indeterminate). 20 If 443 a HAC was used, then consensus assignment of likelihood category should also be provided (and 444 noted in the ZAEVAL variable). If the adjudicator is reviewing lab data to determine whether the 445 subject meets potential DILI injury, the records from the LB domain and the record(s) in the ZA 446 domain may be linked using the RELREC domain. 447 For assessing hepatic decompensation events requiring adjudication, the ZAOBJ variable could 460 take a value of ‘HEPATIC DECOMPENSATION EVENT.’ The adjudicator’s a",
+      "fingerprint": "667a664ca40af5193efbc6a310c5b853d7417dca14d06fac63a4beec5d6d5c2d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 38,
+      "anchor": "page-19-paragraph-9",
+      "statement": "Adjudicator Information ZAEVAL Evaluator Char Role of the person who provided the evaluation. Used only for results that are subjective (e.g., assigned by a person or a group). Should be null for records that contain collected or derived data. Examples: INVESTIGATOR, ADJUDICATION COMMITTEE, VENDOR.",
+      "context": "ZAORRES Original Result Char The adjudicator’s assessment of ZATEST. ZASTRESC Standard Character Result Char Standardized Result of the adjudicator’s assessment of ZATEST. ZAEVALID Evaluator Identifier Char Used to distinguish multiple evaluators with the same role recorded in ZAEVAL. Examples: ‘Hepatologist 1’, ‘Hepatologist 2’. ZAEVAL should be populated when ZAEVALID is populated.",
+      "fingerprint": "bc3215e7812cfdd60fe6a28573493c5aa68ff851a775847f2bbeeddc6b7f1122",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 39,
+      "anchor": "page-19-paragraph-10",
+      "statement": "ZAEVALID Evaluator Identifier Char Used to distinguish multiple evaluators with the same role recorded in ZAEVAL. Examples: ‘Hepatologist 1’, ‘Hepatologist 2’. ZAEVAL should be populated when ZAEVALID is populated.",
+      "context": "Adjudicator Information ZAEVAL Evaluator Char Role of the person who provided the evaluation. Used only for results that are subjective (e.g., assigned by a person or a group). Should be null for records that contain collected or derived data. Examples: INVESTIGATOR, ADJUDICATION COMMITTEE, VENDOR. Other Flags ZAACPTFL Accepted Record Flag Char The Acceptance Flag identifies those records that have been determined to be the accepted assessment by an independent assessor. This flag would be provided by an independent assessor and when multiple evaluators (e.g., ‘Hepatologist 1’, ‘Hepatologist 2’, and ‘Hepatic Adjudication Committee’) provide assessment or evaluations at the same time point or an overall evaluation.",
+      "fingerprint": "7de22b5043e246b2000577eafc00ec6d5fbc3d4834929ba36f3e74d681bb97eb",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 40,
+      "anchor": "page-20-paragraph-4",
+      "statement": "Sponsors should provide a complete list of concomitant medications for all subjects in 477 accordance with supported CDISC standards. In addition to prescription medications, sponsors 478 should include any over-the-counter medications (e.g., weight-loss medication, dietary and 479 herbal medications). Of particular interest are lipid-lowering agents, statins, antihypertensive, 480 antidiabetic, thiazolidinediones, vitamin E, and anticoagulants and antiplatelets. Data relating to 481 concomitant medications should be captured and recorded during scheduled visits as reflected in 482 the trial protocol and when the subject is undergoing evaluation for potential DILI. 483",
+      "context": "5.1.8 Concomitant Medications (CM) Domain 475 5.1.9 Medical History (MH) Domain 485",
+      "fingerprint": "a588323db09a2eb0a3ceea0f0912b37e9549b108c8d44ba14a640e49fb840e15",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 41,
+      "anchor": "page-21-paragraph-2",
+      "statement": "Sponsors should provide complete medical history data for all subjects in accordance with 487 supported CDISC standards. Of particular interest are preexisting medical conditions that may 488 impact NASH disease progression and/or DILI assessment (e.g., diabetes, primary liver cancers, 489 alcohol/substance use disorder, gallstone disease, heart failure, etc.). Sponsors should refer to the 490 draft NASH Guidance regarding recommendations for trial enrollment depending on the phase of 491 drug development. Additionally, sponsors should include a record in the MH domain for any 492 condition that precludes a subject from participating in the study, in addition to their record in 493 the Inclusion/Exclusion (IE) domain. 494",
+      "context": "5.1.9 Medical History (MH) Domain 485 5.1.10 Laboratory (LB) Domain 497",
+      "fingerprint": "8e3dc403f32262ab14ed9bae5f358d5f0001599c3f1391e9c7f7b721be3594b7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 42,
+      "anchor": "page-21-paragraph-4",
+      "statement": "Sponsors should provide the complete tabulated data for all lab measurements recorded, 499 including central and local labs (denoted using LBNAM variable) as well as scheduled and 500 unscheduled visits. All lab data should be provided in accordance with supported CDISC 501 Standards and Controlled Terminology and the Study Data Technical Conformance Guide . 502 Sponsors should discuss specific laboratory parameters to be collected with DHN. 503 Recommended parameters are listed below: 504",
+      "context": "5.1.10 Laboratory (LB) Domain 497 • Hematology parameters (e.g., white blood cell, hemoglobin, platelets) 506",
+      "fingerprint": "7d1de8a158622b70df9dd00c1b069c2bc8a697420e19edd4f81ddb2e4afa2532",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 43,
+      "anchor": "page-21-paragraph-13",
+      "statement": "21 Sponsors should use appropriate terminology to clearly reflect the method used to assess bilirubin fractions (i.e., conjugated vs. direct ).",
+      "context": "In addition to the above tests, sponsors may wish to include other serum biomarkers that may be 523 relevant to understanding NASH, fibrosis, and/or DILI (e.g., ELF, 22 CK-18, APRI, FIB-4, N- 524 22 If the ELF Score is calculated histologically, the result should be stored in the MI domain for MI.MIORRES under MI.MITSTDTL = ‘ENHANCED LIVER FIBROSIS SCORE’ and MI.MITESTCD = ‘FIBROSIS’.",
+      "fingerprint": "cda14b91dabe95118d9c54778d30f418d85d2f5a18f7c123952ef391ba862d57",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 44,
+      "anchor": "page-21-paragraph-14",
+      "statement": "22 If the ELF Score is calculated histologically, the result should be stored in the MI domain for MI.MIORRES under MI.MITSTDTL = ‘ENHANCED LIVER FIBROSIS SCORE’ and MI.MITESTCD = ‘FIBROSIS’.",
+      "context": "21 Sponsors should use appropriate terminology to clearly reflect the method used to assess bilirubin fractions (i.e., conjugated vs. direct ). terminal propeptide of type III collagen (PRO-C3), Phosphatidylethanol (PEth)). Note that 525 individual components of calculated serum biomarkers should have their own record(s) in the LB 526 domain. Any biomarker that is derived from individual components should store the analytical 527 method used for calculation stored in the Analysis Method variable (LB.LBANMETH). 528 Terminology for the components of and results for the aforementioned example serum 529 biomarkers are provided below in Table 8 Table 8 . All lab parameters submitted to FDA should 530 follow supported CDISC Controlled Terminology. 531",
+      "fingerprint": "c78b28ecf1f448f0f00da856ad1ab741035580fc72faa5092ce9fcf6d5bbe74d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 45,
+      "anchor": "page-22-paragraph-1",
+      "statement": "terminal propeptide of type III collagen (PRO-C3), Phosphatidylethanol (PEth)). Note that 525 individual components of calculated serum biomarkers should have their own record(s) in the LB 526 domain. Any biomarker that is derived from individual components should store the analytical 527 method used for calculation stored in the Analysis Method variable (LB.LBANMETH). 528 Terminology for the components of and results for the aforementioned example serum 529 biomarkers are provided below in Table 8 Table 8 . All lab parameters submitted to FDA should 530 follow supported CDISC Controlled Terminology. 531",
+      "context": "22 If the ELF Score is calculated histologically, the result should be stored in the MI domain for MI.MIORRES under MI.MITSTDTL = ‘ENHANCED LIVER FIBROSIS SCORE’ and MI.MITESTCD = ‘FIBROSIS’. An additional custom domain called LC structured identically to the LB domain should contain 533 conventional units in --STRESU for the results in conventional units in the --STRESC and -- 534 STRESN variables. It is ideal if both conventional and SI units come directly from the lab 535 vendor. Submit the results of all tests obtained on subjects, including the results from 536 unscheduled tests or visits, and results obtained from local laboratories. Identify all reference 537 ranges used for specific populations in the SDRG. 538",
+      "fingerprint": "2ab75842b1108560a58ab27851e418f736e5c4a92cdbb09f59c3a4c9946b41ec",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 46,
+      "anchor": "page-22-paragraph-2",
+      "statement": "An additional custom domain called LC structured identically to the LB domain should contain 533 conventional units in --STRESU for the results in conventional units in the --STRESC and -- 534 STRESN variables. It is ideal if both conventional and SI units come directly from the lab 535 vendor. Submit the results of all tests obtained on subjects, including the results from 536 unscheduled tests or visits, and results obtained from local laboratories. Identify all reference 537 ranges used for specific populations in the SDRG. 538",
+      "context": "terminal propeptide of type III collagen (PRO-C3), Phosphatidylethanol (PEth)). Note that 525 individual components of calculated serum biomarkers should have their own record(s) in the LB 526 domain. Any biomarker that is derived from individual components should store the analytical 527 method used for calculation stored in the Analysis Method variable (LB.LBANMETH). 528 Terminology for the components of and results for the aforementioned example serum 529 biomarkers are provided below in Table 8 Table 8 . All lab parameters submitted to FDA should 530 follow supported CDISC Controlled Terminology. 531 Table 8. Terminology for Example Liver Serum Biomarkers in LB Domain 23",
+      "fingerprint": "ff88764e1c2d4ea066d3f34bba66979501681ce955d65d6c643b5edc12a37ce6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 47,
+      "anchor": "page-22-paragraph-12",
+      "statement": "Sponsors should use the MB domain to provide serologic test results for hepatitis (hepatitis A, B, 545 C, and E) serology tests collected as part of the trial entry evaluation and during potential DILI 546",
+      "context": "5.1.11 Microbiology Specimens (MB) Domain 543 23 The line item for Enhanced Liver Fibrosis is proposed terminology in the LB domain as a calculation from the individual components (TIMP1, P1NP, HYALUAC).",
+      "fingerprint": "3ec25b358a894931171b9ad90b5adc3bc0620e96ab0ea9f4118cb5f6924ecbcd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 48,
+      "anchor": "page-23-paragraph-17",
+      "statement": "Data related to substance use (e.g., alcohol use) should be collected as part of the NASH clinical 558 trial and DILI evaluation. The extent of prior alcohol use should be assessed at baseline, during 559 protocol-defined scheduled visits, and in suspected cases of DILI. Data collected should be 560 recorded in the SU domain and included in the Inclusion/Exclusion (IE) domain as appropriate. 561 For example, a subject who consumes one 12-ounce beer per day may contain the following data 562 point: 563",
+      "context": "5.1.12 Substance Use (SU) Domain 556 • SUTRT: BEER 565 • SUCAT: ALCOHOL 566 • SUDOSE: 12 567",
+      "fingerprint": "785f666fbb87fd0ee278b86311769fceead961af9250ce054361216b687acd7c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 49,
+      "anchor": "page-24-paragraph-2",
+      "statement": "Other substances such as tobacco or caffeine usage should also be recorded in the SU domain. 571",
+      "context": "• SUDOSU: OUNCES 568 • SUDOSFRQ: QD 569 5.1.13 Trial Summary (TS) Domain 573",
+      "fingerprint": "52c38b0fbb8f593de04f83ab71a4984afd97d170b16323b605155c2813182a8a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 50,
+      "anchor": "page-24-paragraph-4",
+      "statement": "Data related to the trial summary should be collected and stored in the TS domain. Of particular 575 interest to FDA is the frequency that this technical specification is used in creating and 576 submitting trial data. Per the FDA Study Data Technical Conformance Guide , sponsors may 577 include an additional parameter in their TS domain to note that this technical specification was 578 used for the study. The parameter and associated value sponsors should use is noted below: 579",
+      "context": "5.1.13 Trial Summary (TS) Domain 573 • TSPARMCD = FDATCHSP 581 • TSPARAM = FDA Tech Spec 582 • TSVAL = NASH Technical Specification Guidance version x.x 583",
+      "fingerprint": "f8879684569a62ae8f8fd3463f057896e2ed85b77bf1dc5fbe5dba547203b99e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 51,
+      "anchor": "page-24-paragraph-7",
+      "statement": "As discussed in previous sections, sponsors should use a RELREC domain to describe the 587 relationship between records captured in separate domains together. A common use case for the 588 RELREC domain is connecting AE and CM records. As it relates to this technical specification, 589 the RELREC domain may connect the needle size captured in the BS domain with the biopsy 590 slide measurements evaluated in the MI domain. Another example may be connecting the record 591 of an MRI procedure in the PR domain with the results of that MRI in the ZI domain. Where 592 relationships between records in different domains should be established, the RELREC domain 593 should store those relationships. 594",
+      "context": "The full instructions for creating the RELREC domain, including the required variables, are 596 located in the SDTM Implementation Guide. 597",
+      "fingerprint": "aec33a3e1d993c9cefa6f6d6b39808a75529b25a67ac433e42b95d1733a676ed",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 52,
+      "anchor": "page-25-paragraph-2",
+      "statement": "When gastroesophageal variceal hemorrhage is captured as an AE, it should be captured in the 619 AE domain, with verbatim term indicating gastroesophageal variceal hemorrhage captured in the 620 topic variable of AE.AETERM. The record in the AE domain should be linked to that of the ZI 621 domain using the --LNKID variable, with relationships captured using the RELREC domain. 622",
+      "context": "custom Imaging Results (ZI) domain that follows the structure of a CDISC findings domain. 614 Occurrence of varices, size of varices, red wale marks, and variceal bleeding can be modeled 615 under using ZITESTCD and ZITEST Test Codes and Test Names. Sponsors may submit 616 additional data points about the results of the endoscopy in the ZI domain. 617 5.1.15.2 All-cause mortality 624",
+      "fingerprint": "b0155809f8d81f92aab1dc1372b13a944e5b9a2f33697f3b6d8f26582c994f19",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 53,
+      "anchor": "page-25-paragraph-4",
+      "statement": "All-cause mortality or death is a component of several composite endpoints currently accepted 626 by DHN to demonstrate clinical benefit in NASH clinical trials. If a subject dies during the 627 study, information regarding the subject’s death is tabulated in several SDTM domains, 628 including the Death Details (DD) domain, which should store all death information. Additional 629 domains that should include death information are the Disposition (DS) domain that records the 630 death as a disposition event, Adverse Events (AE), Demographics (DM) to populate the Death 631 Date (DTHDTC), and Death Flag (DTHFL) variables that are referenced within this domain. The 632 records within the AE, DS, and DD domains should be linked using the --LNKID variable, with 633 the relationship represented in the RELREC domain. Sponsors should consult CDISC Controlled 634 Terminology as well as the SDTM Implementation Guide in using these domains. 635",
+      "context": "5.1.15.2 All-cause mortality 624",
+      "fingerprint": "75ca2ae8738cf57362f838b9fa18c658d49fb3da86e609bfd48c1dbb48428327",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 54,
+      "anchor": "page-25-paragraph-6",
+      "statement": "This section contains three parts: Analysis Data Set Subject Level (ADSL), Occurrence Data 639 Structure (OCCDS) data sets, and Basic Data Structure (BDS) data sets. At a minimum, sponsors 640 should provide the data sets and variables listed throughout these sections. Sponsors can and 641 should submit additional data sets and variables beyond what is listed below in accordance with 642 FDA-supported ADaM Implementation Guide (ADaMIG) 24 in the FDA Data Standards Catalog . 643",
+      "context": "Sponsors should also include appropriate Sequence Number variables in their ADaM data sets 645 for easy traceability back to the SDTM domains. Specific instructions are located in the ADaM 646 Implementation Guide . 647",
+      "fingerprint": "aacb304ddad2a0e3fc2962f71b40df8bb4671989f5ba104f11d3ed4b6511d9a7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 55,
+      "anchor": "page-25-paragraph-7",
+      "statement": "Sponsors should also include appropriate Sequence Number variables in their ADaM data sets 645 for easy traceability back to the SDTM domains. Specific instructions are located in the ADaM 646 Implementation Guide . 647",
+      "context": "This section contains three parts: Analysis Data Set Subject Level (ADSL), Occurrence Data 639 Structure (OCCDS) data sets, and Basic Data Structure (BDS) data sets. At a minimum, sponsors 640 should provide the data sets and variables listed throughout these sections. Sponsors can and 641 should submit additional data sets and variables beyond what is listed below in accordance with 642 FDA-supported ADaM Implementation Guide (ADaMIG) 24 in the FDA Data Standards Catalog . 643 5.2.1 Subject-Level Analysis Data Set (ADSL) 649",
+      "fingerprint": "3ef0b3169953f32072f34794026faf8d2c9bc083507e174a349a8b9618f2dba8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 56,
+      "anchor": "page-25-paragraph-9",
+      "statement": "The ADSL data set contains one record per subject and derives information from other data sets 651 for analysis purposes. Sponsors should include all required variables in the ADSL, including 652 basic demographic information, assigned treatment, actual treatment received, treatment start and 653 end dates, whether the subject discontinued treatment or study early, treatment duration, and 654 study start and end dates. 655",
+      "context": "5.2.1 Subject-Level Analysis Data Set (ADSL) 649 Table 10 provides a list of variables that should be included in the ADSL data set. The baseline 657 variables should be used when those tests are collected and provided in the data submission. For 658",
+      "fingerprint": "e0dba0eae341e983d98e5678e9d7f01562b45f278a63773cc0ffafc0419cd7e6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 57,
+      "anchor": "page-25-paragraph-10",
+      "statement": "Table 10 provides a list of variables that should be included in the ADSL data set. The baseline 657 variables should be used when those tests are collected and provided in the data submission. For 658",
+      "context": "The ADSL data set contains one record per subject and derives information from other data sets 651 for analysis purposes. Sponsors should include all required variables in the ADSL, including 652 basic demographic information, assigned treatment, actual treatment received, treatment start and 653 end dates, whether the subject discontinued treatment or study early, treatment duration, and 654 study start and end dates. 655 24 Available at https://www.cdisc.org .",
+      "fingerprint": "070ca5c83f70399cd9fd9f8259d92227cd501ac20eb03b4def24de0e3537f20f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 58,
+      "anchor": "page-26-paragraph-2",
+      "statement": "The comments column of Table 10 contains recommended derivations for the baseline variables. 663 Sponsors should include their derivations in the ADaM define.xml file. 664",
+      "context": "example, if ELF score is not collected and reported, the ELFBL variable is not required for this 659 data set. Sponsors may add additional flags to this data set as appropriate (e.g., special subject 660 populations of interest for subgroup analyses or relevant concomitant medications). 661 Table 10. ADSL Variables 666",
+      "fingerprint": "1484a085bb4111ddb11d1802df486466f4d81a1efe696eb0725d260c94743733",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 59,
+      "anchor": "page-28-paragraph-2",
+      "statement": "‘1’ if ‘Normal’, ‘2’ if ‘Mild Renal Impairment’, ‘3’ if ‘Moderate Renal Impairment’, ‘4’ if ‘Severe Renal Impairment’ Baseline Medical History Characteristics CHRONFL Chronic Liver Disease Flag Char Expected Values: ‘Y’ or ‘N’ Subjects with evidence of other causes of chronic liver disease at baseline should be flagged as ‘Y’. Else, ‘N’ DIABFL Diabetes Flag Char Expected values: ‘Y’ or ‘N’ ‘Y’ if the subject is diabetic at baseline. Else, ‘N’.",
+      "context": "Variable Name Variable Label Type Comments LDHCAT Baseline LDH Category Text Set to ‘Normal’ if LB.LBSTRESN <= LB.LBSTNRHI for LB.LBTESTCD = ‘LDH’ and LB.LBBLFL = ‘Y’; Set to ‘HIGH’ if LB.LBSTRESN > LB.LBSTNRHI for LB.LBTESTCD = ‘LDH’ and LB.LBBLFL = ‘Y’ PLATCAT Baseline Platelets Category Text Set to ‘Normal’ if LB.LBSTRESN >= LB.LBSTNRLO for LB.LBTESTCD = ‘PLAT’ and LB.LBBLFL = ‘Y’; Set to ‘LOW’ if LB.LBSTRESN < LB.LBSTNRLO for LB.LBTESTCD = ‘PLAT’ and LB.LBBLFL = ‘Y’ EGFRBL Baseline eGFR Num Baseline eGFR value EGFRCAT Baseline eGFR Category Text Set to ‘Normal’ if Baseline eGFR >= 90, ‘Mild Renal Impairment’ if 60 =< Baseline eGFR < 90, ‘Moderate Renal Impairment’ if 30 =< Baseline eGFR < 60 and ‘Severe Renal Impairment’ if 30 > Baseline eGFR EGFRCATN Baseline eGFR Category (N) Integer Numeric representation of ADSL.EGFRCAT. GALLFL Gallstones Flag Char Expected values: ‘Y’ or ‘N’ ‘Y’",
+      "fingerprint": "114f811a64cb83584cd8cb10e102e3d1c41e0c76648fff2a834a17a15abc05a4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 60,
+      "anchor": "page-29-paragraph-4",
+      "statement": "Occurrence Data Structure data sets (OCCDSv1.0) are used for the counting of subjects with a 671 given record or term and often include a coding dictionary (e.g., MedDRA for adverse events, 672 WHODrug for concomitant medications). In creating ADaM OCCDS data sets, sponsors should 673",
+      "context": "5.2.2 Occurrence Data Structure (OCCDS) Data Sets 669 follow the guidance as specified by the ADaM Structure for Occurrence Data in the FDA Study 674 Data Technical Conformance Guide , including sections on dictionary coding and categorization 675 variables, timing variables, and flag and indicator variables. 676",
+      "fingerprint": "80faa7ed423a5de62b904cf2aaca64f13a558227768f0af538cb26fdbeba7d29",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 61,
+      "anchor": "page-30-paragraph-3",
+      "statement": "Sponsors should include all records from SDTM.AE. If a sponsor uses the approach of recording 680 multiple records in AE each time the event changes in severity, relationship, etc. then this should 681 be noted in the SDRG and ADRG. Also note that the specification includes a flag variable that 682 indicates which record had the worst severity grade for a given adverse event (MedDRA 683 preferred term) when there are multiple occurrences (records) of the same adverse event for the 684 same subject. Sponsors may select a grading scale of their choice, which should be prespecified 685 in the study protocol, SDRG, and ADRG. In addition, sponsors should consult the FDA Data 686 Standards Catalog for guidance on the appropriate MedDRA version to use. 687",
+      "context": "5.2.2.1 Adverse Event Analysis Data Set (ADAE) 678 To aid evaluation of potential DILI, this specification also includes a Hepatic Injury Flag to flag 689 AEs occurring within defined grouped queries (e.g., Custom MedDRA Queries) and 690 accompanying flags to identify the earliest record within each hepatic injury flag. Sponsors 691 should discuss the exact derivations of the hepatic injury flags with FDA. Any deviations from 692 the specifications below should be clearly communicated to the review division. 693",
+      "fingerprint": "80b777d51da5d90b409c48b96bcdcb34d0b369b08b710bb60c19a9da980bb46b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 62,
+      "anchor": "page-30-paragraph-4",
+      "statement": "To aid evaluation of potential DILI, this specification also includes a Hepatic Injury Flag to flag 689 AEs occurring within defined grouped queries (e.g., Custom MedDRA Queries) and 690 accompanying flags to identify the earliest record within each hepatic injury flag. Sponsors 691 should discuss the exact derivations of the hepatic injury flags with FDA. Any deviations from 692 the specifications below should be clearly communicated to the review division. 693",
+      "context": "Sponsors should include all records from SDTM.AE. If a sponsor uses the approach of recording 680 multiple records in AE each time the event changes in severity, relationship, etc. then this should 681 be noted in the SDRG and ADRG. Also note that the specification includes a flag variable that 682 indicates which record had the worst severity grade for a given adverse event (MedDRA 683 preferred term) when there are multiple occurrences (records) of the same adverse event for the 684 same subject. Sponsors may select a grading scale of their choice, which should be prespecified 685 in the study protocol, SDRG, and ADRG. In addition, sponsors should consult the FDA Data 686 Standards Catalog for guidance on the appropriate MedDRA version to use. 687 Table 11. ADAE Variables 695",
+      "fingerprint": "28a9e858d221cb42ecf57fabd9f7c47dbdd4d84da6370740d0ec651c21a18e90",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 63,
+      "anchor": "page-30-paragraph-6",
+      "statement": "Variable Name Variable Label Type Comments TRTEMFL Treatment- Emergent Analysis Flag Char Expected Values: ‘Y’ or null A value of ‘Y’ on a record should indicate a new or worsening AE after the first dose of study treatment. Metadata should be clear on the reference dates that are used to define the period during which an adverse event is considered treatment emergent.",
+      "context": "Table 11. ADAE Variables 695 AOCCPIFL 1st Max Sev./Int. Occur Within PT Flag Char Expected Values: ‘Y’ or null Character indicator for the first occurrence of the maximum severity/intensity within the subject and preferred term.",
+      "fingerprint": "f897d25991f15a2975ea5049da2305bda2882f41f9cdbc045021e4ba020e999e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 64,
+      "anchor": "page-30-paragraph-8",
+      "statement": "HPxxFL Hepatic Injury xx Flag Char Expected values: ‘Y’ or null Sponsors should create Hepatic Injury Flag(s) to capture specific preferred terms within the MedDRA hierarchy.",
+      "context": "AOCCPIFL 1st Max Sev./Int. Occur Within PT Flag Char Expected Values: ‘Y’ or null Character indicator for the first occurrence of the maximum severity/intensity within the subject and preferred term. Sponsors should consult FDA regarding how many flags are required and how exactly to derive each flag.",
+      "fingerprint": "6a4d27670e11dc23f3c6f0b291b5459982cbcc4374190285a2f2dc3ae7a9d71e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 65,
+      "anchor": "page-30-paragraph-9",
+      "statement": "Sponsors should consult FDA regarding how many flags are required and how exactly to derive each flag.",
+      "context": "HPxxFL Hepatic Injury xx Flag Char Expected values: ‘Y’ or null Sponsors should create Hepatic Injury Flag(s) to capture specific preferred terms within the MedDRA hierarchy. HPFxxFL First Hepatic Injury xx Flag Char Expected values: ‘Y’ or null Create one additional flag for each HPxxFL flag created and flag the earliest (min ASTDY) on treatment (ASTDY >= 1) for each subject and record that fits the criteria. Otherwise, null DILIFL Potential DILI Event Flag Char Expected values: ‘Y’ or null Flag the following Adverse Events as ‘Y’: Fatigue, Nausea, Vomiting, Abdominal pain or tenderness, Fever, Rash, Pruritus, Jaundice/icterus, Altered mental status DILIPFL Potential DILI Event Flag (30- days prior) Char Expected values: ‘Y’, ‘N’ or null Null for records where DILIFL is null. For records with DILIFL = ‘Y’: if the event occurs in the 30 days before a lab-",
+      "fingerprint": "aaef1e21c9e573bda1b6912ad4546aceff37b85ff7f415a29a2ea397ad74856e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 66,
+      "anchor": "page-31-paragraph-3",
+      "statement": "The following guidance should be used to create data sets that fall within the BDS structure (e.g., 701 ADLB to display laboratory data). Specific guidelines are included for several BDS data sets. All 702 BDS data sets should use the guidelines provided below, which have been written in accordance 703 with the ADaM Implementation Guide. 704",
+      "context": "5.2.3 Basic Data Structure (BDS) Data Sets 699 All BDS data sets should contain the identifier variables, record-level treatment and dose 706 variables, and timing variables as specified in the ADaM Implementation Guide, specifically the 707 section as it relates to the ADaM Basic Data Structure. 708",
+      "fingerprint": "ebf704ebf58f0ac5ea161a61c899d307a12ff563fb28778c5d26f6119feebaff",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 67,
+      "anchor": "page-31-paragraph-4",
+      "statement": "All BDS data sets should contain the identifier variables, record-level treatment and dose 706 variables, and timing variables as specified in the ADaM Implementation Guide, specifically the 707 section as it relates to the ADaM Basic Data Structure. 708",
+      "context": "The following guidance should be used to create data sets that fall within the BDS structure (e.g., 701 ADLB to display laboratory data). Specific guidelines are included for several BDS data sets. All 702 BDS data sets should use the guidelines provided below, which have been written in accordance 703 with the ADaM Implementation Guide. 704 5.2.3.1 Laboratory Analysis Data Set (ADLB) 710",
+      "fingerprint": "450415af1d77a3a859229cf07fd1cecc5756dd190ea7c3b684428c463af7366b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 68,
+      "anchor": "page-31-paragraph-6",
+      "statement": "The following issues are considerations for the creation and content of the laboratory analysis 712 data set. Sponsors should follow the ADaM BDS model when creating this data set. Visit 713 windowing and/or inclusion of unscheduled visits should be included in this analysis data set 714 (liver-related lab results should be included for all scheduled and unscheduled visits). When 715 records are imputed or derived in any manner, the standard ADaM variable, DTYPE should be 716 used. All tests and records included in the SDTM.LB domain should be carried into the ADLB 717 data set, and sponsors should also include a derived parameter for the calculated R value. 718 Sponsors should provide a clear derivation method for their calculation of the R value. 719",
+      "context": "5.2.3.1 Laboratory Analysis Data Set (ADLB) 710 It is acceptable for a sponsor’s ADLB data set to contain additional parameters beyond those 721 noted above. Similarly, variables in addition to those described below may be included. 722",
+      "fingerprint": "92efe0c69ef3eaed9d8d7b7b25e6f14e144b52818fc02a90bb21f6a56aec26fa",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 69,
+      "anchor": "page-31-paragraph-8",
+      "statement": "As with the LB domain, submit two separate data sets for lab results. The ADLB data set should 724 contain SI units. An additional custom data set called ADLC structured identically to ADLB 725 should contain conventional units. It is ideal if both conventional and SI units come directly from 726 the lab vendor. Submit the results of all tests obtained on subjects, including the results from 727 unscheduled tests or visits, and results obtained from local laboratories. Identify all reference 728 ranges used for specific populations in the ADRG. For more information on CDER/CBER 729 current thinking on conventional units, please see the FDA Study Data Technical Conformance 730 Guide available on the FDA Study Data Standards Resources web page. 731",
+      "context": "It is acceptable for a sponsor’s ADLB data set to contain additional parameters beyond those 721 noted above. Similarly, variables in addition to those described below may be included. 722 The ADLB specifications listed below include four important variables for the analysis of drug- 733 induced liver injury: DILIBLFL, PEAKFL, REDUCEFL, and ONSETFL. These flags look for 734 DILI records at their baseline, peak (maximum post-baseline), washout (e.g., 50% reduction after 735",
+      "fingerprint": "b558460fe8fc9e161af93929082a380ac7c4c10894d9cac8f9700d7774da7228",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 70,
+      "anchor": "page-32-paragraph-1",
+      "statement": "reaching maximum post-baseline), and onset (first sign of potential DILI). There are many 736 different ways to define the onset of liver injury; sponsors should refer to the existing guidance 737 for industry Drug-Induced Liver Injury: Premarketing Clinical Evaluation (July 2009) 25 and 738 seek agreement with the FDA review division on how to specify the onset of DILI injury for 739 their study. 740",
+      "context": "The ADLB specifications listed below include four important variables for the analysis of drug- 733 induced liver injury: DILIBLFL, PEAKFL, REDUCEFL, and ONSETFL. These flags look for 734 DILI records at their baseline, peak (maximum post-baseline), washout (e.g., 50% reduction after 735 Table 12. ADLB Variables 742",
+      "fingerprint": "c9038b7673bd44ac4483f10b278b1a59ed6f19445f265358194f1e837b2a81dc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 71,
+      "anchor": "page-32-paragraph-3",
+      "statement": "Variable Name Variable Label Type Comments DILIFL Drug-Induced Liver Injury Flag Char Expected Value: ‘Y’ or null This flag should have ‘Y’ for the following records:",
+      "context": "Table 12. ADLB Variables 742 • ALT, AST, ALP, GGT, Total Bilirubin, Direct Bilirubin, INR records AND • The evaluable record for each test at each visit. If more than one record is collected at each visit, a derived record should be created with DTYPE = ‘AVERAGE’.",
+      "fingerprint": "ca1090f28c677997d72532a1b267ea898ecd0c8e3f3883146c22b1c5f9567f66",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 72,
+      "anchor": "page-32-paragraph-4",
+      "statement": "• ALT, AST, ALP, GGT, Total Bilirubin, Direct Bilirubin, INR records AND • The evaluable record for each test at each visit. If more than one record is collected at each visit, a derived record should be created with DTYPE = ‘AVERAGE’.",
+      "context": "List governed by page-32-paragraph-3: Variable Name Variable Label Type Comments DILIFL Drug-Induced Liver Injury Flag Char Expected Value: ‘Y’ or null This flag should have ‘Y’ for the following records: The average record should be flagged, and the individual records used to create the average record should not be flagged. Unscheduled visits may also be flagged as ‘Y’.",
+      "fingerprint": "5ab352fc7442596021090f0efd71d40703d6df4623b1f5fff93818e38b1c1cf5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 73,
+      "anchor": "page-32-paragraph-5",
+      "statement": "The average record should be flagged, and the individual records used to create the average record should not be flagged. Unscheduled visits may also be flagged as ‘Y’.",
+      "context": "• ALT, AST, ALP, GGT, Total Bilirubin, Direct Bilirubin, INR records AND • The evaluable record for each test at each visit. If more than one record is collected at each visit, a derived record should be created with DTYPE = ‘AVERAGE’. Else, null ABLFL Analysis Baseline Flag Char Expected Value: ‘Y’ or null Character indicator to identify the baseline record for each subject and parameter. Sponsors should confirm with the FDA review division on an appropriate definition for baseline. Examples may include flagging the last record prior to treatment or deriving a new baseline record as the average of all pre-treatment records for a given subject and parameter.",
+      "fingerprint": "539a53e6a3438406eee6c9307282cbfcf827f83a6a5047e1ee0a2ec0c56c77c8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 74,
+      "anchor": "page-32-paragraph-6",
+      "statement": "Else, null ABLFL Analysis Baseline Flag Char Expected Value: ‘Y’ or null Character indicator to identify the baseline record for each subject and parameter. Sponsors should confirm with the FDA review division on an appropriate definition for baseline. Examples may include flagging the last record prior to treatment or deriving a new baseline record as the average of all pre-treatment records for a given subject and parameter.",
+      "context": "The average record should be flagged, and the individual records used to create the average record should not be flagged. Unscheduled visits may also be flagged as ‘Y’. DILIBLFL DILI Baseline Flag Char Expected Value: ‘Y’ or null For each subject and liver biochemistry parameter, flag the baseline record used for DILI analysis as ‘Y’. This flag is similar to ABLFL, however, in subjects with elevated transaminase levels at enrollment who show improvements in their transaminase levels and in essence, establish a new lower baseline during the trial, sponsors should use the new lower transaminase values in subsequent assessment for potential DILI (and subsequently using this flag to identify the record used in baseline calculations for DILI analyses). Sponsors should seek review division agreement and provide clear guidance in their ADRG or define.xml file on derivations for alternate baseli",
+      "fingerprint": "e0973c6ceadfb499813dd10611589a52c221af11a65f88bc392b2d737b5abffc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 75,
+      "anchor": "page-32-paragraph-7",
+      "statement": "DILIBLFL DILI Baseline Flag Char Expected Value: ‘Y’ or null For each subject and liver biochemistry parameter, flag the baseline record used for DILI analysis as ‘Y’. This flag is similar to ABLFL, however, in subjects with elevated transaminase levels at enrollment who show improvements in their transaminase levels and in essence, establish a new lower baseline during the trial, sponsors should use the new lower transaminase values in subsequent assessment for potential DILI (and subsequently using this flag to identify the record used in baseline calculations for DILI analyses). Sponsors should seek review division agreement and provide clear guidance in their ADRG or define.xml file on derivations for alternate baseline calculations and provide a flag in the ADSL to indicate if any subjects have discrepancies between ABLFL and DILIBLFL for any liver biochemistry parameter.",
+      "context": "Else, null ABLFL Analysis Baseline Flag Char Expected Value: ‘Y’ or null Character indicator to identify the baseline record for each subject and parameter. Sponsors should confirm with the FDA review division on an appropriate definition for baseline. Examples may include flagging the last record prior to treatment or deriving a new baseline record as the average of all pre-treatment records for a given subject and parameter. DTYPE Derivation Type Char For the case where there are multiple observations and an average or a geometric mean will be used for the observation for the visit window in the analysis instead of a single selected real observation. If this is the case, a new record should be created, and the records identified by having some values for these records",
+      "fingerprint": "0b1416028fb7ab24566391498bb5296a34b10a26bf1d0b31b657bf6baae19f36",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 76,
+      "anchor": "page-32-paragraph-8",
+      "statement": "DTYPE Derivation Type Char For the case where there are multiple observations and an average or a geometric mean will be used for the observation for the visit window in the analysis instead of a single selected real observation. If this is the case, a new record should be created, and the records identified by having some values for these records",
+      "context": "DILIBLFL DILI Baseline Flag Char Expected Value: ‘Y’ or null For each subject and liver biochemistry parameter, flag the baseline record used for DILI analysis as ‘Y’. This flag is similar to ABLFL, however, in subjects with elevated transaminase levels at enrollment who show improvements in their transaminase levels and in essence, establish a new lower baseline during the trial, sponsors should use the new lower transaminase values in subsequent assessment for potential DILI (and subsequently using this flag to identify the record used in baseline calculations for DILI analyses). Sponsors should seek review division agreement and provide clear guidance in their ADRG or define.xml file on derivations for alternate baseline calculations and provide a flag in the ADSL to indicate if any subjects have discrepancies between ABLFL and DILIBLFL for any liver biochemistry parameter. 25 We upda",
+      "fingerprint": "2271003f87f9175d091dce836db9e88367ae67b72433bb62bf5de5c2c89d4a11",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 77,
+      "anchor": "page-33-paragraph-1",
+      "statement": "Variable Name Variable Label Type Comments in DTYPE variable. The possible value could be ‘AVERAGE’, or ‘GEOMETRIC’, or other meaningful values. This should be explained in the define file or SAP.",
+      "context": "25 We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents . R2ANRHI Ratio to Analysis Range Upper Limit Num Ratio to the upper limit of the analysis range. Equal to AVAL / ANRHI.",
+      "fingerprint": "4610acbd005e61d70316b69c2d284a4942f1279107d86842b2ddfb040ef957d8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 78,
+      "anchor": "page-33-paragraph-3",
+      "statement": "R2BASE Ratio to Baseline Value Num Ratio to the baseline value. Equal to AVAL / BASE. If used for a given PARAM, should be populated for all post-baseline records of that PARAM regardless of whether that record is used for analysis.",
+      "context": "R2ANRHI Ratio to Analysis Range Upper Limit Num Ratio to the upper limit of the analysis range. Equal to AVAL / ANRHI. ANL01FL Analysis Record Flag 01 Char Expected Values: ‘Y’ or null Flag the records to be used in analysis. If multiple records are recorded for a parameter at the same visit, use this flag to indicate which record should be used. Derived records (if it was appropriate to take an average of two records) may be flagged as ‘Y’. Sponsors should provide a clear derivation for how they choose to derive this flag.",
+      "fingerprint": "89aa41dc7600ca0232629851457ac31f031f2c9026b927cc296f945a3acf3483",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 79,
+      "anchor": "page-33-paragraph-4",
+      "statement": "ANL01FL Analysis Record Flag 01 Char Expected Values: ‘Y’ or null Flag the records to be used in analysis. If multiple records are recorded for a parameter at the same visit, use this flag to indicate which record should be used. Derived records (if it was appropriate to take an average of two records) may be flagged as ‘Y’. Sponsors should provide a clear derivation for how they choose to derive this flag.",
+      "context": "R2BASE Ratio to Baseline Value Num Ratio to the baseline value. Equal to AVAL / BASE. If used for a given PARAM, should be populated for all post-baseline records of that PARAM regardless of whether that record is used for analysis. ANL02FL Analysis Record Flag 02 Char Expected Values: ‘Y’ or null Flag the maximum post-baseline record for each subject and parameter as ‘Y’ ANL03FL Analysis Record Flag 03 Char Expected Values: ‘Y’ or null Flag the minimum post-baseline record for each subject and parameter as ‘Y’ PEAKFL DILI Peak Flag Char Expected Values: ‘Y’, ‘N’ or null Null for all pre-treatment records and records where DILIFL = ‘N’. If ANL02FL = ‘Y’ and DILIFL = ‘Y’, then ‘Y’. Otherwise, ‘N’ REDUCEFL DILI Reduction Flag Char Expected Values: ‘Y’, ‘N’ or null Null for all pre-treatment records and records where DILIFL = ‘N’. Flag the first record after PEAKFL for each subject and para",
+      "fingerprint": "1c39694ce8732549a86068d0cf3dc65b297282be3a01bef5255eac952d4b375b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 80,
+      "anchor": "page-33-paragraph-5",
+      "statement": "ANL02FL Analysis Record Flag 02 Char Expected Values: ‘Y’ or null Flag the maximum post-baseline record for each subject and parameter as ‘Y’ ANL03FL Analysis Record Flag 03 Char Expected Values: ‘Y’ or null Flag the minimum post-baseline record for each subject and parameter as ‘Y’ PEAKFL DILI Peak Flag Char Expected Values: ‘Y’, ‘N’ or null Null for all pre-treatment records and records where DILIFL = ‘N’. If ANL02FL = ‘Y’ and DILIFL = ‘Y’, then ‘Y’. Otherwise, ‘N’ REDUCEFL DILI Reduction Flag Char Expected Values: ‘Y’, ‘N’ or null Null for all pre-treatment records and records where DILIFL = ‘N’. Flag the first record after PEAKFL for each subject and parameter in which AVAL is equal to or less than 50% of the value of AVAL where PEAKFL = ‘Y’ ONSETFL DILI Lab Onset Flag Char Expected Values: ‘Y’ or null Sponsors should discuss an appropriate definition of DILI onset with DHN. The agreed upon definition should be prespecified in the study protocol. Based on the agreed upon definition, flag all DILI records as ‘Y’ at a given visit when the onset trigger has been met.",
+      "context": "ANL01FL Analysis Record Flag 01 Char Expected Values: ‘Y’ or null Flag the records to be used in analysis. If multiple records are recorded for a parameter at the same visit, use this flag to indicate which record should be used. Derived records (if it was appropriate to take an average of two records) may be flagged as ‘Y’. Sponsors should provide a clear derivation for how they choose to derive this flag. For example, if ONSET is determined as the first time a subject’s ALT or AST value reaches >= 3x ULN with concurrent TB >= 2x ULN within 30 days of the ALT or AST elevation, when a subject does reach that threshold, all DILI records (ALT, AST, ALP, TB, DB, GGT) from that visit should be flagged as ‘Y’.",
+      "fingerprint": "2dae3938504ec6a20e4c902a579c413d4ccd3ed418c520d9efa14eb4355ac561",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 81,
+      "anchor": "page-33-paragraph-6",
+      "statement": "For example, if ONSET is determined as the first time a subject’s ALT or AST value reaches >= 3x ULN with concurrent TB >= 2x ULN within 30 days of the ALT or AST elevation, when a subject does reach that threshold, all DILI records (ALT, AST, ALP, TB, DB, GGT) from that visit should be flagged as ‘Y’.",
+      "context": "ANL02FL Analysis Record Flag 02 Char Expected Values: ‘Y’ or null Flag the maximum post-baseline record for each subject and parameter as ‘Y’ ANL03FL Analysis Record Flag 03 Char Expected Values: ‘Y’ or null Flag the minimum post-baseline record for each subject and parameter as ‘Y’ PEAKFL DILI Peak Flag Char Expected Values: ‘Y’, ‘N’ or null Null for all pre-treatment records and records where DILIFL = ‘N’. If ANL02FL = ‘Y’ and DILIFL = ‘Y’, then ‘Y’. Otherwise, ‘N’ REDUCEFL DILI Reduction Flag Char Expected Values: ‘Y’, ‘N’ or null Null for all pre-treatment records and records where DILIFL = ‘N’. Flag the first record after PEAKFL for each subject and parameter in which AVAL is equal to or less than 50% of the value of AVAL where PEAKFL = ‘Y’ ONSETFL DILI Lab Onset Flag Char Expected Values: ‘Y’ or null Sponsors should discuss an appropriate definition of DILI onset with DHN. The agre",
+      "fingerprint": "f324c05ba0a02bf0563bef66d9203d0aba277eff8be323acb1d67eed151f2d74",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 82,
+      "anchor": "page-33-paragraph-10",
+      "statement": "This custom data set will be used to analyze subjects for potential DILI. Sponsors should seek 747 agreement with the FDA review division on the appropriate parameters to use for DILI 748",
+      "context": "5.2.3.2 Drug Induced Liver Injury Analysis Data Set (ADDILI) 745 assessments. This data set contains variables that seek a maximum value within ‘xx’ days. 749 Sponsors should discuss with FDA the appropriate time window (e.g., 30 days) to use. 750",
+      "fingerprint": "c311c39e8ed2832f7e81f874076214e43fe131ae0684564ade0e4e1fa7d0ac31",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 83,
+      "anchor": "page-34-paragraph-1",
+      "statement": "assessments. This data set contains variables that seek a maximum value within ‘xx’ days. 749 Sponsors should discuss with FDA the appropriate time window (e.g., 30 days) to use. 750",
+      "context": "This custom data set will be used to analyze subjects for potential DILI. Sponsors should seek 747 agreement with the FDA review division on the appropriate parameters to use for DILI 748 For any subject meeting the sponsor-established criteria for potential DILI, two additional 752 parameters should be created – one to provide the outcome and another to provide the action 753 taken as a result of potential DILI. 754",
+      "fingerprint": "003f577c2b4b52af1f6e1e75001f99ba9c37ca90fb3146a42110a5be61315008",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 84,
+      "anchor": "page-34-paragraph-2",
+      "statement": "For any subject meeting the sponsor-established criteria for potential DILI, two additional 752 parameters should be created – one to provide the outcome and another to provide the action 753 taken as a result of potential DILI. 754",
+      "context": "assessments. This data set contains variables that seek a maximum value within ‘xx’ days. 749 Sponsors should discuss with FDA the appropriate time window (e.g., 30 days) to use. 750 Sponsors may include additional parameters as they see fit and should consult with FDA 756 regarding the acceptability of the additional parameters. Additionally, this data set includes a set 757 of flag variables that identifies any procedure(s) and/or workups performed to evaluate a subject 758 for potential DILI. These flag variables may be derived from the SDTM.PR (Procedures), 759 SDTM.LB, or SDTM.MB domains (or other domains as determined by the sponsor). 760",
+      "fingerprint": "bb450685111d4e8a8d7aed548978ccf6547f9bf0f946a34b8147d8b24effd49c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 85,
+      "anchor": "page-34-paragraph-3",
+      "statement": "Sponsors may include additional parameters as they see fit and should consult with FDA 756 regarding the acceptability of the additional parameters. Additionally, this data set includes a set 757 of flag variables that identifies any procedure(s) and/or workups performed to evaluate a subject 758 for potential DILI. These flag variables may be derived from the SDTM.PR (Procedures), 759 SDTM.LB, or SDTM.MB domains (or other domains as determined by the sponsor). 760",
+      "context": "For any subject meeting the sponsor-established criteria for potential DILI, two additional 752 parameters should be created – one to provide the outcome and another to provide the action 753 taken as a result of potential DILI. 754 The ADDILI data set should include the basic demographic information, treatment variables, 762 start and end date variables, and baseline lab characteristics variables from the ADSL data set. 763",
+      "fingerprint": "28059de8b8baaa368c7bfc19ca66d11cc6c021b1a5e372a61ecc1db38aea5c8a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 86,
+      "anchor": "page-34-paragraph-4",
+      "statement": "The ADDILI data set should include the basic demographic information, treatment variables, 762 start and end date variables, and baseline lab characteristics variables from the ADSL data set. 763",
+      "context": "Sponsors may include additional parameters as they see fit and should consult with FDA 756 regarding the acceptability of the additional parameters. Additionally, this data set includes a set 757 of flag variables that identifies any procedure(s) and/or workups performed to evaluate a subject 758 for potential DILI. These flag variables may be derived from the SDTM.PR (Procedures), 759 SDTM.LB, or SDTM.MB domains (or other domains as determined by the sponsor). 760 Table 13. ADDILI Variables 765",
+      "fingerprint": "012e464247db5cad62f8849c03843bd1d03c316fe2e7a7f28a9882d562d0989c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 87,
+      "anchor": "page-37-paragraph-4",
+      "statement": "The ADMI data set contains histological data used to support accepted efficacy determination in 770 noncirrhotic NASH development programs. AVALC is the primary variable used to support the 771 analysis. This data set should be derived primarily from the Microscopic Findings (SDTM.MI) 772 data set and should contain additional parameters discussed with FDA during the pre-NDA 773 process to assess all histological endpoints. This data set follows the ADaM BDS. 774",
+      "context": "5.2.3.3 Microscopic Findings Analysis Data Set (ADMI) 768 The ADMI data set should include the basic demographic variables (e.g., assigned treatment, 776 treatment start and end dates, baseline biopsy characteristics) from the ADSL data set. 777",
+      "fingerprint": "9cd9132562caea88956a0845b7e47a56f2bc3dde6e1e9afecf72c613d86562e2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 88,
+      "anchor": "page-37-paragraph-5",
+      "statement": "The ADMI data set should include the basic demographic variables (e.g., assigned treatment, 776 treatment start and end dates, baseline biopsy characteristics) from the ADSL data set. 777",
+      "context": "The ADMI data set contains histological data used to support accepted efficacy determination in 770 noncirrhotic NASH development programs. AVALC is the primary variable used to support the 771 analysis. This data set should be derived primarily from the Microscopic Findings (SDTM.MI) 772 data set and should contain additional parameters discussed with FDA during the pre-NDA 773 process to assess all histological endpoints. This data set follows the ADaM BDS. 774 Table 14. ADMI Variables 779",
+      "fingerprint": "a5ca0bc713e7ea7770bda720cbf79c9cb8ac91c3ee03ccbb8eb6a9db9e940737",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 89,
+      "anchor": "page-37-paragraph-7",
+      "statement": "Variable Name Variable Label Type Comments Biopsy Parameter Information PARAM Parameter Text The ADMI data set should contain all records from the SDTM.MI domain. In addition, the sponsor should create records with parameters to evaluate the histological endpoints, with results captured in the appropriate AVAL/AVALC variable.",
+      "context": "Table 14. ADMI Variables 779 PARAMCD Parameter Code Text Short Code for PARAM. Sponsors may choose an appropriate parameter code for the derived parameters that evaluate the histological endpoints.",
+      "fingerprint": "4536607ecc29d150f5869050a583cb65919413b68c7eab8de5abee2f22e1846c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 90,
+      "anchor": "page-38-paragraph-2",
+      "statement": "Criteria Evaluation CRIT1 Analysis Criterion 1 Text NOTE: This is an example of a criterion that may be used for analysis. Specific criterion to include in this data set should be discussed with FDA, as this may change on a study-by-study basis.",
+      "context": "Variable Name Variable Label Type Comments variables may be created (AVALCAT2, AVALCAT3, etc.) as necessary. Should more than one criterion be required, used CRIT2/CRIT2FL, CRIT3/CRIT3FL, etc.",
+      "fingerprint": "3a0839e3faedfa1668d61b879a7f6821215238727e7a0eb461126b8051e55ace",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 91,
+      "anchor": "page-38-paragraph-3",
+      "statement": "Should more than one criterion be required, used CRIT2/CRIT2FL, CRIT3/CRIT3FL, etc.",
+      "context": "Criteria Evaluation CRIT1 Analysis Criterion 1 Text NOTE: This is an example of a criterion that may be used for analysis. Specific criterion to include in this data set should be discussed with FDA, as this may change on a study-by-study basis. Where PARAMCD is ‘HCYTBALL’, ‘LOBINF’, ‘MODISHAK’, ‘NASHCRN’, ‘NASHHBLN’, ‘NLOBI’, ‘SAFACT’, ‘STEATOS’ indicates criteria of interest as ‘Improvement of histological feature by at least 1 point/stage’ CRIT1FL Criterion 1 Evaluation Result Flag Text Set to ‘Y’ if CRIT1 satisfied; else set to ‘N’ Other Flags ABLFL Analysis Baseline Flag Text Set to ‘Y’ for last non-missing record for each value of PARAMCD prior to TRTSDT ANL01FL Analysis Record Flag 01 Text Set to ‘Y’ for the baseline record and the records closest to the target day within the visit target interval as defined by the study metadata.",
+      "fingerprint": "fd413fa168203ab3053e726f4d032e1594ef27ada4558f2f236a4c6ceb90a2dc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 92,
+      "anchor": "page-38-paragraph-6",
+      "statement": "The ADRS data set contains information to support additional secondary efficacy endpoints 785 based on non-invasive serum biomarkers of liver fibrosis and NASH (e.g., MELD, FIB-4, ELF, 786 APRI). The MELD score should be provided for noncirrhotic NASH trials. Sponsors should 787 consult with FDA regarding additional tests that may be required for submission. 788",
+      "context": "5.2.3.4 Non-Invasive Serum Biomarkers of Liver Fibrosis and NASH 782 Analysis Data Set (ADRS) 783 AVAL is the primary variable used to support the analysis. This data set should be derived 790 primarily from the Clinical Classifications and Disease Response (SDTM.RS) data set, though 791 many of the tests are calculations based on measurements collected in the Laboratory 792 (SDTM.LB) domain. This data set also contains flags based on the results of derived parameters 793 in the ADMI data set. This data set follows the ADaM Basic Data Structure (BDS). 794",
+      "fingerprint": "6725bad1d74b2981843757f70b66f7c056c33ce49323da6a4da2f50f4e05a76b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 93,
+      "anchor": "page-38-paragraph-7",
+      "statement": "AVAL is the primary variable used to support the analysis. This data set should be derived 790 primarily from the Clinical Classifications and Disease Response (SDTM.RS) data set, though 791 many of the tests are calculations based on measurements collected in the Laboratory 792 (SDTM.LB) domain. This data set also contains flags based on the results of derived parameters 793 in the ADMI data set. This data set follows the ADaM Basic Data Structure (BDS). 794",
+      "context": "The ADRS data set contains information to support additional secondary efficacy endpoints 785 based on non-invasive serum biomarkers of liver fibrosis and NASH (e.g., MELD, FIB-4, ELF, 786 APRI). The MELD score should be provided for noncirrhotic NASH trials. Sponsors should 787 consult with FDA regarding additional tests that may be required for submission. 788 The ADRS data set should include the basic demographic variables (e.g., assigned treatment, 796 treatment start and end dates, baseline biopsy characteristic, non-invasive baseline 797 characteristics) from the ADSL data set. 798",
+      "fingerprint": "66f807636e5051673b28dec0180d8f6a15aee2f4ebef6586134e1fa0e98e2ce9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 94,
+      "anchor": "page-38-paragraph-8",
+      "statement": "The ADRS data set should include the basic demographic variables (e.g., assigned treatment, 796 treatment start and end dates, baseline biopsy characteristic, non-invasive baseline 797 characteristics) from the ADSL data set. 798",
+      "context": "AVAL is the primary variable used to support the analysis. This data set should be derived 790 primarily from the Clinical Classifications and Disease Response (SDTM.RS) data set, though 791 many of the tests are calculations based on measurements collected in the Laboratory 792 (SDTM.LB) domain. This data set also contains flags based on the results of derived parameters 793 in the ADMI data set. This data set follows the ADaM Basic Data Structure (BDS). 794 Table 15. ADRS Variables 800",
+      "fingerprint": "dc14246c92ea7bacbc08d9da6df86b281795fb55447aefc63b1565e3dfc53875",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 95,
+      "anchor": "page-39-paragraph-2",
+      "statement": "Variable Name Variable Label Type Comments Parameter Information PARAM Parameter Text The ADRS data set should contain all records from the SDTM.RS and SDTM.LB domains for the following example tests:",
+      "context": "Table 15. ADRS Variables 800 • MELD Score • FIB-4 Score • ELF Score • APRI Score In addition, the sponsor should create records with parameters to evaluate the study’s endpoints, with results captured in the appropriate AVAL/AVALC variable.",
+      "fingerprint": "4a4c56532e1862e209768a5ca65395ee96706e89f7a05abf66a65bae166cd9c7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 96,
+      "anchor": "page-39-paragraph-3",
+      "statement": "• MELD Score • FIB-4 Score • ELF Score • APRI Score In addition, the sponsor should create records with parameters to evaluate the study’s endpoints, with results captured in the appropriate AVAL/AVALC variable.",
+      "context": "List governed by page-39-paragraph-2: Variable Name Variable Label Type Comments Parameter Information PARAM Parameter Text The ADRS data set should contain all records from the SDTM.RS and SDTM.LB domains for the following example tests: An example parameter may be: ‘MELD Score from Baseline =<12 to >15’. In this case, sponsors should consider a subjects’ baseline MELD score and their maximum post-baseline record. If their baseline record was less than 12 and their maximum post-baseline record was greater than or equal to 15, AVALC would return a value of ‘Y’ for this parameter. This is purely an example parameter – sponsors should create their own parameters in consultation with the FDA review division and the endpoints of their study.",
+      "fingerprint": "4db2c3b4f6d033f8a7e6c1826ea8fbeba177d9200b615baee9ac73014131b971",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 97,
+      "anchor": "page-39-paragraph-4",
+      "statement": "An example parameter may be: ‘MELD Score from Baseline =<12 to >15’. In this case, sponsors should consider a subjects’ baseline MELD score and their maximum post-baseline record. If their baseline record was less than 12 and their maximum post-baseline record was greater than or equal to 15, AVALC would return a value of ‘Y’ for this parameter. This is purely an example parameter – sponsors should create their own parameters in consultation with the FDA review division and the endpoints of their study.",
+      "context": "• MELD Score • FIB-4 Score • ELF Score • APRI Score In addition, the sponsor should create records with parameters to evaluate the study’s endpoints, with results captured in the appropriate AVAL/AVALC variable. PARAMCD Parameter Code Text Short Code for PARAM Analysis Information AVAL Analysis Value Num Transferred from either LB.LBSTRESN or RS.RSSTRESN. For derived parameters that evaluate a specific endpoint, ‘1’ if the endpoint criteria are met or ‘0’ if the endpoint criteria are not met.",
+      "fingerprint": "396bcfeebaa13509fbde675eae582915072ee827939aabe0cd80a840570404c5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 98,
+      "anchor": "page-40-paragraph-3",
+      "statement": "The ADTTE data set contains all records needed to support time-to-event analysis for 805 noncirrhotic NASH endpoints and DILI. AVAL is the primary variable used to support the 806 analysis. Sponsors should follow the ADaM Basic Data Structure for Time-to-Event Analyses 807 when creating this data set. The description of the analysis parameter (PARAM) contains the unit 808 of measurement where results are captured in AVAL. 809",
+      "context": "5.2.4 Time-to-Event Analysis Data Set (ADTTE) 803 The time-to-event data set should include records for all subjects, including subjects who did not 811 experience an event defined by PARAM. For a subject who did not experience a specific type of 812 event, the subject’s time to event is considered ‘right-censored,’ where the value of AVAL 813 represents the length of time between the starting point and the end of the observation period 814 (e.g., the duration of the study for that subject). The numeric Censor (CNSR) variable is used to 815 distinguish whether a subject experienced an event between the defined starting point and the 816 end of the observation period. 817",
+      "fingerprint": "9f0f2fcce93ae84acfc315e022dd5dc8b063fdb927a6ac9c5aa81b5910055a4b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 99,
+      "anchor": "page-40-paragraph-4",
+      "statement": "The time-to-event data set should include records for all subjects, including subjects who did not 811 experience an event defined by PARAM. For a subject who did not experience a specific type of 812 event, the subject’s time to event is considered ‘right-censored,’ where the value of AVAL 813 represents the length of time between the starting point and the end of the observation period 814 (e.g., the duration of the study for that subject). The numeric Censor (CNSR) variable is used to 815 distinguish whether a subject experienced an event between the defined starting point and the 816 end of the observation period. 817",
+      "context": "The ADTTE data set contains all records needed to support time-to-event analysis for 805 noncirrhotic NASH endpoints and DILI. AVAL is the primary variable used to support the 806 analysis. Sponsors should follow the ADaM Basic Data Structure for Time-to-Event Analyses 807 when creating this data set. The description of the analysis parameter (PARAM) contains the unit 808 of measurement where results are captured in AVAL. 809 When supporting analyses as listed in the examples below, ADTTE may be sourced from 819 ADAE, ADMI, ADDILI and ADSL (or elsewhere). Sponsors should consult FDA to determine 820 the appropriate parameters and their corresponding derivations to be collected and submitted in 821 this data set. 822",
+      "fingerprint": "56c2d4d5d178082c8c969d1d908d7d8fe6236149c01aa729b1154a2fff0fcacd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 100,
+      "anchor": "page-40-paragraph-5",
+      "statement": "When supporting analyses as listed in the examples below, ADTTE may be sourced from 819 ADAE, ADMI, ADDILI and ADSL (or elsewhere). Sponsors should consult FDA to determine 820 the appropriate parameters and their corresponding derivations to be collected and submitted in 821 this data set. 822",
+      "context": "The time-to-event data set should include records for all subjects, including subjects who did not 811 experience an event defined by PARAM. For a subject who did not experience a specific type of 812 event, the subject’s time to event is considered ‘right-censored,’ where the value of AVAL 813 represents the length of time between the starting point and the end of the observation period 814 (e.g., the duration of the study for that subject). The numeric Censor (CNSR) variable is used to 815 distinguish whether a subject experienced an event between the defined starting point and the 816 end of the observation period. 817 Sponsors should provide clear explanations in the ADaM define.xml for how AVAL is derived 824 for each parameter. In some cases, such as Time to Death, it may look at ASTDY for one record. 825 For other parameters where multiple records should be evaluated to determine",
+      "fingerprint": "2bb632cf8c1f5c2abfab63bde92afd3f50bcff2a01119055f4a63ec058c25645",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 101,
+      "anchor": "page-40-paragraph-6",
+      "statement": "Sponsors should provide clear explanations in the ADaM define.xml for how AVAL is derived 824 for each parameter. In some cases, such as Time to Death, it may look at ASTDY for one record. 825 For other parameters where multiple records should be evaluated to determine if the subject has 826 met the endpoint, the derivation for AVAL may be more complicated. For example, a Time to 827 Peak Lab Washout for DILI parameter needs to consider both when the subject’s labs ‘peak’ as 828 well as when those peaks reach a ‘washout’ state—in this case, sponsors could use values of 829 ADY when ADLB.PEAKFL and ADLB.REDUCEFL = ‘Y’ to calculate AVAL in ADTTE. 830",
+      "context": "When supporting analyses as listed in the examples below, ADTTE may be sourced from 819 ADAE, ADMI, ADDILI and ADSL (or elsewhere). Sponsors should consult FDA to determine 820 the appropriate parameters and their corresponding derivations to be collected and submitted in 821 this data set. 822 Examples of applicable analyses to support safety and efficacy analyses may include: 832",
+      "fingerprint": "0e952e0787e337a62b424def5d26a939bce6152d9f61bf59f20f1dbb44c31c15",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 102,
+      "anchor": "page-41-paragraph-5",
+      "statement": "27 The examples listed below are measured in days. Sponsors should use their judgement in determining the appropriate unit of measurement.",
+      "context": "26 Per the ADaM Basic Data Structure for Time-to-Event Analyses, PARAM in the ADTTE may be longer than 40 characters (maximum 200). See https://www.cdisc.org/standards/foundational/adam/adam-basic-data-structure-bds- time-event-tte-analyses-v1-0 .",
+      "fingerprint": "29d816dd65c7a5908ca69b910dbc18e26047403e654cd1f72c2c102ab235b91c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 103,
+      "anchor": "page-42-paragraph-3",
+      "statement": "Consider the sample Laboratory Analysis Data Set (ADLB) and Drug-Induced Liver Injury Analysis Data Set (ADDILI) tables below 841 for Subject ABC-123. This example only shows one subject’s alanine aminotransferase (ALT) values; however, for the purposes of 842 this example, assume the subject’s aspartate aminotransferase (AST) and/or total bilirubin (TB) values indicate the subject is a 843 potential drug-induced liver injury (DILI) candidate as identified by pre-established criteria between the sponsor and the U.S. Food 844 and Drug Administration (FDA) (example criteria noted in the ADDILI section of this document). As a reminder, these criteria are 845 sample criteria. Sponsors should consult with FDA to establish appropriate criteria to evaluate DILI. Below is a list of other 846 considerations for this sample data set: 847",
+      "context": "Example ADLB and ADDILI Data Sets 839 • In this example, the subject has two pre-baseline lab readings. These lab reading are averaged to create a new baseline record 849 for each parameter. 850",
+      "fingerprint": "cfab8c6802bebd2fdb3ef059f571fbd8a51694152c5fd519517573cafc2bd350",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 104,
+      "anchor": "page-42-paragraph-7",
+      "statement": "• The example ADDILI data set only contains the variables pertinent to ALT; sponsors should follow the guidance provided in 859 the ADDILI section of this document for the full list of variables to be provided. 860",
+      "context": "• Reduced Flag (REDUCEFL = ‘Y’) may only occur after a subject has reached their peak (PEAKFL = ‘Y’) for a given subject 856 and parameter. 857 • For the example ADDILI data set, ALTULNMX is calculated as the maximum post-baseline ALT value divided by the upper 862 limit of normal (197.0 / 55.0 = 3.58). ALTBLMX is calculated as the maximum post-baseline ALT value divided by the DILI 863 baseline value (197.0 / 52.5 = 3.75). 864",
+      "fingerprint": "5dc1dc244d57377e35d1d3ef8f9ea2a35a35c6b86023bea95625213a75c2f594",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 105,
+      "anchor": "page-44-paragraph-1",
+      "statement": "(as shown with Microscopic Findings Test (MITEST) = ‘FIBROSIS’ during the first biopsy). The data set should also include standard 878 variables such as STUDYID, DOMAIN, MIDTC, and MIDY as noted in the SDTM Implementation Guide. The sample below contains 879 only a few measurements; sponsors should refer to the MI section of this document for the complete list of recommended and permissible 880 parameters to be collected from the biopsy. 881",
+      "context": "123. This subject has two biopsies, one at baseline and one at end of treatment, each with two pathologists reviewing. Any disagreement 876 between the histopathological assessment between the pathologists’ results in an adjudication committee making a final determination 877 This example domain uses MIREFID as the identifier for the slide being analyzed, but sponsors should use identifier variables 883 available from the SDTMIG to label biopsies and slides cut from the biopsy. The linkage between the identifier variables should be 884 made clear in the define.xml and/or Study Data Reviewers Guide (SDRG) files. Linkages between individual biopsies and/or slides 885 and other domains such as Biospecimen Findings (BS) or Biospecimen Events (BE) should be connected via a Related Records 886 (RELREC) domain. 887",
+      "fingerprint": "0946764e0cd007fa0b912affce2f3365fcaf505ef07936a91dfc1927f81ebbda",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 106,
+      "anchor": "page-44-paragraph-2",
+      "statement": "This example domain uses MIREFID as the identifier for the slide being analyzed, but sponsors should use identifier variables 883 available from the SDTMIG to label biopsies and slides cut from the biopsy. The linkage between the identifier variables should be 884 made clear in the define.xml and/or Study Data Reviewers Guide (SDRG) files. Linkages between individual biopsies and/or slides 885 and other domains such as Biospecimen Findings (BS) or Biospecimen Events (BE) should be connected via a Related Records 886 (RELREC) domain. 887",
+      "context": "(as shown with Microscopic Findings Test (MITEST) = ‘FIBROSIS’ during the first biopsy). The data set should also include standard 878 variables such as STUDYID, DOMAIN, MIDTC, and MIDY as noted in the SDTM Implementation Guide. The sample below contains 879 only a few measurements; sponsors should refer to the MI section of this document for the complete list of recommended and permissible 880 parameters to be collected from the biopsy. 881 The SUPPMI domain shows the adequacy of the slides. The slide evaluated during the baseline biopsy was deemed adequate, and the 889 end of treatment biopsy was deemed not adequate due to both a blurred image and a cracked slide. As such, the MIACPTFL variable 890 is null for the end of treatment biopsy as these records were not accepted for the analysis due to the inadequate slide. 891",
+      "fingerprint": "3363fb2e75d9f6bb5b8be3c29f643ddda66c8f416a4ecdb44b9c9ba4eb76d756",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:38:14.913Z"
+}
