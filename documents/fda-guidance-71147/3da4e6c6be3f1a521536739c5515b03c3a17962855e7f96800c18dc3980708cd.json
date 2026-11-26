@@ -1,0 +1,140 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-71147",
+  "metadata": {
+    "title": "Statistical Guidance on Reporting Results from Studies Evaluating Diagnostic Tests - Guidance for Industry and FDA Staff",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 03/12/2007 · Docket FDA-2020-D-0957",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA devices, foods, veterinary and tobacco",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Medical Devices. Topics: Biostatistics",
+    "published_on": "2007-03-12",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/71147/download",
+  "original_sha256": "4a5c66b8a05cdd71d0abc68d528c0f225a5382be9908a6517749ed030551bd0b",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 13,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-5-paragraph-3",
+      "statement": "We believe we should consider the least burdensome approach in all areas of medical device regulation. This guidance reflects our careful review of the relevant scientific and legal requirements and what we believe is the least burdensome way for you to comply with those requirements. However, if you believe that an alternative approach would be less burdensome, please contact us so we can consider your point of view. You may send your written comments to the contact person listed in the preface to this guidance or to the CDRH Ombudsman. Comprehensive information on CDRH’s Ombudsman, including ways to contact him, can be found on the Internet at http://www.fda.gov/cdrh/ombudsman/ .",
+      "context": "FDA’s guidance documents, including this guidance, do not establish legally enforceable responsibilities. Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only as recommendations, unless specific regulatory or statutory requirements are cited. The use of the word should in Agency guidances means that something is suggested or recommended, but not required. 2. Scope This document provides guidance for the submission of premarket notification (510(k)) and premarket approval (PMA) applications for diagnostic devices (tests). This guidance addresses the reporting of results from different types of studies evaluating diagnostic devices with two possible outcomes (positive or negative) in PMAs and 510(k)s. The guidance is intended for both statisticians and non-statisticians.",
+      "fingerprint": "bda593c9109b9713f1da6514de7445926027de10b3e7602bd59434ce5b801f1e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-5-paragraph-6",
+      "statement": "3. Introduction This section provides an explanation of the concepts relevant to this guidance. We note at the outset that evaluation of a new diagnostic test should compare a new product’s",
+      "context": "This guidance does not address the fundamental statistical issues associated with design and monitoring of clinical studies for diagnostic devices. 1 This database is publicly available at www.clsi.org .",
+      "fingerprint": "19d8367bb56c1ef31030e0a828a37909605e6fa0340723a7abe47e9740c2a55a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-6-paragraph-5",
+      "statement": "Purpose of a qualitative diagnostic test A qualitative diagnostic test (test) is designed to determine whether a target condition is present or absent in a subject from the intended use population. As defined in STARD, the target condition (condition of interest) “can refer to a particular disease, a disease stage, health status, or any other identifiable condition within a patient, such as staging a disease already known to be present, or a health condition that should prompt clinical action, such as the initiation, modification or termination of treatment.” FDA recommends your labeling characterize diagnostic test performance for use by all intended users (laboratories, health care providers, and/or home users).",
+      "context": "We also assume throughout that your study data do not include multiple samples from single patients. Benchmarks FDA recognizes two major categories of benchmarks for assessing diagnostic performance of new qualitative diagnostic tests. These categories are (1) comparison to a reference standard (defined below), or (2) comparison to a method or predicate other than a reference standard (non-reference standard). The choice of comparative method will determine which performance measures may be reported in the label.",
+      "fingerprint": "245a1334ef2c6de8bf3948a498169ecec865e7afb122784f4a43c904e180ed83",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-7-paragraph-3",
+      "statement": "The determination of what constitutes the “best available method” and whether that method should be considered a “reference standard” is established by opinion and practice within the medical, laboratory, and regulatory community.",
+      "context": "The reference standard can be a single test or method, or a combination of methods and techniques, including clinical follow-up. If a reference standard is a combination of methods, the algorithm specifying how the different results are combined to make a final positive/negative classification (which may include the choice and ordering of these methods) is part of the standard. Examples of reference standards include the diagnosis of myocardial infarction using the WHO (World Health Organization) standards, the diagnosis of lupus or rheumatoid arthritis using American Rheumatology guidelines, or the diagnosis of H. pylori infections by use of combinations of culture, histology, and urease testing. Sometimes there are several possible methods that could be considered.",
+      "fingerprint": "bf71c510942fc5d6fc62c3edb8541f81033b353887e21e978c787857bc2b7a7e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-12-paragraph-4",
+      "statement": "One should also be aware that measures of overall agreement (including both overall percent agreement and Cohen’s Kappa) can be misleading in this setting. In some situations, overall agreement can be good when either positive or negative percent agreement is very low. For this reason, FDA discourages the stand-alone use of measures of overall agreement to characterize the diagnostic performance of a test.",
+      "context": "One major disadvantage with agreement measures is that agreement is not a measure of “correctness.” Two tests could agree and both be wrong. In fact, two tests could agree well, but both have poor sensitivity and specificity. However, when two tests disagree, that does not mean that the new test is wrong and the comparative method is right. There has been much statistical research on how to estimate diagnostic accuracy of a new test when a reference standard is not available or does not exist. Albert and Dodd (2004), Pepe (2003), and Zhou et al. (2002) provide reviews of some of this research, which includes use of latent class models and Bayesian models. These model-based approaches can be problematic for the purpose of estimating sensitivity and specificity because it is often difficult to verify that the model and assumptions used are correct. More troublesome is that different models",
+      "fingerprint": "6299fc92097d501c2d60032136ce4263705997a7da207921effdbe0affae77c8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-13-paragraph-3",
+      "statement": "Spectrum bias Estimates of diagnostic accuracy are subject to spectrum bias when the subjects included in the study do not include the complete spectrum of patient characteristics; that is, important patient subgroups are missing. See Begg (1987), Pepe (2003), or Zhou et al. (2002). For example, there are studies that include only very healthy subjects and subjects with severe disease, omitting the intermediate and typically more difficult cases to diagnose. The accuracy measures reported from these studies are subject to spectrum bias.",
+      "context": "• subjects or specimens to be tested • individuals and laboratories to perform the tests • conditions under which the tests will be conducted. Eliminating the difficult cases produces an overly optimistic picture of how the device performs in actual use. Therefore, FDA recommends the set of subjects and specimens to be tested include:",
+      "fingerprint": "f8cb450231de246ddf0ed3100b63526f42036f4c665dc03cbe75a583b9e3abf9",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-14-paragraph-3",
+      "statement": "Reporting the context of the study Performance measures should be interpreted in the context of the study population and study design. Sensitivity and specificity cannot be interpreted by themselves;",
+      "context": "5. Reporting Recommendations Similar reporting principles apply to any study evaluating a diagnostic test, regardless of whether the comparative benchmark is a reference standard. additional information is needed. For example, estimated sensitivity and specificity of the same test can differ from study to study, depending on the types of subjects included in the study and whether an obsolete reference standard is used versus a reference standard currently accepted by the clinical community today.",
+      "fingerprint": "966afbeb62a5536acad6b1bbe8a9b5fc8b9c7dc8901e9f32421a53117f54eca7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-16-paragraph-6",
+      "statement": "Reporting intended use population results separately FDA recommends you report results for those subjects in the intended use population separately from other results. It may be useful to report comparative results for subjects who are not part of the intended use population, but we recommend they not be pooled together. For example, if healthy individuals are not part of the intended use population, we recommend those results be reported separately from results for the intended use population. Results from patients outside the intended use population should not be labeled as “specificity.” The term specificity is appropriate to describe how often a test is negative only in subjects from the intended use population for whom the target condition is absent.",
+      "context": "Other results FDA recommends you provide the number of ambiguous 4 results for candidate tests, stratified by reference standard outcome or comparative outcome. Rare condition of interest When the condition of interest is rare, studies are sometimes enriched with reference standard positive subjects, potentially making the results inappropriate for pooling with other positive results. We recommend you consult with FDA on this issue.",
+      "fingerprint": "554e6056ef2a6046a8ee94965e622dafc7b4001cafdfe98cfcab7bfe226f93fe",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-18-paragraph-4",
+      "statement": "3. Avoid the use of outcomes altered or updated by discrepant resolution You should not use outcomes that are altered or updated by discrepant resolution to estimate the sensitivity and specificity of a new test or agreement between a new test and a non-reference standard.",
+      "context": "This may or may not be reasonable for your situation. FDA recommends you consult with FDA statisticians on how to handle these types of results. When a new test is evaluated by comparison to a non-reference standard, discrepancies (disagreement) between the two methods may arise because of errors in the test method or errors in the non-reference standard. Since the non- reference standard may be wrong, calculations of sensitivity and specificity based on the non-reference standard are statistically biased. A practice called discrepant resolution has been suggested to get around the bias problem.",
+      "fingerprint": "6c791faaa4367ece39a96b3cd2c3d5379422c3474d38399789c918d65f0cb2ef",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-19-paragraph-5",
+      "statement": "The revised 2x2 table based on discrepant resolution is misleading because the columns are not clearly defined and do not necessarily represent condition status, as assumed. The assumption that results that agree are correct is not tested and may be far from valid. FDA recommends you do not present such a table in your final analysis because it may be very misleading. Because the calculations of sensitivity and specificity from such a revised 2x2 table are not valid estimates of performance, they should not be reported.",
+      "context": "• when the original two results agree, you assume (without supporting evidence) that they are both correct and do not make any changes to the table • when the original results disagree, and the non-reference standard disagrees with the resolver, you reclassify (change) the non-reference standard result to the resolver result. FDA is not aware of any scientifically valid ways to estimate sensitivity and specificity by resolving only the discrepant results, even when the resolver is a reference standard. To obtain unbiased estimates of sensitivity and specificity, FDA believes • the resolver must be a reference standard, and • you must resolve at least a subset of the concordant subjects.",
+      "fingerprint": "1165d1b0b73e64d236da86fc0d9ae3b1dcd9c3d0f3cdf5922a3c089695e90e30",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-19-paragraph-6",
+      "statement": "FDA is not aware of any scientifically valid ways to estimate sensitivity and specificity by resolving only the discrepant results, even when the resolver is a reference standard. To obtain unbiased estimates of sensitivity and specificity, FDA believes • the resolver must be a reference standard, and • you must resolve at least a subset of the concordant subjects.",
+      "context": "The revised 2x2 table based on discrepant resolution is misleading because the columns are not clearly defined and do not necessarily represent condition status, as assumed. The assumption that results that agree are correct is not tested and may be far from valid. FDA recommends you do not present such a table in your final analysis because it may be very misleading. Because the calculations of sensitivity and specificity from such a revised 2x2 table are not valid estimates of performance, they should not be reported. Discrepant resolution with a reference standard resolver can tell you whether the new test or the non-reference standard is right more of the time, but you cannot quantify how much more. If the resolver is not a reference standard, the resolver test results can provide little or no useable information about the performance of the new test. Resolving discrepancies using re",
+      "fingerprint": "e103b7cbf1b1637426f48c32967438d22d73ecfa555805bb60440a49b4542718",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-20-paragraph-2",
+      "statement": "The decision to use a second or third comparative method may depend on the outcome of the initial comparative method. This approach may be statistically reasonable. However, FDA believes this approach is not valid if the algorithm uses the outcome of the new unproven test. For example, the decision to use an additional comparative method should not be based on whether the new test is positive or negative.",
+      "context": "When evaluating some types of tests, the comparative “procedure” is not a single test, but the outcome of a combination of several comparative methods and possibly clinical information. Often, two or more comparative methods are performed and interpreted according to a pre-specified testing sequence or algorithm to determine condition status. FDA believes it is potentially misleading to establish the performance of a new test by comparing it to a procedure that incorporates the same new test. Any non- reference standard created in this manner will likely be biased in favor of the new test; that is, it will tend to produce overestimates of agreement of the new test with the non-reference standard.",
+      "fingerprint": "53bb97a436d2f863b35403549bc0afbb49b633d289a05e1a965461150614ac22",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-35-paragraph-1",
+      "statement": "reference standard — the best available method for establishing the presence or absence of the target condition; the reference standard can be a single test or method, or a combination of methods and techniques, including clinical follow-up sensitivity — the proportion of subjects with the target condition in whom the test is positive; calculated as 100xTP/(TP+FN) specificity — the proportion of subjects without the target condition in whom the test is negative; calculated as 100xTN/(FP+TN) study population — the subjects/patients (and specimen types) included in the study target condition (condition of interest) — a particular disease, a disease stage, health status, or any other identifiable condition within a patient, such as staging a disease already known to be present, or a health condition that should prompt clinical action, such as the initiation, modification, or termination of treatment TN — the number of subjects/specimens with true negative test results TP — the number of subjects/specimens with true positive test results true negative result — a negative test result for a subject in whom the condition of interest is absent (as determined by the designated reference standard) true positive result — a positive test result for a subject in whom the condition of interest is present (as determined by the designated reference standard)",
+      "context": "calculated as 100xTP/(TP+FP) prevalence — the frequency of a condition of interest at a given point in time expressed as a fraction of the number of individuals in a specified group with the condition of interest compared to the total number of individuals (those with the condition plus those without the condition of interest) in the specified group; pretest probability of the condition of interest in a specified group 9. References Albert, P. S. (2006). Imputation approaches for estimating diagnostic accuracy for multiple tests from partially verified designs. Biometrics (in press). [Available as Technical Report 042, Biometric Research Branch, Division of Cancer Treatment and Diagnosis, National Cancer Institute ( http://linus.nci.nih.gov/~brb/TechReport.htm )] Albert, P.S., & Dodd, L.E. (2004). A cautionary note on the robustness of latent class models for estimating diagnostic error",
+      "fingerprint": "c3444311b7ab48755ac910e790ecc371536c0bd150b05b01c139640a7fe44f19",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T17:00:57.675Z"
+}
