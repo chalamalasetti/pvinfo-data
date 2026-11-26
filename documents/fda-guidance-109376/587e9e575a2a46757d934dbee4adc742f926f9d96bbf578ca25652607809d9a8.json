@@ -1,0 +1,132 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-109376",
+  "metadata": {
+    "title": "Recommendations for the Submission of LOINC® Codes in Regulatory Applications to the U.S. Food and Drug Administration: Guidance for Industry",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 11/01/2017 · Docket FDA-2017-D-6982",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Drugs",
+    "published_on": "2017-11-01",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/109376/download",
+  "original_sha256": "74e189f3b70408cdc6c7ee171f719a4077b7489ad78a093f52a005293768743d",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 12,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-7-paragraph-3",
+      "statement": "On the other hand, CDISC is post-coordinated for ease of granular data analysis. Each aspect of the test (e.g., analyte, specimen, etc.) has a different identifier, which makes it easier to aggregate and analyze data based on the specific combination of concepts that are relevant to the research question. See Figure 2 for a comparison of pre-coordination and post-coordination, where multiple CDISC SDTM LB domain variables map to a single LOINC code. Related LOINC codes may require representation by different variables and CDISC controlled terms. Figure 2 includes two LOINC codes: one with data in all six major parts, 2862-7, and a less specified, “method-less” LOINC code, 1751-7. The related code, 2862-7, specifies albumin measurements were made by electrophoresis, which maps to CDISC’s LB.METHOD variable. For the method-less LOINC, LB.METHOD cannot be mapped. Similarly, some LOINCs do not specify a specific System, which maps to LB.SPEC, and instead indicate that the System is ‘XXX’ to denote that it can be one of several locations or specimen types. End users should utilize the most specific LOINC possible, where known information matches the LOINC part values for that code, without over specifying by selecting a LOINC code that has one or more part values that are more granular than what is known for the result data (Figure 3). End users should not over specify LOINCs. If the method is not known, for example for a laboratory test as shown in Figure 3, mapping to LOINC 2862-7 would be over specifying because it includes a defined method, and LOINC 1751-7 would be a more appropriate match because it is method-less.",
+      "context": "LOINC’s pre-coordinated names match the level of specificity of common laboratory test ordering and reporting paradigms where there are separate fields for indicating the test name, the test result value, units of measure, reference range, etc. As of version 2.61 (June 2017), the LOINC release now contains an artifact linking the pre-coordinated LOINC terms to the set of LOINC parts of which it is composed 3 . Having these codes and relationships facilitates secondary aggregation and analysis of primary data coded with LOINC. A mapping between the six major LOINC parts and CDISC LB variables is provided in Table 1.",
+      "fingerprint": "8cb67e1aba2d4f7daf0cba985ea0739cdfcc44790b2ee88c04bc62db6eb0d97b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-8-paragraph-3",
+      "statement": "4 Working Group Recommendations In general, the Working Group recommends that where a valid LOINC code exists for a given lab value, the community should provide the code in LBLOINC. Many laboratories have mapped their internal codes to LOINC codes and will make such mappings available in electronic messages or as standalone mapping files. Increasingly, in vitro Diagnostic (IVD) vendors are making mappings 4 of their internal test codes to LOINC codes available for their products, which will increase the efficiency and consistency of identifying appropriate LOINC codes. If such LOINC codes are not available from the laboratory, the Working Group recommends that sponsors not attempt to derive a mapping to LOINC as they create the SDTM files. Lab test names are notoriously ambiguous, and making assumptions in the mapping process without confirming with the test performer can lead to serious data quality issues.",
+      "context": "Table 1. A comparison of LOINC Parts to CDISC Laboratory (LB) Domain Variables LOINC Part (entire column represents a single LOINC code) CDISC Standard Equivalent (each row represents a single CDISC code) Component LBTEST/CD + other variables Property - Time MULTIPLE: Various Timing Variables System SPEC+LOC Scale - Method METHOD + other variables Based on CDISC 2017 LOINC survey data, the Working Group also feels it is important that the requirement for LOINC code submissions start with a subset of common diagnostic lab tests that are also used within clinical research in order to ease researchers’ adoption of the FDA requirement. To create this list, the CDISC Lab Working Group assessed the most commonly utilized lab tests in clinical trials as defined by three major central laboratories, the LOINC 2,000+ and data summarizing LOINC codes that have been received by the FDA. These LOINC",
+      "fingerprint": "9c7fb7a9ad5753da6fc02c8f11ccfa4f5a708a1391b786f7eec4f2795aeef1e5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-9-paragraph-2",
+      "statement": "The Working Group specifically recommends that: • Regardless of whether a LOINC code is available or not for a given lab test record, submitters must still submit lab data in CDISC format, including the use of CDISC controlled terminology for lab variables.",
+      "context": "review by the CDISC Lab Working Group and key members from the CDISC Controlled Terminologies Team and this LOINC Working Group. The mapping document and an implementation guide will be made available from the CDISC Lab Working Group on the CDISC and Regenstrief websites. • Sponsors should include LOINC codes for any test where a valid LOINC code exists for new trials’ electronic submissions per the FDA Data Standards Catalog requirement dates.",
+      "fingerprint": "30118922330a5de0072ccd7f26529ed5a5922b004a115b66527715f06cd5b341",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-9-paragraph-3",
+      "statement": "• Sponsors should include LOINC codes for any test where a valid LOINC code exists for new trials’ electronic submissions per the FDA Data Standards Catalog requirement dates.",
+      "context": "The Working Group specifically recommends that: • Regardless of whether a LOINC code is available or not for a given lab test record, submitters must still submit lab data in CDISC format, including the use of CDISC controlled terminology for lab variables. o LOINC codes that contain specified methods should be utilized over similar LOINC codes that do not have a method specified in the Method part as appropriate. See Figures 2 and 3 for detail.",
+      "fingerprint": "857aa88e6381f7c9273938701290cd964fa35a7f2eaa3eaa2090a601cdf3db5e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-9-paragraph-4",
+      "statement": "o LOINC codes that contain specified methods should be utilized over similar LOINC codes that do not have a method specified in the Method part as appropriate. See Figures 2 and 3 for detail.",
+      "context": "• Sponsors should include LOINC codes for any test where a valid LOINC code exists for new trials’ electronic submissions per the FDA Data Standards Catalog requirement dates. o When the specimen type for a lab test is known and/or where the reference range differs by specimen types, a LOINC code with a specific System (such as Ser/Plas, Urine, CSF, etc.) should be used instead of a similar LOINC code that has “XXX” as the System.",
+      "fingerprint": "20c11fa86674e2a83360e57e40a4c4d246c75f297fafb9f682b60b3a90a1a40a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-9-paragraph-5",
+      "statement": "o When the specimen type for a lab test is known and/or where the reference range differs by specimen types, a LOINC code with a specific System (such as Ser/Plas, Urine, CSF, etc.) should be used instead of a similar LOINC code that has “XXX” as the System.",
+      "context": "o LOINC codes that contain specified methods should be utilized over similar LOINC codes that do not have a method specified in the Method part as appropriate. See Figures 2 and 3 for detail. o Sponsors may submit LOINC codes for lab tests outside of the common subset described above when it becomes available. The Working Group recommends that sponsors be encouraged to do so in order to allow the community and regulatory officials to adapt to the new requirement. When provided, LOINC codes for other lab tests should be accepted by FDA.",
+      "fingerprint": "c68404725df98fa25e34904bb568bb5d3dfa69e2557ca0cbe639a2f48c58447b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-9-paragraph-6",
+      "statement": "o Sponsors may submit LOINC codes for lab tests outside of the common subset described above when it becomes available. The Working Group recommends that sponsors be encouraged to do so in order to allow the community and regulatory officials to adapt to the new requirement. When provided, LOINC codes for other lab tests should be accepted by FDA.",
+      "context": "o When the specimen type for a lab test is known and/or where the reference range differs by specimen types, a LOINC code with a specific System (such as Ser/Plas, Urine, CSF, etc.) should be used instead of a similar LOINC code that has “XXX” as the System. o The most specific LOINC code should always be used without over-specifying details that are not known by the sponsor, such as method or scale.",
+      "fingerprint": "996a1b131db523ae8647e1d2a978ead390ed0667891b1eeb1d0b469b019d7e3f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-9-paragraph-7",
+      "statement": "o The most specific LOINC code should always be used without over-specifying details that are not known by the sponsor, such as method or scale.",
+      "context": "o Sponsors may submit LOINC codes for lab tests outside of the common subset described above when it becomes available. The Working Group recommends that sponsors be encouraged to do so in order to allow the community and regulatory officials to adapt to the new requirement. When provided, LOINC codes for other lab tests should be accepted by FDA. o LOINC codes with a status of deprecated or discouraged should not be submitted.",
+      "fingerprint": "4fdd7525229124d22e0d6db8c85319a4d1e5fac2f0dc04769b0be016a1144f91",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-9-paragraph-8",
+      "statement": "o LOINC codes with a status of deprecated or discouraged should not be submitted.",
+      "context": "o The most specific LOINC code should always be used without over-specifying details that are not known by the sponsor, such as method or scale.  Appropriate status for a LOINC code is defined in the LOINC Manual Section 11.2 Classification of LOINC Term Status.",
+      "fingerprint": "760abd7b682fed52fa5f634f549851b99de959c74eb7fe3c1667558a3b808bed",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-9-paragraph-10",
+      "statement": "• For any lab test where a LOINC code is not submitted, the reason for its omission should be noted in the clinical Study Data Reviewers Guide.",
+      "context": " Appropriate status for a LOINC code is defined in the LOINC Manual Section 11.2 Classification of LOINC Term Status. o The Working Group proposes that a starter set of reasons be predetermined (perhaps as CDISC terms) for consistency of reporting, including:",
+      "fingerprint": "9078522912c9d5d35ffb39f30262b59bb298e80879b436db49498e43b8b527b1",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-9-paragraph-12",
+      "statement": " Performing laboratory unable to determine if appropriate LOINC code exists  Performing laboratory indicates that no appropriate LOINC code currently exists • LOINC code specified in LB.LOINC applies to LB.ORRES (original result) rather than to LB.STRES(C/N) (standardized result). Such an approach is consistent with the recommendation that LB.LOINC should be taken from original laboratory result (i.e., the data transfer itself), and not be derived/converted into another form.",
+      "context": "o The Working Group proposes that a starter set of reasons be predetermined (perhaps as CDISC terms) for consistency of reporting, including: • LOINC codes should be submitted for human clinical studies only.",
+      "fingerprint": "6b6bc24a286b7bfd4783de7fb1891be83279b10e0bf016ac3112215d8b58f68f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-9-paragraph-13",
+      "statement": "• LOINC codes should be submitted for human clinical studies only.",
+      "context": " Performing laboratory unable to determine if appropriate LOINC code exists  Performing laboratory indicates that no appropriate LOINC code currently exists • LOINC code specified in LB.LOINC applies to LB.ORRES (original result) rather than to LB.STRES(C/N) (standardized result). Such an approach is consistent with the recommendation that LB.LOINC should be taken from original laboratory result (i.e., the data transfer itself), and not be derived/converted into another form. 5 Potential Future Phases The Working Group may reconvene in the future to make further recommendations. The Working Group considered topics such as the inclusion of additional LOINC codes for tests that are not routinely performed, LOINC codes for labs performed on non-human subjects, and codes for more clinically-focused variables. Though it is highly desirable for regulators to easily and routinely analyze stan",
+      "fingerprint": "f0cf51d9aa5635d46ce7951808f957d6e30ec79c9160c051d07ce7e3994b7ecf",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:06:18.122Z"
+}
