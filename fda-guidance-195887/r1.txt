@@ -1,0 +1,950 @@
+    Individualized Human Genome
+  Editing Products: Considerations for
+   BLA Submission and Postapproval
+             Management
+
+            Draft Guidance for Industry
+
+              This guidance document is for comment purposes only.
+
+
+
+Submit one set of either electronic or written comments on this draft guidance by the date
+provided in the Federal Register notice announcing the availability of the draft guidance.
+Submit electronic comments to https://www.regulations.gov. Submit written comments to the
+Dockets Management Staff (HFA-305), Food and Drug Administration, 5630 Fishers Lane, Rm.
+1061, Rockville, MD 20852. You should identify all comments with the docket number listed in
+the notice of availability that publishes in the Federal Register.
+
+Additional copies of this guidance are available from the Center for Biologics Evaluation and
+Research, Food and Drug Administration by calling 1-800-835-4709 or 240-402-8010, or email
+industry.biologics@fda.hhs.gov, or from the Internet at https://www.fda.gov/vaccines-blood-
+biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances.
+
+For questions on the content of this guidance, contact CBER at the phone numbers or email
+address listed above.
+
+
+
+
+                                            U.S. Department of Health and Human Services
+                                                            Food and Drug Administration
+                                              Center for Biologics Evaluation and Research
+                                                                              October 2026
+                                  Contains Nonbinding Recommendations
+
+                                           Draft – Not for Implementation
+
+                                                 Table of Contents
+
+I.     INTRODUCTION............................................................................................................. 1
+II.    BACKGROUND ............................................................................................................... 3
+III.   THE INDIVIDUALIZED FEATURE SPACE .............................................................. 4
+IV.    MANUFACTURING PROCESS AND CONTROL STRATEGY............................... 7
+       A.        Manufacturing Process Design and Control ...................................................... 7
+       B.        Manufacturing Process Validation...................................................................... 9
+V.     ACTIVITY, POTENCY, AND SAFETY OF PRODUCT VARIANTS .................... 10
+       A.        Activity and Potency Assurance ........................................................................ 10
+       B.        Safety Evaluation ................................................................................................ 11
+VI.    ADDING NEW PRODUCT VARIANTS TO AN APPROVED BLA ....................... 11
+       A.        Adding a New Product Variant Within an Established IFS ........................... 12
+       B.        Expanding an Established IFS........................................................................... 13
+VII.   PRODUCT LABELING AND NAMING ..................................................................... 14
+       A.        Labeling Considerations..................................................................................... 14
+       B.        Product Naming and Identification................................................................... 15
+IX.    DEFINITIONS ................................................................................................................ 16
+
+
+
+
+                                                                i
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+ 1        Individualized Human Genome Editing Products: Considerations
+ 2              for BLA Submission and Postapproval Management
+ 3
+ 4
+ 5                                     Draft Guidance for Industry
+ 6
+ 7   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 8   Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+ 9   and is not binding on FDA or the public. You can use an alternative approach if it satisfies the
+10   requirements of the applicable statutes and regulations. To discuss an alternative approach,
+11   contact the FDA staff responsible for this guidance as listed on the title page.
+12
+13
+14   I.       INTRODUCTION
+15
+16   Human genome editing (GE) is a process by which DNA sequences are added, deleted, altered or
+17   replaced at specified location(s) in the genome of human somatic cells, ex vivo or in vivo, using
+18   nuclease-dependent or nuclease-independent GE technologies. 1 GE is a type of gene therapy that
+19   relies on GE components 2 to edit DNA. When a monogenic disease 3 is caused by gene variants
+20   that differ among patients – including rare gene variants that are unique to a patient or shared by
+21   only a few patients – the GE components can be tailored to target each patient’s specific
+22   pathogenic gene variant. An individualized GE product 4 can be designed to include multiple
+23   product variants, 5 each tailored to target a specific pathogenic gene variant in the gene of
+24   interest.
+25
+26   This guidance is intended for sponsors and applicants developing individualized GE products. It
+27   addresses how an individualized GE product that includes multiple product variants can be
+28   submitted in a single Biologics License Application (BLA) under section 351(a) of the PHS
+
+     1
+       See Guidance for Industry: Human Gene Therapy Products Incorporating Human Genome Editing, January 2024,
+     https://www.fda.gov/media/156894/download.
+     2
+       For the purposes of this guidance, a genome editing component is defined as any material that is essential for the
+     intended genomic modification, including those that may not appear in the final drug product. Genome editing
+     components may include, but are not limited to, the editor, DNA targeting elements (i.e., elements used to dictate
+     the target DNA sequence, such as guide RNA) and a donor DNA template (i.e., DNA sequence provided to repair
+     the target sequence), if applicable.
+     3
+       For purposes of this guidance, a monogenic disease is a disease caused by a pathogenic gene variant in a single
+     gene, also known as a single-gene disorder or Mendelian disorder. Note that different pathogenic gene variants in
+     the same gene can sometimes cause clinically distinct diseases.
+     4
+       For the purposes of this guidance, an individualized genome editing product is defined as a product where the
+     genome editing components are designed to have variable physical features that are matched to specific patients or
+     patient subgroups to address patient-specific gene variants.
+     5
+       For the purposes of this guidance, a product variant is defined as a specific instance of an individualized GE
+     product where one or more physical features have been deliberately selected or modified to target a gene variant. A
+     product variant maintains the core design of the product and shares the same IND or BLA with other product
+     variants.
+
+
+                                                              1
+                                      Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+29   Act. 6 It explains how to specify the extent of GE component variation in a BLA and how to add
+30   new product variants to the BLA after licensure. This guidance also addresses related topics,
+31   including in vitro safety and potency evaluation of product variants, manufacturing process
+32   validation, labeling and indication statements, and drug naming and identification.
+33
+34   Existing FDA guidances on GE products address IND-stage chemistry, manufacturing, and
+35   controls (CMC); nonclinical and clinical trial design; evidentiary standards for approval of
+36   individualized therapies; and leveraging of CMC, nonclinical, and clinical knowledge across GE
+37   programs. 7,8,9 This guidance complements those previously issued guidances by providing
+38   advice on how to prepare and submit BLAs and BLA supplements for individualized GE
+39   products. This guidance will also be helpful to sponsors who intend to evaluate an individualized
+40   GE product that includes multiple product variants under a single IND.
+41
+42   The scope of this guidance is limited to individualized GE products that meet all of the following
+43   criteria: (1) the product is intended to prevent, treat, or cure a monogenic disease or condition
+44   (e.g., autosomal dominant, recessive, or X-linked); (2) the disease or condition is caused by
+45   known pathogenic gene variants (e.g., single nucleotide variants, insertions, or deletions); and (3)
+46   all product variants in the BLA are designed to achieve the same editing outcome (e.g.,
+47   correcting a pathogenic gene variant to the wild-type DNA sequence, or selectively inactivating a
+48   pathogenic gain-of-function allele). However, some principles in this guidance may be
+49   applicable to other individualized GE products.
+50
+51   The scope of this guidance does not include the design or conduct of clinical studies (including
+52   postmarketing clinical studies) to generate evidence of safety and effectiveness that is adequate
+53   to support a BLA. However, FDA intends to issue further guidance on this topic. This guidance
+54   also does not address individualized products that are not GE products, GE products that are not
+55   individualized, or specific BLA approval pathways (accelerated vs. traditional).
+56
+
+
+     6
+       See Guidance for Industry Submitting Separate Marketing Applications and Clinical Data for Purposes of
+     Assessing User Fees, December 2004, https://www.fda.gov/media/72397/download (“bundling guidance”),
+     explaining what may be considered a separate marketing application and what may be bundled for purposes of the
+     user fee provisions of the Federal Food, Drug, and Cosmetic Act. The current guidance pertains to products to
+     prevent, treat, or cure diseases or conditions caused by rare gene variants and, therefore, likely to have orphan-drug
+     designation and related exemption from user fees. However, the concepts presented in the bundling guidance with
+     respect to when a new original BLA or supplement are warranted are still generally applicable to individualized GE
+     products (e.g., separate original submission for a change in dosage form, route of administration, container
+     size/configuration, strength, indication; supplement to an approved application for a new or modified indication).
+     7
+       See Guidance for Industry: Human Gene Therapy Products Incorporating Human Genome Editing, January 2024,
+     https://www.fda.gov/media/156894/download.
+     8
+       See Draft Guidance for Industry Considerations for the Use of the Plausible Mechanism Framework to Develop
+     Individualized Therapies that Target Specific Genetic Conditions with Known Biological Cause, February 2026,
+     https://www.fda.gov/media/191247/download. When finalized, this guidance will represent FDA’s current thinking
+     on this topic.
+     9
+       See Draft Guidance for Industry Leveraging Prior Knowledge in the Development of Human Gene Therapy
+     Products Incorporating Gene Editing, June 2026, https://www.fda.gov/media/192810/download. When finalized,
+     this guidance will represent FDA’s current thinking on this topic.
+
+
+                                                               2
+                                       Contains Nonbinding Recommendations
+
+                                              Draft – Not for Implementation
+
+57   In general, FDA’s guidance documents, including this guidance, do not establish legally
+58   enforceable responsibilities. Instead, guidances describe the FDA’s current thinking on a topic
+59   and should be viewed only as recommendations, unless specific regulatory or statutory
+60   requirements are cited. The use of the word should in FDA’s guidances means that something is
+61   suggested or recommended, but not required.
+62
+63
+64   II.      BACKGROUND
+65
+66   GE technologies offer a transformative approach to addressing monogenic diseases by directly
+67   targeting pathogenic gene variants at the DNA level. Although there are numerous types of GE
+68   technologies, individualized GE products often use a Cas-based editor that is directed to a
+69   specific location in the genome by a guide RNA (gRNA). After binding to DNA, the Cas-based
+70   editor enzymatically modifies or replaces the pathogenic DNA sequence, or introduces breaks
+71   that disrupt it. Editing can occur either inside the patient's body (using an in vivo product) or in
+72   cells that are removed from the patient, edited outside the body, and then returned to the patient
+73   (an ex vivo product).
+74
+75   In monogenic diseases, affected patients may have different pathogenic gene variants causing the
+76   disease. Individualized GE products address these gene variants using GE components whose
+77   roles differ depending on the product type. For in vivo products, the GE components comprise
+78   the active ingredients. 10 For ex vivo products, the GE components are used during the
+79   manufacturing process to create the active ingredient (the edited cell).
+80
+81   Because a single product variant typically targets only one gene variant, a GE product intended
+82   to address a range of gene variants may include a set of modified GE components. The physical
+83   characteristics of these GE components that differ among product variants are termed variable
+84   features. 11 A BLA for an individualized GE product may therefore contain many product
+85   variants, each sharing the same core design and differing only in the GE components used to
+86   address each patient's specific gene variant. Defining the allowable limits of feature variation in
+87   the BLA serves two purposes: establishing the boundaries of the product and facilitating the
+88   post-licensure addition of new product variants that fall within those boundaries. Importantly,
+89   this framework provides a way for applicants to add new product variants to a BLA based on in
+90   vitro data without additional clinical studies.
+91
+92
+
+
+
+
+     10
+        Active ingredient means any component that is intended to furnish pharmacological activity or other direct effect
+     in the diagnosis, cure, mitigation, treatment, or prevention of disease, or to affect the structure or any function of the
+     body of man or other animals. The term includes those components that may undergo chemical change in the
+     manufacture of the drug product and be present in the drug product in a modified form intended to furnish the
+     specified activity or effect. (21 CFR 210.3(b)(7))
+     11
+        For the purposes of this guidance, a variable feature is defined as a physical characteristic of a genome editing
+     component that differs from lot to lot, within defined limits, to address specific gene variants.
+
+
+                                                                 3
+                                      Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+ 93   This guidance introduces the concept of the individualized feature space 12 (IFS), which describes
+ 94   the allowable limits of variation for the GE components of an individualized GE product. For
+ 95   example, for a GE product whose only variable feature is a gRNA spacer sequence, the IFS
+ 96   should describe which types of spacer sequences are allowable in the BLA – such as any spacer
+ 97   sequence that targets a defined class of pathogenic gene variants in a specified gene and results
+ 98   in the same editing outcome (e.g., correcting the gene so that it encodes the wild-type protein). A
+ 99   new product variant should be considered a manufacturing change for purposes of the BLA –
+100   rather than a new product – provided that: (1) the variable features of the product variant’s GE
+101   components fall within the established IFS; and (2) the resulting product variant is predicted to
+102   have adequate safety and activity based on clinical and/or in vitro data. Section III describes the
+103   IFS in detail and provides additional examples of how it applies to individualized GE products.
+104
+105
+106   III.    THE INDIVIDUALIZED FEATURE SPACE
+107
+108   The IFS describes the boundaries of the variable features of the GE components. Other aspects of
+109   the product should remain constant across all product variants, such as the strength, the
+110   formulation, the delivery vehicle or vector for in vivo products (e.g., lipid nanoparticle, viral
+111   capsid), and the specific cell type for ex vivo products.
+112
+113   Applicants should propose an IFS in the BLA that clearly delineates the boundaries of allowable
+114   variation for each variable feature of each GE component. Applicants may describe these
+115   boundaries using rules, menus of pre-specified options, or other appropriate means. For example,
+116   an applicant could propose a rule-based IFS for a gRNA spacer sequence and a menu-based IFS
+117   for an editor, as illustrated in Table 1. Importantly, the IFS should be supported by clinical data
+118   and coupled with explicit criteria for the in vitro safety and activity of the product variants.
+119   These criteria should include, for example, acceptable off-target editing and a minimum
+120   acceptance criterion for on-target editing (see Section V). Any product variant that does not meet
+121   these in vitro safety and activity criteria should not be included in the IFS.
+122
+123   All product variants included within a single BLA should share the same mechanism of action
+124   and intended editing outcome, thereby establishing a predictable connection between the
+125   product’s mechanism of action and the clinical safety and efficacy data from the product variants
+126   evaluated in clinical studies. For instance, base editors that have been modified to recognize
+127   different protospacer adjacent motif (PAM) sequences may be grouped within the same BLA,
+128   provided they share the same editing mechanism. Conversely, a GE product employing a
+129   fundamentally different mechanism (e.g., relying on a reverse transcriptase) should not be
+130   included in the same BLA as a base editor, because it would be a different product with distinct
+131   off-target and immunogenicity risks.
+132
+
+
+      12
+        For the purposes of this guidance, an individualized feature space (IFS) is defined as the allowable limits of
+      variation for one or more variable features of a product’s genome editing components. An IFS includes only features
+      or combinations of features known or predicted to have adequate safety and activity. Adding a new product variant
+      within a pre-defined IFS should not be considered to result in a new product.
+
+
+                                                              4
+                                     Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+133   FDA encourages sponsors to develop the IFS prospectively during their clinical development
+134   program, so that the clinical studies are designed to generate data that will support the proposed
+135   IFS boundaries. The clinical studies needed to support a proposed IFS will be highly case-
+136   specific. Relevant factors include the nature of the variable features, the breadth of the IFS
+137   boundaries, and the degree to which clinical evidence from the product variants evaluated in
+138   investigational studies can be extrapolated to unstudied product variants. FDA therefore
+139   encourages sponsors to discuss their proposed IFS and the clinical data needed to support it
+140   before initiating pivotal clinical studies.
+141
+142        Table 1: Example Individualized Feature Space for an Adenine Base Editor
+143        Genome Editing Product1
+                    Targeted Gene
+                                                 gRNA2                   Editor3
+                  Variant in Gene X
+                      c.124C>T                  gRNA-001               ABE-Cas9-A
+                      c.456G>A                  gRNA-002               ABE-Cas9-B
+                      c.789G>A                  gRNA-003               ABE-Cas9-A
+                      c.999C>T                  gRNA-004               ABE-Cas9-A
+                  Other C>T or G>A                                   ABE-Cas9-A or
+                                                gRNA-###
+                   gene variant in X4                                  ABE-Cas9-B
+144        1
+             This table illustrates the structure of an IFS, showing the allowable combinations of variable features.
+145        Each of the first four rows of the table represents a specific product variant; the last row represents the
+146        principle governing the addition of future product variants within the IFS. The in vitro safety and activity
+147        criteria that apply to product variants are not shown in this table and should be documented separately in
+148        the BLA.
+149        2
+             The gRNA in this example is a rule-based variable feature where the spacer sequence of each gRNA
+150        matches the gene variant being targeted.
+151        3
+             The editor in this example is a menu-based variable feature offering editor A or B that possess different
+152        PAM-recognition sites in the Cas9 domain, but a constant ABE domain. Each gRNA is exclusively
+153        paired with the editor demonstrated by in vitro data to have an acceptably high on-target editing
+154        efficiency and acceptably low off-target editing risk for the specific targeted gene variant.
+155        4
+             Additional gRNAs paired with either editor A or B can be added within the IFS if they meet specific
+156        criteria for in vitro safety and activity. This type of addition is an addition within the established IFS. In
+157        contrast, adding a new editor C to the menu of editor options in the IFS would be an IFS expansion.
+158
+159   To justify the proposed IFS boundaries, applicants should provide a robust scientific rationale
+160   supported primarily by clinical data from product variants evaluated in clinical studies,
+161   supplemented by in vitro data. The clinical data should also be used to establish the criteria for in
+162   vitro safety and activity that all product variants within the IFS should meet.
+163
+164   The proposed IFS in the initial BLA may list product variants that have not been evaluated in
+165   clinical studies, provided that (1) the product variants meet the criteria for in vitro safety and
+166   activity (see Section V); and (2) the clinical evidence from the product variants evaluated in
+167   clinical studies is deemed adequate to support the predicted safety and effectiveness of the
+168   product variants not evaluated in clinical studies. To meet this second condition, the clinical
+169   evidence should reflect the full range of product variants within the proposed IFS. Therefore,
+170   applicants should justify how the clinically evaluated product variants adequately span the entire
+
+
+
+                                                                5
+                                 Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+171   proposed IFS. The acceptability of extrapolating safety and effectiveness data from approved
+172   product variants to additional product variants within the same monogenic disease will be a case-
+173   by-case determination based on considerations such as: (1) the extent of knowledge of the natural
+174   history of the disease, including genotype-phenotype associations; (2) factors affecting the safety
+175   or effectiveness of the product based on clinical studies, including the genotype (e.g., a severe
+176   gene variant causing no protein production that may lead to increased immunogenicity and
+177   higher safety risks); (3) potential remaining uncertainties regarding the clinical evidence
+178   supporting initial approval; and (4) the available scientific evidence supporting the relationship
+179   between in vitro and clinical data for the approved product variants.
+180
+181   A new product variant is not considered a new product – and adding it to the BLA does not
+182   change the established IFS – if its GE components fall within the boundaries of the IFS and the
+183   product variant meets the established in vitro safety and activity criteria. For instance, in the
+184   example shown in Table 1, a new gRNA-005 that targets a different gene variant within the
+185   same gene X could be incorporated into a new product variant within the IFS, provided that the
+186   new product variant meets the established in vitro safety and activity criteria.
+187
+188   In contrast, a new gRNA that does not meet the established in vitro safety and activity criteria
+189   should not be added to the BLA unless adequate additional clinical data is submitted to support
+190   the use of the product variant. Adding such a product variant involves amending the in vitro
+191   safety and activity criteria associated with the IFS, which should be supported by clinical data
+192   from investigational studies conducted with that specific product variant.
+193
+194   Altering the boundaries of an IFS to include previously unallowable product variants is
+195   considered an IFS expansion. The implications of an IFS expansion depend on the nature and
+196   risk profile of the proposed change, for example:
+197
+198      •   Adding a new editor protein with the same editing mechanism: This constitutes an
+199          IFS expansion that adds a new menu item to the editors allowed in the IFS (see Table 1).
+200          Applicants should perform a comprehensive risk assessment – including in vitro safety
+201          and activity data for the new editor – to determine whether additional clinical evaluation
+202          is needed.
+203
+204      •   Adding a new editor that fundamentally changes the product’s mechanism or
+205          introduces significant new or unknown risks: Product variants that use such an editor
+206          constitute a different product, and clinical data supporting the safety and effectiveness of
+207          the new product should be submitted in a new BLA rather than as a supplement to the
+208          existing BLA.
+209
+210   Detailed recommendations for adding new product variants to a BLA are provided in Section VI.
+211
+212
+213
+
+
+
+
+                                                       6
+                                      Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+214   IV.      MANUFACTURING PROCESS AND CONTROL STRATEGY
+215
+216            A.       Manufacturing Process Design and Control
+217
+218            During process design, applicants define the commercial manufacturing process based on
+219            knowledge gained through development and scale-up activities. For individualized GE
+220            products, the goal is to design a process capable of reliably manufacturing all current and
+221            future product variants that fall within the established IFS. In doing so, applicants should
+222            distinguish between the IFS, which describes the allowable variable features of the GE
+223            components, and the design space, 13 which describes the allowable limits for input
+224            variables and process parameters in the manufacturing process.
+225
+226            Applicants should use process development studies and formal risk assessments 14 to
+227            evaluate how the variable features of the GE components influence critical quality
+228            attributes and critical process parameters. To avoid the need to revalidate the
+229            manufacturing processes for each new GE component and product variant, the processes
+230            should be robust enough to accommodate variable features across the entire IFS. In
+231            particular, applicants should consider how GE components across the full range of the
+232            IFS might affect material attributes, manufacturing parameters, and product quality.
+233
+234            Manufacturing controls should be sufficiently robust to accommodate the full range of
+235            variable features within the IFS. Some of these controls will differ between in vivo and ex
+236            vivo products. For in vivo RNA-based products (where manufacturing control is primarily
+237            achieved through chemical/biochemical synthesis parameters), variations in RNA
+238            sequence length, GC content, or secondary structure may affect in vitro transcription
+239            yields or solid-phase synthesis efficiency. The process should be controlled to ensure
+240            consistent yield regardless of the specific sequence. Furthermore, changes to a gRNA
+241            spacer sequence may alter the impurity profile or chromatographic retention time,
+242            potentially requiring dynamic control of chromatography parameters (e.g., elution
+243            gradients) to ensure consistent removal of product-related impurities. For lipid
+244            nanoparticle products that contain RNA, if the length or secondary structure of the RNA
+245            varies, process controls around mixing rates, flow rates, and lipid-to-RNA ratios should
+246            be sufficiently robust to ensure consistent encapsulation efficiency and particle size.
+247
+248            For ex vivo products (where manufacturing control is primarily achieved through cell
+249            processing parameters), the editing efficiency will likely be affected by the variable
+
+      13
+         Design spaces are described in Guidance for Industry Q8(R2) Pharmaceutical Development, November 2009
+      https://www.fda.gov/media/71535/download and Guidance for Industry Q11 Development and Manufacture of Drug
+      Substances, November 2012, https://www.fda.gov/media/80909/download. As defined in Q8(R2), a design space
+      encompasses input variables and process parameters that have been demonstrated to provide assurance of quality,
+      but certain changes would constitute moving out of the design space. A design space describes the conditions under
+      which a product can be manufactured consistently to meet its expected quality attributes when there is variability or
+      flexibility in starting materials or process parameters. In contrast, an IFS is a distinct type of space – an IFS
+      describes the extent of allowable variation in the patient-specific variable features of the product’s GE components.
+      14
+         See Guidance for Industry Q9(R1) Quality Risk Management, May 2023,
+      https://www.fda.gov/media/167721/download.
+
+
+                                                               7
+                                      Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+250           features of the gRNAs and editors. Process controls surrounding cell processing,
+251           transfection, or electroporation may need to be carefully monitored or adjusted based on
+252           the specific GE components to ensure sufficient editing rates without causing excessive
+253           cellular toxicity. Other key considerations include the effect of specific GE components
+254           on cell viability or expansion parameters.
+255
+256           Applicants should establish specifications for the GE components, drug substance (DS), 15
+257           and drug product (DP) 16 that are robust enough to cover all product variants within the
+258           IFS, yet sensitive enough to detect failures for specific product variants. These
+259           specifications form a critical part of the control strategy that allows information to be
+260           leveraged across product variants; a well-designed control strategy reduces the need for
+261           full characterization of new GE components and product variants.
+262
+263           In addition to activity and potency, which are addressed in Section V.A, two other
+264           aspects of the control strategy present unique considerations for individualized GE
+265           products:
+266
+267                •   Identity: Identity testing confirms that the correct individualized DP is in the
+268                    final container. Under 21 CFR 610.14, lot release identity tests must be performed
+269                    on DP sampled from its final container after completion of labeling, and they
+270                    must be adequate to distinguish the product from all other products being
+271                    processed in the same facility. For in vivo individualized GE products, identity
+272                    testing should include confirmation of the variable features of the GE components
+273                    (e.g., sequencing to confirm the correct gRNA spacer sequence). For ex vivo
+274                    products, identity testing should confirm the specific intended genomic edit in the
+275                    cellular DP. In addition, manufacturers of ex vivo products should establish and
+276                    document procedures for maintaining chain of identity (labeling and tracking) that
+277                    link the cellular starting material collected from a specific patient to the DP
+278                    manufactured from that material, at every stage of the manufacturing process.
+279
+280                •   Purity: Under 21 CFR 610.13, biological products must be free of extraneous
+281                    material except that which is unavoidable in the manufacturing process described
+282                    in the approved BLA. For individualized GE products, analytical methods used to
+283                    detect product-related impurities in in vivo products (such as truncated RNAs)
+284                    should be validated to demonstrate adequate performance across the range of the
+285                    IFS, since the variable features of the GE components may affect the impurity
+286                    profile of each product variant. For ex vivo products, in addition to controlling the
+
+
+      15
+         For the purposes of this guidance, the terms active ingredient and drug substance are used interchangeably.
+      16
+         Refers to those drug products that are biological products under 42 USC 262(i) and subject to licensure under
+      section 351) of the Public Health Service Act (PHS Act) (42 U.S.C. 262(a) or (k)). See 42 U.S.C. 262(j).
+      According to 42 USC 262(i), the term “biological product” means a virus, therapeutic serum, toxin, antitoxin,
+      vaccine, blood, blood component or derivative, allergenic product, protein, or analogous product, or arsphenamine
+      or derivative of arsphenamine (or any other trivalent organic arsenic compound), applicable to the prevention,
+      treatment, or cure of a disease or condition of human beings.
+
+
+                                                               8
+                                    Contains Nonbinding Recommendations
+
+                                           Draft – Not for Implementation
+
+287                    purity of the GE components, DP purity control should include testing for residual
+288                    GE components, unedited cells, and cell type analysis.
+289
+290           B.       Manufacturing Process Validation
+291
+292           Expectations for manufacturing process validation apply to individualized GE products as
+293           they do for all other products. 17 For individualized GE products, however, applicants
+294           should adapt the traditional process validation approach to accommodate product
+295           variability. At each stage, including process design, an applicant should address how
+296           variable features affect manufacturing performance. There are also considerable
+297           opportunities to leverage process validation information across product variants in an
+298           individualized GE product.
+299
+300           Process performance qualification (PPQ) studies should be designed based on a risk
+301           assessment, and PPQ for individualized GE products should account for how variable
+302           features and variable manufacturing conditions could affect process performance and
+303           product quality. If certain feature variations or manufacturing variables are identified as
+304           posing a high risk to product quality or process performance, then those aspects should be
+305           evaluated during the PPQ campaign. For example, batch size for an individualized GE
+306           product may range from large scale (for product variants intended for patients with
+307           relatively common gene variants) to small scale (for product variants intended for only
+308           one patient). For such a product that may be manufactured at different scales, PPQ
+309           studies should include representative runs that bracket the extremes of process scale. In
+310           general, however, if FDA determines that data from the process design stage is adequate
+311           to ensure process performance across all potential product variants and GE components
+312           in the IFS and across the anticipated range of manufacturing conditions, it should not be
+313           essential for the PPQ campaign to include all variable features in the IFS or all potential
+314           manufacturing conditions.
+315
+316           During continued process verification, the applicant should track and trend process
+317           performance and product data across all lots and for each product variant to monitor how
+318           variable features impact process performance and product quality. When adding new
+319           product variants to a BLA, if the initial process validation was properly designed to cover
+320           future product variants and GE components within the IFS, additional process validation
+321           will generally not be necessary.
+322
+323
+324
+
+
+
+
+      17
+        See 21 CFR 211.100(a); 211.110(a); FDA Guidance for Industry: Process validation: General Principles and
+      Practices, January 2011, https://www.fda.gov/media/71021/download.
+
+
+                                                            9
+                                    Contains Nonbinding Recommendations
+
+                                           Draft – Not for Implementation
+
+325   V.      ACTIVITY, POTENCY, AND SAFETY OF PRODUCT VARIANTS
+326
+327           A.       Activity and Potency Assurance
+328
+329           As for all gene therapy products, FDA recommends that the BLA for an individualized
+330           GE product include a potency assurance strategy. 18 Lot release testing must include one
+331           or more potency assays as part of the DP release specification. 19 Demonstration of
+332           potency for each lot should include confirmation that the GE components achieved the
+333           desired editing outcome at or above an acceptance criterion based on data from clinical
+334           studies. The assay(s) should be capable of quantitatively assessing the specific
+335           contribution of the variable features of the GE components to product potency.
+336
+337                •   For in vivo individualized GE products, potency assays may warrant developing
+338                    cell lines that include sequences that match the gene variants targeted by the
+339                    product. With such cell lines, for example, potency can be measured by
+340                    transducing the cell with the product, sequencing the targeted site, and measuring
+341                    successful editing of the gene variant to the intended sequence. Consideration
+342                    should be given to how the cell lines can be modified to include additional gene
+343                    variants as new product variants are added to the IFS.
+344
+345                •   For ex vivo individualized GE products, the pathogenic gene variant is present in
+346                    the cellular starting material, and the editing outcome should be measured directly
+347                    in the cellular DP. In addition, a potency assay should assess the intended
+348                    downstream biological modification (e.g., restoration of enzymatic activity).
+349                    Applicants should also establish assays to measure activity of the GE components
+350                    used during manufacturing and appropriate acceptance criteria.
+351
+352           As discussed in Section VI.A, FDA may approve the addition of product variants to the
+353           BLA based on in vitro safety and activity studies of GE components that have been
+354           manufactured by representative processes. The activity studies can potentially use the
+355           same potency and/or activity assays discussed in this section. Applicants should establish
+356           appropriate acceptance criteria for these assays during clinical development, based on
+357           potency data from product lots demonstrated to be clinically effective. For GE
+358           components and in vivo products, expressing activity or potency as a relative value
+359           against a thoroughly characterized reference material can facilitate the establishment of
+360           meaningful acceptance criteria. These acceptance criteria create a well-defined threshold
+361           that links in vitro potency to clinical evidence of effectiveness. This link enables
+362           applicants to add new product variants within the established IFS to the BLA based on in
+363           vitro data and previously submitted clinical data, without conducting clinical studies for
+364           each new product variant.
+365
+      18
+         See Draft Guidance for Industry: Potency Assurance for Cellular and Gene Therapy Products, December 2023,
+      https://www.fda.gov/media/175132/download. When finalized, this guidance will represent FDA’s current thinking
+      on this topic.
+      19
+         See 21 CFR 610.10, 600.3(s), 610.1.
+
+
+                                                            10
+                                    Contains Nonbinding Recommendations
+
+                                           Draft – Not for Implementation
+
+366           B.      Safety Evaluation
+367
+368           Individualized GE products submitted in a BLA should have defined pharmacokinetic,
+369           pharmacodynamic, immunogenicity, biodistribution (where applicable), and toxicological
+370           profiles supported by nonclinical and clinical studies. Individualized GE product variants
+371           included within an established IFS are expected to have the same profiles. Section VI
+372           provides criteria for determining when clinical data are expected to be provided in a BLA
+373           to support a product variant, for a product that includes multiple product variants.
+374
+375           Safety in the context of off-target or unintended on-target edit outcomes for each product
+376           variant should be assessed by the applicant using appropriate in vitro methods. The
+377           unique gRNA spacer sequence for each product variant creates a distinct off-target
+378           editing profile; therefore, applicants should assess the off-target editing risk for each
+379           gRNA/editor combination. Applicants should assess unintended editing activities for each
+380           product variant using pre-defined next-generation sequencing (NGS)-based methods. 20
+381           These methods may be leveraged across product variants. 21 The applicant should conduct
+382           the safety assessment in appropriate target human cells and other human cell types
+383           selected based on data obtained from prior nonclinical biodistribution studies, as
+384           applicable. 22 A protocol detailing the specific methods (e.g., NGS-based nomination,
+385           confirmatory testing, etc.) for in vitro assessment of the safety of product variants should
+386           be submitted with the BLA, which will help streamline the process of adding future
+387           product variants without additional clinical data (also see Section VI).
+388
+389           The results from off-target assessment studies should include reports of unintended
+390           editing outcomes at the on-target edit site, off-target editing activity(ies), and genomic
+391           rearrangement event(s). For all identified and confirmed off-target edit sites, the BLA or
+392           BLA supplement should include the corresponding empirical/in silico/sequence
+393           homology data (as applicable) and risk assessments discussing clinical significance of all
+394           confirmed off-target edit sites.
+395
+396
+397   VI.     ADDING NEW PRODUCT VARIANTS TO AN APPROVED BLA
+398
+399   After BLA approval, applicants may submit BLA supplements to add new product variants that
+400   target different pathogenic gene variants in the same gene. In most cases, new product variants
+401   that fall within the established IFS may be added based on in vitro data without the need for
+
+      20
+         See Draft Guidance for Industry: Safety Assessment of Genome Editing in Human Gene Therapy Products Using
+      Next-Generation Sequencing, April 2026, https://www.fda.gov/media/191966/download. When finalized, this
+      guidance will represent FDA’s current thinking on this topic.
+      21
+         See Draft Guidance for Industry Leveraging Prior Knowledge in the Development of Human Gene Therapy
+      Products Incorporating Genome Editing, June 2026, https://www.fda.gov/media/192810/download. When finalized,
+      this guidance will represent FDA’s current thinking on this topic.
+      22
+         See Draft Guidance for Industry Considerations for the Use of the Plausible Mechanism Framework to Develop
+      Individualized Therapies that Target Specific Genetic Conditions with Known Biological Cause, February 2026,
+      https://www.fda.gov/media/191247/download. When finalized, this guidance will represent FDA’s current thinking
+      on this topic.
+
+
+                                                           11
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+402   additional clinical data, as described in Section III. This section describes the regulatory
+403   mechanisms for doing so after BLA approval, including the data that applicants should provide
+404   to add a new product variant within the established IFS (Section VI.A) and to expand the
+405   established IFS (Section VI.B).
+406
+407           A.       Adding a New Product Variant Within an Established IFS
+408
+409           Adding a new product variant to an existing BLA is a change to the product’s
+410           manufacturing, and the applicant must submit a BLA supplement demonstrating that the
+411           change does not adversely affect the identity, strength, quality, purity, or potency of the
+412           product as they may relate to the safety or effectiveness of the product. 23 When
+413           submitting a BLA supplement to add one or more new product variants within the
+414           established IFS, the submission should contain in vitro activity data demonstrating the
+415           ability of each new product variant to achieve the intended edit at or above a threshold
+416           established in clinical studies. Additionally, the supplement should include in vitro safety
+417           data for each new product variant, including comprehensive on-target and off-target
+418           editing analyses, demonstrating that off-target editing profiles remain within acceptable
+419           limits and risk profile. The supplement must update the manufacturing information to
+420           include the new product variants and must update the labeling to list the new gene
+421           variants targeted. 24
+422
+423           The in vitro safety and activity studies submitted in a BLA supplement may use GE
+424           components manufactured by representative processes (including scaled-down processes)
+425           prior to the manufacture of lots produced in accordance with Current Good
+426           Manufacturing Practice (CGMP). However, the purity, chemistry, and structure of the GE
+427           components used in the in vitro studies (e.g., modified RNA bases and backbone
+428           linkages) should be equivalent to those of the intended commercial GE components. If
+429           the BLA supplement is approved, the product variant must be manufactured in
+430           compliance with CGMP requirements and meet all established release specifications prior
+431           to commercial distribution. 25
+432
+433           If the relationship between the product’s in vitro data and clinical safety and effectiveness
+434           is well-understood and predictable, FDA generally does not expect clinical data to be
+435           included in BLA supplements that add new product variants. Applicants should justify
+436           how the variants evaluated in the initial clinical studies represent the full range of
+437           variability and anticipated risk factors across the entire established IFS. If the relationship
+438           between the product’s in vitro data and clinical safety and effectiveness is not well-
+439           understood or predictable for any specific new product variant, the BLA supplement
+440           should include adequate clinical data from subjects who received that product variant. It
+441           is important that applicants discuss their specific plan with FDA prior to data collection
+442           and BLA supplement submission to get FDA feedback on the evidence package
+443           necessary to support addition of new product variants to the BLA.
+      23
+         21 CFR 601.12(a)(2).
+      24
+         21 CFR 601.12.
+      25
+         21 CFR 210, 211, and 610; 21 U.S.C. 351(a)(2)(B).
+
+
+                                                             12
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+444
+445           To facilitate adding product variants within the established IFS after approval, FDA
+446           recommends that applicants submit and receive approval for a postapproval change
+447           management protocol (PACMP) under 21 CFR 601.12(e). 26 A PACMP is a protocol
+448           submitted to FDA that describes, in advance, the specific changes an applicant anticipates
+449           making postapproval, the data and studies that will be conducted to assess each change,
+450           and a proposed reporting category under which each change will be submitted. 27 A well-
+451           designed PACMP with clear procedures and criteria will provide an agreed-upon,
+452           predictable way to add new product variants to the BLA. For individualized GE products,
+453           a PACMP for adding new product variants within the established IFS should describe the
+454           in vitro activity and safety data that will be generated for each new product variant and
+455           how those data will be evaluated.
+456
+457           B.       Expanding an Established IFS
+458
+459           An applicant may seek to expand the boundaries of an established IFS in an approved
+460           BLA to allow inclusion of product variants that do not fit within the established IFS.
+461           Expanding the IFS has a substantial potential to adversely affect the identity, strength,
+462           quality, purity, or potency of the product as they may relate to the safety or effectiveness
+463           of the product, and therefore this type of change must be submitted to the BLA as a prior
+464           approval supplement. 28
+465
+466           The amount and type of evidence needed to support an expansion of the IFS should be
+467           informed by a thorough risk assessment. In certain circumstances, FDA expects that the
+468           safety and effectiveness of a product with an expanded IFS can be assured by in vitro
+469           studies (in addition to clinical data already submitted for other variants), and in these
+470           cases additional clinical studies will not be expected. Notably, the risk assessment and the
+471           scope of any clinical data provided to support an IFS expansion should be informed by an
+472           understanding of how the product’s variable features relate to safety and effectiveness.
+473           For example, FDA would not expect clinical data to be provided for the addition of a new
+474           editor with conservative changes in its PAM-recognition sites if a risk assessment and in
+475           vitro data demonstrate that the effects of these changes on product variant safety and
+476           activity are well understood and predictable.
+477
+478           If a proposed expansion in the IFS involves a change that would fundamentally alter the
+479           design of the product or introduce significant new or unknown risks to the identity,
+480           strength, quality, purity, or potency of the product as they may relate to the safety or
+
+      26
+         See also Guidance for Industry Q12 Technical and Regulatory Considerations for Pharmaceutical Product
+      Lifecycle Management, May 2021, https://www.fda.gov/media/148476/download.
+      27
+         See Guidance for Industry Comparability Protocols for Postapproval Changes to the Chemistry, Manufacturing,
+      and Controls Information in an NDA, ANDA, or BLA, October 2022, https://www.fda.gov/media/162263/download
+      (The use of “Comparability protocol” in this guidance is synonymous with “postapproval change management
+      protocol” in the International Council for Harmonisation (ICH) guidance for industry Q12 Technical and Regulatory
+      Considerations for Pharmaceutical Product Lifecycle Management and its Annexes (May 2021) (ICH Q12)).
+      28
+         21 CFR 601.12(b).
+
+
+                                                             13
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+481           effectiveness of the product – for example, adding a reverse transcriptase-based editor to
+482           a product that is approved to use an adenine base editor – it would not be appropriate to
+483           submit the change as a supplement to the current BLA. Such changes represent a new
+484           product and should be submitted in a new BLA. See Section III for additional guidance
+485           on distinguishing IFS expansions from changes that require a new BLA.
+486
+487
+488   VII.    PRODUCT LABELING AND NAMING
+489
+490           A.       Labeling Considerations
+491
+492           Labeling for individualized GE products will be required to comply with relevant
+493           statutory and regulatory requirements. 29 The labeling of such products must include the
+494           standard sections of the prescribing information and the evidence supporting product
+495           approval. 30 The Indications and Usage 31 section of the prescribing information (section 1)
+496           for an individualized GE product should reflect the scientific evidence that supports
+497           approval and should concisely communicate the use(s) for which the GE product has
+498           been shown to be safe and effective. All indications listed in this section must be
+499           supported by substantial evidence of effectiveness. 32
+500
+501           The indicated population in the Indications and Usage section should reflect the disease
+502           and associated gene variants or class of gene variants (e.g., pathogenic C>T or G>A base
+503           substitution) for which safety and effectiveness were demonstrated in clinical studies. If
+504           the indicated population is intended to be limited to specific gene variants within a class
+505           of gene variants, the Indications and Usage section should clearly convey that the scope
+506           of approval is limited to those specific gene variants. Each specific gene variant within
+507           the scope of the approval could be explicitly referenced in the Indications and Usage
+508           section itself, or by a clear cross-reference to another section of the prescribing
+509           information where gene variants are listed (e.g., Mechanism of Action (section 12.1)).
+510           Regardless of whether the specific gene variants are listed in the Indications and Usage
+511           section explicitly or by a clear cross-reference to another section, the listing should
+512           specify which gene variants were evaluated in clinical studies.
+513
+514           After initial BLA approval, additional product variants that meet the established in vitro
+515           safety and activity criteria for editing the corresponding pathogenic gene variants may be
+516           considered for addition to the BLA and inclusion in the labeling. When additional gene
+517           variants are determined to be appropriate for inclusion in the labeling, they could be
+518           added to the Indications and Usage section of the prescribing information or to the list of
+
+      29
+         See, e.g., sections 502(a) and 502(f) of the Federal Food, Drug, and Cosmetic Act (FD&C Act); 21 CFR 201.56,
+      201.57, 201.100.
+      30
+         21 CFR 201.57.
+      31
+         See Draft Guidance for Industry Indications and Usage Section of Labeling for Human Prescription Drug and
+      Biological Products — Content and Format, July 2018, https://www.fda.gov/media/114443/download. When
+      finalized, this guidance will represent FDA’s current thinking on this topic.
+      32
+         21 CFR 201.57(c)(2)(v).
+
+
+                                                             14
+                                    Contains Nonbinding Recommendations
+
+                                          Draft – Not for Implementation
+
+519           variants in section 12.1 (which would be cross-referenced in the Indications and Usage
+520           section), along with the type(s) of data (clinical or in vitro) supporting such addition.
+521
+522           In cases where different pathogenic gene variants in the same gene cause clinically
+523           distinct diseases or conditions, adding a product variant that targets a gene variant
+524           associated with a different disease or condition than the approved indication – even if the
+525           gene variant is in the same gene and the editing outcome is the same – would constitute a
+526           new indication that should be supported by clinical evidence and should not be added to
+527           the BLA solely on the basis of in vitro studies and clinical data previously submitted in
+528           support of a different indication.
+529
+530           B.      Product Naming and Identification
+531
+532           An approved BLA for an individualized GE product contains a single product, even
+533           though it uses approved product variants to address patient-specific gene variants. All
+534           approved product variants of a single individualized GE product are considered to have
+535           the same active ingredient. Therefore, the product’s proprietary name and nonproprietary
+536           name 33 should not distinguish among product variants. Because product variants of an
+537           individualized GE product should not differ in any attribute that would require a new
+538           product code under 21 CFR 207.35, a separate National Drug Code (NDC) is not required
+539           for each product variant; therefore, the NDCs in the product’s labeling should apply to all
+540           product variants.
+541
+542           Container and package labels must include a lot number or other lot identification. 34
+543           Container and package labels should also include a separate identifier sufficient to allow
+544           confirmation that the correct product variant has been dispensed. This product variant
+545           identifier should consist of the specific gene variant or corresponding protein variant
+546           targeted by that lot of the product. For example, labels should include a field such as
+547           “Targeted gene variant: [xxxxx].” FDA does not recommend using the names of the GE
+548           components in the labeling, as an identifier describing the targeted gene variant provides
+549           more meaningful information for physicians and patients.
+550
+551           If risk assessment warrants patient-specific labeling to mitigate the risk that a patient
+552           might receive the wrong product variant, the package should include one or more patient-
+553           specific identifiers linking the lot to the intended recipient. For autologous ex vivo
+
+
+
+
+      33
+         The nonproprietary name for non-autologous products should have a suffix that is devoid of meaning and
+      composed of four lowercase letters. See Guidance for Industry Nonproprietary Naming of Biological Products,
+      January 2017, https://www.fda.gov/media/93218/download. The nonproprietary name of an autologous product does
+      not need a suffix because robust identification practices exist to ensure safe dispensing and optimal
+      pharmacovigilance. See SOPP 8426: Assignment of Biological and Drug Product Proper Names and Biological
+      Suffixes, September 28, 2026, https://www.fda.gov/media/96219/download?attachment.
+      34
+         See 21 CFR 610.60(a)(3) and 610.61(c).
+
+
+                                                           15
+                                      Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+554           products, FDA recommends that at least two unique patient-specific identifiers appear on
+555           both the container and package labels. 35
+556
+557
+558   VIII. DEFINITIONS
+559
+560   Genome editing component: Any material that is essential for the intended genomic
+561   modification, including those that may not appear in the final drug product. Genome editing
+562   components may include, but are not limited to, the editor, DNA targeting elements (i.e.,
+563   elements used to dictate the target DNA sequence, such as guide RNA) and a donor DNA
+564   template (i.e., DNA sequence provided to repair the target sequence), if applicable.
+565
+566   Individualized feature space (IFS): The allowable limits of variation for one or more variable
+567   features of a product’s genome editing components. An IFS includes only features or
+568   combinations of features known or predicted to have adequate safety and activity. Adding a new
+569   product variant within a pre-defined IFS should not be considered to result in a new product.
+570
+571   Individualized genome editing product: A genome editing product where the genome editing
+572   components are designed to have variable physical features that are matched to specific patients
+573   or patient subgroups to address patient-specific gene variants.
+574
+575   Monogenic disease: A disease caused by a pathogenic gene variant in a single gene, also known
+576   as a single-gene disorder or Mendelian disorder.
+577
+578   Pathogenic gene variant: A permanent change in the wild-type DNA sequence of a gene in the
+579   human genome that causes a monogenic disease.
+580
+581   Product variant: A specific instance of an individualized GE product where one or more
+582   physical features have been deliberately selected or modified to target a gene variant. A product
+583   variant maintains the core design of the product and shares the same IND or BLA with other
+584   product variants.
+585
+586   Variable feature: A physical characteristic of a genome editing component that differs from lot
+587   to lot, within defined limits, to address specific gene variants.
+588
+       Guidance History         Date               Description
+       Level 1 Draft            October 2026       See Notice of Availability for more information.*
+       Guidance
+589   *The Notice of Availability is accessible via the Search for FDA Guidance Documents
+590   webpage.
+591
+
+      35
+        For additional recommendations on using unique identifiers for autologous ex vivo products, refer to Guidance for
+      Industry Considerations for the Development of Chimeric Antigen Receptor (CAR) T Cell Products, January 2024,
+      https://www.fda.gov/media/156896/download.
+
+
+                                                              16
+

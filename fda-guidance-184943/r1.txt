@@ -1,0 +1,746 @@
+   Developing Drugs for
+     Optical Imaging
+              Guidance for Industry
+
+                               DRAFT GUIDANCE
+         This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 90 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to http://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (CDER) Libero Marzella at 301-796-2050.
+
+
+
+
+                      U.S. Department of Health and Human Services
+                              Food and Drug Administration
+                     Center for Drug Evaluation and Research (CDER)
+                    Center for Devices and Radiological Health (CDRH)
+
+
+                                         January 2025
+                                        Clinical/Medical
+
+45993101dft
+12/18/24
+   Developing Drugs for
+     Optical Imaging
+               Guidance for Industry
+                                        Additional copies are available from:
+
+                             Office of Communications, Division of Drug Information
+                                     Center for Drug Evaluation and Research
+                                          Food and Drug Administration
+                             10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                          Silver Spring, MD 20993-0002
+                            Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                          Email: druginfo@fda.hhs.gov
+                  https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+                                                         and/or
+
+                                                  Office of Policy
+                                    Center for Devices and Radiological Health
+                                          Food and Drug Administration
+                                  10903 New Hampshire Ave., Bldg. 66, Room 5431
+                                          Silver Spring, MD 20993-0002
+                                       Email: CDRH-Guidance@fda.hhs.gov
+https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/guidance-documents-medical-devices-
+                                              and-radiation-emitting-products
+
+
+
+
+                           U.S. Department of Health and Human Services
+                                   Food and Drug Administration
+                          Center for Drug Evaluation and Research (CDER)
+                         Center for Devices and Radiological Health (CDRH)
+
+                                                     January 2025
+                                                    Clinical/Medical
+                                                         TABLE OF CONTENTS
+
+I.          INTRODUCTION............................................................................................................. 1
+II.         BACKGROUND ............................................................................................................... 1
+III.        KEY CONSIDERATIONS FOR CLINICAL TRIALS ................................................ 3
+     A.     Trial Population ............................................................................................................................. 3
+     B.     Trial Design .................................................................................................................................... 3
+       1. Intrasubject Control Design ............................................................................................................ 3
+       2. Parallel-Arm Control Design .......................................................................................................... 4
+     C. Efficacy Considerations ................................................................................................................. 4
+       1. General Considerations for Efficacy Endpoints .............................................................................. 4
+       2. Specific Considerations for Efficacy Endpoints............................................................................... 5
+          a. Tumor resection ........................................................................................................................ 5
+          b. Surgical evaluation of lymph node metastasis .......................................................................... 7
+          c. Delineation of vital anatomical structures ................................................................................. 8
+          d. Intraoperative fluorescence angiography .................................................................................. 9
+       3. Other Trial Design and Statistical Considerations.......................................................................... 9
+          a. Randomization and blinding considerations ............................................................................. 9
+          b. Reader agreement.................................................................................................................... 10
+          c. Intercurrent events and missing data ....................................................................................... 11
+          d. Sample size ............................................................................................................................. 11
+     B. Safety Considerations .................................................................................................................. 11
+GLOSSARY................................................................................................................................. 13
+APPENDIX: OPTICAL IMAGING DEVICE CONSIDERATIONS .................................. 14
+                                          Contains Nonbinding Recommendations
+                                                   Draft — Not for Implementation
+
+ 1                                 Developing Drugs for Optical Imaging
+ 2                                        Guidance for Industry1
+ 3
+ 4
+ 5
+ 6   This draft guidance, when finalized, will represent the current thinking of the Food and Drug Administration
+ 7   (FDA or Agency) on this topic. It does not establish any rights for any person and is not binding on FDA or the
+ 8   public. You can use an alternative approach if it satisfies the requirements of the applicable statutes and
+ 9   regulations. To discuss an alternative approach, contact the FDA staff responsible for this guidance as listed on
+10   the title page.
+11
+12
+13
+14   I.       INTRODUCTION
+15
+16   The purpose of this guidance is to provide recommendations to sponsors regarding clinical trial design
+17   features that support development and approval of optical imaging drugs that are used in conjunction
+18   with imaging devices and intended as intraoperative aids for detection of pathology such as tumors or
+19   to enhance the conspicuity of normal anatomical structures. 2
+20
+21   In general, FDA’s guidance documents do not establish legally enforceable responsibilities. Instead,
+22   guidances describe the Agency’s current thinking on a topic and should be viewed only as
+23   recommendations, unless specific regulatory or statutory requirements are cited. The use of the word
+24   should in Agency guidances means that something is suggested or recommended, but not required.
+25
+26
+27   II.      BACKGROUND
+28
+29   Optical imaging is defined in this guidance as the use of light in conjunction with imaging drugs and
+30   devices during medical procedures to aid in the detection of tumors or other pathology and delineation
+31   of normal anatomical structures. This guidance is necessary because of the burgeoning interest in the
+32   development of novel optical imaging drugs and imaging devices to assist standard surgical procedures
+33   in a variety of clinical contexts. Surgeons use these imaging drugs with imaging devices during surgery
+34   to assist the direct visual inspection and palpation of tissue in the surgical field. The imaging drugs, for
+35   example, enhance the ability of the surgeon to distinguish tumors from normal tissue. Therefore, the
+36   drugs can increase the likelihood of safe and complete removal of cancers and can minimize the risk of
+37   unintended injury to normal anatomical structures. The increasing use of minimally invasive and
+38   robotic surgical approaches is a contributing factor driving the development of optical imaging
+
+     1
+      This guidance has been prepared by the Division of Imaging and Radiation Medicine in the Center for Drug Evaluation
+     and Research and the Center for Devices and Radiological Health at the Food and Drug Administration.
+     2
+      For purposes of this guidance, unless otherwise specified, references to drugs include drugs submitted for approval or
+     approved under section 505(b) or (j) of the Federal Food, Drug, and Cosmetic Act (FD&C Act) and biological products
+     submitted for licensure or licensed under section 351 of the Public Health Service Act, other than biological products that
+     also meet the definition of a device in section 201(h) of the FD&C Act (21 U.S.C. 321(h)).
+
+                                                                   1
+                                    Contains Nonbinding Recommendations
+                                            Draft — Not for Implementation
+39   products because of the loss of tactile perception and a more limited field of view with these
+40   procedures.
+41
+42   Optical imaging uses light of a wide spectral range spanning from visible to near-infrared (NIR). Some
+43   optical imaging drugs (e.g., indigo carmine) are dyes that can be directly visualized under white light,
+44   whereas others contain a fluorescent moiety called a fluorophore that must be excited by specific
+45   wavelengths of light before they emit light that can be visualized. Some optical imaging drugs target
+46   cancers or the associated microenvironment through mechanisms including ligand binding to specific
+47   receptors that are overexpressed by neoplastic cells or accumulation in tumors due to a unique
+48   microenvironment attribute, such as lowered pH or increased proteolytic activity. In other
+49   circumstances, optical imaging drugs delineate normal or abnormal anatomy by excretion in the urine
+50   or bile or by physiological transit through the vascular system, lymphatic system, or gastrointestinal
+51   tract.
+52
+53   Optical imaging during oncologic surgery aims to optimize tumor resection by enabling enhanced
+54   tumor removal while minimizing resection of normal tissue. For primary solid tumors, complete
+55   resection with negative tumor margins is often necessary for curative treatment. In this setting,
+56   incomplete resection with positive margins or close margins (i.e., cancer cells within a certain distance
+57   from the edge of resected tissue) is associated with poorer clinical outcomes. In clinical settings where
+58   surgical debulking is indicated (e.g., metastatic ovarian cancer or high-grade glioma), optical imaging–
+59   guided surgery can aid the removal of an optimal amount of tumor tissue while minimizing resection of
+60   normal tissue.
+61
+62   This guidance focuses on the use of optical imaging for the following purposes:
+63
+64      •   Detection of tumor
+65
+66          a. Surgery with curative intent (e.g., breast-conserving surgery (BCS))
+67
+68          b. Surgery for debulking and cytoreduction (e.g., metastatic ovarian cancer, high-grade
+69             gliomas)
+70
+71          c. Endoscopic resection of neoplasm (e.g., nonmuscle invasive bladder carcinoma)
+72
+73      •   Lymph node staging
+74
+75          a. Lymphatic mapping
+76          b. Sentinel lymph node identification
+77
+78      •   Enhanced delineation of normal anatomy to decrease risk of injury
+79
+80          a. Ureters or bile ducts in abdominopelvic surgery
+81          b. Nerve structures in head and neck surgery
+82
+83   Optical imaging drugs generally are governed by the same regulations as other drugs. FDA
+84   recommendations intended to assist developers of other medical imaging drugs in planning and
+
+
+                                                          2
+                                          Contains Nonbinding Recommendations
+                                                   Draft — Not for Implementation
+ 85   coordinating their clinical investigations and preparing and submitting their investigational new drug
+ 86   applications, new drug applications, biologics license applications, abbreviated new drug applications,
+ 87   and supplements to new drug applications or biologics license applications are also applicable to optical
+ 88   imaging drugs. 3 Optical imaging drugs are generally used with an optical imaging device. The Center
+ 89   for Devices and Radiological Health has oversight of imaging devices.
+ 90
+ 91
+ 92   III.    KEY CONSIDERATIONS FOR CLINICAL TRIALS
+ 93
+ 94           A.       Trial Population
+ 95
+ 96   The trial population should be consistent with the intended clinical use (i.e., patients who are candidates
+ 97   for the medical procedure in which the optical imaging drug is used) with adequate characterization of
+ 98   disease status (e.g., clinical tumor staging and expression of tumor markers).
+ 99
+100           B.       Trial Design
+101
+102           1.       Intrasubject Control Design
+103
+104   In some clinical contexts, an intrasubject study design may be considered. An intrasubject control for
+105   efficacy trials can be used to test the hypothesis that optical imaging provides additional information
+106   beyond the tactile and visual perception achieved with standard-of-care (SOC) practice. This approach
+107   is efficient because it internally controls for variability due to individual subject characteristics,
+108   including pathology or anatomy. For an intrasubject control trial design, the surgical procedure is
+109   typically performed using the SOC procedure, with tumor status assessed by SOC methods at that
+110   point, and then completed with the aid of optical imaging. Examples of clinical settings suitable to
+111   evaluate the added value of optical imaging include detection of residual tumor in BCS or cystoscopic
+112   detection of nonmuscle invasive papillary cancer of the bladder (see sections below).
+113
+114   An intrasubject control design may also be applicable for drugs intended to improve visualization of
+115   normal anatomy (e.g., visualization of the urinary tract during pelvic surgery, see section III.C.2.c.i.
+116   below) when assessment of the level of visualization is possible using quantitative or qualitative scales
+117   and a parallel-arm study to show a decrease in injury is infeasible due to the rarity of surgical
+118   complications.
+119
+
+
+
+
+      3
+       See the guidances for industry Developing Medical Imaging Drug and Biological Products Part 1: Conducting Safety
+      Assessments (June 2004), Developing Medical Imaging Drug and Biological Products Part 2: Clinical Indications (June
+      2004), and Developing Medical Imaging Drug and Biological Products Part 3: Design, Analysis, and Interpretation of
+      Clinical Studies (June 2004). We update guidances periodically. For the most recent version of a guidance, check the FDA
+      guidance web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+                                                                  3
+                                         Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+120           2.       Parallel-Arm Control Design
+121
+122   Settings in which a parallel-arm control design should be considered include those in which:
+123
+124       •   The value of enhanced conspicuity of tumor or normal structures is not established in a general
+125           clinical setting and clinical outcome data are needed.
+126
+127       •   Demonstration of decreased complication rate with the optical imaging drug relative to SOC is
+128           feasible (e.g., nerve injury following radical prostatectomy or surgery for head and neck
+129           cancers).
+130
+131       •   Sequential SOC evaluation followed by optical imaging is otherwise infeasible.
+132
+133   Clinical data collected in parallel-arm control studies might include adequacy of tumor resection, acute
+134   and delayed surgical complications, tumor recurrence, re-resection rate, and patient-reported outcomes
+135   such as cosmesis in BCS.
+136
+137   In a parallel-arm control design, the safety profile of a drug can be directly compared with a placebo or
+138   SOC. Although the safety profile of a drug can also be assessed in an intrasubject control design,
+139   comparison to placebo or SOC is recommended if serious safety risks posed by the investigational drug
+140   are anticipated and need to be rigorously characterized to make benefit-risk assessments.
+141
+142           C.       Efficacy Considerations
+143
+144           1.       General Considerations for Efficacy Endpoints
+145
+146   Evidence of effectiveness is intended to show that the imaging drug will provide a clinically
+147   meaningful benefit in a well-defined clinical setting and patient population. For example, an
+148   investigational optical imaging drug may be able to detect additional sites of metastatic tumor or
+149   residual primary tumor that result in changes in surgical results (e.g., extent of tumor resection) and can
+150   affect patient outcomes (e.g., recurrence rates, disease-free survival, overall survival).
+151
+152   Additional considerations for efficacy endpoints of optical imaging drugs intended to detect pathology
+153   include the following:
+154
+155       •   Early in development, the false positive and false negative rates of the optical imaging drug
+156           against immunohistochemistry (IHC) or histopathology should be measured to establish
+157           performance thresholds.
+158
+159       •   In settings where IHC is being proposed to confirm the expression of tissue targets for optical
+160           imaging drugs, FDA-cleared or similarly validated IHC methodology should be used. 4
+161
+
+      4
+       See the guidance for industry Guidance for Submission of Immunohistochemistry Applications to the Food and Drug
+      Administration (June 1998).
+
+                                                                4
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+162      •   Evaluation of tumor targeting should be performed in patients with various histological
+163          subtypes of cancer and correlated to the degree of target expression. Studies of the drug should
+164          be limited to subtypes with adequate imaging characteristics.
+165
+166      •   The diagnostic performance to be achieved by the investigational drug in phase 3 trials should
+167          be prespecified in the clinical protocol and the statistical analysis plan. The prespecified
+168          performance thresholds should be clinically meaningful and scientifically justified.
+169
+170      •   Histopathology is generally used as the standard of truth for measuring diagnostic performance.
+171          In the absence of a histopathological truth standard, a combination of clinical testing data and
+172          patient follow-up can be used as a reference standard. For example, when a biopsy of lesions is
+173          not feasible to verify tumor detection, follow-up of lesion size on imaging, monitoring serum
+174          biomarkers levels such as prostate specific antigen, and clinical outcome data can be used as a
+175          reference standard.
+176
+177      •   An assessment of the nonmalignant tissue removed as a result of optical imaging with the
+178          investigational drug should be made to determine a false positive rate measured at a lesion level
+179          and a subject level. Generally, lesion-level analyses provide a direct estimate of drug
+180          performance, whereas subject-level analyses provide estimates of harm (or benefit) in an
+181          individual patient.
+182
+183          2.      Specific Considerations for Efficacy Endpoints
+184
+185   The following considerations take into account common types of surgical oncology procedures where
+186   optical imaging drugs might be used to improve current SOC procedures.
+187
+188                  a.      Tumor resection
+189
+190   For indication as an aid in tumor resection, the study should aim to show that detection and removal of
+191   a tumor with optical imaging is significantly improved as compared with SOC procedures. Examples of
+192   procedures to remove a tumor in which optical imaging may be employed are described below with
+193   recommended endpoints.
+194
+195                  i.      Decrease in the positive tumor margin rate
+196
+197   In clinical settings where the presence of positive margins directly affects patient management, the trial
+198   should aim to show a reduction of the positive margin rate with use of the optical imaging drug as
+199   compared with SOC resection. One such clinical setting is BCS, where positive margins may result in a
+200   second surgery for the patient or a radiation therapy boost.
+201
+202   The following co-primary endpoints are recommended for drugs being developed to detect residual
+203   cancer in the BCS cavity using an intrasubject design:
+204
+205      •   Conversion rate defined as the proportion of patients who had one or more positive margins
+206          after SOC surgery who then have fully negative margins after use of the optical imaging
+207          product, among all patients imaged.
+
+                                                           5
+                                      Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+208
+209      •   Tissue-level sensitivity and specificity (diagnostic performance) of the optical imaging
+210          assessments performed during surgery. Imaging assessments of particular interest are those
+211          performed immediately after the completion of SOC surgery and after the completion of surgery
+212          with the use of optical imaging.
+213
+214   Patient-level sensitivity and specificity are also recommended as endpoints of interest. In BCS,
+215   histopathology results are generally reported by orientation or the anatomical location of a given
+216   margin within the patient. Therefore, in the BCS setting, patient-level diagnostic performance should be
+217   based on the imaging and histopathological results of all the margin orientations of the resection cavity.
+218   The outermost face of tissue resected from a margin determines whether a corresponding margin
+219   orientation is positive or negative. A method of converting tissue-level data to patient-level data should
+220   be proposed and justified.
+221
+222   Capture of the average volume of tissue excised with SOC or optical imaging is recommended to
+223   evaluate the extent of the optical imaging-guided procedure.
+224
+225                  ii.     Tumor debulking for cytoreduction
+226
+227   The use of optical imaging for tumor debulking is well-established in a number of clinical settings
+228   where tumor identification enhances adequacy of safe resection and debulking to maximize the efficacy
+229   of adjuvant treatment (e.g., metastatic ovarian cancer or high-grade glioma). In these settings, the aim is
+230   to optimally and safely reduce tumor burden. The role of intraoperative optical imaging is to identify
+231   fluorescence-positive tumors that can be resected without compromising normal tissue or function. If
+232   prior evidence demonstrates the clinical benefit of debulking surgery, it may be sufficient to show that
+233   resection with optical imaging adds value over SOC surgery without compromising safety.
+234
+235   As such, the recommended primary efficacy endpoint in the tumor debulking setting is the proportion
+236   of patients undergoing cancer removal surgery with at least one evaluable pathology-confirmed cancer
+237   lesion detected using an optical imaging drug that was not detected by SOC such as palpation and
+238   visual inspection. The proportion of study subjects with only false positive detections out of all subjects
+239   imaged is recommended as a secondary endpoint. This endpoint is intended to assess the potential for
+240   incorrect identification of normal tissues in the surgical field as tumor.
+241
+242                  iii.    Endoscopic detection of neoplasms
+243
+244   In the setting of endoscopic detection of neoplastic or preneoplastic lesions (e.g., colonic adenomas or
+245   bladder nonmuscle invasive papillary cancer), an intrasubject or parallel-arm trial design may be
+246   considered. An intrasubject design is suitable if SOC procedures can be assessed first and then followed
+247   by optical imaging procedures.
+248
+249   In an intrasubject control design, consider an efficacy endpoint that captures additional detections by
+250   optical imaging beyond those identified by SOC at the lesion level or subject level. The numbers of
+251   lesions and the percentages of patients with lesions detected by SOC only, by optical imaging only, and
+252   by both SOC and optical imaging are also endpoints of clinical interest.
+253
+
+
+                                                           6
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+254   In a parallel-arm control design, patient-level detection rate (e.g., proportion of patients with lesion
+255   detection) is the recommended primary efficacy endpoint based on comparison between arms.
+256
+257                  b.      Surgical evaluation of lymph node metastasis
+258
+259   For many cancer types, the presence of regional lymph node metastases has a major influence on
+260   clinical management of a patient and patient outcome. Regional lymph node dissection (LND) to detect
+261   clinically occult nodal disease can cause significant morbidity (e.g., nerve injury, lymphedema). In
+262   some cancer types, such as breast cancer and melanoma, sentinel lymph node biopsy (SLNB) has
+263   replaced elective LND as the initial procedure for staging of nodal disease. In an SLNB procedure, a
+264   radiotracer or an optical imaging drug is locally injected at the site of the primary tumor with the goal
+265   of identifying the first draining lymph node(s), as these lymph nodes have the highest likelihood of
+266   harboring tumor metastases. A positive SLNB (i.e., lymph node removed during the procedure is found
+267   to contain cancer by histopathology) may affect patient management.
+268
+269   Two indications may be considered for optical imaging products intended for use in the intraoperative
+270   evaluation of lymph node metastasis: (1) lymphatic mapping and (2) guidance of SLNB.
+271
+272                  i.      Lymphatic mapping indication
+273
+274   For this indication, the recommended primary efficacy endpoint is the node-level detection rate, defined
+275   as the proportion of excised, histologically confirmed lymph nodes identified by the lymphatic mapping
+276   drug among the total number of histologically confirmed lymph nodes excised using all identification
+277   methods combined, including lymph nodes excised due to clinical suspicion. The patient-level
+278   detection rate, defined as the proportion of patients in whom at least one node is detected by the
+279   lymphatic mapping product among all patients in whom lymphatic mapping is performed, is
+280   recommended as a secondary endpoint.
+281
+282   For the primary efficacy analysis, the performance of the investigational optical imaging drug can be
+283   demonstrated by hypothesis testing against a prespecified and clinically justified performance
+284   threshold. Alternatively, the node-level detection rate using an investigational optical imaging drug can
+285   be compared with the rate using an approved lymphatic mapping drug.
+286
+287   The false detection rate is recommended as a secondary efficacy endpoint. This endpoint is intended to
+288   capture the potential for incorrect identification of other tissues in the surgical field as lymph nodes
+289   with use of the optical imaging drug. It can be defined as the proportion of histologically confirmed
+290   non-lymph nodes identified by the lymphatic mapping drug among the total number of collected
+291   specimens identified by the drug. Other recommended secondary endpoints include the mean number
+292   of nodes detected by the lymphatic mapping drug per patient and the proportion of patients without
+293   node detections.
+294
+295                  ii.     Indication to guide SLNB
+296
+297   For this indication, the investigational optical imaging drug performance is evaluated against the
+298   reference standard of histopathology (i.e., presence of cancer) from regional LND. Evaluation of optical
+299   imaging performance against a comparator is not needed.
+
+
+                                                            7
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+300
+301   The recommended primary endpoint is the patient-level false negative rate for cancer, defined as the
+302   proportion of patients for whom the optical imaging drug did not detect any cancer-positive nodes out
+303   of those patients with cancer-positive nodes identified by regional LND.
+304
+305                  c.      Delineation of vital anatomical structures
+306
+307   The role of optical imaging for this type of indication is to minimize inadvertent injury to vital organs
+308   and tissues by facilitating their identification during surgery. Support for an indication of delineation of
+309   anatomy generally involves intrasubject comparison of the conspicuity of the normal structure of
+310   interest without and with optical imaging. A specific indication for prevention of injury would require
+311   additional patient outcome data.
+312
+313                  i.      Delineation of ureters or bile ducts in abdominopelvic surgery
+314
+315   For this indication, an optical imaging drug is excreted in urine or bile to improve visualization
+316   parameters such as border delineation of ureters or bile ducts relative to SOC visualization.
+317   Conspicuity of urinary efflux from the ureteric orifices when observed through cystoscopy is another
+318   potential visualization parameter. These parameters are assessed using ordinal scales and an
+319   intrasubject design. All scoring should include a comparison between conspicuity without (baseline)
+320   and with the optical imaging. Standardization of ratings can be achieved by developing a training
+321   manual with examples of various levels of conspicuity of the structure of interest for each point in the
+322   scales. Evaluation of the level of agreement in scoring between different raters (e.g., operating surgeon
+323   and blinded central rater and intra-rater agreement) is useful to validate the scoring method.
+324
+325   Additional considerations for delineation of ureters or bile ducts in abdominopelvic surgery include the
+326   following:
+327
+328      •   For minimization of bias, use of blinded, independent, central rating with access to digital
+329          images is recommended. Based on the context of use, either the assessment by the operating
+330          surgeon or the blinded raters may be designated as the primary efficacy endpoint. In either case,
+331          a formal assessment of the level of concordance between the two should be prespecified in the
+332          study protocol.
+333
+334      •   Assessment of the level of conspicuity between the anatomical region of interest and the
+335          surrounding tissue by measurement of the signal-to-background ratio is recommended.
+336
+337      •   Examining the duration of structure visualization with optical imaging over multiple time points
+338          during surgery is recommended.
+339
+340      •   Where feasible, based on the incidence of iatrogenic injury, parallel-arm studies could be
+341          designed to evaluate the rate of surgical complications by comparison between SOC surgery
+342          and surgery with the use of the optical imaging drug. The assessment of injury should be
+343          performed in the intra- and postoperative periods. Patient follow-up evaluations to capture late
+344          manifestations of surgical complications are recommended.
+345
+
+                                                            8
+                                      Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+346                  ii.     Delineation of cranial and peripheral nerves
+347
+348   During surgery in any anatomical region, accidental injury to critical nerves might occur resulting in
+349   immediate or late nerve dysfunction. This is particularly important in surgeries involving the head and
+350   neck region and is not exclusive to oncologic surgeries. The rates of acute and chronic dysfunction can
+351   vary based on the anatomical region and the specific nerve. For example, facial nerve dysfunction rates
+352   following parotidectomy can be sufficiently high to permit comparison of complication rates in a
+353   parallel-arm trial.
+354
+355   With optical imaging drugs that show uptake in nerve tissue, delineation of the nerves in the surgical
+356   field can be assessed not only by conspicuity but also extent (length) and branching patterns.
+357   Intrasubject comparison of SOC surgery and surgery with the use of an optical imaging drug is
+358   recommended using a composite ordinal nerve-visualization scale that assesses the contrast between
+359   nerve and surrounding tissue and the ability to measure the length and delineation of nerve branching.
+360
+361   In addition, see discussion in section III.C.2.c.i. of this guidance regarding visualization scales and
+362   documentation of injury, as these recommendations also apply to delineation of cranial and peripheral
+363   nerves.
+364
+365                  d.      Intraoperative fluorescence angiography
+366
+367   The intraoperative delineation of vascular structures and assessment of tissue perfusion might assist the
+368   surgical oncologist as well as the plastic and reconstructive surgeon to minimize risk of surgical
+369   complications. Examples of the adjunctive use of fluorescence angiography would be the assessment of
+370   anastomotic perfusion following bowel resection for malignancy and assessment of perfusion of
+371   surgical flaps in certain oncologic reconstructive procedures. The surgical complications include
+372   anastomotic leak in the former case and tissue or flap necrosis with wound dehiscence in the latter. A
+373   parallel-arm randomized study comparing complication rates in the fluorescence-guided arm to the
+374   SOC surgery alone arm would be necessary if the utility of intraoperative fluorescence angiography in a
+375   specific setting is not well established.
+376
+377          3.      Other Trial Design and Statistical Considerations
+378
+379   This section includes important statistical considerations for the design of adequate and well-controlled
+380   clinical trials for optical imaging drugs.
+381
+382   At the time of study planning, the primary estimand that addresses the clinical question of primary
+383   interest should be defined. Randomization and blinding are critical aspects of an adequate and well-
+384   controlled study that facilitate minimization of potential bias, particularly in intraoperative optical
+385   imaging drug development for surgical oncology, where the site of interest is visually identified.
+386
+387                  a.      Randomization and blinding considerations
+388
+389   Blinding an imaging rater to the use of an optical imaging drug is generally not feasible. For instance,
+390   the surgeon or operator performing the procedure is typically aware that they are using SOC methods,
+391   active comparators, or investigational optical imaging techniques. The below randomization techniques
+
+                                                           9
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+392   can reduce potential bias during imaging evaluation despite lack of blinding to the optical imaging
+393   drug.
+394
+395   In an intrasubject control design, randomization aims to minimize the potential of surgeons
+396   underperforming using SOC methods (the first part of the procedure) due to knowledge of another
+397   opportunity to intervene in the second part of the procedure using optical imaging.
+398
+399   •   In an intrasubject trial design in which SOC resection of tumor occurs before optical imaging, for
+400       the purpose of minimizing bias, subjects should be randomized to either an SOC arm or an SOC
+401       plus optical imaging arm. Rationale should be provided for the proposed randomization ratio. All
+402       eligible subjects receive the study drug before the start of surgery, and the surgeon should open the
+403       randomization code only after the SOC procedure is complete to determine whether to perform
+404       further surgery that relies on optical imaging. Alternatively, for the purpose of minimizing bias,
+405       randomization to either a group receiving optical imaging drug followed by SOC and then optical
+406       imaging or a group receiving placebo followed by SOC only may be considered.
+407
+408       In more complex settings where the surgeon needs to alternate between the optical imaging
+409       technique and SOC, sponsors are encouraged to communicate with FDA early in product
+410       development.
+411
+412   •   In an intrasubject trial design that employs an active comparator, the sequence of the imaging drug
+413       administration can be randomized. However, if randomization of the imaging drug administration is
+414       not feasible, randomizing the sequence of the imaging drug evaluation should be considered. The
+415       order of administration or evaluation should be guided by the pharmacokinetics and
+416       pharmacodynamics of both drugs. If none of these randomization approaches is feasible, a fixed
+417       order of evaluation should be employed such that the investigational imaging drug is not given an
+418       advantage.
+419
+420   For a parallel-arm control design, simple randomization, blocked randomization, and stratified
+421   randomization are some commonly used approaches. When an important confounding factor exists
+422   (e.g., longer procedure times with the investigational imaging technique possibly contributing to
+423   improved detection of pathology), exploratory analysis to evaluate the impact of differential procedure
+424   time between the two study arms is recommended. In such cases, a carefully planned statistical analysis
+425   based on the confounding factor may provide additional information on the efficacy of the
+426   investigational imaging drug.
+427
+428   Additionally, blinding to patient clinical information can be achieved through use of an independent
+429   rater who does not perform the procedure but assesses imaging captured from selected aspects of the
+430   surgical procedure without access to other patient data. Review of histopathology or other reference
+431   standard data by personnel blinded to the investigational imaging results is also recommended to
+432   minimize potential bias and ensure the objectivity of the reference standard assessment.
+433
+434                  b.      Reader agreement
+435
+436   For trials with primary efficacy analysis based on images assessed by surgeons, the images should also
+437   be assessed by independent raters blinded to patient clinical information; similarly, for studies with
+
+
+                                                          10
+                                       Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+438   primary efficacy analysis based on image reads by independent raters, images should also be assessed
+439   by the operating surgeon. The agreement measures with mathematical details and the threshold criteria
+440   to be achieved for successful inter- and intra-reader agreement should be prespecified with supporting
+441   justification.
+442
+443                   c.      Intercurrent events and missing data
+444
+445   All subjects who are planned to be imaged with an investigational optical imaging drug should be
+446   included in efficacy analyses. However, there may be intercurrent events or missing data that occur after
+447   the start of study treatment and affect the interpretability of the study results. For example, not all
+448   subjects in this intent-to-image set may have undergone image-guided surgery or may have reference
+449   standard data collected or interpretable. In addition, there may be an incomplete administration of an
+450   imaging drug due to a serious adverse reaction (e.g., anaphylaxis or other hypersensitivity reaction),
+451   unevaluable imaging scan results, limitation of biopsy (e.g., imaging might inform about the need or
+452   feasibility of a biopsy), or failed or uninterpretable histopathology evaluation for a reference standard.
+453   Intercurrent events affect the interpretability of the treatment effect estimates. Missing data are data that
+454   would be meaningful for the analysis of an estimand of an imaging drug effect but are not collected.
+455
+456   The primary strategy for handling intercurrent events and the primary method for imputing missing
+457   data should be prespecified as part of the primary analysis for evaluating the optical imaging drug
+458   effect on the primary efficacy endpoint. The intercurrent events handling should be based on event
+459   type. The missing data approach should incorporate the reason for missingness. Optical imaging drug
+460   sponsors are encouraged to prespecify one or more sensitivity analyses in addition to the primary
+461   analysis to assess the robustness of the imaging drug effect estimate.
+462
+463                   d.      Sample size
+464
+465   Sample size planning for a parallel-arm control design is generally based on the postulated effect size
+466   of an investigational imaging drug relative to its comparator on the primary efficacy endpoint. With an
+467   intrasubject control design, the effect size of interest is the average effect of adding an investigational
+468   imaging drug to SOC for all subjects studied in the investigational arm. The sample size of the SOC-
+469   alone arm depends on the proposed randomization ratio.
+470
+471   When the primary efficacy endpoint is at a more granular level than patient-level (e.g., node-level
+472   detection rate), sample size planning and planned statistical analyses can account for the correlation
+473   within a patient. For efficacy endpoints intended for labeling consideration, sample size should be
+474   sufficiently powered at the design stage.
+475
+476           B.      Safety Considerations
+477
+478   The following are points to consider regarding potential toxicities and the maintenance of standard
+479   surgical management of study subjects in early phases of optical imaging product development.
+480
+481   •   Optical imaging drugs with potential for phototoxicity (e.g., aminolevulinic acid hydrochloride)
+482       necessitate special risk-minimization procedures in the clinical trials, including reducing exposure
+
+
+
+                                                            11
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+483       of subjects to ultraviolet and room lights, avoiding concomitant use of other phototoxic drugs, and
+484       monitoring for dermatologic and systemic phototoxic reactions.
+485
+486   •   Other potential optical imaging drug toxicities include photothermal effects and light-induced
+487       generation of reactive oxygen species that may cause genotoxicity and mutagenicity. These risks
+488       are evaluated during nonclinical studies.
+489
+490   •   In phase 1 and phase 2 studies, the investigational optical imaging drug should not guide clinical
+491       decisions and should not interfere with established practice standards. Following the demonstration
+492       of acceptable performance of the investigational product, efficacy studies are designed to assess the
+493       clinical performance and utility of the drug.
+494
+
+
+
+
+                                                          12
+                                           Contains Nonbinding Recommendations
+                                                    Draft — Not for Implementation
+495                                                         GLOSSARY
+496
+497   Immunohistochemistry (IHC): Immunohistochemistry uses antibodies to selectively stain for the
+498   presence of certain targets in tissues (e.g., estrogen receptors on cells, enzymes in the tumor
+499   microenvironment, etc.). Staining intensity is graded and reflects the density of target molecules in
+500   tissues.
+501
+502   Near-Infrared (NIR) Fluorescence: NIR fluorescence relies on the NIR region of the electromagnetic
+503   spectrum (from 780 nm to 2500 nm) for excitation and emission of certain optical imaging drugs.
+504   Intraoperative exposure to NIR light allows the identification and localization of such drugs.
+505
+506   Reference Standard: When a truth standard is not available, a reference standard may be used to
+507   validate the imaging results of an investigational drug through measures including clinical assessments
+508   and other testing results.
+509
+510   Standard of Care (SOC): Standard of care is defined by the National Cancer Institute as treatment that
+511   is accepted by medical experts as proper treatment for a certain type of disease and that is widely used
+512   by healthcare professionals. 5
+513
+514   Truth Standard: A truth standard is an independent method of measuring the same variable being
+515   measured by the investigational drug and is known or believed to give the true status of a clinical
+516   condition. Truth standards can be used to assess the diagnostic performance of optical imaging drugs.
+517   Histopathology is typically used as a truth standard.
+518
+519   White Light: White light is normal room light that is composed of a variety of electromagnetic waves,
+520   each with different wavelengths or frequencies. White light is typically used in the operating room.
+521   Certain optical imaging drugs (e.g., indigo carmine) are visible under white light without special
+522   devices or filters.
+523
+524
+
+
+
+
+      5
+        Definition from the National Cancer Institute, available at https://www.cancer.gov/publications/dictionaries/cancer-
+      terms/def/standard-of-care.
+
+                                                                   13
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+525                   APPENDIX: OPTICAL IMAGING DEVICE CONSIDERATIONS
+526
+527   Labeling of optical imaging drugs can refer to a specific imaging device or can be device agnostic. A
+528   wide range of imaging devices are available that use similar illumination strategies, light sources,
+529   detectors, device architectures, and collection geometries, but some are developed for specific surgical
+530   uses, and there may be significant differences among them. It is important that all devices used for a
+531   specific intraoperative imaging use have adequate performance characteristics for its particular use. At
+532   a minimum, imaging device characterization should address the following:
+533
+534      •   Field of view
+535      •   Focal length and depth
+536      •   Illumination and detection wavelength ranges
+537      •   Illumination intensity
+538      •   Spatial uniformity of the illumination field
+539      •   Minimum detectable fluorescence signal
+540      •   Spatial uniformity of fluorescence detection
+541      •   Clinically meaningful limits of detection of the imaging drug
+542      •   Target-to-background ratio as a function of fluorescence signal intensity
+543
+544   Imaging device characterization can be accomplished in most cases by using a phantom for quality
+545   control and assurance. If multiple imaging devices are permitted in a clinical study, case report forms
+546   should capture the specific device used to allow related subgroup analysis.
+547
+548   For the identification and delineation of fluorescent structures, establishing objective criteria is
+549   necessary to standardize use of intraoperative optical imaging technology whether using real-time,
+550   intraoperative imaging alone or combined with ex vivo specimen mapping. Through semiquantitative
+551   assessment of images with metrics such as target-to-background ratio, optical imaging devices may be
+552   used to complement the surgeon’s visual and tactile perception. Semiquantitative analyses are
+553   particularly useful for exploratory evaluation purposes and for demonstrating substantial equivalence
+554   between optical imaging devices. There should be clearly defined approaches for the semiquantitative
+555   assessment of imaging system performance, such as real-time and post-acquisition image analysis, to
+556   enhance objectivity.
+
+
+
+
+                                                          14
+

@@ -1,0 +1,721 @@
+                           Contains Nonbinding Recommendations
+
+                               Draft – Not for Implementation
+
+
+   Evaluation of Thermal Effects of
+  Medical Devices that Produce Tissue
+       Heating and/or Cooling
+______________________________________________________________________________
+
+    Draft Guidance for Industry and
+   Food and Drug Administration Staff
+                                 DRAFT GUIDANCE
+
+   This draft guidance document is being distributed for comment purposes
+                                    only.
+
+                         Document issued on March 15, 2024.
+
+You should submit comments and suggestions regarding this draft document within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff, Food and Drug Administration, 5630 Fishers Lane,
+Room 1061, (HFA-305), Rockville, MD 20852-1740. Identify all comments with the docket
+number listed in the notice of availability that publishes in the Federal Register.
+
+For questions about this document, contact OHT4: Office of Surgical and Infection Control
+Devices/DHT4A: Division of General Surgery Devices at 301-796-6970.
+
+
+    When final, this guidance will supersede “Guidance Document for the
+ Preparation of Premarket Notification [510(k)] Applications for Heating and
+                  Cooling Devices,” issued on July 26, 1995.
+
+
+
+
+                                             U.S. Department of Health and Human Services
+                 FOOD & DRUG                                  Food and Drug Administration
+                                                  Center for Devices and Radiological Health
+                          Contains Nonbinding Recommendations
+
+                               Draft – Not for Implementation
+
+
+                                       Preface
+Additional Copies
+Additional copies are available from the Internet. You may also send an email request to CDRH-
+Guidance@fda.hhs.gov to receive a copy of the guidance. Please include the document number
+GUI00022002 and complete title of the guidance in the request.
+                                           Contains Nonbinding Recommendations
+
+                                                  Draft – Not for Implementation
+
+                                                     Table of Contents
+
+I.         Introduction.......................................................................................................................... 1
+II.        Scope.................................................................................................................................... 2
+III.       Evaluation of Thermal Effects ............................................................................................. 2
+      A.      Verification of Device Parameters ................................................................................... 3
+      B.      Experimental Assessment of Tissue Effects and Thermal Energy Spread ...................... 3
+       (1)        Experimental Models.................................................................................................... 3
+       (2)        Tissue Testing Methodology ........................................................................................ 6
+       (3)        Reporting Results ....................................................................................................... 10
+      C.      Computational Evaluation of Tissue Effects and Thermal Energy Spread.................... 10
+       (1)        Estimating Thermally Affected Tissue Region .......................................................... 11
+       (2)        Estimating Thermal Energy Spread............................................................................ 12
+      D.      Clinical Evaluation of Tissue Effects and Thermal Energy Spread ............................... 13
+IV.        Labeling ............................................................................................................................. 13
+                                 Contains Nonbinding Recommendations
+
+                                      Draft – Not for Implementation
+
+
+ 1         Evaluation of Thermal Effects of
+ 2        Medical Devices that Produce Tissue
+ 3             Heating and/or Cooling
+ 4   ______________________________________________________________________________
+
+ 5         Draft Guidance for Industry and
+ 6        Food and Drug Administration Staff
+ 7
+ 8   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 9   Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+10   and is not binding on FDA or the public. You can use an alternative approach if it satisfies the
+11   requirements of the applicable statutes and regulations. To discuss an alternative approach,
+12   contact the FDA staff or Office responsible for this guidance as listed on the title page.
+13
+
+14   I.     Introduction
+15   The Food and Drug Administration (FDA) is issuing this draft guidance document to describe
+16   relevant information that should be provided in a premarket submission (i.e., premarket approval
+17   (PMA) applications, humanitarian device exemption (HDE) applications, premarket notification
+18   (510(k)) submissions, investigational device exemption (IDE) applications and De Novo
+19   requests) to support the evaluation of thermal effects of medical devices that produce local,
+20   regional, and/or systemic changes in tissue temperature (i.e., heating and/or cooling) due to their
+21   use. The recommendations in this guidance reflect current review practices and are intended to
+22   promote consistency and facilitate efficient review of thermal effects data for these devices.
+23   Where available, device-specific guidance documents and/or standards may include additional
+24   technical recommendations on thermal effects evaluation that should be considered.
+25
+26   For the current edition of the FDA-recognized consensus standard(s) referenced in this
+27   document, see the FDA Recognized Consensus Standards Database. If submitting a Declaration
+28   of Conformity to a recognized standard, we recommend you include the appropriate supporting
+29   documentation. For more information regarding use of consensus standards in regulatory
+30   submissions, refer to the FDA guidance titled “Appropriate Use of Voluntary Consensus
+31   Standards in Premarket Submissions for Medical Devices.”
+32
+33   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+34   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+35   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+
+
+
+                                                                                                       1
+                                 Contains Nonbinding Recommendations
+
+                                     Draft – Not for Implementation
+
+36   the word should in Agency guidances means that something is suggested or recommended, but
+37   not required.
+38
+
+39   II. Scope
+40   The scope of this guidance is limited to evaluating thermal effects of medical devices that
+41   produce tissue temperature change (i.e., heating and/or cooling) as an intended or unintended
+42   consequence of device use. Examples of such devices include, but are not limited to, devices that
+43   deliver radiofrequency, microwave, light, or other forms of electromagnetic energy, devices that
+44   deliver ultrasound, electroporation devices, devices that produce temperature change (e.g.,
+45   hyperthermia, high temperature ablation, hypothermia, cryoablation) by contact, and devices
+46   where electrical components (e.g., batteries, generators, chargers, leads, electrode contacts) can
+47   potentially heat surrounding tissue during use.
+48
+
+49   III. Evaluation of Thermal Effects
+50   When a change in tissue temperature happens because of device-induced heating and/or cooling,
+51   regardless of whether it is an intended or unintended consequence of device use, there is a
+52   potential for adverse health consequences, such as tissue damage and/or a negative impact on
+53   physiological functions, to occur. Assessing thermal effects is an important aspect of the FDA’s
+54   review of premarket submissions for these devices.
+55
+56   An evaluation of thermal effects should include verification of device parameters and an
+57   assessment of tissue effects (e.g., thermal damage, tissue appearance, tissue/organ function) and
+58   related spread of thermal energy. An assessment of tissue effects and thermal energy spread may
+59   be performed experimentally (i.e., using phantoms, ex vivo animal tissue models, and/or in vivo
+60   animal testing), computationally, and/or clinically.
+61
+62   More information on how such evaluations should be conducted and presented in premarket
+63   submissions are detailed in the sections below. When developing a strategy for the thermal
+64   effects evaluation of your device, we encourage you to engage with the Agency through the Q-
+65   Submission Program to obtain early feedback on your approach and study design. For additional
+66   information regarding the Q-Submission Program, refer to FDA guidance “Requests for
+67   Feedback and Meetings for Medical Device Submissions: The Q-Submission Program.” We
+68   recommend you submit a Pre-Submission (a type of Q-Submission) if you have specific
+69   questions on aspects of your study design, such as the following:
+70      •   The use of phantoms, ex vivo tissue, or in vivo animal models.
+71      •   Selection of appropriate model parameters for your intended clinical application.
+72      •   Questions related to induced spatial temperature distribution over time (i.e.,
+73          “temperature-time history”) needed to support to a claimed tissue effect.
+74      •   Design of clinical studies, when needed, to support the device’s indications for use.
+75      •   Questions regarding scenarios where the recommendations below may not apply.
+76
+
+
+
+                                                                                                      2
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+ 77                  Verification of Device Parameters
+78    FDA recommends that you provide bench testing data to verify that the device meets labeled
+79    parameters (including all energy-related parameters) for the full range of device specifications.
+80               A. have pre-defined acceptance criteria relevant to the conditions of use. If the
+      Testing should
+81    testing results in deviations from the acceptance criteria, you should provide a scientific rationale
+82    to support device safety and effectiveness for the specific use conditions. This verification testing
+83    is important to demonstrate that the data generated on tissue effects and thermal energy spread
+84    are appropriately representative of the final finished device’s performance. Therefore, we
+85    recommend that verification of device parameters be conducted prior to conducting the
+86    assessment of tissue effects and thermal energy spread.
+87
+ 88                  Experimental Assessment of Tissue Effects and Thermal
+ 89                  Energy Spread
+ 90                 B.(1) Experimental Models
+ 91   Experimental assessment of tissue effects and thermal energy spread can be conducted using
+ 92   phantoms, ex vivo animal tissue models, and/or in vivo animal testing, as applicable to the
+ 93   intended use. The suitability of each method for a given device depends on the magnitude and
+ 94   distribution of the heating and/or cooling, as well as the availability of appropriate experimental
+ 95   models. For example, tissue temperature changes may be local (confined to a small volume of
+ 96   tissue or a portion of a specific anatomical structure), regional (affecting the majority or all of a
+ 97   given anatomical structure and potentially one or more immediately surrounding structures), or
+ 98   systemic (affecting multiple diffuse anatomical structures or all body). While it may be feasible
+ 99   to develop a suitable phantom model or ex vivo animal tissue model for devices with local tissue
+100   temperature changes, it may be more challenging to do so for devices with regional or systemic
+101   effects, where the impact of blood flow on the development of tissue effects would need to be
+102   accounted for.
+103
+104   Each experimental model is discussed in more detail in the following sections.
+105
+106                        a. Phantom Testing
+107   Phantoms are often suitable for characterizing tissue effects and thermal energy spread for
+108   devices that raise local tissue temperature minimally (e.g., a maximum, absolute, local
+109   temperature change of ≤ 6 °C resulting in the expected absolute in vivo temperature of ≤ 43 °C)
+110   for a short duration and for which local-, regional-, and systemic-level effects related to such
+111   temperature change are well characterized in the literature. The use of phantoms may also be
+112   appropriate for the assessment of certain cryotherapy devices and certain diagnostic devices.
+113
+114   For certain cryotherapy devices, based on the risk of the intended use, when the goal of thermal
+115   evaluation is to demonstrate the formation of comparable ice-ball dimensions between devices
+116   that have comparable parameters, gel phantoms and/or water bath phantoms of appropriate
+117   tissue-mimicking properties and comparable initial and boundary conditions may be appropriate.
+
+
+                                                                                                          3
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+118   When device parameters (e.g., probe dimensions, coolant temperature, target cooling
+119   temperature, application time, number of cycles) and/or intended tissue are significantly different
+120   between the compared devices, additional ex vivo tissue testing, in vivo animal testing, and/or
+121   clinical studies may be needed.
+122
+123   Phantom testing verifying energy output and accompanying rationale or results from
+124   appropriately validated computational models (refer to Section III.C. below) may also be
+125   appropriate for the characterization of diagnostic devices (e.g., MRI systems, ultrasound imaging
+126   systems) that may raise local, regional, and/or systemic tissue temperature minimally as an
+127   unintended consequence of device use, since well-established relationships between power
+128   output (or specific absorption rate (SAR)) and safe use to ensure patient safety can be also
+129   leveraged. In such cases, phantom testing may be used to demonstrate that the output energy
+130   limitations of the device are adequate to ensure that the energy deposition does not raise
+131   concerns about adverse thermal effects consistent with product specific guidances and FDA
+132   recognized standards. 1
+133
+134   When using a phantom, the phantom used should consist of geometry, dimensions, and material
+135   properties (e.g., thermal, mechanical, electromagnetic, acoustic, optical) that are representative
+136   of the in vivo conditions of use for the intended clinical application(s). The phantom should be
+137   exposed to initial and boundary temperature conditions relevant to the intended clinical
+138   application(s) and the full range of device parameters. As part of your premarket submission, you
+139   should provide the following:
+140      i.   a scientific rationale to justify how your phantom model is adequately representative of
+141           the tissues relevant to your device’s specific indications for use (i.e., the target and
+142           surrounding tissues);
+143     ii. discussion on how the results generated by the phantom translate to the in vivo
+144           environment; and
+145    iii. discussion on how your measured thermal energy spread helps your device achieve its
+146           intended use without adversely affecting patient safety.
+147
+148   Phantom testing may not be suitable when an established phantom with the relevant properties is
+149   not available, in vivo translation of the test results is not clear, and/or when associated tissue
+150   effects are not well characterized in the literature. In these cases, ex vivo tissue testing, in vivo
+151   animal testing, and/or clinical studies may be needed.
+152
+153                           b. Ex Vivo Animal Tissue Testing
+154   Ex vivo animal tissues are often suitable to characterize tissue effects and thermal energy spread
+155   for devices that raise local tissue temperature over 43 °C for a short duration and for which local-
+156   , regional-, and systemic-level effects related to such temperature change are well characterized
+
+
+      1
+       See FDA’s guidances, “Marketing Clearance of Diagnostic Ultrasound Systems and Transducers,” “Submission of
+      Premarket Notifications for Magnetic Resonance Diagnostic Devices,” and IEC 60601-2-33 Edition 4.0. Medical
+      electrical equipment - Part 2-33: Particular requirements for the basic safety and essential performance of magnetic
+      resonance equipment for medical diagnosis.
+
+
+                                                                                                                        4
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+157   in the literature. Ex vivo animal tissue testing are often suitable for use for certain cryotherapy
+158   devices when testing in phantoms is insufficient.
+159
+160   We recommend that the ex vivo animal tissue model consist of geometry, dimensions, and
+161   properties (e.g., thermal, mechanical, electromagnetic, acoustic, optical) that are representative
+162   of the in vivo conditions of use for the intended clinical application(s). The ex vivo animal tissue
+163   model should be exposed to suitable initial and boundary conditions and the full range of device
+164   parameters. As part of your premarket submission, you should provide a scientific rationale to
+165   justify how your ex vivo animal tissue model is adequately representative of the tissues relevant
+166   to your device’s specific indications for use. Your rationale should include a discussion on the
+167   following:
+168
+169          i.    why the geometry, dimensions, initial conditions, and boundary conditions of your
+170                tissue sample are clinically relevant and support an accurate assessment of tissue
+171                effects and thermal energy spread;
+172         ii.    a comparison of the properties of your tissue sample and your tissue of interest and an
+173                explanation of why any differences would not adversely affect your assessment of
+174                tissue effects and thermal energy spread; and
+175        iii.    how your measured tissue effects and thermal energy spread helps your device
+176                achieve its intended use without adversely affecting patient safety.
+177
+178   Ex vivo animal tissue testing may not be sufficient when ex vivo evaluations indicate that the
+179   dimensions of the thermal energy spread and/or thermally affected tissue region (the size (i.e.,
+180   length, width, depth, and volume) of tissue with damage and/or adverse effects resulting from
+181   device use) are likely to approach or exceed the distance to critical tissue structures from the
+182   application site and/or when the effect of such spread is not well characterized in the literature.
+183   In such cases, additional in vivo animal testing and/or clinical studies may be needed.
+184
+185   Additional recommendations on tissue testing methodology for thermal effects evaluations are
+186   provided in Section III.B.(2), below.
+187
+188                           c. In Vivo Animal Tissue Testing
+189   In vivo testing in clinically relevant animal models 2 may be needed to characterize tissue effects
+190   and thermal energy spread when:
+191       • testing in phantoms and ex vivo tissue is expected or found to be insufficient;
+192       • devices raise local tissue temperature for a prolonged duration;
+193       • devices raise regional or systemic tissue temperature;
+194       • local-, regional-, and/or systemic-level effects related to the device-induced temperature
+195           change are not well characterized in the literature; or
+
+
+      2
+       FDA supports the principles of the “3Rs” to replace, reduce, and/or refine animal use in testing, when feasible. We
+      encourage sponsors to consult with the Agency if they wish to use a non-animal testing method that they believe is
+      suitable, adequate, validated, and feasible. We will consider if a proposed alternative method could be assessed for
+      equivalency to an animal test method.
+
+
+                                                                                                                         5
+                                    Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+196      •     new scientifically relevant information related to tissue effects and/or its impact on
+197            patient safety becomes available.
+198
+199   The in vivo animal model should consist of geometry, dimensions, and properties (e.g., thermal,
+200   physiological, mechanical, electromagnetic, acoustic, optical) that are representative of the in
+201   vivo conditions of use for the intended clinical application(s). The in vivo animal model should
+202   be exposed to suitable initial and boundary conditions and the full range of device parameters.
+203   As part of your premarket submission, you should provide a scientific rationale to justify how
+204   your in vivo animal model is adequately representative of the tissues relevant to your device’s
+205   specific indications for use. Your rationale should include a discussion on the following:
+206
+207           i.   why the geometry, dimensions, blood flow, initial conditions, and boundary
+208                conditions in your in vivo animal model are clinically relevant and support an
+209                accurate assessment of tissue effects and thermal energy spread;
+210          ii.   a comparison of the properties of your in vivo tissue and your tissue of interest and an
+211                explanation of why any differences would not adversely affect your assessment of
+212                tissue effects and thermal energy spread;
+213       iii.     how your measured tissue effects and thermal energy spread helps your device
+214                achieve its intended use without adversely affecting patient safety; and
+215          iv.   why use of anesthetics is not likely to adversely affect your assessment of tissue
+216                effects and thermal energy spread.
+217
+218   For information on FDA’s recommendations for animal studies intended to evaluate medical
+219   devices, see FDA’s guidance titled “General Considerations for Animal Studies Intended to
+220   Evaluate Medical Devices.” Additional recommendations on tissue testing methodology for
+221   thermal effects evaluations are provided in Section III.B.(2), below.
+222
+
+223                   (2) Tissue Testing Methodology
+224                         a. Selection of Tissues
+225   Ex vivo tissue testing and in vivo animal testing should be performed in tissues relevant to the
+226   specific indications for use to provide the most clinically applicable thermal data. In some cases,
+227   other tissue type(s) with comparable tissue properties can be considered for testing if
+228   accompanied by adequate scientific rationale. To support a general soft tissue indication of
+229   producing thermal damage, testing should include at least three tissue types. We recommend
+230   testing liver, kidney, and muscle tissue to cover a range of soft tissue densities, but other tissue
+231   types may be appropriate based on the indicated treatment location and sufficient justification.
+232
+233   The tissue under test should allow the flow of energy such that the development of tissue effects
+234   is not impeded by test conditions. For example, when measuring thermal damage in ex vivo
+235   tissue, if the tissue sample is too small or too thin, then the tissue would not be large enough for
+236   the thermal damage to fully develop. Also, when the ex vivo tissue is kept at baseline temperature
+237   using a water bath, but the flow rate in the water bath is set too high, then the flow may impede
+238   the development of thermal damage by removing the energy reaching the tissue boundaries faster
+
+
+                                                                                                          6
+                                     Contains Nonbinding Recommendations
+
+                                          Draft – Not for Implementation
+
+239   than what is typically anticipated in vivo. Likewise, while assessing thermal damage in vivo
+240   using animal models, care should be taken to make sure that the tissue under test is
+241   representative of the clinical conditions of use (e.g., there should not be structures, such as, but
+242   not limited to, major blood vessels, nearby that are otherwise absent in clinical conditions and
+243   may impede the development of thermal damage).
+244
+245                          b. Test Methods
+246   Tissue effects are a function of spatial temperature distribution over time (i.e., “temperature-time
+247   history”), which involves temperature change (i.e., heating or cooling) as well as returning of the
+248   temperature to baseline value. Therefore, testing should be performed such that the tissue is
+249   exposed to the minimum, average, and worst-case temperature-time history. The tissue should be
+250   maintained at the baseline temperature relevant for the indications for use (e.g., core body
+251   temperature for internal tissues) prior to application of the device. After application of the
+252   device, the tissue should be allowed to return to the baseline temperature as it would under
+253   clinical conditions of use and energy flow in order for the tissue effects to fully develop. Some
+254   tissue effects may take hours to days, or longer in some cases, to fully evolve after the thermal
+255   exposure. For example, assessment of electroporation-induced lesions should take into account
+256   that the full extent of tissue damage may not be evident immediately after the electroporation
+257   procedure, and visible fibrotic lesions may take days or weeks to form. For questions regarding
+258   specific time points to study a tissue effect, we recommend you submit a Pre-Submission to
+259   obtain early feedback. 3
+260
+261   Tissue testing should be performed, at a minimum, in triplicate. If the device treatment may be
+262   applied using a range of power settings, then testing should at least be performed in triplicate at
+263   the minimum, default, and maximum energy and power settings to demonstrate thermal safety
+264   for the full range of device specifications.
+265
+266   For devices that include temperature sensing as a device function, you should provide
+267   temperature measurements in your submission to demonstrate that this feature works as intended.
+268   Although the methods may vary based on the device design, your testing should demonstrate that
+269   the temperature sensing under simulated conditions meets your device performance requirements
+270   for the full range of device settings. For more on thermometry, refer to Section III.B.(2)c.
+271
+272   For aesthetic devices intended to create fractional effects (i.e., the device induces discrete zones
+273   of damage with healthy tissue in between and the damage heals within 14 days), the complex
+274   interplay of the various parameters of the fractional devices makes it difficult to validate this
+275   effect. Therefore, when evaluating a subject device against a comparator device with similar, but
+276   not identical, technical parameters, testing in appropriate ex vivo tissue can be conducted to show
+277   comparable or smaller thermal damage and comparable or larger healthy tissue in between two
+278   nearby damage zones for the worst-case energy and power specifications of the devices. When
+279   the technical parameters of the subject device are significantly different from the technical
+
+      3
+       For more information, see “Requests for Feedback and Meetings for Medical Device Submissions: The Q-
+      Submission Program.”
+
+
+                                                                                                              7
+                                    Contains Nonbinding Recommendations
+
+                                          Draft – Not for Implementation
+
+280   parameters of a comparator device, we recommend you provide histological data from use of the
+281   device in tissues of interest in humans or an appropriate animal model to support fractional
+282   effects claims. For devices that are intended to create fractional effects on the skin, porcine
+283   abdomen skin has been shown to be an appropriate animal model of the human skin. In vivo
+284   treatments and evaluations should occur in at least 3 different subjects/animals, should utilize
+285   treatment parameters representing the full range of device specifications (e.g., lowest, medium,
+286   and highest power), and should be performed at various time points (i.e., immediately post-
+287   treatment, within 3 days after treatment, and then 10-14 days after treatment) to show initial
+288   damage and healing. Comparison of thermal damage should include comparison of the
+289   dimensions (e.g., depth and diameter) of the vaporized tissue (ablation zone) as well as the
+290   dimensions of the damaged tissue around the vaporized tissue (thermal damage zone). In vivo
+291   testing should also identify the time to complete healing based on the histological analysis. If you
+292   use less than 3 subjects/animals, you should provide a scientific rationale to support why such
+293   evaluation allows you to adequately characterize your device for your intended population.
+294
+295   For some electroporation devices, unmeasurable (i.e., could not be measured using traditional
+296   temperature probes due to the response time or dimensions of the probes), but significant,
+297   heating may occur due to the induction of excessive power density distribution. Therefore, we
+298   recommend that you provide a measurement of the size (length, width, and depth) of the affected
+299   tissue region using appropriate animal models, tissue types, and histology to demonstrate thermal
+300   safety for the full range of device specifications. Additionally, electroporation-based ablation has
+301   been associated with induction of cardiac arrhythmias. 4 If you believe that your device induces
+302   electroporation effects (reversible or irreversible), we recommend submitting a Pre-Submission
+303   to request feedback on your study design, to ensure it is capable of adequately addressing all
+304   potential tissue effects. 5
+305
+306   For electrosurgical devices used in general surgery, refer to FDA guidance “Premarket
+307   Notification (510(k)) Submissions for Electrosurgical Devices for General Surgery” for device-
+308   specific recommendations on assessing thermal effects using ex vivo animal tissue.
+309
+310                          c. Assessing Thermally Affected Tissue Region
+311   For ex vivo tissue testing and in vivo animal testing, you should provide an assessment of the
+312   thermally affected tissue region and related thermal energy spread. The thermally affected tissue
+313   region is the size (i.e., length, width, depth, and volume) of tissue with damage and/or adverse
+314   effects resulting from device use. The related thermal energy spread is determined by measuring
+315   the temperature-time history, or the spatial temperature distribution over time. Recommended
+316   measurement methods for thermally affected tissue region and thermal energy spread are
+317   discussed in more detail below.
+318
+
+      4
+        A Deodhar, T Dickfeld, G W. Single, W C Hamilton, Jr., R H. Thornton, C T. Sofocleous, M Maybody, M Gónen,
+      B Rubinsky, and S B. Solomon, “Irreversible Electroporation Near the Heart: Ventricular Arrhythmias Can Be
+      Prevented With ECG Synchronization” AJR Am J Roentgenol. 2011 Mar; 196(3): W330–W335.
+      5
+        For more information, see “Requests for Feedback and Meetings for Medical Device Submissions: The Q-
+      Submission Program.”
+
+
+                                                                                                                 8
+                                  Contains Nonbinding Recommendations
+
+                                      Draft – Not for Implementation
+
+319   Measuring Thermally Affected Tissue Region
+
+320     i.   Using Histological Methods
+321          We recommend assessing the thermally affected tissue region using histological stains.
+322          Your choice of stain(s) should be appropriate to fully assess the extent of the thermally
+323          affected tissue region and margins (i.e., depth, thickness, width, and volume). In some
+324          cases when the extent of affected tissue is likely to approach or exceed distance to critical
+325          structures, histological evaluations performed using a single stain such as Hematoxylin-
+326          Eosin (H&E) may not be sufficient, and additional stains, such as viability stains, may be
+327          needed to appropriately characterize the full extent of the thermally affected tissue
+328          region. You should provide data and/or a scientific rationale to show that your choice of
+329          stain(s) enables accurate quantification of the full extent of the thermally affected tissue
+330          region.
+331
+332    ii.   Using Change in Properties Based Methods
+333          Alternatively, you can assess thermally affected tissue region by measuring changes in
+334          tissue properties (e.g., electrical properties such as electrical impedance, mechanical
+335          properties such as elastic modulus, optical properties such as birefringence loss,
+336          properties related to magnetic resonance imaging such as relaxation times T1 and T2,
+337          properties related to computed tomography such as Hounsfield Unit, perfusion loss, or
+338          collagen shrinkage). Your choice of method should be capable of fully assessing the
+339          extent of the thermally affected tissue region and margins (i.e., length, width, depth, and
+340          volume). You should provide data and/or a scientific rationale to show that your choice
+341          of method(s) enables accurate quantification of the full extent of the thermally affected
+342          tissue region.
+343
+344   Measuring Thermal Energy Spread
+
+345     i.   Using Probe Based Thermometry
+346          The temperature-time history should be measured using temperature probes that are
+347          calibrated and that have appropriate accuracy, precision, and response time to be able to
+348          measure the temperatures in the intended environment of use (e.g., radiofrequency
+349          environment, laser environment). You should provide data and/or a scientific rationale
+350          regarding the appropriateness of the temperature probes in measuring the full range of
+351          temperatures that could be produced due to the device (i.e., minimum to maximum) with
+352          sufficient accuracy, precision, and spatial and temporal resolution in the intended
+353          environment of use.
+354
+355    ii.   Using Image Based Thermometry
+356          The temperature-time history can alternatively be measured using imaging (e.g.,
+357          magnetic resonance imaging, ultrasound imaging, computed tomography, infrared
+358          imaging) that are calibrated and have appropriate accuracy, precision, and response time
+359          to be able to measure the temperatures for the purpose of the measurement. You should
+360          provide data and a scientific rationale, alongside the complete set of imaging parameters,
+361          regarding the appropriateness of the method in measuring the full range of temperatures
+
+
+                                                                                                           9
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+362          that could be produced due to the device (i.e., minimum to maximum) with sufficient
+363          accuracy, precision, and spatial and temporal resolution. Since image-based thermometry
+364          methods measure temperature in a ‘voxel’ (i.e., a three-dimensional volume) or ‘pixel’
+365          (i.e., a two-dimensional area), the effect of the spatial and temporal temperature gradients
+366          on the accuracy of the thermometry method should be provided.
+367
+
+368                  (3) Reporting Results
+369   You should provide the complete experimental protocol and final report as part of the premarket
+370   submission. We recommend providing dimensions of the thermally affected tissue region and
+371   graphs of temperature vs. time at relevant locations, as applicable. Your results should include
+372   discussion of why such results, when translated in vivo, help your device achieve its intended use
+373   without adversely affecting patient safety.
+374
+375   If the device treatment was applied using a range of power settings, we recommend providing the
+376   results in a chart and/or graph that indicates the dimensions of the thermally affected tissue
+377   region and related temperature-time history in relation to the power setting, and duration of
+378   activation for relevant tissue types.
+379
+380          C.      Computational Evaluation of Tissue Effects and Thermal
+381                  Energy Spread
+382   Tissue effects and thermal energy spread can alternatively be evaluated using computational
+383   methods. Evaluation should be performed in computational models of tissues relevant to the
+384   specific indications for use to provide the most clinically applicable thermal data. In some cases,
+385   computational models of other tissue type(s) with comparable thermo-physiological properties
+386   could be considered for evaluation if accompanied by adequate scientific rationale.
+387   Computational models should be validated to predict tissue effects and thermal energy spread in
+388   your intended tissue of interest for the full range of spatio-temporal temperature distribution. See
+389   FDA guidance “Assessing the Credibility of Computational Modeling and Simulation in Medical
+390   Device Submissions” for detailed recommendations on conducting a model credibility
+391   assessment, which includes validation.
+392
+393   As noted earlier in this guidance, tissue effects are a function of spatial temperature distribution
+394   over time (i.e., “temperature-time history”). Therefore, computations should be performed such
+395   that the tissue is exposed to relevant (minimum, average, and worst-case) temperature-time
+396   history. Imposed computational initial and boundary conditions (e.g., ambient conditions) should
+397   mimic clinically relevant conditions of use. You should provide the details and rationale for how
+398   the control volume (i.e., computational tissue volume) was developed, such as imaging method,
+399   imaging parameters, tissue segmentation, types of tissue, tissue geometry, dimensions,
+400   properties, and initial and boundary conditions. Once the tissue temperature is altered due to the
+401   application of the device, the tissue should be allowed to return to the baseline temperature as it
+402   would under clinical conditions of use before assessing the thermally affected tissue region and
+403   thermal energy spread. You should provide evidence (e.g., data from relevant scientific
+
+
+                                                                                                       10
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+404   literature, direct measurements) to support that the simulated spatio-temporal temperature
+405   distribution is comparable to the temperature distribution expected in clinical conditions of use.
+406
+407   Tissue effects may be estimated using temperature thresholds or thermal dose thresholds
+408   validated for the tissues of interest. We recommend you provide the estimation for the size (i.e.,
+409   length, width, depth, and volume) of the thermally affected tissue region and related temperature
+410   distribution in space and time (i.e., temperature-time history) depicting the spread of thermal
+411   energy for the full range of device settings. For additional information on estimating the
+412   thermally affected tissue region and related spread of thermal energy, refer to Section III.C.(1)
+413   and Section III.C.(2), below.
+414
+415   We recommend you report details of the implementation of the computational models (e.g.,
+416   governing equations, initial condition, boundary condition, assumptions, discretization,
+417   numerical convergence, verification, validation) per the FDA guidance titled “Reporting of
+418   Computational Modeling Studies in Medical Device Submissions.”
+419
+420   We recommend providing dimensions of the thermally affected tissue region and graphs of
+421   temperature vs. time at sufficient locations in the tissue of interest to show that the dimensions of
+422   the thermally affected tissue region were computed in response to the temperature-time history
+423   relevant to the clinical conditions of use and to depict related thermal energy spread. If the
+424   device treatment was applied using a range of power settings, we recommend providing the
+425   results in a chart and/or graph that indicates the dimensions (i.e., length, width, depth, and
+426   volume) of the thermally affected tissue region and related temperature-time history in relation to
+427   the power setting and duration of activation for different tissue types.
+428
+
+429                  (1) Estimating Thermally Affected Tissue Region
+430                        a.   Using Temperature Thresholds
+431   The thermally affected tissue region can be assessed using temperature thresholds. You should
+432   provide data (e.g., histology) and/or scientific rationale to show that the chosen temperature
+433   threshold(s) is sufficient to accurately quantify the full extent of the thermally affected tissue
+434   region for the full range of temperature-time histories that could be produced due to your device
+435   in the tissue of interest.
+436
+
+
+
+
+                                                                                                        11
+                                      Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+437                           b. Using Thermal Dose Models
+438   Tissue effects can alternatively be assessed using thermal dose models (e.g., Cumulative
+439   Equivalent Minutes at 43 °C (CEM43), 6 Arrhenius equation-based models, 7,8,9 or other weighted
+440   temperature-time integral based models 10) with thresholds relevant to the target and surrounding
+441   tissue. You should provide data (e.g., histology) and scientific rationale, alongside your choice of
+442   the model, model assumptions, model parameters, and thresholds, to show that the model and
+443   threshold(s) are applicable to your chosen clinically relevant end point and sufficient to
+444   accurately quantify the full extent of the thermally affected tissue region.
+445
+446   Temperature-time data, needed to compute the dimensions of the thermally affected tissue region
+447   can be obtained experimentally, as elaborated in Section III.B.(2)c. above, or computationally, as
+448   noted in Section III.C.(2) below.
+449
+
+450                    (2) Estimating Thermal Energy Spread
+451                           a. Using Bioheat Transfer Models
+452   The temperature-time history can be obtained by solving first principles based or empirical/semi-
+453   empirical bioheat transfer models 11,12,13 that are validated to accurately predict spatio-temporal
+454   temperature distribution for your indications for use and tissue of interest in humans and/or
+455   clinically relevant animal model(s). You should provide validation data 14 and/or rationale
+456   regarding the appropriateness of your bioheat transfer model in predicting temperatures with
+457   sufficient spatial and temporal resolution.
+458
+459                           b. Using Empirical Thermal Models
+460   The temperature-time history can also be obtained using empirical thermal models that are
+461   appropriately validated to accurately predict spatio-temporal temperatures for your indications
+
+      6
+        Sapareto SA, Hopwood LE, Dewey WC, Raju MR, Gray JW, “Effects of Hyperthermia on Survival and
+      Progression of Chinese Hamster Ovary Cells,” Cancer Research 1978, Vol. 38, pp. 393-400.
+      7
+        J. Pearce and S. Thomsen, Rate Process Analysis of Thermal Damage, Plenum Press, New York (1995).
+      8
+        F.C. Henriques and A.R. Moritz, “Studies of Thermal Injury I. The Conduction of Heat to and through Skin and
+      the Temperatures Attained Therein: A Theoretical and Experimental Investigation,” American Journal of Pathology,
+      vol. 23, (no. 4), pp. 531-549, 1947.
+      9
+        A.R. Moritz and F.C. Henriques, “Studies in Thermal Injury II: The Relative Importance of Time and Surface
+      Temperature in the Causation of Cutaneous Burns,” American Journal of Pathology, vol. 23, (no. 5), pp. 695-720,
+      1947.
+      10
+         A.R. Moritz, “Studies of Thermal Injury III. The Pathology and Pathogenesis of Cutaneous Burns: An
+      Experimental Study,” American Journal of Pathology, vol. 23, (no. 6), pp. 915-934, 1947.
+      11
+         Shrivastava D, Vaughan JT, “A Generic Bioheat Transfer Model for a Perfused Tissue”, 2009, J. of
+      Biomechanical Engineering, Vol 131, 074506-1:074506-5.
+      12
+         H. Arkin, L. X. Xu and K. R. Holmes, "Recent developments in modeling heat transfer in blood perfused tissues,"
+      in IEEE Transactions on Biomedical Engineering, vol. 41, no. 2, pp. 97-107, Feb. 1994, doi: 10.1109/10.284920.
+      13
+         Caleb K. Charny, Mathematical Models of Bioheat Transfer, Editor(s): Young I. Cho, Advances in Heat Transfer,
+      Elsevier, Volume 22, 1992, Pages 19-155, https://doi.org/10.1016/S0065-2717(08)70344-7.
+      14
+         See FDA guidances “Assessing the Credibility of Computational Modeling and Simulation in Medical Device
+      Submissions,” and “Reporting of Computational Modeling Studies in Medical Device Submissions.”
+
+
+                                                                                                                     12
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+462   for use and tissue of interest in humans and/or relevant animal model(s). You should provide
+463   validation data and/or scientific rationale regarding the appropriateness of your thermal model in
+464   predicting temperatures with sufficient spatial and temporal resolution.
+465
+466                  Clinical Evaluation of Tissue Effects and Thermal Energy
+467
+                      D.
+                     Spread
+468   Clinical data may be needed when results from non-clinical and animal thermal effects
+469   evaluation studies are found insufficient to support the safety and effectiveness of the device
+470   when used as intended. Clinical studies should be designed to test the full range of device
+471   parameters and proposed conditions of use in the intended patient population. The study design
+472   should include safety measures to provide reasonable assurance of safety of subjects undergoing
+473   the study. The results should include a complete account of the thermally affected tissue regions
+474   including, but not limited to, thermal injury to vital structures, skin burns (if applicable), as well
+475   as the corresponding temperature-time history depicting the thermal energy spread, including
+476   real-time temperature monitoring of target and non-target critical organs.
+477
+
+478   IV. Labeling
+479   In addition to labeling requirements and recommendations from any relevant regulations or
+480   statute, and device-specific guidances, we recommend that you include a chart and/or graph in
+481   your labeling that provides the dimensions (i.e., length, width, depth, and volume) of the
+482   thermally affected tissue region in relation to the power setting, and duration of activation for
+483   different tissue types. This information is important to inform users of the expected damage and
+484   to facilitate safe use.
+
+
+
+
+                                                                                                          13
+

@@ -1,0 +1,386 @@
+ Physiologically Based
+   Pharmacokinetic
+Analyses — Format and
+        Content
+                     Guidance for Industry
+
+
+
+
+                              U.S. Department of Health and Human Services
+                                      Food and Drug Administration
+                             Center for Drug Evaluation and Research (CDER)
+
+                                                       August 2018
+                                                  Clinical Pharmacology
+
+
+
+
+Physiologically Based Pharmacokinetic Analyses – Format and Content
+09/03/18
+ Physiologically Based
+   Pharmacokinetic
+Analyses — Format and
+        Content
+                     Guidance for Industry
+                                           Additional copies are available from:
+                                 Office of Communications, Division of Drug Information
+                                        Center for Drug Evaluation and Research
+                                             Food and Drug Administration
+                                  10001 New Hampshire Ave., Hillandale Bldg., 4 th Floor
+                                             Silver Spring, MD 20993-0002
+                                Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                              Email: druginfo@fda.hhs.gov
+                 https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Guidances/default.htm
+
+
+
+
+                              U.S. Department of Health and Human Services
+                                      Food and Drug Administration
+                             Center for Drug Evaluation and Research (CDER)
+
+                                                       August 2018
+                                                  Clinical Pharmacology
+
+
+
+
+Physiologically Based Pharmacokinetic Analyses – Format and Content
+09/03/18
+                                          Contains Nonbinding Recommendations
+
+
+                                                     TABLE OF CONTENTS
+
+
+
+I.           INTRODUCTION...................................................................................................... 1
+II.          BACKGROUND ........................................................................................................ 1
+III.         FORMAT AND CONTENT....................................................................................... 2
+     A.      Executive Summary ...................................................................................................... 2
+     B.      Introduction ................................................................................................................. 2
+     C.      Materials and Methods.................................................................................................. 2
+       1. Overview of Modeling Strategy......................................................................................... 2
+       2. Modeling Parameters ...................................................................................................... 3
+       3. Simulation Design .......................................................................................................... 3
+       4. Electronic Files and Other Documentation......................................................................... 3
+       5. Software........................................................................................................................ 4
+     D. Results ......................................................................................................................... 5
+       1. Model Verification and Modification ................................................................................. 5
+       2. Model Application .......................................................................................................... 5
+     E. Discussion .................................................................................................................... 5
+     F.      Appendices ................................................................................................................... 6
+          1. List of Tables ................................................................................................................. 6
+          2. List of Figures................................................................................................................ 6
+          3. Table of Acronyms and Abbreviations................................................................................ 6
+          4. References ..................................................................................................................... 6
+
+
+
+
+Physiologically Based Pharmacokinetic Analyses – Format and Content
+09/03/18
+                                      Contains Nonbinding Recommendations
+
+
+                Physiologically Based Pharmacokinetic Analyses —
+                                Format and Content
+                               Guidance for Industry 1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+I.        INTRODUCTION
+
+This guidance outlines the recommended format and content for a sponsor or applicant to submit
+physiologically based pharmacokinetic (PBPK) analyses to the FDA to support applications
+including, but not limited to, investigational new drug applications (INDs), new drug
+applications (NDAs), biologics license applications (BLAs), or abbreviated new drug
+applications (ANDAs). To enable efficient and consistent review, the FDA recommends
+including the following six sections in a PBPK study report: (A) Executive Summary; (B)
+Introduction; (C) Materials and Methods; (D) Results; (E) Discussion; and (F) Appendices. The
+content of each section is described in detail below. This guidance does not address
+methodological considerations and best practices for the conduct of PBPK modeling and
+simulation or the appropriateness of PBPK analyses for a particular drug or a drug product. The
+decision to accept results from PBPK analyses in lieu of clinical pharmacokinetic (PK) data is
+made on a case-by-case basis, considering the intended uses, as well as the quality, relevance,
+and reliability of the results from the PBPK analyses.
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+
+II.       BACKGROUND
+
+A PBPK analysis uses models and simulations that combine physiology, population, and drug
+characteristics to mechanistically describe the PK and/or pharmacodynamic (PD) behaviors of a
+drug. Throughout a drug’s life cycle, PBPK model predictions can be used to support decisions
+
+1
+ This guidance has been prepared by the Office of Clinical Pharmacology, Office of Translational Sciences, in the
+Center for Drug Evaluation and Research at the Food and Drug Administration.
+Physiologically Based Pharmacokinetic Analyses –        1
+Format and Content
+09/03/18
+                                      Contains Nonbinding Recommendations
+
+
+on whether, when, and how to conduct certain clinical pharmacology studies, and to support
+dosing recommendations in product labeling. Because of the lack of regulatory guidance, the
+format and content of PBPK analysis reports that are submitted to the FDA vary significantly.
+The goal of this guidance is to standardize the content and format of these reports to facilitate the
+FDA’s efficient assessment, consistent application, and timely decision making during regulatory
+review.
+
+
+III.      FORMAT AND CONTENT
+
+The FDA suggests including the following sections in the PBPK study report for all PBPK
+analyses.
+
+          A.        Executive Summary
+
+The executive summary should include the objectives and rationale for conducting the PBPK
+analyses, provide a succinct overview of model development and simulation scenarios, and
+summarize the key conclusions of the report. This section should clearly convey how the
+analyses address a specific scientific question in a clinical setting in support of a regulatory
+decision.
+
+          B.        Introduction
+
+This section should provide the following components, if available: (1) a high-level synopsis of
+the drug’s physicochemical, PK, and PD properties; (2) the exposure-response relationships for
+the efficacy and safety of the drug to the extent that they are known; (3) a brief PBPK-related
+regulatory history (i.e., prior interactions with the FDA and other regulatory agencies) to provide
+context for the PBPK analyses; (4) cross-referencing to PBPK study reports previously submitted
+to the FDA for different intended uses at different stages of the development of the same drug
+substance or the same drug product.
+
+          C.        Materials and Methods
+
+This section should include sufficient information to allow FDA reviewers to duplicate and
+evaluate the submitted modeling and simulation results and to conduct supplemental analyses
+when necessary. Suggested components of the materials and methods section include the
+following:
+
+          1.        Overview of Modeling Strategy
+
+This section should detail the modeling procedures, including model development, model
+verification/modification, and model application. The procedures should be outlined in a step-
+wise manner using a workflow, decision-tree, table, or other representation. The sponsor should
+appropriately reference the data and studies used in each step of the modeling process.
+
+
+
+Physiologically Based Pharmacokinetic Analyses –       2
+Format and Content
+09/03/18
+                                      Contains Nonbinding Recommendations
+
+
+          2.        Modeling Parameters
+
+All system-specific and drug-specific components, as well as the sources of parameter values,
+should be clearly specified and justified (e.g., appropriate references). If there are several
+sources of one parameter, the selection should be described. If a parameter value has been
+estimated, the data source and estimation method should be described or appropriately
+referenced. The use of clinical PK data to optimize model parameters should be described and
+justified. Key model assumptions that may impact the model application, including biological
+and/or pharmacological rationales, patient/disease-related assumptions, or mathematical
+representations of the biological system, should be clearly stated. The sponsor should present the
+modeling parameters using a table or other visual representation. For example, drug-dependent
+parameters for the investigational drug of interest, including names, values, units, and sources of
+the parameters, prediction algorithms, and assumptions should be summarized in table format.
+Procedures for assessing uncertainty (e.g., using sensitivity analysis) of the PBPK model
+parameters should be provided.
+
+When library drug and system models (e.g., a virtual population) within a specific software
+platform are used, the sponsor should justify the use of these models and clearly identify and
+justify modifications made to the library models.
+
+          3.        Simulation Design
+
+The description of simulation conditions should include the following information for the model
+development, verification, and application:
+
+     •    Route, dose, formulation of the drug product (either substrate or modulator), time of
+          administration, and fasting or fed conditions
+
+     •    Dosing regimen of the drug product
+
+     •    Duration of the simulated trials
+
+     •    Demographics of the virtual population and distribution of demographic information
+
+     •    Number of simulation studies for a specific scenario (simulated trials)
+
+     •    Number of virtual subjects in each simulated trial
+
+     •    Settings for differential equation integrators, when applicable
+
+          4.        Electronic Files and Other Documentation
+
+Submitting electronic files streamlines the review process and allows for effective
+communication between the FDA and the sponsor. Examples of permissible file types can be
+
+
+
+Physiologically Based Pharmacokinetic Analyses –       3
+Format and Content
+09/03/18
+                                      Contains Nonbinding Recommendations
+
+
+found in the Specifications for File Format Types Using eCTD Specifications document. 2 This
+includes permissible file types/extensions and the modules in which they are permissible. In
+addition, the Technical Rejection Criteria for Study Data document denotes what modules’ study
+data validation rules will not be applicable. 3
+
+Electronic files related to modeling software and simulations should be submitted along with the
+PBPK study report. Supporting information such as clinical PK or PK/PD data used in PBPK
+analyses, a scientific publication, or an orientation document for submitted simulation data and
+model files can also be included. Cross-references to other parts of the report and other parts of
+the application should be provided with hyperlinks or locations of the modules of an IND, NDA,
+BLA, or ANDA submission, if applicable. If necessary, consult the FDA regarding the
+feasibility of submitting certain types of electronic files.
+
+          5.        Software
+
+The FDA does not recommend the use of any particular software for PBPK modeling. As PBPK
+models are highly complex in nature, sponsors anticipating the application of PBPK modeling in
+their drug development program should communicate early with the FDA. Additional technical
+and instructional information beyond the minimum data listed below may be needed to ensure
+that the FDA has sufficient working knowledge of the specific PBPK model and software to
+facilitate a timely review.
+
+The following information should be included in the submission to facilitate a timely review:
+
+     •    Name and version of the software 4
+
+     •    Schematic view of the model structure and mathematical equations (or relevant
+          references) based on established theoretical or biological knowledge
+
+     •    Parameterization of system information and sources of parameter values, such as
+          databases used to describe the population variability and correlation between parameters
+
+     •    User’s manual (i.e., instructions on how to run the code)
+
+
+
+2
+ The Specifications for File Format Types Using eCTD Specifications can be found at:
+https://www.fda.gov/downloads/drugs/developmentapprovalprocess/formssubmissionrequirements/electronicsubmis
+sions/ucm347471.pdf
+
+3 The Technical Rejection Criteria for Study Data can be found at:
+https://www.fda.gov/downloads/Drugs/DevelopmentApprovalProcess/FormsSubmissionRequirements/ElectronicSu
+bmissions/UCM523539.pdf
+4
+ The sponsor should provide sufficient documentation regarding any changes made by the software vendor to the
+version of the software over the period of PBPK model development and describe how these changes may impact
+the performance of the submitted model.
+
+Physiologically Based Pharmacokinetic Analyses –        4
+Format and Content
+09/03/18
+                                      Contains Nonbinding Recommendations
+
+
+          D.        Results
+
+The sponsor should both demonstrate that the PBPK model is appropriate for the intended uses
+and describe the results of model application. Descriptive statistics or other appropriate analysis
+on the results of model-generated simulations should be presented, and when applicable,
+compared to observed data. In addition, a summary of supplementary materials should be
+included. Often, supplementary tables and figures are needed to facilitate the assessment of a
+PBPK analysis. Details on suggested components of model verification and model application
+are provided below.
+
+          1.        Model Verification and Modification
+
+This section of the report should provide sufficient information to clearly demonstrate that the
+proposed PBPK model is appropriate for the modeling purpose or question asked for the
+particular drug product and study population and is robust enough to respond to perturbations in
+uncertain parameters. To allow the FDA to evaluate the robustness of the models, the sponsor
+should clearly present results from the methods used to verify the model, confirm model results,
+and conduct sensitivity analyses. The sponsor should include and discuss the procedures used
+for model verification (both the drug and system models). Results of sensitivity analyses for
+uncertain parameters should be discussed in the context of the simulation conditions and
+potential clinical relevance.
+
+In some instances, model parameters may be refined during model verification. Such
+modifications are important aspects of model refinement and should be described and justified.
+If the assumptions of the model parameters cannot be confirmed during modification, further
+verification to predict clinical scenarios that were not previously evaluated should also be
+submitted.
+
+          2.        Model Application
+
+The sponsor should present the results of using the verified PBPK model to address the study
+question using tables, graphs, and text where appropriate.
+
+          E.        Discussion
+
+In this section, the sponsor should discuss how the PBPK modeling and simulation analyses
+adequately address the proposed scientific, regulatory, or clinical questions. The basis for any
+requests to waive the conduct of clinical studies should be discussed and well substantiated. If
+simulations are used to support specific dosing recommendations to be tested in future clinical
+trials or to be incorporated in prescription drug labeling, the proposed dosing recommendations
+should be discussed and justified within the totality of evidence, including the context of known
+exposure-response relationships and the level of confidence in the PBPK model for its intended
+uses. See the FDA’s guidance for industry entitled Clinical Pharmacology Section of Labeling
+for Human Prescription Drug and Biological Products — Format and Content for more details
+
+
+
+Physiologically Based Pharmacokinetic Analyses –       5
+Format and Content
+09/03/18
+                                      Contains Nonbinding Recommendations
+
+
+on specific language to include in the labeling. 5 The sponsor should also note the limitations of
+its modeling approach in this section of the report and assess the potential impact of these
+limitations on the PBPK study results and interpretation.
+
+          F.        Appendices
+
+The following information should be included in the appendices.
+
+          1.        List of Tables
+
+Provide a list of all tables used throughout the document.
+
+          2.        List of Figures
+
+Provide a list of all figures used throughout the document.
+
+          3.        Table of Acronyms and Abbreviations
+
+Spell out all acronyms and abbreviations used in the document.
+
+          4.        References
+
+Include a list of all references.
+
+
+
+
+5
+ We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page
+at https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+Physiologically Based Pharmacokinetic Analyses –       6
+Format and Content
+09/03/18
+

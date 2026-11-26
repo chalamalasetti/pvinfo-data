@@ -1,0 +1,928 @@
+ Safety Assessment of Genome Editing
+  in Human Gene Therapy Products
+  Using Next-Generation Sequencing
+
+            Draft Guidance for Industry
+
+              This guidance document is for comment purposes only.
+
+
+Submit one set of either electronic or written comments on this draft guidance by the date
+provided in the Federal Register notice announcing the availability of the draft guidance.
+Submit electronic comments to https://www.regulations.gov. Submit written comments to the
+Dockets Management Staff (HFA-305), Food and Drug Administration, 5630 Fishers Lane, Rm.
+1061, Rockville, MD 20852. You should identify all comments with the docket number listed in
+the notice of availability that publishes in the Federal Register.
+
+Additional copies of this guidance are available from the Office of Communication, Outreach
+and Development (OCOD), by calling 1-800-835-4709 or 240-402-8010, or email
+industry.biologics@fda.hhs.gov, or from the Internet at https://www.fda.gov/vaccines-blood-
+biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances.
+
+For questions on the content of this guidance, contact OCOD at the phone numbers or email
+address listed above.
+
+
+
+
+                                            U.S. Department of Health and Human Services
+                                                            Food and Drug Administration
+                                              Center for Biologics Evaluation and Research
+                                                                                April 2026
+                                      Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+                                                      Table of Contents
+
+
+I.       INTRODUCTION............................................................................................................. 1
+II.      BACKGROUND ............................................................................................................... 2
+III.     SCOPE ............................................................................................................................... 2
+IV.      CONSIDERATIONS FOR NEXT GENERATION SEQUENCING (NGS) .............. 3
+V.       CONSIDERATIONS FOR ON-TARGET EDIT SITE ASSESSMENT ..................... 4
+              1.         Sequencing strategy .......................................................................................... 5
+              2.         Sample selection for assessing on-target edit sites ........................................... 5
+VI.      CONSIDERATIONS FOR STUDIES ASSESSING OFF-TARGET EDITING
+         ACTIVITY......................................................................................................................... 5
+         A.         Samples used for off-target editing analysis ....................................................... 6
+              1.       Ex vivo products ............................................................................................... 6
+              2.       In vivo products ................................................................................................ 7
+         B.         Modality specific off-target edit site nomination methods ................................ 7
+              1.       Biochemical assays for off-target edit site nomination..................................... 8
+              2.       Cell-based assays for off-target edit site nomination ........................................ 9
+         C.         Generally applicable methods for off-target edit site nomination.................... 9
+              1.       In silico methods for off-target edit site nomination ........................................ 9
+              2.       Next generation sequencing-based methods for off-target edit site nomination
+                       ......................................................................................................................... 10
+         D.         Confirmatory testing methods ........................................................................... 11
+         E.         Analysis parameters............................................................................................ 11
+         F.         Reporting off-target edit sites ............................................................................ 12
+         G.         Additional considerations................................................................................... 12
+VII.     CONSIDERATIONS FOR OFF-TARGET EDIT SITE ANALYSIS
+         ACCOUNTING FOR HUMAN GENETIC VARIATION ......................................... 13
+         A.         Database selection ............................................................................................... 13
+         B.         Population stratification ..................................................................................... 13
+         C.         Variant allele frequency ..................................................................................... 14
+         D.         Parameters for searching variant contributed off-target edit sites ................ 14
+         E.         Assessing editing potential at variant contributed off-target edit sites .......... 14
+         F.         Reporting variant contributed off-target edit sites .......................................... 14
+VIII. CONSIDERATIONS FOR NGS METHOD-BASED CHROMOSOMAL
+      INTEGRITY ANALYSIS .............................................................................................. 15
+IX.      SUBMISSION OF STUDY REPORTS DESCRIBING OFF-TARGET EDITING
+         AND CHROMOSOMAL TRANSLOCATION ANALYSES TO FDA..................... 15
+X.       REFERENCES................................................................................................................ 17
+
+
+                                                                       i
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+ 1        Safety Assessment of Genome Editing in Human Gene Therapy
+ 2                 Products Using Next-Generation Sequencing
+ 3
+ 4                                    Draft Guidance for Industry 1
+ 5
+ 6   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 7   Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+ 8   and is not binding on FDA or the public. You can use an alternative approach if it satisfies the
+ 9   requirements of the applicable statutes and regulations. To discuss an alternative approach,
+10   contact the FDA staff responsible for this guidance as listed on the title page.
+11
+12
+13   I.      INTRODUCTION
+14
+15   This guidance provides recommendations for next-generation sequencing (NGS)-based methods
+16   used in nonclinical studies that will likely be needed to support initiation of clinical trials of
+17   investigational human genome editing (GE) products. 2 These recommendations are in addition
+18   to the nonclinical, clinical, and CMC considerations discussed in the “Guidance for Industry:
+19   Human Gene Therapy Products Incorporating Human Genome Editing” dated January 2024
+20   (January 2024 GE Guidance) (Ref. 1). Clinical development programs of human GE products
+21   should address both the risks associated with the gene therapy product itself as well as the
+22   additional risks associated with GE, including off-target editing and unintended changes to the
+23   genome for therapies targeting genetic diseases, including individualized therapies. For more
+24   information on clinical study design considerations and our science-based approach weighing the
+25   benefits and risks for human GE products, please refer to the January 2024 GE Guidance (Ref.
+26   1). The recommendations in this guidance may guide stakeholders on designing nonclinical
+27   studies that use NGS methods and bioinformatics to evaluate the potential safety risks associated
+28   with off-target editing and loss of genome integrity in human GE products submitted in support
+29   of Investigational New Drug (IND) applications and Biologics License Applications (BLAs).
+30
+31   In general, FDA’s guidance documents, including this guidance, do not establish legally
+32   enforceable responsibilities. Instead, guidances describe the FDA’s current thinking on a topic
+33   and should be viewed only as recommendations, unless specific regulatory or statutory
+34   requirements are cited. The use of the word should in FDA’s guidances means that something is
+35   suggested or recommended, but not required.
+36
+
+
+     1
+       This draft guidance has been prepared by the Office of Therapeutic Products (OTP) in the Center for Biologics
+     Evaluation and Research (CBER) at the Food and Drug Administration.
+     2
+       Human gene therapy products incorporating GE are referred to as human GE products throughout this guidance.
+     For the purposes of this guidance human GE is a process by which DNA sequences are added, deleted, altered or
+     replaced at specified location(s) in the genome of human somatic cells, ex vivo or in vivo, using nuclease-dependent
+     or nuclease-independent GE technologies.
+
+
+                                                              1
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+37   II.     BACKGROUND
+38
+39   GE tools or editors have been designed and used to perform editing at a specific (i.e., intended
+40   on-target) site(s) in either the genome, the epigenome, or the transcriptome. The distinct
+41   sequence recognition process and different mechanisms of action used by various genome
+42   editing tools have given rise to many GE modalities. For instance, the clustered regularly
+43   interspaced short palindromic repeats (CRISPR)-associated (Cas) system uses a guide RNA
+44   (gRNA) to target a specific genomic site harboring the complementary sequence in the presence
+45   of a protospacer adjacent motif (PAM) sequence for editing. This system has greatly diversified
+46   with the discovery of a wide range of Cas proteins with distinct PAM sequence requirements and
+47   nucleotide editing capabilities. Furthermore, fusion of Cas proteins with different types of
+48   effector molecules such as deaminases, reverse transcriptase, or DNA methyltransferase has
+49   added versatility to an already expanding GE toolbox. In contrast to the CRISPR-Cas, other
+50   modalities such as meganuclease, zinc finger nuclease (ZFN), and transcription activator-like
+51   effector nucleases (TALENs) use protein domains that recognize specific DNA sequence(s).
+52   With continued research efforts, the GE field will likely continue to expand with the discovery of
+53   newer, programmable, and specific editing modalities.
+54
+55   Sponsors have used a wide variety of GE modalities to edit cells ex vivo or in vivo. Specifically,
+56   GE modalities can be used to edit cells ex vivo using cells obtained from either patients
+57   (autologous) or healthy donors (allogeneic). Alternatively, cells can be edited in vivo using
+58   messenger RNA (mRNA) encoding the editor or using DNA-based vectors harboring the editor
+59   coding sequence that is expressed under a promoter. However, in either case, GE at off-target
+60   (i.e., unintended) site(s) and/or chromosomal translocations are a potential safety risk since such
+61   edits could be deleterious to normal cell function. Therefore, an adequate assessment to evaluate
+62   off-target editing risk and impact on chromosomal integrity of human GE products is crucial to
+63   minimize unintended changes in the target cells or tissues. Off-target editing studies use
+64   computational and/or NGS-based methods to assess off-target editing activity in a wide range of
+65   GE products. This guidance provides FDA’s recommendations pertaining to NGS-based studies
+66   assessing off-target editing activity, NGS-based chromosomal integrity assessment studies, on-
+67   target edit site assessments, sequencing methods, considerations for sample selection, and
+68   reporting the findings to FDA.
+69
+70
+71   III.    SCOPE
+72
+73   This guidance is intended for sponsors developing human gene therapy drug products 3 involving
+74   genome editing technologies. The January 2024 GE Guidance describes human GE as a process
+75   by which DNA sequences are added, deleted, altered or replaced at specific location(s) in the
+76   genome of human somatic cells (Ref. 1). However, the rapid pace of research in the GE field has
+77   led to the development of GE technologies that can also modify the epigenome or cleave RNA
+78   sequences. For the purpose of this guidance, human GE products also include products editing
+
+     3
+      For the purposes of this guidance, all references to drugs include both human drugs and therapeutic biological
+     products unless otherwise specified.
+
+
+                                                              2
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+ 79   the epigenome or the transcriptome, and recommendations made for NGS-based evaluation of
+ 80   off-target editing activity would be applicable to all of these products.
+ 81
+ 82   Sponsors routinely use NGS-based methods and bioinformatics tools to assess off-target editing
+ 83   risk of their drug product(s). This guidance provides recommendations for nonclinical studies
+ 84   using NGS and bioinformatics to assess off-target editing risk and impact on chromosomal
+ 85   integrity for a broad range of GE modalities such as DNA editors, epigenetic editors, and editors
+ 86   that cleave RNA.
+ 87
+ 88
+ 89   IV.     CONSIDERATIONS FOR NEXT GENERATION SEQUENCING (NGS)
+ 90
+ 91   The NGS technology and bioinformatics tools generally allow for sensitive and quantitative
+ 92   assessment using targeted methods to assess specific genomic locations or using genome-wide
+ 93   methods to assess the genome. Specifically, these methods may include performing targeted
+ 94   sequencing or using genome-wide sequencing methods to scan for unintentional changes that
+ 95   may be a consequence of an off-target editing activity imparted by a genome editor. In this
+ 96   section, we provide specific recommendations on the use of NGS for off-target edit site
+ 97   assessments and for the evaluation of intended/on-target genomic changes in GE cells.
+ 98
+ 99   Sponsors should use an appropriate sequencing strategy that meets the goals of the on-target and
+100   off-target edit site analysis method being implemented. For example, for assessing editing at on-
+101   and off-target sites that result in changes to a short stretch of DNA (e.g., ≤50-bp), a sequencing
+102   strategy utilizing short-read sequencing-based methods may be adequate. 4 However, evaluation
+103   of longer stretches of sequence for the presence of large insertions or large deletions may require
+104   implementing a sequencing strategy that uses long-read sequencing-based methods that can
+105   detect such changes. 5, 6
+106
+107   Sequencing should be performed using an adequate amount of the input material (genomic DNA,
+108   cell number, or RNA, as applicable) at a depth that allows detection of potential off-target
+109   editing events occurring at frequencies or edit rates that are usually lower than the on-target edit
+110   rate. Sponsors should provide data generated in-house, such as representative data from
+111   engineering NGS runs, and/or relevant information from peer-reviewed publications, to support
+112   the adequacy and the sensitivity of sequencing depth and to support their strategy to detect low
+113   frequency off-target editing events. Where applicable, strategies to minimize PCR amplification
+114   bias and/or primer bias are recommended. A detailed report of the NGS and data analysis should
+115   include the following:
+      4
+        K. Polonis et al., Innovations in Short-Read Sequencing Technologies and Their Applications to Clinical
+      Genomics; Clin Chem. 2025 Jan 3;71(1):97-108. doi: 10.1093/clinchem/hvae173.
+      5
+        S.L. Amarasinghe et al., Opportunities and challenges in long-read sequencing data analysis; Genome Biol. 2020
+      Feb 7;21(1):30. doi: 10.1186/s13059-020-1935-5.; T. Xiao et al., The third generation sequencing: the advanced
+      approach to genetic diseases; Transl Pediatr. 2020 Apr;9(2):163-173. doi: 10.21037/tp.2020.03.06.; S.M. Karst et
+      al., High-accuracy long-read amplicon sequences using unique molecular identifiers with Nanopore or PacBio
+      sequencing; Nat Methods. 2021 Feb;18(2):165-169. doi: 10.1038/s41592-020-01041-y.
+      6
+        The recommendations for assessing short (≤50-bp) and long stretch of DNA provided as examples may change
+      with evolving sequencing technologies. Sponsors are encouraged to discuss their strategy with the FDA.
+
+
+                                                              3
+                                     Contains Nonbinding Recommendations
+
+                                           Draft – Not for Implementation
+
+116
+117                        i. A detailed description of cell type, the number of cells used (if applicable),
+118                           amount of nucleic acid material extracted, nucleic acid extraction process,
+119                           library preparation, primer information (where applicable), and
+120                           sequencing method(s).
+121
+122                        ii. Bioinformatics tools used for sequence quality/depth assessment, sequence
+123                            alignment (as applicable), and any additional sequence analysis steps, and
+124                            command line interface (CLI) information. 7 Include reference(s) to
+125                            publication(s) with repository information (if applicable).
+126
+127                        iii. Reference sequence(s) and database(s) used in the analysis.
+128
+129                        iv. A brief description of each step of sequence analysis including
+130                            information on acceptance criteria applied at each step (as applicable)
+131                            while processing the sequencing data. The acceptance criteria information
+132                            should include information on sequencing quality acceptance criteria,
+133                            sequencing depth acceptance criteria, and alignment metric acceptance
+134                            criteria.
+135
+136                        v. Results from the NGS data analysis and the associated metadata should be
+137                           submitted in a tabulated format as a text, CSV, or Microsoft Excel (as
+138                           applicable).
+139
+140
+141   V.      CONSIDERATIONS FOR ON-TARGET EDIT SITE ASSESSMENT
+142
+143   An on-target site is a specific sequence in the genome or transcriptome that is intended for
+144   editing by the editor. The on-target editing rate can be determined by sequencing the on-target
+145   site and evaluating the proportion of reads harboring the intended edit over total reads covering
+146   the target site. The sponsor should report the on-target edit rate either as a ratio or percentage of
+147   edited reads. Samples used for on- and off-target site analysis should be edited with appropriate
+148   parameter(s) so that the resulting on-target editing rates are comparable to the rates proposed in
+149   the final drug product. Achieving the intended rate of on-target editing likely ensures the
+150   presence of the optimal level of genome editor activity in the samples. The sponsor should
+151   report the on-target editing rates from the in vitro studies and may use the data to support the
+152   adequacy of assays evaluating off-target editing activity (as feasible). Additionally, the sponsor
+153   should use appropriate sequencing-based methods to measure and report the rates of both
+154   intended and unintended edits at the on-target genomic edit site(s) in appropriate samples (see
+155   section VI.A for recommendations on sample selection). Specific recommendations for
+156   sequencing strategy and samples used for on-target edit profiling are provided below.
+
+      7
+       CLI information is a record of all the commands used by user to run computer program(s) when analyzing
+      sequencing data.
+
+
+                                                             4
+                                Contains Nonbinding Recommendations
+
+                                      Draft – Not for Implementation
+
+157
+158                 1.      Sequencing strategy
+159
+160                 Sponsors should use a targeted sequencing strategy that enables the measurement
+161                 of the rate of intended edits at on-target genomic location(s). Short-read or long-
+162                 read sequencing-based method(s) are recommended to assess the on-target edit
+163                 site if the editing modality imparts changes to a single nucleotide (e.g., a genome
+164                 edit replacing, deleting or inserting a single base pair) or a short stretch of
+165                 nucleotides (e.g., a genome edit resulting in insertion or deletion of a short stretch
+166                 of nucleotides). However, on-target edit site analysis using long-read sequencing-
+167                 based methods should be performed if the editing modality creates double strand
+168                 breaks and/or has the capacity to cause unintentional changes to a large stretch of
+169                 DNA (insertions or deletions that are >50bp to several kilobase pair long). The
+170                 sponsor should provide justification to support the adequacy of their sequencing
+171                 method used for on-target edit site analysis.
+172
+173                 Where applicable, sponsors should use adequate sequencing depth and
+174                 appropriate strategies to reduce bias (see section IV for information on NGS
+175                 considerations) and to facilitate the detection of unintended edit outcomes
+176                 potentially occurring at lower frequency than the intended edit outcome rate. The
+177                 data from on-target edit site analysis may be provided as a list of all the editing
+178                 events (substitutions, and/or insertions, and/or deletions) identified and the
+179                 associated frequencies of edits (edit rates) determined from the sequencing data in
+180                 a tabulated form.
+181
+182                 2.      Sample selection for assessing on-target edit sites
+183
+184                 An appropriately designed on-target edit site profiling strategy may include using
+185                 cell samples that are identical to the cells edited in an ex vivo GE product or that
+186                 are representative of the cell type at the intended site of action for an in vivo
+187                 genome editing product (see section VI.A for additional recommendation on
+188                 sample selection).
+189
+190
+191   VI.    CONSIDERATIONS FOR STUDIES ASSESSING OFF-TARGET EDITING
+192          ACTIVITY
+193
+194   For DNA editors and epigenetic editors, an off-target edit site is any sequence in the genome
+195   where editing activity was observed but was not intended. Similarly, for RNA editors, an off-
+196   target edit site is any sequence in the transcriptome where an off-target editing event would
+197   result in an unintended change to gene expression. These off-target edit sites harbor some degree
+198   of homology or similarity when compared to the on-target edit site that is proposed for editing.
+
+
+
+
+                                                      5
+                                       Contains Nonbinding Recommendations
+
+                                              Draft – Not for Implementation
+
+199   This section provides recommendations for approaches used for off-target edit site nomination 8,
+200   off-target edit site confirmation 9, and off-target analysis parameters. Specifically, this section
+201   provides additional recommendations on sample selection, using modality-specific or generally
+202   applicable methods for off-target edit site nomination, specific information that should be
+203   included when describing the studies, and reporting of the study results.
+204
+205   To facilitate reproducibility and sensitivity of assays evaluating off-target editing activity, we
+206   recommend that the sponsor use appropriate NGS method(s) (see section IV for NGS
+207   considerations) and use appropriate samples (see section VI.A for sample considerations) that
+208   achieve the intended editing rate at on-target site(s) (see section V for on-target edit site
+209   assessment), and use biological replicates.
+210
+211            A.       Samples used for off-target editing analysis
+212
+213            Off-target edit site nomination and confirmatory testing studies should be performed in
+214            multiple biological replicates. Use of human cells that are either from patients, or from
+215            healthy donors is recommended. If obtaining primary human cell samples is not feasible,
+216            then a sponsor may consider using representative immortalized human cell lines and
+217            provide scientific justification with data (as applicable) to support the adequacy of
+218            sample(s) selected for the study. We recommend that sponsors use cells that are
+219            representative of the target cell type that they intend to edit either ex vivo or in vivo. The
+220            sample selection is further impacted by factors such as the mode of editing (in vivo or ex
+221            vivo), sample availability, and the amenability of cells to in vitro culture conditions.
+222
+223                     1.       Ex vivo products
+224
+225                     Studies assessing off-target editing activity in ex vivo GE products should be
+226                     performed using a cell type that is identical to the cell type being edited for drug
+227                     product generation. Additionally, the samples used to assess off-target risk
+228                     should have on-target editing rates that are comparable to the rates observed in the
+229                     final drug product. If the GE strategy is aimed at correcting a mutation in patient
+230                     cells, then we recommend that sponsors use patient-derived samples or normal
+231                     cells that are engineered to harbor the mutation. This approach will facilitate
+232                     reporting of editing rates at the on-target site. The sponsor may use healthy donor
+233                     samples where appropriate and provide scientific justification to support the
+234                     adequacy of the approach. If the sponsor chooses a cell type that is different from
+235                     the cell type they intend to edit, they should provide scientific justification to
+236                     support the adequacy of their sample selection strategy.
+237
+
+
+      8
+        Off-target edit site nomination is synonymous with the term identification of off-target site used in the January
+      2024 GE Guidance (Ref. 1).
+      9
+        Off-target edit site confirmation is synonymous with the term verification of off-target site used in the January
+      2024 GE Guidance (Ref. 1).
+
+
+                                                                 6
+                         Contains Nonbinding Recommendations
+
+                                Draft – Not for Implementation
+
+238          2.     In vivo products
+239
+240          For the assessment of off-target editing activity of in vivo products, we
+241          recommend that sponsors use appropriate cell types that are representative of the
+242          drug product’s intended target tissue in vivo and use editing parameters that
+243          results in the intended level of editing rates at the on-target site. However, if
+244          appropriate cell type(s) are unavailable, difficult to obtain, or if the cells are not
+245          amenable to in vitro studies, then sponsors may consider using alternative
+246          methods or cell samples to perform studies assessing off-target editing activity
+247          and provide scientific justification to support their strategy. For example, the
+248          sponsor may use a biochemical assay(s) that requires genomic DNA material for
+249          off-target edit site nomination.
+250
+251          If an intended edit is aimed at correcting a disease-causing mutation, then the use
+252          of healthy donor samples would not allow for the evaluation of on-target editing
+253          rates. In such a case, using patient-derived cells or normal cells engineered to
+254          harbor the target mutation is recommended for the assessment of off-target editing
+255          activity. If cells harboring the target mutation cannot be used because such cells
+256          are unavailable, (due to disease severity or rarity, patient cell availability, etc.,)
+257          sponsors may consider using healthy donor samples and provide scientific
+258          justification to support the adequacy of the approach. Finally, the data from
+259          biodistribution studies, as discussed in the January 2024 GE Guidance (Ref. 1),
+260          should inform the need to conduct additional on-target site analysis, off-target edit
+261          site nomination, and off-target edit site confirmation analyses in other cell type(s)
+262          representative of (non-target) tissues or organs where the product was detected.
+263
+264          When implementing cell-based methods for assessing off-target editing activity,
+265          use of a delivery method (e.g., lipid nanoparticle (LNP), adeno associated viral
+266          vectors (AAVs), electroporation, etc.) that is identical to the one used in the in
+267          vivo drug product is recommended. However, if the in vivo delivery method is
+268          not amenable for use in in vitro cell system(s), sponsors may consider alternative
+269          methods to deliver the GE components. When performing these studies, the
+270          sponsor should evaluate editor expression level, on-target editing rate(s), and
+271          submit the data in the study report(s). The sponsor should also provide scientific
+272          justification, as applicable, to support the adequacy of their sample selection,
+273          delivery method, and editing parameters used in the study.
+274
+275   B.     Modality specific off-target edit site nomination methods
+276
+277   The January 2024 GE Guidance (Ref. 1) recommends using multiple approaches such as
+278   cell-based assays, biochemical assays, and in silico methods for off-target site
+279   nomination. Cell-based assays use genomic DNA from ex vivo edited cultured cells for
+280   off-target analysis. Biochemical assays, on the other hand, use purified genomic DNA
+281   that are edited in vitro for off-target analysis. Subsequent analysis of the genomic DNA
+
+
+
+                                                7
+                          Contains Nonbinding Recommendations
+
+                                Draft – Not for Implementation
+
+282   involves library preparation, NGS, and bioinformatics analysis of sequencing data (see
+283   section IV for NGS considerations).
+284
+285   Cell-based and biochemical assays were originally developed for assessment of off-target
+286   editing activity of genome editors that create double strand breaks in the genome.
+287   However, these assays have been modified, or new assays have been developed, to detect
+288   single strand breaks/nicks in the genome. Thus, sponsors should consider the mechanism
+289   of action of their proposed editor and choose an appropriate method for off-target edit site
+290   nomination. For example, assays designed to detect off-target editing activities resulting
+291   in double strand breaks may not be suitable to detect single strand nicks created by base
+292   editors. In such a case, sponsors may consider an appropriately designed assay using an
+293   endonuclease to create double strand breaks at single strand nick sites to enable detection
+294   of edit events post-sequencing.
+295
+296   The sponsor should consider the mechanism of action of their proposed editor when
+297   selecting a published modality-specific off-target editing analysis approach and justify
+298   their strategy by referencing relevant peer reviewed publication(s) and/or by providing
+299   data generated in-house. Any change from the published strategy should be supported by
+300   data generated in-house demonstrating the adequacy of the modified strategy. A change
+301   in the assay may be any major modification to the assay design that was implemented by
+302   the sponsor but was not described in prior publication(s). To support any major
+303   modification(s) introduced in the assay evaluating off-target editing activity, the sponsor
+304   should provide additional information or studies to support that their proposed major
+305   modification(s) did not impact the sensitivity of the assay, impair the data quality, or
+306   introduce any bias(es).
+307
+308   When using a novel, unpublished off-target analysis method(s), the sponsor should
+309   provide additional information to support the adequacy and sensitivity of their method(s).
+310   For CRISPR-Cas-based products, this could be achieved, for example, through reporting
+311   off-target edit sites of widely-researched gRNAs identified after implementing the new
+312   method and then providing a comparative assessment to support the adequacy of the
+313   novel approach. For editing modalities that do not use CRISPR-Cas-based method(s), a
+314   similar approach may be used to develop assays evaluating off-target editing activity and
+315   may be supported by developing and using positive controls.
+316
+317   The findings from each off-target edit site nomination study should be submitted as a list
+318   of nominated off-target sites in a tabulated form (see section VI.F for recommendations
+319   on reporting off-target edit sites). Specific recommendations for modality-specific assays
+320   are provided in sections VI.B.1 and VI.B.2.
+321
+322          1.      Study reports describing the biochemical and cell-based assays should
+323                  contain the following:
+324
+325                      i. Adequate description of the sample(s). Specifically, indicate if the
+326                         samples are from healthy donor(s) or patient(s) and discuss if the
+
+
+                                               8
+                         Contains Nonbinding Recommendations
+
+                                Draft – Not for Implementation
+
+327                         samples used for assessing off-target activity harbor sequence(s)
+328                         that is recognized by the editor to enable measurement of on-target
+329                         editing rates.
+330
+331                      ii. Report the concentrations of the genome editing components.
+332
+333                      iii. Report on-target edit rate (if applicable), the total sequencing depth
+334                           of each sample, read counts at the on-target edit site and at all
+335                           detected off-target sites.
+336
+337          2.     For cell-based off-target edit site nomination assays, the on-target editing
+338                 rate(s) reported from samples used in this assay should be comparable to
+339                 the on-target editing rate(s) proposed or measured in the final drug product
+340                 (see section V for recommendations on on-target edit site assessment).
+341                 Otherwise, the sponsor should justify the adequacy of the edit rates
+342                 achieved when implementing the cell-based off-target assays.
+343
+344   C.     Generally applicable methods for off-target edit site nomination
+345
+346   In the absence of established empirical methods (biochemical or cell-based assays) to
+347   assess the safety of a specific type or class of GE modality, the sponsor may consider
+348   implementing other broadly applicable methods to nominate off-target edit sites. These
+349   approaches include using computational algorithms or applying established NGS-based
+350   methods.
+351
+352          1.     In silico methods for off-target edit site nomination
+353
+354          One of the main determinants of the number of potential off-target edit sites and
+355          the off-target editing risk is sequence homology of the gRNA or the target
+356          sequence to other regions of the human genome. In silico or computational
+357          algorithms allow users to scan the reference genome and identify additional
+358          regions in the genome that harbor homology to the user-provided gRNA
+359          sequence. Sponsors should consider the following points when using in silico off-
+360          target edit site nomination tools:
+361
+362                 i.    For CRISPR-Cas-based products, homology-based off-target edit sites
+363                      search should include both mismatches and bulge(s) in DNA and
+364                      gRNA. Additionally, PAM requirements or other modality-specific
+365                      sequence requirements should be considered when implementing a
+366                      homology-based off-target edit site search (see section VI.E for
+367                      recommendations on analysis parameters).
+368
+369                 ii. For other editing modalities, a similar in silico sequence homology-
+370                     based search method that accounts for sequence variations may be
+
+
+                                                9
+                                     Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+371                                 used for off-target edit site nomination. For example, the target
+372                                 sequence that is recognized by the DNA binding domain of an editor
+373                                 may be used to scan the human genome to identify potential off-target
+374                                 edit sites based on homology.
+375
+376                             iii. Scientific justification should be provided for the search parameters
+377                                  used, either by citing peer reviewed publication(s) or by providing
+378                                  additional information from data generated in-house to support the
+379                                  approach.
+380
+381                    2.       Next generation sequencing-based methods for off-target edit site
+382                             nomination
+383
+384                    Current NGS technologies allow for the assessment of changes to
+385                    genome/transcriptome/epigenome or quantification of mRNA abundance.
+386                    Depending on the mechanism of action of the editor being used in a drug product,
+387                    the sponsor may use an NGS-based method that enables evaluation of intended
+388                    edits in the cells. For example, off-target editing risk of a drug product intended
+389                    to methylate a cytosine base at a specific genomic site using an epigenome editor
+390                    should be assessed with an NGS-based genome-wide DNA methylation analysis
+391                    method. Using appropriate NGS-based method(s) would facilitate off-target
+392                    editing analysis of a wide range of genome editing modalities, irrespective of
+393                    whether an editor targets the genome, transcriptome, or epigenome.
+394
+395                    The adequacy of the experimental strategy and analysis parameters used when
+396                    implementing these methods should be supported with references to peer-
+397                    reviewed publication(s) or any analyses performed in-house. In addition to the
+398                    recommendations made on the use of NGS in section IV and on-target edit site
+399                    assessment in section V, we have the following additional recommendations when
+400                    implementing NGS for an off-target edit site assessment:
+401
+402                                 i. Sequencing quality and depth acceptance criteria should be
+403                                    provided with scientific justifications to support the sensitivity,
+404                                    adequacy of genome or exome coverage (if applicable), and
+405                                    reproducibility of the assay.
+406
+407                                 ii. A detailed description of filtering step(s) used to either subset
+408                                     reads or variants based on base quality 10 or mapping quality 11,
+409                                     should be supported with scientific justification.
+410
+
+
+      10
+        Base quality score is a measure of probability of identifying an incorrect nucleotide during sequencing.
+      11
+        Mapping quality for short sequencing reads is a measure of probability of an incorrectly mapped read. An
+      appropriate mapping quality score that is adapted for long sequencing reads may be used, where applicable.
+
+
+                                                             10
+                          Contains Nonbinding Recommendations
+
+                                Draft – Not for Implementation
+
+411                      iii. Any other factor(s) used in determining off-target site edit(s)
+412                           should be presented and supported with rationale, where
+413                           applicable.
+414
+415   D.     Confirmatory testing methods
+416
+417   The sponsor should use appropriate cell type(s) to verify the nominated off-target edit
+418   sites and to measure the editing frequency at the nominated sites. Confirmatory testing
+419   methods may include probe-based sequence enrichment, targeted sequence amplification,
+420   and/or other equivalent methods. While performing confirmatory testing at all the
+421   nominated off-target edit sites is recommended, the sponsor may select a subset of
+422   nominated off-target sites for confirmatory testing and provide scientific justification to
+423   support their strategy. The rationale for selecting a subset of nominated off-target edit
+424   sites may include applying statistical cut-offs, editing rate cut-off, detection of off-target
+425   sites in multiple samples, or other factors. However, use of stringent filtering criteria
+426   should be avoided to enable evaluation of editing rate at the nominated off-target edit
+427   sites.
+428
+429   When using a confirmatory testing method, the sponsor should select a sequencing
+430   strategy that minimizes bias and implement it at predetermined sequencing depth and
+431   quality that enables evaluation of low frequency editing events (see section IV for
+432   sequencing considerations). The sponsor may report the sensitivity of the confirmatory
+433   testing method and any other information as a rationale to justify their testing strategy.
+434   Confirmatory testing should be performed in appropriate cell type(s) (see section VI.A).
+435   Additionally, use of unedited control and edited sample pairs to determine edit rates at
+436   the on-target and all the off-target edit sites is recommended. The editing rates at the on-
+437   target edit site(s) reported from this study should be comparable to the intended on-target
+438   edit rates proposed by the sponsor in their final drug product. Please refer to section VI.F
+439   for recommendations on reporting the findings of the confirmatory testing study.
+440
+441   E.     Analysis parameters
+442
+443   Analysis parameters used for off-target edit site nomination and confirmation studies are
+444   specific to the experimental design and NGS method(s). For CRISPR-Cas-based editors
+445   that have been shown to recognize different versions of PAM sequence for editing, off-
+446   target edit site identification strategy should include different PAM versions. For
+447   example, NGG is a canonical PAM sequence for spCas9, but spCas9 has been shown to
+448   recognize non-canonical PAM sequences as well. The sponsor should reference peer-
+449   reviewed publication(s) or data generated in-house, as applicable, to support their PAM
+450   selection or exclusion strategy. For NGS data generated using either unbiased whole
+451   genome/exome/transcriptome/epigenome sequencing methods or targeted sequencing
+452   methods, details of the filtering parameters used for data analysis should be reported and
+453   supported with scientific justification. Any additional analysis parameters that are
+454   sequencing-method specific should also be reported and supported with justification.
+
+
+
+                                               11
+                          Contains Nonbinding Recommendations
+
+                                Draft – Not for Implementation
+
+455   Please refer to our recommendations from section IV and section VI.C.2 when describing
+456   the analysis steps and parameters.
+457
+458   F.     Reporting off-target edit sites
+459
+460   When reporting the nominated and confirmed off-target edit sites, the sponsor should
+461   report the read counts and/or editing frequencies measured from the respective off-target
+462   analysis study (as applicable). Additionally, we recommend that the sponsor describe the
+463   tool(s) that they used to annotate the genomic coordinates of off-target edit sites. An
+464   annotated list of all the off-target edit sites reported from nomination and confirmatory
+465   testing studies should also include the following:
+466
+467                  i. Genomic coordinate information.
+468
+469                  ii. Number of mismatches and bulges compared to the gRNA or target
+470                      sequence.
+471
+472                  iii. PAM information for CRISPR-Cas-based editors.
+473
+474                  iv. Whether the off-target edit site is intergenic, exonic, or intronic and
+475                      include the following information (as applicable):
+476
+477                          a. For intergenic off-target edit site(s), information on the
+478                             distance to the nearest gene should be provided, and the impact
+479                             on promoter or regulatory regions should be discussed.
+480                          b. For exonic off-target edit site(s), the name and function of the
+481                             associated gene should be reported, and the impact of genome
+482                             editing on the amino acid sequence, gene expression, and
+483                             splicing should be discussed.
+484                          c. For intronic off-target edit site(s), the distance to the nearest
+485                             exon should be reported and the potential impact on splicing
+486                             should be discussed.
+487
+488   For all the confirmed off-target edit sites, the sponsor should submit a summary of the
+489   risk assessment performed using prior knowledge such as information from peer-
+490   reviewed publication(s) about the associated genomic location, gene expression
+491   information (if applicable), gene disease association studies (if available), and/or any
+492   other relevant information as applicable.
+493
+494   G.     Additional considerations
+495
+496   Off-target editing activity of a drug product is further impacted by additional factors such
+497   as amino acid modification(s) made to the editor and the mode of delivery of the editor
+498   (see section VI.A.2 for recommendations on use of delivery methods for studies assessing
+
+
+                                               12
+                                 Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+499          off-target activity). If an editor is altered by changing amino acid residue(s) to modify
+500          editing activity and/or specificity, then a detailed description of such modification(s)
+501          should be provided. The sponsor should also provide additional data generated in-house
+502          or reference peer-reviewed publication(s) to support the modified editing activity or
+503          specificity of their editor. Studies assessing off-target editing activity should be
+504          performed using the genome editor proposed in the final drug product. The durability of
+505          editor expression is also crucial for safety assessment. For example, the activity of a
+506          genome editor delivered as an mRNA molecule using a LNP will likely be short term
+507          compared to the same editor delivered using an AAV and this information should be
+508          reported as a part of the safety assessment. Additional long-term off-target editing risk
+509          assessments should be provided if the editing modality is likely to have sustained long-
+510          term expression in cells (e.g., AAV delivered editors, in vivo delivered editors).
+511
+512
+513   VII.   CONSIDERATIONS FOR OFF-TARGET EDIT SITE ANALYSIS
+514          ACCOUNTING FOR HUMAN GENETIC VARIATION
+515
+516   Individual human genomes harbor several million nucleotide variations. For CRISPR-Cas-based
+517   editors, some of these nucleotide variation(s) may either reduce mismatch(es) between a
+518   genomic site and a gRNA or may create a PAM sequence resulting in a new genomic site that is
+519   potentially amenable to editing. Similarly, for other editing modalities, a variant may reduce
+520   mismatch between the target sequence and a genomic off-target edit site making it potentially
+521   more amenable to recognition by sequence recognition domain of an editor. In either case, the
+522   off-target editing risk will be present in individuals harboring that specific variant. An adequate
+523   in silico off-target analysis method accounting for human genetic variation should enable
+524   reporting of potential off-target edit sites contributed by variant(s). Specific recommendations
+525   and additional considerations for this analysis are provided below.
+526
+527          A.      Database selection
+528
+529          Sponsors should choose one or more human genetic variation databases with variant
+530          information from healthy and/or patient populations. The variant information should be
+531          derived from published publicly available genomic databases or equivalent sources.
+532          Adequate scientific justification for using one or more databases should be provided in
+533          the context of disease prevalence in the intended population, knowledge of common
+534          nucleotide variations, and disease-causing variations.
+535
+536          B.      Population stratification
+537
+538          If the GE drug product is used to treat a disease with well-characterized prevalence, then
+539          sponsors may consider an in silico off-target edit site nomination strategy that accounts
+540          for genetic variability by selecting variants based on allele frequency in a population
+541          stratified based on disease prevalence in a specific genetic ancestry. The sponsor should
+542          provide scientific justification to support their strategy for using population stratification
+543          in their analysis.
+
+
+                                                       13
+                          Contains Nonbinding Recommendations
+
+                                Draft – Not for Implementation
+
+544
+545   C.     Variant allele frequency
+546
+547   Inclusion of both common and rare variants present in the genome for the in silico
+548   analysis is recommended. The sponsor may use all the variants reported in a database(s)
+549   or provide scientific justification for selecting variants that are present above a certain
+550   frequency for this analysis. Inclusion of all genic and intergenic variants in this analysis
+551   is recommended. The sponsor should provide justification to support their strategy for
+552   using variant allele frequency threshold in their analysis.
+553
+554   D.     In silico search parameters to identify variant contributed off-target edit sites
+555
+556   The sponsor should use criteria that enables identification of sites where the variant(s)
+557   increased homology between the gRNA (or target sequence) and the genomic site either
+558   by reducing mismatches and/or by lowering gaps. Additional criteria for CRISPR-Cas-
+559   based products should include identifying variants that increased off-target editing
+560   potential by creating a PAM sequence.
+561
+562   E.     Assessing editing potential at variant contributed off-target edit sites
+563
+564   The sponsor may perform additional analyses to evaluate editing potential at variant
+565   contributed off-target edit sites. These analyses may include experimental methods to
+566   measure editing rates in samples or genomic samples harboring variant(s) of interest or
+567   computational methods that report scores/metrics as a readout for editing potential.
+568
+569   F.     Reporting variant contributed off-target edit sites
+570
+571   A detailed report of the off-target edit site analysis accounting for human genetic
+572   variation should include the following:
+573
+574              i. A detailed description of the database used, variant frequency thresholds
+575                 applied, and any population stratification applied with scientific
+576                 justification.
+577
+578              ii. Specific criteria used to identify variant contributed off-target edit sites.
+579
+580              iii. The results of this analysis should be submitted as an annotated list of
+581                  variant-contributed off-target edit sites in a tabulated format as a text file,
+582                  Microsoft Excel file, or CSV as feasible. Please refer to section VI.F for
+583                  annotation information.
+584
+585
+
+
+
+
+                                               14
+                                  Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+586   VIII. CONSIDERATIONS FOR NGS METHOD-BASED CHROMOSOMAL
+587         INTEGRITY ANALYSIS
+588
+589   For genome editing modalities known to create DNA double-strand breaks and/or medium to
+590   large insertions or deletions (or indels), erroneous DNA repair processes at double strand break
+591   sites may result in chromosomal translocation event(s) that can impact genomic integrity of cells
+592   post-genome editing. In these instances, sensitive and quantitative NGS-based assessment of
+593   genomic integrity in edited cells is recommended. The sponsor may consider choosing targeted
+594   sequencing and/or primer-based sequencing or other genome-wide NGS-based methods to detect
+595   low frequency translocation events and report chromosomal translocation rate(s) between on-
+596   target genomic site(s) where double strand break events occurred during GE. We recommend
+597   that the sponsor use a sequencing strategy that is sensitive and that minimizes bias when
+598   performing this type of analysis (see section IV for NGS considerations). If confirmed off-target
+599   edit site(s) were reported from safety analyses of the drug product, then an additional assessment
+600   to evaluate potential translocation events between on-target and off-target edit sites should be
+601   performed. Please refer to section VI.A for sample selection, IV for sequencing considerations,
+602   and VI.F for reporting an annotated list of sites identified from this analysis.
+603
+604
+605   IX.    SUBMISSION OF STUDY REPORTS DESCRIBING OFF-TARGET EDITING
+606          AND CHROMOSOMAL TRANSLOCATION ANALYSES TO FDA
+607
+608   All the recommended nonclinical off-target editing and chromosomal translocation studies
+609   should be performed based on the recommendations made in this guidance and completed prior
+610   to the submission of an original IND application. A detailed study report should include all the
+611   information recommended in this guidance and should be submitted with the original IND
+612   application. The results of the off-target editing and chromosomal translocation studies should
+613   also be submitted in recommended format(s) with the original IND application. Studies
+614   assessing off-target editing activity by accounting for human genetics variations may not be
+615   necessary with an original IND submission in some cases such as when the proposed indication
+616   is an ultra-rare disease or when it is intended for the treatment of a single patient. Sponsors are
+617   encouraged to discuss their study plan with the FDA prior to the submission of their IND
+618   application.
+619
+620   Specifically, sponsors are encouraged to explore meeting options to discuss their strategies
+621   assessing off-target editing activity in an INTERACT or pre-IND setting (Refs. 2, 3). The
+622   sponsor may provide a brief description of their off-target analysis plan in these submissions.
+623   The type of information that may be included in the pre-submission files is summarized in the
+624   table below.
+625
+626
+
+
+
+
+                                                       15
+                                  Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+627
+628   Minimum recommended information to be submitted in the indicated submission type.
+629
+       Submission type                  Minimum Information
+       INTERACT                            • Editor used (any modification made to the editor)
+                                           • Mechanism of action (what is known)
+                                          • Nonclinical study strategy to assess off-target editing
+                                             activity (brief description)
+                                                 • Method(s) for off-target edit site nomination
+                                                 • Method(s) for off-target edit site confirmation
+                                                 • Method(s) for chromosomal translocation
+                                                      analysis
+       Pre-IND                             • Editor used (any modification made to the editor)
+                                           • Mechanism of action (what is known)
+                                          • Nonclinical study strategy to assess off-target editing
+                                             activity (brief descriptions of methods, analysis
+                                             parameters, criteria used for off-target site
+                                             nomination/off-target site confirmation/evaluation of
+                                             chromosomal translocation, or editor specific analyses)
+                                          • Reports of completed studies assessing off-target editing
+                                             risk (if available)
+                                          • Sequencing strategies with specifics about data quality,
+                                             depth, alignment
+                                           • Samples used in each analysis
+630
+631   Additional off-target editing analysis may be needed during product development if major
+632   changes to the manufacturing process(es) impacts either the editor activity and/or editing rate(s)
+633   at on-target site(s) that may potentially impact the off-target edit site profile of the drug product.
+634   Furthermore, additional off-target editing analysis may be needed if safety issues are identified.
+635   Sponsors are encouraged to explore formal meeting options to discuss strategies to assess the
+636   impact of changes in manufacturing process(es) on off-target editing risk of their drug product
+637   with the FDA (Ref. 3).
+638
+639   During the clinical studies conducted under an IND or in the BLA submission, the sponsor may
+640   need to submit the raw sequencing data and the associated software script(s) used to analyze the
+641   sequencing data. The sponsor should discuss this with the FDA during product development
+642   and/or prior to the submission of their BLA.
+
+
+
+
+                                                        16
+                                 Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+643   X.     REFERENCES
+644
+645   1.     Human Gene Therapy Products Incorporating Human Genome Editing; Guidance for
+646          Industry, January 2024, https://www.fda.gov/media/156894/download.
+647   2.     OTP Pre-IND Meetings, last updated Aug. 2024, https://www.fda.gov/vaccines-blood-
+648          biologics/cellular-gene-therapy-products/otp-pre-ind-meetings.
+649   3.     Formal Meetings Between the FDA and Sponsors or Applicants of PDUFA Products;
+650          Draft Guidance for Industry*, Sept. 2023, https://www.fda.gov/media/172311/download.
+651
+652   * When finalized, this guidance will represent FDA’s current thinking on this topic.
+653
+
+
+
+
+                                                     17
+

@@ -1,0 +1,1659 @@
+ Submitting Clinical Trial
+Data to Evaluate the Ability
+to Operate a Motor Vehicle
+           Guidance for Industry
+      Technical Specifications Document
+
+
+For questions regarding this technical specifications document, contact
+                  CDER at cder-edata@fda.hhs.gov.
+
+
+
+
+                U.S. Department of Health and Human Services
+                        Food and Drug Administration
+               Center for Drug Evaluation and Research (CDER)
+
+
+
+                                October 2026
+                      Technical Specifications Document
+Revision History
+
+         Date       Version   Summary of Revisions
+     October 2026     1.0        Initial Version
+                                        Contains Nonbinding Recommendations
+
+
+                                                   TABLE OF CONTENTS
+
+
+1.0         Introduction ........................................................................................................... 1
+1.1         Purpose................................................................................................................... 1
+1.2         Background ........................................................................................................... 1
+1.3         Scope....................................................................................................................... 2
+1.4         Relationship to Other Documents ....................................................................... 3
+2.0         Relevant Acronyms ............................................................................................... 4
+3.0         Overview of Dataset Specifications ..................................................................... 5
+3.1         Driving Assessment Datasets ............................................................................... 5
+3.1.1       SDTM Functional Tests Dataset .......................................................................... 6
+3.1.1.1     General Considerations ........................................................................................ 6
+3.1.1.2     Additional Considerations.................................................................................... 7
+3.1.1.3     Handling of Missing and Partial Driving Assessment Data in SDTM ............. 7
+3.1.2       ADaM Functional Tests Analysis Dataset (ADFT) ............................................ 9
+3.1.2.1     General Considerations ........................................................................................ 9
+3.1.2.2     Joining Driving Assessment Data to Other Data ............................................. 14
+3.1.2.2.1   Linking Data in SDTM via RELREC ............................................................... 15
+3.1.2.2.2   Joining Data in ADaM ........................................................................................ 15
+3.1.2.3     Handling of Missing and Partial Driving Assessment Data in ADaM ........... 15
+3.1.2.3.1   Approaches to Represent Missing Data ............................................................ 16
+3.1.2.3.2   Approaches to Represent Partial Data ............................................................. 16
+3.1.2.4     Handling of ‘Out of Window’ Driving Assessment Data in ADaM ............... 17
+3.2         Datasets for Measurement Tool-Level Review................................................. 17
+3.2.1       Measurement Tool Identifiers ........................................................................... 18
+3.2.2       Measurement Tool -Subject Relationships ....................................................... 18
+3.2.3       Properties and Settings Pertaining to Measurement Tools............................. 18
+3.2.4       Events Pertaining to Measurement Tools ......................................................... 18
+3.3         Comments Dataset .............................................................................................. 19
+3.4         Trial Summary Dataset ...................................................................................... 19
+3.5         Questionnaires Datasets ..................................................................................... 20
+3.5.1       SDTM Specifications for Questionnaires Data ................................................ 20
+3.5.1.1     Handling of Missing Questionnaires Data in SDTM ....................................... 21
+3.5.2       ADaM Specifications for Questionnaires Data ................................................ 21
+3.5.2.1     Handling of Missing Questionnaires Data in ADaM ....................................... 21
+4.0         Specifications for Tables and Figures ............................................................... 22
+Appendix    ............................................................................................................................... 24
+Example Datasets ........................................................................................................................ 24
+Example SDTM Functional Tests Dataset................................................................................ 25
+Example ADaM Functional Tests Analysis Dataset ................................................................ 29
+Example Tables and Figures ...................................................................................................... 32
+                                          Contains Nonbinding Recommendations
+
+
+                                                        TABLE OF TABLES
+
+Table 1. Specifications for a Subset of FT Variables ................................................................. 6
+Table 2. Specifications for a Subset of SUPPFT Variables ....................................................... 7
+Table 3. Representing Missing and Partial Driving Assessment Data in SDTM .................... 8
+Table 4. Specifications for a Subset of ADFT Variables ......................................................... 10
+Table A1. Example Schedule of Assessments ........................................................................... 24
+Table A2. Example Sequence of Treatments............................................................................ 24
+Table A3. Subset of Sample FT Dataset.................................................................................... 26
+Table A4. Subset of Sample SUPPFT Dataset.......................................................................... 29
+Table A5. Subset of Sample RELREC Dataset ........................................................................ 29
+Table A6. (Part 1) Subset of Sample ADFT Dataset................................................................ 31
+Table A6. (Part 2) Subset of Sample ADFT Dataset................................................................ 31
+Table A6. (Part 3) Subset of Sample ADFT Dataset................................................................ 32
+Table A7. Participant Continuation Summary by Treatment Sequence and Period ........... 32
+Table A8. Driving Assessment Completion Summary by Treatment Sequence, Period, and
+Dosing ........................................................................................................................................... 33
+
+
+
+                                                       TABLE OF FIGURES
+
+Figure A1. Example Annotated Case Report Form ................................................................ 28
+                                Contains Nonbinding Recommendations
+
+
+                     Submitting Clinical Trial Data to Evaluate
+                       the Ability to Operate a Motor Vehicle
+
+                                  Guidance for Industry
+                            Technical Specifications Document1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+1.0     INTRODUCTION
+
+        1.1 Purpose
+
+This document provides technical specifications for submitting data from a clinical trial to
+evaluate the ability to operate a motor vehicle (herein referred to as a driving study) to support a
+marketing application for drug or biological product. As presented in FDA’s guidance for
+industry Evaluating Drug Effects on the Ability to Operate a Motor Vehicle (November 2017),2
+driving studies are primarily conducted to evaluate the effects of psychoactive drugs on the
+ability to operate a motor vehicle, though driving studies can also be conducted to evaluate
+effects of certain non-psychoactive drugs. These technical specifications should be referenced
+when a driving assessment is conducted as part of a clinical drug development program.
+
+        1.2    Background
+
+Driving assessments are functional tests that are used to collect objective findings of a
+participant’s ability to operate a motor vehicle by using a measurement tool such as a computer
+simulator or a specially instrumented on-road vehicle. The measurement tool produces data
+relevant to the clinical investigation but is not under study, and example measurements collected
+during a driving assessment can include Standard Deviation of Lateral Position (SDLP), lane
+exceedance or lane drifts, response time, and number of collisions. When the drug under study
+has significant safety issues where the risk of assessing a participant on the road using a specially
+instrumented vehicle is determined to be too high, a computer simulator may be preferable.
+
+1
+  This guidance has been prepared by the Office of Biostatistics, Office of Clinical Pharmacology, and Office of
+New Drugs in the Center for Drug Evaluation and Research at the Food and Drug Administration. You may submit
+comments on this guidance at any time. Submit comments to Docket No. FDA-2018-D-1216 (available at
+https://www.regulations.gov/docket?D=FDA-2018-D-1216) (see the instructions for submitting comments in the
+docket).
+2
+  See the guidance for industry Evaluating Drug Effects on the Ability to Operate a Motor Vehicle (November
+2017). For the most recent version of a guidance, check the FDA guidance web page at
+https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+                                                        1
+                                Contains Nonbinding Recommendations
+
+
+
+Driving studies typically employ a crossover design to compare the effects of an investigational
+drug at one or multiple doses against both a positive control and a placebo. The timing of the
+planned driving assessment in each period can vary depending on the intended therapeutic use of
+the drug under study.3 For instance, to evaluate the effect that an investigational sleep drug has
+on the ability to operate a motor vehicle, a next-day driving assessment can be conducted nine
+hours postdose. Alternatively, to evaluate the effects of an investigational migraine drug the
+driving assessment can be performed 90 minutes postdose to assess an immediate effect on the
+operability. It is recommended that before initiating the trial, the sponsor consult with the FDA
+for specific guidance on designating the primary and secondary endpoints that align with the
+study objectives.
+
+        1.3      Scope
+
+This document provides specifications for the submission of Clinical Data Interchange Standards
+Consortium (CDISC) Study Data Tabulation Model (SDTM) and Analysis Data Model (ADaM)
+datasets and specifications for tables and figures. These technical specifications aim to provide
+general guidelines for standardized content and structure to facilitate FDA review of the
+marketing application that the submitted data and analysis outputs are intended to support. The
+SDTM and ADaM dataset specifications outlined in section 3.0 Overview of Dataset
+Specifications emphasize clinical outcome assessment (COA) data, including the driving
+assessment data and questionnaires data used to evaluate the primary and secondary endpoints
+defined within the driving study. The dataset specifications are not prescriptive and do not
+include an exhaustive list of all datasets, variables, and controlled terminologies to be submitted
+for FDA review. Further, the recommended tables and figures within section 4.0 Specifications
+for Tables and Figures do not comprise all information critical to support FDA review of a
+marketing application. Sponsors should discuss with FDA which specifications are applicable for
+their particular clinical development program.
+
+This document does not pertain to:
+
+(1) Submissions intended to support FDA review of a device to the Center for Devices and
+Radiological Health (CDRH) or Center for Biologics Evaluation and Research (CBER) if the
+measurement tool used to collect clinical trial data meets the definition of device under the
+Federal Food, Drug, and Cosmetic Act (FD&C Act);4
+
+(2) The proposed interpretation and use of outputs generated by a measurement tool within the
+context of a specific clinical trial; or
+
+
+3
+  For the purposes of this guidance, all references to drugs include both human drugs and therapeutic biological
+products unless otherwise specified.
+4
+  See section 201(h) of the FD&C Act for the definition of device. How to determine whether a measurement tool
+proposed for use in a clinical investigation meets the definition of device under the FD&C Act is outside the scope
+of this guidance. For information about how to determine if a measurement tool meets the definition of device, see
+https://www.fda.gov/medical-devices/classify-your-medical-device/how-determine-if-your-product-medical-device.
+In addition, for information about FDA digital health regulatory policies, see https://www.fda.gov/medical-
+devices/digital-health-center-excellence/ask-question-about-digital-health-regulatory-policies.
+
+                                                         2
+                               Contains Nonbinding Recommendations
+
+
+(3) The verification, validation, or usability of a measurement tool.
+
+FDA’s guidance for industry Patient-Focused Drug Development: Selecting, Developing, or
+Modifying Fit-for-Purpose Clinical Outcome Assessments (October 2025),5 which is part of the
+FDA Patient-Focused Drug Development (PFDD) Guidance series,6 discusses validation for
+COAs. As described in the Biomarkers, EndpointS, and other Tools (BEST) Resource glossary,7
+a COA refers to the assessment of a clinical outcome made through a report by a clinician, a
+patient, a non-clinician observer, or through a performance-based assessment; thus, there are four
+types of COAs: clinician-reported outcome (ClinRO), observer-reported outcome (ObsRO),
+patient-reported outcome (PRO), and performance outcome (PerfO) measures. Within this
+document, driving assessments are considered to be PerfO measures.
+
+In addition, this document does not include formal definitions for driving assessment endpoints.
+Sponsors should provide comprehensive definitions of all endpoints within the study protocol
+with corresponding rationale. The measurement tool(s) used to collect driving study data and
+corresponding analyses should be discussed with FDA as early as possible in a clinical drug or
+biologic development program (e.g., the End-of-Phase 2 Meeting). Sponsors are strongly
+encouraged to use the resources described in section 1.4 Relationships to Other Documents and
+to seek Agency input for confirmation and clarification as appropriate. Sponsors should consult
+with the Agency to determine which requested displays defined in section 4.0 Specifications for
+Tables and Figures apply to the driving study data used to support their marketing application.
+
+        1.4      Relationship to Other Documents
+
+These technical specifications have been drafted in accordance with the conformance rules and
+assumptions outlined in the CDISC SDTM,8 the SDTM Implementation Guide (SDTMIG),9 the
+SDTMIG for Medical Devices (SDTMIG-MD),10 the ADaM,11 and the ADaM Implementation
+Guide (ADaMIG). As new versions of the models and implementation guides become available,
+these technical specifications can be updated to maintain alignment. In addition, the FDA Study
+Data Technical Conformance Guide (sdTCG)12 provides general specifications and
+recommendations for submitting datasets using the SDTM and ADaM standards. Sponsors
+
+
+
+
+5
+  See the guidance for industry Patient-Focused Drug Development: Selecting, Developing, or Modifying Fit-for-
+Purpose Clinical Outcome Assessments (October 2025).
+6
+  More information is available at FDA’s PFDD Guidance series web page:
+https://www.fda.gov/drugs/development-approval-process-drugs/fda-patient-focused-drug-development-guidance-
+series-enhancing-incorporation-patients-voice-medical.
+7
+  More information is available at NCBI’s web page: https://www.ncbi.nlm.nih.gov/books/NBK338448/def-
+item/glossary.clinical-outcome-assessment/.
+8
+  More information is available at CDISC’s SDTM web page: https://cdisc.org/standards/foundational/sdtm.
+9
+  More information is available at CDISC’s SDTMIG web page: https://cdisc.org/standards/foundational/sdtmig.
+10
+   More information is available at CDISC’s Medical Devices web page:
+https://www.cdisc.org/standards/foundational/medical-devices.
+11
+   More information is available at CDISC’s ADaM web page: https://cdisc.org/standards/foundational/adam.
+12
+   More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+
+                                                       3
+                                Contains Nonbinding Recommendations
+
+
+should review the FDA Data Standards Catalog13 to ensure data submissions follow FDA-
+supported standards.
+
+In addition, sponsors should reference the following:
+
+•     Guidance for industry Evaluating Drug Effects on the Ability to Operate a Motor Vehicle
+      (November 2017)14
+
+•     CDISC Controlled Terminology15
+
+•     CDISC Questionnaires, Ratings and Scales (QRS) Supplements, and CDISC QRS Resources,
+      which include QRS Naming and Business Rules16
+
+•     FDA Patient-Focused Drug Development (PFDD) Guidance series17
+
+
+2.0       RELEVANT ACRONYMS
+
+    Abbreviation   Description
+    ADaM           Analysis Data Model
+    ADaMIG         Analysis Data Model Implementation Guide
+    ADRG           Analysis Data Reviewer’s Guide
+    BEST           Biomarkers, EndpointS, and other Tools
+    BDS            Basic Data Structure
+    CDISC          Clinical Data Interchange Standards Consortium
+    CDER           Center for Drug Evaluation and Research
+    CDRH           Center for Devices and Radiological Health
+    ClinRO         Clinician-Reported Outcome
+    COA            Clinical Outcome Assessment
+    CRF            Case Report Form
+    cSDRG          Clinical Study Data Reviewer’s Guide
+    CSR            Clinical Study Report
+    eDT            Electronic Data Transfer
+    FDA            Food and Drug Administration
+    FD&C Act       Federal Food, Drug, and Cosmetic Act
+    NCI EVS        National Cancer Institute Enterprise Vocabulary Services
+    ObsRO          Observer-Reported Outcome
+    PerfO          Performance Outcome
+    PFDD           Patient-Focused Drug Development
+    PK             Pharmacokinetic
+
+13
+   More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+14
+   See the guidance for industry Evaluating Drug Effects on the Ability to Operate a Motor Vehicle (November
+2017).
+15
+   More information is available at NCI’s web page: https://datascience.cancer.gov/resources/cancer-
+vocabulary/cdisc-terminology.
+16
+   More information is available at CDISC’s QRS web page: https://cdisc.org/standards/foundational/qrs.
+17
+   More information is available at FDA’s PFDD Guidance series web page:
+https://www.fda.gov/drugs/development-approval-process-drugs/fda-patient-focused-drug-development-guidance-
+series-enhancing-incorporation-patients-voice-medical.
+
+                                                        4
+                                 Contains Nonbinding Recommendations
+
+ Abbreviation      Description
+ PRO               Patient-Reported Outcome
+ QRS               Questionnaires, Ratings and Scales
+ SAP               Statistical Analysis Plan
+ SDLP              Standard Deviation of Lateral Position
+ sdTCG             Study Data Technical Conformance Guide
+ SDTM              Study Data Tabulation Model
+ SDTMIG            Study Data Tabulation Model Implementation Guide
+ SDTMIG-MD         Study Data Tabulation Model Implementation Guide for Medical Devices
+
+
+
+3.0     OVERVIEW OF DATASET SPECIFICATIONS
+
+These dataset specifications detail the CDISC datasets that are used to support the submission of
+driving assessment data and questionnaires data. Sponsors should implement the CDISC SDTM
+standard when submitting data collected during the clinical trial and the CDISC ADaM standard
+when submitting analysis data. Throughout this document, the terms domain and dataset are used
+interchangeably and refer to the same concept. This section supplements existing guidance by
+providing specifications for submitting driving assessment data and questionnaires data but does
+not cover all data to be submitted for a clinical trial. As documented in the FDA sdTCG,18 both
+SDTM and ADaM datasets should be accompanied by informative metadata provided in a
+compliant data definition file (i.e., Define-XML) and are expected to be accompanied by a
+Clinical Study Data Reviewer’s Guide (cSDRG) and an Analysis Data Reviewer’s Guide
+(ADRG), respectively. Standard CDISC Controlled Terminology19 developed and maintained by
+CDISC and National Cancer Institute Enterprise Vocabulary Services (NCI EVS) should be used
+where applicable, and codelists can be extensible by adding controlled terminology that is not
+previously defined. Sponsor-extended codelists and use of alternative (e.g., non-CDISC or
+sponsor-defined) terminologies should be indicated in the study metadata (e.g., Define-XML file,
+cSDRG). In addition, software programs (source code) used to create the ADaM datasets and to
+analyze the driving study data should be submitted with the marketing application for FDA
+review.
+
+        3.1      Driving Assessment Datasets
+
+This section specifies the datasets used to submit driving assessment data from a measurement
+tool such as a computer simulator or a specially instrumented on-road vehicle. These datasets
+include the SDTM Functional Tests (FT) dataset and the ADaM dataset containing analysis-
+ready driving assessment data (herein referred to as the Functional Tests Analysis Dataset
+(ADFT)).
+
+
+
+
+18
+   More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+19
+   More information is available at NCI’s web page: https://datascience.cancer.gov/resources/cancer-
+vocabulary/cdisc-terminology.
+
+                                                         5
+                            Contains Nonbinding Recommendations
+
+
+       3.1.1    SDTM Functional Tests Dataset
+
+This section focuses on submitting data collected and/or processed by a measurement tool during
+a driving assessment to measure an investigational drug’s effect on a participant’s ability to
+operate a motor vehicle. The driving assessment measurements (e.g., SDLP) produced using a
+computer simulator or a specially instrumented on-road vehicle are submitted using the SDTM
+FT domain specifications.
+
+          3.1.1.1 General Considerations
+
+A single driving assessment can produce multiple measurements for an individual participant at
+an assessment timepoint. The subset of standard FT variables in Table 1 is included to
+clarify how variables should be completed for driving assessments to foster consistency and
+standardization across industry. An example FT dataset is provided in Appendix 5.1.1.
+
+Table 1. Specifications for a Subset of FT Variables
+Variable Name    Variable Label       Type Comment
+SPDEVID          Sponsor              Char Identifier used to indicate the measurement tool used to produce
+                 Measurement Tool          measurements during a participant’s driving assessment at an
+                 Identifier                assessment timepoint (See section 3.2.1 Measurement Tool
+                                           Identifiers).
+FTTESTCD         Short Name of Test   Char Short name for the value in FTTEST (e.g., SDLP). Controlled
+                                           Terminology should be implemented if applicable. Note that
+                                           within a single driving assessment similar measurements can be
+                                           collected. For example, if lapses (i.e., brief periods of inattention
+                                           and reduced alertness) are collected multiple types of lapses can
+                                           be defined and reported. In these scenarios, it is recommended
+                                           that the FTTESTCD and FTTEST values within the FT dataset
+                                           clearly distinguish between each measure.
+FTTEST           Name of Test         Char Verbatim name of the driving assessment measurement (e.g.,
+                                           SDLP). Controlled Terminology should be implemented if
+                                           applicable. If FTTEST is > 40 characters in length, sponsors
+                                           should put meaningful text in FTTEST and describe the full-text
+                                           in the study metadata (e.g., the cSDRG and/or the Define-XML).
+ FTSTAT          Completion Status    Char This is populated as “NOT DONE” when the value for the
+                                            driving assessment measurement (i.e., Result or Finding in
+                                            Original Units (FTORRES)) is empty/null. Conversely,
+                                            FTSTAT is empty or null when a value exists in FTORRES.
+ FTREASND        Reason Not Done      Char This is used in conjunction with FTSTAT when FTSTAT =
+                                            ”NOT DONE” to describe why a driving assessment
+                                            measurement is empty/null, when collected (See section 3.1.1.2
+                                            Handling of Missing and Partial Driving Assessment Data in
+                                            SDTM).
+ FTDTC           Date/Time of Test    Char Date and time of start of driving assessment.
+ FTENDTC         End Date/Time of     Char    Date and time of end of driving assessment. Note that collecting
+                 Test                         both start and end time of a driving assessment enables the
+                                              identification and subsequent analysis of partial driving
+                                              assessment measurements when a driving assessment begins as
+                                              planned but ends prematurely.
+
+
+
+                                                    6
+                             Contains Nonbinding Recommendations
+
+
+          3.1.1.2 Additional Considerations
+
+Additional driving study data collected beyond what is specified in the SDTM FT domain
+specifications should be submitted either as additional rows with relevant FTTEST and
+FTTESTCD values in the FT dataset or in a Supplemental Functional Tests (SUPPFT) dataset.
+For example, this can include environmental factors such as temperature of the room where the
+participant is administered the driving assessment using a simulator or the temperature in the car
+if an on-road vehicle is used for the driving assessment. If appropriate for analysis, the additional
+data should be provided in the ADFT dataset. Table 2 shows additional data recommended to be
+collected and subsequently reported in the SUPPFT dataset for each applicable participant and
+driving assessment timepoint.
+
+Table 2. Specifications for a Subset of SUPPFT Variables
+ Qualifier Variable   Qualifier Variable   Comment
+ Name                 Label
+ FTREASPE             Reason for           Reports the collected reason for the premature end of a driving
+                      Premature End        assessment, when collected. FTREASPE is recommended to be
+                                           collected when a driving assessment begins as planned but ends
+                                           prematurely and thus is considered a ‘partial assessment’ (See
+                                           section 3.1.1.2 Handling of Missing and Partial Driving
+                                           Assessment Data in SDTM). FTREASPE can be collected on the
+                                           Case Report Form (CRF). An example CRF is provided in Figure
+                                           A1. Example Annotated Case Report Form.
+
+          3.1.1.3 Handling of Missing and Partial Driving Assessment Data in SDTM
+
+Understanding the reasons for and prevalence of missing and partial driving assessment data are
+critical to support FDA review and regulatory decision-making. FDA is especially interested in
+understanding the safety and/or tolerability issues that prevented a participant from completing
+an assessment in full, which can affect FDA’s assessment of benefit-risk. To aid in making this
+determination, the study protocol and statistical analysis plan (SAP) should contain the definition
+and rationale for the criteria that compose a ”complete” driving assessment.
+
+When the reason for the missed assessment is collected, missing driving assessment data are
+represented in the FT dataset with FTSTAT = ‘NOT DONE’ and the reason for the missed
+assessment entered within ‘Reason Not Done’ (FTREASND), when the reason is collected in the
+source data (e.g., collected on the CRF). When a result is produced for a driving assessment
+measurement based on a partial driving assessment (i.e., a driving assessment begins as planned
+but ends prematurely), the partial driving assessment data are submitted in the FT dataset with
+FTORRES, FTDTC, and FTENDTC populated, and FTSTAT and FTREASND set to empty. In
+this scenario, Reason for Premature End (FTREASPE) of the driving assessment is encouraged
+to be collected and subsequently reported as a supplemental qualifier in the SUPPFT dataset as
+shown in Table 2. Conversely, when a result is not produced for a driving assessment
+measurement based on a partial driving assessment, this scenario is treated like missing data in
+the FT dataset with FTSTAT and FTREASND populated and FTORRES set to empty. Capturing
+details for missing and partial data on the CRF supplements the collected driving assessment
+
+
+
+                                                    7
+                                Contains Nonbinding Recommendations
+
+
+results for each measurement (e.g., SDLP) when the data are transmitted directly via electronic
+data transfer (eDT) and not reported on a CRF.
+
+For example, consider the scenario where a study protocol specifies that participants will
+perform a 60-minute driving assessment using a computer simulator at multiple assessment
+timepoints during the study. A participant performs the assessment at the first assessment
+timepoint, but due to severe dizziness, terminates the simulation after 30 minutes; thus, only 30
+minutes out of the expected 60 minutes were completed. If driving assessment measurements
+such as SDLP are calculated based on the shortened 30-minute assessment, then these data are
+provided as a row for each resulting measurement within the parent FT dataset with FTORRES,
+FTDTC, and FTENDTC populated for each row. For the rows corresponding to the 30-minute
+assessment, QVAL = ‘SEVERE DIZZINESS’ where QNAM = ‘FTREASPE’ in the SUPPFT
+dataset as indicated on the CRF or by the measurement tool. An example CRF is provided in
+Figure A1. Example Annotated Case Report Form.
+
+Sponsors are encouraged to represent all protocol-specified assessment timepoints where a
+driving assessment is planned to be completed in the FT dataset for each participant and
+measurement. However, when no source data exist (e.g., data on the CRF was not collected) to
+indicate that a driving assessment was not done for a protocol-specified timepoint, there may be
+no resulting row present in the FT dataset. In this scenario, if a row is appropriate for analysis
+purposes, a phantom record is added within the ADFT dataset (See section 3.1.2.3 Handling of
+Missing and Partial Driving Assessment Data in ADaM). Table 3 describes further scenarios for
+representing missing and partial driving assessment data at planned (i.e., per protocol)
+assessment timepoints in the SDTM FT dataset. Appendix 5.1.1 demonstrates scenarios for
+representing missing data within the FT dataset.
+
+Table 3. Representing Missing and Partial Driving Assessment Data in SDTM
+ Example Scenario                       Recommended Representation in FT Dataset
+ A participant did not perform the      A single row for the entire missing driving assessment in the FT dataset
+ driving assessment at a planned        includes:
+ assessment timepoint but participant   • FTTESTCD = ‘FTALL’
+ is active in the study and did not     • FTTEST = ‘Driving Assessment Results’
+ discontinue.                           • FTSTAT = ‘NOT DONE’
+                                        • FTREASND contains the reason the participant did not perform the
+                                          driving assessment if known/collected in the source data (e.g., collected
+                                          on a CRF). Otherwise, FTREASND is empty/null.
+ A participant did not perform the      If not known/collected, no rows are expected within the FT dataset.
+ driving assessment at a planned        Rows are excluded from the FT dataset when details for the missed
+ assessment timepoint due to            driving assessment are not known/collected in the source data (e.g., not
+ discontinuation from the study.        collected on a CRF).
+
+                                        If known/collected, a single row for the entire missing driving
+                                        assessment in the FT dataset includes:
+                                        • FTTESTCD = ‘FTALL’
+                                        • FTTEST = ‘Driving Assessment Results’
+                                        • FTSTAT = ‘NOT DONE’
+
+
+
+
+                                                        8
+                                 Contains Nonbinding Recommendations
+
+ Example Scenario                        Recommended Representation in FT Dataset
+                                         • FTREASND contains the reason the participant did not perform the
+                                           driving assessment if known/collected in the source data (e.g., collected
+                                           on a CRF).
+ A participant performed the driving     A single row for each driving assessment measurement corresponding to
+ assessment at a planned assessment      the partial driving assessment in the FT dataset includes:
+ timepoint but prematurely ended the     • FTORRES is populated with the result of the measurement.
+ driving assessment. Values for each     • FTDTC and FTENDTC are populated with the start and end date/time
+ driving assessment measurement            of the partial assessment, respectively.
+ (i.e., FTORRES) are produced based      • FTSTAT and FTREASND are empty/null.
+ on the partial assessment and are       • Reason for Premature End (FTREASPE) contains the reason the
+ provided in the FT dataset.               participant prematurely ended the assessment if known/collected.
+                                           FTREASPE is provided in the SUPPFT dataset as shown in Table 2
+                                           Specifications for a Subset of SUPPFT Variables.
+ A participant performed the driving     A single row for the entire partial driving assessment in the FT dataset
+ assessment at a planned assessment      includes:
+ timepoint but prematurely ended the     • FTORRES is empty/null.
+ driving assessment. Values for each     • FTDTC and FTENDTC are populated with the start and end date/time
+ driving assessment measurement            of the partial assessment, respectively.
+ (i.e., FTORRES) are not produced        • FTTESTCD = ‘FTALL’
+ based on the partial assessment and     • FTTEST = ‘Driving Assessment Results’
+ thus are not provided in the FT         • FTSTAT = ‘NOT DONE’
+ dataset. Instead, this assessment       • FTREASND contains the reason the participant prematurely ended the
+ timepoint is treated as missing data.     assessment if known/collected. Otherwise, FTREASND is empty/null.
+
+        3.1.2    ADaM Functional Tests Analysis Dataset (ADFT)
+
+This section provides specifications for the ADaM dataset containing analysis-ready driving
+assessment data within the Functional Tests Analysis Dataset (ADFT). The ADFT dataset
+follows the ADaM Basic Data Structure (BDS) and is created from data in the SDTM FT dataset
+discussed in section 3.1.1 SDTM Functional Tests (FT) Dataset in conjunction with other SDTM
+and ADaM data.
+
+             3.1.2.1    General Considerations
+
+Table 4 contains specifications for a subset of ADFT variables, some of which are standard
+variables (included to clarify how they should be completed for driving assessments to foster
+industry consistency, standardization, and traceability) and some of which are newly defined.
+Table 4 does not represent a complete list of ADFT variables to be submitted. Additional
+variables important for analysis (such as indicator variables and analysis flags; variables to aid in
+traceability; and treatment, discontinuation, demographic, covariate, and period-level variables
+originally provided within the ADSL dataset) should also be included within the ADFT dataset
+so that it is analysis-ready. For standard BDS variables prespecified in ADaM, reference the
+ADaMIG for additional details. An example of ADFT dataset is provided in Appendix 5.1.2.
+
+
+
+
+                                                         9
+                                Contains Nonbinding Recommendations
+
+
+Table 4. Specifications for a Subset of ADFT Variables
+ Variable
+                 Variable Label         Type     Comments
+ Name
+                                           Timing variables
+ ASTDTM     Analysis Start          Num      Date and time of start of driving assessment using an
+            Datetime                         appropriate display format.
+ AENDTM     Analysis End            Num      Date and time of end of driving assessment using an appropriate
+            Datetime                         display format.
+         Variables used to assess residual concentration at the time of the driving assessment
+ PCVAL      Pharmacokinetic         Num      Denotes the pharmacokinetic concentration value from the
+            Concentration Value              SDTM Pharmacokinetics Concentrations (PC) dataset or the
+                                             ADaM ADPC dataset that is captured at each specified driving
+                                             assessment timepoint. This value should be provided for the
+                                             driving assessment parameters that support each primary and/or
+                                             secondary driving endpoint, such as SDLP, to more effectively
+                                             assess changes in SDLP and other endpoints based on residual
+                                             concentrations (See section 4.0 Specifications for Tables and
+                                             Figures). The SAP should specify the rules used to populate
+                                             PCVAL.
+ PCVALU     Unit of                 Char     Denotes the unit for the pharmacokinetic concentration value
+            Pharmacokinetic                  reported in PCVAL.
+            Concentration Value
+ PCDTM      Pharmacokinetic         Num      Date and time of the pharmacokinetic concentration value
+            Concentration                    reported in PCVAL using an appropriate display format.
+            Analysis Datetime
+                 Variables used to assess missing or partial driving assessment data
+ APREFL     Premature End of        Char     Indicates when a driving assessment begins as planned but ends
+            Driving Assessment               prematurely. Derived based on start time and end time of the
+            Flag                             driving assessment. Alternatively, if a flag indicating the driving
+                                             assessment ends prematurely is collected on the CRF or by the
+                                             measurement tool and thus is considered to be source data, then
+                                             this flag is submitted a supplemental qualifier within the
+                                             SUPPFT dataset (See section 3.1.2.3.2 Approaches to Represent
+                                             Partial Data).
+ ADURN      Analysis Duration       Num      Reports the duration of the assessment. Derived based on start
+            (N)                              time and end time of the driving assessment. (See section
+                                             3.1.2.3.2 Approaches to Represent Partial Data).
+ ADURU      Analysis Duration       Char     Denotes the unit for the analysis duration reported in ADURN.
+            Units
+ AREASND    Analysis Reason         Char     Describes the reason for the missing driving assessment data,
+            Not Done                         when known/collected. When FTREASND is populated, it may
+                                             not be appropriate to derive AREASND in the ADFT dataset.
+                                             AREASND is only derived when appropriate; for example,
+                                             AREASND may be useful to standardize the submitted values
+                                             for reason using sponsor-defined terminology if not done so
+                                             within the values for FTREASND. Similarly, if reason for
+                                             missing driving assessment data are populated from other
+                                             sources such as the SDTM DE dataset such that there are
+                                             differences between FTREASND and AREASND, then
+                                             AREASND is provided. The sponsor should provide details in
+                                             the ADaM study metadata as to how AREASND is derived (See
+                                             section 3.1.2.3.1 Approaches to Represent Missing Data).
+
+
+
+
+                                                       10
+                                Contains Nonbinding Recommendations
+
+Variable
+                 Variable Label          Type     Comments
+Name
+                          Variables used to assess windowing of driving assessments
+ATPT             Analysis Timepoint    Char     Analysis timepoint description that may contain the timepoint
+                                                names as observed (i.e., from SDTM Planned Time Point
+                                                Name (FTTPT)) when FTTPT is submitted in the FT dataset),
+                                                derived timepoint names, timepoint window names, conceptual
+                                                descriptions (such as Average, Endpoint, etc.), or a combination
+                                                of these. ATPT is relative to the Analysis Timepoint Reference
+                                                (ATPTREF). When submitted, ATPTREF denotes the
+                                                description of the fixed reference point referred to by ATPT. For
+                                                example, in a study where a driving assessment is specified by
+                                                the protocol to be performed 9 hours postdose, ATPT is set as ‘9
+                                                hours’ and ATPTREF is set as ‘previous dose’. In addition to
+                                                ATPT, Analysis Timepoint (N) (ATPTN) is provided as the
+                                                numeric representation of ATPT.
+DOSEDTM          Previous Dose         Num      Denotes the previous and most recent dose date and time before
+                 Analysis Datetime              start of the driving assessment using an appropriate display
+                                                format. Can be populated from the SDTM Exposure (EX) or
+                                                Exposure as Collected (EC) datasets, or from the ADaM ADEX
+                                                or ADEC datasets.
+ARELTM           Analysis Relative     Num      The amount of time from the anchor time within DOSEDTM to
+                 Time                           the start of the driving assessment within ASTDTM.
+ARELTMU          Analysis Relative     Char     Denotes the unit for the analysis relative time reported in
+                 Time Unit                      ARELTM.
+                               Variables used to assess difference from placebo
+TRTP /           Planned Treatment / Char       Record-level treatment variables that represent the planned and
+TRTPN            Planned Treatment              actual treatments attributed to a record for analysis purposes.
+                 (N)                            These variables indicate how treatment varies across rows for
+                                                the same participant to enable the analysis of driving studies
+                                                with crossover study designs.
+
+
+
+TRTA /           Actual Treatment /      Char
+TRTAN            Actual Treatment
+                 (N)
+Note: The sponsor can consult with the Agency to determine whether ABLFL, BASE, BASETYPE and PLACDIFF
+shown in the rows below should be provided in the ADFT dataset, and if so, for which driving assessment
+measurements these variables should be populated (e.g., SDLP, brake time reaction). These variables are used
+with the record-level treatment variables to evaluate difference from placebo for multiple baselines (e.g., baseline
+at single dose, baseline at repeated dose). An example of these variables is provided in Appendix 5.1.2.
+ABLFL            Baseline Record         Char     Equal to ‘Y’ when TRTA denotes placebo for each subject,
+                 Flag                             parameter, and baseline type.
+BASE             Baseline Value          Num      Equal to AVAL when ABLFL = ‘Y’ at placebo for each
+                                                  baseline type. Used to calculate PLACDIFF.
+BASETYPE         Baseline Type           Char     Denotes the baseline definition where TRTA denotes placebo
+                                                  (e.g., baseline at single dose, baseline at repeated dose) for
+                                                  which the current record is being assessed. Used to populate
+                                                  BASE and to calculate PLACDIFF.
+
+
+
+
+                                                        11
+                          Contains Nonbinding Recommendations
+
+Variable
+            Variable Label         Type     Comments
+Name
+PLACDIFF    Difference from        Num    Equal to AVAL – BASE. Note that PLACDIFF is used instead
+            Placebo                       of the Change from Baseline (CHG) variable specified in the
+                                          ADaMIG. This is because BASE is populated specifically for
+                                          the driving assessment timepoints where TRTA denotes
+                                          placebo, which may occur in a later period after the participant
+                                          has already been exposed to the treatment and/or the positive
+                                          control, given the crossover study design used for driving
+                                          studies.
+                        Additional recommended variables to support analysis
+CRITy /     Analysis Criterion y Char / Identifies a pre-specified criterion and indicates whether the
+CRITyFL /   / Criterion y          Char / record satisfies the criterion on the current record. When SDLP
+CRITyFN     Evaluation Result      Num    is calculated, criteria flags are encouraged to indicate whether a
+            Flag /                        participant’s difference from placebo in SDLP value reported
+            Criterion y                   within PLACDIFF exceeds a threshold of impairment. The
+            Evaluation Result             threshold(s) of impairment for the study should be defined and
+            Flag (N)
+                                          prespecified within the study protocol and SAP. An example of
+                                          these variables is provided within Appendix 5.1.2.
+DTYPE       Derivation Type        Char   Analysis value derivation method. DTYPE should be populated
+                                          with the algorithm or statistical method used when AVAL has
+                                          been imputed or derived differently than other analysis values
+                                          within a parameter. This document references the use of
+                                          phantom records (i.e., where DTYPE = ‘PHANTOM’) to
+                                          represent rows for missing driving assessments that are absent
+                                          from the SDTM FT dataset (See section 3.1.2.3.1 Approaches to
+                                          Represent Missing Data). Based on the study attributes,
+                                          alternative DTYPE values can be used to handle missing data
+                                          depending on the imputation method(s) implemented. When
+                                          imputation is performed, imputation rules are included in the
+                                          study’s SAP. Imputation methods are not specified within this
+                                          document for driving studies.
+                Variables in ADFT copied from the SDTM Comments (CO) Dataset
+COVAL       Comment                Char   Denotes the text of a comment collected for a given participant
+                                          and driving assessment timepoint (See section 3.3 Comments
+                                          Dataset). Comments data can be provided in multiple columns
+                                          (i.e., COVAL1 – COVALn) within the ADFT dataset. Other
+                                          variables from the CO dataset can be included in the ADFT
+                                          dataset to aid in traceability between the ADFT and CO
+                                          datasets.
+
+
+
+
+                                                  12
+                           Contains Nonbinding Recommendations
+
+Variable
+            Variable Label         Type     Comments
+Name
+                       Variables in ADFT copied from the ADaM ADSL Dataset
+AGEGRy      Pooled Age Group y Char / Character description of a grouping or pooling of the subject's
+                                    Num    age for analysis and reporting. Note that in addition to
+                                           AGEGRy, Pooled Age Group y (N) (AGRGRyN) is submitted
+                                           as a numeric representation of AGEGRy used for ordering.
+                                           Pooling and grouping variables from the ADSL dataset such as
+                                           AGEGRy should be copied into the ADFT dataset to support
+                                           demographic subgroup analysis across the driving assessment
+                                           measurements. For example, a single AGEGRy variable to
+                                           categorize participants by ‘non-elderly’ vs. ‘elderly’ (e.g., where
+                                           AGEGR1 is set to ‘<=65’ or ‘> 65’) can be used to assess
+                                           driving assessment results when only one driving study is
+                                           performed within an application. Alternatively, multiple driving
+                                           studies can be conducted within an application (e.g., one study
+                                           in elderly participants and one study in non-elderly participants),
+                                           which can be important for certain indications such as sleep to
+                                           ensure that a substantial proportion of the overall population is
+                                           composed of elderly participants. The sponsor should consult
+                                           with the Agency during the IND phase regarding plans for
+                                           participant enrollment. Enrolling participants in driving studies
+                                           from the population(s) likely to use the drug, including the
+                                           elderly, is important for providing information about disease-
+                                           drug interactions.
+TRTSEQP /   Planned Sequence        Char   The planned and actual sequence of treatment for a participant
+TRTSEQN     of Treatments /                based on the crossover study design typically employed in
+            Planned Sequence               driving studies.
+            of Treatments (N)
+TRTSEQA /   Actual Sequence of      Char
+TRTSEQA     Treatments / Actual
+            Sequence of
+            Treatments (N)
+                       Variables in ADFT copied from input SDTM FT Dataset
+FTSEQ       Sequence Number         Num    Sponsors should include any SDTM variables in the ADFT
+VISIT       Visit Name              Char   dataset that are critical to provide traceability to the source
+VISITNUM    Visit Number            Num    SDTM FT dataset.
+FTSTAT      Completion Status       Char   Sponsors should include SDTM variables in the ADFT dataset
+FTREASND    Reason Not Done         Char   that provide details of missing driving assessment data. See
+                                           comments for FTSTAT and FTREASND provided in Table 1
+                                           Specifications for a Subset of FT Variables and in section
+                                           3.1.1.2 Handling of Missing and Partial Driving Assessment
+                                           Data in SDTM.
+SPDEVID     Sponsor                 Char   Identifier to indicate the measurement tool used to produce
+            Measurement Tool               measurements during a participant’s driving assessment at an
+            Identifier                     assessment timepoint. (See section 3.2.1 Measurement Tool
+                                           Identifiers).
+
+
+
+
+                                                   13
+                              Contains Nonbinding Recommendations
+
+ Variable
+                Variable Label      Type Comments
+ Name
+      Variables in ADFT copied from input SDTM Supplemental Qualifiers for FT (SUPPFT) Dataset
+ FTREASPE       Reason for          Char    Supplemental qualifier reporting the collected reason for a
+                Premature End               premature end of a driving assessment (See Table 2
+                                            Specifications for a Subset of SUPPFT Variables). The handling
+                                            of missing and partial data are presented within section 3.1.2.3
+                                            Handling of Missing and Partial Driving Assessment Data in
+                                            ADaM. Note that, in addition to providing SDTM variables in
+                                            the ADFT dataset that support traceability and provide
+                                            explanations for partial driving assessment data, any additional
+                                            supplemental qualifiers within the SUPPFT dataset should be
+                                            provided in the ADFT dataset when used in analysis.
+
+            3.1.2.2   Joining Driving Assessment Data to Other Data
+
+As presented in Table 4 Specifications for a Subset of ADFT Variables, joining non-driving
+assessment data to the driving assessment data reported within the ADFT dataset is
+recommended for certain data such as pharmacokinetic (PK) concentrations data, which can be
+joined from the SDTM Pharmacokinetics Concentrations (PC) dataset or the ADaM ADPC
+dataset. Providing PK data within the ADFT dataset supports exposure-response analysis, which
+is conducted in addition to the primary statistical analysis done for driving endpoints such as
+SDLP (See section 4.0 Specifications for Tables and Figures). Questionnaires data are an
+example of other non-driving assessment data that can be joined to the ADFT data depending on
+analysis needs of the study. When the protocol specifies the joining of non-driving assessment
+data to the driving assessment data during data collection, the Related Records (RELREC)
+dataset is employed in SDTM as described in section 3.1.2.2.1 Linking Data in SDTM via
+RELREC. Alternatively, if the joining is performed retrospectively for analysis purposes and not
+while the driving assessment data are collected, data are linked directly in the ADFT dataset as
+described in section 3.1.2.2.2 Joining Data in ADaM.
+
+Joining adverse event (AE) data and driving assessment data can be beneficial when assessing
+whether an AE affects a participant’s performance during a driving assessment. It is understood
+that the occurrence of an AE during a driving assessment may not result in missing or partial
+data. FDA is interested in knowing whether an AE occurred during the time of the driving
+assessment, and if so, which AE. However, joining AE data from the Analysis Data Adverse
+Event (ADAE) dataset to the driving assessment data in the ADFT dataset may not be feasible,
+given that multiple AEs can be present for a single driving assessment timepoint. Furthermore,
+the same AE can be ongoing and span multiple driving assessment timepoints. Thus, when
+applicable, submission of a standalone additional ADaM dataset that joins AE and driving
+assessment data and contains corresponding AE(s) for each driving assessment timepoint for a
+given participant is encouraged. This may result in repeated AEs when an AE spans multiple
+driving assessment timepoints, as well as repeated driving assessments when multiple AEs occur
+at a single driving assessment timepoint. Note that including a row for each individual driving
+assessment measurement at a given assessment timepoint is not critical within this dataset. This
+dataset is used to create the AE summary described in section 4.0 Specifications for Tables and
+Figures. It is recommended that the sponsor consider how to capture the AEs experienced at the
+time of the driving assessment during study planning and before conducting the driving study.
+
+                                                     14
+                             Contains Nonbinding Recommendations
+
+
+The sponsor should consider including AE characteristics found within the ADAE dataset in the
+standalone analysis dataset, such as severity, seriousness, and causality. The sponsor can consult
+with the Agency to discuss the structure, content, and submission of this additional analysis
+dataset.
+
+           3.1.2.2.1    Linking Data in SDTM via RELREC
+
+The RELREC dataset is an SDTM special-purpose dataset used to identify relationships between
+records in disparate SDTM datasets. If the source data (e.g., data collected using a CRF) indicate
+a relationship between the driving assessment data in the FT dataset and data in another SDTM
+dataset at the time of data collection, this association is shown using the RELREC dataset. FDA
+is interested in the completeness and clarity with which RELREC variables ─ including Related
+Domain Abbreviation (RDOMAIN), Identifying Variable (IDVAR), Identifying Variable Value
+(IDVARVAL), and Relationship Identifier (RELID) ─ are populated to illustrate these
+relationships. An example of an annotated CRF (aCRF) is shown in Figure A1. Example
+Annotated Case Report Form, and an example of a RELREC dataset that links driving
+assessment data in the SDTM FT dataset to adverse events data in the SDTM AE dataset is
+provided in Table A5 Subset of Sample RELREC Dataset. If the measurement tool used to
+capture driving assessment data directly outputs an identifier to link measurement tool events,
+properties, settings, or other findings to the driving assessment measurements (e.g., SDLP), the
+RELREC dataset should be used to illustrate the linkage of the driving assessment records in the
+FT dataset to the records submitted within other measurement tool dataset(s) as described in
+section 3.2. Datasets for Measurement Tool-Level Review.
+
+           3.1.2.2.2    Joining Data in ADaM
+
+When the relationship between records across SDTM datasets is not captured in the source data
+and thus not represented using the RELREC dataset, the algorithm used to link driving
+assessment data within the ADFT dataset to the other data should be defined in the study
+metadata such as the ADaM Define-XML file. For example, ADaM Analysis Visit (AVISIT) or
+another analysis timing variable can be used to join records for a subject at each specified driving
+assessment timepoint. In addition, the software programs (source code) used to join data to the
+ADFT dataset should be provided, which can be included in the program used to create the
+ADFT dataset.
+
+           3.1.2.3     Handling of Missing and Partial Driving Assessment Data in ADaM
+
+As discussed in SDTM section 3.1.1.2 Handling of Missing and Partial Driving Assessment Data
+in SDTM, understanding the reasons for and prevalence of missing and partial driving
+assessment data are critical to support FDA review and regulatory decision-making. Within the
+ADFT dataset, it is ideal that a record be provided for every planned (per protocol) driving
+assessment timepoint for each participant, regardless of whether the driving assessment is
+complete, partial, or missing. Considerations for approaches to represent missing data within the
+ADFT dataset are provided in section 3.1.2.3.1 Approaches to Represent Missing Data and
+approaches to represent partial data within the ADFT dataset are provided in section 3.1.2.3.2
+Approaches to Represent Partial Data.
+
+                                                15
+                           Contains Nonbinding Recommendations
+
+
+           3.1.2.3.1   Approaches to Represent Missing Data
+
+Approaches to represent rows for missing driving assessment data within the ADFT dataset
+where AVAL is empty include the following:
+
+•   Copying records from the SDTM FT dataset when collected, where FT.FTSTAT = ‘NOT
+    DONE’ and FT.FTREASND is populated with the reason the driving assessment is missing
+
+•   Deriving phantom records in the ADFT dataset, where DTYPE = ‘PHANTOM’
+
+It is encouraged that rows for missing driving assessment data in the ADFT dataset be originally
+represented in the SDTM FT dataset with FTSTAT and FTREASND populated to support
+traceability, rather than derived as new phantom records in ADaM. When FT.FTREASND is
+populated within the SDTM FT dataset for a record, the value should be copied into the
+FTREASND variable within the ADFT dataset for each affected driving assessment
+measurement. Alternatively, phantom records can be added to the ADFT dataset if rows for the
+missing data do not exist in the SDTM FT dataset (e.g., records are missing due to participant
+discontinuation). Adding rows for phantom records is one solution to represent missing data
+when the missing data are not originally present in the SDTM FT dataset; however, based on
+analysis needs specified in the SAP, values can be imputed within AVAL instead. The sponsor
+should consult with the Agency to determine whether phantom records should be added within
+the ADaM dataset for the clinical trial.
+
+In addition, a sponsor-defined analysis variable for Reason Not Done (e.g., ADFT.AREASND)
+may be useful to indicate the reason (if known and/or collected) that a driving assessment was
+not done when FT.FTREASND is not populated and/or not informative (see AREASND in Table
+4 Specifications for a Subset of ADFT Variables). For example, AREASND can be derived from
+other sources when phantom records are used to represent missing driving assessment data.
+When populated, values for AREASND should be distributed across all measurements for a
+given driving assessment timepoint within the ADFT dataset.
+
+           3.1.2.3.2   Approaches to Represent Partial Data
+
+Partial data are represented in the SDTM FT dataset and the ADFT dataset when driving
+assessment measurements such as SDLP are calculated, even though the driving assessment ends
+prematurely. Within the ADFT dataset, the resulting values are provided in AVAL for each
+driving assessment measurement, and supporting variables are recommended within the ADFT
+dataset as defined within Table 4 Specifications for a Subset of ADFT Variables. In this
+scenario, the Premature End of Driving Assessment Flag (APREFL) is populated as ‘Y’, and the
+duration is reported within the Analysis Duration (N) (ADURN) and Analysis Duration Units
+(ADURU) variables. Note that if duration were originally collected in lieu of start and end
+datetime variables as source data, either on the CRF or by the measurement tool, the duration
+would be represented within the Duration of Functional Test (FTDUR) variable in International
+Organization for Standardization 8601 (ISO 8601) duration format within the FT dataset.
+Appendix 5.1.2 shows an example of these supporting variables within the ADFT dataset.
+
+
+                                               16
+                             Contains Nonbinding Recommendations
+
+
+             3.1.2.4   Handling of ‘Out of Window’ Driving Assessment Data in ADaM
+
+As presented in Table 4 Specifications for a Subset of ADFT Variables, variables to assess
+whether a driving assessment was conducted outside of the planned window are useful for
+analysis. The windows used for analysis should be prespecified in the SAP, and the target time
+for a driving assessment to be conducted can be dependent on the indication for the drug under
+review. For example, the driving assessment for an investigational insomnia drug can be planned
+to occur 9 hours post-dose, whereas the driving assessment for an investigational migraine drug
+can be planned to occur 90 minutes post-dose.
+
+Consider the example for an insomnia drug where a driving assessment is planned to occur 9
+hours post-dose (i.e., the following morning) and the window is defined as 8 to 10 hours such
+that it is permissible for the participant to perform the driving assessment at any time within this
+window. If the driving assessment is performed either before 8 hours or after 10 hours, then the
+driving assessment is outside of the planned window. Note that empty values for variables such
+as the primary analysis timing variable used in the study (e.g., AVISIT) will aid in the
+determination of records that are outside of the planned window.
+
+In addition to the variables defined in Table 4, the suite of Analysis Visit Windowing Variables
+for BDS Datasets as well as Analysis Flag zz (ANLzzFL) prespecified in the ADaMIG can
+further aid in the understanding and selection of records in the ADFT dataset that are used in
+analysis. These variables can be used to select the appropriate record(s) when multiple driving
+assessments are conducted within the same planned window. Further, they can be used to
+populate the appropriate value for the primary analysis timing variable used in the study (e.g.,
+AVISIT, ATPT) based on the protocol schedule compared to what is captured in the CRF or via
+eDT for a given assessment timepoint.
+
+       3.2      Datasets for Measurement Tool-Level Review
+
+Within a driving study, the measurement tool used to capture driving assessment data and
+generate measurement results can include a driving simulator or a specially instrumented on-road
+vehicle. The submission of additional data for the measurement tool(s) used in a driving study is
+recommended to enable measurement tool-level review and analysis. These data can include
+measurement tool identifier information, properties, settings, software version(s), and other
+participant interaction data (e.g., error codes generated by the measurement tool while it is in use
+by the participant). When multiple measurement tools are in use for a single driving study, this
+additional data can be useful in assessing which measurement tool was used by each participant
+at each assessment timepoint and can enhance the overall traceability of the driving assessment
+data. Note that the metadata reported within the additional datasets described in the subsections
+below can be collected in the protocol, collected on the CRF, or output by the measurement tool.
+
+
+
+
+                                                 17
+                            Contains Nonbinding Recommendations
+
+
+       3.2.1   Measurement Tool Identifiers
+
+A dataset containing the identifiers or characteristics used to uniquely identify each measurement
+tool used in a driving study should be submitted. In the dataset, Sponsor Measurement Tool
+Identifier (SPDEVID) denotes the single identifier for each measurement tool and is used to link
+data. For example, the identifiers used to uniquely identify a driving simulator can include
+manufacturer, model, and serial number. Similarly, identifiers for a specially instrumented on-
+road vehicle can include the vehicle’s manufacturer, model name, and model year. If this is not
+enough information to identify the vehicle uniquely, then additional identifiers such as Vehicle
+Identification Number (e.g., DIPARMCD = ‘VIN’), can be included and represented by an
+alphanumeric string (e.g., DIVAL = ‘ABC123…789XYZ’). Sponsors should supply the
+minimum number of identifiers appropriate to uniquely identify each measurement tool within
+the DI dataset. As shown in Table 1 Specifications for a Subset of FT Variables and Table 4.
+Specifications for a Subset of ADFT Variables, FDA recommends that SPDEVID be submitted
+within the SDTM FT dataset and the ADFT dataset.
+
+       3.2.2   Measurement Tool -Subject Relationships
+
+A measurement tool used in a study can be associated with multiple participants over the course
+of the study; conversely, multiple measurement tools can be associated with an individual
+participant. For example, a participant can use one driving simulator at one visit and a different
+driving simulator at a later visit, depending on the number of driving simulators available at the
+clinical trial site. To facilitate review, it is recommended that all distinct pairs of SPDEVID and
+USUBJID values observed in the study data be presented in a dataset.
+
+       3.2.3   Properties and Settings Pertaining to Measurement Tools
+
+Driving assessment data depicting the properties and settings of a measurement tool such as
+software name and/or version are recommended to be submitted in separate findings dataset.
+Example properties captured for a driving simulator can include the frame rate or resolution of
+the simulator display, the course difficulty level, or the name and/or version of the software used
+to generate driving assessment measurements (e.g., SDLP). Note that representing properties and
+settings of each measurement tool are useful within a dataset when there are differences observed
+across measurement tools, participants, and/or driving assessment timepoints. Alternatively,
+when properties and settings are identical throughout the study, these details can instead be
+presented directly in the study protocol.
+
+       3.2.4   Events Pertaining to Measurement Tools
+
+Driving assessment data depicting events that occur to a measurement tool during a driving study
+are recommended to be submitted, especially when the events can affect the results and
+interpretation of a driving assessment. Relevant events can include application program issues,
+electrical issues, software upgrades or downgrades, sensor issues when using a specially
+instrumented on-road vehicle, calibration issues, or other events that result in loss of data. When
+a relationship between the driving assessment and a corresponding measurement tool event is
+
+
+                                                 18
+                            Contains Nonbinding Recommendations
+
+
+prespecified on the CRF, the data are linked in SDTM using the RELREC dataset. An example
+of this is provided in Figure A1. Example Annotated Case Report Form.
+
+       3.3     Comments Dataset
+
+The Comments (CO) domain is a special-purpose dataset prespecified within the SDTM that
+provides a solution for submitting free-text comments (e.g., voluntary free text or unsolicited
+observations). Within a driving study, an observer or evaluator can collect observations while the
+participant is performing the driving assessment at a distinct assessment timepoint, either while
+using a driving simulator or a specially instrumented on-road vehicle. Observations can be
+related to behavior (e.g., participant seemed upset or withdrawn), performance (e.g., participant
+drove erratically), the measurement tool (e.g., driving simulator had to be restarted before drive
+due to a technical issue), compliance (e.g., participant was not following clear directions), or the
+protocol (e.g., participant started the assessment after the target postdose time specified in the
+protocol), but they can also be more general in nature. FDA is interested in the consistency and
+accuracy with which variables ─ including Related Domain Abbreviation (RDOMAIN),
+Identifying Variable (IDVAR), Identifying Variable Value (IDVARVAL), and Comment Text
+(COVAL) ─ are populated within the CO dataset to effectively join comments data with other
+driving assessment data.
+
+It is recommended that the comments data in the CO dataset related to the driving assessment are
+joined to the driving assessment data within the ADFT dataset as shown in Table 4
+Specifications for a Subset of ADFT Variables. Incorporating related comments directly within
+the ADFT dataset can aid in an overall understanding and interpretation of the data, including for
+driving assessment measurement results where outliers are present. Providing the comments data
+directly in the ADFT dataset also allows for the comment(s) related to each participant and
+driving assessment timepoint to be easily viewed. Within the ADFT dataset, the sponsor can
+consider creating classification flags to categorize the comments for analysis if applicable for the
+driving study, given the CO dataset can contain multiple categories of comments related to the
+driving assessment.
+
+To improve the submission of standardized data within a driving study, the sponsor should
+consider how data will be collected (e.g., values captured as free text, in a structured field, or
+from a pre-defined list of values) during initial study planning and CRF design. For example, if
+environmental factors such as room temperature are to be collected for all participants before
+conducting the driving assessment adding a field on the CRF to capture this value in specified
+units helps ensure that room temperature will be collected consistently across participants and
+driving assessment timepoints. With the incorporation of these structured fields on the CRF, the
+resulting data can be represented within the SUPPFT dataset rather than as free text in the
+Comments dataset (see section 3.1.1.1 General Considerations for the FT dataset).
+
+       3.4     Trial Summary Dataset
+
+Data related to the trial summary should be stored in the Trial Summary (TS) dataset. FDA is
+particularly interested in the frequency with which these technical specifications are used to
+
+
+
+                                                 19
+                                Contains Nonbinding Recommendations
+
+
+create and submit driving study data. Per the FDA sdTCG,20 sponsors can include the following
+parameters and associated values in the TS dataset to indicate that these technical specifications
+were used to support the submission of a driving study:
+
+•    TSPARAMCD = ‘FDATCHSP’
+•    TSPARAM = ‘FDA Tech Spec’
+•    TSVAL = ‘Driving Study Technical Specifications Guidance v1.0’
+
+        3.5      Questionnaires Datasets
+
+This section provides dataset specifications for submitting questionnaires data (i.e., other COA
+data separate from the driving assessment) in CDISC format and includes other considerations
+for questionnaires data, such as the handling of missing data. Like driving assessments,
+questionnaires have documented methods for administering and scoring a test using a valid
+instrument and can have continuous or categorical outcomes. Within a driving study,
+questionnaires data can be collected to support study objectives as separate study endpoint(s),
+i.e., to supplement the objective driving assessment endpoint(s) (e.g., SDLP), and to measure
+related constructs. Questionnaires data can also be used to aid in the clinical interpretation of the
+objective driving assessment results and the participant’s performance. The sponsor should
+consider whether capturing questionnaire data before and/or immediately after a driving
+assessment is relevant to its clinical interpretation and to evaluate a participant’s pre-driving and
+post-driving outcomes. For example, before performing a driving assessment, a PRO can be used
+to ask questions related to readiness to drive and participant safety (e.g., ‘Do you feel safe to
+drive?’). Similarly, immediately after a driving assessment, a PRO can be used to ask questions
+related to the participant’s awareness of their recent performance (e.g., ‘How well did you drive
+during the driving assessment?’, ‘How motivated were you to drive to the best of your ability
+during the driving assessment?’).
+
+Consider a participant with a poor SDLP result who reported in a questionnaire that they felt safe
+to drive immediately before performing the driving assessment and rated both their driving
+performance and their motivation to drive well as high immediately after the driving assessment.
+In this scenario, impairment without awareness can be more concerning than a participant with
+an extremely poor SDLP result who documented in a questionnaire that they did not feel safe to
+drive and/or gave low ratings to their driving performance and their motivation to drive well. To
+better compare the questionnaires data to the driving assessment data for a given participant and
+assessment timepoint, the sponsor can consider joining the questionnaires data to the driving
+assessment data within the ADFT dataset or creating a separate summary table to compare the
+data. The sponsor can consult with the Agency to discuss whether this analysis is recommended
+for the driving study.
+
+        3.5.1    SDTM Specifications for Questionnaires Data
+
+The SDTM dataset containing questionnaires data are referenced as the Questionnaires (QS)
+dataset throughout this document, and questionnaires data are tabulated using the SDTM QS
+20
+  More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+
+                                                       20
+                                 Contains Nonbinding Recommendations
+
+
+domain specifications. For select measures, CDISC publishes QRS Supplements21 that provide
+guidance on representing named COA measures in the SDTM. CDISC also provides submission
+values within the controlled terminology related to named COA measures. These resources
+should be consulted for guidance on a COA measure, in addition to the guidance provided in the
+SDTM and SDTMIG. The QS dataset contains questionnaires data that were collected for
+individual participants at distinct assessment timepoints during the driving study. Collected
+questionnaires data represented within the SDTM QS dataset include individual items (i.e.,
+questions) and can also include summary scores when summary scores are considered source
+data (herein referenced as a ‘source data summary score’22 ). Alternatively, summary scores are
+derived using the ADaM.
+
+            3.5.1.1 Handling of Missing Questionnaires Data in SDTM
+
+Similar to the evaluation of missing driving assessment data within the FT dataset as described in
+section 3.1.1.2 Handling of Missing and Partial Driving Assessment Data in SDTM,
+understanding the reasons for and prevalence of missing questionnaires data are critical to
+support FDA review and regulatory decision-making. Sponsors should defer to the instructions
+provided within the instrument scoring manual to determine what constitutes a ‘complete’
+measure. When such instructions are not provided within the instrument scoring manual or if a
+scoring manual does not exist for a given instrument, then sponsors should provide rationale for
+the responses appropriate to constitute a complete measure within the study protocol and SAP.
+When collected, missing questionnaires data should be represented within the QS dataset with
+Completion Status (QSSTAT) set to ‘NOT DONE’ and the reason for missingness captured
+under ‘Reason Not Performed’ (QSREASND).
+
+        3.5.2    ADaM Specifications for Questionnaires Data
+
+The ADaM dataset containing analysis-ready questionnaires data (referenced in this document as
+the Analysis Data Quality Summary (ADQS) dataset) is derived from the questionnaires data in
+the SDTM QS dataset in conjunction with other SDTM and ADaM data. The ADQS dataset
+follows the ADaM BDS. Though parameters for total scores and/or subscale scores can be
+originally submitted within the SDTM QS dataset if they are considered ‘source data summary
+scores’, these parameters can also be derived within the ADQS dataset according to the study
+rules defined within the SAP. Within the ADQS dataset, it is recommended that sponsors include
+the SDTM variables critical to provide traceability to the source SDTM QS dataset, including the
+SDTM variables that support the understanding of missing questionnaires data (i.e., QSSTAT
+and QSREASND).
+
+             3.5.2.1    Handling of Missing Questionnaires Data in ADaM
+
+Similar to the evaluation of missing driving assessment data within the ADFT dataset as
+described in section 3.1.1.2 Handling of Missing and Partial Driving Assessment Data in ADaM,
+missing questionnaires data can be represented within the ADQS dataset by (1) copying records
+
+21
+  More information is available at CDISC’s QRS web page: https://cdisc.org/standards/foundational/qrs.
+22
+  Source data summary scores are summary scores (e.g., total scores, subscale scores) that are considered source
+data (e.g., data reported within a CRF) and submitted in the SDTM QS dataset.
+
+                                                        21
+                              Contains Nonbinding Recommendations
+
+
+from the SDTM QS dataset when collected, where QS.QSSTAT = ‘NOT DONE’ and
+QS.QSREASND is populated with the reason the item(s) and/or source data summary score(s)
+are missing, or (2) deriving new phantom records in the ADQS dataset (e.g., where DTYPE =
+‘PHANTOM’). It is recommended that rows for missing questionnaires data within the ADQS
+dataset are initially represented as collected data within the QS dataset with QSSTAT and
+QSREASND populated, and thus traceable to the input QS dataset. Alternatively, phantom
+records can be added to the ADQS dataset if important for analysis when rows for the missing
+questionnaires data do not originally exist in the SDTM QS dataset. The sponsor can consult
+with the Agency to determine whether phantom records are recommended to be added within the
+ADQS dataset for the driving study to support the evaluation of missing questionnaires data.
+Deriving phantom records is one solution to represent missing data; however, based on the study
+attributes, values can instead be imputed according to the SAP. Note that QS.QSSTAT and
+QS.QSREASND are empty or null for phantom records that are provided in the ADQS dataset. If
+QS.QSREASND is empty or null, a sponsor-defined analysis variable for Reason Not Performed
+(e.g., ADQS.AREASND) may be useful to derive the reason (if known/collected from other
+sources) that an individual item and/or entire measure was not completed for a questionnaire,
+which can be applicable for records such as phantom records.
+
+
+4.0      SPECIFICATIONS FOR TABLES AND FIGURES
+
+In addition to the sponsor’s prespecified tables and figures presenting analyses of study endpoint
+data from the driving assessment, the Agency recommends the following analyses be provided
+within the Clinical Study Report (CSR) to facilitate the evaluation of driving assessment data.
+The sponsor can consult with the Agency for further clarity on the analyses to be submitted.
+Variables presented in Table 4 Specifications for a Subset of ADFT Variables facilitate some of
+the requested analyses defined below.
+
+•     Difference from placebo in SDLP for all non-placebo treatment arms at both the single and
+      repeated doses. The sponsor can consult with the Agency to determine if outputs should be
+      created for driving assessment endpoints other than SDLP. Note: Both a table (e.g., mean,
+      median, range, standard deviation, and mean [95% CI] difference from placebo) and a figure
+      (e.g., box plot) may be useful for this analysis.
+
+•     Proportion of participants with difference from placebo in SDLP based on a categorical
+      grouping of the prespecified threshold of impairment to indicate improved, neutral, or
+      impaired (e.g., <-2.4 cm, -2.4 to 2.4 cm, >2.4 cm) for all non-placebo treatment arms at both
+      the single and repeated doses. This analysis can further break out outputs by demographic
+      subgroup (e.g., age group, sex, race, ethnicity). The sponsor can consult with the Agency to
+      determine if outputs should be created for driving assessment endpoints other than SDLP.
+      Note: Both a table and a figure may be useful for this analysis.
+
+•     Relationship between next-day residual concentrations and difference from placebo in SDLP
+      for all non-placebo treatment arms at both the single and repeated doses. The sponsor can
+      consult with the Agency to determine if outputs should be created for driving assessment
+      endpoints other than SDLP. Both a table and a figure may be useful for this analysis.
+
+                                                  22
+                            Contains Nonbinding Recommendations
+
+
+
+•   Participant continuation summary by treatment sequence and period to represent the
+    proportion of participants who did not drop out or discontinue from the study by period. A
+    table may be useful for this analysis (see example in Appendix 5.2.)
+
+•   Driving assessment completion summary by treatment sequence, period, and dosing to
+    represent the proportion of missing data due at each planned driving assessment timepoint
+    due to discontinuation and intermittent missingness. A table may be useful for this analysis
+    (see example in Appendix 5.2).
+
+•   Partial driving assessment completion summary by treatment sequence, period, and dosing to
+    represent the proportion of partial assessments at each planned driving assessment timepoint.
+    A table may be useful for this analysis.
+
+•   Completion summaries by reason to summarize the primary reason(s) why a driving
+    assessment is missing or partially completed. A table may be useful for this analysis.
+
+•   AE summary of the AEs observed during the driving assessments. Note: Both a table and a
+    figure may be useful for this analysis.
+
+
+
+
+                                                23
+                                              Contains Nonbinding Recommendations
+
+
+APPENDIX
+
+              Example Datasets
+
+Table A1 is an example of a schedule of assessments within the study protocol (not pictured) for a hypothetical study (Study A). Study
+A employs a crossover design with four periods where participants receive each of the following: 50 mg of the investigational drug,
+100 mg of the investigational drug, a positive control, and a placebo. The primary endpoint for Study A is Standard Deviation of
+Lateral Position (SDLP), which is determined by a driving assessment conducted using a simulator for a planned period of 60 minutes
+per assessment.
+
+Table A1. Example Schedule of Assessments
+                                                                               Visit
+            Activity                                                     Double-Blind Treatment Periods 1 through 4
+                                           Screening                   Day 2 (Single Dose)        Day 6 (Repeated Dose)
+      Driving Assessment                       X                                X                            X
+
+
+As shown in Table A1, an onsite driving assessment is administered initially at the screening visit and then on Day 2, after
+administration of the single dose, and on Day 6, after a repeated dose, for each of the four periods. According to the study protocol
+(not pictured), there is a one-week washout period in between each of the four treatment periods. The sequence of treatments for Study
+A is represented in Table A2.
+
+Table A2. Example Sequence of Treatments
+        Sequence                                                         Treatment
+           1                    50 mg Treatment          100 mg Treatment        Positive Control                   Placebo
+           2                   100 mg Treatment           Positive Control           Placebo                    50 mg Treatment
+           3                    Positive Control              Placebo            50 mg Treatment               100 mg Treatment
+           4                        Placebo               50 mg Treatment       100 mg Treatment                Positive Control
+
+
+Study A is referenced in the example Functional Tests (FT) dataset in Appendix 5.1.1 and the example Functional Tests Analysis
+Dataset (ADFT) in Appendix 5.1.2. The example driving assessment captures SDLP along with other driving parameters. For brevity,
+
+                                                                  24
+                                              Contains Nonbinding Recommendations
+
+
+only SDLP is shown in the example datasets below. Note that the numeric values provided in FT.FTSTRESN within Table A3 and
+ADFT.AVAL within Table A6 are provided for illustrative purposes only.
+
+               Example SDTM Functional Tests Dataset
+
+Table A3 shows an example of an FT dataset for a single participant (i.e., USUBJID = ‘A_100_1’) and a single driving assessment
+measurement (i.e., FTTESTCD = ‘SDLP’) across multiple visits. Table A3 shows a subset of variables to be submitted within the FT
+dataset and illustrates how missing driving assessment data are represented when the driving assessment is not completed as expected.
+Scenarios displayed in Table A3 include the following:
+
+•   The participant completed the planned driving assessments as expected based on the protocol-defined schedule of assessments at
+    all visits except the Period 3 Day 6 visit and the Period 4 Day 2 visit.
+
+•   The participant did not perform the driving assessment at the Period 3 Day 6 visit due to an adverse event (AE).
+
+    o Row 7 shows FTSTRESN set to empty/null, FTSTAT = ‘NOT DONE’, and FTREASND = ‘ADVERSE EVENT’. In this
+      example, FTSTAT and FTREASND are collected using the example annotated CRF (aCRF) shown in Figure A1.
+
+    o Within the example aCRF shown in Figure A1, the affected record in the FT dataset (Row 7 in the FT dataset) links to the AE
+      dataset (not pictured) via the RELREC dataset shown in Table A5.
+
+    o FTDTC and FTENDTC are populated with the start date and time and the end date and time, respectively, when the driving
+      assessment is performed. Because the assessment was not completed for the Period 3 Day 6 visit, FTDTC and FTENDTC are
+      empty or null for Row 7.
+
+•   The participant commenced the driving assessment at the Period 4 Day 2 visit but did not complete the 60-minute assessment as
+    specified in the protocol. In this specific example, the numeric driving assessment measurement for SDLP is calculated by the
+    computer simulator, even though a partial assessment occurred.
+
+    o Based on FTDTC and FTENDTC, the assessment duration is 29 minutes. SDLP is calculated based on the partial assessment
+      and is provided in FTORRES (not pictured) and FTSTRESN. Assessment duration is not captured on the CRF shown in
+      Figure A1 and is instead derived in the ADFT dataset.
+
+
+                                                                  25
+                                             Contains Nonbinding Recommendations
+
+
+    o A subset of the SUPPFT dataset is shown in Table A4. Within this table, QNAM.FTREASPE shows the reason for the partial
+      assessment, which is submitted as a supplemental qualifier. Row 1 in Table A4 shows QVAL = ‘DIZZINESS’ as the reason
+      for the affected Period 4 Day 2 record found in Row 8 of the FT dataset in Table A3.
+
+       ▪   In this example, the reason for the partial assessment is collected within the example aCRF shown in Figure A1. Row 1 of
+           the SUPPFT dataset shows QORIG = ‘CRF’.
+
+       ▪   The affected record in the FT dataset (Row 8 in the FT dataset) links to the AE dataset (not pictured) via the RELREC
+           dataset shown in Table A5.
+
+    o Whether or not the partial driving assessment results are included within the analysis is indicated within the ADFT dataset
+      and is not handled within the SDTM FT dataset. Additional analysis variables to calculate duration are also included within
+      the ADFT dataset as shown in Appendix 5.1.2.
+
+Table A3. Subset of Sample FT Dataset
+Row USUBJID FTSPID         FTTEST         FTTESTCD FTSTRESN FTSTRESU FTSTAT FTREASND                VISIT       FTDTC    FTENDTC
+                       Standard
+                                                                                                              2023-08-20 2023-08-20
+1    A_100_1 1         Deviation of       SDLP      22.54       cm                               SCREENING
+                                                                                                              T09:30:00 T10:30:00
+                       Lateral Position
+                       Standard
+                                                                                                 PERIOD 1     2023-09-02 2023-09-02
+2    A_100_1 2         Deviation of       SDLP      23.26       cm
+                                                                                                 DAY 2        T09:05:00 T10:05:00
+                       Lateral Position
+                       Standard
+                                                                                                 PERIOD 1     2023-09-06 2023-09-06
+3    A_100_1 3         Deviation of       SDLP      22.91       cm
+                                                                                                 DAY 6        T09:22:00 T10:22:00
+                       Lateral Position
+                       Standard
+                                                                                                 PERIOD 2     2023-09-16 2023-09-16
+4    A_100_1 4         Deviation of       SDLP      25.69       cm
+                                                                                                 DAY 2        T09:08:00 T10:08:00
+                       Lateral Position
+                       Standard
+                                                                                                 PERIOD 2     2023-09-20 2023-09-20
+5    A_100_1 5         Deviation of       SDLP      26.72       cm
+                                                                                                 DAY 6        T09:27:00 T10:27:00
+                       Lateral Position
+                       Standard
+                                                                                                 PERIOD 3     2023-09-30 2023-09-30
+6    A_100_1 6         Deviation of       SDLP      29.09       cm
+                                                                                                 DAY 2        T09:41:00 T10:41:00
+                       Lateral Position
+
+
+
+
+                                                                26
+                                             Contains Nonbinding Recommendations
+
+
+ Row USUBJID FTSPID        FTTEST         FTTESTCD FTSTRESN FTSTRESU FTSTAT FTREASND              VISIT      FTDTC     FTENDTC
+                       Standard
+                                                                           NOT     ADVERSE     PERIOD 3
+7     A_100_1 7        Deviation of       SDLP
+                                                                           DONE    EVENT       DAY 6
+                       Lateral Position
+                       Standard
+                                                                                               PERIOD 4     2023-10-14 2023-10-14
+8     A_100_1 8        Deviation of       SDLP     21.33       cm
+                                                                                               DAY 2        T09:02:00 T09:31:00
+                       Lateral Position
+                       Standard
+                                                                                               PERIOD 4     2023-10-18 2023-10-18
+9     A_100_1 9        Deviation of       SDLP     22.18       cm
+                                                                                               DAY 6        T09:19:00 T10:19:00
+                       Lateral Position
+
+
+
+Figure A1 shows an example aCRF to illustrate how scenarios within Table A3 link to the AE dataset (not pictured) via the RELREC
+dataset shown in Table A5.
+
+
+
+
+                                                               27
+                                         Contains Nonbinding Recommendations
+
+
+1 Figure A1. Example Annotated Case Report Form
+
+
+
+
+                                                         28
+                                              Contains Nonbinding Recommendations
+
+
+
+
+Table A4 shows an example of the Supplemental Qualifiers for Functional Tests (SUPPFT) dataset. The reason for the partial
+assessment is provided within the example SUPPFT dataset for the affected Period 4 Day 2 record in Row 8 of the FT dataset.
+
+Table A4. Subset of Sample SUPPFT Dataset
+Row RDOMAIN USUBJID IDVAR IDVARVAL                     QNAM                 QLABEL                    QVAL                 QORIG
+1      FT          A_100_1    FTSEQ 8               FTREASPE       Reason for Premature End   DIZZINESS                  CRF
+
+Table A5 shows an example of the Related Records (RELREC) dataset used to link records between the FT dataset and the AE
+dataset.
+
+Table A5. Subset of Sample RELREC Dataset
+Row      STUDYID        RDOMAIN            USUBJID             IDVAR               IDVARVAL         RELTYPE               RELID
+1      StudyA         FT               A_100_1            FTSPID              7                  ONE                1
+2      StudyA         AE               A_100_1            AESPID              12                 ONE                1
+3      StudyA         FT               A_100_1            FTSPID              8                  ONE                2
+4      StudyA         AE               A_100_1            AESPID              17                 ONE                2
+
+               Example ADaM Functional Tests Analysis Dataset
+
+Table A6, shown in three parts, shows an example ADFT dataset for the same participant and scenario descriptions as those provided
+in Appendix 5.1.1. Within Table A6, PARAM = ‘Standard Deviation of Lateral Position (cm)’ for all records. Some of the derived
+variables included in Table 4. Specifications for a Subset of ADFT Variables are shown in the dataset as examples. Note that this table
+only shows a subset of variables to be submitted within the overall ADFT dataset. The ordering of variables within Table A6 is
+incidental to group similar variables for illustrative purposes and is not part of the specification for the ADFT dataset. Scenarios
+and/or variables displayed in Table A6 include the following:
+
+
+
+
+                                                                  29
+                                              Contains Nonbinding Recommendations
+
+
+•   For the driving assessments that were not administered (i.e., the driving assessment at the Period 3 Day 6 visit shown in Row 7) or
+    were partially completed (i.e., the driving assessment at the Period 4 Day 2 visit shown in Row 8), SDTM variables originally
+    reported in the FT and SUPPFT datasets are provided within the ADFT dataset to support traceability and an understanding of
+    missing and partial data.
+
+    o These variables include FTSTAT, FTREASND, and FTREASPE.
+
+•   Additional analysis variables support the understanding of partial data. These variables include Analysis Duration (N) (ADURN),
+    Analysis Duration Units (ADURU), and Premature End of Driving Assessment Flag (APREFL).
+
+    o Within Row 8 (i.e., the driving assessment at the Period 4 Day 2 visit), APREFL = ‘Y’, which denotes the scenario where the
+      participant performed the driving assessment at the Period 4 Day 2 visit but did not complete the full 60-minute assessment as
+      specified in the study protocol. In this study, driving assessment measurements such as SDLP were calculated for partial
+      assessments.
+
+    o Within Row 8, ADURN = ‘29’ and ADURU = ‘min’ to indicate the partial assessment lasted 29 minutes based on the start
+      and end time of the driving assessment.
+
+•   Values are populated for ABLFL, BASE, BASETYPE, and PLACDIFF to calculate the difference from placebo in non-placebo
+    treatment arms. Reporting the difference from placebo within the ADFT dataset is recommended so that the requested analysis
+    within section 4.0 Specifications for Tables and Figures can be performed.
+
+    o For the screening visit (i.e., where AVISIT = ‘SCREENING’), Difference from Placebo (PLACDIFF) and corresponding
+      variables were not calculated because this visit is not used in analysis.
+
+    o In addition, for the records in the placebo treatment arm (i.e., where TRTA = ‘Placebo’) PLACDIFF is not calculated because
+      placebo is used as the comparator (i.e., the subtrahend) for each of the other treatment groups for the determination of the
+      difference.
+
+•   Criteria variables, including CRIT1 and CRIT1FL, are provided to indicate when the threshold of impairment defined and
+    prespecified in the protocol (not pictured) was exceeded. In this case, the difference from placebo in SDLP values reported in
+    PLACDIFF that are greater than 2.4 cm (i.e., indicates ‘impaired’) are flagged as shown in rows 4, 5, and 6.
+
+
+                                                                  30
+                                                Contains Nonbinding Recommendations
+
+
+•   Variables used to assess whether driving assessments occurred within the specified window, including ATPT, ATPTREF,
+    DOSEDTM, ARELTM and ARELTMU, are provided. Per the study protocol (not pictured), participants aim to perform the
+    driving assessment 12 hours after their last dose, where the last dose is taken the evening prior. A window of 11to13 hours is
+    defined for Study A for the driving assessment results to be used in analysis. As shown in Part 3 of the table, all driving
+    assessments were conducted within the defined window.
+
+Table A6. (Part 1) Subset of Sample ADFT Dataset
+Row    USUBJID          TRTA                ASTDTM                    AENDTM              AVISIT       PARAMCD       AVAL          FTSTAT
+1      A_100_1                        20Aug2023 9:30 AM         20Aug2023 10:30 AM    SCREENING        SDLP         22.54
+2      A_100_1    Placebo             02Sep2023 9:05 AM         02Sep2023 10:05 AM    PERIOD 1 DAY 2   SDLP         23.26
+3      A_100_1    Placebo             06Sep2023 9:22 AM         06Sep2023 10:22 AM    PERIOD 1 DAY 6   SDLP         22.91
+4      A_100_1    Treatment 50 mg     16Sep2023 9:08 AM         16Sep2023 10:08 AM    PERIOD 2 DAY 2   SDLP         25.69
+5      A_100_1    Treatment 50 mg     20Sep2023 9:27 AM         20Sep2023 10:27 AM    PERIOD 2 DAY 6   SDLP         26.72
+6      A_100_1    Treatment 100 mg    30Sep2023 9:41 AM         30Sep2023 10:41 AM    PERIOD 3 DAY 2   SDLP         29.09
+7      A_100_1    Treatment 100 mg                                                    PERIOD 3 DAY 6   SDLP                    NOT DONE
+8      A_100_1    Zopiclone 7.5mg     14Oct2023 9:02 AM         14Oct2023 9:31 AM     PERIOD 4 DAY 2   SDLP         24.65
+9      A_100_1    Zopiclone 7.5mg     18Oct2023 9:19 AM         18Oct2023 10:19 AM    PERIOD 4 DAY 6   SDLP         21.83
+
+
+
+Table A6. (Part 2) Subset of Sample ADFT Dataset
+Row   FTREASND              FTREASPE          APREFL           ADUR    ADURU         ABLFL     BASE       BASETYPE           PLACDIFF
+1                                                         60           min
+2                                                         60           min       Y            23.26    Placebo for Day 2
+3                                                         60           min       Y            22.91    Placebo for Day 6
+4                                                         60           min                    23.26    Placebo for Day 2    2.43
+5                                                         60           min                    22.91    Placebo for Day 6    3.81
+6                                                         60           min                    23.26    Placebo for Day 2    5.83
+7   ADVERSE EVENT
+8                         DIZZINESS       Y               29           min                    23.26    Placebo for Day 2    1.39
+9                                                         60           min                    22.91    Placebo for Day 6    -1.08
+
+
+
+                                                                      31
+                                                        Contains Nonbinding Recommendations
+
+
+
+
+Table A6. (Part 3) Subset of Sample ADFT Dataset
+    Row                     CRIT1                            CRIT1FL          ATPT       ATPTREF            DOSEDTM             ARELTM          ARELTMU
+    1                                                                       12 Hours     Postdose       19Aug2023 9:30 PM       12.0000       Hours
+    2                                                                       12 Hours     Postdose       01Sep2023 9:00 PM       12.0833       Hours
+    3                                                                       12 Hours     Postdose       05Sep2023 9:15 PM       12.1167       Hours
+    4   Difference from Placebo in SDLP Exceeds 2.4cm       Y               12 Hours     Postdose       15Sep2023 9:00 PM       12.1333       Hours
+    5   Difference from Placebo in SDLP Exceeds 2.4cm       Y               12 Hours     Postdose       19Sep2023 9:00 PM       12.4500       Hours
+    6   Difference from Placebo in SDLP Exceeds 2.4cm       Y               12 Hours     Postdose       29Sep2023 9:30 PM       12.1833       Hours
+    7
+    8                                                                       12 Hours     Postdose       13Oct2023 9:00 PM       12.0333       Hours
+    9                                                                       12 Hours     Postdose       17Oct2023 9:30 PM       12.8167       Hours
+
+                  Example Tables and Figures
+
+The example tables and figures provided in this section are illustrated using the same scenario for Study A outlined in section 5.1
+Example Datasets.
+
+Table A7. Participant Continuation Summary by Treatment Sequence and Period1
+                                                                                       Treatment Sequence
+                                         Sequence 1                      Sequence 2                       Sequence 3                        Sequence 4
+              Period               (50mg 100mg PC2 PBO3)            (100mg PC PBO 50mg)              (PC PBO 50mg 100mg)               (PBO 50mg 100mg PC)
+                                           N = 20                          N = 21                           N = 22                            N = 23
+             Period 1                  50mg: 20 (100%)                 100mg 21 (100%)                   PC: 22 (100%)                    PBO: 23 (100%)
+             Period 2                  100mg: 20 (100%)                  PC: 21 (100%)                  PBO: 22 (100%)                   50mg: 23 (100%)
+             Period 3                    PC: 19 (95%)                   PBO: 21 (100%)                  50mg: 22 (100%)                  100mg: 23 (100%)
+             Period 4                   PBO: 18 (90%)                 50mg: 20 (95.23%)                100mg: 22 (100%)                   PC: 22 (95.65%)
+
+1
+  Counts provided for each treatment sequence and period within Table A7 represent the population count at the start of each period.
+2
+  PC = Positive Control.
+3
+  PBO = Placebo.
+
+                                                                               32
+                                                         Contains Nonbinding Recommendations
+
+
+
+
+Table A8. Driving Assessment Completion Summary by Treatment Sequence, Period, and Dosing4
+                                                                                             Treatment Sequence
+                                Single or              Sequence 1                   Sequence 2               Sequence 3            Sequence 4
+           Period
+                              Repeated Dose       (50mg 100mg PC PBO)          (100mg PC PBO 50mg)      (PC PBO 50mg 100mg)   (PBO 50mg 100mg PC)
+                                                         N = 20                       N = 21                   N = 22                N = 23
+                                  Single             50mg: 20 (100%)             100mg: 21 (100%)           PC: 22 (100%)       PBO: 23 (100%)
+          Period 1
+                                 Repeated            50mg: 20 (100%)             100mg: 20 (95.23%)         PC: 22 (100%)       PBO: 23 (100%)
+                                  Single             100mg: 20 (100%)             PC: 20 (95.23%)          PBO: 22 (100%)      50mg: 21 (91.30%)
+          Period 2
+                                 Repeated            100mg: 18 (90%)               PC: 21 (100%)           PBO: 22 (100%)       50mg: 23 (100%)
+                                  Single               PC: 19 (95%)                PBO: 21 (100%)         50mg: 22 (100%)       100mg: 23 (100%)
+          Period 3
+                                 Repeated              PC: 19 (95%)                PBO: 21 (100%)         50mg: 22 (100%)      100mg: 22 (95.65%)
+                                  Single              PBO: 18 (90%)              50mg: 20 (95.23%)        100mg: 22 (100%)      PC: 22 (95.65%)
+          Period 4
+                                 Repeated             PBO: 18 (90%)              50mg: 20 (95.23%)       100mg: 21 (95.45%)     PC: 22 (95.65%)
+
+
+
+
+4
+    Table A8 includes missing data due to discontinuation and intermittent missing data.
+
+                                                                                 33
+

@@ -1,0 +1,1565 @@
+    Master Protocols for
+     Drug and Biological
+    Product Development
+              Guidance for Industry
+                              DRAFT GUIDANCE
+       This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (CDER) Scott N. Goldie at
+Scott.Goldie@fda.hhs.gov, or (CBER) Office of Communication, Outreach and Development, at
+800-835-4709 or 240-402-8010.
+
+
+                    U.S. Department of Health and Human Services
+                             Food and Drug Administration
+                   Center for Drug Evaluation and Research (CDER)
+                  Center for Biologics Evaluation and Research (CBER)
+
+                                          June 2026
+                              Biostatistics / Clinical / Medical
+                                          Revision I
+   Master Protocols for
+    Drug and Biological
+   Product Development
+               Guidance for Industry
+                                   Additional copies are available from:
+
+                                       Division of Drug Information
+                                 Center for Drug Evaluation and Research
+                                      Food and Drug Administration
+                                  Phone: 855-543-3784 or 301-796-3400
+                                       Email: druginfo@fda.hhs.gov
+          https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+                                                  and/or
+
+                            Office of Communication, Outreach and Development
+                                Center for Biologics Evaluation and Research
+                                        Food and Drug Administration
+                                   Phone: 800-835-4709 or 240-402-8010
+                                    Email: industry.biologics@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-
+                                                  guidances
+
+
+
+
+                      U.S. Department of Health and Human Services
+                               Food and Drug Administration
+                     Center for Drug Evaluation and Research (CDER)
+                    Center for Biologics Evaluation and Research (CBER)
+
+
+                                              June 2026
+                                  Biostatistics / Clinical / Medical
+                                              Revision I
+                                               Contains Nonbinding Recommendations
+                                                           Draft — Not for Implementation
+                                                           TABLE OF CONTENTS
+
+
+
+I.           INTRODUCTION............................................................................................................. 1
+II.          BACKGROUND ............................................................................................................... 5
+III.         CONSIDERATIONS FOR DESIGN AND ANALYSIS ............................................... 6
+     A.      Randomization ............................................................................................................................... 6
+     B.      Control Group ................................................................................................................................ 7
+     C.      Informed Consent ........................................................................................................................ 10
+     D.      Blinding to Treatment Assignment ............................................................................................ 11
+     E.      Adaptive Design ........................................................................................................................... 13
+     F.      Comparisons Between Drugs ...................................................................................................... 13
+     G.      Approaches for Evaluating Drug Effects in Multiple Diseases, Conditions, or Disease
+     Subtypes ................................................................................................................................................ 14
+     H.      Multiplicity ................................................................................................................................... 15
+     I.      Safety ............................................................................................................................................. 17
+IV.  CONSIDERATIONS ON TRIAL OVERSIGHT, DATA SHARING, AND
+DISSEMINATION OF INFORMATION ................................................................................ 18
+V.           CONSIDERATIONS TO SUPPORT REGULATORY REVIEW ............................ 19
+     A.      General Investigational New Drug Considerations .................................................................. 20
+     B.      IND Cross-Referencing ............................................................................................................... 21
+     C.      Updates to the Master Protocol or its Substudies ..................................................................... 22
+     D.      Communications and Safety Reporting ..................................................................................... 23
+REFERENCES............................................................................................................................ 25
+APPENDIX .................................................................................................................................. 26
+     A.      Optimal Allocation Ratio ............................................................................................................ 26
+     B.      Examples of Randomization Strategies for Partially-Blinded, Placebo-Controlled Studies. 27
+     C.      Example of How to Use eCTD for a Master Protocol ............................................................... 29
+     D.      Expected Communications Between the Master Protocol Sponsor, Individual Drug
+     Sponsors, and FDA ............................................................................................................................... 30
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+
+ 1        Master Protocols for Drug and Biological Product Development
+ 2                            Guidance for Industry1
+ 3
+ 4
+ 5   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 6   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+ 7   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+ 8   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+ 9   for this guidance as listed on the title page.
+10
+11
+12
+13
+14   I.       INTRODUCTION
+15
+16   This guidance document provides recommendations on the design and analysis of trials
+17   conducted under a master protocol as well as guidance on the submission of documentation to
+18   support regulatory review. 2 This draft guidance revises and replaces the previous draft guidance
+19   for industry of the same name issued on December 21, 2023, and reflects FDA’s consideration of
+20   public comments on the draft guidance. This revision provides additional recommendations on
+21   basket trials and minor changes for clarity on topics such as randomization, choice of control,
+22   and informed consent.
+23
+24   For the purpose of this guidance, FDA defines the following terms:
+25
+26        •   Master protocol: a protocol designed with multiple substudies, which may have different
+27            objectives and involve coordinated efforts to evaluate one or more drugs 3 in one or more
+28            diseases or conditions within the overall study structure.
+29
+30        •   Substudy: the specific objectives, design, conduct, and analysis related to evaluation of a
+31            single drug in a single disease, condition, or disease subtype in the master protocol.
+32
+33   Examples of trial types that could use a master protocol include the following:
+34
+35        •   Umbrella trial: a trial designed to evaluate multiple drugs concurrently for a single
+36            disease or condition. Figure 1 provides a schematic representation of an umbrella trial.
+
+     1
+       This guidance has been prepared by the Office of Biostatistics and the Office of New Drugs in the Center for Drug
+     Evaluation and Research in cooperation with the Center for Biologics Evaluation and Research at the Food and Drug
+     Administration.
+     2
+       FDA is issuing this guidance to satisfy, in part, a mandate under section 3607(b)(2)(C-F) of the Food and Drug
+     Omnibus Reform Act of 2022 (FDORA). Consistent with the FDORA mandate, this guidance discusses
+     recommendations for clinical trials to streamline logistics and facilitate the efficient collection and analysis of data,
+     as well as important principles for the evaluation of effectiveness, recommendations for communication between
+     sponsors and the FDA, and considerations related to ensuring participant safety and data integrity in such trials.
+     3
+       For the purposes of this guidance, all references to drugs include both human drugs and biological products unless
+     otherwise specified.
+
+
+                                                                1
+                                     Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+37
+38       •   Basket trial: a trial designed to evaluate a drug for multiple diseases, conditions, or
+39           disease subtypes. Figure 2 provides a schematic representation of a basket trial.
+40
+41       •   Platform trial: a trial designed to evaluate multiple drugs for one or more diseases,
+42           conditions, or disease subtypes in an ongoing manner, with drugs entering or leaving the
+43           platform. Figure 3 provides a schematic representation of a platform trial evaluating
+44           multiple drugs for a single disease.
+45
+46   Trials using a master protocol may incorporate design features common to both umbrella and
+47   basket trials. For example, some platform trials incorporate both umbrella and basket
+48   components by evaluating multiple drugs for multiple diseases (see Figure 4 for a schematic
+49   representation). Trials using a master protocol also may evaluate individual drugs or drug
+50   combinations. 4
+51
+52
+53   Figure 1. Example of an Umbrella Trial
+
+
+
+
+54
+55
+56
+57
+58
+59
+
+
+
+
+     4
+       There are additional considerations for the development of fixed-combination drugs; see 21 CFR 300.50 for more
+     information.
+
+
+                                                             2
+                              Contains Nonbinding Recommendations
+                                     Draft — Not for Implementation
+60
+61   Figure 2. Example of a Basket Trial
+
+
+
+
+62
+63
+64   Figure 3. Example of a Platform Trial in One Disease
+
+
+
+
+65
+66
+
+
+
+
+                                                   3
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+67   Figure 4. Example of a Platform Trial in Multiple Diseases
+
+
+
+
+68
+69
+70   For the purpose of this guidance, the term master protocol sponsor refers to the person or
+71   organization who takes responsibility for and initiates the master protocol. 5 A master protocol
+72   should be submitted in a new Investigational New Drug Application (IND) to FDA (see section
+73   V). In many instances, individual drugs chosen for evaluation in the master protocol will also be
+74   evaluated under separate INDs independent of the master protocol. A sponsor responsible for the
+75   investigation of an individual drug evaluated under the separate IND is referred to as the
+76   individual drug sponsor. The master protocol sponsor and the individual drug sponsor may or
+77   may not be the same entity. This guidance uses the term sponsor when providing general
+78   recommendations that may be relevant to both the master protocol sponsor and individual drug
+79   sponsors.
+80
+81   The primary focus of this guidance is on randomized trials using a master protocol that are
+82   intended to contribute to a demonstration of safety and substantial evidence of effectiveness of a
+83   drug. The concepts discussed may also be useful to consider for early-phase or exploratory trials
+84   under a master protocol as well as those conducted to satisfy post-marketing commitments or
+85   requirements. The recommendations and considerations in this guidance may not apply to master
+86   protocols evaluating first-in-human drugs, given the unique attributes from both a trial design
+87   and regulatory perspective that must be considered. 6
+88
+
+
+     5
+       See 21 CFR 312.3.
+     6
+       This guidance does not address first-in-human expansion cohort studies in oncology, because these master
+     protocols evaluate drugs in a limited population with serious oncologic disease for which no satisfactory alternative
+     therapies are available. For more information on this topic, see the guidance for industry Expansion Cohorts: Use in
+     First-in-Human Clinical Trials to Expedite Development of Oncology Drugs and Biologics (March 2022). We
+     update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page at
+     https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+
+                                                               4
+                                     Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+ 89   The considerations in this guidance apply to a range of therapeutic areas. Sponsors considering
+ 90   master protocols in oncology should also consult Master Protocols: Efficient Clinical Trial
+ 91   Design Strategies To Expedite Development of Oncology Drugs and Biologics (March 2022). 7
+ 92   Sponsors evaluating cellular and gene therapy products in early-phase development should
+ 93   consult the guidance for industry Studying Multiple Versions of Cellular or Gene Therapy
+ 94   Product in Early-Phase Clinical Trials (November 2022).
+ 95
+ 96   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+ 97   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+ 98   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+ 99   the word should in Agency guidances means that something is suggested or recommended, but
+100   not required.
+101
+102
+103   II.     BACKGROUND
+104
+105   When well-designed and well-conducted, trials using master protocols can accelerate drug
+106   development by maximizing the amount of information obtained from the research effort.
+107   Compared with stand-alone trials under separate protocols, a master protocol may offer logistical
+108   advantages by leveraging shared protocol elements (e.g., visit schedule, measurement
+109   procedures), shared infrastructure (e.g., recruitment efforts, a network of clinical sites, central
+110   facilities, a central randomization system, an overarching data management system), and shared
+111   oversight (e.g., by a steering committee and data monitoring committee). Some master protocols
+112   may also improve efficiency by using a shared control arm in evaluating multiple drugs or by
+113   leveraging information on drug effects across multiple related diseases, conditions, or disease
+114   subtypes. Such advantages may make master protocols particularly suitable in certain settings.
+115   For example, a master protocol may be useful in settings where participant recruitment is
+116   challenging (e.g., some pediatric or rare-disease trials), because comparing multiple drugs to a
+117   shared placebo arm can reduce the number of participants on placebo relative to multiple trials
+118   comparing each drug to a placebo.
+119
+120   However, master protocols add elements of complexity, which can increase start-up time and
+121   present design challenges (for example, in ensuring adequate blinding to treatment assignment
+122   (see section III.D)). Additionally, master protocols involving multiple interested parties will
+123   require a high degree of coordination. Sponsors should carefully weigh these considerations
+124   when deciding whether a master protocol is appropriate as part of a drug development program.
+125
+126   A master protocol can be used to generate different types of data including proof-of-concept,
+127   dose-ranging, effectiveness, and safety data. Sponsors should consider the role of the master
+128   protocol in the overall drug development program, because this will inform its objectives, design,
+129   and analysis plan. For example, the choice of endpoint in a master protocol may differ depending
+130   on whether the objective is to screen multiple drugs rapidly to determine which ones to carry
+131   forward into later stage trials or to contribute to a demonstration of substantial evidence of
+132   effectiveness. As with other types of trials, whether the data generated by a trial conducted under
+
+      7
+       We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page at
+      https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+                                                             5
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+133   a master protocol will be adequate to contribute to a demonstration of substantial evidence of
+134   effectiveness will depend on the design and conduct of the trial and the persuasiveness of its
+135   results. 8 A development program that includes a master protocol will often also include stand-
+136   alone trials, given the different types of data needed to support drug development.
+137
+138
+139   III.    CONSIDERATIONS FOR DESIGN AND ANALYSIS
+140
+141   This section discusses important considerations for the design and analysis of master protocols,
+142   with a focus on randomized trials that are intended to contribute to a demonstration of safety and
+143   substantial evidence of effectiveness.
+144
+145           A.       Randomization
+146
+147   FDA recommends randomization of participants to the drug (or to one of the drugs) being
+148   evaluated or to a control arm to remove systematic imbalances between treatment arms in both
+149   measured and unmeasured prognostic factors and to ensure reliable inference on drug safety and
+150   effectiveness.
+151
+152   In master protocols evaluating multiple drugs with a shared control arm, sponsors should
+153   consider using a randomization scheme that allocates more participants to the control arm than
+154   each individual drug arm, as this can increase power for each drug-versus-control comparison for
+155   a given total sample size (Chandereng et al. 2020 and Appendix: section A). Note that although
+156   the randomization ratio that optimizes power involves greater-than-equal allocation to the control
+157   arm, the probability that an individual participant entering the trial will be assigned to control is
+158   less than in a typical two-arm controlled trial with 1:1 randomization. This disproportionate
+159   randomization also reduces the risk of a poorly or highly performing control arm leading to
+160   multiple correlated erroneous findings (see section III.H).
+161
+162   The choice of a randomization scheme can be informed by multiple factors, including efficiency
+163   and operational considerations. Randomization schemes that maintain a constant randomization
+164   ratio between each drug and control can be considered. It is also possible to design a trial such
+165   that the randomization ratio changes over time. This can occur when drugs enter or exit a
+166   platform trial over time with certain fixed randomization schemes (i.e., schemes where the
+167   randomization ratio does not depend on accumulating covariate or outcome data from the
+168   platform trial). For example, one randomization scheme (see Appendix: section A) could change
+169   the randomization ratio from √2: 1: 1 (control:drug A:drug B) to √3: 1: 1: 1 (control:drug A:drug
+170   B:drug C) when a third drug, drug C, enters a trial that had been previously evaluating two drugs,
+171   drug A and drug B. Another randomization scheme could maintain a constant probability of
+172   being randomized to control over time, such that the randomization ratio for an individual drug
+173   relative to control changes as the number of drugs evaluated in the platform trial changes. If the
+174   randomization ratio for a drug relative to the control changes over time, the comparisons
+175   between the drug and control should account for time periods of different randomization ratios.
+
+      8
+        See the draft guidance for industry Demonstrating Substantial Evidence of Effectiveness for Human Drug and
+      Biological Products (December 2019). When final, this guidance will represent the FDA’s current thinking on this
+      topic.
+
+
+                                                              6
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+176   Possible approaches include stratifying by the time period or inverse weighting by probabilities
+177   of treatment assignments. Such approaches are important to prevent the potential for bias due to
+178   temporal trends, for example, if participants enrolled earlier in the trial are both more likely to
+179   have favorable outcomes and more likely to be assigned to drug.
+180
+181   In settings where it is reasonable for a participant to be treated simultaneously with more than
+182   one of the drugs being evaluated under a master protocol, a factorial design could also be
+183   considered. For example, participants at trial entry could be randomized to drug A or a placebo
+184   for drug A and also randomized to drug B or a placebo for drug B, such that some participants
+185   are assigned to receive drug A and drug B in combination. This design provides data on drugs
+186   used in combination but would not be appropriate in many circumstances, such as when drugs A
+187   and B are hypothesized to be duplicative, antagonistic, or unsafe when used together.
+188
+189   It may be necessary for master protocols evaluating multiple drugs to use drug-specific eligibility
+190   criteria in some settings (e.g., excluding participants with diminished kidney function for a drug
+191   with kidney toxicity). In these situations, protocols and randomization processes should be
+192   designed to prevent participants from being randomized to drugs they are not eligible to receive,
+193   as this would compromise participant safety and the integrity of the randomized comparison (see
+194   additional discussion in section III.B).
+195
+196   It may be reasonable in some master protocols for participants who complete one drug-specific
+197   substudy and an appropriate washout period to re-enroll and be randomized to a different drug-
+198   specific substudy. This is similar to stand-alone trials, in which participants who previously
+199   completed a clinical trial may be eligible to enroll in a new clinical trial of a different drug after
+200   an appropriate washout period. However, there may be additional considerations in some master
+201   protocols, such as the importance of accounting for correlated data within participants who
+202   receive control in one substudy and drug in another substudy of a master protocol (see section
+203   III.B).
+204
+205            B.       Control Group
+206
+207   The choice of control group is a critical design element of any trial, including one conducted
+208   under a master protocol. 9 This guidance focuses on master protocols that include randomization
+209   to an internal control group in their design, as opposed to use of an external control. Although
+210   some of the considerations discussed in this guidance on the use of nonconcurrent control data
+211   may also be relevant for the use of external control data, specific considerations for external
+212   controls in a master protocol are outside the scope of this document. 10
+213
+
+
+
+
+      9
+        The control could be placebo or active and could be used for superiority and/or non-inferiority comparisons.
+      General considerations about the choice of control, such as those discussed in the ICH guidance for industry E10
+      Choice of Control Group and Related Issues in Clinical Trials (May 2001), are outside the scope of this document.
+      10
+         For additional considerations on the use of external controls, see the draft guidance for industry Considerations
+      for the Design and Conduct of Externally Controlled Trials for Drug and Biological Products (February 2023).
+      When final, this guidance will represent the FDA’s current thinking on this topic.
+
+
+                                                                7
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+214   Types of Control Data
+215
+216   The composition of the control group for a given drug is an important consideration in platform
+217   and umbrella trials. A platform trial allows products to enter and exit in an ongoing manner, such
+218   that the control arm spanning the duration of the trial includes both participants randomized to
+219   the control who were concurrently enrolled (i.e., enrolled during the time period when
+220   participants were being randomized to the given drug) and participants who were
+221   nonconcurrently randomized to the control and thus could not have been randomized to the given
+222   drug. For example, consider a platform trial that initially randomizes participants to one of two
+223   drugs (drugs A and B) or a shared control. At later calendar times, two additional drugs, drug C
+224   and then drug D, enter the platform. The schematic in Figure 5 illustrates such a hypothetical
+225   platform trial and depicts concurrent and nonconcurrent controls for the evaluation of drug D.
+226
+227   Figure 5. Schematic of a Platform Trial that Depicts Concurrent and Nonconcurrent
+228   Controls for the Evaluation of a Given Drug (Drug D)
+
+
+
+
+229
+230
+231   It is also possible for an umbrella or platform trial evaluating multiple drugs to include
+232   participants who are enrolled concurrently with a given drug but who could not have been
+233   randomized to that drug. This scenario can occur for multiple reasons. For example, a substudy
+234   may contain drug-specific eligibility criteria for safety reasons (e.g., exclusion of participants
+235   with diminished kidney function for a drug with kidney toxicity). Similarly, participants may be
+236   unable to receive a drug when they are enrolled in a master protocol in which some sites (e.g., in
+237   different geographical regions) offer only a subset of the drugs currently under evaluation.
+238
+239   Recommended Use of Control Data to Preserve Integrity of Randomized Comparisons
+240
+241   The control group used for the primary comparison of any given drug in a master protocol
+242   evaluating multiple drugs should generally be selected to preserve randomization and include
+243   only concurrently eligible control participants (i.e., only those participants who met the drug
+244   eligibility criteria and could have been randomized to the given drug but were instead
+245   concurrently randomized to the control arm). Nonconcurrently randomized participants and
+
+
+                                                       8
+                                        Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+246   concurrently randomized participants who could not have been randomized to the drug should
+247   not be included.
+248
+249   Use of concurrently eligible controls preserves the integrity of randomized comparisons and
+250   ensures valid inference on the effects of the drug by avoiding systematic differences between
+251   groups with respect to both known and unknown factors that are prognostic of the key outcomes.
+252   For example, systematic differences between a drug and nonconcurrent control could be caused
+253   by temporal shifts in participant characteristics, 11 trial conduct, or standard of care, especially for
+254   a long-running platform trial or in a rapidly changing clinical setting. In the presence of such
+255   temporal shifts, use of nonconcurrent control data can lead to bias in treatment effect estimates
+256   and alter the type I and type II error probabilities even if attempts are made to account for
+257   potential trends in the analysis (e.g., Lee and Wason 2020 and Jiao et al. 2019). Notably, the use
+258   of a shared control arm in platform trials leads to considerable efficiency gains relative to stand-
+259   alone trials even if comparisons for a given drug use only concurrently eligible controls.
+260
+261   Alternative Approaches
+262
+263   Although use of a concurrently eligible control group is the preferred approach to support the
+264   most robust conclusions, there may be rare circumstances in which sponsors can justify use of
+265   other control data. Use of other control data, such as nonconcurrent control data, can increase the
+266   precision of inference on the treatment effect due to the increased number of participants in the
+267   control arm. This increased precision may be particularly relevant in settings where there are
+268   different bias-variance tradeoffs, such as early-phase exploratory trials and trials in rare diseases
+269   with feasibility constraints, as long as the approach can be scientifically justified.
+270
+271   Sponsors considering the use of nonconcurrent control data in a platform trial intended to
+272   contribute to substantial evidence of effectiveness should discuss their rationale for such an
+273   approach with the Agency early in their planning. Information relevant to this discussion
+274   includes: the feasibility of relying on only concurrent control data; the likelihood of temporal
+275   changes that could affect the treatment comparison; the amount of nonconcurrent control data to
+276   be used; the expected separation in calendar time between randomization of nonconcurrent
+277   control participants and initiation of randomization to the drug of interest; and statistical methods
+278   intended to account for potential temporal changes and their underlying assumptions.
+279
+280   In circumstances where use of nonconcurrent control data may be justified, sponsors should
+281   incorporate methods to address potential bias. The decision to use nonconcurrent control data
+282   should be made and agreed upon with FDA before the start of the trial, as this will avoid a
+283   scenario where a sponsor proposes to use nonconcurrent data after seeing certain results (e.g., a
+284   poorly performing control arm). Additionally, the master protocol should ensure uniform
+285   approaches to trial design and conduct, especially for characteristics likely to affect the outcome
+286   of interest, and should specify the collection of known baseline prognostic variables and post-
+
+
+      11
+        There are many reasons why characteristics of participants entering a trial may change over time. For example,
+      participants entering a trial at the beginning may be more likely to have had the disease for a longer period of time
+      and thus a worse prognosis than participants entering the trial later, who may be more likely to have newly
+      diagnosed disease.
+
+
+                                                                 9
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+287   baseline influences on the outcome (e.g., concomitant medications). 12 The planned primary
+288   analysis should incorporate approaches to mitigate potential for confounding due to changes in
+289   prognostic factors over time. Possible approaches may include adjustment for a function of
+290   calendar time and baseline prognostic factors, a dynamic approach for the amount of
+291   nonconcurrent control data borrowing (e.g., with a Bayesian hierarchical model), 13 and/or a
+292   network meta-analysis to combine comparisons between concurrently randomized treatment
+293   arms. The underlying assumptions of the primary analysis should be described, and the operating
+294   characteristics of the analysis should be evaluated in different settings (e.g., in the presence of
+295   temporal shifts). Additionally, sensitivity analyses should be planned and conducted to
+296   understand the effect of the use of nonconcurrent control data on the evaluation of the treatment
+297   effect. For example, these may include an evaluation of the treatment effect based on only
+298   concurrent control data and/or based on increased weighting of the concurrent control data (and
+299   decreased weighting of the nonconcurrent control data) relative to the primary analysis.
+300
+301   Similar considerations apply to the inclusion in the analysis of participants who are enrolled and
+302   randomized to the control concurrently with the given drug but who could not have been
+303   randomized to that drug. For example, a proposal to include concurrently enrolled participants
+304   who do not meet eligibility criteria for the given drug should be supported by a scientific
+305   justification that discusses bias-variance tradeoffs. In addition, methods should be planned to
+306   address potential bias, such as adjustment for prognostic factors that may differ between the drug
+307   arm and concurrently enrolled participants randomized to the control who do not meet drug
+308   eligibility criteria.
+309
+310   Changes to the Control Arm or Background Therapy
+311
+312   Sponsors should carefully consider when it may be appropriate to incorporate a drug evaluated
+313   under the master protocol into the trial either as part of the control arm or as background therapy.
+314   Such a change is complex because it may affect various design and analysis considerations such
+315   as whether the primary comparison for other drugs is to evaluate superiority or noninferiority,
+316   sample size calculations, and the integration of data before and after the change for drugs with
+317   ongoing evaluation at the time of the change. Therefore, sponsors should seek concurrence from
+318   the Agency before implementing any such changes to the control arm or background therapy.
+319
+320            C.       Informed Consent
+321
+322   The informed consent process should cover all treatment arms in the trial to which the participant
+323   could be randomized. 14 Additionally, in a platform trial allowing drugs to enter and leave the
+324   trial over time, the consent form should be modified over time to reflect the drugs currently
+
+      12
+         In addition, sponsors of new drugs that may enter a platform trial should consider the availability of important
+      data for previously enrolled (nonconcurrent) control participants, such as on baseline characteristics used for drug-
+      specific eligibility criteria.
+      13
+         For more discussion on Bayesian methods, see the draft guidance for industry Use of Bayesian Methodology in
+      Clinical Trials of Drug and Biological Products (January 2026). When final, this guidance will represent the FDA’s
+      current thinking on this topic.
+      14
+         Some consent processes allow a participant to be randomized in the trial even if the participant only consents to a
+      subset of the drugs under evaluation; under such a process, participants should not have the potential to be
+      randomized to drugs for which they do not consent.
+
+
+                                                                10
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+325   under evaluation. FDA recognizes that the complexity of a master protocol could result in
+326   lengthy informed consent forms that are difficult for participants to understand and therefore
+327   recommends that sponsors follow approaches outlined in guidance to reduce the length and
+328   enhance the readability of the consent forms. 15
+329
+330   In master protocols evaluating multiple drugs with a shared control arm, the informed consent
+331   process should occur before a participant’s randomization and avoid drug-specific substudy
+332   consent. Although obtaining drug-specific substudy consent after participants have been
+333   randomized (e.g., in a two-step consent approach) may decrease the complexity of the informed
+334   consent process, it may also result in participants with different distributions of prognostic
+335   characteristics across the drug substudies, raising concern about the comparability of each drug
+336   group with the shared control group (comprised of control participants from different drug-
+337   specific substudies).
+338
+339   To illustrate the concern, consider a master protocol with two drugs (drug A and drug B) in
+340   which the participant consents to screening and randomization to a drug-specific substudy as part
+341   of the master protocol, with a separate drug-specific substudy informed consent process to occur
+342   after randomization to that substudy; after the consent for the drug-specific substudy, the
+343   participant is then randomized to the drug or its matched control. With this process, comparing
+344   drug A against the shared control arm (including participants who received either control for
+345   drug A or control for drug B) may result in noncomparable groups if participants who would
+346   consent to participating in the drug A substudy differ from participants who would consent to
+347   participating in the drug B substudy.
+348
+349   Therefore, an approach with drug-specific substudy consent adds the potential for bias. For
+350   example, if a non-trivial overall proportion of participants choose not to consent to their assigned
+351   drug-specific substudy, or if differential proportions choose not to consent across the different
+352   drug-specific substudies, it may compromise the interpretability of trial results. Sponsors
+353   considering post-randomization drug-specific study consent should provide a strong justification
+354   for doing so and a description of steps that will be taken to mitigate risk of bias (e.g., specifying
+355   that participants who do not consent to their assigned substudy are not eligible to re-enroll and be
+356   randomized to another substudy).
+357
+358           D.       Blinding to Treatment Assignment
+359
+360   The approach to blinding is a critical design element in any randomized clinical trial. A double-
+361   blind trial, where the participants, investigators, and sponsor staff are unaware of the assigned
+362   treatment, is the optimal approach to avoid bias. 16
+363
+364   In a master protocol evaluating multiple drugs with a shared control, ensuring that participants
+365   and investigators are completely blinded to treatment assignment (i.e., unaware of both a
+
+      15
+         See the guidance for IRBs, clinical investigators, and sponsors Informed Consent (August 2023). Also, see the
+      draft guidance for sponsors, investigators, and institutional review boards Key Information and Facilitating
+      Understanding in Informed Consent (March 2024). When final, this guidance will represent the FDA’s current
+      thinking on this topic.
+      16
+         See the ICH guidance for industry E9 Statistical Principles for Clinical Trials (September 1998).
+
+
+                                                              11
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+366   participant’s assigned drug-specific substudy and whether the participant is receiving a drug or
+367   the control) becomes more complex as the number of drugs with different routes of
+368   administration or dosing schedules increases. Different blinding strategies can achieve different
+369   degrees of blinding. Whether the chosen approach adequately addresses the potential sources of
+370   bias is situation-dependent and informed by several factors such as the trial design choices (e.g.,
+371   endpoint selection) and the stage of drug development. Given the unique challenges related to
+372   blinding, sponsors should discuss their proposed approach with the Agency early in their
+373   planning. This section discusses different blinding strategies for master protocols evaluating
+374   multiple drugs with a shared control and some factors sponsors should consider when proposing
+375   a strategy.
+376
+377   In a placebo-controlled trial, one approach is a multiple-dummy design where participants are
+378   completely blinded to their assigned treatment arm. For example, in a trial with three drugs, a
+379   participant would receive three placebos or one drug and two placebos. In this design, there is
+380   complete blinding to both the potential investigational drug the participant could receive (i.e., to
+381   the drug-specific substudy) and to whether the participant is receiving an investigational drug or
+382   a placebo. A strategy that achieves complete blinding does the best job of mitigating potential
+383   bias.
+384
+385   Another approach is to use a distinct, blinded placebo control for each drug where participants
+386   have knowledge of their assigned drug-specific substudy but are blinded to whether they are
+387   receiving the given drug or its matched placebo (i.e., partial blinding). In this case, participants
+388   could be first randomized to one of the drug-specific substudies for which they are eligible and
+389   then randomized to either that drug or its matched placebo (e.g., see Appendix section B.).
+390
+391   In an active-controlled trial, blinding could be implemented through a multiple-dummy approach
+392   to achieve complete blinding or a double-dummy approach for each substudy, if necessary, 17 to
+393   achieve partial blinding to whether the participant is receiving the investigational drug or the
+394   active control product. For the partial blinding approach, participants could be first randomized
+395   to a drug-specific substudy (among those they are eligible for) and then randomized to either: (1)
+396   that drug + the placebo for the active control or (2) the matched placebo for the drug + the active
+397   control.
+398
+399   As the number of drugs evaluated under the master protocol increases, it may be both appropriate
+400   and more feasible to use a partial blinding strategy. However, if the primary analysis for a drug is
+401   based on a comparison to the shared control group of participants receiving different matched
+402   controls, it is critical to consider whether this strategy adequately addresses sources of potential
+403   bias for the main outcomes of interest. This strategy mitigates potential bias due to knowledge of
+404   whether the participant is receiving an investigational drug or the control. However, there is still
+405   the potential for bias if the main outcomes of interest are likely to be affected by different routes
+406   and/or schedules of administration, or by knowledge of the assigned drug-specific substudy. In
+407   trials using a primary analysis with a shared control and partial blinding, a sensitivity analysis
+408   can be performed comparing each drug to only those participants receiving the matched control.
+409   This analysis preserves the integrity of a randomized, completely blinded comparison but may be
+
+      17
+        A double-dummy would be necessary for drug-specific substudies evaluating a drug that differs from the active
+      control in route and/or frequency of administration.
+
+
+                                                             12
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+410   underpowered. Refer to section III.I for additional considerations regarding the analysis of
+411   certain safety outcomes when using a partial blinding strategy.
+412
+413   If there is concern about bias with a partial blinding strategy, FDA recommends the use of a
+414   multiple-dummy design to achieve complete blinding or the use of a primary analysis with
+415   comparisons for a given drug based on only its matched control. Other options might be to
+416   restrict the master protocol to only evaluate products with similar routes and schedules of
+417   administration, or to use a multiple-dummy approach and a shared control within groups of drugs
+418   with similar routes and schedules of administration (e.g., within drugs administered
+419   intravenously and within drugs administered orally).
+420
+421   A final option is to use an open-label design. Only in rare circumstances can this be justified and
+422   viewed as an adequate and well-controlled trial, for example, if the endpoint is both objective
+423   and unlikely to be influenced by differences in supportive care or participant behavior caused by
+424   knowledge of treatment assignment and if blinding is highly impractical. Sponsors should
+425   consult with FDA before considering this approach.
+426
+427          E.      Adaptive Design
+428
+429   Master protocols often include adaptive design elements, such as interim analyses to decide
+430   whether to stop enrollment in a substudy of a drug due to efficacy or futility, to modify the
+431   sample size, and/or to modify the randomization ratio. The important principles discussed in the
+432   guidance for industry Adaptive Designs for Clinical Trials of Drugs and Biologics (November
+433   2019) are generally applicable to adaptive designs for master protocols. However, incorporating
+434   adaptive design elements into a master protocol can present unique challenges. For example,
+435   consider an umbrella or platform trial with a binary endpoint and an interim analysis based on
+436   the blinded pooled event rate to re-estimate the sample size needed to ensure adequate power to
+437   detect an effect. Conducting the analysis separately for each drug-specific substudy based on the
+438   pooled event rate across that drug and the shared control arm may result in dissemination of
+439   information about the comparative efficacy of the drugs, particularly if the drugs entered the trial
+440   around the same time (see section IV). Although conducting the analysis based on pooled data
+441   across all the drug arms and the control arm would better protect confidentiality of interim
+442   results, this approach may provide less accurate estimates of the sample size needed to ensure
+443   adequate power for the evaluation of each drug.
+444
+445          F.      Comparisons Between Drugs
+446
+447   In an umbrella or platform trial evaluating multiple drugs, the primary focus is to evaluate the
+448   efficacy and safety of each individual drug compared to the control arm; however, there may also
+449   be interest in comparing drugs with each other. Although FDA does not require such
+450   comparisons, they may be useful for comparative effectiveness research and informing treatment
+451   guidelines. Sponsors planning on conducting these comparisons should prespecify them in the
+452   statistical analysis plan.
+453
+
+
+
+
+                                                       13
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+454            G.       Approaches for Evaluating Drug Effects in Multiple Diseases, Conditions, or
+455                     Disease Subtypes
+456
+457   Basket trials and platform trials with basket components involve the evaluation of the effects of a
+458   drug in multiple diseases, conditions, or disease subtypes in different substudies. In some cases,
+459   the primary objective may be to evaluate the average effect of the drug in the combined
+460   population by conducting a single combined analysis of data across the individual substudy
+461   populations. In other cases, the primary objective may be to evaluate the effects of the drug
+462   within each disease, condition, or disease subtype. One approach to support this objective is to
+463   conduct separate analyses within each individual substudy population using only data from that
+464   population. This may be the most appropriate approach in many basket trials to minimize bias.
+465   Alternatively, in settings where there is sufficient scientific justification, sponsors may consider
+466   leveraging information across related substudy populations to allow for potential efficiency
+467   gains. Information across substudies may be leveraged in a qualitative or quantitative manner.
+468   For example, consider a development approach to demonstrate substantial evidence of
+469   effectiveness based on one adequate and well-controlled trial and confirmatory evidence. If
+470   scientifically supported, the evaluation of the target substudy population may serve as the one
+471   adequate and well-controlled trial with the results in other related substudy population(s) in the
+472   master protocol providing the confirmatory evidence. 18 Another option would involve more
+473   quantitative leveraging of information with analyses that borrow data across substudy
+474   populations (e.g., with Bayesian methods) such that estimates of the treatment effect in a
+475   subpopulation are based on data from that subpopulation as well as data from other relevant
+476   subpopulations.
+477
+478   Sponsors should specify and justify a clear primary objective of the overarching trial and provide
+479   a rationale for how the design and analysis of the trial will accomplish the objective. This should
+480   include a justification for combining or leveraging information across substudies. Considerations
+481   related to combining or leveraging information across substudies include the following:
+482
+483        •   The degree of relevance of information across substudies, i.e., the extent to which drug
+484            effects are expected to be similar across the substudy populations; this may be influenced
+485            by, for example:
+486
+487                 o   The degree of similarity in disease pathophysiology across the substudy
+488                     populations
+489
+490                 o   The degree of similarity in how the drug is expected to modulate disease
+491                     pathophysiology, including the drug’s pharmacokinetic properties, across the
+492                     substudy populations
+493
+494                 o   The degree of similarity in endpoints and other estimand attributes across the
+495                     substudy populations
+496
+
+      18
+        See the draft guidance for industry Demonstrating Substantial Evidence of Effectiveness With One Adequate and
+      Well-Controlled Clinical Investigation and Confirmatory Evidence (September 2023). When final, this guidance
+      will represent the FDA’s current thinking on this topic.
+
+
+                                                             14
+                                    Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+497      •   The prevalence of the different substudy populations and feasibility considerations, such
+498          as the feasibility of enrolling sufficient sample sizes within individual substudy
+499          populations to support separate analyses that would be adequately powered under
+500          plausible assumptions
+501
+502      •   Whether there will be additional late-phase trial(s) conducted to contribute to a
+503          demonstration of substantial evidence of effectiveness in the substudy populations; for
+504          example, if a substudy under a master protocol is intended to be the sole adequate and
+505          well-controlled trial providing evidence in a specific population, less combining or
+506          leveraging and more persuasive stand-alone evidence in that population may be expected
+507
+508   Sponsors should prespecify and justify statistical methods, including both 1) methods to evaluate
+509   the primary trial objective (e.g., hypothesis tests and associated success criteria), and 2) methods
+510   to estimate treatment effects with quantification of uncertainty. Statistical methods fall along a
+511   continuum with respect to how information is combined or leveraged across substudies. At one
+512   end of the continuum is the approach of conducting separate analyses within individual substudy
+513   populations, which involves no leveraging of information across substudy populations. At the
+514   other end of the continuum is the approach of conducting a single combined analysis of data
+515   across the individual substudy populations and evaluating the average effect in the combined
+516   populations. There are also statistical approaches that fall somewhere between the two ends of
+517   the continuum and borrow some information on drug effects in other substudy populations when
+518   evaluating drug effects in a given individual substudy population. These include methods (e.g.,
+519   Bayesian hierarchical models) in which the degree of borrowing depends on the similarity in the
+520   observed effects across the substudy populations. Selecting from among the different statistical
+521   approaches involves bias-variance tradeoffs. Greater borrowing of information across substudy
+522   populations generally improves precision and may increase power, but also may increase bias in
+523   the evaluation of drug effects in a given substudy population.
+524
+525   Regardless of the approach used to evaluate the primary trial objective (e.g., specific hypothesis
+526   testing method), estimation of treatment effects with quantification of uncertainty within each
+527   individual substudy population is important to facilitate benefit-risk assessments. For example, if
+528   the primary hypothesis test evaluates the average effect in the combined substudy populations,
+529   subgroup analyses to estimate effects within the individual substudy populations (potentially
+530   with some borrowing, if justified) should be conducted to further inform the benefit-risk
+531   assessment in each substudy population.
+532
+533   Sponsors should support their proposed statistical approach with an evaluation of its operating
+534   characteristics relative to alternatives, including in scenarios where true effects differ across the
+535   substudy populations (e.g., in which the drug is only effective in one or a subset of the substudy
+536   populations). This should generally include an evaluation of probabilities of false positive and
+537   false negative conclusions (see section III.H) and bias-variance tradeoffs in estimates.
+538
+539          H.      Multiplicity
+540
+541   Master protocols entail multiple comparisons involving the primary endpoint; however, FDA
+542   generally does not recommend the use of multiplicity adjustments to strongly control the
+
+
+
+                                                        15
+                                        Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+543   probability of making at least one type I error across the multiple comparisons of different drugs
+544   to the control, or across the multiple comparisons of a single drug to control in different diseases,
+545   conditions, or disease subtypes. Such comparisons are aligned with distinct clinical objectives
+546   that would typically be evaluated in multiple independent clinical trials without adjustments for
+547   multiplicity across the trials. Furthermore, the expected total number of type I errors is the same
+548   regardless of whether these comparisons are made in independent trials or in a single trial under
+549   a master protocol, due to the linearity of expectation. 19
+550
+551   There may be some exceptions where there are different recommendations related to handling
+552   multiplicity, in particular, when multiple treatments being evaluated under a master protocol are
+553   very closely related. For example, it is generally important to control the type I error probability
+554   across the evaluation of multiple doses, administrations, or formulations of the same drug,
+555   because such comparisons represent closely related questions about the same molecular entity.
+556   Evaluations of fixed-combination drug products also may have unique considerations, such as an
+557   expectation that the trial demonstrates contributions of each of the components to satisfy FDA
+558   regulations on fixed-combination prescription drugs for humans. 20
+559
+560   In addition, it is important to control the familywise type I error probability for the evaluation of
+561   each individual drug in an intended population across other sources of multiplicity (e.g., multiple
+562   endpoints), just as in trials that are not conducted under a master protocol. Different types of
+563   master protocols can also introduce unique considerations related to probabilities of false
+564   positive and false negative conclusions, as discussed below.
+565
+566   In master protocols evaluating multiple drugs with a shared control arm, even though the
+567   expected total number of type I errors is the same as in the case where the drugs are evaluated in
+568   independent trials, the probability distribution for the number of type I errors 21 differs (Proschan
+569   and Follmann 1995). For example, due to the correlation between hypothesis test statistics for
+570   different drugs, the overall probability of committing at least one type I error is lower, whereas
+571   the probability of multiple type I errors is higher, than when there are separate comparisons in
+572   independent trials (e.g., Howard et al. 2018). Therefore, the probability distribution for the
+573   number of type I errors (as well as other important operating characteristics, such as power)
+574   should be considered both in evaluating a proposed design and analysis plan and in evaluating
+575   the persuasiveness of results. For example, as noted in section III.A, use of a randomization ratio
+576   other than equal allocation to have a greater proportion of participants in the control group may
+577   be considered to reduce the chance of multiple correlated erroneous findings and to optimize
+578   power.
+579
+
+      19
+         The linearity of expectation is the property that the expected value of the sum of random variables is equal to the
+      sum of their individual expected values, regardless of whether the random variables are independent or dependent.
+      Given this property, for any point in the null hypothesis (e.g., in a master protocol evaluating multiple drugs, the
+      global null scenario where all drugs are ineffective or a scenario where some drug(s) are ineffective and some
+      drug(s) are effective), the expected number of type I errors would be equivalent.
+      20
+         See 21 CFR 300.50.
+      21
+         Consider an example setting in which three drugs are being evaluated. Under the global null hypothesis that all
+      three drugs are ineffective, the analyses of the trial(s) conducted could lead to false conclusions of efficacy for none
+      of the drugs, one drug, two drugs, or all three drugs (i.e., could lead to zero, one, two, or three type I errors). The
+      probability distribution for the number of type I errors refers to the probabilities of each of these outcomes.
+
+
+                                                                 16
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+580   In master protocols evaluating a drug for multiple diseases, conditions, or disease subtypes in
+581   different substudies, it is important to evaluate type I error probabilities and other important
+582   operating characteristics, such as power, for the individual substudy populations. Sponsors
+583   should justify the appropriateness of the operating characteristics in a range of different
+584   scenarios. Approaches that involve borrowing information on drug effects across the different
+585   substudy populations may come with tradeoffs. For example, borrowing may lead to better
+586   operating characteristics in scenarios where true effects are similar across the substudy
+587   populations but worse operating characteristics in scenarios where effects are considerably
+588   different (e.g., where the drug is only effective in one or a subset of the substudy populations).
+589   The appropriateness of borrowing and of the resulting operating characteristics in different
+590   scenarios may depend on many factors (see further discussion in section III.G).
+591
+592   Finally, there are other important factors (e.g., the clinical relevance of the endpoint and
+593   estimated treatment effect, the quality of design and conduct, the magnitude of the p-value, and
+594   information from relevant external studies) in evaluating the evidence of effectiveness of a drug
+595   in a given population beyond the results of hypothesis testing in a single trial (e.g., a substudy of
+596   a trial conducted under a master protocol). 22
+597
+598           I.       Safety
+599
+600   As noted in Section II, a development program may include both master protocols and stand-
+601   alone trials. An individual drug development program needs to provide sufficient safety data at
+602   the time of a marketing application to demonstrate that the drug is safe, which requires a
+603   showing that the drug’s benefits for a particular indication outweigh its risks. 23 The data from a
+604   master protocol can be considered as part of the overall safety database and benefit-risk
+605   assessment. As with all development programs, data from other sources (e.g., human safety data
+606   from other clinical investigations, pharmacology/toxicology studies) will be needed to support
+607   approval. 24 The size and duration of the safety database and approach for evaluating safety,
+608   including the use of standard adverse event definitions, toxicity grading, and data collection to
+609   allow for integrated safety analyses, should be discussed with the relevant review division. FDA
+610   encourages these discussions because safety and benefit-risk considerations for individual
+611   development programs will be drug- and disease-specific. 25
+612
+613   The type of master protocol and drugs expected to be evaluated will influence the approach to
+614   safety data collection and analysis. For example, in a master protocol evaluating multiple drugs
+615   with a shared control and partial blinding, some safety outcomes (e.g., injection site reactions)
+616   may be expected to differ depending on the route and/or schedule of administration of the drugs
+617   being evaluated. In such circumstances, it would be appropriate for the analysis of these specific
+618   safety outcomes for a given drug to use only the control participants receiving a placebo with a
+619   matched route and/or schedule of administration. If such analyses are not sufficient to evaluate
+
+      22
+         See the draft guidance for industry Demonstrating Substantial Evidence of Effectiveness for Human Drug and
+      Biological Products (December 2019). When final, this guidance will represent the FDA’s current thinking on this
+      topic.
+      23
+         See the guidance for industry Benefit-Risk Assessment for New Drug and Biological Products (October 2023).
+      24
+         See 21 CFR 314.50.
+      25
+         See the guidance for industry Premarket Risk Assessment (March 2005).
+
+
+                                                             17
+                                        Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+620   these safety outcomes, sponsors may need to consider a multiple-dummy, complete blinding
+621   approach (see section III.D) or a design with greater allocation to each matched control and also
+622   may need to provide additional data from studies outside of the master protocol.
+623
+624   In settings where the safety profile of the drug(s) is well established, sponsors may wish to
+625   pursue a selective approach to safety data collection. 26 In a master protocol with selective safety
+626   data collection for some but not all drugs that share a control arm (e.g., with partial blinding to
+627   treatment assignment), the comparisons for a given drug should use only the subset of
+628   participants in the control group for whom the appropriate safety data were planned to be
+629   collected. Additionally, if the safety data collection strategy differs between some treatment arms
+630   (e.g., differs between substudies), sponsors should address the impact of such differences in their
+631   risk-based monitoring plans, given the increased potential of data collection errors. 27
+632
+633
+634   IV.  CONSIDERATIONS ON TRIAL OVERSIGHT, DATA SHARING, AND
+635   DISSEMINATION OF INFORMATION
+636
+637   Oversight committees ensure the protection of trial participants and promote trial integrity. The
+638   use of shared oversight committees may result in a need for fewer resources and allow for
+639   standardization of various aspects of the trial conducted under the master protocol. FDA
+640   recommends a central institutional review board (IRB) to review the master protocol, informed
+641   consent, and other relevant documents associated with trial monitoring. FDA also recommends
+642   that the sponsor appoint an independent, external data monitoring committee (DMC) or other
+643   appropriate independent entity to oversee accumulating safety and efficacy data. 28 Given the
+644   complexities of master protocols, a DMC may be particularly important for protecting the safety
+645   of participants and maintaining trial integrity, for example, by ensuring the confidentiality of
+646   information across substudies (discussed further below). Depending on the trial design, the
+647   sponsor may also decide to have an endpoint assessment or adjudication committee to review
+648   data on important efficacy and/or safety endpoints in the trial.
+649
+650   Inadvertent dissemination of information from an ongoing trial conducted under a master
+651   protocol may pose risks to trial integrity. For example, in an event-driven umbrella or platform
+652   trial in which multiple drugs enter the study simultaneously, the fact that one drug-versus-control
+653   comparison has reached the target number of events for the final analysis could imply that other
+654   drugs still in the trial have had fewer events. If the endpoint represents the time to an event
+655   capturing a poor outcome (e.g., time to death), reporting a finding that the first drug is superior to
+656   the control could suggest that a drug remaining in the trial is also superior to the control because
+657   it would have had even fewer events of poor outcomes. Conversely, if the endpoint represents
+658   the time to an event capturing a good outcome (e.g., recovery), reporting a finding of futility for
+
+      26
+         For a detailed discussion of selective safety collection, including factors to consider in pursuing this approach, see
+      the ICH guidance for industry E19 A Selective Approach to Safety Data Collection in Specific Late-Stage Pre-
+      Approval or Post-Approval Clinical Trials (December 2022).
+      27
+         See the guidances for industry Oversight of Clinical Investigations — A Risk-Based Approach to Monitoring
+      (August 2013) and A Risk-Based Approach to Monitoring of Clinical Investigations, Questions and Answers (April
+      2023).
+      28
+         See the guidance for industry Establishment and Operation of Clinical Trial Data Monitoring Committees (March
+      2006).
+
+
+                                                                 18
+                                       Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+659   the first drug could suggest futility for a drug still under evaluation in the trial because it would
+660   have had even fewer events of good outcomes. Such dissemination of information could
+661   influence trial conduct and integrity by affecting recruitment, adherence, retention, or crossover.
+662   As another example, consider a case in which unblinded comparative results are reported for one
+663   drug in an umbrella or platform trial while another drug remains under evaluation. If a shared
+664   control group is used, knowledge of blinded pooled data for the drug still in the trial (i.e., pooled
+665   across the drug and shared control groups) in addition to the comparative results reported for the
+666   first drug may lead to partial unblinding of comparative results for the drug still being evaluated.
+667   Hence, it may be important to limit access to these pooled data if results are to be reported for
+668   other drugs with overlapping control groups. 29
+669
+670   In general, in master protocols evaluating multiple drugs, the DMC and study team should
+671   carefully consider data access plans and how best to plan analyses and communicate results for
+672   individual drugs without inadvertent dissemination of information for other drugs. Steps to
+673   maintain trial integrity should be proposed and discussed with the Agency at the design stage.
+674
+675   FDA also recommends that sponsors consider entering into data-sharing agreements to allow for
+676   leveraging of information across drugs. Available data on other drugs evaluated under a master
+677   protocol can add information relevant for the assessment of a specific drug. For example,
+678   leveraging information across multiple related drugs with similar mechanisms of action can
+679   improve the understanding of specific types of adverse reactions related to that mechanism. In
+680   addition, the availability of data can enable comparisons between drugs (see section III.F).
+681
+682   However, the leveraging of data from other drugs still under ongoing evaluation necessitates
+683   some degree of access to unblinded interim results. Such access has the potential to negatively
+684   affect trial conduct (e.g., recruitment, adherence, or retention); therefore, such approaches should
+685   be considered only in conjunction with a careful data access plan to maintain trial integrity. A
+686   data access plan should include steps to limit, to the extent possible, those with access to
+687   unblinded interim results for drugs that remain active in the master protocol. In some cases, the
+688   risks to trial integrity may outweigh the potential advantages of leveraging data from other drugs.
+689
+690
+691   V.       CONSIDERATIONS TO SUPPORT REGULATORY REVIEW
+692
+693   This section of the guidance provides regulatory considerations and recommendations for the
+694   submission of documentation to FDA for trials using a master protocol. These recommendations
+695   primarily apply to the master protocol sponsor. The regulatory considerations for a master
+696   protocol have increased complexity compared to those for a protocol for a stand-alone trial given
+697   the involvement of additional interested parties, the potential for frequent changes, and the
+698   quantity of documentation. Because of these complexities, each master protocol should be
+699   submitted in a new IND to FDA.
+
+      29
+         Sponsors of master protocol studies that are required to be registered in clinicaltrials.gov may submit a good cause
+      extension request to extend the deadline for submitting the required clinical trial results information due to the need
+      to preserve the scientific integrity of the study. For additional information, refer to:
+      https://cdn.clinicaltrials.gov/documents/GCE_Criteria_final_508.pdf.
+
+
+
+                                                                19
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+700
+701            A.      General Investigational New Drug Considerations
+702
+703   Master protocol sponsors should take the following general considerations into account when
+704   submitting a master protocol:
+705
+706        •   The master protocol sponsor should request a pre-IND meeting to discuss the protocol
+707            and submission details. 30 The cover letter for these meeting requests should clearly state
+708            “REQUEST FOR MEETING-MASTER PROTOCOL (Meeting Type B).” Due to the
+709            complexities associated with master protocols, multiple meetings may be needed before
+710            the submission of the IND.
+711
+712        •   Clinical investigations using a master protocol should generally be conducted under the
+713            master protocol IND only. However, in some basket trials and platform trials with basket
+714            components, submission of separate INDs for new substudies (i.e., substudy INDs) may
+715            be appropriate, particularly when the required subject matter expertise for evaluation of
+716            the proposed investigations resides in multiple review divisions. It is generally expected
+717            that such an approach will involve a single sponsor (the master protocol sponsor) of the
+718            master protocol IND and all substudy INDs. Master protocol sponsors should discuss the
+719            planned submission approach with the relevant review division(s), considering the
+720            planned patient populations, study design, and analytical approach (e.g., whether the
+721            analysis may leverage information across different substudies). Refer to section V.B for
+722            information regarding cross-referencing when submitting different substudy INDs and
+723            section V.C for information regarding updates to the master protocol or its substudies.
+724
+725        •   The master protocol trial should be the only trial conducted under the master protocol
+726            IND (and substudy INDs, if applicable).
+727
+728        •   For master protocols submitted electronically, FDA requires that Study Tagging Files be
+729            used to identify the master protocol and each of its substudies. Relevant documentation
+730            under the master protocol and each substudy must use appropriate file-tags (e.g., protocol
+731            and/or amendment, study report body). Use of the Study Tagging File will improve the
+732            organization of the electronic common technical document (eCTD) and facilitate FDA’s
+733            review of the submissions (see Figure B). 31
+734
+735        •   INDs containing master protocols are subject to all applicable requirements under 21
+736            CFR 312.
+737
+738        •   The drugs to be evaluated in master protocols designed to contribute to a demonstration
+739            of substantial evidence of effectiveness are expected to have undergone previous clinical
+740            testing in humans and, therefore, to have a separate IND file. In rare cases where there
+
+
+      30
+         See the draft guidance for industry Formal Meetings Between the FDA and Sponsors or Applicants of PDUFA
+      Products (September 2023). When final, this guidance will represent the FDA’s current thinking on this topic.
+      31
+         Additional information on eCTD submission standards can be found at: https://www.fda.gov/drugs/electronic-
+      regulatory-submission-and-review/electronic-common-technical-document-ectd.
+
+
+                                                             20
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+741           may not be a separate IND for the drug (e.g., a drug developed solely outside of the
+742           United States), master protocol sponsors should consult FDA.
+743
+744       •   The master protocol sponsor should provide a separate Investigator’s Brochure (IB) for
+745           each drug being evaluated in the master protocol rather than a single IB that covers all the
+746           drugs being evaluated.
+747
+748       •   Although most clinical investigations using master protocols will be required to be
+749           conducted under an IND, a clinical investigation using a master protocol may be
+750           exempt 32 from this requirement in select circumstances. For example, the clinical
+751           investigation would be exempt if all the substudies of a master protocol meet the criteria
+752           for an IND exemption under 21 CFR 312.2(b)(1). However, if any of the substudies of a
+753           master protocol do not meet the IND exemption criteria, the clinical investigation using
+754           the master protocol must be conducted under an IND. 33
+755
+756                  o If an IND is not submitted for a master protocol because the clinical
+757                    investigation is exempt and, subsequently, changes are anticipated that would
+758                    render the clinical investigation no longer exempt from the requirement for an
+759                    IND, 34 the master protocol sponsor should submit an IND before making those
+760                    changes.
+761
+762       •   The Agency may place the clinical investigation under the master protocol on full clinical
+763           hold if the deficiency(ies) identified apply to the overall protocol and, therefore, all
+764           substudies of the master protocol. The Agency may place the clinical investigation under
+765           a master protocol on partial hold if the deficiency(ies) identified do not apply to the
+766           overall protocol, but to a specific substudy or substudies conducted under the master
+767           protocol. 35
+768
+769           B.       IND Cross-Referencing
+770
+771   The following are recommendations regarding cross-referencing between the master protocol
+772   IND and other INDs:
+773
+774       •   To facilitate FDA review of investigational drugs evaluated in a master protocol, the
+775           master protocol IND should cross-reference relevant, previously submitted information in
+776           the INDs for the individual investigational drugs, such as nonclinical study findings, drug
+777           product quality specifications, and clinical data.
+778
+779       •   Individual drug INDs for drugs being evaluated in a master protocol can cross-reference
+780           limited elements of the master protocol IND (e.g., the drug-specific substudy).
+781
+
+      32
+         See the guidance for clinical investigators, sponsors and IRBs Investigational New Drug Applications (INDs) —
+      Determining Whether Human Research Studies Can Be Conducted Without an IND (September 2013).
+      33
+         See 21 CFR 312.2.
+      34
+         For example, when there is an addition of a new arm in a platform trial that does not meet exemption criteria.
+      35
+         See 21 CFR 312.42.
+
+
+                                                              21
+                                      Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+782          •   For master protocols with submission of separate substudy INDs, the master protocol
+783              sponsor should cross-reference relevant previously submitted information in the master
+784              protocol IND rather than resubmit the information to the substudy IND. Also, the master
+785              protocol IND should cross-reference information in the substudy IND. Refer to section
+786              V.C for further information on cross-referencing when there are updates to the master
+787              protocol or its substudies.
+788
+789          •   To cross-reference information in another sponsor’s IND, a signed, written statement
+790              from that sponsor authorizing such cross-reference must be provided. 36
+791
+792              C.      Updates to the Master Protocol or its Substudies
+793
+794   Given the potentially rapid pace of changes associated with master protocols, FDA recommends
+795   the following procedures for updates to the master protocol or its substudies:
+796
+797          •   For master protocols with submission of all substudies under the master protocol IND, a
+798              potential new substudy (e.g., a new drug or a new population proposed to be evaluated
+799              under the master protocol) should be submitted to the master protocol IND as a protocol
+800              amendment. Any proposed changes to the master protocol or one of its substudies should
+801              also be submitted as protocol amendments.
+802
+803          •   For master protocols with submission of separate substudy INDs, master protocol
+804              sponsors should follow these procedures:
+805
+806                   o If a new substudy is being initiated, the substudy protocol should be submitted to
+807                     a new, separate substudy IND. There should also be submissions to the master
+808                     protocol IND and to all other substudy INDs to notify about the new substudy and
+809                     cross-reference the new substudy IND.
+810
+811                   o If the master protocol is amended, a protocol amendment should be submitted to
+812                     the master protocol IND. There should also be submissions to all the substudy
+813                     INDs to notify about the changes and cross-reference the master protocol IND.
+814
+815                   o If a substudy protocol is amended, a protocol amendment should be submitted to
+816                     the substudy IND. There should also be submissions to the master protocol IND
+817                     and to all other substudy INDs to notify about the changes and cross-reference the
+818                     respective substudy IND.
+819
+820          •   The cover letter for submissions of major changes (e.g., initiation of a new substudy,
+821              amendment of a key design element) to a master protocol IND should include the status
+822              of each substudy in the master protocol (e.g., on which substudies are open and complete,
+823              the status of enrollment, and the substudy IND number, if different from the master
+824              protocol IND). Sponsors should also consider including such information in the cover
+825              letter for other types of submissions to the master protocol IND.
+
+      36
+           See 21 CFR 312.23(b).
+
+
+                                                          22
+                                       Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+826
+827        •   The master protocol sponsor should clearly mark the cover letter for protocol
+828            amendments with “Protocol Amendment-MASTER PROTOCOL,” and include a clean
+829            and tracked changes version of the amended document as well as a separate document
+830            specifying what changes are being made.
+831
+832        •   The master protocol sponsor should submit protocol amendments that substantively affect
+833            the safety, quality, or scope of the master protocol at least 30 days before initiation of the
+834            changes. 37 For example, in the case of a master protocol with submission of all substudies
+835            under the master protocol IND, the master protocol sponsor should submit a new
+836            substudy at least 30 days before initiating the substudy to allow sufficient time for FDA
+837            to review potential changes that may impact the safety of participants (e.g., use of a new
+838            drug, different dosing regimen/dosage, or different patient population).
+839
+840        •   The master protocol sponsor should notify the regulatory project manager at least 48
+841            hours before submitting any protocol amendment that could substantively affect the
+842            safety, quality, or scope of the master protocol.
+843
+844            D.      Communications and Safety Reporting
+845
+846   The master protocol IND should include a well-designed communication plan to ensure timely
+847   and effective communications between interested parties and to help ensure compliance with
+848   legal requirements (see Figure C). FDA recommends that a communication plan be employed by
+849   the master protocol sponsor to ensure the dissemination of information and advice from FDA to
+850   the individual drug sponsor(s). Additionally, the master protocol sponsor should establish a
+851   systematic approach that ensures the rapid communication of serious safety issues to clinical
+852   investigators and FDA under IND safety reporting regulations. 38 This approach should include a
+853   process for rapid implementation of protocol amendments to address serious safety issues. 39
+854   With regard to safety reporting, sponsors should be aware of the following: 40
+855
+
+
+
+
+      37
+         Per 21 CFR 312.30(b)(2)(ii), when changes to the protocol are intended to eliminate an apparent immediate
+      hazard to participants they may be implemented immediately provided that FDA is subsequently notified by
+      protocol amendment and the reviewing IRB is notified in accordance with 21 CFR 56.104(c).
+      38
+         See 21 CFR 312.32.
+      39
+         See 21 CFR 312.30(b)(1) and 312.30(b)(2)(ii).
+      40
+         For additional information regarding safety reporting, see the guidance for industry and investigators Safety
+      Reporting Requirements for INDs and BA/BE Studies (December 2012). Also, see the draft guidance for industry
+      Sponsor Responsibilities - Safety Reporting Requirements and Safety Assessment for IND and
+      Bioavailability/Bioequivalence Studies (June 2021). When final, this guidance will represent the FDA’s current
+      thinking on this topic.
+
+
+                                                              23
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+
+856        •   All clinical investigators are required to submit safety reports to the master protocol
+857            sponsor. 41
+858
+859        •   Master protocol sponsors are required to submit IND safety reports to FDA and all
+860            participating investigators when they determine that a serious adverse event is
+861            unexpected, and there is a reasonable possibility that the drug caused the serious adverse
+862            event (i.e., there is evidence to suggest a causal relationship between the drug and the
+863            adverse event). 42
+864
+865        •   FDA expects that the master protocol sponsor will also forward all initial IND safety
+866            reports to the relevant individual drug sponsors. Those sponsors in turn, are required to
+867            promptly review the information. 43
+868
+869            o The individual drug sponsor should review each safety report, add any relevant
+870              context or additional information, and submit an initial safety report and any relevant
+871              follow-up information to their active IND(s) for the investigational drug, if
+872              required, 44,45 that references the IND safety report submitted by the master protocol
+873              sponsor.
+874
+
+
+
+
+      41
+         See 21 CFR 312.64(b)). Also, see the draft guidance for industry Investigator Responsibilities-Safety Reporting
+      for Investigational Drugs and Devices (September 2021). When final, this guidance will represent the FDA’s current
+      thinking on this topic.
+      42
+         See 21 CFR 312.32(c)(1). Sponsors are also required under 21 CFR 312.55(b) to keep each participating
+      investigator informed of any new observations discovered or reported to the sponsor on the drug, particularly with
+      respect to adverse events and safe use.
+      43
+         See 21 CFR 312.32(b).
+      44
+         See 21 CFR 312.32(c)(1).
+      45
+         See 21 CFR 312.32(d).
+
+
+                                                             24
+                                         Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+875   REFERENCES 46
+876
+877   Brown, BM and TP Hettmansperger, 2002, Kruskal-Wallis, Multiple Comparisons and Efron
+878   Dice, Australian and New Zealand Journal of Statistics 44(4): 427–438.
+879
+880   Chandereng, T, X Wei, and R Chappell, 2020, Imbalanced Randomization in Clinical Trials.
+881   Statistics Medicine, 39(16): 2185–2196.
+882
+883   Howard, DR, JM Brown, S Todd, and WM Gregory, 2018, Recommendations on Multiple
+884   Testing Adjustment in Multi-arm Trials with a Shared Control Group, Statistical Methods in
+885   Medical Research, 27(5): 1513-1530.
+886
+887   Jiao, F, W Tu, S Jimenez, and YF Chen, 2019, Utilizing Shared Internal Control Arms and
+888   Historical Information in Small-Sized Platform Clinical Trials, Journal of Biopharmaceutical
+889   Statistics, 29(5): 845-859.
+890
+891   Lee, KM, and J Wason, 2020, Including Non-Concurrent Control Patients in the Analysis of
+892   Platform Trials: is it Worth it?, BMC Medical Research Methodology, 20: 165.
+893
+894   Proschan, MA and DA Follmann, 1995, Multiple Comparisons with Control in a Single
+895   Experiment Versus Separate Experiments: Why Do We Feel Differently?, The American
+896   Statistician, 49: 144.
+897
+
+
+
+
+      46
+           Some of the listed references also apply to the Appendix.
+
+
+                                                                 25
+                                          Contains Nonbinding Recommendations
+                                                   Draft — Not for Implementation
+898   APPENDIX 1
+899
+900              A.       Optimal Allocation Ratio
+901
+902   In certain scenarios, such as trials to evaluate more than two treatment groups compared to a
+903   common control, unequal allocation can improve efficiency (Chandereng et al. 2020). Here is a
+904   demonstration using a simple case that power can be increased with disproportionately greater
+905   randomization to the control group in an umbrella or platform trial with a fixed total sample size.
+906   Consider an umbrella trial in which there are 𝑁𝑁 total participants, 𝑘𝑘 drugs, and 1 control group.
+907   For some fraction 𝑝𝑝 suppose that 𝑁𝑁 × 𝑝𝑝 participants are assigned to control and 𝑁𝑁 × (1 − 𝑝𝑝)⁄𝑘𝑘
+908   participants are assigned to each drug. Also, suppose that the treatment effect 𝛿𝛿 is the same for
+909   each drug and that outcomes for all groups have the same variance. The power of a z-test is
+910   determined by 𝛿𝛿 ⁄𝜎𝜎, where 𝜎𝜎 2 is the variance of the (treatment – control) difference in means and
+911   is proportional to:
+912
+                                                                   𝑘𝑘      1
+913                                                𝑓𝑓(𝑝𝑝) =              +     .
+                                                               𝑁𝑁(1 − 𝑝𝑝) 𝑁𝑁𝑁𝑁
+914
+915   Considering 𝑝𝑝 as continuous in (0, 1) (even though strictly speaking the number of treatment and
+916   control participants are integers) the first derivative of 𝑓𝑓(𝑝𝑝) is
+917
+                                                                    𝑘𝑘         1
+918                                              𝑓𝑓 ′ (𝑝𝑝) =             2
+                                                                           −       .
+                                                               𝑁𝑁(1 − 𝑝𝑝)    𝑁𝑁𝑝𝑝2
+919
+920   The second derivative of f(p) is
+921
+                                                                2𝑘𝑘          2
+922                                          𝑓𝑓 ′′ (𝑝𝑝) =              3
+                                                                         +       > 0,
+                                                            𝑁𝑁(1 − 𝑝𝑝)     𝑁𝑁𝑝𝑝3
+923
+924   so the function 𝑓𝑓(𝑝𝑝) is convex, and thus the variance is minimized by setting the first derivative
+925   to zero. This is achieved at 𝑝𝑝 = 1⁄(1 + √𝑘𝑘), which is equivalent to a randomization ratio for the
+926   control relative to a given drug of √𝑘𝑘: 1. In contrast, equal allocation to all treatment groups
+927   would correspond to 𝑝𝑝 = 1⁄(1 + 𝑘𝑘). This example illustrates a simple case, and the Chandereng
+928   et al. 2020 paper shows more generally that the optimal allocation will have disproportionate
+929   randomization to the control group when 𝑘𝑘 > 1. In a platform trial where drugs enter and leave
+930   and the number of drugs being evaluated changes over time, the derivation of the optimal
+931   allocation ratio is more complex and may depend on factors such as the degree to which the
+932   evaluation periods of different drugs overlap.
+933
+934   The intuitive reason why power can increase with disproportionate randomization is that it can
+935   lead to a larger sample size for each drug – control) comparison, and the power with an
+936   unequally randomized large sample size comparison can in some cases exceed the power of an
+937   equally randomized small-sample-size comparison. Consider an example under the paradigm
+938   above where the total sample size for the master protocol is fixed at 600 participants and there
+      1
+          The references cited in the Appendix are listed in the References section of the guidance.
+
+
+                                                                   26
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+                                                                                             1
+939   are 4 drugs and 1 shared control group. Optimal allocation of 200 participants (𝑝𝑝 = ) to the
+                                                                                           3
+940   shared control group and 100 participants to each drug group would result in 300 participants
+941   and optimal power for the comparison of a given drug to the control group. Equal allocation to
+                      1
+942   all groups (𝑝𝑝 = ) would result in 120 participants allocated to each drug group and to the control
+                      5
+943   group, resulting in only 240 participants for the comparison of a given drug to the control group.
+944
+945          B.      Examples of Randomization Strategies for Partially-Blinded, Placebo-
+946                  Controlled Studies
+947
+948   Example 1: Randomization Process for 1:1 Allocation Ratio
+949
+950   Here is an example of a 2-step randomization process that maintains a 1:1 allocation ratio for the
+951   pooled placebo arm relative to a given drug:
+952
+953      1. Randomize with equal probability (1: 1: … : 1) to one of the drugs the participant is
+954         eligible to receive.
+955
+956      2. Randomize to the drug or matching placebo version of that product with allocation 𝑘𝑘: 1,
+957         where 𝑘𝑘 is the number of drugs for which the participant is eligible.
+958
+959   There are alternative randomization strategies that also target a 1:1 allocation ratio for a given
+960   drug and the pooled placebo arm. One alternative is to first randomize participants to one of the
+961   drugs or the pooled placebo arm with equal probability and then randomize participants in the
+962   pooled placebo arm to one of the drug-specific placebos with equal probability. A second
+963   alternative is to first randomize participants to drug or placebo in a 𝑘𝑘: 1 ratio and then randomize
+964   participants to a specific drug or drug-specific placebo with equal probability.
+965
+966   Example 2: Randomization Process for √𝑘𝑘: 1 Allocation Ratio
+967
+968   Here is one example of a 2-step randomization process that targets a √𝑘𝑘: 1 allocation ratio for the
+969   pooled placebo arm relative to a given drug to increase power with greater-than-equal allocation
+970   to placebo (see Appendix: section A):
+971
+972      1. Randomize with equal probability (1: 1: … : 1) to one of the drugs the participant is
+973         eligible to receive.
+974
+975      2. Randomize to the drug or matching placebo version of that product with allocation √𝑘𝑘: 1,
+976         where 𝑘𝑘 is the number of drugs for which the participant is eligible.
+977
+978   Illustrative Figure and Table
+979
+980   Figure A illustrates the two example randomization processes described above in a trial with four
+981   drugs for a participant who is eligible to receive all four drugs. Table A describes key
+982   randomization probabilities and ratios for these examples.
+983
+
+
+                                                       27
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+984   Figure A: Schematic to Illustrate Examples of Randomization Processes for a Partially-
+985   Blinded, Placebo-Controlled Study
+
+
+
+
+986
+987   Left (Example 1): 1:1 allocation ratio for the pooled placebo arm relative to a given drug.
+988   Right (Example 2): √𝑘𝑘: 1 allocation ratio for the pooled placebo arm relative to a given drug.
+989
+990
+
+
+
+
+                                                      28
+                                 Contains Nonbinding Recommendations
+                                        Draft — Not for Implementation
+991   Table A: Randomization Probabilities and Ratios for Examples of Randomization
+992   Processes for a Partially-Blinded, Placebo-Controlled Study
+
+                                                          Example 1               Example 2
+       Allocation ratio for the pooled                       1:1                    √𝒌𝒌: 𝟏𝟏
+       placebo arm relative to a given drug
+
+       Example calculations with four drugs (i.e., 𝑘𝑘 = 4)
+       Randomization probability
+       Individual drug (e.g., drug A)                    1 4 𝟏𝟏                   1 2 𝟏𝟏
+                                                           × =                     × =
+                                                         4 5 𝟓𝟓                   4 3 𝟔𝟔
+       Individual placebo (e.g., placebo A)             1 1      𝟏𝟏              1 1   𝟏𝟏
+                                                           × =                     × =
+                                                        4 5 𝟐𝟐𝟐𝟐                 4 3 𝟏𝟏𝟏𝟏
+       Pooled placebo                                       1 1 𝟏𝟏                  1 1 𝟏𝟏
+                                                       4× × =                   4× × =
+                                                            4 5 𝟓𝟓                  4 3 𝟑𝟑
+       Any drug                                             1 4 𝟒𝟒                  1 2 𝟐𝟐
+                                                       4× × =                   4× × =
+                                                            4 5 𝟓𝟓                  4 3 𝟑𝟑
+       Randomization ratio
+       Pooled placebo: Individual drug                       1:1                 2: 1 (√4: 1)
+       (e.g., pooled placebo: drug A)
+       Individual placebo: Individual drug                   1:4                      1:2
+       (e.g., placebo A:drug A)
+993
+994
+995          C.     Example of How to Use eCTD for a Master Protocol
+996
+997   Figure B illustrates an example of eCTD organization for a master protocol with multiple
+998   substudies.
+999
+
+
+
+
+                                                     29
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+1000   Figure B. eCTD of an IND with Master Protocol “MP PROTOCOL 123” and Substudies S-
+1001   1, S-2, and S-3
+
+
+
+
+1002
+1003
+1004          D. Expected Communications Between the Master Protocol Sponsor, Individual
+1005             Drug Sponsors, and FDA
+1006
+1007   Figure C depicts communication channels among the various sponsors (left) and FDA (right) in
+1008   the setting of an umbrella or platform trial conducted under a master protocol to evaluate
+1009   multiple drugs for a single disease.
+1010
+1011   Left: There is bidirectional communication between the individual drug sponsors and the master
+1012   protocol sponsor. The master protocol sponsor communicates information regarding the master
+1013   protocol, including information about the individual drugs in its substudies, to the relevant
+1014   individual drug sponsor(s). In this figure, information regarding drug A in substudy A is shared
+1015   with individual drug sponsor A, and information regarding drug B in substudy B is shared with
+1016   individual drug sponsor B. As shown in the figure, individual drug sponsor A communicates
+1017   information regarding drug A to the master protocol sponsor, and individual drug sponsor B
+1018   communicates information regarding drug B to the master protocol sponsor.
+1019
+1020   Right: There is bidirectional communication between the various sponsors and FDA via their
+1021   respective IND. In this case, communications regarding drug A occur between the individual
+
+
+                                                       30
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+1022   drug sponsor for drug A and FDA via the IND for drug A; communications regarding drug B
+1023   occur between the individual drug sponsor for drug B and FDA via the IND for drug B; and
+1024   communications regarding the master protocol, including information about the individual drugs
+1025   contained in substudies A and B, occur between the master protocol sponsor and FDA via the
+1026   master protocol IND.
+1027
+1028   Figure C. Expected Communication Among Interested Parties in a Master Protocol with
+1029   Substudies A and B, Where the Master Protocol Sponsor is Different than the Individual
+1030   Drug Sponsor
+1031
+
+
+
+
+1032
+
+
+
+
+                                                      31
+

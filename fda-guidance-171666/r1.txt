@@ -1,0 +1,891 @@
+Enhanced Drug Distribution
+Security at the Package Level
+Under the Drug Supply Chain
+        Security Act
+        Guidance for
+           Industry
+
+
+
+
+       U.S. Department of Health and Human Services
+                Food and Drug Administration
+      Center for Drug Evaluation and Research (CDER)
+     Center for Biologics Evaluation and Research (CBER)
+              Office of Regulatory Affairs (ORA)
+
+                        January 2024
+                         Procedural
+                         Revision 1
+Enhanced Drug Distribution
+Security at the Package Level
+Under the Drug Supply Chain
+        Security Act
+   Guidance for Industry
+                                     Additional copies are available from:
+                           Office of Communications, Division of Drug Information
+                                   Center for Drug Evaluation and Research
+                                        Food and Drug Administration
+                            10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                        Silver Spring, MD 20993-0002
+                          Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                        Email: druginfo@fda.hhs.gov
+               https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+                                                     and/or
+                             Office of Communication, Outreach and Development
+                                 Center for Biologics Evaluation and Research
+                                         Food and Drug Administration
+                              10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                         Silver Spring, MD 20993-0002
+                                     Phone: 800-835-4709 or 240-402-8010
+                                            Email: ocod@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+
+
+
+
+                       U.S. Department of Health and Human Services
+                                Food and Drug Administration
+                      Center for Drug Evaluation and Research (CDER)
+                     Center for Biologics Evaluation and Research (CBER)
+                              Office of Regulatory Affairs (ORA)
+
+                                                 January 2024
+                                                  Procedural
+                                                  Revision 1
+                                               Contains Nonbinding Recommendations
+
+
+
+
+                                                           Table of Contents
+I.            INTRODUCTION........................................................................................................... 4
+II.           BACKGROUND ............................................................................................................. 5
+III.          ENHANCED DRUG DISTRIBUTION SECURITY................................................... 5
+     A.       SystemAttributes to Enable Secure Tracing ............................................................................. 6
+     B.      Aggregation and Inference.......................................................................................................... 6
+          1. Aggregation ................................................................................................................................... 7
+          2. Physical Security Features ............................................................................................................ 8
+          3. Inference ........................................................................................................................................ 8
+IV.           SYSTEM STRUCTURE ................................................................................................ 9
+     A.       Data Architecture ........................................................................................................................ 9
+     B.       Adoption of Data and System Security .................................................................................... 10
+     C.       Confidential Commercial Information and Trade Secrets .................................................... 10
+     D.       Requesting and Providing Information ................................................................................... 11
+V.            ENHANCED PRODUCT TRACING ......................................................................... 11
+     A.       Incorporation of the Product Identifier into Product Tracing Information ........................ 11
+     B.       The Selling Trading Partner Should Reconcile the Transaction Information with the
+              Product it Sells to a Purchasing Trading Partner ................................................................. 12
+     C.       The Purchasing Trading Partner Should Confirm the Transaction Information and
+              Transaction Statement is for Product it Receives from a Selling Trading Partner............ 12
+     D.      Handling Aggregation Errors and Other Discrepancies ........................................................ 13
+          1. Examples of Aggregation Errors and Other Discrepancies ........................................................ 13
+          2. Steps for Resolving Aggregation Errors and Other Discrepancies ............................................. 14
+VI.           GATHERING OF RELEVANT PRODUCT TRACING INFORMATION .......... 14
+VII.          ENHANCED VERIFICATION ................................................................................... 16
+     A.       Verification of Distributed Product ......................................................................................... 16
+     B.       Verification of Saleable Returned Product ............................................................................. 17
+                                   Contains Nonbinding Recommendations
+
+
+
+     Enhanced Drug Distribution Security at the Package Level Under
+                 the Drug Supply Chain Security Act
+
+                                       Guidance for Industry 1
+
+    This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+    this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+    can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+    To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+    title page.
+
+
+
+
+I.       INTRODUCTION
+
+This guidance is intended to assist supply chain stakeholders, particularly trading partners, 2 with
+requirements for enhanced drug distribution security at the package 3 level under section 582 of
+the Federal Food, Drug, and Cosmetic Act (FD&C Act) (21 U.S.C. 360eee-1), as added by the
+Drug Supply Chain Security Act (DSCSA) (Title II of Public Law 113-54). Requirements for
+enhanced drug distribution security 4 go into effect on November 27, 2023. 5
+
+This guidance clarifies the enhanced drug distribution security requirements listed in section
+582(g)(1) of the FD&C Act (“enhanced security requirements"). In addition, as specified in
+
+1
+  This guidance has been prepared by the Center for Drug Evaluation and Research (CDER) in cooperation with the
+Center for Biologics Evaluation and Research (CBER) and the Office of Regulatory Affairs (ORA) at the Food and
+Drug Administration (FDA).
+2
+  Trading partner is defined in section 581(23) of the Federal Food, Drug and Cosmetic (FD&C) Act, and includes a
+manufacturer, repackager, wholesale distributor, dispenser, or third-party logistics provider, meeting the conditions
+specified therein.
+3
+  Package is defined in section 581(11) of the FD&C Act to mean the smallest individual saleable unit of product
+that is intended for individual sale to a dispenser, as further specified therein.
+4
+  In the previously issued draft guidance, the interoperable, electronic, package-level product tracing systems and
+processes required by section 582(g) of the FD&C Act were referred to as the “enhanced system,” and comments on
+the draft guidance expressed confusion over that term. For this final guidance, we have removed “enhanced system”
+when referring to the requirements in section 582(g) of the FD&C Act to avoid confusion.
+5
+  FDA issued compliance policy guidances that represent an enforcement policy with respect to (a) enhanced drug
+distribution security requirements in section 582(g)(1), and (b) verification requirements for saleable returned
+product for wholesale distributors in section 582(c)(4)(D) and verification requirements for dispensers regarding
+suspect or illegitimate product in sections 582(d)(4)(A)(ii)(II) and (d)(4)(B)(iii). See the compliance policy
+guidances, Enhanced Drug Distribution Security Requirements Under Section 582(g)(1) of the Federal Food, Drug,
+and Cosmetic Act – Compliance Policies, and Wholesale Distributor Verification Requirement for Saleable
+Returned Drug Product and Dispenser Verification Requirements When Investigating a Suspect or Illegitimate
+Product--Compliance Policies, Revision 1 for more information. For this guidance, references to compliance with
+the November 27, 2023, date that the requirements under section 582(g)(1) take effect are subject to the enforcement
+policy articulated in the applicable compliance policy guidance.
+
+
+
+
+                                                         4
+                                    Contains Nonbinding Recommendations
+
+
+section 582(h)(3) of the FD&C Act, this guidance "outlines and makes recommendations with
+respect to the system attributes necessary to enable secure tracing" of product 6 at the package
+level, including allowing for the use of verification, inference, and aggregation, as necessary. 7
+FDA considers these recommendations to be important to assist in implementing the robust
+supply chain security envisioned under the DSCSA. Throughout this guidance, the terms,
+“FDA,” “the Agency,” “we,” and “us” refer to the Food and Drug Administration and the terms
+“your” and “yours” refer to regulated industry.
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+II.     BACKGROUND
+
+The DSCSA was signed into law on November 27, 2013. The DSCSA outlines critical steps to
+achieve interoperable, electronic tracing of product at the package level by November 27, 2023.
+These requirements will enhance the identification and tracing of certain prescription drugs as
+they are distributed within the United States. Section 202 of the DSCSA added section 582 to the
+FD&C Act, which established product tracing, product identifier, authorized trading partner, and
+verification requirements for manufacturers, repackagers, wholesale distributors, and dispensers
+to facilitate the tracing of products through the pharmaceutical distribution supply chain. Section
+582 of the FD&C Act also introduced requirements for enhanced drug distribution security that
+go into effect on November 27, 2023.
+
+III.     ENHANCED DRUG DISTRIBUTION SECURITY
+
+Trading partners, along with Federal and State authorities, have an important role in ensuring the
+quality of prescription drugs and protecting the integrity of the pharmaceutical distribution supply
+chain. The DSCSA requirements, which have been phased in beginning in 2013, improve supply
+chain security activities by trading partners involved in prescription drug manufacturing,
+repackaging, wholesale distribution, warehousing or related logistical activities, and dispensing.
+The phased implementation of the DSCSA requirements for product tracing, product
+identification, authorized trading partners, and verification facilitates the gradual development of
+enhanced drug distribution security required under section 582(g) of the FD&C Act. This
+guidance clarifies the enhanced security requirements and describes recommendations for the
+system attributes necessary 8 for secure product tracing and verification, including when the use
+of aggregation and inference may be appropriate.
+
+6
+  Product is defined in section 581(13) of the FD&C Act, and includes, subject to the exceptions described therein, a
+prescription drug in a finished dosage form for administration to a patient without substantial further manufacturing
+(such as capsules, tablets, and lyophilized products before reconstitution).
+7
+  See section 582(h)(3) of the FD&C Act and section III.B of this guidance.
+8
+  In this guidance FDA uses the term “necessary” as used in section 582(h)(3) in a technical sense, i.e., in referring to
+system attributes that would enable trading partners as a technical matter to meet the requirements under section
+582(g)(1), including elements of required systems and processes.
+
+
+                                                           5
+                                   Contains Nonbinding Recommendations
+
+
+
+     A. System Attributes To Enable Secure Tracing
+
+System attributes, as used for purposes of this guidance, are properties or capabilities that promote
+enhanced drug distribution security. Such system attributes, which we view as important
+elements of implementing the robust supply chain security envisioned under the DSCSA, should
+be developed based on the enhanced drug distribution security requirements in section 582(g)(1)
+of the FD&C Act and include (as described in this provision):
+         (A)       The exchange of transaction information and transaction statements in a secure,
+                  interoperable, electronic manner.
+         (B)       Transaction information that includes the product identifier at the package level
+                  for each package included in the transaction.
+         (C)       Systems and processes for verification of product at the package level.
+         (D)       Systems and processes necessary to promptly respond with the relevant
+                  transaction information and transaction statement for a product upon request by
+                  FDA or other appropriate Federal or State official in the event of a recall or for
+                  the purposes of investigating a suspect product or an illegitimate product.
+         (E)       Systems and processes necessary to promptly facilitate the gathering of the
+                  information necessary to produce the transaction information for each
+                  transaction 9 going back to the manufacturer, as applicable—
+                  (i) Upon request by FDA or other appropriate Federal or State official in the
+                       event of a recall or for the purposes of investigating a suspect product or an
+                       illegitimate product, or
+                  (ii) Upon request of an authorized trading partner, in a secure manner that ensures
+                       the protection of confidential commercial information and trade secrets, for
+                       the purposes of investigating a suspect product or assisting FDA or other
+                       appropriate Federal or State official with a request described in clause (i).
+         (F)      Systems and processes to associate a saleable return product with its applicable
+                  transaction information and transaction statement to allow a trading partner to
+                  accept the returned product.
+
+     B. Aggregation and Inference
+
+Although the terms aggregation and inference are not defined in the FD&C Act, these processes
+and practices are referenced in the FD&C Act in the context of product verification and tracing 10;
+they are used in this guidance to describe how such processes and practices can facilitate
+enhanced security requirements. For purposes of this guidance, we use the terms aggregation and
+inference as follows:
+
+      • Aggregation refers to the process of building a relationship between unique
+        identifiers assigned to packaging containers. For example, a parent-child
+        relationship would exist between the product identifiers for a package or group
+
+
+9
+  Transaction is defined in section 581(24) of the FD&C Act.
+10
+   See e.g., section 582(g)(1)(C) and (h)(3) of the FD&C Act, referring, respectively, to aggregation and inference in
+the context of describing systems and processes for verification of product at the package level and system attributes
+necessary to enable secure tracing of product at the package level.
+
+
+                                                         6
+                                  Contains Nonbinding Recommendations
+
+
+            of packages (the child or children) that are contained in a homogeneous case 11 or
+            nonhomogeneous case (the parent).
+
+         • Inference means the practice of examining or using information for a higher level
+            of packaging to infer information about the lower level(s) of packaging and its
+            contents— for example, inferring information about individual packages from
+            information about a homogeneous or nonhomogeneous case.
+
+As such, the effective use of aggregation and inference will depend on the quality of aggregated
+data, documentation and shipping/packing integrity, and the ability of trading partners to
+effectively use aggregated data to meet FD&C Act requirements.
+
+               1. Aggregation
+
+FDA recognizes that many trading partners currently aggregate data for logistical management of
+products they sell. We are also aware that some trading partners use aggregated data for other
+purposes, such as to comply with verification requirements or to share data with trading partners
+at their discretion. Because it appears to be an essential process in trading partner daily
+operations of supply chain and data management, whether manual or automated, FDA supports
+the use of data aggregation. Examples of data aggregation related to a transaction and the
+associated shipment of products include, but are not limited to:
+
+     •    Packages of the same product that are packed into a homogeneous case: A data file that
+          lists the standardized numerical identifier 12 of the case, as well as the standardized
+          numerical identifiers for each package of product in that case provided by the selling
+          trading partner to the purchasing trading partner.
+
+     •    Multiple cases of product on a pallet: A data file that reflects the contents of the pallet,
+          including the individual, unique product identifiers associated with the packages
+          within all nonhomogeneous cases provided by the selling trading partner to the
+          purchasing trading partner.
+
+A selling trading partner and its purchasing trading partner(s) should decide how they will share
+data in a secure, efficient manner that allows the purchasing trading partner(s) to use the
+aggregated data file(s) for determining the information that is associated with each package of
+product. For example, a selling trading partner may choose to: (1) send the data file in its entirety
+to the purchasing trading partner(s), which includes all product identifiers of each package of
+product contained in a sold homogeneous or nonhomogeneous case; or (2) provide the product
+identifier associated with the homogeneous case to the purchasing trading partner(s), who could
+
+11
+   Homogeneous case is defined in section 581(7) of the FD&C Act. The terms “homogeneous” and “homogenous”
+are used interchangeably throughout the DSCSA. FDA has chosen to use only the term “homogeneous” throughout
+this guidance.
+12
+   The term "standardized numerical identifier" is defined in section 581(20) of the FD&C Act as "a set of numbers
+or characters used to uniquely identify each package or homogenous case that is composed of the National Drug
+Code that corresponds to the specific product (including the particular package configuration) combined with a
+unique alphanumeric serial number of up to 20 characters."
+
+
+                                                        7
+                                  Contains Nonbinding Recommendations
+
+
+use the case product identifier to look up and access the data file containing individual product
+identifiers for each package of product in that case. 13 The scenario described in example (2)
+could involve automated data retrieval from the seller’s system or database if proper
+interoperable configurations exist.
+
+Although sections 582(b)(2) and (e)(2) of the FD&C Act require manufacturers and repackagers,
+respectively, to affix to or imprint product identifiers upon packages and homogeneous cases of
+product, a trading partner may voluntarily encode a product identifier on packages of drugs that
+do not meet the definition of product in section 581(13) of the FD&C Act or on
+nonhomogeneous cases, as long as the addition does not interfere with other Federal
+requirements.
+
+              2. Physical Security Features
+
+FDA recommends the use of security features on shipping units (such as cases or pallets) of
+product to help indicate when product may have been tampered with, previously unsealed,
+damaged, or otherwise rendered suspect. 14 Examples of package security features that help
+improve the security of the product include, but are not limited to, tamper-evident tape or wrap,
+color-shifting inks, and holograms. FDA also supports the use of anticounterfeiting technologies
+like physical-chemical identifiers (also referred to as PCIDs) in solid oral dosage forms of drug
+products. 15 If a trading partner determines that the physical security features of a shipping unit
+have been compromised, the trading partner should treat the product contained within as suspect.
+
+              3. Inference
+
+FDA recognizes that inference is currently a common business practice and enables members of
+the supply chain to handle data, processes, and products during shipping and receiving steps
+(although we note that members of the supply chain have indicated that future automated
+solutions may enable expedient package scanning for large volumes of product, thus making the
+practice of inference unnecessary). A trading partner should limit use of inference to
+circumstances when it receives pallets or cases (either homogeneous or nonhomogeneous) with
+aggregated data if the integrity of the unit is intact—in other words, the tamper-evident tape or
+wrap, or other security seal that originated with the manufacturer or repackager, has not been
+broken or altered. Receiving a pallet or case with broken or altered tape or wrap that was not
+unsealed by the purchasing trading partner would render the product suspect, and the trading
+partner should not infer the contents of the case based on the aggregated data.
+
+
+13
+   Section 582(a)(9)(A) of the FD&C Act generally requires packages to have product identifiers encoded in a 2D data
+matrix barcode, and homogeneous cases to have product identifiers encoded in either a linear or 2D data matrix
+barcode.
+14
+   Suspect product is defined in section 581(21) of the FD&C Act. See also FDA guidance for industry Drug Supply
+Chain Security Act Implementation: Identification of Suspect Product and Notification. We update guidances
+periodically. For the most recent version of the guidance, check the FDA guidance web page at
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+15
+   See FDA guidance for industry Incorporation of Physical-Chemical Identifiers into Solid Oral Dosage Form Drug
+Products for Anticounterfeiting. We update guidances periodically. For the most recent version of the guidance,
+check the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+                                                        8
+                                   Contains Nonbinding Recommendations
+
+
+If a federal or state authority breaks a security feature to allow for examination or testing and
+provides documentation that it has done so, the product should not be treated as suspect absent
+other indications that the product may be suspect. For example, when FDA screens shipments of
+product for admissibility for import, if FDA has unsealed and resealed a case or pallet, trading
+partners should not treat this product as suspect solely for that reason.
+
+If there are other reasons to believe that the product package, case, or shipping unit is suspect
+product, trading partners should not infer that aggregated data reflects the physical shipment of
+product and must comply with the applicable requirements regarding suspect product. 16
+
+IV.        SYSTEM STRUCTURE
+
+ FDA views the elements described in this guidance as important to achieve secure, electronic
+ interoperability 17 across the supply chain. Each trading partner should have its own individual
+ systems and processes for accessing and managing its products and associated data. Such
+ individual systems and processes should permit secure, appropriate, and efficient sharing of
+ electronic information (i.e., data) between trading partners; more specifically, individual systems
+ and processes should allow for trading partners to exchange data with each other for product
+ tracing and verification in an accurate, interoperable manner that also protects confidential
+ commercial information and trade secrets. Additionally, trading partners should be able to easily
+ retrieve their own stored information and (as further described in section VI) provide appropriate
+ elements of such information when requested by FDA or Federal and State officials, or by other
+ authorized trading partners when required to do so. 18
+
+       A. Data Architecture
+
+For the purpose of this guidance, “data architecture” refers to the type of data collected and the
+data validation policies, standards, and safeguards that govern how data is stored, managed, and
+used within and between organizations and respective organizations’ individual systems. The
+FD&C Act, as amended by the DSCSA, defines the type of product tracing data that must be
+provided, received, and stored as the transaction information, transaction history, and transaction
+statement. 19 Although under section 582(k)(1) of the FD&C Act the requirement to provide and
+16
+   See e.g., section 582(b)(4), (c)(4), (d)(4), and (e)(4) of the FD&C Act; see also FDA guidance for industry Drug
+Supply Chain Security Act Implementation: Identification of Suspect Product and Notification. We update guidances
+periodically. For the most recent version of the guidance, check the FDA guidance web page at
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+17
+   As described in the Agency guidance, “DSCSA Standards for the Interoperable Exchange of Information for
+Tracing of Certain Human, Finished, Prescription Drugs,” for the purpose of the enhanced drug distribution
+security requirements under section 582(g)(1) of the FD&C Act, FDA interprets interoperability for enhanced drug
+distribution security to encompass the ability to securely exchange, capture, and maintain electronic transaction
+information and transaction statements accurately, efficiently, and consistently among trading partners, in a manner
+that enables compliance with all enhanced drug distribution security requirements. We update guidances
+periodically. For the most recent version of the guidance, check the FDA guidance web page at
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+18
+     See sections 582(g)(1)(D) and (E) of the FD&C Act.
+19
+  Transaction information, transaction history, and transaction statement are defined in section 581(26), (25), and
+(27) of the FD&C Act, respectively.
+
+
+                                                          9
+                                  Contains Nonbinding Recommendations
+
+
+receive transaction history sunsets on November 27, 2023, the enhanced security requirements
+include the ability to promptly facilitate the gathering of information necessary to produce the
+transaction information for each transaction going back to the manufacturer, as applicable. 20
+There are several possible data architecture models for data storage, management, and use that
+can be used to meet enhanced security requirements. Such models include centralized,
+distributed, or semi-distributed (a mixture of centralized and distributed) data architectures. 21
+
+Based on stakeholder feedback about current industry practices and preferences, FDA
+recommends a distributed or semi-distributed data architecture model because either model can
+allow each trading partner to maintain control over its own data. In addition, trading partners
+should use the model which best facilitates promptly providing Federal and State officials, upon
+request, with product tracing data as required under the DSCSA. 22
+
+In addition, to help standardize how the data is captured and exchanged, FDA recommends that
+trading partners use the Electronic Product Code Information Services (EPCIS) standard. 23
+More information about FDA’s recommendation of EPCIS can be found in the guidance, DSCSA
+Standards for the Interoperable Exchange of Information for Tracing of Certain Human,
+Finished, Prescription Drugs. 24
+
+     B. Adoption of Data and System Security
+
+FDA recommends the use of appropriate data security standards, security protocols, and security
+applications to protect data, trading partners’ individual systems and processes, and information
+exchanges between individual systems from falsification, malicious attacks, and breaches.
+Trading partners should ensure data security by adopting standards and/or protocols developed by
+a widely recognized international standards development organization.
+
+     C. Confidential Commercial Information and Trade Secrets
+
+Section 582(h)(3)(A)(iii) of the FD&C Act states that FDA’s guidance on attributes for enhanced
+security requirements must “ensure the protection of confidential commercial information and
+trade secrets.” Trading partners should use individual systems and procedures that protect
+confidential commercial information and trade secrets. FDA expects trading partners to ensure
+
+
+20
+   See section 582(g)(1)(E) of the FD&C Act.
+21
+   For the purpose of this guidance, a “centralized” data architecture model refers to a configuration in which
+required trading partner data is stored in one database; a “distributed” data architecture model refers to a
+configuration in which required trading partner data is stored across multiple databases; and a “semi-distributed”
+data architecture model refers to a configuration in which required trading partner data is stored in a few select
+databases.
+22
+   See sections 582(g)(1)(D) and (E) of the FD&C Act; see also provisions related to requests for information in
+sections 582(b)(1)(B), (c)(1)(C), (d)(1)(D), and (e)(1)(C) of the FD&C Act.
+23
+   Section 582(h)(4)(A) of the FD&C Act specifies that FDA issue a guidance to identify and make recommendations
+with respect to the standards necessary for adoption to support the secure, interoperable, electronic data exchange
+among the pharmaceutical distribution supply chain that comply with a form and format developed by a widely
+recognized international standards development organization.
+24
+   We update guidances periodically. For the most recent version of the guidance, check the FDA guidance web page
+at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+                                                        10
+                                  Contains Nonbinding Recommendations
+
+
+that they will maintain the confidentiality of product tracing information 25 through usual business
+practices. FDA will treat any information provided to the Agency like other information
+submitted to us by industry or stakeholders, including complying with requirements prohibiting
+public disclosure of confidential commercial information and trade secrets. 26
+
+     D. Requesting and Providing Information
+
+Trading partners’ individual systems and processes should permit responding to an authorized
+trading partner who requests relevant information related to verification activities 27 for a product
+the authorized trading partner sold or purchased (e.g., product tracing information associated with
+a product the authorized trading partner sold or purchased). In addition, as discussed in section
+VI, the individual systems and processes should enable trading partners to provide relevant
+information upon request by FDA or other appropriate Federal or State official (or an authorized
+trading partner) in the event of a recall or for the purpose of investigating a suspect or illegitimate
+product, as applicable. 28
+
+
+ V.     ENHANCED PRODUCT TRACING
+
+     A. Incorporation of the Product Identifier Into Product Tracing Information
+
+The first component of the enhanced security requirements addresses the secure, interoperable
+exchange of product tracing information. Specifically, section 582(g)(1)(A) of the FD&C Act
+requires the transaction information and transaction statements to be exchanged in a “secure,
+interoperable, electronic manner.” Additionally, section 582(g)(1)(B) of the FD&C Act requires
+that the transaction information include “the product identifier at the package level for each
+package included in the transaction.” Under section 581(14) of the FD&C Act, the product
+identifier includes the standardized numerical identifier (i.e., National Drug Code (NDC) and
+serial number), lot number, and expiration date. For transactions occurring before the November
+27, 2023 effective date of the enhanced security requirements, the transaction information
+required to be exchanged by trading partners, 29 which is defined in section 581(26) of the FD&C
+Act, generally includes the NDC and lot number, but not the additional product identifier
+elements (although manufacturers and repackagers must affix the complete product identifier to
+each package and homogeneous case of product intended to be introduced in a transaction into
+commerce). 30 Thus, to meet the section 582(g)(1)(B) requirement, the serial number and
+expiration date will also need to be incorporated into the transaction information starting
+November 27, 2023, to represent the complete product identifier. FDA expects trading partners
+
+
+25
+    For the purposes of this guidance, the term product tracing information refers to the transaction
+information and transaction statement associated with a product.
+26
+   See, e.g., 21 CFR 20.61.
+27
+   See sections 582(b)(4), (c)(4), (d)(4), and (e)(4) of the FD&C Act. See also section 582(g)(1)(C) of the FD&C
+Act.
+28
+   See sections 582(g)(1)(D) and (E) of the FD&C Act; see also provisions related to requests for information in
+section 582(b)(1)(B), (c)(1)(C), (d)(1)(D), and (e)(1)(C) of the FD&C Act.
+29
+   See sections 582(b)(1), (c)(1), (d)(1), and (e)(1) of the FD&C Act.
+30
+   See sections 582(b)(2) and (e)(2) of the FD&C Act.
+
+
+                                                        11
+                                   Contains Nonbinding Recommendations
+
+
+to use processes and technical functions to enhance security that accommodate the inclusion of
+the standardized numerical identifier, expiration date, and lot number in the transaction
+information to meet this requirement.
+
+     B. The Selling Trading Partner Should Reconcile the Transaction Information With
+        the Product It Sells to a Purchasing Trading Partner
+
+Beginning November 27, 2023, the selling trading partner must provide applicable electronic
+product tracing information to the subsequent owner (i.e., the purchasing trading partner) before,
+or at the time of, each transaction. 31 The selling trading partner that is shipping product and
+providing product tracing information is expected to incorporate and store information related to
+the transaction into its individual systems in such a manner that the data can be used for product
+tracing purposes.
+
+With electronic product tracing information and product identifier information (in the 2D data
+matrix barcode for packages of product and in the linear or 2D data matrix barcode for
+homogeneous cases of product), 32 selling trading partners should develop and use systems and/or
+processes to reconcile the electronic data in the transaction information and transaction statement
+associated with the product physically shipped to the purchasing trading partner. Reconciliation
+would involve confirming that the product tracing information sent in an electronic format
+accurately reflects the packages of product the selling trading partner physically ships.
+Reconciliation could be accomplished by physically or electronically checking the product
+identifiers of each package against associated electronic transaction information or physically
+checking the product identifiers of cases of product with unbroken security seals that originated
+with the manufacturer or repackager, against associated electronic transaction information. This
+step helps to ensure that the product that is physically packed into a shipping unit is properly
+associated with the data that is provided to the purchasing trading partner.
+
+
+         C. The Purchasing Trading Partner Should Confirm the Transaction Information
+            and Transaction Statement Is for Product It Receives From a Selling Trading
+            Partner
+
+Beginning November 27, 2023, the trading partner purchasing the product must not accept
+ownership of the product unless the previous owner provides the applicable electronic product
+tracing information before, or at the time of, the transaction. 33 The purchasing trading partner
+receiving product and product tracing information is expected to incorporate this information
+into its individual system in such a manner that the data can be used for product tracing
+purposes.
+
+With electronic product tracing information and product identifier information (in the 2D data
+matrix barcode for packages of product and in the linear or 2D data matrix barcode for
+
+31
+   See section 582(g)(1)(A) of the FD&C Act; see also sections 582(b)(1), (c)(1), (d)(1), and (e)(1) of the FD&C Act.
+32
+   See section 582(a)(9)(A) of the FD&C Act.
+33
+   See section 582(g)(1)(A) of the FD&C Act; see also sections 582(b)(1), (c)(1), (d)(1), and (e)(1) of the FD&C
+Act.
+
+
+                                                          12
+                              Contains Nonbinding Recommendations
+
+
+homogeneous cases of product), the purchasing trading partners should develop and use systems
+and/or processes to confirm electronic data in the transaction information and transaction
+statement is for the product received.
+
+When the purchasing trading partner sells the product, the trading partner should follow the
+recommendations in section V.B, The Selling Trading Partner Should Reconcile the Transaction
+Information with the Product it Sells to a Purchasing Trading Partner.
+
+         D. Handling Aggregation Errors and Other Discrepancies
+
+FDA expects the product tracing information to be true, accurate, and complete. FDA
+recognizes that there may be situations where there is a clerical error or discrepancy in the
+product tracing information that may not be indicative of a suspect product. If a wholesale
+distributor, dispenser, or repackager purchases product and identifies a potential clerical error or
+other discrepancy in the product tracing information it received, that trading partner should
+resolve the error or discrepancy within 10 business days.
+
+             1. Examples of Aggregation Errors and Other Discrepancies
+
+Aggregation errors between product tracing information and associated shipments of product
+may occur during the aggregation or packing process. For example, trading partners may
+encounter the following:
+
+     •   Missing product: The product tracing information reflects 10 bottles of product;
+         however, the purchasing trading partner only received 9 bottles.
+
+     •   Extra product: The product tracing information reflects 10 bottles of product; however,
+         the purchasing trading partner received 12 bottles of product.
+
+     •   Duplicate data: The product tracing information contains the same information twice,
+         such as the product being listed twice. (This should not be confused with the scenario in
+         which duplicate serial numbers are listed for two packages of product; product in this
+         scenario should be considered suspect.)
+
+     •   Missing data: The product identifier for the homogeneous case is missing; therefore, there
+         is no other identifier to associate with the product identifiers of the packages of product
+         physically received within the case.
+
+Other discrepancies may occur during the ordering, shipment, or receipt of product. For
+example:
+
+     •   The transaction information is missing the address of the purchasing trading partner.
+
+     •   The transaction information misstates the address of the purchasing trading partner.
+
+     •   The transaction information is missing the quantity of product, but the purchasing
+
+
+                                                 13
+                                  Contains Nonbinding Recommendations
+
+
+          trading partner received the quantity of product that it ordered.
+
+               2. Steps for Resolving Aggregation Errors and Other Discrepancies
+
+The product(s) involved should not be sold to the next trading partner until the error or
+discrepancy has been documented and resolved. A resolution may include confirming with the
+selling trading partner that an error or discrepancy is clerical (as applicable), coordinating and
+reaching an agreement with the selling trading partner on how to correct the clerical error or
+discrepancy, and ensuring that accurate product tracing information is available to provide for
+subsequent transactions. If the error or discrepancy cannot be resolved and the product is
+determined to be a suspect or illegitimate product, 34 trading partners must refrain from further
+distributing or dispensing the product and follow steps for verification of product, including, if
+applicable, quarantine and investigation. 35
+
+If aggregation errors or other types of discrepancies occur, a trading partner should first notify
+the trading partner that it purchased the product from and determine the reason for the error.
+The trading partners should then work together to promptly resolve the error. Finally, the trading
+partners should document that they resolved the error. The documentation should include the
+nature of the error, a description of how the error was resolved, the names of the persons
+involved, and the date of resolution. If either trading partner determines the product is suspect or
+illegitimate, the trading partners must follow applicable verification requirements, including
+quarantine, investigation, and proper disposition. 36
+
+Examples of how trading partners may resolve such errors include:
+
+     •   The selling trading partner may provide new and revised product tracing information that
+         reflects the products received by the purchasing trading partner.
+
+     •   The selling trading partner may provide new product tracing information only for the
+         extra product received by the purchasing trading partner.
+
+     •   Either trading partner may use internal resources for identifying trading partners and their
+         contact information to address such gaps in product tracing information received.
+
+
+VI.      GATHERING OF RELEVANT PRODUCT TRACING INFORMATION
+
+Sections 582(g)(1)(D) and (E) of the FD&C Act address system and process requirements for the
+provision of certain information by trading partners in circumstances involving a recall or
+investigation of suspect or illegitimate product. These provisions, excerpted below, take effect
+November 27, 2023 and require the following as part of the enhanced drug distribution security
+requirements under section 582(g)(1):
+
+
+34
+   Illegitimate product is defined in section 581(8) of the FD&C Act.
+35
+   See section 582(b)(4), (c)(4), (d)(4), and (e)(4) of the FD&C Act.
+36
+   Ibid.
+
+
+                                                         14
+                               Contains Nonbinding Recommendations
+
+
+                “(D) The systems and processes necessary to promptly respond with the transaction
+         information and transaction statement for a product upon a request by the Secretary (or
+         other appropriate Federal or State official) in the event of a recall or for the purposes of
+         investigating a suspect product or an illegitimate product shall be required.
+
+               “(E) The systems and processes necessary to promptly facilitate gathering the
+         information necessary to produce the transaction information for each transaction going
+         back to the manufacturer, as applicable, shall be required—
+
+                        “(i) in the event of a request by the Secretary (or other appropriate Federal
+                      or State official), on account of a recall or for the purposes of investigating a
+                      suspect product or an illegitimate product; or
+
+                        “(ii) in the event of a request by an authorized trading partner, in a secure
+                      manner that ensures the protection of confidential commercial information
+                      and trade secrets, for purposes of investigating a suspect product or assisting
+                      the Secretary (or other appropriate Federal or State official) with a request
+                      described in clause (i).”
+
+ While the requirements of sections 582(g)(1)(D) and (E) are related, they differ in certain
+ respects. Under section 582(g)(1)(D), a trading partner must have systems and processes needed
+ to readily, i.e., “promptly”, provide both the transaction information and transaction statement for
+ the product(s) at issue, upon a request by the Secretary or another appropriate Federal or State
+ official in the event of a recall or for purposes of investigating either a suspect or illegitimate
+ product. Under section 582(g)(1)(E), trading partners must have systems and processes needed to
+ promptly facilitate gathering the information necessary to produce the transaction information,
+ for each transaction going back to the manufacturer, as applicable, in either of two situations:
+
+     •    Per section 582(g)(1)(E)(i)—and similar to the situation addressed in section
+          582(g)(1)(D)—in the event of a request by the Secretary (or other appropriate Federal or
+          State official), on account of a recall or for purposes of investigating either a suspect
+          product or an illegitimate product; or
+     •    Per section 582(g)(1)(E)(ii), in the event of a request by an authorized trading partner, for
+          purposes of investigating suspect product, or assisting the Secretary (or other appropriate
+          Federal or State official) with a request described in section 582(g)(1)(E)(i).
+
+Thus, requests by other trading partners are addressed in section 582(g)(1)(E), but not section
+582(g)(1)(D), which relates solely to provision of information to Federal or State government
+officials. Section 582(g)(1)(E) also explicitly accounts for protecting confidential commercial
+information and trade secrets when responding to requests from another trading partner. The
+gathering of information described in section 582(g)(1)(E) essentially helps build the chain of
+transactions for use in the circumstances detailed in these provisions.
+
+FDA recommends that trading partners’ individual systems and processes enable appropriate
+requestors to receive product tracing information from trading partners involved in transactions
+related to a specific product as part of an investigation of suspect or illegitimate product or a
+
+
+
+                                                   15
+                                  Contains Nonbinding Recommendations
+
+
+recall, as applicable. Assuming a distributed or semi-distributed data architecture model, in
+response to an appropriate request, each trading partner would respond with its own relevant
+transaction information if it directly transacted the product(s) that are subject to the request. To
+facilitate the gathering of information needed to produce the relevant transaction information for
+each transaction, as described in section 582(g)(1)(E), the authorized trading partners being
+queried should have the capability to readily retrieve the needed information from their own
+systems, in order to promptly respond to an appropriate request. FDA believes that this
+approach will meet the needs of both industry and regulators by supporting the semi-distributed
+or distributed architecture model while minimizing the delay in gathering the relevant
+information.
+
+Further, as otherwise required by section 582 of the FD&C Act, authorized trading partners must
+respond to a request from the Secretary or other appropriate Federal or State official in the event
+of a recall or for the purpose of investigating a suspect product or illegitimate product within 1
+business day (or 2 business days in the case of dispensers), or in such other reasonable time as
+determined by FDA based on the circumstances of the request. 37
+
+
+VII.    ENHANCED VERIFICATION
+
+Beginning November 27, 2023, trading partners must exchange product tracing information
+electronically. 38 Enhanced verification includes incorporation and use of the product identifier—
+specifically, verifying the product at the package level, including the standardized numerical
+identifier. 39 Trading partners should refer to the FDA guidance for industry Verification Systems
+Under the Drug Supply Chain Security Act for Certain Prescription Drugs for additional FDA
+recommendations for a robust verification system and other recommendations related to the
+verification requirements of section 582 of the FD&C Act. 40
+
+
+        A. Verification of Distributed Product
+
+Section 582(g)(1)(C) of the FD&C Act requires systems and processes for verification of product
+at the package level. Individual systems and/or processes should enable the creation, receipt, and
+response to verification requests. Upon receiving a request to verify a product, trading partners
+should use individual systems and/or processes to verify product down to the package level,
+
+37
+   Under section 582(m) of the FD&C Act, beginning November 27, 2023, manufacturers, wholesale distributors
+and repackagers must submit responses to requests for information from FDA or other appropriate Federal or State
+officials under section 582(b)(1)(B), (c)(1)(C), and (e)(1)(C) of the FD&C Act, respectively, no later than 24 hours
+after receiving the request, or in such other reasonable time as determined by FDA based on the circumstances of the
+request. FDA has determined that a response time of 1 business day is generally appropriate to meet the 24-hour
+response time requirements. Also see section 582(d)(1)(D) of the FD&C Act with respect to responses by
+dispensers.
+38
+   See section 582(g)(1) of the FD&C Act.
+39
+   See sections 582(g)(1)(B) and 582(g)(1)(C) of the FD&C Act.
+40
+   We update guidances periodically. For the most recent version of the guidance, check the FDA guidance web page
+at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+                                                        16
+                                    Contains Nonbinding Recommendations
+
+
+including instances involving aggregated data. The trading partner’s individual systems and
+processes should enable verification of suspect and illegitimate product, including the direct
+response to the requestor. In addition, as described in section IV, the trading partner’s individual
+system and processes should permit FDA, other Federal and State officials, and other trading
+partners (requestors), as applicable and appropriate, to submit a verification request and receive
+the response in an electronic, interoperable, and standardized manner. A trading partner should
+provide a rapid response to such a verification request, a best practice being no later than 1
+business day from receipt of the request.
+
+         B. Verification of Saleable Returned Product
+
+To support enhanced verification, trading partners must have systems and processes in place to
+associate saleable returned product with the correct transaction information and transaction
+statement, as required by section 582(g)(1)(F) of the FD&C Act. 41, 42 FDA understands
+“associate” to mean that the trading partner accepting the return confirms that it has a record of
+the transaction information and transaction statement it generated for its initial transaction of the
+product to the trading partner making the return of that product. A trading partner accepting a
+saleable return could accomplish such association by confirming that the product identifier of the
+returned product matches its record of the product identifier in the transaction information for the
+product it initially transacted to the trading partner making the return, or through other means
+that assure that the returned product is the same product initially transacted to the trading partner
+making the return. This capability will help enable a trading partner to accept saleable returns
+that are appropriate for sale and distribution in the pharmaceutical distribution supply chain.
+Trading partners should develop and use individual systems and processes to associate the
+correct transaction information and transaction statement with the saleable returned product(s),
+including in instances involving aggregated data.
+
+In addition, section 582(c)(4)(D) of the FD&C Act provides that wholesale distributors verify the
+product identifier of saleable return product before it is further distributed. 43 This verification
+would provide a confirmatory step before further distribution of the product. Wholesale
+distributors’ individual systems and processes may be similar for general verification of the
+product identifier and verification of the product identifier for saleable returns; FDA anticipates
+41
+   Under section 582(g)(1)(F), “Each person accepting a saleable return shall have systems and processes in place to
+allow acceptance of such product and may accept saleable returns only if such person can associate the saleable
+return product with the transaction information and transaction statement associated with that product”.
+42
+   Section 582(d)(1)(C)(i) provides that dispensers need not provide transaction information and a transaction
+statement, as generally required under section 582(d)(1)(A), when returning saleable product to the trading partner
+from whom it was purchased, and sunsets on November 27, 2023 under section 582(k)(2). However, when
+enhanced drug distribution security requirements become effective on November 27, 2023, dispensers need not
+provide transaction information and a transaction statement when returning saleable product, because section
+582(d)(1)(A)(ii) also exempts dispenser returns from the general section 582(d)(1)(A) requirement.
+43
+   Sections 582(b)(4)(E) and 582(e)(4)(E) provide that manufacturers and repackagers, respectively, verify the
+product identifier of saleable return product before it is further distributed. Section 582(k)(2) provides for the sunset
+of these provisions on November 27, 2023 (10 years after the enactment of the DSCSA). Accordingly, after the
+implementation of enhanced drug distribution security, manufacturers and repackagers need not verify the product
+identifier of saleable returned product they intend to further distribute. However, manufacturers and repackagers
+accepting a saleable return do need to associate the transaction information and transaction statement of saleable
+returned product under section 582(g)(1)(F).
+
+
+                                                           17
+                            Contains Nonbinding Recommendations
+
+
+that some wholesale distributors may use the same systems and processes for both requirements.
+
+
+
+
+                                              18
+

@@ -1,0 +1,1436 @@
+                  E20 Adaptive Designs for
+                       Clinical Trials
+
+
+
+
+This draft guidance, when finalized, will represent the current thinking of the Food and Drug Administration
+(FDA or Agency) on this topic. It does not establish any rights for any person and is not binding on FDA or
+the public. You can use an alternative approach if it satisfies the requirements of the applicable statutes and
+regulations. To discuss an alternative approach, contact the FDA staff responsible for this guidance as listed
+on the title page. The draft guidance has been left in the original International Council for Harmonisation
+format. The final guidance will be reformatted and edited to conform with FDA’s good guidance practice
+regulation and style.
+
+
+
+
+For questions regarding this draft document, contact (CDER) Gregory Levin, 301-796-4228 or
+(CBER) Phillip Kurs, 240-402-7911.
+                                        FOREWORD
+
+The International Council for Harmonisation of Technical Requirements for Pharmaceuticals
+for Human Use (ICH) has the mission of achieving greater regulatory harmonization
+worldwide to ensure that safe, effective, and high-quality medicines are developed,
+registered, and maintained in the most resource-efficient manner. By harmonizing the
+regulatory expectations in regions around the world, ICH guidelines have substantially
+reduced duplicative clinical studies, prevented unnecessary animal studies, standardized
+safety reporting and marketing application submissions, and contributed to many other
+improvements in the quality of global drug development and manufacturing and the products
+available to patients.
+
+ICH is a consensus-driven process that involves technical experts from regulatory authorities
+and industry parties in detailed technical and science-based harmonization work that results
+in the development of ICH guidelines. The commitment to consistent adoption of these
+consensus-based guidelines by regulators around the globe is critical to realizing the benefits
+of safe, effective, and high-quality medicines for patients as well as for industry. As a
+Founding Regulatory Member of ICH, the Food and Drug Administration (FDA) plays a
+major role in the development of each of the ICH guidelines, which FDA then adopts and
+issues as guidance to industry.
+.
+INTERNATIONAL COUNCIL FOR HARMONISATION OF TECHNICAL
+  REQUIREMENTS FOR PHARMACEUTICALS FOR HUMAN USE
+
+
+                        ICH HARMONISED GUIDELINE
+
+
+
+
+         ADAPTIVE DESIGNS FOR CLINICAL TRIALS
+                         E20
+
+                                     Draft version
+                              Endorsed on 25 June 2025
+                         Currently under public consultation
+
+
+
+
+At Step 2 of the ICH Process, a consensus draft text or guideline, agreed by the
+appropriate ICH Expert Working Group, is transmitted by the ICH Assembly to the
+regulatory authorities of the ICH regions for internal and external consultation,
+according to national or regional procedures.
+
+Explanatory Note for ICH E20: The draft guideline makes statements on adaptive
+design approaches for clinical trials. The draft guideline acknowledges the high
+potential for adaptive designs to accelerate the process of drug development and to
+allocate resources more efficiently without lowering scientific and regulatory standards.
+Some of the approaches may affect the nature and timing of interactions between
+industry and regulators at confirmatory trial planning and assessment. The final
+guideline will indicate key adaptive design principles and approaches for which
+discussion of adaptive design features, and the rationale for their use, are particularly
+critical at the planning stage. To inform guideline finalization, specific feedback is
+sought on adaptive design principles and approaches and their impact on industry-
+regulatory interactions. Until a final guideline is agreed under Step 5 of the ICH
+process, the draft guideline should not be understood as confirming full regulatory
+acceptance from ICH parties of its contents, nor superseding current regional guidance,
+which remains valid. Public consultation comments on the draft guideline are sought.
+                                     E20
+                                Document History
+
+
+Code            History                                                    Date
+E20             Endorsement by the Members of the ICH Assembly 25 June 2025
+                under Step 2 and release for public consultation.
+
+
+
+
+Legal notice: This document is protected by copyright and may, with the exception of the ICH
+logo, be used, reproduced, incorporated into other works, adapted, modified, translated or
+distributed under a public license provided that ICH's copyright in the document is acknowledged
+at all times. In case of any adaption, modification or translation of the document, reasonable
+steps must be taken to clearly label, demarcate or otherwise identify that changes were made to
+or based on the original document. Any impression that the adaption, modification or translation
+of the original document is endorsed or sponsored by the ICH must be avoided.
+The document is provided "as is" without warranty of any kind. In no event shall the ICH or the
+authors of the original document be liable for any claim, damages or other liability arising from
+the use of the document.
+The above-mentioned permissions do not apply to content supplied by third parties. Therefore,
+for documents where the copyright vests in a third party, permission for reproduction must be
+obtained from this copyright holder.
+                                        ICH HARMONISED GUIDELINE
+
+                    ADAPTIVE DESIGNS FOR CLINICAL TRIALS
+                                                                    E20
+                                                   ICH Consensus Guideline
+
+
+
+TABLE OF CONTENTS
+
+1.       INTRODUCTION AND SCOPE .......................................................................................... 1
+2.       ADVANTAGES AND CHALLENGES OF ADAPTIVE DESIGNS .................................. 1
+3.       KEY PRINCIPLES ................................................................................................................ 3
+3.1      Adequacy Within the Development Program .......................................................................... 3
+3.2      Adequacy of Trial Planning ..................................................................................................... 4
+3.3      Limiting the Chances of Erroneous Conclusions ..................................................................... 6
+3.4      Reliability of Estimation .......................................................................................................... 7
+3.5      Maintenance of Trial Integrity ................................................................................................. 8
+4.       TYPES OF ADAPTATIONS ............................................................................................... 10
+4.1      Early Trial Stopping ............................................................................................................... 10
+4.2      Sample Size Adaptation ......................................................................................................... 12
+4.3      Population Selection .............................................................................................................. 14
+4.4      Treatment Selection ............................................................................................................... 16
+4.5      Adaptation to Participant Allocation ...................................................................................... 17
+5.       SPECIAL TOPICS AND CONSIDERATIONS ................................................................ 18
+5.1      Further Considerations on Data Monitoring .......................................................................... 18
+5.2      Planning, Conducting, and Reporting Simulation Studies ..................................................... 20
+5.3      Adaptive Designs Using Bayesian Methods .......................................................................... 24
+5.4      Adaptive Designs in Time-to-Event Settings ......................................................................... 26
+5.5      Adaptive Designs in Exploratory Trials ................................................................................. 27
+5.6      Operational Considerations .................................................................................................... 28
+6.       DOCUMENTATION ........................................................................................................... 29
+6.1      Documentation Prior to Conducting a Confirmatory Trial with an Adaptive Design ............ 29
+6.2 Documentation to Include in a Marketing Application After a Completed Confirmatory Trial
+with an Adaptive Design ................................................................................................................... 30
+
+
+
+
+                                                                        i
+                                             ICH E20 Guideline
+
+
+ 1   1. INTRODUCTION AND SCOPE
+
+ 2   This document provides guidance on confirmatory clinical trials with an adaptive design
+ 3   intended to evaluate a treatment for a given medical condition within the context of its overall
+ 4   development program. For the purpose of this guideline, an adaptive design is defined as a
+ 5   clinical trial design that allows for prospectively planned modifications to one or more aspects
+ 6   of the trial based on interim analysis of accumulating data from participants in the trial. The
+ 7   term prospectively planned means that the potential trial adaptations are pre-specified in the
+ 8   clinical trial protocol prior to initiation of the trial. The scope of this guideline does not include
+ 9   trials with unplanned modifications to the design, such as a protocol amendment proposed by
+10   an independent data monitoring committee (IDMC) based on unexpected interim results. It also
+11   does not include design changes based entirely on emerging information from a source external
+12   to the trial. Routine monitoring of operational aspects such as the enrollment rate, data quality,
+13   or extent of participant withdrawal is also out of scope.
+
+14   The focus of this guideline is on principles for the planning, conduct, analysis, and
+15   interpretation of trials with an adaptive design intended to confirm the efficacy and support the
+16   benefit-risk assessment of a treatment. The emphasis is on principles that are critical to ensuring
+17   the trials produce reliable and interpretable information and that require specific considerations
+18   with use of an adaptive design. This guideline does not discuss the use of specific statistical
+19   methods. Although the guideline primarily focuses on confirmatory clinical trials, the
+20   principles outlined are relevant to all phases of clinical development.
+
+21   2. ADVANTAGES AND CHALLENGES OF ADAPTIVE DESIGNS
+
+22   At the planning stage of confirmatory trials, uncertainty may remain regarding design aspects
+23   such as the appropriate sample size, even after careful planning and conduct of earlier phases
+24   of drug development. Yet, with a non-adaptive design, these aspects have to be determined
+25   before the trial starts and cannot be changed during trial execution. Adaptive designs provide
+26   flexibility and the ability to safeguard against inaccurate assumptions by taking advantage of
+27   the accumulating information from trial participants and allowing pre-specified modifications
+28   to design aspects during the trial.
+
+29   This added flexibility can lead to a variety of advantages. First, adaptive designs can provide
+30   ethical advantages. For example, a group sequential design with the potential for early trial
+31   stopping if there is convincing evidence the treatment is efficacious and has a positive benefit-
+
+
+
+                                                       1
+                                            ICH E20 Guideline
+
+
+32   risk profile can reduce the number of participants exposed to an inferior control. Second,
+33   adaptive designs can improve the efficiency of a trial, for example, by increasing its power for
+34   a given expected sample size. Third, adaptive designs can help improve understanding of
+35   treatment effects and decision-making. For example, a confirmatory two-stage adaptive design
+36   with selection between two doses at an interim analysis may reduce uncertainty about the dose
+37   with the better benefit-risk profile while also allowing for confirmation of the efficacy of the
+38   selected dose.
+
+39   However, adaptive designs also present challenges, as they may add complexities and
+40   uncertainty related to the key principles discussed in Section 3. For example, use of an adaptive
+41   design may add logistical difficulties in maintaining confidentiality of interim results and
+42   introduce risks to trial integrity which, if not properly addressed, may lead to unreliable results
+43   and complications with their interpretation at trial end. In addition, appropriate planning for
+44   and assessment of a trial with an adaptive design can be more complex and may require more
+45   time than for a trial without an adaptive design. In particular, use of conventional analysis
+46   methods that would apply in non-adaptive designs usually lead to an increased Type I error
+47   probability and biased treatment effect estimate. For example, in a design with an interim
+48   analysis to modify the target sample size based on the estimated treatment effect, the Type I
+49   error probability can be more than doubled when using analysis methods that do not account
+50   for the adaptation. As another example, the potential for early stopping for efficacy may lead
+51   to biased treatment effect estimates because the trial will be stopped preferentially when
+52   extreme data have been observed. Therefore, special analysis methods for hypothesis testing
+53   and estimation that account for the adaptive design usually need to be used. In addition, some
+54   trials with adaptive designs may provide less information about safety, potentially leading to
+55   more uncertainty during benefit-risk assessments. Also, adaptive designs may not be beneficial
+56   in all clinical trial settings. For example, adaptive designs may not be favored if there is fast
+57   enrollment of participants relative to the assessment time of the endpoint on which the
+58   adaptation is based, or if data cannot be made available quickly enough to facilitate reliable
+59   adaptation decisions at an interim analysis.
+
+60   The decision to use or not use a specific adaptive design in a clinical trial will depend on many
+61   factors, including the ones described above. There can be a tension between the confirmatory
+62   nature of a late-stage clinical trial and the proposal to adapt aspects of the trial while it is
+63   ongoing. In planning an adaptive design, it is therefore essential to carefully justify the need to
+
+
+
+                                                     2
+                                             ICH E20 Guideline
+
+
+64   adapt the trial and assess potential implications of the type, number, and complexity of the
+65   adaptations involved. The justification should include both clinical and statistical
+66   considerations. It should weigh the advantages of the design against the extent to which the
+67   adaptations being considered add uncertainty about the trial’s ability to produce reliable and
+68   interpretable results. For example, the addition of a carefully planned interim analysis to
+69   potentially stop a trial early for efficacy or futility using appropriate pre-specified stopping
+70   rules and ensuring sufficient information for safety and benefit-risk assessment, along with use
+71   of an IDMC to maintain trial integrity, may add minimal uncertainty. On the other hand, a
+72   complex design involving adaptations to multiple trial features may add considerable
+73   uncertainty related to maintaining trial integrity. This could include uncertainty about the
+74   adequacy of information flow and data access specifications, or the potential impact of the
+75   adaptation itself on trial conduct and the trial’s ability to provide interpretable treatment effects.
+76   This can lead to challenges in assessing results and in regulatory decision-making about the
+77   efficacy and benefit-risk profile of a proposed dose of a treatment for a specific patient
+78   population. A proposed adaptive design requires a clear and compelling justification. This
+79   justification should discuss how the proposed design addresses inherent needs of the clinical
+80   setting and should provide an evaluation of advantages and limitations as compared to
+81   alternative designs (including non-adaptive designs), including a comparison of important trial
+82   operating characteristics (e.g., power, expected sample size, reliability of adaptation decisions)
+83   between candidate designs.
+
+84   3. KEY PRINCIPLES
+
+85   For the purpose of this guideline, a principle refers to a characteristic of a trial design that is
+86   critical to ensure the reliability and interpretability of the results. This section describes
+87   principles that require specific considerations with an adaptive design. The focus is on
+88   proposals for confirmatory trials with an adaptive design. All of these principles should be
+89   followed regardless of the type of adaptation and statistical approach (e.g., frequentist or
+90   Bayesian methods).
+
+91   3.1 Adequacy Within the Development Program
+
+92   It is important that clinical trials are properly designed, conducted, and analyzed to address the
+93   clinical research question(s) of interest within the context of an overall development program.
+94   A stepwise program with careful analysis and evaluation of completed exploratory trials helps
+95   inform the goals and design choices for subsequent confirmatory trials and ultimately generate
+
+
+                                                       3
+                                            ICH E20 Guideline
+
+
+ 96   data necessary for regulatory decision-making. A complete development program should seek
+ 97   to, among other aspects: characterize the dose-response relationship with respect to favorable
+ 98   and unfavorable effects; identify an appropriate patient population for treatment; select
+ 99   clinically meaningful and sensitive endpoints; and reliably confirm efficacy and support the
+100   assessment of safety and benefit-risk in the intended patient population.
+
+101   The number and complexity of adaptations at the confirmatory stage should generally be
+102   limited. Increasing either of them, as a replacement for a sequence of multiple trials, can impair
+103   the ability to answer important clinical questions and limit the opportunity to carefully reflect
+104   on prior results to design a development program most effectively. Before planning a
+105   confirmatory trial with multiple adaptations, sponsors should discuss whether additional
+106   exploratory trials are necessary to investigate the question(s) addressed by the proposed
+107   adaptation(s).
+
+108   For example, consider a confirmatory two-stage adaptive clinical trial design with selection
+109   between two doses at an interim analysis, and confirmation of efficacy of the selected dose. In
+110   a setting where a dose-ranging trial has been conducted with remaining uncertainty about the
+111   most appropriate of two candidate doses, such a design may help ensure identification of the
+112   dose with the better benefit-risk profile in the intended patient population. However, if a proper
+113   dose-ranging trial was not conducted in earlier stages of the development program, the
+114   selection of two doses for the confirmatory trial(s) may not be well supported, adding risk that
+115   the program may fail to identify an appropriate dose. An adaptive design should generally not
+116   serve as a replacement for a proper dose-ranging trial. It is generally expected that the sponsor
+117   has completed the necessary trials to evaluate a wider range and number of doses before
+118   proceeding to the confirmatory trial(s) intended to confirm efficacy and assess benefit-risk.
+
+119   3.2 Adequacy of Trial Planning
+
+120   Adequate planning is important for all clinical trials to ensure the design is pre-specified,
+121   conduct and analysis are appropriate, and results are reliable and interpretable. If a
+122   confirmatory clinical trial is planned with an adaptive design, the number and complexity of
+123   adaptations should generally be limited and there should be a justification for adapting aspects
+124   of the trial at this stage of drug development. Prior to initiation of a trial with an adaptive
+125   design, further aspects should be specified and justified in addition to the typical components
+126   of trial planning. These include the number and timing of interim analyses, type of adaptation,
+127   statistical methods for producing interim results, anticipated rule governing the adaptation
+
+
+                                                      4
+                                              ICH E20 Guideline
+
+
+128   decision, statistical methods for the primary analysis aligned to each targeted estimand, and
+129   approaches to maintain trial integrity. For adaptive designs with a planned selection of an
+130   estimand at an interim analysis, such as treatment- or population-selection designs (Sections
+131   4.3 and 4.4), all candidate estimands should be fully pre-specified and clinically relevant.
+
+132   Some types of adaptive designs may require more planning than others. For example, a design
+133   with unblinded sample size adaptation warrants additional approaches to maintain trial integrity
+134   than one with blinded sample size adaptation. If simulations are critical to understand operating
+135   characteristics of an adaptive design, the simulation study should be carefully planned,
+136   conducted, and reported (Section 5.2). All relevant details pertinent to the planning of an
+137   adaptive trial design should be appropriately documented (Section 6).
+
+138   Adequate planning facilitates the evaluation of the appropriateness of the statistical approach
+139   for many types of adaptations. For example, Type I error probability control requires the pre-
+140   specification of criteria for early efficacy stopping or rules for combining evidence across
+141   stages. As another example, specifying a blinded sample size adaptation in the protocol,
+142   together with the adaptation rule, increases confidence that an adaptively selected sample size
+143   was not influenced by unblinded data. Adequate planning also facilitates the evaluation of trial
+144   operating characteristics and enables informed discussions with the IDMC (if involved in the
+145   adaptations). Sponsors should discuss the type of adaptations and anticipated adaptation rules
+146   in detail with the IDMC to confirm its understanding and support. This ensures the IDMC is
+147   prepared to review interim results and make adaptation recommendations during the trial while
+148   also protecting individual trial participants’ safety.
+
+149   There should always be a clear description of the anticipated rule on which the adaptation will
+150   be based. The extent to which the anticipated rule governing the adaptation decision needs to
+151   be adhered to at an interim analysis, however, can vary depending on the type of adaptation
+152   and the statistical inferential methods being used. It is generally recommended to use analysis
+153   methods that provide valid inference while allowing flexibility to deviate from the anticipated
+154   adaptation rule based on the overall benefit-risk assessment at an interim analysis. For example,
+155   consider a confirmatory two-stage adaptive clinical trial with selection between two doses at
+156   an interim analysis, with the objective to confirm the efficacy and support the benefit-risk
+157   assessment of the selected dose. At the trial planning stage, an efficacy-based rule for the
+158   interim dose selection may be planned given that no meaningful safety issues are expected.
+159   There is a chance, however, that interim data will suggest similar efficacy between the two
+
+
+                                                       5
+                                             ICH E20 Guideline
+
+
+160   doses, with an unexpected safety concern for the higher dose. When using statistical methods
+161   that allow for the flexibility to incorporate such benefit-risk considerations at the interim
+162   analysis, the pre-specified plan should acknowledge the possibility of deviations from the rule
+163   and outline factors that may lead to such deviations. If the planned statistical methods instead
+164   require strict adherence to the rule governing the interim decision to ensure valid inference
+165   (e.g., Type I error probability control), the importance of adhering to the rule should be
+166   documented in the trial protocol.
+
+167   3.3 Limiting the Chances of Erroneous Conclusions
+
+168   It is important to limit the chances of erroneous conclusions about the efficacy, safety, and
+169   benefit-risk profile of a proposed treatment. An essential element of regulatory decision-
+170   making is controlling the chances of false positive efficacy conclusions (i.e., conclusions that
+171   truly inefficacious treatments are efficacious). The common approach is to limit the probability
+172   of false positive efficacy conclusions within a trial by using frequentist methods that control
+173   the Type I error probability for a hypothesis test of the primary estimand at a pre-specified
+174   threshold (ICH E9).
+
+175   For most adaptive designs, it is necessary to use specific methods to control the Type I error
+176   probability. For example, if a design includes an interim analysis with the potential for early
+177   stopping for efficacy, appropriate pre-specified stopping rules are needed. When an adaptive
+178   trial design includes multiple testing approaches to control the Type I error probability across
+179   multiple primary and/or secondary endpoints, those approaches should additionally address the
+180   potential for an increased Type I error probability due to the proposed adaptation.
+
+181   Although the predominant approaches to the design and analysis of clinical trials have been
+182   based on frequentist statistical methods, other approaches may be appropriate when the reasons
+183   for their use are clear and when the resulting conclusions are sufficiently robust (ICH E9).
+184   Section 5.3 describes important considerations for limiting the chances of false positive
+185   efficacy conclusions in adaptive designs using Bayesian methods.
+
+186   It is also important to understand how a proposed adaptive design may impact the potential for
+187   other types of erroneous conclusions. This includes the need for the trial to provide sufficient
+188   information on safety, important secondary efficacy endpoints, and relevant patient subgroups
+189   to inform a reliable benefit-risk assessment. For example, when planning a trial with the
+190   potential to stop early for an efficacy conclusion, it is important to justify that the sample size
+
+
+
+                                                      6
+                                             ICH E20 Guideline
+
+
+191   and duration of follow-up at an interim analysis can adequately support a reliable benefit-risk
+192   assessment. This also includes evaluation of the impact of adaptive designs on conclusions
+193   made at interim analyses, and the risk that the adaptive design may be inadequate to fulfill the
+194   trial objectives. For example, sponsors should evaluate the ability of an adaptive dose-selection
+195   design to select the better out of two doses at an interim analysis based on efficacy and benefit-
+196   risk considerations. Finally, adaptations can impact the chance of a false negative efficacy
+197   conclusion (i.e., lack of evidence of an effect for a truly efficacious treatment) such that it is
+198   important to evaluate whether the trial achieves adequate power.
+
+199   3.4 Reliability of Estimation
+
+200   Controlling the chances of false positive efficacy conclusions is expected in a confirmatory
+201   clinical trial (Section 3.3). In addition, reliable estimation of treatment effects for the primary
+202   efficacy endpoint and other key efficacy and safety outcomes is important to facilitate the
+203   benefit-risk assessment and inform regulatory decision-making. The primary analysis of a trial
+204   with an adaptive design should therefore provide an estimate of the treatment effect that is
+205   reliable and aligned with the estimand of interest. Sponsors should evaluate bias and variability
+206   of treatment effect estimates, including measures such as the mean squared error. In the trade-
+207   off between bias and variance, the expectation is generally for limited to no bias in the primary
+208   estimate of the treatment effect. The primary analysis should also support calculation of
+209   accurate measures of uncertainty such as confidence intervals with targeted coverage
+210   probabilities.
+
+211   If a trial with an adaptive design uses approaches for estimation in the primary analysis that do
+212   not account for the adaptive nature of the design, unreliable treatment effect estimates and
+213   incorrect estimates of uncertainty (e.g., incorrect confidence interval coverage) may arise. For
+214   example, selecting the treatment with the largest estimated effect from among several
+215   treatments at an interim analysis will, on average, lead to an overestimation of that treatment’s
+216   effect. This holds true even if selection is based on an endpoint expected to be predictive of
+217   efficacy rather than the primary endpoint itself. Similarly, treatment effect estimates for
+218   secondary endpoints may be biased in the presence of adaptations. Adaptive design proposals
+219   should therefore evaluate bias and variability of treatment effect estimates and provide support
+220   of their reliability. In some cases, bias and variability can be calculated analytically. In other
+221   cases, the evaluation has to rely on simulations. For some designs, specific estimation methods
+222   have been derived with improved reliability, and these should be used. As one example,
+
+
+
+                                                      7
+                                              ICH E20 Guideline
+
+
+223   methods are available in group sequential designs for adjusting estimates to reduce or remove
+224   bias associated with the potential for early stopping and to improve performance on measures
+225   such as the mean squared error.
+
+226   In addition to ensuring reliable estimation of the treatment effect in the primary analysis, it is
+227   also important to support that estimates at interim analyses can facilitate reliable adaptation
+228   decisions. For example, conducting an interim analysis in an adaptive dose-selection design at
+229   an early time point may result in highly variable estimates and the selection of an inferior dose.
+230   Sponsors should therefore evaluate the overall operating characteristics of the design (e.g.,
+231   probability of selecting the better dose) to inform careful selection of the timing of an interim
+232   analysis and the adaptation rules.
+
+233   3.5 Maintenance of Trial Integrity
+
+234   It is important that the integrity of a trial is maintained such that it achieves its objectives in a
+235   reliable, ethical, and timely manner. The impact of trial adaptations on the statistical validity
+236   of trial results is discussed in Sections 3.3 and 3.4. Maintenance of trial integrity also relies on
+237   appropriate execution of the trial and careful assessment of the potential impact of envisaged
+238   adaptations on trial conduct, which is the focus of this section.
+
+239   Knowledge by the sponsor, investigators, or trial participants about individual treatment
+240   assignments, accumulating data, or certain trial changes can impact trial integrity by affecting
+241   expectations and behaviors in ways that are difficult to predict and impossible to adjust for.
+242   Such knowledge can introduce subtle changes in trial conduct, such as changes in the pace and
+243   characteristics of participants enrolled, specific details of the administration of the study
+244   treatment or other medications, or endpoint assessments, that may impact the interpretation of
+245   trial results. For example, knowledge by investigators and trial participants of a small or
+246   unfavorable estimated treatment effect based on accumulating data during an ongoing trial
+247   could be misinterpreted as reliable evidence of no effect, causing decreased enrollment,
+248   adherence, and retention of trial participants, ultimately leading to unreliable results and
+249   difficulties with their interpretation at trial end. The recommended approach is to blind
+250   participants, investigators, and the sponsor to individual treatment assignments and to
+251   accumulating summary-level data in which treatment groups are identified (either with the
+252   actual treatments or with labels such as A and B), therefore limiting the risk for occurrence of
+253   conscious and unconscious changes in trial conduct arising from such knowledge.
+
+
+
+
+                                                       8
+                                             ICH E20 Guideline
+
+
+254   A fundamental aspect of many types of adaptive designs is the need for some level of access to
+255   unblinded interim results. Personnel having access to accumulating unblinded data should
+256   generally be independent in the sense that they do not have conflicts of interest or any role in
+257   trial activities and are external to the sponsor. To achieve this, an IDMC should be in place to
+258   review unblinded interim data when such access is needed as part of the adaptive design. In
+259   confirmatory trials, an IDMC will often already be planned to assure the safety of trial
+260   participants and to protect the scientific integrity of the trial. In this case, the IDMC can have
+261   an additional role of reviewing interim data for the purpose of implementing the planned
+262   adaptations. If an IDMC is not already planned, one can be set up with objectives and member
+263   expertise targeted toward implementing the adaptive design. Standard operating procedures
+264   and confidentiality agreements should be put in place to limit access to unblinded interim
+265   results beyond the IDMC. Additional discussion about the IDMC and other data monitoring
+266   considerations is available in Section 5.1.
+
+267   Even the knowledge of an adaptation itself can lead to unwanted changes in behavior on the
+268   part of investigators or trial participants or can potentially reveal information about unblinded
+269   interim results. For example, if an unblinded sample size adaptation is implemented, where the
+270   revised sample size is a function of an interim treatment effect estimate, someone who
+271   understands the adaptation rule and knows the revised sample size can infer the interim effect
+272   estimate. Therefore, measures should be implemented to minimize the information that can be
+273   inferred, while maintaining ethical standards (e.g., adequate informed consent forms) and
+274   ensuring operational feasibility (e.g., adequate drug supply); see further discussion of
+275   operational considerations in Section 5.6. One particular approach to limit the knowledge that
+276   can be inferred during the trial is to use adaptation rules where a sufficiently large range of
+277   interim estimates leads to the same change (e.g., with a sample size adaptation rule that includes
+278   only a small number of potential adaptively selected sample sizes). Details of the adaptation
+279   rule could be reserved for a specific document rather than the protocol, such as a confidential
+280   appendix to the IDMC charter, that is only accessible to designated sponsor personnel separated
+281   from the team managing and conducting any aspects of a clinical trial. Additionally, sponsor
+282   personnel, investigators, and trial participants could be shielded from knowledge of specific
+283   adaptive changes. For example, trial sites could be informed after a sample size adaptation that
+284   the targeted enrollment has not been reached, or notified of site- or region-specific targets,
+285   rather than notified of the overall sample size target.
+
+
+
+
+                                                      9
+                                             ICH E20 Guideline
+
+
+286   Sponsors should discuss with regulators at the planning stage the potential implications of the
+287   adaptations on trial conduct, including the type of participants enrolled, and on the
+288   interpretation of the results at trial end. This should include a discussion of the sufficiency of
+289   the size of the trial stages for assessing the impact of adaptations. Sponsors should implement
+290   approaches for maintaining trial integrity. Processes should be documented to increase
+291   adherence to these approaches and to provide transparency to relevant stakeholders (e.g.,
+292   regulatory authorities and participating investigators). Appropriate training and careful
+293   planning are needed to prevent compromises to the extent possible. Because even the most
+294   rigorous processes may not fully guarantee trial integrity, the interpretation of results at trial
+295   end should involve consideration of any heterogeneity between results from different stages of
+296   the trial, the nature of the adaptive design (e.g., the number and type of adaptations and the size
+297   of the stages of the trial), the processes in place and who had access to different kinds of data
+298   and information during the trial, and any notable changes in trial conduct before and after an
+299   interim analysis (e.g., changes in the types of participants enrolled). Unexpected heterogeneity
+300   findings should be discussed by the sponsor and may impact the interpretation of the trial
+301   results.
+
+302   The principles for maintaining trial integrity discussed above are particularly critical in open-
+303   label trials in which each participant’s individual treatment assignment is known to the
+304   participant and/or investigator. Notably, even though individual participant assignments are
+305   known in such trials, it is feasible and strongly recommended to ensure that participants,
+306   investigators, and the sponsor do not have access to accumulating summary-level data by
+307   treatment group.
+
+308   4. TYPES OF ADAPTATIONS
+
+309   This section discusses common types of adaptations, with a focus on specific considerations
+310   relevant to the principles in Section 3. This section also illustrates some of the advantages and
+311   challenges of adaptive designs outlined in Section 2. The discussion focuses on designs using
+312   frequentist approaches for statistical analysis. For special considerations related to adaptive
+313   designs using Bayesian methods, see Section 5.3.
+
+314   4.1 Early Trial Stopping
+
+315   During the conduct of a clinical trial, accruing data can provide information that makes it no
+316   longer appropriate to continue the trial. To address this, sponsors can consider a trial design
+
+
+
+                                                      10
+                                             ICH E20 Guideline
+
+
+317   that includes prospectively planned sequential analyses of accumulating unblinded data with
+318   anticipated rules for stopping when there is compelling evidence of efficacy (stopping for
+319   efficacy) or when the trial is unlikely to demonstrate efficacy (stopping for futility). A clinical
+320   trial design that allows such sequential analyses for early efficacy stopping based on
+321   accumulating observations of groups of participants at pre-specified points throughout the trial
+322   is called a group sequential design.
+
+323   When planning a trial design that allows for early efficacy stopping, appropriate stopping
+324   boundaries should be planned for the sequential analyses such that the Type I error probability
+325   is controlled. The timing of interim analyses and specific stopping rules should be justified
+326   based on factors such as the required persuasiveness of early results to stop the trial, the
+327   probability of early stopping, and the expected and maximum sample sizes or numbers of
+328   events that may be accrued. Approaches may be considered that allow deviation from the
+329   anticipated timing of interim analyses. For example, this could help accommodate the
+330   scheduling of IDMC meetings at specific calendar times, such that the actual sample size at an
+331   interim analysis may differ slightly from the pre-specified target. In addition, methods for
+332   calculating the primary treatment effect estimate and associated confidence interval that adjust
+333   for the interim analyses should be planned to limit bias and improve performance on measures
+334   such as the mean squared error (Section 3.4).
+
+335   A trial that is stopped early for efficacy will provide less information (e.g., because of a smaller
+336   sample size and/or shorter duration of follow-up) for the evaluation of safety, important
+337   secondary efficacy endpoints, and relevant patient subgroups, which are important for the
+338   overall benefit-risk assessment. Therefore, the timing of interim analyses should be selected
+339   such that the sample size is large enough and the duration of follow-up is long enough to ensure
+340   sufficient information is available for decision-making. There usually is a limit on how early
+341   interim analyses should occur or whether they should occur at all because a minimum sample
+342   size and/or duration of follow-up is expected for a sufficient evaluation of safety. This is often
+343   a relevant criterion, for example, in preventive vaccine trials and to meet regulatory standards
+344   for the extent of population exposure for treatments intended for long-term treatment of non-
+345   life-threatening conditions (ICH E1). Furthermore, interim analyses with the potential for early
+346   stopping are more often considered in circumstances where there are compelling ethical
+347   reasons (e.g., the primary endpoint is survival), and efficacy stopping rules typically require
+
+
+
+
+                                                      11
+                                               ICH E20 Guideline
+
+
+348   highly persuasive results in terms of both the magnitude of the estimated treatment effect and
+349   the strength of evidence of an effect.
+
+350   In the case that a stopping rule at an interim analysis is met and a decision is made to stop the
+351   trial for efficacy, additional data beyond those included in the interim analysis may continue to
+352   accumulate on participants in the trial prior to the final database lock. This can occur as a result
+353   of a time lag between data collection and interim analysis during which data adjudication and
+354   cleaning are carried out. Sponsors should ensure this additional information is appropriately
+355   documented and should report results from the interim analysis and from the analysis based on
+356   all available data, which are both important for regulatory decision-making. For example, a
+357   change in the estimated treatment effect between these two analyses that may affect the benefit-
+358   risk assessment would warrant investigation of potential explanations and may make
+359   interpretation of the trial results challenging.
+
+360   When a trial design incorporates the potential for futility stopping, while anticipated futility
+361   rules should be pre-specified and justified, it is generally recommended to use nonbinding
+362   futility rules. This means that the futility stopping criteria serve as guidelines that can be
+363   deviated from based on the interim results without increasing the Type I error probability. This
+364   flexibility is important because decision-making about whether to stop for futility or continue
+365   is usually not an algorithmic process and may need to incorporate additional information
+366   beyond the primary efficacy endpoint, such as safety or other efficacy data. In contrast, there
+367   have been proposals to use binding futility rules and adjust the efficacy decision criteria for the
+368   planned futility criteria. These approaches have the disadvantage of requiring that sponsors
+369   adhere to the pre-specified futility stopping criteria, as otherwise the Type I error probability is
+370   not controlled and the interpretation of trial results can be compromised.
+
+371   4.2 Sample Size Adaptation
+
+372   Even after a carefully planned and conducted early-phase development program, a considerable
+373   degree of uncertainty might exist in the parameter assumptions that affect the sample size
+374   calculations for a clinical trial. One source of uncertainty are assumptions about the nuisance
+375   parameters that are not of primary interest but may affect the sample size of a trial. Examples
+376   of nuisance parameters include the standard deviation of a continuous outcome and the
+377   probability of response of the control arm for a binary outcome, which can be highly variable
+378   across trials in certain disease settings. In such cases where a sound rationale exists, sponsors
+379   may consider incorporating the potential for modification of the initial sample size based on
+
+
+                                                         12
+                                            ICH E20 Guideline
+
+
+380   interim estimates of nuisance parameter values to ensure the trial is adequately powered.
+381   Another source of uncertainty at the planning stage are assumptions about the anticipated
+382   treatment effect size. In cases where there is justification based on residual uncertainty (e.g.,
+383   after appropriate exploratory trials; see Section 3.1), sponsors may consider a sample size
+384   adaptation based on an interim treatment effect estimate. The goal would be to ensure sufficient
+385   power under a range of plausible and clinically meaningful treatment effect sizes.
+
+386   Appropriate planning of any design incorporating sample size adaptation should include pre-
+387   specification and justification of the minimum and maximum potential sample sizes, the
+388   anticipated sample size adaptation rule, and the statistical analysis method. It is important that
+389   the minimum sample size still provides sufficient information for benefit-risk assessments
+390   (e.g., for evaluating safety, secondary endpoints, and subgroup analyses), similar to
+391   considerations for early stopping (Section 4.1).
+
+392   Adaptations to the sample size based on nuisance parameter estimates should be carried out
+393   using blinded data as this approach does not incorporate information about treatment
+394   assignment, thus minimizing risks for trial integrity. The anticipated sample size adaptation
+395   rule should be pre-specified to increase confidence that an adaptively selected sample size was
+396   not influenced by unblinded data. Such pre-specification also facilitates evaluation of trial
+397   operating characteristics (e.g., power and expected sample size). Sponsors should propose and
+398   justify a testing approach that controls the Type I error probability. In some cases, conventional
+399   analysis methods that would apply in non-adaptive designs can be used for the primary analysis
+400   if there is justification (e.g., in a reasonably sized two-arm superiority trial with a continuous
+401   endpoint). In other cases (e.g., a two-arm non-inferiority trial with a continuous endpoint), the
+402   use of these conventional methods may lead to an increase in the Type I error probability and
+403   different approaches are needed.
+
+404   Trials with sample size adaptations based on interim effect estimates should use an IDMC and
+405   adequate processes to maintain trial integrity, given that the adaptations are based on unblinded
+406   data. This should include steps to minimize the information that can be inferred from the
+407   interim sample size selection (Section 3.5). Given that such designs typically allow for an
+408   increase in sample size compared to the initially planned sample size, statistical significance
+409   can be achieved with weaker observed effects than initially planned. When planning such a
+410   design, it is therefore important to judge the magnitudes of effects that would be clinically
+
+
+
+
+                                                     13
+                                              ICH E20 Guideline
+
+
+411   meaningful, justify the added participant exposure, and ensure that the potential sample sizes
+412   under the adaptive design are sensible from a clinical perspective.
+
+413   It is generally recommended to use sample size adaptation methods that do not require
+414   adherence to the anticipated adaptation rule, such as hypothesis testing based on pre-specified
+415   weights for combining the information across trial stages. Still, the anticipated adaptation rule
+416   should be pre-specified to facilitate the evaluation of trial operating characteristics (e.g.,
+417   expected sample size and power) and ensure that the IDMC understands and is in agreement
+418   with the anticipated adaptation rule.
+
+419   For most designs involving adaptations to the sample size based on interim treatment effect
+420   estimates, conventional testing methods for non-adaptive designs are not appropriate and
+421   specific statistical methodology needs to be used to ensure Type I error probability control. In
+422   addition, conventional point estimates of the effect size may be biased, and conventional
+423   confidence intervals may have incorrect coverage probabilities. Therefore, it is recommended
+424   to evaluate the reliability of these estimates at the trial planning stage. This evaluation may
+425   inform the acceptability of the proposed adaptive design or the interpretation of trial results. In
+426   some cases, methods are available that adjust estimates to reduce or remove bias associated
+427   with the adaptation and these are preferred.
+
+428   4.3 Population Selection
+
+429   In certain settings, there may be remaining uncertainty about the patient population who should
+430   be treated with a new treatment. For example, a treatment may be expected to benefit a certain
+431   targeted subset of the overall population, while the benefit in the non-targeted (complementary)
+432   subset may be unclear. This targeted subpopulation could be defined, for example, by
+433   demographic characteristics or by a genetic or pathophysiologic marker that is assumed to be
+434   related to the treatment’s mechanism of action. If the treatment were truly efficacious in the
+435   targeted subpopulation but not efficacious or minimally efficacious in the complementary
+436   subpopulation, conducting a trial in the overall population might have insufficient power to
+437   establish a treatment effect and might unnecessarily expose participants to a treatment from
+438   which they will not receive benefit. On the other hand, if the treatment were truly efficacious
+439   in the overall population, a trial in only the targeted subpopulation would not provide data on
+440   the effects of the treatment in the complementary subpopulation and would result in restricting
+441   the indication for the treatment to only a subset of the overall population that would benefit.
+
+
+
+
+                                                      14
+                                             ICH E20 Guideline
+
+
+442   Such uncertainty would usually be investigated in an exploratory trial. However, in some cases
+443   there also may be consideration to conducting a confirmatory trial in the overall population,
+444   with an analysis plan that includes evaluation of efficacy in a targeted subpopulation (e.g., with
+445   a multiple testing approach to control the Type I error probability across analyses in the overall
+446   population and in the subpopulation). Alternatively, it may be more efficient to consider a
+447   design for a confirmatory trial with the option for adaptations to the patient population based
+448   on unblinded interim results. A trial might enroll participants from the overall population up
+449   through an interim analysis, at which time a decision would be made whether to continue
+450   enrollment in the overall population or to restrict future enrollment to a targeted subpopulation.
+451   If enrollment continues in the overall population, a decision would then need to be made
+452   whether to evaluate in the analysis at trial end the treatment effect in only the overall
+453   population, or in both the overall population and the targeted subpopulation. If enrollment is
+454   restricted to the targeted subpopulation, the analysis at the end of the trial would focus on the
+455   treatment effect in that subpopulation. In such settings, data accumulated both before and after
+456   the interim analysis should be appropriately combined to draw inference on the treatment effect
+457   in the selected population(s).
+
+458   Adequate planning of such designs should include pre-specification of the candidate
+459   population(s) that may be selected at the interim analysis to be the target of future enrollment,
+460   the decisions to be made at the interim analysis regarding the population(s) for statistical
+461   inference and how they will be analyzed at the end of the trial, and the anticipated adaptation
+462   rules. There should also be a plan for managing participants from a population for which further
+463   enrollment and evaluation is stopped based on an interim analysis. In designs that select
+464   population(s) for enrollment and analysis based on interim treatment effect estimates, specific
+465   statistical methodology is typically needed to control the Type I error probability. Methods are
+466   generally recommended that allow flexibility in deviating from the anticipated adaptation rule,
+467   as considering the totality of information available at the interim analysis helps ensure
+468   appropriate population selection. Sponsors should also ensure that interim estimates can
+469   facilitate reliable population selection, including planning the interim analysis at an appropriate
+470   time point. Furthermore, given that such a design tends to select population(s) with more
+471   favorable interim results, conventional treatment effect estimates at trial end may be biased.
+472   The reliability of the treatment effect estimates in the different populations should be evaluated,
+473   and adjusted estimates that reduce or remove bias should be considered.
+
+
+
+
+                                                      15
+                                             ICH E20 Guideline
+
+
+474   It is important that a trial with population adaptation has a sound scientific rationale. For
+475   example, a trial in the overall population that includes an interim analysis to potentially focus
+476   future enrollment and analysis on a particular subpopulation should be motivated by results
+477   from previous trials and/or biologic evidence that the benefit-risk profile may be meaningfully
+478   more favorable in the targeted subpopulation. With such a trial, it is also important to ensure
+479   that the design facilitates reliable decision-making in the scenario in which enrollment in the
+480   overall population continues after the interim analysis. This includes ensuring that the trial will
+481   provide adequate information on the benefit-risk profile in the complementary subpopulation.
+482   It also includes specifying criteria, including criteria for the estimated treatment effect in the
+483   complementary subpopulation, that would justify a conclusion of benefit in the overall
+484   population. If the baseline characteristic that may be used to define subpopulations is not binary
+485   in nature, justification should be provided at the planning stage for any threshold(s) used to
+486   define the subpopulations.
+
+487   4.4 Treatment Selection
+
+488   Some trials are conducted with the intent to evaluate more than one treatment. The multiple
+489   treatments might be different drugs or different doses of a single drug. For example, there might
+490   be uncertainty remaining at the end of the exploratory development phase about the benefit-
+491   risk profile of two likely efficacious doses of a certain drug. A confirmatory trial might then
+492   compare these two doses against control with the objective to confirm their efficacy and to
+493   select the most appropriate dose(s) at trial end. In such a setting, it may be conceivable to design
+494   a trial with the option for dose selection based on an interim analysis of accumulating unblinded
+495   data. Participants would initially be randomized to either of the two doses or control. At the
+496   interim analysis, one or both doses would be selected for continued randomization in the second
+497   stage. The analysis at the end of the trial would then aim to confirm efficacy and assess benefit-
+498   risk of the selected dose(s) based on data across both trial stages.
+
+499   Adequate planning of a trial with adaptive treatment selection should involve specification of
+500   the treatments that will be evaluated, the decisions to be made at the interim analysis, and the
+501   anticipated rules for the selection process, including any implications for the randomization
+502   scheme and overall sample size. There should also be a plan for managing participants who are
+503   receiving a treatment for which further evaluation is stopped based on an interim analysis. In a
+504   design that potentially selects one (or more) treatments based on interim effect estimates,
+505   specific statistical methodology is needed to control the Type I error probability. It is generally
+
+
+
+                                                      16
+                                            ICH E20 Guideline
+
+
+506   recommended to use methods that allow for flexibility in deviating from the anticipated
+507   adaptation rule. Such flexibility enables consideration of the full scope of information available
+508   at the interim analysis, helping to support more informed and appropriate treatment selection
+509   decisions. Sponsors should also ensure that interim estimates can facilitate reliable treatment
+510   selection, including planning the interim analysis at an appropriate time point. Given that such
+511   a design tends to select treatment(s) with more favorable interim results, conventional treatment
+512   effect estimates at trial end may be biased. The reliability of estimates should be evaluated, and
+513   adjusted estimates that reduce or remove bias should be considered.
+
+514   4.5 Adaptation to Participant Allocation
+
+515   In a randomized trial, participants are typically allocated to treatment arms according to fixed
+516   randomization probabilities. Alternatively, there are different approaches that can be
+517   considered to incorporate adaptations to the allocation scheme, where the assignment of
+518   participants to treatment arms depends on the data of earlier trial participants. These include
+519   covariate-adaptive approaches where assignment depends on accumulating baseline covariate
+520   data and response-adaptive approaches where assignment depends on accumulating outcome
+521   data. This section focuses on response-adaptive randomization (RAR) approaches where
+522   incoming participants are randomized to treatments according to probabilities that depend on
+523   previous unblinded outcome data. The key idea is to assign new participants with greater
+524   probability to treatment arms that have had, to that point, more positive outcomes than to other
+525   treatment arms.
+
+526   RAR is sometimes valued for advantages to trial participants such as exposure of fewer
+527   participants to an inferior treatment or reduction in the expected number of participant
+528   treatment failures in a trial with a binary response endpoint. However, RAR procedures also
+529   bring challenges in ensuring valid statistical inference. Perhaps most concerning, RAR designs
+530   are susceptible to bias and inflation of the Type I error probability in the presence of overall
+531   time trends. For example, a RAR design would more likely show a false positive treatment
+532   effect if earlier-enrolled participants are both more likely to be assigned to control and to have
+533   a poor prognosis (e.g., because of changes in background care or participant characteristics
+534   over time) than later-enrolled participants. In addition, the use of efficacy-based algorithmic
+535   modifications to the randomization scheme could lead to an insufficient sample size to support
+536   decision-making on a treatment that may have lesser efficacy but a better benefit-risk profile.
+
+
+
+
+                                                     17
+                                            ICH E20 Guideline
+
+
+537   Any proposal to use RAR should address these potential issues. The specific RAR procedure
+538   should be pre-specified and justified. There should be careful specification of analysis methods
+539   that provide Type I error probability control and reliable estimates. The proposal should address
+540   the potential for confounding due to time trends. The degree of such confounding may depend
+541   on factors such as the expected duration of the trial and the likelihood of changes in background
+542   care or prognostic factors over time (e.g., such changes may be likely in a rapidly evolving
+543   infectious disease setting). One approach that controls the Type I error probability is to allow
+544   randomization ratio adaptation at only a single or small number of interim analyses, while
+545   utilizing adaptive hypothesis testing based on pre-specified weights for combining the
+546   information across trial stages. Time trends may also be addressed by using specific
+547   methodology (e.g. re-randomization tests), but an RAR design using such tests might be less
+548   powerful than a design with a fixed randomization scheme.
+
+549   An approach that implements the changes to the randomization scheme over time without
+550   sponsor involvement should be planned to reduce the risk to trial integrity. Given that
+551   knowledge of the RAR procedure and the adaptively selected randomization ratio could reveal
+552   information about the interim treatment effect estimate, steps should be taken to minimize what
+553   can be inferred from the adaptations (Section 3.5). Finally, there can be additional challenges
+554   such as ensuring the timely availability of high-quality interim data on an ongoing basis and
+555   integrating the algorithm into the randomization system.
+
+556   There are also non-randomized, deterministic adaptations to participant allocation such as in a
+557   two-arm trial where a response results in assigning the next participant to the same treatment,
+558   while a non-response leads to assigning the next participant to the alternative treatment. Such
+559   deterministic procedures are discouraged (ICH E9) due to the high risk of bias and the potential
+560   for predicting the next treatment allocation.
+
+561   5. SPECIAL TOPICS AND CONSIDERATIONS
+
+562   This section expands on some special topics for adaptive designs, including data monitoring,
+563   simulations, use of Bayesian methods, time-to-event endpoints, exploratory trials, and
+564   operational execution.
+
+565   5.1 Further Considerations on Data Monitoring
+
+566   This section discusses further considerations related to data monitoring in confirmatory trials
+567   with adaptive designs that include interim analyses based on accumulating unblinded data. An
+
+
+                                                      18
+                                             ICH E20 Guideline
+
+
+568   IDMC for a trial with an adaptive design should contain, as a group, all expertise needed for
+569   making adaptation recommendations in addition to meeting its usual responsibilities (i.e.,
+570   protecting individual participants’ safety while maintaining trial integrity). It should include at
+571   least one statistician knowledgeable and experienced in interim monitoring and in statistical
+572   methodologies relevant to the proposed adaptive design and analysis. The IDMC should
+573   generally have access to unblinded efficacy and safety data. Operational aspects should be
+574   outlined in a designated charter to document details such as content and frequency of reports
+575   to be prepared, meeting schedule and logistics, procedures to maintain confidentiality,
+576   statistical aspects of the monitoring plan, and processes for making recommendations. It is
+577   important that sponsors align upfront with the IDMC on the trial objectives and design,
+578   expectations for the IDMC (including those that go beyond the usual responsibilities), type and
+579   implications of adaptations, and anticipated adaptation rules.
+
+580   An independent statistical group that conducts analyses of accumulating unblinded data and
+581   produces interim reports for the IDMC should be in place. It should not include members of
+582   the monitoring committee and should not support other trial activities. Trial integrity will be
+583   best protected when this statistical group having access to unblinded data is external to and
+584   independent from the sponsor. The statisticians and programmers that comprise this group
+585   should have the appropriate expertise to carry out the analyses needed to implement the
+586   adaptive design and to support the IDMC. They should have access to all trial data needed to
+587   carry out their responsibilities. It is strongly recommended that the independent statistical
+588   group and IDMC have sole access to unblinded interim data and results. Appropriate processes
+589   for maintaining confidentiality (e.g., standard operating procedures and confidentiality
+590   agreements) should be in place.
+
+591   Upon reviewing the unblinded interim results, the IDMC should provide adaptation
+592   recommendations to designated sponsor personnel separated from the trial team. In the specific
+593   case that the IDMC has made a recommendation to stop a trial early, sufficient information
+594   may then be communicated to the sponsor (e.g., key efficacy and safety results) to allow
+595   sponsor decision-making about whether to stop the trial. In general, however, the adaptations
+596   should be planned such that the sponsor can implement the IDMC recommendations regarding
+597   trial adaptations without having access to any unblinded interim results. For example, this
+598   would be the case when the IDMC recommends continuing the trial in a group sequential
+599   design or when it selects a specific sample size in a sample size adaptation design. This requires
+
+
+
+                                                      19
+                                             ICH E20 Guideline
+
+
+600   extensive planning and discussion between the sponsor and the IDMC at the planning stage to
+601   ensure a common understanding of the monitoring processes and anticipated adaptation rule.
+
+602   Risks to trial integrity are most easily minimized by completely restricting sponsor access to
+603   unblinded interim results. However, sponsors may propose some degree of access to unblinded
+604   data in certain circumstances. This should be made explicit at the planning stage. Any proposal
+605   for sponsor access needs to be supported by a compelling rationale. In this case, there also
+606   should be planned steps to protect trial integrity such as minimizing the number of individuals
+607   with access, ensuring individuals with access are independent from those involved in trial
+608   conduct, and implementing processes to maintain confidentiality. All information regarding
+609   who accessed what data should be recorded in detail so that regulators assessing trial results
+610   before and after the adaptation can be reassured at the end of the trial that trial integrity was
+611   not compromised.
+
+612   5.2 Planning, Conducting, and Reporting Simulation Studies
+
+613   Simulation studies often play an important role in the planning of a trial with an adaptive
+614   design. A simulation is the repeated execution of a large number of hypothetical clinical trials
+615   to understand operating characteristics of a trial design under a series of specific configurations
+616   of assumptions (scenarios). Simulations can be used to investigate operating characteristics of
+617   a proposed adaptive design in different scenarios, such as under different treatment effect and
+618   nuisance parameter assumptions, in the presence of varying dropout or enrollment rates, or
+619   with a specific sample size when analytical properties of an analysis approach rely on large
+620   sample sizes. For example, the probability of a false positive conclusion can be estimated by
+621   calculating the proportion of simulated clinical trials that would lead to a false positive
+622   conclusion that a treatment is effective when data have been simulated under the assumption
+623   of no beneficial treatment effect. Simulations can facilitate comparisons of adaptive and non-
+624   adaptive designs, comparisons of different adaptive design options, and comparisons of
+625   different drug development programs (i.e., a comparison of a sequence of trials). Simulations
+626   can also inform internal sponsor decision-making on trial logistics such as site selection and
+627   drug supply. This section focuses on principles for the appropriate planning, conduct, and
+628   reporting of simulations when they are critical for understanding the operating characteristics
+629   of a trial with an adaptive design.
+
+630   It is important to clearly define and focus on the key objectives the simulation study is designed
+631   to address. These should be specific, relevant, and directly related to the decisions that will be
+
+
+                                                      20
+                                             ICH E20 Guideline
+
+
+632   made as a result of the simulation study. To address the objectives, a range of clinical trial
+633   designs and analysis options should be carefully selected. These should include a benchmark
+634   design and analysis approach, i.e., a design with well-understood operating characteristics such
+635   as a non-adaptive or group sequential design. This range of designs may also include, for
+636   example, different choices for the number and timing of interim analyses, stagewise sample
+637   sizes, types of adaptations, stopping and adaptation rules, and statistical methods for testing
+638   and estimation. The choice of design options may be an iterative process as operating
+639   characteristics are explored and should be sufficiently broad to allow a comprehensive
+640   assessment of the selected adaptive design. The evaluation of the advantages and limitations of
+641   all design options included in the simulation study is critical to understand the tradeoffs in the
+642   selection of the proposed design.
+
+643   It is also important to define and assess key operating characteristics that align with the
+644   questions the simulation study is designed to address. These operating characteristics should
+645   generally include the Type I error probability, expected sample size, expected trial duration,
+646   power, coverage of confidence intervals, and bias and mean squared error of treatment effect
+647   estimates. Other operating characteristics such as the probability of stopping for futility or
+648   efficacy at an interim analysis may also be of interest, depending on the trial design and setting.
+649   Considerations around operating characteristics for adaptive designs using Bayesian methods
+650   are discussed in Section 5.3. Sometimes, operating characteristics beyond a single trial may be
+651   of interest, such as the probability of selecting an appropriate dose and subsequently confirming
+652   its efficacy. While it is relevant to summarize the average of the results across the simulated
+653   trials (repetitions), it may also be important to evaluate the variability, minimum and maximum,
+654   or other aspects of the distribution of results (e.g., the sample size distribution in a trial with
+655   the potential for early stopping or sample size adaptation).
+
+656   The scenarios included in the simulation study should cover the plausible range of assumptions
+657   to ensure a robust assessment of the performance of the proposed adaptive design. This includes
+658   assumptions about the treatment effects and nuisance parameters, such as the standard
+659   deviation for a continuous outcome, and operational assumptions for which a sponsor may have
+660   greater control (e.g., enrollment or dropout rates). The adequacy of the assumptions should be
+661   justified based on clinical and statistical considerations, with documentation of the supporting
+662   knowledge. This information can come from a variety of sources, including data from previous
+663   trials, publications, results from extrapolations, and expert input. All relevant sources of
+
+
+
+                                                      21
+                                            ICH E20 Guideline
+
+
+664   information available to the sponsor should be used, and attempts should be made to quantify
+665   uncertainty and identify potential biases. Using a grid of assumptions (e.g., discrete set of
+666   assumptions across a specific range) should be supported by justification based on existing
+667   clinical knowledge that the range evaluated in the grid covers all plausible scenarios. It is also
+668   important to justify (e.g., based on monotonicity arguments) that the grid is fine enough (i.e.,
+669   that a sufficient number of different assumptions are included within the range) to provide a
+670   reliable estimate of the operating characteristics of interest. Sources of information based on
+671   robust evidence and understandable from a clinical perspective will make the simulation study
+672   results more interpretable and convincing.
+
+673   It is essential that the simulated scenarios comprehensively cover the plausible range of
+674   nuisance parameter configurations. For example, in using simulations to investigate the Type I
+675   error probability, it is impossible to simulate under every nuisance parameter configuration
+676   consistent with no beneficial treatment effect, even in the simplest trial designs. Thus, there is
+677   additional uncertainty for designs in which simulations are critical to understand the Type I
+678   error probability. Given the additional uncertainty, additional justification is expected to
+679   support such designs.
+
+680   Implementation details of the simulation study should be described and justified. This includes
+681   clear specification of the data-generating process. In many cases, a simple statistical model,
+682   such as a normal distribution with mean and variance obtained from previous trials, may be
+683   appropriate. In other cases, a more complex model fit based on earlier trial results (e.g.,
+684   longitudinal patient profiles) may be considered. This also includes determining the number of
+685   repetitions needed to get sufficient precision in the estimation of important operating
+686   characteristics. More precision may be needed for certain operating characteristics or scenarios.
+687   For example, it may be important to use 100,000 or more repetitions per scenario to ensure
+688   sufficient precision for estimating the Type I error probability, whereas fewer repetitions may
+689   suffice for other operating characteristics such as power. Algorithms should be documented
+690   and random numbers should be generated in a reproducible way, such as using a documented
+691   seed.
+
+692   Finally, it is important to document the design, results, and conclusions of the simulation study.
+693   A comprehensive and structured report of the simulations should be included in regulatory
+694   submissions prior to conducting the trial (Section 6.1). There should be explicit links between
+
+
+
+
+                                                     22
+                                            ICH E20 Guideline
+
+
+695   clinical and statistical assumptions and results of the simulations. The report should align with
+696   the considerations outlined in this section and include the following:
+
+697   1.     Key questions the simulation study is designed to address.
+
+698   2.     The clinical trial design and analysis options evaluated in the simulation study.
+
+699   3.     The choice of operating characteristics assessed in the simulation study.
+
+700   4.     Existing knowledge, and any supporting data or references, to inform the simulation
+701          scenarios.
+
+702   5.     The set of parameter configurations used for the simulation scenarios, along with a
+703          clinical justification based on existing knowledge that the set adequately covers the
+704          plausible range of values for the different parameters.
+
+705   6.     Implementation details, including the data-generating process and the number of
+706          repetitions for each scenario, along with justifications for these choices.
+
+707   7.     Software package used for simulations and, if custom software was used, the simulation
+708          code. When code is provided, it should have adequate comments with detailed
+709          instructions on how to execute the code (e.g., an example call and the starting seed).
+
+710   8.     A summary providing overall results, interpretations, and conclusions. This should
+711          include a detailed discussion of the proposed adaptive design and its estimated
+712          operating characteristics under the various scenarios. Summarizing results in interactive
+713          graphs, where possible, can help make the results more accessible.
+
+714   9.     A description of relevant examples of single simulated clinical trials with different
+715          adaptations and conclusions. For example, in a design with sample size adaptation, this
+716          might include trials with different sample size modifications at the interim analysis and
+717          with positive or negative primary analysis results to facilitate a better understanding of
+718          potential interim decisions and their impact on the trial results.
+
+719   10.    A description of any aspects that limit the interpretation of the simulation results (e.g.,
+720          uncertainty in assumptions or extrapolations).
+
+
+
+
+                                                     23
+                                                   ICH E20 Guideline
+
+
+721   11.      A clinical discussion about if and to what extent the simulation results address the key
+722            questions.
+
+723   The careful documentation of simulation studies is also critical because the validity of the
+724   simulations and associated conclusions will be part of the regulatory review of results at the
+725   end of the trial.
+
+726   5.3 Adaptive Designs Using Bayesian Methods 1
+
+727   ICH E9 notes that the use of Bayesian methods in clinical trials may be considered when the
+728   reasons for their use are clear and when the resulting conclusions are sufficiently robust.
+729   Bayesian methods refer to a wide range of statistical approaches that combine a prior
+730   probability distribution with current trial data to obtain a posterior probability distribution for
+731   a quantity of interest (e.g., the treatment effect or estimand). Bayesian methods are potentially
+732   applicable to a variety of adaptive designs. The principles outlined in Section 3 should be
+733   followed regardless of the specific statistical approach. There are different types of application
+734   of Bayesian methods to clinical trials with an adaptive design, each with different
+735   considerations.
+
+736   Bayesian methods can be used to inform adaptations in a trial where decision criteria for the
+737   primary analysis are chosen to ensure that the Type I error probability is controlled. For
+738   example, a trial might include interim analyses with pre-specified non-binding futility stopping
+739   rules based on a scale such as the posterior probability that the treatment is inefficacious or the
+740   predictive probability of rejecting the null hypothesis at trial end, where the primary efficacy
+741   analysis is performed with a frequentist hypothesis test at a pre-specified significance level.
+742   For such designs, expectations for operating characteristics are the same as for adaptive designs
+743   that do not involve Bayesian methods. Sponsors should justify that the prior distribution,
+744   decision criteria, and adaptive design elements (e.g., number and timing of interim analyses
+745   and adaptation rules) can achieve targeted operating characteristics (e.g., power, expected
+746   sample size, reliability of adaptation decisions) while maintaining Type I error probability
+747   control.
+
+
+      1
+       This section on Bayesian methods for adaptive designs is not fully harmonized. The broad use of Bayesian
+      methods may not be justified in all situations for regulatory decision-making. As noted in ICH E9 and in this draft
+      guideline, the use of Bayesian methods in clinical trials may be considered when the reasons for their use are clear
+      and when the resulting conclusions are sufficiently robust. Public consultation comments are sought on the topic,
+      and on situations in which Bayesian methods satisfy the core adaptive design principles, and in which the use of
+      Bayesian methods could be considered.
+
+
+                                                              24
+                                             ICH E20 Guideline
+
+
+748   A special case is the use of adaptive design elements in the context of clinical trials that use
+749   Bayesian methods to borrow external information based on an informative prior distribution,
+750   with decision criteria for the primary analysis based on the posterior distribution for the
+751   estimand of interest (i.e., a threshold on the posterior probability for efficacy). Borrowing of
+752   external data to inform inference requires a thorough scientific justification that addresses the
+753   feasibility of alternative approaches not involving borrowing (e.g., design and conduct of a
+754   fully powered trial without using external data) and supports the relevance and quality of the
+755   external data. Misspecification of the prior distribution can lead to lack of control of the
+756   probability of false positive conclusions. Ensuring that a prior accurately reflects relevant
+757   available information and addressing the potential for conflict between prior and current trial
+758   data introduce additional uncertainties that are not present when using frequentist inference
+759   with no borrowing.
+
+760   For such designs, sponsors should discuss and document in the protocol the source of the
+761   external information used to generate the prior, the relevance of the external information to the
+762   trial design (e.g., whether the populations and concomitant care are sufficiently similar, and the
+763   endpoints are the same), the list of all potentially relevant sources of information, and why
+764   selected information sources were used and other potentially relevant sources were discarded.
+765   Input from clinical subject matter experts is crucial for evaluating the relevance of external
+766   information. When considering the source of external information, data from randomized
+767   controlled trials and recent data are generally preferred. Patient-level data are generally
+768   expected because they allow a thorough evaluation at the planning stage of the relevance of the
+769   external information and may facilitate strategies to address potential conflict between the prior
+770   and current trial data at the assessment stage.
+
+771   Sponsors should pre-specify and justify the details of a proposed prior distribution, including
+772   the amount of borrowing from the external data, as well as the criteria for defining trial success.
+773   The prior and decision criteria should ensure the design fulfills the principles in Section 3.3,
+774   including control of the chances of false positive conclusions. The justification for the prior
+775   should include a discussion of the balance between the prior and trial data and strategies to
+776   mitigate the risk that observed trial data may conflict with the prior. There should be a sufficient
+777   amount of current trial data to support benefit-risk assessment. Simulations should be
+778   performed to evaluate the chances of erroneous conclusions, including the chances of false
+779   positive conclusions, under various scenarios of prior-data conflict. There should be a
+
+
+
+                                                        25
+                                            ICH E20 Guideline
+
+
+780   discussion at the planning stage about the maximum amount of borrowing and the relationship
+781   between observed conflict and the degree of borrowing, including circumstances that would
+782   question the relevance of the external data and lead to no borrowing. Sensitivity analyses
+783   should also be planned to investigate the robustness of the trial conclusions against alternative
+784   reasonable choices for the prior distribution. It is also important to evaluate the current trial
+785   data with no borrowing.
+
+786   5.4 Adaptive Designs in Time-to-Event Settings
+
+787   There are additional considerations specific to trials in which the primary endpoint is the time
+788   to occurrence of a certain event. In such time-to-event trials, the statistical power of the trial
+789   depends on the number of events rather than the number of participants. It is therefore common
+790   for such trials to target a fixed number of events when calculating the sample size at the trial
+791   planning stage. In addition, the follow-up time of participants is often unspecified, meaning
+792   that the trial does not have a fixed observation period, and all participants are followed until a
+793   certain number of events have occurred. For trials with adaptive designs in time-to-event
+794   settings, interim analyses are therefore often planned at target numbers of events rather than
+795   target sample sizes. Furthermore, a sample size adaptation based on an interim treatment effect
+796   estimate in a time-to-event trial may entail modification of the initially planned number of
+797   events. For example, targeting a larger number of events than originally planned could be
+798   achieved by simply waiting longer for events to occur (i.e., allowing for longer follow-up
+799   times) with the originally planned number of trial participants. Alternatively, the number of
+800   trial participants could be increased, or both approaches could be applied. In considering
+801   increases in the number of trial participants relative to the number of events, sponsors should
+802   ensure that sufficient data will be available for the benefit-risk assessment (e.g., to understand
+803   longer term treatment effects and to evaluate relevant subgroups of the patient population,
+804   including those with lower background risk of the event).
+
+805   Adaptive designs are most straightforward when each trial participant only takes part in one
+806   stage of the trial. If the data collected prior to an interim analysis are completely independent
+807   of the data collected afterwards, a statistical analysis combining all information can proceed in
+808   a relatively simple way. In a time-to-event setting, however, some trial participants may be
+809   enrolled and remain event-free in one stage, but may contribute an event in a later stage. Using
+810   information (e.g., on secondary endpoints) from participants who have been enrolled in the
+811   trial but not yet experienced the event of interest at an interim analysis to inform potential
+
+
+
+                                                     26
+                                             ICH E20 Guideline
+
+
+812   adaptations violates the independence assumption and can inflate the Type I error probability
+813   (even when using adaptive test statistics). Therefore, it is important to define plans with specific
+814   methodology for maintaining the Type I error probability. One option is to fully pre-specify an
+815   adaptation rule that relies on only the primary endpoint, without the possibility of deviations
+816   from such a rule. Another option is to use special methods that involve defining stages based
+817   on the sets of participants enrolled before and after the interim analysis, while also setting in
+818   advance either a fixed follow-up time or a fixed number of events for each stage. Alternatively,
+819   rather than incorporating adaptations to the number of events, sponsors can consider a design
+820   that targets a larger number of events and includes the option to stop the trial early at an interim
+821   analysis. Similar conceptual problems and respective considerations also apply to adaptive
+822   designs with longitudinal outcomes, as using surrogate or intermediate outcome information
+823   on participants who have not completed all follow-up visits at the interim analysis can increase
+824   the Type I error probability unless appropriate analysis methods are used.
+
+825   5.5 Adaptive Designs in Exploratory Trials
+
+826   This guideline focuses on the use of adaptive designs in confirmatory clinical trials. If a trial
+827   may be intended to confirm efficacy and support benefit-risk assessment, it is critical that the
+828   principles in Section 3 are followed. Adaptive designs may also be used in exploratory trials
+829   early in drug development that are intended to obtain information on a wide range of aspects
+830   of treatment use (e.g., choices of dose, regimen, population, endpoints). Trials at this stage of
+831   the development program may include a larger number of adaptations to generate information
+832   that support important decisions about subsequent development phases. The principles in this
+833   guideline are also relevant in these settings to ensure the reliability and interpretability of the
+834   results and subsequent decision-making based on such trials.
+
+835   Additional considerations may apply, however, for exploratory trials because independent
+836   confirmation of findings will usually follow in one or more separate trials. For example, it may
+837   be sufficient that the protocol describes general principles for trial adaptations rather than the
+838   specific adaptation rule. This may be appropriate in, for example, dose-escalation trials where
+839   model-based dose recommendations are to be considered in the context of other emerging
+840   information (e.g., about toxicities that do not qualify for a dose-limiting toxicity). In addition,
+841   it is critical that exploratory trials with an adaptive design can reliably inform the decisions
+842   they are intended to support. For example, providing a convincing basis for decision-making
+843   about the appropriate target dose to be investigated in a confirmatory trial is critical as a
+
+
+
+                                                      27
+                                            ICH E20 Guideline
+
+
+844   suboptimal conclusion can have serious consequences for the subsequent development
+845   program. Maintaining the integrity of exploratory trials with an adaptive design is also
+846   important, but there may be additional considerations for the sponsor’s role in interim decision-
+847   making. For example, monitoring of an adaptive dose-ranging trial intended to inform the
+848   adequate dose for subsequent confirmatory trials may entail multidimensional adaptation
+849   decisions that require considerable input from various disciplines within the sponsor. Sponsors
+850   should then take into account the questions a trial intends to answer and its position within the
+851   development program, as well as the tradeoffs for sponsor involvement in the monitoring
+852   process versus limitation of access to unblinded results to maintain trial integrity. Any
+853   monitoring plan should ensure the protection of trial participants’ safety.
+
+854   5.6 Operational Considerations
+
+855   Use of an adaptive design can add challenges to the operational execution of a clinical trial and
+856   these should be addressed at the trial planning stage. For example, measures should be
+857   implemented to minimize the information that can be inferred from an interim analysis to
+858   maintain trial integrity (Section 3.5). As another example, informed consent forms should cover
+859   the possibility of adaptive changes in the trial. Participants should understand the reasons for
+860   such changes (e.g., the goal of selecting the dose with the best benefit-risk profile from among
+861   multiple doses at an interim analysis), that these changes reflect improved knowledge about
+862   the treatment under investigation, and that their rights and safety remain protected. As yet
+863   another example, the infrastructure needed for trials with an adaptive design, such as data
+864   management systems, may differ from that of trials with a non-adaptive design. Clinical trials
+865   with an adaptive design typically use an interactive voice or web randomization system to
+866   manage randomization and assignment of participants to treatment arms. Such systems should
+867   be fully integrated into clinical trial operational processes and drug supply chain mechanisms.
+868   Pre-specified algorithms should be built into the system to ensure it is capable of handling the
+869   foreseeable scenarios (e.g., a change in the treatment arms or randomization ratio) with
+870   minimum sponsor involvement. Also, adaptations to the sample size, treatment arms, or
+871   participant allocation can lead to drug supply challenges. One such challenge is lead times for
+872   manufacturing drugs, as rapid adaptations can strain drug supply chains and lead to delays in
+873   participant treatment if sufficient drug supply is not readily available. These challenges may be
+874   increased when a clinical trial with an adaptive design spans multiple countries or even regions,
+875   as drugs need to be distributed to these locations in a timely manner. Simulations may help
+876   support supply-related decisions at planning and execution stages of the trial. Finally, processes
+
+
+                                                     28
+                                            ICH E20 Guideline
+
+
+877   should be established at the planning stage to ensure relevant interim data can be appropriately
+878   validated and cleaned in a timely manner to ensure quality interim data informing the
+879   adaptation decision. This may include requiring a formal interim database lock to ensure
+880   completion of data validation and cleaning activities.
+
+881   6. DOCUMENTATION
+882   6.1 Documentation Prior to Conducting a Confirmatory Trial with an Adaptive Design
+
+883   Documentation is a critical part of adequate planning of a confirmatory trial and allows a
+884   rigorous evaluation of the proposed adaptive design. In addition to the information typically
+885   included in a clinical trial protocol or in other documents, where suitable, documentation
+886   should include the following:
+
+887   1.     A rationale for the proposed adaptive design: The rationale should include both clinical
+888          and statistical considerations, justifying the proposal to adapt in a confirmatory trial and
+889          the adequacy of the proposed trial design within the clinical development program. A
+890          discussion of advantages and limitations as compared to alternative designs (including
+891          non-adaptive designs) will help regulators evaluate the acceptability of any additional
+892          uncertainty attributable to proposed adaptive elements.
+
+893   2.     A description of the adaptations being proposed: This should include the aspects of the
+894          trial that may be modified, the number and timing of interim analyses, and the
+895          anticipated rule governing the adaptation decision (e.g., the formula for determining the
+896          target sample size as a function of the interim treatment effect estimate, including the
+897          minimum and maximum potential sample size, in a design with sample size adaptation).
+898          If the design involves selection of an estimand at an interim analysis (e.g., through
+899          treatment or population selection), this should include precise definitions of all
+900          candidate estimands.
+
+901   3.     A description of the statistical analysis methods: This should include the methods for
+902          producing interim results and guiding adaptations decisions, the statistical approach for
+903          primary and secondary analyses (e.g., for hypothesis testing and for estimating
+904          treatment effects and corresponding measures of uncertainty), and important sensitivity
+905          and supplementary analyses.
+
+906   4.     A description of how the adaptive design will be implemented: This should include who
+
+
+
+                                                     29
+                                              ICH E20 Guideline
+
+
+907           will carry out interim analyses; who will be responsible for reviewing interim analysis
+908           results and making adaptation recommendations and/or decisions; and membership,
+909           roles, responsibilities, and operational aspects of any relevant committees.
+
+910   5.      A description of steps to maintain confidentiality of interim results and protect trial
+911           integrity, among other details of the operational execution: This should include
+912           processes for information transfer and access; who will have access to unblinded
+913           interim results; how access to unblinded interim results will be controlled, what type of
+914           information will be disseminated following adaptive decisions, from whom, and to
+915           whom; and where records about information access and dissemination will be saved.
+
+916   6.      A description of important operating characteristics of the design. In cases where
+917           simulations are critical for understanding operating characteristics, this should include
+918           a report that describes the objective, design, implementation, and results of the
+919           simulation study (Section 5.2).
+
+920   This information should be documented and included in regulatory submissions prior to
+921   initiation of the trial, in accordance with applicable national and regional regulatory
+922   requirements and practices. The protocol should contain the core elements, including the trial
+923   objectives and corresponding estimand(s), and the principal features of the trial design,
+924   conduct, and statistical analysis, including all adaptive design elements and their rationale.
+925   Some information, such as details on operation of an IDMC and data access processes, may
+926   instead be included in a separate document such as an IDMC charter. In some cases, details of
+927   the anticipated adaptation rule should be reserved for specific documents with access
+928   restrictions, rather than the protocol, to maintain trial integrity (Section 3.5).
+
+929   6.2 Documentation to Include in a Marketing Application After a Completed Confirmatory Trial
+930       with an Adaptive Design
+
+931   A marketing application for a treatment that relies on a confirmatory clinical trial with an
+932   adaptive design should include sufficient documentation to allow a comprehensive review of
+933   the trial results. In addition to its typical components, a marketing application should include:
+
+934   1.      All prospective plans described in Section 6.1.
+
+935   2.      Information on how the adaptive design was implemented, including the actual number
+936           and timing of interim analyses, an evaluation of whether aspects of trial conduct (e.g.,
+
+
+
+                                                       30
+                                          ICH E20 Guideline
+
+
+937        baseline characteristics, enrollment rate, adherence, retention) varied notably before
+938        and after the interim analysis, the results of interim analyses used for adaptation
+939        decisions, any notable heterogeneity between results from different stages of the trial,
+940        the adaptation decisions that were made, whether anticipated adaptation rules were
+941        followed, and the date of sponsor unblinding. If there was any deviation from the
+942        anticipated plan (e.g., in terms of the number or timing of interim analyses or adherence
+943        to the anticipated adaptation rule), this should include a discussion of the reasons for
+944        the deviation, any measures taken to minimize impact on trial integrity, and any other
+945        potential impact on the interpretation of trial results.
+
+946   3.   Any information on compliance with planned processes for data access and maintaining
+947        trial integrity, such as results of any audits and reporting of any known deviations from
+948        the processes, along with a discussion of potential implications.
+
+949   4.   Records of deliberations by the IDMC (e.g., all closed and open IDMC meeting
+950        minutes), including records of discussions related to any adaptation decisions.
+
+951   5.   Reporting of results that appropriately account for the adaptive design (e.g.,
+952        appropriately adjusted estimates, confidence intervals, and p-values).
+
+
+
+
+                                                    31
+

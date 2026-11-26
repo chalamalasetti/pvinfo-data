@@ -1,0 +1,662 @@
+   Potency Assay Considerations
+  for Monoclonal Antibodies and
+    Other Therapeutic Proteins
+     Targeting Viral Pathogens
+                    Guidance for Industry
+
+                               DRAFT GUIDANCE
+         This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact Natalia Comella at 301-796-6226.
+
+
+
+
+                      U.S. Department of Health and Human Services
+                              Food and Drug Administration
+                     Center for Drug Evaluation and Research (CDER)
+
+                                      March 2023
+                               Pharmaceutical Quality/CMC
+
+
+
+46610036dft.docx
+02/24/23
+ Potency Assay Considerations
+for Monoclonal Antibodies and
+  Other Therapeutic Proteins
+   Targeting Viral Pathogens
+             Guidance for Industry
+                           Additional copies are available from:
+
+                  Office of Communications, Division of Drug Information
+                          Center for Drug Evaluation and Research
+                               Food and Drug Administration
+                  10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                               Silver Spring, MD 20993-0002
+  Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353; Email: druginfo@fda.hhs.gov
+   https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+
+
+
+               U.S. Department of Health and Human Services
+                       Food and Drug Administration
+              Center for Drug Evaluation and Research (CDER)
+
+                                 March 2023
+                          Pharmaceutical Quality/CMC
+                                                                  Table of Contents
+
+I.          INTRODUCTION ............................................................................................................. 1
+II.         BACKGROUND ................................................................................................................ 3
+III.        POTENCY ASSAY CONSIDERATIONS ...................................................................... 3
+IV.         MEASURING AND MONITORING POTENCY CONSIDERATIONS .................... 4
+     A.     Methods .......................................................................................................................................... 5
+       1. Binding Assays ................................................................................................................................. 5
+       2. Viral Neutralization Assays ............................................................................................................. 6
+       3. Fc-effector Function Assays ............................................................................................................ 9
+     B. Additional Considerations ............................................................................................................ 9
+REFERENCES ............................................................................................................................ 11
+                                       Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+
+ 1   Potency Assay Considerations for Monoclonal Antibodies and Other
+ 2            Therapeutic Proteins Targeting Viral Pathogens
+ 3                       Guidance for Industry 1
+ 4
+ 5
+ 6
+ 7
+ 8   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 9   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+10   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+11   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+12   for this guidance as listed on the title page.
+13
+14
+15
+16
+17   I.        INTRODUCTION
+18
+19   The purpose of this guidance is to provide to sponsors recommendations that assist in the
+20   development of monoclonal antibodies (mAbs) and other therapeutic proteins 2 that directly
+21   target viral proteins or host cell proteins mediating pathogenic mechanisms of infection. 3 A
+22   critical quality control measure for these products is the development and implementation of a
+23   potency assay(s) 4 adequate to ensure that each lot is produced consistently with the potency 5
+24   necessary to achieve clinical efficacy and that such potency is maintained over the shelf life of
+25   the product. This guidance provides detailed recommendations to drug developers with the goal
+
+
+     1
+      This guidance has been prepared by the Office of Pharmaceutical Quality in the Center for Drug Evaluation and
+     Research at the Food and Drug Administration.
+     2
+      The term protein is one of the statutory categories of biological products (section 351(i)(1) of the Public Health
+     Service Act (42 U.S.C. 262(i)(1))). Under 21 CFR 600.3(h)(6), a protein is any alpha amino acid polymer with a
+     specific, defined sequence that is greater than 40 amino acids in size.
+     3
+       In January 2021, FDA published the guidance for industry COVID-19: Potency Assay Considerations for
+     Monoclonal Antibodies and Other Therapeutic Proteins Targeting SARS-CoV-2 Infectivity, which focuses solely on
+     addressing potency assays as they relate to mAbs and other therapeutic proteins that directly target SARS-CoV-2.
+     That guidance states it is intended to remain in effect only for the duration of the public health emergency related to
+     Coronavirus Disease 2019 declared by the Secretary of Health and Human Services under section 319 of the Public
+     Health Service Act (section 319 public health emergency). FDA is issuing this draft guidance because many of the
+     recommendations set forth in the 2021 guidance are applicable outside the context of the section 319 public health
+     emergency and are applicable to mAbs and other therapeutic proteins directly targeting any viral surface
+     (glyco)proteins mediating pathogenic mechanisms of infection, not just SARS-CoV-2.
+     4
+         See 21 CFR 610.10.
+     5
+      Under 21 CFR 600.3(s), potency is interpreted to mean the specific ability or capacity of the product, as indicated
+     by appropriate laboratory tests or by adequately controlled clinical data obtained through the administration of the
+     product in the manner intended, to effect a given result.
+
+
+                                                                1
+                                      Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+26   of helping to ensure that drug developers provide adequate information to assess potency at each
+27   stage of a product’s life cycle.
+28
+29   This guidance applies only to mAbs and other therapeutic proteins regulated by the Center for
+30   Drug Evaluation and Research that are designed to bind to viral proteins or their receptors on
+31   host cells, inhibit viral entry, and/or elicit Fc-mediated effector function, and are subject to
+32   licensure under section 351(a) or section 351(k) of the Public Health Service Act (42 U.S.C.
+33   262(a) or (k)). This guidance does not apply to other biological products such as
+34   immunomodulatory drugs (e.g., cytokines or cytokine antagonists), vaccines, hyperimmune
+35   globulins, gene therapies, cell therapies, and convalescent plasma. 6
+36
+37   The guidance describes approaches that sponsors should use to develop potency assay methods
+38   for release and stability that assess comprehensively known or potential mechanism(s) of action
+39   of the product. The sensitivity of such methods must be established, 7 for example, to conduct
+40   the appropriate laboratory determination of satisfactory conformance to final specifications for
+41   the drug product (i.e., to demonstrate lot-to-lot consistency). In addition to release and stability
+42   methods, other methods that demonstrate the biological function(s) of the product may be needed
+43   for characterization and comparability studies. The guidance describes methods that sponsors
+44   should use to ensure the potency of mAbs and other therapeutic proteins intended to prevent or
+45   treat a viral infection.
+46
+47   Although assays and model systems vary with different viruses, the principles in this guidance,
+48   where applicable, are relevant to mAbs and other therapeutic proteins under development for the
+49   prevention or treatment of viral infections. 8 Because this field is dynamic and continually
+50   evolving, the principles are also intended to be flexible to accommodate new assays or
+51   technologies. If circumstances warrant, this guidance may be revised to inform sponsors of
+52   additional methodologies to consider.
+53
+54   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+55   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+56   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+57   the word should in Agency guidances means that something is suggested or recommended, but
+58   not required.
+59
+60
+
+
+
+
+     6
+      Manufacturers of vaccines and certain medical devices (e.g., in vitro diagnostics) should consult the center review
+     offices regarding appropriate assays and methods for products regulated by the Center for Biologics Evaluation and
+     Research and the Center for Devices and Radiological Health.
+     7
+         See 21 CFR 211.165(a) and (e), 21 CFR 601.2(d), and 21 CFR 610.10.
+     8
+      As an example, some mAbs do not demonstrate both virus neutralization and Fc-mediated effector functions as
+     their mechanisms of action; therefore, only the principles relevant to the particular mAb would apply under those
+     circumstances.
+
+
+                                                               2
+                                      Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+61   II.        BACKGROUND
+62
+63   The Agency receives investigational new drug applications (INDs) and biologics license
+64   applications (BLAs) for mAbs and other therapeutic proteins designed to bind to viral surface
+65   (glyco)proteins or their receptors on host cells, inhibit viral entry, and/or elicit Fc-mediated
+66   effector function. Monoclonal antibodies and mAb cocktails 9 being developed to target viral
+67   pathogens, including newly emerging viruses, generally use mechanisms of action that may
+68   include virus neutralization, Fc-mediated effector functions, or both. Monoclonal antibodies
+69   may neutralize the virus by binding the viral attachment protein or the host cell receptor (e.g.,
+70   angiotensin-converting enzyme 2 for coronaviruses, sialic acid for influenza), thereby blocking
+71   attachment to host cell receptors; may prevent the fusion of the viral and host cell membranes
+72   (e.g., respiratory syncytial virus F protein); and/or may inhibit other viral or host factors
+73   necessary for entry. These products are referred to as neutralizing mAbs. Some mAbs directed
+74   against viruses mediate Fc-effector functions in addition to or instead of neutralizing virus entry.
+75   Other mAbs may target alternative cellular receptors or cellular proteins that facilitate virus
+76   infection.
+77
+78   In addition to mAbs, other protein therapeutics intended to target viral entry may be developed to
+79   prevent or treat viral infection. These include scaffold proteins, which are engineered to have
+80   similar mechanisms as neutralizing mAbs, bifunctional molecules engineered to interfere with
+81   different steps of viral entry, or recombinant virus receptor proteins, which serve as decoy
+82   receptors to inhibit viral infectivity. As the science evolves, other novel proteins with other
+83   mechanism(s) of action may also be developed and submitted to the Agency.
+84
+85
+86   III.       POTENCY ASSAY CONSIDERATIONS
+87
+88   To ensure mAbs and therapeutic proteins’ clinical effectiveness through product expiry, a
+89   sponsor must develop a method or methods to monitor the potency of the biological product. 10
+90   Potency assays for mAbs and therapeutic proteins should be designed to measure the binding to
+91   viral receptors on host cells, the inhibition of viral entry, and/or to elicit Fc-mediated effector
+92   function. Potency assays also should be designed to reflect the biological activity of the mAb or
+93   therapeutic protein in vivo. Potency measurements from these methods should be used to
+94   demonstrate that only product lots that meet defined specifications or acceptance criteria are
+95   administered during all phases of clinical investigation and after approval.
+96
+
+
+
+
+     9
+       In general, the term mAb cocktails refers to two or more mAbs administered at a fixed ratio. They may be filled in
+     a single vial or separate vials. For the purposes of this guidance, the term refers to two or more mAbs filled in a
+     single vial.
+     10
+          See 21 CFR 610.10.
+
+
+                                                              3
+                                        Contains Nonbinding Recommendations
+                                            Draft — Not for Implementation
+ 97   All potency assays used for release and stability testing must comply with applicable biologics
+ 98   and current good manufacturing practice regulations. 11,12 When evaluating the appropriateness
+ 99   of a potency assay for a specific mAb or other therapeutic proteins for treating or preventing a
+100   viral infection, FDA may consider various factors, including: (1) product characteristics; (2)
+101   manufacturing processes; (3) the stage of development in which the assay will be used; (4) the
+102   strength of the sponsor’s risk-based quality assessment; and (5) the totality of the information
+103   provided by the sponsor.
+104
+105
+106   IV.          MEASURING AND MONITORING POTENCY CONSIDERATIONS
+107
+108   Sponsors developing mAbs or other therapeutic proteins for the treatment and/or prevention of a
+109   viral infection should implement potency assays for release and stability testing specifically
+110   designed to demonstrate the biological function(s) of the product 13 and provide justification for
+111   how assays used for release and stability testing measure comprehensively known or potential
+112   mechanism(s) of action of the product. Sponsors should develop a manufacturing control
+113   strategy that will identify potential shifts in the product’s critical quality attributes known to
+114   affect each known and/or potential mechanism of action and detect changes in the performance
+115   of the manufacturing process before beginning phase 3 trials.
+116
+117   Depending on the proposed mechanism(s) of action, one or more assays should be developed to
+118   support the control strategy for confirming the biologic’s potency. 14 If the mAb or other
+119   therapeutic protein has multiple mechanisms of action (e.g., neutralization and Fc-effector
+120   function), multiple potency assays should be used. All quality-control release test methods,
+121   including potency assays for demonstrating the mechanism(s) of action, should be shown to be
+122   suitable for their intended purposes during development and must be validated by the time of a
+
+
+
+      11
+         See, for example, 21 CFR 610.10 (regarding tests for potency for biological products); 21 CFR 211.165(e)
+      (regarding the establishment and documentation of the accuracy, sensitivity, specificity, and reproducibility of test
+      methods); 21 CFR 211.160(b) (regarding laboratory controls); and 21 CFR 211.194(a)(2) (regarding laboratory
+      records of testing methods).
+      12
+        Sponsors should consider potency assay development in their overall drug development program. The IND
+      regulations at 21 CFR 312.23(a)(7)(i) require that, in each phase of the investigation, sponsors submit sufficient
+      information “to assure the proper identification, quality, purity, and strength of the investigational drug,” and
+      indicate that “the amount of information needed to make that assurance will vary with the phase of the investigation,
+      the proposed duration of the investigation, the dosage form, and the amount of information otherwise available.”
+      For additional information, see the guidances for industry Content and Format of Investigational New Drug
+      Applications (INDs) for Phase 1 Studies of Drugs, Including Well-Characterized, Therapeutic, Biotechnology-
+      Derived Products (November 1995) and INDs for Phase 2 and Phase 3 Studies; Chemistry, Manufacturing, and
+      Controls Information (May 2003). We update guidances periodically. For the most recent version of a guidance,
+      check the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+      13
+         See the ICH guidance for industry Q6B Specifications: Test Procedures and Acceptance Criteria for
+      Biotechnological/Biological Products (August 1999).
+      14
+           Ibid.
+
+
+
+                                                                 4
+                                       Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+123   BLA submission.15 The development of quality-control release methods should be informed by
+124   the product characterization. Special consideration should be given for emerging or highly
+125   pathogenic viruses. Additional parameters may need to be incorporated into the development of
+126   the potency assay(s). Sponsors should consult FDA for further guidance. 16
+127
+128   This section provides examples of assays, depending on the mechanism(s) of action, that can be
+129   included as part of the overall control strategy.
+130
+131           A.       Methods
+132
+133   Because a binding assay demonstrates binding between the mAb or therapeutic protein and its
+134   target, it is generally sufficient to serve as a potency assay at the early stages of drug
+135   development. However, a binding assay assesses only one aspect of the potency of a product.
+136   Therefore, sponsors should subsequently develop methods that more comprehensively monitor
+137   the proposed mechanism(s) of action of the products. These methods should be incorporated
+138   into drug substance and drug product release testing and stability protocols. Potency assays
+139   should be described, justified, qualified, and validated to support a BLA.
+140
+141   This section addresses considerations for possible assays.
+142
+143           1.       Binding Assays
+144
+145   For the purposes of this guidance, binding assays are defined as assays that quantify the binding
+146   between the mAb or other therapeutic protein and its target. These assays are established early
+147   in product development, typically in the form of a direct binding assay such as an enzyme-linked
+148   immunosorbent assay (ELISA) or a surface plasmon resonance (SPR) assay. Product lots should
+149   be compared to an appropriately qualified in-house reference material and activity should be
+150   expressed as a percentage of the reference material value. Although helpful in the initial phases
+151   of development, these assays do not directly confirm the product’s ability to inhibit the target
+152   protein’s activity and should not be used in lieu of methods that confirm potency.
+153
+154   For products intended to inhibit viral protein binding to a host cell receptor, FDA recommends a
+155   potency assay that is a better reflection of the intended mechanism of action instead of a direct
+156   binding assay; for example, an inhibition assay, such as an inhibition ELISA, 17 or SPR. An
+
+
+
+      15
+        See 21 CFR 211.165(e) and as described in the guidance for industry Analytical Procedures and Methods
+      Validation for Drugs and Biologics (July 2015). See also the ICH draft guidance for industry Q2(R2) Validation of
+      Analytical Procedures (August 2022); when final, this guidance will represent the FDA’s current thinking on this
+      topic.
+      16
+        Although this guidance covers in vitro approaches for potency assays, there may be situations in which an in vivo
+      assay is the only approach that can ensure product quality; however, these situations are rare and should be
+      discussed with the Agency.
+      17
+        See, for example, Tan, CW, WN Chia, X Qin, P Liu, MI-C Chen, C Tiu, Z Hu, VC-W Chen, BE Young, WR Sia,
+      Y-J Tan, R Foo, Y Yi, DC Lye, and DE Anderson, 2020, A SARS-CoV-2 Surrogate Virus Neutralization Test
+      Based on Antibody-Mediated Blockage of ACE2–Spike Protein–Protein Interaction, Nat Biotechnol.
+
+
+                                                               5
+                                        Contains Nonbinding Recommendations
+                                            Draft — Not for Implementation
+157   inhibition assay should be designed to evaluate the inhibition of virus-receptor interactions and
+158   may be appropriate to conduct in, for example, either a biosafety level (BSL)-1 or BSL-2 lab. 18
+159
+160              2.      Viral Neutralization Assays
+161
+162   In comparison to binding assays, in vitro viral neutralization assays more comprehensively
+163   confirm a mAb’s or therapeutic protein’s mechanism of action and potency in blocking infection
+164   of susceptible cells. Because of the potential importance to evaluating these products, the
+165   Agency recommends establishing an in vitro viral neutralization assay early in development.
+166   This type of assay can be useful for advancing development, quality control, and characterization
+167   of neutralizing mAbs and other products targeting viral attachment and entry. Given the
+168   diversity of mechanisms for viral attachment and entry into host cells, the assay should reflect
+169   that virus’s mechanisms for attachment and entry.
+170
+171   Assays that assess the ability of the mAbs or other therapeutic proteins to inhibit any of the
+172   binding or entry steps are predominantly cell-based assays and typically involve the use of wild-
+173   type (wt) virus, 19 pseudotyped virus, or pseudotyped virus-like particles (VLP). When
+174   considering which method to use, sponsors should select a method that best monitors the
+175   binding/entry step the product is expected to target in the virus replication cycle. Although wt
+176   virus neutralization assays are considered the gold standard for in vitro potency assays,
+177   alternative methods may be acceptable. For example, a potency assay could be designed to
+178   characterize the effect of the product on a specific entry step (e.g., virus-cell fusion).
+179   Additionally, accessibility to appropriate BSL laboratories, as well as challenges to qualifying
+180   critical reagents and validating the overall assay performance, should be considered in assay
+181   selection. For methods using transfected cell lines, sponsors should also address target cell
+182   viability and variability. Whichever method is ultimately used, sponsors should observe all
+183   provisions of the select agent regulations 20 (if applicable) and other applicable governmental and
+184   institutional biosafety and biosecurity provisions.
+185
+
+
+
+
+      18
+        Relevant biosafety considerations may be found in the National Institutes of Health’s guidelines NIH Guidelines
+      for Research Involving Recombinant or Synthetic Nucleic Acid Molecules (April 2019) (available at
+      https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.pdf) and on the FAQ web page Interim Laboratory
+      Biosafety Guidance for Research with SARS-CoV-2 and IBC Requirements under the NIH Guidelines
+      (https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/interim-laboratory-biosafety-guidance-for-research-
+      with-sars-cov-2-and-ibc-requirements-under-the-nih-guidelines/) and the Centers for Disease Control and
+      Prevention’s guideline Biosafety in Microbiological and Biomedical Laboratories (available at
+      https://www.cdc.gov/labs/BMBL.html).
+      19
+         For the purposes of potency assays discussed in this guidance, references to wt virus indicate a clinical isolate,
+      which has not been intentionally modified, except for mutations that may occur naturally during in vitro virus
+      passaging and expansion, compared to the initial isolate. Use of lab-adapted viruses should be appropriately
+      justified.
+      20
+           See 7 CFR part 331, 9 CFR part 121, and 42 CFR part 73.
+
+
+                                                                  6
+                                       Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+186   Below is a list of assays that may be suitable for use as a potency assay, along with key
+187   considerations for each assay:
+188
+189        •   Virus neutralization assays. Depending on the virus, these assays (such as plaque
+190            reduction, TCID50, and microneutralization assay) involve working in the appropriate
+191            BSL laboratory. If using minimally passaged wt virus or a lab-adapted isolate(s),
+192            sponsors should determine virus titer and develop, aliquot, and store master and working
+193            virus stocks appropriately. If using a lab-adapted isolate(s), a sponsor should indicate the
+194            isolate used and justify the use of that isolate(s) in applicable submissions to FDA.
+195            Sponsors should provide details on the production, storage condition, and stability of
+196            virus stocks used in the assays as discussed in existing guidance on these topics. 21 The
+197            qualification of any new working stock should include the sequencing of the epitope.
+198
+199        •   Pseudotyped virus- or VLP-based assay. An alternative to working with a wt virus is
+200            the implementation of pseudotyped virus-based methods. These methods should be
+201            performed under appropriate biosafety conditions. 22 Pseudotyped virions can be
+202            generated by replacing the surface protein(s) expressing gene of a less pathogenic virus
+203            (e.g., vesicular stomatitis virus) with the gene encoding the viral surface
+204            (glyco)protein(s) 23 of the pathogen of interest, creating engineered, replication-competent
+205            virions. Another approach is to generate fusion-competent, but replication-incompetent
+206            VLPs by co-transfecting producer cells (usually 293T cells) with a set of plasmids
+207            encoding the viral surface (glyco)protein(s) and a matrix protein(s) driving the VLP
+208            budding in trans. Retrovirus-based VLP packaging systems have already been adapted
+209            for viral surface (glyco)protein(s) pseudotyping.
+210
+211            During method development of a neutralization assay using a pseudovirus or VLP,
+212            sponsors should generate data demonstrating viral surface (glyco)protein-mediated cell
+213            entry and describe the generation, isolation, purification, and concentration steps used to
+214            minimize lot-to-lot variability of the pseudovirus or VLP. Additionally, sponsors should
+215            address the following:
+216
+217            − The critical reagents (i.e., producer and target cell lines, and virion constructs, as well
+218              as controls (negative and positive)) used in the assay should be described. When
+
+
+      21
+         See the References section for a list of guidances regarding analytical procedures, method validation, and
+      documentation.
+      22
+        Relevant biosafety considerations may be found in the National Institutes of Health’s guidelines NIH Guidelines
+      for Research Involving Recombinant or Synthetic Nucleic Acid Molecules (April 2019) (available at
+      https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.pdf) and on the FAQ web page Interim Laboratory
+      Biosafety Guidance for Research with SARS-CoV-2 and IBC Requirements under the NIH Guidelines
+      (https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/interim-laboratory-biosafety-guidance-for-research-
+      with-sars-cov-2-and-ibc-requirements-under-the-nih-guidelines/) and the Centers for Disease Control and
+      Prevention’s guideline Biosafety in Microbiological and Biomedical Laboratories (available at
+      https://www.cdc.gov/labs/BMBL.html).
+      23
+        In the context of this guidance, the term viral surface (glyco)protein(s) refers to virus components (molecules)
+      involved in the virus binding and/or entry into susceptible cells.
+
+
+                                                                7
+                                  Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+219              qualifying these critical reagents, sponsors should demonstrate long-term stability and
+220              address possible variability associated with the transfected cells lines.
+221
+222          − Attention should be given to the manufacturing, stability, and qualification of the
+223            pseudovirus or VLP, which is a critical reagent for the assay. Lot-to-lot variability of
+224            VLPs can be observed in the quantity of the VLPs and the activity of the VLP stock.
+225            Sponsors should demonstrate VLP lot-to-lot consistency is appropriately controlled.
+226
+227      •   Viral surface (glyco)protein(s)-mediated cell-cell fusion-based assays. These assays
+228          can be used as an alternative to the pseudotyped virus- or VLP-based assays. Typically,
+229          the level of fusion between the viral surface (glyco)protein(s)-expressing cells and the
+230          virus receptor-expressing cells should be assessed using a reporter gene. The expression
+231          of the reporter construct is dependent on the successful fusion between the two cell
+232          populations. Alternatively, the level of syncytia formation or dye transfer also can be
+233          used to quantify cell-cell fusion. As with the pseudotyped virus-based assays, the
+234          following should be addressed:
+235
+236          − The controls (negative and positive), cell lines, constructs, and reporter constructs
+237            used in the method should be described. When qualifying these critical reagents,
+238            sponsors should demonstrate their long-term stability and address possible variability
+239            associated with the transfected cells lines.
+240
+241          − How well the assay mimics viral-cell fusion should be described. For example, if
+242            certain conformational or environmental (e.g., pH) changes are needed for fusion to
+243            occur, the assay should monitor those changes.
+244
+245          − The testing platform to be used with the assay should be indicated.
+246
+247          − Defined quantitation criteria should be used regardless of whether a reporter
+248            construct, syncytia formation, or dye transfer is used to measure cell-cell fusion.
+249
+250   Given possible differences between wt virus neutralization assay(s) and the alternative methods
+251   mentioned above (pseudotyped virus neutralization methods, VLP-based methods, or viral
+252   surface (glyco)protein(s)-mediated cell-cell fusion-based assays), FDA recommends that
+253   sponsors provide information addressing how (or whether) the assay’s results correlate with wt
+254   virus neutralization.
+255
+256   Although this section of the guidance focuses on neutralizing assays for products that block viral
+257   surface (glyco)protein(s)-mediated virus entry, the concepts described herein are applicable to
+258   the development of mAbs or other therapeutic proteins that block other steps in the virus
+259   replication cycle.
+260
+
+
+
+
+                                                      8
+                                     Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+261            3.      Fc-effector Function Assays
+262
+263   In general, sponsors should assess mAbs for their ability to demonstrate Fc-mediated effector
+264   functions. 24 This can include complement activity and activities mediated through binding to
+265   Fcγ receptors, such as antibody-dependent cell-mediated cytotoxicity (ADCC) or antibody-
+266   dependent cellular phagocytosis. For mAbs demonstrating Fc-effector functions, appropriate
+267   methods should be included as part of the specifications to ensure consistent mAb potency and
+268   functions. Fc glycosylation relevant to the mechanism of action should also be monitored and
+269   controlled throughout the product life cycle. FDA recommends including an FcγRIIIa-
+270   mediated/natural killer cell ADCC assay because that appears to be the most sensitive to changes
+271   in glycosylation.
+272
+273   For mAbs engineered to alter binding to Fc receptors and complement components,
+274   characterization studies should be conducted on a one-time basis to demonstrate the engineered
+275   mAb performs as designed. Fc-fusion proteins may also engage Fc receptors and complement
+276   components and thus should also be characterized for these potential effects or to confirm the
+277   intended effect of any Fc modifications. For example, the Agency recommends that virus
+278   receptor-Fc fusion proteins be characterized for their ability to carry out Fc-effector functions
+279   using methods similar to those for the characterization of neutralizing mAbs.
+280
+281            B.      Additional Considerations
+282
+283   Sponsors should address the following additional considerations when developing methods to
+284   monitor potency.
+285
+286        •   When describing a potency assay, sponsors should ensure that the virus isolate, or viral
+287            surface (glyco)protein(s), used reflects common isolates prevalent in the United States.
+288            Sponsors should discuss how the isolates or proteins were selected and whether they
+289            reflect the viruses currently in circulation. Sponsors also should provide either the full
+290            genome sequence(s) of the isolate(s) or GenBank ID(s).
+291
+292        •   Whether using wt virus, pseudotyped virus, or VLPs, a master cell bank of producer cells
+293            should be appropriately qualified and used to generate a working bank of virus producer
+294            cells.
+295
+296        •   Information and data submitted to support BLAs should describe any differences in the
+297            methods used for release testing and stability program compared to those used to initially
+298            characterize the potency of the mAb or other therapeutic protein during earlier
+299            development. That includes, but is not limited to, reagents, testing site(s), and testing
+300            platform(s), if applicable, to conduct the assay in question.
+301
+
+
+      24
+        For more information on Fc-mediated effector functions, see, for example, Jiang, X, A Song, S Bergelson,
+      T Arroll, B Parekh, K May, S Chung, R Strouse, A Mire-Sluis, and M Schenerman, 2011, Advances in the
+      Assessment and Control of the Effector Functions of Therapeutic Antibodies, Nature Reviews; Drug Discovery
+      10:101-110.
+
+
+                                                             9
+                                        Contains Nonbinding Recommendations
+                                            Draft — Not for Implementation
+302          •   Relevant positive and negative controls should be included as part of the potency assay.
+303
+304          •   For mAb cocktails, release testing methods should include an identity method that
+305              demonstrates the presence of each individual mAb and a quantitative method verifying
+306              the ratio of the individual mAbs. The sponsor should ensure the ratio is consistent from
+307              lot to lot.
+308
+309   Novel mechanisms of action that are not addressed in this guidance may be identified in the
+310   future. For mAbs or other therapeutic proteins with such novel mechanisms of action, sponsors
+311   should consult the Agency for further recommendations regarding compliance with requirements
+312   for potency assays for release and stability testing. 25
+
+
+
+
+      25
+           See 21 CFR 610.10, 211.165(e), and 211.194(a)(2).
+
+
+                                                               10
+                                    Contains Nonbinding Recommendations
+                                        Draft — Not for Implementation
+                                                   REFERENCES
+
+Analytical Procedures, Method Validation, and Documentation-Related Guidances for
+Industry 26
+
+       •   Guidance for industry Analytical Procedures and Methods Validation for Drugs and
+           Biologics (July 2015)
+
+       •   Guidance for industry Bioanalytical Method Validation (May 2018)
+
+       •   Guidance for industry Content and Format of Investigational New Drug Applications
+           (INDs) for Phase 1 Studies of Drugs, Including Well-Characterized, Therapeutic,
+           Biotechnology-Derived Products (November 1995)
+
+       •   Guidance for industry INDs for Phase 2 and Phase 3 Studies; Chemistry, Manufacturing,
+           and Controls Information (May 2003)
+
+       •   Guidance for industry Points to Consider in the Manufacture and Testing of Monoclonal
+           Antibody Products for Human Use (February 1997)
+
+       •   ICH draft guidance for industry Q2(R2) Validation of Analytical Procedures (August
+           2022) 27
+
+       •   ICH guidance for industry M4Q: The CTD — Quality (August 2001)
+
+       •   ICH guidance for industry Q5C Quality of Biotechnological Products: Stability Testing
+           of Biotechnological/Biological Products (July 1996)
+
+       •   ICH guidance for industry Q6B Specifications: Test Procedures and Acceptance Criteria
+           for Biotechnological/Biological Products (August 1999)
+
+Centers for Disease Control and Prevention Guideline28
+
+       •   Biosafety in Microbiological and Biomedical Laboratories
+
+Literature
+
+       •   Jiang, X, A Song, S Bergelson, T Arroll, B Parekh, K May, S Chung, R Strouse, A Mire-
+           Sluis, and M Schenerman, 2011, Advances in the Assessment and Control of the Effector
+           Functions of Therapeutic Antibodies, Nature Reviews; Drug Discovery 10:101-110.
+
+26
+   We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page
+at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+27
+     When final, this guidance will represent the FDA’s current thinking on this topic.
+28
+     Available at https://www.cdc.gov/labs/BMBL.html.
+
+
+                                                            11
+                                  Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+
+       •   Tan, CW, WN Chia, X Qin, P Liu, MI-C Chen, C Tiu, Z Hu, VC-W Chen, BE Young,
+           WR Sia, Y-J Tan, R Foo, Y Yi, DC Lye, and DE Anderson, 2020, A SARS-CoV-2
+           Surrogate Virus Neutralization Test Based on Antibody-Mediated Blockage of ACE2–
+           Spike Protein–Protein Interaction, Nat Biotechnol.
+
+National Institutes of Health Guidelines
+
+       •   NIH Guidelines for Research Involving Recombinant or Synthetic Nucleic Acid
+           Molecules (April 2019) 29
+
+       •   FAQ web page Interim Laboratory Biosafety Guidance for Research with SARS-CoV-2
+           and IBC Requirements under the NIH Guidelines
+           (https://osp.od.nih.gov/policies/biosafety-and-biosecurity-policy/interim-laboratory-
+           biosafety-guidance-for-research-with-sars-cov-2-and-ibc-requirements-under-the-nih-
+           guidelines/)
+
+Pharmaceutical Development Guidance for Industry 30
+
+       •   ICH guidance for industry Q8(R2) Pharmaceutical Development (November 2009)
+
+
+
+
+29
+     Available at https://osp.od.nih.gov/wp-content/uploads/NIH_Guidelines.pdf.
+30
+   We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page
+at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+                                                          12
+

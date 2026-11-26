@@ -1,0 +1,2035 @@
+  Submitting Continuous
+Glucose Monitoring Data in
+      Clinical Trials
+           Guidance for Industry
+      Technical Specifications Document
+
+
+For questions regarding this technical specifications document, contact
+                 CDER at cder-edata@fda.hhs.gov or
+              CBER at industry.biologics@fda.hhs.gov.
+
+
+
+
+               U.S. Department of Health and Human Services
+                        Food and Drug Administration
+             Center for Biologics Evaluation and Research (CBER)
+              Center for Drug Evaluation and Research (CDER)
+
+
+
+                                  May 2026
+                      Technical Specifications Document
+Revision History
+
+        Date       Version   Summary of Revisions
+       May 2026      1.0        Initial Version
+                                        Contains Nonbinding Recommendations
+
+
+                                                   TABLE OF CONTENTS
+
+1.0   Introduction ........................................................................................................................ 1
+  1.1. Purpose ............................................................................................................................ 1
+  1.2. Background ..................................................................................................................... 1
+  1.3. Scope ................................................................................................................................ 3
+  1.4. Relationship to Other Documents................................................................................. 4
+2.0   Relevant Acronyms ............................................................................................................ 4
+3.0   Overview of Dataset Specifications .................................................................................. 5
+  3.1    SDTM Specifications ...................................................................................................... 5
+    3.1.1     Laboratory Test Results Dataset ........................................................................... 5
+       3.1.1.1    General Considerations .................................................................................... 6
+       3.1.1.2    Handling of Missing SDTM Epoch-Level Data .............................................. 6
+    3.1.2     Trial Summary Dataset .......................................................................................... 8
+    3.1.3     Datasets for CGM DHT-Level Review ................................................................. 8
+    3.1.4     Disposition Dataset................................................................................................ 10
+  3.2    ADaM Specifications .................................................................................................... 10
+    3.2.1     ADaM Epoch-Level Dataset................................................................................. 11
+       3.2.1.1    General Considerations .................................................................................. 11
+       3.2.1.2    Windowing of Epoch-Level Assessment Timepoints ..................................... 13
+       3.2.1.3    Handling of Missing ADaM Epoch-Level Data ............................................ 15
+    3.2.2     ADaM Intermediate Summary Dataset .............................................................. 16
+    3.2.3     ADaM Final Analysis Dataset .............................................................................. 16
+       3.2.3.1    General Considerations .................................................................................. 17
+       3.2.3.2    Handling of Missing ADaM Final Analysis Data ......................................... 18
+    3.2.4     ADaM Paired Glucose Analysis Dataset ............................................................. 19
+4.0   Specifications for Tables and Figures ............................................................................ 21
+5.0   References ......................................................................................................................... 22
+6.0   Appendix ........................................................................................................................... 23
+  6.1    Example SDTM Laboratory Test Results Dataset (LB Dataset) ............................. 23
+  6.2    Example ADaM CGM Epoch-Level Dataset (ADCGM Dataset) ............................ 27
+  6.3    Example ADaM Final Analysis Dataset (ADCGMEN Dataset) .............................. 36
+  6.4    Example ADaM Paired Glucose Analysis Dataset (ADGLUCPR Dataset) ............ 37
+  6.5    Example Tables and Figures ....................................................................................... 40
+
+
+
+
+                                                                       i
+                                  Contains Nonbinding Recommendations
+
+
+
+
+                                              TABLE OF TABLES
+
+
+Table 1. Specifications for a Subset of LB Variables ................................................................. 6
+Table 2. Recommended LB Representation of Missing CGM Epoch-Level Data .................. 8
+Table 3. Specifications for a Subset of ADCGM Variables .................................................... 11
+Table 4. Specifications for a Subset of ADCGMEN Variables ............................................... 17
+Table 5. Specifications for ADGLUCPR Variables ................................................................. 20
+Table A1. SDTM Epoch-Level Dataset Example ..................................................................... 25
+Table A2. ADCGM Dataset Example ....................................................................................... 29
+Table A3. Final Analysis Dataset Example............................................................................... 36
+Table A4. ADGLUCPR Dataset Example ................................................................................ 39
+Table A5. Data Completeness Summary by Treatment Arm and Analysis Visit ................. 41
+Table A6. Missing Data Summary by Treatment Arm and Reason ...................................... 41
+
+
+                                             TABLE OF FIGURES
+
+
+Figure 1. Example DHT Data Flow for CGM ............................................................................ 2
+
+
+
+
+                                                            ii
+                                Contains Nonbinding Recommendations
+
+
+    Submitting Continuous Glucose Monitoring Data in Clinical Trials
+
+                                  Guidance for Industry
+                            Technical Specifications Document1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+1.0     INTRODUCTION
+
+        1.1.     Purpose
+
+This document provides technical specifications for submitting continuous glucose monitoring
+(CGM) data in clinical trials to support a marketing application for a drug or biological product.
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+        1.2.     Background
+
+A CGM digital health technology (DHT) is a system that continuously and passively collects
+glycemic data by measuring glucose levels in the interstitial fluid and can provide access to near
+real-time glucose measurements and trend information regarding glucose levels throughout the
+day 2 CGM data can consist of epoch-level data, intermediate summary data, final analysis data,
+and other CGM data. An example of data flow for CGM is provided in Figure 1.
+
+For CGM, the epoch-level data refers to the frequency (i.e., sampling rate) of the granular CGM
+readings (i.e., the glucose levels) reported within the dataset based on the epoch length (e.g.,
+every 1-minute, 5 -minute, or 15 -minute, depending on the make and model of the CGM DHT).
+1
+  This guidance has been prepared by the Office of Biostatistics in the Center for Drug Evaluation and Research and
+the Center for Biologics Evaluation and Research at the Food and Drug Administration. You may submit comments
+on this guidance at any time. Submit comments to Docket No. FDA-2018-D-1216 (available at
+https://www.regulations.gov/docket?D=FDA-2018-D-1216) (see the instructions for submitting comments in the
+docket).
+2
+  See FDA’s draft guidance for industry Diabetes Mellitus: Efficacy Endpoints for Clinical Trials Investigating
+Antidiabetic Drugs and Biological Products (May 2021). When final, this guidance will represent the FDA’s current
+thinking on this topic. For the most recent version of a guidance, check the FDA guidance web page at
+https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+                                                         1
+                            Contains Nonbinding Recommendations
+
+
+The data flow for CGM may include intermediate summary data as shown in Figure 1. When
+submitted, intermediate summary data is generated from the epoch-level data and bridges the
+epoch-level data and the final analysis data. The final analysis data represent the dataset(s) used
+to evaluate the CGM-derived endpoints and for other analyses prespecified in the statistical
+analysis plan (SAP). For example, depending on the CGM-derived pre-specified study endpoints
+(e.g., time in range (TIR) during the last two weeks of the study), 1) the epoch-level dataset may
+report CGM readings every five minutes, 2) the intermediate summary dataset may report daily
+or weekly totals, and 3) the final analysis dataset may report averages or other summary metrics
+for the pre-specified endpoints at specific time frames (e.g., a two-week average). Alternatively,
+epoch-level data may flow directly into the final analysis data when intermediate summaries are
+not produced. In Figure 1, “other CGM data” refers to additional collected data that are separate
+from the epoch-level data, such as CGM DHT characteristics (e.g., manufacturer and model),
+software version(s), and other participant interaction data.
+
+Figure 1. Example DHT Data Flow for CGM
+
+
+
+
+Throughout this document, the following terminology is used:
+
+•   ‘CGM reading’ refers to epoch-level data where a glucose level is provided.
+
+•   ‘Epoch-level data’ refers to CGM readings as well as other data outputted at the epoch-level,
+    such as error codes.
+
+•   ‘Other CGM data’ refers to the additional data collected separate from the epoch-level data
+    as described in section 1.2 Background.
+
+•   ‘CGM DHT’ refers to the CGM system described in section 1.2 Background.
+
+
+
+
+                                                 2
+                            Contains Nonbinding Recommendations
+
+
+•   ‘CGM-derived endpoint’ refers to the study-specific outcome measure that is calculated
+    using the data collected by the CGM DHT.
+
+•   ‘CGM data’ is a general term that refers to all datasets within the CGM data flow.
+
+       1.3.    Scope
+
+This document provides specifications for the submission of Clinical Data Interchange Standards
+Consortium (CDISC) Study Data Tabulation Model (SDTM) and Analysis Data Model (ADaM)
+datasets and specifications for recommended tables and figures. These technical specifications
+aim to provide general guidelines for standardized content and structure to facilitate FDA review
+of the marketing application that the submitted data and analysis outputs are intended to support.
+The SDTM and ADaM dataset specifications outlined in section 3.0 Overview of Dataset
+Specifications are not prescriptive and are not intended to include an exhaustive list of all
+datasets, variables, and controlled terminologies to be submitted for FDA review. Further, the
+recommended tables and figures within section 4.0 Specifications for Tables and Figures may
+not comprise all information needed to support FDA review of a marketing application.
+
+This document does not pertain to the following:
+
+1) The proposed interpretation and use of outputs generated by a CGM DHT within the context
+   of a specific clinical trial.
+
+2) The verification or validation of the CGM DHT. Refer to guidance for industry Digital
+   Health Technologies for Remote Data Acquisition in Clinical Investigations (December
+   2023).
+
+In addition, this document does not include technical specifications for closed-loop systems
+where the CGM DHT is coupled with an insulin pump and insulin is administered using an
+algorithm based on collected CGM readings. Further, this document does not include
+standardized definitions for CGM-derived endpoints. Sponsors should provide clear definitions
+of all CGM-derived endpoints within the study protocol with corresponding rationale. For
+example, this may include how a hypoglycemic event is defined and classified based on the
+CGM data and, if relevant, the proposed duration used to identify the event. These technical
+specifications should be referenced when a CGM DHT is used within a clinical trial to evaluate
+CGM-derived endpoints.
+
+The specifications provided in this document are pursuant to discussions with FDA and may vary
+by clinical drug or biologic development program and the clinical trial therein. The CGM DHT
+used to collect study data and corresponding analyses should be discussed with FDA as early as
+possible in a clinical drug or biologic development program (e.g., at the End of Phase 2
+Meeting). Sponsors are strongly encouraged to use the resources described in section 1.4
+Relationships to Other Documents and to seek Agency input for confirmation and clarification as
+needed. Sponsors should consult with the Agency to determine which requested displays defined
+in section 4.0 Specifications for Tables and Figures apply to the CGM data used to support the
+marketing application.
+
+
+                                                3
+                                Contains Nonbinding Recommendations
+
+
+          1.4.     Relationship to Other Documents
+
+These technical specifications have been drafted in accordance with the business rules and
+assumptions outlined in the CDISC SDTM, 3 the SDTM Implementation Guide (SDTMIG), 4 the
+SDTMIG for Medical Devices (SDTMIG-MD), 5 the ADaM, 6 and the ADaM Implementation
+Guide (ADaMIG). As new versions of the models and implementation guides become available,
+these technical specifications may be updated to maintain alignment. In addition, the FDA Study
+Data Technical Conformance Guide (sdTCG) 7 provides general specifications and
+recommendations for submitting datasets using the SDTM and ADaM standards. Sponsors
+should review the FDA Data Standards Catalog 8 to ensure data submissions follow FDA-
+supported standards.
+
+In addition, sponsors should reference the following:
+
+•     Draft guidance for industry Diabetes Mellitus: Efficacy Endpoints for Clinical Trials
+      Investigating Antidiabetic Drugs and Biological Products (May 2023) 9
+
+•     Guidance for industry Digital Health Technologies for Remote Data Acquisition in Clinical
+      Investigations (December 2023)
+
+•     CDISC Controlled Terminology 10
+
+
+2.0       RELEVANT ACRONYMS
+
+    Abbreviation   Description
+    ADaM           Analysis Data Model
+    ADaMIG         Analysis Data Model Implementation Guide
+    ADRG           Analysis Data Reviewer’s Guide
+    BDS            Basic Data Structure
+    CDISC          Clinical Data Interchange Standards Consortium
+    CBER           Center for Biologics Evaluation and Research
+    CDER           Center for Drug Evaluation and Research
+    CDRH           Center for Devices and Radiological Health
+    CGM            Continuous Glucose Monitor
+    cSDRG          Clinical Study Data Reviewer’s Guide
+    CSR            Clinical Study Report
+
+3
+  More information is available at CDISC’s SDTM web page: https://cdisc.org/standards/foundational/sdtm.
+4
+  More information is available at CDISC’s SDTMIG web page: https://cdisc.org/standards/foundational/sdtmig.
+5
+  More information is available at CDISC’s Medical Devices web page:
+https://www.cdisc.org/standards/foundational/medical-devices
+6
+  More information is available at CDISC’s ADaM web page: https://cdisc.org/standards/foundational/adam.
+7
+  More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+8
+  More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+9
+  When final, this guidance will represent the FDA’s current thinking on this topic.
+10
+   More information is available at NCI’s web page: https://datascience.cancer.gov/resources/cancer-
+vocabulary/cdisc-terminology.
+
+
+                                                       4
+                                 Contains Nonbinding Recommendations
+
+ Abbreviation      Description
+ DHT               Digital Health Technology
+ DI                Device Identifier
+ FDA               Food and Drug Administration
+ FD&C Act          Federal Food, Drug, and Cosmetic Act
+ NCI EVS           National Cancer Institute Enterprise Vocabulary Services
+ PI                Production Identifier
+ SAP               Statistical Analysis Plan
+ sdTCG             Study Data Technical Conformance Guide
+ SDTM              Study Data Tabulation Model
+ SDTMIG            Study Data Tabulation Model Implementation Guide
+ SDTMIG-MD         Study Data Tabulation Model Implementation Guide for Medical Devices
+ SMBG              Self-Monitoring Blood Glucose
+ SMPG              Self-Monitoring Plasma Glucose
+ TIR               Time in Range
+ UDI               Unique Device Identifier
+
+
+
+3.0     OVERVIEW OF DATASET SPECIFICATIONS
+
+These dataset specifications detail the CDISC datasets to support the collected CGM data and
+analysis data. Sponsors should implement the CDISC SDTM standard when submitting data
+collected during the clinical trial and the CDISC ADaM standard when submitting analysis data.
+As documented in the FDA sdTCG, 11 both SDTM and ADaM datasets should be accompanied
+by informative metadata provided in a compliant data definition file (i.e., Define-XML) and with
+a Clinical Study Data Reviewer’s Guide (cSDRG) and an Analysis Data Reviewer’s Guide
+(ADRG), respectively. Standard CDISC Controlled Terminology 12 developed and maintained by
+CDISC and National Cancer Institute Enterprise Vocabulary Services (NCI EVS) should be used
+where applicable, and codelists may be extensible by adding controlled terminology that is not
+previously defined. Sponsor-extended codelists and use of alternate (e.g., non-CDISC or
+sponsor-defined) terminologies should be indicated in the study metadata (e.g., Define-XML file,
+cSDRG). In addition, software programs (source code) used to create the ADaM CGM datasets
+and to analyze the CGM data should be submitted with the marketing application.
+
+        3.1      SDTM Specifications
+
+This section details the SDTM specifications for (1) the CGM epoch-level data submitted within
+the Laboratory Test Results (LB) dataset, (2) the Trial Summary (TS) dataset, (3) additional
+datasets to support CGM DHT-level review, and (4) the Disposition (DS) dataset.
+
+                 3.1.1    Laboratory Test Results Dataset
+
+The epoch-level data provides continuous CGM readings as described in section 1.2
+Background, where the frequency of the reported timestamps is based on the sampling rate of the
+
+11
+   More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+12
+   More information is available at NCI’s web page: https://datascience.cancer.gov/resources/cancer-
+vocabulary/cdisc-terminology.
+
+
+                                                         5
+                                Contains Nonbinding Recommendations
+
+
+CGM DHT. The submitted epoch-level dataset is represented using the SDTM Laboratory Test
+Results (LB) domain specifications. Note that it may be necessary to split the LB dataset
+depending on dataset size constraints as described by FDA’s sdTCG. 13
+
+                          3.1.1.1 General Considerations
+
+CGM data within the LB dataset contain the epoch-level data as collected for individual patients
+at distinct assessment timepoints (e.g., every 1-minute, 5-minute, or 15-minute), where the epoch
+length depends on the make and model of the CGM DHT. When system errors result in excess or
+fewer data collected than expected (e.g., 288 records per day are expected if the epoch length is 5
+minutes or 1440 records per day are expected if the epoch length is 1 minute), an explanation
+should be provided. The subset of standard LB variables presented in Table 1 is shown to
+clarify how variables should be completed for the epoch-level data to foster consistency and
+standardization across industry. An example LB dataset is provided in Appendix 6.1.
+
+Table 1. Specifications for a Subset of LB Variables
+ Variable
+                 Variable Label       Type     Comments
+ Name
+ LBSTAT          Completion Status    Char     This is populated as ‘NOT DONE’ for records in the LB dataset
+                                               where the CGM reading is empty/null. Conversely, LBSTAT is
+                                               empty/null when a CGM reading exists in LBORRES.
+ LBREASND        Reason Not           Char     This is used in conjunction with LBSTAT when LBSTAT = ‘NOT
+                 Performed                     DONE’ to describe why a CGM reading is empty/null when
+                                               collected by the CGM DHT (See section 3.1.1.2 Handling of
+                                               Missing SDTM Epoch-Level Data).
+ LBMETHOD        Method of Test or    Char     For CGM epoch-level data, LBMETHOD = ‘CGM’.
+                 Examination
+ LBDTC           Date/Time of         Char     Date/Time of individual epoch-level assessment timepoints in ISO
+                 Specimen                      8601 datetime format.
+                 Collection
+
+
+
+Additional Considerations:
+
+Additional CGM epoch-level data collected beyond what is specified in the SDTM LB domain
+specifications should be submitted either as additional rows with relevant LBTEST and
+LBTESTCD values within the LB dataset or within a Supplemental Laboratory Test Results
+(SUPPLB) dataset. Additional content is dependent on the CGM DHT used, and if needed for
+analysis, should be provided within the applicable ADaM dataset.
+
+                          3.1.1.2 Handling of Missing SDTM Epoch-Level Data
+
+FDA review will consider the reasons for and prevalence of missing CGM readings. This section
+expands upon the missing data considerations presented in FDA’s guidance for industry Digital
+Health Technologies for Remote Data Acquisition in Clinical Investigations (December 2023).
+
+13
+  More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+
+
+                                                        6
+                            Contains Nonbinding Recommendations
+
+
+
+Sponsors should make every effort to minimize the overall amount of missing CGM data within
+a study. Missing CGM readings should be represented within the LB dataset with the reason for
+missingness captured under ‘Reason Not Performed’ (LBREASND) when collected by the CGM
+DHT at the epoch level. Ideally, the LB dataset should contain one record per CGM reading per
+patient per epoch for the entire planned, protocol-specified period of CGM DHT wear (e.g., the
+duration of the trial) up until discontinuation (from the study or from CGM) or death; however,
+this may not be feasible within the LB dataset if the epoch-level data presented in the LB dataset
+only contains epochs where a CGM reading or an error code is collected and transmitted by the
+CGM DHT. For example, if a patient removes the sensor and does not replace it, the affected
+epochs may not be present within the LB dataset because no data is collected by the CGM DHT.
+In this case, epoch-level data to represent intermittent missing data should be provided in the
+ADaM epoch-level dataset as presented in section 3.2.1 ADaM Epoch-Level Dataset.
+
+Epoch-level data related to the initialization, or warmup, period (when a CGM sensor session
+first starts after the initial placement) may be collected and transmitted by the CGM DHT.
+During this period, CGM readings are typically blinded and not recorded while the CGM DHT
+performs initialization, which may cause the readings to appear as ‘missing’ in the dataset. Once
+the CGM warmup period is complete, the CGM will start recording readings. Warmup can last
+several minutes or hours, depending on the make and model of the CGM DHT used in the study.
+When collected, epoch-level data related to the warmup period are provided within the LB
+dataset. Including these epoch-level data from the warmup period within the dataset provides
+transparency as to the reason CGM readings appear to be missing and allow for a participant’s
+complete sensor session beginning with sensor insertion to be represented within the dataset.
+
+A single participant may have multiple warmup periods within the epoch-level dataset,
+depending on the number of sensor replacements specified in the protocol. Further, the number
+of distinct warmup periods may vary by participant depending on the total number of sensors
+that are replaced for each participant. For example, if a participant has additional sensor
+replacements beyond what is specified in the protocol due to multiple early sensor termination
+events while others wear each sensor for its maximum lifetime, the participant will appear to
+have more missing CGM readings than other participants. Reporting warmup period information
+within the LB dataset allows for an assessment of imbalance in warmup periods between
+participants and treatment arms.
+
+Table 2 provides scenario-specific recommendations for displaying records for missing CGM
+readings within the LB dataset, where the human-readable description of the error code outputted
+by the CGM DHT is provided within LBREASND. Additional error code information needed to
+fully interpret the descriptions should be provided within the study metadata documentation
+(e.g., the SDTM Define-XML file or the cSDRG) as needed. Note that there may be other
+scenarios in which readings are missing in addition to those listed in Table 2.
+
+
+
+
+                                                7
+                                     Contains Nonbinding Recommendations
+
+
+Table 2. Recommended LB Representation of Missing CGM Epoch-Level Data
+    Scenario                                                                 Recommended Representation in LB
+                                                                             Dataset
+    CGM readings are completely missing due to nonwear of the
+    CGM DHT, for example if the sensor is accidentally or purposely          Rows for the missing epochs are excluded
+    removed or if the sensor is not replaced immediately between             from the LB dataset.
+    sensor sessions.
+    CGM readings are missing due to the warmup period that occurs            When collected by the CGM DHT, the rows
+    for a period of epochs after sensor insertion during initialization of   for the missing epochs should include:
+    the CGM DHT.                                                             • LBSTAT = ‘NOT DONE’
+    CGM readings are blinded or not collected due to early sensor            • LBREASND contains the human-readable
+    termination. Examples include partial or full sensor detachment            description of the error code generated by
+    when a sensor is dislocated or internal damage to the sensor               the CGM DHT (e.g., ‘Warmup period’,
+    electrode.                                                                 ‘Sensor not calibrated’, ‘Calibration
+    CGM readings are missing due to data transmission issues, for              failure’, ‘Sensor termination’, ‘Data
+    example gaps in wireless transmission causing data loss.                   transmission failure’, ‘Data upload
+    CGM readings are missing due to file corruption issues, for                failure’).
+    example file corruption causing failure to upload data to the            If not collected by the CGM DHT, the rows
+    server.                                                                  for the missing epochs are excluded from
+                                                                             the LB dataset.
+
+Missing epoch-level data in the ADaM ADCGM dataset are presented in section 3.2.1.3
+Handling of Missing ADaM Epoch-Level Data. An example of missing data within the LB
+dataset is provided in Appendix 6.1.
+
+                     3.1.2    Trial Summary Dataset
+
+Data related to the trial summary should be stored in the TS dataset. Of particular interest to
+FDA is the frequency with which these technical specifications in this guidance are used to
+create and submit CGM data. Per the FDA sdTCG, 14 sponsors may include the following
+parameters and associated value in the TS dataset to indicate that these technical specifications
+were used for the study:
+
+•      TSPARAMCD = ‘FDATCHSP’
+•      TSPARAM = ‘FDA Tech Spec’
+•      TSVAL = ‘CGM Technical Specifications Guidance v1.0’
+
+                     3.1.3    Datasets for CGM DHT-Level Review
+
+The submission of additional data not provided within the SDTM epoch-level dataset is
+recommended to enable CGM DHT-level review and analysis and to enhance traceability. These
+data include information about the interactions between the CGM DHT and the participant.
+These data include other CGM data not already provided within the SDTM epoch-level dataset
+such as CGM DHT characteristics, identifier information, settings, software version(s), and other
+participant interaction data. Within the context of CGM, these datasets may include the datasets
+
+
+14
+  More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+
+
+                                                               8
+                                 Contains Nonbinding Recommendations
+
+
+described below. Note however that other datasets should be included in the submission as
+needed.
+
+CGMs are class II medical devices subject to FDA’s unique device identification system
+requirements, including assignment of a unique device identifier (UDI) as defined in 21 CFR
+830.3. A UDI is a unique numeric or alphanumeric code that adequately identifies a medical
+device through its distribution and use and consists of:
+
+       •   Device identifier (DI), a mandatory, fixed portion of a UDI that identifies the labeler and
+           the specific version or model of a device.
+
+       •   Production identifier (PI), a conditional, variable portion of a UDI that identifies one or
+           more of the following when included on the label of a device:
+
+               o   Lot or batch number within which a device was manufactured (for devices that
+                   incorporate software, ‘lot or batch’ is defined to include the software version);
+
+               o   Serial number of a specific device;
+
+               o   Expiration date of a specific device;
+
+               o   Date a specific device was manufactured; and
+
+               o   Distinct identification code required by § 1271.290(c) for a human cell, tissue, or
+                   cellular and tissue-based product (HCT/P) regulated as a device. 15
+
+When CGM is used in a study, it is encouraged that a dataset containing the FDA-required UDI
+be submitted. This dataset serves as a single location to record the identifiers or characteristics
+used to uniquely identify each CGM DHT used in a study. Within the dataset, Sponsor Device
+Identifier (SPDEVID) variable should be populated by the UDI (both DI and PI portions) which
+represents the single identifier for each CGM sensor and is used to link data. This UDI is
+especially useful when the CGM sensor is replaced multiple times by the participant throughout
+the study as specified in the protocol. The DI portion of the UDI identifies the version or model
+of the CGM. If the version or model changes, a new DI would be assigned. The PI elements of
+the UDI capture the serial number, software version (in the lot or batch variable), manufacturing
+date and expiration date, if applicable.
+
+As shown in Table 3. Specifications for a Subset of ADCGM Variables, SPDEVID is
+encouraged to be submitted within the ADaM ADCGM dataset. A separate SPDEVID value for
+each sensor session under which corresponding epoch-level data is collected by the CGM DHT
+is recommended to enable sensor-level analysis directly within the ADCGM dataset. To facilitate
+review, a dataset that contains all distinct pairs of SPDEVID and Unique Subject Identifier
+(USUBJID) values observed in the study data should be submitted. CGM data depicting the
+properties and settings of a CGM DHT such as software name and/or version should be
+submitted in separate findings dataset(s). Software version should be captured as part of the PI
+
+15
+     See 21 CFR 830.3. For additional information on UDIs, see the FDA webpage, “UDI Basics | FDA.”
+
+
+                                                        9
+                            Contains Nonbinding Recommendations
+
+
+lot or batch data element. Example properties captured for a CGM DHT include alarms used to
+indicate hyper- or hypoglycemia and software name and/or version. Note that representing
+properties and settings of each CGM DHT are useful within a dataset when there are differences
+observed across CGM DHTs, participants, and/or assessment timepoints. Alternatively, when
+properties and settings are identical throughout the study, these details may instead be presented
+directly in the study protocol.
+
+CGM data depicting events that occur to a CGM DHT during the study should be submitted.
+Documentation of these events is especially useful when they can affect the CGM readings
+collected by the CGM DHT or the interpretation of the CGM results. Relevant information
+related to such events may include date/time of each sensor insertion, date of data upload for a
+sensor session, CGM DHT or software upgrades or downgrades, error codes generated by the
+CGM DHT that are not accounted for within the epoch-level dataset, and other CGM DHT issues
+or errors that result in data being excluded from the epoch-level dataset (e.g., loss of
+connectivity, data upload failure). Missing data due to the CGM DHT that is not provided in the
+epoch-level dataset should be reported.
+
+When using CGM in a clinical investigation, it is recommended that sponsors adequately plan
+for changes that could occur during the trial, such as CGM upgrades. When feasible, the CGM
+model should be the same throughout the trial for all participants. Sponsors should have an
+adequate number of CGM DHTs to start and complete the trial. Different models of CGM DHTs
+may have different analytical performance, which may complicate the analysis of CGM data
+collected during the trial. Different CGM models may also have different features such as sensor
+replacement frequency and capability to backfill missed CGM readings, which can result in
+differences in the frequency of missing data. In some instances, minor changes may be made
+between versions within a single CGM model line that do not impact performance. Thus, it is
+encouraged that each participant uses the same CGM model and version throughout the trial
+unless the performance and feature set is determined to be identical between the models or
+versions. Details on CGM DHT changes that occur during the trial, including the UDI,
+justification for changes and plans for addressing differences caused by a change, should be
+provided in the study protocol and the SAP.
+
+               3.1.4   Disposition Dataset
+
+Discontinuation-related disposition events for a participant may include discontinuation from a
+treatment, discontinuation from a study, or discontinuation from a certain segment(s) of a study.
+When CGM is used in a study, it is recommended that the date of permanent discontinuation
+from the CGM DHT be collected in a structured manner and presented within the DS dataset.
+This date can then be referenced into the ADaM ADCGM dataset as described in section 3.2.1
+ADaM Epoch-Level Dataset.
+
+       3.2     ADaM Specifications
+
+This section provides specifications for the ADaM datasets containing analysis-ready CGM data.
+ADaM datasets included within this section include the analysis datasets outlined in the CGM
+data flow shown in section 1.2 Background: the epoch-level data, intermediate summary data (if
+
+
+
+                                                10
+                               Contains Nonbinding Recommendations
+
+
+applicable), and final analysis data. In addition, specifications are provided for paired glucose
+datasets that join the CGM and non-CGM glucose data.
+
+       3.2.1   ADaM Epoch-Level Dataset
+
+In addition to epoch-level data submitted within the SDTM LB dataset, epoch-level data for
+CGM should be submitted using the ADaM dataset (herein referred to as the ADCGM dataset).
+An ADCGM dataset may be created to bridge the gap between the epoch-level data in the SDTM
+LB dataset and the final analysis data described in section 3.2.3 ADaM Final Analysis Dataset.
+When created, the ADCGM dataset is derived from epoch-level data in the SDTM LB dataset
+presented in section 3.1.1 Laboratory Test Results Dataset in conjunction with other SDTM and
+ADaM data.
+
+Because the ADLB dataset is historically a large dataset in comparison to other ADaM datasets,
+a standalone ADCGM dataset should be submitted to report the ADaM epoch-level data, rather
+than submitting epoch-level data within an ADaM dataset that also summarizes other non-CGM
+laboratory results. Further, creating the standalone ADCGM dataset allows for analysis variables
+not relevant to the analysis of standard laboratory test results to be fully utilized for epoch-level
+data and vice versa.
+
+                       3.2.1.1 General Considerations
+
+The ADCGM dataset follows the ADaM Basic Data Structure (BDS) and presents epoch-level
+data at the same frequency as the SDTM LB dataset (e.g., every 1-minute, 5-minute, or 15-
+minute, depending on the make and model of the CGM DHT). Table 3 contains specifications
+for a subset of ADCGM variables, some of which are standard ADaM BDS variables (included
+here to clarify how they should be completed for epoch-level data to foster consistency and
+standardization across industry as well as traceability) and some of which are newly defined.
+Table 3 does not include all ADCGM variables to may be submitted within the BDS dataset. An
+example ADCGM dataset is provided in Appendix 6.2.
+
+Table 3. Specifications for a Subset of ADCGM Variables
+ Variable
+                Variable Label    Type   Comments
+ Name
+ ADTM           Analysis          Num    Datetime of individual epoch-level assessment timepoints using an
+                Datetime                 appropriate display format.
+ AVISIT or      Analysis Visit    Char   The primary analysis timing variable (e.g., AVISIT, ATPT, or
+ ATPT           or Analysis              another analysis timing variable) used in the study to which the
+                Timepoint                individual epoch-level assessment timepoints are mapped (See
+                                         section 3.2.1.2 Windowing of Epoch-Level Assessment
+                                         Timepoints).
+ SPDEVID        Sponsor Device    Char   This should be populated by the FDA-required UDI which
+                Identifier               represents the single identifier for each CGM sensor used to
+                                         produce a participant’s epoch-level data (See section 3.1.3 Datasets
+                                         for CGM DHT-Level Review).
+ SENSFL         Sensor First      Char   Indicates the first epoch-level assessment timepoint associated with
+                Record Flag              each new sensor session. The first epoch-level assessment
+
+
+
+
+                                                  11
+                               Contains Nonbinding Recommendations
+
+ Variable
+                  Variable Label    Type     Comments
+ Name
+                                             timepoint may correspond to the first record during a participant’s
+                                             warmup period where Analysis Value (AVAL) is null.
+ CRITy /          Analysis          Char /   CRITy identifies a pre-specified criterion within a parameter.
+ CRITyFL /        Criterion y /     Char /   CRITyFL and CRITyFN indicate whether the criterion is satisfied
+ CRITyFN          Criterion y       Num      for the current record. Within the ADCGM dataset, it is encouraged
+                  Evaluation                 that criteria variables be included in the ADCGM dataset when
+                  Result Flag /              categorizations of the numeric CGM readings reported in AVAL
+                  Criterion y                are assessed based on the CGM-derived endpoints evaluated for the
+                  Evaluation                 study. When relevant to the study, the criteria variables aid in
+                  Result Flag (N)            traceability between the ADCGM dataset and the ADaM final
+                                             analysis dataset. The definitions for the categorizations used within
+                                             the study should be submitted within the study protocol and SAP
+                                             with supporting literature as needed. See the example of these
+                                             variables in Appendix 6.2.
+
+                                             Note that if the identification of events such as level 1 or level 2
+                                             hypoglycemia or hyperglycemia episodes 16 includes duration that
+                                             incorporates multiple CGM readings (e.g., a duration of at least 15
+                                             consecutive minutes where AVAL is <70 mg/dL to be categorized
+                                             as level 1 hypoglycemia) separate analysis variables are
+                                             recommended to be defined and used within the ADCGM dataset
+                                             instead of the prespecified criteria variables. Note that the criteria
+                                             variables are not appropriate in this scenario when multiple rows
+                                             are being assessed to populate a single record.
+ ADTMCAy          Temporal          Char     Categorization of Analysis Datetime (ADTM). It is recommended
+                  Categorization             that ADTMCA1 represent the categorization of ADTM into
+                  y                          daytime and nighttime for the individual epoch-level assessment
+                                             timepoints. Subject to sponsor-defined controlled terminology (e.g.,
+                                             ‘Diurnal’, ‘Nocturnal’). Rules to assign ADTMCA1 such as daily
+                                             windows to indicate daytime and nighttime should be included
+                                             within the SAP and study metadata (e.g., the ADRG and ADaM
+                                             Define-XML file).
+ DCCGMDTM         Datetime of       Num      Datetime of the participant’s discontinuation from the CGM DHT
+                  Discontinuation            using an appropriate display format. May be originally reported
+                  from CGM                   within the Disposition (DS) dataset (See section 3.1.4 Disposition
+                                             Dataset). DCCGMDTM is set to empty/null if a participant did not
+                                             discontinue from the CGM DHT during the study.
+ AREASND          Analysis          Char     The primary reason why a CGM reading is missing for a given
+                  Reason Not                 epoch, when known/collected. When LBREASND is populated,
+                  Performed                  AREASND may not need to be derived in the ADCGM dataset.
+                                             AREASND is only derived when needed; for example, AREASND
+                                             may be useful to standardize the submitted values for reason using
+                                             sponsor-defined terminology if not done so within the values for
+                                             LBREASND. Similarly, if reason for missing epoch-level data is
+                                             populated from other sources such as the SDTM DE dataset or from
+                                             a participant diary reported in the Questionnaires (QS) dataset such
+
+16
+   Battelino T, Alexander CM, Amiel SA, Arreaza-Rubin G, Beck RW, Bergenstal RM, Buckingham BA, Carroll J,
+Ceriello A, Chow E, Choudhary P, Close K, Danne T, Dutta S, Gabbay R, Garg S, Heverly J, Hirsch IB, Kader T,
+Kenney J, Kovatchev B, Laffel L, Maahs D, Mathieu C, Mauricio D, Nimri R, Nishimura R, Scharf M, Del Prato S,
+Renard E, Rosenstock J, Saboo B, Ueki K, Umpierrez GE, Weinzimer SA, Phillip M., 2022, Continuous glucose
+monitoring and metrics for clinical trials: an international consensus statement., Lancet Diabetes Endocrinol.,
+11(1):42-57, doi: 10.1016/S2213-8587(22)00319-9.
+
+
+                                                       12
+                             Contains Nonbinding Recommendations
+
+ Variable
+                Variable Label    Type     Comments
+ Name
+                                          that there are differences between LBREASND and AREASND,
+                                          then AREASND is provided. The sponsor should provide details in
+                                          the ADaM study metadata as to how AREASND is derived.
+ AREASCAy       Analysis         Char     Categorization of Analysis Reason Not Performed (AREASND) or
+                Reason                    LBREASND. It is recommended that AREASCA1 represents the
+                Category y                binary categorization for reason as either ‘participant-caused’ or
+                                          ‘DHT-caused’ for the missing CGM reading at the individual
+                                          epoch-level assessment timepoint. The assignment of AREASCA1
+                                          is based on the analysis needs for the study. Additional
+                                          categorizations may be added as needed for analysis. Rules used to
+                                          assign AREASCA1 should be included within the SAP and study
+                                          metadata (e.g., the ADRG and ADaM Define-XML file).
+ DTYPE          Derivation       Char     Populated as ‘PHANTOM’ to represent rows for missing epoch-
+                Type                      level data that is not already present within the SDTM LB dataset.
+                             Variables copied from input SDTM LB Dataset
+ LBSEQ          Sequence         Num      Sponsors should include any SDTM variables in the ADCGM
+                Number                    dataset needed to provide traceability to the source SDTM LB
+ LBDTC          Date/Time of     Char     dataset. Specifically, LBDTC in ISO 8601 datetime format is
+                Specimen                  requested to be provided within the ADCGM dataset.
+                Collection
+ LBSTAT         Completion       Char     Sponsors should include SDTM variables that provide explanations
+                Status                    for missing CGM readings, when collected and reported by the
+ LBREASND       Reason Not       Char     CGM DHT. See Comments for LBSTAT and LBREASND
+                Performed                 provided in Table 1. Specifications for a Subset of LB
+                                          Variables.
+
+To aid in epoch-level data analysis, additional epoch-level timing variables are recommended to
+be submitted. The sponsor should provide details on how time changes are handled within the
+epoch-level dataset (e.g., time change due to seasonality (i.e., due to daylight saving time and
+standard time shifts based on the participant’s geographical location and the time of year) or
+change in time zone due to participant travel). An example of the additional epoch-level timing
+variables within the epoch-level dataset is shown in Appendix 6.2. Other data may be joined to
+the ADCGM dataset as needed for analysis and may be study specific. For example, to facilitate
+safety analyses, joining of insulin data from either the Exposure (EX) dataset or the
+Concomitant/Prior Medications (CM) dataset to the ADCGM dataset may be performed.
+
+                       3.2.1.2 Windowing of Epoch-Level Assessment Timepoints
+
+The analysis timing variable (e.g., AVISIT, ATPT, or other analysis timing variable) is a key
+variable within the ADaM ADCGM dataset that maps the individual epoch-level assessment
+timepoints to an analysis timing variable value (e.g., by day, week, or month) for analysis
+purposes depending on the CGM-derived endpoints used in the study. For example, the sponsor
+may implement a windowing strategy where the epoch-level data collected within the first two-
+week sensor session are attributed to AVISIT = ‘Baseline’, the epoch-level data collected within
+the second two-week sensor session are attributed to AVISIT = ‘Week 2’, etc. Details on the
+windowing of these individual epoch-level assessment timepoints to the appropriate analysis
+timing variable value are provided in the SAP. The algorithm used to assign values for the key
+
+
+
+                                                    13
+                            Contains Nonbinding Recommendations
+
+
+analysis timing variable is included in the software program(s) (source code) used to create the
+ADCGM dataset, and the algorithm details for the population of analysis timing variable value
+are provided in the ADaM Define-XML file.
+
+To ensure the accuracy of the summarization of the epoch-level data within the final analysis
+datasets(s), the sponsor should confirm that the full timestamp (i.e., hours, minutes, seconds) is
+considered when assigning the analysis timing variable value so that the correct epoch-level data
+are included in the higher-level summaries. For example, an algorithm that only considers the
+date component when assigning values for AVISIT and does not consider the complete time
+component (00:00:00 through 23:59:59) may default to a single timestamp of midnight and
+erroneously not assign values for AVISIT for all epoch-level data that occur past midnight (i.e.,
+from 00:00:01 through 23:59:59) on the same study day.
+
+Epoch-level data in the ADCGM dataset with empty/null analysis timing variable values are
+excluded from the CGM summaries presented within the intermediate summary data and/or final
+analysis data. This can occur when extraneous epoch-level data are captured for a participant
+beyond the planned period of wear specified in the study protocol. These data do not have an
+analysis timing variable value populated based on the algorithm employed on the data and thus
+are considered ‘outside’ of the specified window for the analysis timing variable value. It is
+recommended that the reviewers’ guide acknowledge the presence of these data and confirm that
+the corresponding analysis timing variable values for the affected CGM readings are not
+erroneously empty/null.
+
+Applications should contain information explaining why CGM readings are collected outside of
+the specified window(s). The sponsor may also consider summarizing the reasons directly within
+the reviewers’ guide, if feasible. However, if the reason(s) differ by participant and/or
+assessment timepoint, an additional record-level ‘reason’ variable in the ADCGM dataset
+explaining why the analysis timing variable value is empty/null for the affected CGM readings is
+recommended. The sponsor may consider using sponsor-defined terminology to standardize the
+submitted reason values. Additional windowing to assign the analysis timing variable value in
+the ADCGM dataset, including the sensitivity analysis performed, should be prespecified in the
+SAP. For example, if epoch-level data is planned to be captured during weeks 1-4 of the study
+but is actually captured during weeks 3-6, the CGM readings for weeks 5 and 6 will have the
+analysis timing variable value set to empty/null and no epoch-level data will be reported in the
+LB dataset for weeks 1 and 2. When the analysis timing variable value is empty/null the CGM
+readings for weeks 5 and 6 are considered to be outside of the window and are excluded from
+higher-level summaries. Providing the reason why a participant started their first sensor session
+two weeks later than planned and was not adherent to the defined schedule is useful for assessing
+and understanding excluded data.
+
+
+
+
+                                                14
+                            Contains Nonbinding Recommendations
+
+
+
+                      3.2.1.3 Handling of Missing ADaM Epoch-Level Data
+
+As discussed in SDTM section 3.1.1.2 Handling of Missing SDTM Epoch-Level Data,
+understanding the reasons for and prevalence of missing epoch-level data are critical to support
+FDA review and regulatory decision-making. Of importance to FDA is the standardized
+reporting of missing epoch-level data to evaluate systematic missingness and identify non-
+missing data trends and patterns. In the ADCGM dataset, sponsors should provide missing
+epoch-level data presented in the SDTM LB dataset with LB.LBSTAT = ‘NOT DONE’ and
+LB.LBREASND populated with a human-readable description of an error code or other output
+generated by the CGM DHT (see scenarios presented within Table 2. Recommended LB
+Representation of Missing CGM Epoch-Level Data). Though SDTM epoch-level data presented
+in the LB dataset may be limited to the data collected by the CGM DHT, the ADaM datasets
+maintain flexibility to include rows for missing data not originally provided in the SDTM. Thus,
+intermittent missing epoch-level data that were not originally included within the SDTM LB
+dataset (e.g., missing epoch-level data due to nonwear of the CGM DHT) should be added to the
+ADCGM dataset with Derivation Type (DTYPE) set to ‘PHANTOM’ for the affected rows.
+
+Records for missing epoch-level data should be included in the ADCGM dataset for a
+participant’s entire planned period of CGM wear during the study, unless the participant
+discontinued from the CGM DHT during the study. In this case, epoch-level data for missing
+data should be included in the ADCGM dataset up until the Datetime of Discontinuation from
+the CGM DHT (See the Datetime of Discontinuation from CGM (DCCGMDTM) variable in
+Table 3. Specifications for a Subset of ADCGM Variables). Rows for missing data after
+discontinuation are not provided in the ADCGM dataset.
+
+It is recommended that the primary reason for the missing data be provided in the ADCGM
+dataset within Reason Not Performed (LBREASND), and if derived, the Analysis Reason Not
+Performed (AREASND) variable. As presented under AREASND within Table 3. Specifications
+for a Subset of ADBP Variables, the study metadata should clearly describe how the value of
+AREASND is assigned for the affected epoch-level data. AREASND is only derived when
+needed, such as when sponsor-defined terminology is used to standardize values for
+LBREASND or when an error code is transformed into a human-readable description. Reason
+for missing data may be provided from the CGM DHT (e.g., error codes), from the participant
+(e.g., from integrated subject diary data), or from another source (e.g., an event recorded in the
+SDTM DE dataset that describes a reason for missing data). When the reason is not collected,
+LBREASND and AREASND are empty/null.
+
+For epoch-level data that are completely missing from the LB dataset due to nonwear or other
+reasons where epoch-level data is not collected and reported within the SDTM LB dataset,
+ideally the reason why the participant did not wear the CGM DHT is populated in the
+AREASND variable within the ADCGM dataset to aid in understanding the reasons for missing
+data. To capture this data, the sponsor may consider use of a participant diary in conjunction with
+the CGM DHT to capture compliance issues during the participant’s planned period of wear.
+Data obtained via such a diary can enhance understanding of missing data, beyond the error
+codes that may be outputted directly by the CGM DHT. For example, an error code output by the
+
+
+
+                                                15
+                            Contains Nonbinding Recommendations
+
+
+CGM DHT may acknowledge that early sensor termination occurred, but additional information
+provided by the participant can explain the cause of the early sensor termination event.
+Participant diary data may be represented in the SDTM Questionnaires (QS) dataset. It is
+recommended that the sponsor record the reason for missing data for participants during the
+study.
+
+If the sponsor proposes imputing missing epoch-level data with non-null values in the ADCGM
+dataset, it is recommended that the sponsor consult with the Agency to determine whether the
+statistical methods proposed are appropriate to impute the missing epochs. To support this
+determination, the Agency may request validation or simulation studies from the sponsor for the
+proposed methods. When non-null epoch values are imputed within the Analysis Value (AVAL),
+Derivation Type (DTYPE) is populated with the imputation method used. When implemented,
+the sponsor should provide clear imputation rules with supporting rationale in the study SAP.
+Note that specific imputation methods are not specified in this document.
+
+               3.2.2   ADaM Intermediate Summary Dataset
+
+As presented in section 1.2 Background the term intermediate summary data refers to the
+dataset(s) generated from the epoch-level dataset and bridges the epoch-level dataset and the
+final analysis dataset(s) used to evaluate CGM-derived endpoints. Intermediate summary data
+may not be necessary to be produced for CGM data when the ADaM epoch-level dataset (i.e.,
+the ADCGM dataset) flows directly to the ADaM final analysis dataset(s). However, when
+created, intermediate summary dataset(s) are used to facilitate the creation of the final analysis
+dataset and should be submitted with other ADaM CGM datasets. For example, epoch-level data
+may first be summarized into an intermediate summary dataset showing CGM-derived endpoints
+by day, which may then be summarized in a final analysis dataset showing CGM-derived
+endpoints by the defined analysis timing variable (e.g., AVISIT). Other examples of possible
+intermediate datasets may involve summarization by week, by weekday vs. weekend, or by
+certain days of the week. Depending on the number of intermediate summaries produced,
+multiple intermediate datasets may be created and submitted.
+
+               3.2.3   ADaM Final Analysis Dataset
+
+This section provides specifications for the ADaM dataset containing analysis-ready CGM data
+(referenced herein as the ‘ADCGMEN’ dataset), which are derived from the ADaM epoch-level
+ADCGM dataset as presented in section 3.2.1 ADaM Epoch-Level Dataset and/or the ADaM
+intermediate summary dataset (when created) as presented in section 3.2.2 ADaM Intermediate
+Summary Dataset, in conjunction with other ADaM data. Note that documentation of traceability
+from the ADCGMEN dataset to the preceding source dataset is needed; the study metadata,
+including the submitted software programs (source code), should be comprehensive such that the
+analysis measures prespecified in the SAP and provided within in the ADCGMEN dataset can be
+recreated by FDA.
+
+
+
+
+                                                16
+                               Contains Nonbinding Recommendations
+
+
+                       3.2.3.1 General Considerations
+
+The ADCGMEN dataset follows the ADaM BDS and contains the final analysis data used to
+evaluate CGM-derived endpoints and to produce the tables, listings, and figures for the CGM
+analyses presented within the Clinical Study Report (CSR). The summarization of the final
+analysis data by the analysis timing variable depends on the CGM-derived endpoints; for
+example, the ADCGMEN dataset may present parameters such as mean glucose concentration,
+glucose management indicator, glucose variability, and the percentage of time spent above,
+below, and/or within pre-defined glucose ranges. Table 4 contains specifications for a subset of
+ADCGMEN variables, some of which are standard ADaM BDS variables (included here to
+clarify how they should be completed for CGM data to foster consistency and standardization
+across industry as well as traceability) and some of which are newly defined. Table 4 does not
+include all variables that may be submitted within the ADCGMEN dataset. An example
+ADCGMEN dataset is provided in Appendix 6.3.
+
+Table 4. Specifications for a Subset of ADCGMEN Variables
+ Variable
+                Variable Label       Type     Comments
+ Name
+ AVISIT or      Analysis Visit or    Char     The primary analysis timing variable (e.g., AVISIT, ATPT, or
+ ATPT           Analysis Timepoint            another analysis timing variable) used in the study to which the
+                                              individual epoch-level assessment timepoints are mapped.
+                                              Originally introduced within the ADCGM dataset (See section
+                                              3.2.1.2 Windowing of Epoch-Level Assessment Timepoints).
+ VALIDEPC       Valid Epochs         Num      The total number of CGM readings (i.e., valid epochs) from the
+                                              epoch-level dataset used to compute a final analysis measure
+                                              within the ADCGMEN dataset. The epochs included in
+                                              VALIDEPC are limited to epoch-level records where
+                                              ADCGM.AVAL is not empty/null (i.e., a CGM reading is
+                                              provided within AVAL).
+ VALIDPTE       Valid Percentage     Num      The expected percentage of valid epochs from the epoch-level
+                Expected                      dataset used to compute a final analysis measure within the
+                                              ADCGMEN dataset to evaluate CGM DHT compliance.
+                                              VALIDPTE is calculated using Valid Epochs (VALIDEPC) as
+                                              the numerator and the total expected number of epoch-level
+                                              records as the denominator, where the denominator may be
+                                              calculated using the participant’s planned start date and end date
+                                              for the CGM DHT. For example, for a participant’s one-week
+                                              period of wear of a CGM DHT that collects data every 5
+                                              minutes, the denominator represents 7 days * 288 epoch-level
+                                              records per day = 2,016 total expected number of records. The
+                                              derivation of VALIDPTE should be clearly defined within the
+                                              study metadata (See section 3.2.3.2 Handling of Missing ADaM
+                                              Final Analysis Data).
+ CRITy /        Analysis Criterion   Char /   CRITy identifies a pre-specified criterion within a parameter.
+ CRITyFL /      y / Criterion y      Char /   CRITyFL and CRITyFN indicate whether the criterion is
+ CRITyFN        Evaluation Result    Num      satisfied for the current record. For CGM, it is recommended
+                Flag /                        that criteria flags be used to indicate whether the Valid
+                Criterion y                   Percentage Expected (VALIDPTE) is less than a prespecified
+                Evaluation Result             threshold for a participant. The threshold(s) used in the study
+                Flag (N)                      should be defined within the SAP. An example of these
+                                              variables is provided within Appendix 6.3.
+
+
+
+                                                    17
+                               Contains Nonbinding Recommendations
+
+
+
+                         3.2.3.2 Handling of Missing ADaM Final Analysis Data
+
+Within the ADCGMEN dataset that encompasses the final analysis data, a row should be
+provided for each participant, parameter, and analysis timing variable (e.g., AVISIT or ATPT)
+where the final analysis measure is expected to be populated based on the participant’s planned
+period of CGM DHT wear originally presented within the study protocol, unless the participant
+discontinued from the CGM DHT at an earlier point during the study. In this case, records for
+missing data should be included in the ADCGMEN dataset up until the Datetime of
+Discontinuation from the CGM DHT (See Datetime of Discontinuation from CGM
+(DCCGMDTM) in Table 4. Specifications for a Subset of ADCGMEN Variables). Note that in
+general, rows for missing CGM data after discontinuation from the CGM DHT are not expected
+to be provided in the ADCGMEN dataset.
+
+Given the presence of phantom records in the ADCGM dataset to represent cases of intermittent
+missingness for a participant, there may be cases where AVAL is empty/null for a given final
+analysis measure in the ADCGMEN dataset due to missing CGM readings. For this scenario, a
+row is provided in the ADCGMEN dataset for the participant, parameter, and analysis timing
+variable. Alternate DTYPE values may be used to handle missing AVAL values and depend on
+the imputation methods implemented. When implemented, the sponsor should provide clear
+imputation rules with supporting rationale in the study SAP. Note that imputation methods are
+not specified within this document.
+
+The data quality variables presented in Table 4. Specifications for a Subset of ADCGMEN
+Variables aid in traceability and an understanding of the amount of data that contributes toward
+the final analysis measures presented within the ADCGMEN dataset. An example of these
+variables is shown in the ADCGMEN dataset within Appendix 6.3. FDA is interested in the
+threshold for the percentage of valid records needed for a final analysis measure to be calculated
+and subsequently used in analysis (i.e., used to produce the tables, listings, and figures for the
+CGM analyses presented in the CSR). The selected threshold(s) and the corresponding rationale
+that comprises a ‘complete’ assessment should be clearly defined in the SAP. For example, a
+sponsor may indicate in the SAP that records used in analysis should have a valid percentage >
+70% over a 14-day period. 17 Sensitivity analyses to assess the impact of filtering on complete
+assessments when calculating the final analysis results should also be prespecified in the SAP.
+Tables requested by the Agency to analyze missing data are specified within section 4.0
+Specifications for Tables and Figures.
+
+
+
+
+17
+  Battelino T, Alexander CM, Amiel SA, Arreaza-Rubin G, Beck RW, Bergenstal RM, Buckingham BA, Carroll J,
+Ceriello A, Chow E, Choudhary P, Close K, Danne T, Dutta S, Gabbay R, Garg S, Heverly J, Hirsch IB, Kader T,
+Kenney J, Kovatchev B, Laffel L, Maahs D, Mathieu C, Mauricio D, Nimri R, Nishimura R, Scharf M, Del Prato S,
+Renard E, Rosenstock J, Saboo B, Ueki K, Umpierrez GE, Weinzimer SA, Phillip M., 2022, Continuous glucose
+monitoring and metrics for clinical trials: an international consensus statement., Lancet Diabetes Endocrinol.,
+11(1):42-57, doi: 10.1016/S2213-8587(22)00319-9.
+
+
+                                                      18
+                           Contains Nonbinding Recommendations
+
+
+
+
+              3.2.4   ADaM Paired Glucose Analysis Dataset
+
+This section describes an additional ADaM dataset used to generate a paired glucose analysis
+(herein referenced as the ‘ADGLUCPR’ dataset) that joins CGM epoch-level data and non-CGM
+glucose data. Of interest to FDA is the clarity in which epoch-level data captured by a CGM
+DHT can be assessed against non-CGM-derived glucose data in clinical investigations where the
+protocol specifies that non-CGM glucose data be collected concurrently with CGM epoch-level
+data. Relevant non-CGM glucose data may be collected remotely by the participant (e.g. glucose
+data collected with a glucometer or fingerstick) or on site by a venous blood draw at specified
+visits. Non-CGM glucose data are presented in the SDTM LB dataset and the ADaM dataset that
+summarize other laboratory results (referenced in this section as the ‘ADLB’).
+
+Joined CGM and non-CGM glucose data can complement reported CGM readings when the
+values of CGM and non-CGM data that are collected in a similar time window are aligned. To
+increase the effectiveness of the evaluation of CGM epoch-level data, a standalone ADaM
+ADGLUCPR dataset may be submitted. The sponsor may consult with the Agency to confirm
+whether the ADGLUCPR dataset is recommended as part of the CGM data submission for a
+given study.
+
+Non-CGM-derived glucose data may be specified in the protocol to be collected for calibration
+of the CGM DHT, for confirmation of a hyper- or hypoglycemic event based on an alert
+received, or for other reasons. When calibration of the CGM DHT is required, the participant
+may be able to manually input the non-CGM glucose reading into the CGM receiver. Similarly,
+when capturing non-CGM glucose data to assess predictive alert performance (i.e., to confirm a
+hyper- or hypoglycemic event), a participant may use non-CGM glucose data to confirm the
+accuracy of the CGM alert and to check whether the non-CGM glucose reading is in agreement
+with the generally accepted range of CGM readings collected over a certain time range. For
+example, if CGM is used to capture level 2 hypoglycemia and alerts the participant to CGM
+values less than 54 mg/dL, a participant may collect a confirmatory non-CGM glucose reading
+after an alert.
+
+The ADGLUCPR dataset presents CGM epoch-level data alongside non-CGM glucose data. The
+ADGLUCPR dataset may not fit within the ADaM BDS and is instead classified as ADaM
+OTHER. Unlike the ADCGM dataset shown in section 3.2.1 ADaM Epoch-Level Dataset that
+presents all epoch-level data, only the subset of epoch-level data that have a paired non-CGM
+glucose reading are included within the ADGLUCPR dataset. To identify paired glucose
+readings, it is recommended that the sponsor define a window for CGM readings in the SAP. For
+example, a timeframe of 5 to 30 minutes may be defined to assess how multiple CGM readings
+compare to a single non-CGM glucose reading. A larger window will increase the probability
+that at least one CGM reading can be identified within the window to compare against a
+corresponding non-CGM glucose reading. Assessing multiple CGM readings that occur within
+the defined window will illustrate how data is trending across multiple epoch-level assessment
+timepoints instead of viewing a single CGM reading at a point-in-time. To support traceability,
+the sponsor should submit the software program (source code) used to create the ADGLUCPR
+
+
+
+                                              19
+                             Contains Nonbinding Recommendations
+
+
+dataset, including the algorithm employed to pair the CGM epoch-level data and non-CGM
+glucose data.
+
+Table 5 contains specifications for the newly defined variables to be submitted within the
+ADGLUCPR dataset but does not include all variables to be submitted within an ADaM dataset.
+For example, variables from the ADaM ADSL dataset that enable demographic subgroup
+analysis (e.g., age, sex, race, ethnicity), variables that are used for stratification, and other
+covariates needed for analysis should also be provided within the ADGLUCPR dataset. An
+example ADGLUCPR dataset is provided in Appendix 6.4.
+
+Table 5. Specifications for ADGLUCPR Variables
+ Variable
+                Variable Label       Type     Comments
+ Name
+ NCGMPARM       Non-CGM              Char     The description of the non-CGM parameter that includes all
+                Parameter                     descriptive and qualifying information such as units needed to
+                                              interpret the numeric analysis value reported in NCGMVAL.
+ NCGMVAL        Non-CGM Value        Num      Numeric analysis value of the paired non-CGM glucose reading
+                                              reported within ADLB.AVAL.
+ NCGMCAy /      Non-CGM Value        Char /   Categorization variables used to categorize the non-CGM
+ NCGMCAyN       Category y /         Num      glucose readings reported within NCGMVAL. The sponsor may
+                Non-CGM Value                 use the same categories defined for the study as reported within
+                Category y (N)                the ADCGM dataset presented in Table 3. Specifications for a
+                                              Subset of ADCGM Variables.
+ NCGMDTM        Non-CGM              Num      Datetime of the non-CGM glucose readings reported within
+                Analysis Datetime             ADLB.ADTM using an appropriate display format.
+ NCGMID         Non-CGM              Char     Unique identifier for a non-CGM glucose value reported in
+                Identifier                    NCGMVAL at a distinct timepoint. NCGMID may be derived
+                                              or, to support datapoint traceability, may be populated based on
+                                              a unique identifier variable within the LB or ADLB dataset
+                                              (e.g., LBSEQ, LBSPID).
+ CGMPARM        CGM Parameter        Char     The description of the CGM parameter that includes all
+                                              descriptive and qualifying information such as units needed to
+                                              interpret the numeric analysis value reported in CGMVAL.
+ CGMVAL         CGM Value            Num      Numeric analysis value of the paired CGM glucose reading
+                                              reported within ADCGM.AVAL.
+ CGMCAy /       CGM Value            Char /   Categorization variables used to categorize the CGM readings
+ CGMCAyN        Category y /         Num      reported within CGMAVAL. The sponsor may use the same
+                CGM Value                     categories reported within the ADCGM dataset presented in
+                Category y (N)                Table 3. Specifications for a Subset of ADCGM Variables.
+ CGMDTM         CGM Datetime         Num      Datetime of individual epoch-level assessment timepoints using
+                                              an appropriate display format.
+ CGMID          CGM Identifier       Char     Unique identifier for a CGM glucose value reported in
+                                              CGMVAL at a distinct epoch-level timepoint. CGMID may be
+                                              derived or, to support datapoint traceability, may be populated
+                                              based on a unique identifier variable within the ADCGM
+                                              dataset.
+ ABSDIFF        Absolute             Num      Absolute difference of the CGM reading reported in CGMVAL
+                Difference                    and the non-CGM glucose reading reported in NCGMVAL.
+ PCTDIFF        Percent Difference   Num      Percent difference calculated using the Absolute Difference
+                                              (ABSDIFF) as the numerator and the non-CGM glucose reading
+                                              reported in NCGMVAL as the denominator.
+
+
+
+
+                                                    20
+                                Contains Nonbinding Recommendations
+
+    Variable
+                  Variable Label     Type   Comments
+    Name
+    DTMDIFF       Datetime           Char   Difference in datetime reported in minutes between the non-
+                  Difference                CGM datetime reported in NCGMDTM and the CGM datetime
+                                            reported in CGMDTM. Reported in ISO 8601 duration format.
+    CDTMFL        Closest Time       Char   Indicates the closest datetime as ‘Y’ based on the non-CGM
+                  Identifier Flag           datetime reported in NCGMDTM and the CGM datetime
+                                            reported in CGMDTM. Relevant when CGM readings across
+                                            multiple epochs map to a single non-CGM glucose reading
+                                            based on the defined window. If the closest datetime affects
+                                            multiple paired glucose records (i.e., the CGM value taken
+                                            before the non-CGM value is equidistant to the CGM value
+                                            taken after the non-CGM value), then CDTMFL is flagged as
+                                            ‘Y’ for each record.
+    CVALFL        Closest Value      Char   Indicates the closest value(s) as ‘Y’ of the non-CGM reading
+                  Identifier Flag           reported in NCGMVAL and the CGM reading reported in
+                                            CGMVAL. Relevant when CGM readings across multiple
+                                            epochs map to a single non-CGM glucose reading and based on
+                                            the smallest ABSDIFF value(s). If the closest value affects
+                                            multiple paired glucose records, then CVALFL is flagged as ‘Y’
+                                            for each record.
+
+4.0      SPECIFICATIONS FOR TABLES AND FIGURES
+
+In addition to the sponsor’s prespecified tables and figures presenting analyses for CGM-derived
+endpoints, the Agency recommends that the following be provided within the CSR to facilitate
+the evaluation of the CGM data.
+
+•     A data completeness summary table to represent the proportion of complete data for each
+      treatment arm and unit of time (e.g., day, week, month) for subjects who did not discontinue
+      CGM DHT during the study. Though multiple summaries may be created to represent
+      different units of time, it is recommended that a table be created to summarize data by the
+      primary analysis timing variable (e.g., AVISIT, ATPT, or another analysis timing variable).
+      An example table is provided in Appendix 6.5.
+
+•     A missing data summary table to represent the proportion of missing data for each treatment
+      arm and reason for missing data. An example table is provided in Appendix 6.5.
+
+•     Paired CGM and non-CGM visualization(s) to aid in the evaluation of paired glucose data
+      within the ADGLUCPR dataset when relevant to the study. For example, a visualization to
+      compare glucose categorizations (i.e., CGMCAy and NCGMCAy as presented in Table 5.
+      Specifications for ADGLUCPR Variables) may be useful.
+
+The sponsor may consult with the Agency for further clarity on the analyses to be submitted.
+
+
+
+
+                                                  21
+                            Contains Nonbinding Recommendations
+
+
+5.0    REFERENCES
+
+Battelino, T, CM Alexander, SA Amiel, G Arreaza-Rubin, RW Beck, RM Bergenstal, BA
+Buckingham, J Carroll, A Ceriello, E Chow, P Choudhary, K Close, T Danne, S Dutta, R
+Gabbay, S Garg, J Heverly, IB Hirsch, T Kader, J Kenney, B Kovatchev, L Laffel, D Maahs, C
+Mathieu, D Mauricio, R Nimri, R Nishimura, M Scharf, S Del Prato, E Renard, J Rosenstock, B
+Saboo, K Ueki, GE Umpierrez, SA Weinzimer, and M Phillip, 2022, Continuous glucose
+monitoring and metrics for clinical trials: an international consensus statement., Lancet Diabetes
+Endocrinol., 11(1):42-57.
+
+
+
+
+                                                22
+                           Contains Nonbinding Recommendations
+
+
+6.0 APPENDIX
+
+The example datasets in sections 6.1-6.4 below represent continuous glucose monitoring (CGM)
+datasets for steps of the CGM data flow for Study A, including the SDTM epoch-level dataset,
+the ADaM epoch-level dataset, and the ADaM final analysis dataset used to evaluate CGM-
+derived endpoints. In addition, a separate dataset is provided to summarize paired glucose data.
+In these examples, the epoch length of the CGM DHT is five minutes, resulting in CGM readings
+reported every five minutes within the SDTM LB dataset and the ADaM ADCGM dataset.
+Based on the example study protocol (not pictured), CGM is worn by participants in the clinical
+trial over a period of three months and the sensor is replaced every seven days.
+
+In this example, ADaM epoch-level data is submitted within the ADCGM dataset. Thus, the
+additional epoch-level timing variables are created as analysis variables within the ADCGM
+dataset and are shown in Table A2. Alternatively, additional epoch-level timing variables may be
+submitted in SDTM as non-standard variables within the SUPPLB dataset if an ADaM epoch-
+level dataset is not created for a study. The ADaM final analysis dataset (i.e., the ADCGMEN
+dataset) contains the CGM-derived endpoints. Within example Table A3, a single endpoint for
+time in range is shown. Per the study protocol (not pictured), at least 70% of epoch-level data
+should be valid observations (i.e., AVAL is not empty/null) to compute the CGM-derived
+endpoint for each subject and analysis visit within the ADCGMEN dataset.
+
+Note that the datasets below do not include all variables to be submitted within the SDTM and
+ADaM datasets, and the numeric CGM readings and other values within AVAL are provided for
+illustrative purposes only. In addition to the dataset examples, section 6.5 shows example tables
+and figures.
+
+       6.1     Example SDTM Laboratory Test Results Dataset (LB Dataset)
+
+Table A1 reports epoch-level data captured by the CGM DHT for a subset of CGM records for a
+single subject in the LB dataset. CGM readings are collected every five minutes as reflected by
+the frequency of datetime value shown in LBDTC. Because the subset of data shown in Table
+A1 is limited to CGM epoch-level data, LBMETHOD = ‘CGM’ is not shown in the example but
+is the same for all records in the subset. Scenarios displayed in Table A1 include:
+
+•   The patient began their second sensor session on January 8, 2024, at 8 AM on day 1 of the
+    study. The first sensor session, starting on LBDY = -7, comprised the weeklong baseline
+    period and is not shown in the subset. As noted in the study protocol (not pictured), the
+    warmup period for the CGM DHT at the start of each new sensor session has a duration of
+    approximately two hours. Thus, epoch-level data records from 8 AM to 9:55 AM (i.e., rows 1
+    through 24 in Table A1) do not have numeric CGM readings (i.e., LBORRES is empty/null).
+
+    o For the CGM DHT used in Study A, individual epoch-level records to indicate the
+      warmup period were collected and transmitted, and thus were submitted within the LB
+      dataset. For these records, LBSTAT = ‘NOT DONE’ and LBREASND = ‘WARMUP
+      PERIOD’.
+
+
+
+
+                                               23
+                            Contains Nonbinding Recommendations
+
+
+    o The first CGM reading is reported in Row 25 after the two-hour warmup period
+      concludes. CGM readings are reported for each epoch until the morning of day 8, ending
+      with Row 2022.
+
+•   The patient replaced the sensor and began their third sensor session on January 15, 2024, at 8
+    AM (day 8 of the study) as shown in Row 2023. Similar to the second sensor session, the
+    patient underwent a two-hour warmup period. Epoch-level data for the affected records show
+    LBSTAT = ‘NOT DONE’ and LBREASND = ‘WARMUP PERIOD’.
+
+    o The first CGM reading for the third sensor session is reported in Row 2047. CGM
+      readings are reported for each epoch until day 11 of the study when an unanticipated
+      event occurred for the CGM DHT.
+
+•   On day 11 of the study, January 18, 2024, at 12:15 PM, an early sensor termination event
+    occurred as shown in Row 2941. According to a subject diary populated by the subject
+    throughout the study (not pictured), the sensor was partially removed accidentally, which was
+    initially unknown to the subject for several hours.
+
+    o Between 12:15 PM and 3 PM on day 11 of the study (i.e., rows 2941 – 2974), the CGM
+      DHT consistently outputted an error code that indicated the sensor was not active. These
+      rows are present in the LB dataset for the affected epoch-level data since the error codes
+      are collected by the CGM DHT during the study, where LBSTAT = ‘NOT DONE’ and
+      LBREASND = ‘SENSOR NOT ACTIVE’.
+
+•   Around 3:12 PM on day 11 of the study, the subject replaced the sensor and commenced the
+    fourth sensor session. In Row 2975, the first epoch-level data row for the fourth sensor
+    session is reported. The subject underwent the two-hour warmup period starting at 3:12 PM
+    where the affected records show LBSTAT = ‘NOT DONE’ and LBREASND = ‘WARMUP
+    PERIOD’.
+
+•   CGM readings are reported for the fourth sensor session until the morning of day 18 shown
+    on Row 4912. At this time, the patient is supposed to immediately replace their sensor per the
+    study protocol, but the sensor was not replaced for several hours. Thus, the next epoch-level
+    data row is not reported until 4:35 PM when the fifth sensor session starts, commencing with
+    the warmup period as shown in Row 4913. Since no data was collected by the CGM DHT
+    between 8:38 AM and 4:34 PM, there are no rows reported in the SDTM LB dataset. Instead,
+    rows for missing data are added in the ADaM ADCGM dataset as shown in Table A2.
+
+
+
+
+                                                24
+                                                  Contains Nonbinding Recommendations
+
+
+  Note that in Table A1 color coding is used to separate the four sensor sessions illustrated within the table to aid in interpretation and
+  ease of understanding.
+
+6 Table A1. SDTM Epoch-Level Dataset Example
+
+   Row    USUBJID       LBTEST LBORRES LBORRESU  LBSTAT                              LBREASND                     LBDTC              LBDY
+   1      A_100_1       Glucose                 NOT DONE                           WARMUP PERIOD            2024-01-08T08:00:00      1
+   2      A_100_1       Glucose                 NOT DONE                           WARMUP PERIOD            2024-01-08T08:05:00      1
+   3      A_100_1       Glucose                 NOT DONE                           WARMUP PERIOD            2024-01-08T08:10:00      1
+   …                                                                               …
+   23     A_100_1       Glucose                                    NOT DONE        WARMUP PERIOD            2024-01-08T09:50:00      1
+   24     A_100_1       Glucose                                    NOT DONE        WARMUP PERIOD            2024-01-08T09:55:00      1
+   25     A_100_1       Glucose     165            mg/dL                                                    2024-01-08T10:00:00      1
+   26     A_100_1       Glucose     162            mg/dL                                                    2024-01-08T10:05:00      1
+   27     A_100_1       Glucose     167            mg/dL                                                    2024-01-08T10:10:00      1
+   28     A_100_1       Glucose     172            mg/dL                                                    2024-01-08T10:15:00      1
+   29     A_100_1       Glucose     176            mg/dL                                                    2024-01-08T10:20:00      1
+   …
+   49     A_100_1       Glucose     179            mg/dL                                                    2024-01-08T12:00:00      1
+   50     A_100_1       Glucose     181            mg/dL                                                    2024-01-08T12:05:00      1
+   51     A_100_1       Glucose     194            mg/dL                                                    2024-01-08T12:10:00      1
+   52     A_100_1       Glucose     187            mg/dL                                                    2024-01-08T12:15:00      1
+   …
+   66     A_100_1       Glucose     183            mg/dL                                                    2024-01-08T13:25:00 1
+   67     A_100_1       Glucose     175            mg/dL                                                    2024-01-08T13:30:00 1
+   68     A_100_1       Glucose     172            mg/dL                                                    2024-01-08T13:35:00 1
+   …
+   2022   A_100_1       Glucose     143            mg/dL                                                    2024-01-15T07:55:00      8
+   2023   A_100_1       Glucose                                    NOT DONE        WARMUP PERIOD            2024-01-15T08:00:00      8
+   2024   A_100_1       Glucose                                    NOT DONE        WARMUP PERIOD            2024-01-15T08:05:00      8
+   2025   A_100_1       Glucose                                    NOT DONE        WARMUP PERIOD            2024-01-15T08:10:00      8
+   …
+   2045   A_100_1       Glucose                                    NOT DONE        WARMUP PERIOD            2024-01-15T09:50:00 8
+
+
+                                                                      25
+                                  Contains Nonbinding Recommendations
+
+
+Row    USUBJID   LBTEST    LBORRES LBORRESU      LBSTAT        LBREASND            LBDTC           LBDY
+2046   A_100_1   Glucose                        NOT DONE     WARMUP PERIOD   2024-01-15T09:55:00   8
+2047   A_100_1   Glucose   140     mg/dL                                     2024-01-15T10:00:00   8
+2048   A_100_1   Glucose   147     mg/dL                                     2024-01-15T10:05:00   8
+2049   A_100_1   Glucose   139     mg/dL                                     2024-01-15T10:10:00   8
+…
+2938   A_100_1   Glucose   126     mg/dL                                     2024-01-18T12:00:00 11
+2939   A_100_1   Glucose   123     mg/dL                                     2024-01-18T12:05:00 11
+2940   A_100_1   Glucose   114     mg/dL                                     2024-01-18T12:10:00 11
+                                                             SENSOR NOT
+2941 A_100_1     Glucose                        NOT DONE                     2024-01-18T12:15:00 11
+                                                             ACTIVE
+                                                             SENSOR NOT
+2942 A_100_1     Glucose                        NOT DONE                     2024-01-18T12:20:00 11
+                                                             ACTIVE
+…
+                                                             SENSOR NOT
+2974 A_100_1     Glucose                        NOT DONE                     2024-01-18T15:00:00 11
+                                                             ACTIVE
+2975   A_100_1   Glucose                        NOT DONE     WARMUP PERIOD   2024-01-18T15:12:00 11
+2976   A_100_1   Glucose                        NOT DONE     WARMUP PERIOD   2024-01-18T15:17:00 11
+2977   A_100_1   Glucose                        NOT DONE     WARMUP PERIOD   2024-01-18T15:22:00 11
+…
+4808   A_100_1   Glucose   97      mg/dL                                     2024-01-24T23:57:00 17
+4809   A_100_1   Glucose   88      mg/dL                                     2024-01-25T00:02:00 18
+4810   A_100_1   Glucose   81      mg/dL                                     2024-01-25T00:07:00 18
+…
+4912   A_100_1   Glucose   94      mg/dL                                     2024-01-25T08:37:00 18
+4913   A_100_1   Glucose                        NOT DONE     WARMUP PERIOD   2024-01-25T16:35:00 18
+4914   A_100_1   Glucose                        NOT DONE     WARMUP PERIOD   2024-01-25T16:40:00 18
+
+
+
+
+                                                  26
+                             Contains Nonbinding Recommendations
+
+
+       6.2     Example ADaM CGM Epoch-Level Dataset (ADCGM Dataset)
+
+Table A2, shown in three parts, shows the ADaM ADCGM epoch-level dataset submitted as a
+basic data structure (BDS) for a single subject. Note that the scenarios displayed in Table A2
+align with the scenarios initially described in the SDTM epoch-level data shown in Table A1.
+The ordering of variables within the table is incidental to group similar variables for illustrative
+purposes and is not part of the specification for the ADCGM dataset.
+
+Within Table A2, Analysis Visit (AVISIT) is the key timing variable used for analysis in Study
+A. AVISIT is populated for rows in the ADCGM dataset by assigning consecutive epochs to a
+single AVISIT value according to the windowing schedule outlined within the statistical analysis
+plan (SAP) (not shown). Variables from the SDTM epoch-level dataset (e.g., LBDTC, LBSTAT,
+and LBREASND) are populated within the ADCGM dataset to support traceability. Note that
+since the participant in the example did not discontinue CGM use, the Datetime of
+Discontinuation from CGM (DCCGMDTM) is not shown within the subset. Additional variables
+used to support analysis include the following:
+
+Timing variables:
+
+•   Analysis Visit (AVISIT) is assigned by week (e.g., ‘Week 1’, ‘Week 2’) based on the
+    Analysis Relative Day (ADY) according to the Study A protocol (not pictured)
+
+•   Temporal Categorization 1 (ADTMCA1) categorizes epoch-level data as either ‘DIURNAL’
+    or ‘NOCTURNAL’ based on the windows used to indicate daytime and nighttime within the
+    study SAP (not pictured)
+
+•   The additional epoch-level timing variables are presented in Part 3 of Table A2 and include
+    Analysis Duration Elapsed from Midnight (AELPDUR), Analysis Elapsed Day (AELPDY),
+    Analysis Day of Week (ADYWK), Analysis Adjusted Date/Time (AADJDTC), Analysis
+    Hour (AHR), and Analysis Minute (AMN)
+
+Sensor-level variables:
+
+•   Per the ADaM Define-XML file (not shown), Sponsor Device Identifier (SPDEVID) is used
+    to identify each sensor. SPDEVID is populated for the collected epoch-level data to
+    differentiate CGM readings by sensor. Epoch-level data with identical SPDEVID values are
+    associated with the same CGM sensor session.
+
+•   Sensor First Record Flag (SENSFL) is populated as ‘Y’ to indicate the first epoch associated
+    with each new sensor session as shown in rows 1, 2023, 2975, and 5008.
+
+Categorization variables:
+
+•   Criteria variables are included to aid in the interpretation and categorization of CGM
+    readings reported within AVAL. Within Table A2, CRIT1 and CRIT1FL are included to
+    indicate hyperglycemia for individual CGM readings. Per the study protocol (not shown), a
+
+
+                                                  27
+                            Contains Nonbinding Recommendations
+
+
+    CGM reading is labeled hyperglycemic if it exceeds 180 mg/dL as shown in rows 50-66,
+    where CRIT1 = ‘Hyperglycemia (AVAL > 180)’ and CRIT1FL = ‘Y’ for the affected
+    records. Note that only the criteria variables relevant to the subset of CGM readings shown in
+    Table A2 are included in the example. Other criteria may be defined as needed within a study
+    based on the CGM-derived endpoints.
+
+Variables to support missing data:
+
+•   Derivation Type (DTYPE) is populated with ‘PHANTOM’ to represent rows for intermittent
+    missingness for epoch-level data that are missing from the LB dataset which affects rows
+    4913-5007.
+
+•   Analysis Reason Not Performed (AREASND) is populated with the reason that the CGM
+    reading is missing. For records where LBREASND is populated in the LB dataset,
+    LBREASND = AREASND. For the affected phantom records in rows 4913-5007, the value
+    of ‘PARTICIPANT FORGOT’ is populated based on participant diary data (not shown)
+    because the participant did not replace their sensor immediately after removing the old sensor
+    as specified in the protocol.
+
+    o Analysis Reason Category 1 (AREASCA1) categorizes reason as either ‘DHT-
+      CAUSED’ or ‘PARTICIPANT-CAUSED’.
+
+
+
+
+                                                28
+                                            Contains Nonbinding Recommendations
+
+
+7 Table A2. (Part 1) ADCGM Dataset Example
+
+   Row    USUBJID    PARAM        AVAL AVISIT         ADTM                              LBDTC         ADY   SENSFL
+   1      A_100_1 Glucose (mg/dL)      Week 1 08Jan2024 8:00:00 AM                2024-01-08T08:00:00 1     Y
+   2      A_100_1 Glucose (mg/dL)      Week 1 08Jan2024 8:05:00 AM                2024-01-08T08:05:00 1
+   3      A_100_1 Glucose (mg/dL)      Week 1 08Jan2024 8:10:00 AM                2024-01-08T08:10:00 1
+   …
+   23     A_100_1   Glucose (mg/dL)            Week 1   08Jan2024 9:50:00 AM      2024-01-08T09:50:00   1
+   24     A_100_1   Glucose (mg/dL)            Week 1   08Jan2024 9:55:00 AM      2024-01-08T09:55:00   1
+   25     A_100_1   Glucose (mg/dL)   165      Week 1   08Jan2024 10:00:00 AM     2024-01-08T10:00:00   1
+   26     A_100_1   Glucose (mg/dL)   162      Week 1   08Jan2024 10:05:00 AM     2024-01-08T10:05:00   1
+   27     A_100_1   Glucose (mg/dL)   167      Week 1   08Jan2024 10:10:00 AM     2024-01-08T10:10:00   1
+   28     A_100_1   Glucose (mg/dL)   172      Week 1   08Jan2024 10:15:00 AM     2024-01-08T10:15:00   1
+   29     A_100_1   Glucose (mg/dL)   176      Week 1   08Jan2024 10:20:00 AM     2024-01-08T10:20:00   1
+   …
+   49     A_100_1   Glucose (mg/dL)   179      Week 1   08Jan2024 12:00:00 PM     2024-01-08T12:00:00   1
+   50     A_100_1   Glucose (mg/dL)   181      Week 1   08Jan2024 12:05:00 PM     2024-01-08T12:05:00   1
+   51     A_100_1   Glucose (mg/dL)   194      Week 1   08Jan2024 12:10:00 PM     2024-01-08T12:10:00   1
+   52     A_100_1   Glucose (mg/dL)   187      Week 1   08Jan2024 12:15:00 PM     2024-01-08T12:15:00   1
+   …
+   66     A_100_1   Glucose (mg/dL) 183        Week 1   08Jan2024 1:25:00 PM      2024-01-08T13:25:00 1
+   67     A_100_1   Glucose (mg/dL) 175        Week 1   08Jan2024 1:30:00 PM      2024-01-08T13:30:00 1
+   68     A_100_1   Glucose (mg/dL) 172        Week 1   08Jan2024 1:35:00 PM      2024-01-08T13:35:00 1
+   …
+   2022   A_100_1   Glucose (mg/dL) 143        Week 2   15Jan2024 7:55:00 AM      2024-01-15T07:55:00   8
+   2023   A_100_1   Glucose (mg/dL)            Week 2   15Jan2024 8:00:00 AM      2024-01-15T08:00:00   8   Y
+   2024   A_100_1   Glucose (mg/dL)            Week 2   15Jan2024 8:05:00 AM      2024-01-15T08:05:00   8
+   2025   A_100_1   Glucose (mg/dL)            Week 2   15Jan2024 8:10:00 AM      2024-01-15T08:10:00   8
+   …
+   2045   A_100_1   Glucose (mg/dL)            Week 2   15Jan2024 9:50:00 AM      2024-01-15T09:50:00   8
+   2046   A_100_1   Glucose (mg/dL)            Week 2   15Jan2024 9:55:00 AM      2024-01-15T09:55:00   8
+   2047   A_100_1   Glucose (mg/dL) 140        Week 2   15Jan2024 10:00:00 AM     2024-01-15T10:00:00   8
+   2048   A_100_1   Glucose (mg/dL) 147        Week 2   15Jan2024 10:05:00 AM     2024-01-15T10:05:00   8
+
+
+                                                            29
+                                       Contains Nonbinding Recommendations
+
+
+Row    USUBJID    PARAM        AVAL AVISIT         ADTM                            LBDTC         ADY    SENSFL
+2049   A_100_1 Glucose (mg/dL) 139  Week 2 15Jan2024 10:10:00 AM             2024-01-15T10:10:00 8
+…
+2938   A_100_1   Glucose (mg/dL) 126      Week 2   18Jan2024 12:00:00 PM     2024-01-18T12:00:00   11
+2939   A_100_1   Glucose (mg/dL) 123      Week 2   18Jan2024 12:05:00 PM     2024-01-18T12:05:00   11
+2940   A_100_1   Glucose (mg/dL) 114      Week 2   18Jan2024 12:10:00 PM     2024-01-18T12:10:00   11
+2941   A_100_1   Glucose (mg/dL)          Week 2   18Jan2024 12:15:00 PM     2024-01-18T12:15:00   11
+2942   A_100_1   Glucose (mg/dL)          Week 2   18Jan2024 12:20:00 PM     2024-01-18T12:20:00   11
+…
+2974   A_100_1   Glucose (mg/dL)          Week 2   18Jan2024 3:00:00 PM      2024-01-18T15:00:00   11
+2975   A_100_1   Glucose (mg/dL)          Week 2   18Jan2024 3:12:00 PM      2024-01-18T15:12:00   11   Y
+2976   A_100_1   Glucose (mg/dL)          Week 2   18Jan2024 3:17:00 PM      2024-01-18T15:17:00   11
+2977   A_100_1   Glucose (mg/dL)          Week 2   18Jan2024 3:22:00 PM      2024-01-18T15:22:00   11
+…
+4808   A_100_1   Glucose (mg/dL) 97       Week 3   24Jan2024 11:57:00 PM     2024-01-24T23:57:00 17
+4809   A_100_1   Glucose (mg/dL) 88       Week 3   25Jan2024 12:02:00 AM     2024-01-25T00:02:00 18
+4810   A_100_1   Glucose (mg/dL) 81       Week 3   25Jan2024 12:07:00 AM     2024-01-25T00:07:00 18
+…
+4912   A_100_1   Glucose (mg/dL) 94       Week 3   25Jan2024 8:37:00 AM      2024-01-25T08:37:00 18
+4913   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 8:42:00 AM                          18
+4914   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 8:47:00 AM                          18
+4915   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 8:52:00 AM                          18
+4916   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 8:57:00 AM                          18
+…
+5007   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 4:32:00 PM                          18
+5008   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 4:35:00 PM      2024-01-25T16:35:00 18     Y
+5009   A_100_1   Glucose (mg/dL)          Week 3   25Jan2024 4:40:00 PM      2024-01-25T16:40:00 18
+
+
+
+
+                                                       30
+                                            Contains Nonbinding Recommendations
+
+
+Table A2. (Part 2) ADCGM Dataset Example
+   Row              SPDEVID                     CRIT1      CRIT1FL LBSTAT         LBREASND   ADTMCA1    AREASCA1
+                                                                   NOT            WARMUP
+   1     (01)1234567890123(21)S123(10)1.0                                                    DIURNAL   DHT-CAUSED
+                                                                   DONE           PERIOD
+                                                                   NOT            WARMUP
+   2     (01)1234567890123(21)S123(10)1.0                                                    DIURNAL   DHT-CAUSED
+                                                                   DONE           PERIOD
+                                                                   NOT            WARMUP
+   3     (01)1234567890123(21)S123(10)1.0                                                    DIURNAL   DHT-CAUSED
+                                                                   DONE           PERIOD
+   …                                                                              …
+         (01)1234567890123(21)S123(10)1.0                             NOT         WARMUP
+   23                                                                                        DIURNAL   DHT-CAUSED
+                                                                      DONE        PERIOD
+         (01)1234567890123(21)S123(10)1.0                             NOT         WARMUP
+   24                                                                                        DIURNAL   DHT-CAUSED
+                                                                      DONE        PERIOD
+   25    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   26    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   27    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   28    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   29    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   …
+   49    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+         (01)1234567890123(21)S123(10)1.0 Hyperglycemia
+   50                                                   Y                                    DIURNAL
+                                          (AVAL > 180)
+         (01)1234567890123(21)S123(10)1.0 Hyperglycemia
+   51                                                   Y                                    DIURNAL
+                                          (AVAL > 180)
+         (01)1234567890123(21)S123(10)1.0 Hyperglycemia
+   52                                                   Y                                    DIURNAL
+                                          (AVAL > 180)
+   …                                                                                         DIURNAL
+         (01)1234567890123(21)S123(10)1.0 Hyperglycemia
+   66                                                   Y                                    DIURNAL
+                                          (AVAL > 180)
+   67    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   68    (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+   …
+
+
+                                                            31
+                                          Contains Nonbinding Recommendations
+
+
+Row             SPDEVID                       CRIT1      CRIT1FL LBSTAT LBREASND          ADTMCA1    AREASCA1
+2022 (01)1234567890123(21)S123(10)1.0                                                    DIURNAL
+                                                                    NOT         WARMUP
+2023 (01)1234567890123(21)S123(10)2.0                                                    DIURNAL    DHT-CAUSED
+                                                                    DONE        PERIOD
+       (01)1234567890123(21)S123(10)2.0                             NOT         WARMUP
+2024                                                                                     DIURNAL    DHT-CAUSED
+                                                                    DONE        PERIOD
+       (01)1234567890123(21)S123(10)2.0                             NOT         WARMUP
+2025                                                                                     DIURNAL    DHT-CAUSED
+                                                                    DONE        PERIOD
+…                                                                                        DIURNAL
+       (01)1234567890123(21)S123(10)2.0                             NOT         WARMUP
+2045                                                                                     DIURNAL    DHT-CAUSED
+                                                                    DONE        PERIOD
+       (01)1234567890123(21)S123(10)2.0                             NOT         WARMUP
+2046                                                                                     DIURNAL    DHT-CAUSED
+                                                                    DONE        PERIOD
+2047   (01)1234567890123(21)S123(10)2.0                                                  DIURNAL
+2048   (01)1234567890123(21)S123(10)2.0                                                  DIURNAL
+2049   (01)1234567890123(21)S123(10)2.0                                                  DIURNAL
+…                                                                                        DIURNAL
+2938   (01)1234567890123(21)S123(10)2.0                                                  DIURNAL
+2939   (01)1234567890123(21)S123(10)2.0                                                  DIURNAL
+2940   (01)1234567890123(21)S123(10)2.0                                                  DIURNAL
+       (01)1234567890123(21)S123(10)2.0                                         SENSOR
+                                                                    NOT
+2941                                                                            NOT      DIURNAL    DHT-CAUSED
+                                                                    DONE
+                                                                                ACTIVE
+       (01)1234567890123(21)S123(10)2.0                                         SENSOR
+                                                                    NOT
+2942                                                                            NOT      DIURNAL    DHT-CAUSED
+                                                                    DONE
+                                                                                ACTIVE
+…
+                                                                                SENSOR
+                                                                    NOT
+2974 (01)1234567890123(21)S123(10)2.0                                           NOT      DIURNAL    DHT-CAUSED
+                                                                    DONE
+                                                                                ACTIVE
+                                                                    NOT         WARMUP
+2975 (01)1234567890123(21)S123(10)3.0                                                    DIURNAL    DHT-CAUSED
+                                                                    DONE        PERIOD
+
+
+
+                                                          32
+                                          Contains Nonbinding Recommendations
+
+
+Row               SPDEVID                     CRIT1      CRIT1FL LBSTAT         LBREASND ADTMCA1      AREASCA1
+       (01)1234567890123(21)S123(10)3.0                          NOT            WARMUP
+2976                                                                                     DIURNAL     DHT-CAUSED
+                                                                 DONE           PERIOD
+       (01)1234567890123(21)S123(10)3.0                          NOT            WARMUP
+2977                                                                                     DIURNAL     DHT-CAUSED
+                                                                 DONE           PERIOD
+…
+4808   (01)1234567890123(21)S123(10)3.0                                                  NOCTURNAL
+4809   (01)1234567890123(21)S123(10)3.0                                                  NOCTURNAL
+4810   (01)1234567890123(21)S123(10)3.0                                                  NOCTURNAL
+…
+4912   (01)1234567890123(21)S123(10)3.0                                                  DIURNAL
+                                                                                                     PARTICIPANT-
+4913                                                                                     DIURNAL
+                                                                                                     CAUSED
+                                                                                                     PARTICIPANT-
+4914                                                                                     DIURNAL
+                                                                                                     CAUSED
+                                                                                                     PARTICIPANT-
+4915                                                                                     DIURNAL
+                                                                                                     CAUSED
+                                                                                                     PARTICIPANT-
+4916                                                                                     DIURNAL
+                                                                                                     CAUSED
+…
+                                                                                                     PARTICIPANT-
+5007                                                                                     DIURNAL
+                                                                                                     CAUSED
+                                                                    NOT         WARMUP
+5008 (01)1234567890123(21)S123(10)5.0                                                    DIURNAL     DHT-CAUSED
+                                                                    DONE        PERIOD
+                                                                    NOT         WARMUP
+5009 (01)1234567890123(21)S123(10)5.0                                                    DIURNAL     DHT-CAUSED
+                                                                    DONE        PERIOD
+
+
+
+
+                                                          33
+                                           Contains Nonbinding Recommendations
+
+
+Table A2. (Part 3) ADCGM Dataset Example
+   Row     DTYPE       AREASND               AELPDUR             AADJDTM           AELPDY   AHR   AMN   ADYWK
+   1                 WARMUP PERIOD         P0DT8H0M        08Jan2024 8:00:00 AM    0        8     00    Monday
+   2                 WARMUP PERIOD         P0DT8H5M        08Jan2024 8:05:00 AM    0        8     05    Monday
+   3                 WARMUP PERIOD         P0DT8H10M       08Jan2024 8:10:00 AM    0        8     10    Monday
+   …                 …
+   23                WARMUP PERIOD         P0DT9H50M       08Jan2024 9:50:00 AM    0        9     50    Monday
+   24                WARMUP PERIOD         P0DT9H55M       08Jan2024 9:55:00 AM    0        9     55    Monday
+   25                                      P0DT10H0M       08Jan2024 10:00:00 AM   0        10    00    Monday
+   26                                      P0DT10H5M       08Jan2024 10:05:00 AM   0        10    05    Monday
+   27                                      P0DT10H10M      08Jan2024 10:10:00 AM   0        10    10    Monday
+   28                                      P0DT10H15M      08Jan2024 10:15:00 AM   0        10    15    Monday
+   29                                      P0DT10H20M      08Jan2024 10:20:00 AM   0        10    20    Monday
+   …
+   49                                      P0DT12H0M       08Jan2024 12:00:00 PM   0        12    00    Monday
+   50                                      P0DT12H5M       08Jan2024 12:05:00 PM   0        12    05    Monday
+   51                                      P0DT12H10M      08Jan2024 12:10:00 PM   0        12    10    Monday
+   52                                      P0DT12H15M      08Jan2024 12:15:00 PM   0        12    15    Monday
+   …
+   66                                      P0DT13H25M      08Jan2024 1:25:00 PM    0        13    25    Monday
+   67                                      P0DT13H30M      08Jan2024 1:30:00 PM    0        13    30    Monday
+   68                                      P0DT13H35M      08Jan2024 1:35:00 PM    0        13    35    Monday
+   …
+   2022                                    P7DT7H55M       15Jan2024 7:55:00 AM    7        7     55    Monday
+   2023              WARMUP PERIOD         P7DT8H0M        15Jan2024 8:00:00 AM    7        8     00    Monday
+   2024              WARMUP PERIOD         P7DT8H5M        15Jan2024 8:05:00 AM    7        8     05    Monday
+   2025              WARMUP PERIOD         P7DT8H10M       15Jan2024 8:10:00 AM    7        8     10    Monday
+   …
+   2045              WARMUP PERIOD         P7DT9H50M       15Jan2024 9:50:00 AM    7        9     50    Monday
+   2046              WARMUP PERIOD         P7DT9H55M       15Jan2024 9:55:00 AM    7        9     55    Monday
+   2047                                    P7DT10H0M       15Jan2024 10:00:00 AM   7        10    00    Monday
+   2048                                    P7DT10H5M       15Jan2024 10:05:00 AM   7        10    05    Monday
+
+
+                                                           34
+                               Contains Nonbinding Recommendations
+
+
+Row    DTYPE      AREASND        AELPDUR             AADJDTM           AELPDY   AHR   AMN ADYWK
+2049                           P7DT10H10M      15Jan2024 10:10:00 AM   7        10    10  Monday
+…
+2938                           P10DT12H0M      18Jan2024 12:00:00 PM   10       12    00   Thursday
+2939                           P10DT12H5M      18Jan2024 12:05:00 PM   10       12    05   Thursday
+2940                           P10DT12H10M     18Jan2024 12:10:00 PM   10       12    10   Thursday
+               SENSOR NOT
+2941                           P10DT12H15M     18Jan2024 12:15:00 PM   10       12    15   Thursday
+               ACTIVE
+               SENSOR NOT
+2942                           P10DT12H20M     18Jan2024 12:20:00 PM   10       12    20   Thursday
+               ACTIVE
+…
+               SENSOR NOT
+2974                           P10DT15H0M      18Jan2024 3:00:00 PM    10       15    00   Thursday
+               ACTIVE
+2975           WARMUP PERIOD   P10DT15H12M     18Jan2024 3:12:00 PM    10       15    12   Thursday
+2976           WARMUP PERIOD   P10DT15H17M     18Jan2024 3:17:00 PM    10       15    17   Thursday
+2977           WARMUP PERIOD   P10DT15H22M     18Jan2024 3:22:00 PM    10       15    22   Thursday
+…
+                                                                                           Wednesd
+4808                           P16DT23H57M     24Jan2024 11:57:00 PM   16       23    57
+                                                                                           ay
+4809                           P17DT0H2M       25Jan2024 12:02:00 AM   17       0     2    Thursday
+4810                           P17DT0H7M       25Jan2024 12:07:00 AM   17       0     7    Thursday
+…
+4912                           P17DT8H37M      25Jan2024 8:37:00 AM    17       8     37   Thursday
+               PARTICIPANT
+4913 PHANTOM                   P17DT8H42M      25Jan2024 8:42:00 AM    17       8     42   Thursday
+               FORGOT
+               PARTICIPANT
+4914 PHANTOM                   P17DT8H47M      25Jan2024 8:47:00 AM    17       8     47   Thursday
+               FORGOT
+               PARTICIPANT
+4915 PHANTOM                   P17DT8H52M      25Jan2024 8:52:00 AM    17       8     52   Thursday
+               FORGOT
+               PARTICIPANT
+4916 PHANTOM                   P17DT8H57M      25Jan2024 8:57:00 AM    17       8     57   Thursday
+               FORGOT
+…
+
+
+
+                                               35
+                                               Contains Nonbinding Recommendations
+
+
+   Row          DTYPE       AREASND               AELPDUR                AADJDTM              AELPDY       AHR     AMN ADYWK
+                         PARTICIPANT
+   5007 PHANTOM                                 P17DT16H32M       25Jan2024 4:32:00 PM        17           16      32      Thursday
+                         FORGOT
+   5008                  WARMUP PERIOD          P17DT16H35M       25Jan2024 4:35:00 PM        17           16      35      Thursday
+   5009                  WARMUP PERIOD          P17DT16H40M       25Jan2024 4:40:00 PM        17           16      40      Thursday
+
+
+          6.3     Example ADaM Final Analysis Dataset (ADCGMEN Dataset)
+
+  Table A3 reports the final analysis dataset for the CGM-derived endpoints within a study. Within this example, a single CGM-derived
+  endpoint for time in range is shown, where time in range is defined in the study documentation (not shown) as the percentage of
+  epoch-level data within the target glucose range of 70-180 mg/dL. Within the ADCGMEN dataset, epoch-level data is collapsed based
+  on AVISIT, which serves as the primary analysis timing variable for Study A; thus, individual epoch-level timepoints are omitted
+  from the ADCGMEN dataset. Within the example, AVISIT is aggregated by week and a subset of the first four weeks of the study are
+  shown for a single subject.
+
+  As defined in Table 4. Specifications for a Subset of ADCGMEN Variables and discussed in section 3.2.3.2 Handling of Missing
+  ADaM Final Analysis Data, additional variables to support data quality are provided within the ADCGMEN dataset. Within the
+  example, Valid Epochs (VALIDEPC) reports the total number of valid epochs for each AVISIT value and excludes epochs with
+  null/empty CGM readings due to warmup periods or other CGM DHT issues. The Valid Percentage Expected (VALIDPCE) is
+  calculated using VALIDEPC as the numerator and the total expected number of records by week as the denominator. In Study A, the
+  denominator is calculated based on a five-minute epoch; thus, 288 epochs per day x 7 days a week = 2,016 expected epochs per week.
+  Analysis Criterion and Criterion Evaluation Result Flag variables are used to indicate when the prespecified threshold of 70% is not
+  met. Note that within Table A3 for AVISIT = ‘Week 2’ (Row 2), only 1,403 epochs (69.59%) were used to calculate time in range. In
+  this example, AVAL is calculated even though 70% of epoch-level data was not available for Week 2, and CRIT1FL is set to ‘Y’.
+
+8Table A3. Final Analysis Dataset Example
+
+   Row     USUBJID          PARAM               AVAL        AVISIT      VALIDEPC VALIDPTE     CRIT1      CRIT1FL
+   1      A_100_1       Time in Range (%)    81.52890958    Week 1      1789     88.74%
+   2      A_100_1       Time in Range (%)    88.41372209    Week 2      1403     69.59%   VALIDPCT < 70% Y
+   3      A_100_1       Time in Range (%)    91.58240647    Week 3      1817     90.13%
+   4      A_100_1       Time in Range (%)    90.09487666    Week 4      1802     89.38%
+
+
+
+                                                                   36
+                           Contains Nonbinding Recommendations
+
+
+       6.4    Example ADaM Paired Glucose Analysis Dataset (ADGLUCPR Dataset)
+
+Table A4, Parts 1 and 2, shows an example ADGLUCPR dataset that joins CGM epoch-level
+data with non-CGM glucose data as presented in section 3.2.4 ADaM Paired Glucose Analysis
+Dataset. Within Study A, a 15-minute window is defined in the SAP (not shown) such that CGM
+readings, for a minimum of 15 minutes before and after the non-CGM reading, are reported for
+each non-CGM reading within the ADGLUCPR dataset. Table A4 shows two primary scenarios
+within Rows 1-8 and by rows 9-16. Color coding is used to differentiate each scenario. Details
+for each scenario are described below:
+
+•   Rows 1-8 show the scenario where a non-CGM reading was taken on January 20, 2024, at
+    12:08 PM with a result of 186 mg/dL. Since the value exceeds the normal range of 180
+    mg/dL, NCGMCA1 = ‘HYPERGLYCEMIA’ for all non-CGM records.
+
+       o When creating the ADGLUCPR dataset, a minimum of 15 minutes on either side of
+         the 12:08 PM timestamp results in the subset of CGM readings collected from 11:50
+         AM through 12:25 PM. The results on these epochs are reported in CGMVAL with
+         the datetime reported in CGMDTM.
+
+       o CGMCA1 categorized the CGM readings based on the SAP (not shown) such that
+         records within the target range of 70-180 mg/dL are considered ‘normal’. Records
+         below 70 are considered ‘hypoglycemia’ and those below 54 are considered ‘severe
+         hypoglycemia’. Records above 180 are considered ‘hyperglycemia’ and those above
+         250 are considered ‘severe hyperglycemia’. Ranges and indicators should be clearly
+         defined in the study SAP with supporting literature to define appropriate values.
+
+                 Within the example, CGMCA1 = ‘HYPERGLYCEMIA’ for the CGM
+                  readings occurring between 12:05 PM and 12:20 PM.
+
+       o Additional analysis variables presented in Table 5. Specifications for a Subset of
+         ADGLUCPR Variables are also populated.
+
+                 Absolute Difference (ABDIFF), Percent Difference (PCTDIFF), and Datetime
+                  Difference (DTMDIFF) are populated for all rows.
+
+                 Closest Time Identifier (CDTMFL) is populated as ‘Y’ in Row 5 to indicate
+                  the CGM record captured closest in time to the non-CGM glucose record.
+
+                 Closest Value Identifier (CVALFL) is populated as ‘Y’ in rows 4 and 7 to
+                  indicate the CGM record captured closest in value to the non-CGM glucose
+                  record. In this example, there are two records where CGMVAL = 183 mg/dL
+                  which is the closest value captured to the non-CGM glucose value of 186
+                  mg/dL.
+
+
+
+
+                                              37
+                           Contains Nonbinding Recommendations
+
+
+•   Rows 9-16 represent a second scenario where an non-CGM glucose reading was taken on
+    January 20, 2024, at 12:31 PM with a result of 170 mg/dL. Since the value no longer exceeds
+    the normal range of 180 mg/dL, NCGMCA1 = ‘NORMAL’ for all records.
+
+       o When creating the ADGLUCPR dataset, a minimum of 15 minutes on either side of
+         the 12:31 PM timestamp results in epochs collected from 12:15 PM through 12:50
+         PM. The results on these epochs are reported in CGMVAL with the datetime reported
+         in CGMDTM.
+
+       o Similar variables are populated as described in scenario 1 for rows 1-8.
+
+
+
+
+                                              38
+                                        Contains Nonbinding Recommendations
+
+
+        o
+
+9Table A4. (Part 1) ADGLUCPR Dataset Example
+
+  Row USUBJID NCGMPARM NCGMVAL       NCGMCA1         NCGMDTM          NCGMID CGMPARM CGMVAL
+  1   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 161
+  2   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 172
+  3   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 177
+  4   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 183
+  5   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 195
+  6   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 190
+  7   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 183
+  8   A_100_1 Glucose (mg/dL) 186 HYPERGLYCEMIA 20Jan2024 12:08:00 PM 1     Glucose (mg/dL) 175
+  9   A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 190
+  10  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 183
+  11  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 175
+  12  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 172
+  13  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 169
+  14  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 167
+  15  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 168
+  16  A_100_1 Glucose (mg/dL) 170 NORMAL        20Jan2024 12:31:00 PM 2     Glucose (mg/dL) 164
+
+
+ Table A4. (Part 2) ADGLUCPR Dataset Example
+  Row CGMVAL    CGMCA1           CGMDTM          CGMID ABSDIFF PCTDIFF DTMDIFF CDTMFL CVALFL
+  1   161    NORMAL        20Jan2024 11:50:00 AM 1     25      13.44   PT18M
+  2   172    NORMAL        20Jan2024 11:55:00 AM 2     14      7.53    PT13M
+  3   177    NORMAL        20Jan2024 12:00:00 PM 3     9       4.84    PT8M
+  4   183    HYPERGLYCEMIA 20Jan2024 12:05:00 PM 4     3       1.61    PT3M           Y
+  5   195    HYPERGLYCEMIA 20Jan2024 12:10:00 PM 5     9       4.84    PT2M    Y
+  6   190    HYPERGLYCEMIA 20Jan2024 12:15:00 PM 6     4       2.15    PT7M
+
+
+
+                                                        39
+                                            Contains Nonbinding Recommendations
+
+
+Row CGMVAL    CGMCA1           CGMDTM          CGMID ABSDIFF PCTDIFF DTMDIFF CDTMFL CVALFL
+7   183    HYPERGLYCEMIA 20Jan2024 12:20:00 PM 7     3       1.61    PT12M          Y
+8   175    NORMAL        20Jan2024 12:25:00 PM 8     11      5.91    PT17M
+9   190    HYPERGLYCEMIA 20Jan2024 12:15:00 PM 6     20      11.76   PT16M
+10  183    HYPERGLYCEMIA 20Jan2024 12:20:00 PM 7     13      7.65    PT11M
+11  175    NORMAL        20Jan2024 12:25:00 PM 8     5       2.94    PT6M
+12  172    NORMAL        20Jan2024 12:30:00 PM 9     2       1.18    PT1M    Y
+13  169    NORMAL        20Jan2024 12:35:00 PM 10    1       0.59    PT4M           Y
+14  167    NORMAL        20Jan2024 12:40:00 PM 11    3       1.76    PT9M
+15  168    NORMAL        20Jan2024 12:45:00 PM 12    2       1.18    PT14M
+16  164    NORMAL        20Jan2024 12:50:00 PM 13    6       3.53    PT19M
+
+
+       6.5    Example Tables and Figures
+
+Tables A5 and A6 show examples of data summary tables for Study A as described in section 4.0 Specifications for Tables and
+Figures. Within Table A5, the data completeness summary by planned treatment arm and Analysis Visit (AVISIT) is shown for weeks
+1-4 while participants remain in the trial with active CGM use. Table A5 may be created using the ADCGMEN dataset (described in
+section 3.2.3 ADaM Final Analysis Dataset and shown in Appendix 6.3) or the ADCGM dataset (described in section 3.2.1 ADaM
+Epoch-Level Dataset and shown in Appendix 6.2). The dataset(s) used to create Table A5 should be clearly labeled in the submitted
+software programs (source code). Within Table A5, ‘n’ aligns with the total number of CGM readings present within the epoch-level
+data by treatment arm and AVISIT. For example, this may be calculated by totaling the number of rows where AVAL is not
+empty/null across participants by treatment arm and AVISIT in the ADCGM dataset, or by totaling values for Valid Epochs
+(VALIDEPC) across participants by treatment arm and AVISIT in the ADCGMEN dataset. The percentage (%) is calculated using ‘n’
+as the numerator and the total number of expected epochs as the denominator for participants who remained in the trial with active
+CGM use. For example, the denominator may be calculated by totaling the number of rows across participants by treatment arm and
+AVISIT in the ADCGM dataset, or by totaling values for denominator used in calculating Valid Percentage Expected (VALIDPTE) in
+the ADCGMEN dataset across participants by treatment arm and AVISIT.
+
+
+
+
+                                                                40
+                                  Contains Nonbinding Recommendations
+
+
+10 Table A5. Data Completeness Summary by Treatment Arm and Analysis Visit
+            Analysis Visit                           Treatment                              Placebo
+              Week 1                                   n (%)                                 n (%)
+              Week 2                                   n (%)                                 n (%)
+              Week 3                                   n (%)                                 n (%)
+              Week 4                                   n (%)                                 n (%)
+
+  Table A6 shows a missing data summary by planned treatment arm and reason to summarize
+  which reason(s) contributes to the most amount of missing data. The table is derived using the
+  ADCGM dataset (described in section 3.2.1 ADaM Epoch-Level Dataset and shown in Appendix
+  6.2). Reason is based on values of the Analysis Reason Not Performed (AREASND) variable or
+  the Reason Not Performed (LBREASND) variable within the ADCGM dataset. Within Table
+  A6, ‘n’ aligns with the total number of missing CGM readings within the epoch-level data by
+  treatment arm and reason. For example, this may be calculated by totaling the number of rows
+  where AVAL is empty/null across participants by treatment arm and reason in the ADCGM
+  dataset. The percentage (%) is calculated using ‘n’ as the numerator and the total number of
+  expected epochs as the denominator. For example, the denominator may be calculated by
+  totaling the number of rows across participants by treatment arm and reason in the ADCGM
+  dataset.
+
+11 Table A6. Missing Data Summary by Treatment Arm and Reason
+                    Reason 1                                      Treatment                        Placebo
+          Delay in Sensor Replacement                               n (%)                           n (%)
+          Accidental Sensor Removal                                 n (%)                           n (%)
+            Data Transmission Issue                                 n (%)                           n (%)
+              Data Upload Failure                                   n (%)                           n (%)
+           Other File Corruption Issue                              n (%)                           n (%)
+               Reason Unknown                                       n (%)                           n (%)
+
+
+
+
+  1
+   The reasons for the missing epoch-level data shown in Table A6 are provided in the table as examples. The reason
+  CGM data is missing should be provided based on collected data within the study. All reasons for noncompletion
+  collected during the study should be included within the submitted table.
+
+
+                                                         41
+

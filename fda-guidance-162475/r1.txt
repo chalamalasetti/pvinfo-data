@@ -1,0 +1,2297 @@
+  In Vitro Permeation
+Test Studies for Topical
+     Drug Products
+ Submitted in ANDAs
+              Guidance for Industry
+                              DRAFT GUIDANCE
+       This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (CDER) Susan Levine at 240-402-7936.
+
+
+
+
+                     U.S. Department of Health and Human Services
+                             Food and Drug Administration
+                    Center for Drug Evaluation and Research (CDER)
+
+                                       October 2022
+                                       Generic Drugs
+  In Vitro Permeation
+Test Studies for Topical
+     Drug Products
+ Submitted in ANDAs
+   Guidance for Industry
+                        Additional copies are available from:
+              Office of Communications, Division of Drug Information
+                      Center for Drug Evaluation and Research
+                           Food and Drug Administration
+               10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                           Silver Spring, MD 20993-0002
+             Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                           Email: druginfo@fda.hhs.gov
+   https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+            U.S. Department of Health and Human Services
+                    Food and Drug Administration
+           Center for Drug Evaluation and Research (CDER)
+
+                                   October 2022
+                                   Generic Drugs
+                                             Contains Nonbinding Recommendations
+                                                         Draft — Not for Implementation
+                                                         TABLE OF CONTENTS
+
+
+
+I.           INTRODUCTION............................................................................................................. 1
+II.          BACKGROUND ............................................................................................................... 2
+III.         IVPT METHOD DEVELOPMENT ............................................................................... 3
+     A.      IVPT Method Parameters ............................................................................................................. 4
+     B.      IVPT Method Considerations ....................................................................................................... 4
+     C.      IVPT Method Procedures and Controls ...................................................................................... 5
+     D.      IVPT Skin Barrier Integrity Testing: Common Methods .......................................................... 6
+       1. Trans-Epidermal Water Loss Skin Barrier Integrity Test ................................................................ 6
+       2. Tritiated Water Skin Barrier Integrity Test...................................................................................... 7
+       3. Electrical Based Skin Barrier Integrity Tests .................................................................................. 8
+     E. IVPT Skin Barrier Integrity Testing: General Considerations ................................................. 9
+     F.      Differences Between IVPT Method Development and Validation .......................................... 10
+          1. Optimization of an IVPT Method Prior to Advancing to IVPT Method Validation....................... 10
+          2. Use of a Validated Sample Analytical Method for IVPT Method Validation ................................ 10
+IV.          IVPT METHOD VALIDATION ................................................................................... 11
+     A.      Equipment Qualification ............................................................................................................. 12
+     B.      Membrane (Skin) Qualification .................................................................................................. 13
+     C.      Receptor Solution Qualification ................................................................................................. 13
+     D.      Receptor Solution Sampling Qualification ................................................................................ 14
+     E.      Environmental Control ............................................................................................................... 14
+     F.      Permeation Profile and Range .................................................................................................... 14
+     G.      Precision and Reproducibility .................................................................................................... 14
+     H.      Dose Depletion .............................................................................................................................. 15
+     I.      Discrimination Sensitivity and Selectivity ................................................................................. 15
+       1. IVPT Sensitivity.............................................................................................................................. 15
+       2. IVPT Selectivity.............................................................................................................................. 18
+     J. Robustness .................................................................................................................................... 18
+V.           SAMPLE ANALYTICAL METHOD VALIDATION ................................................ 19
+VI.          IVPT PIVOTAL STUDY ............................................................................................... 20
+     A.      Handling and Retention of Samples ........................................................................................... 20
+     B.      Control of Study Procedures....................................................................................................... 20
+     C.      Blinding Procedure ...................................................................................................................... 22
+     D.      Randomization ............................................................................................................................. 22
+                                          Contains Nonbinding Recommendations
+                                                       Draft — Not for Implementation
+   E.    Dosing............................................................................................................................................ 22
+   F.    Study Design ................................................................................................................................. 22
+   G.    Inclusion Criteria ......................................................................................................................... 23
+   H.    Exclusion Criteria ........................................................................................................................ 23
+   I.    IVPT Endpoints ........................................................................................................................... 24
+VII. SUBMITTING INFORMATION ON IVPT STUDIES IN AN ANDA ......................... 25
+VIII. IVPT PIVOTAL STUDY STATISTICAL ANALYSIS .............................................. 25
+APPENDIX I (EXAMPLE SAS CODE) ................................................................................... 29
+APPENDIX II (NUMERICAL EXAMPLES) .......................................................................... 34
+APPENDIX III (EXAMPLE R CODE) .................................................................................... 38
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+
+ 1          In Vitro Permeation Test Studies for Topical Drug Products
+ 2                            Submitted in ANDAs
+ 3                           Guidance for Industry 1
+ 4
+ 5
+ 6   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 7   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+ 8   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+ 9   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+10   for this guidance as listed on the title page.
+11
+12
+13
+14
+15   I.       INTRODUCTION
+16
+17   This guidance is intended to assist applicants who are submitting abbreviated new drug
+18   applications (ANDAs) for liquid-based and/or other semisolid products applied to the skin,
+19   including integumentary and mucosal (e.g., vaginal) membranes, which are hereinafter called
+20   “topical products.” 2 Because of the complex route of delivery associated with these products,
+21   which are typically locally acting, and the potential complexity of certain formulations, topical
+22   products (other than topical solutions) are classified as complex products. 3 This guidance
+23   provides recommendations for in vitro permeation test (IVPT) studies comparing a proposed
+24   generic (test) topical product and its reference standard (RS) for the purpose of supporting a
+25   demonstration of bioequivalence (BE) to the reference listed drug (RLD). The reference standard
+26   ordinarily is the RLD. 4
+27
+
+
+     1
+       This guidance has been prepared by the Office of Generic Drugs in the Center for Drug Evaluation and Research
+     at the Food and Drug Administration.
+     2
+       Topical products in ANDAs within the scope of this guidance include ointments, creams, lotions, emulsions,
+     pastes, shampoos, gels, suspensions, sprays, aerosols, foams, solutions and other semisolid and/or liquid-based
+     dosage forms dispensed with a structured arrangement of matter (which may include more than one phase state).
+     3
+       A complex product, as defined in the GDUFA Reauthorization Performance Goals and Program Enhancements
+     Fiscal Years 2023–2027 (GDUFA III Commitment Letter) (accessible at
+     https://www.fda.gov/media/153631/download, includes, among others, products with complex formulations (e.g.,
+     colloids) and complex routes of delivery (e.g., locally acting drugs such as dermatological products).
+     4
+       A reference listed drug “is the listed drug identified by FDA as the drug product upon which an applicant relies in
+     seeking approval of its ANDA.” 21 CFR 314.3(b). A reference standard, which is selected by FDA, is the specific
+     drug product that the ANDA applicant must use in conducting any in vivo bioequivalence testing required to support
+     approval of its ANDA. See § 314.3(b). We recommend that the reference standard also be used for in vitro testing.
+     There may be circumstances (e.g., when the RLD is no longer marketed) in which the reference standard is a drug
+     product other than the RLD. For more information on RLD and reference standard products, see the guidance for
+     industry Referencing Approved Drug Products in ANDA Submissions (October 2020). We update guidances
+     periodically. For the most recent version of a guidance, check the FDA guidance web page at
+     https://www.fda.gov/regulatory-information/search-fda-guidance-documents
+
+
+
+                                                              1
+                                     Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+28   This guidance does not address drug products that are administered via ophthalmic, otic, nasal,
+29   inhalation, oral, or injection-based routes, or that are transdermal or topical delivery systems
+30   (including products known as patches, topical patches, or extended release films).
+31
+32   It is beyond the scope of this guidance to discuss specific topical products to which this guidance
+33   applies. FDA recommends that applicants consult this guidance and any relevant product-
+34   specific guidances (PSGs) 5 and any other relevant guidances for industry, 6 when considering the
+35   design and conduct of IVPT studies that, in conjunction with other studies, as deemed necessary,
+36   may be appropriate to support a demonstration that a proposed generic topical product and its
+37   RLD are bioequivalent. FDA also recommends that applicants routinely refer to FDA’s guidance
+38   web pages, because additional guidances may become available that could assist in the
+39   development of a generic topical product.
+40
+41   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+42   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+43   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+44   the word should in Agency guidance means that something is suggested or recommended, but
+45   not required.
+46
+47
+48   II.     BACKGROUND
+49
+50   This guidance has been developed as part of FDA’s “Drug Competition Action Plan,” 7 which, in
+51   coordination with the Generic Drug User Fee Amendments (GDUFA) 8 program and other FDA
+52   activities, is intended to increase competition in the market place for prescription drugs, facilitate
+53   the entry of high-quality and affordable generic drugs, and improve public health.
+54
+55   The Federal Food, Drug, and Cosmetic Act (FD&C Act) generally requires an ANDA to contain,
+56   among other things, information to show that the proposed generic drug product 1) is the same as
+57   the RLD with respect to the active ingredient(s), conditions of use, route of administration,
+58   dosage form, strength, and labeling (with certain permissible differences) and 2) is bioequivalent
+
+     5
+       Generic drug product-specific guidances are available at FDA’s Product-Specific Guidances for Generic Drug
+     Development web page at https://www.fda.gov/drugs/guidances-drugs/product-specific-guidances-generic-drug-
+     development.
+     6
+       Other relevant guidances include the draft guidances for industry: In Vitro Release Test Studies for Topical Drug
+     Products Submitted in ANDAs (October 2022) and Physicochemical and Structural (Q3) Characterization of
+     Topical Drug Products Submitted in ANDAs (October 2022). When final, these guidances will represent the FDA’s
+     current thinking on these topics.
+     7
+       See FDA Drug Competition Action Plan (describing the FDA’s Drug Competition Action Plan, implemented in
+     2017 and designed to, among other things, further encourage robust and timely market competition for generic
+     drugs), available at https://www.fda.gov/drugs/guidance-compliance-regulatory-information/fda-drug-competition-
+     action-plan.
+     8
+       In this guidance, GDUFA refers to the generic drug user fee program codified in the Generic Drug User Fee
+     Amendments of 2012, Title III, Food and Drug Administration Safety and Innovation Act (Public Law 112-144), the
+     Generic Drug User Fee Amendments of 2017, Title III, FDA Reauthorization Act of 2017 (Public Law 115-52), and
+     the Generic Drug User Fee Amendments of 2022, Title III of Division F (the FDA User Fee Reauthorization Act of
+     2022) of the Continuing Appropriations and Ukraine Supplemental Appropriations Act, 2023 (Public Law 117-180).
+
+
+
+                                                             2
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+                   9
+59   to the RLD. Thus, an ANDA will not be approved if the information submitted in the ANDA is
+60   insufficient to show that the test product is bioequivalent to the RLD. 10
+61
+62   An IVPT study may be used to assess the rate and extent to which a drug (i.e., an active
+63   ingredient) from a topical product becomes available at or near a site of action in the skin, and
+64   may be used to characterize and compare the rate and extent of bioavailability for a drug from a
+65   test topical product and RS. The IVPT flux profiles resemble pharmacokinetic profiles and can
+66   be analyzed using unique IVPT endpoints that are somewhat analogous to the pharmacokinetic
+67   endpoints of maximum concentration (Cmax) and the area under the concentration-time curve
+68   (AUC). Yet, IVPT studies characterize the rate and extent of absorption, not the distribution,
+69   metabolism and excretion that occurs in vivo. Therefore, while it is relevant to characterize the
+70   kinetics of topical drug bioavailability monitored by IVPT studies, the use in this guidance of the
+71   term “cutaneous pharmacokinetics” should not be construed to embody all aspects of
+72   pharmacokinetics—only those related to the absorption component that directly controls the rate
+73   and extent to which a topically applied drug becomes available locally at the site of action. This
+74   guidance focuses on general considerations and recommendations for the method development,
+75   method validation, and conduct of IVPT studies that are submitted in ANDAs and intended to
+76   support a demonstration of BE. 11
+77
+78
+79   III.     IVPT METHOD DEVELOPMENT
+80
+81   The development of an IVPT method that is suitable to support a demonstration of BE for a
+82   specific topical product routinely involves a systematic series of exploratory studies.
+83   Inappropriate or insufficient efforts to develop an IVPT method that is suitable for its intended
+84   purpose increases the likelihood that the subsequent IVPT validation, pilot, and pivotal studies
+85   will ultimately be inadequate to support a demonstration of BE. By contrast, appropriate and
+86   systematic IVPT method development studies help to identify IVPT study designs and protocol
+87   (method) parameters which reliably produce flux profiles that can facilitate a comparison of the
+88   cutaneous pharmacokinetics of a drug delivered topically to the skin from test topical products
+89   and RSs.
+90
+91   A detailed and well-organized IVPT method development report should be submitted in an
+92   ANDA to show how the IVPT method was optimized, and to support a demonstration that the
+93   method parameters selected for the IVPT are appropriate or necessary, particularly in situations
+94   where the method parameters are different from the methods recommended in this guidance).
+95   The Agency’s interest in reviewing the method development report is to understand why specific
+96   IVPT method parameters were selected and whether the resulting IVPT method is suitably
+97   sensitive and reproducible. This method development report should clearly indicate/distinguish
+
+     9
+       See sections 505(j)(2)(A), (j)(2)(C), and (j)(4) of the FD&C Act (21 U.S.C. 355(j)(2)(A), (j)(2)(C), (j)(4)); see also
+     21 CFR 314.94.
+     10
+        21 CFR 314.127(a)(4), (6).
+     11
+        A demonstration of no significant difference in the rate and extent of drug permeation into and through the skin of
+     the test topical product and RS using an appropriately validated IVPT method can be used to support a
+     demonstration of BE along with other data in the application (which may be specified in a PSG), as part of a
+     comparative product characterization-based approach.
+
+
+
+                                                                3
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+ 98   the method parameters used for each set of data, illustrate the efforts made to optimize the IVPT
+ 99   method, and demonstrate that the method parameters selected for the IVPT are appropriate.
+100
+101   Applicants are encouraged to use the recommendations in this guidance, and if an applicant
+102   elects to use methods that are different from those recommended in this guidance, the IVPT
+103   method development report should demonstrate why it is scientifically justified to use an
+104   alternative approach than what is recommended in this guidance to optimize the IVPT method. 12
+105   Some examples of recommended procedures are described in subsequent sections, to help
+106   applicants identify circumstances when information should be submitted in the ANDA to explain
+107   why a different procedure was utilized.
+108
+109           A.      IVPT Method Parameters
+110
+111   All relevant parameters of the final IVPT method should be summarized (e.g., in a table) and
+112   submitted in the ANDA. Also, information should be provided to briefly explain the choice of
+113   the final IVPT method parameters like the equipment (e.g., a vertical diffusion cell (VDC)), skin
+114   source (e.g., cadaver), skin type (e.g., posterior torso), skin preparation (e.g., dermatomed), skin
+115   barrier integrity test (e.g., trans-epidermal water loss (TEWL) measurement), skin barrier
+116   integrity test acceptance criteria (e.g., < 15 grams/meter2/hour (g/m2/hr)), topical product dose
+117   amount (e.g., 15 milligrams/centimeter2 (mg/cm2)), dose duration (e.g., 6 hours), study duration
+118   (e.g., 24 hours, 48 hours, etc.), receptor solution sampling times (e.g., 1, 2, 4, 6, 8, 12, 16, 20,
+119   and 24 hours), etc.
+120
+121           B.      IVPT Method Considerations
+122
+123   The choice of some IVPT method parameters like the equipment, skin source, skin type, skin
+124   preparation, and skin barrier integrity test procedures may be based upon investigator experience
+125   or convenience, like the availability of specific equipment or instrumentation in a laboratory,
+126   established tissue supply agreements, or other logistical considerations. However, if the chosen
+127   IVPT method parameters do not appear to be well-suited for a specific IVPT method, it is the
+128   applicant’s responsibility to systematically evaluate alternative method parameters, and
+129   ultimately, to validate that the IVPT method parameters chosen are suitable for the intended
+130   purpose. The recommended procedures for IVPT method validation are detailed in section IV of
+131   this guidance.
+132
+133   The choice of other IVPT method parameters like the topical product dose amount, dose
+134   duration, study duration (which may be longer than the dose duration), sampling schedule,
+135   sampling procedures, receptor solution composition, and sample analytical method may be
+136   different for each IVPT method, and such parameters of IVPT methods should be systematically
+137   developed, optimized, and/or validated for the relevant topical product, as appropriate. The IVPT
+138   method development studies should characterize how differences in these method parameters
+139   influence the resulting IVPT flux profile so that optimal study conditions can be objectively
+140   selected from among those evaluated.
+141
+
+      12
+        Applicants may choose to use an approach different from the approach recommended in this guidance. However,
+      the alternative approach must comply with relevant statutes and regulations. See 21 CFR 10.115(d).
+
+
+                                                            4
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+142   The selection of the dose amount used in the study should be assessed for each IVPT method
+143   based upon studies performed during IVPT method development. Different dose amounts may
+144   be compared in parallel on replicate skin sections from the same set of donors to optimize the
+145   dose amount for the IVPT study. Considerations for selecting an optimal dose amount may
+146   include (1) the consistency with which the dose can be applied (potentially using different
+147   dispensing and/or spreading techniques), (2) the reproducibility of the flux profiles, (3) the
+148   influence of dose amount and dose duration on the shape of the flux profile, and (4) the
+149   approximate range of drug concentrations in receptor solution samples at different time points
+150   (relative to the sample analytical method limits of quantification).
+151
+152   The selected sampling schedule and study duration should be sufficient to characterize the
+153   cutaneous pharmacokinetics of the drug, which ideally includes a sufficiently complete flux
+154   profile to identify the maximum (peak) flux and a decline in the flux thereafter across multiple
+155   subsequent time points. A dose that remains on the skin for the duration of the study may
+156   continue to deliver the drug for a sustained period and may not necessarily exhibit a suitable
+157   decline in the flux at later time points. In such instances, it may be appropriate to develop an
+158   IVPT method that involves wiping off the applied dose after a suitable duration on the skin and
+159   continuing to monitor the receptor solution for an extended period thereafter, during which the
+160   decline in the flux profile can be characterized. The sampling frequency should be selected to
+161   provide a suitable resolution for the flux profile, and a minimum of eight non-zero sampling time
+162   points is recommended across the study duration (e.g., 48 hours).
+163
+164          C.      IVPT Method Procedures and Controls
+165
+166   Suitable technical procedures and control parameters should be established during method
+167   development. These may include procedures for preparing and mounting the skin on the
+168   diffusion cell in a consistent manner, determining the instrument settings that regulate the skin
+169   surface temperature within the specified range, performing the barrier integrity test
+170   appropriately, controlling the accuracy and precision of the dose amount dispensed on each skin
+171   section.
+172
+173   For example, a dosing procedure may be developed that uses a positive displacement pipette to
+174   dispense a volumetrically controlled amount of a topical product, targeting the deposition on the
+175   skin of a certain mass (e.g., 15 mg/cm2) of topical product. If the inner diameter of the orifice in
+176   the dosing compartment of the diffusion cell is 15 millimeters (mm), and the effective dose area
+177   is ~1.77 cm2, this would indicate a target dose of ~26.5 mg of topical product per diffusion cell.
+178   Experiments during method development may establish that, based upon the density of the
+179   topical product, a specific volumetric setting on a specific model of positive displacement pipette
+180   with a specific pipette tip repeatedly dispenses ~27.5 mg of topical product (e.g., characterized
+181   by multiple replicate pipette dispensations into a weigh boat on a fine balance). This pipette
+182   setting may be optimal for a dosing procedure where the dose spreading instrument, like the flat
+183   bottom of a high performance liquid chromatography (HPLC) glass vial, or the rounded end of a
+184   glass rod or capillary tube, is subsequently used to spread the dispensed dose evenly upon the
+185   skin section mounted in the diffusion cell, and where repeatedly weighing the dose-spreading
+186   instrument before and after the dose spreading indicates that the residual topical product
+187   remaining on the bottom of the glass vial after the dose spreading reproducibly amounts to ~1.0
+
+
+
+                                                        5
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+188   mg of topical product (indicating that ~26.5 mg of the topical product would reproducibly be
+189   dosed to each skin section). Such characterizations of the technical procedures and control
+190   parameters for the IVPT method, like the reproducibility of the dosing procedure, should be
+191   established during method development and may not need to be demonstrated thereafter each
+192   time the same procedure is used.
+193
+194          D.      IVPT Skin Barrier Integrity Testing: Common Methods
+195
+196   The technical procedures for the skin barrier integrity test should be established during IVPT
+197   method development. Three types of barrier integrity tests are common, however, there are
+198   currently no applicable compendial standard protocols or acceptance criteria for any of these
+199   three types of human skin barrier integrity tests. Nonetheless, recommended parameters for the
+200   three common types of barrier integrity tests are discussed below.
+201
+202          1. Trans-Epidermal Water Loss Skin Barrier Integrity Test
+203
+204   A TEWL skin barrier integrity test involves a measurement near the outer surface of the skin of
+205   the rate at which water (vapor) is fluxing through the skin barrier from the underside of the skin
+206   section. For the test, the skin section is mounted in a diffusion cell (e.g., clamped in place
+207   between the donor and receptor compartments), with the underside of the skin in contact with the
+208   receptor solution in the receptor compartment (e.g., phosphate buffered saline, pH 7.4), and
+209   equilibrated to a skin surface temperature of 32°C ± 1°C. If skin sections are cut large enough to
+210   cover the flange of the diffusion cell in which they are mounted, then after they have equilibrated
+211   for several hours at a skin surface temperature of 32°C ± 1°C, it may be feasible to gently
+212   remove the donor compartment without disrupting a skin section’s adherence to the lower flange
+213   of the diffusion cell, thereby allowing the TEWL probe to be placed directly on the skin surface,
+214   instead of being placed atop the donor compartment. Typically, a minimum of three replicate
+215   measurements are made on each skin section, which are recorded after the measurements have
+216   stabilized.
+217
+218   Commercially available devices to measure TEWL may differ in design and operational
+219   principles. The TEWL measured by devices with certain designs (e.g., an open chamber versus a
+220   closed chamber) may be relatively more susceptible to the influence of environmental
+221   conditions. Therefore, environmental temperature and humidity are typically controlled as
+222   precisely as possible (e.g., a temperature range of 21°C ± 2°C and a humidity range of 50% ±
+223   20% relative humidity are ideal, if feasible). More precise control of the relative humidity (e.g.,
+224   in the range of 40% – 50%) may reduce the variability of TEWL measurements for devices with
+225   certain designs. Certain designs of measurement probes and adapters for in vitro use are
+226   available by the manufacturers of TEWL devices, and may be appropriate to use. Inconsistency
+227   in the diameters for the measurement probe chamber, the measurement probe orifice, the in vitro
+228   adapters, and the skin area being measured, as well as variation in the distance of the probe
+229   sensor(s) from the skin surface, potentially because of the (variable) height of donor
+230   compartments (when applicable), could increase the variability of TEWL measurements.
+231   Inconsistent control of the alignment of the TEWL measurement device in relation to the donor
+232   compartment and/or the skin section may also increase the variability of TEWL measurements.
+233   Also, the TEWL measured by devices with certain designs may be relatively more susceptible to
+
+
+
+                                                        6
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+234   the influence of heat transfer from the hand that holds the probe. Applicants should follow
+235   relevant instructions in the manufacturer’s user manual for the specific TEWL measurement
+236   device used.
+237
+238   No more than approximately 15 grams of water per square meter per hour (i.e., ≤ 15 g/m2/hr)
+239   could be a reasonable skin barrier integrity acceptance (cutoff) criterion for a TEWL barrier
+240   integrity test on human torso or thigh skin; if this was selected as the cutoff criterion, skin
+241   sections with a TEWL > 15 g/m2/hr would fail the test. Skin sections that fail a barrier integrity
+242   test should not be dosed, but may serve as non-dosed control skin sections. A higher cutoff (e.g.,
+243   ≤ 20 g/m2/hr) may also be reasonable if justified by experimental data demonstrating that the
+244   selected acceptance criterion appropriately discriminates skin sections with a compromised
+245   barrier integrity from those with a competent barrier integrity.
+246
+247   However, TEWL measurements for skin sections with a competent barrier integrity can vary
+248   depending upon the TEWL measurement device, the manner in which it is operated, and the
+249   environmental conditions (e.g., higher ambient humidity or greater distance from the skin surface
+250   may decrease the value of the TEWL measurement). Precise control of environmental and
+251   device/operational factors can minimize variability in TEWL measurements. Therefore, the
+252   technical procedures for measuring TEWL should be optimized during IVPT method
+253   development (or based upon prior optimization in the laboratory performing the test). Also, the
+254   TEWL measurement device should be appropriately calibrated (by the manufacturer, and for
+255   some devices, also before each set of tests). Applicants may provide information about the
+256   relevant calibration procedures specified by the manufacturer for the specific TEWL device
+257   used; this can be submitted in the ANDA along with the IVPT method development report, to
+258   support the appropriateness of the technical procedures established by the laboratory for TEWL
+259   measurements. When a TEWL barrier integrity test is used in any study phase (IVPT method
+260   development, pilot study, validation, and/or pivotal study) the ambient laboratory temperature
+261   and humidity during the TEWL barrier integrity test should be monitored and reported.
+262
+263          2. Tritiated Water Skin Barrier Integrity Test
+264
+265   An example of a recommended approach to a tritiated water skin barrier integrity test would be
+266   to mount the skin in a diffusion cell (e.g., clamped in place between the donor and receptor
+267   compartments) and allow it to equilibrate to a skin surface temperature of 32°C ± 1°C with the
+268   stratum corneum exposed to the air in the donor compartment and the underside of the skin in
+269   contact with the receptor solution (e.g., phosphate buffered saline, pH 7.4).
+270
+271   A small amount of tritiated water (sufficient to cover the entire surface of the skin section) would
+272   be briefly dosed on the stratum corneum. This dose of tritiated water would be left on the surface
+273   for a precisely controlled and relatively brief period (e.g., 5 minutes) after which it would be
+274   removed from the skin surface (e.g., using a pipette to remove the bulk volume and then an
+275   absorbent low lint laboratory tissue to gently blot dry). The receptor solution would then be
+276   sampled at a precise duration after the removal of the tritiated water from the skin surface (e.g.,
+277   30 minutes after the removal of the 5-minute dose of tritiated water from the skin surface).
+278
+
+
+
+
+                                                        7
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+279   While the entire volume of the receptor compartment may be removed and replenished, typically
+280   only an aliquot of the receptor solution (e.g., phosphate buffered saline, pH 7.4) is transferred to
+281   a suitable volume of scintillation fluid for counting. The volume of the aliquot typically depends
+282   upon the type of scintillation fluid used and the maximum amount of aqueous fluid that is
+283   suitable to mix with the scintillation fluid. A scintillation counter is then used to quantify the
+284   amount of radioactivity in the aliquot sampled, which can be used to calculate the amount of
+285   tritiated water that permeated into the larger (entire) volume of receptor solution; the calculation
+286   is performed using the specific activity of the tritiated water to equate a given amount of
+287   radioactivity to the equivalent volume of tritiated water that permeated per square centimeter of
+288   skin surface area.
+289
+290   Approximately 1.5 equivalent (eq.) microliter (µL) of tritiated water per cm2 (i.e., ~1.5 eq.
+291   µL/cm2 or ~1.5 eq. mg/cm2) would be a reasonable skin barrier integrity acceptance (cutoff)
+292   criterion for a tritiated water barrier integrity test that involves a 5-minute dose followed by a 30-
+293   minute sampling duration (i.e., sampling 30 minutes after dose removal) on human torso or thigh
+294   skin. Skin sections with a tritiated water test result of > 1.5 eq. mg/cm2 would fail the test and be
+295   excluded from the population of skin sections dosed with the topical product; skin sections that
+296   fail a barrier integrity test should not be dosed, but may serve as non-dosed control skin sections.
+297   Other acceptance criteria may also be reasonable if justified by experimental data demonstrating
+298   that the selected acceptance criterion appropriately discriminates skin sections with a
+299   compromised barrier integrity from those with a competent barrier integrity.
+300
+301   When calculating the results for a tritiated water barrier integrity test, it may be important to
+302   account for the surface area dosed. For example, if using an acceptance criterion of 1.5 eq.
+303   mg/cm2 with a diffusion cell that has an orifice diameter of 15 mm and a skin surface area of
+304   1.77 cm2, the mass of tritiated water that would be calculated to have permeated into the receptor
+305   compartment would be ~2.7 eq. mg/cm2 of tritiated water.
+306
+307          3. Electrical Based Skin Barrier Integrity Tests
+308
+309   There are several variations of electrical based skin barrier integrity tests that report the test
+310   result as a measure of the resistance, conductance, or a related electrical concept that
+311   characterizes the bulk flow of electrical current across the skin. Transepithelial electrical
+312   resistance tests involving the skin may be referred to more specifically as Trans-Epidermal
+313   Electrical Resistance (TEER) skin barrier integrity tests. The test results may be described in
+314   units of conductance, which is the reciprocal of resistance. Electrical based skin barrier integrity
+315   tests often use instruments that are designed to measure the inductance (L), capacitance (C), and
+316   resistance (R) of electronic circuits or electrical components; these instruments are commonly
+317   known as LCR meters and have different settings (test parameters) that can be adjusted.
+318
+319   An example of a recommended approach to a TEER skin barrier integrity test would be to mount
+320   the skin in a diffusion cell (e.g., clamped in place between the donor and receptor compartments)
+321   and allow it to equilibrate to a skin surface temperature of 32°C ± 1°C with the stratum corneum
+322   exposed to the air in the donor compartment and the underside of the skin in contact with an
+323   ionic solution (e.g., phosphate buffered saline, pH 7.4).
+324
+
+
+
+                                                         8
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+325   A small amount of the ionic solution (sufficient to cover the entire surface of the skin section)
+326   would be briefly dosed on the stratum corneum. Then, one lead/electrode from an LCR meter
+327   would be placed in contact with the solution in the receptor compartment while the other
+328   lead/electrode would be placed in contact with the solution in the donor compartment. After
+329   measuring the resistance across the skin (e.g., in kΩ, normalized for area, noting that resistance
+330   is inversely proportional to area) the solution in the donor compartment would be removed and
+331   the skin surface would be gently blotted dry with an absorbent low lint laboratory tissue. The
+332   skin (still mounted in the diffusion cell) would then be allowed to equilibrate with the dry air
+333   above for a sufficient duration to normalize the hydration state of the stratum corneum before
+334   being dosed with the test topical product or RS.
+335
+336   The results for a TEER skin barrier integrity test can vary substantially depending on the LCR
+337   meter settings (e.g., frequency) and the technical procedures used for the test. The acceptance
+338   criterion for a specific electrical based skin barrier integrity test method may be justified by
+339   experimental data demonstrating that the selected acceptance criterion appropriately
+340   discriminates skin sections with a compromised barrier integrity from those with a competent
+341   barrier integrity.
+342
+343          E.      IVPT Skin Barrier Integrity Testing: General Considerations
+344
+345   There are three general considerations for the development or adoption of technical procedures
+346   for any skin barrier integrity test method during IVPT method development:
+347
+348    i.   The technical procedures should not irreversibly alter the skin barrier. It may be
+349         acceptable to temporarily alter the hydration state of the stratum corneum by briefly
+350         depositing an aqueous solution on the surface of the skin, as long as sufficient time is
+351         afforded for the hydration of the stratum corneum to normalize before dosing of the
+352         topical product. The procedure described above for a brief (e.g., 5-minute) exposure of the
+353         skin surface to tritiated water followed by a 30-minute duration during which the
+354         hydration state of the stratum corneum is re-equilibrating would likely be appropriate. By
+355         contrast, a 30-minute exposure of the skin surface to an aqueous solution for an electrical-
+356         based test method, followed within 5 minutes by dosing of the topical product, may not be
+357         appropriate without further characterization of the influence of the hydration state of the
+358         stratum corneum on the discrimination sensitivity of the skin to differences in topical
+359         bioavailability. Similarly, if a portable lamp were placed close to the skin to improve
+360         visibility while study procedures were being performed, the heat from the lamp may alter
+361         the local (micro)environment of the skin in a manner that is not representative of the
+362         ambient environmental conditions in the laboratory; this should be avoided.
+363
+364   ii.   The acceptance criterion should be a cutoff value for the test result, at which a skin section
+365         fails the test. Skin sections that fail a barrier integrity test should not be dosed but may
+366         serve as non-dosed control skin sections. Skin sections with a passing barrier integrity test
+367         result may be considered to have a competent barrier integrity and may be dosed. This
+368         acceptance criterion should be selected based upon an understanding of the distribution of
+369         test results (among multiple replicate skin sections from multiple donors) for the specific
+370         barrier integrity test procedure performed with the specific type and preparation of skin
+
+
+
+                                                        9
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+371          under conditions relevant to the IVPT pivotal studies submitted in the ANDA. The
+372          intention of the barrier integrity test is to identify (and exclude) skin sections whose
+373          barrier integrity (intactness) is compromised. The intent is not to reduce the inherent
+374          variability in barrier function (permeability) in human skin that is representative of real
+375          variation in the human population. Also, the relative permeability of the skin to a drug
+376          from a topical product may not necessarily correlate with the permeability of the skin to
+377          water, and therefore, constraining the variability of the skin permeability to water (using a
+378          stricter acceptance criterion that excludes a larger number of skin sections) may not
+379          necessarily reduce the variability in the IVPT study results.
+380
+381   iii.   The acceptance criterion should be able to discriminate skin sections with a compromised
+382          barrier integrity. This may be demonstrated by measuring the barrier integrity of skin
+383          sections mounted and equilibrated in a diffusion cell before and after deliberately
+384          compromising the skin barrier (e.g., by repeatedly using adhesive tape to strip away
+385          increasing amounts of the stratum corneum, piercing the skin several times with a 30
+386          gauge needle, or using other physical or chemical insults to damage the skin barrier).
+387          Based upon the acceptance criterion selected, the test result for skin sections that pass the
+388          test before being damaged should fail the test after the damage.
+389
+390          F.      Differences Between IVPT Method Development and Validation
+391
+392          1. Optimization of an IVPT Method Prior to Advancing to IVPT Method Validation
+393
+394   Different study designs and method parameters may be evaluated during the IVPT method
+395   development phase. For example, if the selected study parameters initially involve a dose
+396   duration of 48 hours and a study duration of 48 hours, and the flux profile is measurable, but it is
+397   not feasible to identify the maximum (peak) flux and a decline in the flux thereafter across
+398   multiple subsequent time points, then it may be appropriate to evaluate other study parameters as
+399   part of the IVPT method development. For example, a different target dose of the topical product
+400   and/or a longer sampling duration may be evaluated. An alternate study design may involve a
+401   shorter dose duration (e.g., 4–6 hours) after which the applied dose is removed from the skin, and
+402   the receptor solution continues to be sampled across a study duration that is sufficient to identify
+403   the maximum (peak) flux and a decline in the flux thereafter across multiple subsequent time
+404   points. While shorter dose durations can help to improve the shape of IVPT flux profiles, the
+405   removal of the topical product dose from the skin surface can be challenging and often requires
+406   its own method development and optimization. Also, the design of sensitivity studies for such an
+407   IVPT study design may require a more sophisticated understanding of IVPT studies. While
+408   reasonable efforts should be made to develop an IVPT method that produces a well-defined
+409   maximum (peak) flux and a decline in the flux thereafter across multiple subsequent time points,
+410   this may not be feasible for certain topical products even with study durations of 96 hours, or, at
+411   least, may not be feasible to produce reliably in all donors. In such circumstances, the IVPT
+412   method development report should detail the systematic efforts made to optimize the IVPT
+413   method.
+414
+415          2. Use of a Validated Sample Analytical Method for IVPT Method Validation
+416
+
+
+
+                                                       10
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+417   The IVPT method development studies, being exploratory in nature, are often performed using a
+418   sample analytical method that is not validated (e.g., an HPLC or ultrahigh performance liquid
+419   chromatography (UPLC) method, often involving mass spectrometry (MS)); also, IVPT method
+420   development studies are often conducted in a manner that is not compatible with a quality
+421   management system which would otherwise make the evidence generated suitable to support
+422   valid conclusions. Such method development studies would not be suitable to demonstrate the
+423   validity of an IVPT method, or associated results. Therefore, although it may appear to be
+424   redundant, certain experiments performed during IVRT method development may need to be
+425   repeated during IVPT method validation, using appropriate controls, like a validated analytical
+426   method and procedures that are compatible with a suitable quality management system.
+427
+428   It is important to clearly segregate and consistently identify those experiments and results that
+429   were part of IVPT method development separately from those that were part of IVPT method
+430   validation. It is also important to consistently identify all relevant method parameters and
+431   experimental conditions/controls for each set of IVPT results. Information in the method
+432   development report should clearly identify/distinguish when the results for apparently similar
+433   sets of experiments may have been obtained using different method parameters. Method
+434   development reports should clarify which sets of diffusion cells were run in parallel or separately
+435   (e.g., on separate days). In addition, the sample analytical method parameters used to analyze the
+436   samples from each set of IVPT experiments should be specified, and the report should indicate
+437   whether or not the sample analytical method was validated (either at the time of sample analysis
+438   or subsequently).
+439
+440
+441   IV.    IVPT METHOD VALIDATION
+442
+443   When all the relevant parameters of the IVPT method have been established, a pilot study should
+444   be performed using the final IVPT method and using a validated sample analytical method. The
+445   purpose of the pilot study is to validate the suitability of the selected IVPT method parameters by
+446   demonstrating that the performance characteristics of the IVPT method are appropriate to
+447   compare the cutaneous pharmacokinetics of a drug delivered topically from a test product and
+448   RS. The results from the pilot study, thereby, support the systematic validation of the IVPT
+449   method, which proceeds as a distinct study phase following IVPT method development.
+450
+451   The results from this IVPT pilot study can help to estimate the number of donors that may be
+452   needed to adequately power the IVPT pivotal study. In addition to the test topical product and
+453   RS evaluated in the pilot study, a parallel assessment should be performed with a third topical
+454   product or formulation that is known or designed to be different from the RS, to validate the
+455   selectivity of the IVPT method to discriminate differences in bioavailability. The IVPT pilot
+456   study results should be plotted with error bars, comparing the permeation profiles for the three
+457   treatment groups in the pilot study. Separate plots should be prepared for average flux results and
+458   average cumulative permeation results. These data can be used to support specific IVPT method
+459   validation parameters (e.g., permeation profile and range).
+460
+461   A pilot IVPT study performed with multiple skin donors (e.g., 4–6 skin donors) and a minimum
+462   of four replicate skin sections per donor per treatment group is recommended. As skin from an
+
+
+
+                                                      11
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+463   increasing number of donors is evaluated in the pilot study, the accuracy of the estimated number
+464   of donors needed to adequately power the IVPT pivotal study may improve. While skin from the
+465   same donors evaluated in the pilot study may also be used in the IVPT pivotal study, the results
+466   from the pilot study should not be combined with the results from the IVPT pivotal study for the
+467   purpose of statistical analysis.
+468
+469   The equipment, methodologies, and study conditions used in the IVPT pilot study (and the
+470   eventual IVPT pivotal study) should be appropriately validated or qualified. If an applicant elects
+471   to use equipment, methodologies, or study conditions that are different from those recommended
+472   in this guidance, the applicant should demonstrate why it was necessary and scientifically
+473   justified to do so. Detailed protocols and well-controlled study procedures are recommended to
+474   ensure the precise control of dosing, sampling, and other IVPT study parameters, as well as
+475   potential sources of experimental bias.
+476
+477   The validation of the IVPT method should incorporate specific qualifications and controls
+478   (described below), performed using a validated sample analytical method, as applicable. The
+479   qualification of an IVPT method parameter refers to the process of defining what attributes make
+480   it suitable to perform its function in the IVPT method. For example, when repeated
+481   measurements of the temperature at the surface of skin mounted in a diffusion cell demonstrate
+482   that an IVPT equipment can maintain the skin surface temperature in the range of 32°C ± 1°C,
+483   the results can support a demonstration that the equipment is qualified to perform its function in
+484   an IVPT method for which a method parameter is the control of skin surface temperature in the
+485   range of 32°C ± 1°C across the relevant study duration.
+486
+487          A.      Equipment Qualification
+488
+489   Suitable equipment for the IVPT method includes various models of VDCs and flow-through
+490   diffusion cells. The operating principles and specific test procedures differ among the various
+491   equipment; relevant procedures from the manufacturer may be used for installation, operational,
+492   and performance qualifications. The laboratory qualification of each diffusion cell should, at
+493   minimum, include 1) measurements of the diffusional area of the orifices of the donor and
+494   receptor compartments between which the skin is mounted, 2) the empirically measured volume
+495   of the receptor solution compartment in each VDC or the empirically measured outflow tube
+496   length for each flow-through diffusion cell, 3) the stability of the temperature measured at the
+497   skin surface (e.g., 32°C ± 1°C) across a relevant duration (e.g., 48 hours), and 4) the rate of
+498   stirring or agitation in VDCs, or the flow rate for flow-through diffusion cells, as applicable.
+499
+500   If information related to the diffusional area of the orifices and the volume of the receptor
+501   solution compartment for each diffusion cell is available from the manufacturer, that information
+502   should be provided for each relevant diffusion cell, in addition to the empirical measurements
+503   made by the laboratory performing the IVPT studies. The equipment should control the diffusion
+504   cell temperature so that the skin surface temperature is verified to be stable (e.g., 32°C ± 1°C) for
+505   each diffusion cell before dosing (e.g., measured by a calibrated infrared thermometer), and
+506   monitored periodically throughout the duration of the experiment by repeatedly measuring the
+507   skin surface temperature of a non-dosed control diffusion cell that is run in parallel with the other
+508   replicate dosed diffusion cells and connected to the same water bath or thermoregulation system.
+
+
+
+                                                       12
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+509
+510          B.      Membrane (Skin) Qualification
+511
+512   Excised human skin is recommended as the membrane for the IVPT study. The validity of each
+513   skin section dosed in the study should be qualified using an appropriate test procedure to
+514   evaluate the stratum corneum barrier integrity. Acceptable barrier integrity tests may be based
+515   upon tritiated water permeation, TEWL, or electrical impedance/conductance measured across
+516   the skin. The test parameters and acceptance criteria used for the skin barrier integrity test should
+517   be justified for the specific method and instrumentation that is used during the study. The skin
+518   from all donors whose skin is included in the study should be prepared in a consistent manner
+519   and dermatomed to a relatively consistent thickness, within limits specified in the study protocol.
+520   The skin thickness should be measured and reported for each skin section included in the study.
+521   The assignment of replicate skin sections from a donor to each treatment group should be
+522   randomized, as feasible. It is acceptable to balance the distribution of skin thicknesses in each
+523   treatment group (test topical product or RS) by a procedure specified in the study protocol.
+524
+525          C.      Receptor Solution Qualification
+526
+527   The composition and pH of the receptor solution used for the IVPT study should be qualified in
+528   relation to its compatibility with the skin as well as the stability and solubility of the drug in that
+529   receptor solution. The stability of the drug in the receptor solution samples should be validated as
+530   part of the receptor sample analytical method validation. The solubility of the drug in the IVPT
+531   receptor solution should be empirically determined in triplicate, to illustrate that the solubility of
+532   the drug in the receptor solution exceeds the highest sample concentration in the IVPT pivotal
+533   study, ideally by an order of magnitude. The solubility of the drug in the IVPT receptor solution
+534   should be sufficient to characterize the higher amounts of drug permeating from the increased
+535   drug delivery condition evaluated in the IVPT sensitivity assessment during IVPT method
+536   validation.
+537
+538   The inclusion of 0.1% polyoxyethylene[20]oleyl ether (also known as Oleth-20, Volpo-20, or
+539   Brij-20; CAS number 9004-98-2) is recommended to enhance the solubility of physiological
+540   buffer based (aqueous) receptor solutions for hydrophobic drugs. If additional solubility is
+541   needed, small increases in the concentration of polyoxyethylene[20]oleyl ether (e.g., from 0.1%
+542   or 0.2%, which is typically adequate for most hydrophobic drugs, to higher concentrations) are
+543   recommended, but should not exceed 6% polyoxyethylene[20]oleyl ether. Other strategies to
+544   improve the solubility of the drug in the receptor solution that may have the potential to alter the
+545   permeability of the skin (e.g., inclusion of organic solvents and alcohols in the receptor solution)
+546   are not recommended and may invalidate the IVPT method.
+547
+548   The inclusion of an anti-microbial agent in the receptor solution (e.g., ~0.1% sodium azide or ~
+549   0.01% gentamicin sulfate) is recommended to mitigate potential bacterial decomposition of the
+550   dermis and/or epidermis in the diffusion cell, regardless of the study duration. Other anti-
+551   microbial agents may also be acceptable, and if used, information should be included in the
+552   ANDA to explain the reason for their selection (and for the concentration at which they were
+553   used).
+554
+
+
+
+                                                        13
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+555          D.      Receptor Solution Sampling Qualification
+556
+557   The accuracy and precision of receptor solution sample collection at each time point should be
+558   appropriately qualified. Evidence to qualify a sampling procedure should illustrate that the
+559   sampling technique can reliably collect a consistent volume of the sample from the well-mixed
+560   volume of the receptor compartment at each sampling event, and that no artifacts are likely to be
+561   created by the sampling technique. Information should be included describing the equipment
+562   manufacturer’s specification for the accuracy and precision of receptor solution sampling, when
+563   available.
+564
+565   For IVPT studies using a flow-through diffusion cell, it may be appropriate to qualify the lengths
+566   of tubing, and their associated dead volumes, to accurately calculate the lag time before a sample
+567   elutes through the tubing and is collected. For IVPT studies using a VDC, removal of the entire
+568   receptor solution volume and full volume replacement of the receptor solution at each time point
+569   may provide optimal solubility sink conditions. The sampling of small aliquots of the receptor
+570   solution for an IVPT study may introduce anomalous measurements of apparently negative flux
+571   in certain regions of the IVPT study and produce flux profiles that are difficult to interpret.
+572
+573          E.      Environmental Control
+574
+575   Ambient laboratory temperature and humidity during the study should be monitored and
+576   reported. An environmentally controlled temperature range of 21°C ± 2°C is recommended, and
+577   a humidity range of 50% ± 20% relative humidity is recommended, if feasible.
+578
+579          F.      Permeation Profile and Range
+580
+581   The flux profile and cumulative permeation profile for the IVPT pilot study should be plotted
+582   across a range of sampling times, which corresponds to the IVPT pivotal study duration. The
+583   calculation of flux and cumulative total permeation is discussed in more detail below. The results
+584   of the IVPT pilot study should validate that the selected study parameters are suitable to
+585   adequately characterize the permeation profile (the cutaneous pharmacokinetics) of the drug
+586   within the selected study duration (the range of sampling time points).
+587
+588   A sufficiently complete flux profile should be adequate to identify the maximum (peak) flux and
+589   a decline in the flux thereafter across multiple subsequent time points in the IVPT pilot study.
+590   The results of the IVPT pilot study should also validate that the sampling frequency provides
+591   suitable resolution to adequately characterize the permeation profile (particularly the flux
+592   profile).
+593
+594          G.      Precision and Reproducibility
+595
+596   The flux and cumulative permeation results from the IVPT pilot study (and the eventual IVPT
+597   pivotal study) should be calculated, tabulated, and reported for each diffusion cell at each time
+598   point, with summary statistics to describe the intra-donor average, standard deviation, and
+599   percent coefficient of variation (%CV) among replicates, as well as the inter-donor average,
+600   standard error, and %CV. Complete results for all data values used in the calculations should be
+
+
+
+                                                      14
+                                   Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+601   reported in a clear and organized manner, to facilitate the reconstruction of the flux and
+602   cumulative permeation results. The design of the study should be detailed and clear, and data
+603   values should be clearly associated with specific donors, replicates, treatment groups, time
+604   points, etc.
+605
+606          H.      Dose Depletion
+607
+608   The recovery of permeated drug in the receptor solution should be characterized in each
+609   diffusion cell as the cumulative total permeation of the drug in the receptor solution over the
+610   IVPT duration. This may be expressed as a percentage of the nominal amount of drug in the
+611   applied dose (which may be estimated based upon the nominal strength of the drug in the topical
+612   product and the approximate mass of topical product dosed on the skin).
+613
+614   For example, if 10 mg of a topical product containing 5% drug was dosed on the membrane, the
+615   amount of drug in the applied dose may be estimated to be 0.5 mg (or 500 µg). If a cumulative
+616   total of 10 µg of drug diffused into the receptor solution across a 48-hour duration of the IVPT, it
+617   would be possible to estimate that the 500 µg dose would have been depleted by approximately
+618   10 µg, amounting to an approximately 2% dose depletion. The average percentage dose
+619   depletion may thereby be estimated (not accounting for skin content) and should be reported.
+620
+621          I.      Discrimination Sensitivity and Selectivity
+622
+623   The discrimination ability of the IVPT method may be described using two concepts: sensitivity
+624   and selectivity. The IVPT sensitivity studies are necessarily performed during IVPT method
+625   development to establish IVPT method parameters like the dose amount, dose duration, study
+626   duration, etc. However, the analysis of the results from these studies is qualitative in nature, and
+627   they need not be repeated during the IVPT method validation phase.
+628
+629   The IVPT sensitivity studies are typically performed toward the end of the IVPT method
+630   development phase, and a key purpose of these studies is to incorporate the final IVPT method
+631   parameters for the target dose and dose duration to be used in the pivotal study so that the IVPT
+632   sensitivity studies can support a demonstration of the validity of the final IVPT method.
+633   Therefore, IVPT sensitivity studies are described within this section of the guidance in the
+634   context of IVPT validation (rather than method development) to avoid dissociating the
+635   discussions of IVPT sensitivity (which is performed to establish the suitability of the final IVPT
+636   method parameters) and IVPT selectivity (which is performed once the final IVPT method
+637   parameters are established, and which is based upon the IVPT pilot study that is performed as
+638   part of the IVPT method validation). With the exception of the alternative dose amounts or dose
+639   durations used in the IVPT sensitivity study, it is important that the IVPT method parameters are
+640   consistent across the IVPT sensitivity, pilot, and pivotal studies (including the anatomical region
+641   specified in the study protocol (e.g., posterior torso), the skin source, and skin preparation).
+642
+643          1. IVPT Sensitivity
+644
+645   IVPT sensitivity is the ability of the IVPT method to detect changes in the cutaneous
+646   pharmacokinetics of the drug as a function of differences in drug delivery. If the IVPT method
+
+
+
+                                                       15
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+647   consistently demonstrates higher and lower flux profiles (i.e., higher and lower values for IVPT
+648   endpoints) in response to increased and decreased drug delivery, respectively (or in response to
+649   other conditions expected to increase and decrease drug delivery, respectively), the IVPT method
+650   may be considered sensitive.
+651
+652   There are a few potential approaches by which to produce the differences in drug delivery that
+653   can be differentiated by a suitably discriminating IVPT method. Regardless of the approach
+654   used, the differences in the IVPT permeation profiles are not necessarily expected to be
+655   specifically proportional to differences in the dose amount, dose duration, or product strength.
+656   For example, three-fold differences in the dose amount (even if outside the recommended target
+657   dose range) may provide distinct flux curves but may not result in three-fold differences in the
+658   IVPT endpoints because the skin barrier may be rate-limiting both in vitro and in vivo.
+659
+660   In other words, if the target dose for the pivotal IVPT study was 10 mg/cm2, a 3-fold lower dose
+661   would be ~3 mg/cm2 and a 3-fold higher dose would be 30 mg/cm2; thus, an IVPT sensitivity
+662   study might compare the flux profiles from 3, 10, and 30 mg/cm2 doses of the topical product.
+663   Similarly, if the target dose for the pivotal IVPT study was 15 mg/cm2, a 3-fold lower dose
+664   would be 5 mg/cm2 and a 3-fold higher dose would be 45 mg/cm2; thus, an IVPT sensitivity
+665   study might compare the flux profiles from 5, 15, and 45 mg/cm2 doses of the topical product.
+666   An IVPT sensitivity study performed with multiple skin donors (e.g., 4–6 skin donors) and a
+667   minimum of four replicate skin sections per donor per treatment group is recommended.
+668
+669        • Modulation of Dose Amount: An IVPT method development study with different dose
+670          amounts may provide supportive evidence that the IVPT methodology is sensitive to
+671          differences in drug delivery.
+672
+673          This approach is well suited to topical products that contain volatile components that
+674          evaporate from the formulation following dose application to the skin. Modulating the
+675          dose amount for such topical products effectively alters the thickness of the applied dose.
+676          The majority of volatile components from a thinner dose will tend to evaporate more
+677          rapidly (compared to a thicker dose), and a thinner dose will tend to deliver less drug into
+678          the skin (and/or for a shorter duration) compared to a thicker dose.
+679
+680          Modulating the dose amount can be an effective technique to modulate differences in
+681          drug delivery for formulations with volatile components, like gels, lotions, and many
+682          creams. However, modulating the dose amount may not necessarily produce perceptible
+683          differences in drug delivery for topical products like petrolatum-based ointments, or other
+684          types of topical products that do not evaporate on the skin, or that may not experience
+685          dose-dependent differences in metamorphosis that can alter the rate and extent of drug
+686          delivery.
+687
+688        • Modulation of Dose Duration: For many topical products, it may be more effective to
+689          modulate the dose duration, instead of the dose amount, to produce differences in drug
+690          delivery and associated changes in the cutaneous pharmacokinetics of the drug.
+691
+
+
+
+
+                                                      16
+                          Contains Nonbinding Recommendations
+                                  Draft — Not for Implementation
+692   An IVPT method development study with a controlled dose amount (e.g., 15 mg/cm2)
+693   dosed for different durations (e.g., 2 hours, 6 hours, and 12 hours) may be well suited to
+694   provide supportive evidence that the IVPT methodology is sensitive to differences in
+695   drug delivery from many topical products. The scenario described in this example would
+696   support an IVPT study design where a topical product dose of 15 mg/cm2 is dosed for 6
+697   hours (the target duration for the IVPT study) and then wiped off. The applied dose may
+698   be removed with a series of cotton-tipped swabs, one or more of which may be dry and
+699   one or more of which may be moistened (e.g., with a soap solution or water). The initial
+700   (dry) swab typically removes the bulk of the dose and subsequent swabs are used to
+701   remove the residual dose (i.e., the residue of the topical product which may otherwise
+702   continue to deliver drug into the skin) and/or to rinse the skin.
+703
+704   To support a demonstration of the sensitivity of the IVPT study, the permeation profile
+705   produced by the target dose duration for the IVPT study (e.g., 6 hours) should be
+706   compared with a shorter dose duration (e.g., 2 hours) that is expected to perceptibly
+707   decrease the drug delivery, and also be compared with a longer dose duration (e.g., 12
+708   hours) that is expected to perceptibly increase the drug delivery. Thereby, the three dose
+709   durations compared in the IVPT sensitivity study are designed to produce perceptible
+710   changes in the cutaneous pharmacokinetics of the drug as a function of differences in
+711   drug delivery, and thereby support a demonstration of the sensitivity of the IVPT method.
+712
+713   The specific dose durations may be selected based upon an initial exploratory IVPT study
+714   performed during IVPT method development that characterizes the permeation profile
+715   when the dose is left on the skin for a longer duration (e.g., 24 or 48 hours). An important
+716   feature of the results from such an IVPT study is the duration of the initial phase of the
+717   permeation profile, when the flux is increasing at a relatively rapid rate.
+718
+719   For example, if such an exploratory study indicates that the flux increases on a steep
+720   slope until approximately 12 hours, and then continues to deliver the drug at a gradually
+721   increasing rate thereafter, it may suggest that the permeation profile for a dose duration of
+722   longer than 12 hours (e.g., 24 hours) may not be perceptibly different from that of the 12-
+723   hour dose duration, especially when compared in a relatively small number of donors and
+724   replicates (e.g., four donors with four replicates each per dose duration). It may also
+725   suggest that a 12-hour dose duration may be a good choice for the longest of the three
+726   dose durations in the IVPT sensitivity study.
+727
+728   The target dose duration should be selected based upon considerations like the sensitivity
+729   of the sample analytical method, the ability to produce a permeation profile that can be
+730   perceptibly discriminated from that produced by the longer (12 hour) dose duration,
+731   and/or the labeled use of the topical product (which may indicate that the topical product
+732   should be reapplied every 4–6 hours).
+733
+734   The shortest of the three dose durations in the IVPT sensitivity study should be selected
+735   based upon the sensitivity of the sample analytical method and its ability to produce a
+736   permeation profile that can be perceptibly discriminated from that produced by the target
+737   (6 hour) dose duration.
+
+
+
+                                               17
+                                   Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+738
+739        • Modulation of Product Strength: To validate the sensitivity, specificity, and selectivity
+740          of an in vitro release test (IVRT) method, altered strength formulations are routinely
+741          prepared. While it may seem convenient to use these altered strength formulations in an
+742          attempt to demonstrate the sensitivity and selectivity of an IVPT method, doing so may
+743          not produce the desired outcomes. There may be circumstances when this strategy may
+744          produce perceptibly different permeation profiles, however, in many instances, the
+745          resulting permeation profiles may not be perceptibly different when compared in a
+746          relatively small number of donors and replicates (e.g., four donors with four replicates
+747          each per topical product strength). In general, the modulation of topical product strength
+748          to support a demonstration of IVPT sensitivity is not recommended because it may not
+749          consistently produce the expected increase or decrease in drug delivery; however, in
+750          certain situations, higher and lower strength formulations (relative to the nominal strength
+751          of the RS) may suitably increase and decrease the drug delivery and cutaneous
+752          pharmacokinetics relative to that from the nominal strength topical product.
+753
+754          2. IVPT Selectivity
+755
+756   IVPT selectivity is the ability of the IVPT method to discriminate the cutaneous
+757   pharmacokinetics of the drug between the RS and a topical product or formulation that exhibits
+758   differences in drug delivery relative to the RS. The IVPT pilot study with the parallel assessment
+759   of the RS, the test topical product, and a third topical product or formulation that is known or
+760   designed to be different from the RS may provide supportive evidence that the IVPT
+761   methodology is selective for differences in drug delivery. Topical product batch information for
+762   all topical product lots used in IVPT method development, validation and pilot studies, as
+763   applicable, should be submitted in the study reports. The topical product information should
+764   include, but not be limited to, information about the batch formula, manufacturing date, batch
+765   size, altered manufacturing processes (if applicable) and, if available, potency and content
+766   uniformity. The evaluation of inequivalence may be based upon a qualitative or quantitative
+767   comparison of the permeation profiles and/or the IVPT endpoints.
+768
+769          J.      Robustness
+770
+771   A primary assumption related to robustness testing is that the test system performs consistently
+772   when all system variables (e.g., temperature, stirring rate) are at nominal settings. A value of
+773   robustness testing is that it can verify whether the system continues to provide a consistent
+774   output when specific variables are slightly altered, thereby qualifying operational ranges for
+775   those variables. However, the variability inherent in the permeability of human skin, whether in
+776   vitro or in vivo, may not be compatible with the primary assumption related to the consistency of
+777   the test system.
+778
+779   Nonetheless, results from studies during IVPT method development that appear to support the
+780   robustness of the IVPT method or system should be reported, if relevant. For example, an IVPT
+781   method may be robust to substantial variations in the stirring rate of the receptor compartment.
+782   Similarly, the permeation profile of a drug into and through human skin may appear to be robust
+783   to certain differences in the topical product strength. Ultimately, because it may not always be
+
+
+
+                                                      18
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+784   feasible to validate the robustness of IVPT method parameters, IVPT study procedures should be
+785   controlled as precisely as possible.
+786
+787
+788   V.     SAMPLE ANALYTICAL METHOD VALIDATION
+789
+790   While exploratory studies performed during IVPT method development may use an unvalidated
+791   sample analytical method, it is essential that all studies conducted as part of the IVPT method
+792   validation use a validated sample analytical method. A validated IVPT method should use a
+793   validated sample analytical method (e.g., HPLC/MS or UPLC/MS). Therefore, a discussion of
+794   the sample analytical method for the IVPT method is included in this guidance under this section
+795   on IVPT method validation.
+796
+797   However, the study protocols and reports related to the IVPT method are distinct from those for
+798   the sample analytical method that is used to quantify drug concentrations in IVPT receptor
+799   solution samples. The validation of a sample analytical method, in and of itself, does not
+800   demonstrate the validity of an IVPT method. Separate and specific reports should be submitted
+801   for the validation of the sample analytical method (e.g., HPLC/MS or UPLC/MS) and for the
+802   validation of the IVPT method.
+803
+804   Any results from studies of the IVPT method that are performed during method development
+805   using a different sample analytical method than that which is ultimately validated, cannot support
+806   a demonstration of the validity of the IVPT method. Information should be provided in the IVPT
+807   method validation report referencing the (separate) sample analytical method validation, and
+808   clearly indicate that all relevant results in the IVPT method validation report were obtained using
+809   a validated sample analytical method (as opposed to a sample analytical method with different
+810   parameters than those which were validated).
+811
+812   The receptor sample analysis procedures (e.g., typically involving an HPLC/MS or UPLC/MS
+813   system) should be performed using chromatography software (e.g., a chromatography data
+814   system) with audit trails, and should include a multi-point (6–8 concentration) calibration curve
+815   with suitable quality control samples, and should be validated in a manner compatible with the
+816   FDA guidance for industry Bioanalytical Method Validation (May 2018).
+817
+818   The validation of the receptor sample analytical method should include relevant qualifications of
+819   dilution integrity, if applicable, as well as stability assessments with the highest relevant
+820   temperature in the receptor solution for the longest relevant duration; the highest relevant
+821   temperature may be warmer than 32°C because the temperature of the receptor solution is often
+822   higher than the temperature at the surface of the skin, and the longest relevant duration may be
+823   the longest interval between sampling time points for methods in which the entire receptor
+824   solution is replaced at each sampling time point, or it could be longer in scenarios with only
+825   partial sampling of the receptor solution (e.g., 34°C for 48 hours).
+826
+827   If the samples are processed in specific ways for analysis (e.g., by drying and reconstituting the
+828   receptor samples in a smaller volume to concentrate the sample and increase the effective
+829   analytical sensitivity, or by dilution of receptor solution samples into the validated curve range of
+
+
+
+                                                       19
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+830   the sample analytical method) those procedures should be validated (e.g., by qualifying the
+831   dilution integrity during the sample analytical method validation). The stability of the drug in the
+832   receptor solution sample should be validated in a receptor solution matrix that has been exposed
+833   to the underside of the skin in a diffusion cell under conditions relevant to the IVPT pivotal
+834   study.
+835
+836
+837   VI.    IVPT PIVOTAL STUDY
+838
+839   The IVPT pivotal study protocol should incorporate considerations relevant to BE studies, in
+840   general.
+841
+842          A.      Handling and Retention of Samples
+843
+844   Refer to 21 CFR 320.38, 320.63 and the FDA guidances for industry Handling and Retention of
+845   BA and BE Testing Samples (May 2004) and Compliance Policy for the Quantity of
+846   Bioavailability and Bioequivalence Samples Retained Under 21 CFR 320.38(c) (August 2020),
+847   as applicable, regarding considerations for retention of study drug samples and to 21 CFR 320.36
+848   for requirements for maintenance of records of BE testing. Retention samples should be
+849   randomly selected from the drug supplies received before allocating topical product units for use
+850   in an IVPT study in which the test topical product and RS are compared.
+851
+852          B.      Control of Study Procedures
+853
+854   Study procedures that have the potential to influence the results of the study should be
+855   appropriately controlled. Also, experimental observations that may have the potential to
+856   influence the interpretation of the study results, as well as any protocol or standard operating
+857   procedure (SOP) deviations, should be reported.
+858
+859   Control of procedures related to the skin include the consistent control across the study of the
+860   skin preparation (e.g., dermatoming of skin sections) and the thickness of skin sections mounted
+861   on diffusion cells, as well as the skin storage conditions, including the duration for which the
+862   skin was frozen and the number of freeze-thaw cycles to which the skin was exposed. Skin from
+863   the same anatomical location should be used from all donors, and the demographics (age, race,
+864   sex) should be reported for all donors. Also, the IVPT sensitivity, pilot, and pivotal studies
+865   should use skin from the same anatomical site; otherwise, if skin from different anatomical sites
+866   is used across the different study phases, it may not be possible for the results of the IVPT
+867   sensitivity and pilot studies to support a demonstration of the discrimination ability of the IVPT
+868   method used for the pivotal study because the method parameters would not be aligned across
+869   the respective studies. Similarly, if a non-rate-limiting support membrane is used beneath the
+870   skin section (e.g., a filter membrane used in a validated IVRT method for the same topical
+871   product) then it should be used in a consistent manner for the IVPT sensitivity, pilot, and pivotal
+872   studies.
+873
+874   Control of procedures related to the dose include the control of the area of dose application, the
+875   dose amount, the dosing technique, the dose duration, and the blinding and randomization
+
+
+
+                                                       20
+                                    Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+876   procedures for dosing. The test topical product and RS should be dosed in an identical and
+877   consistent manner for all diffusion cells in the study. Differences in dosing technique may alter
+878   the metamorphosis of the dosage form on the skin, and inconsistencies in the diameter of the area
+879   dosed on each diffusion cell may significantly influence the dosed area and contribute to errors
+880   in the calculation of flux.
+881
+882   Control of procedures related to sampling include the control of sampling time precision, the
+883   sampling technique, the duration of sampling and replacement of receptor solution, the sample
+884   volume or flow rate, and sample handling and storage.
+885
+886   Control of procedures related to the pivotal study should include a non-dosed control skin section
+887   from each skin donor, which should be mounted in a diffusion cell and otherwise treated
+888   identically to the dosed skin sections, including sampling of the receptor solution at all time
+889   points to ensure that drug concentrations monitored in the receptor solution are associated with
+890   the dose applied in the IVPT pivotal study, and not drug contamination in the skin from that
+891   donor that might permeate into the receptor solution across the duration of the study. A pre-dose
+892   “zero” sample collected from each diffusion cell is also recommended, which may identify
+893   potential contamination associated with each skin section and/or each diffusion cell.
+894
+895   In addition, investigators should perform the IVPT validation and pivotal studies within a quality
+896   management system that includes, but is not limited to, documented procedures for:
+897
+898      •   Study personnel identification, training, qualification, and responsibilities
+899
+900      •   Study management and study management personnel responsibilities
+901
+902      •   Quality control (QC) and QC personnel responsibilities
+903
+904      •   Quality assurance (QA) and QA personnel responsibilities
+905
+906      •   Use of SOPs
+907
+908      •   Use of study protocols
+909
+910      •   Use of study reports
+911
+912      •   Maintenance and control of the study facility environment and systems
+913
+914      •   Qualification and calibration of instruments and computerized systems
+915
+916      •   Good documentation practices including, but not limited to, contemporaneous
+917          documentation of study procedures and recording of experimental observations or
+918          deviations from procedures specified in the study protocol or in relevant SOPs
+919
+920      •   Maintenance of suitable records that facilitate the reconstruction of study events and
+921          procedures, including study sample handling and storage records (e.g., sample tracking
+
+
+                                                       21
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+922          logs), audit trails for sample analysis procedures, control of study materials and reagents,
+923          and electronic data control
+924
+925      •   Archival of study records
+926
+927          C.      Blinding Procedure
+928
+929   A detailed description of the blinding procedure should be provided in the study protocol and
+930   final report. The packaging of the test topical product and RS should be similar in appearance to
+931   maintain adequate blinding of the investigator and any experimental operators.
+932
+933          D.      Randomization
+934
+935   The method of randomization should be described in the protocol of the IVPT study and the
+936   randomization schedule provided, preferably in a SAS data set in .xpt format (created using the
+937   SAS XPORT procedure). It is recommended that an independent third party generate and hold
+938   the randomization code throughout the conduct of the study to minimize bias. The applicant may
+939   generate the randomization code if not involved in the packaging and labeling of the test topical
+940   product and RS dosed in the study. A sealed copy of the randomization scheme should be
+941   retained at the study site and should be available to FDA investigators at the time of site
+942   inspection to allow for verification of the treatment identity of each skin section.
+943
+944          E.      Dosing
+945
+946   In the IVPT pivotal study, the test topical product and RS should be dosed in an alternating
+947   pattern on successive diffusion cells (skin sections) from each donor. One of two dosing
+948   sequences (illustrated below) may be randomly assigned for each donor:
+949
+950      a. ABABAB…
+951      b. BABABA…
+952
+953          F.      Study Design
+954
+955   The IVPT pivotal study should compare the cutaneous pharmacokinetics of the drug from the
+956   test topical product versus that from the RS using excised human skin with a competent skin
+957   barrier mounted on a qualified diffusion cell system. The IVPT pivotal study should use a design
+958   that directly compares the test topical product and RS on skin from the same set of donors, each
+959   with the same number of replicate skin sections per donor per treatment group (dosed with either
+960   test topical product or RS topical), using the same IVPT method parameters.
+961
+962   The IVPT pivotal study design, methodology, and diffusion cell equipment considerations
+963   relating to sampling precision should be controlled as precisely as possible. For example, it may
+964   be appropriate to stagger the dose application on successive diffusion cells and to synchronize
+965   the sampling time points with the dosing time for that diffusion cell, to ensure consistent
+966   durations between dosing and sampling of all diffusion cells.
+967
+
+
+
+                                                      22
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+ 968          G.      Inclusion Criteria
+ 969
+ 970   In general, the following inclusion criteria should apply: healthy, normal, barrier-competent skin
+ 971   from male and/or female donors of at least 18 years of age. Inclusion criteria related to donor
+ 972   demographics (e.g., age, race, sex) should be specified in the study protocol and demographic
+ 973   information should be reported for each donor. Additional criteria may be added by the
+ 974   applicant.
+ 975
+ 976   The skin may be harvested following excision from patients undergoing a surgical procedure or
+ 977   excised from cadavers. A consistent source is recommended for all the skin used. The anatomical
+ 978   region specified in the study protocol (e.g., posterior torso) should be consistent for all donors
+ 979   whose skin is included in the study.
+ 980
+ 981   The study protocol should specify the inclusion (acceptance) criteria for skin sections based upon
+ 982   the barrier integrity test result, which should be reported for each skin section.
+ 983
+ 984   The study protocol should specify inclusion criteria related to the temperature and duration of
+ 985   skin storage as well as the number of freeze-thaw cycles, all of which should be reported for each
+ 986   donor’s skin.
+ 987
+ 988   The study protocol should specify the inclusion criteria related to the skin harvesting/processing
+ 989   procedures and skin thickness (e.g., dermatomed skin of 500 μm ± 250 μm thickness) used in the
+ 990   IVPT study.
+ 991
+ 992          H.      Exclusion Criteria
+ 993
+ 994   In general, the following exclusion criteria should apply. Skin from subjects with a known
+ 995   (history of) dermatological disease should be excluded from the study. Skin with tattoos, stretch
+ 996   marks, or any visible sign of abnormality should be excluded from the study. Skin exhibiting a
+ 997   significant density of terminal hair is not recommended and should be excluded from the study.
+ 998   Additional criteria may be added by the applicant.
+ 999
+1000   While gentle washing or rinsing of the skin surface is appropriate, submerging the skin in an
+1001   aqueous solution for more than a few minutes may damage the skin barrier and should be
+1002   avoided; such skin sections should be excluded from the study. Also, skin that has been
+1003   subjected to shaving with a blade; abrasive polishing; tape-stripping; or cleansing with alcohols,
+1004   solvents, or other strong solutions that could damage the skin barrier should be excluded from
+1005   the study.
+1006
+1007   Skin from donors with significant background levels of the drug or other compounds that may
+1008   interfere with the quantification of the drug in receptor solution samples should be excluded from
+1009   the study.
+1010
+1011   Skin from donors exhibiting a high barrier integrity test failure rate among replicate skin sections
+1012   may be excluded from the study, and skin from an alternative donor may be used instead.
+1013
+
+
+
+                                                        23
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+1014          I.      IVPT Endpoints
+1015
+1016   The endpoints for the IVPT pivotal study are based upon parameters that characterize the rate
+1017   and extent to which the drug permeates into and through the skin and becomes available in the
+1018   receptor solution. Specifically, the rate of drug permeation is characterized by the flux (J) and the
+1019   extent of drug permeation is characterized by the total cumulative amount (AMT) of drug
+1020   permeated into the receptor solution across the study duration.
+1021
+1022   The flux (rate of drug permeation) should be plotted as J on the Y-axis in units of mass/area/time
+1023   (e.g., nanograms (ng)/cm2/hr) versus time on the X-axis. Flux profiles commonly resemble
+1024   plasma pharmacokinetic profiles, however, it is important to distinguish that the flux is a rate,
+1025   rather than a concentration. The extent of drug permeation should also be plotted, as the total
+1026   cumulative amount (AMT) of drug permeated on the Y-axis in units of mass/area (e.g., ng/cm2)
+1027   versus time on the X-axis.
+1028
+1029   The flux should be calculated based upon: the receptor sample concentration (e.g., 2.0 ng/mL) at
+1030   each time point; the precise, empirically measured volume of that specific diffusion cell (e.g., 6.0
+1031   mL) which may vary between individual cells; the area of dose application (e.g., 1 cm2); and the
+1032   duration for which the receptor volume was accepting the drug. For example, if the sample
+1033   exemplified here represented a 2-hour period following dosing, then J would be calculated based
+1034   upon the values above as:
+1035
+1036                     J = [(2.0 ng/mL) x (6.0 mL)]/(1 cm2)/(2 hrs) = 6 ng/cm2/hr
+1037
+1038   This flux should be calculated and reported for each diffusion cell for each sampling interval and
+1039   plotted across the entire study duration to generate the flux profile for each diffusion cell. The
+1040   rate calculated above may be plotted at the 2-hour time point, or at the midpoint between 0 and 2
+1041   hours (i.e., 1 hour).
+1042
+1043   In addition, the AMT should be calculated and reported for each diffusion cell. This cumulative
+1044   amount of drug that has permeated (in total across the entire study) should be reported as the
+1045   AMT endpoint, rather than using a trapezoid rule to calculate the area under the flux curve.
+1046
+1047   The maximum flux (Jmax) at the peak of the drug flux profile and the AMT should both be
+1048   compared for locally-acting test topical products and RSs. This is somewhat analogous to the
+1049   comparison of the Cmax and AUC for systemically-acting test products and RSs, inasmuch as the
+1050   pair of endpoints in each case facilitates a comparison of the rate and extent to which the drug
+1051   from each type of product (locally-acting or systemically-acting) becomes available at the site of
+1052   action.
+1053
+1054   A confidence interval (CI) should be calculated for each IVPT endpoint:
+1055
+1056      a. the natural log-transformed maximum flux (Jmax)
+1057      b. the natural log-transformed total cumulative amount (AMT) permeated
+1058
+
+
+
+
+                                                        24
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+1059   It is the responsibility of the applicant to determine the number of donors required to adequately
+1060   power the IVPT pivotal study, however, a minimum of four dosed replicates per donor per
+1061   treatment group (test product or RS) is recommended.
+1062
+1063   At the completion of the study, if the number of skin replicates is the same for all donors in the
+1064   test topical product and RS treatment groups in the IVPT study, a statistical analysis for a
+1065   balanced design is recommended. If skin sections or diffusion cells are excluded from the final
+1066   statistical analysis because of experimental loss/issues, and the resulting data set is unbalanced, a
+1067   statistical analysis for an unbalanced design is recommended.
+1068
+1069   Approaches to statistical analysis of the pivotal study are described in section VIII of this
+1070   guidance. Appendix I provides example SAS code for determining BE with both a balanced
+1071   dataset and an unbalanced dataset. Appendix II provides numerical examples with simulated data
+1072   sets. Appendix III provides example R code for determining BE.
+1073
+1074
+1075   VII. SUBMITTING INFORMATION ON IVPT STUDIES IN AN ANDA
+1076
+1077   For IVPT studies with topical products submitted in ANDAs that are intended to support a
+1078   demonstration of BE, detailed study protocols, relevant SOPs, and detailed reports should be
+1079   submitted for the IVPT method validation (including the IVPT pilot study) and the IVPT pivotal
+1080   study. In addition, a detailed report describing the IVPT method development should be
+1081   submitted. These protocols, SOPs, and reports should be submitted in module 5.3.1.2 of the
+1082   electronic Common Technical Document (eCTD) and should describe experimental procedures,
+1083   study controls, quality management procedures, and data analyses.
+1084
+1085   Note that the study protocols, SOPs, and reports related to the IVPT method are distinct from
+1086   those for the sample analytical method that is used to quantify drug concentrations in IVPT
+1087   receptor solution samples (e.g., an HPLC/MS or UPLC/MS method). Separate protocols and
+1088   SOPs should be submitted for the sample analytical method validation. Sample analytical
+1089   method development and validation reports, pilot and pivotal IVPT study sample analysis
+1090   reports, as well as associated SOPs and protocols relevant to the sample analysis of an IVPT
+1091   study with human skin should be submitted in Module 5.3.1.4 of the eCTD.
+1092
+1093
+1094   VIII. IVPT PIVOTAL STUDY STATISTICAL ANALYSIS
+1095
+1096   The two treatment groups would correspond to the test topical product (T) and the RS (R). The
+1097   statistical analysis should consider a sample of 𝑛𝑛 donors, for which 𝑟𝑟𝑗𝑗𝑇𝑇 replicate skin sections
+1098   from the jth donor (𝑗𝑗 = 1, ⋯ , 𝑛𝑛) are available for the T group and 𝑟𝑟𝑗𝑗𝑅𝑅 replicate skin sections from
+1099   the jth donor (𝑗𝑗 = 1, ⋯ , 𝑛𝑛) are available for the R group. Each replicate (i) from each donor (j)
+1100   should have been randomly assigned to each product.
+1101
+1102   Define the following quantities:
+1103
+
+
+
+                                                           25
+                                          Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+
+1104       •     𝑇𝑇𝑖𝑖𝑖𝑖 = the natural log-transformed IVPT endpoint (Jmax or AMT) dosed with the test
+1105             topical product for the ith skin replicate from the jth donor (𝑖𝑖 = 1, 2, ⋯ , 𝑟𝑟𝑗𝑗𝑇𝑇 , 𝑗𝑗 = 1, 2, ⋯ , 𝑛𝑛)
+
+1106       •     𝑅𝑅𝑖𝑖𝑖𝑖 = the natural log-transformed IVPT endpoint (Jmax or AMT) dosed with the RS for the
+1107             ith skin replicate from the jth donor (𝑖𝑖 = 1, 2, ⋯ , 𝑟𝑟𝑗𝑗𝑅𝑅 , 𝑗𝑗 = 1, 2, ⋯ , 𝑛𝑛)
+
+1108       •     𝑟𝑟𝑗𝑗𝑇𝑇 = the number of skin replicates from the jth donor dosed with the test topical product
+1109             ( 𝑗𝑗 = 1, 2, ⋯ , 𝑛𝑛)
+
+1110       •     𝑟𝑟𝑗𝑗𝑅𝑅 = the number of skin replicates from the jth donor dosed with the RS ( 𝑗𝑗 = 1, 2, ⋯ , 𝑛𝑛)
+
+1111       •     𝑟𝑟 ∗ = 𝑟𝑟1𝑅𝑅 + 𝑟𝑟2𝑅𝑅 + ⋯ + 𝑟𝑟𝑛𝑛𝑅𝑅 = the total number of skin replicates in the R group
+
+1112       •     𝑛𝑛 = the number of donors
+
+1113   If the numbers of skin replicates available for the final statistical analysis are the same for the 𝑛𝑛
+1114   donors for the T group and the R group, the resulting data set is balanced. For simplicity of
+1115   notation, the common number of skin replicates for one donor for one treatment group in a
+1116   balanced data set is denoted as 𝑟𝑟 = 𝑟𝑟1𝑇𝑇 = 𝑟𝑟2𝑇𝑇 = ⋯ = 𝑟𝑟𝑛𝑛𝑇𝑇 = 𝑟𝑟1𝑅𝑅 = 𝑟𝑟2𝑅𝑅 = ⋯ = 𝑟𝑟𝑛𝑛𝑅𝑅 .
+1117
+1118   A diffusion cell may be excluded from among the replicates in a data set when there is a
+1119   documented observation of a failure (e.g., visual observation that a skin section tears and leaks
+1120   during the study) or a protocol deviation (e.g., the receptor compartment in a diffusion cell is
+1121   discovered to be empty at the first sampling time point). In such instances, if sufficient skin
+1122   remains from the same donor, and no samples from that diffusion cell have been analyzed, a
+1123   replacement diffusion cell can be set up and studied. Otherwise (if the diffusion cell cannot be
+1124   replaced) the resulting data set becomes unbalanced.
+1125
+1126   The statistical analysis methods for assessing BE in the cases of a balanced data set and an
+1127   unbalanced data set are described below. For a donor to be included in the statistical analysis,
+1128   there should be at least 3 replicate skin sections from the donor for each (T and R) treatment
+1129   group.
+1130
+1131   Step 1.
+1132                 Determine 𝑆𝑆𝑊𝑊𝑊𝑊 , the estimated within-donor standard deviation of the RS, for each of
+1133                 the natural log-transformed IVPT endpoints Jmax and AMT:
+1134
+                                                                                            1/2
+                                                                   𝑟𝑟𝑗𝑗𝑅𝑅                2
+                                                             𝑛𝑛                   �
+                                                            ∑𝑗𝑗=1 ∑𝑖𝑖=1�𝑅𝑅𝑖𝑖𝑖𝑖 − 𝑅𝑅.𝑗𝑗 �
+1135                                              𝑆𝑆𝑊𝑊𝑊𝑊 = �                               �
+                                                                     𝑟𝑟 ∗ − 𝑛𝑛
+1136
+                                     1    𝑟𝑟 𝑅𝑅
+1137                 where 𝑅𝑅�.𝑗𝑗 = 𝑟𝑟 𝑅𝑅 ∑𝑖𝑖=1
+                                             𝑗𝑗
+                                                𝑅𝑅𝑖𝑖𝑖𝑖 is the average of log-transformed observations across all 𝑟𝑟𝑗𝑗𝑅𝑅
+                                     𝑗𝑗
+1138                 replicates from donor j dosed with the RS.
+1139
+
+
+
+                                                                26
+                                       Contains Nonbinding Recommendations
+                                                   Draft — Not for Implementation
+1140                 (a) If 𝑆𝑆𝑊𝑊𝑊𝑊 ≥ 0.294, use the scaled average BE (SABE) approach to determine BE
+1141                     for the individual IVPT endpoint(s) in Steps 2, 3.1, and 4.1
+
+1142                 (b) If 𝑆𝑆𝑊𝑊𝑊𝑊 < 0.294, use the regular average BE (ABE) approach through the two
+1143                     one-sided tests (TOST) procedure (Schuirmann, 1987) to determine BE for
+1144                     the individual IVPT endpoint(s) in Steps 2, 3.2, and 4.2
+
+1145   Step 2.
+1146             Determine the point estimate for the mean difference of T and R products (𝐼𝐼̂), its
+1147             standard error (𝑠𝑠𝑠𝑠(𝐼𝐼̂)), and the corresponding degrees of freedom (𝑑𝑑𝑑𝑑 ∗).
+1148
+1149             For a balanced data set, determine 𝐼𝐼̂, 𝑠𝑠𝑠𝑠(𝐼𝐼̂), and 𝑑𝑑𝑑𝑑 ∗ by the following:
+1150
+                                       1                            1
+1151                 •    𝐼𝐼̂ = 𝐼𝐼.̅ = 𝑛𝑛 ∑𝑛𝑛𝑗𝑗=1 𝐼𝐼𝑗𝑗 where 𝐼𝐼𝑗𝑗 = 𝑟𝑟 ∑𝑟𝑟𝑖𝑖=1�𝑇𝑇𝑖𝑖𝑖𝑖 − 𝑅𝑅𝑖𝑖𝑖𝑖 �
+
+                                     1                        2
+1152                 •    𝑆𝑆𝐼𝐼2 = (𝑛𝑛−1) ∑𝑛𝑛𝑗𝑗=1�𝐼𝐼𝑗𝑗 − 𝐼𝐼.̅ � (estimate of inter-donor variability)
+
+1153                 •    𝑠𝑠𝑠𝑠�𝐼𝐼̂� = �𝑆𝑆𝐼𝐼2 ⁄𝑛𝑛
+
+1154                 •    𝑑𝑑𝑑𝑑 ∗ = 𝑛𝑛 − 1
+
+1155             For an unbalanced data set, approximate 𝐼𝐼̂, 𝑠𝑠𝑠𝑠(𝐼𝐼̂), and 𝑑𝑑𝑑𝑑 ∗ by using PROC MIXED
+1156             (or PROC GLM) in SAS. The example code is provided in Appendix I.
+1157
+1158
+1159   Step 3.1. Scaled Average BE (SABE) Approach
+1160
+1161             In the SABE approach, the hypotheses to be tested are:
+1162
+                                                                      (𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 )2
+1163                                                           𝐻𝐻0 :          2        ≥ 𝜃𝜃
+                                                                            𝜎𝜎𝑊𝑊𝑊𝑊
+                                                                      (𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 )2
+1164                                                           𝐻𝐻𝑎𝑎 :         2        < 𝜃𝜃
+                                                                            𝜎𝜎𝑊𝑊𝑊𝑊
+1165
+1166             where:
+1167
+1168                 •    𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 = mean difference of T and R products
+                            2
+1169                 •    𝜎𝜎𝑊𝑊𝑊𝑊 = within-donor variance of R product
+                                (ln (𝑚𝑚))2
+1170                 •    𝜃𝜃 = (𝜎𝜎       2
+                                             , 𝑚𝑚 = 1.2500 (BE limit), and 𝜎𝜎𝑊𝑊0 = 0.25 (regulatory constant)
+                                    𝑊𝑊0 )
+
+
+1171             Rejection of the null hypothesis supports the conclusion of equivalence of the two
+1172             products.
+1173
+
+
+                                                                       27
+                                     Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+                                                                                       2
+1174            Determine (1-α)*100% upper confidence bound for (𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 )2 − 𝜃𝜃𝜎𝜎𝑊𝑊𝑊𝑊 based on
+1175            Howe’s Approximation (Howe, 1974) (α = 0.05):
+1176
+1177                                                      𝑋𝑋 + 𝑌𝑌 + 𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠(𝑉𝑉) ∗ |𝑉𝑉|1/2
+1178
+1179            where:
+1180
+1181                •    𝑋𝑋 = 𝐼𝐼̂2 − 𝑠𝑠𝑠𝑠(𝐼𝐼̂)2
+                                   2
+1182                •    𝑌𝑌 = −𝜃𝜃𝑆𝑆𝑊𝑊𝑊𝑊
+                                                                      2
+1183                •    𝑋𝑋𝛽𝛽′ = ��𝐼𝐼̂� + 𝑡𝑡(1−𝛼𝛼),𝑑𝑑𝑑𝑑∗ ∗ 𝑠𝑠𝑠𝑠(𝐼𝐼̂)�
+                                                   2
+                                       (𝑟𝑟 ∗ −𝑛𝑛)𝑆𝑆𝑊𝑊𝑊𝑊
+1184                •    𝑌𝑌𝛽𝛽′ = −𝜃𝜃 𝜒𝜒2
+                                       (1−𝛼𝛼),(𝑟𝑟∗ −𝑛𝑛)
+
+
+1185                •    𝑉𝑉 = �𝑋𝑋𝛽𝛽′ − 𝑋𝑋� ∗ �𝑋𝑋𝛽𝛽′ − 𝑋𝑋� + �𝑌𝑌𝛽𝛽′ − 𝑌𝑌� ∗ �𝑌𝑌𝛽𝛽′ − 𝑌𝑌�
+
+1186                •    𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠(𝑉𝑉) = 1 if 𝑉𝑉 > 0; 0 𝑖𝑖𝑖𝑖 𝑉𝑉 = 0; −1 if 𝑉𝑉 < 0
+
+1187            Note that 𝑡𝑡(1−𝛼𝛼),𝑑𝑑𝑑𝑑∗ is (1 − 𝛼𝛼) ∗ 100th percentile of the Student’s t-distribution with
+                                                    2
+1188            𝑑𝑑𝑑𝑑 ∗ degrees of freedom and 𝜒𝜒(1−𝛼𝛼),(𝑟𝑟 ∗ −𝑛𝑛) is (1 − 𝛼𝛼) ∗ 100
+                                                                                    th
+                                                                                       percentile of the Chi-
+                                                ∗
+1189            square distribution with (𝑟𝑟 − 𝑛𝑛) degrees of freedom.
+1190
+1191
+1192   Step 3.2. Regular Average BE (ABE) Approach
+1193
+1194            In the ABE approach, the hypotheses to be tested are:
+1195
+1196                                       𝐻𝐻0 : 𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 ≤ − ln(𝑚𝑚) or 𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 ≥ ln(𝑚𝑚)
+1197                                               𝐻𝐻𝑎𝑎 : − ln (𝑚𝑚) < 𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 < ln(𝑚𝑚)
+1198            where:
+1199
+1200                •    𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 = mean difference of T and R products
+
+1201                •    𝑚𝑚 = 1.2500 (BE limit)
+
+1202                •    ln (𝑚𝑚) is the natural logarithm of the BE limit
+1203            Rejection of the null hypothesis supports the conclusion of equivalence of the two
+1204            products.
+1205
+1206            Determine the (1 − 2α)*100% confidence interval for 𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 (α = 0.05):
+1207
+1208                                                         𝐼𝐼̂ ± 𝑡𝑡(1−𝛼𝛼),𝑑𝑑𝑑𝑑∗ ∗ 𝑠𝑠𝑠𝑠(𝐼𝐼̂)
+1209
+
+
+
+                                                                  28
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+
+1210             where 𝑡𝑡(1−𝛼𝛼),𝑑𝑑𝑑𝑑∗ is (1 − 𝛼𝛼) ∗ 100th percentile of the Student’s t-distribution with 𝑑𝑑𝑑𝑑 ∗
+1211             degrees of freedom.
+1212
+1213
+1214   Step 4.1. BE Determination with SABE Approach
+1215
+1216             For the test product to be bioequivalent to the reference standard, both of the
+1217             following conditions must be satisfied for each IVPT endpoint tested:
+                                                                                  2
+1218                 a. the 95% upper confidence bound for (𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 )2 − 𝜃𝜃𝜎𝜎𝑊𝑊𝑊𝑊 must be less than or
+1219                     equal to zero (numbers should be kept to a minimum of four significant
+1220                     figures for comparison).
+
+1221                 b. the point estimate of the T/R geometric mean ratio must fall within the pre-
+                                            1
+1222                     specified limits �𝑚𝑚 , 𝑚𝑚�, where m = 1.2500.
+
+1223
+1224   Step 4.2. BE Determination with ABE Approach
+1225
+1226              For the test product to be bioequivalent to the reference standard, the 90%
+                                                                                           1
+1227             confidence interval for 𝜇𝜇 𝑇𝑇 − 𝜇𝜇𝑅𝑅 must be contained within the limits �𝑚𝑚 , 𝑚𝑚� in the
+1228             original scale for each IVPT endpoint tested, where m = 1.2500.
+1229
+1230   APPENDIX I (EXAMPLE SAS CODE)
+1231
+1232   This section provides an example SAS code for use in determining BE in an in vitro permeation
+1233   test (IVPT) study with either a balanced data set or an unbalanced data set. The example data
+1234   sets, “Data-Balanced.csv” and “Data-Unbalanced.csv”, are provided in Appendix II.
+1235
+1236
+        /*
+        INPUT
+        * dat = name of the data set
+        * don = column name of donor variable in dat
+        * reps = column name of replicate variable in dat
+        * trt = column name of treatment variable in dat (treatment variable: 'T',
+        'R')
+        * ly = column name of log-transformed endpoint in dat
+
+        OUTPUT: result
+        * Swr = estimated within-donor standard deviation of reference
+        * lpointest = point estimate for mean difference in log scale
+        * testmean = test mean estimate in original scale
+        * refmean = reference mean estimate in original scale
+        * pointest = point estimate transformed back to original scale
+        * ub = SABE 95% upper confidence bound
+        * (l, u) = ABE 90% CI for mean difference transformed back to original scale
+        */
+
+
+
+
+                                                         29
+                     Contains Nonbinding Recommendations
+                              Draft — Not for Implementation
+%MACRO ivpt(dat=, don=, reps=, trt=, ly=);
+
+      * Remove missing values before analysis;
+      DATA wdat;
+            SET &dat;
+            IF &ly = . THEN DELETE;
+      RUN;
+
+      * Create the data sets for test & reference;
+      DATA tdat;
+        SET wdat;
+        IF &trt = 'T';
+      RUN;
+
+      DATA rdat;
+        SET wdat;
+        if &trt = 'R';
+      RUN;
+
+      * Sort tdat and rdat by donor id and reps id;
+      PROC SORT DATA=tdat;
+        BY &don &reps;
+      RUN;
+
+      PROC SORT DATA=rdat;
+        BY &don &reps;
+      RUN;
+
+      * Determine if the data is balanced or unbalanced;
+      PROC SQL;
+        CREATE TABLE num as
+        SELECT &don, &trt, n(&don) as nrep
+        FROM wdat
+        GROUP BY &don, &trt;
+
+        CREATE TABLE unum as
+        SELECT DISTINCT(nrep) as nr
+        FROM num;
+
+        CREATE TABLE rcount as
+        SELECT COUNT(*) as nnr
+        FROM unum;
+
+        DROP TABLE num, unum;
+      QUIT;
+
+      DATA _NULL_;
+        SET rcount;
+        CALL SYMPUT("nnr", nnr);
+      RUN;
+
+      %IF &nnr=1 %THEN %DO;      * if the data is balanced;
+
+        * Calculate the necessary quantities;
+        PROC SQL;
+          CREATE TABLE tmp1 as
+            SELECT &don, mean(&ly) as mtest, var(&ly) as vtest, n(&ly) as rt
+
+
+
+                                           30
+             Contains Nonbinding Recommendations
+                     Draft — Not for Implementation
+    FROM tdat GROUP BY &don;
+
+    CREATE TABLE tmp2 as
+    SELECT &don, mean(&ly) as mref, var(&ly) as vref, n(&ly) as rr
+    FROM rdat GROUP BY &don;
+
+    CREATE TABLE mergetmp0 as
+    SELECT * FROM tmp1 as tmp1
+    FULL JOIN tmp2 as tmp2
+    on tmp1.&don = tmp2.&don;
+
+    CREATE TABLE mergetmp as
+    SELECT *, mtest-mref as Ij
+    FROM mergetmp0;
+
+    DROP TABLE tmp1, tmp2, mergetmp0;
+QUIT;
+
+PROC IML;
+  USE mergetmp;
+    READ ALL VAR {&don "vref" "rr" "Ij" "mtest" "mref"};
+    m = 1.2500;
+    alpha = 0.05;
+
+    * Determine Swr;
+    Swr2 = mean(vref);
+    Swr = sqrt(Swr2);
+    Ihat = mean(Ij);
+    SI2 = var(Ij);
+    nd = nrow(&don);
+    nr = rr[1,1];
+    df = (nr-1)*nd;
+
+    * Treatment means;
+    testmean = exp(mean(mtest));
+    refmean = exp(mean(mref));
+
+    * SABE for balanced data;
+    theta = (log(m)/0.25)**2;
+    qchi = quantile('chisq', 1-alpha, df);
+    qt = quantile('t', 1-alpha, nd-1);
+    x = Ihat**2 - SI2/nd;
+    y = - theta * Swr2;
+    xp = ( abs(Ihat) + qt * sqrt(SI2/nd) )**2;
+    yp = - theta * df * Swr2 / qchi;
+    v = sign(xp-x) * (xp-x)**2 + sign(yp-y) * (yp-y)**2;
+    ub = x + y + sign(v)*sqrt(abs(v));
+
+    * ABE for balanced data;
+    se = sqrt(SI2/nd);
+    logl = Ihat - qt * se;
+    logu = Ihat + qt * se;
+
+    l = exp(logl);
+    u = exp(logu);
+
+    * Rename the point estimate;
+
+
+
+                                  31
+                 Contains Nonbinding Recommendations
+                        Draft — Not for Implementation
+        lpointest = Ihat;
+        pointest = exp(Ihat);
+
+      CREATE result var {Swr lpointest
+                                    testmean refmean pointest ub l u};
+      APPEND;
+      CLOSE result;
+  QUIT;
+
+  PROC PRINT DATA = result noobs;
+    TITLE "IVPT Study Data Analysis Results for &ly: Balanced Data";
+  RUN;
+
+%END;
+
+%ELSE %DO;    * if the data is unbalanced;
+
+  * Estimate the mean difference;
+  PROC MIXED DATA = wdat;
+    CLASS &don &trt;
+      MODEL &ly = &don &trt;
+      ESTIMATE "&ly Test-Ref" &trt -1 1/cl alpha=0.1;
+      LSMEANS &trt;
+      ODS OUTPUT ESTIMATES = iout;
+      ODS OUTPUT LSMEANS = mout;
+  RUN; QUIT;
+
+  * Calculate the necessary quantities;
+  PROC SQL;
+    CREATE TABLE tmp1 as
+      SELECT &don, mean(&ly) as mref, n(&ly) as rr
+      FROM rdat GROUP BY &don;
+
+      CREATE TABLE tmp2 as
+      SELECT count(*) as nd, sum(rr) as rstar
+      FROM tmp1;
+  QUIT;
+
+  PROC IML;
+    USE rdat;
+      READ ALL VAR {&ly};
+
+        USE tmp1;
+        READ ALL VAR {&don "mref" "rr"};
+
+        USE tmp2;
+        READ ALL VAR {"nd" "rstar"};
+
+        USE iout;
+        READ ALL VAR {"estimate" "stderr" "df"};
+
+        USE mout;
+        READ ALL VAR {"estimate"} into lsmean;
+
+        m = 1.2500;
+        alpha = 0.05;
+
+
+
+
+                                     32
+                       Contains Nonbinding Recommendations
+                               Draft — Not for Implementation
+              * Determine Swr;
+              mref2 = repeat(mref, rr);
+              mref2 = shape(mref2, rstar, 1);
+
+              Swr2 = sum( (&ly - mref2)##2 ) / (rstar - nd);
+              Swr = sqrt(Swr2);
+
+              * Treatment means;
+              testmean = exp(lsmean[2,1]);
+              refmean = exp(lsmean[1,1]);
+
+              * SABE for unbalanced data;
+              theta = (log(m)/0.25)**2;
+              qchi = quantile('chisq', 1-alpha, rstar-nd);
+              qt = quantile('t', 1-alpha, df);
+
+              estimate = estimate[1,1];
+              stderr = stderr[1,1];
+
+              x = estimate**2 - stderr**2;
+              y = - theta * Swr2;
+
+              xp = (abs(estimate) + qt * stderr)** 2;
+              yp = - theta * (rstar - nd) * Swr2 / qchi;
+
+              v = sign(xp-x) * (xp-x)**2 + sign(yp-y) * (yp-y)**2;
+              ub = x + y + sign(v)*sqrt(abs(v));
+
+              * ABE for unbalanced data;
+              logl = estimate - qt*stderr;
+              logu = estimate + qt*stderr;
+
+              l = exp(logl);
+              u = exp(logu);
+
+              * Rename the point estimate;
+              lpointest = estimate;
+              pointest = exp(estimate);
+
+            CREATE result var {Swr lpointest
+                                          testmean refmean pointest ub l u};
+            APPEND;
+            CLOSE result;
+        QUIT;
+
+        PROC PRINT DATA = result noobs;
+          TITLE "IVPT Study Data Analysis Results for &ly: Unbalanced Data";
+        RUN;
+
+      %END;
+
+%MEND ivpt;
+
+proc import datafile = "Data-Balanced.csv"
+      out = bdat
+      dbms = csv
+      replace;
+
+
+
+                                            33
+                                   Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+        run;
+
+        %ivpt(dat=bdat, don=donor, reps=replicate, trt=treat, ly=LAMT)
+
+
+        proc import datafile = "Data-Unbalanced.csv"
+              out = udat
+              dbms = csv
+              replace;
+        run;
+
+        %ivpt(dat=udat, don=donor, reps=replicate, trt=treat, ly=LAMT)
+
+1237
+1238
+1239   APPENDIX II (NUMERICAL EXAMPLES)
+1240
+1241   This section provides numerical examples using simulated data sets illustrating the determination
+1242   of BE.
+1243
+1244   (a) Balanced Data
+1245
+1246   The simulated data set “Data-Balanced.csv” shown below provides an example of in vitro
+1247   permeation test (IVPT) study outcomes when the data is balanced. The SAS output and the
+1248   determination of BE for LAMT in this data set follows.
+1249
+1250                                            Data-Balanced.csv
+                    donor   replicate   treat      AMT            Jmax        LAMT       LJmax
+                      1        1         T        2.361749       0.081326     0.859402   -2.50929
+                      1        2         T        0.916571       0.041008     -0.08712   -3.19398
+                      1        3         T        1.246243       0.038537     0.220133   -3.25613
+                      1        4         T        0.890018       0.04296      -0.11651   -3.14747
+                      1        5         T        0.663551       0.031219     -0.41015   -3.46674
+                      1        6         T        0.479143       0.015747     -0.73576   -4.15108
+                      2        1         T        0.998845       0.030073     -0.00116   -3.50412
+                      2        2         T        0.814457       0.061644     -0.20523   -2.78637
+                      2        3         T        0.648741       0.019984     -0.43272   -3.91283
+                      2        4         T        1.142716       0.044332     0.133408   -3.11604
+                      2        5         T        0.767291       0.028453     -0.26489   -3.55951
+                      2        6         T        1.392406       0.166782     0.331033   -1.79107
+                      3        1         T        1.388867       0.096822     0.328488   -2.33488
+                      3        2         T        0.45757        0.02184      -0.78182   -3.82402
+                      3        3         T        1.377438        0.0651      0.320226   -2.73182
+                      3        4         T        0.870988       0.073199     -0.13813   -2.61457
+                      3        5         T        1.753523       0.067281     0.561627   -2.69888
+                      3        6         T        0.995674       0.116414     -0.00434   -2.15061
+
+
+
+                                                            34
+        Contains Nonbinding Recommendations
+                Draft — Not for Implementation
+4   1       T        0.811458       0.053465     -0.20892   -2.92872
+4   2       T        0.913538       0.060217     -0.09043   -2.8098
+4   3       T        2.251438       0.083596     0.811569   -2.48176
+4   4       T        1.163818       0.054213     0.151706   -2.91483
+4   5       T        1.027813       0.065446     0.027433   -2.72653
+4   6       T        1.081988       0.062279     0.078801   -2.77614
+5   1       T        1.275517       0.069859     0.243352   -2.66128
+5   2       T        1.231649       0.051342     0.208354   -2.96924
+5   3       T        1.454325       0.161016     0.374542   -1.82625
+5   4       T        1.195989       0.064734     0.178973   -2.73746
+5   5       T        2.07678        0.088355     0.730819   -2.42639
+5   6       T        1.893399       0.093223     0.638374   -2.37276
+6   1       T        1.564164       0.137378     0.447352   -1.98502
+6   2       T        1.504557        0.0728      0.408499   -2.62004
+6   3       T        1.049724       0.064531     0.048527   -2.74061
+6   4       T        1.047633       0.043859     0.046533   -3.12676
+6   5       T        1.159634       0.09236      0.148105   -2.38206
+6   6       T        1.129313       0.06546      0.12161    -2.72632
+1   1       R        1.598636       0.04239      0.469151   -3.16084
+1   2       R        2.24476        0.117486     0.808599   -2.14143
+1   3       R        1.60912        0.044199     0.475687   -3.11906
+1   4       R         1.8834        0.066452     0.633079   -2.71127
+1   5       R        1.101948       0.031705     0.097079   -3.45129
+1   6       R        1.165342       0.034002     0.153015   -3.38133
+2   1       R        0.622369       0.052794     -0.47422   -2.94135
+2   2       R        0.833337       0.033419     -0.18232   -3.39863
+2   3       R        0.386763       0.029507     -0.94994   -3.52311
+2   4       R        0.294178       0.02005      -1.22357   -3.9095
+2   5       R        0.851759       0.03968      -0.16045   -3.2269
+2   6       R        0.677715       0.032379     -0.38903   -3.43024
+3   1       R        0.96461        0.042626     -0.03603   -3.15528
+3   2       R        0.838346       0.101628     -0.17632   -2.28643
+3   3       R        0.130884       0.008774     -2.03344   -4.73601
+3   4       R        0.635926       0.039118     -0.45267   -3.24118
+3   5       R        0.804131       0.114582     -0.21799   -2.16646
+3   6       R        2.324877       0.229704     0.843667   -1.47096
+4   1       R        1.694799       0.088825     0.527564   -2.42109
+4   2       R        0.977661       0.030392     -0.02259   -3.49356
+4   3       R        3.13529        0.217896     1.142722   -1.52374
+4   4       R        0.922805       0.040161     -0.08034   -3.21485
+4   5       R        1.504834       0.082443     0.408683   -2.49565
+
+
+
+
+                               35
+                                   Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+                      4        6         R          1.330167       0.055237     0.285305   -2.89612
+                      5        1         R          2.104036       0.101673     0.743858   -2.28599
+                      5        2         R          0.842231       0.094771     -0.1717    -2.35629
+                      5        3         R          0.985656       0.081963     -0.01445   -2.50148
+                      5        4         R          0.931461       0.069496      -0.071    -2.66648
+                      5        5         R          1.580578       0.059193     0.45779    -2.82695
+                      5        6         R          1.209059       0.067989     0.189842   -2.68841
+                      6        1         R          1.038591       0.037859     0.037865   -3.27389
+                      6        2         R          1.064539       0.049079     0.062542   -3.01433
+                      6        3         R          0.795337       0.028705     -0.22899   -3.55068
+                      6        4         R          0.922567       0.035194     -0.0806    -3.34689
+                      6        5         R          0.780047       0.034144     -0.2484    -3.37716
+                      6        6         R          1.415222       0.066506     0.347286   -2.71046
+1251
+1252
+1253                                                  SAS Output
+1254
+            SWR     LPOINTEST TESTMEAN REFMEAN POINTEST                           UB         L        U
+         0.50242 0.096445          1.11571        1.01313 1.10125             -0.022242 0.80470 1.50708
+1255
+1256   The estimated within-donor standard deviation of the RS is 0.5024, which is greater than 0.294.
+1257   Using the SABE approach, the 95% upper confidence bound is -0.0222 < 0 and the point
+1258   estimate of 1.1013 is within the BE limit of [0.8000, 1.2500]. Thus, BE for AMT can be
+1259   concluded. The BE test for Jmax can be performed similarly.
+1260
+1261   (b) Unbalanced Data
+1262
+1263   The simulated data set “Data-Unbalanced.csv” shown below provides an example of IVPT study
+1264   outcomes when the data is unbalanced. The SAS output and the determination of BE for LAMT
+1265   in this data set follows.
+1266
+1267                                             Data-Unbalanced.csv
+                   donor   replicate   treat         AMT            Jmax         LAMT       LJmax
+                     1        1         T          2.361749        0.081326     0.859402   -2.50929
+                     1        2         T          0.916571        0.041008     -0.08712   -3.19398
+                     1        3         T          1.246243        0.038537     0.220133   -3.25613
+                     1        4         T          0.890018        0.04296      -0.11651   -3.14747
+                     1        5         T          0.663551        0.031219     -0.41015   -3.46674
+                     1        6         T          0.479143        0.015747     -0.73576   -4.15108
+                     2        1         T          0.998845        0.030073     -0.00116   -3.50412
+                     2        2         T          0.814457        0.061644     -0.20523   -2.78637
+                     2        3         T          0.648741        0.019984     -0.43272   -3.91283
+
+
+
+
+                                                              36
+        Contains Nonbinding Recommendations
+                Draft — Not for Implementation
+2   4       T       0.767291        0.028453     -0.26489   -3.55951
+2   5       T       1.392406        0.166782     0.331033   -1.79107
+3   1       T        0.45757        0.02184      -0.78182   -3.82402
+3   2       T       1.377438         0.0651      0.320226   -2.73182
+3   3       T       2.170988        0.073199     0.775183   -2.61457
+3   4       T       1.753523        0.067281     0.561627   -2.69888
+3   5       T       0.995674        0.116414     -0.00434   -2.15061
+4   1       T       0.811458        0.053465     -0.20892   -2.92872
+4   2       T       0.913538        0.060217     -0.09043   -2.8098
+4   3       T       1.251438        0.083596     0.224293   -2.48176
+4   4       T       1.163818        0.054213     0.151706   -2.91483
+4   5       T       1.027813        0.065446     0.027433   -2.72653
+4   6       T       1.081988        0.062279     0.078801   -2.77614
+5   1       T       1.275517        0.069859     0.243352   -2.66128
+5   2       T       1.231649        0.051342     0.208354   -2.96924
+5   3       T       2.454324        0.161016     0.897852   -1.82625
+5   4       T       1.195989        0.064734     0.178973   -2.73746
+5   5       T        2.07678        0.088355     0.730819   -2.42639
+5   6       T       1.893399        0.093223     0.638374   -2.37276
+6   1       T       1.564164        0.137378     0.447352   -1.98502
+6   2       T       1.049724        0.064531     0.048527   -2.74061
+6   3       T       1.047633        0.043859     0.046533   -3.12676
+6   4       T       1.159634        0.09236      0.148105   -2.38206
+1   1       R       1.598636        0.04239      0.469151   -3.16084
+1   2       R        2.24476        0.117486     0.808599   -2.14143
+1   3       R        1.60912        0.044199     0.475687   -3.11906
+1   4       R        1.8834         0.066452     0.633079   -2.71127
+1   5       R       1.101948        0.031705     0.097079   -3.45129
+1   6       R       1.165342        0.034002     0.153015   -3.38133
+2   1       R       0.622369        0.052794     -0.47422   -2.94135
+2   2       R       0.833337        0.033419     -0.18232   -3.39863
+2   3       R       0.386763        0.029507     -0.94994   -3.52311
+2   4       R       0.851759        0.03968      -0.16045   -3.2269
+2   5       R       0.677715        0.032379     -0.38903   -3.43024
+3   1       R       0.838346        0.101628     -0.17632   -2.28643
+3   2       R       0.130884        0.008774     -2.03344   -4.73601
+3   3       R       0.635926        0.039118     -0.45267   -3.24118
+3   4       R       0.804131        0.114582     -0.21799   -2.16646
+3   5       R       2.324877        0.229704     0.843667   -1.47096
+4   1       R       1.694799        0.088825     0.527564   -2.42109
+4   2       R       0.977661        0.030392     -0.02259   -3.49356
+
+
+
+
+                               37
+                                  Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+                     4        3        R        3.13529        0.217896      1.142722   -1.52374
+                     4        4        R       0.922805        0.040161      -0.08034   -3.21485
+                     4        5        R       1.504834        0.082443      0.408683   -2.49565
+                     4        6        R       1.330167        0.055237      0.285305   -2.89612
+                     5        1        R       2.104036        0.101673      0.743858   -2.28599
+                     5        2        R       0.842231        0.094771      -0.1717    -2.35629
+                     5        3        R       0.985656        0.081963      -0.01445   -2.50148
+                     5        4        R       0.931461        0.069496       -0.071    -2.66648
+                     5        5        R       1.580578        0.059193      0.45779    -2.82695
+                     5        6        R       1.209059        0.067989      0.189842   -2.68841
+                     6        1        R       1.038591        0.037859      0.037865   -3.27389
+                     6        2        R       0.795337        0.028705      -0.22899   -3.55068
+                     6        3        R       0.922567        0.035194      -0.0806    -3.34689
+                     6        4        R       0.780047        0.034144      -0.2484    -3.37716
+                     6        5        R       1.415222        0.066506      0.347286   -2.71046
+1268
+1269
+1270                                              SAS Output
+1271
+            SWR     LPOINTEST TESTMEAN REFMEAN POINTEST                        UB        L         U
+          0.50651    0.067494     1.10723      1.03497 1.06982              -0.10907 0.87627 1.30613
+1272
+1273   The estimated within-donor standard deviation of the RS is 0.5065, which is greater than 0.294.
+1274   Using the SABE approach, the 95% upper confidence bound is -0.1091 < 0 and the point
+1275   estimate of 1.0698 is within the BE limit of [0.8000, 1.2500]. Thus, BE for AMT can be
+1276   concluded. The BE test for Jmax can be performed similarly.
+1277
+1278
+1279   APPENDIX III (EXAMPLE R CODE)
+1280
+1281   This section provides an example of R code that performs the same calculations as the SAS code
+1282   in Appendix I.
+1283
+        ## INPUT
+
+        # DAT = a data frame
+        # DON = column name of donor variable in DAT (donor variable: numeric)
+        # REPS = column name of replicate variable in DAT
+        #        (replicate variable: numeric)
+        # TRT = column name of treatment variable in DAT
+        #        (treatment variable: "T", "R")
+        # LY = column name of log-transformed endpoint in DAT
+
+
+        ## OUTPUT
+
+
+
+                                                          38
+                       Contains Nonbinding Recommendations
+                             Draft — Not for Implementation
+
+# BU = balanced data or unbalanced data
+# Swr = estimated within-donor standard deviation of reference
+# Ihat = point estimate for mean difference in log scale
+# testMean = test mean estimate in original scale
+# refMean = reference mean estimate in original scale
+# pointest = point estimate transformed back to original scale
+# UB = SABE 95% upper confidence bound
+# CI = ABE 90% CI for mean difference transformed back to original scale
+
+ivpt <- function(DAT, DON, REPS, TRT, LY){
+
+  # Remove missing values before analysis
+  DAT <- DAT[!is.na(DAT[[LY]]),]
+
+  # If zero values in AMT or Jmax are not imputed,
+  # remove them to avoid a computational burden
+  DAT <- DAT[!(DAT[[LY]]==-Inf),]
+
+  # Create the data sets for test & reference
+  tdat <- DAT[DAT[[TRT]]=="T",]
+  rdat <- DAT[DAT[[TRT]]=="R",]
+
+  # Sort tdat and rdat by don and reps
+  ii1 <- order(tdat[[DON]], tdat[[REPS]])
+  tdat <- tdat[ii1,]
+  ii2 <- order(rdat[[DON]], rdat[[REPS]])
+  rdat <- rdat[ii2,]
+
+  # Determine the numbers of replicates from each donor for T & R
+  rT <- as.vector(table(tdat[[DON]]))
+  rR <- as.vector(table(rdat[[DON]]))
+
+  nd <- length(unique(tdat[[DON]])) # the number of donors
+  rstar <- sum(rR)        # the total number of replicates in R group
+  nr <- unique(c(rT, rR)) # This is length of 1 when data is balanced
+
+  # Set m and alpha
+  m <- 1.2500
+  alpha <- 0.05
+  theta <- (log(m)/0.25)^2
+
+  if(length(nr)==1){    # if the data is balanced
+
+    BU <- "Balanced"
+
+    # Determine SWR
+    mRef <- tapply(rdat[[LY]], rdat[[DON]], mean, na.rm=TRUE)
+    vv <- tapply(rdat[[LY]], rdat[[DON]], var, na.rm=TRUE)
+    Swr2 <- sum(vv) / nd
+    Swr <- sqrt(Swr2)
+
+    mTest <- tapply(tdat[[LY]], tdat[[DON]], mean, na.rm=TRUE)
+    Ij <- mTest - mRef
+    Ihat <- mean(Ij)
+    SI2 <- var(Ij, na.rm=TRUE)
+
+
+
+
+                                          39
+                   Contains Nonbinding Recommendations
+                         Draft — Not for Implementation
+  # Treatment means
+  testMean <- exp(mean(mTest))
+  refMean <- exp(mean(mRef))
+
+  # SABE for balanced data
+  X <- Ihat^2 - SI2 / nd
+  Y <- - theta * Swr2
+  Xp <- ( abs(Ihat) + qt(1-alpha, nd-1) * sqrt(SI2/nd) )^2
+  Yp <- - theta*(nr-1)*nd*Swr2 / qchisq(1-alpha, (nr-1)*nd)
+  V <- sign(Xp-X)*(Xp-X)^2 + sign(Yp-Y)*(Yp-Y)^2
+  UB <- X + Y + sign(V)*sqrt(abs(V))
+
+  # ABE for balanced data
+  se <- sqrt(SI2/nd)
+  L <- Ihat - qt(1-alpha, nd-1)*se
+  U <- Ihat + qt(1-alpha, nd-1)*se
+
+}else{             # if the data is unbalanced
+
+  BU <- "Unbalanced"
+
+  # Determine SWR
+  mRef <- tapply(rdat[[LY]], rdat[[DON]], mean, na.rm=TRUE)
+  vv <- sum( (rdat[[LY]] - rep(mRef, times=rR))^2 )
+  Swr2 <- vv / (rstar - nd)
+  Swr <- sqrt(Swr2)
+
+  # Estimate the mean difference
+  DAT[[DON]] <- factor(DAT[[DON]])
+  f <- as.formula(paste(LY, "~", DON, "+", TRT))
+  obj <- lm(f, data = DAT)
+  tname <- paste0(TRT, "T")
+  tcoef <- summary(obj)$coef[rownames(summary(obj)$coef)==tname,]
+  Ihat <- as.numeric(tcoef[1])
+  se <- as.numeric(tcoef[2])
+  dfstar <- summary(obj)$df[2]
+
+  # Treatment means
+  udon <- unique(DAT[[DON]])
+  newdat1 <- data.frame(DON = udon, TRT = rep("T", length(udon)))
+  newdat2 <- data.frame(DON = udon, TRT = rep("R", length(udon)))
+  colnames(newdat1) <- c(DON, TRT)
+  colnames(newdat2) <- c(DON, TRT)
+  testMean <- exp(mean(predict(obj, newdata = newdat1)))
+  refMean <- exp(mean(predict(obj, newdata = newdat2)))
+
+  # SABE for unbalanced data
+  X <- Ihat^2 - se^2
+  Y <- - theta * Swr2
+  Xp <- ( abs(Ihat) + qt(1-alpha, dfstar)*se )^2
+  Yp <- - theta*(rstar-nd)*Swr2 / qchisq(1-alpha, rstar-nd)
+  V <- sign(Xp-X)*(Xp-X)^2 + sign(Yp-Y)*(Yp-Y)^2
+  UB <- X + Y + sign(V)*sqrt(abs(V))
+
+  # ABE for unbalanced data
+  L <- Ihat - qt(1-alpha, dfstar)*se
+  U <- Ihat + qt(1-alpha, dfstar)*se
+
+
+
+                                      40
+                              Contains Nonbinding Recommendations
+                                    Draft — Not for Implementation
+
+           }
+
+           result <- list(BU=BU, Swr=Swr, Ihat=Ihat,
+                          testMean=testMean, refMean=refMean, pointest=exp(Ihat),
+                          UB=UB, CI=exp(c(L, U)))
+
+           return(result)
+       }
+
+       bdat <- read.csv("Data-Balanced.csv")
+       res1 <- ivpt(bdat, "donor", "replicate", "treat", "LAMT")
+
+       udat <- read.csv("Data-Unbalanced.csv")
+       res2 <- ivpt(udat, "donor", "replicate", "treat", "LAMT")
+
+1284
+1285
+
+
+
+
+                                                 41
+

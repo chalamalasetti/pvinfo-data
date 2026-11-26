@@ -1,0 +1,1107 @@
+   Technical Specifications for
+Submitting Clinical Trial Data Sets
+  for Response Assessments for
+ Treatments of Acute Leukemias
+
+           Guidance for Industry
+      Technical Specifications Document
+
+For questions regarding this technical specifications document, contact
+                   CDER at cder-edata@fda.hhs.gov.
+
+
+
+
+               U.S. Department of Health and Human Services
+                        Food and Drug Administration
+                     Oncology Center of Excellence (OCE)
+              Center for Drug Evaluation and Research (CDER)
+             Center for Biologics Evaluation and Research (CBER)
+
+
+
+                                October 2025
+                      Technical Specifications Document
+Revision History
+
+        Date       Version       Summary of Revisions
+
+
+
+
+                             2
+                                          Contains Nonbinding Recommendations
+
+
+                                                      TABLE OF CONTENTS
+
+
+
+TABLE OF CONTENTS ............................................................................................................. 3
+1.0       INTRODUCTION............................................................................................................. 4
+2.0       OVERVIEW OF THE DATA MODEL CONCEPT ..................................................... 5
+3.0       DATASET SPECIFICATIONS....................................................................................... 8
+   3.1 Marrow Biopsy and Aspirate Examinations ............................................................................... 8
+   3.2 Peripheral Blood Tests ................................................................................................................ 10
+   3.3 Minimal Residual Disease Tests ................................................................................................. 11
+   3.4 Chimerism Tests .......................................................................................................................... 12
+   3.5 Cerebrospinal Fluid Tests ........................................................................................................... 13
+   3.6 Other Assessments for Extramedullary Disease ....................................................................... 14
+   3.7 Transfusions ................................................................................................................................. 14
+   3.8 Subsequent Therapies.................................................................................................................. 14
+   3.9 Reported Responses ..................................................................................................................... 16
+   3.10 Summary Level Data ................................................................................................................... 17
+   3.11 Custom Datasets ........................................................................................................................... 17
+   3.12 Additional Considerations........................................................................................................... 19
+4.0       APPENDICES ................................................................................................................. 21
+   4.1 Recommended Controlled Terminology .................................................................................... 21
+   4.2 Structure of Custom Datasets ..................................................................................................... 23
+
+
+
+
+                                                                          3
+                                    Contains Nonbinding Recommendations
+
+
+ 1       Technical Specifications for Submitting Clinical Trial Data Sets for
+ 2          Response Assessments for Treatments of Acute Leukemias
+ 3
+ 4                                     Guidance for Industry
+ 5                               Technical Specifications Document 1
+ 6
+ 7   This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+ 8   this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+ 9   can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+10   To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+11   title page.
+12
+13
+14
+15   1.0     INTRODUCTION
+16
+17   This document provides technical recommendations for the data sets containing the data
+18   elements for response assessments and summary level response outcomes used to evaluate
+19   efficacy in clinical trials of drugs and biological products 2 submitted to the U.S. Food and Drug
+20   Administration (FDA) in New Drug Applications (NDAs) and Biologics License Applications
+21   (BLAs) for treatment of acute leukemias. The specifications provided herein complement rather
+22   than supplant the clinical development program and efficacy endpoint recommendations in
+23   disease-specific guidances. 3 Additionally, the scope of these technical recommendations is
+24   limited to data elements specific to efficacy evaluations for acute leukemias; for general
+25   recommendations on submission of standardized study data, see the Study Data Technical
+26   Conformance Guide. 4
+27
+28   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+29   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+30   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+31   the word should in Agency guidances means that something is suggested or recommended, but
+32   not required.
+
+     1
+       This technical specifications document has been prepared by the Office of Strategic Programs and the Division
+       of Hematological Malignancies I and in the Center for Drug Evaluation and Research at the Food and Drug
+       Administration. You may submit comments on this guidance at any time. Submit comments to Docket No. FDA-
+       2018-D-1216 (available at https://www.regulations.gov/docket?D=FDA-2018-D-1216 ) (see the instructions for
+       submitting comments in the docket).
+     2
+       For the purposes of this technical specification document, references to drugs include drugs approved under
+       section 505 of the Federal Food, Drug, and Cosmetic Act (the FD&C Act) (21 U.S.C. 355) and biological products
+       licensed under section 351 of the Public Health Service Act (42 U.S.C. 262).
+     3
+       For example, see the guidance for industry Acute Myeloid Leukemia: Developing Drugs and Biological Products
+       for Treatment (October 2022).
+     4
+       For the most recent version of a guidance, check the FDA Guidance Documents Database
+       https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+
+                                                            4
+                                 Contains Nonbinding Recommendations
+
+
+33
+34   2.0    OVERVIEW OF THE DATA MODEL CONCEPT
+35
+36   For the efficacy evaluation of treatments for acute leukemia, the remission endpoint criteria are
+37   comprised of multiple components involving hematological, extramedullary, and ancillary test
+38   data. Figure 1 shows examples of the data elements used in the assessment of treatment
+39   response.
+40
+      Figure 1. Components of the Data Model
+
+
+
+
+41   There are two categories of data that can be used in the response assessment, raw test results and
+42   the interpretation of the individual test results. In general, to support an efficacy claim, the
+43   marketing application should include the raw data used to establish that claim, especially for
+44   objective laboratory testing. In some cases, only the evaluator’s interpretation may be available
+45   (e.g., leukemia present or absent in a mass biopsy), and for some assessments, the Sponsor may
+
+
+                                                      5
+                                        Contains Nonbinding Recommendations
+
+
+46   additionally collect on the case report form (CRF) the Investigator's clinical interpretation of the
+47   test result (e.g., M category for marrow testing, CNS category for cerebrospinal fluid results).
+48   With regard to the response determination, the Sponsor may collect on the CRF the Investigator's
+49   conclusion about the overall remission status at each study visit based on this testing, or the
+50   Sponsor may ask an external committee to conduct a review of the test results and provide an
+51   independent assessment of the overall remission status. And lastly, because the data elements
+52   for response assessment are fairly objective, the Sponsor may elect to use an algorithm to derive
+53   the remission status from the raw data at each study visit. Each of these sources of remission
+54   determinations can also be considered a data variable.
+55
+56   FDA uses the data submitted in a marketing application to evaluate the treatment effect(s) of the
+57   drug. In order to facilitate FDA review, the following sections provide the recommended
+58   domains, variables, and controlled terminologies to use for the data elements submitted for
+59   FDA’s review. The Study Data Tabulation Model (SDTM) and Analysis Data Model (ADaM)
+60   specifications 5 provided in this document are not comprehensive; instead, this document will
+61   focus on the specifications particular to FDA’s evaluation of drug efficacy for acute leukemias,
+62   and the reader should review current versions of the respective Implementation Guides5 to ensure
+63   that the data sets are complete in accordance with Clinical Data Interchange Standards
+64   Consortium (CDISC) standards. Table 1 lists the CDISC domains referred to in this document.
+65   See the Implementation Guides for descriptions of the domain structures and variables.
+66
+                             Table 1. CDSIC Domains Referred to in this Technical Specification
+                             Domain     Model     Identification
+                             ADTTE      ADaM      Time-to-event data
+                             BS         SDTM      Biospecimen findings
+                             CM         SDTM      Concomitant/prior medications
+                             DD         SDTM      Death details
+                             EX         SDTM      Exposure
+                             LB         SDTM      Laboratory results
+                             LC         SDTM      Laboratory results in conventional units
+                             MI         SDTM      Microscopic findings
+                             PR         SDTM      Procedures
+                             RS         SDTM      Disease response and clinical classification
+                             SUPPPR     SDTM      Supplemental qualifiers for procedures
+                             TR         SDTM      Tumor/lesion results
+                             TU         SDTM      Tumor/lesion identification
+67
+68   Sponsors should discuss with the Division data that should be collected prior to initiation of a
+69   clinical trial that will support a marketing application in order to ensure that the case report forms
+70   or other means of electronic data capture will meet the needs of the review. In general, the raw
+71   data variables collected should include the components needed to calculate the population-level
+
+     5
+         This Technical Specification Document has been drafted in accordance with the currently supported versions of the
+         Study Data Tabulation Model (SDTM) Implementation Guide and Analysis Data Model (ADaM) Implementation
+         Guide as noted in the FDA Data Standards Catalog (https://www.fda.gov/industry/fda-resources-data-
+         standards/study-data-standards-resources). As new versions of the respective implementation guides become
+         available and supported by FDA, this technical specification may change to align to the newly supported
+         implementation guide(s).
+
+
+
+                                                                6
+                                Contains Nonbinding Recommendations
+
+
+72   summary, including the endpoint measures and the intercurrent events, as described in the
+73   estimands for the primary and key secondary endpoints.
+
+
+
+
+                                                    7
+                                                                             Contains Nonbinding Recommendations
+
+
+ 1   3.0       DATASET SPECIFICATIONS
+ 2
+ 3             3.1         Marrow Biopsy and Aspirate Examinations
+ 4
+ 5   Record the occurrence of the marrow biopsy and/or aspiration in PR (Figure 2 Rows 1 and 2).
+ 6
+ 7
+      Figure 2. Example of Procedures for Response Assessment in PR
+      Row USUBJID          PRSEQ       PRLNKID        PRTRT               PRDECOD              PRCAT               PRPRESP PROCCUR PRLOC        PRDOSE PRDOSU EPOCH    PRSTDTC     PRENDTC
+      1     ABC-1001            1         P101-1      MARROW              Marrow biopsy        Marrow biopsy or       Y       Y                               TREATM 2011-01-02    2011-01-02
+                                                      BIOPSY                                   aspiration                                                     ENT
+
+      2     ABC-1001            2         P101-2      MARROW              Marrow aspiration    Marrow biopsy or       Y       Y                               TREATM 2011-01-02    2011-01-02
+                                                      ASPIRATE                                 aspiration                                                     ENT
+
+      3     ABC-1001            3         P101-3      SKIN BIOPSY         Biopsy               Diagnostic                            Back                     TREATM 2011-01-03    2011-01-03
+                                                                                               procedure                                                      ENT
+      4     ABC-1001            4         P101-4      SPINAL TAP          Lumbar puncture      Diagnostic                                                     SCREENI 2010-01-04   2010-01-04
+                                                                                               procedure                                                      NG
+
+      5     ABC-1001            5         P101-5      HEAD CT SCAN CT scan                     Imaging                               Head                     TREATM 2011-03-02    2011-03-02
+                                                                                                                                                              ENT
+
+      6     ABC-1001            6         P101-6      PACKED RBC          Red blood cell       Transfusion                                        2      U    TREATM 2011-01-09    2011-01-09
+                                                                          transfusion                                                                         ENT
+
+      7     ABC-1001            7         P101-7      SINGLE DONOR Platelet transfusion Transfusion                                               1      U    TREATM 2011-01-10    2011-01-10
+                                                      APHERESIS                                                                                               ENT
+                                                      PLATELETS
+      8     ABC-1001            8         P101-8      ALLO HSCT    Stem cell            Transplantation or                                                    FOLLOW- 2011-09-02   2011-09-02
+                                                                   transplantation      cell therapy                                                          UP
+
+      9     ABC-1001            9         P101-9      CAR T CELL          CAR T cell therapy Transplantation or                                               FOLLOW- 2013-05-02   2013-05-02
+                                                      THERAPY                                cell therapy                                                     UP
+
+      10    ABC-1001           10         P101-10     RADIATION           Radiation therapy    Radiation therapy                   Left Orbit     2      Gy   SCREENI 2010-01-05   2010-01-19
+                                                      THERAPY TO                                                                                              NG
+                                                      LEFT ORBIT
+
+      This figure represents only a subset of the variables expected in this domain.
+
+ 8
+ 9   Record the results of the morphological examination of the marrow, including immunohistochemistry tests, in MI (Figure 3). See
+10   Section 3.3 and 3.4 for marrow biomarker test results other than morphology. If the M category is collected, that should be placed in
+11   RS.
+
+
+                                                                                                             8
+                                                                              Contains Nonbinding Recommendations
+
+
+12   Figure 3. Example of Marrow Test Results in MI
+13
+      Row      USUBJID          MISEQ         MIGRPID          MILNKID MITEST                       MIORRES MISTRESC MISTRESN MISTRESNU MISPEC       MIMETHOD MIDTC
+                                                                                                                                       MARROW
+      1       ABC-1001               1               1        P101-2       Evaluable                  Yes       Yes                                           2011-01-02
+                                                                                                                                       ASPIRATE
+                                                                                                                                       MARROW
+      2       ABC-1001               2               1        P101-2       Cellularity percentage     90%       90%      90      %                            2011-01-02
+                                                                                                                                       ASPIRATE
+                                                                                                                                       MARROW
+      3       ABC-1001               3               1        P101-2       Blast percentage           80%       80%      80      %                            2011-01-02
+                                                                                                                                       ASPIRATE
+                                                                                                                                       MARROW
+      4       ABC-1001               4               1        P101-2       CD34 Blast percentage      55%       55%      55      %                   IHC      2011-01-02
+                                                                                                                                       ASPIRATE
+                                                                                                                                       MARROW
+      5       ABC-1001               5               1        P101-2       Auer rods                 Present   Present                                        2011-01-02
+                                                                                                                                       ASPIRATE
+                                                                                                                                       MARROW
+      6       ABC-1001               6               2        P101-1       Evaluable                  Yes       Yes                                           2011-01-02
+                                                                                                                                       BIOPSY
+                                                                                                                                       MARROW
+      7       ABC-1001               7               2        P101-1       Cellularity percentage     90%       90%      90      %                            2011-01-02
+                                                                                                                                       BIOPSY
+                                                                                                                                       MARROW
+      8       ABC-1001               8               2        P101-1       Blast percentage          50-60%    50-60%                                         2011-01-02
+                                                                                                                                       BIOPSY
+                                                                                                                                       MARROW
+      9       ABC-1001               9               3        P101-19      Evaluable                  Yes       Yes                                           2011-02-01
+                                                                                                                                       BIOPSY
+                                                                                                                                       MARROW
+      10      ABC-1001              10               3        P101-19      Cellularity percentage     15%       15%      15      %                            2011-02-01
+                                                                                                                                       BIOPSY
+                                                                                                                                       MARROW
+      11      ABC-1001              11               3        P101-19      Blast percentage           2%        2%       2       %                            2011-02-01
+                                                                                                                                       BIOPSY
+
+      13      ABC-1001              12               3        P101-19      Blasts observed            No        No                     BLOOD SMEAR            2011-02-01
+
+     This figure represents only a subset of the variables expected in this domain.
+14
+15   Include in MISPEC the individual specimen type (e.g., marrow biopsy, marrow aspirate, marrow clot, blood smear). If bilateral or
+16   multiple marrow biopsies are performed on the same date, the location should be specified in MILOC or MILAT as needed.
+17
+18   The minimum expected test results include the evaluator, evaluability, cellularity percentage, blast percentage, and, if applicable,
+19   presence or absence of Auer rods. Note that blast percentage refers to that assessed by morphology alone; CD34-positive blasts
+20   identified by immunohistochemistry should be reported as a separate item. If the result for evaluability is "No", an explanatory
+21   comment, if collected, can be recorded in MIREAS.
+22
+
+
+
+
+                                                                                                         9
+                                                            Contains Nonbinding Recommendations
+
+
+23   When constructing an ADaM Basic Data Structure (BDS) dataset with marrow results, PARAM should include both the test name and
+24   the related qualifier from MI; for example, Marrow Aspirate Blast Percentage and Marrow Biopsy Blast Percentage should be separate
+25   parameters. In addition, in ADaM, the cellularity and blast percentage should be in numeric format to enable analysis. For results
+26   reported in MI in character format as a range, a numeric value should be imputed using a worst-case scenario. For example, based on
+27   the use of 5% as the threshold for remission, a blast range of < 5% can be imputed as 4.9, a range of 4-8% can be imputed as 8, and a
+28   range of 50-60% can be imputed as 60. Include the original text results in AVALC, the imputed value in AVAL, and a flag in DTYPE
+29   to identify the numeric values that are imputed. The imputation rule should be described in the Analysis Data Reviewer's Guide
+30   (ADRG) and the define file.
+31
+32              3.2     Peripheral Blood Tests
+33
+34   The results of the complete blood count and differential should be submitted in LB and in LC in accordance with the Study Data
+35   Technical Conformance Guide. 6 The minimal elements of the complete blood count needed for FDA’s review include the white blood
+36   cell count, hemoglobin, and platelet count. Include also the full differential as reported on the source documentation (i.e., laboratory
+37   report); submission of only parts of a differential will raise concerns about reporting bias. Whether other elements, such as the red
+38   blood cell indices or platelet indices, should be included in the dataset for safety review is outside the scope of this document;
+39   questions regarding the need for these elements should be addressed to the review Division.
+40
+41   ADLB should include the full complete blood count and differential in accordance with the ADaM Implementation Guide. However,
+42   that if the differential in LB is recorded as a percentage of the white blood cell count, ADLB should include the derived absolute
+43   values for at least the absolute neutrophil count (NEUT). If the Sponsor and Division had previously agreed on use of neutrophils plus
+44   bands (NEUTSGB) to meet the neutrophil recovery criterion for remission, this should be included in ADLB as an additional
+45   parameter instead of the absolute neutrophil count using neutrophils alone (NEUT).
+46
+47   With regard to interpretive data, "Blasts present" or "Blasts absent" need not be included for the complete blood count and differential,
+48   because the raw data provides sufficient information. FDA acknowledges that visual examination of the peripheral smear is
+49   frequently performed as part of the assessment of a marrow biopsy and/or aspirate. In such cases, the interpretative data for the
+50   peripheral smear can be included in MI if recorded (Figure 3 Row 13); if a full CBC and differential are assessed with the marrow,
+51   the results should be in LB as described above.
+
+     6
+         See Study Data Technical Conformance Guide – Technical Specifications Document https://www.fda.gov/regulatory-information/search-fda-guidance-
+         documents/study-data-technical-conformance-guide-technical-specifications-document. For the most recent version of a guidance, check the FDA Guidance
+         Documents Database https://www.fda.gov/RegulatoryInformation/Guidances/default.htm
+
+
+
+                                                                                   10
+                                                                             Contains Nonbinding Recommendations
+
+
+52             3.3         Minimal Residual Disease Tests
+53
+54   Record the results of minimal residual disease (MRD) tests in BS (see Figure 4). If results are from a sample that required a
+55   procedure, include BSLNKID to link back to the procedure in PR. If more than one marker is being measured in the same sample at
+56   the same time point, report the sample, assay characteristics, and results for each marker in separate rows with a unique BSREFID
+57   number for each marker.
+58
+59
+      Figure 4. Example of Minimal Residual Disease Tests in BS
+                                                                                                               BSST BSST
+     Row USUBJID BSSEQ BSREFID BSTEST                           BSCAT BSSCAT BSORRES BSSTRESC                            BSSTAT BSREASND BSNAM BSSPEC BSMETHOD VISIT        BSDTC
+                                                                                                               RESN RESU
+      1      ABC-1001          1          1       Evaluable      MRD       IGH     Yes           Y                                       Lab XYZ, BONE   PCR   SCREENING     2010-02-01
+                                                                           VH3-JH6                                                       USA      MARROW
+      2      ABC-1001          2          1       Input          MRD       IGH     1 µg          1ug           1        µg                         BONE   PCR   SCREENING    2010-02-01
+                                                  quantity                 VH3-JH6                                                                 MARROW
+      3      ABC-1001          3          1       Limit of     MRD         IGH     0.0001        0.0001        0.0001                              BONE   PCR   SCREENING    2010-02-01
+                                                  Quantitation             VH3-JH6                                                                 MARROW
+      4      ABC-1001          4          1       Marker         MRD       IGH     0.005         0.005         0.005                               BONE   PCR   SCREENING    2010-02-01
+                                                  Result                   VH3-JH6                                                                 MARROW
+      5      ABC-1001          5          2       Evaluable      MRD       IGH     Yes           Y                                                 BONE   PCR   TIMEPOINT 1 2011-01-02
+                                                                           VH3-JH6                                                                 MARROW
+      6      ABC-1001          6          2       Input          MRD       IGH     1 µg          1 ug          1        µg                         BONE   PCR   TIMEPOINT 1 2011-01-02
+                                                  quantity                 VH3-JH6                                                                 MARROW
+      7      ABC-1001          7          2       Limit of     MRD         IGH     0.0001        0.0001        0.0001                              BONE   PCR   TIMEPOINT 1 2011-01-02
+                                                  Quantitation             VH3-JH6                                                                 MARROW
+      8      ABC-1001          8          2       Marker         MRD       IGH     0.0005        0.0005        0.000                               BONE   PCR   TIMEPOINT 1 2011-01-02
+                                                  Result                   VH3-JH6                             5                                   MARROW
+      9      ABC-1001          9          3       Evaluable      MRD       IGH     Yes           Y                                                 BONE   PCR   TIMEPOINT 2 2011-02-01
+                                                                           VH3-JH6                                                                 MARROW
+      10     ABC-1001         10          3       Input          MRD       IGH     1 µg          1 ug          1        µg                         BONE   PCR   TIMEPOINT 2 2011-02-01
+                                                  quantity                 VH3-JH6                                                                 MARROW
+      11     ABC-1001         11          3       Limit of     MRD         IGH     0.0001        0.0001        0.0001                              BONE   PCR   TIMEPOINT 2 2011-02-01
+                                                  Quantitation             VH3-JH6                                                                 MARROW
+      12     ABC-1001         12          3       Marker         MRD       IGH     Undetectable Undetectable                                       BONE   PCR   TIMEPOINT 2 2011-02-01
+                                                  Result                   VH3-JH6                                                                 MARROW
+      13     ABC-1001         13          4       Evaluable      MRD       IGH                                               NOT    Insufficient                TIMEPOINT 3 2011-04-01
+                                                                           VH3-JH6                                           DONE   sample
+      This figure represents only a subset of the variables expected in this domain.
+
+
+
+
+                                                                                                          11
+                                                            Contains Nonbinding Recommendations
+
+
+60   Identify the specimen type or matrix (e.g., bone marrow, peripheral blood) in BSSPEC, the individual laboratory method (e.g., PCR,
+61   flow cytometry, Commercial Assay X) in BSMETHOD, and the specific MRD marker in BSSCAT. For MRD measured by flow
+62   cytometry, include in BSSCAT whether the measurement is for leukemia-associated immunophenotype (LAIP), different from normal
+63   (DFN), or the prespecified immunophenotype to be monitored for MRD. Include the individual laboratory method (e.g., PCR, flow
+64   cytometry, Commercial Assay X) in BSMETHOD, and the name/vendor of the laboratory that provided the test results in BSNAM.
+65
+66   The minimum expected information for each MRD measurement includes the MRD marker, specimen type, date of sample,
+67   evaluability, assay used, input quantity, assay sensitivity (limit of detection and limit of quantitation), and assay result. 7 If the result
+68   for evaluability is "No", the reason, if collected, can be recorded in BSREAS. Report the input quantity (e.g., nucleic acid quantity for
+69   PCR or number of events collected for flow cytometry) for the test conducted on the sample date in that row rather than for the assay
+70   in general. Additionally, for tests with quantitative results, provide the quantitative result in BSORRES (and the related results
+71   variables), and if used, a categorization of "Positive" or "Negative" can be submitted in BSRESCAT.
+72
+73   When constructing an ADaM Basic Data Structure (BDS) dataset with MRD results, PARAM should include the marker (BSSCAT),
+74   the test name (BSTEST), and, if relevant, the specimen (BSSPEC) and method (BSMETHOD); for example, use PARAM Marrow
+75   Aspirate IGH VH3-JH6 PCR Limit of Quantitation (or just IGH VH3-JH6 Limit of Quantitation if marrow was the only matrix and
+76   Commercial Assay X PCR was the only method used in the clinical trial).
+77
+78              3.4     Chimerism Tests
+79
+80   Record the results of chimerism testing in BS (see Figure 5). The minimum expected test results include the chimerism marker,
+81   specimen type, date of sample, evaluability, assay used, assay sensitivity (limit of detection and limit of quantitation), and assay result.
+82   Identify the specific chimerism marker in BSSCAT. Provide the results based on the donor portion of chimerism. If monitoring
+83   markers for multiple donors, ensure that the Clinical Study Data Reviewer's Guide (cSDRG) and define file describe how results for
+84   each donor are identified.
+85
+86   See Section 3.3 for additional information on the variables in BS to be used for the assay parameters and for advice on construction of
+87   the ADaM dataset with chimerism results.
+88
+
+     7
+         See Section VI in the guidance for industry Hematologic Malignancies: Regulatory Considerations for Use of Minimal Residual Disease in Development of
+         Drug and Biological Products for Treatment (January 2020). For the most recent version of a guidance, check the FDA Guidance Documents Database
+         https://www.fda.gov/RegulatoryInformation/Guidances/default.htm .
+
+
+
+                                                                                   12
+                                                                             Contains Nonbinding Recommendations
+
+
+ 89
+       Figure 5. Example of Chimerism Tests in BS
+       Row USUBJID BSSEQ BSREFID BSTEST                        BSCAT             BSSCAT    BSORRES BSSTRESC BSSTRESN BSSTRESU BSSTAT BSREASND BSSPEC         BSMETHOD VISIT
+       1     ABC-1001         1          1       Evaluable      DONOR             D5S818   Yes     Y                                                BONE     PCR       DAY 28
+                                                                CHIMERISM                                                                           MARROW
+       2     ABC-1001         2          1       Sensitivity    DONOR             D5S818   1%      1%       1        %                              BONE     PCR       DAY 28
+                                                                CHIMERISM                                                                           MARROW
+       3     ABC-1001         3          1       Marker       DONOR               D5S818   61%     61%      61       %                              BONE      PCR      DAY 28
+                                                 Quantitative CHIMERISM                                                                             MARROW
+       4     ABC-1001         4          2       Evaluable    DONOR               D5S818   Yes     Y                                                PERIPHERA PCR      DAY 100
+                                                              CHIMERISM                                                                             L BLOOD
+       5     ABC-1001         5          2       Sensitivity    DONOR             D5S818   1%      1%       1        %                              PERIPHERA PCR      DAY 100
+                                                                CHIMERISM                                                                           L BLOOD
+       6     ABC-1001         6          2       Marker       DONOR               D5S818   100%    100%     100      %                              PERIPHERA PCR      DAY 100
+                                                 Quantitative CHIMERISM                                                                             L BLOOD
+       7     ABC-1001         7          3       Evaluable      DONOR             D5S818                                      NOT    Missed visit                      MONTH
+                                                                CHIMERISM                                                     DONE                                     6
+       This figure represents only a subset of the variables expected in this domain.
+
+ 90
+ 91             3.5         Cerebrospinal Fluid Tests
+ 92
+ 93   Record the occurrence of the sampling procedure for cerebrospinal fluid (CSF) in PR (Figure 2 Row 4). Clarify in PRDECOD the
+ 94   actual procedure used (e.g., lumbar puncture, Omaya reservoir aspiration, etc.).
+ 95
+ 96   Record the results of the morphological examination of the CSF in MI and the CSF biomarker tests other than morphology in BS. See
+ 97   Sections 3.1 and 3.3 for additional information on the variables in MI and BS. The minimum expected CSF test results in MI include
+ 98   the evaluator, evaluability, and CSF blasts present or absent; if applicable, include the CSF white blood cell count, CSF red blood cell
+ 99   count, CSF blast count by morphology, CSF blast percentage by morphology, and CNS category. If the CSF is tested using highly
+100   sensitive assays for MRD, such as PCR, those results should be submitted in BS (see Section 3.3). Results of CSF chemistries (e.g.,
+101   protein and glucose) should be reported in LB. If the CNS category is collected, that should be placed in RS.
+102
+103   When constructing an ADaM Basic Data Structure (BDS) dataset with CSF results, PARAM should include both the test name and
+104   the related qualifier from MI; for example, CSF Blast Percentage. Ensure that the results utilize units consistently (e.g., CSF Blast
+105   Count Per Microliter and CSF Blast Count Per High Power Field are separate parameters).
+
+
+                                                                                                   13
+                                                    Contains Nonbinding Recommendations
+
+
+106          3.6     Other Assessments for Extramedullary Disease
+107
+108   Other approaches to the assessment for extramedullary disease include imaging studies and physical examination. For response
+109   assessments, record the occurrence of an imaging procedure in PR (Figure 2 Row 5). In cases where biopsies are used in the
+110   assessment for EMD, record the biopsy procedure in PR (Figure 2 Row 3) and the biopsy results in MI and BS as described in
+111   Sections 3.1 and 3.3.
+112
+113   Submit the results of assessments of EMD at baseline and at each study visit with a response assessment. The detailed findings of
+114   the EMD assessment should be submitted in TU and TR in accordance with the SDTM Implementation Guide. Identify the location
+115   assessed in TU and the results of the assessment in TR, linking TU to TR by TRLNKID. Note that for acute leukemias, a finding of
+116   no EMD would be required to establish complete remission; therefore, in most cases, there will be no "nontarget" lesions as complete
+117   remission requires resolution of all EMD.
+118
+119          3.7     Transfusions
+120
+121   Record the occurrence of the transfusions in PR (Figure 2 Rows 6 and 7). Use one row per person per day per product type. The
+122   transfusions listed in PR should include all blood components intended to supply RBC or platelet support, including but not limited to
+123   whole blood, packed red blood cells, pooled platelet units, and apheresis collections. Include the number of units infused (or volume
+124   for partial units given to pediatric patients) in PRDOSE and PRDOSU. See Section 3.11 for the description of the custom analysis
+125   dataset requested to assist assessment of the transfusion independence endpoint.
+126
+127   Because the occurrence of transfusions may be used in the response construct, or transfusion independence may be an efficacy
+128   endpoint itself, transfusion data need to be accurate. The recording of transfusion orders in CM, especially "as needed" or "every
+129   other day", does not provide an accurate accounting of transfusions. As such, recording transfusion orders in CM is not an acceptable
+130   alternative to recording the occurrence of transfusions in PR.
+131
+132          3.8     Subsequent Therapies
+133
+134   Record the occurrence of hematopoietic stem cell transplantation (HSCT), chimeric antigen receptor (CAR) T cell therapy, and other
+135   effector cell therapies in PR (Figure 2 Rows 8 and 9). Use the date of first cell infusion ("Transplant Day 0") as PRSTDTC. The
+136   drugs used in the preparative regimen, lymphodepleting chemotherapy, or graft-vs-host disease prophylaxis should be recorded in
+137   CM if available. Additional characteristics about the cell therapy should be placed in SUPPPR (Figure 6). At a minimum, include
+138   whether the cell component was allogeneic or autologous (Figure 6 Rows 1 and 7) and, if commercially available, the product name
+
+
+                                                                        14
+                                                                              Contains Nonbinding Recommendations
+
+
+139   (Figure 6 Row 9). However, do not use SUPPPR for clinical trials for acute leukemia where the HSCT, CAR T cell, or other effector
+140   cell therapy is the investigational product; for trials where the cell therapy is the investigational product or part of the investigational
+141   treatment, the detailed characteristics of the cell component and administration should be in EX, and the remainder of the donor and
+142   treatment information should be in the SDTM domains appropriate for that information.
+143
+       Figure 6. Example of Subsequent Procedures Details in SUPPPR
+       Row DOMAIN USUBJID IDVAR IDVARVAL QNAM                                                  QLABEL                QVAL                          QORIG
+       1              PR         ABC-1001 PRSEQ                         8          PRHSCTYP    Transplant type       Allogeneic                    CRF
+       2              PR         ABC-1001 PRSEQ                         8          PRPREPREG   Preparative Regimen   Reduced intensity             CRF
+       3              PR         ABC-1001 PRSEQ                         8          PRHSCPROD   Stem cell             PBSC                          CRF
+       4              PR         ABC-1001 PRSEQ                         8          PRDONOR     Donor                 Related                       CRF
+       5              PR         ABC-1001 PRSEQ                         8          PRMHCCOMP   MHC Compatibility     Haploidentical                CRF
+       6              PR         ABC-1001 PRSEQ                         8          PRGFTMAN    Graft manipulation    alpha-beta T cell depletion   CRF
+       7              PR         ABC-1001 PRSEQ                         9          PRECTYP     CAR T Type            Autologous                    CRF
+       8              PR         ABC-1001 PRSEQ                         9          PRECTRG     CAR T Target          CD33                          CRF
+       9              PR         ABC-1001 PRSEQ                         9          PRCELLNAM   Product Name          Newcarcel                     CRF
+       This figure represents only a subset of the variables expected in this domain.
+144
+145   Also record the occurrence of radiation therapy in PR (Figure 2 Row 10). If the radiation therapy starts in one trial phase and ends in
+146   a subsequent trial phase (e.g., starts in the treatment phase and ends in the follow-up phase), use the phase at start of radiation therapy
+147   in EPOCH.
+148
+149   In most cases, additional antileukemia therapies are prohibited by the protocol, and study participants will be declared as being off
+150   study treatment or ending the treatment phase of the protocol prior to start of subsequent therapy. For the purposes of this guidance,
+151   subsequent therapy refers to leukemia treatments that are not prespecified as the study treatment in the protocol and that begin Study
+152   Day 1 or later whether or not the participant is taken off study treatment. Record subsequent antileukemia therapies in CM in
+153   accordance with the SDTM Implementation Guide. If the subsequent therapy is an established combination chemotherapy regimen,
+154   it is acceptable to enter the combination name rather than each drug individually (e.g., use one entry of HAM in CMTRT and
+155   CMDECOD rather than one entry of CYTARABINE and one entry of MITOXANTRONE). If using combination regimen names, do
+156   not enter doses but do provide a code list for the regimen names. In ADCM, ensure that there is a variable to flag drugs used for
+157   subsequent treatment of acute leukemia.
+
+
+                                                                                               15
+                                                                             Contains Nonbinding Recommendations
+
+
+158             3.9        Reported Responses
+159
+160   Record the responses at each study visit in RS (see Figure 7). Use one row per patient per date per evaluator (Investigator and the
+161   Independent Review Committee (IRC) are separate assessments). If a response assessment is not performed at the scheduled visit,
+162   flag this missed occurrence with the variable RSSTAT and the underlying reason in RSREASND (see Figure 7 Row 15).
+163
+       Figure 7. Example of Reported Responses in RS
+       USUBJI RSS
+                       RSTESTCD RSTEST RSORRES                                      RSSTRESC          RSEVAL         RSEVALID     RSSTAT RSREASND VISIT            EPOCH       RSDTC        RSDY
+       D      EQ
+        ABC-                             Overall                                                                                                         CYCLE 2
+               1       OVRLRESP                      Not evaluable                      NE            INVESTIGATOR                                                 TREATMENT   2011-01-02    29
+        1001                             Response                                                                                                        DAY 1
+        ABC-                             Overall                                                      INDEPENDENT                                        CYCLE 2
+               2       OVRLRESP                      Not evaluable                      NE                           Reviewer 1                                    TREATMENT   2011-01-02    29
+        1001                             Response                                                     ASSESSOR                                           DAY 1
+        ABC-                             Overall                                        HAS NOT       INDEPENDENT                                        CYCLE 2
+               3       OVRLRESP                      Has not achieved CR                                             Reviewer 2                                    TREATMENT   2011-01-02    29
+        1001                             Response                                       ACHIEVED CR   ASSESSOR                                           DAY 1
+        ABC-                             Overall                                        HAS NOT       INDEPENDENT                                        CYCLE 2
+               4       OVRLRESP                      Has not achieved CR                                             Reviewer 3                                    TREATMENT   2011-01-02    29
+        1001                             Response                                       ACHIEVED CR   ASSESSOR                                           DAY 1
+        ABC-                             Overall                                        HAS NOT       INDEPENDENT    Final IRC                           CYCLE 2
+               5       OVRLRESP                      Has not achieved CR                                                                                           TREATMENT   2011-01-02    29
+        1001                             Response                                       ACHIEVED CR   ASSESSOR       Outcome                             DAY 1
+        ABC-                             CNS                                                                                                             CYCLE 3
+               6       CNSCAT                        CNS 1                              CNS 1         INVESTIGATOR                                                 TREATMENT   2011-02-01    60
+        1001                             Category                                                                                                        DAY 1
+        ABC-                             Marrow                                                                                                          CYCLE 3
+               7       MCAT                          M1                                 M1            INVESTIGATOR                                                 TREATMENT   2011-02-01    60
+        1001                             Category                                                                                                        DAY 1
+        ABC-                             MRD                                                                                                             CYCLE 3
+               8       MRDSTAT                       Negative                           Negative      INVESTIGATOR                                                 TREATMENT   2011-02-01    60
+        1001                             Status                                                                                                          DAY 1
+        ABC-                             EMD                                                                                                             CYCLE 3
+               9       EMDSTAT                       Absent                             Absent        INVESTIGATOR                                                 TREATMENT   2011-02-01    60
+        1001                             Status                                                                                                          DAY 1
+        ABC-                             Overall                                                                                                         CYCLE 3
+               10      OVRLRESP                      Complete Remission (CR)            CR            INVESTIGATOR                                                 TREATMENT   2011-02-01    60
+        1001                             Response                                                                                                        DAY 1
+        ABC-                             Overall                                                      INDEPENDENT                                        CYCLE 3
+               11      OVRLRESP                      Complete Remission (CR)            CR                           Reviewer 1                                    TREATMENT   2011-02-01    60
+        1001                             Response                                                     ASSESSOR                                           DAY 1
+        ABC-                             Overall                                                      INDEPENDENT                                        CYCLE 3
+               12      OVRLRESP                      Complete Remission (CR)            CR                           Reviewer 2                                    TREATMENT   2011-02-01    60
+        1001                             Response                                                     ASSESSOR                                           DAY 1
+        ABC-                             Overall                                                      INDEPENDENT    Final IRC                           CYCLE 3
+               14      OVRLRESP                      Complete Remission (CR)            CR                                                                         TREATMENT   2011-02-01    60
+        1001                             Response                                                     ASSESSOR       Outcome                             DAY 1
+        ABC-                             Overall                                                                                             No marrow   CYCLE 4
+               15      OVRLRESP                                                                       INVESTIGATOR                Not done                         TREATMENT   2011-03-01    90
+        1001                             Response                                                                                            sampling    DAY 1
+        ABC-                             Overall
+               16      OVRLRESP                      Complete Remission (CR)            CR            INVESTIGATOR                                       EOT       FOLLOW-UP   2011-05-01    150
+        1001                             Response
+       ABC-                              Overall                                                                                                         30-Day
+                 17    OVRLRESP                   Complete Remission (CR)               CR            INVESTIGATOR                                                 FOLLOW-UP   2011-06-01    180
+       1001                              Response                                                                                                        Safety FU
+       This figure represents only a subset of the variables expected in this domain.
+
+
+
+
+                                                                                                        16
+                                                                            Contains Nonbinding Recommendations
+
+
+164   If the Sponsor is also using an algorithmic response based on the raw data, record the Sponsor's algorithmic response at each study
+165   visit in ADRS. Include a description of the algorithmic response derivation in the define file or ADRG, or identify where in the SAP
+166   the derivation is described. Submit the code for the algorithm in the program file for the ADaM data set. Assign the date of marrow
+167   sampling as the response date.
+168
+169              3.10        Summary Level Data
+170
+171   Record the event parameters for time to event outcomes (e.g., time to response, duration of response, overall survival, etc.) in ADTTE
+172   in accordance with the ADaM Implementation Guide. Include at least the start and end date, censor, event description/censoring
+173   reason, last evaluation date, last follow-up date, date of death, HSCT date, and the start date of subsequent therapy (see Figure 9).
+174   If the study protocol or statistical analysis plan specifies any sensitivity analysis for the time-to-event outcomes using alternative
+175   definitions, include these alternative measures in ADTTE as well (see Figure 8 Line 4). In the define file or ADRG, describe how the
+176   alternative measures are derived or identify where in the SAP the alternative measures are described.
+177
+      Figure 8. Example of time to event outcomes in ADTTE
+      ROW      USUBJID             PARAMCD              PARAM                               AVAL STARTDT ADT               CNSR EVNTDESC TRSDT          TREDT         DTHDT HSCTDT NCTXSDT
+      1         ABC-1032           TTR_CR                Time to CR                          1.9   2020-08-24 2020-10-20    1   Achieved CR 2020-08-24 2020-11-15          2021-11-19 2022-12-02
+      2         ABC-1032           TTR_CRCRH             Time to response (CR/CRh)           0.9   2020-08-24 2020-09-21    1   Achieved CRh 2020-08-24 2020-11-15         2021-11-19 2022-12-02
+      3         ABC-1032           DOR_CR                Duration of CR                     25.3 2020-10-20 2022-11-29      1   Relapse      2020-08-24 2020-11-15         2021-11-19 2022-12-02
+      4         ABC-1032           DOR_CR2               Duration of CR sensitivity 2       24.8 2020-10-20 2022-11-15      0   Treatment end 2020-08-24 2020-11-15        2021-11-19 2022-12-02
+      5          ABC-1032            DOR_CRCH               Duration of response (CR/CRh)   26.2 2020-09-21 2022-11-29      1   Relapse      2020-08-24 2020-11-15         2021-11-19 2022-12-02
+      This figure represents only a subset of the variables expected in this domain.
+178
+179              3.11        Custom Datasets
+180
+181              For Response Adjudication
+182
+183   To assist with FDA's adjudication of response endpoints, the FDA guidance for industry Acute Myeloid Leukemia: Developing Drugs
+184   and Biological Products for Treatment (October 2022) 8 requests that Sponsors of marketing applications submit summary files for the
+185   remission endpoints and for the transfusion independence endpoints when used in the pivotal trials. See Section 4.2 below for the
+186   recommended structure of the custom data file for the remission assessment (Section 4.2.1) and for the recommended structure of the
+
+      8
+          See Section IV.B and Appendix 3 in that guidance. For the most recent version of a guidance, check the FDA Guidance Documents Database
+          https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+                                                                                                    17
+                                                           Contains Nonbinding Recommendations
+
+
+187   custom data file for the transfusion independence assessment (Section 4.2.2). These files are considered analysis datasets (e.g., adcus1,
+188   adcus2, etc.). The datasets and programs to create the datasets should be placed in the ADaM folder of the clinical trial if the data are
+189   taken from one study or in the ISE data folder if data are integrated from multiple trials. The Analysis Data Reviewer's Guide should
+190   include a description of the custom data files, and the variables should be included in the define file.
+191
+192   The custom data file for the remission assessment (Section 4.2.1) has a BDS structure with one record per subject per analysis
+193   parameter. The file should include all subjects in the efficacy analysis set. The minimum required parameters would be the
+194   achievement of the remission efficacy endpoint, usually CR, and the occurrence of relapse after achievement of the remission efficacy
+195   endpoint. Include additional parameters as needed for individual components of a composite endpoint, such as CRh for an endpoint of
+196   CR/CRh, or for other key efficacy endpoints that will also be adjudicated, such as MRD-negative CR. For remission parameters,
+197   ensure that the row is complete for all elements of the remission construct. For relapse parameters, include results for at least the first
+198   test that showed relapse. Note that the parameters refer to the study-level remission assessment for the subject (one record per subject
+199   for CR and one record per subject for relapse) rather than the visit-level remission assessment; the visit-level remission assessments
+200   (one record per subject per analysis parameter for each visit) should be reported in RS instead (see Section 3.9 above).
+201
+202   The custom data file for the transfusion independence assessment (Section 4.2.2) also has a BDS structure with one record per subject
+203   per analysis parameter and includes all subjects in the efficacy analysis set. The minimum required parameters would be achievement
+204   of the main transfusion independence endpoint, such as transfusion independence for at least 112 days (TI-112), and achievement of
+205   the components of transfusion independence, such as red blood cell transfusion independence (RBC TI-112) or platelet transfusion
+206   independence (PLT TI-112). Include other key transfusion independence endpoints, such as TI-168, as prespecified in the statistical
+207   analysis plan.
+208
+209           For Patient Profiles
+210
+211   By-patient graphical displays of data over time are used frequently to characterize remission kinetics or unusual aspects in the changes
+212   in various components of the remission construct. When in pdf, these patient profiles should be submitted in the Profiles subfolder of
+213   the study dataset folder. 9 The raw data for the patient profiles may be submitted as a custom analysis dataset in the ADaM folder of
+214   the clinical trial if the data are taken from one study or in the ISE data folder if data are integrated from multiple trials. The custom
+215   data file for by-patient profiles has a BDS structure with one record per subject per date (see example in Section 4.2.3). Include all
+
+
+
+      9
+       See Folder Structure for Study Datasets in the Study Data Technical Conformance Guide. For the most recent version of a guidance, check the FDA Guidance
+      Documents Database https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+                                                                                  18
+                                                              Contains Nonbinding Recommendations
+
+
+216   subjects in the efficacy analysis set in the profile data file. The Analysis Data Reviewer's Guide should include a description of the
+217   custom data file, and the variables should be included in the define file.
+218
+219              3.12     Additional Considerations
+220
+221              Considerations for Data Elements
+222
+223   All raw data from hematological or extramedullary assessments should be associated with a date. The date for laboratory test results
+224   (e.g., CBC, MRD, CSF, etc.) should be the date on which the sample was collected. The date for procedures (e.g., imaging, physical
+225   examination, transfusion, etc.) should be the date on which the procedure was performed. Similarly, the date for interpretive data
+226   should be the date of the laboratory test sample collection or procedure. The raw data in SDTM for hematological or extramedullary
+227   assessments should not be imputed.
+228
+229   The accuracy of timed events (e.g., response by day 180) or time-to-event endpoints (e.g., duration of response) depends on
+230   completeness of the data. While protocols may prespecify when an response assessment is to occur (Visit), leukemia disease-related
+231   events may occur outside of the prespecified schedule. Results of testing performed outside of a Visit window but that are key to the
+232   response analysis (e.g., marrow examinations or CBCs) should be collected with timing assigned as Unscheduled Visit. In the ADaM
+233   datasets, AVISITN for an unscheduled visit should be the nearest prior Visit number with a decimal thereafter. If there are multiple
+234   unscheduled visits between prespecified Visits, the decimal should be assigned in chronological order of the unscheduled visits, so
+235   that when sorted by AVISITN, ADY will be in numerical order.
+236
+237   Missing data also poses challenges for response analyses. Ensure that a CBC, differential, marrow examination, and assessment
+238   for extramedullary disease at study baseline are recorded. Testing performed after Study Day 1 will not be considered baseline.
+239   Additionally, missing postbaseline data will be imputed as a nonremission. 10 Patients with EMD at baseline or with a history of
+240   EMD who do not have at least one EMD response assessment clearly indicating that the previous site of EMD has resolved or
+241   remains free of disease would be considered nonresponders. Lastly, ensure that all data collected are submitted in the data sets.
+242   Case report forms with nonannotated fields or with fields labeled "Data not submitted" may result in the data sets being considered
+243   incomplete. Sponsors should perform data completeness checks before locking the database for analysis.
+244
+
+
+      10
+            See the guidance for industry Acute Myeloid Leukemia: Developing Drugs and Biological Products for Treatment (October 2022). For the most recent
+           version of a guidance, check the FDA Guidance Documents Database https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+
+                                                                                     19
+                                                           Contains Nonbinding Recommendations
+
+
+245   Data entry errors are not uncommon (e.g., hemoglobin entered as 8 g/l rather than 80 g/L, or ANC entered as 1500 Gi/L rather than
+246   1.5 Gi/L), especially in global trials where conventional units of measure may vary by locality. Such errors may delay review while
+247   waiting for corrected datasets or, if systematic, preclude an evaluation of efficacy entirely. Sponsors should perform data quality
+248   checks before locking the database for analysis to confirm the appropriateness of data elements and consistency of the data element
+249   with the stated units for the key parameters used in the assessment of response.
+250
+251           Considerations for Other Types of Efficacy Data
+252
+253   For marketing applications that include other clinical outcome assessments (COA), including patient-reported outcomes (PRO) and
+254   observer-reported outcomes (ObsRO), for use as efficacy endpoints, see the general FDA Technical Specifications Documents
+255   for these data types. 11
+256
+257   For marketing applications that include Real-World Data (RWD) for use as efficacy endpoints, the advice in the preceding sections
+258   applies with regard to the granular remission assessment data expected in the submission. For additional technical advice, see the
+259   general FDA guidances for RWD data standards. 12 Sponsors planning to use RWD as the basis for an efficacy claim for treatment
+260   of AML should discuss the data submission plan with the review Division prior to locking the RWD database for analysis.
+261
+
+
+
+
+      11
+         For example, see the guidances for industry Submitting Patient-Reported Outcome Data in Cancer Clinical Trials (November 2023) and "Submitting Clinical
+         Trial Datasets and Documentation for Clinical Outcome Assessments Using Item Response Theory (November 2023)" available at
+         https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+      12
+         The guidance for industry Data Standards for Drug and Biological Product Submissions Containing Real-World Data (December 2023)available at
+         https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+
+                                                                                  20
+                                                               Contains Nonbinding Recommendations
+
+
+262   4.0        APPENDICES
+263
+264              4.1      Recommended Controlled Terminology
+265
+266   The table below provides the recommended ADaM parameter codes and code lists for the data used in the response assessment. This
+267   table is meant to show examples and is not inclusive of all required data for a marketing application data set. For the most current
+268   listing of parameter codes, refer to the CDISC Terminology page of the NCI Enterprise Vocabulary Service. 13
+269
+       Category                  ADaM                                                 ADaM              Code List
+                                 Parameter                                            Parameter Code
+       CBC                       Leukocytes (Gi/L)                                    WBC
+                                 Hemoglobin (g/dL)                                    HGB
+                                 Hematocrit (%)                                       HCT
+                                 Platelets (Gi/L)                                     PLAT
+                                 Neutrophils (Gi/L)                                   NEUT
+                                 Neutrophils plus bands (Gi/L)                        NEUTSGB
+                                 Neutrophils/Leukocytes (%)                           NEUTLE
+                                 Peripheral blood blasts (Gi/L)                       PBBLAST
+                                 Peripheral blood blasts/Leukocytes (%)               PBBLASTLE
+                                 Peripheral blood Auer rods                           PBAUER            Present, Absent
+       Marrow                    Marrow Biopsy Evaluable                              MBXEVAL           Yes, No
+       Morphology                Marrow Biopsy Cellularity percentage (%)             MBXCELL
+                                 Marrow Biopsy Blast percentage (%)                   MBXBLASTLE
+                                 Marrow Aspirate Evaluable                            MASPEVAL          Yes, No
+                                 Marrow Aspirate Cellularity percentage (%)           MASPCELL
+                                 Marrow Aspirate Blast percentage (%)                 MASPBLASTLE
+                                 Marrow Auer rods                                     BMAUER            Present, Absent
+       Spinal Fluid              Spinal fluid blasts/Leukocytes (%)                   CSFBLASTLE
+                                 Spinal fluid blasts                                  CSFBLAST          Present, Absent
+       Transfusions              Red Blood Cell Transfusion                           TRBC              Whole blood, Packed RBC, [Define other products in
+                                                                                                        code list]
+                                 Platelet Transfusion                                 TPLT              Pooled platelets, Single-donor apheresis platelets, [Define
+                                                                                                        abbreviations of other products in code list]
+
+
+
+
+      13
+           Available at https://datascience.cancer.gov/resources/cancer-vocabulary/cdisc-terminology.
+
+
+                                                                                       21
+                                                             Contains Nonbinding Recommendations
+
+
+       Category                 ADaM                                               ADaM                     Code List
+                                Parameter                                          Parameter Code
+       Subsequent Therapy       Transplant type                                    HSCTYP                   Allogeneic, Autologous
+                                Preparative Regimen                                PREPREG                  [Define abbreviation in code list]
+                                Stem cell type                                     HPCPROD                  Marrow, PBSC, UCB, [Define abbreviations of other
+                                                                                                            products in code list]
+                                Donor Type                                         DONOR                    Related, unrelated
+                                MHC Compatibility                                  MHCCOMP                  Matched, mismatched, haploidentical, [Define other
+                                                                                                            abbreviations or basis of numeric matching (e.g., 6/6) in
+                                                                                                            code list]
+                                Graft Manipulation                                 GFTMAN                   [Define abbreviation in code list]
+                                Effector Cell                                      ECTPROD                  CART, DLI [Define abbreviations of other products in
+                                                                                                            code list]
+                                Effector Cell Type                                 ECTTYP                   Allogeneic, Autologous
+                                Effector Cell Target                               ECTTARG                  [Identify target by CD designation or protein symbol 14]
+
+                                Product Name                                       CELLNAM                  [Product trade name, proper name, or investigational
+                                                                                                            name]
+
+
+
+270
+271
+272
+273
+
+
+
+
+      14
+           See the International Protein Nomenclature Guidelines at https://www.ncbi.nlm.nih.gov/genbank/internatprot_nomenguide/#b-abbreviations-and-symbols
+
+
+                                                                                    22
+                                                       Contains Nonbinding Recommendations
+
+
+274         4.2   Structure of Custom Datasets
+275
+      4.2.1 Example variables for the custom data file to assist with adjudication of remission status
+      Variable Name    Variable                            Data        Notes
+                       Label                               Type
+      STUDYID          Study identification number         Character
+      USUBJID          Unique subject number               Character
+      ARM              Planned treatment arm               Character   Alternatively, use TRTxxP depending on the trial design
+      ACTARM           Actual treatment arm                Character   Alternatively, use TRTxxA depending on the trial design
+      TRTSDT           Date of start of study treatment    Date
+      TRTEDT           Date of last study treatment        Date
+      TRTEDY           Study day of last study treatment   Numeric
+      PARAM            Parameter                           Character   Code List:
+                                                                       Achieved CR
+                                                                       Achieved CRh (if CRh is used in the endpoint and predated CR)
+                                                                       Achieved CR/CRh (If CRh is used in the endpoint)
+                                                                       Relapsed after CR (Or after CR/CRh in CRh is used in the endpoint)
+      PARAMCD          Parameter code                      Character   Code List:
+                                                                       CR
+                                                                       CRH
+                                                                       CRCH
+                                                                       REL
+      AVAL             Analysis Value                      Character   Code List: Yes, No, Not applicable*
+                                                                       *Use Not applicable, for example, as AVAL for REL when there was no CR
+      ADT              Analysis Date                       Date        Date of disease status identified in the parameter. For remission, use the date of
+                                                                       the marrow. For relapse, use the date of the first test that showed relapse. If
+                                                                       AVAL is No or Not applicable, ADT should be blank.
+      ADY              Analysis Relative Day               Numeric     Study day for ADT
+      BMDT             Date of marrow                      Date        Date of marrow used for the response assessment
+      BMDY             Study day of marrow                 Numeric     Study day of marrow used for the response assessment
+      BMEVAL           Marrow evaluator                    Character   Central or local
+      MASPBLASTLE      Marrow aspirate blasts (%)          Character   Marrow aspirate blasts percentage
+      MBXBLASTLE       Marrow biopsy blasts (%)            Numeric     Marrow biopsy blasts percentage
+      BMAUER           Marrow Auer rods                    Character   Present or absent
+      CBCDT            Date of CBC                         Date        Date of ANC used for the response assessment
+      CBCDY            Study day of CBC                    Numeric     Study day of ANC used for the response assessment
+      WBC              White blood cell count (Gi/L)       Numeric
+
+
+
+                                                                       23
+                                                    Contains Nonbinding Recommendations
+
+
+4.2.1 Example variables for the custom data file to assist with adjudication of remission status
+Variable Name    Variable                              Data         Notes
+                 Label                                 Type
+PBBLASTLE        Peripheral blood blasts (%)           Numeric
+PBBLAST          Peripheral blood blasts (Gi/L)        Numeric
+NEUT             Absolute neutrophil count (Gi/L)      Numeric      If using neutrophils plus bands, specify NEUTSGB instead
+PLT              Platelet count (Gi/L)                 Numeric      Platelet count
+HGB              Hemoglobin (g/dL)                     Numeric      Hemoglobin (conventional units)
+PBAUER           Peripheral blood Auer rods            Character    Present or absent
+EMDDT            Date of assessment of EMD             Date         Date of assessment of EMD used for the response assessment
+                                                                    (If multiple sites examined on different dates within the assessment window:
+                                                                    For CR/CRh, use the first date showing EMD is absent within the window of
+                                                                    the assessments.
+                                                                    For relapse, use the first date showing that EMD is present within the window
+                                                                    of the assessments.)
+EMDDY            Study day of assessment of EMD        Numeric      Study day of assessment of EMD used for the response assessment
+EMDSTAT          EMD disease status                    Character    Present or absent
+EMDLOC           EMD location                          Character    Specify, if present
+MRDDT            Date of assessment of MRD             Date         Date of assessment of MRD used for the response assessment (if used)
+MRDDY            Study day of assessment of MRD        Numeric      Study day of assessment of MRD used for the response assessment
+MRDMKR           MRD marker                            Character    If multiple markers are examined, use the marker with the highest MRD level
+MRDLVL           MRD level (add units)                 Character
+CHMDT            Date of assessment of chimerism       Date         Date of assessment of chimerism used for the response assessment (if used)
+CHMDY            Study day of assessment of            Numeric      Study day of assessment of chimerism used for the response assessment
+                 chimerism
+CHMMKR           Chimerism marker                      Character    If multiple markers are examined, use the marker with the highest chimerism
+                                                                    level
+CHMLVL           Chimerism level (add units)           Character    Expressed as donor contribution
+LSTPLTDT         Date of last prior platelet           Date         Date of last platelet transfusion prior to the response identified in Parameter
+                 transfusion
+LSTPLTDY         Study day of last prior platelet      Numeric      Study day of last platelet transfusion prior to response identified in Parameter
+                 transfusion
+LSTRBCDT         Date of last prior RBC                Date         Date of last RBC transfusion prior to response identified in Parameter
+                 transfusion
+
+
+
+
+                                                                    24
+                                                       Contains Nonbinding Recommendations
+
+
+      4.2.1 Example variables for the custom data file to assist with adjudication of remission status
+      Variable Name    Variable                             Data        Notes
+                       Label                                Type
+      LSTRBCDY         Study day of last prior RBC          Numeric     Study day of last RBC transfusion prior to response identified in Parameter
+                       transfusion
+      LSTMGFDT         Date of last prior myeloid           Date        Date of last myeloid hematopoietic growth factor dose prior to the response
+                       hematopoietic growth factor dose                 identified in Parameter
+      LSTMGFDY         Study day of last prior myeloid      Numeric     Study day of last myeloid hematopoietic growth factor dose prior to response
+                       hematopoietic growth factor dose                 identified in Parameter
+
+      LSTMGF           Last prior myeloid hematopoietic     Character   Name of the myeloid hematopoietic growth factor
+                       growth factor
+      LSTPGFDT         Date of last prior platelet          Date        Date of last platelet hematopoietic growth factor dose prior to the response
+                       hematopoietic growth factor dose                 identified in Parameter
+      LSTPGFDY         Study day of last prior platelet     Numeric     Study day of last platelet hematopoietic growth factor dose prior to response
+                       hematopoietic growth factor dose                 identified in Parameter
+      LSTPGF           Last prior platelet hematopoietic    Character   Name of the platelet hematopoietic growth factor
+                       growth factor
+      NEWSYSDT         Date of first salvage treatment      Date        Date of first salvage treatment after start of study drug
+      NEWSYSDY         Study day of first salvage           Numeric     Study day of first salvage treatment after start of study drug
+                       treatment
+      HSCTDT           Date of transplantation              Date        Date of first transplantation after start of study drug
+      HSCTDY           Study day of transplantation         Numeric     Study day of first transplantation after start of study drug
+      ECTDT            Date of effector cell therapy        Date        Date of first effector cell therapy after start of study drug
+      ECTDY            Study day of effector cell therapy   Numeric     Study day of first effector cell therapy after start of study drug
+276
+277
+278
+
+
+
+
+                                                                        25
+                                                          Contains Nonbinding Recommendations
+
+
+279
+      4.2.2 Example variables for the custom data file to assist with adjudication of transfusion independence status
+      Variable Name   Variable Label                                                 Data Type   Notes
+      STUDYID         Study identification number                                    Character
+      USUBJID         Unique subject number                                          Character
+      ARM             Planned treatment arm                                          Character   Alternatively, use TRTxxP depending
+                                                                                                 on the trial design
+      ACTARM          Actual treatment arm                                           Character   Alternatively, use TRTxxA depending
+                                                                                                 on the trial design
+      TRTSDT          Date of start of study treatment                               Date
+      TRTEDT          Date of last study treatment                                   Date
+      TRTEDY          Study day of last study treatment                              Numeric
+      RBCSTATBL       RBC transfusion dependence status at baseline                  Character   Code List: Dependent, Independent
+      PLTSTATBL       Platelet transfusion dependence status at baseline             Character   Code List: Dependent, Independent
+      TRNSTATBL       Transfusion dependence for RBC or platelets at baseline        Character   Code List: Dependent, Independent
+      RBCTIPOST       Minimum RBC TI criteria met post baseline                      Character   Code List: Yes, No
+      PLTTIPOST       Minimum platelet TI criteria met post baseline                 Character   Code List: Yes, No
+      TIPOST          Minimum RBC plus platelet TI criteria met post baseline        Character   Code List: Yes, No
+                                                                                                 Requires RBCTI and PLTTI during the
+                                                                                                 same time period
+      PARAM           Parameter                                                      Character   Code List:
+                                                                                                 TIxx1
+                                                                                                 TIxx2
+                                                                                                 RBCTIxx1
+                                                                                                 RBCTIxx2
+                                                                                                 PLTTIxx1
+                                                                                                 PLTTIxx2
+      PARAMCD         Parameter code                                                 Character   Code List:
+                                                                                                 RBC and PLT TI for at least xx1 days
+                                                                                                 RBC and PLT TI for at least xx2 days
+                                                                                                 RBC TI for at least xx1 days
+                                                                                                 RBC TI for at least xx2 days
+                                                                                                 PLT TI for at least xx1 days
+                                                                                                 PLT TI for at least xx2 days
+      AVALC           Analysis value                                                 Character
+
+
+
+
+                                                                                26
+                                                           Contains Nonbinding Recommendations
+
+
+      4.2.2 Example variables for the custom data file to assist with adjudication of transfusion independence status
+      Variable Name   Variable Label                                                 Data Type   Notes
+      TISTDT          Date of start TI                                               Date
+      TISTDY          Study day of start TI                                          Numeric
+      TIENDT          Date of end of TI                                              Date
+      TIENDY          Study day of end of TI                                         Numeric
+      TIDUR           Duration of TI (days)                                          Numeric
+      TIxx1FL         Flag TI duration at least xx1 days                             Character   TIDUR is at least xx1 days
+                                                                                                 Code List: Yes, No
+      TIxx2FL         Flag TI duration at least xx2 days                             Character   TIDUR is at least xx2 days
+                                                                                                 Code List: Yes, No
+      LFUDT           Date of last study follow-up                                   Date
+      LFUDY           Study day of last study follow-up                              Numeric
+      LFUSTAT         Status at last study follow-up                                 Character   Code List:
+                                                                                                 Alive and TI
+                                                                                                 Alive and TD
+                                                                                                 Dead
+                                                                                                 Lost to follow-up
+280
+281
+
+
+
+
+                                                                           27
+                                                        Contains Nonbinding Recommendations
+
+
+282
+      4.2.3 Example variable for the custom data file for patient profiles.
+      Variable Name    Variable Label                                 Data Type   Notes
+      USUBJID          Unique Subject Identifier                      Character   Unique Subject Identifier
+      ADT              Analysis Date                                  Date        Analysis Date
+      ADY              Analysis Relative Day                          Numeric     Study Day
+      MASPBLASTLE      Marrow aspirate blasts (%)                     Numeric
+      MBXBLASTLE       Marrow biopsy blasts (%)                       Numeric
+      MRDMAX           Maximum MRD level                              Numeric     Maximum across M1LVLN, M2LVLN, etc.
+      ANC              ANC (Gi/L)                                     Numeric
+      PLAT             Platelet count (Gi/L)                          Numeric
+      HGB                                                             Numeric
+      BMAUER           Marrow Auer rods                               Character   Code List: PRESENT, ABSENT
+      PBAUER           Peripheral blood Auer rods                     Character   Code List: PRESENT, ABSENT
+      CSFBLASTLE       CSF blast (%)                                  Numeric
+      CSFBLAST         CSF blast by morphology                        Character   Code List: POSITIVE, NEGATIVE
+      EMDSTAT          EMD disease status                             Character   Code List: PRESENT, ABSENT
+      EMDLOC           EMD location(s)                                Character   Concatenate all locations
+      MARKER1          Biomarker1                                     Character   Identify Marker 1
+      M1LLOD           Biomarker1 limit of detection (add units)      Character   Lower limit of detection of Marker 1
+      M1LLOQ           Biomarker1 limit of quantitation (add units)   Character   Lower limit of Quantitation of Marker 1
+      M1LVL            Biomarker1 level (add units)                   Character   Marker 1 Results in character format
+      M1LVLN           Biomarker1 level (add units)                   Numeric     Marker 1 Results in numeric format
+      MARKER2          Biomarker2                                     Character   Identify Marker 2
+      M2SENSTY         Biomarker2 limit of detection (add units)      Character   Lower limit of detection of Marker 2
+      M2LLOQ           Biomarker2 limit of quantitation (add units)   Character   Lower limit of Quantitation of Marker 2
+      M2LVL            Biomarker2 level (add units)                   Character   Marker 2 Results in character format
+      M2LVLN           Biomarker2 level (add units)                   Numeric     Marker 2 Results in numeric format
+      EVENT            Key clinical event                             Character   Code list (include when ADT is the event date)
+                                                                                  TRTSTDT - treatment start date
+                                                                                  TRTENDT - treatment end date
+                                                                                  NEWSYSDT - date of new systemic therapy (not HSCT or ECT)
+                                                                                  HSCTDT - date of hematopoietic stem cell transplantation
+                                                                                  ECTDT - date of effector cell therapy (including CAR T cells)
+                                                                                  DTHDT - date of death
+283
+
+
+
+                                                                            28
+

@@ -1,0 +1,566 @@
+Quantitative Systems Pharmacology
+ (QSP)-Based Dose Selection for
+ Minimum Anticipated Biological
+Effect Level (MABEL) in First-in-
+        Human (FIH) Trials
+                      Guidance for Industry
+
+
+
+                              DRAFT GUIDANCE
+       This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 30 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (CDER) Office of Clinical Pharmacology
+Guidance and Policy Team at CDER_OCP_GPT@fda.hhs.gov.
+
+
+
+                     U.S. Department of Health and Human Services
+                             Food and Drug Administration
+                    Center for Drug Evaluation and Research (CDER)
+
+                                         June 2026
+                                   Clinical Pharmacology
+Quantitative Systems Pharmacology
+ (QSP)-Based Dose Selection for
+ Minimum Anticipated Biological
+Effect Level (MABEL) in First-in-
+        Human (FIH) Trials
+                Guidance for Industry
+
+                           Additional copies are available from:
+
+                                Division of Drug Information
+                          Center for Drug Evaluation and Research
+                               Food and Drug Administration
+                           Phone: 855-543-3784 or 301-796-3400
+                                Email: druginfo@fda.hhs.gov
+   https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+
+
+
+               U.S. Department of Health and Human Services
+                       Food and Drug Administration
+              Center for Drug Evaluation and Research (CDER)
+
+                                     June 2026
+                               Clinical Pharmacology
+                                          Contains Nonbinding Recommendations
+                                                     Draft — Not for Implementation
+
+                                                     TABLE OF CONTENTS
+
+I.        INTRODUCTION............................................................................................................. 1
+II.       BACKGROUND ............................................................................................................... 2
+III.      GENERAL PRINCIPLES OF QSP IN FIH DOSE SELECTION .............................. 3
+IV.       RECOMMENDED QSP MODELING PRACTICES ................................................... 4
+V.        REGULATORY INTERACTIONS ................................................................................ 8
+     A.   Sponsor Meetings ........................................................................................................................... 8
+     B.   IND Submission.............................................................................................................................. 9
+                                         Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+
+
+
+ 1   Quantitative Systems Pharmacology
+ 2    (QSP)-Based Dose Selection for
+ 3    Minimum Anticipated Biological
+ 4   Effect Level (MABEL) in First-in-
+ 5           Human (FIH) Trials
+ 6                                            Guidance for Industry 1
+ 7
+ 8
+ 9   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+10   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+11   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+12   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+13   for this guidance as listed on the title page.
+14
+15
+16
+17
+18   I.         INTRODUCTION
+19
+20   This guidance is intended to assist sponsors 2 by providing the Agency’s recommendations on the
+21   appropriate use of a quantitative systems pharmacology (QSP)-based approach for determining
+22   minimum anticipated biological effect level (MABEL) dose in first-in-human (FIH), phase 1
+23   trials. QSP is an approach that uses mathematical models, disease characteristics, and the
+24   dynamic interactions between a drug 3 and biological systems to determine an appropriate FIH
+25   dose. This approach has the potential to reduce reliance on animal toxicology studies.
+26   The integration of QSP models in FIH dose selection aligns with the Agency’s commitment to
+27   model-informed drug development (MIDD), which encourages the use of quantitative modeling
+28   and simulation to inform drug development and regulatory decisions.
+
+     1
+      This guidance has been prepared by the Office of Clinical Pharmacology, Office of Translational Sciences, in
+     collaboration with Pharmacology/Toxicology, Immediate Office, Office of New Drugs in the Center for Drug
+     Evaluation and Research (CDER) at the Food and Drug Administration.
+     2
+         For the purposes of this guidance, the term sponsor refers to both sponsors and applicants.
+     3
+       For purposes of this guidance, references to drug or drugs includes drugs approved under section 505 of the FD&C
+     Act (21 U.S.C. 355) and biological products licensed under 351(a) of the PHS Act (42 U.S.C. 262(a)) that are
+     regulated as drugs. Hereafter, the term drug or drugs will be used to refer to all such products unless otherwise
+     specified.
+
+
+                                                                 1
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+
+29
+30   The focus of this guidance is on drugs for which the MABEL approach is recommended to guide
+31   starting doses for FIH trials. This can, but does not necessarily, include drugs that cause T-cell
+32   activation and subsequent cytokine release. Here, we provide recommendations for leveraging
+33   mechanistic QSP as a model-based approach to improve FIH dose estimation.
+34
+35   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+36   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+37   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+38   the word should in Agency guidances means that something is suggested or recommended, but
+39   not required.
+40
+41
+42   II.    BACKGROUND
+43
+44   Selecting an appropriate initial dose for FIH trials is a critical step in drug development.
+45   Historically, FIH starting doses were often derived from animal toxicology studies and have been
+46   based on the no observed adverse effect level (NOAEL), severely toxic dose in 10% of rodents
+47   (STD10), or highest non-severely toxic dose in non-rodent species (HNSTD), converted to a
+48   human equivalent dose. Although these approaches have been appropriate for many drugs, there
+49   are limitations for certain high-risk products (e.g., immunostimulatory monoclonal antibodies).
+50   In response, the concept of MABEL was developed. MABEL is defined as a dose expected to
+51   produce a minimal biological effect in humans. Determining MABEL typically involves using
+52   pharmacologic activity and receptor binding data (human cell lines), while also integrating any
+53   other relevant data, (e.g., pharmacokinetic data), as appropriate, to predict a dose that is just at
+54   the onset of biological activity.
+55
+56   Quantitative Medicine approaches can be powerful for data integration and dose selection.
+57   Specifically, QSP has emerged as an approach to model disease characteristics and complex
+58   drug–biological system interactions. QSP merges an understanding of biological systems and a
+59   drug’s exposure-response relationship, enabling modeling and simulation of how a drug engages
+60   its target and triggers downstream biological responses in a mechanistic, quantitative manner.
+61   Over the past decade, there has been a notable increase in regulatory submissions (e.g.,
+62   investigational new drug applications (INDs), biologics license applications (BLAs), and new
+63   drug applications (NDAs)) that used a QSP approach to support various decisions, such as
+64   informing FIH dose selection, particularly for drugs where traditional methods may fall short.
+65   For example, certain drugs have highly specific targets that only exist in humans and can elicit
+66   steep pharmacodynamic responses (e.g., cytokine release or T-cell activation) that are difficult to
+67   predict from animal studies alone. In many cases, the relevant target may be absent or differently
+68   expressed in animal species, limiting the translational relevance of animal toxicity data, and
+69   standard allometric scaling of doses might not account for such pharmacological differences.
+70   Therefore, a model-informed approach that considers all available data (e.g., in vitro, in vivo, in
+71   silico) could be more appropriate to estimate a starting dose in the FIH trial. In addition, QSP
+72   modeling can provide simulated data for both therapeutic effect and safety, which can help
+73   enable a quantitative balance to inform FIH dose selection. This guidance specifically outlines
+
+
+
+
+                                                       2
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+
+ 74   how QSP models can be developed and used to estimate a MABEL dose for drugs entering FIH
+ 75   trials.
+ 76
+ 77
+ 78   III.       GENERAL PRINCIPLES OF QSP IN FIH DOSE SELECTION
+ 79
+ 80   QSP provides a framework to integrate mechanistic understanding and diverse data into a
+ 81   predictive model. For a MABEL-based FIH dose, the primary goal of the QSP model is to
+ 82   estimate a dose that is expected to result in a minimal but measurable biological effect in
+ 83   humans.
+ 84
+ 85   Sponsors should consider several guiding principles for the use of a QSP approach for MABEL
+ 86   dose determination in FIH trials:
+ 87
+ 88          •   Integration of All Available Data: A foundational principle for QSP modeling is to
+ 89              consider all relevant data for dose prediction. This includes in vitro studies (such as the
+ 90              following assays in human cells: target binding affinity, receptor occupancy and
+ 91              activation, and cytokine release), in vivo studies in relevant animal species (e.g.,
+ 92              pharmacokinetic and pharmacodynamic studies), ex vivo studies, in silico studies, an
+ 93              understanding of disease biology, and learnings from compounds with both similar
+ 94              structure and similar mechanism of action or compounds that partially share
+ 95              pharmacological pathways.
+ 96
+ 97          •   Accounting for Species Differences and Scaling to Humans: If using animal data in the
+ 98              model, QSP models need to incorporate species-specific data such as physiological
+ 99              parameters, receptor densities, and pharmacodynamic responses. This is necessary for
+100              the QSP models to translate nonclinical data to clinical predictions.
+101
+102          •   Mechanistic Representation of the Biological Mechanisms Involved in Drug Response:
+103              In general, QSP models should represent the complete, relevant sequence of events from
+104              drug administration, absorption, and distribution to molecular target engagement,
+105              activation of signaling pathways, and subsequent biological responses. A model should
+106              also take into consideration the expression level of the molecular target and its turnover.
+107              By doing so, the model is expected to better predict therapeutic effect and potential
+108              adverse reactions as a function of dose.
+109
+110          •   Understanding Model Uncertainties and Iterative Refinement: A QSP model is a
+111              synthesis of the current understanding of biological and pharmacological knowledge,
+112              which is likely to evolve with time. As additional data — such as results from new
+113              nonclinical studies or early-phase clinical trials — become available, sponsors should
+114              consider refining the model. Refining the model is especially crucial when early clinical
+115              data contradict model predictions. Integrating emerging data from initial patients allows
+116              for real-time updating of model assumptions and parameter values and adaptive
+117              decision-making. This aligns with the core principles of MIDD, which emphasize
+118              continuous learning and confirming as data accrue. Sponsors should include in their
+
+
+
+
+                                                            3
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+119             submission the assumptions used in a model and the assumptions’ impact on the FIH
+120             dose proposed.
+121
+122
+123   IV.       RECOMMENDED QSP MODELING PRACTICES
+124
+125   Consistent with the International Council for Harmonisation (ICH) guidance for industry M15
+126   General Principles for Model-Informed Drug Development (June 2026), 4 the recommendations
+127   in this section are aimed to ensure the QSP model is sufficiently reliable to determine appropriate
+128   doses for FIH trials that are safe but not subtherapeutic. Sponsors should provide the following
+129   information in their submission when using QSP for dose selection in FIH trials:
+130
+131         •   Question of Interest: Sponsors should clearly state the question of interest that will be
+132             answered by the model (e.g., the model will be used to determine the starting dose,
+133             anticipated target dose range, and/or planned dose-escalation scheme in the FIH trial).
+134
+135         •   Context of Use (COU): Sponsors should clearly define the specific role and scope of the
+136             QSP model within a given context. In general, sponsors should explain how the model
+137             prediction will be used to answer the question(s) of interest and clarify what other
+138             information will be used in the model.
+139
+140         •   Model Risk Assessment: Sponsors should assess model risk based on the following two
+141             key factors that will guide the expectation for the model performance and model
+142             validation:
+143
+144                − Model influence (i.e., the intended weight of the model outcomes in decision-
+145                  making considering the contribution of other relevant information such as dose
+146                  selection based on another method).
+147
+148                − Consequence of making a wrong decision (i.e., consequences if a wrong decision
+149                  is made based on all available information). The mechanism of action and
+150                  anticipated safety profile of a drug can impact the consequence of making a
+151                  wrong decision.
+152
+153         •   Model Construction: During model construction, sponsors should consider the following
+154             recommendations:
+155
+156                − QSP model structure should be built to represent the disease and the biological
+157                  mechanisms related to the pathways targeted by the drug.
+158
+
+
+
+
+      4
+        We update guidances periodically. For the most recent version of a guidance, check
+      the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fdaguidance-
+      documents.
+
+
+                                                            4
+                              Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+159          − Critical components should be identified, including target expression on relevant
+160            cells, biomarker turnover dynamics, downstream pathways, protein binding,
+161            metabolism or transport, and target tissue or compartment of localization. For
+162            some drugs, the model should incorporate multiple biological subsystems to
+163            reflect potential pharmacological effects and safety concerns.
+164
+165          − Model equations and assumptions should be biologically plausible and supported
+166            by established scientific knowledge.
+167
+168          − Acknowledgements should be provided when certain biological processes, such as
+169            potential off-target interactions or speculative feedback loops, are not represented
+170            within the model due to limited data or uncertainties about their existence.
+171
+172          − Evaluations should be conducted, if possible, with alternative model structures
+173            that incorporate these additional elements to determine whether their inclusion
+174            substantially alters model predictions.
+175
+176   •   Parameterization: Sponsors should obtain model parameters from reliable sources when
+177       possible, such as direct experimental measurements.
+178
+179          − For biological products, it is especially critical to recognize that target interactions
+180            and immune responses can differ significantly between species. Thus, if a
+181            biological product’s therapeutic target is human-specific — as often occurs with
+182            monoclonal antibodies — binding parameters should ideally be characterized
+183            using human-derived cells or tissues.
+184
+185          − Animal studies or other nonclinical studies can be used to estimate parameters for
+186            drug pharmacokinetics (e.g., clearance, volume of distribution) and
+187            pharmacodynamics (e.g., maximal effect observed, tolerance development), when
+188            appropriate. However, it is crucial to assess the extent to which each nonclinical
+189            model mirrors human biology, particularly regarding drug-target interactions and
+190            downstream biological effects. In certain cases, data derived from transgenic
+191            animal models expressing human targets can be employed. Sponsors should
+192            ensure that species-specific parameters (e.g., target expression, binding affinity)
+193            are appropriately chosen for human or nonclinical models. Sometimes,
+194            physiological parameters and drug-specific parameters may vary based on
+195            different data sources. Biological variability within human participants (e.g.,
+196            between cancer patients or healthy volunteers) could impact response and should
+197            be accounted for in the models.
+198
+199   •   Code Development: Sponsors should develop the QSP model using reliable
+200       computational software and document the code thoroughly.
+201
+
+
+
+
+                                                    5
+                               Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+202   •   Model Verification: Sponsors should conduct verification procedures to confirm that the
+203       model equations and coding implementations are free of errors, such as incorrect
+204       calculations or inconsistent units. Sponsors should verify basic model behaviors during
+205       initial checks. For example, sponsors should ensure that the absence of drug
+206       administration results in no pharmacological effect and that sufficiently high drug doses
+207       lead to target saturation. For stochastic models, sponsors should verify stochastic stability
+208       to ensure consistent and realistic variability across simulations.
+209
+210   •   Model Calibration and Validation: Sponsors should thoroughly document the calibration
+211       process, including methods, rationale for parameter adjustments, and the resulting
+212       alignment with observed data to ensure transparency. QSP model validation should be
+213       driven by the COU and model risk. When feasible, sponsors should evaluate the model
+214       prediction against data collected in clinical and nonclinical studies. Model performance
+215       can be validated by different components (e.g., biomarker changes in disease progression,
+216       and with treatment). Clinical data from drugs with the same mechanism of action or
+217       sharing the underlying pharmacological pathways can provide additional assurance of the
+218       reliability of the model.
+219
+220   •   Model Application: After successful validation, the model can be applied to predict the
+221       drug responses under different dosing regimens. This can lead to the prediction of the
+222       FIH dose and potential suggestions for dose-escalation increments. Specifically,
+223       simulating pharmacological responses at multiple low-dose levels surrounding the
+224       anticipated starting dose can help visualize the steepness or shallowness of the dose-
+225       response relationship. A gradual (shallow) response at low doses can support selection of
+226       a slightly higher initial dose, whereas a pronounced (steep) increase in response indicates
+227       the importance of a lower starting dose and more cautious subsequent dose escalation.
+228
+229   •   Sensitivity and Uncertainty Analyses: Sponsors should conduct sensitivity analyses to
+230       systematically determine how changes in individual model parameters influence
+231       predictions and dosing recommendations. Sponsors should address model structural
+232       uncertainty by evaluating alternative biological hypotheses and model architectures.
+233       Sponsors should quantify how collective knowledge gaps, both in parameter estimates
+234       and underlying biological assumptions or model structures, affect the overall confidence
+235       in model predictions. These analyses help identify parameters and/or structure
+236       assumptions with the greatest impact on outcomes and evaluate the robustness of dose
+237       recommendations across realistic parameter and model structure variations. Sponsors
+238       should thoroughly communicate the impact of the model parameters and/or structure
+239       assumptions on the robustness of the proposed FIH dose to ensure transparency.
+240
+241   •   Dose Selection: The selection of a FIH dose relies on multidisciplinary collaboration
+242       based on the totality of available data, and sponsors should include the following
+243       considerations:
+244
+
+
+
+
+                                                    6
+                              Contains Nonbinding Recommendations
+                                     Draft — Not for Implementation
+
+245          − In general, sponsors should err on the side of caution when selecting the FIH
+246            starting dose for the safety of the clinical trial participants. Additional caution is
+247            warranted when a QSP-based dose differs substantially from traditional MABEL
+248            estimates (those using in vitro pharmacology activity and binding studies
+249            conducted with the investigational product). In such cases, sponsors should
+250            demonstrate the model’s reliability, ideally through retrospective validation using
+251            clinical outcomes from compounds with a similar mechanism of action (and
+252            structure, as applicable).
+253
+254          − For novel targets lacking clinical precedent, if discordant dose estimates arise
+255            between the QSP model and traditional methodologies, sponsors should select the
+256            most conservative (lowest) starting dose to prioritize patient safety.
+257
+258          − Sponsors should explicitly incorporate findings from sensitivity and uncertainty
+259            analyses to determine the FIH dose and clearly identify how variations in key
+260            model parameters and underlying assumptions affect predicted dose-response
+261            relationships and confidence in model-based dose recommendations. Additional
+262            safety margins could be appropriate, depending on the anticipated severity,
+263            reversibility, and clinical manageability of potential adverse effects suggested by
+264            the drug’s mechanism of action. If the target or mechanism of action of the drug is
+265            novel, additional safety margins should also be considered.
+266
+267          − It is worth noting that MABEL, by definition, is a low-end dose. In studies
+268            involving patients with life-threatening disease (e.g., some oncology and severely
+269            debilitating or life-threatening indications), sponsors should consider avoiding
+270            prolonged escalation phases where many patients are exposed to sub-therapeutic
+271            dose levels. In some cases, starting at a minimal active dose that is higher than the
+272            absolute MABEL may be justified. QSP models can help determine that minimal
+273            active dose. This is a nuanced decision and should consider patient safety versus
+274            potential benefit. Sponsors should submit appropriate justification for starting at a
+275            dose higher than the absolute MABEL.
+276
+277   •   Early Monitoring and Model Refinement: Sponsors should identify the model’s
+278       limitations, such as potential information gaps and model uncertainties, and provide the
+279       following information:
+280
+281          − Sensitivity and uncertainty analyses can help, but cannot address, unanticipated
+282            biology. Thus, even with a model-predicted safe dose, sponsors should remain
+283            vigilant for unexpected reactions and consider safety measures such as staggered
+284            enrollment and intensive monitoring in the FIH trial design, especially for certain
+285            high-risk drugs.
+286
+
+
+
+
+                                                   7
+                                    Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+287                 − Ideally, the FIH trial protocols should incorporate plans for early monitoring of
+288                   trial participants to facilitate timely evaluation and refinement of the QSP model.
+289                   For instance, pharmacokinetic data and pharmacodynamic biomarker data from
+290                   the initial participant(s) can be collected and analyzed promptly as they become
+291                   available. Comparing these early clinical measurements against the model's
+292                   predictions can confirm whether the human biological response aligns with the
+293                   QSP model prediction.
+294
+295                 − Early evaluation can enable timely model refinement and inform subsequent dose-
+296                   escalation decisions within the trial. It is good practice for sponsors to include in
+297                   the protocol the intention to use emerging human data to refine the model before
+298                   proceeding to higher dose levels.
+299
+300
+301   V.       REGULATORY INTERACTIONS
+302
+303   When applying a QSP approach for dose selection in a FIH trial, sponsors should submit a QSP
+304   Study Report and provide documentation of methods, assumptions or uncertainties, and other
+305   information recommended in this guidance. Early interaction between sponsors and the Agency
+306   can improve model development and subsequent planning of FIH trial design. Specific
+307   development-related discussions can be helpful to ensure full alignment on the risk-based
+308   assessment, technical details on QSP modeling and evaluation, and approaches for
+309   implementation in clinical trial design. The mechanisms described below can be considered for
+310   sponsor engagement with the Agency.
+311
+312            A.      Sponsor Meetings
+313
+314   Sponsors planning to use a QSP approach to determine the MABEL dose in a FIH trial should
+315   engage proactively with the Agency as early in development as possible through regulatory
+316   meetings such as the pre-IND or MIDD Paired Meetings. 5 Early dialogue facilitates mutual
+317   understanding, transparency, and efficient regulatory review during the IND submission process.
+318   In the pre-IND meeting submission or the MIDD Paired Meeting submission, sponsors are
+319   encouraged to:
+320
+321        •   Clearly outline the intended COU of the QSP model for dose selection.
+322
+323        •   Include a model risk assessment.
+324
+325        •   Provide model information, at a minimum, including model structure, key assumptions,
+326            critical parameters and their bases, data sources such as literature references and study
+327            reports, and intended validation strategy. Provide transparent scientific rationale
+328            demonstrating that the model’s structure, parameters, and assumptions are biologically
+329            and pharmacologically credible.
+
+      5
+        For more information on MIDD Paired meetings see https://www.fda.gov/drugs/development-resources/model-
+      informed-drug-development-paired-meeting-program.
+
+
+                                                           8
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+
+330
+331      •   Provide a plan for model calibration and validation.
+332
+333      •   Provide a plan for the model application, sensitivity and uncertainty analyses, and dose
+334          selection.
+335
+336      •   Provide a plan for the FIH clinical trial.
+337
+338      •   Seek early feedback on the overall approach and potential information gaps.
+339
+340          B.     IND Submission
+341
+342   Sponsors intending to use a QSP approach to establish MABEL for FIH dose selection should
+343   submit the following information in their IND package:
+344
+345      •   Intended COU of the QSP model for dose selection.
+346
+347      •   Model risk assessment.
+348
+349      •   Comprehensive description of the QSP model, clearly specifying the overall structure
+350          (e.g., diagram), key assumptions, mathematical equations, parameters and their values
+351          (with units), and sources of those values. Detailed documentation, including
+352          comprehensive literature references, should be submitted to substantiate both the
+353          structure and selected parameters of the model. To improve transparency and minimize
+354          bias, sponsors should include a tabulated summary of all potential parameter values
+355          obtained from various data sources, accompanied by clear rationale justifying the chosen
+356          parameter values, and should include a report of the sensitivity and uncertainty analyses.
+357          Sponsors should provide information about the computational software, software version,
+358          developed code, and data used in the model.
+359
+360      •   Documentation of model calibration and validation. Sponsors should clearly describe the
+361          calibration methods and dataset(s) used and should present parameter adjustments
+362          transparently, including the initial parameter values, final calibrated values, and
+363          justification for any modifications made during calibration. Sponsors should summarize
+364          how calibration impacted the model's predictive capability and should provide scientific
+365          justification (e.g., biological plausibility) to support the calibration. For model validation,
+366          sponsors should include comparisons of model predictions with independent datasets not
+367          previously used in model development and calibration. Sponsors should include graphical
+368          and statistical summaries illustrating the agreement between observed and predicted data.
+369
+370      •   Results from model application for dose selection, and sensitivity and uncertainty
+371          analyses.
+372
+373      •   Key simulation results that clearly support the proposed dosing decisions. Typical results
+374          include, but are not limited to the following:
+375
+
+
+                                                          9
+                               Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+376       − Predicted pharmacokinetic and pharmacodynamic profiles for clinical trial
+377         participants at the recommended starting dose, along with selected lower and higher
+378         doses.
+379
+380       − Dose-response relationships (including uncertainty intervals) for the primary
+381         pharmacological effect or safety concern, that explicitly mark the position of the
+382         chosen starting dose within this relationship.
+383
+384       − Results of sensitivity and uncertainty analyses, including a tabulated summary of
+385         parameters identified as most influential on the model predictions, accompanied by
+386         graphical representations illustrating the potential variation in predicted outcomes at
+387         the proposed dose due to uncertainty across the parameters.
+388
+389   •   Documentation of a clear rationale for dose selection. Sponsors should clearly state the
+390       limitations of the QSP model (e.g., information gaps), along with proposed mitigation
+391       strategies or plans for additional data collection during early clinical studies. Sponsors
+392       should provide a comprehensive summary of all the considerations related to the dose
+393       selection (e.g., additional safety margins based on anticipated severity, reversibility, and
+394       clinical manageability of potential adverse effects suggested by the drug’s mechanism of
+395       action; historical data from similar drugs; dose estimation based on other methods).
+396
+397   •   A plan in the clinical trial protocol on how the QSP model will be updated based on
+398       emerging data and a plan to notify the Agency if the model updates will impact clinical
+399       decisions.
+400
+
+
+
+
+                                                   10
+

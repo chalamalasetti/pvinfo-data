@@ -1,0 +1,2578 @@
+      M10 BIOANALYTICAL METHOD
+             VALIDATION
+
+
+
+
+This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+and is not binding on FDA or the public. You can use an alternative approach if it satisfies the
+requirements of the applicable statutes and regulations. To discuss an alternative approach,
+contact the FDA staff responsible for this guidance as listed on the title page. The draft
+guidance has been left in the original International Council for Harmonisation format. The
+final guidance will be reformatted and edited to conform with FDA’s good guidance practice
+regulation and style.
+
+
+
+
+  For questions regarding this draft document, contact (CDER) Brian Booth 301-796-
+                     1508 or (CBER) Tsai-Lien Lin 240-402-8698.
+ INTERNATIONAL COUNCIL FOR HARMONISATION OF TECHNICAL
+   REQUIREMENTS FOR PHARMACEUTICALS FOR HUMAN USE
+
+
+                       ICH HARMONISED GUIDELINE
+
+
+
+
+            BIOANALYTICAL M ETHOD VALIDATION
+                          M10
+
+                             Draft version 5.1 – Step 1
+                             Endorsed on 7 June 2018
+                        Currently under public consultatio n
+
+
+
+
+At Step 2 of the ICH Process, a consensus draft text or guideline, agreed by the
+appropriate ICH Expert Working Group, is transmitted by the ICH Assembly to the
+regulatory authorities of the ICH regions for internal and external consultation,
+according to national or regional procedures.
+                                     M10
+                                Document History
+
+
+Code            History                                                    Date
+M10             Endorsement by the Members of the ICH Assembly 7 June 2018
+                under Step 2 and release for public consultation
+                (document dated 20 December 2018).
+
+
+
+
+Legal notice: This document is protected by copyright and may, with the exception of the ICH
+logo, be used, reproduced, incorporated into other works, adapted, modified, translated or
+distributed under a public license provided that ICH's copyright in the document is acknowledged
+at all times. In case of any adaption, modification or translation of the document, reasonable
+steps must be taken to clearly label, demarcate or otherwise identify that changes were made to
+or based on the original document. Any impression that the adaption, modification or
+translation of the original document is endorsed or sponsored by the ICH must be avoided.
+The document is provided "as is" without warranty of any kind. In no event shall the ICH or the
+authors of the original document be liable for any claim, damages or other liability arising from
+the use of the document.
+The above-mentioned permissions do not apply to content supplied by third parties. Therefore,
+for documents where the copyright vests in a third party, permission for reproduction must be
+obtained from this copyright holder.
+1                                          ICH HARMONISED GUIDELINE
+
+
+2                 BIOANALYTICAL METHOD VALIDATION
+3                                                                  M10
+4                                                   ICH Consensus Guideline
+
+5
+
+6    TABLE OF CONTENTS
+
+7    1. INTRODUCTION..........................................................................................................3
+8    1.1 Objective ....................................................................................................................... 3
+9    1.2 Background ................................................................................................................... 3
+10   1.3 Scope............................................................................................................................. 3
+11   2. GENERAL PRINCIPLES..............................................................................................4
+12   2.1 Method Development ..................................................................................................... 4
+13   2.2 Method Validation .......................................................................................................... 5
+14          2.2.1 Full Validation              ............................................................................................... 5
+15          2.2.2 Partial Validation ................................................................................................ 6
+16          2.2.3 Cross Validation .................................................................................................. 6
+17   3. CHROMATOGRAPHY.................................................................................................6
+18   3.1 Reference Standards ....................................................................................................... 6
+19   3.2 Validation ...................................................................................................................... 7
+20          3.2.1 Selectivity ............................................................................................................ 7
+21          3.2.2 Specificity ............................................................................................................ 8
+22          3.2.3 Matrix Effect........................................................................................................ 9
+23          3.2.4 Calibration Curve and Range ............................................................................... 9
+24          3.2.5 Accuracy and Precision...................................................................................... 11
+25          3.2.5.1 Preparation of Quality Control Samples .......................................................... 11
+26          3.2.5.2 Evaluation of Accuracy and Precision.............................................................. 11
+27          3.2.6 Carry-over......................................................................................................... 12
+                                                          ICH M10 Guideline
+
+
+
+28          3.2.7 Dilution Integrity ............................................................................................... 12
+29          3.2.8 Stability ............................................................................................................. 13
+30          3.2.9 Reinjection Reproducibility ................................................................................ 16
+31   3.3 Study Sample Analysis ................................................................................................. 16
+32          3.3.1 Analytical Run ................................................................................................... 16
+33          3.3.2 Acceptance Criteria for an Analytical Run .......................................................... 17
+34          3.3.3 Calibration Range ............................................................................................. 18
+35          3.3.4 Reanalysis of Study Samples............................................................................... 19
+36          3.3.5 Reinjection of Study Samples.............................................................................. 20
+37          3.3.6 Integration of Chromatograms ........................................................................... 21
+38   4. LIGAND BINDING ASSAYS ......................................................................................21
+39   4.1 Key Reagents ............................................................................................................... 21
+40          4.1.1 Reference Standard ............................................................................................ 21
+41          4.1.2 Critical Reagents ............................................................................................... 21
+42   4.2 Validation .................................................................................................................... 22
+43          4.2.1 Specificity.......................................................................................................... 22
+44          4.2.2 Selectivity .......................................................................................................... 23
+45          4.2.3 Calibration Curve and Range ............................................................................. 24
+46          4.2.4 Accuracy and Precision...................................................................................... 25
+47          4.2.4.1 Preparation of Quality Control Samples .......................................................... 25
+48          4.2.4.2 Evaluation of Accuracy and Precision.............................................................. 25
+49          4.2.5 Carry-over......................................................................................................... 26
+50          4.2.6 Dilution Linearity and Hook Effect ..................................................................... 26
+51          4.2.7 Stability ............................................................................................................. 27
+52   4.3 Study Sample Analysis ................................................................................................. 28
+53          4.3.1 Analytical Run ................................................................................................... 28
+54          4.3.2 Acceptance Criteria for an Analytical Run .......................................................... 28
+
+
+                                                                       1
+                                                          ICH M10 Guideline
+
+
+
+55          4.3.3 Calibration Range ............................................................................................. 29
+56          4.3.4 Reanalysis of Study Samples............................................................................... 30
+57   5. INCURRED SAMPLE REANALYSIS ......................................................................31
+58   6. PARTIAL AND CROSS VALIDATION.......................................................................33
+59   6.1 Partial Validation.......................................................................................................... 33
+60   6.2 Cross Validation ........................................................................................................... 34
+61   7. ADDITIONAL CONSIDERATIONS...........................................................................35
+62   7.1 Analytes that are also Endogenous Compounds ............................................................. 35
+63          7.1.1 Quality Control Samples .................................................................................... 36
+64          7.1.2 Calibration Standards........................................................................................ 37
+65          7.1.3 Selectivity, Recovery and Matrix Effects.............................................................. 37
+66          7.1.4 Parallelism ........................................................................................................ 38
+67          7.1.5 Accuracy and Precision...................................................................................... 38
+68          7.1.6 Stability ............................................................................................................. 38
+69   7.2 Parallelism ................................................................................................................... 39
+70   7.3 Recovery ..................................................................................................................... 39
+71   7.4 Minimum Required Dilution......................................................................................... 39
+72   7.5 Commercial and Diagnostic Kits .................................................................................. 40
+73   7.6 New or Alternative Technologies .................................................................................. 41
+74          7.6.1 Dried Matrix Methods........................................................................................ 41
+75   8. DOCUMENTATION....................................................................................................42
+76   8.1 Summary Information .................................................................................................. 42
+77   8.2 Documentation for Validation and Bioanalytical Reports ............................................... 43
+78   9. GLOSSARY .................................................................................................................51
+
+79
+80
+
+
+
+
+                                                                       2
+                                             ICH M10 Guideline
+
+
+
+81    1. INTRODUCTION
+
+82    1.1 Objective
+
+83    This guideline is intended to provide recommendations for the validation of bioanalytical assays
+84    for chemical and biological drug quantification and their application in the analysis of study
+85    samples. Adherence to the principles presented in this guideline will improve the quality and
+86    consistency of the bioanalytical data in support of the development and market approval of both
+87    chemical and biological drugs.
+
+88    The objective of the validation of a bioanalytical assay is to demonstrate that it is suitable for
+89    its intended purpose. Changes from the recommendations in this guideline may be acceptable
+90    if appropriate scientific justification is provided. Applicants are encouraged to consult the
+91    regulatory authority(ies) regarding significant changes in method validation approaches when
+92    an alternate approach is proposed or taken.
+
+93    1.2 Background
+
+94    Concentration measurements of chemical and biological drug(s) and their metabolite(s) in
+95    biological matrices are an important aspect of drug development. The results of pivotal
+96    nonclinical toxicokinetic (TK)/pharmacokinetic (PK) studies and of clinical trials, including
+97    comparative bioavailability/ bioequivalence (BA/BE) studies, are used to make regulatory
+98    decisions regarding the safety and efficacy of drug products. It is therefore critical that the
+99    bioanalytical methods used are well characterised, appropriately validated and documented in
+100   order to ensure reliable data to support regulatory decisions.
+
+101   1.3 Scope
+
+102   This guideline describes the method validation that is expected for bioanalytical assays that are
+103   submitted to support regulatory submissions. The guideline is applicable to the validation of
+104   bioanalytical methods used to measure concentrations of chemical and biological drug(s) and
+105   their metabolite(s) in biological samples (e.g., blood, plasma, serum, other body fluids or
+106   tissues) obtained in pivotal nonclinical TK/PK studies that are used to make regulatory
+107   decisions and all phases of clinical trials in regulatory submissions. Full method validation is
+108   expected for the primary matrix(ces) intended to support regulatory submissions. Additional
+109   matrices should be partially validated as necessary. The analytes that should be measured in
+110   nonclinical and clinical studies and the types of studies necessary to support a regulatory
+111   submission are described in other ICH and regional regulatory documents.
+                                                      3
+                                             ICH M10 Guideline
+
+
+
+112   For studies that are not submitted for regulatory approval or not considered for regulatory
+113   decisions regarding safety, efficacy or labelling (e.g., exploratory investigations), applicants
+114   may decide on the level of qualification that supports their own internal decision making.
+
+115   The information in this guideline applies to the quantitative analysis by ligand binding assays
+116   (LBAs) and chromatographic methods such as liquid chromatography (LC) or gas
+117   chromatography (GC), which are typically used in combination with mass spectrometry (MS)
+118   detection and occasionally with other detectors.
+
+119   For studies that are subject to Good Laboratory Practice (GLP) or Good Clinical Practice (GCP)
+120   the bioanalysis of study samples should also conform to their requirements.
+
+121   The bioanalysis of biomarkers and bioanalytical methods used for the assessment of
+122   immunogenicity are not within the scope of this guideline.
+
+123   2. GENERAL PRINCIPLES
+
+124   2.1 Method Development
+
+125   The purpose of bioanalytical method development is to define the design, operating conditions,
+126   limitations and suitability of the method for its intended purpose and to ensure that the method
+127   is optimised for validation.
+
+128   Before the development of a bioanalytical method, the applicant should understand the analyte
+129   of interest (e.g., the physicochemical properties of the drug, in vitro and in vivo metabolism and
+130   protein binding) and consider aspects of any prior analytical methods that may be applicable.
+
+131   Method development involves optimising the procedures and conditions involved with
+132   extracting and detecting the analyte. Method development can include the optimisation of the
+133   following bioanalytical parameters to ensure that the method is suitable for validation:
+
+134            •   Reference standards
+
+135            •   Critical reagents
+
+136            •   Calibration curve
+
+137            •   Quality control samples (QCs)
+
+138            •   Selectivity and specificity
+
+
+                                                      4
+                                              ICH M10 Guideline
+
+
+
+139            •    Sensitivity
+
+140            •    Accuracy
+
+141            •    Precision
+
+142            •    Recovery
+
+143            •    Stability of the analyte in the matrix
+
+144            •    Minimum Required Dilution (MRD)
+
+145   Bioanalytical method development does not require extensive record keeping or notation.
+146   However, the applicant should record the changes to procedures as well as any issues and their
+147   resolutions to provide a rationale for any changes made to validated methods immediately prior
+148   to or in the course of analysing study samples for pivotal studies.
+
+149   Once the method has been developed, bioanalytical method validation proves that the optimised
+150   method is suited to the analysis of the study samples.
+
+151   2.2 Method Validation
+
+152   2.2.1 Full Validation
+
+153   Bioanalytical method validation is essential to ensure the acceptability of assay performance
+154   and the reliability of analytical results. A bioanalytical method is defined as a set of procedures
+155   used for measuring analyte concentrations in biological samples. A full validation of a
+156   bioanalytical method should be performed when establishing a bioanalytical method for the
+157   quantification of an analyte in clinical and in pivotal nonclinical studies. Full validation should
+158   also be performed when implementing an analytical method that is reported in the literature and
+159   when a commercial kit is repurposed for bioanalytical use in drug development. Usually one
+160   analyte has to be determined, but on occasion it may be appropriate to measure more than one
+161   analyte. This may involve two different drugs, a parent drug with its metabolites or the
+162   enantiomers or isomers of a drug. In these cases, the principles of validation and analysis apply
+163   to all analytes of interest.
+
+164   For chromatographic methods a full validation should include the following elements:
+165   selectivity, specificity (if necessary), matrix effect, calibration curve (response function), range
+166   (lower limit of quantification (LLOQ) to upper limit of quantification (ULOQ)), accuracy,
+167   precision, carry-over, dilution integrity, stability and reinjection reproducibility.
+
+                                                        5
+                                            ICH M10 Guideline
+
+
+
+168   For LBAs the following elements should be evaluated: specificity, selectivity, calibration curve
+169   (response function), range (LLOQ to ULOQ), accuracy, precision, carry-over (if necessary),
+170   dilution linearity, parallelism (if necessary, conducted during sample analysis) and stability.
+
+171   The matrix used for analytical method validation should be the same as the matrix of the study
+172   samples, including anticoagulants and additives. In some cases, it may be difficult to obtain an
+173   identical matrix to that of the study samples (e.g., rare matrices such as tissue, cerebrospinal
+174   fluid, bile). In such cases surrogate matrices may be acceptable for analytical method validation.
+175   The surrogate matrix should be selected and justified scientifically for use in the analytical
+176   method.
+
+177   A specific, detailed, written description of the bioanalytical method should be established a
+178   priori. This description may be in the form of a protocol, study plan, report, or Standard
+179   Operating Procedure (SOP).
+
+180   2.2.2 Partial Validation
+
+181   Modifications to a fully validated analytical method may be evaluated by partial validation.
+182   Partial validation can range from as little as one accuracy and precision determination to a
+183   nearly full validation (Refer to Section 6.1). The items in a partial validation are determined
+184   according to the extent and nature of the changes made to the method.
+
+185   2.2.3 Cross Validation
+
+186   Where data are obtained from different methods within or across studies, or when data are
+187   obtained within a study from different laboratories applying the same method, comparison of
+188   those data is needed and a cross validation of the applied analytical methods should be carried
+189   out (Refer to Section 6.2).
+
+190   3. CHROMATOGRAPHY
+
+191   3.1 Reference Standards
+
+192   During method validation and the analysis of study samples, a blank biological matrix is spiked
+193   with the analyte(s) of interest using solutions of reference standard(s) to prepare calibration
+194   standards, QCs and stability QCs. Calibration standards and QCs should be prepared from
+195   separate stock solutions. However, calibration standards and QCs may be prepared from the
+196   same stock solution provided the accuracy and stability of the stock solution have been verified.
+
+
+                                                      6
+                                             ICH M10 Guideline
+
+
+
+197   A suitable internal standard (IS) should be added to all calibration standards, QCs and study
+198   samples during sample processing. The absence of an IS should be technically justified.
+
+199   It is important that the reference standard is well characterised and the quality (purity, strength,
+200   identity) of the reference standard and the suitability of the IS is ensured, as the quality will
+201   affect the outcome of the analysis and, therefore, the study data. The reference standard used
+202   during validation and study sample analysis should be obtained from an authentic and traceable
+203   source. The reference standard should be identical to the analyte. If this is not possible, an
+204   established form (e.g., salt or hydrate) of known quality may be used.
+
+205   Suitable reference standards include compendial standards, commercially available standards
+206   or sufficiently characterised standards prepared in-house or by an external non-commercial
+207   organisation. A certificate of analysis (CoA) or an equivalent alternative is required to ensure
+208   quality and to provide information on the purity, storage conditions, retest/expiration date and
+209   batch number of the reference standard.
+
+210   A CoA is not required for the IS as long as the suitability for use is demonstrated, e.g., a lack of
+211   analytical interference is shown for the substance itself or any impurities thereof.
+
+212   When MS detection is used, the use of the stable isotope-labelled analyte as the IS is
+213   recommended whenever possible. However, it is essential that the labelled standard is of high
+214   isotope purity and that no isotope exchange reaction occurs. The presence of unlabelled analyte
+215   should be checked and if unlabelled analyte is detected, the potential influence should be
+216   evaluated during method validation.
+
+217   Stock and working solutions can only be prepared from reference standards that are within the
+218   stability period as documented in the CoA (either expiration date or the retest date in early
+219   development phase).
+
+220   3.2 Validation
+
+221   3.2.1 Selectivity
+
+222   Selectivity is the ability of an analytical method to differentiate and measure the analyte in the
+223   presence of potential interfering substances in the blank biological matrix.
+
+224   Selectivity is evaluated using blank samples (matrix samples processed without addition of an
+225   analyte or IS) obtained from at least 6 individual sources/lots (non-haemolysed and non-
+
+                                                       7
+                                              ICH M10 Guideline
+
+
+
+226   lipaemic). Use of fewer sources may be acceptable in the case of rare matrices. Selectivity for
+227   the IS should also be evaluated.
+
+228   The evaluation of selectivity should demonstrate that no significant response attributable to
+229   interfering components is observed at the retention time(s) of the analyte or the IS in the blank
+230   samples. Responses detected and attributable to interfering components should not be more
+231   than 20% of the analyte response at the LLOQ and not more than 5% of the IS response in the
+232   LLOQ sample for each matrix.
+
+233   For the investigation of selectivity in lipaemic matrices at least one source of matrix should be
+234   used. To be scientifically meaningful, the matrix used for these tests should be representative
+235   as much as possible of the expected study samples. A naturally lipaemic matrix with abnormally
+236   high levels of triglycerides should be obtained from donors. Although it is recommended to use
+237   lipaemic matrix from donors, if this is difficult to obtain, it is acceptable to spike matrix with
+238   triglycerides even though it may not be representative of study samples. However, if the drug
+239   impacts lipid metabolism or if the intended patient population is hyperlipidaemic, the use of
+240   spiked samples is discouraged. This evaluation is not necessary for preclinical studies unless
+241   the drug impacts lipid metabolism or is administered in a particular animal strain that is
+242   hyperlipidaemic.
+
+243   For the investigation of selectivity in haemolysed matrices at least one source of matrix should
+244   be used. Haemolysed matrices are obtained by spiking matrix with haemolysed whole blood (at
+245   least 2% V/V) to generate a visibly detectable haemolysed sample.
+
+246   3.2.2 Specificity
+
+247   Specificity is the ability of a bioanalytical method to detect and differentiate the analyte from
+248   other substances, including its related substances (e.g., substances that are structurally similar
+249   to the analyte, metabolites, isomer, impurities, degradation products formed during sample
+250   preparation, or concomitant medications that are expected to be used in the treatment of patients
+251   with the intended indication).
+
+252   If the presence of related substances is anticipated in the biological matrix of interest, the impact
+253   of such substances should be evaluated during method validation, or alternatively, in the pre-
+254   dose study samples. In the case of LC-MS based methods, to assess the impact of such
+255   substances, the evaluation may include comparing the molecular weight of a potential
+
+
+                                                       8
+                                            ICH M10 Guideline
+
+
+
+256   interfering related substance with the analyte and chromatographic separation of the related
+257   substance from the analyte.
+
+258   Responses detected and attributable to interfering components should not be more than 20% of
+259   the analyte response at the LLOQ and not more than 5% of the IS response in the LLOQ sample.
+
+260   The possibility of back-conversion of a metabolite into the parent analyte during the successive
+261   steps of the analysis (including extraction procedures or in the MS source) should also be
+262   evaluated when relevant (i.e., potentially unstable metabolites such as ester analytes to
+263   ester/acidic metabolites, unstable N-oxides or glucuronide metabolites, lactone-ring structures).
+264   It is acknowledged that this evaluation will not be possible in the early stages of drug
+265   development of a new chemical entity when the metabolism is not yet evaluated. However, it
+266   is expected that this issue should be investigated and partial validation performed if needed.
+267   The extent of back-conversion, if any, should be established and the impact on the study results
+268   discussed in the Bioanalytical Report.
+
+269   3.2.3 Matrix Effect
+
+270   A matrix effect is defined as an alteration of the analyte response due to interfering and often
+271   unidentified component(s) in the sample matrix. During method validation it is necessary to
+272   evaluate the matrix effect between different independent sources/lots.
+
+273   The matrix effect should be evaluated by analysing at least 3 replicates of low and high QCs,
+274   each prepared using matrix from at least 6 different sources/lots. The accuracy should be within
+275   ±15% of the nominal concentration and the precision (%CV) should not be greater than 15% in
+276   all individual matrix sources/lots. Use of fewer sources/lots may be acceptable in the case of
+277   rare matrices.
+
+278   The matrix effect should also be evaluated in relevant patient populations or special populations
+279   (e.g., hepatically impaired or renally impaired) when available. An additional evaluation of the
+280   matrix effect is recommended using haemolysed or lipaemic matrix samples during method
+281   validation on a case by case basis, especially when these conditions are expected to occur within
+282   the study.
+
+283   3.2.4 Calibration Curve and Range
+
+284   The calibration curve demonstrates the relationship between the nominal analyte concentration
+285   and the response of the analytical platform to the analyte. Calibration standards, prepared by
+
+                                                      9
+                                             ICH M10 Guideline
+
+
+
+286   spiking matrix with a known quantity of analyte, span the calibration range and comprise the
+287   calibration curve. Calibration standards should be prepared in the same biological matrix as the
+288   study samples. The calibration range is defined by the LLOQ, which is the lowest calibration
+289   standard, and the ULOQ, which is the highest calibration standard. There should be one
+290   calibration curve for each analyte studied during method validation and for each analytical run.
+
+291   A calibration curve should be generated with a blank sample, a zero sample (blank sample
+292   spiked with IS), and at least 6 concentration levels of calibration standards, including the LLOQ
+293   and the ULOQ.
+
+294   A simple regression model that adequately describes the concentration-response relationship
+295   should be used. The selection of the regression model should be directed by written procedures.
+296   The regression model, weighting scheme and transformation should be determined during the
+297   method validation. Blank and zero samples should not be included in the determination of the
+298   regression equation for the calibration curve. Each calibration standard may be analysed in
+299   replicate, in which case data from all acceptable replicates should be used in the regression
+300   analysis.
+
+301   The calibration curve parameters should be reported (slope and intercept in the case of a linear
+302   model). The back-calculated concentrations of the calibration standards should be presented
+303   together with the calculated mean accuracy values. All acceptable curves obtained during
+304   validation, based on a minimum of 3 independent runs over several days, should be reported.
+305   The accuracy of the back-calculated concentrations of each calibration standard should be
+306   within ±20% of the nominal concentration at the LLOQ and within ±15% at all the other levels.
+307   At least 75% of the calibration standards with a minimum of 6 calibration standard levels should
+308   meet the above criteria.
+
+309   In the case that replicates are used, the criteria (within ±15% or ±20% for LLOQ) should also
+310   be fulfilled for at least 50% of the calibration standards tested per concentration level. In the
+311   case that a calibration standard does not comply with these criteria, this calibration standard
+312   sample should be rejected, and the calibration curve without this calibration standard should be
+313   re-evaluated, including regression analysis. For accuracy and precision runs, if all replicates of
+314   the LLOQ or the ULOQ calibration standard in a run are rejected then the run should be rejected
+315   the possible source of the failure should be determined and the method revised if necessary. If
+316   the next validation run also fails, then the method should be revised before restarting validation.
+
+
+                                                      10
+                                            ICH M10 Guideline
+
+
+
+317   The calibration curve should be prepared using freshly spiked calibration standards in at least
+318   one assessment. Subsequently, frozen calibration standards can be used within their defined
+319   period of stability.
+
+320   3.2.5 Accuracy and Precision
+
+321   3.2.5.1 Preparation of Quality Control Samples
+
+322   The QCs are intended to mimic study samples and should be prepared by spiking matrix with
+323   a known quantity of analyte, storing them under the conditions anticipated for study samples
+324   and analysing them to assess the validity of the analytical method.
+
+325   Calibration standards and the QCs should be prepared from separate stock solutions in order to
+326   avoid biased estimations which are not related to the analytical performance of the method.
+327   However, calibration standards and the QCs may be prepared from the same stock solution,
+328   provided the accuracy and stability of the stock solution have been verified. A single source of
+329   blank matrix may be used, which should be free of interference or matrix effects, as described
+330   in Section 3.2.3.
+
+331   During method validation the QCs should be prepared at a minimum of 4 concentration levels
+332   within the calibration curve range: the LLOQ, within three times of the LLOQ (low QC), around
+333   30 - 50% of the calibration curve range (medium QC) and at least 75% of the ULOQ (high QC).
+
+334   3.2.5.2 Evaluation of Accuracy and Precision
+
+335   Accuracy and precision should be determined by analysing the QCs within each run (within-
+336   run) and in different runs (between-run). Accuracy and precision should be evaluated using the
+337   same runs and data.
+
+338   Within-run accuracy and precision should be evaluated by analysing at least 5 replicates at each
+339   QC concentration level in each analytical run. Between-run accuracy and precision should be
+340   evaluated by analysing each QC concentration level in at least 3 analytical runs over at least
+341   two days. To enable the evaluation of any trends over time within one run, it is recommended
+342   to demonstrate accuracy and precision of the QCs over at least one of the runs in a size
+343   equivalent to a prospective analytical run of study samples. Reported method validation data
+344   and the determination of accuracy and precision should include all results obtained, including
+345   individual QCs outside of the acceptance criteria, except those cases where errors are obvious
+346   and documented. Within-run accuracy and precision data should be reported for each run. If the
+
+                                                       11
+                                            ICH M10 Guideline
+
+
+
+347   within-run accuracy or precision criteria are not met in all runs, an overall estimate of within -
+348   run accuracy and precision for each QC level should be calculated. Between-run (intermediate)
+349   precision and accuracy should be calculated by combining the data from all runs.
+
+350   The calibration curves for these assessments should be prepared using freshly spiked calibration
+351   standards in at least one run. If freshly spiked calibration standards are not used in the other
+352   runs, stability of the frozen calibration standards should be demonstrated.
+
+353   The overall accuracy at each concentration level should be within ±15% of the nominal
+354   concentration, except at the LLOQ, where it should be within ±20%. The precision (%CV) of
+355   the concentrations determined at each level should not exceed 15%, except at the LLOQ, where
+356   it should not exceed 20%.
+
+357   3.2.6 Carry-over
+
+358   Carry-over is an alteration of a measured concentration due to residual analyte from a preceding
+359   sample that remains in the analytical instrument.
+
+360   Carry-over should be assessed and minimised during method development. During validation
+361   carry-over should be assessed by analysing blank samples after the calibration standard at the
+362   ULOQ. Carry-over in the blank samples following the highest calibration standard should not
+363   be greater than 20% of the analyte response at the LLOQ and 5% of the response for the IS. If
+364   it appears that carry-over is unavoidable, study samples should not be randomised. Specific
+365   measures should be considered, tested during the validation and applied during the analysis of
+366   the study samples, so that carry-over does not affect accuracy and precision. This could include
+367   the injection of blank sample(s) after samples with an expected high concentration, before the
+368   next study sample.
+
+369   3.2.7 Dilution Integrity
+
+370   Dilution integrity is the assessment of the sample dilution procedure, when required, to confirm
+371   that it does not impact the accuracy and precision of the measured concentration of the analyte.
+372   The same matrix from the same species used for preparation of the QCs should be used for
+373   dilution.
+
+374   Dilution QCs should be prepared with analyte concentrations in matrix that are greater than the
+375   ULOQ and then diluted with blank matrix. At least 5 replicates per dilution factor should be
+376   tested in one run to determine if concentrations are accurately and precisely measured within
+
+                                                     12
+                                              ICH M10 Guideline
+
+
+
+377   the calibration range. The dilution ratio(s) applied during study sample analysis should be
+378   within the range of the dilution ratios evaluated during validation. The mean accuracy of the
+379   dilution QCs should be within ±15% of the nominal concentration and the precision (%CV)
+380   should not exceed 15%.
+
+381   In the cases of rare matrices, use of a surrogate matrix for dilution may be acceptable, as long
+382   as it has been demonstrated that this does not affect precision and accuracy.
+
+383   3.2.8 Stability
+
+384   Stability evaluations should be carried out to ensure that every step taken during sample
+385   preparation, processing and analysis as well as the storage conditions used do not affect the
+386   concentration of the analyte.
+
+387   The storage and analytical conditions applied to the stability tests, such as the sample storage
+388   times and temperatures, sample matrix, anticoagulant and container materials, should reflect
+389   those used for the study samples. Reference to data published in the literature is not considered
+390   sufficient. Validation of storage periods should be performed on stability QCs that have been
+391   stored for a time that is equal to or longer than the study sample storage periods.
+
+392   Stability of the analyte in the studied matrix is evaluated using low and high concentration
+393   stability QCs. Aliquots of the low and high stability QCs are analysed at time zero and after the
+394   applied storage conditions that are to be evaluated. A minimum of three stability QCs should
+395   be prepared and analysed per concentration level/storage condition/timepoint.
+
+396   The stability QCs are analysed against a calibration curve, obtained from freshly spiked
+397   calibration standards in a run with its corresponding freshly prepared QCs or QCs for which
+398   stability has been proven. The mean concentration at each QC level should be within ±15% of
+399   the nominal concentration. If the concentrations of the study samples are consistently higher
+400   than the ULOQ of the calibration range, the concentration of the high stability QC should be
+401   adjusted to reflect these higher concentrations. It is recognised that this may not be possible in
+402   nonclinical studies due to solubility limitations.
+
+403   If multiple analytes are present in the study samples (e.g., studies with a fixed combination, or
+404   due to a specific drug regimen) the stability test of an analyte in matrix should be conducted
+405   with the matrix containing all of the analytes.
+
+406   The following stability tests should be evaluated:
+
+                                                       13
+                                             ICH M10 Guideline
+
+
+
+407   1) Stability of stock and working solutions
+
+408      The stability of the stock and working solutions of the analyte and IS should be determined
+409      under the storage conditions used during the analysis of study samples by using the lowest
+410      and the highest concentrations of these solutions. They are assessed using the response of
+411      the detector. Stability of the stock and working solutions should be tested with an
+412      appropriate dilution, taking into consideration the linearity and measuring range of the
+413      detector. If the stability varies with concentration, then the stability of all concentrations of
+414      the stock and working solutions needs to be assessed. If no isotopic exchange occurs for the
+415      stable isotope-labelled IS under the same storage conditions as the analyte for which the
+416      stability is demonstrated, then no additional stability determinations for the IS are necessary.
+417      If the reference standard expires, or it is past the retest date, the stability of the stock
+418      solutions made previously with this lot of reference standard are defined by the expiration
+419      or retest date established for the stock solution. The routine practice of making stock and
+420      working solutions from reference standards solely for extending the expiry date for the use
+421      of the reference standard is not acceptable.
+
+422   2) Freeze-thaw matrix stability
+
+423      To assess the impact of repeatedly removing samples from frozen storage, the stability of
+424      the analyte should be assessed after multiple cycles of freezing and thawing. Low and high
+425      stability QCs should be thawed and analysed according to the same procedures as the study
+426      samples. Stability QCs should be kept frozen for at least 12 hours between the thawing
+427      cycles. Stability QCs for freeze-thaw stability should be assessed using freshly prepared
+428      calibration standards and QCs or QCs for which stability has been proven. The number of
+429      freeze-thaw cycles validated should equal or exceed that of the freeze-thaw cycles
+430      undergone by the study samples, but a minimum of three cycles should be conducted.
+
+431   3) Bench top (short-term) matrix stability
+
+432      Bench top matrix stability experiments should be designed and conducted to cover the
+433      laboratory handling conditions for the study samples.
+
+434      Low and high stability QCs should be thawed in the same manner as the study samples and
+435      kept on the bench top at the same temperature and for at least the same duration as the study
+436      samples.
+
+
+
+                                                      14
+                                            ICH M10 Guideline
+
+
+
+437      The total time on the bench top should be concurrent; it is not acceptable to use additive
+438      exposure to bench top conditions (i.e., adding up time from each freeze-thaw evaluation is
+439      not acceptable).
+
+440   4) Processed sample stability
+
+441      The stability of processed samples, including the time until completion of analysis (in the
+442      autosampler/instrument), should be determined. For example:
+
+443      •   Stability of the processed sample at the storage conditions to be used during the analysis
+444          of study samples (dry extract or in the injection phase)
+
+445      •   On-instrument/ autosampler stability of the processed sample at injector or autosampler
+446          temperature.
+
+447   5) Long-term matrix stability
+
+448      The long-term stability of the analyte in matrix stored in the freezer should be established.
+449      Low and high stability QCs should be stored in the freezer under the same storage
+450      conditions and at least for the same duration as the study samples.
+
+451      For chemical drugs, it is considered acceptable to extrapolate the stability at one temperature
+452      (e.g., -20°C) to lower temperatures (e.g., -70°C).
+
+453      For biological drugs, it is acceptable to apply a bracketing approach, e.g., in the case that
+454      the stability has been demonstrated at -70°C and at -20°C, then it is not necessary to
+455      investigate the stability at temperatures in between those two points at which study samples
+456      will be stored.
+
+457   In addition, the following test should be performed if applicable:
+
+458   6) Whole blood stability
+
+459      Sufficient attention should be paid to the stability of the analyte in the sampled matrix
+460      (blood) directly after collection from subjects and prior to preparation for storage to ensure
+461      that the concentrations obtained by the analytical method reflect the concentrations of the
+462      analyte in the subject’s blood at the time of sample collection.
+
+
+
+
+                                                     15
+                                            ICH M10 Guideline
+
+
+
+463       If the matrix used is plasma or serum, the stability of the analyte in blood should be
+464       evaluated during method development (e.g., using an exploratory method in blood) or
+465       during method validation. The results should be provided in the Validation Report.
+
+466   3.2.9 Reinjection Reproducibility
+
+467   Reproducibility of the method is assessed by replicate measurements of the QCs and is usually
+468   included in the assessment of precision and accuracy. However, if samples could be reinjected
+469   (e.g., in the case of instrument interruptions or other reasons such as equipment failure),
+470   reinjection reproducibility should be evaluated and included in the Validation Report or
+471   provided in the Bioanalytical Report of the study where it was conducted.
+
+472   3.3 Study Sample Analysis
+
+473   The analysis of study samples can be carried out after validation has been completed, however,
+474   it is understood that some parameters may be completed at a later stage (e.g., long-term
+475   stability). By the time the data are submitted to a regulatory authority, the bioanalytical method
+476   validation should have been completed. The study samples, QCs and calibration standards
+477   should be processed in accordance with the validated analytical method. If system suitability is
+478   assessed, a predefined specific study plan, protocol or SOP should be used. System suitability,
+479   including apparatus conditioning and instrument performance, should be determined using
+480   samples that are independent of the calibration standards and QCs for the run. Subject samples
+481   should not be used for system suitability. The IS responses of the study samples should be
+482   monitored to determine whether there is systemic IS variability. Refer to Table 1 for
+483   expectations regarding documentation.
+
+484   3.3.1 Analytical Run
+
+485   An analytical run consists of a blank sample (processed matrix sample without analyte and
+486   without IS), a zero sample (processed matrix with IS), calibration standards at a minimum of 6
+487   concentration levels, at least 3 levels of QCs (low, medium and high) in duplicate (or at least
+488   5% of the number of study samples, whichever is higher) and the study samples to be analysed.
+489   The QCs should be divided over the run in such a way that the accuracy and precision of the
+490   whole run is ensured. Study samples should always be bracketed by QCs.
+
+491   The calibration standards and QCs should be spiked independently using separately prepared
+492   stock solutions, unless the accuracy and stability of the stock solutions have been verified. All
+493   samples (calibration standards, QCs and study samples) should be processed and extracted as
+                                                     16
+                                              ICH M10 Guideline
+
+
+
+494   one single batch of samples in the order in which they are intended to be analysed. A single
+495   batch is comprised of study samples and QCs which are handled during a fixed period of time
+496   and by the same group of analysts with the same reagents under homogeneous conditions.
+497   Analysing samples that were processed as several separate batches in a single analytical run is
+498   discouraged. If such an approach cannot be avoided, for instance due to bench top stability
+499   limitations, each batch of samples should include low, medium and high QCs.
+
+500   Acceptance criteria should be pre-established in an SOP or in the study plan and should be
+501   defined for the whole analytical run and the separate batches in the run, if applicable. For
+502   comparative BA/BE studies it is advisable to analyse all samples of one subject together in one
+503   analytical run to reduce variability.
+
+504   The impact of any carry-over that occurs during study sample analysis should be assessed and
+505   reported (Refer to Section 3.2.6). If carry-over is detected its impact on the measured
+506   concentrations should be mitigated (e.g., non-randomisation of study samples, injection of
+507   blank samples after samples with an expected high concentration) or the validity of the reported
+508   concentrations should be justified in the Bioanalytical Report.
+
+509   3.3.2 Acceptance Criteria for an Analytical Run
+
+510   Criteria for the acceptance or rejection of an analytical run should be defined in the protocol, in
+511   the study plan or in an SOP. In the case that a run contains multiple batches, acceptance criteria
+512   should be applied to the whole run and to the individual batches. It is possible for the run to
+513   meet acceptance criteria, even if a batch within that run is rejected for failing to meet the batch
+514   acceptance criteria.
+
+515   The back-calculated concentrations of the calibration standards should be within ±15% of the
+516   nominal value, except for the LLOQ for which it should be within ±20%. At least 75% of the
+517   calibration standard concentrations, with a minimum of six concentration levels, should fulfil
+518   these criteria. If more than 6 calibration standard levels are used and one of the calibration
+519   standards does not meet the criteria, this calibration standard should be rejected and the
+520   calibration curve without this calibration standard should be re-evaluated and a new regression
+521   analysis performed.
+
+522   If the rejected calibration standard is the LLOQ, the new lower limit for this analytical run is
+523   the next lowest acceptable calibration standard of the calibration curve. This new lower limit
+524   calibration standard will retain its original acceptance criteria (i.e., ±15%). If the highest
+
+                                                        17
+                                               ICH M10 Guideline
+
+
+
+525   calibration standard is rejected, the ULOQ for this analytical run is the next acceptable highest
+526   calibration standard of the calibration curve. The revised calibration range should cover at least
+527   3 QC concentration levels (low, medium and high). Study samples outside of the revised range
+528   should be reanalysed. If replicate calibration standards are used and only one of the LLOQ or
+529   ULOQ standards fails, the calibration range is unchanged.
+
+530   At least 2/3 of the total QCs and at least 50% at each concentration level should be within ±15%
+531   of the nominal values. If these criteria are not fulfilled the analytical run should be rejected. A
+532   new analytical batch needs to be prepared for all study samples within the failed analytical run
+533   for subsequent analysis. In the cases where the failure is due to an assignable technical cause,
+534   samples may be reinjected.
+
+535   Analytical runs containing samples that are diluted and reanalysed should include dilution QCs
+536   to verify the accuracy and precision of the dilution method during study sample analysis. The
+537   concentration of the dilution QCs should exceed that of the study samples being diluted (or of
+538   the ULOQ) and they should be diluted using the same dilution factor. The within-run acceptance
+539   criteria of the dilution QC(s) will only affect the acceptance of the diluted study samples and
+540   not the outcome of the analytical run.
+
+541   When several analytes are assayed simultaneously, there should be one calibration curve for
+542   each analyte studied. If an analytical run is acceptable for one analyte but has to be rejected for
+543   another analyte, the data for the accepted analyte should be used. The determination of the
+544   rejected analyte requires a reextracted analytical batch and analysis.
+
+545   The back-calculated concentrations of the calibration standards and QCs of passed and
+546   accepted runs should be reported. The overall (between-run) accuracy and precision of the QCs
+547   of all accepted runs should be calculated at each concentration level and reported in the
+548   analytical report (Refer to Section 8 Documentation and Table 1). If the overall mean accuracy
+549   or precision fails the 15% criterion, an investigation to determine the cause of the deviation
+550   should be conducted. In the case of comparative BA/BE studies it may result in the rejection of
+551   the data.
+
+552   3.3.3 Calibration Range
+
+553   If a narrow range of analyte concentrations of the study samples is known or anticipated before
+554   the start of study sample analysis, it is recommended to either narrow the calibration curve
+
+
+                                                      18
+                                            ICH M10 Guideline
+
+
+
+555   range, adapt the concentrations of the QCs, or add new QCs at different concentration levels as
+556   appropriate, to adequately reflect the concentrations of the study samples.
+
+557   At the intended therapeutic dose(s), if an unanticipated clustering of study samples at one end
+558   of the calibration curve is encountered after the start of sample analysis, the analysis should be
+559   stopped and either the standard calibration range narrowed (i.e., partial validation), existing QC
+560   concentrations revised, or QCs at additional concentrations added to the original curve within
+561   the observed range before continuing with study sample analysis. It is not necessary to reanalyse
+562   samples analysed before optimising the calibration curve range or QC concentrations.
+
+563   The same applies if a large number of the analyte concentrations of the study samples are above
+564   the ULOQ. The calibration curve range should be changed, if possible, and QC(s) added or
+565   their concentrations modified. If it is not possible to change the calibration curve range or the
+566   number of samples with a concentration above the ULOQ is not large, samples should be diluted
+567   according to the validated dilution method.
+
+568   At least 2 QC levels should fall within the range of concentrations measured in study samples.
+569   If the calibration curve range is changed, the bioanalytical method should be revalidated (partial
+570   validation) to verify the response function and to ensure accuracy and precision.
+
+571   3.3.4 Reanalysis of Study Samples
+
+572   Possible reasons for reanalysis of study samples, the number of replicates and the decision
+573   criteria to select the value to be reported should be predefined in the protocol, study plan or
+574   SOP, before the actual start of the analysis of the study samples.
+
+575   The number of samples (and percentage of total number of samples) that have been reanalysed
+576   should be reported and discussed in the Bioanalytical Report.
+
+577   Some examples of reasons for study sample reanalysis are:
+
+578   •   Rejection of an analytical run because the run failed the acceptance criteria with regard to
+579       accuracy of the calibration standards and/or the precision and accuracy of the QCs
+
+580   •   IS response significantly different from the response for the calibration standards and QCs
+581       (as pre-defined in an SOP)
+
+582   •   The concentration obtained is above the ULOQ
+
+
+                                                     19
+                                            ICH M10 Guideline
+
+
+
+583   •   The concentration observed is below the revised LLOQ in runs where the lowest calibration
+584       standard has been rejected from a calibration curve, resulting in a higher LLOQ compared
+585       with other runs
+
+586   •   Improper sample injection or malfunction of equipment
+
+587   •   The diluted study sample is below the LLOQ
+
+588   •   Identification of quantifiable analyte levels in pre-dose samples, control or placebo samples
+
+589   •   Poor chromatography (as pre-defined in an SOP)
+
+590   For comparative BA/BE studies, reanalysis of study samples for a PK reason (e.g., a sample
+591   concentration does not fit with the expected profile) is not acceptable, as it may bias the study
+592   result.
+
+593   Any reanalysed samples should be identified in the Bioanalytical Report and the initial value,
+594   the reason for reanalysis, the values obtained in the reanalyses, the final accepted value and a
+595   justification for the acceptance should be provided. Further, a summary table of the total number
+596   of samples that have been reanalysed for each reason should be provided. In cases where the
+597   first analysis yields a non-reportable result, a single reanalysis is considered sufficient (e.g.,
+598   concentration above the ULOQ or equipment malfunction). In cases where the value needs to
+599   be confirmed (e.g., pre-dose sample with measurable concentrations) replicate determinations
+600   are required if sample volume allows.
+
+601   The safety of trial subjects should take precedence over any other aspect of the trial.
+602   Consequently, there may be other circumstances when it is necessary to reanalyse specific study
+603   samples for the purpose of an investigation.
+
+604   3.3.5 Reinjection of Study Samples
+
+605   Reinjection of processed samples can be made in the case of equipment failure if reinjection
+606   reproducibility has been demonstrated during validation or provided in the Bioanalytical Report
+607   where it was conducted. Reinjection of a full analytical run or of individual calibration
+608   standards or QCs simply because the calibration standards or QCs failed, without any identified
+609   analytical cause, is not acceptable.
+
+
+
+
+                                                     20
+                                             ICH M10 Guideline
+
+
+
+610   3.3.6 Integration of Chromatograms
+
+611   Chromatogram integration and reintegration should be described in a study plan, protocol or
+612   SOP. Any deviation from the procedures described a priori should be discussed in the
+613   Bioanalytical Report. The list of chromatograms that required reintegration, including any
+614   manual integrations, and the reasons for reintegration should be included in the Bioanalytical
+615   Report. Original and reintegrated chromatograms and initial and repeat integration results
+616   should be kept for future reference and submitted in the Bioanalytical Report for comparative
+617   BA/BE studies.
+
+618   4. LIGAND BINDING ASSAYS
+
+619   4.1 Key Reagents
+
+620   4.1.1 Reference Standard
+
+621   The reference standard should be well characterised and documented (e.g., CoA and origin). A
+622   biological drug has a highly complex structure and its reactivity with binding reagents for
+623   bioanalysis may be influenced by a change in the manufacturing process of the drug substance.
+624   It is recommended that the manufacturing batch of the reference standard used for the
+625   preparation of calibration standards and QCs is derived from the same batch of drug substance
+626   as that used for dosing in the nonclinical and clinical studies whenever possible. If the reference
+627   standard batch used for bioanalysis is changed, bioanalytical evaluation should be carried out
+628   prior to use to ensure that the performance characteristics of the method are within the
+629   acceptance criteria.
+
+630   4.1.2 Critical Reagents
+
+631   Critical reagents, including binding reagents (e.g., binding proteins, aptamers, antibodies or
+632   conjugated antibodies) and those containing enzymatic moieties, have direct impact on the
+633   results of the assay and, therefore, their quality should be assured. Critical reagents bind the
+634   analyte and, upon interaction, lead to an instrument signal corresponding to the analyte
+635   concentration. The critical reagents should be identified and defined in the assay method.
+
+636   Reliable procurement of critical reagents, whether manufactured in-house or purchased
+637   commercially, should be considered early in method development. The data sheet for the critical
+638   reagent should include at a minimum identity, source, batch/lot number, purity (if applicable),
+
+
+
+                                                      21
+                                            ICH M10 Guideline
+
+
+
+639   concentration (if applicable) and stability/storage conditions (Refer to Table 1). Additional
+640   characteristics may be warranted.
+
+641   A critical reagent lifecycle management procedure is necessary to ensure consistency between
+642   the original and new batches of critical reagents. Reagent performance should be evaluated
+643   using the bioanalytical assay. Minor changes to critical reagents would not be expected to
+644   influence the assay performance, whereas major changes may significantly impact the
+645   performance. If the change is minor (e.g., the source of one reagent is changed), a single
+646   comparative accuracy and precision assessment is sufficient for characterisation. If the change
+647   is major, then additional validation experiments are necessary. Ideally, assessment of changes
+648   will compare the assay with the new reagents to the assay with the old reagents directly. Major
+649   changes include, but are not limited to, change in production method of antibodies, additional
+650   blood collection from animals for polyclonal antibodies and new clones or new supplier for
+651   monoclonal antibody production.
+
+652   Retest dates and validation parameters should be documented in order to support the extension
+653   or replacement of the critical reagent. Stability testing of the reagents should be based upon the
+654   performance in the bioanalytical assay and be based upon general guidance for reagent storage
+655   conditions and can be extended beyond the expiry date from the supplier. The performance
+656   parameters should be documented in order to support the extension or replacement of the critical
+657   reagent.
+
+658   4.2 Validation
+
+659   When using LBA, study samples can be analysed using an assay format of 1 or more well(s)
+660   per sample. The assay format should be specified in the protocol, study plan or SOP. If method
+661   development and assay validation are performed using 1 or more well(s) per sample, then study
+662   sample analysis should also be performed using 1 or more well(s) per sample, respectively. If
+663   multiple wells per sample are used, the reportable sample concentration value should be
+664   determined either by calculating the mean of the responses from the replicate wells or by
+665   averaging the concentrations calculated from each response. Data evaluation should be
+666   performed on reportable concentration values.
+
+667   4.2.1 Specificity
+
+668   Specificity is evaluated by spiking blank matrix samples with related molecules at the maximal
+669   concentration(s) of the structurally related molecule anticipated in study samples.
+
+                                                     22
+                                             ICH M10 Guideline
+
+
+
+670   The accuracy of the target analyte at the LLOQ and at the ULOQ should be investigated in the
+671   presence of related molecules at the maximal concentration(s) anticipated in study samples. The
+672   response of blank samples spiked with related molecules should be below the LLOQ. The
+673   accuracy of the target analyte in presence of related molecules should be within ±25% of the
+674   nominal values.
+
+675   In the event of non-specificity, the impact on the method should be evaluated by spiking
+676   increasing concentrations of interfering molecules in blank matrix and measuring the accuracy
+677   of the target analyte at the LLOQ and ULOQ. It is essential to determine the minimum
+678   concentration of the related molecule where interference occurs. Appropriate mitigation during
+679   sample analysis should be employed, e.g., it may be necessary to adjust the LLOQ/ULOQ
+680   accordingly or consider a new method.
+
+681   During method development and early assay validation, these “related molecules” are
+682   frequently not available. Additional evaluation of specificity may be conducted after the
+683   original validation is completed.
+
+684   4.2.2 Selectivity
+
+685   Selectivity is the ability of the method to detect and differentiate the analyte of interest in the
+686   presence of other “unrelated compounds” (non-specific interference) in the sample matrix. The
+687   matrix can contain non-specific matrix component such as degrading enzymes, heterophilic
+688   antibodies or rheumatoid factor which may interfere with the analyte of interest.
+
+689   Selectivity should be evaluated at the low end of an assay where problems occur in most cases,
+690   but it is recommended that selectivity is also evaluated at higher analyte concentrations .
+691   Therefore, selectivity is evaluated using blank samples obtained from at least 10 individua l
+692   sources and by spiking the individual blank matrices at the LLOQ and at the high QC level.
+693   The response of the blank samples should be below the LLOQ in at least 80% of the individua l
+694   sources.
+
+695   The accuracy should be within ±25% at the LLOQ and within ±20% at the high QC level of the
+696   nominal concentration in at least 80% of the individual sources evaluated.
+
+697   Selectivity should be evaluated in lipaemic samples and haemolysed samples (Refer to Section
+698   3.2.1). For lipaemic and haemolysed samples, tests can be evaluated once using a single source
+
+
+
+                                                      23
+                                              ICH M10 Guideline
+
+
+
+699   of matrix. Selectivity should be assessed in samples from relevant patient populations. In the
+700   case of relevant patient populations there should be at least five individual patients.
+
+701   4.2.3 Calibration Curve and Range
+
+702   The calibration curve demonstrates the relationship between the nominal analyte concentration
+703   and the response of the analytical platform to the analyte. Calibration standards, prepared by
+704   spiking matrix with a known quantity of analyte, span the calibration range and comprise the
+705   calibration curve. Calibration standards should be prepared in the same biological matrix as the
+706   study samples. The calibration range is defined by the LLOQ, which is the lowest calibration
+707   standard, and the ULOQ, which is the highest calibration standard. There should be one
+708   calibration curve for each analyte studied during method validation and for each analytical run.
+
+709   A calibration curve should be generated with at least 6 concentration levels of calibration
+710   standards, including LLOQ and ULOQ standards, plus a blank sample. The blank sample
+711   should not be included in the calculation of calibration curve parameters. Anchor point samples
+712   at concentrations below the LLOQ and above the ULOQ of the calibration curve may also be
+713   used to improve curve fitting. The relationship between response and concentration for a
+714   calibration curve is most often fitted by a 4- or 5-parameter logistic model if there are data
+715   points near the lower and upper asymptotes, although other models may be used with suitable
+716   justification.
+
+717   A minimum of 6 independent runs should be evaluated over several days considering the factors
+718   that may contribute to between-run variability.
+
+719   The accuracy and precision of back-calculated concentrations of each calibration standard
+720   should be within ±25% of the nominal concentration at the LLOQ and ULOQ, and within ±20%
+721   at all other levels. At least 75% of the calibration standards excluding anchor points, and a
+722   minimum of 6 concentration levels of calibration standards, including the LLOQ and ULOQ,
+723   should meet the above criteria. The anchor points do not require acceptance criteria since they
+724   are beyond the quantifiable range of the curve.
+
+725   The calibration curve should preferably be prepared using freshly spiked calibration standards.
+726   If freshly spiked calibration standards are not used, the frozen calibration standards can be used
+727   within their defined period of stability.
+
+
+
+
+                                                      24
+                                            ICH M10 Guideline
+
+
+
+728   4.2.4 Accuracy and Precision
+
+729   4.2.4.1 Preparation of Quality Control Samples
+
+730   The QCs are intended to mimic study samples and should be prepared by spiking matrix with
+731   a known quantity of analyte, stored under the conditions anticipated for study samples and
+732   analysed to assess the validity of the analytical method.
+
+733   The dilution series for the preparation of the QCs should be completely independent from the
+734   dilution series for the preparation of calibration standard samples. They may be prepared from
+735   a single stock provided that its accuracy has been verified or is known. The QCs should be
+736   prepared at a minimum of 5 concentration levels within the calibration curve range: The analyte
+737   should be spiked at the LLOQ, within three times of the LLOQ (low QC), around the geometric
+738   mean of the calibration curve range (medium QC), and at least at 75% of the ULOQ (high QC)
+739   and at the ULOQ.
+
+740   4.2.4.2 Evaluation of Accuracy and Precision
+
+741   Accuracy and precision should be determined by analysing the QCs within each run (within-
+742   run) and in different runs (between-run). Accuracy and precision should be evaluated using the
+743   same runs and data.
+
+744   Accuracy and precision should be determined by analysing at least 3 replicates per run at each
+745   QC concentration level (LLOQ, low, medium, high, ULOQ) in at least 6 runs over 2 or more
+746   days. Reported method validation data and the determination of accuracy and precision should
+747   include all results obtained, except those cases where errors are obvious and documented.
+748   Within-run accuracy and precision data should be reported for each run. If the within-run
+749   accuracy or precision criteria are not met in all runs, an overall estimate of within-run accuracy
+750   and precision for each QC level should be calculated. Between-run (intermediate) precision and
+751   accuracy should be calculated by combining the data from all runs.
+
+752   The overall within-run and between-run accuracy at each concentration level should be within
+753   ±20% of the nominal values, except for the LLOQ and ULOQ, which should be within ±25%
+754   of the nominal value. Within-run and between-run precision of the QC concentrations
+755   determined at each level should not exceed 20%, except at the LLOQ and ULOQ, where it
+756   should not exceed 25%.
+
+
+
+                                                       25
+                                             ICH M10 Guideline
+
+
+
+757   Furthermore, the total error (i.e., sum of absolute value of the errors in accuracy (%) and
+758   precision (%)) should be evaluated. The total error should not exceed 30% (40% at LLOQ and
+759   ULOQ).
+
+760   4.2.5 Carry-over
+
+761   Carry-over is generally not an issue for LBA analyses. However, if the assay platform is prone
+762   to carry-over, the potential of carry-over should be investigated by placing blank samples after
+763   the calibration standard at the ULOQ. The response of blank samples should be below the
+764   LLOQ.
+
+765   4.2.6 Dilution Linearity and Hook Effect
+
+766   Due to the narrow assay range in many LBAs, study samples may require dilution in order to
+767   achieve analyte concentrations within the range of the assay. Dilution linearity is assessed to
+768   confirm: (i) that measured concentrations are not affected by dilution within the calibration
+769   range and (ii) that sample concentrations above the ULOQ of a calibration curve are not
+770   impacted by hook effect (i.e., a signal suppression caused by high concentrations of the analyte) ,
+771   whereby yielding an erroneous result.
+
+772   The same matrix as that of the study sample should be used for preparation of the QCs for
+773   dilution.
+
+774   Dilution linearity should be demonstrated by generating a dilution QC, i.e., spiking the matrix
+775   with an analyte concentration above the ULOQ, analysed undiluted (for hook effect) and
+776   diluting this sample (to at least 3 different dilution factors) with blank matrix to a concentration
+777   within the calibration range. For each dilution factor tested, at least 3 runs should be performed
+778   using the number of replicates that will be used in sample analysis. The absence or presence of
+779   response reduction (hook effect) is checked in the dilution QCs and, if observed, measures
+780   should be taken to eliminate response reduction during the analysis of study samples.
+
+781   The calculated concentration for each dilution should be within ±20% of the nominal
+782   concentration after correction for dilution and the precision of the final concentrations across
+783   all the dilutions should not exceed 20%.
+
+784   The dilution factor(s) applied during study sample analysis should be within the range of
+785   dilution factors evaluated during validation.
+
+
+                                                      26
+                                            ICH M10 Guideline
+
+
+
+786   4.2.7 Stability
+
+787   Stability evaluations should be carried out to ensure that every step taken during sample
+788   preparation, processing and analysis as well as the storage conditions used do not affect the
+789   concentration of the analyte.
+
+790   The storage and analytical conditions applied to the stability tests, such as the sample storage
+791   times and temperatures, sample matrix, anticoagulant, and container materials should reflect
+792   those used for the study samples. Reference to data published in the literature is not considered
+793   sufficient. Validation of storage periods should be performed on stability QCs that have been
+794   stored for a time that is equal to or longer than the study sample storage periods.
+
+795   Stability of the analyte in the studied matrix is evaluated using low and high concentration
+796   stability QCs. Aliquots of the low and high stability QCs are analysed at time zero and after the
+797   applied storage conditions that are to be evaluated. A minimum of three stability QCs should
+798   be prepared and analysed per concentration level/storage condition/timepoint.
+
+799   The stability QCs are analysed against a calibration curve, obtained from freshly spiked
+800   calibration standards in a run with its corresponding freshly prepared QCs or QCs for which
+801   stability has been proven. While the use of freshly prepared calibration standards and QCs is
+802   the preferred approach, it is recognised that in some cases, for macromolecules, it may be
+803   necessary to freeze them overnight. In such cases, valid justification should be provided and
+804   freeze-thaw stability demonstrated. The mean concentration at each level should be within
+805   ±20% of the nominal concentration.
+
+806   Since sample dilution may be required for many LBA assays due to a narrow calibration range,
+807   the concentrations of the study samples may be consistently higher than the ULOQ of the
+808   calibration curve. If this is the case, the concentration of the stability QCs should be adjusted,
+809   considering the applied sample dilution, to represent the actual sample concentration range.
+
+810   As mentioned in Section 3.2.8, the investigation of stability should cover bench top (short-term)
+811   stability at room temperature or sample preparation temperature and freeze-thaw stability. In
+812   addition, long-term stability should be studied.
+
+813   For chemical drugs, it is considered acceptable to extrapolate the stability at one temperature
+814   (e.g., -20°C) to lower temperatures (e.g., -70°C).
+
+
+
+                                                     27
+                                             ICH M10 Guideline
+
+
+
+815   For biological drugs, it is acceptable to apply a bracketing approach, e.g., in the case that the
+816   stability has been demonstrated at -70°C and at -20°C, then it is not necessary to investigate the
+817   stability at temperatures in between those two points at which study samples will be stored.
+
+818   4.3 Study Sample Analysis
+
+819   The analysis of study samples can be carried out after validation has been completed however
+820   it is understood that some parameters may be completed at a later stage (e.g., long-term
+821   stability). By the time the data are submitted to a regulatory authority, the bioanalytical method
+822   validation should have been completed. The study samples, QCs and calibration standards
+823   should be processed in accordance with the validated analytical method. Refer to Table 1 for
+824   expectations regarding documentation.
+
+825   4.3.1 Analytical Run
+
+826   An analytical run consists of a blank sample, calibration standards at a minimum of 6
+827   concentration levels, at least 3 levels of QCs (low, medium and high) applied as two sets (or at
+828   least 5% of the number of study samples, whichever is higher) and the study samples to be
+829   analysed. The blank sample should not be included in the calculation of calibration curve
+830   parameters. The QCs should be placed in the run in such a way that the accuracy and precision
+831   of the whole run is ensured taking into account that study samples should always be bracketed
+832   by QCs.
+
+833   Most often microtitre plates are used for LBAs. An analytical run may comprise of one or more
+834   plate(s). Typically, each plate contains an individual set of calibration standards and QCs. If
+835   each plate contains its own calibration standards and QCs then each plate should be assessed
+836   on its own. However, for some platforms the sample capacity may be limited. In this case, sets
+837   of calibration standards may be placed on the first and the last plate, but QCs should be placed
+838   on every single plate. QCs should be placed at least at the beginning (before) and at the end
+839   (after) of the study samples of each plate. The QCs on each plate and each calibration curve
+840   should fulfil the acceptance criteria (Refer to Section 4.3.2). For the calculation of
+841   concentrations, the calibration standards should be combined to conduct one regression analysis.
+842   If the combined calibration curve does not pass the acceptance criteria the whole run fails.
+
+843   4.3.2 Acceptance Criteria for an Analytical Run
+
+844   Criteria for the acceptance or rejection of an analytical run should be defined in the protocol, in
+845   the study plan or in an SOP. In the case that a run contains multiple batches, acceptance criteria
+
+                                                        28
+                                             ICH M10 Guideline
+
+
+
+846   should be applied to the whole run and to the individual batches. It is possible for the run to
+847   meet acceptance criteria, even if a batch within that run is rejected for failing to meet the batch
+848   acceptance criteria.
+
+849   The back-calculated concentrations of the calibration standards should be within ±20% of the
+850   nominal value at each concentration level, except for the LLOQ and the ULOQ, for which it
+851   should be within ±25%. At least 75% of the calibration standards, with a minimum of 6
+852   concentration levels, should fulfil this criterion. This requirement does not apply to anchor
+853   calibration standards. If more than 6 calibration standards are used and one of the calibration
+854   standards does not meet these criteria, this calibration standard should be rejected and the
+855   calibration curve without this calibration standard should be re-evaluated and a new regression
+856   analysis performed.
+
+857   If the rejected calibration standard is the LLOQ, the new lower limit for this analytical run is
+858   the next lowest acceptable calibration standard of the calibration curve. If the highest calibration
+859   standard is rejected, the new upper limit for this analytical run is the next acceptable highest
+860   calibration standard of the calibration curve. The new lower and upper limit calibration standard
+861   will retain their original acceptance criteria (i.e., 20%). The revised calibration range should
+862   cover all QCs (low, medium and high). The study samples outside of the revised assay range
+863   should be reanalysed.
+
+864   Each run should contain at least 3 levels of QCs (low, medium and high). During study sample
+865   analysis, the calibration standards and QCs should mimic the analysis of the study sample with
+866   regard to the number of wells used per study sample. At least 2/3 of the QCs and 50% at each
+867   concentration level should be within 20% of the nominal value at each concentration level.
+868   Exceptions to these criteria should be justified and predefined in the SOP or protocol.
+
+869   The overall mean accuracy and precision of the QCs of all accepted runs should be calculated
+870   at each concentration level and reported in the analytical report. In the case that the overall
+871   mean accuracy and/or precision exceeds 20%, additional investigations should be conducted to
+872   determine the cause(s) of this deviation. In the case of comparative BA/BE studies it may result
+873   in the rejection of the data.
+
+874   4.3.3 Calibration Range
+
+875   At least 2 QC sample levels should fall within the range of concentrations measured in study
+876   samples. At the intended therapeutic dose(s), if an unanticipated clustering of study samples at
+
+                                                      29
+                                            ICH M10 Guideline
+
+
+
+877   one end of the calibration curve is encountered after the start of sample analysis, the analysis
+878   should be stopped and either the standard calibration range narrowed (i.e., partial validation) ,
+879   existing QC concentrations revised, or QCs at additional concentrations added to the original
+880   curve within the observed range before continuing with study sample analysis. It is not
+881   necessary to reanalyse samples analysed before optimising the calibration curve range or QC
+882   concentrations.
+
+883   4.3.4 Reanalysis of Study Samples
+
+884   Possible reasons for reanalysis of study samples, the number of reanalyses and the decision
+885   criteria to select the value to be reported should be predefined in the protocol, study plan or
+886   SOP, before the actual start of the analysis of the study samples.
+
+887   The number of samples (and percentage of total number of samples) that have been reanalysed
+888   should be reported and discussed in the Bioanalytical Report.
+
+889   Some examples of reasons for study sample reanalysis are:
+
+890   •   Rejection of an analytical run because the run failed the acceptance criteria with regard to
+891       accuracy of the calibration standards and/or the precision and accuracy of the QCs
+
+892   •   The concentration obtained is above the ULOQ
+
+893   •   The concentration obtained is below the LLOQ in runs where the lowest calibration
+894       standard has been rejected from a calibration curve, resulting in a higher LLOQ compared
+895       with other runs
+
+896   •   Malfunction of equipment
+
+897   •   The diluted sample is below the LLOQ
+
+898   •   Identification of quantifiable analyte levels in pre-dose samples, control or placebo samples.
+
+899   •   When samples are analysed in more than one well and non-reportable values are obtained
+900       due to one replicate failing the pre-defined acceptance criteria (e.g., excessive variability
+901       between wells, one replicate being above the ULOQ or below the LLOQ).
+
+902   For comparative BA/BE studies, reanalysis of study samples for a PK reason (e.g., a sample
+903   concentration does not fit with the expected profile) is not acceptable, as it may bias the study
+904   result.
+
+
+                                                     30
+                                              ICH M10 Guideline
+
+
+
+905   The reanalysed samples should be identified in the Bioanalytical Report and the initial value,
+906   the reason for reanalysis, the values obtained in the reanalyses, the final accepted value and a
+907   justification for the acceptance should be provided. Further, a summary table of the total number
+908   of samples that have been reanalysed due to each reason should be provided. In cases where the
+909   first analysis yields a non-reportable result, a single reanalysis is considered sufficient (e.g.,
+910   concentration above the ULOQ or excessive variability between wells). The analysis of the
+911   samples should be based on the same number of wells per study sample as in the initial analysis.
+912   In cases where the value needs to be confirmed, (e.g., pre-dose sample with measurable
+913   concentrations) multiple determinations are required where sample volume allows.
+
+914   The safety of trial subjects should take precedence over any other aspect of the trial.
+915   Consequently, there may be other circumstances when it is necessary to reanalyse specific study
+916   samples for the purpose of an investigation.
+
+917   5. INCURRED SAMPLE REANALYSIS (ISR)
+
+918   The performance of study samples may differ from that of the calibration standards and QCs
+919   used during method validation, which are prepared by spiking blank matrix. Differences in
+920   protein binding, back-conversion of known and unknown metabolites, sample inhomogeneity,
+921   concomitant medications or biological components unique to the study samples may affect the
+922   accuracy and precision of analysis of the analyte in study samples.
+
+923   Therefore, ISR is a necessary component of bioanalytical method validation. It is intended to
+924   verify the reliability of the reported sample analyte concentrations and to critically support the
+925   precision and accuracy measurements established with spiked QCs.
+
+926   ISR should be performed at least in the following situations:
+
+927   •   For preclinical studies, ISR should, in general, be performed for the main nonclinical TK
+928       studies once per species. However, ISR in a PK study instead of a TK study might also be
+929       acceptable, as long as the respective study has been conducted as a pivotal study, used to
+930       make regulatory decisions.
+
+931   •   All pivotal comparative BA/BE studies
+
+932   •   First clinical trial in subjects
+
+933   •   Pivotal early patient trial(s), once per patient population
+
+
+                                                       31
+                                             ICH M10 Guideline
+
+
+
+934   •   First or pivotal trial in patients with impaired hepatic and/or renal function
+
+935   ISR is conducted by repeating the analysis of a subset of samples from a given study in separate
+936   (i.e., different to the original) runs on different days using the same bioanalytical method.
+
+937   The extent of ISR depends upon the analyte and the study samples and should be based upon
+938   an in-depth understanding of the analytical method and analyte. However, as a minimum, if the
+939   total number of study samples is less than 1000, then 10% of the samples should be reanalysed;
+940   if the total number of samples is greater than 1000, then 10% of the first 1000 samples (100)
+941   plus 5% of the number of samples that exceed 1000 samples should be assessed. Objective
+942   criteria for choosing the subset of study samples for ISR should be predefined in the protocol,
+943   study plan or an SOP. While the subjects should be picked as randomly as possible from the
+944   dosed study population, adequate coverage of the PK profile in its entirety is important.
+945   Therefore, it is recommended that the samples for ISR be chosen around the maximum
+946   concentration (Cmax) and some in the elimination phase. Additionally, the samples chosen
+947   should be representative of the whole study.
+
+948   Samples should not be pooled, as pooling may limit anomalous findings. ISR samples and QCs
+949   should be prepared in the same manner as in the original analysis. ISR should be performed
+950   within the stability window of the analyte, but not on the same day as the original analysis.
+
+951   The percent difference between the initial concentration and the concentration measured during
+952   the repeat analysis should be calculated in relation to their mean value using the following
+953   equation:
+
+                                            repeat value − initial value
+954                        % difference =                                × 100
+                                                    mean value
+
+955
+
+956   For chromatographic methods, the percent difference should be ≤ 20% for at least 2/3 of the
+957   repeats. For LBAs, the percent difference should be ≤ 30% for at least 2/3 of the repeats.
+
+958   If the overall ISR results fail the acceptance criteria, an investigation should be conducted and
+959   the causes remediated. There should be an SOP that directs how investigations are triggered
+960   and conducted. If an investigation does not identify the cause of the failure, the potential impact
+961   of an ISR failure on study validity should also be provided in the Bioanalytical Report. If ISR
+962   meets the acceptance criteria yet shows large or systemic differences between results for
+
+                                                      32
+                                              ICH M10 Guideline
+
+
+
+963   multiple samples, this may indicate analytical issues and it is advisable to investigate this further.
+964
+
+965   Examples of trends that are of concern include:
+
+966       •   All samples from one subject fail
+
+967       •   All of samples from one run fail
+
+968   All aspects of ISR evaluations should be documented to allow reconstruction of the study and
+969   any investigations. Individual samples that are quite different from the original value (e.g., >
+970   50%, “flyers”) should not trigger reanalysis of the original sample and do not need to be
+971   investigated. ISR sample data should not replace the original study sample data.
+
+972   6. PARTIAL AND CROSS VALIDATION
+
+973   6.1 Partial Validation
+
+974   Partial validations evaluate modifications to already fully validated bioanalytical methods.
+975   Partial validation can range from as little as one within-run accuracy and precision
+976   determination, to a nearly full validation. If stability is established at one facility it does not
+977   necessarily need to be repeated at another facility.
+
+978   For chromatographic methods, typical bioanalytical method modifications or changes that fall
+979   into this category include, but are not limited to, the following situations:
+
+980   •   Analytical site change using same method (i.e., bioanalytical method transfers between
+981       laboratories)
+
+982   •   A change in analytical methodology (e.g., change in detection systems, platform)
+
+983   •   A change in sample processing procedures
+
+984   •   A change in sample volume (e.g., the smaller volume of paediatric samples)
+
+985   •   Changes to the calibration concentration range
+
+986   •   A change in anticoagulant (but not changes in the counter-ion) in biological fluids (e.g.,
+987       heparin to EDTA)
+
+
+
+
+                                                       33
+                                                ICH M10 Guideline
+
+
+
+988    •   Change from one matrix within a species to another (e.g., switching from human plasma to
+989        serum or cerebrospinal fluid) or changes to the species within the matrix (e.g., switching
+990        from rat plasma to mouse plasma)
+
+991    •   A change in storage conditions
+
+992    For LBAs, typical bioanalytical method modifications or changes that fall into this category
+993    include, but are not limited to, the following situations:
+
+994        •   Changes in LBA critical reagents (e.g., lot-to-lot changes)
+
+995        •   Changes in MRD
+
+996        •   A change in storage conditions
+
+997        •   Changes to the calibration concentration range
+
+998        •   A change in analytical methodology (e.g., change in detection systems, platform)
+
+ 999       •   Analytical site change using same method (i.e., bioanalytical method transfers between
+1000           laboratories)
+
+1001       •   A change in sample preparation
+
+1002   Partial validations are acceptable if the parameters tested meet the full validation criteria. If
+1003   these criteria are not satisfied, additional investigation and validation is warranted.
+
+1004   6.2 Cross Validation
+
+1005   Cross validation is required to compare data under the following situations:
+
+1006   •   Data are obtained from different fully validated methods within a study.
+
+1007   •   Data are obtained from different fully validated methods across studies that are going to be
+1008       combined or compared to support special dosing regimens, or regulatory decisions
+1009       regarding safety, efficacy and labelling.
+
+1010   •   Data are obtained within a study from different laboratories with the same bioanalytical
+1011       method.
+
+1012   Cross validation is not generally required to compare data obtained across studies from different
+1013   laboratories using the same validated method at each site.
+
+                                                       34
+                                             ICH M10 Guideline
+
+
+
+1014   Cross validation should be performed in advance of study samples being analysed, if possible.
+
+1015   Cross validation should be assessed by measuring the same set of QCs (low, medium and high)
+1016   in triplicate and study samples that span the study sample concentration range (if available
+1017   n≥30) with both assays or in both laboratories.
+
+1018   Bias can be assessed by Bland-Altman plots or Deming regression. Other methods appropriate
+1019   for assessing agreement between two assays (e.g., concordance correlation coefficient) may be
+1020   used too. Alternatively, the concentration vs. time curves for incurred samples could be plotted
+1021   for samples analysed by each method to assess bias. If disproportionate bias is observed
+1022   between methods, the impact on the clinical data interpretation should be assessed.
+
+1023   The use of multiple bioanalytical methods in the conduct of one comparative BA/BE study is
+1024   strongly discouraged.
+
+1025   7. ADDITIONAL CONSIDERATIONS
+
+1026   7.1 Analytes that are also Endogenous Compounds
+
+1027   For analytes that are also endogenous compounds, the accuracy of the measurement of the
+1028   analytes poses a challenge when the assay cannot distinguish between the therapeutic agent and
+1029   the endogenous counterpart.
+
+1030   The endogenous levels may vary because of age, gender, diurnal variations, illness or as a side
+1031   effect of drug treatment. If available, biological matrix with an adequate signal-to-noise ratio
+1032   (i.e., endogenous level sufficiently low for the desired LLOQ, e.g., <20% of the LLOQ) should
+1033   be used as blank matrix to prepare calibration standards and QCs since the biological matrix
+1034   used to prepare calibration standards and QCs should be the same as the study samples (i.e.,
+1035   authentic biological matrix) and should be free of matrix effect and endogenous analyte at the
+1036   level that causes interference.
+
+1037   In those cases where matrices without interference are not available, there are four possible
+1038   approaches to calculate the concentration of the endogenous analyte in calibration standards,
+1039   QCs and, consequently, study samples: 1) the standard addition approach, 2) the background
+1040   subtraction approach, 3) the surrogate matrix (neat, artificial or stripped matrices) approach and
+1041   4) the surrogate analyte approach.
+
+1042      1)      Standard Addition Approach:
+
+                                                         35
+                                               ICH M10 Guideline
+
+
+
+1043             Every study sample is divided into aliquots of equal volume. All aliquots, but one,
+1044             are separately spiked with known and varying amounts of the analyte standards to
+1045             construct a calibration curve for every study sample. The study sample concentration
+1046             is then determined as the negative x-intercept of the standard calibration curve
+1047             prepared in that particular study sample.
+
+1048      2)      Background Subtraction Approach:
+
+1049             The endogenous background concentrations of analytes in a pooled/representative
+1050             matrix are subtracted from the concentrations of the added standards, subsequently
+1051             the subtracted concentrations are used to construct the calibration curve.
+
+1052      3)      Surrogate Matrix Approach:
+
+1053             The matrix of the study samples is substituted by a surrogate matrix. Surrogate
+1054             matrices can vary widely in complexity from simple buffers or artificial matrices that
+1055             try to mimic the authentic one, to stripped matrices.
+
+1056      4)      Surrogate Analyte Approach:
+
+1057             Stable-isotope labelled analytes are used as surrogate standards to construct the
+1058             calibration curves for the quantification of endogenous analytes. In this method it is
+1059             assumed that the physicochemical properties of the authentic and surrogates analytes
+1060             are the same with the exception of molecular weight. However, isotope standards may
+1061             differ in retention time and MS sensitivity, therefore, before application of this
+1062             approach, the ratio of the labelled to unlabelled analyte MS responses (i.e., the
+1063             response factor) should be close to unity and constant over the entire calibration range.
+1064             If the response factor does not comply with these requirements, it should be
+1065             incorporated into the regression equation of the calibration curve.
+
+1066   Validation of an analytical method for an analyte that is also an endogenous compound will
+1067   require the following considerations.
+
+1068   7.1.1 Quality Control Samples
+
+1069   The endogenous concentrations of the analyte in the biological matrix should be evaluated prior
+1070   to QC preparation (e.g., by replicate analysis). The blank matrices with the minimum level of
+1071   the endogenous analyte should be used. The concentrations of the QCs should account for the
+
+
+
+                                                      36
+                                               ICH M10 Guideline
+
+
+
+1072   endogenous concentrations in the biological matrix (i.e., additive) and be representative of the
+1073   expected study concentrations.
+
+1074   The QCs used for validation should be aliquots of the authentic biological matrix unspiked and
+1075   spiked with known amounts of the authentic analyte. In spiked samples, the added amount
+1076   should be enough to provide concentrations that are statistically different from the endogenous
+1077   concentration.
+
+1078   7.1.2 Calibration Standards
+
+1079   In the Surrogate Matrix and Surrogate Analyte Approaches, these surrogates should be used
+1080   only for the preparation of the calibration standards.
+
+1081   In the Standard Addition and Background Subtraction Approaches the same biological matrix
+1082   and analyte as the study samples is used to prepare the calibration standards. However, when
+1083   the background concentrations are lowered by dilution of the blank matrices before spiking
+1084   with the standards (e.g., if a lower LLOQ is required in the Background Subtraction Approach)
+1085   the composition of the matrices in the study samples and the calibration standards is different,
+1086   which may cause different recoveries and matrix effects.
+
+1087   7.1.3 Selectivity, Recovery and Matrix Effects
+
+1088   The assessment of selectivity is complicated by the absence of interference-free matrix. For
+1089   chromatography, peak purity should be investigated as part of method validation by analysing
+1090   matrices obtained from several donors using a discriminative detection system (e.g., MS/MS).
+1091   Other approaches, if justified by scientific principles, may also be considered.
+
+1092   For the Standard Addition and Background Subtraction Approaches, as the same biologica l
+1093   matrix and analyte are used for study samples and calibration standards, the same recovery and
+1094   matrix effect occurs in the study samples and the calibration standards. For the Surrogate Matrix
+1095   and Surrogate Analyte Approaches, the matrix effect and the extraction recovery may differ
+1096   between calibration standards and study samples.
+
+1097       •   If the Surrogate Matrix Approach is used, demonstration of similar matrix effect and
+1098           extraction recovery in both the surrogate and original matrix is required. This should be
+1099           investigated in an experiment using QCs spiked with analyte in the matrix against the
+1100           surrogate calibration curve and should be within 15% for chromatographic assays and
+1101           within 20% for LBA assays.
+
+                                                        37
+                                              ICH M10 Guideline
+
+
+
+1102       •   If the Surrogate Analyte Approach is used, demonstration of similarity in matrix effect
+1103           and recovery between surrogate and authentic endogenous analytes is required. This
+1104           should be investigated in an experiment within 15% for chromatographic assays and
+1105           within 20% for LBA assays.
+
+1106   Since the composition of the biological matrix might affect method performance, it is necessary
+1107   to investigate matrices from different donors, except in the Standard Addition Approach, where
+1108   each sample is analysed with its own calibration curve.
+
+1109   7.1.4 Parallelism
+
+1110   Parallelism should be evaluated in the Surrogate Matrix and Surrogate Analyte Approaches by
+1111   means of the Standard Addition approach, spike recovery or dilutional linearity.
+
+1112   7.1.5 Accuracy and Precision
+
+1113   In case of using a surrogate matrix or analyte, the assessment of accuracy and precision should
+1114   be performed by analysing the QCs against the surrogate calibration curve. In certain cases,
+1115   dilution of the QCs with surrogate matrix may be necessary. These experiments should be
+1116   repeated with authentic biological matrices from different donors to address variability due to
+1117   the matrix. Analysis of the unspiked QCs will give the mean endogenous background
+1118   concentration and only precision and no accuracy can be determined for this QCs.
+
+1119   The concentration of the endogenous substance in the blank sample may be determined and
+1120   subtracted from the total concentrations observed in the spiked samples. Accuracy is
+1121   recommended to be calculated using the following formula:
+
+                                  (Measured concentration of spiked sample − endogenous concentration )
+1122       𝐴𝑐𝑐𝑢𝑟𝑎𝑐𝑦 (%) = 100 ×
+                                                         Nominal concentration
+
+1123
+
+1124   7.1.6 Stability
+
+1125   In order to mimic study samples as much as possible, stability experiments should be
+1126   investigated with the authentic analyte in the authentic biological matrix and with unspiked and
+1127   spiked samples. However, if a surrogate matrix is used for calibration standards, stability should
+1128   also be demonstrated for the analyte in the surrogate matrix, as this could differ from stability
+1129   in the authentic biological matrix.
+
+                                                       38
+                                             ICH M10 Guideline
+
+
+
+1130   7.2 Parallelism
+
+1131   Parallelism is defined as a parallel relationship between the calibration curve and serially
+1132   diluted study samples to detect any influence of dilution on analyte measurement. Although
+1133   lack of parallelism is a rare occurrence for PK assays, parallelism of LBA should be evaluated
+1134   on a case-by-case basis, e.g., where interference caused by a matrix component (e.g., presence
+1135   of endogenous binding protein) is suspected during study sample analysis. Parallelism
+1136   investigation or the justification for its absence should be included in the Bioanalytical Report.
+1137   As parallelism assessments are rarely possible during method development and method
+1138   validation due to the unavailability of study samples and parallelism is strictly linked to the
+1139   study samples (i.e., an assay may have perfectly suitable parallelism for a certain population of
+1140   samples, yet lack it for another population), these experiments should be conducted during the
+1141   analysis of the study samples. A high concentration study sample (preferably close to Cmax)
+1142   should be diluted to at least three concentrations with blank matrix. The precision between
+1143   samples in a dilution series should not exceed 30%. However, when applying the 30% criterion,
+1144   data should be carefully monitored as results that pass this criterion may still reveal trends of
+1145   non-parallelism. In the case that the sample does not dilute linearly (i.e., in a non-parallel
+1146   manner), a procedure for reporting a result should be defined a priori.
+
+1147   7.3 Recovery
+
+1148   For methods that employ sample extraction, the recovery (extraction efficiency) should be
+1149   evaluated. Recovery is reported as a percentage of the known amount of an analyte carried
+1150   through the sample extraction and processing steps of the method. Recovery is determined by
+1151   comparing the analyte response in a biological sample that is spiked with the analyte and
+1152   processed, with the response in a biological blank sample that is processed and then spiked with
+1153   the analyte. Recovery of the analyte does not need to be 100%, but the extent of recovery of an
+1154   analyte and of the IS (if used) should be consistent. Recovery experiments are recommended to
+1155   be performed by comparing the analytical results for extracted samples at multiple
+1156   concentrations, typically three concentrations (low, medium and high).
+
+1157   7.4 Minimum Required Dilution
+
+1158   MRD is a dilution factor employed in samples that are diluted with buffer solution to reduce
+1159   the background signal or matrix interference on the analysis using LBA. The MRD should be
+1160   identical for all samples including calibration standards and the QCs and it should be
+1161   determined during method development. If MRD is changed after establishment of the method,
+
+                                                      39
+                                              ICH M10 Guideline
+
+
+
+1162   partial validation is necessary. MRD should be defined in the Validation Report of the analytical
+1163   method.
+
+1164   7.5 Commercial and Diagnostic Kits
+
+1165   Commercial or diagnostic kits (referred to as kits) are sometimes co-developed with new drugs
+1166   or therapeutic biological products for point-of-care patient diagnosis. The recommendations in
+1167   this section of the guideline do not apply to the development of kits that are intended for point -
+1168   of-care patient diagnosis (e.g., companion or complimentary diagnostic kits). Refer to the
+1169   appropriate guideline documents regarding regulatory expectations for the development of
+1170   these kits.
+
+1171   If an applicant repurposes a kit (instead of developing a new assay) or utilises “research use
+1172   only” kits to measure chemical or biological drug concentrations during the development of a
+1173   novel drug, the applicant should assess the kit validation to ensure that it conforms to the drug
+1174   development standards described in this guideline.
+
+1175   Validation considerations for kit assays include, but are not limited to, the following:
+
+1176   •   If the reference standard in the kit differs from that of the study samples, testing should
+1177       evaluate differences in assay performance of the kit reagents. The specificity, accuracy,
+1178       precision and stability of the assay should be demonstrated under actual conditions of use
+1179       in the facility conducting the sample analysis. Modifications from kit processing
+1180       instructions should be completely validated.
+
+1181   •   Kits that use sparse calibration standards (e.g., one- or two-point calibration curves) should
+1182       include in-house validation experiments to establish the calibration curve with a sufficient
+1183       number of standards across the calibration range.
+
+1184   •   Actual QC concentrations should be known. Concentrations of QCs expressed as ranges are
+1185       not sufficient for quantitative applications. In such cases QCs with known concentrations
+1186       should be prepared and used, independent of the kit-supplied QCs.
+
+1187   •   Calibration standards and QCs should be prepared in the same matrix as the study samples.
+1188       Kits with calibration standards and QCs prepared in a matrix different from the study
+1189       samples should be justified and appropriate experiments should be performed.
+
+
+
+                                                       40
+                                              ICH M10 Guideline
+
+
+
+1190   •   If multiple kit lots are used within a study, lot-to-lot variability and comparability should be
+1191       addressed for any critical reagents included in the kits.
+
+1192   •   If a kit using multiple assay plates is employed, sufficient replicate QCs should be used on
+1193       each plate to monitor the accuracy of the assay. Acceptance criteria should be established
+1194       for the individual plates and for the overall analytical run.
+
+1195   7.6 New or Alternative Technologies
+
+1196   When a new or alternative technology is used as the sole bioanalytical technology from the
+1197   onset of drug development, cross validation with an existing technology is not required.
+
+1198   The use of two different bioanalytical technologies for the development of a drug may generate
+1199   data for the same product that could be difficult to interpret. This outcome can occur when one
+1200   platform generates drug concentrations that differ from those obtained with another platform.
+1201   Therefore, when a new or alternative analytical platform is replacing a previous platform used
+1202   in the development of a drug it is important that the potential differences are well understood.
+1203   The data generated from the previous platform/technology should be cross validated to that of
+1204   the new or alternative platform/technology. Seeking feedback from the regulatory authorities is
+1205   encouraged early in drug development. The use of two methods or technologies within a
+1206   comparative BA/BE study is strongly discouraged.
+
+1207   The use of new technology in regulated bioanalysis should be supported by acceptance criteria
+1208   established a priori based on method development and verified in validation.
+
+1209   7.6.1 Dried Matrix Methods
+
+1210   Dried matrix methods (DMM) is a sampling methodology that offers benefits such as collection
+1211   of reduced blood sample volumes as a microsampling technique for drug analysis and ease of
+1212   collection, storage and transportation. In addition to the typical methodological validation for
+1213   LC-MS or LBA, use of DMM necessitates further validation of this sampling approach before
+1214   using DMM in studies that support a regulatory application, such as:
+
+1215          •   Haematocrit (especially for spotting of whole blood into cards)
+
+1216          •   Sample homogeneity (especially for sub-punch of the sample on the card/device)
+
+1217          •   Reconstitution of the sample
+
+
+                                                       41
+                                               ICH M10 Guideline
+
+
+
+1218          •   DMM sample collection for ISR
+
+1219                  o Care should be taken to ensure sufficient sample volumes or numbers of
+1220                      replicates are retained for ISR
+
+1221                  o Should be assessed by multiple punches of the sample or samples should be
+1222                      taken in duplicate
+
+1223   When DMM is used for clinical or nonclinical studies in addition to typical liquid approaches
+1224   (e.g., liquid plasma samples) in the same studies, these two methods should be cross validated
+1225   as described (Refer to Section 6.2). For nonclinical TK studies, refer to Section 4.1 of ICH S3A
+1226   Q&A. Feedback from the appropriate regulatory authorities is encouraged in early drug
+1227   development.
+
+1228   8. DOCUMENTATION
+
+1229   General and specific SOPs and good record keeping are essential to a properly validated
+1230   analytical method. The data generated for bioanalytical method validation should be
+1231   documented and available for data audit and inspection. Table 1 describes the recommended
+1232   documentation for submission to the regulatory authorities and documentation that should be
+1233   available at the analytical site at times of inspection. This documentation may be stored at the
+1234   analytical site or at another secure location. In this case the documentation should be readily
+1235   available when requested.
+
+1236   All relevant documentation necessary for reconstructing the study as it was conducted and
+1237   reported should be maintained in a secure environment. Relevant documentation includes, but
+1238   is not limited to, source data, protocols and reports, records supporting procedural, operational,
+1239   and environmental concerns and correspondence records between all involved parties.
+
+1240   Regardless of the documentation format (i.e., paper or electronic), records should be
+1241   contemporaneous with the event and subsequent alterations should not obscure the original data.
+1242   The basis for changing or reprocessing data should be documented with sufficient detail, and
+1243   the original record should be maintained. Transcripts/copies of data derived from analyses in
+1244   biohazardous areas should be maintained if applicable.
+
+1245   8.1 Summary Information
+
+1246   Summary information should include the following items in Section 2.6.4/2.7.1 of the CTD or
+1247   reports:
+
+                                                      42
+                                               ICH M10 Guideline
+
+
+
+1248          •   A summary of assay methods used for each study should be included. Each summary
+1249              should provide the protocol number, the assay type, the assay method identification
+1250              code, the Bioanalytical Report code, effective date of the method, and the associated
+1251              Validation Report codes.
+
+1252          •   A summary table of all the relevant Validation Reports should be provided for each
+1253              analyte, including Partial Validation and Cross Validation Reports. The table should
+1254              include the assay method identification code, the type of assay, the reason for the
+1255              new method or additional validation (e.g., to lower the limit of quantification).
+1256              Changes made to the method should be clearly identified.
+
+1257          •   A summary table cross-referencing multiple identification codes should be provided
+1258              when an assay has different codes for the assay method, the Validation Reports and
+1259              the Bioanalytical Reports.
+
+1260          •   Discussion of method changes in the protocol (e.g., evolution of methods, reason(s)
+1261              for revisions, unique aspects)
+
+1262          •   For comparative BA/BE studies a list of regulatory site inspections including dates
+1263              and outcomes for each analytical site if available.
+
+1264   8.2 Documentation for Validation and Bioanalytical Reports
+
+1265   Table 1 describes the recommended documentation for the Validation and Bioanalytical Reports.
+
+
+
+
+                                                      43
+1266
+       Table 1: Documentation and Reporting
+       Items                  Documentation at the Analytical Site      Validation Report*                    Bioanalytical Report*
+       Chromatographic        •   Dates, times, and samples used for •        Not applicable                  •    Not applicable
+       System Suitability         suitability testing
+       Synopsis           •       History/evolution of methods (e.g., •       Not applicable                  •    Not applicable
+       Overview of Method         to explain revisions, unique aspects
+       Evolution                  with supportive data, if available)
+
+       Reference Standards    •   CoA or equivalent alternative to •          A copy of the CoA or •               A copy of the CoA or equivalent
+                                  ensure quality (including purity),          equivalent           alternative     alternative including batch /lot
+                                  stability/expiration/retest date(s),        including batch/lot number,          number, source, quality (including
+                                  batch number, and manufacturer or           source, quality (including           purity), storage conditions, and
+                                  source                                      purity), storage conditions,         expiration/retest date or a table with
+                                                                              and expiration/retest date, or       this information.
+                              •   Log records of receipt, use, and            table with this information.
+                                  storage conditions.                                                          •   If expired, quality and stability at
+                              •   If expired, recertified CoA, or retest •    If expired, quality and              the time of use and retest dates and
+                                  of quality and identity with retest         stability at the time of use and     retested values.
+                                  dates                                       retest dates and retested
+                                                                              values.
+       Internal Standard      •   IS quality    or demonstration    of •      Name of reagent or standard     •    Name of reagent or standard
+                                  suitability                          •      Origin                          •    Origin
+
+                              •   Log records of receipt, use, and
+                                  storage conditions
+1267
+
+
+
+                                                                             44
+       Table 1 continued: Documentation and Reporting
+       Items                Documentation at the Analytical Site           Validation Report*                   Bioanalytical Report*
+       Critical Reagents    •   Name of reagent                            •    Name of reagent                 •    Name of reagent
+                            •   Batch/ Lot number                          •    Batch/ Lot number               •    Batch/ Lot number
+                            •   Source/Origin                              •    Source/ Origin                  •    Source/ Origin
+                            •   Concentration, if applicable               •    Retest date (expiry date)       •    Retest date (expiry date)
+                            •   Retest date (expiry date)                  •    Storage conditions              •    Storage conditions
+                            •   Storage conditions
+       Stock Solutions      •   Log of preparation, and use of stock •          Notation that solutions were •       Notation that solutions were
+                                solutions                                       used within stability period         used within stability period
+                            •   Storage location and condition       •          Stock solution stability     •       Stock solution stability †
+                                                                           •    Storage conditions              •    Storage conditions†
+       Blank Matrix         •   Records of matrix descriptions, lot •           Description, lot number, receipt •   Description,    lot    number,
+                                numbers, receipt dates, storage conditions ,    dates                                receipt dates††
+                                and source/supplier
+       Calibration          •   Records and date of preparation            •    Description of       preparation •   Description of preparation†
+       Standards      and                                                       including matrix
+       QCs                  •   Record of storage temperature (e.g., log of                                      •   Preparation dates and stability
+                                in/out dates, analyst, temperatures, and •      Batch number, preparation            period
+                                freezer(s))                                     dates and stability period       •   Storage conditions†
+                                                                            •   Storage               conditions
+                                                                                (temperatures, dates, duration,
+                                                                                etc.)
+
+1268
+
+
+
+                                                                           45
+       Table 1 continued: Documentation and Reporting
+       Items               Documentation at the Analytical Site                Validation Report*                Bioanalytical Report*
+       SOPs                SOPs for all aspects of analysis, such as:          •    A detailed description of the •   A list of SOPs/analytical
+                                                                                    assay procedure                   protocols used for the assay
+                               •   Method/procedure                                                                   procedure
+                                   (validation/analytical)
+                               •   Acceptance criteria       (e.g.,     run,
+                                   calibration curve, QCs)
+                               •   Instrumentation
+                               •   Reanalysis
+                               •   ISR
+                               •   Record of changes to SOP (change,
+                                   date, reason, etc.)
+       Sample Tracking     •   Study sample receipt, and condition on •             Not applicable               •    Dates of receipt of shipments
+                               receipt                                                                                number of samples, and for
+                                                                                                                      comparative BA/BE studies
+                           •   Records that indicate how samples were                                                 the subject ID
+                               transported    and received.         Sample
+                               inventory and reasons for missing samples                                         •    Sample condition on receipt
+                           •   Location of storage (e.g., freezer unit)                                          •    Analytical     site    storage
+                                                                                                                      condition and location
+                           •   Tracking logs of QCs, calibration
+                               standards, and study samples                                                      •    Storage: total duration from
+                           •   Freezer logs for QCs, calibration standards,                                           sample collection to analysis
+                               and study samples entry and exit                                                  •    List of any deviations from
+                                                                                                                      planned storage conditions,
+                                                                                                                      and potential impact
+1269
+
+
+
+                                                                               46
+Table 1 continued: Documentation and Reporting
+Items               Documentation at the Analytical Site              Validation Report*                               Bioanalytical Report*
+Analysis            •   Documentation and data for system •                     Table of all runs (including failed •      Table of all runs, status (accepted
+                        suitability checks for chromatography                   runs), and analysis dates                  and failed), reason for failure, and
+                                                                                                                           analysis dates.
+                    •   Instrument use log, including dates of •                Instrument ID for each run in
+                        analysis for each run                                   comparative BA/BE studies †       •        Instrument ID for each run in
+                    •   Sample extraction logs including •                      Table of calibration standard              comparative BA/BE studies†
+                        documentation      of   processing    of                concentration    and response •            Table of calibration standard
+                        calibration standards, QCs, and study                   functions results (calibration             concentration     and      response
+                        samples for each run, including dates of                curve parameters) of all accepted          function results (calibration curve
+                        extraction                                              runs with accuracy and precision.          parameters) of all accepted runs
+                                                                                                                           with accuracy and precision.
+                    •   Identity of QCs and calibration standard •              Table of within- and between- run
+                        lots, and study samples in each run                     QC results (from accuracy and •            Table of QCs results of all
+                    •   Documentation of instrument settings                    precision runs). Values outside            accepted runs with accuracy and
+                        and maintenance                                         should be clearly marked.                  precision results of the QCs and
+                                                                       •        Include total error for LBA                between-run       accuracy   and
+                    •   Laboratory information management                       methods                                    precision results from accepted
+                        system (LIMS)                                                                                      runs.
+                    •   Validation       information,       including •         Data on selectivity (matrix            •   Table of reinjected runs with
+                        documentation and data for:                             effect), specificity (interference),       results from reinjected runs and
+                             o Selectivity,     (matrix effects),               dilution linearity and sensitivity         reason(s) for reinjection
+                                specificity,           (interference)           (LLOQ), carry-over, recovery.
+                                sensitivity,      precision       and           Bench-top, freeze-thaw, long-          •   QCs graphs trend analysis
+                                accuracy, carry-over, dilution,                 term, extract, and stock solution          encouraged
+                                recovery, matrix effect                         stability                              •   Study concentration results table.
+                             o Bench-top, freeze-thaw, long- •                  Partial/cross-validation,         if
+                                term, extract, and stock solution               applicable                             •   For comparative BA/BE studies,
+                                stability                                                                                  IS response plots for each
+                             o Cross/partial       validations,     if •        Append separate report          for        analytical run, including failed
+                                applicable                                      additional validation, if any              runs
+
+
+                                                                           47
+1270
+       Table 1 continued: Documentation and Reporting
+       Items               Documentation at the Analytical Site        Validation Report*                   Bioanalytical Report*
+       Chromatograms        •   Electronic audit trail:              •       Representative                •    For and comparative BA/BE studies,
+       and Reintegration    •   100% e-chromatograms of original and         chromatograms       (original      100% of chromatograms.
+                                reintegration from accepted and fail         and reintegration)            •    Chromatograms may be submitted as
+                                runs                                 •       Reason for reintegration           a supplement
+                            •   Reason for reintegration                •    For comparative BA/BE •            For comparative BA/BE studies,
+                            •   Mode of reintegration100% of run             studies,                100%       original        and       reintegrated
+                                summary sheets of accepted and failed        chromatograms of original          chromatograms and initial and repeat
+                                runs, including calibration curve,           and reintegration        from      integration results
+                                regression, weighting function, analyte      accepted and fail runs.       •    For other studies, randomly selected
+                                and IS response and retention time, •        Chromatograms may be               chromatograms from 5% of studies
+                                response ratio, integration type             submitted as a supplement          submitted in application dossiers
+                                                                       •     For comparative BA/BE          •   Reason for reintegration
+                                                                             studies,100%      of    run    •   Identification and discussion of
+                                                                             summary sheets of accepted         chromatograms        with  manual
+                                                                             and failed runs, including         reintegration
+                                                                             calibration          curve,
+                                                                             regression,       weighting    •   SOP for reintegration, as applicable
+                                                                             function, analyte and IS       •   For comparative BA/BE studies,
+                                                                             responses and retention            100% of run summary sheets of
+                                                                             times and dilution factor if       accepted and failed runs, including
+                                                                             applicable.                        calibration       curve,      regression,
+                                                                                                                weighting function, analyte and IS
+                                                                                                                responses and retention times, and
+                                                                                                                dilution factor if applicable.
+1271
+
+
+
+                                                                        48
+        Table 1 continued: Documentation and Reporting
+        Items                           Documentation at the Analytical Site               Validation Report*            Bioanalytical Report*
+        Deviations from Procedures •        Contemporaneous       documentation       of •     Description           of •     Description of deviations
+                                            deviations/ unexpected events                      Deviations
+                                                                                                                          •   Impact on study results
+                                        •   Investigation of unexpected events             •   Impact on study results    •   Description and supporting
+                                        •   Impact assessment                              •   Description            and     data         of     significant
+                                                                                               supporting      data    of     investigations
+                                                                                               significant investigations
+        Repeat Analysis                 •   SOP for conducting reanalysis/repeat •             Not applicable            •    Table of sample IDs, reason for
+                                            analysis (define reasons for reanalysis, etc.)                                    reassay, original and reassay
+                                        •   Retain 100% of repeat/reanalysed data                                             values, reason for reported
+                                                                                                                              values, run IDs
+                                        •   Contemporaneous     records of reason for                                    •    Reanalysis SOP, if requested
+                                            repeats
+        ISR                             •   SOP for ISR                                    •   Not applicable            •    ISR data table (original and
+                                                                                                                              reanalysis values and run IDs,
+                                        •   ISR data: Run IDs, run summary sheets,                                            percent difference, percent
+                                            chromatograms       or  other     electronic                                      passed)
+                                            instrument data files
+                                        •   Document ISR failure investigations, if any                                  •    ISR failure investigations, if
+                                                                                                                              any††
+                                                                                                                         •    SOP for ISR†† (if requested)
+        Communication                   •   Between involved         parties (Applicant, •     Not applicable            •    Not applicable
+                                            contract research organizations (CROs), and
+                                            consultants) related to study/assay
+        Audits and Inspections          •   Audit and inspection report                    •   Not applicable            •    Not applicable
+
+1272   *The applicant is expected to maintain data at the analytical site to support summary data submitted in Validation and Bioanalytical Reports.
+1273   Validation and Bioanalytical Reports should be submitted in the application.
+
+                                                                                 49
+1274   † May append or link from Validation Report.
+
+1275   ††Submit either in Validation   Report or in Bioanalytical Report
+
+
+
+
+                                                                           50
+1276   9. GLOSSARY
+
+1277   Accuracy:
+
+1278   The degree of closeness of the measured value to the nominal or known true value under
+1279   prescribed conditions (or as measured by a particular method). In this document accuracy is
+1280   expressed as percent relative error of the nominal value.
+
+1281   Accuracy (%) = ((Measured Value-Nominal Value)/Nominal Value) × 100
+
+1282
+
+1283   Analysis:
+
+1284   A series of analytical procedures from sample processing/dilution to measurement on an
+1285   analytical instrument.
+
+1286
+
+1287   Analyte:
+
+1288   A specific chemical moiety being measured, including an intact drug, a biomolecule or its
+1289   derivative or a metabolite in a biologic matrix.
+
+1290
+
+1291   Analytical Procedure:
+
+1292   The analytical procedure refers to the way of performing the analysis. It should describe in
+1293   detail the steps necessary to perform each analysis.
+
+1294
+
+1295   Analytical Run (also referred to as “Run”):
+
+1296   A complete set of analytical and study samples with appropriate number of calibration standards
+1297   and QCs for their validation. Several runs may be completed in one day or one run may take
+1298   several days to complete.
+
+
+
+
+                                                      51
+1299   Anchor Calibration Standards/Anchor Points:
+
+1300   Spiked samples set at concentrations below the LLOQ or above the ULOQ of the calibration
+1301   curve and analysed to improve curve fitting in LBAs.
+
+1302
+
+1303   Batch (for Bioanalysis):
+
+1304   A batch is comprised of QCs and study samples which are handled during a fixed period of time
+1305   and by the same group of analysts with the same reagents under homogenous conditions.
+
+1306
+
+1307   Batch (for Reference Standards and Reagents):
+
+1308   A specific quantity of material produced in a process or series of processes so that it is
+1309   expected to be homogeneous within specified limits. Also referred to as “Lot”.
+
+1310
+
+1311   Biological Drugs:
+
+1312   Drugs manufactured by using biotechnology (e.g., therapeutic proteins). Also referred to as
+1313   large molecule drugs.
+
+1314
+
+1315   Biological Matrix:
+
+1316   A biological material including, but not limited to, blood, serum, plasma and urine.
+
+1317
+
+1318   Binding Reagent:
+
+1319   A reagent that directly binds to the analyte in LBA-based bioanalytical methods.
+
+1320
+
+1321   Blank Sample:
+
+1322   A sample of a biological matrix to which no analyte and no IS has been added.
+
+
+                                                       52
+1323   Calibration Curve:
+
+1324   The relationship between the instrument response (e.g., peak area, height or signal) and the
+1325   concentration (amount) of analyte in the sample within a given range. Also referred to as
+1326   Standard Curve.
+
+1327
+
+1328   Calibration Range:
+
+1329   The calibration range of an analytical procedure is the interval between the upper and lower
+1330   concentration (amounts) of analyte in the sample (including these concentrations) for which it
+1331   has been demonstrated that the analytical procedure meets the requirements for precision,
+1332   accuracy and response function.
+
+1333
+
+1334   Calibration Standard:
+
+1335   A matrix to which a known amount of analyte has been added or spiked. Calibration standards
+1336   are used to construct calibration curves.
+
+1337
+
+1338   Carry-over:
+
+1339   The appearance of an analyte signal in a sample from a preceding sample.
+
+1340
+
+1341   Chemical Drugs:
+
+1342   Chemically synthesised drugs. Also referred to as small molecule drugs.
+
+1343
+
+1344   Critical Reagent:
+
+1345   Critical reagents for LBAs include binding reagents (e.g., antibodies, binding proteins,
+1346   peptides) and those containing enzymatic moieties that have a direct impact on the results of
+1347   the assay.
+
+
+
+                                                    53
+1348   Cross Validation:
+
+1349   Comparison of two bioanalytical methods or the same bioanalytical method in different
+1350   laboratories in order to demonstrate that the reported data are comparable.
+
+1351
+
+1352   Dilution Integrity:
+
+1353   Assessment of the sample dilution procedure to confirm that the procedure does not impact the
+1354   measured concentration of the analyte.
+
+1355
+
+1356   Dilution Linearity:
+
+1357   A parameter demonstrating that the method can appropriately analyse samples at a
+1358   concentration exceeding the ULOQ of the calibration curve without influence of hook effect or
+1359   prozone effect and that the measured concentrations are not affected by dilution within the
+1360   calibration range in LBAs.
+
+1361
+
+1362   Full Validation:
+
+1363   Establishment of all validation parameters that ensure the integrity of the method when applied
+1364   to sample analysis.
+
+1365
+
+1366   Hook Effect:
+
+1367   Suppression of response due to very high concentrations of a particular analyte. A hook effect
+1368   may occur in LBAs that use a liquid-phase reaction step for incubating the binding reagents
+1369   with the analyte. Also referred to as prozone.
+
+1370
+
+1371   Incurred Sample:
+
+1372   A sample obtained from study subjects or animals.
+
+
+
+                                                     54
+1373   Incurred Sample Reanalysis (ISR):
+
+1374   Reanalysis of a portion of the incurred samples in a separate analytical run on a different day
+1375   to determine whether the original analytical results are reproducible.
+
+1376
+
+1377   Interfering Substance:
+
+1378   A substance that is present in the matrix that may affect the analysis of an analyte.
+
+1379
+
+1380   Internal Standard (IS):
+
+1381   A structurally similar analogue or stable isotope labelled compound added to calibration
+1382   standards, QCs and study samples at a known and constant concentration to facilitate
+1383   quantification of the target analyte.
+
+1384
+
+1385   Ligand Binding Assay (LBA):
+
+1386   A method to analyse an analyte of interest using reagents that specifically bind to the analyte.
+1387   The analyte is detected using reagents labelled with e.g. an enzyme, radioisotope, fluorophore
+1388   or chromophore. Reactions are carried out in microtitre plates, test tubes, disks, etc.
+
+1389
+
+1390   Lower Limit of Quantification (LLOQ):
+
+1391   The lowest amount of an analyte in a sample that can be quantitatively determined with
+1392   predefined precision and accuracy.
+
+1393
+
+1394   Matrix Effect:
+
+1395   The direct or indirect alteration or interference in response due to the presence of unintended
+1396   analytes or other interfering substances in the sample.
+
+
+
+
+                                                      55
+1397   Method:
+
+1398   A comprehensive description of all procedures used in sample analysis.
+
+1399
+
+1400   Minimum Required Dilution (MRD):
+
+1401   The initial dilution factor by which biological samples are diluted with buffer solution for the
+1402   analysis by LBAs. The MRD may not necessarily be the ultimate dilution but should be
+1403   identical for all samples including calibration standards and QCs. However, samples may
+1404   require further dilution.
+
+1405
+
+1406   Nominal Concentration:
+
+1407   Theoretical or expected concentration.
+
+1408
+
+1409   Parallelism:
+
+1410   Parallelism demonstrates that the serially diluted incurred sample response curve is parallel to
+1411   the calibration curve. Parallelism is a performance characteristic that can detect potential matrix
+1412   effects.
+
+1413
+
+1414   Partial Validation:
+
+1415   Evaluation of modifications to already fully validated analytical methods.
+
+1416
+
+1417   Precision:
+
+1418   The closeness of agreement (i.e., degree of scatter) among a series of measurements. Precision
+1419   is expressed as the coefficient of variation (CV) or the relative standard deviation (RSD)
+1420   expressed as a percentage.
+
+1421   Precision (%) = (Standard Deviation / Mean) x 100
+
+
+                                                       56
+1422   Processed Sample:
+
+1423   The final sample that has been subjected to various manipulations (e.g., extraction, dilution,
+1424   concentration).
+
+1425
+
+1426   Quality Control Sample (QC):
+
+1427   A sample spiked with a known quantity of analyte that is used to monitor the performance of a
+1428   bioanalytical method and assess the integrity and validity of the results of the unknown samples
+1429   analysed in an individual batch or run.
+
+1430
+
+1431   Recovery:
+
+1432   The extraction efficiency of an analytical process, reported as a percentage of the known amount
+1433   of an analyte carried through the sample extraction and processing steps of the method.
+
+1434
+
+1435   Reproducibility:
+
+1436   The extent to which consistent results are obtained when an experiment is repeated.
+
+1437
+
+1438   Response Function:
+
+1439   A function which adequately describes the relationship between instrument response (e.g., peak
+1440   area or height ratio or signal) and the concentration (amount) of analyte in the sample. Response
+1441   function is defined within a given range. See also Calibration Curve.
+
+1442
+
+1443   Selectivity:
+
+1444   Ability of an analytical method to differentiate and measure the analyte in the presence of
+1445   interfering substances in the biological matrix (non-specific interference).
+
+
+
+
+                                                      57
+1446   Sensitivity:
+
+1447   The lowest analyte concentration that can be measured with acceptable accuracy and precision
+1448   (i.e., LLOQ).
+
+1449
+
+1450   Specificity:
+
+1451   Ability of an analytical method to detect and differentiate the analyte from other substances,
+1452   including its related substances (e.g., substances that are structurally similar to the analyte,
+1453   metabolites, isomers, impurities or concomitant medications).
+
+1454
+
+1455   Standard Curve:
+
+1456   The relationship between the instrument response (e.g., peak area, height or signal) and the
+1457   concentration (amount) of analyte in the sample within a given range. Also referred to as
+1458   calibration Curve.
+
+1459
+
+1460   Standard Operating Procedure (SOP):
+
+1461   Detailed written instructions to achieve uniformity of the performance of a specific function.
+
+1462
+
+1463   Surrogate Matrix:
+
+1464   An alternative to a study matrix of limited availability (e.g., tissue, cerebrospinal fluid, bile) or
+1465   where the study matrix contains an interfering endogenous counterpart.
+
+1466
+
+1467   System Suitability:
+
+1468   Determination of instrument performance (e.g., sensitivity and chromatographic retention) by
+1469   analysis of a set of reference standards conducted prior to the analytical run.
+
+
+
+
+                                                        58
+1470   Total Error:
+
+1471   The sum of the absolute value of the errors in accuracy (%) and precision (%). Total error is
+1472   reported as percent (%) error.
+
+1473
+
+1474   Upper Limit of Quantification (ULOQ):
+
+1475   The upper limit of quantification of an individual analytical procedure is the highest amount of
+1476   analyte in a sample that can be quantitatively determined with pre-defined precision and
+1477   accuracy.
+
+1478
+
+1479   Validation:
+
+1480   Demonstration that a bioanalytical method is suitable for its intended purpose.
+
+1481
+
+1482   Working Solution:
+
+1483   A non-matrix solution prepared by diluting the stock solution in an appropriate solvent. It is
+1484   mainly added to matrix to prepare calibration standards and QCs.
+
+1485
+
+1486   Zero Sample:
+
+1487   A blank sample spiked with an IS.
+
+
+
+
+                                                     59
+

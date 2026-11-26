@@ -1,0 +1,1300 @@
+   Population
+Pharmacokinetics
+Guidance for Industry
+
+
+
+
+   U.S. Department of Health and Human Services
+            Food and Drug Administration
+  Center for Drug Evaluation and Research (CDER)
+ Center for Biologics Evaluation and Research (CBER)
+
+                   February 2022
+               Clinical Pharmacology
+                Population
+             Pharmacokinetics
+                Guidance for Industry
+                                     Additional copies are available from:
+                           Office of Communications, Division of Drug Information
+                                  Center for Drug Evaluation and Research
+                                       Food and Drug Administration
+                            10001 New Hampshire Ave., Hillandale Bldg., 4 th Floor
+                                       Silver Spring, MD 20993-0002
+                          Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                        Email: druginfo@fda.hhs.gov
+               https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+                                                    and/or
+                             Office of Communication, Outreach and Development
+                                 Center for Biologics Evaluation and Research
+                                        Food and Drug Administration
+                              10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                        Silver Spring, MD 20993-0002
+                                    Phone: 800-835-4709 or 240-402-8010
+                                          Email: ocod@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+
+
+
+
+                       U.S. Department of Health and Human Services
+                                 Food and Drug Administration
+                      Center for Drug Evaluation and Research (CDER)
+                     Center for Biologics Evaluation and Research (CBER)
+
+                                              February 2022
+                                          Clinical Pharmacology
+                                     Contains Nonbinding Recommendations
+
+
+                                                TABLE OF CONTENTS
+
+
+
+I.        INTRODUCTION...................................................................................................... 1
+II.       BACKGROUND ........................................................................................................ 2
+III.      APPLICATION OF POPULATION PK ANALYSIS ............................................... 2
+     A.   Application of Population PK Analysis in Drug Development........................................... 3
+     B.   Application of Population PK Analysis to Inform Drug Use in Labeling............................ 5
+IV.       DATA USED FOR POPULATION PK ANALYSIS ................................................. 7
+     A.   Study Subjects and Covariates ....................................................................................... 7
+     B.   PK Sampling Schedule .................................................................................................. 7
+V.        DATA ANALYSIS ..................................................................................................... 8
+     A.   Preliminary Examination of the Data ............................................................................. 9
+     B.   Model Development ...................................................................................................... 9
+     C.   Model Validation .........................................................................................................10
+     D.   Simulations Based on Population PK Models .................................................................12
+VI.       LABELING BASED ON THE RESULTS OF POPULATION PK ANALYSIS ..... 14
+VII.      POPULATION PK STUDY REPORTING ............................................................. 14
+     A.   Format and Content of the Population PK Study Report ................................................14
+     B.   Submitting Electronic Files to the Agency......................................................................17
+VIII. GLOSSARY OF SELECTED TERMS .................................................................... 19
+IX.       REFERENCES......................................................................................................... 20
+
+
+
+
+                                                                  i
+                                   Contains Nonbinding Recommendations
+
+
+                                    Population Pharmacokinetics
+                                      Guidance for Industry 1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+I.         INTRODUCTION
+
+This guidance is intended to assist sponsors and applicants2 of new drug applications (NDAs),
+biologics license applications (BLAs), abbreviated new drug applications (ANDAs), and
+investigational new drugs (IND) applications in the application of population pharmacokinetic
+(PK) analysis. Population PK analysis is frequently used to guide drug 3 development and inform
+recommendations on therapeutic individualization (e.g., through tailored dosing) (Marshall et al.
+2015; Lee et al. 2011; Bhattaram et al. 2005). Adequate population PK data collection and
+analyses submitted in marketing applications have in some cases alleviated the need for
+postmarketing requirements or postmarketing commitments.
+
+This guidance includes common applications of population PK analysis to inform drug
+development and drug use. This list of applications is not meant to be comprehensive, but rather
+provides illustrative examples. This guidance also includes the FDA’s current thinking on the
+data and model submissions to support regulatory decisions, recommendations on how to
+incorporate information from population PK analyses in labeling, and the general expectations
+regarding the format and content for population PK reports submitted to the Agency.
+
+The contents of this document do not have the force and effect of law and are not meant to bind
+the public in any way, unless specifically incorporated into a contract. This document is
+intended only to provide clarity to the public regarding existing requirements under the law.
+FDA guidance documents, including this guidance, should be viewed only as recommendations,
+
+
+1
+ This guidance has been prepared by Office of Clinical Pharmacology in the Center for Drug Evaluation and
+Research (CDER) and the Center for Biologics Evaluation and Research (CBER) at the Food and Drug
+Administration.
+2
+    Hereafter, the term sponsor will be used to refer to both sponsors and applicants.
+
+3 For purposes of this guidance, references to drugs and drug and biological products includes drugs approved
+under section 505 of the Federal Food, Drug, and Cosmetic Act (the FD&C Act) (21 U.S.C. 355) and biological
+products licensed under 351 of the Public Health Service Act (PHSA) (42 U.S.C. 262) that are drugs.
+
+
+
+                                                            1
+                                Contains Nonbinding Recommendations
+
+
+unless specific regulatory or statutory requirements are cited. The use of the word should in
+Agency guidances means that something is suggested or recommended, but not required.
+
+
+II.     BACKGROUND
+
+Population PK analysis is a well-established, quantitative method that can explain some of the
+variability in drug concentrations among individuals (Sheiner, Rosenberg, and Marathe 1977;
+Grasela Jr and Sheiner 1991). The focus of this guidance is on the use of this approach in
+explaining the variability in drug concentrations observed among human trial subjects from
+intrinsic factors, extrinsic factors, differences in dosing, and routes of administration. Drug
+concentrations can vary significantly among individuals who are following the same dosing
+regimen. This variability can be attributed to intrinsic factors, such as differences in body weight,
+presence and extent of liver or renal impairment, or the presence of genetic polymorphisms, or to
+extrinsic factors, such as effects of food on drug absorption or concomitant medications that can
+interact with the administered drug’s absorption and/or metabolism. In some cases, intrinsic or
+extrinsic factors lead to clinically relevant changes in drug concentrations that require clinical
+management strategies, such as a change in the dose or dosing regimen.
+
+Intrinsic and extrinsic factors that commonly influence drug exposure are often investigated in stand-
+alone clinical pharmacology studies.4 Stand-alone studies are well controlled and can provide a
+robust assessment of these interactions. However, stand-alone studies are usually designed to
+focus on intrinsic and extrinsic factors with the highest potential to affect drug exposure, leaving
+many possible interactions unstudied. Such stand-alone studies also typically have a limited
+number of subjects, are designed as single-dose studies, and might not be conducted in the target
+patient population. Population PK analysis typically includes data directly collected from both
+patients and healthy volunteers, allowing for an assessment of multiple intrinsic and extrinsic
+factors that are not otherwise evaluated in a single trial or population. In addition, the relatively
+large numbers of patients included in population PK analysis can improve the precision of the
+estimated effect of the factors that affect drug exposures and confirm which factors do not
+change drug exposures.
+
+Population PK analysis has the potential to integrate all relevant PK information across a range
+of doses and populations to identify factors that can affect a drug’s exposure. Such information
+can come from studies with rich or sparse PK sampling, after a single dose or multiple doses,
+and/or at steady state, and from healthy individuals, subjects with organ impairment, or the
+patient population. These analyses, in turn, can inform strategies to select initial dosage
+regimens, manage dosing and administration for a given subpopulation, plan subsequent studies,
+or support labeling.
+
+
+III.    APPLICATION OF POPULATION PK ANALYSIS
+
+
+
+4
+ See section IX for references for specific FDA guidances for industry that address stand-alone clinical
+pharmacology studies.
+
+
+                                                         2
+                           Contains Nonbinding Recommendations
+
+
+Sponsors seeking advice on the use of population PK analysis for drug development decisions
+are encouraged to do so at appropriate milestone meetings with the Agency. While this guidance
+focuses on typical applications of population PK analysis, it is recognized there are many novel
+applications of population PK analyses beyond those described in this guidance. For example,
+application of population PK, model-based approaches can be an alternative for evaluating the
+bioequivalence of long-acting injectables, products with sparse PK sampling, or other scenarios
+when non-compartmental analysis (NCA) becomes challenging (Zhao et al. 2019). For such
+applications, the model’s intended use and its regulatory impact determine the level of robustness
+needed for model evaluation. As an example, the model-integrated approach used should be
+expected to reliably control the error rate for confirmatory bioequivalence applications.
+Sponsors are encouraged to contact the Agency to discuss such novel applications of population
+PK analyses to inform drug development and use.
+
+Confidence in a given population PK analysis to support an intended objective is increased by
+the following:
+
+   •   Understanding of the drug’s PK properties
+
+   •   Prespecified questions in the population PK data analysis plan that will be addressed by a
+       population PK analysis
+
+   •   PK data of sufficient quantity and quality (Bonate et al. 2012) from subjects who
+       represent the indicated population and subpopulations of interest
+
+   •   Good model performance (i.e., the model should describe the data with acceptable
+       accuracy and precision and should be evaluated for model misspecification) and validity
+       for the intended objective
+
+       A.      Application of Population PK Analysis in Drug Development
+
+       1.      Selecting Dosing Regimens To Be Tested in Clinical Trials
+
+Population PK analyses are capable of identifying intrinsic and extrinsic factors that can
+significantly impact the pharmacokinetics of the drug and inform dosing regimens for testing in
+clinical trials to help minimize the variability of treatment response in patients. For example, an
+observed strong relationship between body weight and drug exposure can provide support for
+body weight-based dosing schemes (e.g., mg/kg dosing or categorical dosing based on body
+weight cut points). Such analyses should be combined with a robust understanding of the
+relationship between drug exposure and drug effect (e.g., by using pharmacodynamic biomarkers
+or clinical endpoints), target engagement (e.g., receptor occupancy), or drug toxicity to inform
+the clinical relevance and further refine dosing.
+
+Population PK models can also be used to simulate drug exposures that are expected to occur
+following doses or dosing regimens that have not been directly investigated in prior clinical
+studies (see section V.D for a discussion on simulation strategies). For example, a population
+PK analysis can be used to predict PK changes resulting from the inclusion of a loading dose,
+
+
+
+                                                3
+                               Contains Nonbinding Recommendations
+
+
+changing the dose, or altering the dosing frequency of a dosing regimen for later trials in the drug
+development program. When appropriately justified, such analyses, in conjunction with
+exposure-response data, have been used to approve dosing regimens that have not been directly
+evaluated in the clinical trials (Kimko and Peck 2010). In such cases, sponsors are encouraged
+to seek Agency input in advance of performing the analyses.
+
+        2.       Deriving Sample Size and Sampling Scheme Requirements
+
+Simulations and optimal design methods can maximize the utility of population PK data
+collection and analyses. For example, the trial sample size and PK sampling schedule can be
+optimized so that the PK parameters and the estimates for major covariate (bolded terms are
+defined in section VIII upon first use) effects of interest can be estimated with a defined degree
+of precision (see section IV.B for a discussion on various sampling schedules). Simulations with
+population PK models can help determine the number of patients in a subpopulation that
+achieves sufficient power to detect a significant covariate given a defined covariate effect size
+(e.g., the number of patients receiving a concomitant medication that should be included in an
+analysis to detect a significant drug-drug interaction (DDI); see section III.B.2).
+
+        3.       Deriving Exposure Metrics for Conducting Exposure-Response Analysis
+
+The importance and application of exposure-response (E-R) relationships for new drugs are
+outlined in the FDA guidance entitled Exposure-Response Relationships — Study Design, Data
+Analysis, and Regulatory Applications (May 2003).5 Population PK analysis can be used to
+derive patient PK exposure metrics that are appropriate for sequential E-R analyses. When
+relevant, the derivation of exposure metrics should account for: (1) dose interruptions or
+modifications; and (2) variations in the pharmacokinetics of a drug over time due to intrinsic or
+extrinsic subject factors (e.g., time-varying exposure due to disease state or anti-drug antibodies
+for some monoclonal antibodies).
+
+Population PK models can predict individual patient exposures at specific time points regardless
+of the spread in sampling times (e.g., trough concentrations can be predicted for all subjects).
+When PK data are missing in a small number of subjects, population PK models can predict the
+most likely concentration-time profile based on individual covariates including both time-
+varying and subject-level covariates (e.g., body weight, genetic polymorphism, sex) (Wählby U
+2004). Such predictions are useful, assuming that the residual error and the between-subject
+variability are low, and the effect of observed covariates on the PK characteristics of the drug is
+considerably larger (see section V.D).
+
+Individual patient exposure metrics are generated based on Empirical Bayes Estimates (EBEs).
+When parameter shrinkage is high (i.e., the standard deviation-based shrinkage is usually
+greater than 20 to 30 percent), EBEs might be considered less reliable (Savic and Karlsson
+2009). The informativeness of individual data (e.g., in cases with sparse data) should be
+assessed using individual shrinkage estimates. In addition to parameter shrinkage, the reliability
+
+5
+ We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page
+at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+
+                                                      4
+                               Contains Nonbinding Recommendations
+
+
+of individual PK patient exposure metrics is dependent on the nature of the collected PK data and
+the validity of model assumptions. See section V.C for discussions on model validation and
+section IV for discussions regarding the adequacy of the data used for population PK analysis.
+
+        4.       Pediatric Trial Designs
+
+The use of modeling and simulation can help evaluate potential trial designs and optimize dose
+selection for pediatric patients. 6 Additional sample size considerations for pediatric studies have
+been presented in the literature (Wang et al. 2012). Population PK analysis is especially
+appropriate in children because it allows the use of infrequent (i.e., sparse) sampling compared to
+the rich sampling associated with traditional PK analyses, thus minimizing the total volume of
+blood sampled.
+
+Selecting a dosing regimen for pediatric studies can be based on simulations using a population
+PK model developed with adult PK data and incorporating the following when scientifically
+justified: (1) principles of allometry; (2) knowledge of developmental changes that can influence
+the pharmacokinetics of a drug (ontogeny); and (3) data on the bioavailability of the pediatric
+formulation (Holford, Heo, and Anderson 2013; Barbour, Fossler, and Barrett 2014; Zhang et al.
+2015; Mahmood I 2014). Incorporating the latest understanding in the population PK model on
+the effect of maturation of physiology in pediatric patients across various ages, especially in
+those less than 2 years old, can further improve the ability to identify appropriate pediatric
+dosing. Dose selection should also consider information on disease similarity and dose- and
+exposure-response relationships in adults and pediatrics.
+
+        B.       Application of Population PK Analysis to Describe Drug Use in Labeling
+
+Population PK analysis using data from early- and late-stage clinical trials, together with results
+from stand-alone clinical pharmacology studies, can be used to support the absorption,
+distribution, and elimination (metabolism and excretion) (ADME) information in the labeling of
+the drug.
+
+In addition, population PK analysis, together with relevant information from stand-alone studies,
+nested studies, or other sources, is routinely used to evaluate the effects of covariates on the PK
+parameters of a drug and its relevant metabolites to support dosing recommendations. The need
+for dose adjustments due to the effect of a covariate on the exposure of the drug should be
+evaluated in the context of all available data, including the known E-R relationships for efficacy
+and safety. The E-R relationships should be used to establish concentration boundaries within
+which dose adjustments are not clinically relevant (i.e., covariate effects within these boundaries
+might not warrant a dose alteration; however, covariate effects outside these boundaries could
+require a dose modification to optimize the benefit-risk profile of the drug).
+
+
+
+6 For more information, see the FDA guidance entitled General Clinical Pharmacology Considerations for
+Pediatric Studies for Drugs and Biological Products (December 2014). When final, this guidance will represent the
+FDA’s current thinking on this topic.
+
+
+
+                                                       5
+                           Contains Nonbinding Recommendations
+
+
+       1.     Specific Populations
+
+Results from population PK analyses can be incorporated into drug product labeling to describe
+the PK properties in general patient populations or specific populations, as appropriate. Whether
+a covariate analysis supports labeling statements depends on multiple factors, such as the number
+of subjects with the covariate included in the analysis, the distribution of the covariate (for
+continuous covariates), and the amount of available PK data (see section IV.A).
+
+Some examples of these situations are listed below:
+
+   •   Stand-alone renal or hepatic impairment studies in the general population might not be
+       ethical with some drugs (e.g., highly toxic agents). In such cases, adequate representation
+       of patients in clinical trials with the intrinsic factor of interest, as well as adequate PK
+       sampling to reliably characterize the effects of the intrinsic factor, can allow for the use
+       of population PK analysis to characterize the exposure of the drug and its relationship to
+       response and thus support dosing recommendations in that population.
+
+   •   Some defined specific populations are traditionally not studied in stand-alone, clinical
+       pharmacology studies because of the lack of an expected clinically meaningful effect on
+       the drug’s pharmacokinetics due to prior knowledge of the drug’s ADME characteristics.
+       Instead, factors such as the influence of sex, age, body weight, or race on the
+       pharmacokinetics of the investigational drug are often studied without stand-alone trials.
+       Population PK analysis can be used to describe the pharmacokinetics of a drug in these
+       subgroups.
+
+   •   Simulations from population PK models established from pediatric and adult data can be
+       used to compare the exposure of the drug in pediatric patients and adults, and then derive
+       the recommended pediatric doses.
+
+       2.     DDIs
+
+Clinical DDIs (e.g., nested studies as part of a phase 3 trial) can be evaluated using population
+PK analysis. General design considerations for nested DDI studies are found in the FDA
+guidance entitled Clinical Drug Interaction Studies - Cytochrome P450 Enzyme- and
+Transporter-Mediated Drug Interactions (January 2020). Using population PK approaches to
+characterize the DDI potential of a drug is not without limitations, and methodological
+considerations for using population PK analysis to evaluate DDIs have been described elsewhere
+(Bonate et al. 2016; Wang et al. 2017). Specific considerations for the use of a population PK
+approach to evaluate DDIs include the following:
+
+   •   DDIs should be characterized for individual drugs and not for therapeutic classes of
+       drugs, although exceptions are possible (e.g., multiple proton pump inhibitors can be
+       pooled if the interaction mechanism is pH-dependent).
+
+   •   Multiple perpetrators can be pooled to form one covariate category provided that the
+       perpetrators belong to the same class of index inhibitors/inducers (i.e., weak, moderate,
+
+
+                                                6
+                              Contains Nonbinding Recommendations
+
+
+          or strong) as identified by the Agency. The pooled perpetrators should all have the same
+          mechanism of interaction with similar specificity for their respective metabolizing
+          enzymes. In cases where a clear classification is not recognized by the Agency (i.e.,
+          transporter inhibitors), pooling should be prespecified whenever possible and is
+          considered on a case-by-case basis.
+
+      •   An adequate number of subjects with the concomitant medication should be included in
+          the trial. The PK sampling schedule should allow for appropriate characterization of the
+          PK parameters of interest. Adequate information on the dose, timing of administration,
+          and duration of treatment for the interacting drugs should be available. Simulations can
+          determine the number of subjects needed to detect an interaction of a defined magnitude
+          within a given trial design.
+
+      •   Interactions should be investigated on all physiologically plausible structural elements of
+          the PK model (e.g., apparent clearance (CL/F), relative bioavailability (F rel ), rate of
+          absorption) based on the mechanism of the interaction.
+
+
+IV.       DATA USED FOR POPULATION PK ANALYSIS
+
+Sponsors are encouraged to use all relevant data to support the population PK model. The
+sponsor should justify the omission of data from certain studies, certain individuals, or certain
+time points and prespecify such omissions in the population PK data analysis plan or study
+protocol whenever possible. The sponsor should demonstrate that the data are adequate for the
+purpose of the analysis in their report. For example, sponsors can conduct model-based power
+analyses showing that the given study design has sufficient power to detect clinically meaningful
+covariate relationships under the proposed population PK model (see section III.B).
+
+          A.     Study Subjects and Covariates
+
+Determining if the data are adequate to address the intended study question is a vital step in any
+population PK analysis (see section V.C). The dataset should include a sufficient number of
+subjects with an adequate number of PK samples at informative time points. Covariates cannot
+be claimed to be influential or not influential on the exposure of a drug if the covariate
+distribution is narrow (for continuous covariates) or if the number of subjects in the category is
+inadequate (for categorical covariates). Many continuous covariates have established cutoff
+values that define category levels. If dosing recommendations are proposed for these categories,
+the range of the continuous covariates should preferably span the entire category and not just the
+upper or lower ends. An increase in the range and frequency of the covariates tends to increase
+the likelihood of finding a true clinically significant covariate relationship and decreases the
+likelihood of finding false-positive relationships (Wählby et al. 2002; Wählby, Jonsson, and
+Karlsson 2001).
+
+          B.     PK Sampling Schedule
+
+
+
+
+                                                   7
+                            Contains Nonbinding Recommendations
+
+
+The precision and bias of model-derived PK parameters are dependent on multiple factors,
+including the complexity of the model, the number of subjects, the number of samples per
+subject, and the sampling schedule. As the number of samples per subject decreases, the
+importance of the timing of PK samples increases. For example, if the purpose of an analysis is
+to match the maximum concentration (C max ) observations across populations or dosage forms,
+then a sufficient number of PK samples should be collected in the absorption phase. Sponsors
+are encouraged to prospectively plan the PK sampling schedule so that the population PK model
+is maximally informative.
+
+The methodology and available software for the optimal design of the population PK model are
+covered in multiple reviews in the literature (Dodds, Hooker, and Vicini 2005; Nyberg et al.
+2015; Ogungbenro and Aarons 2007; Ogungbenro and Aarons 2008). The list below shows
+some examples of sampling schedules. Depending on the purpose of the analysis, one or a
+combination of the listed strategies can be employed:
+
+     •   Patients are randomly assigned sampling windows that are derived based on optimal
+         design methods. The number of samples per patient and the number of sampling
+         windows are also determined based on optimal design methods.
+
+     •   Patients randomly contribute two or more samples that, when combined, cover the entire
+         dosing interval.
+
+     •   Most patients contribute one sample at a specified time point, often immediately before
+         the next dose when there is sufficient prior PK knowledge about the study drug.
+
+Sponsors are encouraged to use all relevant PK data for the intended use. However, the extent of
+sampling per individual patient and the percentage of sampled patients should ultimately depend
+on the intended use of the data. For example, if the C max will be used in subsequent E-R
+analyses, then there should be adequate sampling around the time to the maximum concentration
+(T max ) (see section III.A.3). In any situation, it is important to verify that patients with missing
+PK data do not differ from other patients. For example, patients with missing PK data should not
+have higher dropout rates because of a lack of effect or adverse events. If between-occasion
+variability will be estimated, the design should be sufficient to assess the presence and
+magnitude of effect, requiring at least multiple samples per individual at more than one occasion.
+Ignoring large between-occasion variability can lead to biased population parameter estimates
+(Karlsson and Sheiner 1993). Similarly, multiple samples per individual should be collected if
+time-varying covariates, such as the influence of anti-drug antibodies on drug exposure, are
+expected.
+
+
+V.       DATA ANALYSIS
+
+This section of the document provides some guiding principles on the methodological aspects of
+population PK analysis. Further methodological considerations and good practices, including
+topics not covered here, have been described by others (Ette and Williams 2007; Bonate PL
+
+
+
+
+                                                  8
+                           Contains Nonbinding Recommendations
+
+
+2011; Mould and Upton 2013; Byon et al. 2013; Tatarinova et al. 2013; Lunn et al. 2002;
+Schmidt and Radivojevic 2014).
+
+       A.     Preliminary Examination of the Data
+
+Population PK analysis often begins with a visual examination of the observed data. Preliminary
+examination of the data reveals patterns and features in the population dataset using graphical
+and statistical techniques and can provide powerful diagnostic tools for confirming assumptions
+or, when the assumptions are not met, for suggesting corrective actions (Tukey 1977; Ette and
+Ludden 1995). For example, strong correlations between covariates can preclude the ability to
+make inferences about individual covariate effects and have implications for the choice of
+covariate modeling approach. The scientific (i.e., pharmacologic, biologic, pathophysiologic, or
+clinical) merits of including highly correlated covariates should be assessed. This scenario is
+often the case with, for example, body weight and creatinine clearance as calculated by the
+Cockcroft-Gault Equation. Relevant preliminary examination of the data should be concisely
+described in the population PK analysis report.
+
+       B.     Model Development
+
+Model development methods and best practice recommendations are constantly evolving.
+Specific advice on how to develop population PK models is beyond the scope of this guidance.
+However, to facilitate the regulatory review of population PK models, sponsors should explicitly
+describe their model development procedures (see section VII for more discussion on population
+PK reporting). Some aspects of model development that are important for regulatory review are
+provided below:
+
+   •   Model development issues can be addressed through several valid approaches, each with
+       its own benefits and drawbacks. For example, covariate analysis can be performed based
+       on several approaches or their possible combinations (e.g., stepwise covariate analysis,
+       full covariate model approach, the Lasso) (Wählby, Jonsson, and Karlsson 2002;
+       Gastonguay 2004; Ribbing et al. 2007). In such cases, sponsors should justify why a
+       particular approach was used.
+
+   •   The choice of the structural model should be informed from exploration of the observed
+       data, previous modeling results (when applicable), and a common scientific rationale.
+       Otherwise, an inappropriate structural model (e.g., missing the covariance between
+       clearance and volume of distribution in the structural model) could result in incorrect
+       covariate identification.
+
+   •   Covariate-parameter relationships can be formulated based on the current knowledge of
+       biology, physiology, or allometric principles, and should take into account any data-
+       driven information on the covariate-parameter relationship (e.g., time-dependent
+       covariates). Correct identification of the true covariate-parameter relationship is essential
+       when applying a population PK model to describe drug exposure in patients based on
+       covariates included in the population PK analysis or when applying the population PK
+       model to untested scenarios.
+
+
+
+                                                 9
+                           Contains Nonbinding Recommendations
+
+
+
+   •   Issues regarding missing data, including missing covariates and data below the limit of
+       quantification (LOQ), should be addressed with appropriate analysis methods (Beal 2001;
+       Bergstrand and Karlsson 2009; Johansson and Karlsson 2013; Keizer et al. 2015). The
+       sponsor should justify their methodological approach with regard to missing data using
+       approaches such as sensitivity analysis.
+
+   •   The sponsor should distinguish between outlying individuals and outlier data points.
+       Individual data points that are suspected outliers could be omitted during the model
+       development process. However, the sponsor should investigate the influence of the
+       outliers on the final parameter estimates by refitting the final model to the complete
+       dataset. Removal of suspected outlying individuals is generally discouraged unless the
+       reason for the outlier is a protocol violation or other human error. Sponsors should
+       specify how outliers are identified and handled in the analysis. The reasons for declaring
+       a data point to be an outlier should be prespecified in the data analysis plan. For
+       example, data points with a normalized weighted residual greater than five could be
+       considered outliers in some cases. The number of excluded outliers should be kept to a
+       minimum and clearly documented in reports and datasets.
+
+       C.     Model Validation
+
+Model validation is a critical step for any population PK analysis and should be conducted to
+examine whether the developed model can sufficiently characterize the observed data and
+generate reliable modeling and simulation results to meet the needs of the analysis. No single
+model validation method is generally sufficient to evaluate all components of a model. Several
+methods are generally used so that the relative strengths and weaknesses of each method can
+complement each other. In general, models should describe the data with an acceptable level of
+bias and an acceptable degree of precision.
+
+Model validation depends on the objective of the analysis and should follow a fit-for-purpose
+approach. In some cases, a model can be valid for one purpose but not for another. When
+parameter shrinkage is high (standard deviation-based shrinkage: usually greater than 20-30
+percent), EBEs might be less reliable (Savic and Karlsson 2009). The informativeness of
+individual data should be assessed using individual shrinkage estimates, and the reliability of
+individual drug exposure levels to be used in a sequential E-R analysis (see section III.A.3)
+needs to be carefully evaluated. However, such a model can still be useful for a covariate
+analysis provided that the method for covariate modeling is insensitive to shrinkage (Mould and
+Upton 2013).
+
+Submissions to the Agency should contain a detailed description of the model validation
+methods used, an explanation of why those methods were selected, model diagnostics supporting
+use of the model, and sensitivity analyses, as needed, to demonstrate the impact of assumptions
+on the conclusions (see section VII.A). Sponsors are encouraged to discuss model validation
+approaches with the Agency, particularly if the population PK analyses are critical for
+understanding and supporting proposed dosing.
+
+
+
+
+                                               10
+                                   Contains Nonbinding Recommendations
+
+
+           1.       Common Approaches for Model Validation
+
+Procedures for conducting a thorough model validation are continuously evolving, and the
+Agency welcomes innovations in this field. Several common methods of model validation are
+reported in the literature (Karlsson and Savic 2007; Byon et al. 2013, Nguyen et al. 2017) and are
+discussed in the sections below.
+
+Basic goodness-of-fit (GOF) plots illustrate how well the model describes the observed data.
+GOF plots are also used to evaluate model assumptions (e.g., normality of the random effects)
+and to guide model development. Although GOF plots can show that the overall fitting is
+acceptable, additional evaluation of the model in subgroups of patients is often necessary
+depending on the context of use. For example, if the model will be used to predict drug
+exposures in pediatric patients, model validation should be conducted for all relevant age groups.
+GOF plots that are stratified for important patient characteristics (e.g., stratified by age group or
+cytochrome (CYP) polymorphisms), trial design (e.g., dose or formulation), sampling design
+(e.g., sparse versus full), or other important variables are often more convincing of the adequate
+performance of a model than GOF plots of the full dataset. Because few patients could be
+included in some analysis subgroups, the sponsor should include justifications, as needed,
+regarding the sufficiency of the available data to support its intended use.
+
+The following is a list of some of the GOF plots that are considered informative:
+
+       •   The dependent variable (DV) versus the individual predictions (IPRED)
+
+       •   The DV versus population predictions (xPRED), where ‘x’ could be nothing, C
+           (conditional), or P (simulation-based)
+
+       •   The absolute individual weighted residuals (|IWRES|) versus IPRED or time 7
+
+       •   The appropriate form of weighted residuals (xWRES) versus xPRED or time, where ‘x’
+           is defined as above
+
+       •   A representative sample of IPRED, xPRED, and observations versus time (one plot per
+           subject)7
+
+       •   A histogram or Quantile-Quantile (Q-Q) plot of random effects
+
+       •   The correlations between random effects
+
+       •   The random effects versus covariates 8
+
+
+
+
+7
+    Time should be evaluated as continuous time and as time after dose.
+8
+    This plot is most informative when it is compared before and after the inclusion of covariates.
+
+
+                                                            11
+                           Contains Nonbinding Recommendations
+
+
+The individual parameters, IPRED and IWRES, tend to shrink towards the population estimate in
+individuals with few observations. When shrinkage is high (the standard deviation-based
+shrinkage is usually greater than 20-30 percent), diagnostic plots that rely on EBEs, IPRED, or
+IWRES can become uninformative, and correlations between random effects and covariates can
+be obscured (Savic and Karlsson 2009, Xu et al. 2012, Lavielle and Riba 2016). Furthermore,
+high shrinkage can limit the value of using individual post hoc estimates for E-R analysis (see
+section III.A.3). However, simulation-based, diagnostic plots are not affected by shrinkage in a
+similar manner and can be more informative for diagnostic purposes when shrinkage is high.
+Model selection based on parameter shrinkage is not necessary. There are several available
+simulation-based diagnostics, including but not limited to, Visual Predictive Check (VPC), the
+prediction corrected VPC (pcVPC), the Numerical Predictive Check (NPC), and Normalized
+Prediction Distribution Errors (NPDE) (Bergstrand et al. 2011, Brendel et al. 2006).
+
+GOF criteria can also be reflected by some numerical metrics, such as the estimate of the
+precision of a parameter. Estimates of parameter precision can provide valuable information
+regarding the adequacy of the data to support that parameter. Parameter uncertainty can be
+estimated through several methods, such as bootstrap procedures, sampling importance
+resampling, log-likelihood profiling, or using the asymptotic standard errors of parameter
+estimates. In addition to parameter uncertainty, it is important to compare parameter point
+estimates with previous analyses and to evaluate the physiological plausibility of the point
+estimates. Another useful numerical metric to evaluate models is the condition value. A large
+condition number (the ratio of the largest and the smallest eigenvalue), typically interpreted as
+values greater than 1000) indicates that the observed data cannot support the estimation of one or
+several parameters (Montgomery, Vining, and Peck 2012). Over-parameterized models can be
+simplified and updated as additional data from well-designed clinical trials become available.
+
+An appropriate model should be biologically plausible, consistent with current knowledge, and
+have mathematically identifiable parameters. Performance of the model can be checked against
+a set of test data, either internal or external. A validation approach relying on the data used for
+model building is considered as internal validation. External validation, on the other hand, relies
+on the data not used for model building. Data collected in a drug development program can be
+split into a model building dataset and a testing dataset. The testing dataset is commonly used
+for external validation. Data splitting is a powerful method for model checking. However,
+before deciding on a data splitting approach, sponsors should consider the potential impact of the
+loss of data on the model’s power to detect covariate relationships and estimate parameters with
+an acceptable degree of precision.
+
+There is an additional level of uncertainty when the purpose of the model is to simulate PK
+profiles for scenarios that are beyond those that have been clinically studied. Such uncertainty
+can be addressed by a sensitivity analysis of the parameter estimates and their impact on the
+metric used to inform a decision (Kimko and Peck 2010).
+
+       D.      Simulations Based on Population PK Models
+
+Simulations should be based on protocols that outline the simulation study to be performed. The
+level of detail in the protocol should correspond to the complexity and impact of the question the
+
+
+
+                                                12
+                            Contains Nonbinding Recommendations
+
+
+simulation addresses. Models used for simulations should be validated to address the specific
+question the simulation study is trying to answer. Although a model could have been previously
+used and validated, it needs to be revalidated if the new purpose is different from the original
+purpose. Depending on the purpose of the model, various levels of uncertainty and variability
+can be added to the simulations. Some examples are discussed below.
+
+       1.      Simulations Based on Fixed-Effect Estimates
+
+In their simplest form, simulations are used to illustrate the drug-concentration profile for a
+typical individual. Such simulations are based on the typical estimates of the fixed-effect
+parameters. Note that predictions based on typical parameter estimates do not correspond to
+mean predictions. Mean predictions are obtained by calculating the mean concentration-time
+profiles based on simulations with between-subject variability in population PK parameters and
+residual error.
+
+       2.      Simulations Based on Uncertainty of Fixed-Effect Estimates
+
+Uncertainty in parameter estimates can be accounted for if the desire is to illustrate the
+probability of the typical subject’s drug exposure to reach or stay above a specific cutoff point or
+if one wishes to illustrate the effect of covariates. The choice, if uncertainty of fixed effects is
+considered, should be objective driven. For example, forest plots that illustrate the effect of
+covariates on the area under the concentration time curve (AUC) or other parameters can be
+generated based on simulations with uncertainty in fixed-effect parameters, thereby facilitating
+the interpretation of the relative importance of covariates on exposure. Alternatively, if the
+effect on exposure estimates is the objective, the uncertainty of all fixed effects should be
+considered. These types of simulations are also useful to evaluate the performance of new
+dosing regimens for testing in future trials. Additionally, simulations with parameter uncertainty
+can be used to graphically illustrate the effect of parameter precision on PK profiles.
+
+       3.      Simulations Based on Estimates of Between-Subject Variability
+
+Between-subject variability in PK parameters is accounted for in simulations when the purpose is
+to show the range of individual predictions of concentrations in the studied population. Residual
+error is added to the individual prediction when the range of observed concentrations is the main
+interest.
+
+If the purpose is to predict the observed concentration range of a future population, then
+uncertainty in the between-subject variability should be accounted for in addition to the fixed-
+effect parameters and residual error.
+
+The correlation between random effects should be accounted for to avoid unrealistic parameter
+combinations in subjects. Simulations that account for between-subject variability and include
+covariate effects should be conducted in a population with realistic demographic variables.
+Demographic variables can be obtained from databases or generated by resampling with
+replacement of the individuals in the original study or by sampling the covariate distributions and
+their correlations in the target population.
+
+
+
+                                                13
+                           Contains Nonbinding Recommendations
+
+
+
+
+VI.    LABELING BASED ON THE RESULTS OF POPULATION PK ANALYSIS
+
+Results from population PK analysis can be presented in the CLINICAL PHARMACOLGY
+section and summarized in other sections of labeling, as appropriate. Other relevant labeling
+sections should not repeat this detailed information but rather provide a succinct description or
+recommendation based upon these results followed by a cross-reference to the CLINICAL
+PHARMACOLGY section, as appropriate. In general, there is no need to explicitly state in
+labeling that the information is based on population PK analysis. Recommendations for
+developing the CLINICAL PHARMACOLOGY section are discussed in the FDA guidance for
+industry entitled Clinical Pharmacology Labeling for Human Prescription Drug and Biological
+Products — Content and Format (December 2016).
+
+
+VII.   POPULATION PK STUDY REPORTING
+
+This section outlines the recommended format and content for a sponsor to submit a population
+PK analysis in support of its drug’s clinical pharmacology program. Population PK analyses can
+be appropriate at multiple points in the drug development process, for example in the IND, NDA,
+BLA, ANDA, or postmarketing stages. The depth and breadth of population PK analyses at each
+stage can vary because of the availability or quality of clinical data.
+
+Population PK study reports that are important for regulatory decisions should be included in the
+electronic common technical document (eCTD) module 5.3.3.5 and the corresponding programs,
+datasets, and define files under the datasets folder within eCTD module 5.
+
+       A.      Format and Content of the Population PK Study Report
+
+To enable the efficient and consistent review of population PK analyses, the FDA recommends
+that the results from population PK analyses should be accompanied with a structured population
+PK report. The report should contain the following sections: (1) executive summary, (2)
+introduction, (3) materials and methods, (4) results, (5) discussion, (6) conclusions, and (7)
+appendix (if applicable). Expected information and elements to be included in these sections are
+discussed briefly in Table 1. Sections of the annotated labeling that contain information based
+on population PK analysis should include hyperlinks to the population PK report. Additional
+discussion regarding reporting is available in the scientific literature (Dykstra et al. 2015).
+
+
+
+
+                                               14
+                          Contains Nonbinding Recommendations
+
+
+Table 1: Expected Content in Each Section of the Population PK Study Report
+ Sections                                      Expected Content
+ Executive        •   The purpose of the analysis
+ Summary
+                  •   The key findings that affect drug use or labeling
+
+                  •   A plain language summary of objectives, data, methodology, and conclusions
+
+                  •   Results presented as their effect on clinically relevant drug exposures, not
+                      model parameters
+
+                  •   Visual presentations of relevant exposure metrics to illustrate how identified
+                      subpopulations differ from the typical population
+ Introduction     •   The background to place the population PK study in the context of the overall
+                      clinical development program
+
+                  •   The objectives for the population PK analysis
+
+                  •   The PK characteristics of the drug
+ Materials        •   A description of the trials and the trial data included in the population PK
+ and Methods          analysis with information on:
+
+                          o Dose, including the frequency and duration of dosing, as well as the
+                            number of subjects, number of samples, and number of below the level
+                            of quantification (BLOQ) samples
+
+                          o Reasons for not including trials with available and potentially
+                            informative data, if applicable
+
+                          o A distinction between all available relevant data versus final data used
+                            for model building and evaluation
+
+                  •   Hyperlinks to the original trial reports of data used for the analysis and the
+                      bioanalytical evaluation reports for each trial
+
+                  •   Detailed demographic information and other covariate information
+
+                  •   Planned criteria, table of assumptions, and procedures for model building and
+                      evaluation, including:
+
+                          o Handling of outliers and missing data (e.g., methods of imputation)
+
+                          o Model-estimation method
+
+                          o Equations for all model structures and covariate relationships
+
+                          o Equations for parameter transformations, if parameters are presented in
+                            dimensions other than those in the model output file
+
+                                                                                               Continued
+
+
+                                                  15
+                        Contains Nonbinding Recommendations
+
+
+Table 1 continued: Expected Content in Each Section of the Population PK Study Report
+Sections                                   Expected Content
+Materials               o Equations for parameter transformations, if parameters are presented in
+and Methods               dimensions other than those in the model output file
+
+                        o The method for incorporating variability or parameter uncertainty or
+                          for deriving confidence intervals or prediction intervals
+
+                •   Detailed descriptions of planned simulations and sensitivity analyses used to
+                    support conclusions and recommendations
+
+                •   Software and version used for the analysis and simulation*
+                    * Note: The FDA does not recommend or require the use of particular
+                    software for conducting population PK analysis. The sponsor should report
+                    the software used and submit the electronic files supporting the analysis and
+                    simulations (see section VII.B below). If necessary, consult the FDA
+                    regarding the submission of certain file types.
+Results         •   Summary of the data and data exploration, with adequate graphical and tabular
+                    displays
+
+                •   A description of the final model, model building steps, validation, final
+                    parameter estimates, and deviations from planned analyses, if applicable
+
+                •   Application of the model to the objectives, including the relevance of
+                    covariates on PK parameters and simulations of alternative dosing, if
+                    applicable
+
+                •   Accompanying tables and figures to place findings into context
+
+                •   Typically, tables and figures should include the following, with other tables
+                    and figures included in the Appendix and cross-referenced in the report body,
+                    as applicable:
+
+                        o Key modeling building steps, including a description of the structural
+                          and covariate models and objective function changes
+
+                        o A comparison of parameter estimates from the base to the final model
+
+                        o Parameter estimates and their associated uncertainty, with variability
+                          reported as the coefficient of variation (CV%) and precision reported
+                          as the percent relative standard error (RSE%) or the 95 percent
+                          confidence interval. Shrinkage should be included in the parameter
+                          estimates table.
+
+                        o Key diagnostic plots
+
+                        o GOF plots stratified by the relevant covariates to illustrate model
+                          performance in specific subgroups
+
+                                                                                         Continued
+
+
+
+                                              16
+                           Contains Nonbinding Recommendations
+
+
+
+Table 1 continued: Expected Content in Each Section of the Population PK Study Report
+ Results                          o Results of model evaluations/validation, such as VPCs,
+                                    pcVPCs, NPCs, and NPDEs, etc., should also be included
+
+                          •   A description of simulation results or scenarios, if applicable
+ Discussion               •   An interpretation of the modeling results, including discussions on:
+
+                                  o The adequacy or limitation of the data and model to support
+                                    conclusions and recommendations
+
+                                  o The rationale for the modeling approach, assumption
+                                    verification, and assessment of uncertainty
+
+                                  o Consistency or inconsistency between the results from
+                                    population PK and stand-alone clinical pharmacology studies
+                                    and/or previously completed related population analyses
+
+                          •   An assessment of the clinical relevance of the results, including
+                              physiological plausibility and clinical significance of the identified
+                              relationships
+
+                          •   An assessment of any alternative dosing regimens in the context of E-R
+                              analyses for safety and efficacy
+ Conclusions              • A short summary of major findings from the analysis written in plain
+                             language
+ Appendix             Additional materials should be included in the Appendix, as needed. The
+                      Appendix does not need to contain full line listings from datasets. Materials
+                      from the Appendix should be cross-referenced in the report body, as
+                      appropriate. Appropriate materials for the Appendix include but are not limited
+                      to:
+
+                          •   Supplemental tables and figures for summaries and analyses included
+                              in the report that support model development or conclusions but are not
+                              critical to the primary purpose of the report
+
+                          •   Methods and codes for generating the key figures and tables
+                              (preferably, codes are submitted as separate files from the study report)
+
+                          •   Listing of samples removed from the analysis and reasons for removal
+
+                          •   A run record describing the steps during model development
+
+                          •   A diagram showing the connection between input datasets,
+                              codes/control streams, and output datasets presented in the E-R report
+
+       B.      Submitting Electronic Files to the Agency
+
+
+
+
+                                                 17
+                               Contains Nonbinding Recommendations
+
+
+Sponsors should refer to the FDA web page 9 for general advice on submitting data and related
+files (e.g., coding scripts). It is critical that datasets and model files submitted for the base, final,
+and key intermediate models are the same as those used for generating the model outputs in the
+appendices of the report. In addition, FDA staff should be able to identify the source data for
+any dataset constructed using output files or postprocessed results from population PK analyses.
+For example, if exposure metrics from population PK analyses are included in datasets for E-R
+analyses, the sponsor should ensure the traceability between the population PK model output and
+any postprocessing steps involved in the construction of the dataset. This can be accomplished
+by providing definition files, reviewer guides, and/or codes utilized for dataset assembly.
+
+All conclusions drawn from the population PK analysis should be reproducible by the Agency
+with the available codes and data. It is also important to include the unique subject identifier
+information for each subject in the population PK dataset and ensure that the identifiers are the
+same in the individual clinical trial datasets. This information is vital if data integration is
+required between the individual-level outputs (e.g., individual, post hoc estimates for clearance
+or volume of distribution generated from the population PK model) and the efficacy or safety
+datasets from the individual clinical study reports.
+
+
+
+
+9
+ The FDA web page on submitting data can be accessed at https://www.fda.gov/about-fda/center-drug-evaluation-
+and-research-cder/modeldata-format.
+
+
+
+                                                     18
+                      Contains Nonbinding Recommendations
+
+
+VIII. GLOSSARY OF SELECTED TERMS
+
+Covariate          An observed factor that correlates with drug exposure in patients (e.g.,
+                   renal function, body weight, age, sex, genetic polymorphism)
+
+DV                 Dependent variable (e.g., drug plasma concentrations)
+
+EBE                Empirical Bayes Estimates, or individual parameter estimates in a
+                   mixed-effects model
+
+GOF                Goodness of fit, a collection of diagnostic criteria used to evaluate
+                   model performance
+
+IPRED              Individual Predicted Data, based on Individual Empirical Bayes
+                   parameter estimates
+
+IWRES              Individual Weighted Residuals, a type of residual
+
+Model validation   The use of various methods to validate model performance for a
+                   specific purpose
+
+NPC                Numerical Predictive Check, a GOF method related to VPC
+
+pcVPC              Prediction corrected VPC, a type of GOF plot related to VPC
+
+Q-Q                Quantile-quantile, a type of GOF plot
+
+Residual           The difference between the predicted and the observed value
+
+Residual error     An estimate of the remaining unexplained variability
+
+Shrinkage          A measure of the extent to which EBE depends on the population
+                   parameters versus the individual observed data
+
+VPC                Visual predictive check, a type of GOF plot
+
+xPRED              Predicted data, based on population parameter estimates, where ‘x’ can
+                   be nothing, C (conditional), or P (simulation-based)
+
+xWRES              Weighted Residuals, a type of diagnostic, where ‘x’ can be nothing, C
+                   (conditional), or P (simulation-based)
+
+
+
+
+                                           19
+                          Contains Nonbinding Recommendations
+
+
+IX.    REFERENCES
+
+Barbour, AM, MJ Fossler, and J Barrett, 2014, Practical Considerations for Dose Selection in
+      Pediatric Patients to Ensure Target Exposure Requirements, AAPS J, 16(4):749-55.
+
+Beal, SL, 2001, Ways to Fit a PK Model With Some Data Below the Quantification Limit, J
+       Pharmacokinet Pharmacodyn, 28(5):481-504.
+
+Bergstrand, M, AC Hooker, JE Wallin, and MO Karlsson, 2011, Prediction-Corrected Visual
+       Predictive Checks for Diagnosing Nonlinear Mixed-Effects Models, AAPS J, 13(2):143-
+       51.
+
+Bergstrand, M and MO Karlsson, 2009, Handling Data Below the Limit of Quantification in
+       Mixed Effect Models, AAPS J, 11(2):371-80.
+
+Bhattaram, VA, BP Booth, RP Ramchandani, BN Beasley, Y Wang, V Tandon, JZ Duan, RK
+       Baweja, PJ Marroum, and RS Uppoor, 2005, Impact of Pharmacometrics on Drug
+       Approval and Labeling Decisions: A Survey of 42 New Drug Applications, AAPS J,
+       7(3):E503-E512.
+
+Bonate, PL, A Strougo, A Desai, M Roy, A Yassen, JS van der Walt, A Kaibara, and S
+      Tannenbaum, 2012, Guidelines for the Quality Control of Population Pharmacokinetic-
+      Pharmacodynamic Analyses: An Industry Perspective, AAPS J, 14(4):749-58.
+
+Bonate, PL, 2011, Pharmacokinetic-Pharmacodynamic Modeling and Simulation, 2 nd edition.
+      New York, Springer.
+
+Bonate, PL, M Ahamadi, N Budha, A de la Pena, JC Earp, Y Hong, MO Karlsson, P Ravva, A
+      Ruiz-Garcia, H Struemper, JR Wade, 2016, Methods and Strategies for Assessing
+      Uncontrolled Drug-Drug Interactions in Population Pharmacokinetic Analyses: Results
+      from the International Society of Pharmacometrics (ISOP) Working Group, J
+      Pharmacokinet Pharmacodyn, 43(2):123-35.
+
+Brendel K, E Comets, C Laffont, C Laveille, F Mentré, 2006, Metrics for External Model
+      Evaluation with an Application to the Population Pharmacokinetics of Gliclazide, Pharm
+      Res, 23(9):2036-49.
+
+Byon, W, MK Smith, P Chan, MA Tortorici, S Riley, H Dai, J Dong, A Ruiz‐Garcia, K
+      Sweeney, and C Cronenberger, 2013, Establishing Best Practices and Guidance in
+      Population Modeling: An Experience With an Internal Population Pharmacokinetic
+      Analysis Guidance, CPT Pharmacometrics Syst Pharmacol, 2(7):1-8.
+
+Dodds, MG, AC Hooker, and P Vicini, 2005, Robust Population Pharmacokinetic Experiment
+      Design, J Pharmacokinet Pharmacodyn, 32(1):33-64.
+
+
+
+
+                                              20
+                          Contains Nonbinding Recommendations
+
+
+Dykstra, K, N Mehrotra, CW Tornøe, H Kastrissios, B Patel, N Al‐Huniti, P Jadhav, Y Wang,
+      and W Byon, 2015, Reporting Guidelines for Population Pharmacokinetic Analyses, J
+      Pharmacokinet Pharmacodyn, 42(3):301-14.
+
+Ette, EI and TM Ludden,1995, Population Pharmacokinetic Modeling: The Importance of
+        Informative Graphics, Pharma Res, 12(12):1845-55.
+
+Ette, EI and PJ Williams, 2007, Pharmacometrics: The Science of Quantitative Pharmacology,
+        John Wiley & Sons.
+
+Gastonguay, MR, 2004, A Full Model Estimation Approach for Covariate Effects: Inference
+      Based on Clinical Importance and Estimation Precision, J AAPS, 6(S1):W4354.
+
+Grasela Jr, TH and LB Sheiner, 1991, Pharmacostatistical Modeling for Observational Data, J
+       Pharmacokinet Biopharm, 19(S3):S25-S36.
+
+Holford, N, YA Heo, and B Anderson, 2013, A Pharmacokinetic Standard for Babies and Adults,
+      J Pharmaceut Sci, 102(9):2941-52.
+
+Johansson, ÅM and MO Karlsson, 2013, Comparison of Methods for Handling Missing
+      Covariate Data, J AAPS, 15(4):1232-41.
+
+Karlsson, MO and RM Savic, 2007, Diagnosing Model Diagnostics, Clin Pharmacol Ther,
+       82(1):17-20.
+
+Karlsson, MO and LB Sheiner, 1993, The Importance of Modeling Interoccasion Variability in
+       Population Pharmacokinetic Analyses, J Pharmacokinet Biopharm, 21(6):735-50.
+
+Keizer, RJ, RS Jansen, H Rosing, B Thijssen, JH Beijnen, JHM Schellens, and ADR Huitema,
+       2015, Incorporation of Concentration Data Below the Limit of Quantification in
+       Population Pharmacokinetic Analyses, Pharmacol Res Perspect, 3(2):e00131.
+
+Kimko, HHC and CC Peck, 2010, Clinical Trial Simulation and Quantitative Pharmacology:
+      Applications and Trends, Springer Science & Business Media.
+
+Lavielle, M and B Ribba, 2016, Enhanced Method for Diagnosing Pharmacometric Models:
+       Random Sampling from Conditional Distributions, Pharm Res, 33(12):2979-88.
+
+Lee, JY, CE Garnett, JVS Gobburu, VA Bhattaram, S Brar, JC Earp, PR Jadhav, K Krudys, LJ
+       Lesko, and F Li, 2011, Impact of Pharmacometric Analyses on New Drug Approval and
+       Labelling Decisions, Clin Pharmacokinet, 50(10):627-35.
+
+Lunn, DJ, N Best, A Thomas, J Wakefield, and D Spiegelhalter, 2002, Bayesian Analysis of
+      Population PK/PD Models: General Concepts and Software, J Pharmacokinet
+      Pharmacodyn, 29(3):271-307.
+
+
+
+
+                                              21
+                          Contains Nonbinding Recommendations
+
+
+Mahmood I. 2014, Dosing in Children: a Critical Review of the Pharmacokinetic Allometric
+     Scaling and Modelling Approaches in Paediatric Drug Development and Clinical
+     Settings. Clin Pharmacokinet, 53(4): 327-46.
+
+Marshall, SF, R Burghaus, V Cosson, SYA Cheung, M Chenel, O DellaPasqua, N Frey, B
+      Hamren, L Harnisch, and F Ivanow, 2016, Good Practices in Model‐Informed Drug
+      Discovery and Development (MID3): Practice, Application and Documentation, CPT:
+      Pharmacometrics Syst Pharmacol, 5(3):93-122.
+
+Montgomery, DC, GG Vining, and EA Peck, 2012, Introduction to Linear Regression Analysis,
+      Wiley.
+
+Mould, DR and RN Upton, 2013, Basic Concepts in Population Modeling, Simulation, and
+      Model-Based Drug Development—Part 2: Introduction to Pharmacokinetic Modeling
+      Methods, CPT: Pharmacometrics Syst Pharmacol, 2(4):e38.
+
+Nguyen, THT, M-S Moukassi, N Holford, N Al-Huniti, I Freedman, AC Hooker, J John, MO
+      Karlsson, DR Mould, JJ Pérez Ruixo, 2017, Model Evaluation of Continuous Data
+      Pharmacometric Models: Metrics and Graphics, CPT Pharmacometrics Syst Pharmacol,
+      6(2):87-109.
+
+Nyberg, J, C Bazzoli, K Ogungbenro, A Aliev, S Leonov, S Duffull, AC Hooker, and F Mentré,
+      2015, Methods and Software Tools for Design Evaluation in Population
+      Pharmacokinetics–Pharmacodynamics Studies, Br J Clin Pharmacol, 79(1):6-17.
+
+Ogungbenro, K and L Aarons, 2007, Design of Population Pharmacokinetic Experiments Using
+      Prior Information, Xenobiotica, 37(10-11):1311-30.
+
+Ogungbenro, K and L Aarons, 2008, Optimisation of Sampling Windows Design for Population
+      Pharmacokinetic Experiments, J Pharmacokinet Pharmacodyn, 35(4):465-82.
+
+Ribbing, J, J Nyberg, O Caster, and EN Jonsson, 2007, The Lasso—A Novel Method for
+      Predictive Covariate Model Building in Nonlinear Mixed Effects Models, J
+      Pharmacokinet Pharmacodyn, 34(4):485-517.
+
+Savic, RM and MO Karlsson, 2009, Importance of Shrinkage in Empirical Bayes Estimates for
+       Diagnostics: Problems and Solutions, J AAPS, 11(3):558-69.
+
+Schmidt, H and A Radivojevic, 2014, Enhancing Population Pharmacokinetic Modeling
+      Efficiency and Quality Using an Integrated Workflow, J Pharmacokinet Pharmacodyn,
+      41(4):319-34.
+
+Sheiner, LB, B Rosenberg, and VV Marathe, 1977, Estimation of Population Characteristics of
+       Pharmacokinetic Parameters From Routine Clinical Data, J Pharmacokinet Biopharm,
+       5(5):445-79.
+
+
+
+
+                                             22
+                          Contains Nonbinding Recommendations
+
+
+Tatarinova, T, M Neely, J Bartroff, M van Guilder, W Yamada, D Bayard, R Jelliffe, R Leary, A
+       Chubatiuk, and A Schumitzky, 2013, Two General Methods for Population
+       Pharmacokinetic Modeling: Non-Parametric Adaptive Grid and Non-Parametric
+       Bayesian, J Pharmacokinet Pharmacodyn, 40(2):189-99.
+
+Tukey, JW, 1977, Exploratory Data Analysis, Addison-Wesley.
+
+Wählby, U, MR Bouw, EN Jonsson, and MO Karlsson, 2002, Assessment of Type I Error Rates
+      for the Statistical Sub-Model in NONMEM, J Pharmacokinet Pharmacodyn, 29(3):251-
+      69.
+
+Wählby, U, EN Jonsson and MO Karlsson, 2001, Assessment of Actual Significance Levels for
+     Covariate Effects in NONMEM, J Pharmacokinet Pharmacodyn, 28(3):231-52.
+
+Wählby, U, EN Jonsson and MO Karlsson, 2002, Comparison of Stepwise Covariate Model
+      Building Strategies in Population Pharmacokinetic-Pharmacodynamic Analysis, AAPS
+      PharmSci, 4(4):E27.
+
+Wählby U, Thomson AH, Milligan PA, Karlsson MO, 2004. Models for time-varying covariates
+      in population pharmacokinetic-pharmacodynamic analysis, Br J Clin Pharmacol, 58(4):
+      367–377.
+
+Wang, Y, PR Jadhav, M Lala, and JV Gobburu, 2012, Clarification on Precision Criteria to
+      Derive Sample Size When Designing Pediatric Pharmacokinetic Studies, J Clin Pharm,
+      52(10):1601-06.
+
+Wang, DD, Y Yu, N Kassir, M Zhu, WD Hanley, JC Earp, AT Chow, M Gupta, C Hu, 2017,
+      The Utility of a Population Approach in Drug-Drug Interaction Assessments: A
+      Simulation Evaluation, J Clin Pharmacol, 57(10):1268-1278.
+
+Xu, SX, M Yuan, MO Karlsson, A Dunne, P Nandy, A VErmeulen, 2012, Shrinkage in
+      Nonlinear Mixed-Effects Population Models: Quantification, Influencing Factors, and
+      Impact, AAPS J, 14(4):927-36.
+
+Zhang, Y, X Wei, G Bajaj, JS Barrett, B Meibohm, A Joshi, and M Gupta, 2015, Challenges and
+       Considerations for Development of Therapeutic Proteins in Pediatric Patients, J Clin
+       Pharmacol, 55(S3):S103-15.
+
+Zhao, L, MJ Kim, L Zhang, R Lionberger, 2019, Generating Model Integrated Evidence for
+       Generic Drug Development and Assessment. Clin Pharmacol Ther, 105(2):338-349.
+
+
+
+
+                                             23
+                              Contains Nonbinding Recommendations
+
+
+FDA guidances for industry: 10
+
+Clinical Pharmacology Labeling for Human Prescription Drug and Biological Products —
+       Content and Format (December 2016)
+
+Clinical Drug Interaction Studies—Cytochrome P450 Enzyme- and Transporter-Mediated Drug
+       Interactions (January 2020)
+
+Exposure-Response Relationships — Study Design, Data Analysis, and Regulatory Applications
+      (May 2003)
+
+In Vitro Drug Interaction Studies – Cytochrome P450 Enzyme- and Transporter-Mediated Drug
+        Interactions (January 2020)
+
+Pharmacokinetics in Patients With Impaired Hepatic Function — Study Design, Data Analysis,
+     and Impact on Dosing and Labeling (May 2003)
+
+
+
+
+10 See also the following FDA guidances: (1) Assessing the Effects of Food on Drugs in INDs and NDAs —
+        Clinical Pharmacology Considerations (February 2019); (2) General Clinical Pharmacology
+        Considerations for Pediatric Studies for Drugs and Biological Products (December 2014); and (3)
+        Pharmacokinetics in Patients With Impaired Renal Function — Study Design, Data Analysis, and Impact
+        on Dosing and Labeling (September 2020). When final, these guidances will represent the Agency’s
+        current thinking on these topics.
+
+
+
+                                                     24
+

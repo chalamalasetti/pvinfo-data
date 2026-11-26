@@ -1,0 +1,834 @@
+         Approaches to
+      Assessment of Overall
+      Survival in Oncology
+         Clinical Trials
+              Guidance for Industry
+                                   DRAFT GUIDANCE
+              This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft guidance. Submit
+electronic comments to https://www.regulations.gov. Submit written comments to the Dockets
+Management Staff (HFA-305), Food and Drug Administration, 5630 Fishers Lane, Rm. 1061, Rockville,
+MD 20852. All comments should be identified with the docket number listed in the notice of availability
+that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (OCE and CDER) Nicole Gormley at
+OCE-Guidances@fda.hhs.gov or (CBER) Office of Communication, Outreach, and Development, 800-
+835-4709 or 240-402-8010.
+
+
+                          U.S. Department of Health and Human Services
+                                   Food and Drug Administration
+                                Oncology Center of Excellence (OCE)
+                         Center for Drug Evaluation and Research (CDER)
+                        Center for Biologics Evaluation and Research (CBER)
+
+                                              August 2025
+                                            Clinical/Medical
+      Approaches to
+   Assessment of Overall
+   Survival in Oncology
+      Clinical Trials
+            Guidance for Industry
+                                        Additional copies are available from:
+
+                               Office of Communications, Division of Drug Information
+                                       Center for Drug Evaluation and Research
+                                            Food and Drug Administration
+                                10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                            Silver Spring, MD 20993-0002
+                             Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                            Email: druginfo@fda.hhs.gov
+               https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+                                                       and/or
+
+                                 Office of Communication, Outreach and Development
+                                     Center for Biologics Evaluation and Research
+                                             Food and Drug Administration
+                                        Phone: 800-835-4709 or 240-402-8010
+                                         Email: industry.biologics@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+
+
+
+
+                          U.S. Department of Health and Human Services
+                                   Food and Drug Administration
+                                Oncology Center of Excellence (OCE)
+                         Center for Drug Evaluation and Research (CDER)
+                        Center for Biologics Evaluation and Research (CBER)
+
+                                                  August 2025
+                                                Clinical/Medical
+                                       Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+
+
+
+                                               TABLE OF CONTENTS
+
+
+I.           INTRODUCTION..................................................................................................1
+II.          BACKGROUND ....................................................................................................2
+III.         RECOMMENDATIONS .......................................................................................3
+     A.      Trial Design Considerations ..................................................................................3
+
+     B.      Statistical Analysis Considerations.......................................................................6
+
+          1. General Considerations for Specification of Statistical Analyses ...........................6
+          2. Assessment of Harm .................................................................................................9
+          3. Post Hoc Analyses ..................................................................................................10
+     C.      Subgroup Considerations .................................................................................... 11
+
+     D.      Regulatory Considerations..................................................................................13
+                                       Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+
+1        Approaches to Assessment of Overall Survival in Oncology Clinical
+2                                     Trials
+3                            Guidance for Industry 1
+4
+ 5
+ 6   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 7   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+ 8   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+ 9   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+10   for this guidance as listed on the title page.
+11
+12
+13
+14
+15   I.      INTRODUCTION
+16
+17   The purpose of this guidance is to provide recommendations to sponsors on the assessment of
+18   overall survival in randomized oncology clinical trials conducted to support marketing approval
+19   of drugs and biological products, with an emphasis on the analysis of overall survival as a pre-
+20   specified safety endpoint. 2 The recommendations in this guidance are based in part on
+21   discussions held at the joint FDA, American Association for Cancer Research (AACR), and
+22   American Statistical Association (ASA) public workshop: Overall Survival in Oncology Clinical
+23   Trials held in July 2023. 3
+24
+25   Additional information on the related topic of choice of endpoints in oncology clinical trials can
+26   be found in guidance for industry Clinical Trial Endpoints for the Approval of Cancer Drugs and
+27   Biologics (December 2018). 4 Pre-specification of a statistical analysis plan (SAP) is a basic
+28   statistical principle for clinical trials; refer to guidance for industry E9 Statistical Principles for
+29   Clinical Trials (September 1998). The estimand framework is useful to describe the plans for
+30   evaluation of overall survival and other primary and key secondary endpoints; refer to guidance
+31   for industry E9(R1) Statistical Principles for Clinical Trials: Addendum: Estimands and
+32   Sensitivity Analysis in Clinical Trials (May 2021).
+33
+
+
+
+     1
+      This guidance has been prepared by the Oncology Center of Excellence (OCE), Center for Drug Evaluation and
+     Research (CDER), and Center of Biologics Evaluation and Research (CBER) at the Food and Drug Administration.
+     2
+      For the purposes of this guidance, references to drug or drugs include both human drug products and biological
+     products regulated by CDER and CBER, unless otherwise specified.
+     3
+      FDA-AACR-ASA Workshop: Overall Survival in Oncology Clinical Trials. 2023 Jul 18:
+     https://www.aacr.org/professionals/policy-and-advocacy/regulatory-science-and-policy/events/fda-aacr-asa-
+     workshop-overall-survival-in-oncology-clinical-trials/.
+     4
+      We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page at
+     https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+                                                             1
+                                    Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+
+34   While the guidance discusses situations in which it is appropriate to consider overall survival for
+35   the primary endpoint, this guidance primarily focuses on statistical or design considerations
+36   when overall survival is not the primary endpoint. Additionally, this guidance focuses on the
+37   assessment of overall survival in randomized trials. In general, time-to-event endpoints (e.g.,
+38   overall survival, progression-free survival, etc.) are challenging to interpret in single-arm trials
+39   due to the lack of a randomized control arm to demonstrate that the experimental treatment
+40   results in an improvement in the time-to-event endpoint.
+41
+42   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+43   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+44   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+45   the word should in Agency guidances means that something is suggested or recommended, but
+46   not required.
+47
+48
+49   II.    BACKGROUND
+50
+51   Overall survival is both an efficacy and a safety endpoint; it can be favorably impacted by the
+52   therapeutic benefits of a specific drug and negatively impacted by the drug’s toxicity. Overall
+53   survival is also an objective, clinically meaningful endpoint that can be measured easily and
+54   precisely. It is considered a gold standard endpoint in oncology, as prolongation of life in the
+55   setting of a life-threatening disease is of clear inherent value.
+56
+57   Overall survival should be prioritized as the primary endpoint when feasible. It is most
+58   appropriate for consideration in randomized trials of oncologic diseases with a short natural
+59   history (e.g., metastatic pancreatic cancer), late-line disease settings, or in disease settings where
+60   there are other therapeutics known to prolong overall survival and it is important to demonstrate
+61   retention or improvement of this survival advantage.
+62
+63   In certain oncology settings, it is often not feasible or practical to include overall survival as the
+64   primary endpoint. In some indolent diseases or those with extremely efficacious therapeutics that
+65   result in long survival times, the follow-up time needed to show superiority of overall survival as
+66   the primary endpoint may be impractical. Additionally, as mentioned, overall survival may not be
+67   appropriate in single-arm trials. Furthermore, although overall survival is an objective
+68   measurement, the results and their interpretation can be impacted by crossover, receipt of
+69   subsequent therapy, and other intercurrent events. These additional factors that impact the
+70   interpretation of overall survival are discussed in Sections III.A and III.B.
+71
+72   When overall survival is not the primary endpoint and other endpoints such as response rate,
+73   progression-free survival, or event-free survival are the primary endpoint in an oncology
+74   randomized trial, FDA recommends collection and submission of overall survival data. In some
+75   situations, overall survival may be a secondary endpoint included in a pre-specified hypothesis
+76   testing plan to permit a formal statistical test for an efficacy evaluation, which includes control of
+
+
+
+
+                                                        2
+                                            Contains Nonbinding Recommendations
+                                                    Draft — Not for Implementation
+
+ 77   the overall study-wise Type I error rate. 5,6 When it is not a secondary endpoint with an
+ 78   appropriate formal testing plan, FDA has historically evaluated the overall survival results in a
+ 79   descriptive manner, assessing overall survival as a safety measurement. There have been several
+ 80   drug development programs in which discordant results have been observed between early
+ 81   efficacy endpoints (e.g., response rate, minimal residual disease, or progression-free survival)
+ 82   and overall survival. 7 In some of these instances, the drug demonstrated anti-tumor activity, but
+ 83   the benefits of the anti-tumor activity were outweighed by drug-related toxicity that was
+ 84   evidenced by the observed decrements in overall survival. These examples underscore the
+ 85   importance of evaluation of overall survival as a safety assessment.
+ 86
+ 87   There are, however, inherent limitations in the assessment of overall survival in a descriptive
+ 88   manner, even if done as a safety assessment. Without a formal pre-specified plan for evaluation,
+ 89   the interpretation of the overall survival results can be challenging, especially if the study was
+ 90   not designed to collect sufficient overall survival data to provide estimates of treatment effect
+ 91   with a pre-specified level of precision.
+ 92
+ 93
+ 94   III.       RECOMMENDATIONS
+ 95
+ 96   When overall survival is not an alpha-controlled primary or secondary efficacy endpoint with a
+ 97   formal testing plan in a randomized oncology clinical trial, sponsors should include a pre-
+ 98   specified plan to assess overall survival, as a safety endpoint, with an aim to evaluate for
+ 99   potential harm due to the therapeutic intervention. Sponsors should consult with the FDA review
+100   division on their plans to include overall survival analyses in the clinical protocol and SAP.
+101
+102              A.        Trial Design Considerations
+103
+104   This section includes an overview of clinical trial design considerations as it pertains to the
+105   assessment of overall survival in oncology clinical trials.
+106
+107          •   Overall survival is generally defined as the time from randomization until death from any
+108              cause.
+109
+110          •   All randomized oncology clinical trials should be designed to assess overall survival in
+111              order to adequately evaluate the potential for harm (see also Section III.B.2).
+112
+
+
+
+
+      5
+          Control of the Type I error rate is sometimes referred to as “alpha control”.
+      6
+        See the guidance for industry Multiple Endpoints in Clinical Trials (October 2022) for additional information
+      regarding analysis and interpretation of multiple endpoints.
+      7
+       Merino M, Kasamon Y, Theoret M, Pazdur R, Kluetz P, Gormley N, Irreconcilable Differences: The Divorce
+      Between Response Rates, Progression-Free Survival, and Overall Survival. J Clin Oncol. 2023;41(15):2706-12.
+
+                                                                    3
+                                         Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+
+113                — The assessment of overall survival can be as a primary or secondary efficacy
+114                  endpoint with a formal testing plan including control of overall study-wise Type I
+115                  error.
+116
+117                — Regardless of whether overall survival is included as an efficacy endpoint, an
+118                  assessment of overall survival should include a pre-specified safety analysis
+119                  designed to assess for potential harm.
+120
+121                — Sponsors should consider the amount of overall survival data needed to
+122                  adequately address key safety and/or efficacy objectives (further details regarding
+123                  pre-specification of study design features related to the number of overall survival
+124                  events are included in Section III.B.1 and III.B.2.).
+125
+126                — Note that use of early or immature overall survival data (i.e., relatively few
+127                  deaths) can cause high uncertainty in treatment effect estimates.
+128
+129       •   Interim analyses of overall survival for futility or harm should be included in the clinical
+130           trial protocol and SAP when appropriate.
+131
+132                — Protocols for large, randomized oncology clinical trials should include interim
+133                  analyses for futility or harm early enough to limit participant exposure to
+134                  therapeutics that are potentially harmful.
+135
+136                — The timing of the interim analyses must balance the need to limit exposure to
+137                  potentially harmful therapeutics with the uncertainty associated with early
+138                  information and the potential to prematurely halt investigation of a therapeutic.
+139
+140                — The timing of the interim and final overall survival analyses should be event-
+141                  driven rather than based on a pre-specified time period.
+142
+143                — Sponsors should provide a rationale and justification for the timing of the interim
+144                  analyses proposed.
+145
+146                — Independent data monitoring committees should be provided with the results of
+147                  planned interim analyses for futility or harm. Any decision rules based on the
+148                  interim analysis results should be specified in the data monitoring committee
+149                  charter. Study personnel should not have access to unblinded interim data in order
+150                  to maintain study integrity. Trial integrity is best protected when statisticians
+151                  preparing unblinded data are external to and independent from the sponsor. If a
+152                  sponsor’s statistician independent from the study personnel is used, a firewall
+153                  should be implemented and should be well-described in the charter. 8
+
+
+      8
+        See the guidance for industry Establishment and Operation of Clinical Trial Data Monitoring Committees (March
+      2006) and the draft guidance for industry Use of Data Monitoring Committees in Clinical Trials (February 2024) for
+      additional information related to maintaining trial integrity and the data monitoring committee charter. When final,
+      this guidance will represent FDA’s current thinking on this topic.
+
+                                                               4
+                                Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+154
+155          — In most trials, interim analyses of overall survival would be appropriate to
+156            include; however, interim analyses of overall survival may not be appropriate in
+157            some small randomized clinical trials or clinical trials in diseases with a low
+158            overall survival event rate (i.e., anticipated long overall survival times).
+159
+160   •   Crossover
+161
+162          — Protocol-specified crossover, is when trial participants who have disease
+163            progression on one arm are allowed to initiate the therapeutic intervention of
+164            another arm. Protocol-specified crossover has been included in clinical trials.
+165
+166          — Inclusion of crossover in clinical trials can improve enrollment and help with
+167            retention of enrolled participants.
+168
+169          — Crossover can impact the interpretation of overall survival results because it can
+170            confound treatment effect estimates. In general, its use should be limited but it
+171            would be most appropriate to include in clinical trials of disease settings that have
+172            no other or very limited therapeutic options.
+173
+174   •   Unequal randomization scheme (e.g., 2:1 randomization)
+175
+176          — Sponsors should consider the utility of using unequal randomization in the
+177            protocol, as this may reduce the precision in the assessment of the difference in
+178            overall survival between arms and the ability to adequately contextualize safety
+179            findings.
+180
+181   •   Sponsors should include in their clinical trial protocols adequate plans for collecting data
+182       to minimize the amount of missing data for the assessment of overall survival and other
+183       long-term outcomes, including details on how data will be collected with regards to
+184       capturing long-term safety and efficacy information.
+185
+186          — In general, treatment discontinuation should be distinguished from study
+187            withdrawal, and all randomized participants, including those who discontinue
+188            treatment and/or use subsequent therapies, should continue to be followed for
+189            overall survival through the end of the controlled period.
+190
+191          — Participants and investigators should be counseled regarding the importance of
+192            obtaining adequate follow-up information, even after discontinuation of study
+193            drug treatment or after conclusion of active trial participation.
+194
+195          — Diverse approaches to minimize loss to follow-up may be specified, such as
+196            increased efforts to maintain contact.
+197
+198          — Participants should be adequately followed after any intercurrent events to capture
+199            important safety and efficacy information. If there is subsequent therapy use,
+
+
+                                                    5
+                                        Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+
+200                    reasons for initiating subsequent therapy and time to next therapy should also be
+201                    captured.
+202
+203       •   If non-proportional hazards are anticipated, then additional considerations for adequate
+204           overall survival assessment should be pre-specified, i.e., the study should be designed for
+205           long-term data collection, and sample size and power calculations should be based on
+206           justifiable assumptions.
+207
+208           B.       Statistical Analysis Considerations
+209
+210   This section includes considerations for pre-specification of statistical analyses, assessments for
+211   harm, and post hoc analyses of overall survival. Sponsors should, a priori, specify the statistical
+212   analyses of overall survival, prior to knowledge of any study results or data unblinding, in a
+213   clinical trial protocol or accompanying separate document (e.g., SAP). If the protocol and SAP
+214   do not adequately characterize plans for assessing, measuring, or analyzing overall survival,
+215   evaluations of overall survival may be considered post hoc. FDA also considers additional
+216   analyses conducted on overall survival outside the scope of those pre-specified in the SAP to be
+217   post hoc and for exploratory purposes (e.g., for hypothesis generation).
+218
+219           1.       General Considerations for Specification of Statistical Analyses
+220
+221       •   The SAP should prospectively detail assessment timing and methods for analyzing
+222           overall survival.
+223
+224       •   The primary analysis (or main analysis) of overall survival should be specified in the
+225           study protocol in order to define the primary metric for decision-making based on overall
+226           survival, even if overall survival is not a primary endpoint. The choice of primary
+227           analysis (and primary estimand) for overall survival should be based on the stated study
+228           objectives.
+229
+230                — The primary analysis for overall survival should generally be based on the
+231                  intention-to-treat (ITT) principle, that is, all randomized participants with
+232                  comparisons based on randomized treatments.
+233
+234                — FDA generally recommends the hazard ratio (HR) obtained from a Cox
+235                  proportional hazard model as a summary measure, along with its 95% confidence
+236                  interval. In some cases, pre-specified covariates may be justified to be included in
+237                  the Cox proportional hazards model. 9
+238
+239                — FDA generally recommends the log-rank test for the primary analysis of overall
+240                  survival when there is alpha allocation, and either a stratified or unstratified test
+241                  should be pre-specified.
+242
+
+
+      9
+       See the guidance for industry Adjusting for Covariates in Randomized Clinical Trials for Drugs and Biological
+      Products (May 2023).
+
+                                                              6
+                                Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+243          — Sponsors should generate a Kaplan-Meier plot of overall survival information for
+244            the primary analysis population and as part of other supplementary analyses, such
+245            as for any subgroups of interest.
+246
+247   •   In addition to the analyses specified for the primary evaluation of overall survival, the
+248       SAP for overall survival should also include at minimum the following details:
+249
+250          — Pre-specified analyses to assess any assumptions for the methods used (such as
+251            proportional hazards). Note that if non-proportional hazards are observed, early
+252            overall survival data may not represent the true overall survival effect, and
+253            additional analyses may be needed to adequately characterize overall survival (see
+254            the last bullet in this section below regarding pre-specified
+255            sensitivity/supplementary analyses and Section III.B.3 regarding post-hoc
+256            analyses).
+257
+258          — Planned length of long-term follow-up, planned frequency of follow-up, specified
+259            final analysis timing at an appropriate number of events to provide adequate
+260            survival information, and number/percentage of participants expected to be lost to
+261            follow-up.
+262
+263          — Strategies for censoring and handling incomplete and/or missing data and
+264            intercurrent events.
+265
+266          — Key assumptions and justification for overall survival analyses at each analysis
+267            time point, including the following, where applicable: the number of events,
+268            corresponding information fraction, and boundaries (on the p-value scale and
+269            translated to the estimated treatment effect) for efficacy, futility, and harm, with
+270            statements specifying whether boundaries are binding.
+271
+272          — In studies with hypothesis testing of overall survival and multiple endpoints, a
+273            statistical plan for multiple testing should be pre-specified to control the overall
+274            study-wise Type I error rate, including a table of all relevant testing/alpha
+275            spending scenarios listing details for each scenario at each analysis time point.
+276
+277   •   Intercurrent events, such as crossover or subsequent therapy use, can impact the hazard
+278       rate over time, affecting the shape of the survival curve. Sponsors should prespecify the
+279       handling and interpretation of intercurrent events in the SAP. Sponsors should consider
+280       the following:
+281
+282          — Assessment of the timing, pattern, and reason for intercurrent events is important
+283            to determine the potential impact on the assessment of overall survival.
+284
+285          — The baseline characteristics of participants experiencing and not experiencing an
+286            intercurrent event should also be assessed for potential subgroups of participants
+287            more at risk for such events.
+288
+
+
+                                                    7
+                                       Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+
+289                — All-cause mortality should be considered for the primary evaluation of overall
+290                  survival, rather than an endpoint excluding specific causes of death.
+291
+292                — The primary analysis should include all survival information, including survival
+293                  times and deaths after subsequent therapy (i.e., a treatment policy approach within
+294                  the estimand framework).
+295
+296                — Alternative strategies to handle certain intercurrent events may be justified.
+297                  Note that strategies to handle intercurrent events should be supported by a
+298                  rationale for the plausibility of the underlying assumptions (such as non-
+299                  informative censoring).
+300
+301        •   Sponsors should provide supplementary and/or sensitivity analyses based on different
+302            methods and/or assumptions to inform the evaluation of overall survival and the
+303            robustness of results, particularly if the intercurrent event rate is high, uncertainty is high,
+304            or results are marginal. Appropriate sensitivity analyses should evaluate the robustness of
+305            results, and tipping point analyses could help evaluate how sensitive the observed results
+306            are to various assumptions. Supplementary analyses should target different estimands and
+307            can provide supportive information regarding overall survival.
+308
+309                — If non-proportional hazards are anticipated, sponsors should specify in the SAP
+310                  additional sensitivity analyses to evaluate the robustness of the overall survival
+311                  results. Supplementary analyses, such as landmark survival rates, restricted mean
+312                  survival time, or other metrics, should be specified in the SAP and may provide
+313                  supplementary information to further characterize overall survival.
+314
+315                — Sponsors should evaluate narratives and toxicity data to understand the causality
+316                  of deaths, such as if deaths are due to progression or toxicity. Sensitivity analyses
+317                  that account for attribution of the death to treatment can be performed to assess
+318                  the impact of deaths potentially due to causes other than treatment, or other types
+319                  of competing risk analysis can be performed. For example, COVID-related
+320                  mortality may be a concern for some studies. Participants with COVID-19 could
+321                  be more vulnerable to drug risks, and risk of death could be increased on
+322                  treatment. For this reason, COVID-19 deaths should be included in all-cause
+323                  mortality.10 However, a supplementary analysis may be performed where
+324                  COVID-19 deaths are censored.
+325
+326                — Using different approaches to handling subsequent therapy or crossover can
+327                  evaluate different estimands via supplementary analyses. Common approaches
+328                  include evaluating restricted mean survival time or utilizing causal models and
+329                  methods to adjust for treatment switching. However, many of these methods rely
+330                  on unverifiable assumptions and generally are not suitable as the sole or primary
+331                  evaluation of overall survival.
+
+
+       See the guidance for industry, investigators, and IRBs Considerations for the Conduct of Clinical Trials of
+      10
+
+      Medical Products During Major Disruptions Due to Disasters and Public Health Emergencies (September 2023).
+
+                                                            8
+                                      Contains Nonbinding Recommendations
+                                            Draft — Not for Implementation
+
+332
+333            2.      Assessment of Harm
+334
+335        •   To adequately inform regulatory decision-making, any trial should be designed a priori to
+336            adequately capture the number of events needed to rule out harm based on a specified
+337            threshold(s). Sponsors should specify and justify in the SAP a threshold or a range of
+338            thresholds to indicate the potential for harm for the overall survival summary measure.
+339
+340                 — Trials should be designed to collect sufficient overall survival data in order to rule
+341                   out a clinically relevant degree of harm with a pre-specified degree of precision
+342                   (e.g., based on the number of expected overall survival events, the power to rule
+343                   out a pre-specified threshold of harm can be provided). Different scenarios based
+344                   on a variety of plausible assumptions (e.g., varying number of events, overall
+345                   survival effect size, or thresholds for harm) can provide support that the study is
+346                   adequately designed to rule out harm.
+347
+348        •   When determining the pre-specified threshold(s) for harm and proposed degree of
+349            precision to rule out harm, consider the following: disease setting, known safety profile
+350            of the product or drug class, input from patients and physicians, expected number of
+351            events, length of expected survival, duration and severity of expected adverse events, use
+352            of subsequent therapies or crossover, potential for non-proportional hazards, evidence of
+353            benefit from other endpoints, expected benefit of the control, acceptable level of
+354            uncertainty, feasibility of follow-up, and other available data.
+355
+356        •   There are multiple approaches 11 to assess if study data can rule out harm, and the
+357            approach will depend on the degree of precision that is feasible (or degree of uncertainty
+358            that is acceptable) and the overall survival summary measure used. If there is high
+359            uncertainty and/or marginal overall survival results, additional follow-up may be required
+360            and may be the only reliable way to adequately assess harm. In cases where a study is not
+361            designed to test for overall survival superiority, uncertainty in the estimate of the overall
+362            survival HR is expected, and there may still be uncertainty even with long-term data
+363            collection in diseases with long survival times.
+364
+365                 — When the sponsor expects that sufficiently mature overall survival data will be
+366                   collected or the study is designed to demonstrate superiority of overall survival,
+367                   one option that can be used is to evaluate if a 95% confidence interval for the
+368                   overall survival HR excludes a clinically relevant threshold. The threshold should
+369                   be justified, and the study should be designed to estimate the overall survival HR
+370                   with a sufficient degree of precision.
+371
+
+
+
+
+      11
+        Rodriguez LR, Gormley NJ, Lu R, Amatya AK, Demetri GD, Flaherty KT, Mesa RA, Pazdur R, Sekeres MA,
+      Shan M, Snapinn S, Theoret MR, Umoja R, Vallejo J, Warren NJH, Xu Q, and Anderson KC, 2024, Improving
+      Collection and Analysis of Overall Survival Data, Clin Cancer Res, 30(18):3974-3982, doi: 10.1158/1078-
+      0432.CCR-24-0919.
+
+                                                           9
+                                 Contains Nonbinding Recommendations
+                                       Draft — Not for Implementation
+
+372            — In cases where a study is not designed to test for overall survival superiority, there
+373              may be high uncertainty in the estimate of the overall survival HR. In this case,
+374              one or more pre-specified thresholds greater than or equal to 1 can be used.
+375              Assessment of harm can be based on the point estimate of the overall survival HR
+376              or the confidence interval for the HR at a pre-specified level (e.g., 90%) excluding
+377              the threshold. Another approach may be via a Bayesian decision rule, if an
+378              effective sample size has been pre-specified for safety evaluation purposes.
+379
+380            — If the sponsor anticipates that overall survival data will be immature or there will
+381              be high uncertainty in the overall survival summary measures at the time of the
+382              proposed final analysis, sponsors should conduct additional calculations or
+383              simulations to assess if it is likely that harm may be ruled out with additional
+384              follow-up time (which may or may not be feasible). Various methodologies can be
+385              used to calculate the probability of ruling out harm based on observing
+386              hypothetical future data. Sponsors should specify in the SAP approaches to rule
+387              out harm under a variety of scenarios, justification of methods, and justification of
+388              assumptions (including the assumption of observing additional events over a
+389              specified time period). Sponsors should include a variety of assumed scenarios for
+390              future data. However, the uncertainty in these methods generally increases for
+391              longer looks into the future, and evaluation of harm cannot solely be based on
+392              hypothetical future data.
+393
+394       3.      Post Hoc Analyses
+395
+396   •   Sponsors can conduct post hoc analyses to supplement their pre-specified analyses. Post
+397       hoc analyses of overall survival can provide additional insight into the potential for harm.
+398
+399   •   For studies lacking pre-specification of overall survival analyses (as recommended in this
+400       guidance), analysis of overall survival should still be performed. In this case, sponsor
+401       should perform additional supplementary analyses and simulations to investigate the
+402       robustness of results under diverse assumptions.
+403
+404   •   Post hoc thresholds for harm can be based on similar considerations for a pre-specified
+405       threshold; however, in the post hoc setting, multiple measures that reflect the full survival
+406       distribution should be considered, including the overall survival HR, and multiple
+407       credible thresholds, or grid of thresholds should be explored under a variety of scenarios.
+408       However, it may not be possible to detect harm based on studies not adequately designed
+409       to assess overall survival.
+410
+411   •   There are several caveats regarding assessment of overall survival in the post hoc setting,
+412       including:
+413
+414            — FDA considers post hoc analyses exploratory and suitable for hypothesis
+415              generation but not suitable for statistical testing with alpha allocation.
+416
+
+
+
+                                                    10
+                                    Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+
+417               — It is not possible to determine if bias is introduced when retrospectively selecting
+418                 statistical approaches to analyze overall survival or when selecting approaches to
+419                 evaluate harm.
+420
+421               — Summary measures may have high uncertainty if based on immature or limited
+422                 data, making the assessment of harm unreliable.
+423
+424               — Summary measures may also have high uncertainty if there was extensive
+425                 crossover, non-proportional hazards, or other potential confounding factors not
+426                 considered and accounted for at the time of study design, making the assessment
+427                 of harm unreliable.
+428
+429               — The level of data maturity based on the observed number of events may not be
+430                 well-defined if the trial was not prospectively designed to assess overall survival.
+431
+432               — Post hoc evaluation of intercurrent events is likely to be unreliable. Sponsors
+433                 should assess the impact of multiple alternative intercurrent event strategies if
+434                 they were not pre-specified.
+435
+436          C.      Subgroup Considerations
+437
+438   This section includes considerations for evaluation of overall survival in subgroups. Based on
+439   prior information, there may be known subgroups of patients where the overall survival effect
+440   may be expected to vary across subgroups, such as biomarker-defined subgroups or populations
+441   vulnerable to adverse events. When those subgroups are not identified a priori in the study
+442   protocol or SAP, FDA considers subsequent analyses of these subgroups to be post hoc.
+443
+444      •   Known or biologically plausible subgroups should be prospectively identified in a study,
+445          and a plan for adequate overall survival data collection within the subgroups should be
+446          pre-specified. This includes provisions for extended follow-up periods to enable a robust
+447          evaluation.
+448
+449      •   Depending on the intended use, analyses of overall survival in subgroups can be
+450          exploratory and need not be alpha-controlled; however, these analyses should be pre-
+451          specified.
+452
+453               — Pre-specified analyses should include subgroup analyses by demographic
+454                 characteristics (age, sex, race, and ethnicity), region, and anticipated prognostic or
+455                 predictive characteristics or biomarkers.
+456
+457               — Sponsors should account in the study design for subgroups known to potentially
+458                 experience differential treatment effects on survival, and analyses of these
+459                 subgroups should be pre-specified. The importance of enrolling subgroups of
+460                 sufficient size and conducting formal hypothesis tests for overall survival within
+461                 these subgroups depends on the expected difference in survival or potential for
+
+
+
+                                                       11
+                                Contains Nonbinding Recommendations
+                                      Draft — Not for Implementation
+
+462              harm in each subgroup, and the expected contribution of each subgroup to the
+463              entire overall survival treatment effect.
+464
+465          — Additionally, if there are known subgroups and potential for using the overall
+466            survival subgroup results for labeling purposes, pre-specified study-wise control
+467            of Type I error is strongly recommended for hypothesis testing within these
+468            subgroups (and for all primary and key secondary analyses).
+469
+470   •   The following should be included in the study protocol when designing a trial with where
+471       the overall survival effect is expected to vary across pre-specified subgroups:
+472
+473          — Biological or mechanistic rationale for expected differential treatment effects on
+474            survival based on subgroups;
+475
+476          — Anticipated survival benefit or detriment, within each of the subgroups;
+477
+478          — Expected contribution of the subgroups to the overall treatment effect;
+479
+480          — Prevalence and plans for adequate enrollment of patients in subgroups;
+481
+482          — Feasibility of and justification for any planned stratified randomization for
+483            prognostic or predictive subgroups;
+484
+485          — Comprehensive analysis plan for the subgroups, detailing objectives of each
+486            planned overall survival analysis (whether for safety or efficacy), and pre-
+487            specified thresholds for harm;
+488
+489          — If a formal hypothesis test for overall survival is planned within subgroups, the
+490            number of events that would be required to detect a clinically meaningful
+491            difference in survival in each of the subgroups.
+492
+493   •   Subgroup results should be interpreted with caution, especially if overall survival data are
+494       immature or analyses were conducted post hoc. Findings based on subgroups defined
+495       post hoc or post hoc analyses of pre-specified subgroups may result from random patterns
+496       and are considered hypothesis generating, not evidence of benefit. However, such
+497       findings may be sufficient to raise safety concerns, warranting further investigation.
+498
+499          — There should be consistent results across subgroups, any observed differences
+500            should be further evaluated (i.e., additional post hoc analyses should be
+501            conducted).
+502
+
+
+
+
+                                                   12
+                                      Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+503                 — Subgroup results cannot be used to salvage a trial that was not successful based on
+504                   evaluation of the overall ITT population. 12
+505
+506                 — Subgroup analyses indicating potential detrimental overall survival could result in
+507                   halting the trial, indication restrictions, or post-marketing requirements.
+508
+509        •   If there is a known subgroup with potentially poor survival, this subgroup may be
+510            excluded from enrollment if there is sufficient prior knowledge that these patients would
+511            not benefit from the therapy. Alternatively, if these patients are included in the trial, early
+512            interim subgroup analyses should be pre-specified to mitigate concern for potential harm,
+513            particularly in cases where patients require longer term therapy and where there is
+514            expected to be a sufficient number of events in the subgroup.
+515
+516        •   In addition to pre-specified subgroup analyses, additional post hoc analyses to explore
+517            relevant subgroups can be used to investigate any safety concerns in a successful trial.
+518
+519                 — Sponsors should identify any post hoc subgroups that appear to benefit the most,
+520                   explore any subgroups that appear to lack benefit, evaluate potential overall
+521                   survival detriment in any subgroups, and explore subgroups identified from data
+522                   external to the trial (if applicable). Sponsors should include a justification for
+523                   identification of any post hoc subgroups, including clinical relevance.
+524
+525                 — Post hoc analyses of subgroups can include investigation of whether there is
+526                   repeated evidence of overall survival detriment in the same subgroup from other
+527                   trials using the same product or class of product.
+528
+529                 — Also see Post Hoc Analyses recommendations in Section III.B.3.
+530
+531            D.      Regulatory Considerations
+532
+533        •   Benefit-Risk Determination
+534
+535                 — If the trial is intended to support a regulatory submission, the SAP should specify
+536                   that at the time of the primary analysis of the primary endpoint (if the primary
+537                   endpoint is not overall survival), an analysis of overall survival will be conducted
+538                   to assess the potential for harm.
+539
+540                 — Overall survival data may not be mature at the time of an early interim analysis,
+541                   but an assessment of the available overall survival data is important in the
+542                   determination of the benefit-risk profile. Sponsors should contextualize the
+
+
+
+      12
+        Amatya AK, Fiero MH, Bloomquist EW, Sinha AK, Lemery SJ, Singh H, Ibrahim A, Donoghue M, Fashoyin-Aje
+      LA, de Claro RA, Gormley NJ, Amiri-Kordestani L, Sridhara R, Theoret MR, Kluetz PG, Pazdur R, Beaver JA, and
+      Tang S, 2021, Subgroup Analyses in Oncology Trials: Regulatory Considerations and Case Examples, Clin Cancer
+      Res, 27(21):5753-5756.
+
+                                                           13
+                                          Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+
+543                       available overall survival information and feasibility of obtaining additional
+544                       overall survival data to inform regulatory decision-making.
+545
+546          •   Accelerated Approval
+547
+548                  — The accelerated approval pathway is intended for drugs that address an unmet
+549                    medical need in the treatment of a serious or life-threatening disease or condition.
+550                    Specifically, FDA can approve a marketing application on the basis of, among
+551                    other things, adequate and well-controlled clinical trials establishing that the drug
+552                    product has an effect on a surrogate endpoint that is reasonably likely to predict
+553                    clinical benefit, or on an intermediate clinical endpoint that can be measured
+554                    earlier than irreversible morbidity or mortality that is reasonably likely to predict
+555                    an effect on irreversible morbidity or mortality or other clinical benefit, taking
+556                    into account the severity, rarity, or prevalence of the condition and the availability
+557                    or lack of alternative treatments. 13,14,15
+558
+559                  — Often in oncology, accelerated approval is based on a clinical trial that evaluated
+560                    response rate or another intermediate clinical endpoint (e.g., progression-free
+561                    survival, etc.).
+562
+563                  — If there is significant uncertainty in the overall survival results, but efficacy is
+564                    supported by an intermediate clinical endpoint, accelerated approval may be the
+565                    most appropriate approval pathway. Traditional approval can then be considered
+566                    at a later time when there are sufficiently robust and interpretable overall survival
+567                    results available.
+568
+569          •   Postmarketing Requirements or Postmarketing Commitments
+570
+571                  — FDA may require a sponsor to conduct postapproval studies or clinical trials as a
+572                    postmarketing requirement (PMR) where the statutory criteria are met 16, or FDA
+573                    may enter into a written agreement with the sponsor to collect postapproval data
+574                    as a postmarketing commitment (PMC).
+575
+
+
+
+
+      13
+           See Section 506(c) of the FD&C Act.
+      14
+           See the guidance for industry Expedited Programs for Serious Conditions – Drugs and Biologics (May 2014).
+      15
+        See the draft guidance for industry Expedited Program for Serious Conditions – Accelerated Approval of Drugs
+      and Biologics (December 2024). When final, this guidance will represent FDA’s current thinking on this topic.
+      16
+         See, e.g., section 505(o)(3) and 506(c) of the FD&C Act. See the guidance for industry Postmarketing Studies and
+      Clinical Trials—Implementation of Section 505(o)(3) of the Federal Food, Drug, and Cosmetic Act (April 2011) and
+      the draft guidance for industry Postmarketing Studies and Clinical Trials-Implementation of 505(o)(3) of the
+      Federal Food, Drug, and Cosmetic Act (October 2019). When final, this guidance will represent FDA’s current
+      thinking on this topic.
+
+                                                               14
+                       Contains Nonbinding Recommendations
+                             Draft — Not for Implementation
+
+576   — If the overall survival data at the time of approval is immature, FDA may require
+577     additional postmarketing overall survival data through a PMR or request such
+578     information through a PMC depending on the situation.
+
+
+
+
+                                          15
+

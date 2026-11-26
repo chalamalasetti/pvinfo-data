@@ -1,0 +1,1932 @@
+    Submitting Patient-
+ Reported Outcome Data in
+   Cancer Clinical Trials
+           Guidance for Industry
+      Technical Specifications Document
+
+
+For questions regarding this technical specifications document, contact
+                  CDER at cder-edata@fda.hhs.gov.
+
+
+
+
+                U.S. Department of Health and Human Services
+                        Food and Drug Administration
+               Center for Drug Evaluation and Research (CDER)
+                     Oncology Center of Excellence (OCE)
+
+
+                               November 2023
+                      Technical Specifications Document
+Revision History
+
+        Date        Version   Summary of Revisions
+    November 2023     1.0        Initial Version
+                                        Contains Nonbinding Recommendations
+
+
+                                                   TABLE OF CONTENTS
+
+
+1.0   Introduction ........................................................................................................................ 1
+  1.1. Purpose ............................................................................................................................ 1
+  1.2. Scope ................................................................................................................................ 2
+  1.3. Relationship to Other Documents................................................................................. 2
+2.0   Relevant Acronyms ............................................................................................................ 3
+3.0   Overview of Dataset Specifications .................................................................................. 4
+  3.1    SDTM Specifications ...................................................................................................... 4
+    3.1.1    Questionnaires Dataset ........................................................................................... 4
+    3.1.2    Trial Summary Dataset .......................................................................................... 7
+  3.2    ADaM Specifications ...................................................................................................... 8
+    3.2.1    General Considerations .......................................................................................... 8
+    3.2.2    Handling of Missing PRO Data and Intercurrent Events ................................. 11
+    3.2.3    ADQS Dataset Structure ...................................................................................... 13
+4.0   Specifications for Tables and Figures ............................................................................ 16
+  4.1    Patient Disposition........................................................................................................ 16
+    4.1.1    Clinical Benefit ...................................................................................................... 16
+    4.1.2    Safety and Tolerability ......................................................................................... 17
+  4.2    PRO Data Completeness .............................................................................................. 18
+    4.2.1    Available Data Rate (Clinical Benefit) ................................................................ 18
+    4.2.2    Completion Rate (Safety and Tolerability)......................................................... 18
+  4.3    Distributions ................................................................................................................. 19
+    4.3.1    Distribution of Responses ..................................................................................... 20
+    4.3.2    Distribution of Change in Responses from Baseline.......................................... 20
+  4.4    Incidence of Healthcare Utilization ............................................................................ 21
+5.0   Appendix ........................................................................................................................... 22
+  5.1    Example SDTM Questionnaires Dataset.................................................................... 22
+  5.2    Example ADaM Questionnaires Analysis Dataset .................................................... 24
+  5.3    Example Tables and Figures ....................................................................................... 27
+    5.3.1    Patient Disposition when Evaluating Clinical Benefit ....................................... 27
+    5.3.2    Patient Disposition when Informing Safety and Tolerability ........................... 29
+    5.3.3    Available Data Rate for Clinical Benefit ............................................................ 31
+    5.3.4    Completion Rate for Safety and Tolerability ..................................................... 33
+    5.3.5    Distribution of Responses ..................................................................................... 35
+    5.3.6    Distribution of Change in Responses from Baseline.......................................... 39
+    5.3.7    Incidence of Healthcare Utilization ..................................................................... 43
+
+
+
+
+                                                                       i
+                                         Contains Nonbinding Recommendations
+
+
+                                                       TABLE OF TABLES
+
+Table 1. Specifications for a Subset of QS Variables ................................................................. 5
+Table 2. Recommended QS Representation of Missing PRO Data .......................................... 6
+Table A1. Example Schedule of Assessments ........................................................................... 22
+Table A2. Subset of Sample QS Dataset ................................................................................... 23
+Table A3. (Part 1) Subset of Sample ADQS Dataset ............................................................... 25
+Table A4. Patient Disposition when Evaluating Clinical Benefit (Denominator =
+Randomized Population) ............................................................................................................ 27
+ Figure A1. Patient Disposition when Evaluating Clinical Benefit (Denominator =
+Randomized Population) ............................................................................................................ 28
+Table A5. Patient Disposition when Informing the Evaluation of Safety and Tolerability
+(Denominator = Safety Population)........................................................................................... 29
+ Table A6. Available Data Rate for Clinical Benefit (Denominator = Randomized
+Population)................................................................................................................................... 31
+Table A7. Completion Rate for Safety and Tolerability (Denominator = PRO Expected
+Population)................................................................................................................................... 33
+Table A8. Distribution of Categorical Responses for Item 1 (Safety and Tolerability
+Example) ...................................................................................................................................... 35
+Table A9. Summary Statistics for Item 2 with Continuous Response Options (Safety and
+Tolerability Example) ................................................................................................................. 37
+Table A10. Distribution of Change in Response Categories from Baseline for Item 1 (Safety
+and Tolerability Example) ......................................................................................................... 39
+Table A11. Change from Baseline for Item 2 with Continuous Response Options (Safety
+and Tolerability Example) ......................................................................................................... 41
+Table A12. Incidence of Healthcare Utilization (Safety and Tolerability Example where
+Denominator = PRO Expected) ................................................................................................. 43
+
+
+
+
+                                                                        ii
+                                         Contains Nonbinding Recommendations
+
+
+                                                      TABLE OF FIGURES
+
+Figure A1. Patient Disposition when Evaluating Clinical Benefit (Denominator =
+Randomized Population) ............................................................................................................ 28
+Figure A2. Patient Disposition when Informing the Evaluation of Safety and Tolerability
+(Denominator = Safety Population)........................................................................................... 30
+Figure A3. Available Data Rate for Clinical Benefit (Denominator = Randomized
+Population)................................................................................................................................... 32
+Figure A4. Completion Rate for Safety and Tolerability (Denominator = PRO Expected
+Population)................................................................................................................................... 34
+Figure A5. Distribution of Categorical Responses for Item 1 (Safety and Tolerability
+Example where Denominator = PRO Completed)................................................................... 36
+Figure A6. Descriptive Means for Item 2 with Continuous Response Options (Safety and
+Tolerability Example for Physical Functioning) ..................................................................... 38
+Figure A7. Distribution of Change in Response Categories from Baseline for Item 1 (Safety
+and Tolerability Example where Denominator = PRO Completed) ...................................... 40
+Figure A8. Change from Baseline for Item 2 with Continuous Response Options (Safety
+and Tolerability Example) ........................................................................................................ 42
+
+
+
+
+                                                                       iii
+                                 Contains Nonbinding Recommendations
+
+
+                    Submitting Patient-Reported Outcome Data
+                             in Cancer Clinical Trials
+
+                                   Guidance for Industry
+                             Technical Specifications Document1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+1.0      INTRODUCTION
+
+         1.1.     Purpose
+
+This document provides technical specifications for submitting patient-reported outcome (PRO)
+data collected in cancer clinical trials to support a marketing application for a medical product in
+oncology, where a PRO is a type of clinical outcome assessment (COA) used to collect patient
+experience data.2 The FDA Patient-Focused Drug Development (PFDD) Glossary defines a PRO
+as a measurement based on a report that comes directly from the patient (i.e., study subject)
+about the status of a patient's health condition without interpretation of the patient’s response by
+a clinician or anyone else, where a PRO can be measured by self-report or by interview, provided
+that the interviewer records only the patient’s response.3 This technical specifications document
+supplements FDA’s draft guidance for industry Core Patient-Reported Outcomes in Cancer
+Clinical Trials (June 2021)4 and the PFDD Guidance series.5
+
+
+
+
+1
+  This guidance has been prepared by the Office of Biostatistics in the Center for Drug Evaluation and Research at
+the Food and Drug Administration. You may submit comments on this guidance at any time. Submit comments to
+Docket No. FDA-2018-D-1216 (available at https://www.regulations.gov/docket?D=FDA-2018-D-1216) (see the
+instructions for submitting comments in the docket).
+2
+  21st Century Cures Act section 3001. More information on patient experience data within section 3001 is available
+at: https://www.congress.gov/114/plaws/publ255/PLAW-114publ255.pdf.
+3
+  More information is available at FDA’s PFDD Glossary web page: https://www.fda.gov/drugs/development-
+approval-process-drugs/patient-focused-drug-development-glossary and at the FDA-NIH BEST web page:
+https://www.ncbi.nlm.nih.gov/books/NBK338448/def-item/glossary.patientreported-outcome/.
+4
+  When final, this guidance will represent the FDA’s current thinking on this topic. For the most recent version of a
+guidance, check the FDA guidance web page at https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+5
+  More information is available at FDA’s PFDD Guidance web page: https://www.fda.gov/drugs/development-
+approval-process-drugs/fda-patient-focused-drug-development-guidance-series-enhancing-incorporation-patients-
+voice-medical.
+
+                                                          1
+                               Contains Nonbinding Recommendations
+
+
+        1.2.     Scope
+
+This document provides specifications for the submission of Clinical Data Interchange Standards
+Consortium (CDISC) Study Data Tabulation Model (SDTM) and Analysis Data Model (ADaM)
+datasets and specifications for recommended tables and figures. These technical specifications
+aim to provide general guidelines for (1) standardized dataset content and structure and (2)
+recommended tables and figures to facilitate FDA review of the marketing application that the
+submitted data and analysis outputs are intended to support. The SDTM and ADaM
+specifications outlined in section 3.0 Overview of Dataset Specifications are not prescriptive and
+do not include an exhaustive list of all datasets, variables, and controlled terminologies to be
+submitted for FDA review. Further, the recommended tables and figures do not comprise all
+information needed to support FDA review of a marketing application. The dataset specifications
+and specifications for tables and figures are pursuant to discussions with FDA and may vary by
+clinical drug development program and clinical trial therein. These specifications are intended to
+be applicable to any PRO data used to inform the evaluation of (1) safety and tolerability or (2)
+clinical benefit in randomized studies (i.e., improvement in disease symptoms) within a cancer
+clinical trial.
+
+This document does not pertain to submissions needed to support FDA review of the PRO
+measure itself or the proposed interpretation and use of scores generated by the PRO measure
+within the context of a specific clinical trial. Agreement on the PRO measure(s) used to collect
+study data and analyses of the resulting PRO data should be discussed with FDA as early as
+possible in a medical product development program, for example, prior to trial initiation.
+Sponsors are strongly encouraged to use the resources described in section 1.3 Relationships to
+Other Documents and to seek Agency input for confirmation and clarification as needed.
+Sponsors should consult with the Agency to determine which requested displays defined in
+section 4.0 Specifications for Tables and Figures apply to the PRO measure used within the
+marketing application. Lastly, although this guidance focuses on PRO measures, some of these
+recommendations may be relevant to other COAs (i.e., clinician-reported, observer-reported, and
+performance outcome measures) in cancer clinical trials.
+
+        1.3.     Relationship to Other Documents
+
+These technical specifications have been drafted in accordance with the business rules and
+assumptions outlined in the CDISC SDTM,6 the SDTM Implementation Guide (SDTMIG),7 the
+ADaM8, and the ADaM Implementation Guide (ADaMIG). As new versions of the models and
+implementation guides become available, these technical specifications may be updated
+accordingly to maintain alignment. In addition, the FDA Study Data Technical Conformance
+Guide (sdTCG)9 provides general specifications and recommendations for submitting datasets
+
+
+
+
+6
+  More information is available at CDISC’s SDTM web page: https://cdisc.org/standards/foundational/sdtm.
+7
+  More information is available at CDISC’s SDTMIG web page: https://cdisc.org/standards/foundational/sdtmig.
+8
+  More information is available at CDISC’s ADaM web page: https://cdisc.org/standards/foundational/adam.
+9
+  More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+
+                                                       2
+                                 Contains Nonbinding Recommendations
+
+
+using the SDTM and ADaM standards. Sponsors should review the FDA Data Standards
+Catalog10 to ensure data submissions follow FDA-supported standards.
+
+In addition, sponsors should reference the following:
+
+•     Draft guidance for industry Core Patient-Reported Outcomes in Cancer Clinical Trials (June
+      2021)11
+
+•     FDA PFDD Guidance series12
+
+•     Guidance for industry E9(R1) Statistical Principles for Clinical Trials Addendum: Estimands
+      and Sensitivity Analysis in Clinical Trials (May 2021)
+
+•     CDISC Controlled Terminology13
+
+•     CDISC Questionnaires, Ratings and Scales (QRS) Supplements and CDISC QRS Resources,
+      which includes QRS Naming and Business Rules14
+
+
+2.0       RELEVANT ACRONYMS
+
+    Abbreviation   Description
+    ADaM           Analysis Data Model
+    ADaMIG         Analysis Data Model Implementation Guide
+    ADRG           Analysis Data Reviewer’s Guide
+    AE             Adverse Event
+    BEST           Biomarkers, EndpointS, and other Tools
+    BDS            Basic Data Structure
+    CAT            Computerized Adaptive Testing
+    CDISC          Clinical Data Interchange Standards Consortium
+    CDER           Center for Drug Evaluation and Research
+    COA            Clinical Outcome Assessment
+    CRF            Case Report Form
+    cSDRG          Clinical Study Data Reviewer’s Guide
+    CSR            Clinical Study Report
+    FDA            Food and Drug Administration
+    INV            Investigator
+    IRC            Independent Review Committee
+    NCI EVS        National Cancer Institute Enterprise Vocabulary Services
+    NIH            National Institutes of Health
+
+10
+   More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+11
+   When final, this guidance will represent the FDA’s current thinking on this topic.
+12
+   More information is available at FDA’s PFDD Guidance series web page:
+https://www.fda.gov/drugs/development-approval-process-drugs/fda-patient-focused-drug-development-guidance-
+series-enhancing-incorporation-patients-voice-medical.
+13
+   More information is available at NCI’s web page: https://datascience.cancer.gov/resources/cancer-
+vocabulary/cdisc-terminology.
+14
+   More information is available at CDISC’s QRS web page: https://cdisc.org/standards/foundational/qrs.
+
+                                                         3
+                                Contains Nonbinding Recommendations
+
+ Abbreviation    Description
+ PFDD            Patient-Focused Drug Development
+ PRO             Patient-Reported Outcome
+ QRS             Questionnaires, Ratings and Scales
+ SAP             Statistical Analysis Plan
+ sdTCG           Study Data Technical Conformance Guide
+ SDTM            Study Data Tabulation Model
+ SDTMIG          Study Data Tabulation Model Implementation Guide
+                 Setting International Standards in Analyzing Patient-Reported Outcomes and Quality of Life
+ SISAQOL
+                 Endpoints
+
+
+
+3.0     OVERVIEW OF DATASET SPECIFICATIONS
+
+Dataset specifications detail the CDISC datasets that are used to support PRO data tabulation and
+analyses in cancer clinical trials. Sponsors should implement the CDISC SDTM standard when
+submitting clinical tabulation data and the CDISC ADaM standard when submitting analysis
+data. This section supplements existing guidance by providing specifications for submitting PRO
+data collected in cancer clinical trials but does not cover all data to be submitted for a clinical
+trial. As documented in the FDA sdTCG,15 both SDTM and ADaM datasets should be
+accompanied by informative metadata provided in a compliant data definition file (i.e., Define-
+XML) and are expected to be accompanied by a Clinical Study Data Reviewer’s Guide (cSDRG)
+and an Analysis Data Reviewer’s Guide (ADRG), respectively. Standard CDISC Controlled
+Terminology16 developed and maintained by CDISC, and National Cancer Institute Enterprise
+Vocabulary Services (NCI EVS) should be used where applicable, and codelists may be
+extensible by adding controlled terminology that is not previously defined. Sponsor-extended
+codelists and use of alternate (e.g., non-CDISC or sponsor-defined) terminologies should be
+indicated in the study metadata (e.g., Define-XML file, cSDRG). In addition, software programs
+used to create ADaM datasets and analyze PRO data should be submitted with the marketing
+application for FDA review.
+
+        3.1      SDTM Specifications
+
+This section details the SDTM specifications for (1) PRO data submitted within the
+Questionnaires (QS) dataset and (2) the Trial Summary (TS) dataset.
+
+                 3.1.1    Questionnaires Dataset
+
+PRO data should be tabulated using the SDTM QS domain specifications. For select measures,
+CDISC publishes QRS Supplements17 that provide guidance on representing named COA
+measures in the SDTM. CDISC also provides submission values within the controlled
+terminology related to named COA measures. These resources should be consulted for guidance
+on a PRO measure, in addition to the guidance provided in the SDTM and SDTMIG.
+15
+   More information is available at FDA’s Study Data Standards Resources web page:
+https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+16
+   More information is available at NCI’s web page: https://datascience.cancer.gov/resources/cancer-
+vocabulary/cdisc-terminology.
+17
+   More information is available at CDISC’s QRS web page: https://cdisc.org/standards/foundational/qrs.
+
+                                                        4
+                                 Contains Nonbinding Recommendations
+
+
+
+                           3.1.1.1 General Considerations
+
+The QS dataset tabulates the PRO data as collected for individual patients at distinct assessment
+timepoints. The subset of standard QS variables in Table 1 is included to clarify how variables
+should be completed for PRO measures used in oncology studies to foster consistency and
+standardization across industry. An example QS dataset is provided in Appendix 5.1.
+
+Table 1. Specifications for a Subset of QS Variables
+ Variable          Variable
+                                    Type     Comments
+ Name              Label
+ QSCAT             Category of      Char     The measure name and version number should be provided within
+                   Question                  QSCAT. Controlled Terminology should be implemented if
+                                             applicable; if not, QSCAT should be constructed according to CDISC
+                                             QRS Naming and Business Rules. The most common name that the
+                                             measure is known by should be used, which can either be the
+                                             complete name of the measure or an acronym.
+ QSTESTCD          Question         Char     A topic variable for QS and short name for the value in QSTEST.
+                   Short Name                Controlled Terminology should be implemented if applicable; if not,
+                                             construct according to CDISC QRS Naming and Business Rules.
+                                             QSTESTCD should begin with a short code for the PRO measure
+                                             followed by the item number (e.g., ABC01). In the case where item
+                                             numbers are absent, sequential numbers starting with 01 should be
+                                             used and can be shortened to 1 to accommodate the eight-character
+                                             limit for values of QSTESTCD.
+ QSTEST            Question         Char     This is the name of the item or, if applicable, the source data
+                   Name                      summary score18 used to obtain the measurement or finding. QSTEST
+                                             should start with a short code for the measure followed by a hyphen
+                                             and a brief description. Controlled Terminology should be
+                                             implemented if applicable; if not, construct according to CDISC QRS
+                                             Naming and Business Rules. If QSTEST is > 40 characters in length,
+                                             put meaningful text in QSTEST and describe the full-text in the study
+                                             metadata (e.g., the annotated Case Report Form (CRF), the cSDRG,
+                                             or the Define-XML).
+
+                                             For each patient and assessment timepoint where the PRO measure is
+                                             planned to be administered per the protocol-defined schedule of
+                                             assessments, a record should be provided for each item or source data
+                                             summary score within the measure, including records for measures
+                                             not administered to the patient (See section 3.1.1.2 Handling of
+                                             Missing PRO Data and section 3.1.1.3 Handling of PRO Data Not
+                                             Collected due to Skip Logic or Computerized Adaptive Testing).
+ QSSTAT            Completion       Char     This is populated as ‘NOT DONE’ when an item score (response) or
+                   Status                    source data summary score is empty/null. QSSTAT is empty/null if a
+                                             value exists in QSORRES.
+ QSREASND          Reason Not       Char     This is used in conjunction with QSSTAT when QSSTAT = ‘NOT
+                   Performed                 DONE’ to describe why an item score or source data summary score
+                                             is empty/null (See section 3.1.1.2 Handling of Missing PRO Data and
+                                             section 3.1.1.3 Handling of PRO Data Not Collected due to Skip
+                                             Logic or Computerized Adaptive Testing).
+
+18
+  Source data summary scores are summary scores (e.g., total scores, subscale scores) that are source data (e.g.,
+data reported within a CRF) and are submitted in the QS dataset.
+
+                                                          5
+                                   Contains Nonbinding Recommendations
+
+
+Additional Considerations:
+
+Additional source data captured should be submitted either as additional rows with relevant
+QSTEST and QSTESTCD values within the QS dataset or within a Supplemental Questionnaires
+(SUPPQS) dataset. Additional content is dependent on the PRO measure administered, and if
+needed for analysis, should be copied into the applicable ADaM dataset. Example content
+captured within SUPPQS for each patient and assessment timepoint includes:
+
+•      Data Collection Mode: The mode of data collection used in the administration of the PRO
+       measure, if differing from the protocol and/or varying across patients, assessment timepoints,
+       or sites (e.g., clinical trial site, home). Examples of data collection mode may include paper-
+       based administration, handheld electronic device, computer web-based application, or
+       telephone-based administration.
+
+•      Data Collector: In cases where the measure is not self-administered (i.e., not independently
+       completed by the patient without any assistance), the individual administering the PRO
+       measure to the patient (e.g., caregiver, study staff member) by reading items to the patient
+       and/or recording the patient’s responses.
+
+•      Language: The language in which the measure was administered to the patient.
+
+                             3.1.1.2 Handling of Missing PRO Data
+
+Understanding the reasons for and prevalence of missing PRO data are critical to support FDA
+review and regulatory decision-making. Missing PRO data should be represented within the QS
+dataset with the reason for missingness captured under ‘Reason Not Performed’ (QSREASND).
+The QS dataset should include one record per item per PRO measure per patient per assessment
+timepoint, regardless of whether an item response is missing. When applicable, the QS dataset
+should also include one row per source data summary score per PRO measure per patient per
+assessment timepoint, regardless of whether the source data summary score is missing. Table 2
+provides scenario-specific recommendations for displaying PRO data that are missing at a
+planned (i.e., per protocol) assessment timepoint. Appendix 5.1 demonstrates scenarios for
+representing missing data within the QS dataset. CDISC QRS Supplements19 provide additional
+guidance on modeling missing data for named COA measures in SDTM datasets, including the
+modeling of timing variables.
+
+Table 2. Recommended QS Representation of Missing PRO Data
+    Scenario                                Recommended Representation in QS Dataset
+    The patient did not respond to an       The row for the missing item response should include:
+    item administered within a PRO          • QSSTAT = ‘NOT DONE’
+    measure.                                • QSREASND contains the reason the patient did not respond if
+                                              known/collected. Otherwise, QSREASND is empty/null.
+    A source data summary score cannot      The row for the missing source data summary score should include:
+    be calculated per the scoring           • QSSTAT = ‘NOT DONE’
+    algorithm based on the available item
+
+
+19
+     More information is available at CDISC’s QRS web page: https://cdisc.org/standards/foundational/qrs.
+
+                                                           6
+                                  Contains Nonbinding Recommendations
+
+ Scenario                                Recommended Representation in QS Dataset
+ responses (e.g., due to insufficient    • QSREASND is populated if known/collected (e.g., QSREASND =
+ item response data).                      ‘NOT CALCULABLE’). Otherwise, QSREASND is empty/null.
+
+
+
+ The patient was not administered the    The row for each missing item response and source data summary score
+ PRO measure either at an onsite visit   within the measure should include:
+ attended by the patient or at a         • QSSTAT = ‘NOT DONE’
+ planned (per protocol) offsite PRO      • QSREASND contains the reason the measure was not administered if
+ assessment timepoint.                     known/collected. Examples include, but are not limited to, patient was
+                                           physically unable to complete the PRO measure due to adverse event,
+                                           patient refusal, patient did not provide, study site failed to administer or
+                                           other site staff error, or technological problems with a PRO
+                                           administered electronically.
+ The patient did not attend an onsite    The row for each missing item response and source data summary score
+ visit and the PRO measure is only       within the measure should include:
+ administered onsite.                    • QSSTAT = ‘NOT DONE’
+                                         • QSREASND contains the reason the patient did not attend the visit if
+                                           known/collected. Examples include, but are not limited to, patient was
+                                           unable to attend a scheduled trial visit due to hospitalization.
+
+                           3.1.1.3 Handling of PRO Data Not Collected due to Use of Skip Logic or
+                                   Computerized Adaptive Testing
+
+Separate from missing data, PRO data may not be collected from the patient due to the use of
+skip logic or computerized adaptive testing to administer PRO items. When implemented, skip
+logic may be created based on the response to certain items. When the patient is not administered
+an item within a PRO measure due to the use of skip logic, the representation in the QS dataset
+should follow the guidance provided in the sdTCG.
+
+Computerized adaptive testing (CAT) refers to a sequential form of individual testing
+administered by a computer in which successive items in the measure are selected for
+administration based primarily on the item’s psychometric properties and content in relation to
+the patient’s responses to previous items.20 When the patient was not administered an item from
+an item bank (i.e., the total set of items from which a subset is selected for the patient during
+adaptive testing) for a PRO measure due to the use of CAT, a row for each remaining
+unadministered item within the item bank should not be included within the QS dataset. Rather,
+only the administered items for CAT-administered measures should be submitted within the QS
+dataset.
+
+                  3.1.2    Trial Summary Dataset
+
+Data related to the trial summary should be stored in the TS dataset. Of particular interest to
+FDA is the frequency with which these technical specifications are used to create and submit
+
+
+20
+ American Educational Research Association, American Psychological Association, National Council on
+Measurement in Education, 2014, The Standards for Educational and Psychological Testing, Washington (DC):
+American Educational Research Association Publications.
+
+                                                         7
+                              Contains Nonbinding Recommendations
+
+
+trial data. Per the FDA sdTCG, sponsors may include the following parameter and associated
+value in the TS dataset to indicate that these technical specifications were used for the study:
+
+•     TSPARAMCD = ‘FDATCHSP’
+•     TSPARAM = ‘FDA Tech Spec’
+•     TSVAL = ‘Oncology PROs Technical Specifications Guidance v1.0’
+
+         3.2    ADaM Specifications
+
+This section provides specifications for the ADaM dataset containing analysis-ready PRO data
+(referenced in this document as the ‘ADQS’ dataset), which are derived from PRO data in the
+SDTM QS dataset discussed in section 3.1.1 Questionnaires (QS) Dataset in conjunction with
+other SDTM and ADaM data.
+
+                3.2.1   General Considerations
+
+The ADQS dataset described in this section follows the ADaM Basic Data Structure (BDS). In
+addition to variables for treatment assignment, stratification, subgrouping, and other covariates
+needed for analysis, the ADQS dataset should contain all individual item scores and summary
+scores (e.g., subscale scores, total scores, other composite or index scores). Table 3 contains
+specifications for a subset of ADQS variables, some of which are standard variables (included
+here to clarify how they should be completed for PRO measures used in oncology studies to
+foster consistency and standardization across industry as well as traceability) and some of which
+are newly defined. Table 3 does not include all ADQS variables to be submitted, such as timing
+and treatment variables. An example ADQS dataset is provided in Appendix 5.2.
+
+Table 3. Specifications for a Subset of ADQS Variables
+    Variable
+                 Variable Label    Type    Comments
+    Name
+    PARCATy      Parameter         Char    PARCAT1: The measure name(s) and version(s) should be
+                 Category y                provided within PARCAT1 for each item and summary score
+                                           provided in PARAM to differentiate between PRO measures
+                                           administered during the study. The measure name may match
+                                           the value stored in the variable QS.QSCAT from the input
+                                           SDTM QS dataset.
+                                           Additional PARCATy variables: As demonstrated within
+                                           section 3.2.3 ADQS Dataset Structure, the recommended
+                                           number of PARCATy variables and their corresponding values
+                                           differ based on the PRO measure and the number of summary
+                                           scores calculated.
+    PARAM        Parameter         Char    The description of the analysis parameter (e.g., individual item
+                                           or summary score). The value of PARAM may match the value
+                                           stored in QS.QSTEST for parameters existing in the input
+                                           SDTM QS dataset. Individual parameters are needed for each
+                                           summary score. Documentation for derived parameters should
+                                           be provided in submitted study metadata (e.g., the Define-XML
+                                           file and the ADRG).
+
+
+
+                                                  8
+                          Contains Nonbinding Recommendations
+
+Variable
+           Variable Label       Type   Comments
+Name
+PARAMCD    Parameter Code       Char   The short name of the analysis parameter in PARAM. The value
+                                       of PARAMCD may match the values stored in QS.QSTESTCD
+                                       for parameters existing in the input SDTM QS dataset.
+AVAL /     Analysis Value /     Num/   The analysis value for each parameter described by PARAM.
+AVALC      Analysis Value (C)   Char   For parameters existing in the input SDTM QS dataset,
+                                       quantitative values used for analysis and captured in AVAL may
+                                       be copied from QS.QSSTRESN, and qualitative values used for
+                                       analysis and captured in AVALC may be copied from
+                                       QS.QSSTRESC. In some cases, it is acceptable to populate
+                                       AVAL for qualitative values. Reference the ADaMIG for details
+                                       around populating AVAL and AVALC. Study metadata should
+                                       describe how the analysis value is calculated for derived
+                                       parameters.
+DTYPE      Derivation Type      Char   Analysis value derivation method. DTYPE must be populated
+                                       with the algorithm or statistical method used when AVAL or
+                                       AVALC has been imputed or derived differently than the other
+                                       analysis values within the parameter. Reference the ADaMIG
+                                       for details around the submission of DTYPE. This document
+                                       utilizes phantom records (i.e., where DTYPE = ‘PHANTOM’)
+                                       to represent missing item scores or summary scores such that
+                                       each patient has the same number of observations (See section
+                                       3.2.2 Handling of Missing PRO Data and Intercurrent Events
+                                       and the examples within Appendix 5.2). Based on the study
+                                       attributes, alternate DTYPE values may be used to handle
+                                       missing data depending on the imputation method(s)
+                                       implemented. When imputation is performed, imputation rules
+                                       are included in the study’s Statistical Analysis Plan (SAP).
+                                       Imputation methods are not specified within this document for
+                                       oncology PROs.
+ONTRTFL    On Treatment         Char   A character indicator variable to specify whether the
+           Record Flag                 observation occurred while the patient was on treatment. This
+                                       flag is strongly recommended within the ADQS dataset to
+                                       denote whether the patient was on treatment during
+                                       administration of the PRO measure at a given assessment
+                                       timepoint.
+ONTRxxFL   On Treatment in      Char   For multi-period studies, a character indicator variable to
+           Period xx Record            specify whether the observation occurred while the patient was
+           Flag                        on treatment for period xx. This flag is strongly recommended
+                                       within the ADQS dataset when multiple periods exist to denote
+                                       whether the patient was on treatment during administration of
+                                       the PRO measure at a given assessment timepoint within period
+                                       xx.
+SCBLFL     Screening Used as    Char   When applicable to include, an indicator variable to specify
+           Baseline Flag               when the baseline record (i.e., the record where ABLFL = ‘Y’)
+                                       is sourced from a Screening assessment timepoint(s) rather than
+                                       from a prespecified baseline assessment timepoint. Clear
+                                       documentation defining the PRO Baseline score should be
+                                       provided within the study metadata.
+PROEXPFL   PRO Expected         Char   An indicator variable to specify whether the PRO parameter
+           Flag                        (e.g., the individual item or summary score reported within a
+                                       row) corresponds to a planned (per protocol) PRO assessment
+                                       timepoint. The type of PRO objective (e.g., clinical benefit vs.
+                                       safety and tolerability) affects whether PROEXPFL is populated
+
+
+                                             9
+                          Contains Nonbinding Recommendations
+
+Variable
+            Variable Label        Type     Comments
+Name
+                                        at a given assessment timepoint (e.g., if PRO data are used to
+                                        evaluate clinical benefit, patients who discontinue from
+                                        treatment may be expected to take the PRO measure and
+                                        PROEXPFL = ‘Y’. ) (See section 4.0 Specifications for Tables
+                                        and Figures and the examples within Appendix 5.2). If PRO
+                                        objectives for both (1) clinical benefit and (2) safety and
+                                        tolerability are present within the same trial, two PRO Expected
+                                        Flag variables should be submitted within the ADQS dataset
+                                        (e.g., PROEX1FL and PROEX2FL) with definitions for each
+                                        variable provided within the study metadata.
+PROSCMFL    PRO Score          Char     An indicator variable to specify whether the PRO item score or
+            Completed Flag              summary score is populated at a planned (per protocol) PRO
+                                        assessment timepoint (i.e., where AVAL or AVALC is not
+                                        empty/null). For example, the indicator value is null for any
+                                        item within the PRO measure where a response is not provided
+                                        by the patient.
+AREASND     Analysis Reason    Char     Describes the reason for missing PRO data. It is recommended
+            Not Performed               that AREASND is populated for records where item score or
+                                        summary score is missing (i.e., where AVAL or AVALC is
+                                        empty/null). The value of AREASND should match the value
+                                        stored in QS.QSREASND when QSREASND is populated in
+                                        the input SDTM QS dataset. When QS.QSREASND is not
+                                        populated, AREASND is populated by another source, when
+                                        available. For example, if the PRO data are used to evaluate
+                                        clinical benefit, AREASND may be populated for phantom
+                                        records using DS.DSDECOD or ADSL.DCTREASP for a
+                                        patient who died or discontinued from treatment, or using
+                                        DM.ACTARM for patients who were randomized but not
+                                        treated (See section 3.2.2 Handling of Missing PRO Data and
+                                        Intercurrent Events and the examples within Appendix 5.2).
+           Variables in ADQS copied from the ADaM ADSL Dataset or Other Datasets
+FPDDT       First Progressive  Num      Date of first progression. Null if no progression occurred for the
+            Disease Date                patient throughout the study. FDA understands that the
+                                        interpretation of progression outcomes can differ between
+                                        independent review committees (IRCs) and site investigators
+                                        (INV). If progression is evaluated by both an IRC and an INV,
+                                        then two First Progressive Disease Date variables are
+                                        recommended for submission (e.g., FPDIRCDT = First
+                                        Progressive Disease as Assessed by IRC Date and FPDINVDT
+                                        = First Progressive Disease as Assessed by INV Date). The
+                                        date(s) should align with the study rules outlined in the study
+                                        protocol and the SAP. The interpretation used for the primary
+                                        analysis should be clearly defined within the study metadata.
+DTHDT       Date of Death      Num      Date of patient’s death.
+EOSDT       End of Study Date  Num      Date patient ended the study.
+EOSSTT      End of Study       Char     The patient’s status as of the end of study or data cutoff.
+            Status                      Examples: COMPLETED, DISCONTINUED, ONGOING.
+DCSREAS     Reason for         Char     Reason for a patient’s discontinuation from study, if applicable.
+            Discontinuation             Null for patients who completed the study.
+            from Study
+EOTDT       Date of Treatment  Num      Date the patient discontinued from treatment. May equal
+            Discontinuation             EOSDT.
+
+                                                 10
+                                 Contains Nonbinding Recommendations
+
+ Variable
+                   Variable Label        Type     Comments
+ Name
+ EOTSTT            End of Treatment      Char     The patient’s status as of the end of treatment or data cutoff.
+                   Status                         Examples: COMPLETED, DISCONTINUED, ONGOING.
+ DCTREAS           Reason for            Char     Reason for a patient’s discontinuation of treatment, if
+                   Discontinuation of             applicable. This variable represents discontinuation of treatment
+                   Treatment                      in the overall study and not discontinuation of treatment within
+                                                  individual treatment periods; reference the ADaMIG for period-
+                                                  specific discontinuation variables.
+
+ TRTDURD           Total Treatment       Num   Total treatment duration as measured in days.
+                   Duration (Days)
+ TRxxDURD          Treatment Duration Num      For multi-period studies, treatment duration for period xx as
+                   in Period xx (Days)         measured in days.
+ RANDDT            Date of               Num   Date of patient’s randomization.
+                   Randomization
+ RANDFL            Randomized            Char  Indicates whether the patient is included in the randomized
+                   Population Flag             population.
+ SAFFL             Safety Population     Char  Indicates whether the patient is included in the safety
+                   Flag                        population.
+ ITTFL             Intent-To-Treat       Char  Indicates whether the patient is included in the intent-to-treat
+                   Population Flag             population.
+                            Variables in ADQS copied from input SDTM QS Dataset
+ QSSEQ             Sequence Number       Num   Sponsors should include any SDTM variables in the ADQS
+ VISIT             Visit Name            Char  dataset needed to provide traceability to the source SDTM QS
+ VISITNUM          Visit Number          Num   dataset.
+ QSSTAT            Completion Status     Char  Sponsors should include SDTM variables that provide
+ QSREASND          Reason Not            Char  explanations for missing item scores or missing source data
+                   Performed                   summary scores. See Comments for QSSTAT and QSREASND
+                                               provided in Table 1. Specifications for a Subset of QS
+                                               Variables.
+
+                 3.2.2    Handling of Missing PRO Data and Intercurrent Events
+
+As discussed in SDTM section 3.1.1.2 Handling of Missing PRO Data and section 3.1.1.3
+Handling of PRO Data Not Collected due to Skip Logic or Computerized Adaptive Testing,
+understanding the reasons for and prevalence of missing PRO data or PRO data not collected, as
+well as intercurrent events21 occurring during the study, are critical to support FDA review and
+regulatory decision-making. Approaches to represent missing data and intercurrent events within
+the ADQS dataset are provided in section 3.2.2.1 Approaches to Represent Missing Data and
+Intercurrent Events and scenarios to represent missing PRO data and intercurrent events within
+the ADQS dataset are provided in section 3.2.2.2 Scenarios to Represent Missing Data and
+Intercurrent Events which further depend on the PRO objective (i.e., clinical benefit vs. safety
+and tolerability). When provided, the reason for missing PRO data should be distributed across
+all rows for each item score and summary score within the missing PRO measure at each planned
+(per protocol) PRO assessment timepoint. The example provided in Appendix 5.2 illustrates the
+
+
+
+21
+  See the guidance for industry E9(R1) Statistical Principles for Clinical Trials Addendum: Estimands and
+Sensitivity Analysis in Clinical Trials (May 2021). For the most recent version of a guidance, check the FDA
+guidance web page at https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+                                                        11
+                                Contains Nonbinding Recommendations
+
+
+representation of missing data, and the tables and figures requested by the Agency to analyze
+missing data are specified within section 4.0 Specifications for Tables and Figures.
+
+                          3.2.2.1 Approaches to Represent Missing Data and Intercurrent Events
+
+Approaches to represent missing PRO data within the ADQS dataset include:
+
+•    Copying records from the SDTM QS dataset, where QS.QSSTAT = ‘NOT DONE’ and
+     QS.QSREASND is populated with the reason the item(s) and/or summary score(s) are
+     missing, or
+
+•    Deriving new phantom records in the ADQS dataset (e.g., where DTYPE = ‘PHANTOM’).
+
+When QS.QSREASND is populated within the SDTM QS dataset for a record, the value should
+be copied into the ADQS dataset within QSREASND. ADQS.AREASND should be populated in
+the ADQS dataset to indicate the reason the item score or summary score was not done when
+reason is available, including for phantom records. QS.QSSTAT and QS.QSREASND are null
+for phantom records derived in the ADQS dataset, and phantom records should only be derived
+when the row representing the missing item score or source data summary score (if applicable)
+does not exist in the SDTM QS dataset. When phantom records are derived in the ADQS dataset
+for an entire PRO measure, a row should be derived for each item and summary score within the
+PRO measure, with the reason populated in ADQS.AREASND (if known) and distributed across
+all rows.
+
+                          3.2.2.2 Scenarios to Represent Missing Data and Intercurrent Events
+
+When the PRO objective is to evaluate clinical benefit, rows should be represented in the ADQS
+dataset for each item score and summary score within the PRO measure for all randomized
+patients at each planned (per protocol) PRO assessment timepoint, regardless of whether the item
+score or summary score has a value populated. PRO data may be collected for patients after
+intercurrent events such as treatment discontinuation due to disease progression or due to adverse
+event (AE), which is further described within section 4.0 Specifications for Tables and Figures.
+Intercurrent events include “events occurring after treatment initiation that affect either the
+interpretation or the existence of the measurements associated with the clinical question of
+interest. Intercurrent events should be addressed when describing the clinical question of interest
+to precisely define the treatment effect that is to be estimated.”22 If records are not tabulated in
+the QS dataset at each PRO assessment timepoint for the patient, including PRO assessment
+timepoints after an intercurrent event, including a terminal intercurrent event such as death, then
+these records should be derived as phantom records in the ADQS dataset. Since rows are
+represented for all randomized patients, records are also derived for patients who were
+randomized but not treated.
+
+
+
+22
+  See the guidance for industry E9(R1) Statistical Principles for Clinical Trials Addendum: Estimands and
+Sensitivity Analysis in Clinical Trials (May 2021).
+
+
+                                                        12
+                           Contains Nonbinding Recommendations
+
+
+When the PRO objective is to inform the evaluation of safety and tolerability, rows are only
+represented in the ADQS dataset for each item score and summary score within the PRO
+measure for patients where the PRO is expected to be completed at the planned (per protocol)
+PRO assessment timepoints, including rows for patients who are on therapy throughout the study
+and rows for patients at assessment timepoints prior to treatment discontinuation or death. The
+number of PRO assessments to be administered after a patient discontinues treatment should be
+carefully considered and minimized to reduce patient burden. Rationale regarding the number of
+PRO assessments to be administered should be provided, given that the administration of PRO
+measures beyond treatment discontinuation can be challenging in cancer clinical trials. Sponsors
+are strongly encouraged to consult with the Agency to make appropriate determinations. Rows
+would not be created in the ADQS dataset for assessment timepoints after a patient’s death or for
+any PRO assessment timepoints for randomized but not treated patients. When rows are created
+in the ADQS dataset for the applicable patients and assessment timepoints when informing the
+evaluation of safety and tolerability, rows should be created for each item score and summary
+score within the PRO measure, regardless of whether the item score or summary score has a
+value populated.
+
+Regardless of PRO objective, if a patient pauses treatment and does not have records included in
+the QS dataset, these records should be derived as phantom records in the ADQS dataset. In
+addition, there are certain scenarios regardless of PRO objective where the PRO measure is not
+administered to a patient, and missing data rows do not need to be created for the patient in the
+ADQS dataset such as when the PRO measure is not available in the patient’s language.
+
+               3.2.3   ADQS Dataset Structure
+
+Example dataset structures are described below for PRO measures where individual item scores
+are used to calculate at least one summary score and where item scores are analyzed individually.
+
+                       3.2.3.1 Dataset Structure for PRO Measures Where Summary Scores
+                               are Calculated
+
+The preferred dataset structure for PRO measures where individual item scores are used to
+calculate summary scores includes the consistent use of parameter category variables (e.g.,
+PARCAT1, PARCAT2) to allow for the easy identification of each measure, score, and item.
+The scenarios below within Tables 4-7 illustrate how categorical variables are recommended for
+use based on the complexity of relationships between items, subscales, and higher-level scales
+within the PRO measure.
+
+As described within Table 3: Specifications for a Subset of ADQS Variables, PARCAT1 reports
+the PRO measure name and version. PARCAT2 is created within the ADQS dataset for PRO
+measures where summary scores are calculated to indicate whether PARAM represents an item
+or a summary score, where the summary score calculated is dependent on the instrument scoring
+manual. Example terminology values for PARCAT2 include, but are not limited to, ‘ITEM’,
+‘SUBSCALE SCORE’, ‘SCALE SCORE’, ‘RAW SCORE’, ‘TOTAL SCORE’, ‘COMPOSITE
+SCORE’, and ‘INDEX SCORE’. The number of additional PARCATy variables within the
+
+                                               13
+                               Contains Nonbinding Recommendations
+
+
+ADQS dataset depends on the summary scores to be calculated based on the intended use of the
+PRO measure as described in the protocol, SAP, and instrument scoring manual.
+
+Scenario 1 within Table 4 represents a simple scenario where items within a two-item measure
+are used to compute a single total score.
+
+Table 4. ADQS Dataset Structure for Scenario 1
+           PARCAT1                    PARCAT2             PARAM
+    Measure Name and Version            ITEM               Item 1
+    Measure Name and Version            ITEM               Item 2
+    Measure Name and Version        TOTAL SCORE          Total Score
+
+Scenario 2 within Table 5 represents a scenario where multiple scores are calculated, and each
+scale score is calculated from distinct, mutually exclusive item score(s). PARCAT3 reports the
+scale to which each item contributes.
+
+Table 5. ADQS Dataset Structure for Scenario 2
+           PARCAT1                       PARCAT2                 PARCAT3                   PARAM
+    Measure Name and Version               ITEM                 Scale Score 1               Item 1
+    Measure Name and Version               ITEM                 Scale Score 1               Item 2
+    Measure Name and Version               ITEM                 Scale Score 1               Item 3
+    Measure Name and Version               ITEM                 Scale Score 2               Item 4
+    Measure Name and Version               ITEM                 Scale Score 2               Item 5
+    Measure Name and Version               ITEM                 Scale Score 3               Item 6
+    Measure Name and Version           SCALE SCORE              Scale Score 1            Scale Score 1
+    Measure Name and Version           SCALE SCORE              Scale Score 2            Scale Score 2
+    Measure Name and Version           SCALE SCORE              Scale Score 3            Scale Score 3
+
+Scenario 3 within Table 6 represents a scenario where (1) multiple subscale scores are
+calculated, and each subscale score is calculated from distinct, mutually exclusive item score(s),
+and (2) multiple scale scores are calculated, and each scale score is calculated from distinct,
+mutually exclusive subscale score(s). PARCAT3 reports the subscale to which an item
+contributes, and PARCAT4 reports the scale to which a subscale contributes.
+
+Table 6. ADQS Dataset Structure for Scenario 3
+         PARCAT1                     PARCAT2           PARCAT3            PARCAT4              PARAM
+  Measure Name and Version             ITEM          Subscale Score 1    Scale Score A          Item 1
+  Measure Name and Version             ITEM          Subscale Score 1    Scale Score A          Item 2
+  Measure Name and Version             ITEM          Subscale Score 1    Scale Score A          Item 3
+  Measure Name and Version             ITEM          Subscale Score 2    Scale Score A          Item 4
+  Measure Name and Version             ITEM          Subscale Score 2    Scale Score A          Item 5
+  Measure Name and Version             ITEM          Subscale Score 3    Scale Score B          Item 6
+  Measure Name and Version       SUBSCALE SCORE      Subscale Score 1    Scale Score A      Subscale Score 1
+  Measure Name and Version       SUBSCALE SCORE      Subscale Score 2    Scale Score A      Subscale Score 2
+  Measure Name and Version       SUBSCALE SCORE      Subscale Score 3    Scale Score B      Subscale Score 3
+  Measure Name and Version         SCALE SCORE                           Scale Score A       Scale Score A
+  Measure Name and Version        SCALE SCORE                            Scale Score B       Scale Score B
+
+
+
+                                                14
+                            Contains Nonbinding Recommendations
+
+
+Scenario 4 within Table 7 represents a scenario where (1) multiple subscale scores are
+calculated, and each subscale is calculated from distinct, mutually exclusive item score(s), and
+(2) multiple scale scores are calculated. However, in this scenario, a single subscale score can
+contribute to multiple scale scores. PARCAT3 reports the subscale to which an item contributes
+and separate categorical variables (i.e., PARCAT4 and PARCAT5) report the individual scale to
+which a subscale contributes. Similarly, if an item can contribute to multiple subscales, a
+separate PARCATy is needed for each subscale (not pictured).
+
+Table 7. ADQS Dataset Structure for Scenario 4
+   PARCAT1           PARCAT2        PARCAT3          PARCAT4       PARCAT5           PARAM
+  Measure Name                       Subscale
+                       ITEM                      Scale Score A    Scale Score B        Item 1
+   and Version                       Score 1
+  Measure Name                       Subscale
+                       ITEM                      Scale Score A    Scale Score B        Item 2
+   and Version                       Score 1
+  Measure Name                       Subscale
+                       ITEM                      Scale Score A    Scale Score B        Item 3
+   and Version                       Score 1
+  Measure Name                       Subscale
+                       ITEM                      Scale Score A    Scale Score B        Item 4
+   and Version                       Score 2
+  Measure Name                       Subscale
+                       ITEM                      Scale Score A    Scale Score B        Item 5
+   and Version                       Score 2
+  Measure Name                       Subscale
+                       ITEM                      Scale Score A                         Item 6
+   and Version                       Score 3
+  Measure Name      SUBSCALE         Subscale
+                                                 Scale Score A    Scale Score B   Subscale Score 1
+   and Version        SCORE          Score 1
+  Measure Name      SUBSCALE         Subscale
+                                                 Scale Score A    Scale Score B   Subscale Score 2
+   and Version        SCORE          Score 2
+  Measure Name      SUBSCALE         Subscale
+                                                 Scale Score A                    Subscale Score 3
+   and Version        SCORE          Score 3
+  Measure Name
+                   SCALE SCORE                   Scale Score A                     Scale Score A
+   and Version
+  Measure Name
+                   SCALE SCORE                                    Scale Score B    Scale Score B
+   and Version
+
+                      3.2.3.2 Dataset Structure for PRO Measures Where Summary Scores
+                              are Not Calculated
+
+The preferred dataset structure when summary scores are not calculated and item scores are
+analyzed individually include PRO measures that analyze attributes of symptomatic AEs, where
+AEs are selected from an item library prior to trial initiation. Scenario 5 within Table 8
+represents the consistent use of parameter category variables to allow for the easy identification
+of the measure, symptoms (e.g., rash, headache), and attributes (e.g., presence, severity,
+frequency) within an example PRO measure. PARCAT2 reports the stand-alone symptom and
+PARCAT3 reports the stand-alone attribute. PARAM is a compliant, stand-alone analysis
+variable. CDISC Controlled Terminology is implemented when available for the PRO measure.
+
+
+
+
+                                                15
+                                 Contains Nonbinding Recommendations
+
+
+Table 8. ADQS Dataset Structure for Scenario 5
+             PARCAT1                   PARCAT2          PARCAT3                PARAM
+      Measure Name and Version         Symptom 1        Attribute 1       Symptom 1 Attribute 1
+      Measure Name and Version         Symptom 2        Attribute 2       Symptom 2 Attribute 2
+      Measure Name and Version         Symptom 2        Attribute 3       Symptom 2 Attribute 3
+      Measure Name and Version         Symptom 3        Attribute 1       Symptom 3 Attribute 1
+
+
+
+4.0      SPECIFICATIONS FOR TABLES AND FIGURES
+
+In addition to the sponsor’s prespecified tables and figures presenting analyses of PRO data, the
+Agency strongly recommends the following tables and figures based on PRO data be provided
+within the Clinical Study Report (CSR) to facilitate the evaluation of the PRO measure in cancer
+clinical trials. Sponsors should also provide an executive summary of clinical interpretation of
+the most critical PRO results informing risk(s) and benefit(s) within the CSR. Examples of the
+requested tables and figures are shown in Appendix 5.3 which are partitioned by treatment arm
+and assessment timepoint. Analysis visits (ADQS.AVISIT) should be assigned from SDTM
+visits (QS.VISIT) based on windowing rules in the study’s SAP. It is possible that not all records
+are assigned an AVISIT (e.g., records for unscheduled visits), and these records are excluded
+from the requested tables and figures. In the examples, counts and percentages are provided
+within the requested tables and percentages are provided within the requested bar charts.
+
+         4.1     Patient Disposition
+
+Provide a table and bar chart summarizing cumulative patient disposition. Whether a PRO
+measure is expected to be completed for a patient differs based on the PRO objective as
+described in sections 4.1.1 and 4.1.2 (i.e., when PRO data are used to evaluate clinical benefit vs.
+safety and tolerability).
+
+                 4.1.1   Clinical Benefit
+
+When the PRO objective is clinical benefit, the percentage for each disposition category should
+be calculated using the randomized population as the fixed denominator. The PRO measure is
+expected to be completed by the patient for the following:
+
+•     Patients who are on therapy.
+•     Patients who discontinued from treatment due to disease progression, AE, or other reason as
+      specified in the protocol.
+•     Patients who were randomized but not treated.
+•     Patients who paused treatment.
+
+When the PRO measure is expected to be completed at a PRO assessment timepoint, the PRO
+Expected Flag (PROEXPFL) equals ‘Y’ as defined in Table 3: Specifications for a Subset of
+ADQS Variables.
+
+Conversely, the PRO measure is not expected to be completed by the patient for the following:
+
+                                                   16
+                            Contains Nonbinding Recommendations
+
+
+
+•   PRO assessment timepoints after death for patients who died.
+•   Translation of the PRO measure is not available in the patient’s language (affects all PRO
+    assessment timepoints).
+
+When the PRO measure is not expected to be completed at a PRO assessment timepoint, the
+PRO Expected Flag (PROEXPFL) is null.
+
+An example table and bar chart illustrating the structure and inputs for the table and figure,
+including the preferred categories, are provided in Appendix 5.3.1. Within the table and figure,
+the three recommended categories for treatment discontinuation include treatment
+discontinuation due to disease progression, treatment discontinuation due to AE, and all other
+reasons for treatment discontinuation. In addition, an Other category within PRO Not Expected
+groups patients who were not expected to complete the PRO measure at a designated assessment
+timepoint for reasons other than patient death (e.g., the translation of the PRO measure is not
+available in the patient's language).
+
+               4.1.2   Safety and Tolerability
+
+When the PRO objective is safety and tolerability, the percentage for disposition categories
+should be calculated using the safety population as the fixed denominator. The PRO measure is
+expected to be completed for patients who are either on therapy or paused treatment at a given
+PRO assessment timepoint, which are totaled within a PRO Expected column. When the PRO
+measure is expected to be completed by the patient at a PRO assessment timepoint, the PRO
+Expected Flag (PROEXPFL) equals ‘Y’ as defined in Table 3: Specifications for a Subset of
+ADQS Variables.
+
+Conversely, the PRO measure is not expected to be completed by the patient for reasons
+including:
+
+    •   PRO assessment timepoints after death for patients who died.
+    •   Patients who were randomized but not treated (affects all PRO assessment timepoints).
+    •   Translation of the PRO measure is not available in the patient’s language (affects all PRO
+        assessment timepoints).
+
+In some cases, PRO assessment timepoints may be less frequent or stop after treatment
+discontinuation for patients who discontinued from treatment due to disease progression, AE, or
+other reason. Expectations for when PRO assessments will be collected should be planned in
+advance with FDA. See Section 3.2.2.2.
+
+When the PRO measure is not expected to be completed at a PRO assessment timepoint, the
+PRO Expected Flag (PROEXPFL) is null. An example table and bar chart illustrating the
+structure and inputs, including the preferred categories, are provided in Appendix 5.3.2. Within
+the table and figure, the three recommended categories for treatment discontinuation include
+treatment discontinuation due to disease progression, treatment discontinuation due to AE, and
+all other reasons for treatment discontinuation. In addition, an Other category within PRO Not
+
+                                                 17
+                                   Contains Nonbinding Recommendations
+
+
+Expected groups patients who were not expected to complete the PRO measure at a designated
+assessment timepoint for reasons other than patient death or treatment discontinuation.
+
+            4.2     PRO Data Completeness
+
+Provide a table and data visualization summarizing PRO data completeness.23 The denominator
+used to evaluate data completeness differs based on the PRO objective (i.e., when PRO data are
+used to inform the evaluation of clinical benefit vs. safety and tolerability) as described in
+sections 4.2.1 and 4.2.2. The numerator (referenced as the ‘PRO Completed’ column in Table A6
+and Table A7) is the number of patients submitting a completed PRO measure at the designated
+PRO assessment timepoint and does not differ based on PRO objective. Sponsors should defer to
+the instructions provided within the instrument scoring manual to determine what constitutes a
+‘complete’ PRO measure (i.e., number of items needed for completion to produce a reliable
+score). When not provided within the instrument scoring manual, sponsors should provide
+rationale for the number of responses necessary to constitute a complete PRO measure.
+
+Within the tables, counts and percentages of patients who did not complete the PRO measure
+(referenced as ‘Reason for PRO Not Completed’ in Table A6 and Table A7) should be calculated
+with the accompanying reasons for missing observations based on collected data. If reasons are
+unknown or not collected, a separate column should be provided to report the affected count and
+percentage. The example tables contain possible reasons for noncompletion and should be
+modified to represent the reported reasons collected within the clinical trial (See section 3.1.1.2
+Handling of Missing PRO Data for example reasons for noncompletion). If both clinical benefit
+as well as safety and tolerability PRO objectives are specified within a single trial, the sponsor
+should submit the requested tables and data visualizations for both available data rate and
+completion rate as described below.
+
+                    4.2.1    Available Data Rate (Clinical Benefit)
+
+When PRO data are used to evaluate clinical benefit, the available data rate should be calculated
+where the randomized population is used as a fixed denominator. The table and data
+visualization should be provided based on available data rate (1) at the PRO instrument level and
+(2) for the concept(s) evaluated by the PRO measure (e.g., single item score or a summary score
+such as subscale score or total score). When the concept measured is a summary score (e.g.,
+physical functioning), the table and data visualization should be provided for both the summary
+score and for each individual item score that contributes to the summary score. An example table
+and bar chart illustrating the structure and inputs are provided in Appendix 5.3.3, with
+percentages provided for each category within the bar chart. Reasons for treatment
+discontinuation are included in the table and figure as described in the table footnotes.
+
+                    4.2.2    Completion Rate (Safety and Tolerability)
+
+When PRO data are used to inform the evaluation of safety and tolerability, the completion rate
+should be calculated where the denominator is the number of patients expected to complete the
+PRO measure at the designated PRO assessment timepoint as described in section 4.1.2 Patient
+
+23
+     More information is available at SISAQOL’s web page: https://www.sisaqol-imi.org/.
+
+                                                          18
+                            Contains Nonbinding Recommendations
+
+
+Disposition for Safety and Tolerability (i.e., where PRO Expected Flag (PROEXPFL) equals ‘Y’
+as defined in Table 3: Specifications for a Subset of ADQS Variables). Thus, the denominator
+can decrease throughout an oncology trial based on attrition over time. The table and data
+visualization should be provided at the PRO instrument level based on completion rate. The
+sponsor should consult with the Agency to determine additional tables and data visualizations to
+provide for individual items (including patient-reported symptomatic adverse events) and/or
+summary scores. An example table and bar chart illustrating the structure and inputs are provided
+in Appendix 5.3.4, with percentages provided for each category within the bar chart. Reasons for
+treatment discontinuation may be excluded as reasons for PRO noncompletion in the table and
+figure as described in the table footnotes.
+
+       4.3     Distributions
+
+Provide a table and data visualization summarizing the distribution of responses and the
+distribution of change in responses from baseline. When the PRO measure is used to inform the
+evaluation of safety and tolerability, the sponsor should consult with the Agency to determine the
+tables and data visualizations to provide for individual items (including patient-reported
+symptomatic adverse events) and/or summary scores. When the PRO measure is to evaluate
+clinical benefit, the table and data visualization should be provided for the concept(s) evaluated
+by the PRO measure (e.g., single item score, subscale score, total score). When the concept
+measured is a summary score (e.g., physical functioning), the table and data visualization should
+be provided for both the summary score and for each individual item score that contributes to the
+summary score.
+
+Within the table, counts and percentages should be provided for PRO Completed and PRO Not
+Completed. Additional columns within the table depends on PRO objective; when the PRO
+objective is safety and tolerability, the count and percentage for PRO Expected should be
+provided. When the PRO objective is clinical benefit, the count and percentage for the
+randomized population should be provided. When the PRO objective is safety and tolerability,
+the denominator used to determine the percentage for PRO Completed and PRO Not Completed
+is the number of patients expected to complete the PRO measure at the designated PRO
+assessment timepoint as described in section 4.1.2 Patient Disposition for Safety and Tolerability
+(i.e., where PRO Expected Flag (PROEXPFL) equals ‘Y’ as defined in Table 3: Specifications
+for a Subset of ADQS Variables). When the PRO objective is clinical benefit, the denominator
+used to determine the percentage for PRO Completed and PRO Not Completed is the
+randomized population.
+
+When the concept measured has categorical response options with binary or ordinal outcomes,
+counts and percentages within the table for the response categories or change in response
+categories should be provided where the denominator used to determine the percentage for each
+category is PRO Completed (i.e., where PRO Score Completed Flag (PROSCMFL) equals ‘Y’ as
+defined in Table 3: Specifications for a Subset of ADQS Variables). When the concept measured
+has continuous response options, summary statistics should be provided and are calculated based
+on PRO Completed.
+
+
+
+
+                                                19
+                            Contains Nonbinding Recommendations
+
+
+Within the data visualization, counts for PRO Completed and PRO Not Completed should be
+provided below the figure as shown in the examples within the appendices. In addition, if the
+PRO objective is safety and tolerability, counts for PRO Expected should be provided; if the
+PRO objective is clinical benefit, counts for the randomized population should be provided. The
+type of data visualization provided further depends on the response options for the PRO measure.
+A bar chart should be provided when the concept measured has categorical response options with
+binary or ordinal outcomes. When the concept measured has continuous response options, a line
+graph should be provided. For example, a line graph with descriptive means may be provided
+when the PRO objective is safety and tolerability objective. The sponsor may consult with the
+Agency to discuss alternative data visualizations (e.g., density curves, box plots) to provide when
+continuous data are captured. Within the line graph, standard error bars with jittering should be
+provided as well as labels to indicate improving/worsening or higher/lower functioning,
+depending on the concept measured.
+
+               4.3.1   Distribution of Responses
+
+When the concept measured has categorical response options with a binary or ordinal outcome,
+the distribution of responses in the table and bar chart should include all possible response
+options for the item or summary score with the percentage provided for each category within the
+bar chart. Within Appendix 5.3.5, an example table is provided in Table A8 and a bar chart is
+provided in Figure A5 for a single item for a safety and tolerability PRO objective.
+
+When the concept measured has continuous response options, the distribution of responses in the
+table and line graph should represent a summary statistic (e.g., the mean score) over time. An
+example table is provided in Table A9, and a line graph is provided in Figure A6 for a single
+item showing descriptive means for a safety and tolerability PRO objective.
+
+               4.3.2   Distribution of Change in Responses from Baseline
+
+When the concept measured includes categorical response options with a binary or ordinal
+outcome, the distribution of change in response categories for the table and bar chart should
+include all possible scenarios (e.g., improving, no change, worsening) based on the number of
+response categories for the item or summary score with the percentage provided for each change
+category within the bar chart. Within Appendix 5.3.6, an example table is provided in Table A10
+and a bar chart is provided in Figure A7 for a single item for a safety and tolerability PRO
+objective. Labels for ‘No Change or Improving’ and ‘Worsening’ should be provided in the bar
+chart as shown in the example.
+
+When the concept measured has continuous response options, the distribution of change in
+responses from baseline in the table and line graph should represent a summary statistic (e.g.,
+mean) change from baseline over time. An example table is provided in Table A11 and a line
+graph is provided in Figure A8 for a single item showing descriptive mean change from baseline
+for a safety and tolerability PRO objective.
+
+
+
+
+                                                20
+                           Contains Nonbinding Recommendations
+
+
+       4.4     Incidence of Healthcare Utilization
+
+Provide a table summarizing the incidence of healthcare utilization, including emergency
+department visits, hospitalizations, supportive care medications, supportive care procedures, and
+other relevant interventions depending on the study. Each supportive care medication and
+supportive care procedure should be represented as a separate column within the table. The
+denominator used to determine the percentage for each intervention depends on PRO objective.
+When the PRO objective is safety and tolerability, the denominator is the number of patients
+expected to complete the PRO measure at the designated PRO assessment timepoint as described
+in section 4.1.2 Patient Disposition for Safety and Tolerability (i.e., where PRO Expected Flag
+(PROEXPFL) equals ‘Y’ as defined in Table 3: Specifications for a Subset of ADQS Variables).
+When the PRO objective is clinical benefit, the denominator is the randomized population. In
+addition to columns for healthcare utilization interventions, columns are provided for
+Randomized Patients and PRO Expected.
+
+An example table illustrating the structure and inputs is provided in Appendix 5.3.7. The table
+contains example healthcare utilization values for supportive procedures and supportive
+medications, but the table should be modified to represent the intervention within the study. The
+sponsor may consult with the Agency to determine the appropriate supportive care medications
+and supportive care procedures to provide (e.g., growth factors, steroids, and transfusions depend
+on the cancer type and may not always be relevant).
+
+
+
+
+                                                21
+                                                  Contains Nonbinding Recommendations
+
+
+  5.0 APPENDIX
+
+  Table A1 represents an example schedule of assessments within the study protocol (not pictured) for Study A, where the patient-
+  reported outcome (PRO) data are used to evaluate clinical benefit. Study A is referenced in the example Questionnaires (QS) dataset
+  in Appendix 5.1 and the example Questionnaires Analysis Dataset (ADQS) in Appendix 5.2. As shown in Table A1, the PRO measure
+  is administered initially onsite at the Screening visit and subsequently onsite on Day 1 of each of three cycles, where Cycle 1 Day 1
+  represents the Baseline visit. The example PRO measure administered to patients in Study A is a two-item measure, where answers to
+  both items are used to calculate total score according to the instrument scoring manual (not pictured). The total score is not collected
+  as source data and is calculated in the Analysis Data Model (ADaM) ADQS dataset. Note the numeric values provided in
+  QS.QSORRES within Table A2 and ADQS.AVAL within Table A3 are provided for illustrative purposes only.
+
+3 Table A1. Example Schedule of Assessments
+                            Visit
+          Activity                                Cycles 1 through 3 (Cycle Length = 21 Days)
+                               Screening
+                                                  Day 1              Day 8             Day 15
+      PRO Measure                   X              X
+
+            5.1      Example SDTM Questionnaires Dataset
+
+  Table A2 shows an example of tabulated data using the QS domain specifications. Where the PRO measure was not completed as
+  expected, Table A2 shows a subset of variables to be submitted within the QS dataset and illustrates how missing PRO assessment
+  timepoints are represented. Scenarios displayed in Table A2 include:
+
+  •     Patient 1 only responded to one of two items in the PRO measure at the Cycle 1 Day 1 visit.
+
+         o Row 3 shows QSSTAT = ‘NOT DONE’ and null QSREASND since reason for the missing item is not captured within the
+           administered PRO measure.
+
+  •     Patient 1 attended the onsite Cycle 3 Day 1 visit but refused to take the PRO measure. When the PRO measure is not administered,
+        rows are created for each item.
+
+
+
+
+                                                                       22
+                                                    Contains Nonbinding Recommendations
+
+
+        o Rows 7 through 8 show null QSORRES, QSSTAT = ‘NOT DONE’, and QSREASND = ‘PATIENT REFUSAL’, where
+          ‘PATIENT REFUSAL’ is captured on the CRF. Given the onsite visit was attended, Date/Time of Finding (QSDTC) is
+          populated.
+
+  •     Patient 2 was unable to attend the onsite Cycle 1 Day 1 visit due to hospitalization; thus, the PRO measure was not administered.
+        In this scenario, rows are created for each item.
+
+        o Rows 11 through 12 show null QSORRES, QSSTAT = ‘NOT DONE’, and QSREASND = ‘HOSPITALIZATION’. To
+          indicate the onsite visit was not attended by Patient 2, QSDTC is set to null.
+
+  •     Patient 2 died after the Cycle 1 Day 1 visit. Thus, no visit data are available in the QS dataset for the remaining visits. Since the
+        PRO data are used to evaluate clinical benefit, the remaining visits are omitted from the QS dataset and derived as phantom
+        records in the ADQS dataset shown in Appendix 5.2.
+
+4 Table A2. Subset of Sample QS Dataset
+
+   Row USUBJID              VISIT             QSCAT         QSTEST       QSTESTCD    QSORRES       QSSTAT          QSREASND           QSDTC
+                                         Measure Name and
+   1       A_100_1     SCREENING                            I01-Item 1   I01         3                                              2022-02-01
+                                         Version
+                                         Measure Name and
+   2       A_100_1     SCREENING                            I01-Item 2   I02         5                                              2022-02-01
+                                         Version
+                                         Measure Name and
+   3       A_100_1     CYCLE 1 DAY 1                        I01-Item 1   I01                     NOT DONE                           2022-02-22
+                                         Version
+                                         Measure Name and
+   4       A_100_1     CYCLE 1 DAY 1                        I01-Item 2   I02         4                                              2022-02-22
+                                         Version
+                                         Measure Name and
+   5       A_100_1     CYCLE 2 DAY 1                        I01-Item 1   I01         2                                              2022-03-15
+                                         Version
+                                         Measure Name and
+   6       A_100_1     CYCLE 2 DAY 1                        I01-Item 2   I02         4                                              2022-03-15
+                                         Version
+                                         Measure Name and
+   7       A_100_1     CYCLE 3 DAY 1                        I01-Item 1   I01                     NOT DONE      PATIENT REFUSAL      2022-04-05
+                                         Version
+                                         Measure Name and
+   8       A_100_1     CYCLE 3 DAY 1                        I01-Item 2   I02                     NOT DONE      PATIENT REFUSAL      2022-04-05
+                                         Version
+                                         Measure Name and
+   9       A_100_2     SCREENING                            I01-Item 1   I01         4                                              2022-03-14
+                                         Version
+                                         Measure Name and
+   10      A_100_2     SCREENING                            I01-Item 2   I02         5                                              2022-03-14
+                                         Version
+
+                                                                           23
+                                                 Contains Nonbinding Recommendations
+
+
+Row USUBJID              VISIT         QSCAT        QSTEST          QSTESTCD     QSORRES      QSSTAT          QSREASND           QSDTC
+                                  Measure Name and
+11      A_100_2     CYCLE 1 DAY 1                  I01-Item 1      I01                      NOT DONE      HOSPITALIZATION
+                                  Version
+                                  Measure Name and
+12      A_100_2     CYCLE 1 DAY 1                  I01-Item 2      I02                      NOT DONE      HOSPITALIZATION
+                                  Version
+
+        5.2     Example ADaM Questionnaires Analysis Dataset
+
+Table A3 shows an example ADQS dataset for the same patients and scenario descriptions as those provided in Appendix 5.1. Note
+that this table only shows a subset of variables to be submitted in the ADQS dataset; additional variables, such as population flags and
+treatment variables, are not provided as these depend on individual study needs. In this example, total score is calculated for each
+patient and analysis visit (i.e., where PARAM = ‘Total Score’) since scores are not captured within the SDTM QS dataset. Scenarios
+displayed in Table A3 include:
+
+•    Patient 1 only responded to one of two items at the Baseline visit. Thus, per the scoring manual, Total Score is incalculable in the
+     ADQS dataset.
+
+     o Row 6 reports Total Score and shows AREASND = ‘NOT CALCULABLE’. QSSTAT and QSREASND are null since
+       records for PARAM = ‘Total Score’ are created in the ADQS dataset.
+
+     o Rows 4 through 6 report ONTRTFL = ‘Y’ since the patient was on treatment during the Baseline visit and PROEXPFL = ‘Y’
+       since the patient was expected to complete the PRO measure at the Baseline visit. PROSCMFL = ‘Y’ in Row 5 since only
+       Item 2 had a response provided by the patient.
+
+•    Patient 1 attended the Cycle 3 Day 1 visit but refused to take the PRO measure.
+
+     o Row 12 reports Total Score and shows AREASND = ‘PATIENT REFUSAL’ as reported within QS.QSREASND for the
+       individual items in Rows 10 and 11.
+
+     o Rows 10 through 12 report ONTRTFL = ‘Y’ since the patient was on treatment and PROEXPFL = ‘Y’ since the patient was
+       expected to complete the PRO measure at the visit. PROSCMFL is null for all rows since the measure was not completed.
+
+•    Patient 2 was unable to attend the Baseline visit due to hospitalization.
+
+
+                                                                     24
+                                                  Contains Nonbinding Recommendations
+
+
+       o Row 18 reports Total Score and shows AREASND = ‘HOSPITALIZATION’ as reported within QS.QSREASND for the
+         individual items in Rows 16 and 17.
+
+       o Rows 16 through 18 report null ONTRTFL since the patient was not on treatment but PROEXPFL = ‘Y’ since the patient was
+         still expected to complete the PRO measure at the visit. PROSCMFL is null for all rows since the measure was not completed.
+
+   •   Patient 2 died after the Baseline visit. Since the PRO data are used to evaluate clinical benefit, phantom records are derived in the
+       ADQS dataset for all items and summary scores for the missing analysis visits at Cycle 2 Day 1 and Cycle 3 Day 1. These missing
+       visits are derived as phantom records in the ADaM dataset with DTYPE = ‘PHANTOM’ and AREASND = ‘DEATH’, where, in
+       this example, AREASND is populated from ADSL.DCTREAS. Note that QSSTAT and QSREAND are null. For phantom
+       records, AVISIT is populated to represent the visit number for the missing visit. Given the patient died, ONTRTFL, PROEXPFL,
+       and PROSCMFL are null.
+
+5 Table A3. (Part 1) Subset of Sample ADQS Dataset
+    Row   USUBJID          VISIT               AVISIT                   PARCAT1               PARAM        PARAMCD      AVAL     QSSTAT
+    1     A_100_1     SCREENING           SCREENING             Measure Name and Version    I01-Item 1    I01          3
+    2     A_100_1     SCREENING           SCREENING             Measure Name and Version    I01-Item 2    I02          5
+    3     A_100_1     SCREENING           SCREENING             Measure Name and Version    Total Score   TS           8
+    4     A_100_1     CYCLE 1 DAY 1       BASELINE              Measure Name and Version    I01-Item 1    I01                   NOT DONE
+    5     A_100_1     CYCLE 1 DAY 1       BASELINE              Measure Name and Version    I01-Item 2    I02          4
+    6     A_100_1     CYCLE 1 DAY 1       BASELINE              Measure Name and Version    Total Score   TS
+    7     A_100_1     CYCLE 2 DAY 1       CYCLE 2 DAY 1         Measure Name and Version    I01-Item 1    I01          2
+    8     A_100_1     CYCLE 2 DAY 1       CYCLE 2 DAY 1         Measure Name and Version    I01-Item 2    I02          4
+    9     A_100_1     CYCLE 2 DAY 1       CYCLE 2 DAY 1         Measure Name and Version    Total Score   TS           6
+    10    A_100_1     CYCLE 3 DAY 1       CYCLE 3 DAY 1         Measure Name and Version    I01-Item 1    I01                   NOT DONE
+    11    A_100_1     CYCLE 3 DAY 1       CYCLE 3 DAY 1         Measure Name and Version    I01-Item 2    I02                   NOT DONE
+    12    A_100_1     CYCLE 3 DAY 1       CYCLE 3 DAY 1         Measure Name and Version    Total Score   TS
+    13    A_100_2     SCREENING           SCREENING             Measure Name and Version    I01-Item 1    I01          4
+    14    A_100_2     SCREENING           SCREENING             Measure Name and Version    I01-Item 2    I02          5
+    15    A_100_2     SCREENING           SCREENING             Measure Name and Version    Total Score   TS           9
+    16    A_100_2     CYCLE 1 DAY 1       BASELINE              Measure Name and Version    I01-Item 1    I01                   NOT DONE
+
+
+                                                                      25
+                                        Contains Nonbinding Recommendations
+
+
+Row   USUBJID        VISIT            AVISIT               PARCAT1              PARAM        PARAMCD   AVAL    QSSTAT
+17    A_100_2   CYCLE 1 DAY 1    BASELINE          Measure Name and Version   I01-Item 2    I02               NOT DONE
+18    A_100_2   CYCLE 1 DAY 1    BASELINE          Measure Name and Version   Total Score   TS
+19    A_100_2   CYCLE 2 DAY 1    CYCLE 2 DAY 1     Measure Name and Version   I01-Item 1    I01
+20    A_100_2   CYCLE 2 DAY 1    CYCLE 2 DAY 1     Measure Name and Version   I01-Item 2    I02
+21    A_100_2   CYCLE 2 DAY 1    CYCLE 2 DAY 1     Measure Name and Version   Total Score   TS
+22    A_100_2   CYCLE 3 DAY 1    CYCLE 3 DAY 1     Measure Name and Version   I01-Item 1    I01
+23    A_100_2   CYCLE 3 DAY 1    CYCLE 3 DAY 1     Measure Name and Version   I01-Item 2    I02
+24    A_100_2   CYCLE 3 DAY 1    CYCLE 3 DAY 1     Measure Name and Version   Total Score   TS
+
+Table A3. (Part 2) Subset of Sample ADQS Dataset
+Row       QSREASND           DTYPE         AREASND             DCTREAS          PROEXPFL       PROSCMFL       ONTRTFL
+1                                                                              Y              Y
+2                                                                              Y              Y
+3                                                                              Y              Y
+4                                                                              Y                          Y
+5                                                                              Y              Y           Y
+6                                      NOT CALCULABLE                          Y                          Y
+7                                                                              Y              Y           Y
+8                                                                              Y              Y           Y
+9                                                                              Y              Y           Y
+10    PATIENT REFUSAL                  PATIENT REFUSAL                         Y                          Y
+11    PATIENT REFUSAL                  PATIENT REFUSAL                         Y                          Y
+12                                     PATIENT REFUSAL                         Y                          Y
+13                                                                             Y              Y
+14                                                                             Y              Y
+15                                                                             Y              Y
+16    HOSPITALIZATION                  HOSPITALIZATION                         Y
+17    HOSPITALIZATION                  HOSPITALIZATION                         Y
+18                                     HOSPITALIZATION                         Y
+19                        PHANTOM      DEATH             DEATH
+
+                                                         26
+                                                         Contains Nonbinding Recommendations
+
+
+      Row         QSREASND             DTYPE               AREASND                    DCTREAS                PROEXPFL            PROSCMFL          ONTRTFL
+      20                             PHANTOM           DEATH                      DEATH
+      21                             PHANTOM           DEATH                      DEATH
+      22                             PHANTOM           DEATH                      DEATH
+      23                             PHANTOM           DEATH                      DEATH
+      24                             PHANTOM           DEATH                      DEATH
+
+            5.3     Example Tables and Figures
+
+                    5.3.1     Patient Disposition when Evaluating Clinical Benefit
+
+6 Table A4. Patient Disposition when Evaluating Clinical Benefit (Denominator = Randomized Population)1
+                                                                                  PRO Expected2                                         PRO Not Expected
+                                                                      Treatment             Treatment
+      Analysis    Treatment    Randomized                                                                        Treatment
+                                                 Patients On       Discontinuation:      Discontinuation:
+       Visit        Arm        Patients (N)                                                                   Discontinuation:          Death,          Other,3
+                                                  Therapy,             Disease               Adverse
+                                                                                                              Other Reasons,            n (%)           n (%)
+                                                    n (%)           Progression,           Event (AE),
+                                                                                                                   n (%)
+                                                                        n (%)                 n (%)
+                   Control         600          600 (100.0%)           0 (0.0%)             0 (0.0%)              0 (0.0%)             0 (0.0%)        0 (0.0%)
+      Baseline
+                  Treatment        602          602 (100.0%)           0 (0.0%)             0 (0.0%)              0 (0.0%)             0 (0.0%)        0 (0.0%)
+       Cycle 2     Control         600          564 (94.0%)           16 (2.7%)             15 (2.5%)             0 (0.0%)             5 (0.8%)        0 (0.0%)
+       Day 1      Treatment        602          572 (95.0%)           10 (1.7%)             13 (2.2%)             0 (0.0%)             7 (1.2%)        0 (0.0%)
+       Cycle 3     Control         600          525 (87.5%)           30 (5.0%)             26 (4.3%)             6 (1.0%)            13 (2.2%)        0 (0.0%)
+       Day 1      Treatment        602          542 (90.0%)           23 (3.8%)             21 (3.5%)             0 (0.0%)            16 (2.7%)        0 (0.0%)
+
+
+  1
+    Denominator used to calculate percentages is the number of randomized patients.
+  2
+    When PRO data are used to evaluate clinical benefit, the PRO measure is generally expected to be completed for patients who both did not discontinue
+  treatment and who discontinued treatment for reasons other than death. Columns under PRO Expected includes patients who both completed and did not
+  complete the PRO measure (e.g., the patient did not attend an onsite visit, the patient did not complete the PRO measure at the attended onsite visit or at a
+  prespecified offsite assessment timepoint, the patient partially completed the PRO measure resulting in incalculable summary scores).
+  3
+    The Other column groups patients not expected to complete the PRO measure at a designated assessment timepoint for reasons other than patient death (e.g.,
+  the translation of the PRO measure is not available in the patient's language).
+
+
+                                                                                  27
+                                         Contains Nonbinding Recommendations
+
+
+Figure A1. Patient Disposition when Evaluating Clinical Benefit (Denominator = Randomized Population)
+
+
+
+
+                                                           28
+                                                           Contains Nonbinding Recommendations
+
+
+                    5.3.2    Patient Disposition when Informing Safety and Tolerability
+
+7Table A5. Patient Disposition when Informing the Evaluation of Safety and Tolerability (Denominator = Safety Population)4
+                                                                                                                 PRO Not Expected
+                                                  Safety           PRO                             Treatment            Treatment           Treatment
+      Analysis   Treatment    Randomized
+                                                Population       Expected,5      Death, n       Discontinuation:     Discontinuation:    Discontinuation:     Other,6
+       Visit       Arm       Population (N)
+                                                   (N)             n (%)          (%)               Disease              Adverse         Other Reasons,       n (%)
+                                                                                               Progression, n (%)     Event, n (%)            n (%)
+                  Control         600              600         600 (100.0%)      0 (0.0%)           0 (0.0%)             0 (0.0%)             0 (0.0%)       0 (0.0%)
+      Baseline
+                 Treatment        602              602         602 (100.0%)      0 (0.0%)           0 (0.0%)             0 (0.0%)             0 (0.0%)       0 (0.0%)
+      Cycle 2     Control         600              600          564 (94.0%)      5 (0.8%)          16 (2.7%)             15 (2.5%)            0 (0.0%)       0 (0.0%)
+       Day 1     Treatment        602              602          572 (95.0%)      7 (1.2%)          10 (1.7%)             13 (2.2%)            0 (0.0%)       0 (0.0%)
+      Cycle 3     Control         600              600          525 (87.5%)     13 (2.2%)          30 (5.0%)             26 (4.3%)            6 (1.0%)       0 (0.0%)
+       Day 1     Treatment        602              602          542 (90.0%)     16 (2.7%)          23 (3.8%)             21 (3.5%)            0 (0.0%)       0 (0.0%)
+
+
+
+
+  4
+    Denominator used to calculate percentages is the number of patients in the safety population.
+  5
+    When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+  from treatment as shown in the table. Thus, the PRO Expected column excludes patients who discontinued from treatment. The PRO Expected column is
+  determined where PRO Expected Flag (PROEXPFL) equals ‘Y’ and includes patients who both completed and did not complete the PRO measure (e.g., the
+  patient did not attend an onsite visit, the patient did not complete the PRO measure at the attended onsite visit or at a prespecified offsite assessment timepoint,
+  the patient partially completed the PRO measure resulting in incalculable summary scores).
+  6
+    The Other column groups patients who were not expected to complete the PRO measure at a designated assessment timepoint for reasons other than treatment
+  discontinuation or patient death (e.g., the translation of the PRO measure is not available in the patient's language).
+
+
+                                                                                   29
+                                          Contains Nonbinding Recommendations
+
+
+Figure A2. Patient Disposition when Informing the Evaluation of Safety and Tolerability (Denominator = Safety Population)
+
+
+
+
+                                                            30
+                                                         Contains Nonbinding Recommendations
+
+
+                     5.3.3   Available Data Rate for Clinical Benefit
+
+8 Table A6. Available Data Rate for Clinical Benefit (Denominator = Randomized Population)7
+                                                                                       Reason for PRO Not Completed,9 n (%)
+                                                          PRO Not
+         9                                  PRO          Completed8 Patient Unable to Patient Unable to
+                 Treatment Randomized                                                                                                Reason
+      Analysis                            Completed,     (excluding Complete due to Complete due to           Patient     Device               Death, n (%)
+                   Arm     Patients (N)                                                                                             Unknown,10
+       Visit                                n (%)          Death),       Disease           Adverse            Refusal     Failure
+                                                           n (%)                                                                      n (%)
+                                                                      Progression        Event (AE)
+
+                  Control      600        600 (100.0%)    0 (0.0%)        0 (0.0%)           0 (0.0%)        0 (0.0%)    0 (0.0%)     0 (0.0%)      0 (0.0%)
+      Baseline
+                 Treatment     602        602 (100.0%)    0 (0.0%)        0 (0.0%)           0 (0.0%)        0 (0.0%)    0 (0.0%)     0 (0.0%)      0 (0.0%)
+      Cycle 2     Control      600        556 (92.7%)    39 (6.5%)        8 (1.3%)           25 (4.2%)        6 (1.0%)   0 (0.0%)     0 (0.0%)      5 (0.8%)
+      Day 1      Treatment     602        551 (91.5%)    44 (7.3%)        3 (0.5%)           36 (6.0%)       5 (0.8%)    0 (0.0%)     0 (0.0%)      7 (1.2%)
+      Cycle 3     Control      600        542 (90.3%)    45 (7.5%)       14 (2.3%)           26 (4.3%)       0 (0.0%)    5 (0.8%)     0 (0.0%)     13 (2.2%)
+      Day 1      Treatment     602        539 (89.5%)    47 (7.8%)       10 (1.7%)           32 (5.3%)       5 (0.8%)    0 (0.0%)     0 (0.0%)     16 (2.7%)
+
+
+
+
+  7
+    Denominator used to calculate percentages is the number of randomized patients.
+  8
+    The PRO Not Completed column is calculated where PROEXPFL = ‘Y’ and PROSCMFL is null; thus, death is excluded from the counts and percentages and
+  is provided as a standalone column.
+  9
+    When PRO data are used to evaluate clinical benefit, reasons for PRO Not Completed are based on collected data from QS.QSREASND within the study. All
+  reasons for noncompletion collected during the study should be included. Counts can include patients who were on therapy and who discontinued; thus, counts in
+  Table A6 may be larger than counts in Table A7 given that patients complete the PRO measure after treatment discontinuation when evaluating clinical benefit.
+  10
+     Unknown reasons, if present, should be tabulated within the separate ‘Reason Unknown’ column.
+
+
+                                                                               31
+                                         Contains Nonbinding Recommendations
+
+
+Figure A3. Available Data Rate for Clinical Benefit (Denominator = Randomized Population)
+
+
+
+
+                                                           32
+                                                         Contains Nonbinding Recommendations
+
+
+                        5.3.4   Completion Rate for Safety and Tolerability
+
+10 Table A7. Completion Rate for Safety and Tolerability (Denominator = PRO Expected Population)11
+                                                                                                             Reason for PRO Not Completed,13 n (%)
+                                         PRO
+                          Treatment                        PRO                PRO Not                            Patient Unable                      Reason
+       Analysis Visit                  Expected12                                                  Patient                            Device
+                            Arm                       Completed, n (%)     Completed, n (%)                       to Complete                       Unknown,14
+                                          (N)                                                      Refusal                            Failure
+                                                                                                                   due to AE                          n (%)
+
+                           Control        600           600 (100.0%)            0 (0.0%)          0 (0.0%)          0 (0.0%)          0 (0.0%)       0 (0.0%)
+         Baseline
+                          Treatment       602           602 (100.0%)            0 (0.0%)          0 (0.0%)          0 (0.0%)          0 (0.0%)       0 (0.0%)
+                           Control        564           542 (96.1%)            22 (3.9%)          6 (1.1%)         16 (2.8%)          0 (0.0%)       0 (0.0%)
+       Cycle 2 Day 1
+                          Treatment       572           536 (93.7%)            36 (6.3%)          5 (0.9%)         31 (5.4%)          0 (0.0%)       0 (0.0%)
+                           Control        525           510 (97.1%)            15 (2.9%)          0 (0.0%)         10 (1.9%)          5 (1.0%)       0 (0.0%)
+       Cycle 3 Day 1
+                          Treatment       542           516 (95.2%)            26 (4.8%)          5 (0.9%)         21 (3.9%)          0 (0.0%)       0 (0.0%)
+
+
+
+
+  11
+     Denominator used to calculate percentages is PRO Expected.
+  12
+     When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+  from treatment as shown in the table. The PRO Expected column excludes patients who discontinued from treatment and is determined where PRO Expected
+  Flag (PROEXPFL) equals ‘Y’.
+  13
+     Reasons for PRO Not Completed are based on collected data within the study and represent reasons the PRO measure was not completed when the patient did
+  not discontinue from treatment. All reasons for noncompletion collected during the study should be included.
+  14
+     Unknown reasons, if present, should be tabulated within the separate ‘Reason Unknown’ column.
+
+
+                                                                                33
+                                         Contains Nonbinding Recommendations
+
+
+Figure A4. Completion Rate for Safety and Tolerability (Denominator = PRO Expected Population)
+
+
+
+
+                                                          34
+                                                         Contains Nonbinding Recommendations
+
+
+                        5.3.5   Distribution of Responses
+
+11Table A8. Distribution of Categorical Responses for Item 1 (Safety and Tolerability Example)15
+                                           PRO                  PRO                  PRO Not                          Response Categories,17 n (%)
+       Analysis Visit    Treatment Arm
+                                         Expected16        Completed, n (%)       Completed, n (%)       Not at all       A little     Quite a bit   Very much
+                            Control         600              600 (100.0%)              0 (0.0%)        332 (55.3%)     220 (36.7%)     31 (5.2%)     17 (2.8%)
+         Baseline
+                           Treatment        602              602 (100.0%)              0 (0.0%)        313 (52.0%)     228 (37.9%)     38 (6.3%)     23 (3.8%)
+                            Control         564              542 (96.1%)              22 (3.9%)        299 (55.2%)     188 (34.7%)     34 (6.3%)     21 (3.9%)
+       Cycle 2 Day 1
+                           Treatment        572              536 (93.7%)              36 (6.3%)        268 (50.0%)     199 (37.1%)     41 (7.6%)     28 (5.2%)
+                            Control         525              510 (97.1%)              15 (2.9%)        225 (44.1%)     189 (37.1%)    63 (12.4%)     33 (6.5%)
+       Cycle 3 Day 1
+                           Treatment        542              516 (95.2%)              26 (4.8%)        203 (39.3%)     193 (37.4%)    71 (13.8%)     49 (9.5%)
+
+
+
+
+  15
+     Denominator used to calculate percentages for PRO Completed and PRO Not Completed is PRO Expected. Denominator used to calculate percentages for
+  each response category is PRO Completed.
+  16
+     When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+  from treatment as shown in the table. The PRO Expected column excludes patients who discontinued from treatment and is determined where PRO Expected
+  Flag (PROEXPFL) equals ‘Y’.
+  17
+     The example response categories represent the response options for the item.
+
+
+                                                                                35
+                                         Contains Nonbinding Recommendations
+
+
+Figure A5. Distribution of Categorical Responses for Item 1 (Safety and Tolerability Example where Denominator = PRO
+Completed)
+
+
+
+
+                                                           36
+                                                       Contains Nonbinding Recommendations
+
+
+       12 Table A9. Summary Statistics for Item 2 with Continuous Response Options (Safety and Tolerability Example)18
+                 Analysis Visit                                                                        Control                  Treatment
+                                       PRO Expected19 (N)                                                 600                       602
+                                       PRO Not Completed, n (%)                                        0 (0.0%)                  0 (0.0%)
+                                       PRO Completed, n (%)                                          600 (100.0%)              602 (100.0%)
+                                       Summary Statistics20
+                                        Mean                                                              2.1                       1.0
+                    Baseline
+                                        Standard Deviation                                                1.8                       0.9
+                                        Standard Error                                                   0.07                      0.04
+                                        Median                                                            2.1                       1.0
+                                        Minimum                                                           0.0                       0.0
+                                        Maximum                                                           4.1                       2.0
+                                       PRO Expected (N)                                                   564                       572
+                                       PRO Not Completed, n (%)                                        22 (3.9%)                 36 (6.3%)
+                                       PRO Completed, n (%)                                           542 (96.1%)               536 (93.7%)
+                                       Summary Statistics
+                                        Mean                                                              7.1                       5.1
+                 Cycle 2 Day 1
+                                        Standard Deviation                                                4.6                       3.7
+                                        Standard Error                                                   0.19                      0.15
+                                        Median                                                            7.2                       5.1
+                                        Minimum                                                           0.3                       0.2
+                                        Maximum                                                          11.8                       9.8
+                                       PRO Expected (N)                                                   525                       542
+                                       PRO Not Completed, n (%)                                        15 (2.9%)                 26 (4.8%)
+                                       PRO Completed, n (%)                                           510 (97.1%)               516 (95.2%)
+                                       Summary Statistics
+                 Cycle 3 Day 1          Mean                                                              6.2                        3.9
+                                        Standard Deviation                                                5.2                        2.7
+                                        Standard Error                                                    0.23                      0.12
+                                        Median                                                            6.6                        3.8
+                                        Minimum                                                           0.1                        0.0
+
+18
+   Denominator used to calculate percentages for PRO Completed and PRO Not Completed is PRO Expected.
+19
+   When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+from treatment as shown in the table. The PRO Expected column excludes patients who discontinued from treatment and is determined where PRO Expected
+Flag (PROEXPFL) equals ‘Y’.
+20
+   Summary Statistics are calculated based on PRO Completed.
+
+
+                                                                              37
+                                                      Contains Nonbinding Recommendations
+
+                                         Maximum                                                         11.4                      10.0
+Figure A6. Descriptive Means for Item 2 with Continuous Response Options (Safety and Tolerability Example for Physical
+Functioning)21,22
+
+
+
+
+21
+   The ‘Higher Functioning’ and ‘Lower Functioning’ labels are provided as examples for physical functioning. Labels provided within the figure should
+accurately represent the concept being measured.
+22
+   Error bars based on a 95% confidence internal for the mean are represented within the line plot.
+
+                                                                              38
+                                                         Contains Nonbinding Recommendations
+
+
+                   5.3.6    Distribution of Change in Responses from Baseline
+
+13 Table A10. Distribution of Change in Response Categories from Baseline for Item 1 (Safety and Tolerability Example)23
+
+                                   PRO       PRO Not                    Change in Response Categories,25 n (%)
+   Analysis Treatment   PRO
+                                 Completed, Completed, Improving Improving Improving No Worsening Worsening Worsening
+    Visit     Arm     Expected24
+                                   n (%)      n (%)        1         2         3      Change       1           2 3
+                                             542                                                                303         132
+                Control         564                      22 (3.9%) 38 (7.0%) 11 (2.0%) 3 (0.6%)                                        38 (7.0%) 17 (3.1%)
+   Cycle 2                                 (96.1%)                                                            (55.9%)     (24.4%)
+   Day 1                                     536                                                                296         141
+              Treatment         572                      36 (6.3%) 33 (6.2%) 14 (2.6%) 6 (1.1%)                                        32 (6.0%) 14 (2.6%)
+                                           (93.7%)                                                            (55.2%)     (26.3%)
+                                             510                                                                261         126
+                Control         525                      15 (2.9%) 50 (9.8%) 24 (4.7%) 10 (2.0%)                                       29 (5.7%) 10 (2.0%)
+   Cycle 3                                 (97.1%)                                                            (51.2%)     (24.7%)
+   Day 1                                     516                                                                261         123
+              Treatment         542                      26 (4.8%) 44 (8.5%) 28 (5.4%) 11 (2.1%)                                       39 (7.6%) 10 (1.9%)
+                                           (95.2%)                                                            (50.6%)     (23.8%)
+
+
+
+
+  23
+     Denominator used to calculate percentages for PRO Completed and PRO Not Completed is PRO Expected. Denominator used to calculate percentages for
+  each change in response category is PRO Completed.
+  24
+     When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+  from treatment as shown in the table. The PRO Expected column excludes patients who discontinued from treatment and is determined where PRO Expected
+  Flag (PROEXPFL) equals ‘Y’.
+  25
+     The example response categories represent the response options for the item.
+
+
+                                                                                39
+                                          Contains Nonbinding Recommendations
+
+
+Figure A7. Distribution of Change in Response Categories from Baseline for Item 1 (Safety and Tolerability Example where
+Denominator = PRO Completed)
+
+
+
+
+                                                            40
+                                                       Contains Nonbinding Recommendations
+
+
+      14 Table A11. Change from Baseline for Item 2 with Continuous Response Options (Safety and Tolerability Example)26
+                 Analysis Visit                                                                        Treatment                  Control
+                                       PRO Expected27 (N)                                                 564                       572
+                                       PRO Not Completed, n (%)                                        22 (3.9%)                 36 (6.3%)
+                                       PRO Completed, n (%)                                           542 (96.1%)               536 (93.7%)
+                                                            28
+                                       Summary Statistics
+                                         Mean                                                              4.9                       4.5
+                 Cycle 2 Day 1
+                                         Standard Deviation                                                4.0                       1.7
+                                         Standard Error                                                   0.17                      0.19
+                                         Median                                                            5.0                       4.2
+                                         Minimum                                                          -1.1                      -1.3
+                                         Maximum                                                          10.3                       9.0
+                                                      1
+                                       PRO Expected (N)                                                   525                       542
+                                       PRO Not Completed, n (%)                                        15 (2.9%)                 26 (4.8%)
+                                       PRO Completed, n (%)                                           510 (97.1%)               516 (95.2%)
+                                       Summary Statistics
+                                         Mean                                                              4.1                       2.9
+                 Cycle 3 Day 1
+                                         Standard Deviation                                                5.7                       5.6
+                                         Standard Error                                                   0.25                      0.24
+                                         Median                                                            4.2                       2.9
+                                         Minimum                                                          -1.6                      -1.4
+                                         Maximum                                                           8.0                       8.5
+
+
+
+
+26
+   Denominator used to calculate percentages for PRO Completed and PRO Not Completed is PRO Expected.
+27
+   When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+from treatment as shown in the table. The PRO Expected column excludes patients who discontinued from treatment and is determined where PRO Expected
+Flag (PROEXPFL) equals ‘Y’.
+28
+   Summary Statistics are calculated based on PRO Completed.
+
+                                                                              41
+                                                       Contains Nonbinding Recommendations
+
+
+Figure A8. Change from Baseline for Item 2 with Continuous Response Options (Safety and Tolerability Example)29 30
+
+
+
+
+29
+   The ‘Improving’ and ‘Worsening’ labels are provided as examples within the figure. Labels of directionality should align with what is provided in the scoring
+manual for the PRO measure used.
+30
+   Error bars based on a 95% confidence internal for the mean are represented within the line plot.
+
+                                                                               42
+                                                          Contains Nonbinding Recommendations
+
+
+                   5.3.7     Incidence of Healthcare Utilization
+
+15 Table A12. Incidence of Healthcare Utilization (Safety and Tolerability Example where Denominator = PRO Expected)31
+                                                                                            Healthcare Utilization Intervention, n (%)
+                                                  PRO                                                          Supportive Care     Supportive Care
+       Analysis   Treatment     Randomized                    Emergency                                          Medications          Procedures
+                                                Expected32                                                                                                Other
+        Visit       Arm           Patients                    Department     Hospitalizations      Opiates      (e.g., Steroids,   (e.g., Palliative:
+                                                   (N)                                                                                                  (Describe)
+                                                              (ED) Visits                                        Transfusions,         Hospice,
+                                                                                                               Growth Factors)      Nephrostomy)
+                   Control           600            600         0 (0.0%)         0 (0.0%)         0 (0.0%)         0 (0.0%)              0 (0.0%)       0 (0.0%)
+       Baseline
+                  Treatment          602            602         0 (0.0%)         0 (0.0%)         0 (0.0%)         0 (0.0%)              0 (0.0%)       0 (0.0%)
+   Cycle 2 Day     Control           600            564         5 (0.9%)         2 (0.4%)         0 (0.0%)         0 (0.0%)              3 (0.5%)       0 (0.0%)
+        1         Treatment          602            572         5 (0.9%)         3 (0.5%)         0 (0.0%)         1 (0.2%)              1 (0.2%)       0 (0.0%)
+   Cycle 3 Day     Control           600            525         7 (1.3%)         5 (1.0%)         0 (0.0%)         0 (0.0%)              3 (0.6%)       0 (0.0%)
+        1         Treatment          602            542         7 (1.3%)         3 (0.6%)         0 (0.0%)         2 (0.4%)              5 (0.9%)       0 (0.0%)
+
+
+
+
+  31
+    Denominator used to calculate percentages is PRO Expected.
+  32
+     When PRO data are used to inform the evaluation of safety and tolerability, the PRO measure may not be expected to be completed after a patient discontinues
+  from treatment as shown in the table. The PRO Expected column excludes patients who discontinued from treatment and is determined where PRO Expected
+  Flag (PROEXPFL) equals ‘Y’.
+
+
+                                                                                43
+

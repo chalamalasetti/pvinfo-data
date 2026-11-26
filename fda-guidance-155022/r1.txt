@@ -1,0 +1,1756 @@
+ Digital Health Technologies
+for Remote Data Acquisition
+  in Clinical Investigations
+   Guidance for Industry, Investigators,
+        and Other Stakeholders
+
+
+
+
+                 U.S. Department of Health and Human Services
+                         Food and Drug Administration
+                Center for Drug Evaluation and Research (CDER)
+              Center for Biologics Evaluation and Research (CBER)
+               Center for Devices and Radiological Health (CDRH)
+                      Oncology Center of Excellence (OCE)
+
+
+
+
+                               December 2023
+                               Clinical/Medical
+
+
+
+
+55626970fnl
+   Digital Health Technologies for
+ Remote Data Acquisition in Clinical
+            Investigations
+Guidance for Industry, Investigators, and
+          Other Stakeholders
+                                       Additional copies are available from:
+                             Office of Communications, Division of Drug Information
+                                     Center for Drug Evaluation and Research
+                                          Food and Drug Administration
+                              10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                          Silver Spring, MD 20993-0002
+                            Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                          Email: druginfo@fda.hhs.gov
+                  https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+                                                       and/or
+                                Office of Communication, Outreach and Development
+                                    Center for Biologics Evaluation and Research
+                                            Food and Drug Administration
+                                 10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                           Silver Spring, MD 20993-0002
+                                       Phone: 800-835-4709 or 240-402-8010
+                                              Email: ocod@fda.hhs.gov
+  https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+                                                        and/or
+                                                   Office of Policy
+                                     Center for Devices and Radiological Health
+                                           Food and Drug Administration
+                                  10903 New Hampshire Ave., Bldg. 66, Room 5431
+                                           Silver Spring, MD 20993-0002
+                                       Email: CDRH-Guidance@fda.hhs.gov
+https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/guidance-documents-medical-devices-
+                                              and-radiation-emitting-products
+
+                           U.S. Department of Health and Human Services
+                                   Food and Drug Administration
+                          Center for Drug Evaluation and Research (CDER)
+                        Center for Biologics Evaluation and Research (CBER)
+                         Center for Devices and Radiological Health (CDRH)
+                                Oncology Center of Excellence (OCE)
+
+
+                                                 December 2023
+                                                 Clinical/Medical
+                                              Contains Nonbinding Recommendations
+
+
+                                                          TABLE OF CONTENTS
+
+
+
+I.           INTRODUCTION............................................................................................................. 1
+II.          BACKGROUND ............................................................................................................... 4
+III. REGULATORY CONSIDERATIONS AND ENGAGEMENT WITH THE
+AGENCY ....................................................................................................................................... 5
+IV.  CONSIDERATIONS WHEN USING DIGITAL HEALTH TECHNOLOGIES IN
+CLINICAL INVESTIGATIONS................................................................................................. 8
+     A.      Selection of a Digital Health Technology and Rationale for Use in a Clinical Investigation .. 8
+     B.      Digital Health Technology Description in a Submission .......................................................... 10
+     C.      Verification, Validation, and Usability Evaluations of Digital Health Technologies ............. 11
+     D.      Evaluation of Endpoints Involving Data Collected Using Digital Health Technologies ........ 15
+     E.      Statistical Analysis and Trial Design Considerations ............................................................... 17
+     F.      Risk Considerations When Using Digital Health Technologies ............................................... 18
+     G.      Record Protection and Retention ............................................................................................... 21
+     H.      Other Considerations When Using Digital Health Technologies During a Clinical
+     Investigation .......................................................................................................................................... 22
+GLOSSARY................................................................................................................................. 27
+APPENDIX A: EXAMPLES OF POTENTIAL DIGITAL HEALTH TECHNOLOGY
+USE IN CLINICAL INVESTIGATIONS ................................................................................ 28
+APPENDIX B: EXAMPLE OF SELECTING A DIGITAL HEALTH TECHNOLOGY
+FOR A CLINICAL INVESTIGATION AND JUSTIFYING THE ENDPOINT FOR
+WHICH IT IS USED .................................................................................................................. 30
+                                    Contains Nonbinding Recommendations
+
+
+              Digital Health Technologies for Remote Data
+                   Acquisition in Clinical Investigations
+       Guidance for Industry, Investigators, and Other Stakeholders 1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+I.         INTRODUCTION
+
+A digital health technology 2 (DHT) is a system that uses computing platforms, connectivity,
+software, and/or sensors, for health care and related uses. This guidance provides
+recommendations for sponsors, investigators, and other stakeholders on the use of DHTs for
+remote data acquisition 3 from participants in clinical investigations that evaluate medical
+products. 4,5
+
+There is a large spectrum of DHTs available for potential use in a clinical investigation. DHTs
+for remote data acquisition in clinical investigations can include hardware and/or software 6 to
+perform one or more functions. 7 Appendix A includes examples of DHTs that can be used for
+
+1
+ This guidance has been prepared by the Office of Medical Policy in the Center for Drug Evaluation and Research
+(CDER) in cooperation with the Center for Biologics Evaluation and Research (CBER), the Center for Devices and
+Radiological Health (CDRH), and the Oncology Center of Excellence (OCE) at the Food and Drug Administration
+(FDA).
+2
+    Words and phrases in bold are defined, for the purposes of this guidance, in the Glossary.
+3
+  While the focus of this guidance is on DHTs used for remote data acquisition in a clinical investigation, the
+recommendations in this guidance may be applicable when DHTs are used by trial participants at a trial site (e.g.,
+continuous glucose monitor reviewed in the clinic).
+4
+  For FDA’s regulatory definitions of clinical investigation or investigation, see 21 CFR 50.3(c), 56.102(c),
+312.3(b), and 812.3(h). For the purposes of this guidance, the terms clinical trial and clinical investigation are used
+interchangeably.
+5
+ For the purposes of this guidance, all references to medical products mean human drugs and biological products,
+medical devices, and combination products (see 21 CFR 3.2(e)) that are regulated by CDER, CBER, or CDRH.
+6
+    This may include software enabled by artificial intelligence (AI).
+7
+ For the purposes of this guidance, for any given DHT, the term function is the distinct purpose of the DHT in a
+clinical investigation, which could be the intended use or a subset of the intended use of the DHT. DHTs can have
+multiple functions, which may or may not be device functions. When considering FDA's regulatory approach and
+policy for multiple function device products, see the guidance for industry and FDA staff Multiple Function Device
+
+
+
+
+                                                             1
+                                 Contains Nonbinding Recommendations
+
+
+remote data acquisition in clinical investigations, such as wearables and software applications
+(including mobile apps). Depending on the intended use 8 of a DHT, the DHT may meet the
+definition of a device under the Federal Food, Drug, and Cosmetic Act (FD&C Act). 9
+
+This guidance provides recommendations for ensuring that a DHT is fit-for-purpose (i.e., that the
+level of validation 10 associated with the DHT is sufficient to support the use, including the
+interpretability of its data in the clinical investigation), which involves considerations of both the
+DHT’s form (i.e., design) and function(s) (i.e., distinct purpose(s) within an investigation).
+DHTs may rely on or work with other technologies that support their operation, such as general-
+purpose computing platforms (e.g., smartphones) and communication networks. Therefore,
+when implementing the recommendations in this guidance related to DHTs, sponsors should
+ensure that these other technologies are adequate to support the function(s) of the DHT. The
+recommendations in this guidance may be relevant to the other technologies used to support
+remote data acquisition in a clinical investigation.
+
+This guidance outlines recommendations intended to facilitate the use of DHTs in clinical
+investigations as appropriate for the evaluation of medical products. These recommendations
+also address some of the information regarding DHTs that sponsors should include in:
+
+       •   an investigational new drug application (IND)
+       •   an investigational device exemption (IDE) application
+       •   a marketing application
+       •   a Drug Development Tool (DDT) submission 11
+       •   a Medical Device Development Tool (MDDT) submission 12
+
+
+
+
+Products: Policy and Considerations (July 2020). We update guidances periodically. For the most recent version
+of a guidance, check the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fda-
+guidance-documents#guidancesearch.
+8
+    21 CFR 801.4.
+9
+ See section 201(h) of the FD&C Act for the definition of a device. How to determine whether a DHT proposed for
+use in a clinical investigation meets the definition of a device under the FD&C Act is outside the scope of this
+guidance. For further information about FDA digital health regulatory policies, see https://www.fda.gov/medical-
+devices/digital-health-center-excellence/ask-question-about-digital-health-regulatory-policies.
+10
+  For the purposes of this guidance, validation is confirmation by examination and provision of objective evidence
+that the selected DHT appropriately assesses the clinical event or characteristic in the proposed participant
+population (e.g., step count or heart rate). See section IV.C of this guidance for further discussion of validation.
+11
+  See CDER’s web page Drug Development Tools (DDT) Qualification Programs, available at
+https://www.fda.gov/drugs/development-approval-process-drugs/drug-development-tool-ddt-qualification-programs.
+12
+  See CDRH’s web page Medical Device Development Tools (MDDT), available at https://www.fda.gov/medical-
+devices/science-and-research-medical-devices/medical-device-development-tools-mddt.
+
+
+
+
+                                                          2
+                                  Contains Nonbinding Recommendations
+
+
+These recommendations address the following topics:
+
+       •   Selection of DHTs that are suitable for use in clinical investigations
+
+       •   Description of DHTs in regulatory submissions 13
+
+       •   Verification and validation of DHTs for use in clinical investigations
+
+       •   Use of DHTs to collect data for trial endpoints
+
+       •   Identification and management of risks associated with the use of DHTs during clinical
+           investigations
+
+       •   Retention and protection of data collected by DHTs
+
+       •   Roles of sponsors and investigators related to the use of DHTs in clinical investigations
+
+The following topics are beyond the scope of this guidance:
+
+       •   Whether a DHT meets the definition of a device under section 201(h) of the FD&C Act 14
+
+       •   Approaches to selecting, modifying, developing, and validating clinical outcome
+           assessments (COAs) to measure outcomes of importance to patients in clinical
+           investigations. 15
+
+While also not addressed in this guidance, some of the considerations in this guidance may be
+helpful for other uses of DHTs, such as the screening and selection of trial participants and the
+enrichment of trial populations. 16
+
+ For the purposes of this guidance, FDA uses the term submission to refer to an IND, an IDE application, a
+13
+
+marketing application, a DDT submission, or an MDDT submission.
+14
+     See footnote 9.
+15
+  For drugs and biological products, see the web page FDA Patient-Focused Drug Development Guidance Series for
+Enhancing the Incorporation of the Patient’s Voice in Medical Product Development and Regulatory Decision
+Making, available at https://www.fda.gov/drugs/development-approval-process-drugs/fda-patient-focused-drug-
+development-guidance-series-enhancing-incorporation-patients-voice-medical. In particular, see the draft guidance
+for industry, FDA staff, and other stakeholders Patient-Focused Drug Development: Selecting, Developing, or
+Modifying Fit-for-Purpose Clinical Outcome Assessments (June 2022). When final, this guidance will represent
+FDA’s current thinking on this topic. For medical devices, see the web page Clinical Outcome Assessments (COAs)
+in Medical Device Decision Making, available at https://www.fda.gov/about-fda/cdrh-patient-science-and-
+engagement-program/clinical-outcome-assessments-coas-medical-device-decision-making.
+16
+   Enrichment is the prospective use of any patient characteristic to select a study population in which detection of a
+drug effect (if one is in fact present) is more likely than it would be in an unselected population. See the guidance
+for industry Enrichment Strategies for Clinical Trials to Support Determination of Effectiveness of Human Drugs
+and Biological Products (March 2019).
+
+
+
+
+                                                           3
+                                 Contains Nonbinding Recommendations
+
+
+
+This guidance is being issued, in part, to satisfy the mandate under section 3607(a) of the Food
+and Drug Omnibus Reform Act of 2022 (FDORA) to issue guidance regarding the appropriate
+use of digital health technologies in clinical trials.
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+
+II.      BACKGROUND
+
+Advances in technology, including sensors, general-purpose computing platforms, and methods
+for data processing, transmission, and storage have transformed the ability to remotely obtain
+and analyze clinically relevant information from individuals. DHTs used for remote data
+acquisition are playing a growing role in health care and offer important opportunities in clinical
+research. For example, DHTs may be used to measure biomarkers and to administer COAs, such
+as patient-reported outcomes and/or performance outcomes. 17 Compared to intermittent trial
+visits, the use of DHTs to remotely collect data from trial participants may allow for more-
+frequent or continuous data collection. This may provide a broader picture of how participants
+feel or function in their daily lives. DHTs provide opportunities to record data from trial
+participants (e.g., biomarkers, performance of activities of daily living, sleep, vital signs)
+wherever the participants may be (e.g., home, school, work, outdoors). The data collection may
+involve passive monitoring by the DHT or the acquisition of data while participants are actively
+interacting with the DHT. Data captured by DHTs can often be transmitted directly to
+investigators, sponsors, and/or other authorized parties, with the capability to maintain blinding
+or masking of the data when appropriate. Note that some clinical investigations may use
+multiple DHTs to measure one or more clinical characteristics or events (see appendix A,
+example 4).
+
+The ability to capture and transmit data remotely increases opportunities for individuals to
+participate in clinical investigations where some or all of the trial-related activities occur at
+locations other than traditional clinical trial sites (decentralized clinical trials). 18 Increasing
+access to and use of DHTs in clinical trials can potentially enable the inclusion of diverse and
+underrepresented populations by facilitating decentralized clinical trials. This could help to
+ensure medical products are safe and effective for the population for which they will be used.
+Reducing the burden on trial participants can also improve trial recruitment, participant
+engagement, and retention throughout the study. Moreover, use of DHTs in clinical
+17
+  Examples of performance outcomes include tests of visual acuity, memory, and auditory acuity in which
+participant responses to stimuli are analyzed to provide a clinical assessment.
+18
+  See the draft guidance for industry, investigators, and other stakeholders Decentralized Clinical Trials for Drugs,
+Biological Products, and Devices (May 2023). When final, this guidance will represent FDA’s current thinking on
+this topic.
+
+
+
+
+                                                          4
+                                  Contains Nonbinding Recommendations
+
+
+investigations may facilitate inclusion of certain participants with physical or cognitive
+disabilities or pediatric participants. For example, the use of sensors may be of value to obtain
+data about signs (e.g., scratching, sleep) from cognitively impaired or pediatric participants who
+are unable to report symptoms (e.g., itch, insomnia). Sponsors should consider what impact the
+use of a DHT in a clinical investigation could have on the cohort participating (e.g., expanding
+participation of geographically dispersed individuals, limiting participation of those unwilling to
+use DHTs).
+
+
+III.       REGULATORY CONSIDERATIONS AND ENGAGEMENT WITH THE
+           AGENCY
+
+Some DHTs that may be appropriate for use in a clinical investigation may meet the definition of
+a device under section 201(h) of the FD&C Act. 19 Devices intended for use in clinical
+investigations, including DHTs, are exempt from most regulatory requirements applicable to
+devices, including marketing authorization, 20 as long as the investigation complies with
+applicable requirements under 21 CFR part 812.
+
+In many cases, FDA regulations do not require submission of an IDE application to FDA for use
+of a device in a clinical investigation. For example, where a DHT, as proposed for use in a
+clinical investigation of a drug or biological product under an IND, is a nonsignificant risk
+device (i.e., the DHT does not meet the definition of a significant risk device under 21 CFR
+812.3(m)), submission of an IDE application to FDA is not required if the investigation complies
+with the abbreviated requirements in 21 CFR 812.2(b). In addition, if a clinical investigation
+involving a DHT that is a device falls into one of the categories of exempt investigations under
+21 CFR 812.2(c), submission of an IDE application to FDA is not required. Further, when an
+approved or cleared device is used in a clinical investigation in accordance with its approved or
+cleared indications for use, submission of an IDE application is not required. 21, 22 Although it
+may be uncommon, a DHT that is a device, as proposed for use in a clinical investigation of a
+drug or biological product under an IND, may meet the definition of a significant risk device
+under 21 CFR 812.3(m) and require submission of an IDE application to FDA under 21 CFR
+
+
+
+
+19
+     See footnote 9.
+20
+  Marketing authorizations for devices include clearance of a premarket notification (510(k)) submission (see 21
+CFR part 807, subpart E); granting of a De Novo classification request (see 21 CFR part 860, subpart D); and
+approval of a premarket approval application (PMA) (see 21 CFR part 814) or a humanitarian device exemption
+application (see 21 CFR part 814, subpart H). For the purposes of this guidance, an FDA-authorized device is a
+device with marketing authorization.
+21
+     See 21 CFR 812.1 and 812.2(c)(1) and (2).
+22
+  Note that a sponsor must submit an IDE application for a device investigation that involves an exception from
+informed consent under 21 CFR 50.24 or if FDA notifies the sponsor that an IDE application is required for an
+investigation (21 CFR 50.24(d) and 812.20(a)(1)).
+
+
+
+
+                                                         5
+                                 Contains Nonbinding Recommendations
+
+
+812.20 for the same clinical investigation. 23 In these cases, when all information required in an
+IDE application under 21 CFR 812.20 is also contained in the IND, FDA generally does not
+intend to request that sponsors submit a separate IDE application.
+
+DHTs that meet the statutory definition of a device under section 201(h) of the FD&C Act are
+also subject to design control requirements, which are basic controls needed to ensure that the
+device being designed will perform as intended. 24 For devices that do not have FDA marketing
+authorization and are used only in clinical investigations for remote data collection, the activities
+needed to ensure that devices will perform as intended in the clinical investigation can vary
+depending on the device and its specific function, including its context of use. For such devices,
+FDA’s assessment as to whether the device is fit-for-purpose in the investigation is primarily
+based on the information submitted to the Agency, and this guidance describes the types of
+information that can provide assurance that these devices, when used only for remote data
+collection in clinical investigations, will perform as intended. Therefore, where sponsors
+conduct the types of verification and validation activities recommended in this guidance to
+ensure that a DHT used only in clinical investigations for remote data collection is fit-for-
+purpose, FDA does not intend to otherwise assess sponsors’ compliance with design control
+requirements, when applicable. 25 This policy does not apply when a DHT that is a device is
+intended for use outside of a clinical investigation.
+
+The CDRH Digital Health Center of Excellence, which was established to empower stakeholders
+to advance health care by fostering responsible and high-quality digital health innovation, can
+also serve as a resource on DHTs, including their regulatory status, for sponsors, DHT
+manufacturers, and other stakeholders. 26 Sponsors can engage with FDA under the Q-
+Submission Program to address whether use of a specific DHT proposed for use in a clinical
+investigation meets the definition of a significant risk device. 27
+
+Sponsors should engage early with the appropriate Center responsible for the medical product
+under investigation to discuss use of DHTs in a specific clinical investigation. 28 The responsible
+Center will consult other Centers as needed.
+
+23
+   For additional information on significant risk and nonsignificant risk devices, see https://www.fda.gov/medical-
+devices/investigational-device-exemption-ide/ide-approval-process and the information sheet guidance for IRBs,
+clinical investigators, and sponsors Significant Risk and Nonsignificant Risk Medical Device Studies (January 2006).
+24
+     See 21 CFR 820.30.
+25
+  See 21 CFR 812.1 and 820.30. Class I devices, other than those listed in 21 CFR 820.30(a)(2), are not subject to
+design controls. See 21 CFR 820.30(a).
+26
+  For further information about the CDRH Digital Health Center of Excellence, see https://www.fda.gov/medical-
+devices/digital-health-center-excellence.
+27
+  See the guidance for industry and FDA staff Requests for Feedback and Meetings for Medical Device
+Submissions: The Q-Submission Program (June 2023).
+28
+  Sponsors should follow each FDA Center’s procedures for engaging with the Agency in the context of a
+development program. For drugs and biological products, see the draft guidance for industry Formal Meetings
+
+
+
+
+                                                         6
+                                 Contains Nonbinding Recommendations
+
+
+
+Developers of DHTs may choose to pursue qualification of DHTs as a DDT or an MDDT for a
+specific context of use. A qualified DHT may be relied upon in clinical investigations to support
+submissions for drugs or biological products (if qualified as a DDT) or devices (if qualified as an
+MDDT) where the context of use is the same (e.g., measurement of a specific clinical event or
+characteristic in a specific disease population). Developers of DHTs may choose to submit
+qualification proposals to the appropriate CDER/CBER DDT Qualification Programs 29,30 (e.g.,
+the COA Program or Biomarker Qualification Program 31) and/or CDRH’s MDDT Qualification
+Program. 32,33 These are voluntary qualification programs that are independent of an individual
+marketing submission for a DHT that is a device or a submission for a clinical investigation that
+uses a DHT to collect data remotely. Sponsors and other stakeholders also may consider
+submitting DHT-related proposals to the Innovative Science and Technology Approaches for
+New Drugs (ISTAND) Pilot Program, which is designed to expand DDT types by encouraging
+development of DDTs that are out of scope for other DDT qualification programs but may still
+be beneficial for drug development. 34
+
+
+
+
+Between the FDA and Sponsors or Applicants of PDUFA Products (September 2023) and the draft guidance for
+industry Formal Meetings Between the FDA and Sponsors or Applicants of BsUFA Products (August 2023). When
+final, these guidances will represent FDA’s current thinking on these topics. For medical devices, see the guidance
+for industry and FDA staff Requests for Feedback and Meetings for Medical Device Submissions: The Q-
+Submission Program. For further information about FDA digital health regulatory policies, see
+https://www.fda.gov/medical-devices/digital-health/ask-question-about-digital-health-regulatory-policies. For
+combination products, see the guidance for industry and FDA staff Requesting FDA Feedback on Combination
+Products (December 2020).
+29
+  See CDER’s web page Drug Development Tools (DDT) Qualification Programs, available at
+https://www.fda.gov/drugs/development-approval-process-drugs/drug-development-tool-ddt-qualification-programs.
+30
+  See the guidance for industry and FDA staff Qualification Process for Drug Development Tools (November
+2020).
+31
+  The draft guidance for industry and FDA staff Biomarker Qualification: Evidentiary Framework (December
+2018) may also be a helpful resource. When final, this guidance will represent FDA’s current thinking on this topic.
+32
+  See CDRH’s web page Medical Device Development Tools (MDDT), available at https://www.fda.gov/medical-
+devices/science-and-research-medical-devices/medical-device-development-tools-mddt.
+
+ See the guidance for industry, tool developers, and FDA staff Qualification of Medical Device
+33
+
+Development Tools (July 2023).
+34
+   See FDA’s web page Innovative Science and Technology Approaches for New Drugs (ISTAND) Pilot Program
+Submission Process, available at https://www.fda.gov/drugs/innovative-science-and-technology-approaches-new-
+drugs-istand-pilot-program/innovative-science-and-technology-approaches-new-drugs-istand-pilot-program-
+submission-process.
+
+
+
+
+                                                         7
+                                 Contains Nonbinding Recommendations
+
+
+IV.      CONSIDERATIONS WHEN USING DIGITAL HEALTH TECHNOLOGIES IN
+         CLINICAL INVESTIGATIONS
+
+This section outlines some considerations for using DHTs in a clinical investigation to help
+ensure they are fit-for-purpose. Sponsors are encouraged to engage with the DHT manufacturer
+or other parties to leverage any existing information, as appropriate, to support the DHT’s
+suitability for use in the specific clinical investigation. While a sponsor may not control the life
+cycle processes of the DHT, they still should ensure that the DHT remains fit-for-purpose
+throughout its use in a clinical investigation.
+
+         A.       Selection of a Digital Health Technology and Rationale for Use in a Clinical
+                  Investigation
+
+In choosing an appropriate DHT, sponsors should consider the clinical event or characteristic of
+the disease or condition of interest that is to be measured, identify appropriate technical and
+performance specifications of a DHT, and consider the proposed trial population who will be
+using the DHT. In addition, sponsors should consider the design of the clinical investigation,
+and the characteristics of the DHT that may influence trial participant use (e.g., the design of its
+user interface).
+
+The following are some specific issues that should be considered when selecting a DHT for a
+clinical investigation:
+
+         1. Clinical Trial Population
+
+Among other characteristics, education, language, age, health/physical condition, and technical
+aptitude of trial populations should be considered to ensure that trial participants will be able to
+use the DHT as intended for the purposes of the trial and to facilitate inclusion of diverse
+populations in whom the product is intended to be used. For example, to use the DHT as
+intended, certain trial participants may need interfaces with large text, buttons, or screens for
+their interactions with the DHT or need the text to be translated into multiple languages. Section
+IV.C.3 of this guidance discusses usability evaluations to gather feedback on a proposed DHT.
+
+         2. Technical and Performance Specifications
+
+To select the appropriate DHT for a clinical investigation, the sponsor should identify the
+minimum technical and performance specifications 35 of the DHT. If applicable, the sponsor
+should identify a specific product or products (e.g., model and/or version) that meet the
+minimum technical and performance specifications for a DHT to remain fit-for-purpose. If new
+models and/or versions of the DHT or other technologies become available during the trial, the
+sponsor could consider adding those models and/or versions if they meet the minimum technical
+and performance specifications.
+
+
+35
+  Technical specifications of DHTs may include, but are not limited to, the operating system, storage capacity,
+and/or sensors to be used in a clinical investigation. Performance specifications may include, but are not limited to,
+considerations regarding the accuracy, precision, and reliability of the DHT(s).
+
+
+                                                          8
+                            Contains Nonbinding Recommendations
+
+
+       3. Design and Operation of DHTs and Other Technologies
+
+The design and operation of the DHT and other technologies should be considered to determine
+if the DHT is fit-for-purpose.
+
+   •   DHT design (e.g., material, size, weight, appearance, portability) and ease of use may
+       influence whether trial participants will use the DHT for the duration of the clinical
+       investigation and in the manner described in the protocol. These factors may be
+       particularly important for DHTs that are wearable, where comfort and convenience may
+       influence a trial participant’s ability and willingness to use the DHT for the duration
+       specified in the protocol.
+
+   •   Some DHTs are designed to provide users with feedback on the measurements made. If
+       participants are able to view data or results from the DHT, it may impact their behavior
+       or evaluation of the investigational product. As noted in the background section of this
+       guidance, data captured by DHTs can often be transmitted directly to investigators,
+       sponsors, and/or other authorized parties, with the capability to maintain blinding or
+       masking of the data when appropriate. Sponsors should consider all of these factors
+       when designing the clinical investigation.
+
+   •   Power needs, such as battery life and charging recommendations, may influence the
+       feasibility of the DHT for data capture and a trial participant’s ability and willingness to
+       use the DHT for the duration specified in the protocol.
+
+   •   Operational specifications (e.g., data storage capacity, frequency of data transmission)
+       should be adequate to minimize missing data.
+
+   •   DHT alerts (e.g., low battery, poor signal, data not being recorded or transmitted to the
+       server) are recommended to help trial participants, trial personnel, and/or sponsors
+       prevent loss of data or missing data. The trial should include processes to ensure that
+       trial participants understand how to respond to these alerts.
+
+   •   Sponsors should consider environmental factors (e.g., temperature, humidity) that may
+       affect the performance of DHTs in a clinical investigation.
+
+   •   Availability and capacity of participant and sponsor network systems should be adequate
+       to handle the volume of data obtained, particularly for frequent or continuous recordings.
+
+
+
+
+                                                 9
+                                 Contains Nonbinding Recommendations
+
+
+     •   Safeguards should be in place to manage cybersecurity risks, 36 prevent unauthorized
+         access to the DHT and the data it collects, and ensure privacy and security. 37
+
+         4. Use of a Participant’s Own DHT and/or Other Technologies
+
+Sponsors should evaluate the advantages and disadvantages of allowing trial participants to use
+their own DHTs (e.g., continuous glucose monitors) and/or other technologies (e.g., general-
+purpose computing platforms such as smartphones and tablets) for remote data acquisition in a
+clinical investigation. Allowing participants to use their own DHTs or other technologies with
+which they are already familiar may potentially reduce the burden of using additional DHTs or
+other technologies provided by the sponsor. However, allowing participants to use their own
+DHTs may not be appropriate for DHTs that are customized or highly specialized for specific
+uses (e.g., actigraphy with algorithms customized for participants with a specific movement
+disorder).
+
+Sponsor-provided DHTs or other technologies to support their operation should be available as
+an option to ensure that participants who do not bring their own are not excluded from the
+clinical investigation for that reason. Sponsor-provided telecommunication services should also
+be made available as needed so that participants who have no or limited access to these services
+are not excluded from the clinical investigation.
+
+         B.      Digital Health Technology Description in a Submission 38
+
+In submissions that rely on or propose a clinical investigation that includes the use of a DHT, 39
+the sponsor should explain how the DHT is fit-for-purpose for use in the clinical investigation.
+The description should include information such as design and related technological
+characteristics of the DHT, data output provided to the sponsor and investigator, and information
+on how the DHT measures the clinical event or characteristic of interest (e.g., use of
+accelerometry to measure steps or use of photoplethysmography to count heartbeats). For many
+
+36
+  See the guidance for industry and FDA staff Cybersecurity in Medical Devices: Quality System Considerations
+and Content of Premarket Submissions (September 2023). The principles discussed in this guidance may also be
+helpful for addressing cybersecurity risks of DHTs used in clinical investigations of medical products that do not
+meet the definition of a device under section 201(h) of the FD&C Act.
+37
+  See the draft guidance for industry Electronic Systems, Electronic Records, and Electronic Signatures in Clinical
+Investigations: Questions and Answers (March 2023). When final, this guidance will represent FDA’s current
+thinking on this topic.
+38
+   CDRH takes a least burdensome approach to regulatory questions or issues that arise throughout the total product
+lifecycle for medical devices, including evaluation of premarket submissions. Least burdensome is defined to be the
+minimum amount of information necessary to adequately address a relevant regulatory question or issue through the
+most efficient manner at the right time. For medical device submissions, the recommendations in this guidance will
+be implemented consistent with the least burdensome principles outlined in the guidance for industry and FDA staff
+The Least Burdensome Provisions: Concept and Principles (February 2019).
+
+ When completing Form FDA 1571 or Form FDA 356h (available at https://www.fda.gov/about-fda/reports-
+39
+
+manuals-forms/forms), applicants should check “yes” if the submission contains DHT data or a proposal to collect
+DHT data.
+
+
+
+
+                                                         10
+                                Contains Nonbinding Recommendations
+
+
+commercially available DHTs, the technical specifications and descriptions made publicly
+available and provided by the DHT manufacturer or by right of reference to a master file 40 may
+be sufficient. The sponsor should also describe the flow of data from the DHT to the first
+durable electronic data repository.
+
+To assist the Agency in understanding the sponsor’s plans for consistent data collection during
+the clinical investigation, sponsors should describe features that impact usability, such as the user
+interface, and how the DHT is worn, operated, and maintained (e.g., charged, calibrated).
+Sponsors should describe how access to the DHT or the data collected from it is controlled to
+ensure privacy and security. The description should include methods for access control, when
+feasible, to ensure that only appropriate individuals are able to use the DHT or enter information.
+If applicable, the description should also include any options provided to allow the user to report
+information (e.g., symptoms or activities) that can supplement data recordings and help with the
+interpretation of the recording.
+
+To help show how integrity of the data collected with DHTs will be or is maintained, sponsors
+should include information about data management, including collection, storage, transmission,
+and archiving in the submission.
+
+        C.       Verification, Validation, and Usability Evaluations of Digital Health
+                 Technologies
+
+This guidance uses the terms verification and validation to describe steps that help ensure that
+the DHT is fit-for-purpose for remote data collection in a clinical investigation. Verification and
+validation should be addressed regardless of whether the DHT meets the definition of a device
+under section 201(h) of the FD&C Act. 41 For the purposes of this guidance, verification is
+confirmation by examination and provision of objective evidence that the parameter that the
+DHT measures (e.g., acceleration, temperature, pressure) is measured accurately and precisely.
+Validation is confirmation by examination and provision of objective evidence that the selected
+DHT appropriately assesses the clinical event or characteristic in the proposed participant
+population (e.g., step count or heart rate). Verification is often viewed as part of the validation
+process since validation is highly dependent upon comprehensive testing and other verification
+tasks previously completed at each stage of the development life cycle. Verification and
+
+
+
+
+40
+  For information on master files, please see the relevant Center’s web page on master files. CDRH master files:
+https://www.fda.gov/medical-devices/premarket-approval-pma/master-files; CBER master files:
+https://www.fda.gov/vaccines-blood-biologics/development-approval-process-cber/master-files-cber-regulated-
+products; CDER master files:
+https://www.fda.gov/Drugs/DevelopmentApprovalProcess/FormsSubmissionRequirements/DrugMasterFilesDMFs/
+default.htm.
+41
+   The terms verification and validation as used in this guidance are not intended to be synonymous with the terms
+defined in 21 CFR 820.3(aa) and 820.3(z) under the Quality System Regulation for devices (21 CFR part 820) or the
+terms software verification and validation as described in the guidance for industry and FDA staff General
+Principles of Software Validation (January 2002).
+
+
+
+
+                                                       11
+                                  Contains Nonbinding Recommendations
+
+
+validation activities should consider all relevant functions of the DHT in the context of use in the
+clinical investigation. 42
+
+Depending on the DHT and its context of use, verification and validation may begin with
+benchtop studies, progress to testing in healthy volunteers, and continue in individuals
+representing the population to be studied in the clinical investigation. 43 These studies should
+include demonstration that the clinical event or characteristic to be assessed (e.g., step count or
+heart rate) is consistently and appropriately measured in the population of interest. For example,
+the algorithm a DHT uses to capture steps in healthy participants may not be applicable for
+participants with Parkinson’s disease with a shuffling gait. Additionally, usability evaluations
+should identify and address any potential use errors or difficulties that trial participants or other
+intended users may experience when using the DHT.
+
+As discussed previously, sponsors can leverage verification and validation data made available
+(1) by DHT manufacturers or other third parties publicly, (2) in device labeling, or (3) by right of
+reference to other FDA submissions, when appropriate.
+
+The following subsections of this guidance present some additional considerations for the
+verification and validation of DHTs (section IV.C.1), interoperability (section IV.C.2), and
+usability evaluations (section IV.C.3).
+
+         1. Further Considerations for Verifying and Validating DHTs
+
+As part of the DHT verification and validation process, sponsors should consider involving DHT
+manufacturers, patients, caregivers, and other technical and clinical experts as appropriate.
+
+Verification confirms that the DHT meets its expected performance specifications. Verification
+can include conforming to consensus performance standards, when applicable (e.g., International
+Electrotechnical Commission 60601-1) and/or an analysis to identify potential failure modes of a
+DHT and their causes and effects (e.g., failure modes and effects analysis). For some DHTs and
+clinical investigations, it may be appropriate to identify and specify the conditions (e.g.,
+temperature range) under which the DHT meets performance specifications.
+
+Validation studies, including certain usability evaluations, can be conducted in healthy
+volunteers and individuals with varying degrees of disease severity. Depending on the type of
+
+42
+  For DHTs that include device software functions, sponsors should address the documentation recommendations in
+the guidance for industry and FDA staff Content of Premarket Submissions for Device Software Functions (June
+2023) when preparing a submission to the FDA.
+43
+  Where a DHT to be used for remote data collection in a clinical investigation meets the definition of a device
+under section 201(h) of the FD&C Act, clinical verification or validation testing of the DHT may meet the definition
+of a clinical investigation subject to applicable requirements under 21 CFR parts 50, 56, and/or 812. Sponsors
+should engage with FDA through the Q-Submission Program to address whether use of a specific DHT proposed for
+use in a clinical investigation meets the definition of a significant risk device. See also the guidance for industry and
+FDA staff Requests for Feedback and Meetings for Medical Device Submissions: The Q-Submission Program for
+additional information.
+
+
+
+
+                                                           12
+                             Contains Nonbinding Recommendations
+
+
+study, it may be conducted in a controlled laboratory setting, in a simulated living environment,
+and/or in a natural living environment. The appropriate population to consider for these studies
+may depend on who is expected to use the DHT and whether the parameter being measured
+would be similarly obtained from a healthy volunteer and the target patient population for the
+medical product being studied.
+
+Depending on the particular DHT and clinical investigation, the verification and validation
+process may include:
+
+   •   Comparisons of measurements made by the DHT with reference measurements of the
+       clinical event or characteristic (e.g., step count by actigraphy versus step count by
+       observation).
+
+   •   Evaluation of factors that might impact the measurement, such as placement of a
+       wearable DHT (e.g., wrist versus hip), or physical interference with the measurement,
+       such as participant activities that may be misinterpreted as the clinical event or
+       characteristic of interest (e.g., a bumpy car ride misinterpreted as a tremor).
+
+   •   Evaluation of the calibration process, when applicable. Certain DHTs may require
+       calibration by the user, with or without assistance by trial personnel (e.g., calibrating a
+       mobile app or wearable for individual stride length to allow computation of the distance
+       covered in a specific time interval). The calibration process should be validated to ensure
+       accurate and precise measurements of the clinical characteristic or event of interest, and
+       the appropriate frequency of calibration should be determined.
+
+   •   Confirmation, either by new studies or by reference to existing data, that measurements
+       across protocol-specified DHTs are consistent when the protocol permits use of more
+       than one brand or model of DHT to collect the same data in a clinical investigation (see
+       sections IV.A.2 and 4).
+
+   •   Evaluation and justification of potential differences between measurements obtained
+       from participants remotely compared to measurements obtained from participants in a
+       clinic setting using the same DHT. A run-in period may be appropriate to ensure reliable
+       data collection.
+
+Sometimes, DHT software applications may be used to administer certain COAs remotely (e.g.,
+tests of auditory or visual acuity, tests of cognitive function) and may not rely on sensors for
+measurement. DHT software should be verified and validated to ensure that it is fit-for-purpose.
+
+       2. Interoperability
+
+Sponsors should ensure the ability of connected systems in the clinical investigation to
+effectively and securely exchange information and to use the information that has been
+
+
+
+
+                                                13
+                                Contains Nonbinding Recommendations
+
+
+exchanged. 44 FDA encourages the use of public data exchange standards, including those related
+to identification of the data source, as appropriate. Interoperability of DHTs should be evaluated
+to demonstrate that the interactions on the electronic interface perform as intended and the
+resulting DHT measurements are interpreted appropriately. 45,46
+
+         3. Usability Evaluations
+
+Usability evaluations should be conducted to demonstrate that the DHT can be used as intended
+by the trial population, without errors or problems. Usability evaluations are a critical
+component in confirming the suitability of the DHT in the proposed clinical investigation.
+Usability evaluations should be tailored to the risks and complexities associated with each DHT
+to be used in a clinical investigation. Usability evaluations should assess if the design of the
+DHT will allow participants in the clinical investigation to use the proposed DHT as directed in
+the trial protocol.
+
+The guidance for industry and FDA staff Applying Human Factors and Usability Engineering to
+Medical Devices (February 2016) discusses important considerations for human factors
+validation testing. 47 The principles addressed in that guidance serve an important role in medical
+device development and may be helpful for designing appropriate usability evaluations for DHTs
+proposed for use in clinical investigations of medical products.
+
+When appropriate, sponsors may be able to leverage data from prior human factors evaluations
+to evaluate whether trial participants can appropriately use the DHT (e.g., published studies in
+similar populations) without conducting further usability evaluations in the target study
+population.
+
+When designing usability evaluations, sponsors should consider the following:
+
+     •   Usability evaluations should assess the ability for participants to efficiently use the DHT
+         in a remote setting.
+
+
+44
+  If DHTs exchange information with other health information technology (IT), the health IT should meet standards
+and implementation specifications according to 45 CFR part 170, subpart B where applicable, or other standards
+developed by consensus-based standards development organizations when standards and implementation
+specifications at 45 CFR part 170, subpart B are not applicable.
+45
+  The guidance for industry and FDA staff Design Considerations and Premarket Submission Recommendations for
+Interoperable Medical Devices (September 2017) discusses important considerations regarding interoperability of
+medical devices. The principles addressed in that guidance may be helpful for addressing interoperability of DHTs
+used in clinical investigations of medical products.
+46
+  The FDA-recognized series of standards “IEEE ISO 11073 Health informatics—Point-of-care medical device
+communication” address interoperability of personal health devices. The principles addressed in these standards
+may be helpful for addressing interoperability of DHTs used in clinical investigations of medical products.
+47
+  For the purposes of this guidance, human factors evaluations and usability evaluations are considered
+synonymous.
+
+
+
+
+                                                        14
+                                 Contains Nonbinding Recommendations
+
+
+       •   Usability evaluations are important to ensure proper use of the DHT so that
+           measurements obtained from DHTs used in remote settings are accurate and precise.
+
+       •   Usability evaluations support the accuracy, completeness, and consistency of
+           measurements as well as ongoing participant engagement throughout the duration of the
+           clinical investigation.
+
+Findings from the usability evaluations can be used to improve the design and functionality of
+the DHT, to improve ease of use, and to inform the instructions for use and training provided to
+trial participants and trial personnel.
+
+           D.      Evaluation of Endpoints Involving Data Collected Using Digital Health
+                   Technologies
+
+The submission should include a description of the endpoint or endpoints that involve data
+collected through a DHT or a combination of DHTs. Methods of assessing trial participants’
+responses to a medical product (e.g., increase in activity as measured by actigraphy, change in
+blood pressure) in a clinical investigation should be well-defined and reliable. 48
+
+This section outlines general considerations for justifying endpoints (e.g., primary, secondary,
+exploratory) measured using data collected from DHTs, but does not address any disease-
+specific endpoints. 49 The principles that guide development of endpoints based on data captured
+by DHTs are the same as the principles for developing endpoints captured by other means.
+Sponsors should obtain input from interested parties (such as patients, caregivers, clinicians,
+engineers, statisticians, and regulators) to ensure that the endpoint is both clinically meaningful
+and the data are adequately captured by the DHT. Sponsors should discuss their plans for
+endpoint development with the relevant review division. See appendix B for an example of
+justifying an endpoint using a DHT. 50
+
+           1. Defining the Endpoint
+
+A precise definition of an endpoint typically specifies the type of assessment(s) made (e.g.,
+activity level, average heart rate, sleep quantity and quality), the timing of those assessments, the
+tool(s) used for the assessment(s), and other details, as applicable, such as if (and if so, how)
+multiple assessments for a trial participant will be combined.
+
+48
+     See 21 CFR 314.126 and 860.7.
+49
+  FDA has issued many disease-specific guidance documents that may address considerations for using particular
+endpoints in clinical trials of medical products for a given disease. Sponsors should discuss disease-specific
+endpoints with the relevant review divisions. For the most recent version of a guidance, check the FDA guidance
+web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+50
+  The draft guidance for industry, FDA staff, and other stakeholders Patient-Focused Drug Development:
+Incorporating Clinical Outcome Assessments Into Endpoints for Regulatory Decision-Making (April 2023) also
+includes information on endpoint development. When final, this guidance will represent FDA’s current thinking on
+this topic.
+
+
+
+
+                                                       15
+                            Contains Nonbinding Recommendations
+
+
+
+       2. Established Endpoints
+
+DHTs may serve as new ways to measure clinical characteristics or events that were previously
+measured in a clinical setting (e.g., blood pressure monitoring at home versus in a clinic). When
+DHT measurements replicate existing measurements (e.g., weight measurements at home versus
+in the clinic) for the same endpoint, a new justification for the choice of the endpoint may not be
+needed. However, the DHT should still be verified and validated for use in the clinical
+investigation (See section IV.C of this guidance).
+
+       3. Novel Endpoints
+
+Novel endpoints based on data captured by DHTs may provide opportunities for additional
+insight into participant function or performance that was previously not easily measurable (e.g.,
+tremors). While it is possible to measure some aspects of function or performance during
+participant visits to the clinic at a point in time, the use of DHTs potentially provides for their
+measurement over a longer time period and in different settings.
+
+When justifying a novel endpoint using data captured by the DHT, sponsors should address the
+following:
+
+   •   Whether the endpoint reflects how a participant feels, functions, or survives.
+
+   •   Whether a biomarker serving as a surrogate endpoint will predict or will be reasonably
+       likely to predict clinical benefit.
+
+   •   Whether the effect of the intervention as captured by the novel endpoint is meaningful to
+       the target patient population for the medical product being evaluated.
+
+   •   How the endpoint relates to other endpoints that are intended to reflect the same concept
+       and have been used to support a marketing authorization for a similar indication. In the
+       absence of related endpoints, evidence from other sources of information (e.g., literature
+       or input from stakeholders and experts) may support use of the endpoint.
+
+   •   Whether the novel endpoint is a well-defined and reliable measure of disease severity or
+       health status (e.g., mild, moderate, or severe) to allow assessment of disease modification
+       or progression.
+
+   •   When an existing medical product has already received marketing authorization based on
+       evidence from a study using an established endpoint for the disease or condition of
+       interest and the concept being evaluated by the novel endpoint is similar, it may be useful
+       to determine whether the effect of that existing medical product (positive control) can be
+       detected using the novel endpoint.
+
+
+
+
+                                                 16
+                                   Contains Nonbinding Recommendations
+
+
+           E.       Statistical Analysis and Trial Design Considerations
+
+FDA evaluates data collected via DHTs based on factors including, but not limited to, the
+endpoint under consideration, the medical product under investigation, and the patient population
+in which the product will be used. Analyses of data collected from DHTs should be discussed in
+a statistical analysis plan.
+
+       •   The same method for collection of data should be used in all study arms.
+
+       •   Non-inferiority trial designs may not be appropriate when the effect size of the
+           comparator has not been established using similar DHT measurements, making it difficult
+           or impossible to define the non-inferiority margin. 51,52
+
+       •   The definition of the endpoints and the source data 53 from which the endpoints are
+           derived for each trial participant (e.g., average daily number of steps across the treatment
+           period) should be prespecified in the statistical analysis plan. 54
+
+       •   Late phase trials should use the estimand framework of the International Council for
+           Harmonisation (ICH) guidance for industry E9(R1) to provide a description of the
+           treatment effect. The statistical analysis plan and protocol should consider potential
+           events (e.g., post-baseline initiation of an assistive device such as a cane or walker when
+           the DHT is an activity tracker) that may affect data collection or the interpretation of
+           endpoints. The statistical analysis plan should describe how these events will be
+           accounted for in the analyses (e.g., primary analysis and sensitivity analyses).
+       •   Use of a DHT to remotely acquire data in a clinical investigation may impact the type and
+           amount of missing data. Sponsors should have a plan in place to reduce the potential for
+           missing data (e.g., sponsor and/or investigator automated data monitoring and alerts,
+           participant reminders, “run-in” period for participants, investigator outreach to
+           participants) and to address missing data and data quality issues. These issues might
+           overlap with considerations related to risk management plans (See section IV.H.1).
+
+       •   The study should be designed to ensure the collection of appropriate data needed to
+           perform planned analyses. The protocol and statistical analysis plan should also:
+
+
+
+
+51
+     See the guidance for industry Non-Inferiority Clinical Trials to Establish Effectiveness (November 2016).
+52
+  See the International Council for Harmonisation (ICH) guidance for industry E10 Choice of Control Group and
+Related Issues in Clinical Trials (May 2001).
+53
+     See section IV.G of this guidance — Record Protection and Retention.
+54
+  See the ICH guidance for industry E9(R1) Statistical Principles for Clinical Trials: Addendum: Estimands and
+Sensitivity Analysis in Clinical Trials (May 2021).
+
+
+
+
+                                                           17
+                                 Contains Nonbinding Recommendations
+
+
+         − Define relevant events and issues that could affect data collection, data quality, and
+           analysis, including changes in technology during the study and whether the DHT is
+           used as directed
+         − Describe strategies for identifying and handling these events and issues
+
+
+         F.       Risk Considerations When Using Digital Health Technologies
+
+Sponsors, investigators, and institutional review boards (IRBs) should consider any risks to trial
+participants associated with use of the DHTs for data collection. 55 The risks of using a DHT in a
+clinical investigation can generally be broadly categorized as clinical risks and privacy-related
+risks, although there is some overlap between these two areas. The following sections describe
+some of the risks pertaining to the use of DHTs that, depending on the specific design of the
+clinical investigation and DHTs used, may need to be assessed by the IRB, communicated in the
+informed consent document, and addressed by the sponsor in the submission. 56
+
+         1. Clinical Risks
+
+     •   The physical features of the DHT should be evaluated for discomfort and risk of injury
+         (e.g., wrist band occluding blood supply, skin contacting components causing skin
+         irritation). Evidence from safety testing and usability evaluations conducted by the DHT
+         manufacturer, if available, or the sponsor of the clinical investigation may be helpful to
+         show that risks associated with use of a DHT by trial participants are minimized.
+
+         − If applicable, instructions for re-use, such as processes for cleaning the DHT (e.g.,
+           electrode sensors) before and after use, should be provided to trial participants to
+           prevent infection or other adverse events. 57
+
+     •   When measurements made by DHTs (e.g., glucometers) are used as the basis to modify
+         the administration of the investigational product or the treatment of trial participants, it is
+55
+   See 21 CFR parts 50 and 56 for requirements pertaining to the protection of participants in and IRB review of
+clinical investigations. Research conducted or supported by the Department of Health and Human Services must
+also comply with applicable requirements in 45 CFR part 46. In addition, we note that sponsors should ensure
+compliance, as applicable, with the Health Insurance Portability and Accountability Act of 1996 (HIPAA)
+Administrative Simplification provisions set forth at 45 CFR parts 160 and 164 and 42 CFR part 2.
+56
+   For example, to approve a clinical investigation, an IRB must determine that, among other things, risks to
+participants are minimized in accordance with 21 CFR 56.111(a)(1), and the informed consent process must describe
+reasonably foreseeable risks or discomforts to the subject under 21 CFR 50.25(a)(2). In addition, sponsors must
+provide certain information in an IND or IDE application regarding risks to participants and the safety of proposed
+clinical investigations. See, e.g., 21 CFR 312.23(a)(6)(iii)(g), 312.23(a)(10)(iv), 812.20(b)(2), and 812.25(c).
+57
+   Manufacturers of reusable DHTs that are devices are responsible for having labeling that bears adequate directions
+for use, including instructions on preparing a device for use. See 21 CFR 801.5(g). For more information on the
+formulation and scientific validation of reprocessing instructions for reusable devices, see the guidance for industry
+and FDA staff Reprocessing Medical Devices in Health Care Settings: Validation Methods and Labeling (March
+2015).
+
+
+
+
+                                                         18
+                                Contains Nonbinding Recommendations
+
+
+         critical to evaluate the risk of erroneous measurements resulting in excessive, inadequate,
+         or inappropriate treatment.
+
+     •   Sponsors should consider cybersecurity threats that could potentially impact the
+         functionality of the DHT, resulting in a clinical risk to participants (e.g., corrupting the
+         output of a continuous glucose monitor). Accordingly, sponsors should consider FDA
+         information on cybersecurity 58 to ensure that data can be securely stored and transmitted.
+
+         2. Privacy-Related Risks
+
+Sponsors, investigators, and IRBs should be aware that unique privacy risks may arise when
+DHTs are used in a clinical investigation. The following should be considered, as applicable:
+
+     •   The risk of potential disclosure of personally identifiable information or participant
+         locations via a breach of the DHT or associated data storage, such as a durable electronic
+         data repository.
+
+     •   DHTs or other technologies may have end-user licensing agreements or terms of service
+         that allow sharing of data with other parties, such as the manufacturer of a general-
+         purpose computing platform used by a DHT. See section IV.F.3 of this guidance for
+         considerations related to informing potential trial participants about who will have access
+         to their trial data if they decide to participate.
+
+         − To protect data privacy for trial participants, it may be appropriate for sponsors to
+           proactively work with manufacturers to modify the end-user license agreement or
+           terms of service for the purposes of the study, as applicable.
+
+     •   Sponsors should ensure that appropriate security safeguards are in place to secure data at
+         rest and in transit to prevent access by intervening or malicious parties (e.g.,
+         cybersecurity threats).
+
+         3. Informed Consent
+
+FDA regulations at 21 CFR part 50 set forth the requirements for obtaining the informed consent
+of participants 59 in clinical investigations. DHTs can be used to obtain electronic informed
+consent in a clinical investigation. 60
+
+
+ Additional information on cybersecurity, including managing cybersecurity risk, is provided by the CDRH Digital
+58
+
+Health Center of Excellence at https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity
+59
+  FDA’s regulations in 21 CFR parts 50, 56, 312, and 812 use the term subject or human subject; however, in this
+guidance, we use the term participant instead.
+60
+  See the guidance for IRBs, investigators, and sponsors Use of Electronic Informed Consent in Clinical
+Investigations: Questions and Answers (December 2016). See also the guidance for IRBs, clinical investigators,
+and sponsors Informed Consent (August 2023), section V, question 10 regarding electronic informed consent.
+
+
+
+
+                                                        19
+                                 Contains Nonbinding Recommendations
+
+
+Some considerations for what information to include in the informed consent process regarding
+the DHT being used in a clinical investigation include but are not limited to the following:
+
+       •   The informed consent process must describe any reasonably foreseeable risks or
+           discomforts to participants (see sections IV.F.1 and IV.F.2 of this guidance), including
+           reasonably foreseeable risks or discomforts related to the use of the DHT in the clinical
+           investigation. 61 Information regarding what may be done to mitigate serious risks, and
+           risks and discomforts more likely to occur, should also be considered for inclusion.
+
+       •   When appropriate, a statement must be included indicating that use of the DHT during
+           the clinical investigation may involve risks to the participant (or to the embryo or fetus if
+           the participant is or may become pregnant) which are currently unforeseeable. 62
+
+       •   The informed consent process should explain the type of information that will be
+           collected by the DHT and how that information will be used and monitored. When
+           relevant, participants should be informed of what action to take in case of any concerning
+           sign, symptom, or abnormal clinical event (e.g., hypoglycemia or abnormal cardiac
+           rhythm) detected by a DHT, such as seeking emergency medical attention, if appropriate.
+
+       •   The informed consent process should specify who may have access to data collected
+           through the DHT during or after the clinical investigation (e.g., sponsors, investigators,
+           participants, DHT manufacturers, other specified third parties) and during what time
+           frame. 63
+
+       •   An explanation of measures to protect participant privacy and data, and limitations to
+           those measures, when DHTs are used should be included.
+
+       •   If participants may incur additional expense because they are taking part in the clinical
+           investigation, the consent process must explain the added costs, 64 which could include
+           costs for the participants that may result from using the DHT during the clinical
+           investigation (e.g., data use charges).
+
+       •   DHTs or other technologies may be covered by end-user license agreements or terms of
+           service as a condition of use, which may, among other things, allow DHT or other
+           technology manufacturers and other parties to gain access to personal information and
+           data collected by the DHT or other technology. When applicable, sponsors and
+           investigators should ensure that the informed consent process explains to participants that
+
+61
+     See 21 CFR 50.25(a)(2).
+62
+     See 21 CFR 50.25(b)(1).
+63
+   In addition, the informed consent process must note the possibility that FDA will inspect records identifying the
+participants (21 CFR 50.25(a)(5)).
+64
+     21 CFR 50.25(b)(3).
+
+
+
+
+                                                          20
+                                  Contains Nonbinding Recommendations
+
+
+           their data may be shared outside of the clinical investigation, according to the end-user
+           license agreement or terms of service. End-user license agreements and terms of service
+           typically are lengthy and use complex terminology. Sponsors and investigators
+           proposing use of DHTs for data collection should understand how such agreements or
+           terms of service may affect trial participants and address this information when
+           developing informed consent documents. 65
+
+           G.       Record Protection and Retention
+
+When using DHTs to record and transmit data during a clinical investigation, the relevant data
+captured from the DHT, including all relevant associated metadata, should be securely
+transferred to and retained in a durable electronic data repository as part of the record of the
+clinical investigation. FDA regulations include record retention requirements for clinical
+investigators and sponsors and provide for FDA inspection of certain records relating to a
+clinical investigation. 66,67
+
+The draft guidance for industry Electronic Systems, Electronic Records, and Electronic
+Signatures in Clinical Investigations: Questions and Answers provides proposed
+recommendations on the use of electronic records in clinical investigations of medical products.
+The draft guidance addresses DHTs that allow for remote data capture directly from trial
+participants during a clinical investigation, as well as related issues pertaining to access controls,
+audit trails, data sources, and inspections.
+
+In planning for record retention in a clinical investigation using DHTs, FDA recommends the
+following:
+
+       •   Sponsors should discuss with review divisions the type of DHT data recorded from
+           participants to be submitted for FDA review. This may involve complete data, summary
+           data, sample data, and/or abnormal data obtained during continuous or frequent
+           recording. FDA may request data in various formats based on the DHT used in a given
+           clinical investigation. For more information on study data formats and a summary of
+           requirements for certain submissions, please refer to the FDA Data Standards Catalog. 68
+
+       •   The data output of the DHT to support an endpoint for the clinical investigation,
+           including associated metadata (e.g., the times the measurements were made), should
+
+65
+  For further information, see the Secretary’s Advisory Committee on Human Research Protections web page
+“Attachment B - Clarifying Requirements in Digital Health Technologies Research,” available at
+https://www.hhs.gov/ohrp/sachrp-committee/recommendations/april-7-2020-attachment-b/index.html.
+66
+     See 21 CFR 312.57, 312.58, 312.62, and 312.68.
+67
+     See 21 CFR 812.2(b)(1)(v) and (vi), 812.140, 812.145, and 812.150.
+68
+  See FDA Study Data Standards Resources, available at https://www.fda.gov/industry/fda-data-standards-advisory-
+board/study-data-standards-resources, and the Data Standards Catalog, available at https://www.fda.gov/regulatory-
+information/search-fda-guidance-documents/data-standards-catalog.
+
+
+
+
+                                                         21
+                                 Contains Nonbinding Recommendations
+
+
+           generally be transmitted to a durable electronic data repository. These data can take the
+           form of discrete clinical events measured using built-in analytics or algorithms (e.g.,
+           heart beats, breaths, steps) or continuous recordings (e.g., electrocardiograms), among
+           other things. DHT data must be maintained according to record retention requirements 69
+           and should be in human readable form. 70 Generally, FDA does not intend to request
+           machine or raw data that require electronic processing to be understood (e.g., voltages)
+           during an inspection.
+
+       •   For data collected directly from study participants through DHTs, FDA considers
+           electronic data that are located in the first durable electronic data repository to which the
+           data are transferred to be the source data. These source data should be available for
+           inspection. FDA does not intend to inspect individual DHTs for source data when the
+           data captured by the DHT, including all associated metadata, are securely transferred to
+           and retained in the durable electronic data repository according to the sponsor’s
+           prespecified plan.
+
+       •   When specified in the protocol, the clinical investigator should review the source data
+           collected from DHTs for participant safety and management. The clinical investigator
+           must maintain and retain these source data as part of the adequate and accurate case
+           histories required under 21 CFR 312.62(b) and (c) and 812.140(a)(3) and (d). The
+           clinical investigator must also permit FDA to access and copy these case history records
+           in accordance with 21 CFR 312.68 and 812.145(b).
+
+           H.      Other Considerations When Using Digital Health Technologies During a
+                   Clinical Investigation
+
+To help ensure the quality and integrity of data, adequate protection of participants, and
+satisfaction of regulatory requirements applicable to clinical investigations, sponsors and
+investigators should consider the following recommendations with respect to clinical
+investigations that involve use of a DHT to remotely acquire data. 71
+
+           1. Sponsor’s Role
+
+The sponsor should:
+
+       •   Develop and ensure training for trial personnel and trial participants (see section IV.H.3
+           of this guidance) on using DHTs according to the protocol (e.g., wearing the DHT for the
+           specified time period). Sponsors should incorporate feedback from usability evaluations
+           (see section IV.C.3) into the training.
+
+69
+     See 21 CFR 312.62(c) and 812.140(d).
+70
+     See 21 CFR 11.10(b).
+71
+  See generally, e.g., 21 CFR part 11, part 50, part 312, and part 812. See also the ICH guidance for industry
+E6(R2) Good Clinical Practice: Integrated Addendum to ICH E6(R1) (March 2018).
+
+
+
+
+                                                         22
+                                Contains Nonbinding Recommendations
+
+
+
+     •   Develop a plan for technical assistance to trial participants or trial personnel for all DHTs
+         used during the trial, which may involve collaboration with DHT or technology vendors
+         or other parties.
+
+     •   Develop a risk management plan to address potential problems trial participants may
+         experience when using a DHT or other technology during a clinical investigation. 72
+         Potential problems may involve, but are not limited to:
+
+         − Clinical (see section IV.F.1) and privacy-related (section IV.F.2) risks.
+
+         − Participants using the DHT incorrectly.
+
+         − Interference between mobile applications or software functions used in a clinical
+           investigation and the other potential functions of a DHT or other technology. This
+           may be of particular importance if trial participants are using their own DHTs or other
+           technology during the clinical investigation (see section IV.A.4).
+
+         − Loss, damage, and replacement of a DHT, including a corrective action plan to
+           prevent compromising participant privacy or data integrity.
+
+         − DHT malfunction, including failure of associated technology (e.g., general-purpose
+           computing platform data transmission failure, loss of battery power).
+
+         − Trial participants upgrading or updating a DHT, which may include updates
+           associated with general-purpose computing platforms (e.g., hardware or software;
+           models or versions) during the clinical investigation (see section IV.H.4).
+
+     •   Develop a safety monitoring plan as part of the protocol that addresses how abnormal
+         measurements related to trial participants’ safety (e.g., hypoglycemia, arrhythmia, apnea)
+         measured by DHTs will be reviewed and managed.
+
+         − FDA generally does not expect investigators to monitor DHT data continuously, but
+           there may be circumstances where this is clinically necessary. The safety monitoring
+           plan should indicate how frequently investigators will review continuous data, if
+           applicable.
+
+         − The plan should indicate under what circumstances and how trial participants will be
+           informed of abnormal findings detected by the DHT (e.g., critical abnormality alerts).
+           The plan should describe how participants and trial personnel should respond to these
+           findings.
+
+
+72
+  Sponsors should consider the risk management plan when developing a monitoring plan for the clinical
+investigation. See the guidance for industry A Risk-Based Approach to Monitoring of Clinical Investigations
+Questions and Answers (April 2023).
+
+
+                                                        23
+                             Contains Nonbinding Recommendations
+
+
+        − As in any trial, the plan should describe what action participants should take in case
+          of any concerning sign, symptom, or abnormal clinical event (e.g., palpitations, chest
+          pain, syncope), such as seeking emergency medical attention, if appropriate.
+
+   •    Ensure that data have been transferred from the DHT into a durable electronic data
+        repository (see section IV.G of this guidance).
+
+   •    Develop end-of-study closeout procedures (e.g., when/how data collection and/or
+        transmission ends, revocation of system access).
+
+        2. Investigator’s Role
+
+Investigators should:
+
+    •   Ensure that trial participants understand what information will be collected by the DHT;
+        how that information will be used, monitored, and acted upon; who will have access to
+        the data; and how the security and privacy of data collected by the DHT will be
+        maintained. The relevant submission should describe the investigator’s role in ensuring
+        appropriate use of DHTs.
+
+   •    Provide sponsor-developed training to participants on how to use the DHT according to
+        the protocol (e.g., wearing the DHT for the specified time period). Training can be done
+        remotely, as appropriate (e.g., through video conferencing).
+
+   •    Review data from DHTs as specified in the safety monitoring plan (see section IV.H.1).
+
+        3. Training
+
+Trial participants and trial personnel should be trained on the appropriate use of DHTs. In some
+situations, it may also be appropriate to provide training to participants’ caregivers. Trial
+personnel should be trained on responsibilities for data collection and maintenance of trial
+integrity and quality throughout the investigation. Any training materials should be included as
+part of the submission.
+
+Training should:
+
+   •    Occur before trial participants or caregivers begin using the DHT to collect data for the
+        purposes of the clinical investigation
+
+   •    Be scheduled, provided, and documented during the clinical investigation, as appropriate
+        (e.g., if changes or updates alter the way sponsors, clinical investigators, other trial
+        personnel, trial participants, or caregivers interact with the DHT)
+
+   •    Be available to trial personnel, trial participants, and/or caregivers having difficulty using
+        DHTs during the investigation
+
+
+
+                                                  24
+                            Contains Nonbinding Recommendations
+
+
+Sponsors should consider addressing the following as part of the training for trial participants,
+caregivers, and/or trial personnel, as appropriate:
+
+   •   Setting up, activating, and operating DHTs
+
+   •   Confirming that the use of the DHT will be restricted to the trial participants and/or
+       caregivers
+
+   •   Collecting data at appropriate time intervals
+
+   •   Uploading or syncing data
+
+   •   Ensuring the security and privacy of data collected by the DHT
+
+   •   Wearing DHTs appropriately (e.g., location and duration), if applicable
+
+   •   Properly cleaning the DHTs before or after use, if applicable
+
+   •   Connecting to wireless or cellular networks
+
+   •   Handling known adverse events associated with the DHT (e.g., rash from actigraphy
+       bands)
+
+   •   Responding to DHT signals, notifications, errors, hardware upgrades, and software
+       updates, including procedures for troubleshooting and instructions for whom to contact
+       for unresolved issues
+
+   •   Verifying that DHTs are being used appropriately and that data are being collected,
+       uploaded, or synchronized as planned
+
+       4. DHT Updates and Other Changes
+
+Sponsors should plan for unanticipated changes to DHTs or associated technology (e.g., updates
+needed to resolve a security concern, DHT unavailable due to discontinuation or supply issues)
+during the clinical investigation whether the DHTs or associated technology are provided by the
+sponsor or using a “bring your own” approach. DHT updates and other changes during a clinical
+investigation may lead to inconsistencies in measurements that can impact the evaluation of the
+trial outcome. Sponsors should keep a record of the timing and nature of any updates for each
+DHT.
+
+If a DHT or associated technology, such as a general computing platform, is updated during a
+clinical investigation (e.g., operating system update), sponsors should ensure that the DHT
+remains fit-for-purpose, such that the updates do not affect the measurements and that
+verification and validation studies (see section IV.C of this guidance) are still applicable. In
+situations where the measurements may be affected, it may be necessary to validate the
+
+
+
+                                                 25
+                            Contains Nonbinding Recommendations
+
+
+measurements (e.g., using previously collected data or a new prospective study) after
+introduction of the update to ensure that no changes to the measurements occurred.
+
+If changes to the measurement have occurred after the update, sponsors should compare data
+from DHTs before and after the update. Sensitivity analyses may be necessary to evaluate the
+impact of the update. Sponsors should take steps to mitigate any resulting differences. Sponsors
+should specify how these differences will be addressed in the analysis of the trial prior to
+unblinding (if applicable) and describe the impact differences may have on trial outcomes.
+Significant changes in the measurement after updates may invalidate the results from a clinical
+investigation.
+
+       5. DHT Error or Loss
+
+Procedures should be in place to identify and address DHT errors (such as those involving
+batteries, sensors, software, etc.) and to provide replacements if the DHT is lost or damaged.
+Contingency plans may provide for alternate data collection and recording mechanisms, if
+possible, during these times.
+
+If malware is detected on a DHT during a clinical investigation, sponsors should pursue
+appropriate corrective action.
+
+
+
+
+                                                26
+                            Contains Nonbinding Recommendations
+
+
+                                           GLOSSARY
+
+The following terms are defined for the purposes of this guidance:
+
+context of use: A statement that fully and clearly describes the way the medical product
+development tool is to be used and the regulated product development and review-related
+purpose of the use.
+
+digital health technology (DHT): A system that uses computing platforms, connectivity,
+software, and/or sensors for health care and related uses. These technologies span a wide range
+of uses, from applications in general wellness to applications as a medical device. They include
+technologies intended for use as a medical product, in a medical product, or as an adjunct to
+other medical products (devices, drugs, and biologics). They may also be used to develop or
+study medical products.
+
+durable electronic data repository: An enduring database that is electronically protected from
+alterations and is maintained until the end of the record retention period.
+
+general-purpose computing platform: A commercial off-the-shelf computing platform, with
+or without wireless connectivity (e.g., smartphone, tablet).
+
+remote data acquisition: Collection of data from a participant’s location that is distant from the
+investigator or trial personnel.
+
+sensor: A transducer that converts a physical, biological, or chemical parameter into an
+electrical signal; for example, temperature, pressure, flow, or vibration sensor. A sensor is
+typically hardware.
+
+
+
+
+                                                 27
+                            Contains Nonbinding Recommendations
+
+
+APPENDIX A: EXAMPLES OF POTENTIAL DIGITAL HEALTH TECHNOLOGY
+USE IN CLINICAL INVESTIGATIONS
+
+The following examples are intended to illustrate various types of digital health technologies
+(DHTs) that can be used in clinical investigations. These examples should not be taken to mean
+that the DHT(s) described do or do not adequately measure an endpoint of interest.
+
+   1. Consumer activity tracker bracelet
+
+       •   Description of the DHT: Off-the-shelf consumer activity tracker bracelet with
+           sensors and software to measure step count
+
+       •   Function(s) of the DHT: Remotely measure a participant’s steps during a clinical
+           investigation as part of the endpoint of interest in the evaluation of a novel orthotic
+           device to treat knee osteoarthritis
+
+   2. Memory task mobile application
+
+       •   Description of the DHT: A mobile application used by participants on their
+           smartphones to complete a clinical outcome assessment (COA) memory task during
+           the clinical investigation
+
+       •   Function(s) of the DHT: (1) Measure participants’ active performance on a memory
+           task during a clinical investigation as part of the endpoint of interest in the evaluation
+           of a drug to treat symptoms of Alzheimer’s disease, (2) send participants a reminder
+           to complete the memory task
+
+   3. FDA-authorized continuous glucose monitor device
+
+       •   Description of the DHT: FDA-authorized continuous glucose monitor, including a
+           sensor and a mobile application, used within its authorized indications for use to
+           continuously track hypoglycemic episodes in participants remotely
+
+       •   Function(s) of the DHT: During a clinical investigation, remotely (1) measure
+           glucose levels continuously, (2) analyze data to identify hypoglycemic episodes as
+           part of the endpoint of interest in the evaluation of a drug for the management of
+           Type 2 Diabetes, (3) display data to participants, and (4) alert participants of
+           hypoglycemic episodes
+
+   4. Multiple DHTs – In this example, the DHTs described in 4a, 4b, and 4c are used
+      concurrently as part of a clinical investigation of a medical product to treat a pulmonary
+      disease.
+
+
+
+
+                                                 28
+                    Contains Nonbinding Recommendations
+
+
+a. FDA-authorized spirometer with smart connectivity
+
+   •   Description of the DHT: FDA-cleared spirometer with smart connectivity used
+       within its cleared indications for use
+
+   •   Function(s) of the DHT: Measure participant’s pulmonary function daily in the
+       participant’s home environment during the clinical investigation as part of the
+       endpoint(s) of interest in the evaluation of a medical product to treat a pulmonary
+       disease
+
+b. Consumer activity tracker bracelet
+
+   •   Description of the DHT: Off-the-shelf consumer activity tracker bracelet that
+       includes sensors and software intended to measure participant’s activity
+
+   •   Function(s) of the DHT: Remotely measure participant’s activity (e.g., walking
+       and standing bouts) longitudinally during the clinical investigation as part of the
+       endpoint(s) of interest in the evaluation of a medical product to treat a pulmonary
+       disease
+
+c. Mobile application where participants rate their functioning each day
+
+   •   Description of the DHT: A mobile application participants use with a
+       smartphone or tablet (the mobile application is compatible with multiple
+       platforms) to rate their function each day
+
+   •   Function(s) of the DHT: Remotely collect data on the participants’ functioning
+       each day during the clinical investigation as part of the endpoint(s) of interest in
+       the evaluation of a medical product to treat a pulmonary disease
+
+
+
+
+                                        29
+                                  Contains Nonbinding Recommendations
+
+
+APPENDIX B: EXAMPLE OF SELECTING A DIGITAL HEALTH TECHNOLOGY
+FOR A CLINICAL INVESTIGATION AND JUSTIFYING THE ENDPOINT FOR
+WHICH IT IS USED 1
+
+The following example is intended to describe at a high level a digital health technology (DHT)
+being developed and considered for use in a clinical investigation. Please note that this
+generalized example should not be taken to mean that the DHT described does or does not
+adequately measure an endpoint of interest. Sponsors should provide detailed descriptions of the
+DHT and the context of use in their submission.
+
+A portable wearable device to assess sleep parameters in the home setting in trial participants
+with insomnia disorder
+
+A sponsor is developing a new drug for the treatment of insomnia disorder and is considering the
+use of a portable wearable device that has received FDA marketing authorization to remotely
+measure sleep parameters (e.g., latency to persistent sleep, wake after sleep onset, and total sleep
+time (TST)) in the home setting. The context of use of the DHT in the clinical investigation is
+the same as in the marketing authorization. Existing methods to assess these sleep parameters in
+clinical investigations are based on diary-recorded participant estimates or on polysomnography
+(PSG) conducted in a sleep laboratory. The sponsor believes that this DHT will be able to
+measure sleep parameters with greater accuracy and precision than diary-recorded estimates.
+The sponsor also believes that measuring a participant’s sleep parameters in a home environment
+using a DHT will allow measurements over longer periods of time than PSG and is more
+generalizable than laboratory-based PSG measurements. The proposed functions of the DHT for
+the clinical investigation are to remotely measure multiple sleep parameters (e.g., sleep latency,
+sleep efficiency, sleep awakening) while participants sleep at home.
+
+Important issues for the sponsor to consider in its development plan may include: 2
+
+DHT Selection, Verification, and Validation:
+
+FDA marketing authorization of the DHT may support verification and validation of the DHT if
+the context of use for the clinical investigation falls within the cleared or approved indications
+for use. Questions that the sponsor should consider when selecting a DHT may include:
+
+    1. How does the DHT’s analysis of sleep parameters compare with PSG in terms of
+       accurately determining whether patients are awake or asleep at a given point in time?
+
+
+
+1
+  This appendix provides a hypothetical, simplified example intended to illustrate considerations related to selecting
+an appropriate DHT to use for remote data collection in a clinical investigation and justifying the endpoint for which
+it is used. It is not intended to suggest that any particular DHT will be suitable to use for remote data collection in a
+clinical investigation or that data collected from such a DHT will be sufficient to support a regulatory submission to
+FDA.
+2
+  Many of the issues illustrated in this example would be relevant for a sponsor to consider in its development plan
+regardless of whether the DHT at issue meets the definition of a device under section 201(h) of the FD&C Act.
+
+
+                                                           30
+                             Contains Nonbinding Recommendations
+
+
+    2. Are the DHT’s measurements reproducible over the range of environmental conditions
+       (e.g., temperature, nearby electronics) expected during the clinical investigation?
+
+    3. Are the DHT’s measurements consistent across the range of factors (e.g., body
+       morphology, skin color, variation in sensor placement, movements during sleep, other
+       neurologic or psychiatric conditions, other medications or psychoactive substances) that
+       may introduce variability into measurements expected during the clinical investigation?
+
+Usability Evaluation:
+
+The sponsor may consider conducting usability evaluations to assess whether the intended
+population for the clinical investigation will be able to use the DHT as directed in the protocol.
+In designing these evaluations, the sponsor should consider the following:
+
+    1. Is the DHT appropriately designed for use by the intended population for the clinical
+       investigation of the drug, including older adult patients and/or their caregivers (if
+       applicable)? For example, will trial participants wear the DHT correctly?
+
+    2. How frequently should the DHT be charged and are there any expected challenges with
+       the participant’s charging practices?
+
+    3. How will participants transmit data from the DHT to the investigator or sponsor?
+
+Endpoint Justification:
+
+This hypothetical DHT would provide data similar to sleep data collected during laboratory-
+based PSG. This DHT would, however, allow for nightly monitoring of sleep activity, whereas
+PSG data are typically collected at only select times relative to the entire duration of the clinical
+investigation (e.g., 2 successive days at baseline and 2 successive days at end of treatment). The
+increased monitoring frequency presents opportunities to construct endpoints that rely on
+multiple data points (e.g., extended observation period averages and temporal trends).
+
+The sponsor should consider the following when developing an endpoint based on measurements
+using the portable wearable device:
+
+•   The sponsor can solicit input from subject-matter experts, clinicians, regulators, patients,
+    and/or caregivers to support a proposed endpoint.
+
+•   An established endpoint using PSG is the change in TST from baseline to end of treatment.
+    Using a DHT for remote data acquisition can permit longitudinal measurement, and the
+    primary endpoint could potentially make use of the entire time series of TST values over the
+    duration of the clinical investigation.
+
+•   Because an endpoint might involve high-volume, high-frequency data (e.g., the entire time
+    series of nightly assessments over the duration of the clinical investigation), the sponsor
+    should:
+
+
+
+                                                 31
+                           Contains Nonbinding Recommendations
+
+
+
+    ­ Prespecify the approach for defining an endpoint based on the multiple assessments
+      within each participant, the population-level summary measure that compares the
+      investigational product to a control, and the statistical analysis methodology.
+
+    ­ Describe the potential scenarios for missing data and the methods for assessing the
+      impact of the missing data on trial results. Types of missing data may include missing a
+      group of observations within a day, missing an entire day, or missing an entire week.
+
+•   Describe how the DHT measurements compare to traditional PSG measurements and how a
+    difference may impact the assessment of a drug effect.
+
+The sponsor may want to consider incorporating clinical outcome assessments (COAs) such as
+patient-reported outcome measures to understand how a trial participant feels and functions
+during the clinical investigation. Associations between COA and wearable DHT data may
+provide for a broader assessment of sleep parameters and their impact on a participant’s daily
+activities.
+
+
+
+
+                                               32
+

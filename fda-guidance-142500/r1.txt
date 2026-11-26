@@ -1,0 +1,888 @@
+     The Use of Physiologically Based
+       Pharmacokinetic Analyses —
+  Biopharmaceutics Applications for Oral
+        Drug Product Development,
+   Manufacturing Changes, and Controls
+                          Guidance for Industry
+
+                               DRAFT GUIDANCE
+         This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact Paul Seo at 301-796-4874.
+
+
+
+
+                      U.S. Department of Health and Human Services
+                              Food and Drug Administration
+                     Center for Drug Evaluation and Research (CDER)
+
+                                      October 2020
+                                Pharmaceutical Quality/CMC
+
+
+19190003dft.docx
+09/28/20
+   The Use of Physiologically Based
+     Pharmacokinetic Analyses —
+Biopharmaceutics Applications for Oral
+      Drug Product Development,
+ Manufacturing Changes, and Controls
+                     Guidance for Industry
+
+                            Additional copies are available from:
+
+                    Office of Communications, Division of Drug Information
+                            Center for Drug Evaluation and Research
+                                 Food and Drug Administration
+                    10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                 Silver Spring, MD 20993-0002
+   Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353; Email: druginfo@fda.hhs.gov
+    https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+
+
+
+                U.S. Department of Health and Human Services
+                        Food and Drug Administration
+               Center for Drug Evaluation and Research (CDER)
+
+                                 October 2020
+                           Pharmaceutical Quality/CMC
+                                               Contains Nonbinding Recommendations
+                                                            Draft — Not for Implementation
+                                                            TABLE OF CONTENTS
+
+I.            INTRODUCTION............................................................................................................. 1
+II.           BACKGROUND ............................................................................................................... 2
+III.          IMPLEMENTATION OF PBPK MODELING FOR BIOPHARMACEUTICS
+              APPLICATIONS .............................................................................................................. 3
+IV.           DEVELOPMENT AND EVALUATION OF PBPK MODELS FOR
+              BIOPHARMACEUTICS APPLICATIONS .................................................................. 5
+     A.       General Strategy ............................................................................................................................ 5
+     B.       General Considerations ................................................................................................................. 7
+          1. Model Objective(s) ........................................................................................................................... 7
+          2. Model Development ......................................................................................................................... 7
+          3. Model Validation and Refinement ................................................................................................... 8
+V.        PBPK MODELING FOR BIOPHARMACEUTICS APPLICATIONS TO SUPPORT
+          PRODUCT QUALITY ......................................................................................................... 9
+     A.       Development of Clinically Relevant Dissolution Specifications (Method and Acceptance
+              Criteria) .......................................................................................................................................... 9
+       1. Aid in Biopredictive Dissolution Method Development ................................................................... 9
+       2. Support Clinically Relevant Dissolution Acceptance Criteria....................................................... 10
+     B. Establishment of Clinically Relevant Drug Product Quality Specifications (Other Than
+              Dissolution) ................................................................................................................................... 11
+     C.       Quality Risk Assessment for Pre- and Postapproval Changes and Risk-Based Biowaivers . 12
+GLOSSARY................................................................................................................................. 14
+REFERENCES ............................................................................................................................ 16
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+
+ 1        The Use of Physiologically Based Pharmacokinetic Analyses —
+ 2           Biopharmaceutics Applications for Oral Drug Product
+ 3            Development, Manufacturing Changes, and Controls
+ 4                           Guidance for Industry 1
+ 5
+ 6
+ 7
+ 8
+ 9   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+10   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+11   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+12   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+13   for this guidance as listed on the title page.
+14
+15
+16
+17
+18   I.       INTRODUCTION
+19
+20   This guidance provides general recommendations regarding the development, evaluation, and
+21   use of physiologically based pharmacokinetic (PBPK) analyses for biopharmaceutics
+22   applications employed by sponsors of investigational new drug applications, and applicants for
+23   new drug applications, or abbreviated new drug applications, and supplements to these
+24   applications, 2,3 for oral drug product development, manufacturing changes, and controls. PBPK
+25   analyses use models and simulations that combine physiology, population, and drug substance
+26   and product characteristics to mechanistically describe the pharmacokinetic (PK) and/or
+27   pharmacodynamic behaviors of a drug product. 4
+28
+29   The application of PBPK modeling in support of drug product development is an evolving field.
+30   We note that there are multiple terms used to describe PBPK analyses for biopharmaceutics
+31   applications, including PBPK absorption modeling (Zhang et al. 2017), physiologically based
+32   absorption modeling (Kesisoglou et al. 2016), and physiologically based biopharmaceutics
+33   modeling (PBBM) (Heimbach et al. 2019). This guidance uses the term PBPK analyses (or
+
+     1
+      This guidance has been prepared by the Office of Pharmaceutical Quality in the Center for Drug Evaluation and
+     Research at the Food and Drug Administration.
+     2
+       For the purposes of this guidance, sponsor refers to sponsors of investigational new drug applications, applicants
+     for new drug applications and abbreviated new drug applications, and supplements to those applications.
+     3
+      The scientific principles described in this guidance are applicable regardless of whether an original clinical study
+     demonstrated bioavailability/bioequivalence and are relevant whether or not an application is required.
+     4
+       Submission of PBPK analyses to FDA is discussed in the guidance for industry Physiologically Based
+     Pharmacokinetic Analyses — Format and Content (August 2018). We update guidances periodically. For the most
+     recent version of a guidance, check the FDA guidance web page at https://www.fda.gov/regulatory-
+     information/search-fda-guidance-documents.
+
+
+                                                                1
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+34   modeling) for biopharmaceutics applications to emphasize the focus on drug product quality
+35   attributes and a mechanistic understanding of their interaction with physiology to affect in vivo
+36   drug performance.
+37
+38   This guidance applies only to orally administered, systemically active drug products. It does not
+39   apply to locally acting drug products, including orally delivered gastrointestinal (GI) drug
+40   products that reach the site of action before entering systemic circulation. The use of PBPK
+41   analyses for biopharmaceutics applications for locally acting drug products will be considered on
+42   a case-by-case basis and via communication with FDA.
+43
+44   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+45   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+46   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+47   the word should in Agency guidances means that something is suggested or recommended, but
+48   not required.
+49
+50
+51   II.       BACKGROUND
+52
+53   Several guidances for industry advocate the use of biopharmaceutics tools, 5 such as in vitro
+54   dissolution, and in vivo bioavailability (BA)/bioequivalence (BE) studies, along with modeling
+55   approaches to support drug product quality. In addition, quality by design (QbD) principles
+56   recognize that drug product quality cannot be tested into drug products; quality should be built
+57   into drug products by design. 6 In this regard, QbD enables an in-depth understanding of the
+58   relationship among critical quality attributes (CQAs), critical material attributes (CMAs), critical
+59   process parameters (CPPs), and predefined clinical performance metrics (e.g., systemic exposure
+60   such as Cmax and area under the curve (AUC)). Data describing this relationship are essential for
+61   establishing an in vitro-in vivo link. Establishing an in vitro-in vivo link supports clinically
+62   relevant drug product specifications.
+63
+
+
+
+
+     5
+       See the guidances for industry Dissolution Testing of Immediate Release Solid Oral Dosage Forms (August 1997),
+     Extended Release Oral Dosage Forms: Development, Evaluation, and Application of In Vitro/In Vivo Correlations
+     (September 1997), and Immediate Release Solid Oral Dosage Forms Scale-Up and Postapproval Changes:
+     Chemistry, Manufacturing, and Controls, In Vitro Dissolution Testing, and In Vivo Bioequivalence Documentation
+     (November 1995).
+     6
+         See the ICH guidance for industry Q8(R2) Pharmaceutical Development (November 2009).
+
+
+                                                            2
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+64   Although the pharmaceutical industry has in some cases been successful in developing in vitro/in
+65   vivo correlations (IVIVCs) to support biowaiver 7 requests in lieu of in vivo BE studies for major
+66   manufacturing changes (Nguyen et al. 2017), development of an adequate IVIVC for regulatory
+67   submission remains challenging (Suarez-Sharp et al. 2016). FDA recognizes this challenge and
+68   encourages the development and use of new tools and approaches for linking pharmaceutical
+69   quality to clinical performance. Advances in modeling and simulation have enabled the
+70   integration of factors such as the physicochemical properties of the active pharmaceutical
+71   ingredient (API), dissolution data, and the physiology of the GI tract into the development of
+72   PBPK models. As such, PBPK modeling has become a promising tool in predicting systemic
+73   drug exposure (Kostewicz et al. 2014a) and has been used for dose selection, food effect
+74   assessment, and drug interaction potential evaluation (Wagner et al. 2015a; Wagner et al. 2016;
+75   Huang et al. 2013; Wagner et al. 2015b).
+76
+77
+78   III. IMPLEMENTATION OF PBPK MODELING FOR BIOPHARMACEUTICS
+79   APPLICATIONS
+80
+81   The application of PBPK modeling could be expanded to pharmaceutical drug product
+82   development, manufacturing changes, and controls. One feasible approach is to combine an in
+83   vitro drug product test (e.g., biopredictive dissolution) with PBPK models where in vitro
+84   dissolution data provide input to predict absorption (Heimbach et al. 2019). As such, dissolution
+85   testing is a key modeling input, because it probes both the extent and rate of in vivo drug product
+86   release.
+87
+88   The purpose of PBPK analyses for biopharmaceutics applications is to combine dissolution
+89   modeling/biopredictive dissolution or other in vitro testing inputs with PBPK modeling strategies
+90   to quantitatively describe (or characterize) the potential interactions of formulation variants with
+91   the body and their effect on drug exposure. This modeling approach should include relevant
+92   mechanisms pertaining to the absorption process, such as GI tract local metabolism (if
+93   applicable) and drug transport, and incorporate drug product quality properties to predict
+94   systemic drug exposure.
+95
+
+
+
+
+     7
+       In addition to waiver of an in vivo BE requirement under 21 CFR 320.22, there are certain circumstances in which
+     BE can be evaluated using in vitro approaches under 21 CFR 320.24(b)(6). The scientific principles described in this
+     guidance regarding waiver of an in vivo requirement also apply to consideration of in vitro data under that
+     regulation. In such circumstances, an in vivo data requirement is not waived, but rather, FDA has determined that in
+     vitro data is the most accurate, sensitive, and reproducible approach for establishing BE, as required under 21 CFR
+     320.24(a). Nonetheless, for ease of the reader, this guidance refers to either the decision to waive an in vivo BE
+     requirement under 21 CFR 320.22 or the decision to accept in vitro BE data in accordance with 21 CFR 320.24(a) as
+     a biowaiver.
+
+
+                                                              3
+                                       Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+ 96   With these mechanistic elements defined, PBPK modeling for biopharmaceutics applications
+ 97   could predict the effect of variations from the CMAs, CPPs, and CQAs on drug exposure toward
+ 98   the establishment of a safe space via either IVIVCs or in vivo-in vitro relationships combined
+ 99   with virtual BE. A safe space (Abend 2018) is defined by the boundaries demarcated by in vitro
+100   specifications (i.e., dissolution or, when applicable, other relevant drug product quality
+101   attributes), within which drug product variants are anticipated to be bioequivalent to one another.
+102   Less optimally, but still possible (e.g., for modified-release (MR) formulations with appropriate
+103   additional supporting data), safe space represents specifications within which drug product
+104   variants are anticipated to be bioequivalent to the pivotal clinical batch(es). 8 Building a safe
+105   space may also reduce the need for in vivo data to support regulatory assessment. 9 Although safe
+106   spaces can be used for new and generic drug products, building a safe space for a generic drug
+107   product necessitates the identification of a range of virtual dissolution profiles within which the
+108   proposed drug products are found to be bioequivalent to one another and to the reference or
+109   target drug product (e.g., via virtual BE analysis). Also, the range of virtual dissolution profiles
+110   should contain the target (i.e., biobatch or pivotal clinical batch) dissolution profile.
+111
+112   The implementation of PBPK analyses for biopharmaceutics applications to support drug
+113   product quality should consider a risk-based approach (e.g., Kuemmel et al. 2020) and
+114   contemplate several factors such as: (1) whether in vivo dissolution (as opposed to permeability)
+115   is the rate-limiting step toward drug absorption; (2) the in vitro and in vivo data collected to
+116   develop, verify, and validate 10 the proposed model; and (3) the complexity of the drug product
+117   formulation. For example, the use of PBPK analyses for biopharmaceutics applications to
+118   support major manufacturing changes for immediate-release (IR) drug products containing high
+119   solubility APIs generally is not warranted. 11
+120
+121
+
+
+
+
+      8
+        If a clinical investigation (i.e., any experiment other than a BA study in which a drug is administered or dispensed
+      to, or used on, human subjects) is necessary to demonstrate the safety or effectiveness of a proposed drug product,
+      generally this type of study goes beyond the scope of information that may be relied upon as necessary for approval
+      in an abbreviated new drug application (see 21 CFR 314.108(a) and the guidance for industry Determining Whether
+      to Submit an ANDA or a 505(b)(2) Application (May 2019)). However, for ease of the reader, use of the term
+      clinical in this guidance may refer to clinical investigations conducted to support the demonstration of safety or
+      effectiveness in a drug product submitted in a new drug application, or to in vivo studies submitted to support a
+      demonstration of BE or other requirements under section 505(j) of the Federal Food, Drug, and Cosmetic Act and
+      FDA’s implementing regulations.
+      9
+       See for example 21 CFR 320.25(a) (“[t]he basic principle in an in vivo bioavailability study is that no unnecessary
+      human research should be done”).
+      10
+        In the most general terms, verification refers to an assessment of model components, for example by examining
+      computer codes and equations, to evaluate whether they accurately implement model assumptions; and validation
+      refers to an assessment of the model performance in comparison with observed in vivo data.
+      11
+       See the guidance for industry Dissolution Testing and Acceptance Criteria for Immediate-Release Solid Oral
+      Dosage Form Drug Products Containing High Solubility Drug Substances (August 2018).
+
+
+                                                                4
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+122   IV.     DEVELOPMENT AND EVALUATION OF PBPK MODELS FOR
+123           BIOPHARMACEUTICS APPLICATIONS
+124
+125           A.      General Strategy
+126
+127   The general recommended process of developing (Zhang et al. 2011), evaluating, and applying a
+128   PBPK model for biopharmaceutics applications for an oral dosage form is presented in Figure 1
+129   and described in this section and section V., PBPK Modeling for Biopharmaceutics Applications
+130   to Support Product Quality.
+131
+132   A complete study report of the modeling and simulation work using a PBPK model for
+133   biopharmaceutics applications should be submitted to FDA for evaluation and included in the
+134   electronic common technical document Module 5.3.1.3. 12
+135
+
+
+
+
+      12
+        When such a model is used for other purposes, other modules may be more appropriate. For additional
+      information, see the guidance for industry Providing Regulatory Submissions in Electronic Format — Certain
+      Human Pharmaceutical Product Applications and Related Submissions Using the eCTD Specifications (February
+      2020).
+
+
+                                                            5
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+136   Figure 1. Recommended Workflow Describing Development and Evaluation of a PBPK
+137   Model for Biopharmaceutics Applications
+       Identification of Model Objective(s)
+                  (Section IV.B.1)
+
+
+
+                 Model Development
+                   (Section IV.B.2)
+
+       Structure     Parameters Assumptions
+
+
+
+                                                             Model Refinement
+              Data collection/integration
+                  Model Verification
+
+
+
+                 Model Validation                                (IV.B.3)
+                  (Section IV.B.3)
+
+
+
+                      Acceptable?                  No
+
+                            Yes
+
+
+                  Model Application
+                    (Section V)
+138
+139
+140   The data needed for model development include, but are not limited to:
+141
+142      •   Drug data comprised of drug substance physicochemical properties; formulation
+143          attributes; the drug product release mechanism; the absorption, distribution, metabolism,
+144          and excretion properties of the drug product; as well as other relevant clinical data (e.g.,
+145          BA/BE or other PK data)
+146
+147      •   System data (i.e., anatomical structure and physiological parameters) for the GI tract and
+148          other organs and/or tissues, if applicable
+
+
+                                                       6
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+149
+150      •   Study design data (e.g., the tested drug product or formulation information, dosing
+151          regimen, and study subject population) of the in vivo studies selected for model
+152          development and validation.
+153
+154          B.      General Considerations
+155
+156   The following subsections provide general considerations for model development and evaluation
+157   in supporting pharmaceutical quality.
+158
+159          1.      Model Objective(s)
+160
+161   The specific drug product quality issue(s) or question(s) to be addressed by PBPK modeling for
+162   biopharmaceutics applications should be clearly described in the study report. Sponsors should
+163   provide an analysis of how the specified quality issue(s) or question(s) affect the PK
+164   performance of the drug product, the rationale for conducting the modeling and simulation, as
+165   well as any strategies undertaken to mitigate the risk of the change to PK performance. The
+166   analysis should also incorporate a description of the level of confidence in the modeling outcome
+167   based on additional data available to support the verification and/or validation of the model, and
+168   other factors, such as the model application, the therapeutic indication, and the therapeutic
+169   window of the drug. FDA will evaluate on a case-by-case basis the adequacy of the model for the
+170   intended purpose and data sufficiency for model verification and/or validation.
+171
+172          2.      Model Development
+173
+174   Model development should consist of the following three general elements.
+175
+176                  a.     Model structure
+177
+178   The model structure should provide a mechanistic framework of drug oral absorption by
+179   representing the in vivo drug absorption process and accounting for the relevant product quality
+180   attribute(s) that affect drug dissolution and absorption. The construction of an absorption model
+181   should consider the model objective(s), as well as multiple factors affecting drug dissolution and
+182   absorption and their interactions. These factors include but are not limited to: physicochemical
+183   properties of the drug substance; formulation/process characteristics; drug release mechanism; in
+184   vivo drug dissolution process; supersaturation and precipitation processes; location and duration
+185   of absorption; drug permeation and transport pathway; and the effect of GI tract physiology on
+186   absorption. Finally, model construction should consider the supporting data and knowledge
+187   available to justify the model structure. Sponsors should also document the approaches taken to
+188   integrate quality attributes, such as dissolution, and other factors into the model.
+189
+190   Because the focus of the model is on in vivo dissolution and absorption, it is appropriate to
+191   combine a mechanistic absorption model with a simplified disposition model (e.g., a classic
+192   compartmental PK model or a reduced PBPK model that lumps tissue/organ compartments) for
+193   the prediction of systemic exposure following absorption. Such simplification is recommended if
+194   it does not compromise the ability to adequately describe processes governing the drug BA.
+
+
+
+                                                        7
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+195   When drug disposition involves complexity (e.g., nonlinear PK, saturation of clearance
+196   pathway), we recommend an alternative approach, such as incorporating enzyme kinetics in the
+197   disposition model. Any modification to the initial model structure should include sufficient
+198   justification (e.g., the addition of structural elements may be supported by comprehensive
+199   sensitivity analyses and/or appropriate proof that clearly demonstrates the significance of the
+200   metrics of interest).
+201
+202                  b.      Model assumptions
+203
+204   The assumptions that underly the model structure and parameters should be clearly presented
+205   (e.g., the assumptions made upon drug disintegration, dissolution, precipitation, degradation,
+206   transport, first-pass effect, distribution, and clearance). The assumptions should be scientifically
+207   justified with supportive information and data, when available. The effect of these assumptions
+208   on model structure and/or parameter(s) should be described.
+209
+210                  c.      Model parameters
+211
+212   The approach taken to incorporate drug product quality attributes into the model and the
+213   selection of parameters and parameter values as model inputs should be clearly presented and
+214   scientifically justified. Selection and evaluation of CMAs (such as drug substance
+215   physicochemical properties and excipient(s) level), CPPs (such as compression force), and CQAs
+216   (such as hardness, disintegration, and in vitro dissolution) as model inputs should consider
+217   whether these attributes and parameters can affect drug in vivo dissolution and absorption.
+218
+219          3.      Model Validation and Refinement
+220
+221   The predictive performance of a model should be validated for its intended purpose. Depending
+222   on the clinical risk and the intended purpose, the amount and type of data needed for model
+223   validation may vary. Independent datasets not used in model development are recommended to
+224   evaluate the predictive performance of the model. In general, for addressing pharmaceutical
+225   development and quality issues, the adequacy of the model to predict the effect of model inputs
+226   on the PK performance of the studied drug product should be demonstrated by establishing a
+227   clear rank-order relationship between in vitro testing (e.g., in vitro release/dissolution) and in
+228   vivo PK study results.
+229
+230   To increase confidence in the model, we strongly recommend that sponsors demonstrate the
+231   model’s predictive performance based on PK data from batches exhibiting unacceptable BA, in
+232   addition to those that exhibited acceptable BA (compared to a target and/or reference product).
+233   In this context, BA would be considered unacceptable when, based on BE criteria, the 90 percent
+234   confidence interval of the test-to-reference geometric mean ratio of Cmax and AUC fall outside
+235   the range of 80 to 125 percent. Model validation acceptance criteria should be established a
+236   priori and the criteria should be appropriate for the specified application. For instance, the
+237   acceptance criteria for a mechanistic IVIVC model to support biowaiver should comply with the
+238   criteria provided in the guidance for industry Extended Release Oral Dosage Forms:
+239   Development, Evaluation, and Application of In Vitro/In Vivo Correlations.
+240
+
+
+
+                                                        8
+                                   Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+241   To demonstrate model predictive performance, sponsors should provide graphical and numerical
+242   comparisons of the predicted and observed in vivo drug concentrations (e.g., in plasma) versus
+243   time profiles as well as PK parameter estimates (e.g., Cmax, Tmax, and AUC) and statistical
+244   analysis of those estimates (e.g., confidence intervals). Any significant deviation of the model
+245   prediction from clinical PK observation (e.g., failure to meet pre-defined model acceptance
+246   criteria) will be subject to evaluation by FDA.
+247
+248   When model refinement or optimization is necessary, we recommend uncertainty analyses on
+249   model structure and parameters. Such analyses can be performed by reevaluation of model
+250   assumptions and/or parameter sensitivity analysis. The model structure and/or parameters that
+251   are modified should be clearly presented and scientifically justified. When a model parameter is
+252   optimized, sponsors should provide, in addition to the scientific justification(s) and rationale, the
+253   selected initial values and range of parameters, the estimation method and optimization
+254   algorithm, and the in vitro and in vivo data used for optimization.
+255
+256
+257   V.     PBPK MODELING FOR BIOPHARMACEUTICS APPLICATIONS TO
+258          SUPPORT PRODUCT QUALITY
+259
+260   The in vivo prediction capability provided by PBPK modeling for biopharmaceutics applications
+261   allows for a wide array of uses in the pharmaceutical industry, including formulation
+262   development, biopredictive dissolution method development, clinically relevant product
+263   specifications setting, quality risk assessment, and drug product life cycle management. The
+264   implementation of PBPK modeling for biopharmaceutics applications may reduce the number of
+265   in vivo BA/BE studies (e.g., due to formulation and/or manufacturing process changes)
+266   conducted during the initial approval process, as well as support product scale-up and
+267   postapproval changes (SUPAC). The major regulatory uses of PBPK models for
+268   biopharmaceutics applications with respect to supporting product quality are presented below.
+269   For cases not discussed in this guidance, sponsors are encouraged to contact FDA.
+270
+271          A.      Development of Clinically Relevant Dissolution Specifications (Method and
+272                  Acceptance Criteria)
+273
+274          1.      Aid in Biopredictive Dissolution Method Development
+275
+276   Although progress has been made with the use of biorelevant media and appropriate testing
+277   conditions to create physiologically based dissolution methods (Kostewicz et al. 2014b), the use
+278   of in vitro dissolution data to quantitatively predict drug absorption is challenging. A
+279   biopredictive dissolution method can be used to generate a dissolution profile. This profile can
+280   be used to predict systemic exposure after oral administration of solid dosage forms (Suarez-
+281   Sharp et al. 2018). The dissolution data could be effectively used as a surrogate to assess the
+282   clinically relevant effect of drug product variants, thereby streamlining drug product
+283   development.
+284
+285   We encourage development of biopredictive dissolution methods at the early stage of a drug
+286   product development program, especially for drug products with dissolution as the rate-limiting
+
+
+
+                                                        9
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+287   step for absorption, such as MR drug products and IR drug products containing poorly soluble
+288   APIs.
+289
+290   With the mechanistic platform to delineate the complex mechanisms underlying drug absorption,
+291   PBPK modeling for biopharmaceutics applications can provide an estimation of a drug product’s
+292   in vivo dissolution profile, based on the simulation of in vivo process of drug absorption in the
+293   GI tract. Although the estimated in vivo dissolution profile may be used as a reference,
+294   understanding of the physicochemical properties of the API and drug product quality attributes,
+295   as well as their potential effect on in vivo dissolution, is critical for the development of a
+296   biopredictive/clinically relevant dissolution method. The critical physicochemical properties of
+297   the API and drug product quality attributes include, but are not limited to: (1) its solubility in
+298   aqueous media within physiological pH range (e.g., 1 to 6.8) and/or biorelevant media (e.g.,
+299   simulated gastric and intestinal fluid mimicking fasted or fed conditions); (2) saturation or
+300   supersaturation and precipitation properties; (3) mechanism of release; and (4) the in vitro
+301   dissolution characteristics in media at different pH within the physiological range.
+302
+303   By exploring dissolution methodologies (e.g., medium, apparatus, and hydrodynamics), an in
+304   vitro dissolution method can be developed with the intention to predict the in vivo dissolution
+305   profile of a drug product. The use of biorelevant dissolution methodology is encouraged as a
+306   starting point in the development of a biopredictive dissolution method.
+307
+308   To evaluate whether a dissolution method is biopredictive, sponsors should incorporate
+309   dissolution profiles generated by such method into the PBPK model and the predicted systemic
+310   exposure should be comparable (±10 percent) to the observed in vivo PK data. To evaluate the
+311   method, we recommend that sponsors use observed in vivo PK data of formulations with
+312   different release rates.
+313
+314   Implementation of a biopredictive method is encouraged for establishing a quality control (QC)
+315   dissolution test. If a biopredictive method is determined inappropriate to be employed for routine
+316   use (e.g., due to method complexity), an alternative dissolution method can be selected as the
+317   primary method for the QC dissolution test while the biopredictive dissolution method can be
+318   retained as an alternate testing approach for aiding in quality assessment when needed. For
+319   instance, dissolution data from a biopredictive method can supersede the primary QC dissolution
+320   testing results to support chemistry, manufacturing, and controls (CMC) changes in terms of
+321   maintaining desired in vivo performance.
+322
+323          2.      Support Clinically Relevant Dissolution Acceptance Criteria
+324
+325   The term clinically relevant dissolution acceptance criteria is defined as a metric that can
+326   identify and reject drug product batches that are not bioequivalent to the pivotal clinical drug
+327   product (Abend et al. 2018). It often refers to the acceptance criteria set for a dissolution method
+328   to minimize the possibility of releasing batches that would have clinical performance differences.
+329   A clinically relevant dissolution acceptance criterion can be wider than that set based on the
+
+
+
+
+                                                       10
+                                        Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+330   average dissolution data of pivotal clinical batches (e.g., beyond plus or minus 10 percent
+331   variation range for an extended-release (ER) drug product). 13
+332
+333   PBPK modeling for biopharmaceutics applications links in vitro dissolution to PK performance
+334   and hence supports the establishment of clinically relevant dissolution acceptance criteria. PK
+335   predictions from PBPK models for biopharmaceutics applications (e.g., virtual BE studies) based
+336   on in vitro dissolution profile(s) representing the desired limits and/or range of dissolution rate
+337   can be used to justify the clinical relevance of proposed acceptance criteria. The approach should
+338   consider comparing PK predictions based on in vitro dissolution profile(s) representing the
+339   desired dissolution limits and PK predictions based on dissolution profile of pivotal clinical
+340   batches (as a reference). Sponsors should consider the following when conducting virtual BE
+341   studies: (1) the estimated intra- and intersubject variability for PK parameters (such as Cmax and
+342   AUC) should be representative of the observed intra- and intersubject variability; (2) the number
+343   of subjects for virtual BE trials should be justified and comparable to in vivo BE studies; and (3)
+344   the number of virtual BE trials used to estimate the probability of concluding BE should be
+345   justified.
+346
+347   If the outcome of the analysis meets BE acceptance criteria, the proposed dissolution acceptance
+348   criterion could support clinical relevance. For ER drug products, clinically relevant dissolution
+349   acceptance criteria preferably should be set such that all lots/batches that have dissolution
+350   profiles within the upper and lower limits of the specification are bioequivalent to one another.
+351   Less optimally, lots/batches exhibiting dissolution profiles at the upper and lower dissolution
+352   limits should be bioequivalent to the clinical/BA lots/batches or to an appropriate reference
+353   standard, but not necessarily to one another. 14 For generic drug products, the predicted PK
+354   performance corresponding to the upper and lower limits of dissolution should support that
+355   product variants are bioequivalent to each other and to the reference listed drug.
+356
+357   Parameter sensitivity analysis (PSA) also can be performed to evaluate the effect of the
+358   dissolution rate change on systemic exposure using validated PBPK models for
+359   biopharmaceutics applications, in support of the clinical relevance of proposed dissolution
+360   acceptance criteria.
+361
+362              B.       Establishment of Clinically Relevant Drug Product Quality Specifications
+363                       (Other Than Dissolution)
+364
+365   QbD is a systematic approach for pharmaceutical development and manufacturing to enhance
+366   drug product quality with more consideration of the drug product’s intended use by the patients;
+367   nevertheless, it is often challenging to establish clinically relevant specifications for drug
+368   substances, excipients, in-process materials, and finished drug products. Current quality testing
+369   or control is largely based on in vitro testing/performance (including in vitro dissolution) of
+370   clinical, development, and registration batches. Although clinical data alone are often insufficient
+371   to inform appropriate drug product specifications, the overall clinical pharmacology and
+
+      13
+        See the guidance for industry Extended Release Oral Dosage Forms: Development, Evaluation, and Application
+      of In Vitro/In Vivo Correlations.
+      14
+           See the guidance for industry Dissolution Testing of Immediate Release Solid Oral Dosage Forms.
+
+
+                                                               11
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+372   biopharmaceutics information gathered during drug product development can be leveraged for
+373   the development of PBPK models for biopharmaceutics applications. These models may help in
+374   establishing a desired in vitro-in vivo link, a key element in building clinical relevance for drug
+375   product quality attributes.
+376
+377   Provided that the quality attributes and process parameters are incorporated either directly or
+378   indirectly in the model, the effect of these attributes and parameters on in vivo dissolution and
+379   absorption can be assessed. The quality attributes can include: (1) drug substance quality
+380   attributes (e.g., particle size distribution, physical form, polymorphic form); (2) excipient quality
+381   attributes (e.g., type and/or level of release rate controlling excipient); (3) in-process quality
+382   attributes (e.g., granule particle size, coating weight gain); and (4) finished drug product
+383   attributes (e.g., disintegration). Manufacturing process parameters include, but are not limited to,
+384   coating parameters and compression force. A biopredictive dissolution profile can be used to
+385   assess the in vivo effect of the quality attributes and process parameters that cannot be directly
+386   input into the model.
+387
+388   Similar to setting clinically relevant dissolution acceptance criteria, clinically relevant drug
+389   product specifications for quality attributes other than dissolution can be established based on
+390   modeling predictions to ensure BE of batches within the specification limits to the pivotal
+391   clinical/BA batches (see section V.A.2., Support Clinically Relevant Dissolution Acceptance
+392   Criteria) or to the reference listed drug for generic drugs.
+393
+394          C.      Quality Risk Assessment for Pre- and Postapproval Changes and Risk-Based
+395                  Biowaivers
+396
+397   Sponsors can employ PBPK analyses for biopharmaceutics applications as an advanced tool for
+398   quality risk assessment and management in pharmaceutical development and drug product life
+399   cycle. Specifically, enhanced understanding can be provided by the modeling approach on how
+400   quality attributes affect clinical performance, thereby aiding in risk assessment as part of
+401   formulation and process development and the establishment of the control strategy, as well as
+402   supporting postapproval changes.
+403
+404   The use of PBPK analyses for biopharmaceutics applications at pre- and postapproval stages can
+405   include:
+406
+407      •   Preapproval Stage
+408
+409          ‒    Establishing clinically relevant manufacturing design space and control strategy to
+410               mitigate quality risks in support of patient-centric drug product development
+411
+412          ‒    Bridging clinical batches to the to-be-marketed commercial product accounting for
+413               the CMC changes such as formulation, manufacturing process, and manufacturing
+414               site changes made during pharmaceutical development
+415
+
+
+
+
+                                                       12
+                                         Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+
+416          •   Post-approval Stage
+417
+418              ‒    Conducting risk assessment/risk classification as per SUPAC and/or the draft ICH
+419                   guidances for industry Q12 Technical and Regulatory Considerations for
+420                   Pharmaceutical Product Lifecycle Management: Core Guideline (November 2017)
+421                   and Q12 Technical and Regulatory Considerations for Pharmaceutical Product
+422                   Lifecycle Management: Annex (November 2017) 15 on postapproval CMC changes
+423                   such as formulation, manufacturing process, and manufacturing site changes
+424
+425              ‒ Supporting biowaivers for postapproval changes
+426
+427   Risk assessment can be performed using the same approach as illustrated in section V.A. and B.
+428   in setting clinically relevant drug product specifications. In this regard, model prediction(s) or
+429   PSA results may be used to support high-impact CMC changes that may otherwise need an in
+430   vivo BE study per the guidances for industry Immediate Release Solid Oral Dosage Forms
+431   Scale-Up and Postapproval Changes: Chemistry, Manufacturing, and Controls, In Vitro
+432   Dissolution Testing, and In Vivo Bioequivalence Documentation and SUPAC-MR: Modified
+433   Release Solid Oral Dosage Forms Scale-Up and Postapproval Changes: Chemistry,
+434   Manufacturing, and Controls; In Vitro Dissolution Testing and In Vivo Bioequivalence
+435   Documentation (September 1997). FDA may grant a biowaiver request supported by PBPK
+436   modeling for biopharmaceutics applications after evaluation of the outcome of the risk
+437   assessment, the level of impact of the proposed change, and the totality of the provided
+438   information.
+439
+
+
+
+
+      15
+           When final, these guidances will represent the FDA’s current thinking on these topics.
+
+
+                                                                 13
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+440                                                  GLOSSARY
+441
+442   Biopharmaceutics: The study of the physical and chemical properties of a drug, its dosage form,
+443   and formulation, as related to the onset, duration, and intensity of drug action.
+444
+445   Biopredictive dissolution method: A set of testing conditions for which in vitro dissolution
+446   profiles are capable of predicting PK profiles. These are typically based on classical or
+447   mechanistic IVIVC.
+448
+449   Biorelevant dissolution method: A set of testing conditions (e.g., media and hydrodynamics)
+450   for monitoring in vitro dissolution designed to closely mimic a relevant biological fluid and a
+451   physiological environment.
+452
+453   Clinically relevant dissolution specification: A specification that takes into consideration the
+454   clinical effect of variations in dissolution ensuring a consistent safety and efficacy profile.
+455
+456   Critical process parameter (CPP): A process parameter whose variability has an effect on a
+457   CQA and therefore should be monitored or controlled to ensure the process produces the desired
+458   quality. 16
+459
+460   Critical quality attribute (CQA): A physical, chemical, biological, or microbiological property
+461   or characteristic that should be within an appropriate limit, range, or distribution to ensure the
+462   desired drug product quality. 17 CQAs are generally associated with the drug substance,
+463   excipients, intermediates (in-process materials), and drug product.
+464
+465   Design space: The multidimensional combination and interaction of input variables (e.g.,
+466   material attributes) and process parameters that have been demonstrated to ensure quality.
+467   Working within the design space is not considered to be a change. Movement out of the design
+468   space is considered to be a change and would normally initiate a regulatory postapproval change
+469   process. Design space is proposed by the sponsor and is subject to regulatory assessment and
+470   approval. 18
+471
+472   In vitro/in vivo correlation (IVIVC): A predictive mathematical model describing the
+473   relationship between an in vitro property of an ER dosage form (usually the rate or extent of drug
+474   dissolution or release) and a relevant in vivo response (e.g., plasma drug concentration or amount
+475   of drug absorbed). 19
+476
+477   In vitro-in vivo relationship: A qualitative rank-order relationship between a relevant in vivo
+478   response and in vitro release profiles.
+
+      16
+           See ICH Q8(R2).
+      17
+           Ibid.
+      18
+           Ibid.
+      19
+        See the guidance for industry Extended Release Oral Dosage Forms: Development, Evaluation, and Application
+      of In Vitro/In Vivo Correlations.
+
+
+                                                           14
+                                        Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+479
+480   Parameter sensitivity analysis (PSA): A series of analyses targeting the same estimand, with
+481   differing assumptions to explore the robustness of inferences from the main estimator to
+482   deviations from its underlying modeling assumptions and limitations in the data. 20
+483
+484   Physiologically based pharmacokinetic (PBPK) analysis: An analysis using models and
+485   simulations that combine physiology, population, and drug characteristics to mechanistically
+486   describe the PK and/or pharmacodynamic behaviors of a drug product. 21
+487
+488   Risk assessment: A systematic process of organizing information to support a risk decision to be
+489   made within a risk management process. It consists of the identification of hazards and the
+490   analysis and evaluation of risks associated with exposure to those hazards. 22
+491
+492   Safe space: Boundaries defined by in vitro specifications, such as dissolution or other relevant
+493   drug product quality attributes, within which drug product variants are anticipated to be
+494   bioequivalent to one another.
+
+
+
+
+      20
+        See the draft ICH guidance for industry E9(R1) Statistical Principles for Clinical Trials: Addendum: Estimands
+      and Sensitivity Analysis in Clinical Trials (June 2017). When final, this guidance will represent the FDA’s current
+      thinking on this topic.
+      21
+           See the guidance for industry Physiologically Based Pharmacokinetic Analyses — Format and Content.
+      22
+           See the ICH guidance for industry Q9 Quality Risk Management (June 2006).
+
+
+                                                               15
+                                Contains Nonbinding Recommendations
+                                       Draft — Not for Implementation
+495                                         REFERENCES
+496
+497   Abend A, Heimbach T, Cohen M, Kesisoglou F, Pepin X, and Suarez-Sharp S, 2018, Dissolution
+498   and Translational Modeling Strategies Enabling Patient-Centric Drug Product Development: The
+499   M-CERSI Workshop Summary Report, AAPS J, 20:60.
+500
+501   Babiskin A and Zhang X, 2015, Application of Physiologically Based Absorption Modeling for
+502   Amphetamine Salts Drug Products in Generic Drug Evaluation, J Pharm Sci, Sep;104(9):3170–
+503   3182.
+504
+505   Heimbach T, Suarez-Sharp S, Kakhi M, Holmstock N, Olivares-Morales A, Pepin X, Sjögren E,
+506   Tsakalozou E, Seo P, Li M, Zhang X, Lin HP, Montague T, Mitra A, Morris D, Patel N, and
+507   Kesisoglou F, 2019, Dissolution and Translational Modeling Strategies Toward Establishing an
+508   In Vitro-In Vivo Link — A Workshop Summary Report, AAPS J, Feb 11;21(2):29.
+509
+510   Huang SM, Abernethy DR, Wang Y, Zhao P, and Zineh I, 2013, The Utility of Modeling and
+511   Simulation in Drug Development and Regulatory Review, J Pharm Sci, 102(9):2912–2923.
+512
+513   Kesisoglou F, Chung J, Van Asperen J, and Heimbach T, 2016, Physiologically Based
+514   Absorption Modeling to Impact Biopharmaceutics and Formulation Strategies in Drug
+515   Development-Industry Case Studies, J Pharm Sci, Sep;105(9):2723–2734.
+516
+517   Kostewicz ES, Aarons L, Bergstrand M, Bolger MB, Galetin A, Hatley O, Jamei M, Lloyd R,
+518   Pepin X, Rostami-Hodjegan A, Sjögren E, Tannergren C, Turner DB, Wagner C, Weitschies W,
+519   and Dressman J, 2014a, PBPK Models for the Prediction of In Vivo Performance of Oral Dosage
+520   Forms, Eur. J. Pharm. Sci., 57:300–321.
+521
+522   Kostewicz ES, Abrahamsson B, Brewster M, Brouwers J, Butler J, Carlert S, Dickinson PA,
+523   Dressman J, Holm R, Klein S, Mann J, McAllister M, Minekus M, Muenster U, Müllertz A,
+524   Verwei M, Vertzoni M, Weitschies W, and Augustijns P, 2014b, In Vitro Models for the
+525   Prediction of In Vivo Performance of Oral Dosage Forms, Eur J Pharm Sci, Jun 16;57:342–366.
+526
+527   Kuemmel C, Yang Y, Zhang X, Florian J, Zhu H, Tegenge M, Huang SM, Wang Y, Morrison T,
+528   and Zineh I, 2020, Consideration of a Credibility Assessment Framework in Model-Informed
+529   Drug Development: Potential Application to Physiologically-Based Pharmacokinetic Modeling
+530   and Simulation, CPT Pharmacometrics Syst Pharmacol, Jan;9(1):21–28.
+531
+532   Nguyen MA, Flanagan T, Brewster M, Kesisoglou F, Beato S, Biewenga J, Crison J, Holm R, Li
+533   R, Mannaert E, McAllister M, Mueller-Zsigmondy M, Muenster U, Ojala K, Page S, Parr A,
+534   Rossenu S, Timmins P, Van Peer A, Vermeulen A, and Langguth P, 2017, A Survey on
+535   IVIVC/IVIVR Development in the Pharmaceutical Industry – Past Experience and Current
+536   Perspectives, Eur J Pharm Sci, May 1;102:1–13.
+537
+538   Suarez-Sharp S, Cohen M, Kesisoglou F, Abend A, Marroum P, Delvadia P, Kotzagiorgis E, Li
+539   M, Nordmark A, Bandi N, Sjögren E, Babiskin A, Heimbach T, Kijima S, Mandula H, Raines K,
+
+
+
+
+                                                    16
+                                Contains Nonbinding Recommendations
+                                       Draft — Not for Implementation
+540   Seo P, and Zhang X, 2018, Applications of Clinically Relevant Dissolution Testing: Workshop
+541   Summary Report, AAPS J, Aug 27;20(6):93.
+542
+543   Suarez-Sharp S, Li M, Duan J, Shah H, and Seo P, 2016, Regulatory Experience With In Vivo In
+544   Vitro Correlations (IVIVC) in New Drug Applications, AAPS J, Nov;18(6):1379–1390.
+545
+546   Wagner C, Pan Y, Hsu V, Grillo JA, Zhang L, Reynolds KS, Sinha V, and Zhao P, 2015a,
+547   Predicting the Effect of Cytochrome P450 Inhibitors on Substrate Drugs: Analysis of
+548   Physiologically Based Pharmacokinetic Modeling Submissions to the US Food and Drug
+549   Administration, Clin Pharmacokinet, 54(1):117–127.
+550
+551   Wagner C, Pan Y, Hsu V, Sinha V, and Zhao P, 2016, Predicting the Effect of CYP3A Inducers
+552   on the Pharmacokinetics of Substrate Drugs Using Physiologically Based Pharmacokinetic
+553   (PBPK) Modeling: An Analysis of PBPK Submissions to the US FDA, Clin Pharmacokinet,
+554   55(4):475–483.
+555
+556   Wagner C, Zhao P, Pan Y, Hsu V, Grillo J, Huang SM, and Sinha V, 2015b, Application of
+557   Physiologically Based Pharmacokinetic (PBPK) Modeling to Support Dose Selection: Report of
+558   an FDA Public Workshop on PBPK, CPT Pharmacometrics Syst Pharmacol, 4(4):226–230.
+559
+560   Zhang X, Duan J, Kesisoglou F, Novakovic J, Amidon GL, Jamei M, Lukacova V, Eissing T,
+561   Tsakalozou E, Zhao L, and Lionberger R, 2017, Mechanistic Oral Absorption Modeling and
+562   Simulation for Formulation Development and Bioequivalence Evaluation: Report of an FDA
+563   Public Workshop, CPT Pharmacometrics Syst. Pharmacol, 6:492–495.
+564
+565   Zhang X, Lionberger RA, Davit BM, and Yu LX, 2011, Utility of Physiologically Based
+566   Absorption Modeling in Implementing Quality by Design in Drug Development, AAPS J,
+567   Mar;13(1):59–71.
+568
+
+
+
+
+                                                    17
+

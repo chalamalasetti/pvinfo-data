@@ -1,0 +1,913 @@
+                         Contains Nonbinding Recommendations
+
+
+
+
+        Validation of Certain In Vitro
+       Diagnostic Devices for Emerging
+       Pathogens During a Section 564
+            Declared Emergency
+______________________________________________________________________________
+
+      Guidance for Industry and
+  Food and Drug Administration Staff
+
+                      Document issued on November 10, 2026.
+
+           The draft of this document was issued on January 7, 2025.
+
+For questions about this document, contact IVDguidance@fda.hhs.gov.
+
+
+                                           U.S. Department of Health and Human Services
+                                                            Food and Drug Administration
+                                                Center for Devices and Radiological Health
+                          Contains Nonbinding Recommendations
+
+
+
+
+                                       Preface
+Public Comment
+You may submit electronic comments and suggestions at any time for Agency consideration to
+https://www.regulations.gov. Submit written comments to the Dockets Management Staff, Food
+and Drug Administration, 5630 Fishers Lane, Room 1061, (HFA-305), Rockville, MD 20852-
+1740. Identify all comments with the docket number FDA-2024-D-2707. Comments may not be
+acted upon by the Agency until the document is next revised or updated.
+
+
+Additional Copies
+Additional copies are available from the Internet. You may also send an email request to CDRH-
+Guidance@fda.hhs.gov to receive a copy of the guidance. Please include the document number
+GUI00007020 and complete title of the guidance in the request.
+                                          Contains Nonbinding Recommendations
+
+
+
+
+                                                    Table of Contents
+
+I.     Introduction ............................................................................................................................. 1
+II.    Background ............................................................................................................................. 2
+III. Scope ....................................................................................................................................... 2
+IV. Availability of Templates ....................................................................................................... 4
+V.     Validation Study Recommendations....................................................................................... 4
+          Clinical Performance Evaluation ......................................................................................... 5
+       (1)       Initial Stages of the Outbreak - Alternative Specimen Types ...................................... 6
+       (2)       Study Design................................................................................................................. 7
+       (3)       Clinical Data Analysis .................................................................................................. 7
+       (4)       Human Subject Protection ............................................................................................ 8
+          Analytical Validation Testing .............................................................................................. 8
+       (1)       Limit of Detection (LoD) (Analytical Sensitivity) ....................................................... 8
+       (2)       Inclusivity (Analytical Reactivity) ............................................................................... 9
+       (3)       Specimen Stability ...................................................................................................... 10
+       (4) Basic Safety, Software Validation, Cybersecurity, and Electromagnetic Compatibility
+       (EMC) Testing ...................................................................................................................... 10
+       (5)       Usability, User Comprehension, and Flex Studies ..................................................... 11
+       (6)       Potential Additional Testing ....................................................................................... 12
+          Change Protocols ............................................................................................................... 12
+VI. Additional Considerations for Certain Test Types ............................................................... 13
+          Multi-Analyte Panels ......................................................................................................... 13
+          Home Specimen Collection and Home Use Tests ............................................................. 13
+          Point-of-Care (POC) Tests................................................................................................. 15
+                           Contains Nonbinding Recommendations
+
+
+
+        Validation of Certain In Vitro
+       Diagnostic Devices for Emerging
+       Pathogens During a Section 564
+            Declared Emergency
+______________________________________________________________________________
+
+         Guidance for Industry and
+     Food and Drug Administration Staff
+This guidance represents the current thinking of the Food and Drug Administration (FDA or
+Agency) on this topic. It does not establish any rights for any person and is not binding on
+FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff
+or Office responsible for this guidance as listed on the title page.
+
+
+I.     Introduction
+The Food and Drug Administration (FDA or Agency) plays a critical role in protecting the
+United States from threats such as emerging infectious diseases, potential public health
+emergencies, and public health emergencies. FDA is issuing this guidance to describe
+recommendations for validation of certain in vitro diagnostic devices (IVDs) for emerging
+pathogens when the Secretary of Health and Human Services has declared that the circumstances
+exist justifying emergency use authorizations (EUAs) for such IVDs under section 564 of the
+Federal Food, Drug, and Cosmetic Act (FD&C Act) (hereafter referred to as an “applicable 564
+declaration”), based on an underlying determination under section 564(b)(1) of the FD&C Act.
+
+For the current edition of the FDA-recognized consensus standards referenced in this document,
+see the FDA Recognized Consensus Standards Database. For more information regarding use of
+consensus standards in regulatory submissions, please refer to the FDA guidance entitled
+“Appropriate Use of Voluntary Consensus Standards in Premarket Submissions for Medical
+Devices.”
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+
+
+
+                                                                                                 1
+                                 Contains Nonbinding Recommendations
+
+
+II. Background
+The Emergency Use Authorization (EUA) authority under section 564 of the FD&C Act allows
+FDA to help strengthen the nation’s public health protections against chemical, biological,
+radiological, and nuclear (CBRN) threats by facilitating the availability and use of medical
+countermeasures (MCMs) needed during an actual or potential emergency or material threat.
+Under section 564 of the FD&C Act, when the Secretary of Health and Human Services (HHS)
+declares that the circumstances exist justifying the issuance of EUAs, FDA may authorize certain
+unapproved medical products or unapproved uses of approved medical products to diagnose,
+treat, or prevent serious or life-threatening diseases or conditions caused by CBRN agents when
+certain criteria are met, including when there are no adequate, approved, and available
+alternatives. For information on FDA’s implementation of this and other emergency use
+authorities, see FDA’s guidance “Emergency Use Authorization of Medical Products and
+Related Authorities.”
+
+Accurate and reliable IVDs are critical to the diagnosis, tracking, treatment, and interruption of
+transmission of infectious diseases during outbreaks, as well as for diagnosing and treating
+diseases or conditions caused by CBRN threats. In the public health emergencies of COVID-191
+and monkeypox (mpox),2 FDA issued guidances that included enforcement discretion policies
+for certain unauthorized tests to help rapidly increase national testing capacity early in the
+outbreaks. Certain tests were made available prior to or without an EUA as described in those
+policies. Regardless of whether a test is issued an EUA or offered as described in an enforcement
+discretion policy, it is critical that the test be appropriately validated. FDA may take action, as
+appropriate, against violative tests, including those that lack appropriate validation. This
+guidance and associated template(s) are intended to help test manufacturers better prepare for
+future public health emergencies by including FDA’s recommendations for test validation during
+an applicable 564 declaration.
+
+Also, this guidance and associated templates address the recommendations received from two
+independent assessments of FDA’s response to COVID-19. Specifically, FDA selected Booz
+Allen Hamilton to do such an independent assessment, which culminated in an October 2021
+report, “Emergency Use Authorization Assessment – Final Report,” recommending that FDA
+“develop a framework for how to conduct validation of diagnostic tests for emerging pathogens
+in the setting of a declared PHE.” Similarly, the HHS Office of the Inspector General’s
+September 2022 report, “FDA Repeatedly Adapted Emergency Use Authorization Policies To
+Address the Need for COVID-19 Testing,” recommended that FDA “develop a suite of EUA
+templates for future emergencies involving novel pathogens” and “expand and improve
+resources” on the EUA process, among other actions FDA has taken or is taking.
+
+
+III. Scope
+This guidance describes general recommendations for validation of certain IVDs for emerging
+pathogens during an applicable 564 declaration. The IVDs in the scope of this guidance are
+
+1
+    See FDA guidance document “Policy for Coronavirus Disease-2019 Tests (Revised).”
+2
+    See FDA guidance document “Policy for Monkeypox Tests to Address the Public Health Emergency.”
+
+
+
+                                                                                                     2
+                                 Contains Nonbinding Recommendations
+
+
+diagnostic tests3 intended to detect a pathogen(s) to aid in the diagnosis of a serious or life-
+threatening infectious disease or condition for which an applicable 564 declaration has been
+issued.4 The recommendations in this guidance apply to test data and information submitted in a
+pre-EUA5 or an EUA request, or for a test offered as described in an applicable enforcement
+discretion policy. This guidance does not address the EUA regulatory process; refer to
+“Emergency Use Authorization of Medical Products and Related Authorities” for additional
+information.
+
+The information and recommendations provided in this guidance are intended to be broadly
+applicable to potential future emerging pathogens. This guidance applies to all stages of an
+outbreak and includes discussion about when appropriate validation may depend on the stage of
+the outbreak. Additionally, FDA recognizes that outbreaks inherently come with uncertainty and
+that recommended validation approaches should be adjusted for certain situations. For example,
+different considerations may be needed in certain situations, such as matters of national security.
+In any outbreak, FDA continually monitors and assesses the testing landscape in the U.S. and
+will update its policies and recommendations as appropriate.
+
+Due to differences across tests, including technology and indications for use, as well as different
+circumstances across outbreaks, some sections of this guidance may not be applicable to all tests.
+Test manufacturers should consider which sections are applicable based on the stage of the
+outbreak, availability of validation materials, and the design and proposed indication for use of
+their test, among other considerations.
+
+FDA generally will work interactively with the manufacturer during the development and review
+of an EUA request to help ensure appropriate validation of a test, particularly given potential
+changes in recommendations due to the changing circumstances of any outbreak. Test
+manufacturers may also refer to the mpox and COVID-19 EUA templates on FDA’s website for
+additional examples of approaches taken during prior emergencies.6
+
+3
+  These IVDs are in vitro diagnostic products as defined in 21 CFR 809.3 that are intended to aid in the diagnosis of
+disease (referred to herein as “diagnostic tests”), such as molecular or antigen tests, which are also devices as
+defined in section 201(h) of the FD&C Act. Screening tests, which are used for testing individuals without
+symptoms or other reasons to suspect illness, are a subset of diagnostic tests. In contrast, serology/antibody and
+other adaptive immune response tests generally are not used to diagnose a current acute infection and are outside the
+scope of this guidance. Diagnostic tests may be designed for use in various settings, such as in a Clinical Laboratory
+Improvement Amendments (CLIA)-certified laboratory, at the point of care site covered by a laboratory’s CLIA
+certificate, or at home.
+4
+  The guidance also includes some recommendations regarding home collection kits and certain software that are
+used with diagnostic tests.
+5
+  A pre-EUA, a submission useful for facilitating early interaction between a sponsor and FDA about potential EUA
+products, can be submitted prior to or during an applicable 564 declaration before submitting an EUA request. A
+pre-EUA can only transition to an EUA request if there is a current applicable 564 declaration. The
+recommendations in this guidance may be helpful to manufacturers preparing for early engagement such as a pre-
+EUA, even prior to an applicable 564 declaration, as it could help facilitate the completeness of a potential future
+EUA request. Refer to Section III.C of the FDA guidance document “Emergency Use Authorization of Medical
+Products and Related Authorities” for more information about pre-EUA activities.
+6
+  See mpox templates at: https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-
+devices/monkeypox-mpox-emergency-use-authorizations-medical-devices#templates and COVID-19 templates at:
+https://www.fda.gov/medical-devices/covid-19-emergency-use-authorizations-medical-devices/in-vitro-diagnostics-
+euas#covid19ivdtemplates.
+
+
+
+                                                                                                                    3
+                               Contains Nonbinding Recommendations
+
+
+
+FDA recommends that test manufacturers consult with FDA regarding alternative approaches via
+CDRH-IVD-EUA@fda.hhs.gov.
+
+
+IV. Availability of Templates
+FDA has found the use of templates to be beneficial during prior emergencies, for both
+manufacturers and FDA reviewers, to help facilitate the preparation and submission of pre-EUAs
+and EUA requests to FDA, and any resulting authorization. Templates should be viewed only as
+recommendations, and alternative approaches can be used unless specific regulatory or statutory
+requirements are cited.
+
+A generic template entitled “General IVD Emergency Use Authorization (EUA) Request/Pre-
+EUA Template” is made available through download from our website,7 and it reflects FDA’s
+current thinking on data and information that should be submitted in pre-EUAs and EUA
+requests. FDA may provide more tailored recommendations for tests for a specific outbreak
+through separate guidance or pathogen-specific templates, as appropriate.
+
+Additional templates may be added to our website. For example, FDA may provide updated
+templates as appropriate in the event of a specific outbreak.
+
+
+V.      Validation Study Recommendations
+Validation should objectively demonstrate that a finished device can consistently fulfill defined
+user needs and its intended use. The validation recommendations discussed here reflect that the
+“may be effective” standard for EUAs8 provides for a lower level of evidence than the
+“effectiveness” standard that FDA uses for product approvals,9 as discussed in the FDA
+guidance, “Emergency Use Authorization of Medical Products and Related Authorities.” As
+such, the validation should demonstrate that the device may be effective for its intended use and
+that the known and potential benefits of the device when used as intended outweigh the known
+and potential risks of the device. This guidance also reflects the understanding that, in rapidly
+developing or unexpected emergency circumstances, it may not be possible for a manufacturer to
+collect and/or provide all of the recommended data, including in the format suggested in a timely
+manner. In such cases, additional information may become available and/or FDA might request
+such information at a later date.
+
+Ideally, validation testing is performed using the final design of the device and the proposed
+instructions for use. This ensures that validation is most reflective of performance of the device
+following authorization, although an equivalency study can sometimes be used to address device
+changes following validation. Validation protocols and reports should be provided, including
+study objectives, test procedures, and information on the instrument(s), reagents, software, and
+
+
+7
+  Available at: https://www.fda.gov/media/184828/download.
+8
+  See section 564(c)(2)(A) of the FD&C Act.
+9
+  See, e.g., sections 513 and 515 of the FD&C Act and 21 CFR 860.7.
+
+
+
+                                                                                                 4
+                                Contains Nonbinding Recommendations
+
+
+any other test materials or components needed to perform the test, whether provided with the test
+or that are required but not provided.
+
+For innovative technologies, FDA might request technology-specific studies to assess the known
+and potential benefits and risks associated with the test. However, for rapid response to an
+emergency, tests are often designed using existing instruments and other components, such as
+reagents, that are lawfully marketed10 for clinical use. In such cases, additional validation data to
+support issuance of an EUA may not be needed for the components that are already lawfully
+marketed for clinical use. For example, if a test is designed for use on a lawfully marketed
+instrument, instrument specific validation may not be needed to support issuance of an EUA for
+the test.
+
+Additionally, certain validation studies described in Section V and 0 may be applicable only for
+certain device types or technologies. FDA recommends that manufacturers consider the
+validation studies applicable to their device type, as discussed in subsections A and B.
+
+
+                 Clinical Performance Evaluation
+A clinical performance evaluation is used to assess the accuracy of a test in detecting the analyte
+of interest, often through method comparison or comparison of test results to known positive and
+negative specimens. This type of study typically should characterize the performance of the
+device as it would be expected to perform in actual clinical use. The number of samples and the
+design of the study, such as an appropriate comparator method, will depend on many factors
+including the target pathogen, type of test, availability of clinical specimens containing the
+pathogen, availability of appropriate comparator methods, the stage of the outbreak, and overall
+testing needs.
+
+For example, for a viral nucleic acid test using established technologies known to be capable of
+high sensitivity detection, at a stage of the outbreak where clinical samples and comparators are
+generally available, at least 30 positive and 30 negative specimens (as defined by the
+comparator) from the intended use population and using the intended specimen type are typically
+adequate to demonstrate the performance of the test compared to a highly sensitive comparator
+method. Evaluation of fewer specimens may not accurately characterize the true performance of
+the test.11
+
+
+10
+   A “lawfully marketed” device means a device that is in compliance with FDA requirements, which may include
+premarket authorization.
+11
+   For additional context, FDA issued EUAs for tests in public health emergencies prior to COVID-19 based on 50
+contrived positive and 50 contrived negative clinical specimens. For similar products outside a declared emergency,
+FDA generally has expected an “all-comers” study of natural clinical specimens until at least 50 positives were
+obtained. The 30 positive and 30 negative described represents what FDA generally considers to be the minimum
+number of specimens needed to provide appropriate assurance of performance in an outbreak. Evaluation of fewer
+specimens may not accurately characterize the true performance of the test. For example, FDA received an EUA
+request for a molecular test for COVID-19 that included validation with only 12 positive samples, showing perfect
+performance among this limited sample set. FDA requested evaluation of additional specimens to confirm. When an
+additional 12 samples were evaluated, the cumulative performance dropped to an unacceptable positive percent
+agreement (PPA) of 71%, and the EUA request was withdrawn.
+
+
+
+                                                                                                                  5
+                                 Contains Nonbinding Recommendations
+
+
+Early in an outbreak, however, clinical samples and an appropriate comparator may not be
+available, so initial test validation could be limited to contrived sample evaluation as discussed in
+subsection A(1).
+
+For infectious disease indications, a highly sensitive comparator method is often a molecular
+method (e.g., RT-PCR) that utilizes a nucleic acid isolation method and multiple target regions
+for the detection of the analyte with a high sensitivity based on clinical performance (e.g.,
+positive percent agreement, or PPA ≥ 95%) from testing natural clinical specimens of the
+appropriate specimen type.
+
+          (1) Initial Stages of the Outbreak - Alternative Specimen Types
+Natural clinical specimens are the preferred sample type for validation of a diagnostic test.
+However, in the early stages of an emerging disease outbreak, natural clinical specimens may not
+be readily available. In such cases, the use of archived positive and negative clinical specimens12
+could be a reasonable alternative. Ideally, archived specimens should be accompanied by
+information to determine sample adequacy, such as the specimen collection date, specimen
+storage conditions, and date of onset of symptoms.
+
+When prospective and archived samples are not available, use of contrived (e.g., spiked) samples
+may be acceptable. Contrived samples are constructed in the laboratory by placing known
+concentrations of a microorganism or analyte into individual (not pooled) human specimens
+known to be negative for that microorganism or analyte (i.e., negative clinical matrix13). In
+situations where pathogen stocks are not available, such as at the early stages of an outbreak,
+FDA would likely consider use of synthetic material to be acceptable.14 When synthetic material
+is used, it should closely mimic natural materials. For example, if the pathogen is an RNA virus,
+then synthetic RNA, rather than synthetic DNA, should be used in most cases.
+
+Due to limitations of validation with contrived samples, including those prepared using synthetic
+or natural materials, emergency use authorization of such tests would likely include a Condition
+of Authorization (CoA) requiring a post-authorization clinical performance evaluation with
+natural patient specimens when it becomes feasible. When a clinical performance evaluation is
+not a prospective study, FDA recommends that manufacturers ensure that their evaluation
+includes samples that appropriately represent the range of pathogen levels expected in clinical
+specimens in the intended use population.
+12
+   For purposes of this guidance, archived specimens, sometimes referred to as retrospective or banked specimens,
+are defined as specimens collected from a human subject that are known to harbor the analyte of interest (i.e.,
+positive) or not harbor the analyte (i.e., negative). Archived samples should be selected to minimize bias; for
+instance, samples should not be selected for archiving based on the candidate test result. The appropriateness for use
+of archived samples, such as length of time in storage or other factors, will vary based on the individual emerging
+pathogen during an outbreak.
+13
+   For purposes of this guidance, clinical matrix is defined as a specimen taken from a human subject. Negative
+clinical matrix is a clinical specimen taken from a human subject which does not harbor the analyte of interest.
+Liquid transport media without clinical matrix and specimen transport medium included in a collection kit that was
+not used to collect a clinical specimen are not considered real clinical matrix. Generally, FDA recommends
+individual negative matrix for studies such as confirmatory LoD and for constructing contrived specimens to
+represent a range of sample components (e.g., mucus, particulate matter) which may be present in samples.
+14
+   For example, FDA authorized certain COVID-19 tests that were validated with synthetic material through April
+2020.
+
+
+
+                                                                                                                     6
+                                 Contains Nonbinding Recommendations
+
+
+          (2) Study Design
+Ideally, clinical performance should be established through a prospective, all-comers clinical
+study in the intended use environment, by the intended user(s), and with natural clinical
+specimens from the intended use patient population(s).
+
+In some cases, it might be appropriate for the clinical performance evaluation to include only the
+most challenging clinical matrix type proposed in the intended use of the device15 (e.g.,
+nasopharyngeal (NP) swabs for common upper respiratory types, sputum for common lower
+respiratory types). For atypical specimen types, the clinical performance evaluation should
+evaluate each specimen type included in the intended use of the device.16 In addition, specimens
+from the same anatomical site but different in collection or transport methods, such as with and
+without liquid transportation medium, are considered as two distinct types of specimens and
+should each be validated.
+
+Subjects should be enrolled in the clinical performance evaluation to reflect the intended use
+population(s). For example, if the test is intended for use with asymptomatic individuals, the
+study protocol and report should document how individuals were screened and confirm that all
+enrolled individuals were free of any symptoms of the target infection prior to enrollment and
+sample collection. In cases where obtaining positive samples from asymptomatic individuals is
+challenging, enrichment strategies that minimize potential biases could be considered (e.g.,
+conducting the study in an asymptomatic screening population that is under quarantine due to
+possible exposure may increase the likelihood of obtaining more positive specimens).
+Manufacturers should consult FDA prior to implementing enrichment approaches in your clinical
+performance evaluation.
+
+          (3) Clinical Data Analysis
+Generally, all samples meeting pre-defined inclusion criteria for the clinical performance
+evaluation should be included in the analysis. Justification should be provided for exclusion of
+any such samples from data analysis. FDA generally recommends that clinical data analysis
+include the calculation of positive percent agreement (PPA) and negative percent agreement
+(NPA) with a highly sensitive comparator method, and corresponding 95% confidence intervals
+using the Wilson Score method. Target PPA and NPA to support adequate performance of a
+diagnostic test depend on the test type and indications for use as well as a benefit/risk assessment
+in the context of the emerging outbreak. FDA may consider lower PPAs acceptable for different
+test types and intended use populations with certain mitigations, such as reporting of negative
+test results as “presumptive” based on benefit-risk considerations. In certain cases, such as for
+screening tests for asymptomatic individuals, a higher NPA has generally been expected. If the
+test is intended for symptomatic individuals, the data should include time from symptom onset to
+test for each enrolled subject. The data analysis should account for performance shifts in relation
+to time from symptom onset to support adequate clinical performance.
+
+
+
+15
+   For example, for respiratory viruses, examples of the most challenging clinical matrix type include
+nasopharyngeal (NP) swabs for common upper respiratory types or sputum for common lower respiratory types.
+16
+   For example, for respiratory viruses, examples of atypical specimen types include saliva, oral fluid, and buccal
+swabs.
+
+
+
+                                                                                                                      7
+                                 Contains Nonbinding Recommendations
+
+
+          (4) Human Subject Protection
+Studies involving clinical specimens (human specimens) are subject to applicable requirements
+for Institutional Review Board (IRB) review and approval and informed consent (see 21 CFR
+parts 50, 56, and 812). In December 2023, FDA published a final rule17 that permits an IRB to
+waive or alter informed consent requirements for certain minimal risk clinical investigations that
+meet the conditions in 21 CFR 50.22. FDA anticipates that this new provision may be applicable
+to certain IVD studies involving clinical specimens. In addition, the FDA guidance “Guidance on
+Informed Consent for In Vitro Diagnostic Device Studies Using Leftover Human Specimens that
+are Not Individually Identifiable,” describes a policy about informed consent requirements for
+certain IVD studies that use leftover, de-identified specimens. Use of such specimens does not
+obviate consideration of the other recommendations in this guidance document. Please note that
+additional requirements in the Investigational Device Exemption (IDE) regulations (21 CFR part
+812) may be applicable to certain IVD clinical studies.
+                  Analytical Validation Testing
+In addition to the clinical performance evaluation, analytical validation studies assessing
+analytical performance should also be provided, as recommended in this section.
+
+          (1) Limit of Detection (LoD) (Analytical Sensitivity)
+The LoD provides a measure of the analytical sensitivity of a test for a particular target analyte
+and is defined as the lowest concentration of target analyte that is consistently detected by the
+test in 95% of the specimen replicates.18 The LoD results guide additional validation studies,
+including the clinical performance evaluation. LoD should be determined using the entire test
+from specimen preparation and extraction through detection and the result interpretation
+algorithm. In some cases, it may be appropriate to determine LoD only for the most challenging
+negative clinical matrix type included in the intended use of the device. For atypical specimen
+types, the LoD should be determined with each specimen type included in the intended use of the
+device.
+
+In situations where neither live stocks, inactivated stocks, nor known positive clinical specimens
+are available, use of synthetic material19 may be considered for use in the LoD evaluation in real
+clinical matrix. When synthetic material is used, it should closely mimic the natural target
+analyte.20 Manufacturers should discuss potential use of alternative matrices for unique
+circumstances with FDA. As more specimens become available, FDA generally recommends
+that LoD be evaluated by spiking individual or pooled natural negative clinical matrix with well
+
+
+17
+   See FDA’s final rule on Institutional Review Board Waiver or Alteration of Informed Consent for Minimal Risk
+Clinical Investigations, 88 FR 88228, 88241, Dec. 21, 2023.
+18
+   See definition and additional considerations in CLSI EP17-A2 Evaluation of Detection Capability for Clinical
+Laboratory Measurement Procedures.
+19
+   Please refer to HHS guidance on the use of synthetic nucleic acids, found here: Synthetic Nucleic Acid Screening |
+ASPR. At the time of issuance, the current version of the HHS guidance is: 2023 HHS Screening Framework
+Guidance for Providers and Users of Synthetic Nucleic Acids | ASPR.
+20
+   Simulated or artificial specimen matrix (e.g., clean liquid transport media spiked with mucin, human DNA, and
+HeLa cells) or recombinant antigen should not be used in an LoD study as this material does not accurately mimic
+actual patient samples, and testing with this material may not accurately reflect performance of the device.
+
+
+
+                                                                                                                   8
+                                 Contains Nonbinding Recommendations
+
+
+characterized, quantified natural stocks of the target analyte, for each clinical specimen type
+included in the intended use of the device.
+
+Generally, the preliminary LoD is determined by testing a 2-3-fold dilution series of three
+replicates per concentration. The lowest concentration at which all tested replicates are positive
+is considered the preliminary LoD. The preliminary LoD study should include at least one
+concentration that does not yield 100% positive results. The LoD should then be confirmed by
+testing a minimum of 20 individual replicates of the concentration determined to be the
+preliminary LoD. The final LoD is the lowest concentration resulting in positive detection of at
+least 95% of the replicates (e.g., at least 19 out of 20 replicates). In the case where the final LoD
+study achieves a positivity of 100%, a lower concentration (using a 3-fold dilution) should be
+tested (with 20 replicates) until < 95% positivity is obtained. While the LoD for an entire analyte
+is most critical for test validation, FDA might also request the LoD for individual targets for
+multi-target tests to help the Agency evaluate the performance of the device.21
+
+          (2) Inclusivity (Analytical Reactivity)
+An inclusivity study shows reactivity of the test with additional related (e.g., taxonomic,
+immunological, and genetic composition) target species or isolates.
+
+For molecular-based tests, FDA generally recommends 100% nucleotide sequence identity,
+meaning that the test reagents have no mismatches with known published sequences and
+therefore can likely detect all known species or isolates. If a test has less than 100% nucleotide
+sequence identity to a significant number of published sequences, FDA recommends performing
+a risk assessment on how such mismatches may impact the performance of the test. Inclusivity of
+molecular-based tests should be evaluated through in silico analysis of the test primer and probes
+with all known sequence variants. In silico data should be supplemented with wet testing of
+currently circulating variants, when available, by testing clinical isolates and/or inactivated
+materials spiked into clinical matrix at or near the test LoD.
+
+Inclusivity of antigen-based tests should be evaluated through wet testing of currently circulating
+variants. The methods and results of this analysis should show the extent to which variation in
+the target genome may affect clinical and analytical sensitivity. FDA recommends monthly
+evaluation of inclusivity to account for new and emerging clinically significant mutations. This
+could include, for example, assessing the prevalence of mutations in well-established publicly
+available sequence databases and monitoring for credible reports that a given variant or mutation
+has the potential to increase pathogenicity, increase transmission, or otherwise increase the risk
+to public health. FDA might request additional testing based on its own monitoring. The
+aggregate impact of the mutations should be evaluated and should not result in the clinical
+performance point estimates for the test dropping below the clinical performance
+recommendations described in Section V.A. If a greater than 3-fold reduction in analytical
+sensitivity is observed when comparing pathogens with and without the mutation, manufacturers
+should conduct a risk analysis for the observed difference in performance, consider further risk
+mitigations, and assess whether the known and potential benefits of the test continue to outweigh
+the known and potential risks.
+21
+  Multi-target tests detect multiple sites for the same analyte. For example, a multi-target SARS-CoV-2 test may
+detect N-gene, S-gene, and E-gene targets of the SARS-CoV-2 virus.
+
+
+
+                                                                                                                   9
+                                Contains Nonbinding Recommendations
+
+
+          (3) Specimen Stability
+Degradation of a specimen prior to testing can lead to false results. The Centers for Disease
+Control and Prevention (CDC) often communicates acceptable specimen stability conditions for
+certain specimen types to be tested for specific analytes.22 In such cases, when a manufacturer
+uses CDC’s specifications for specimen stability, additional data are likely not needed to support
+validation. For additional or extended specimen stability conditions not supported by CDC’s
+specifications, or in cases where CDC has not communicated specifications, the manufacturer
+should validate their proposed specimen stability conditions in a specimen stability study, as
+described in this section.
+
+When such a specimen stability study is performed, the stability of specimens collected and
+stored should be evaluated in real-world conditions.23 The study should include several time
+points throughout the duration of the proposed storage time and at least one time point beyond
+the proposed stability, as well as temperatures at the upper and lower limits of the proposed
+temperature ranges for storage and transportation (e.g., 15°C and 30°C for extremes of
+temperature ranges when stored at room temperature). When a test is intended to be performed
+on the specimen immediately or shortly after obtaining the specimen, the specimen stability
+testing timeframe should reflect a shorter storage time (e.g., 2 hours at room temperature).
+
+The study should include contrived positive specimens prepared by spiking live or inactivated
+pathogen into an individual or pooled negative clinical matrix around the LoD and a minimum of
+10 negative specimens. If live or inactivated pathogen are not available, we recommend
+manufacturers contact FDA to discuss potential options.
+
+Specimen stability should be demonstrated for each proposed transport method (e.g.,
+VTM/UTM, saline, and dry swabs). Specimen stability should be demonstrated for each atypical
+specimen type included. Specimens from the same anatomic site but transported in different
+ways are considered different specimen types. If a test is intended for use with multiple
+commonly used specimen types, specimen stability could be demonstrated using the most
+challenging intended specimen type (e.g., NP swabs for common upper respiratory types, sputum
+for common lower respiratory types).
+
+          (4) Basic Safety, Software Validation, Cybersecurity, and
+               Electromagnetic Compatibility (EMC) Testing
+Basic safety hazards such as electrical hazards, fire hazards, and mechanical hazards should be
+addressed for a test that includes instrumentation and/or batteries that has not been previously
+
+
+
+
+22
+   See CDC Infectious Diseases Laboratories Test Directory, available at: https://www.cdc.gov/laboratory/specimen-
+submission/list.html.
+23
+   For example, the expected environmental conditions at the storage and/or shipping specifications (e.g.,
+temperature and time specifications) recommended in labeling. Specimen stability evaluation for home collection
+should be designed to simulate home specimen collection and shipping/transport (e.g., storage of specimens before
+the home user ships the specimen, specimen stored in a mailbox or drop box waiting for pick-up, shipping
+conditions after pick-up when the specimen is shipped to the testing lab).
+
+
+
+                                                                                                               10
+                                 Contains Nonbinding Recommendations
+
+
+cleared, approved, or authorized by the FDA for use with the test.24 Instruments with device
+software functions25 should be validated to ensure that software inputs and outputs are
+appropriate to fulfill test requirements, all expected inputs produce the expected outputs for all
+functions important for proper test operation and for defined user needs and intended uses (e.g.,
+verification and validation), and the test will be free of defects or defects will be known and
+mitigated to an acceptable level (e.g., via risk assessment). The cybersecurity26 of instruments or
+software device functions used with the test with any external wired and/or wireless
+communication interfaces27 should be evaluated to ensure user and patient safety in the intended
+use environment. Instruments or other components that are electrically-powered should be
+designed and validated to demonstrate adequate Electromagnetic Compatibility (EMC).28
+
+          (5) Usability, User Comprehension, and Flex Studies
+For Point-of-Care (POC) home collection, and home use tests, a usability study should be
+conducted to ensure lay users can complete all steps of the workflow in an actual or simulated
+use environment.29 For tests that do not involve a healthcare provider, a user comprehension
+study should also be conducted to assess risks associated with misinterpretation and misuse of
+test results. This study should evaluate the lay user's understanding and comprehension of critical
+elements and concepts in the labeling. 30 It may be possible to combine the usability study, user
+comprehension study, and/or the clinical performance evaluation study since these all include
+representative operators under intended use settings.
+
+Flex studies are intended to demonstrate the robustness of a test, including the test’s ability to
+maintain performance through environmental and usage variations under conditions of stress.
+These studies should be designed to identify the maximum deviation in conditions reasonably
+expected for POC or home use environments that will still generate accurate results (e.g.,
+operating temperature). A hazard risk analysis should first be conducted to identify the most
+common or likely sources of error based on the use locations and test procedures.31
+
+
+24
+   Consider International Electrotechnical Commission (IEC) 60601-1 Medical electrical equipment – Part 1:
+General requirements for basic safety and essential performance, which defines basic safety as freedom from
+unacceptable risk directly caused by physical hazards when medical electrical equipment is used under normal
+condition and single fault condition.
+25
+   Device software functions are software functions that meet the definition of a device under section 201(h) of the
+FD&C Act. Device software functions may include software as a medical device (SaMD) and software in a medical
+device (SiMD). See also FDA guidance documents “General Principles of Software Validation,” “Content of
+Premarket Submissions for Device Software Functions,” “Policy for Device Software Functions and Mobile
+Medical Applications,” “Off-The-Shelf Software Use in Medical Devices,” and 21 CFR 820.30.
+26
+   See FDA Guidance document “Cybersecurity in Medical Devices: Quality System Considerations and Content of
+Premarket Submissions.”
+27
+   For example, Wired: USB, ethernet, SD, CD, and RGA; Wireless: Wi-Fi, Bluetooth, Radio Frequency, inductive
+communication, Near Field Communication (NFC), and Cloud.
+28
+   For more information on EMC testing, consult the FDA guidance document “Electromagnetic Compatibility
+(EMC) of Medical Devices.”
+29
+   See also FDA guidance document “Applying Human Factors and Usability Engineering to Medical Devices.”
+30
+   For example, understanding the intended use of the test, instructions for use, the warnings and precautions, and
+comprehension of the test results (e.g., positive, invalid, and negative results and the impact of each).
+31
+   See also FDA guidance document “Recommendations for Clinical Laboratory Improvement Amendments of 1988
+(CLIA) Waiver Applications for Manufacturers of In Vitro Diagnostic Devices” and FDA website resource
+regarding CLIA Waiver by Application Decision Summaries.
+
+
+
+                                                                                                                 11
+                                Contains Nonbinding Recommendations
+
+
+As discussed earlier in this guidance, FDA recognizes that validation recommendations may be
+adjusted based on circumstances at different stages of an outbreak, such as emergent public
+health needs, availability of validation materials, and the important role of POC tests and home
+testing options for infectious diseases. FDA generally will work interactively with a
+manufacturer during the development and review of an EUA request to help ensure appropriate
+validation of a test, particularly given potential changing circumstances of an outbreak.
+
+          (6) Potential Additional Testing
+In addition to the recommended analytical validation discussed throughout this guidance,
+additional testing may be recommended in certain circumstances. Some examples are outlined
+briefly here: Antigen tests should generally be evaluated for high-dose hook effect, which occurs
+when the presence of very high levels of the target analyte in the patient specimen interferes with
+the binding ability of the capture antibody and causes false negative results. If the clinical
+evaluation does not use real clinical specimens, then cross-reactivity, microbial interference, and
+endogenous/exogenous interference studies should generally be performed, typically with wet
+testing using the most sensitive extraction/instrument combination and the Limit of Detection
+(LoD) with the lowest analyte concentration. FDA may also find it appropriate to request studies
+such as these in other circumstances where there may be a question or concern about accuracy or
+reliability, such as when novel approaches are used or where there are signals of potential
+impacts on test performance. Cross-reactivity should be evaluated to establish that the test does
+not react with related non-target microorganisms, high prevalence disease causing agents, and
+commensal or pathogenic flora that are likely to be in the clinical specimen. In addition,
+microbial interference should be evaluated to establish test performance when the target analyte
+is present in a clinical specimen with other relevant non-target microorganisms.
+Endogenous/exogenous interference studies assess the effects of endogenous and exogenous
+substances on test performance. Tests at risk for cross-contamination from high-positive
+specimens adjacent to negative specimens (e.g., automated liquid handling systems) should
+undergo carry-over testing to check for false positive results. Comparable performance between
+fresh and frozen specimens should be demonstrated for tests intended for use, or otherwise
+validated using, frozen specimens. For some tests with optional/additional
+components/workflows (e.g., multiple thermocyclers, multiple extraction methods, different
+collection media, extraction and/or PCR instruments), FDA may recommend an analytical
+equivalency study to reduce the likelihood of additional clinical performance evaluation being
+requested.
+
+
+                 Change Protocols
+Manufacturers seeking an EUA might consider developing a change protocol32 for potential
+future modifications. When a change protocol is reviewed by FDA and included in the initial
+authorization, changes implemented pursuant to the change protocol are considered to be
+covered by the initial authorization. Change protocols should include specific anticipated
+
+32
+  In the draft of this guidance, FDA referred to predetermined change control plans (PCCPs). FDA has revised this
+discussion to refer to “change protocols” to distinguish these from PCCPs and, among other things, avoid suggesting
+that such change protocols are being implemented in the same way as PCCPs, which are applicable only to
+marketing submissions (see, e.g., “Marketing Submission Recommendations for Predetermined Change Control
+Plan for Artificial Intelligence-Enabled Device Software Functions”).
+
+
+
+                                                                                                                12
+                            Contains Nonbinding Recommendations
+
+
+modifications the manufacturer would make, the steps that will be taken to validate the
+modifications, and the performance metrics that would be considered an indication of successful
+validation (e.g., acceptance criteria). The change protocol should also specify any changes to
+labeling that would be made if the validation is successful. All modifications included in a
+change protocol should maintain the device within the device’s intended use. Examples of
+modifications that might be in a change protocol include adding new instruments or collection
+devices. In general, requirements for implementation of the change protocol would be specified
+in a CoA for the EUA.
+
+VI. Additional Considerations for Certain Test Types
+               Multi­Analyte Panels
+During an outbreak it may be beneficial to have a multi-analyte panel using one specimen to
+detect and differentiate among pathogens that can cause similar symptoms. Multi-analyte tests
+may alleviate the need for multiple samplings and may decrease use of medical supplies,
+reducing pressure on supply chains during an emergency. Each analyte of a multi-analyte test
+should be validatedVValidation Study Recommendations. Manufacturers should address the
+potential for cross-reactivity and microbial interference (including competitive inhibition)
+between analytes. Generally, the validation needed to support EUA issuance for multi-analyte
+panels depends on several factors, including, but not limited to:
+    · State of scientific knowledge for each pathogen,
+    · Whether target analytes have been the subject of previously FDA
+        cleared/approved/authorized tests,
+    · Whether the test is a modification of a multi-analyte test previously FDA
+        cleared/approved/authorized for other pathogens,
+    · Test format [e.g., individual wells used to test for each target analyte or one single well
+        used to test for all target analytes together (i.e., multiplex reaction)],
+    · Specimen types the test will be used with, and
+    · Disease prevalence/availability of clinical specimens.
+               Home Specimen Collection and Home Use Tests
+Home specimen collection and home use tests may be beneficial during an outbreak by
+increasing patient access to testing and by reducing potential exposures. Home specimen
+collection involves the use of a home collection kit to collect a specimen and send it to a
+laboratory for testing. A home use test involves collecting a specimen and testing it at home,
+without needing to send it anywhere else. FDA recommends that manufacturers of home
+collection kits and home use tests consider incorporating design features to address user
+accessibility (e.g., for vision or hearing deficits). Home collection kits and home use tests should
+use only non-invasive specimen collection methods that require no specialized training to be
+safely and correctly performed. The home collection kit or home use test should be safe for home
+use and for lay-user collection of specimens from the intended anatomical site. Home collection
+kits and home use tests should be assessed for toxicology. Home collection kits or home use tests
+that contain hazardous materials may not be appropriate without adequate risk mitigations such
+as safety features to limit the risk of patient exposure. Labeling should inform users of the risks
+associated with using the device. Instructions for lay users should be written as Quick Reference
+Instructions (QRI) limited to one to two pages, at no higher than a 7th grade reading level, and
+
+
+                                                                                                    13
+                                  Contains Nonbinding Recommendations
+
+
+should include pictures and diagrams to facilitate lay person use. Inadequate specimen collection
+or use of home tests by a lay user can introduce risks of false results. These risks can be
+mitigated in multiple ways, such as video observation of the user by a trained healthcare
+professional and/or inclusion of an internal control in the test design to indicate that adequate
+human specimen was collected and placed into the test for analysis.
+
+Home collection kits can be paired with a single test or multiple tests. Validation of home
+collection kits should support the proposed intended use and should evaluate the entire testing
+workflow following the validation recommendations discussed earlier in this guidance. This
+should include distribution of the home collection kit to an individual, collection and storage of a
+clinical specimen at home using the materials provided, and sending the specimen to a CLIA-
+certified clinical laboratory for testing. Where home collection kit and test manufacturers
+separately seek EUAs, a right of reference33 shared between the manufacturers may help
+streamline the review process by allowing data from each EUA request to be incorporated by
+reference into the other.
+
+In general, a home use test should be simple to perform, and its results should be simple to
+interpret. Home use tests can be prescription use or over the counter (OTC) and can be used in
+non-laboratory settings, such as offices, sporting events, airports, schools, where a lay person
+collects a sample, performs the test, and interprets test results themselves. The clinical
+performance evaluation of home use tests should be conducted at U.S. sites representative of the
+intended use setting (i.e., that mimic a home use environment) and with users who represent the
+intended use population (e.g., including different socioeconomic and educational backgrounds
+and range of ages). Generally, for OTC tests, the intended use patient population includes adults
+(and older pediatric individuals) who can perform self-collection and testing, pediatric
+individuals who may be able to self-collect and perform the test under supervision of an adult,
+and younger pediatric individuals (and some adults) who need their specimen collected and
+tested by an adult caregiver. Each patient population proposed should be evaluated following the
+validation recommendations discussed elsewhere in this guidance. The entire workflow should
+be performed by each individual participant including, as applicable, test registration, specimen
+collection, testing, and results interpretation. Testing sites should be set up in a way that
+precludes a user from seeing or hearing other users performing the test (e.g., in separate rooms).
+Specimens collected for use with the comparator methods should be collected according to
+comparator device labeling (e.g., by a health care provider).
+
+When using smartphone software applications to facilitate performing the test and/or providing
+test results, the display should promote easy interpretation (e.g., positive, negative, and invalid)
+and understanding of results and what lay users should do next, including how to care for
+themselves and when to seek follow up care. Error messages should be readily understandable,
+and troubleshooting should be included in the instructions for use. The software application
+
+33
+   A manufacturer seeking to leverage data regarding another manufacturer’s EUA-authorized assay should obtain a
+right of reference from that manufacturer. A manufacturer that has provided data to the FDA may grant a right of
+reference to other manufacturers, either broadly or to individual manufacturers. A right of reference provides a
+manufacturer the ability to rely upon, and otherwise use, existing information and data in one regulatory submission
+for the purpose of supporting a different regulatory submission. If the data is applicable to a new manufacturer's test,
+a new manufacturer may not have to repeat validation to support its submission to FDA, or FDA may recommend
+only a bridging study.
+
+
+
+                                                                                                                     14
+                             Contains Nonbinding Recommendations
+
+
+should be capable of capturing and transmitting test results and associated diagnostic data when
+appropriate in accordance with applicable local, state, and federal requirements. Automation,
+data harmonization, and integration of software in the diagnostic workflow should be optimized
+to lessen burden on the test user, minimize the potential for data entry errors, and improve the
+overall quality and utility of data captured. Software applications intended to interpret test results
+or otherwise impact test results should be evaluated in analytical validation and clinical
+performance studies.
+
+
+               Point­of­Care (POC) Tests
+Point-of-Care (POC) tests are tests intended for use in professional near patient settings, such as
+hospitals, urgent care centers, and emergency rooms. POC tests can be beneficial during an
+outbreak because they provide more immediate results compared to laboratory-based tests.
+
+Clinical performance evaluation of POC emergency use tests that are intended for use in a CLIA
+Certificate of Waiver setting should be conducted at one or two U.S. sites representative of
+anticipated real-world settings, with four to six operators without laboratory training, and who
+are representative of intended operators. For example, this may include: using the device in a
+healthcare setting, such as at a hospital bedside, by non-laboratorian healthcare professionals; in
+a non-traditional healthcare setting, such as at a school, by untrained users who are not
+healthcare professionals; or in a temporary testing site setting, such as a tent set up at a non-
+healthcare workplace, by users who have limited or no training or hands-on experience in
+conducting laboratory testing. The clinical performance evaluation for POC tests should include
+all steps in specimen collection and handling described in labeling, including addition of the
+specimen to the specimen port/well of the test. Testing should be performed in real time after
+specimen collection. Study operators should only rely on QRI and should receive no additional
+training or intervention on how to use the device. The QRI should be written for untrained users
+at no higher than a 7th grade reading level, limited to one to two pages, and include pictures and
+diagrams to facilitate use.
+
+In addition to the clinical performance evaluation described above in Section V.A, for POC tests,
+performance around the LoD should be evaluated by the intended POC users with contrived
+specimens in real clinical matrix. Testing should include 10 samples near the LoD (e.g., ≤ 3-fold
+of the LoD), and 10 negative specimens per site. All contrived specimens should be blinded,
+randomized, and tested as part of the normal workflow of the site by the intended POC users,
+each of whom tests at least three positive samples near the LoD and three negative samples.
+Results that do not match the expected result should be investigated. Testing should demonstrate
+positive and negative agreement of at least 95%. If this is not achieved, the LoD should be re-
+evaluated.
+
+
+
+
+                                                                                                   15
+                           Contains Nonbinding Recommendations
+
+
+Guidance History*        Date               Description
+Level 1 Final Guidance November 2026 See Notice of Availability for more information.**
+Level 1 Draft Guidance January 2025         See Notice of Availability for more information.**
+**The Notice of Availability is accessible via the Search for FDA Guidance Documents
+webpage.
+
+
+
+
+                                                                                             16
+

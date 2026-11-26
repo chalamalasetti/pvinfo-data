@@ -1,0 +1,1023 @@
+   Technical Considerations for
+   Demonstrating Reliability of
+Emergency-Use Injectors Submitted
+  under a BLA, NDA or ANDA:
+Guidance for Industry and Food and
+    Drug Administration Staff
+                                      DRAFT GUIDANCE
+         This guidance document is being distributed for comment purposes only.
+
+Although you can comment on any guidance at any time (see 21 CFR 10.115(g)(5)), to ensure that the agency
+considers your comment on this draft guidance before it begins work on the final version of the guidance, submit
+written or electronic comments on the draft guidance within 60 days of publication in the Federal Register of the
+notice announcing the availability of the draft guidance. Submit written comments to the Division of Dockets
+Management (HFA-305), Food and Drug Administration, 5630 Fishers Lane, rm. 1061, Rockville, MD 20852.
+Submit electronic comments to http://www.regulations.gov. All comments should be identified with the docket
+number listed in the notice of availability that publishes in the Federal Register.
+
+                                        Additional copies are available from:
+                                           Office of Combination Products
+                                            Food and Drug Administration
+                                            WO32, Hub/Mail Room #5129
+                                            10903 New Hampshire Avenue
+                                              Silver Spring, MD 20993
+                                                 (Tel) 301-796-8930
+                                                 (Fax) 301-847-8619
+                                     https://www.fda.gov/combination-products
+  For questions regarding this document, contact Patricia Love, Office of Combination Products, at 301-796-8930,
+                                patricia.love@fda.hhs.gov or combination@fda.gov.
+
+                          U.S. Department of Health and Human Services
+                                  Food and Drug Administration
+                            Center for Devices and Radiological Health
+                             Center for Drug Evaluation and Research
+                          Center for Biological Evaluation and Research
+                Office of Combination Products in the Office of the Commissioner
+                                            April 2020
+                    Contains Nonbinding Recommendations
+
+                        Draft – Not for Implementation
+
+                           Table of Contents
+
+
+I. INTRODUCTION                                           2
+II. SCOPE                                                  3
+III.   REGULATORY FRAMEWORK                                4
+IV.    BACKGROUND ON RELIABILITY                           5
+V. RELIABILTY REPORT DEVELOPMENT AND CONTENT
+RECOMMENDATIONS FOR PREMARKET SUBMISSIONS                  9
+VI.    RELIABILITY REPORT FORMAT CONSIDERATIONS           17
+VII. WHERE TO FIND ADDITIONAL INFORMATION                 17
+VIII. APPENDIX: FAULT TREE EXAMPLE                        19
+
+
+
+
+                                                           i
+                                       Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+ 1          Technical Considerations for Demonstrating Reliability of
+ 2       Emergency-Use Injectors Submitted under a BLA, NDA, or ANDA
+ 3       Guidance for Industry and Food and Drug Administration Staff 1
+ 4
+ 5   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 6   Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+ 7   and is not binding on FDA or the public. You can use an alternative approach if it satisfies the
+ 8   requirements of the applicable statutes and regulations. To discuss an alternative approach,
+ 9   contact the FDA staff responsible for this guidance as listed on the title page.
+10
+11
+12          I.    INTRODUCTION
+13
+14   This guidance covers emergency-use injectors submitted under a biologics license application
+15   (BLA), new drug application (NDA), or abbreviated new drug application (ANDA). The term
+16   “emergency-use injector” means injectors marketed with an emergency-use drug 2 as a prefilled
+17   single entity combination product under 21 CFR 3.2(e)(1) or as a co-packaged combination
+18   product under 21 CFR 3.2(e)(2). Emergency-use injector includes pen injectors, autoinjectors, or
+19   on-body-wearable delivery systems for drugs for emergency treatment of conditions such as
+20   anaphylaxis, opioid overdose, poisoning, or severe hypoglycemia.
+21
+22   For injectable drug or biological products that are intended to treat emergent, life-threatening
+23   conditions, it is essential to ensure that the emergency-use injector will reliably deliver the drug
+24   as intended. Failure of the injector may prevent adequate delivery of a life-saving drug to a
+25   patient. In this context, reliability is defined as the probability that the injector will perform as
+26   intended, without failure, for a given time interval under specified conditions. 3
+27
+28   The FDA guidance document, “Technical Considerations for Pen, Jet, and Related Injectors
+29   Intended for Use with Drugs and Biological Products” provides general recommendations for
+30   the technical and scientific information to be included in marketing applications for a range of
+31   injectors for various uses. 4 In that document the reliability of the injector in delivering the drug
+32   product is listed as one of the functional elements FDA assesses in premarket review. This
+
+
+
+     1
+       This guidance has been prepared by the Center for Devices and Radiological Health in cooperation with the Center
+     for Drug Evaluation and Research, the Center for Biologic Evaluation and Research, and the Office of Combination
+     Products in the Office of Medical Products and Tobacco/ Office of Clinical Policy and Programs/ Office of the
+     Commissioner at the Food and Drug Administration.
+     2
+       For purposes of this guidance, unless otherwise stated, the term drug applies to human drug and biological
+     products.
+     3
+       Reliability definition source: IEC 61078:2016 - Reliability Block Diagrams. Some Agency guidance documents
+     use the term robustness to convey the reliability concept.
+     4
+       The FDA guidance Technical Considerations for Pen, Jet, and Related Injectors Intended for Use with Drugs and
+     Biological Products is accessible at https://www.fda.gov/regulatory-information/search-fda-guidance-
+     documents/technical-considerations-pen-jet-and-related-injectors-intended-use-drugs-and-biological-products.
+                                                                                                                      2
+                                        Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+33   document describes additional information and data that FDA recommends be included in
+34   marketing applications to demonstrate that an emergency-use injector is reliable.
+35
+36   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+37   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+38   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+39   the word should in Agency guidances means that something is suggested or recommended, but
+40   not required.
+41
+42        II.     SCOPE
+43
+44   This guidance’s focus is emergency-use injectors marketed with the emergency-use drug as a
+45   prefilled single entity combination product or as a co-packaged combination product. 5 The
+46   recommendations in this guidance are applicable to combination products intended to treat
+47   emergent, life-threatening conditions, when it is essential to ensure that the injector will reliably
+48   deliver the drug as intended. 6 Such products are marketed as combination products assigned to
+49   the Center for Drug Evaluation and Research (CDER) or the Center for Biological Evaluation
+50   and Research (CBER) with market authorization under an approved NDA, ANDA, or BLA. 7
+51
+52   Although this guidance contains specific recommendations of ways to demonstrate the reliability
+53   of emergency-use injectors, 8 the recommendations would also be useful in considering how to
+54   demonstrate the reliability of other emergency-use drug delivery devices; e.g., intranasal sprays,
+55   inhalation devices, topical cutaneous sprays, syringes, or transdermal systems. Questions
+56   regarding whether these recommendations would apply to a specific emergency-use drug
+57   delivery system and proposed methods to demonstrate the reliability should be discussed with
+58   the Agency early in the product development process. 9
+59
+
+
+
+
+     5
+       See 21 CFR part 3. Combination products are comprised of differently regulated articles; i.e., a drug-device,
+     device-biological product, drug-biological product, or a combination of a drug, device, and biological product. See
+     21 CFR 3.2(e)(1) and (2) for definitions of single entity and co-packaged combination products.
+     6
+       The reliability data discussed within this guidance document is limited to assessing functional performance of the
+     device and does not address human factors/user interface considerations. For information on human factors see
+     FDA guidance: Human Factors Studies and Related Clinical Study Considerations in Combination Product Design
+     and Development, https://www.fda.gov/regulatory-information/search-fda-guidance-documents/human-factors-
+     studies-and-related-clinical-study-considerations-combination-product-design-and; or FDA guidance Applying
+     Human Factors and Usability Engineering to Medical Devices, https://www.fda.gov/regulatory-information/search-
+     fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices.
+     7
+       See 21 CFR 3.4. Combination Products are assigned to a lead center based on the primary mode of action
+     (PMOA). In this instance, the drug or biological product is considered to be the PMOA and the combination
+     products are assigned to CDER or CBER. For additional information contact the Office of Combination Products at
+     combination@fda.gov.
+     8
+       Throughout this document the term emergency-use injector applies to the device constituent part of the
+     combination product.
+     9
+       Applicants developing an emergency-use injector or similar product for an ANDA should request Agency
+     feedback on the potential applicability of the recommendations in this guidance document.
+                                                                                                                        3
+                                        Contains Nonbinding Recommendations
+
+                                              Draft – Not for Implementation
+
+60        III.    REGULATORY FRAMEWORK
+61
+62   Combination products are subject to 21 CFR Part 4, which sets forth current good manufacturing
+63   practice (CGMP) requirements for combination products. The constituent parts of a combination
+64   product retain their regulatory status (as a drug or device, for example) after they are combined.
+65   The CGMP requirements that apply to each of the constituent parts apply to the combination
+66   product they constitute.
+67
+68   For single-entity combination products and co-packaged combination products, such as those
+69   covered in this guidance, part 4 identifies two ways to demonstrate compliance with CGMP
+70   requirements. Under the first option, manufacturers demonstrate compliance with all CGMP
+71   regulations applicable to each of the constituent parts included in the combination product.
+72   Under the second option, manufacturers implement a streamlined approach for combination
+73   products that include both a drug and device by demonstrating compliance with either the drug
+74   CGMPs (21 CFR parts 210 and 211) or the device Quality System (QS) regulation (21 CFR part
+75   820) and also demonstrating compliance with specified provisions from the other two sets of
+76   CGMP requirements.
+77
+78   Under the streamlined approach described in 21 CFR 4.4(b), manufacturers of drug-led, drug-
+79   device combination products, 10 such as those that are the subject of this guidance, may meet the
+80   requirements of both the drug CGMPs and device QS regulation by designing and implementing
+81   a CGMP operating system that demonstrates compliance with the drug CGMPs and the
+82   following provisions from the device QS regulation in accordance with 21 CFR 4.4(b)(1) (drug
+83   CGMP-based streamlined approach):
+84
+85        •   21 CFR 820.20              Management responsibility
+86        •   21 CFR 820.30              Design controls
+87        •   21 CFR 820.50              Purchasing controls
+88        •   21 CFR 820.100             Corrective and preventive action
+89        •   21 CFR 820.170             Installation
+90        •   21 CFR 820.200             Servicing
+91
+92   As explained in the FDA guidance for “Current Good Manufacturing Practice Requirements for
+93   Combination Products, “the core requirements embedded in these regulations provide for
+94   systems that assure proper design, monitoring, and control of manufacturing processes and
+95   facilities. This includes establishing a strong quality management system, using appropriate
+96   quality raw materials, establishing robust manufacturing and control procedures based on sound
+97   design principles, and detecting and investigating product quality deviations. In addition, these
+
+
+
+     10
+       A biological product regulated under section 351 of the Public Health Service Act is also, by definition, a drug or
+     a device. Accordingly, for combination products that include a biological product, in addition to complying with the
+     drug CGMP and device QS regulation requirements as applicable in accordance with 21 CFR part 4, manufacturers
+     of such products must comply with the CGMP requirements in 21 CFR parts 600 through 680 that would apply to
+     the biological product if it were not part of a combination product. 21 CFR 4.4(b)(3).
+                                                                                                                        4
+                                        Contains Nonbinding Recommendations
+
+                                              Draft – Not for Implementation
+
+ 98   regulations call for ongoing assessment of systems and the implementation of corrective actions
+ 99   where appropriate.” 11
+100
+101        IV.     BACKGROUND ON RELIABILITY
+102
+103   Emergency-use injectors such as those for treatment of anaphylaxis typically are used by the
+104   patient, caregiver, or first responder outside of a health care environment. For the patient
+105   experiencing the emergency or their assisting lay caregivers, there may be only one opportunity
+106   to use the product and for that one opportunity the emergency-use injector needs to successfully
+107   inject the drug at that time. Further, because these emergency-use injectors are for a single use,
+108   the functional performance cannot be verified before the injector is used. Therefore, to ensure
+109   safe and effective use of the emergency-use injector, FDA recommends using the reliability
+110   engineering methods described in this guidance to ensure that the injector will function as
+111   intended within its expiration date. Designing the combination product to achieve its identified
+112   functional performance (reliability) is consistent with the combination product good
+113   manufacturing practice design control requirements provisions (see 21 CFR 4.4(b)(1)(ii) and
+114   4.4(b)(1)(iv)).
+115
+116   Although the requirements of both the drug CGMPs and device QS regulation must be met, as
+117   described in Section III above, several aspects of the design requirements identified in 21 CFR
+118   4.4(b)(1)(ii) are particularly important in the development and reliability of an emergency-use
+119   injector. For example,
+120
+121        •   21 CFR 820.30(c) states that “[e]ach manufacturer shall establish and maintain
+122            procedures to ensure that the design requirements relating to a device are appropriate and
+123            address the intended use of the device, including the needs of the user and patient.”
+124
+125        •   21 CFR 820.30(d) states that “[e]ach manufacturer shall establish and maintain
+126            procedures for defining and documenting design output in terms that allow an adequate
+127            evaluation of conformance to design input requirements. Design output procedures shall
+128            contain or make reference to acceptance criteria and shall ensure that those design
+129            outputs that are essential for the proper functioning of the device are identified.”
+130
+131        •   21 CFR 820.30(f) states that “[e]ach manufacturer shall establish and maintain
+132            procedures for verifying the device design. Design verification shall confirm that the
+133            design output meets the design input requirements. The results of the design verification,
+134            including identification of the design, method(s), the date, and the individual(s)
+135            performing the verification, shall be documented in the DHF.” Moreover, 21 CFR
+136            820.30(g) states that “[e]ach manufacturer shall establish and maintain procedures for
+137            validating the device design. Design validation shall be performed under defined
+138            operating conditions on initial production units, lots, or batches, or their equivalents.
+139            Design validation shall ensure that devices conform to defined user needs and intended
+
+
+      11
+        See Section II.B accessible at https://www.fda.gov/regulatory-information/search-fda-guidance-
+      documents/current-good-manufacturing-practice-requirements-combination-products.
+                                                                                                           5
+                                    Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+140          uses and shall include testing of production units under actual or simulated use
+141          conditions.”
+142
+143      •   21 CFR 820.30(h) states that “[e]ach manufacturer shall establish and maintain
+144          procedures to ensure that the device design is correctly translated into production
+145          specifications.”
+146
+147      •   21 CFR 820.30(i) states that “[e]ach manufacturer shall establish and maintain
+148          procedures for the identification, documentation, validation or where appropriate
+149          verification, review, and approval of design changes before their implementation.”
+150
+151      •   21 CFR 820.100 states that “each manufacturer shall establish and maintain procedures
+152          for implementing corrective and preventive action.”
+153
+154   FDA considers that “the needs of the user and patient” (21 CFR 820.30(c)) in an emergency-use
+155   context would be that, for the patient experiencing the emergency or his/her assisting lay
+156   caregiver, there is only one opportunity to use the product and, thus, FDA has found emergency-
+157   use injectors acceptable if they would successfully inject the drug on the first try. In this
+158   instance, the design input requirements would provide functional measures for performance
+159   characteristics, specifications for how reliably the emergency-use injector functions, and the use
+160   condition of the patient or caregiver. This would include identification of a reliability
+161   specification that is consistent with the level of risk to the patient if the emergency-use injector
+162   does not function (e.g., the morbidity or mortality associated with untreated anaphylactic shock).
+163
+164   In addition, FDA interprets the requirements under 21 CFR 820.30(f) and (g) to mean that a
+165   manufacturer of an emergency-use injector must verify and validate the design of the injector to
+166   ensure that it works in “one opportunity” situations. These requirements can be met, for
+167   example, if available documentation demonstrates that (1) the emergency-use injector has met its
+168   design input requirements within the specified reliability targets at expiry and (2) design
+169   validation has been conducted on finished products to ensure reliability targets are met and that
+170   test conditions were representative of how the product would be exposed up to expiry.
+171
+172   The preceding design control requirements are intended to ensure that the emergency-use
+173   injector performance is as reliable as possible. Consistent with this purpose, FDA has found
+174   emergency-use injectors to be acceptable if they would successfully inject on the first try in “one
+175   opportunity” (or emergency) situations. This reliability concept has an inherent feasibility
+176   consideration. FDA recommends that emergency-use injectors include design control
+177   specifications for successful injection reliability of 99.999% with a 95% level of confidence As
+178   FDA has found such specifications to be acceptable under applicable standards. This prospective
+179   99.999% target is equivalent to post-market detection of failure to successfully inject in
+180   1/100,000 injection attempts. This reliability level was found to balance appropriately the
+181   objective of ensuring the emergency-use injector performance is as safe and reliable as possible
+182   with considerations on feasibility.
+183
+184   As part of determining an acceptable level of reliability, FDA has considered available
+185   information for risk assessment. Specifically, the FDA-recognized standard, ISO 14791 -
+                                                                                                         6
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+186   Application of risk management to medical devices, provides insight regarding probabilities of
+187   occurrence. 12 In the standard, examples are provided for semi-quantitative analysis that
+188   identifies probable, remote, and improbable events rates. In the standard, events occurring in the
+189   range of 1/10,000 detection rate are considered to be probable. In FDA review experience, this
+190   probable failure rate is likely associated with unacceptable rates of adverse events for
+191   emergency-use injectors that may result in product recalls. In the standard, events occurring less
+192   than a 1/1,000,000 detection rate are considered to be improbable. Although the lowest possible
+193   failure rates are desirable, FDA believes that based on the standard rates and current technology,
+194   that the improbable rate of less than 1/1,000,000 detection rate could result in drug shortage or
+195   delayed product availability. In contrast to both of the preceding rates, events occurring within
+196   1/100,000 to 1/1,000,000 detection rate are considered as a remote probability of occurrence.
+197   Therefore, based on the ISO standard, FDA believes the detection of failure to successfully inject
+198   in 1/100,000 injection attempts is an appropriate risk management target for ensuring successful
+199   injection and treatment when there is only one opportunity to inject. Further, FDA review of
+200   recent marketing applications demonstrates that the reliability target of 99.999% with a 95%
+201   level of confidence (i.e., 1/100,000 failure to successfully inject rate) is achievable for these
+202   emergency-use injectors.
+203
+204   The following information provides the details of an example of what FDA currently believes
+205   would be an acceptable approach for the mathematical model, statistics, fault tree analysis, and
+206   use of combination product current good manufacturing design control requirements provisions
+207   (21 CFR 4.4(b)(1)(ii) and 4.4(b)(1)(iv)) to establish reliability of the emergency-use injector.
+208   FDA recognizes that as an alternative to the approach discussed in this guidance, applicants may
+209   propose other reliability specifications methodologies. For example, based on considerations
+210   such as product design, drug being delivered, for emergent unmet medical needs, counter-
+211   terrorism considerations, or conditions of use, alternative reliability specifications may be
+212   appropriate. During emergency-use injector development FDA encourages applicants to seek
+213   FDA meetings to discuss their proposals and rationale (e.g., context of use, risk/benefit, shortage,
+214   and supportive data).
+215
+216   Establishing reliability
+217
+218   Establishing reliability is an iterative process in which the design controls should focus on
+219   emergency-use injector attributes determined to be essential for achieving the emergency-use
+220   injector’s intended use. 13 The level of reliability necessary to manufacture a safe and effective
+221   combination product directly correlates to the level of risk associated with an unreliable emergency-
+222   use injector. Because reliability as a mathematical model is defined as R(t) = 1 – F(t), where F(t)
+223   represents the cumulative distribution function of failure, the goal should be to define the point at
+224   which that distribution, F(t), is adequately controlled. The reliability specification(s), R(t),
+225   represents the probability that the emergency-use injector will perform as intended, without failure,
+
+      12
+         ISO 14971:2007/R(2016) Medical Devices - Application of risk management to medical devices; Section 3.4.2
+      Semi-quantitative analysis.
+      13
+         For more information on design controls for a combination product see 21 CFR Part 4 Subpart A, and related
+      FDA guidance Current Good Manufacturing Practice Requirements for Combination Products accessible at
+      https://www.fda.gov/regulatory-information/search-fda-guidance-documents/current-good-manufacturing-practice-
+      requirements-combination-products.
+                                                                                                                      7
+                                      Contains Nonbinding Recommendations
+
+                                           Draft – Not for Implementation
+
+226   for a given time interval under specified conditions. This level of risk should be identified in the
+227   risk analysis conducted as part of device design controls activities. 14
+228
+229   This assessment is specific to the combination product’s intended use because the risks are likely
+230   to be impacted by the condition being treated, environments of use, emergency-use injector
+231   technology, drug, user characteristics, etc. The emergency-use injector reliability analysis, in
+232   addition to the traditional development activities, should incorporate the following device design
+233   control activities as applicable to the emergency-use injector:
+234
+235        •   Identification of the reliability requirements and specifications;
+236        •   Risk analysis;
+237        •   Design verification and validation of the reliability requirements and specifications; and
+238        •   Design transfer of the reliability specification to the correct production specifications.
+239
+240   As described in Section IV Background on Reliability, after transfer of the design into
+241   production, the manufacturing controls must be adequate to produce reliable emergency-use
+242   injectors as specified. 15 These controls should, among other required activities, include the
+243   following to ensure the design specifications and tolerances that must be achieved during
+244   production and that all sources of potential quality problems are analyzed:
+245
+246        •   Adequate manufacturing in-process controls and release activities to ensure the final
+247            finished emergency-use injector conforms to its specifications;
+248        •   Adequately defined acceptance activities for the supplied components to ensure that the
+249            manufactured combination product has the required design attributes to ensure the
+250            reliability specifications are achieved; and
+251        •   Establish and maintain procedures for implementing corrective and preventive action
+252            (CAPA) activities (e.g., post-market complaints) to ensure that all sources of quality data
+253            are analyzed and, where necessary, preventive or corrective actions are taken. 16
+254
+255   In addition to providing assurance of the emergency-use injector reliability, the advantages of a
+256   well-constructed reliability analysis include the following life-cycle management benefits in the
+257   linkage between the design and manufacturing controls.
+258
+259        •   The least reliable design elements or manufacturing controls of an emergency-use
+260            injector can be identified prior to commercialization of the combination product. This
+261            can further inform potential improvements in manufacturing controls, tracking or
+262            trending limits of part rejects, and future investigations of failed combination products;
+263        •   Future changes to either design or manufacturing processes can be evaluated against the
+264            reliability analysis to assess the potential impact to the emergency-use injector reliability;
+265        •   Post-market emergency-use injector failure investigations can directly link to the
+266            emergency-use injector reliability analysis to readily identify gaps or deficiencies in the
+267            emergency-use injector’s design and/or manufacturing controls; and
+
+      14
+         See 21 CFR 820.30(g).
+      15
+         See 21 CFR 820.30(h).
+      16
+         See 21 CFR 820.100.
+                                                                                                            8
+                                         Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+268       •   Once the results of those specific design elements or manufacturing controls are
+269           understood within the context of the overall reliability analysis, if the reliability analysis
+270           is implemented early in the development cycle, reliability improvements can be made by
+271           making changes to the emergency-use injector design or manufacturing processes or
+272           controls.
+273
+274   Section V below provides an example of an acceptable way to demonstrate the reliability of the
+275   emergency-use injector and define failure to successfully inject.
+276
+277        V.      RELIABILTY REPORT DEVELOPMENT AND CONTENT
+278                RECOMMENDATIONS FOR PREMARKET SUBMISSIONS
+279
+280   As discussed in Section IV, achieving the necessary reliability specification is based on
+281   knowledge of the design, manufacture, and use of the combination product. Generally, the
+282   highest risk is failure to successfully inject (e.g., activation and drug delivery functions). This
+283   occurs when one or more functional failure modes result in the emergency-use injector failure to
+284   deploy the needle to the target site or failure to complete drug delivery as intended. As described
+285   in Section IV Background on Reliability, FDA has found emergency-use injectors to be
+286   acceptable if they would successfully inject in “one opportunity” (or emergency) situations. As
+287   stated above, FDA has found emergency-use injectors to be acceptable under the applicable
+288   standards when they include design control specifications for successful injection reliability of
+289   99.999% with a 95% level of confidence.
+290
+291   To establish the emergency-use injector’s safe and effective injection performance, the
+292   marketing application should include information to verify and validate that the emergency-use
+293   injector achieves its reliability specifications and related information. The following sections
+294   identify examples of acceptable activities for developing the verification and validation data. If
+295   applicants submit such information, FDA recommends that the applicants provide these data in
+296   the form of an emergency-use injector reliability report to facilitate efficient review. 17 The
+297   following subsections provide examples of the type of information to provide in the reliability
+298   report. Section VI of this guidance provides a reliability report format example.
+299
+300       1. Design Inputs and Design Outputs Necessary 18 for Ensuring Reliability
+301
+302       As described in Section IV, specifications for how reliably the emergency-use injector
+303       functions and the use condition of the patient or caregiver need to be identified. 19 The design
+304       inputs necessary for ensuring reliability should be identified and developed into specified
+305       design outputs. Selecting design inputs that may not be relevant to the reliable function of
+306       the emergency-use injector could result in an inability to meet the manufacturer’s established
+307       reliability specifications. To assist in identifying design input requirements, manufacturers
+308       should consider the following information:
+
+      17
+         Throughout the remainder of this document the term “reliability report” applies to the emergency-use injector
+      reliability report.
+      18
+         See 21 CFR 820.30(c) and 820.30(d).
+      19
+         See 21 CFR 820.30(c).
+                                                                                                                         9
+                                         Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+309           •    Intended use and associated risks;
+310           •    Emergency-use injector risk analysis, including the drug constituent part
+311                characteristics;
+312           •    Use-related issues to the extent that they could impact the reliability of the
+313                combination product, including:
+314                o Use tasks, which may include unpacking, preparation, administration and disposal
+315                    of the combination product; and
+316                o Use conditions and environments of use.
+317           •    Use-condition factors 20 to consider include all users of the emergency-use injector,
+318                where they are using it, and the possible circumstances under which the emergency-
+319                use injector may be used, including:
+320                o Use environment (e.g., school, work, public transportation vehicle, harsh climates,
+321                    first responder chaotic conditions) and associated risks to reliability; and
+322                o User characteristics (e.g., self- injection with cognitive or physical impairment
+323                    associated with the disorder being treated) and associated risks to reliability.
+324
+325        Table -1 provides an example of emergency-use injector design considerations for
+326        emergency-use injector reliability only. 21
+327
+328
+329
+330                                              (See next page for Table-1.)
+331
+
+
+
+
+      20
+         The use condition factors discussed within this guidance document are limited to assessing functional
+      performance of the emergency-use injector and do not address human factors/user interface considerations. For
+      information on human factors see FDA guidance: Human Factors Studies and Related Clinical Study
+      Considerations in Combination Product Design and Development (Draft 2016), https://www.fda.gov/regulatory-
+      information/search-fda-guidance-documents/human-factors-studies-and-related-clinical-study-considerations-
+      combination-product-design-and; or Applying Human Factors and Usability Engineering to Medical Devices,
+      https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-
+      engineering-medical-devices.
+      21
+         Other types of input or output considerations for the safe and effective use of the emergency-use injector should
+      continue to be part of the combination product development. For more information see FDA guidance Technical
+      Considerations for Pen, Jet, and Related Injectors Intended for Use with Drugs and Biological Products accessible
+      at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-considerations-pen-jet-
+      and-related-injectors-intended-use-drugs-and-biological-products.
+                                                                                                                        10
+                                        Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+                    Table-1: Emergency-Use Injector Design Reliability Development
+                                           Considerations 22
+           Consideration Category       Examples
+                                      • Packaging ability to prevent emergency-use injector
+                                        damage during shipping, daily carry, etc.
+             Protective Packaging
+                                      • Removal from packaging or carrying case (e.g., force
+                                        to remove)
+           Removal / Deactivation of • Force to remove caps or needle shields
+              Safety Mechanisms       • Force to deactivate safety mechanism
+               Activation Force       • Force to initiate the injection mechanism
+                                      • Needle bevel specifications
+                                      • Needle material of construction
+               Needle Insertion       • Needle Insertion Forces (e.g., penetrating clothing,
+                                        skin, etc.)
+                                      • Needle resistance to bending and fracture
+                Needle Patency        • Particulates
+                                      • Target tissue for drug delivery
+                                      • Body habitus, skin and tissue characteristics
+                Injection Depth       • Anatomical location(s) for injection
+                                      • Types of garments to be injected through
+                                      • Exposed needle length
+                                      • Needle reaches intended injection depth
+           Drug Delivery Initiates as • Drug delivery begins when needle is at intended
+                    Intended            injection depth
+                                      • Drug fluid properties (e.g., viscosity)
+                                      • Needle does not retract before intended dose is
+            Drug Delivery Stops as      delivered
+                    Intended          • Audible, visual, or tactile feedback does not
+                                        prematurely signal a completed injection
+                                      • Intended dose delivered to intended injection site or
+                Dose Accuracy
+                                        depth
+332
+333       The preceding tabular considerations are to assist in identifying the emergency-use injector
+334       performance characteristics that inform the design inputs and outputs. Based on such
+335       considerations the applicant should develop the design inputs and outputs that are essential
+336       for ensuring reliability of the applicant’s proposed product. The reliability report should
+337       define all the design inputs and outputs determined to be necessary for achieving reliability.
+338       It is important to clearly define the difference between acceptable and unacceptable
+339       emergency-use injector performance to determine appropriate design inputs that will inform
+
+
+      22
+         For more information on development design controls for a combination product see 21 CFR Part 4 Subpart A,
+      and see related FDA guidance Current Good Manufacturing Practice Requirements for Combination Products
+      accessible at https://www.fda.gov/regulatory-information/search-fda-guidance-documents/current-good-
+      manufacturing-practice-requirements-combination-products.
+                                                                                                                      11
+                                          Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+340        the design outputs. If the design outputs are not correctly defined, then the overall reliability
+341        analysis may also be inadequate.
+342
+343        2. Definition of Emergency-Use Injector Reliability Specifications
+344
+345        As noted in the preceding discussion on design inputs and outputs, there are multiple design
+346        specifications that should be considered with respect to the reliability of the emergency-use
+347        injector. Using the mathematical expression identified in Section IV, R(t) = 1 – F(t), the
+348        reliability specification is defined as the probability distribution, R(t). An example of
+349        acceptable reliability specifications is those that are developed in accordance with the risk
+350        assessment as described in Section V.3 – Fault Tree Analysis of this document and, through
+351        this analysis, linked to the appropriate manufacturing controls to ensure the reliability of the
+352        final finished combination product. The specifications may be one or two-sided depending
+353        upon the risk associated with the failure (e.g., risk of overdose and under-dose exists for a
+354        two-sided dose-accuracy reliability specification).
+355
+356        For the reliability specification analysis, failure to inject should be the primary endpoint.
+357        This should be the top-level failure mode of the fault tree analysis as described in Section
+358        V.3. 23 The reliability analysis and testing should include emergency-use injector
+359        performance requirements based on the assessment of the design (see Section V.1). In
+360        general, FDA recommends that these include dose accuracy, extended needle length,
+361        activation force, and injection time be included as part of emergency-use injector
+362        reliability. 24 However, manufacturers should assess the specific emergency-use injector
+363        design to determine if additional performance attributes are considered to be essential for
+364        completing a successful injection. For example, a specific design may have a cap that must
+365        be removed to initiate injection and the manufacturer may determine that cap removal is
+366        essential to completing a successful injection.
+367
+368        3. Fault Tree Analysis
+369
+370        The information described in the preceding sections could be used to develop a model of the
+371        reliability using fault tree analysis. The fault tree analysis would focus on failure to achieve
+372        the reliability specifications. An example of an acceptable analysis is one that also includes
+373        additional fault trees to address other emergency-use injector performance requirements
+374        determined to be essential for reliability (e.g., dose accuracy, extended needle length).
+375        Manufacturers should consider the following for their fault tree analyses:
+376
+377            •   Design and manufacturing elements should be considered for the fault tree analysis
+378                for the purposes of establishing the reliability of the emergency-use injector to
+379                perform as intended, without failure, for a given time interval under specified
+380                conditions;
+      23
+         For more information of fault tree analyses see IEC 61025:2006 – Fault Tree Analysis (FTA); NASA Fault Tree
+      Handbook with Aerospace Applications, 2006.
+      24
+         The acceptance criteria for the performance attributes in Table-2 should be established based on relevance to
+      clinical performance (i.e., established as design inputs), and not based on manufacturing capability or to facilitate
+      meeting the reliability target.
+                                                                                                                          12
+                                          Contains Nonbinding Recommendations
+
+                                                Draft – Not for Implementation
+
+381            •   The probability data for each basic event 25 should be included in the fault tree;
+382            •   The analysis should consider potential common cause failures and whether
+383                assumptions of independence of events are supportable;
+384            •   Any risk analyses (e.g., such as design and process failure modes effects analysis) 26
+385                used to support the fault tree analysis should be included in the reliability report;
+386            •   Once the fault tree analyses are completely developed, data should be provided to
+387                support that the reliability specification for the top-level failure mode is verified and
+388                validated (e.g., the probability data for each basic event should be supported with
+389                evidence); and,
+390            •   The basic events in the fault tree analysis should be linked to appropriate design
+391                and/or manufacturing controls.
+392
+393        Based on standard fault tree analysis quantification methods, the reliability of each basic
+394        event within the fault tree analysis should be assessed through a cumulative analysis to
+395        determine whether the reliability specification for the top-level failure mode is adequately
+396        supported. The statistical methods utilized to demonstrate the reliability of each basic event
+397        within the fault tree analysis should inform the test sample size necessary for reliability
+398        testing of the final finished combination product. To assess the potential for the basic event
+399        failure mode of the emergency-use injector, it is important to use a statistical tolerance
+400        interval 27 method in which the limits of each individual component are analyzed (e.g.,
+401        dimensions, geometry, material strength, etc.), 28 both by itself and in conjunction with its
+402        associated components (i.e., stack-up analysis). To effectively use the tolerance interval
+403        method, the critical measurable elements of each component contributing to the basic event
+404        should be clearly stated and the statistical tolerance limit 29 identified. Data to support the
+405        tolerance interval methodology should be provided and may include process validation data
+406        for individual components. The resultant k factor 30 for each basic event should be used to
+407        calculate the necessary sample size of the reliability study based on the desired reliability
+408        specification and confidence interval.
+409
+410        An example of acceptable use of the statistical tolerance interval methodology is one
+411        described above.31 An acceptable methodology should evaluate both design and
+
+
+      25
+         The basic event is a failure mode event or state that cannot be further developed; i.e., the lowest level failure mode
+      that cannot be further subdivided.
+      26
+          ISO 14971 Second edition 2007-Medical devices - Application of risk management to medical devices; and
+      IEC 60812:2006 - Analysis techniques for system reliability - Procedure for failure mode and effects analysis
+      (FMEA). (FDA recognized standards.)
+      27
+         Statistical tolerance interval is an interval determined from a random sample in such a way that one may have a
+      specified level of confidence that the interval covers at least a specified proportion of the sampled population per
+      ISO 3534-1:2006. (FDA recognized standards.)
+      28
+         ISO 16269-6 Second edition 2014 – Statistical interpretation of data - Determination of statistical tolerance
+      intervals. (FDA recognized standards.)
+      29
+         Statistical tolerance limit is the statistic representing an end-point of a statistic tolerance interval per ISO 3534-
+      1:2006. (FDA recognized standards.)
+      30
+         The k factor is the variable used to determine the limits of a statistical tolerance interval per ISO 16269-6:2014.
+      31
+         There are other methods that may also be appropriate to support the fault tree analysis and overall reliability
+      specifications. If a manufacturer intends to use a method not described in this guidance document, the FDA
+                                                                                                                            13
+                                         Contains Nonbinding Recommendations
+
+                                              Draft – Not for Implementation
+
+412       manufacturing risks associated with the emergency-use injector such that the fault tree
+413       analysis is assessing reliability of the final, finished combination product. (See Section VIII -
+414       Appendix for a fault tree analysis template example.)
+415
+416       4. Reliability Testing
+417
+418       FDA recommends that a reliability analysis include verifying and validating the adequacy of
+419       the data used to support the reliability specifications, and that the data support the reliability
+420       specification over the combination product expiry period. The following subsections
+421       describe information recommendations for preconditioning and testing reliability samples.
+422
+423                a. Use Conditions and Preconditioning Recommendations
+424
+425           To identify the reliability test conditions to ensure achievement of the reliability
+426           specification at the end of use-life, 32 it is important to define the combination product’s
+427           use conditions and preconditioning steps. This ensures that the testing program has
+428           adequately challenged the ability of the emergency-use injector to withstand stressors that
+429           are likely to occur or to which the product will be exposed during the use-life.
+430           Combination product-specific use-life factors to consider for preconditioning steps that
+431           influence shelf-life may include the following preconditions:
+432
+433                •   Shipping;
+434                •   Aging;
+435                •   Storage orientation and conditions;
+436                •   Vibration;
+437                •   Shock (e.g., resistance to impacts, such as being dropped); and
+438                •   Environmental factors:
+439                    o Temperature (extremes and cyclic);
+440                    o Altitude and pressure effects (e.g., airplane, submarine, or other above/below
+441                       sea-level effects); and
+442                    o Air particulates (dust/sand).
+443
+444           FDA recommends that the reliability report include the following information to help
+445           establish the acceptability of the use of accelerated testing to generate supporting data:
+446
+447                •   Validation data to ensure that the accelerated methods accurately model the time-
+448                    dependent failure mechanisms of the emergency-use injector;
+449                •   Results of testing at various time points to identify any trends in emergency-use
+450                    injector performance; and
+
+
+
+      encourages the manufacturer to request a meeting to discuss the validity of the proposed approach for supporting the
+      reliability specification.
+      32
+         Use-life begins when the product manufacture is complete and ends on the date when the product cannot function
+      as intended (the expiration date). For the combination product, the expiration date also may be described as shelf
+      life or end of use-life of the drug-device combination product.
+                                                                                                                       14
+                                      Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+451               •   A statistical justification to ensure that the sample size at the final time point is
+452                   adequate to support the pre-specified reliability and confidence interval goals.
+453                   FDA recommends that the tolerance interval method discussed in Section V.3 be
+454                   used to provide the sample size justification.
+455
+456           The report should also describe the use conditions that are important for the emergency-
+457           use injector’s reliability and should define the bounded specifications for each condition
+458           (e.g., a temperature range).
+459
+460               b. Testing
+461
+462           Reliability verification testing should be conducted on the final finished combination
+463           product after considering the appropriate preconditioning and use conditions laid out in
+464           Section IV.4.a. A reliability report should include the test protocol with validated test
+465           methods.
+466
+467           The sample size for reliability verification testing should be justified with an appropriate
+468           statistical method as discussed in Section V.3 and based on the emergency-use injector
+469           reliability specifications described in Section V.2. If multiple test groups are included in
+470           the manufacturer’s protocol, such as aged and non-aged test groups, then the sample size
+471           should ensure adequate statistical results from each group.
+472
+473           All test failures should undergo root cause analyses which directly link to the fault tree
+474           analysis. The fault tree analysis may need to be updated based on any previously
+475           unknown failure modes discovered during reliability verification testing. If there is a
+476           failure, the reliability testing may need to be redone depending on the conclusions of the
+477           root cause analyses.
+478
+479           5. Total Product Life Cycle Reliability
+480
+481           Throughout the life cycle of the combination product, manufacturers may become aware
+482           of potential emergency-use injector malfunctions, nonconformance or other related
+483           quality problems. In these cases, manufacturers must investigate the potential cause and
+484           identify any actions that may be needed to correct and prevent recurrence. 33
+485
+486           An example of an acceptable reliability report is one that documents the manufacturer’s
+487           plan for maintaining emergency-use injector reliability throughout the product life cycle
+488           as part of compliance with 21 CFR part 4 current good manufacturing practice
+489           requirements for combination products. 34 An example of an acceptable plan is a plan that
+490           includes the following:
+491
+
+
+      33
+        21 CFR 820.100.
+      34
+        See 21 CFR Part 4 Subpart A, and related FDA guidance Current Good Manufacturing Practice Requirements for
+      Combination Products accessible at https://www.fda.gov/regulatory-information/search-fda-guidance-
+      documents/current-good-manufacturing-practice-requirements-combination-products.
+                                                                                                               15
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+492                 •   Procedures that include requirements for analyzing processes, work operations,
+493                     concessions, quality audit reports, quality records, service records, complaints,
+494                     returned combination product, and other sources of quality data to identify
+495                     existing and potential causes of nonconformance, or other quality problems; 35
+496
+497                 •   As part of defect and/or failure investigations, the procedures use the reliability
+498                     data and fault tree analysis as part of the root cause analysis;
+499
+500                 •   Procedures for when, during complaint investigations and related CAPA
+501                     activities, it is appropriate to image the emergency-use injector internally or
+502                     physically open the emergency-use injector to inspect, measure, and test
+503                     assemblies or individual components and compare results with the specifications
+504                     and data identified in the reliability analysis;
+505
+506                 •   Appropriate steps for linking the reliability data to the appropriate acceptance
+507                     activities, including the specific emergency-use injector attributes that are
+508                     evaluated, evaluation methods, and acceptability criteria that should be considered
+509                     in the context of the emergency-use injector’s reliability;
+510
+511                 •   Detailed descriptions of the in-process control and release test sampling plans to
+512                     ensure that the reliability specification is maintained for each released lot;
+513
+514                 •   Established action limits for significant increases in rejections of the emergency-
+515                     use injector and its components due to incoming inspection, in-process control, or
+516                     release test failures;
+517
+518                 •   The activities triggered by exceeding an action limit should include 1) the need
+519                     for implementing CAPA, 2) a root cause investigation, and 3) an associated risk
+520                     analysis of the failure. The reliability data and fault tree analysis are consulted as
+521                     part of the root cause investigation;
+522
+523                 •   Procedures for updating the reliability data when new information is obtained
+524                     (e.g., previously unidentified failure modes); and
+525
+526                 •   A section that addresses disposition of non-released emergency-use injector or
+527                     combination product pending analysis and mitigation of newly identified failures.
+528
+529             6. Activities when Implementing Emergency-Use Injector Design or Manufacturing
+530                Modifications
+531
+532             An example of an acceptable reliability report is one that includes a plan for the activities
+533             to be completed when implementing an emergency-use injector design or manufacturing
+534             modification. After completing the initial reliability report, future design changes and
+
+      35
+           21 CFR 820.100.
+                                                                                                              16
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+535           manufacturing process changes may occur that necessitate re-evaluation of reliability to
+536           ensure emergency-use injector reliability. 36 To determine when the reliability data may
+537           need to be updated, the impact of the change should be evaluated based on the existing
+538           reliability model.
+539
+540           Manufacturers should consider if the change impacts the design output specifications of
+541           the emergency-use injector or the basic events of the fault tree analysis. If it is
+542           determined that the change does impact these aspects, creates new design outputs, or
+543           creates new risks, then the emergency-use injector reliability report should be updated
+544           with data regarding the changes and included within your premarket submission.
+545
+546        VI.     RELIABILITY REPORT FORMAT CONSIDERATIONS
+547
+548   To facilitate the data assessment, the reliability report should be provided in the following
+549   format:
+550
+                  Section   Content
+                  1.        Combination Product Definition
+                            • Drug Type
+                            • Indications for Use
+                            • Emergency-Use Injector Technical and Functional Description
+                            • Design Inputs and Design Outputs Necessary for Reliability
+                  2.        Emergency-Use Injector Reliability Specifications
+                  3.        Fault Tree Analysis
+                  4.        Reliability Test Plan and Data
+                  5.        Total Product Life Cycle Reliability Plan
+                  7.        Conclusions
+                  8.        Appendices Containing Supporting Data Reports or Risk Analyses
+551
+552   When submitting this information to an NDA or BLA, we recommend including the information
+553   with other device constituent part information located in eCTD module 3.2.P.7. 37
+554
+555        VII.    WHERE TO FIND ADDITIONAL INFORMATION
+556
+557   As noted in Section II, the drug-delivery emergency-use injectors addressed by this guidance are
+558   designed as combination products with a CDER or CBER lead. These combination products are
+559   submitted under an IND, NDA, ANDA, or BLA pathway (including supplements). To address
+560   any uncertainties for the emergency-use injector reliability development process, FDA strongly
+561   encourages early development meetings (e.g., Pre-IND or Pre-ANDA to discuss the initial
+562   combination product) as well as subsequent IND meetings throughout the development process.
+
+      36
+        See 21 CFR 820.30(i) and 820.70(b).
+      37
+        See section-5 in the FDA eCTD Technical Conformance Guide: Technical Specifications Document: Guidance
+      for Industry Providing Regulatory Submissions in Electronic Format -Certain Human Pharmaceutical Product
+      Applications and Related Submissions Using the eCTD Specifications, December 2019 accessible at
+      https://www.fda.gov/regulatory-information/search-fda-guidance-documents/ectd-technical-conformance-guide.
+                                                                                                                   17
+                                       Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+563   These meetings can include requests for clarification on the reliability information discussed in
+564   this document. For applicants with emergency-use delivery systems that are not emergency-use
+565   injectors, these meetings could be used for early consideration of the principles identified in this
+566   document. All meeting requests should be submitted to the lead center in accordance with its
+567   procedures and should identify the requested participants (e.g., the lead center, CDRH, Office of
+568   Combination Products). FDA intends to use its Inter-Center Consult Review Process 38 for the
+569   assessment of the scientific and technical questions described in this document. The following
+570   guidance documents provide procedural information on requesting meetings with FDA and
+571   general information on combination products.
+572
+573        •   Guidance for Industry - Formal Meetings Between the FDA and Sponsors or Applicants
+574            of PDUFA Products; https://www.fda.gov/regulatory-information/search-fda-guidance-
+575            documents/formal-meetings-between-fda-and-sponsors-or-applicants-pdufa-products-
+576            guidance-industry
+577
+578        •   Formal Meetings Between FDA and ANDA Applicants of Complex Products Under
+579            GDUFA – Guidance for Industry (DRAFT); https://www.fda.gov/regulatory-
+580            information/search-fda-guidance-documents/formal-meetings-between-fda-and-anda-
+581            applicants-complex-products-under-gdufa-guidance-industry
+582
+583        •   Guidance for Industry and FDA Staff - Technical Considerations for Pen, Jet, and
+584            Related Injectors Intended for Use with Drugs and Biological Products;
+585            https://www.fda.gov/regulatory-information/search-fda-guidance-documents/technical-
+586            considerations-pen-jet-and-related-injectors-intended-use-drugs-and-biological-products
+587
+588        •   eCTD Technical Conformance Guide: Technical Specifications Document: “Guidance
+589            for Industry Providing Regulatory Submissions in Electronic Format —Certain Human
+590            Pharmaceutical Product Applications and Related Submissions Using the eCTD
+591            Specifications” December 2019 accessible at https://www.fda.gov/regulatory-
+592            information/search-fda-guidance-documents/ectd-technical-conformance-guide
+593
+594        •   For general information on combination products see
+595            https://www.fda.gov/CombinationProducts/default.htm
+
+
+
+
+      38
+        For more information on the Inter-Center Consult Review process see
+      https://www.fda.gov/media/81927/download
+                                                                                                        18
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+596        VIII.   APPENDIX: FAULT TREE EXAMPLE
+597
+598   The following is a template example of a fault tree analysis for an emergency-use injector. The
+599   example uses the following key terms. 39
+600
+601         •   Basic Event: A failure mode event or state that cannot be further developed.
+602
+603         •   Failure to successfully inject: Failure of an emergency-use injector to successfully inject
+604             occurs when one or more functional failure modes result in the emergency-use injector
+605             failing to deploy the needle or failing to complete drug delivery when or as intended. This
+606             could include circumstances where the emergency-use injector prematurely activates or
+607             does not activate when intended.
+608
+609         •   Failure Mode: The manner in which a failure occurs.
+610
+611   Fault Tree Analysis:
+612
+613   For the emergency-use injector, each final element of the fault tree (e.g. A.1.i.a) should directly
+614   link to probability data supporting the overall reliability of the product. The steps for fault tree
+615   analysis include the following. See the preceding sections of this document for guidance for
+616   information on the completion of these steps, conduct of the analysis, and data submission.
+617
+618         •   Definition of the scope of the analysis;
+619         •   Familiarization with the design, functions and operation of the system;
+620         •   Definition of the top event;
+621         •   Construction of the fault tree;
+622         •   Analysis of the fault tree logic; and,
+623         •   Reporting on results of the analysis;
+624
+625   The template defines the top event as the Failure to Successfully Inject. The fault tree should be
+626   broken down into all reasonable, identified faults and failure modes that could lead to a Failure-
+627   to-Inject event. The lowest level in the example fault tree illustrates how individual components
+628   are incorporated into the fault tree.
+629
+630   This fault tree example is not prescriptive. The actual number of levels and total amount of
+631   failure modes identified in a manufacturer’s fault tree will depend on the specific design and
+632   manufacturing of that emergency-use injector.
+633
+634
+635                                (See next page for example of flow diagram.)
+636
+
+
+      39
+        For a more complete glossary and more information see ISO 61025:2006 – Fault tree analysis and the NASA
+      Fault Tree Handbook with Aerospace Applications, 2006.
+
+                                                                                                                  19
+      Contains Nonbinding Recommendations
+
+          Draft – Not for Implementation
+
+
+
+
+637
+
+
+
+
+                                            20
+

@@ -1,0 +1,2309 @@
+                           Contains Nonbinding Recommendations
+
+                               Draft – Not for Implementation
+
+
+  Robotically-Assisted Surgical Devices
+       - Premarket Submissions
+______________________________________________________________________________
+
+    Draft Guidance for Industry and
+   Food and Drug Administration Staff
+                                 DRAFT GUIDANCE
+   This draft guidance document is being distributed for comment purposes
+                                    only.
+
+                      Document issued on September 25, 2026.
+
+You should submit comments and suggestions regarding this draft document within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to http://www.regulations.gov. Submit written
+comments to the Division of Dockets Management (HFA-305), Food and Drug Administration,
+5630 Fishers Lane, Room 1061, Rockville, MD 20852. Identify all comments with the docket
+number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this document, contact the Division of General Surgery Devices at (301)
+796-6970.
+
+
+
+
+                                             U.S. Department of Health and Human Services
+                                                              Food and Drug Administration
+                                                  Center for Devices and Radiological Health
+
+
+
+
+                                                                                              1
+                           Contains Nonbinding Recommendations
+
+                               Draft – Not for Implementation
+
+
+                                       Preface
+Additional Copies
+
+Additional copies are available from the Internet. You may also send an e-mail request to
+CDRH-Guidance@fda.hhs.gov to receive a copy of the guidance. Please use the document
+number GUI01500081 to identify the guidance you are requesting.
+
+
+
+
+                                                                                            2
+                                            Contains Nonbinding Recommendations
+
+                                                   Draft – Not for Implementation
+
+                                                      Table of Contents
+
+I.           Introduction ......................................................................................................................... 5
+II.          Scope ................................................................................................................................... 6
+III.         Glossary .............................................................................................................................. 7
+IV.          Submission Recommendations ........................................................................................... 8
+      A.     Device Description.............................................................................................................. 9
+      B.     Predicate Comparison (for 510(k)s only) ......................................................................... 10
+      C.     Accessories and Compatible Devices ............................................................................... 12
+      D.     RASD-Specific Non-Clinical Performance Testing ......................................................... 13
+           (1)     System Teleoperation ................................................................................................. 14
+           (2)     System Controls.......................................................................................................... 15
+           (3)     Kinematics and Dynamics .......................................................................................... 17
+           (4)     Visualization and Display System .............................................................................. 21
+           (5)     Additional RASD Features ......................................................................................... 21
+           (6)     Reliability ................................................................................................................... 22
+      E.     Software ............................................................................................................................ 23
+      F.     Cybersecurity .................................................................................................................... 25
+      G.     Wireless Technology ........................................................................................................ 26
+      H.     Training ............................................................................................................................. 27
+      I.     Human Factors .................................................................................................................. 27
+      J.     Electrical Safety and Electromagnetic Compatibility (EMC) .......................................... 29
+      K.     Optical Radiation Safety ................................................................................................... 30
+      L.     Sterility.............................................................................................................................. 31
+      M.         Reprocessing ................................................................................................................. 32
+      N.     Shelf Life and Packaging .................................................................................................. 33
+      O.     Pyrogenicity ...................................................................................................................... 34
+      P.     Biocompatibility ............................................................................................................... 34
+      Q.     In Vivo Evaluation............................................................................................................. 36
+           (1)     Non-Clinical In Vivo Data .......................................................................................... 37
+           (2)     Clinical Data ............................................................................................................... 38
+
+                                                                                                                                                      3
+                                        Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+        (3)    Post-Market Clinical Data .......................................................................................... 41
+   R.     Labeling ............................................................................................................................ 42
+Appendix A. Umbrella and Covered Procedure Paradigm ........................................................... 44
+Appendix B. 510(k) Summary (for 510(k)s only) ........................................................................ 49
+
+
+
+
+                                                                                                                                                4
+                                      Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+
+ 1        Robotically-Assisted Surgical Devices
+ 2             - Premarket Submissions
+ 3
+
+
+ 4         Draft Guidance for Industry and
+ 5        Food and Drug Administration Staff
+ 6
+
+ 7   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 8   Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+ 9   and is not binding on FDA or the public. You can use an alternative approach if it satisfies
+10   the requirements of the applicable statutes and regulations. To discuss an alternative
+11   approach, contact the FDA staff or Office responsible for this guidance as listed on the title
+12   page.
+
+13
+
+14   I.       Introduction
+15   This draft guidance provides recommendations for premarket submissions for certain robotically-
+16   assisted surgical devices (RASDs). RASDs are teleoperated, software-controlled systems that
+17   integrate robotic technologies and subassemblies that are designed to assist qualified
+18   practitioners in precisely positioning and controlling one or more surgical instruments to safely
+19   and effectively perform open, minimally invasive, or endoluminal procedures. RASDs are used
+20   under direct control or supervision of a qualified practitioner. RASDs utilize robotic technologies
+21   comprised of a leader/follower control system architecture and may contain some level of
+22   automated functions to enhance and augment user capabilities.
+23
+24   RASDs generally have the following three subassemblies: 1
+25
+26        •   An operator console (i.e., surgeon console), where a qualified practitioner controls the
+27            system. The operator console is the control center of the system and allows a qualified
+28            practitioner to view the surgical field and to control movement of the surgical instruments
+29            and cameras (e.g., laparoscope);
+30
+
+
+     1
+      RASDs with different physical architectures are within the scope of this guidance if they meet the definition of a
+     RASD.
+
+                                                                                                                           5
+                                    Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+31       •   A bedside/patient subassembly (e.g., cart, pedestal) with a sterile-nonsterile interface that
+32           has working arms that control, activate, or actuate cameras (e.g., laparoscope), surgical
+33           instruments, accessories, 2 and/or third party devices inside the patient that a qualified
+34           practitioner controls during the surgical procedures. It may also have attachments,
+35           connections, controls, and safety features accessible to a bedside surgical assistant; and
+36
+37       •   An operating room (OR) staff subassembly (e.g., tower) that contains supporting
+38           hardware and software components, such as an electrical surgical unit (ESU),
+39           suction/irrigation pumps, a secondary vision display, an insufflation unit, and light source
+40           for the endoscope.
+41
+42   For the current edition of the FDA-recognized standards referenced in this document, see the
+43   FDA Recognized Consensus Standards Database Web site at
+44   http://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfStandards/search.cfm. For more information
+45   regarding use of consensus standards in regulatory submissions, please refer to FDA guidance
+46   titled “Appropriate Use of Voluntary Consensus Standards in Premarket Submissions for
+47   Medical Devices.”
+48
+49   Throughout this guidance, the terms “FDA,” “the Agency,” “we,” and “us” refer to the Food and
+50   Drug Administration and the terms “you” and “yours” refer to RASD manufacturers.
+51
+52   In general, FDA’s guidance documents, including this draft guidance, do not establish legally
+53   enforceable responsibilities. Instead, guidances describe the Agency's current thinking on a topic
+54   and should be viewed only as recommendations, unless specific regulatory or statutory
+55   requirements are cited. The use of the word should in Agency guidances means that something is
+56   suggested or recommended but not required.
+57
+
+58   II. Scope
+59   The scope of this document includes premarket submissions for RASDs except as follows:
+60
+61   Note that pre-operative planning systems and stereotaxic systems are not RASDs and are outside
+62   the scope of this document. Examples of pre-operative planning and stereotaxic systems include
+63   systems that consist of a computer user interface, tracking sensor, navigated instruments, and a
+64   patient reference to detect the 3D position of the navigated instruments and patient reference in
+65   relation to patient’s anatomical landmarks (e.g., orthopedic stereotaxic instruments [product code
+66   OLO], neurological stereotaxic instruments [product code HAW], and ear, nose, and throat
+67   stereotaxic instruments [product code PGW] under 21 CFR 882.4560).
+68
+
+
+
+     2
+      For more information see the FDA guidance “Medical Device Accessories - Describing Accessories and
+     Classification Pathways.”
+
+                                                                                                           6
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+ 69   The guidance also does not address RASDs intended to assist in performing surgical tasks
+ 70   involving the placement or use of interventional devices, such as interventional catheters.
+ 71   Nevertheless, some of the non-clinical recommendations in the guidance may apply to these
+ 72   RASDs. Within the scope of this guidance, “endoluminal” use refers to use through existing
+ 73   luminal cavities and is not intended to include positioning and controlling multiple surgical
+ 74   instruments or interventional devices through blood vessels or via an intravascular approach.
+ 75   Finally, this guidance also does not address remotely teleoperated RASDs, or autonomous robots
+ 76   that perform significant aspects of operative procedures independent of qualified practitioners.
+ 77   Certain recommendations in this guidance, however, may be relevant to remotely teleoperated
+ 78   RASDs or RASDs that are capable of decision-making and independent execution of tasks.
+ 79
+ 80   For RASDs outside the scope of this guidance, we strongly recommend that manufacturers
+ 81   engage with FDA via the Q-Submission Program to obtain more detailed feedback regarding
+ 82   your device. For more information on Q-Submissions, please refer to FDA’s guidance,
+ 83   “Requests for Feedback and Meetings for Medical Device Submissions: The Q-Submission
+ 84   Program.”
+ 85
+ 86   If you are unsure about whether your device is considered a RASD, you should contact FDA via
+ 87   the Q-Submission Program.
+ 88
+
+ 89   III. Glossary
+ 90   The following terms are defined for the purposes of this guidance:
+ 91   Autonomy – The ability of a robotic device system to perform tasks and make decisions based
+ 92   on current state and sensing without user intervention.
+ 93   Bedside/Patient Subassembly – A subassembly of the RASD with a sterile-nonsterile interface
+ 94   that has working arms that control, activate, or actuate surgical instruments, cameras (e.g.,
+ 95   laparoscope), accessories, and/or third-party devices inside the patient used to assist in
+ 96   performing surgical procedures. The bedside/patient subassembly typically has controls,
+ 97   connections, attachments, and safety features accessible to a scrubbed surgical assistant to allow,
+ 98   for example, aseptic surgical instrument exchange or aseptic movement of the working arm.
+ 99   Covered Procedure – A surgical procedure in the same surgical specialty (e.g., general surgery)
+100   as the umbrella procedure, but one that is of lesser complexity and risk than its umbrella
+101   procedure. Covered procedures leverage data from the cited umbrella procedure, and additional
+102   in vivo performance testing data for a covered procedure may not be needed to support the
+103   authorization of the RASD for that use.
+104   Haptics – Any feature that provides some form of tactile, force, or other sensory feedback to the
+105   user during the operation and that is intended to mimic or simulate the feel of manual surgical
+106   instruments.
+107   Local Teleoperation – A locally teleoperated system consists of an operator console that is co-
+108   located in the same operating room as the bedside/patient subassembly. Using the operator
+
+
+                                                                                                        7
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+109   console, a qualified practitioner can remotely control the bedside/patient subassembly by wired
+110   or wireless signal.
+111   Operating Room (OR) Staff Subassembly – A subassembly of the RASD that contains
+112   supporting hardware and software components, such as an electrical surgical unit (ESU),
+113   suction/irrigation pumps, a secondary vision display, an insufflation unit, and light source for the
+114   endoscope.
+115   Operator Console – A subassembly of the RASD where a qualified practitioner controls the
+116   RASD. The operator console allows the qualified practitioner to view the surgical field and to
+117   control movement of the surgical instruments and cameras (e.g., laparoscope).
+118   Robotically-assisted Surgical Device (RASD) – A teleoperated, software-controlled system that
+119   integrates robotic technologies and subassemblies that are designed to assist qualified
+120   practitioners in precisely positioning and controlling one or more surgical instruments to safely
+121   and effectively perform open, minimally invasive, or endoluminal procedures. RASDs are used
+122   under direct control or supervision of a qualified practitioner. RASDs utilize robotic technologies
+123   comprised of a leader/follower control system architecture and may contain some level of
+124   automated functions to enhance and augment user capabilities.
+125   Remote Teleoperation – A remotely teleoperated system is comprised of an operator console
+126   that is not co-located in the same operating room as the bedside/patient subassembly. Remote
+127   teleoperation systems may have variable distances between the operator console and the
+128   bedside/patient subassembly.
+129   Service Life – The time period specified by the manufacturer during which the RASD is
+130   expected to perform as intended.
+131   Singularity – A configuration of a robotic manipulator in which the kinematic Jacobian matrix
+132   loses rank, resulting in the loss of one or more degrees of freedom in the end-effector’s motion
+133   and limiting the robot’s ability to move or exert forces in certain directions.
+134   Umbrella Procedure – A surgical procedure of sufficient complexity and risk such that
+135   performance data derived from the umbrella procedure may be leveraged to support the use and
+136   authorization of the RASD for covered procedures (i.e., procedures of lesser complexity and
+137   risk).
+138   Use Life – The pre-defined duration of active use or number of repeated uses during which
+139   instruments, accessories and compatible devices are expected to perform as intended.
+140
+
+141   IV. Submission Recommendations
+142   This guidance provides recommendations to support the premarket submissions for certain
+143   RASDs. Given the broad range of RASDs within the scope of the guidance, specific device types
+144   and devices are not discussed in each section below, and we note that certain requirements and
+145   recommendations discussed may not be applicable to a specific device type or device. You
+146   should be aware of the different premarket submission and other requirements (e.g., special
+147   controls) applicable to your device and you can engage with FDA via the Q-Submission Program
+148   to obtain more detailed feedback regarding your specific device.
+                                                                                                         8
+                                 Contains Nonbinding Recommendations
+
+                                     Draft – Not for Implementation
+
+149          A.     Device Description
+150   For all RASD submissions, you should provide a clear and concise device description that
+151   describes all the major functional components of the RASD. For 510(k) submissions, we
+152   recommend you also identify the classification regulation number and product code of your
+153   device based on the proposed predicate device. The device description should be organized
+154   starting with the whole system overview, followed by subassemblies and other components.
+155
+156   You should provide written descriptions and images, when applicable, of the following:
+157
+158      •   Whole system overview
+159             o The entire RASD set-up for its intended use
+160             o Principle of operation
+161             o Kinematic diagram
+162             o Connections diagram (including how the subassemblies are connected to each
+163                other and external services/servers)
+164             o Data transmission representation
+165             o Physical dimensions
+166      •   System subassemblies
+167             o Operator Console
+168                     User detection
+169                     Location of sensors and their accuracy and sensitivity
+170                     Edge of usable workspace notification
+171                     RASD features that enhance operator capability
+172             o Bedside/Patient Subassembly
+173                     Working arms: axes of movement, number of passive and motorized parts,
+174                        degrees of freedom, force range, velocity limit, etc.
+175                     Reach of working arm(s) in different patient configurations
+176                     Registration of working arm locations
+177                     Linking of working arm to port/trocar
+178                     Emergency/safety stop button
+179                     Emergency patient-access capability and emergency removal procedure
+180                     Patient positioning/optimization features
+181                     Surgical assistant positioning/optimization features
+182                     RASD features that enhance surgical assistant capability
+183             o OR Staff Subassembly
+184                     Compatible third-party devices and accessories
+185                     RASD features that enhance OR staff capability
+186      •   Other
+187             o Sterile-Nonsterile interface
+188             o Surgical instruments
+189                     Surgical tasks for each instrument
+190                     Axes of movement
+191                     Range of movement
+
+                                                                                                  9
+                                    Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+192                         Range of grasping forces and pre-specified grasping force, if applicable
+193                         Number of uses allowed by the system
+194                         Power rating for relevant components
+195                o Cameras
+196                o Accessories
+197                o Power sources/requirements
+198                o Connections
+199                o Attachments
+200                o Drapes
+201         •   Safety features and their locations within the system should be individually described
+202         •   For 510(k)s, technological characteristics not present in the predicate device
+203
+204   The list above may not be comprehensive, and each section may include multiple subsections as
+205   needed. You should also add or omit sections as applicable.
+206
+207   Videos demonstrating overall use of the RASD may be helpful to further explain your written
+208   device description, specifically videos focused on the device user interfaces and novel
+209   technological features. You should place any device features enhancing or augmenting human
+210   capabilities (e.g., tremor reduction, motion scaling, and/or visual magnification) in their own
+211   sections and describe these features in detail.
+212
+213             B.      Predicate Comparison (for 510(k)s only)
+214   Each premarket notification submission must contain certain information, including “a statement
+215   indicating that the device is similar to and/or different from other products of comparable type in
+216   commercial distribution” (21 CFR 807.87(f); see section 513(i) of the Federal Food, Drug, and
+217   Cosmetic Act (FD&C Act), 21 U.S.C. § 360c(i)). For RASDs reviewed under the 510(k) process,
+218   you must compare your new device to a legally marketed predicate device to support its
+219   substantial equivalence (SE). 3 This comparison should provide information to show how your
+220   device is similar to and different from the predicate device. See Table 1 below for an example of
+221   how this information may be organized. This table is not intended to represent an exhaustive list
+222   of comparative parameters. We recommend that you provide, whenever possible, side-by-side
+223   comparison of all relevant device description characteristics as outlined in the Section IV.A
+224   above.
+225
+226   When providing the SE comparison information and when writing a narrative analysis, the terms
+227   “identical” or “same” should only be used for features that are demonstrably identical or the
+228   same (i.e., same manufacturer, same design, same materials, same functions). You should
+229   describe any differences in technological characteristics between the subject and predicate
+230   devices and provide a rationale as to why the differences do not affect SE to the predicate device.
+231   Where there are technological differences, your SE analysis should include information
+
+
+      3
+          See 21 CFR 807.87(f)
+
+                                                                                                         10
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+232   demonstrating that the subject device is as safe and effective as the predicate device and does not
+233   raise different questions of safety and effectiveness.
+234
+235   Table 1. Example of Substantial Equivalence (SE) Comparison Table
+
+                                                             Predicate Device
+           Description            Subject Device                                            SE Comparison
+                                                                (Kxxxxxx)
+       (Example)              • Diameter 5 mm             • Diameter 5 mm               • Identical diameter
+       Dissector Monopolar    • Length 400 mm             • Length 350 mm               • Not significantly
+                              • Monopolar RF 200 kHz      • Monopolar RF 225 kHz          different lengths; or
+                                60 Watts                    65 Watts                      such differences do
+                              • Snake joint               • Wristed joint                 not raise different
+                              • 3rd party Generator       • 3rd party Generator           questions of safety or
+                                (Brand X)                   (Brand Y)                     effectiveness and
+                              • 4 degrees of freedom      • 4 DOF                         information provided
+                                (DOF)                                                     shows device is as
+                                                                                          safe and effective as
+                                                                                          the predicate
+                                                                                        • Although joints have
+                                                                                          different designs (i.e.,
+                                                                                          snake vs. wristed),
+                                                                                          they both have the
+                                                                                          same DOF and
+                                                                                          generator
+                                                                                          requirements
+       (Example)              • Diameter 5 mm             • Diameter 5 mm               • Identical diameter
+       Grasper                • Length 400 mm             • Length 350 mm               • Not significantly
+                              • Atraumatic curved grips   • Atraumatic straight grips     different lengths; or
+                              • Snake joint               • Wristed joint                 such differences do
+                              • 4 DOF                     • 4 DOF                         not raise different
+                                                                                          questions of safety or
+                                                                                          effectiveness and
+                                                                                          information provided
+                                                                                          shows device is as
+                                                                                          safe and effective as
+                                                                                          the predicate
+                                                                                        • Although grips and
+                                                                                          joints have different
+                                                                                          designs (i.e., curved
+                                                                                          vs. straight, snake vs.
+                                                                                          wristed), they both
+                                                                                          have the same DOF
+236
+237   Due to the inherent complexity of RASD submissions, it may be helpful to supplement the SE
+238   comparison table (Table 1) if used, with an additional submission overview table summarizing
+239   the features that are distinct or modified from the predicate device. Table 2 below provides
+240   example information that could be helpful, including a brief description of the differences,
+241   impact of the differences, summary and location of the performance testing, and rationale to
+242   support SE to the predicate device despite the differences.
+243
+                                                                                                                 11
+                                    Contains Nonbinding Recommendations
+
+                                          Draft – Not for Implementation
+
+244   Table 2. Example of Summary of New/Altered Features in the Subject Device
+
+                                                                                Performance
+       New/Altered     Design        Functional
+                                                    Impact of Changes        Testing (location in      SE Analysis
+         Feature       Change         Change
+                                                                                submission)
+        (Example)    • Smaller      • Increased     • Reduced grasping       • Biocompatibility      • 25% increase
+        Flexible       diameter       range of        and lifting strength     (Section N)             in range of
+        Wristed      • Increased      motion/         (overload)             • Reprocessing            motion
+        Grasper        number of      flexibility   • Cleaning/                (Section O)           • 15% decrease
+                       linkages     • Improved        Reprocessing           • Sterilization           in diameter
+                     • New            access to       smaller channels         (Section P)           • 18% increase
+                       materials,     confined      • Instrument             • Software V&V            in durability
+                       x, y, z        spaces          damage from              (Section Q)           • Nominal
+                     • Instrument   • Improved        higher use             • Bench (Section R)       change in
+                       RFID           durability      frequency              • Cadaver (Section S)     strength
+                                    • Increased                                                      • No increase in
+                                      number of                                                        risk of harm
+                                      uses
+245
+246   Any reference devices should also be listed and described. We recommend that you review the
+247   FDA guidance, “The 510(k) Program: Evaluating Substantial Equivalence in Premarket
+248   Notifications [510(k)],” for additional information on the use of predicate and reference devices
+249   to demonstrate SE.
+250
+251          C.      Accessories and Compatible Devices
+252   Any accessories or compatible devices intended to be used with a RASD should be described in
+253   detail in the premarket submission for the RASD. For accessories or compatible devices
+254   (including third party devices) that have previously received a marketing authorization in a
+255   standalone submission, you should provide the submission number for each accessory or
+256   compatible device in your RASD submission. The RASD proposed labeling should also
+257   explicitly list each accessory or compatible device, including relevant identifying information
+258   (e.g., manufacturer name, device name, version/model number).
+259
+260   Whether you manufacture the accessories or compatible devices to be used with your RASD or
+261   they are manufactured by a third party, you should demonstrate the compatibility and
+262   interoperability of the accessory or compatible device and your RASD through performance
+263   testing, as applicable. The whole RASD (i.e., subassemblies, surgical instruments, cameras)
+264   should be tested for its intended use. You should document compatibility (e.g., connections,
+265   attachments, interoperability, functionality) of the RASD with accessories or compatible devices
+266   intended to be used with your RASD when applicable. Any adapters or drapes needed for such
+267   compatible devices should also be described and included in performance testing.
+268
+269   For more information on considerations for interoperable medical devices, please refer to FDA’s
+270   guidance, “Design Considerations and Pre-market Submission Recommendations for
+271   Interoperable Medical Devices.”
+
+                                                                                                                     12
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+272
+
+273          D.      RASD-Specific Non-Clinical Performance Testing
+274   Significance: Well-designed non-clinical performance testing should be used for design
+275   verification and validation prior to in vivo testing. Non-clinical performance testing for RASDs
+276   should comprehensively evaluate the system-level performance characteristics that are critical to
+277   safe and effective device operation. These characteristics typically include teleoperation
+278   functionality, system control behavior, kinematic and dynamic motion performance,
+279   visualization and display capabilities, additional RASD-specific features, and system and
+280   surgical instrument reliability.
+281
+282   Recommendation: Non-clinical performance testing activities may include in vitro, in silico, ex
+283   vivo, cadaver, mechanical, electrical, thermal, radiation, and functional testing. Where possible,
+284   tests may be combined to reduce burden.
+285
+286   Non-clinical performance testing should test all functional components and compatibility of the
+287   RASD; therefore, we recommend that you perform testing for each subassembly, and for the
+288   system as a whole (including all the major components, surgical instruments, and cameras), and
+289   the system when used with accessories and compatible devices.
+290
+291   You should provide full test reports for each test conducted. A full test report includes the
+292   objective of the test, a description of the test methods and procedures, sample size, pre-defined
+293   pass/fail criteria with relevant clinical justification (e.g., literature) for the set criteria,
+294   justification for the specific surgical instrument tested, test results, and conclusions. For 510(k)
+295   submissions, you should also provide an explanation of how the data generated from the test
+296   support a finding of SE to the predicate device, as appropriate. For information on recommended
+297   content and format of test reports for non-clinical performance testing in premarket submissions,
+298   refer to FDA’s guidance, “Recommended Content and Format of Non-Clinical Bench
+299   Performance Testing Information in Premarket Submissions.”
+300
+301   Non-clinical performance test conditions should simulate the worst-case conditions that your
+302   device is likely to encounter during clinical use. When designing your device-specific
+303   performance testing, you should consider the use(s) being sought for authorization and the
+304   device’s design specifications. Bench performance testing should be representative of typical
+305   clinical use to demonstrate full device functionality and verify design inputs and outputs.
+306   Cadaveric studies may be useful for evaluating system fit and function within the human
+307   anatomy.
+308
+309   The following sections are recommended non-clinical performance testing for each subassembly
+310   and for the entire system. This list may not be comprehensive, as your RASD may include
+311   additional features and functions not specifically addressed in this guidance.
+312
+
+
+
+                                                                                                        13
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+313                  (1)     System Teleoperation
+314   Significance: RASD is a leader-follower, teleoperated system that is controlled by wired
+315   electrical signals over cables or wireless transmission. Timely and accurate information
+316   exchange between the user interface and working arms/surgical instruments is essential for safe
+317   device performance.
+318
+319   Recommendation: Factors contributing to teleoperation performance include signal transmission
+320   integrity, system latency, and accurate translation of user input into scaled and filtered
+321   instrument motion. Your performance testing should demonstrate connection integrity and timely
+322   control signal transmission. RASDs should have fail-safe operation in the event of teleoperation
+323   faults (e.g., cable disconnection, electromagnetic interference). If wireless signal transmission is
+324   implemented for user interface controls, please refer to additional recommendations in Section
+325   IV.G on Wireless Technology.
+326
+327   As applicable, you should design and conduct performance testing for each of the following
+328   system teleoperation characteristics using representative surgical configurations consistent with
+329   the intended use. This list may not be comprehensive, as your RASD may include additional
+330   teleoperation features or functions not specifically addressed in this guidance.
+331
+332                          a)     Total System Latency
+333   Significance: Total system latency refers to the cumulative delay from the surgeon’s hand input
+334   at the operator console to instrument motion, and from instrument motion to the corresponding
+335   visual feedback displayed on the main visualization and display system. Latency testing ensures
+336   there is no significant time delay between the hand-input device, the instrument response, and the
+337   visual feedback from the camera system. Latency is critical for RASDs because it directly affects
+338   the operators’ ability to perform precise, safe movements in real-time.
+339
+340   Recommendation: Latency testing should demonstrate that the total system latency between the
+341   hand-input device, instrument motion, and displayed visual feedback remains within pre-defined,
+342   clinically justified limits. It is recommended that latency be measured under representative and
+343   worst-case operating conditions, including maximum processing loads and typical clinical
+344   configurations. Testing should account for translational and rotational motion (i.e., roll, yaw,
+345   pitch) and end-effector actuation (e.g., open/close) of the surgical instruments. Testing should
+346   verify that the system provides real-time, synchronized feedback sufficient to support safe and
+347   effective surgical performance. FDA recommends testing a minimum of three RASDs. If a
+348   smaller sample size is proposed, we recommend that a rationale be provided for the number of
+349   samples on which these tests are performed to demonstrate consistent performance across
+350   different manufacturing productions.
+351
+
+
+
+
+                                                                                                       14
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+352                          b)    Motion Enhancement and Operator Input Processing
+353                          Functions
+354   Significance: RASDs typically incorporate computational processing of operator inputs to
+355   enhance precision, stability, and control of instrument motion. These functions modify or
+356   condition the surgeon’s hand inputs before transmission to the working arms and surgical
+357   instruments. Common examples include motion scaling (i.e., reducing the magnitude of operator
+358   inputs to allow finer instrument movement) and tremor reduction (i.e., filtering physiological
+359   tremor frequencies while preserving intentional motion). Other input-processing features may
+360   include motion smoothing, force modulation, or haptic filtering. Such motion enhancement and
+361   filtering functions enable the operator to execute complex tasks, including suturing and knot
+362   tying, in confined anatomical spaces while minimizing complications from involuntary
+363   movements or abrupt input changes.
+364
+365   Recommendation: For any operator input processing functions implemented in the RASD, you
+366   should provide performance testing to characterize their behavior and verify consistent,
+367   predictable operation within predefined tolerances.
+368
+369   For motion scaling, testing should measure the scaling ratio between operator console inputs and
+370   instrument outputs across the full range of scaling conditions, verifying that the device maintains
+371   accurate and consistent scaling throughout the workspace. Testing should include assessment at
+372   various speeds, directions, and positions within the surgical envelope to ensure linearity and
+373   predictability of the scaling function.
+374
+375   For tremor reduction or other filtering functions, testing should demonstrate the device’s ability
+376   to attenuate unintended input frequencies (e.g., physiological tremor) while preserving
+377   intentional surgical movements. This may be accomplished by introducing controlled sinusoidal
+378   inputs at various frequencies and amplitudes to the hand-input device at the operator console and
+379   measuring the corresponding output at the surgical instrument tips.
+380
+381                  (2)     System Controls
+382   Significance: RASDs are controlled by complex computational, electrical, and mechanical
+383   control systems. Accurate control and system stability are essential to ensure that the user inputs
+384   are accurately translated into the intended working arm and surgical instrument motion, even
+385   when the system is unexpectedly perturbed. Because these systems rely on integrated software,
+386   hardware, sensors, actuators, and feedback loops, failures or instability in the control architecture
+387   may result in unintended motion, loss of control, delayed system response, or inability to safely
+388   access the patient during emergency situations. Therefore, it is critical that control systems
+389   maintain stability, enforce safe operational limits, and provide predictable fault detection,
+390   response, recovery and emergency access capabilities to protect patient safety.
+391
+392   Recommendation: To characterize and demonstrate the performance of the system controls,
+393   testing should be conducted to assess the integration of software, hardware, and overall system
+394   functionality. This applies to any system with input and output controls governed by feedback
+
+                                                                                                        15
+                                   Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+395   loops and the calculation of discrepancies between input and output signals. Testing should
+396   demonstrate that the control system maintains stability during disturbances, activates safety stop
+397   mechanisms appropriately, detects and responds to fault conditions, and supports system
+398   recovery and emergency removal procedures in a predictable and safe manner.
+399
+400   As applicable, you should devise and conduct performance testing for each of the following
+401   system control functions using representative surgical configurations consistent with the intended
+402   use. This list may not be comprehensive, as your RASD may include additional control features
+403   or safety mechanisms not specifically addressed in this guidance.
+404
+405                          a)      System Stability and Control Performance
+406   Significance: Control system stability is critical to ensuring predictable and safe device
+407   performance. In designing your control system, you should account for uncertainty and
+408   instability that may arise during clinical use. For example, if your system encounters an
+409   unexpected force (e.g., a jolt or bump of the user hand controls), the accidental impulse force
+410   should not be transmitted to the surgical instruments in a manner that could cause patient injury
+411   or result in motion calculation errors leading to a system fault (e.g., control malfunction or
+412   stoppage).
+413
+414   Recommendation: Testing should demonstrate that the control system maintains stability under
+415   representative disturbances and fault conditions. Your testing should demonstrate the stability of
+416   your control system under sudden input or signal noise. It should also evaluate the device’s
+417   stability under fault conditions, particularly when primary control mechanisms fail, and
+418   demonstrate that the system remains stable or transitions to a safe state without causing
+419   hazardous motion.
+420
+421                          b)      System Recovery and Emergency Removal
+422   Significance: The ability of the RASD to detect, respond to, and recover from fault conditions is
+423   critical to maintaining patient safety. Faults may result from hardware malfunctions, software
+424   errors, power interruptions, or environmental factors. Inadequate fault detection or recovery may
+425   lead to unintended motion, loss of control, or system instability that could cause patient harm.
+426
+427   In addition, in certain emergency situations, rapid access to the patient may be necessary.
+428   Robotic systems that interface with the patient may require removal of instruments, undocking,
+429   or repositioning of robotic arms before direct access can be achieved. Delays in these procedures
+430   could compromise patient outcomes during time-critical events.
+431
+432   Recommendation: Recovery testing should demonstrate that the system can detect, respond to,
+433   and recover from representative hardware, software, and environmental fault conditions in a
+434   timely, predictable, and safe manner. Testing should verify that faults are detected within
+435   clinically justified timeframes and that appropriate safety responses are initiated (e.g., controlled
+436   shutdown, position hold, transition to a safe state, or activation of backup systems). Testing
+437   should also verify the system’s ability to safely transition from a fault condition to normal
+                                                                                                         16
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+438   operation or a predetermined safe state, including maintaining instrument control and enabling
+439   both automatic and manual recovery procedures.
+440
+441   In addition, emergency removal testing should demonstrate that emergency removal procedures
+442   allow timely and safe access to the patient, including assessment of the time needed to remove
+443   relevant system components to enable emergency access to the patient and demonstrate that the
+444   device does not introduce unacceptable delays that could adversely affect patient outcomes.
+445
+446                          c)      Emergency and Safety Stops
+447   Significance: Safety stops are intended to prevent the RASD from exceeding safe operational
+448   limits or continuing uncontrolled movement that could cause serious injury to the patient or
+449   damage the device. These mechanisms may be triggered manually or automatically in response
+450   to unsafe conditions and are critical to ensuring that the system transitions to a predictable and
+451   safe state.
+452
+453   Recommendation: Testing should demonstrate that safety stops function reliably under both
+454   normal and fault conditions. The RASD should stop motion and deactivate any active
+455   instruments’ functions within a predefined safe limit. This should be verified by measuring the
+456   actual distance traveled or function performed following activation of the safety stop. Testing
+457   should encompass worst-case scenarios, including maximum operational speeds, accelerations,
+458   and the most challenging trajectories that the device may encounter during clinical use. Testing
+459   should also verify that activation of safety stops does not introduce unintended motion and that
+460   the system maintains or transitions to a safe state following stop activation.
+461
+462                  (3)     Kinematics and Dynamics
+463   Significance: RASDs typically have working arms that control and manipulate surgical
+464   instruments and cameras. Understanding motion capabilities, positional accuracy, dynamic
+465   behavior, and mechanical interactions of the working arms and instruments is essential to the
+466   safety of the device (e.g., trocar wound tension) and to the effectiveness of the device for its
+467   intended use (e.g., access to confined anatomy).
+468
+469   Recommendation: The evaluation of robotic arm motion is divided into kinematics and
+470   dynamics. Kinematic analysis is used to quantify the range of motion of working arms and
+471   surgical instruments, while dynamics analysis evaluates the effect of forces and torques involved
+472   in these movements. You should provide a kinematic diagram of all parts of the device used to
+473   perform surgery (e.g., working arms, surgical instruments, camera systems) with singularity
+474   points identified, and a dynamic analysis of support joints and moving parts of these features.
+475   You should perform bench testing to verify and validate your RASD’s performance
+476   characteristics, including positional accuracy and repeatability, system resolution, reachable
+477   workspace and range of motion, as well as its safety-related performance characteristics.
+478
+
+
+                                                                                                         17
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+479   As applicable, you should devise and conduct performance testing for each of the following
+480   kinematics and dynamic characteristics using representative surgical configurations consistent
+481   with the intended use. This list may not be comprehensive, as your RASD may include
+482   additional motion-related features or functions not specifically addressed in this guidance.
+483
+484                         a)      Accuracy, Repeatability and Resolution
+485   Significance: Accuracy determines how closely the RASD’s surgical instruments’ and cameras’
+486   actual positions match the intended target positions. Repeatability refers to the RASD’s ability to
+487   return to the same position across multiple attempts. Resolution defines the smallest incremental
+488   movement that the RASD’s surgical instruments can make. These three parameters are critical
+489   for robotically-assisted surgery because they directly impact patient safety, surgical outcomes,
+490   and overall effectiveness of the system.
+491
+492   Recommendation: Accuracy, repeatability, and resolution testing should be conducted using
+493   software-driven commands to ensure operator independence. You should independently assess
+494   both translational motion along the X, Y, and Z axes and rotational motion about the yaw, pitch,
+495   and roll axes of the end effectors. FDA recommends testing a minimum of three RASDs. If a
+496   smaller sample size is proposed, we recommend providing a rationale for the number of samples
+497   on which these tests are performed to demonstrate consistent performance across different
+498   manufacturing productions.
+499
+500                         b)      Workspace and Reachability
+501   Significance: Workspace and reachability testing are fundamental to ensuring that the RASD can
+502   effectively be used to perform its intended procedures while maintaining patient safety.
+503   Workspace defines the three-dimensional volume within which the working arms and surgical
+504   instruments can operate. Reachability testing ensures that the working arm can reach the
+505   intended target anatomy. Additionally, such testing helps identify potential collision zones where
+506   robotic arms might interfere with each other, OR staff, the patient, the operating table, or other
+507   OR equipment.
+508
+509   Recommendation: Workspace verification testing should demonstrate that the system meets its
+510   design requirements in a bench setup, including clearly defining the total working volume.
+511   Testing should also verify that the system's safety mechanisms, such as hard stops or software
+512   limits engage appropriately when approaching the boundaries of the allowable range of motion.
+513   FDA recommends testing a minimum of three RASDs. If a smaller sample size is proposed, we
+514   recommend that a rationale be provided for the number of samples on which the workspace
+515   verification tests are performed to demonstrate consistent performance across different
+516   manufacturing productions. Additionally, you should validate the RASD’s reachability in a
+517   relevant model of the human anatomy to demonstrate that the system can reach its intended
+518   target anatomy. Reachability testing should validate performance across the intended patient
+519   population, including clinically relevant extremes of body mass index, anatomical variations, and
+520   different positioning requirements.
+521
+                                                                                                       18
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+522                          c)     Surgical Instrument Range of Motion
+523   Significance: Surgical instrument articulation replicates the natural wrist motion that surgeons
+524   rely on in open surgery. Testing these ranges ensures that the surgical instrument can achieve the
+525   orientations necessary for tissue manipulation, suturing, and dissection at various angles within
+526   the surgical field. Adequate articulation is critical to enabling precise maneuvering in confined
+527   anatomical spaces without introducing excessive force or unintended tissue interaction.
+528
+529   Recommendation: This testing should demonstrate that the surgical instrument can reach both
+530   the upper and lower bounds of its specified limits of motion within a pre-defined error tolerance
+531   for yaw, pitch, roll, and opening (if applicable). It is recommended that the range of motion is
+532   evaluated at the beginning and end of its use life. This can be accomplished by simulated use
+533   testing.
+534
+535                          d)     Velocity Limits
+536   Significance: Velocity limits are essential for maintaining stable, predictable behavior and
+537   preventing situations where the system’s dynamics could become unstable or unmanageable.
+538   Velocity constraints help ensure smooth motion profiles, reduce mechanical wear on the RASD,
+539   minimize vibrations that could affect surgical performance, and prevent sudden accelerations that
+540   might trigger emergency stops or system faults.
+541
+542   Recommendation: Testing should be conducted to assess the maximum velocity limits for your
+543   device. You should evaluate the device's peak operational velocities across all axes of movement
+544   (i.e., translational and rotational), as well as velocity control algorithms and fail-safe
+545   mechanisms. Testing should demonstrate that the system limits the motion of the robotic arms to
+546   predefined velocity thresholds and maintains consistent velocity limits under various operating
+547   conditions. Testing should also verify system behavior when maximum velocities are approached
+548   or exceeded.
+549
+550                          e)     Position Tracking
+551   Significance: Accurate position tracking is critical to ensuring that the physical motion of the
+552   robotic system corresponds appropriately to the operator’s input commands. Discrepancies
+553   between commanded and actual position may result in unintended instrument motion, or loss of
+554   control, which could lead to tissue damage, bleeding or injury to critical structures.
+555
+556   Recommendation: You should provide performance testing to verify position tracking accuracy,
+557   error detection, and system response. You should also provide information on the accuracy and
+558   sensitivity of the sensors used for position tracking. Testing should demonstrate that when
+559   commanded and actual positions are not within a predefined tolerance, the user is notified and/or
+560   the system stops, limits, or transitions to a safe state. Testing should evaluate both normal and
+561   fault conditions to ensure that position tracking errors are reliably detected and that appropriate
+562   mitigation strategies are implemented to maintain patient safety.
+563
+
+                                                                                                       19
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+564                          f)     Working Arm Collision Detection/Avoidance
+565   Significance: During surgery, multiple working arms operate simultaneously within the confined
+566   space of the patient's body. Unintended contact between these arms, OR staff, or equipment can
+567   cause uncontrolled movements that may damage delicate tissues, blood vessels, or organs,
+568   potentially leading to complications such as bleeding, perforation, or trauma to structures
+569   adjacent to the surgical site.
+570
+571   Recommendation: Collision detection/avoidance functionality should be evaluated through
+572   comprehensive testing demonstrating that the collision detection system performs reliably across
+573   the full range of expected operating conditions and potential collision scenarios. Additionally,
+574   such testing should verify that surgical instrument motion remains minimal during a collision
+575   event.
+576
+577                          g)     Motion Safety and Singularity Avoidance
+578   Significance: A singularity is a configuration of a robotic manipulator in which the kinematic
+579   Jacobian matrix loses rank, resulting in the loss of one or more degrees of freedom in the end-
+580   effector’s motion and limiting the robot’s ability to move or exert forces in certain directions. At
+581   or near a singularity, the operator may experience a loss of control where small movements of
+582   the operator console controls result in unexpectedly large or unpredictable movements at the
+583   instrument tip, or conversely, where desired movements become impossible to execute. These
+584   sudden, uncontrolled movements can cause tissue damage, bleeding, or injury to critical
+585   structures. In addition to kinematic singularities, unexpected or uncontrolled end-effector motion
+586   may also occur due to software failures, electromagnetic interference, or system faults. These
+587   conditions may result in unintended instrument motion that could cause tissue damage, bleeding,
+588   or injury to critical structures, and therefore should be appropriately mitigated.
+589
+590   Recommendation: You should provide a kinematic diagram identifying all singularity points
+591   within the system and conduct comprehensive testing to demonstrate how potential issues arising
+592   from kinematic singularities are adequately resolved. Additionally, you should describe the
+593   mitigation strategies implemented to prevent unexpected motion near these critical
+594   configurations. You should also verify that the system avoids configurations where the end
+595   effector may move in an unexpected manner due to software failure, electromagnetic
+596   interference, or fault conditions. Testing should evaluate end-effector motion during fault
+597   conditions to demonstrate that unintended or hazardous movements are prevented or mitigated.
+598   The testing should encompass all components used to perform surgery, including working arms,
+599   surgical instruments, and camera systems.
+600
+601                          h)     Physical Stability
+602   Significance: The bedside/patient subassembly needs to remain stable during procedures to
+603   prevent unintended movements that could cause tissue damage, bleeding, or other surgical
+604   complications. Any wobbling, shifting, or flexing of the cart could translate into millimeter-level
+
+
+                                                                                                        20
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+605   deviations at the surgical site, which can result in serious injury to the patient when working near
+606   vital structures such as blood vessels or nerves.
+607
+608   Recommendation: You should evaluate the bedside/patient subassembly stability under various
+609   disturbance conditions that may occur during clinical use. Testing should encompass scenarios
+610   and forces that represent realistic clinical conditions such as personnel moving around the
+611   surgical field or inadvertent contact with system components and should account for external
+612   environmental factors (e.g., vibrations). Testing should ensure that external forces do not cause
+613   significant surgical instrument movement.
+614
+615                  (4)     Visualization and Display System
+616   Significance: The RASD visualization system allows the user to view the surgical field.
+617   Accurate, timely, distortion-free, and high-resolution visual information is essential for enabling
+618   qualified practitioners to safely use the RASD. A visualization system may or may not have
+619   interactive elements, such as eye tracking, medical image overlays, heads-up display, 3-
+620   dimensional views, surgical instrument selection, working arm selection, and magnification.
+621
+622   Recommendation: Visualization and display system performance testing should demonstrate
+623   clear, accurate, timely, and reliable performance with respect to image resolution, image
+624   distortion, field of view, depth of field, color rendition, and thermal safety. Performance testing
+625   should also demonstrate reliable visualization in response to electromagnetic disturbances. For
+626   RASD visualization systems, we recommend following the FDA recognized consensus standard:
+627   IEC 60601-2-18: Medical electrical equipment – Part 2-18: Particular requirements for the
+628   basic safety and essential performance of endoscopic equipment.
+629
+630                  (5)     Additional RASD Features
+631   Significance: Your device may include additional RASD features that provide enhanced
+632   functionality, such as eye-tracking capabilities, haptic feedback, integration of additional
+633   imaging modalities (e.g., X-ray, MRI), or built-in artificial intelligence/machine learning
+634   (AI/ML) algorithms (e.g., image segmentation, image augmentation, critical structure
+635   identification, or instrument tracking). While these features may improve visualization, control,
+636   situational awareness, or procedural efficiency, they may also introduce unique technical and
+637   clinical risks that should be appropriately evaluated.
+638
+639   Recommendation: You should perform a robust risk assessment of any additional RASD features
+640   specific to your system (e.g., eye-tracking, haptics, additional imaging modalities, and/or
+641   AI/ML-enabled features) to determine the appropriate performance testing to support each
+642   feature. A comprehensive performance testing plan should be developed based on the level of
+643   risk associated with each feature. For critical components, redundancy and fail-safe designs
+644   should be considered and tested to ensure reliability of the system. If your RASD is intended to
+645   be used concurrently with high energy imaging modalities or incorporates AI/ML-enabled
+
+
+                                                                                                       21
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+646   features, we recommend that you discuss your proposed approach with FDA through the Q-
+647   submission program.
+648
+649   For AI-enabled device software functions, FDA's draft guidance “Artificial Intelligence-Enabled
+650   Device Software Functions: Lifecycle Management and Marketing Submission
+651   Recommendations” provides recommendations on data management, model description,
+652   performance validation, and transparency, which will reflect FDA’s current thinking once
+653   finalized. Where you anticipate post-authorization modifications to AI-enabled or other software
+654   functions of the RASD, you may propose a Predetermined Change Control Plan (PCCP) as
+655   described in FDA's guidance “Marketing Submission Recommendations for a Predetermined
+656   Change Control Plan for Artificial Intelligence-Enabled Device Software Functions.”
+657
+658                  (6)     Reliability
+659   Significance: Robust reliability testing is a crucial component to characterizing the consistent
+660   safety and performance of the RASD over a period of time. Reliability includes all aspects of the
+661   RASD, including hardware integrity (e.g., computers, robotic arms, actuators, sensors, surgical
+662   instruments, and surgeon console), software stability, and mechanical and electrical integrity.
+663   Reliability applies to RASDs, subassemblies, surgical instruments and other parts under cyclic
+664   loads, activations, or actuations. Reliability testing should demonstrate that the system will
+665   maintain its integrity over its service life and will not cause harm to the patient due to system or
+666   component failure.
+667
+668   Recommendation: Reliability testing should be performed for cyclically loaded or used RASDs,
+669   subassemblies, parts, hardware and software. You should be able to characterize the expected
+670   reliability (e.g., mean time between failures for repairable systems and subassemblies, mean time
+671   to failure or the time point at which 10% of the non-repairable components and instruments have
+672   failed (B10)) or demonstrate that the system and all its components are capable of safe and
+673   proper operation over the expected service life of the RASD and use life of accessories and
+674   compatible devices, as specified in the device labeling. Reliability is mentioned in many clauses
+675   of ANSI/AAMI ES60601-1: Medical electrical equipment - Part 1: General requirements for
+676   basic safety and essential performance. In addition to testing consistent with ANSI/AAMI
+677   ES60601-1, particular considerations that should be addressed for RASDs include worst-case
+678   scenario loading, activation, or actuation to challenge reliability.
+679
+680   Reliability testing should demonstrate maintenance of control over surgical instruments and
+681   maintenance of the integrity of system information essential to perform surgery over the
+682   expected service life or service interval of your RASD. Over the expected service life or service
+683   interval of the RASD, you should have objective evidence, with a prespecified and justified
+684   acceptance criteria, that surgical instruments will remain under control at all times during use in
+685   patients, and that system information essential to perform surgery by qualified practitioners is not
+686   degraded to an unacceptable level. For instruments with actuating parts, testing should evaluate
+687   the instrument’s ability to reliably perform its intended function (e.g., grip, cut) over its use life,
+688   and that the shaft maintains mechanical integrity under repeated flexural stresses. Instrument
+
+                                                                                                          22
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+689   reliability should be demonstrated using clearly defined acceptance criteria and well-defined test
+690   methods. A justification should be provided for the instrument selected for testing, if multiple
+691   instruments of the same type are compatible with your RASD.
+692
+693   For grip and cutting reliability testing, acceptance criteria should include specification of
+694   required grip force and quantitative performance criteria for cutting (e.g., maximum cutting
+695   force, completeness of cut, maintenance of cutting performance). The number of grip and cut
+696   cycles should be clinically justified within the methods section of your protocol. For reusable
+697   instruments, testing should include reprocessing between uses over the labeled use life. Sample
+698   size should be justified, and FDA recommends sufficient sample size for grip and cutting
+699   reliability testing to demonstrate 95% reliability with 95% confidence. 4 For grip reliability,
+700   testing should include worst-case loading conditions. For cutting reliability, the selected cutting
+701   material should be clinically justified. For shaft bending (i.e., cantilever) reliability, acceptance
+702   criteria should ensure that the device does not permanently deform or break under expected use
+703   conditions. Testing should subject the instrument to controlled cyclic bending forces that
+704   simulate the mechanical stresses expected during intended surgical procedures, and sample size
+705   should be justified.
+706
+707   Instrument failure modes, including jaw failure (e.g., articulating component can no longer
+708   effectively grasp or close on target tissue) and structural failure (e.g., shaft fracture or permanent
+709   deformation), should also be evaluated with defined acceptance criteria that ensure the
+710   instrument maintains functional and structural integrity under worst-case use. Jaw failure testing
+711   should include (1) quantification of the force required to cause jaw failure, and (2) cyclic loading
+712   (i.e., fatigue testing) to determine the number of loading cycles that result in jaw failure.
+713   Structural failure testing should quantify the maximum load that induces shaft fracture or
+714   permanent deformation beyond functional limits. Instruments should be tested under worst-case
+715   loading conditions. We recommend you refer to FDA’s guidance, “Premarket Notification
+716   (510(k)) Submissions for Electrosurgical Devices for General Surgery,” for additional
+717   performance testing recommendations for electrosurgical instruments.
+718
+719           E.       Software
+720   Significance: Software utilized in a RASD provides the means to enable qualified practitioners to
+721   control the RASD to perform as intended in a safe and effective manner. Software also provides
+722   essential information to qualified practitioners and other trained OR staff through graphical user
+723   interfaces (GUI) or other means. Adequate software verification and validation that includes
+724   performance testing provides assurance that the device operates within safe parameters and
+725   functions as intended.
+726
+
+
+
+      4
+       A different reliability and confidence level may be appropriate depending on the circumstances (in such instances,
+      we recommend that a rationale for the difference be provided).
+
+                                                                                                                       23
+                                        Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+727   Recommendation: Overall, the documentation related to the device software function(s) should
+728   provide sufficient evidence to describe the role of the device software function(s) in the context
+729   of the device’s intended use and testing to demonstrate that the device software function(s)
+730   performs as designed. Refer to the FDA guidance, “Content of Premarket Submissions for
+731   Device Software Functions,” (Premarket Software guidance) for a discussion of the software
+732   information that you should provide in your submission. The Premarket Software guidance
+733   outlines the recommended information to be provided in a premarket submission based on the
+734   “Documentation Level” associated with the device. We think generally the device software
+735   functions for a RASD warrant an “Enhanced” Documentation Level. If you believe that your
+736   device warrants a “Basic” Documentation Level as defined in the Premarket Software guidance,
+737   you should provide scientific explanation that supports your rationale for the Documentation
+738   Level based on the risks of the device software function(s) in the context of the device’s intended
+739   use.
+740
+741   We recommend that you provide a comprehensive description of the device software function(s)
+742   supporting the operation of the RASD as described in the Premarket Software guidance,
+743   including the software’s functionality, architecture, and risk management approach. This
+744   recommendation applies to original devices, and any software changes made to already-marketed
+745   devices when the submission of a new 510(k) is warranted. For further information on this topic,
+746   refer to “Deciding When to Submit a 510(k) for a Software Change to an Existing Device.”
+747   Regardless, all changes to software must be verified and validated in accordance with the
+748   applicable clauses in ISO 13485:2016. 5
+749
+750   Software verification and validation should include testing at the unit, integration, and full
+751   system levels for the RASD. At the full system level, you should employ objective metrics of
+752   performance, and include a rationale of how the testing would be representative of real-world use
+753   cases. Safety features warrant particular attention, including testing of safety notifications,
+754   communications, warnings to users, and resolution (e.g., notification on the graphical user
+755   interface). For device software function changes, submissions should include an analysis of
+756   appropriate testing strategies, methodologies, and justification for the selected testing approach.
+757   For example, the submission should explain whether regression testing versus full system testing
+758   is appropriate for the modified version of the device software function(s) based on the specific
+759   set of changes implemented. The impact of device changes on affected software system, units,
+760   and subunits should be identified and characterized.
+761
+
+
+
+      5
+        FDA issued a final rule that amends the majority of the requirements previously in 21 CFR Part 820 (Part 820) and
+      incorporates by reference the 2016 edition of the International Organization for Standardization (ISO) 13485,
+      Medical devices - Quality management systems – Requirements for regulatory purposes, in Part 820. As stated in
+      the final rule, the requirements in ISO 13485 are, when taken in totality, substantially similar to the requirements of
+      the previous Part 820, providing a similar level of assurance in a firm’s quality management system and ability to
+      consistently manufacture devices that are safe and effective and otherwise in compliance with the FD&C Act. 89
+      FR 7496.
+
+                                                                                                                          24
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+762   If the device contains unresolved software anomalies, we recommend defining and utilizing a
+763   classification system for risk prioritization and having traceability for each anomaly.
+764   Additionally, we recommend that you include mechanisms to communicate mitigation strategies
+765   and other work-arounds to end users, as appropriate. This may include warnings and cautions for
+766   certain anomalies (e.g., system faults, unintended motion, system restarts).
+767
+768   We recommend using the final software version intended for commercial use in testing of the
+769   device. Version control and update deployment strategies should be documented, along with
+770   associated verification and validation requirements. Traceability should be maintained, which
+771   links software requirements to design, testing, and risk controls throughout the device lifecycle.
+772
+773   If the device includes off-the-shelf (OTS) software, you should provide the additional
+774   information as recommended in the FDA guidance, “Off-the-Shelf Software Use in Medical
+775   Devices,” as well as any information about open-source components and proprietary modules
+776   used in the device.
+777
+778   A RASD may be a multiple function device product. A multiple function device product contains
+779   at least one device function and at least one “other function.” FDA may assess the impact the
+780   “other function” has on the device function when assessing the safety and effectiveness of the
+781   device function (see section 520(o)(2) of the FD&C Act). Accordingly, manufacturers should
+782   consider the recommendations in the FDA guidance “Multiple Function Device Products: Policy
+783   and Considerations” (Multiple Functions guidance), which is applicable to all multiple function
+784   device products. For example, if you add non-device software functions (e.g., tracking surgical
+785   procedure time, recording endoscopic surgical procedure videos) to a RASD, you should assess
+786   the impact of your non-device software functions on your device function. This may include
+787   consideration of whether the non-device software functions impact the safety or effectiveness of
+788   the device function, such as whether the functions share underlying computational resources,
+789   data dependencies, or any other type of relationship, as interference between them could
+790   potentially degrade the performance of the device function. If there is an impact that could result
+791   in increased risk or have an effect on performance of the device function, then you should
+792   consider whether additional documentation should be provided in your marketing submission.
+793   For additional information, please refer to the Multiple Functions guidance.
+794
+795   For device software functions that interface with and control physical device components,
+796   appropriate non-clinical performance testing should be conducted to verify performance
+797   specifications in addition to software testing.
+798
+799          F.      Cybersecurity
+800   Significance: RASDs contain software, firmware and programmable logic, and may include
+801   interoperability, creating the ability to connect to the internet/network either directly or indirectly
+802   through the connectivity features present in the device design, or exchange and use information
+803   through an electronic interface. This can increase the surface area for cyber vulnerabilities and
+804   attack vectors. Failure to maintain cybersecurity can result in risks such as compromised device
+
+                                                                                                          25
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+805   functionality, loss of device availability, loss of data (medical or personal) availability and/or
+806   integrity, or exposure of other connected devices or networks to security threats. This in turn
+807   may have the potential to result in patient injury.
+808
+809   Recommendations: If a RASD meets the definition of a cyber device under section 524B(c) of
+810   the FD&C Act, then the premarket submission must meet the cybersecurity requirements under
+811   section 524B(b) of the FD&C Act. Refer to the FDA cybersecurity guidance, “Cybersecurity in
+812   Medical Devices: Quality Management System Considerations and Content of Premarket
+813   Submissions,” for a discussion of the cybersecurity documentation that you should provide in
+814   your submission.
+815
+816   In addition to the recommendations in the cybersecurity guidance referenced above, premarket
+817   submissions for RASDs should address several specific cybersecurity considerations.
+818   Submissions should identify all relevant assets, potential threats, and vulnerabilities on device
+819   functionality, end users, and patients, as well as an assessment of exploitability for device
+820   vulnerabilities. Based on this analysis, submissions should determine risk levels for identified
+821   threats and vulnerabilities and describe suitable mitigation strategies.
+822
+823   The cybersecurity assessment, including penetration testing, should take into consideration all
+824   network elements communicating with the RASD (including all sub-assemblies and other
+825   components), accessories, and compatible devices intended to connect to or interact with the
+826   system during pre-deployment, normal operation and maintenance. Submissions should identify
+827   relevant network elements connected to the RASD. This should include all back-end
+828   infrastructure, such as servers, databases, and cloud-based services, as well as all public and
+829   private networks used by the RASD for communication, such as data transmission, remote
+830   access and teleoperation, or system updates. For example, the assessment should include
+831   simulations where the RASD is communicating with a compromised hospital network.
+832
+833          G.      Wireless Technology
+834   Significance: In the design, testing, and use of wireless medical devices or devices with wireless
+835   technology capabilities, the correct, timely, and secure transmission of medical data and
+836   information is essential for the safe and effective use of both wired and wireless medical devices
+837   and systems.
+838
+839   Recommendation: We recommend that you consult FDA’s guidance, “Radio Frequency Wireless
+840   Technology in Medical Devices,” for recommendations on this topic.
+841
+842   In addition, we recommend that you follow the FDA-recognized consensus standards AAMI
+843   TIR69 Risk Management of Radio-Frequency Wireless Coexistence for Medical Devices and
+844   Systems for a risk management approach to addressing wireless coexistence and IEEE ANSI
+845   USEMCSC C63.27 American National Standard for Evaluation of Wireless Coexistence for the
+846   test methods used in evaluating wireless coexistence.
+847
+
+                                                                                                           26
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+848          H.      Training
+849   Significance: The safety and effectiveness of RASDs is highly dependent on ensuring that the
+850   user can safely and effectively operate the system in accordance with the device labeling (i.e.,
+851   achieve competency). Each RASD manufacturer should develop a training program that has been
+852   validated to facilitate users achieving device competency prior to clinical usage. Training should
+853   focus on the user’s ability to work with the device user interface to perform specific tasks.
+854
+855   Recommendation: You should create and deliver an effective training plan for users consistent
+856   with the uses being sought for authorization, and provide an overview of the training plan in the
+857   premarket submission for your RASD. The training should be comprehensive and should have
+858   demonstrated effectiveness in developing device competency for users with varying levels of
+859   experience and clinical background. The training program and competency expectations should
+860   not only focus on surgeons, but also include other OR staff, such as bedside assistants and
+861   surgical scrub nurses, who interact with RASDs. For existing RASDs, the need for updates to
+862   existing training should be evaluated when changes are introduced to the device user interfaces,
+863   including addition of new instruments and new user groups.
+864
+865   When designing your training, you should consider the different user groups interfacing with the
+866   RASD, including their clinical background, familiarity with other robotically-assisted devices,
+867   and role in the procedure. Once appropriate user groups are identified, a variety of training
+868   modalities may be used, such as didactic training on the capabilities and features of the RASD,
+869   using a robotic surgical simulator, and use of the RASD in bench, animal and/or cadaver models.
+870   It is important to establish specific criteria to evaluate the success of training delivery and ensure
+871   that different user groups are able to effectively interface with the system. For example, the
+872   number of procedures generally necessary for surgeons to achieve competency on the RASD for
+873   the uses being sought for authorization.
+874
+875          I.      Human Factors
+876   Significance: Use-related hazards are hazards that might result from aspects of the user interface
+877   design that cause the user to fail to adequately or correctly perceive, read, interpret, understand
+878   or act on information from the RASD. They generally do not involve specific failure modes
+879   associated with faulty mechanical, electrical, and/or software components that are previously
+880   known or reasonably anticipated. To understand the use-related hazards associated with the
+881   RASD, it is necessary to have an accurate and complete understanding of the device user
+882   interfaces, use scenarios, the tasks within these scenarios that could lead to serious harm to the
+883   patient or user, where harm is defined to include compromised medical care (i.e., critical tasks),
+884   and how the RASD supports the user to complete these tasks in a safe manner.
+885
+886   Recommendation: To address use-related hazards, human factors evaluations should start early
+887   in the device design process and should occur iteratively. When designing and developing RASD
+888   technology, human factors processes and evaluations are important to identify use-related device
+889   hazards, implement risk mitigation strategies to minimize use-related hazards, and demonstrate
+
+                                                                                                         27
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+890   that the device can be used without serious use errors by the intended users, for the intended uses
+891   and under the expected use conditions. This RASD draft guidance provides RASD-specific
+892   recommendations on human factors information to be included in the premarket submission for a
+893   RASD. There are various methods for the preliminary human factors analyses and evaluations,
+894   which are discussed further in FDA’s guidance, “Applying Human Factors and Usability
+895   Engineering to Medical Devices.”
+896
+897   If during actual use of the RASD, participants from more than one user group (e.g., surgeons,
+898   OR staff such as bedside assistants, surgical scrub nurses) will work simultaneously with the
+899   RASD, then this factor should be considered when identifying participants for your human
+900   factors validation study to further demonstrate that the device user interface supports the safe and
+901   effective use in such a use scenario. We recommend recording and reporting all available and
+902   used device features in each device use scenario.
+903
+904   We recommend that you conduct use-related risk assessments and include preliminary analysis
+905   and evaluations throughout the life cycle of your device development. Once you have a device
+906   user interface that represents the final design, you should perform human factors validation
+907   testing. All points of interaction between the user and the device (e.g., those parts of the device
+908   that users see, hear, touch) should be included in your human factors validation testing. All
+909   sources of information transmitted by the device (including packaging and labeling), training and
+910   all physical controls and display elements (including alarms, the logic of operation of each
+911   device component, and of the user interface system as a whole) should also be included in the
+912   validation testing. In this testing, you should focus on real world use of your device in a realistic
+913   environment with representative users, which may include teams working together as they would
+914   in a normal operating room.
+915
+916   Specifically, for RASDs, the following use-related hazards should be considered and addressed:
+917
+918      •   Potential hazards associated with surgical planning, instrument preparation and
+919          connection to other systems
+920      •   Potential hazards associated with device reprocessing
+921      •   Impact of no experience with RASD technology on the user’s task performance
+922      •   Impact of experience with other RASDs to determine if potential use errors associated
+923          with negative knowledge transfer impact the user’s task performance and/or mental
+924          models of the subject device system
+925      •   Potential hazards associated with instrument removal, exchanges, and port switching
+926          (each instrument should be assessed separately)
+927      •   Interaction between the surgeon and surgical team during use of the RASD
+928      •   Motions and positions of the RASD will not interfere with intended user workflow (e.g.,
+929          staff will be able to abort the RASD in the event of an emergency, interact with the
+930          device to change or service instruments, and effectively communicate during RASD use)
+931
+932
+933
+
+                                                                                                        28
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+934   You should also consider the following:
+935
+936      •   All the features enhancing or augmenting human capabilities should be included in the
+937          testing even if they are optional to the user. You should provide testing that is
+938          representative of actual use to ensure that the users can perform critical tasks without use
+939          error under realistic conditions.
+940      •   If multiple set-up options are available (e.g., different robotic arm configuration,
+941          integration of different surgical instruments or accessories or compatible devices,
+942          multiple users), you should include testing to show that users would be able to set-up and
+943          deploy the appropriate configurations for the various specialties, procedures and tasks.
+944      •   Emergency procedures (e.g., conversion to open or laparoscopic procedures, emergency
+945          withdrawal of the device from the patient, power loss, emergency stops) to ensure that
+946          your risk mitigations, safety features, and emergency instructions in the labeling are
+947          appropriate.
+948
+949   FDA’s guidance, “Content of Human Factors Information in Medical Device Marketing
+950   Submissions” includes recommendations for the content of human factors engineering and
+951   usability engineering (HFE/UE) information included in marketing submissions. The marketing
+952   submission should, where appropriate based on the applicable statutory and regulatory criteria,
+953   demonstrate that the device design adequately meets the needs of the intended users and that the
+954   device is appropriately safe and effective for the intended users, uses, and use environments. It
+955   should also include, where appropriate, information that explains the presence or absence of
+956   critical tasks, human factors validation testing to assess the effectiveness of risk control
+957   strategies, and a discussion of residual risks.
+958
+959          J.  Electrical Safety and Electromagnetic Compatibility
+960          (EMC)
+961   Significance: RASDs are medical electrical equipment and therefore may expose the operator
+962   and patient to hazards associated with the use of electrical energy or may fail to operate properly
+963   in the presence of unforeseen electromagnetic disturbance.
+964
+965   Recommendation: RASDs should be tested to demonstrate that they perform as anticipated in
+966   their intended use environment. The device-specific essential performance (i.e., performance of a
+967   clinical function, other than that related to basic safety, in which loss or degradation beyond the
+968   limits specified by the manufacturer results in an unacceptable risk) of the RASD should be
+969   defined and clearly outlined in the risk analysis in the premarket submission. For the RASD, the
+970   essential performance should include its ability to accurately and reliably perform the robotic
+971   functions within specified limits. The electrical safety and EMC information (e.g., test protocols,
+972   test results, risk management activities, evidence of conformance with consensus safety
+973   standards) should demonstrate that the risk associated with the essential performance of the
+974   device is adequately mitigated under normal or single fault conditions, and that the device
+975   performs as anticipated in its intended use environment. We recommend that this testing be
+
+                                                                                                       29
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+ 976   performed as described in the currently FDA-recognized versions of the following standards for
+ 977   medical electrical equipment safety and electromagnetic compatibility:
+ 978
+ 979      •   ANSI/AAMI ES60601-1: Medical electrical equipment - Part 1: General requirements
+ 980          for basic safety and essential performance
+ 981      •   ANSI/AAMI/IEC 60601-1-2: Medical electrical equipment - Part 1-2: General
+ 982          requirements for basic safety and essential performance - Collateral standard:
+ 983          Electromagnetic disturbances - Requirements and tests
+ 984      •   IEC 80601-2-77: Medical electrical equipment – Part 2-77: Particular requirements for
+ 985          the BASIC SAFETY and essential performance of ROBOTICALLY ASSISTED
+ 986          SURGICAL EQUIPMENT
+ 987
+ 988   In addition, unforeseen risks (e.g., thermal, capacitive coupling, excessive leakage current) may
+ 989   result from the combined use of endoscopes and other energized devices. For high frequency
+ 990   energized devices, thermal hazards present a greater risk to the patient and operator than risks
+ 991   associated with electric shock. We also recommend testing consistent with the following
+ 992   additional standards as appropriate:
+ 993
+ 994      •   IEC 60601-2-2: Medical electrical equipment - Part 2-2: Particular requirements for the
+ 995          basic safety and essential performance of high frequency surgery equipment and high
+ 996          frequency surgical accessories
+ 997      •   IEC 60601-2-18: Medical electrical equipment - Part 2-18: Particular requirements for
+ 998          the basic safety and essential performance of endoscopic equipment
+ 999
+1000   If submitting a Declaration of Conformity to the above standards, we recommend that
+1001   appropriate supporting documentation such as an assessment of the results and how conformity
+1002   was determined be provided. Information regarding test methods used should be provided
+1003   because this series of standards includes general methods with multiple options and, in some
+1004   cases, does not include specific acceptance criteria or address assessment of results. For
+1005   additional information on providing electromagnetic compatibility information in a premarket
+1006   submission, see FDA’s guidance, “Electromagnetic Compatibility (EMC) of Medical Devices.”
+1007
+1008          K.      Optical Radiation Safety
+1009   Significance: Exposure to electromagnetic energy delivered by RASD in the form of ultraviolet
+1010   (UV), visible (VIS), or infrared (IR) radiation may have negative health effects on the patient or
+1011   user. This could result in corneal or retinal injuries, photochemical or thermal injuries of the skin
+1012   or internal organs, or other injuries.
+1013
+1014   Recommendation: Your submission should identify optical radiation hazards specific to the
+1015   design of the RASD and mitigate these hazards through performance testing, verification and
+1016   validation, and labeling. We recommend that RASDs demonstrate conformance with applicable
+1017   FDA recognized optical radiation safety consensus standards. In addition, all laser emitting
+1018   RASDs must comply with all applicable requirements of 21 CFR Chapter I, Subchapter J -
+
+                                                                                                          30
+                                       Contains Nonbinding Recommendations
+
+                                            Draft – Not for Implementation
+
+1019   Radiological Health. For additional information regarding regulation of laser products and
+1020   instruments, see FDA’s website Laser Products and Instruments, and refer to FDA’s guidance,
+1021   “Laser Products – Conformance with IEC 60825-1 Ed. 3 and IEC 60601-2-22 Ed. 3.1 (Laser
+1022   Notice No. 56).”
+1023
+1024           L.       Sterility
+1025   Significance: Many RASD components come in contact with blood, sterile tissue, and/or are
+1026   used in the sterile field. Therefore, every part of the device that will be within the sterile field
+1027   should be adequately sterilized to minimize infections and related complications or covered with
+1028   an appropriate sterile drape.
+1029
+1030   Recommendation: For devices labeled as sterile, we recommend that you provide the
+1031   information outlined below. 6
+1032
+1033       1. For the sterilization method, the manufacturer should provide the following:
+1034             a. A comprehensive description of the sterilization method/process;
+1035             b. A description of the sterilization chamber if not rigid, fixed (e.g., flexible bag);
+1036             c. The sterilization site;
+1037             d. In the case of radiation sterilization, the radiation dose; and
+1038             e. For chemical sterilants (e.g., ethylene oxide (EO), H2O2), the maximum levels of
+1039                  sterilant residuals that remain on the device, and an explanation of why those
+1040                  levels are acceptable for the device type and the expected duration of patient
+1041                  contact.
+1042
+1043                    For additional information on EO sterilization, and specifically EO residuals,
+1044                    please see the currently recognized version of the standard, ISO 10993-7
+1045                    Biological Evaluation of Medical Devices – Part 7: Ethylene Oxide Sterilization
+1046                    Residuals.
+1047
+1048       2. For the sterilization method used, you should provide a description of the method used to
+1049          validate the sterilization cycle (e.g., the half-cycle method) as well as the sterilization
+1050          validation data. The submission should also identify all relevant consensus standards used
+1051          and identify any aspects of the standards that were not met. In the absence of a
+1052          recognized standard, a comprehensive description of the sterilization process and the
+1053          complete validation protocol should be submitted for review.
+1054
+1055       3. You should state the sterility assurance level (SAL) of 10-6 for devices labeled as sterile,
+1056          unless all parts of the device are intended only for contact with intact skin. You should
+
+
+       6
+        For 510(k) submissions, we recommend that you provide information for the final sterile device as described in
+       FDA’s guidance “Submission and Review of Sterility Information in Premarket Notification (510(k)) Submissions
+       for Devices Labeled as Sterile.”
+
+                                                                                                                     31
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+1057          state the SAL of 10-3 for devices labeled as sterile that are intended only for contact with
+1058          intact skin.
+1059
+1060          M.      Reprocessing
+1061   Significance: Many RASD components are reused and should be adequately cleaned,
+1062   disinfected, and sterilized between uses to minimize infections while preventing device
+1063   degradation. RASD components can also be single-use medical devices initially supplied as non-
+1064   sterile to the user and necessitate the user to process the device prior to its use.
+1065
+1066   Recommendation: Validated instructions on how to reprocess a reusable device or single-use
+1067   device that is provided non-sterile to the user are critical to ensure that a device is appropriately
+1068   prepared for its initial and/or subsequent uses. Any RASD components (e.g., operator console or
+1069   other user interface) that are used outside the sterile field and whose surfaces contact only intact
+1070   skin should be adequately cleaned and disinfected prior to use. Any RASD components that are
+1071   used in the sterile field but are too large to be practicably sterilized (e.g., component of the
+1072   bedside/patient subassembly that is too large to fit inside a legally-marketed sterilizer) should be
+1073   cleaned and disinfected prior to use and covered with a sterile drape. For RASD components that
+1074   contain small lumens, small components, and/or difficult-to-reach inner surfaces, an ultrasonic
+1075   washing step (or an alternative method validated to achieve equivalent cleaning efficacy) should
+1076   be included to ensure adequate cleaning of all surfaces, along with instructions for flushing the
+1077   inner surfaces. For recommendations regarding the development and validation of
+1078   processing/reprocessing instructions in your proposed device labeling, please refer to FDA’s
+1079   guidance, “Reprocessing Medical Devices in Health Care Settings: Validation Methods and
+1080   Labeling,” (Reprocessing guidance).
+1081
+1082   If an automatic washer/disinfector is used during the reprocessing of your RASD, an additional
+1083   separate validation of the automatic washer/disinfector should be performed for cleaning your
+1084   RASD. The automatic washer/disinfector may have specific attachments and components, such
+1085   as a rack system designed for your RASD components. We recommend validating all automatic
+1086   reprocessing using the same automatic washer/disinfector and cycle as described in the RASD
+1087   labeling instructions. We recommend that you perform this validation testing using real world in-
+1088   use and simulated use conditions (e.g., using an adequate soil and soiling technique) to ensure
+1089   that the automatic washer/disinfector adequately cleans/disinfects the device and meets the pre-
+1090   specified cleaning and disinfection acceptance criteria. As described in the Reprocessing
+1091   guidance, as part of your general reprocessing validation processes, a visual inspection using
+1092   appropriate magnification (e.g., 10x) should be conducted to ensure adequate cleaning.
+1093
+1094   Performance testing should demonstrate that the RASD continues to perform according to
+1095   original device specifications (i.e., un-reprocessed) after each reprocessing procedure, including
+1096   at the end of its service life (i.e., after the end-of-life, final reprocessing as described in the
+1097   labeling).
+1098
+1099
+
+                                                                                                         32
+                                       Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+1100           N.       Shelf Life and Packaging
+1101   Significance: Shelf-life testing is conducted to support the proposed expiration date through
+1102   evaluation of the package integrity for maintaining device sterility and/or evaluation of any
+1103   changes to device performance or functionality.
+1104
+1105   Recommendation: With respect to package integrity for maintaining device sterility, you should
+1106   provide a description of the packaging, including how it will maintain the device’s sterility, the
+1107   protocol(s) used for your package integrity testing, the results of the testing, and the conclusions
+1108   drawn from your results. 7
+1109
+1110   We recommend that a package validation study include simulated distribution and associated
+1111   package integrity testing, as well as an aging process (accelerated and/or real time), and
+1112   associated package integrity testing (e.g., seal strength testing). We recommend you follow the
+1113   methods described in the FDA-recognized series of consensus standards ISO 11607-1 Packaging
+1114   for terminally sterilized medical devices – Part 1: Requirements for materials, sterile barrier
+1115   systems and packaging systems and ISO 11607-2 Packaging for terminally sterilized medical
+1116   devices – Part 2: Validation requirements for forming, sealing and assembly processes.
+1117
+1118   With respect to evaluating the effects of aging on device performance or functionality, shelf-life
+1119   studies should evaluate the critical device properties to ensure it will perform adequately and
+1120   consistently during the entire proposed shelf life. To evaluate device functionality, we
+1121   recommend that you assess each of the bench tests described in Section IV.D and repeat all tests
+1122   that evaluate design components or characteristics that are potentially affected by aging using
+1123   aged devices.
+1124
+1125   We recommend that you provide the protocol(s) used for your shelf-life testing, the results of the
+1126   testing, and the conclusions drawn from your results. If you intend to extend the shelf life of the
+1127   RASD after an initial premarket approval, we recommend that you provide the protocol(s) to
+1128   support the extension in the original submission (see 21 CFR 814.39(a)(7)). We recommend that
+1129   real-time aging be conducted to confirm the results of any accelerated aging to determine
+1130   definitively the effects of aging on the maintenance of sterility and device performance. If you
+1131   use devices that have been subject to accelerated aging for shelf-life testing, we recommend that
+1132   you specify the way in which the device was aged and provide a rationale to explain how the
+1133   results of shelf-life testing based on accelerated aging are representative of the results if the
+1134   device were aged in real time. We recommend that you age your devices as described in the
+1135   current FDA-recognized version of ASTM F1980: Standard Guide for Accelerated Aging of
+1136   Sterile Barrier Systems for Medical Devices and specify the environmental parameters
+1137   established to attain the expiration date. For devices or components containing polymeric
+1138   materials, you should plan to conduct testing on real-time aged samples to confirm that the
+1139   accelerated aging is reflective of real-time aging. This testing should be conducted in parallel
+
+
+       7
+        For 510(k) submissions, you should provide a description of the packaging, including how it will maintain the
+       device’s sterility, and a description of the package integrity test methods, but not the package test data.
+
+                                                                                                                        33
+                                       Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+1140   with FDA’s review of your submission with results documented to file in your design and
+1141   development file 8 (i.e., complete test reports do not need to be submitted to FDA).
+1142
+
+1143           O.       Pyrogenicity
+1144   Significance: Pyrogenicity testing is used to help protect patients from the risk of febrile reaction
+1145   due to gram-negative bacterial endotoxins and/or chemicals that can leach from a medical device
+1146   (e.g., material-mediated pyrogens).
+1147
+1148   Recommendation: To address the risks associated with the presence of bacterial endotoxins,
+1149   RASDs and accessories that are in contact directly or indirectly with the cardiovascular system,
+1150   the lymphatic system, or cerebrospinal fluid, or have similar systemic exposure should meet
+1151   applicable pyrogen limit specifications by following the recommendations outlined in FDA’s
+1152   guidance, “Pyrogen and Endotoxins Testing: Questions and Answers.” To address the risks
+1153   associated with material-mediated pyrogenicity, you should follow the recommendations in
+1154   FDA’s guidance, “Use of International Standard ISO-10993-1, 'Biological evaluation of medical
+1155   devices - Part 1: Evaluation and testing within a risk management process.’”
+1156
+1157   For devices intended to be labeled as “non-pyrogenic,” we recommend both bacterial endotoxins
+1158   and material-mediated pyrogens be addressed.
+1159
+1160           P.       Biocompatibility
+1161   Significance: RASDs contain patient-contacting materials that, when used for their intended
+1162   purpose (i.e., contact type and duration), may induce a harmful biological response.
+1163
+1164   Recommendation: You should determine the biocompatibility of all direct and indirect patient-
+1165   contacting materials present in your device. If your materials are identical in chemical
+1166   composition, manufacturing, and processing methods (including sterilization) to materials with a
+1167   history of successful use in another RASD with the same contact type and duration for similar
+1168   applications in the same patient population, you can reference previous testing experience or the
+1169   literature, if appropriate. For some device materials, it may be appropriate to provide a reference
+1170   to either a recognized consensus standard, or to a Letter of Authorization (LOA) for a device
+1171   Master File (MAF). You should refer to the following FDA webpage for additional information
+1172   on using device MAFs: https://www.fda.gov/medical-devices/premarket-approval-pma/master-
+1173   files. For polymeric materials, you should identify each material by trade name and
+1174   manufacturer.
+1175
+
+
+
+       8
+        21 CFR 820.10(c) requires that manufacturers of class II, class III, and certain class I devices comply with the
+       design and development requirements in ISO 13485, clause 7.3. For design and development file requirements, see
+       ISO 13485:2016 subclause 7.3.10.
+
+                                                                                                                      34
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+1176   If you are unable to identify a legally marketed device with the same nature of contact (e.g.,
+1177   location, duration) that uses the same materials and manufacturing process as used in your
+1178   device, we recommend that you conduct and provide a biocompatibility evaluation as
+1179   recommended in FDA’s biocompatibility guidance, “Use of International Standard ISO 10993-1,
+1180   ‘Biological evaluation of medical devices - Part 1: Evaluation and testing within a risk
+1181   management process’.” The evaluation should explain the relationship between the identified
+1182   biocompatibility risks, the information available to mitigate the identified risks, and knowledge
+1183   gaps that remain. You should then identify any biocompatibility testing or other evaluations that
+1184   were conducted to mitigate remaining risks. We recommend that you consider the
+1185   recommendations in this guidance, which identifies the types of biocompatibility assessments
+1186   that should be considered and recommendations regarding how to conduct related tests.
+1187
+1188   As described in ISO 10993-1: Biological evaluation of medical devices – Part 1: Evaluation and
+1189   testing within a risk management process and Attachment A of FDA’s biocompatibility
+1190   guidance, RASDs are typically external communicating devices in contact with
+1191   tissue/bone/dentin for a limited contact duration. However, some RASD components may come
+1192   into contact with either blood path, indirect and/or circulating blood, and should be tested for the
+1193   appropriate biocompatibility endpoints. Therefore, the following endpoints should be addressed
+1194   in your biocompatibility evaluation for these RASD components:
+1195
+1196      •   cytotoxicity;
+1197      •   sensitization;
+1198      •   irritation or intracutaneous reactivity;
+1199      •   acute systemic toxicity;
+1200      •   material-mediated pyrogenicity;
+1201      •   hemocompatibility (based on contact); and
+1202      •   genotoxicity (based on contact).
+1203
+1204   ISO 10993 provides specific recommendations regarding particulates observed in extracts during
+1205   biocompatibility testing. Please note that FDA considers particulates to encompass any
+1206   suspended particles in the extract (e.g., fragments) or other matter that were not present prior to
+1207   extraction. All particulates found in the extract should be characterized, or an adequate rationale
+1208   should be provided as to why the particulates do not raise biocompatibility or safety concerns.
+1209   Additional testing may be requested to ensure the biocompatibility of the subject device, if
+1210   adequate characterization and rationale cannot be provided for the presence of particulates.
+1211
+1212   Some test methods for the above endpoints are part of the Accreditation Scheme for Conformity
+1213   Assessment (ASCA) Program, which can be leveraged by manufacturers to streamline the
+1214   review of these test results. For more information, see the ASCA Program website.
+1215
+1216   If your device has a different contact classification than listed above, we recommend that you
+1217   consult FDA’s biocompatibility guidance to determine the applicable endpoints.
+1218
+
+
+                                                                                                         35
+                                        Contains Nonbinding Recommendations
+
+                                             Draft – Not for Implementation
+
+1219   For certain components of your RASD that may have incidental contact, it is still important to
+1220   evaluate these components as indirect contacting components. We recommend that you discuss
+1221   the different components of your system with the Agency via the Q-submission program to
+1222   clarify whether biocompatibility assessment is needed if you have uncertainty.
+1223
+1224   For RASD components or accessories (e.g., surgical drapes) that will come in contact with the
+1225   patient and/or surgical team (i.e., contact with intact skin), we recommend the following
+1226   biocompatibility endpoints to be evaluated:
+1227
+1228         •    Cytotoxicity;
+1229         •    Sensitization;
+1230         •    Irritation or intracutaneous reactivity
+1231
+1232   We recommend that biocompatibility testing be performed on the final, finished device. If your
+1233   device is reusable, we recommend that you perform biocompatibility testing on your subject
+1234   device after the maximum number of use cycles to demonstrate that repeated use and
+1235   reprocessing do not adversely affect the biocompatibility of your device over the course of its
+1236   service life.
+1237
+1238              Q.      In Vivo Evaluation
+1239   Significance: An in vivo evaluation of the device performance is important for assessing the
+1240   safety and effectiveness of the RASD for the uses being sought for authorization. To support
+1241   authorization of a broad use of the device (e.g., general surgery, gynecology, urology,
+1242   otolaryngology, or anatomical region) or a more specific use (e.g., colectomy, total radical
+1243   hysterectomy, radical prostatectomy, transoral robotic surgery (TORS)), in vivo evaluation
+1244   should demonstrate that the device can reliably function in an operative environment and assist
+1245   in performing the coordinated maneuvers necessary to complete these surgical procedures.
+1246
+1247   Recommendation: In vivo evaluation may encompass non-clinical or clinical data. FDA’s data
+1248   requests typically follow a stepwise analytical process to ensure the information requested to
+1249   support a premarket submission reflects the least burdensome approach. 9 Non-clinical in vivo
+1250   studies generally are requested when a description of technological characteristics and other
+1251   forms of non-clinical bench performance testing are not sufficient to support a premarket
+1252   submission for the device. Clinical data may be requested for new RASDs or when changes in
+1253   device user interface and/or robotic technology in existing RASDs raise questions that can only
+1254   be addressed by clinical data, due to a lack of non-clinical in vivo models with validated clinical
+1255   endpoints for the procedures in question, variable clinical experience due to differences in patient
+1256   demographics or co-morbidities, and clinical scenarios not encountered in non-clinical in vivo
+1257   models.
+1258
+
+
+       9
+           See the FDA guidance “The Least Burdensome Provisions: Concept and Principles.”
+
+                                                                                                        36
+                                    Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+1259   In the context of RASDs, when seeking authorization for use of the device for a surgical
+1260   specialty (e.g., general surgery, gynecology), you should include the full range of extirpative
+1261   and/or reconstructive elements in the intended anatomical location. When seeking authorization
+1262   for use of a RASD for a specific procedure, you should provide evidence of a successfully
+1263   completed surgical procedure in its entirety. If you are seeking authorization of your RASD for
+1264   multiple procedure types, we recommend that you consider using an umbrella and covered
+1265   procedure approach to extrapolate device use data from procedures of higher complexity and risk
+1266   to ones with lesser complexity and risk (see Appendix A for detailed examples of the umbrella
+1267   and covered procedure paradigm). For this last category of RASDs, when submitting a 510(k),
+1268   we recommend that you include all procedures in the indications for use statement. Alternatively,
+1269   you may choose to describe the full range of procedures outside of the indications for use
+1270   statement, such as in a proposed instructions for use. If the list of procedures is not located in the
+1271   indications for use statement, your indications for use statement should reference the specific
+1272   proposed labeling document where this information is located.
+1273
+1274                  (1)     Non-Clinical In Vivo Data
+1275   Well-designed non-clinical in vivo animal studies may be used to evaluate RASD safety and
+1276   performance of specific surgical tasks and procedures that cannot be evaluated through bench
+1277   performance testing. The types and locations of the surgery performed depend upon the uses
+1278   being sought for authorization for the RASD. Both acute and chronic studies, in which all
+1279   functional surgical capabilities and surgical tasks are tested in a coordinated fashion, are
+1280   recommended. During these evaluations, the RASD should be tested as a whole, using all of the
+1281   instruments within a particular system to perform surgical tasks in a coordinated fashion, to
+1282   demonstrate the device’s ability to complete the entire surgical procedure safely and effectively
+1283   using pre-specified tasks, endpoint measures, and success criteria. We recommend that each
+1284   surgical procedure be broken down and evaluated based on procedure steps, surgical tasks,
+1285   anatomy/tissue involved, and instruments used. Specific endpoints testing should focus on device
+1286   compatibility (with individual instruments and system as a whole), usability, adverse events,
+1287   complications, and other relevant observations. The sample size for your animal studies should
+1288   be based upon your chosen endpoints and include enough animals to provide a meaningful
+1289   interpretation.
+1290
+1291   We recommend chronic studies for assessing morbidity and mortality, time to return to normal
+1292   activity, wound healing, surgical instrument effects (e.g., vessel sealing, stapling), and the
+1293   durability and success of surgical reconstructive elements (e.g., suture line, anastomosis).
+1294   Criteria for chronic studies should be clear and specific. For both acute and chronic studies, FDA
+1295   recommends that a comprehensive, systematic necropsy (including gross and histologic
+1296   assessments) be performed by a board-certified veterinary pathologist on all animals enrolled in
+1297   the study to identify and describe any abnormal findings that may be a result of the device or the
+1298   procedure. FDA recommends performing histology on all tissues potentially affected, directly
+1299   and indirectly, by the device. Refer to the FDA guidance, “General Considerations for Animal
+1300   Studies Intended to Evaluate Medical Devices,” for additional information.
+1301
+
+                                                                                                          37
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+1302   FDA supports the principles of the “3Rs,” to reduce, refine, and replace animal use in testing
+1303   when feasible. We encourage manufacturers to consult with us if they wish to use a non-animal
+1304   testing method they believe is suitable, adequate, validated, and feasible. We will consider if
+1305   such an alternative method could be assessed for equivalency to an animal test method.
+1306
+1307   We encourage manufacturers to use the Q-submission Program to obtain feedback on the design
+1308   of an animal study if an animal study is warranted, and to discuss any proposed use of non-
+1309   animal test methods. Additionally, for general information and recommendations regarding
+1310   animal studies used to support medical device submissions, refer to the FDA guidance, “General
+1311   Considerations for Animal Studies Intended to Evaluate Medical Devices.”
+1312
+1313                 (2)     Clinical Data
+1314   In some cases, non-clinical evaluation does not fully characterize all clinical experience
+1315   associated with the RASD, including clinical risks and device performance (e.g., usability and
+1316   outcomes). Clinical data can be obtained from a number of sources, including clinical
+1317   performance testing (e.g., prospective clinical studies), real-world evidence (RWE), or clinical
+1318   literature. For new RASDs (i.e., have not previously received marketing authorization in the
+1319   U.S.), clinical data are often needed to support premarket submissions. For modifications to
+1320   RASDs that have previously received a marketing authorization in the U.S., clinical data may be
+1321   requested in situations such as the following:
+1322
+1323      •   new intended use or indications for use;
+1324      •   intended use in special populations, such as pediatric patients (see also FDA guidance,
+1325          “Leveraging Existing Clinical Data for Extrapolation to Pediatric Uses of Medical
+1326          Devices”);
+1327      •   different technology;
+1328      •   cases where non-clinical performance testing raise issues that warrant further evaluation
+1329          with clinical evidence; and/or
+1330      •   specific statements about device performance, such as superiority, or treatment of a
+1331          specific disease or condition.
+1332
+1333                         a)     Clinical Performance Testing
+1334   Clinical investigations of devices to determine safety and effectiveness are subject to the
+1335   Investigational Device Exemptions (IDE) regulation at 21 CFR Part 812. For such investigations,
+1336   an IDE approved under 21 CFR 812.30 or considered approved under 21 CFR 812.2(b) exempts
+1337   the device from certain requirements of the FD&C Act and the regulations issued thereunder.
+1338   Generally, FDA believes the investigational RASDs addressed by this guidance document are
+1339   significant risk devices (see 21 CFR 812.3(m)), and that such investigations would not be
+1340   eligible for the abbreviated requirements of 21 CFR Part 812.2(b). Please see the FDA guidance,
+1341   “Significant Risk and Nonsignificant Risk Medical Device Studies.” In addition to the
+1342   requirements of 21 CFR Part 812, such investigations are subject to the regulations governing
+
+
+                                                                                                      38
+                                         Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+1343   institutional review boards (21 CFR Part 56) and the protection of human subjects (21 CFR Part
+1344   50), including informed consent of human subjects (21 CFR Part 50, subpart B).
+1345
+1346   When data from clinical investigations conducted outside the U.S. are submitted to FDA to
+1347   support an IDE or a device marketing application or submission for RASDs, the requirements of
+1348   21 CFR 812.28 may apply. 10 21 CFR 812.28(a) outlines the conditions for FDA acceptance of
+1349   data from clinical investigations conducted outside the U.S. to support an IDE or a premarket
+1350   submission. For more information, see the FDA guidance, “Acceptance of Clinical Data to
+1351   Support Medical Device Applications and Submissions: Frequently Asked Questions.” To
+1352   support marketing your RASD in the U.S., it is important for the clinical data to be
+1353   representative of the intended U.S. patient population and evaluate how the RASD will be used
+1354   within a typical U.S. operating room. Sponsors should demonstrate that outside the U.S. patient
+1355   cohorts have similar demographic characteristics and comorbidities as the intended U.S. patient
+1356   populations, and outside the U.S. investigators and surgeons have similar training, experience,
+1357   and practice patterns as the targeted U.S. user groups. The clinical data should also evaluate how
+1358   different user groups interact with the RASD, including whether the training is effective to
+1359   ensure different users can competently use the system and whether previous experience, either
+1360   clinical background or familiarity with other robotic systems, can impact the different users.
+1361
+1362   If you expect that information from first-in-human or early feasibility studies could influence the
+1363   development of your device, such as refinement of your indications for use, structuring your
+1364   performance testing plan, and/or configuring your risk mitigation strategy, the FDA guidance,
+1365   “Investigational Device Exemptions (IDEs) for Early Feasibility Medical Device Clinical
+1366   Studies, Including Certain First in Human (FIH) Studies,” may be useful.
+1367
+1368   Clinical study design elements will vary depending on the device, surgical procedure(s), and
+1369   clinical risk involved. However, FDA generally recommends an evaluation of the following
+1370   surgical endpoint measures, particularly for the surgical RASD applications referenced as
+1371   umbrella and covered procedures in Appendix A. Other RASD uses, such as intravascular
+1372   procedures, may warrant different or additional endpoints:
+1373
+1374            1.   Length of Hospital Stay
+1375            2.   Intraoperative Adverse Events
+1376            3.   Transfusion Rate (Estimated blood loss)
+1377            4.   Conversion Rate
+1378            5.   Post-Operative Adverse Events (through 30 days)
+1379            6.   Readmission Rates (through 30 days)
+1380            7.   Reoperation Rates (through 30 days)
+1381            8.   Mortality
+1382            9.   Operative Time
+
+
+       10
+         21 CFR 812.28 applies to relevant clinical investigations that enroll the first subject on or after February 21, 2019,
+       and that support an IDE or a device marketing application or submission to FDA.
+
+                                                                                                                            39
+                                    Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+1383
+1384   The data used to support these procedural endpoints may come from a combination of different
+1385   sources, including clinical performance testing, RWE, and clinical literature. Study endpoints
+1386   should be analyzed alongside comparator information when it is available. Comparator
+1387   information can be from robotic, laparoscopic or open surgical procedures. When choosing a
+1388   comparator, clinical data from robotic procedures is preferred over laparoscopic or open data. If
+1389   robotic data is unavailable, laparoscopic clinical data is preferred over data from open
+1390   procedures. As noted above, while these endpoints are typically recommended for general
+1391   surgery RASD applications, the relevant endpoints for your study may vary depending on the
+1392   specific indications for use and labeled procedure(s) you intend to seek. Additional endpoints
+1393   may be requested based on unique clinical risks related to specific procedures, anatomic
+1394   locations, anticipated pathology and/or surgical specialties. Please see Table 3 below for specific
+1395   examples.
+1396
+1397   Table 3. Recommended Additional Procedural Endpoints for Clinical Evaluation of RASDs
+           Procedure                                            Additional Procedural Endpoints
+           Pancreaticoduodenectomy (Whipple)                    Pancreatic leak/fistula rate*
+           Roux-en-Y Bypass                                     Anastomotic leak rate*
+                                                                Anastomotic stricture rate*
+           Hysterectomy                                         Vaginal Cuff dehiscence**
+                                                                Vaginal Bleeding**
+           Microvascular Anastomosis Creation in Free-Flap      3-day Reoperation rate
+           Tissue Reconstruction                                Free Flap Survival rate*
+           Endoscopic Submucosal Dissection for Colorectal      Perforation rate*
+           Lesions                                              Bleeding rate* requiring conversion or
+                                                                transfusion as treatment
+           Transurethral Excision of Bladder Lesions            Rate of detrusor muscle in pathologic
+                                                                specimen
+                                                                Rate of evaluable margin in specimen
+                                                                Bladder perforation rate*
+       *
+1398   Through 30 days
+       **
+1399    Through 6 weeks
+1400
+1401   For additional information on pivotal clinical study design recommendations, refer to the FDA
+1402   guidance “Design Considerations for Pivotal Clinical Investigations for Medical Devices.”
+1403
+1404                           b)     Real-World Evidence
+1405   In some cases, “real-world data” (RWD) may be used to support regulatory decision-making for
+1406   RASDs. You should refer to the FDA guidance “Use of Real-World Evidence to Support
+1407   Regulatory Decision-Making for Medical Devices” to identify factors that FDA considers
+1408   important to demonstrate whether the RWD are relevant and reliable for a particular regulatory
+
+                                                                                                         40
+                                    Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+1409   decision relating to medical devices, as well as information on how FDA intends to assess these
+1410   factors.
+1411
+1412                          c)      Clinical Data from Literature
+1413   In some cases, clinical data from literature (e.g., literature that describes the use of your specific
+1414   device in humans) may be used to support the uses being sought for authorization in lieu of
+1415   clinical studies that you conduct under an IDE. In some cases, judicious use of clinical literature
+1416   may reduce the burden of clinical performance testing. For example, published clinical literature
+1417   can be used as a comparator for evaluating RASD performance, or to support the expansion of
+1418   the authorized uses (e.g., to add a procedure).
+1419
+1420   Supporting clinical literature should address the safety and effectiveness of the device when used
+1421   in humans. You should clearly summarize the key safety and effectiveness findings of each
+1422   source and how they support your submission. This data may include near-term, mid-term, or
+1423   long-term follow up data demonstrating the performance and outcomes associated with use of
+1424   the device. You should also report any adverse events described in the literature.
+1425
+1426   To ensure the reliability and reproducibility of any systematic literature review, you should
+1427   clearly describe your methodology for paper selection and analysis, and whether you have
+1428   adhered to any guidelines (e.g., Preferred Reporting Items for Systematic reviews and Meta-
+1429   Analyses (PRISMA)). If you select review papers or meta-analyses over original research
+1430   articles, you should provide a rationale. If other reference resources have been used, we
+1431   recommend that you include a list of these references. You should identify and explain how you
+1432   have mitigated bias in the literature. You should summarize the limitations of the research
+1433   described in the papers and how these may or may not affect your conclusions.
+1434
+1435   When leveraging clinical data from the literature, you should disclose any relationships you have
+1436   with the authors and potential conflicts of interest, including if you have financially supported
+1437   the work described in the literature or have business ties with any of the authors.
+1438
+1439                  (3)     Post-Market Clinical Data
+1440   If the totality of the premarket clinical data includes uncertainties in the characterization of the
+1441   safety and effectiveness of the RASD, such as long-term outcomes, rare adverse events, or
+1442   performance of the device in certain subgroups of patients or user populations, FDA may require
+1443   additional post-market clinical data collection. This data may consist of post-market data
+1444   collection on specific adverse events, safety events, certain surgeon groups (e.g., varying
+1445   experience), or certain patient demographics (e.g., race, sex, comorbidities) that are expected in
+1446   the intended U.S. patient population.
+1447
+
+
+
+
+                                                                                                           41
+                                    Contains Nonbinding Recommendations
+
+                                         Draft – Not for Implementation
+
+1448          R.      Labeling
+1449   A premarket notification, premarket approval application, and de novo classification request
+1450   must include proposed labeling. See 21 CFR 807.87(e); 21 CFR 814.20(b)(10); 21 CFR
+1451   860.220(a)(18). Proposed labels and labeling should describe the RASD, its intended use, and
+1452   the directions for use in sufficient detail so as to clearly facilitate safe use of the device when
+1453   used as intended.
+1454
+1455   All currently authorized RASDs are prescription devices, and thus are exempt from having
+1456   adequate directions for use under section 502(f)(1) of the FD&C Act, 21 U.S.C. § 352(f)(1), as
+1457   long as the conditions in 21 CFR 801.109 are met. For instance, 21 CFR 801.109(d) requires that
+1458   labeling that furnishes information for use of the prescription device must, among other things,
+1459   include “adequate information for such use, including indications, effects, routes, methods,
+1460   frequency and duration of administration and any relevant hazards, contraindications, side
+1461   effects, and precautions, under which practitioners licensed by law to employ the device can use
+1462   the device safely and for the purposes for which it is intended.”
+1463
+1464   The user manual or instructions for use for a RASD should include the following:
+1465
+1466      •   Consistent indications for use throughout;
+1467      •   All appropriate warnings, precautions, and contraindications;
+1468      •   Prominent emergency withdrawal procedures;
+1469      •   Information on patient selection for each RASD procedure;
+1470      •   Information on learning curve for the device’s intended use. If the umbrella and covered
+1471          procedure paradigm is being used, learning curve information should be included for the
+1472          umbrella procedure(s);
+1473      •   Information on device sterility (Refer to Section IV.L for details);
+1474      •   Instructions and recommendations for reprocessing device components (Refer to Section
+1475          IV.M for details);
+1476      •   Information on electrical safety and electromagnetic compatibility (see FDA’s guidance
+1477          “Electromagnetic Compatibility (EMC) of Medical Devices” for more details);
+1478      •   Recommendations for cybersecurity (Refer to Section IV.F for details);
+1479      •   Identifying information (e.g., manufacturer name, device name, and model number) for
+1480          all accessories and compatible devices that are for use with your RASD; and
+1481      •   Prominent display of manufacturer contact information and labeling revision number.
+1482
+1483   Your labeling should contain a summary of all in vivo evaluations performed, including any non-
+1484   clinical and clinical data. The summary should briefly describe the study protocol(s), including
+1485   the number of subjects and type of procedures performed in each study. Summaries of clinical
+1486   data (e.g., clinical studies, real world evidence, clinical literature) should include results for the
+1487   nine primary surgical endpoints, and any additional endpoints if applicable, as described in
+1488   Section IV.Q(2) Clinical performance testing.
+1489
+
+
+                                                                                                             42
+                                   Contains Nonbinding Recommendations
+
+                                        Draft – Not for Implementation
+
+1490   For recommendations on training materials and their description in the device labeling, refer to
+1491   Section IV.H Training.
+1492
+1493   To clarify that marketing authorization is limited to the execution of specific surgical procedures,
+1494   you should also include the following statement, if applicable, in your device labeling:
+1495
+1496   Outcomes related to the specific treatment of underlying disease or patient condition were not
+1497   evaluated as part of the marketing authorization for this robotically-assisted surgical device.
+1498   Clinical data for the authorization were based on evaluation of the device as a surgical system
+1499   that assists in the accurate control and performance of coordinated surgical tasks in the form of
+1500   specific surgical procedures.
+1501
+1502   RASDs are generally not safe for use in a Magnetic Resonance (MR) environment and, absent
+1503   testing demonstrating otherwise, should be labeled as “MR Unsafe.” If your RASD will be
+1504   labeled for use in an MR environment (i.e., MR Conditional), we recommend obtaining feedback
+1505   from FDA via the Q-submission Process. For additional information regarding this topic, please
+1506   refer to the FDA guidance, “Testing and Labeling Medical Devices for Safety in the Magnetic
+1507   Resonance (MR) Environment.”
+1508
+
+
+
+
+                                                                                                          43
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+1509   Appendix A. Umbrella and Covered Procedure Paradigm
+1510
+1511   The umbrella and covered procedure paradigm is intended to be a least burdensome approach for
+1512   developing the minimum amount of data necessary to support a finding that a RASD is
+1513   appropriately safe and effective for its uses.
+1514
+1515   An umbrella procedure is a surgical procedure of sufficient complexity and risk such that
+1516   performance data derived from the umbrella procedure may be leveraged to provide support for
+1517   the safe and effective use of the RASD for covered procedures. A covered procedure is a surgical
+1518   procedure in the same surgical specialty (e.g., general surgery) as the umbrella procedure, but
+1519   one that is of lesser complexity and risk than its umbrella procedure. Specifically, in vivo data
+1520   from a procedure with sufficient complexity and higher risk (i.e., umbrella procedure) often can
+1521   be leveraged to support the authorization of the device for procedures of lesser complexity and
+1522   risk (i.e., covered procedures) within the same surgical specialty without additional specific
+1523   performance data for that procedure. In general, the benefit-risk profile of the RASD for
+1524   umbrella procedures should be similar or greater than for covered procedures. Note that this
+1525   paradigm may be appropriate to support premarket submissions to add specified surgical
+1526   procedures but not for seeking marketing authorization for other changes in indications for use,
+1527   such as for the treatment of a specific disease or condition.
+1528
+1529   There is no set list of appropriate umbrella and covered procedures. However, umbrella
+1530   procedures generally contain identical or very similar procedural steps as the associated covered
+1531   procedures. Additionally, umbrella and covered procedures are generally under the same surgical
+1532   specialty as stated in the indications for use and may be performed in similar anatomic locations.
+1533   You should consider designing your performance testing strategy based on how the procedures
+1534   chosen may be representative of the device uses being sought for authorization. Illustrative
+1535   examples for how data from umbrella procedures could be leveraged to support the authorization
+1536   of the RASD for specific covered procedures are provided in the tables below and broken down
+1537   by surgical specialties. You should note these examples do not represent the only ways to apply
+1538   the umbrella and covered procedure paradigm for a given surgical specialty.
+1539
+1540   Although the provided examples of umbrella and covered procedures are based within the same
+1541   surgical specialties, in the future, there may be circumstances where one umbrella procedure may
+1542   be able to cover more than one anatomical area or surgical subspecialty (e.g., if the procedural
+1543   complexity, risks, and tasks are similar within the different anatomical areas). Additionally, a
+1544   combination of umbrella procedures and/or covered procedures within a surgical specialty or
+1545   subspecialty may be appropriate to support the marketing authorization of a RASD for an entire
+1546   surgical specialty. Examples of this are included within each specialty category in the tables
+1547   below.
+1548
+1549   The following examples are not intended to be fully representative of all possible
+1550   umbrella/covered procedures or all procedure combinations that may support marketing
+1551   authorization of a RASD for different surgical specialties. The examples also are not intended to
+1552   signify that leveraging data from these umbrella procedures to covered procedures will always be
+
+                                                                                                      44
+                                  Contains Nonbinding Recommendations
+
+                                      Draft – Not for Implementation
+
+1553   appropriate. Given the complexity of choosing umbrella and covered procedures, FDA
+1554   encourages interaction through the Q-submission process to obtain feedback regarding these
+1555   topics.
+1556
+1557   Table 4. Example Umbrella and Covered Procedures for Colorectal Surgery
+            Umbrella Procedures                      Covered Procedures
+                                                     Low anterior resection/total mesorectal
+                                                     excision (LAR/TME), Colectomy (Right,
+                                                     Left, Transverse, Total, Hemi &
+            Low anterior resection/inter-sphincteric
+                                                     Sigmoidectomy), Small Bowel Resection,
+            resection (LAR/ISR)
+                                                     Lysis of adhesions, Rectopexy,
+                                                     Abdominoperineal Resection (APR), and
+                                                     Appendectomy
+                                                     Colectomy (Right, Left, Transverse, Total,
+                                                     Hemi & Sigmoidectomy), Small Bowel
+            Low anterior resection/total
+                                                     Resection, Lysis of adhesions, Rectopexy,
+            mesorectal excision (LAR/TME)
+                                                     Abdominoperineal Resection (APR), and
+                                                     Appendectomy
+                                                     Small bowel resection, Appendectomy,
+            Right Hemicolectomy
+                                                     Lysis of adhesions
+1558
+1559
+1560   Clinical data from the combination of procedures outlined in Table 5 below might be used to
+1561   support authorization of a RASD for the colorectal subspecialty.
+1562
+1563   Table 5. Example Procedure Combination for Colorectal Subspecialty
+                                  Colorectal Subspecialty Procedures
+            Low Anterior Resection/Total Mesorectal Excision (LAR/TME)
+            Right Hemicolectomy
+1564
+1565
+1566   Table 6. Example Umbrella and Covered Procedures for Gastric Surgery
+            Umbrella Procedures                      Covered Procedures
+            Roux-en-Y Bypass (might be used to       Gastrectomy, Cholecystectomy,
+            support authorization for the gastric    Splenectomy, Gastric Sleeve, Lysis of
+            subspecialty)                            adhesions, Nissen Fundoplication, Hiatal
+                                                     Hernia repair
+            Gastrectomy                              Gastric Sleeve, Lysis of adhesions
+                                                     Splenectomy, Cholecystectomy, Lysis of
+            Nissen Fundoplication
+                                                     adhesions
+1567
+1568
+
+                                                                                                     45
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+1569   RASDs may be authorized for either ventral or inguinal hernia repair alone, or clinical data from
+1570   the combination of procedures outlined in Table 7 below might be used to support authorization
+1571   of a RASD for general hernia repair.
+1572
+1573   Table 7. Example Procedure Combination for General Hernia Use
+                                         General Hernia Procedures
+            Ventral Hernia
+            Inguinal Hernia
+1574
+1575
+1576   Clinical data from the combination of procedures outlined in Table 8 below might be used to
+1577   support authorization of a RASD for the general surgery specialty.
+1578
+1579   Table 8. Example Procedure Combination for General Surgery Specialty
+                                General Surgery Specialty Procedures
+            Roux-en-Y Gastric Bypass
+            Ventral Hernia
+            Inguinal Hernia
+            LAR/TME
+            Right Hemicolectomy
+1580
+1581
+1582   Table 9. Example Umbrella and Covered Procedures for Gynecology
+            Umbrella Procedures                   Covered Procedures
+            Radical Total Laparoscopic            Benign/radical/simple total laparoscopic
+            Hysterectomy                          hysterectomy, salpingectomy, salpingostomy,
+                                                  oophorectomy, pelvic and/or paraaortic
+                                                  lymphadenectomy, endometriosis resection,
+                                                  adnexectomy, omentectomy, parametrectomy,
+                                                  ovarian cystectomy, and lysis of adhesions,
+            Total Laparoscopic Hysterectomy       Benign/simple total laparoscopic hysterectomy,
+                                                  salpingectomy, salpingostomy, oophorectomy,
+                                                  adnexectomy, ovarian cystectomy
+            Sacrocolpopexy                        Endometriosis resection, lysis of adhesions
+1583
+1584
+1585   Table 10 below outlines an example procedure combination that might be used to support
+1586   authorization of a RASD for the gynecology specialty.
+1587
+
+
+
+
+                                                                                                      46
+                                        Contains Nonbinding Recommendations
+
+                                              Draft – Not for Implementation
+
+1588   Table 10. Example Procedure Combination for Gynecology Specialty
+                                    Gynecology Specialty Procedures
+            Radical Total Laparoscopic Hysterectomy
+            Sacrocolpopexy
+            Myomectomy*
+       *
+1589   Should reflect various sizes and locations for anticipated target populations.
+1590
+1591   Table 11. Example Umbrella and Covered Procedures for Urology
+            Umbrella Procedures                                Covered Procedures
+            Radical Prostatectomy                              Simple Prostatectomy
+                                                               Lymphadenectomy
+            Radical Cystectomy with urinary                    Partial Cystectomy
+            diversion                                          Ureteral Reimplantation
+            Partial Nephrectomy                                Donor Nephrectomy
+                                                               Adrenalectomy
+                                                               Pyeloplasty
+                                                               Cyst Removal
+1592
+1593
+1594   Table 12 below outlines an example procedure combination that might be used to support an
+1595   authorization for a RASD for the urology specialty.
+1596
+1597   Table 12. Example Procedure Combination for Urology Specialty
+                                              Urology Specialty Procedures
+           Radical Prostatectomy
+           Radical Cystectomy with Urinary Diversion
+           Partial Nephrectomy
+1598
+1599
+1600   Table 13. Example Umbrella and Covered Procedures for Thoracic Surgery
+           Umbrella Procedures                                   Covered Procedures
+           Lobectomy, Lymphadenectomy                            Wedge Resection, Segmentectomy
+
+           Esophagectomy                                         Thymectomy/Mediastinal Mass Excision
+
+1601
+1602
+1603   Table 14 below outlines an example procedure combination that might be used to support
+1604   authorization of a RASD for the thoracic specialty.
+1605
+
+                                                                                                        47
+                                  Contains Nonbinding Recommendations
+
+                                       Draft – Not for Implementation
+
+1606   Table 14. Example Procedure Combination for Thoracic Specialty
+                                  Thoracic Specialty Procedures
+           Lobectomy, Lymphadenectomy
+           Esophagectomy
+1607
+1608
+1609   Table 15. Example Umbrella and Covered Procedures for Cardiac Surgery
+           Umbrella Procedures                       Covered Procedures
+           Mitral Valve Repair                       Mitral Valve Replacement
+                                                     Patent Foramen Ovale Closure
+                                                     Atrial Septal Defect Repair
+                                                     Left Atrial Appendage Closure/Occlusion
+                                                     Atrial Myxoma Excision
+                                                     Tricuspid Valve Repair
+                                                     Epicardial Pacing Lead Placement
+           Totally Endoscopic Coronary Artery        Internal Mammary Artery Mobilization for
+           Bypass Surgery                            Cardiac Revascularization
+1610
+1611
+1612   Table 16 below outlines an example procedure combination that might be used to support the
+1613   authorization of a RASD for thoracoscopically-assisted cardiac surgery. An alternative to totally
+1614   endoscopic coronary artery bypass surgery, minimally invasive coronary revascularization
+1615   procedures combined with mitral valve repair might be used to support the authorization of a
+1616   RASD for thoracoscopically-assisted cardiac surgery in certain circumstances.
+1617
+1618   Table 16. Example Procedure Combinations for Thoracoscopically-Assisted Cardiac Surgery
+                            Thoracoscopically-Assisted Cardiac Procedures
+           Mitral Valve Repair
+           Totally Endoscopic Coronary Artery Bypass Surgery
+1619
+
+
+
+
+                                                                                                      48
+                                         Contains Nonbinding Recommendations
+
+                                               Draft – Not for Implementation
+
+1620   Appendix B. 510(k) Summary (for 510(k)s only)
+1621
+1622   Significance: The 510(k) Summary is a public document that summarizes the basis for a
+1623   determination of SE (see 21 CFR 807.92(a)). As noted in the FDA guidance, “The 510(k)
+1624   Program: Evaluating Substantial Equivalence in Premarket Notifications [510(k)],” in an effort
+1625   to improve the transparency and predictability of the 510(k) program and to ensure that the
+1626   510(k) Summary reflects the information provided in a 510(k) submission to support a SE
+1627   determination, FDA intends to verify the accuracy and completeness of the information included
+1628   in a 510(k) Summary.
+1629
+1630   Recommendation: We recommend that you include a complete 510(k) Summary for review in
+1631   your premarket notification. Since RASDs are complex devices, it is important to list all major
+1632   technological features in the 510(k) Summary. 11 This may include a table similar to Table 1 in
+1633   Section IV.B of this guidance document. It is of equal importance to clearly and accurately
+1634   summarize all performance testing conducted, 12 including:
+1635       • A list of each bench performance testing performed
+1636               o A list of each consensus standard to which the device conforms, when a
+1637                    Declaration of Conformity is used,
+1638       • A summary of human factors validation studies performed
+1639       • Cybersecurity information in accordance with section 524B of the FD&C Act and the
+1640           FDA guidance, “Cybersecurity in Medical Devices: Quality Management System
+1641           Considerations and Content of Premarket Submissions.”
+1642       • A summary of any in vivo non-clinical studies performed, which includes a summary of
+1643           the study protocol(s), an evaluation of the primary and secondary endpoints, and the
+1644           gross necropsy and histopathology results.
+1645       • For any in vivo clinical evaluation performed, a summary of the study protocol(s) and
+1646           state if the evaluation included clinical performance testing, clinical literature, and/or
+1647           real-world evidence. The summary should include the number and type of subjects and
+1648           procedures performed in each study. The summary should include results for the nine
+1649           primary surgical endpoints described in Section IV.Q(2) Clinical Data.
+1650
+1651   Please see Appendix C in the FDA guidance, “The 510(k) Program: Evaluating Substantial
+1652   Equivalence in Premarket Notifications [510(k)],” for an example of a 510(k) Summary
+1653   compliant with 21 CFR 807.92.
+
+
+
+
+       11
+            See 21 CFR 807.92(a)(4) and (6).
+       12
+            See 21 CFR 807.92(b)
+                                                                                                       49
+                                 Contains Nonbinding Recommendations
+
+                                     Draft – Not for Implementation
+
+       Guidance History*             Date              Description
+
+       Level 1 Draft Guidance        September 2026    See Notice of Availability for more
+                                                       information.**
+
+1654   *This table was implemented, beginning September 2026 and previous guidance history may not
+1655   be captured in totality.
+1656   **The Notice of Availability is accessible via the Search for FDA Guidance Documents
+1657   webpage.
+
+
+
+
+                                                                                                50
+

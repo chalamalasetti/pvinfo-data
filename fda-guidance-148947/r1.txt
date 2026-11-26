@@ -1,0 +1,784 @@
+  ICH Q12: Implementation
+     Considerations for
+   FDA-Regulated Products
+                    Guidance for Industry
+
+
+                              DRAFT GUIDANCE
+       This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (CDER) Ashley Boam 301-796-6341,
+(CBER) Office of Communication, Outreach and Development, 800-835-4709 or 240-402-8010,
+or (CDRH) CDRH product jurisdiction officer at CDRHProductJurisdiction@fda.hhs.gov.
+
+
+
+
+                     U.S. Department of Health and Human Services
+                              Food and Drug Administration
+                   Center for Drug Evaluation and Research (CDER)
+                  Center for Biologics Evaluation and Research (CBER)
+                   Center for Devices and Radiological Health (CDRH)
+                          Office of Combination Products (OCP)
+
+                                       May 2021
+                               Pharmaceutical Quality/CMC
+  ICH Q12: Implementation
+     Considerations for
+   FDA-Regulated Products
+                         Guidance for Industry
+                                       Additional copies are available from:
+                             Office of Communications, Division of Drug Information
+                                     Center for Drug Evaluation and Research
+                                          Food and Drug Administration
+                              10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                          Silver Spring, MD 20993-0002
+                            Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                          Email: druginfo@fda.hhs.gov
+                  https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+                                                        and/or
+                                Office of Communication, Outreach and Development
+                                    Center for Biologics Evaluation and Research
+                                            Food and Drug Administration
+                                 10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                            Silver Spring, MD 20993-0002
+                                       Phone: 800-835-4709 or 240-402-8010
+                                               Email: ocod@fda.hhs.gov
+  https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+                                                       and/or
+                                                  Office of Policy
+                                    Center for Devices and Radiological Health
+                                          Food and Drug Administration
+                                  10903 New Hampshire Ave., Bldg. 66, Room 5431
+                                          Silver Spring, MD 20993-0002
+                                       Email: CDRH-Guidance@fda.hhs.gov
+https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/guidance-documents-medical-devices-
+                                              and-radiation-emitting-products
+
+                           U.S. Department of Health and Human Services
+                                    Food and Drug Administration
+                          Center for Drug Evaluation and Research (CDER)
+                        Center for Biologics Evaluation and Research (CBER)
+                         Center for Devices and Radiological Health (CDRH)
+                                Office of Combination Products (OCP)
+
+                                                May 2021
+                                        Pharmaceutical Quality/CMC
+                                                Contains Nonbinding Recommendations
+                                                            Draft — Not for Implementation
+                                                            TABLE OF CONTENTS
+
+
+
+I.             INTRODUCTION............................................................................................................. 1
+II.            CONSIDERATIONS FOR IMPLEMENTATION ....................................................... 2
+     A.        Introduction .................................................................................................................................... 2
+     B.        Categorization of Postapproval CMC Changes .......................................................................... 2
+     C.        Established Conditions .................................................................................................................. 2
+           1. Submission of ECs ........................................................................................................................... 3
+           2. Identification of ECs ........................................................................................................................ 4
+           3. Identification of ECs for a Drug Substance or Drug Product in a Drug Master File ..................... 5
+           4. Identification of ECs for Device Constituent Parts of Combination Products ................................ 6
+           5. Changes to Approved ECs ............................................................................................................... 7
+           6. Postapproval Submissions in Accordance With Approved ECs ...................................................... 7
+           7. Maintenance of the Application ....................................................................................................... 7
+     D.        Postapproval Change Management Protocol .............................................................................. 8
+      E.       Product Lifecycle Management Document.................................................................................. 8
+      F.       Pharmaceutical Quality System and Change Management ....................................................... 9
+      G.       Relationship Between Regulatory Assessment and Inspection .................................................. 9
+      H. Structured Approaches for Frequent CMC Postapproval Changes and Stability Data
+      Approaches To Support the Evaluation of CMC Changes ............................................................... 10
+APPENDIX A. ESTABLISHED CONDITIONS FOR COMBINATION PRODUCTS
+WITH DEVICE CONSTITUENT PARTS .............................................................................. 11
+APPENDIX B. DECISION TREE FOR IDENTIFYING ESTABLISHED CONDITIONS
+AND REPORTING CATEGORIES FOR DEVICE CONSTITUENT PARTS ................... 12
+APPENDIX C. PRODUCT LIFECYCLE MANAGEMENT DOCUMENT EXAMPLE ... 13
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+ 1                     ICH Q12: Implementation Considerations for
+ 2                             FDA-Regulated Products
+ 3                               Guidance for Industry1
+ 4
+ 5
+ 6   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 7   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+ 8   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+ 9   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+10   for this guidance as listed on the title page.
+11
+12
+13
+14
+15   I.      INTRODUCTION
+16
+17   The International Council for Harmonisation (ICH) guidance for industry Q12 Technical and
+18   Regulatory Considerations for Pharmaceutical Product Lifecycle Management and its Annexes
+19   (ICH Q12, May 2021) provide a framework to facilitate the management of postapproval
+20   chemistry, manufacturing, and controls (CMC) changes in a more predictable and efficient
+21   manner. 2 ICH Q12 includes regulatory tools and enablers with associated guiding principles that
+22   should enhance industry’s ability to manage postapproval changes and increase transparency
+23   between industry and regulatory authorities, supporting innovation and continual improvement.
+24
+25   This guidance should be read in conjunction with ICH Q12, which this guidance complements
+26   by clarifying how the ICH Q12 tools and enablers can be implemented within the U.S. regulatory
+27   system. These guidances apply to drug substances and drug products 3 that are the subject of new
+28   drug applications (NDAs), biologics license applications (BLAs), abbreviated new drug
+29   applications (ANDAs), and supplements to these applications regulated by the Center for Drug
+30   Evaluation and Research (CDER) and the Center for Biologics Evaluation and Research
+31   (CBER). They also apply to combination products 4 with device constituent parts that are the
+32   subject of NDAs, BLAs, ANDAs, and supplements to these applications regulated by CDER and
+33   CBER.
+34
+35   The contents of this document do not have the force and effect of law and are not meant to bind
+36   the public in any way, unless specifically incorporated into a contract. This document is intended
+
+     1
+       This guidance has been prepared by the Office of Pharmaceutical Quality in the Center for Drug Evaluation and
+     Research in cooperation with the Center for Biologics Evaluation and Research, Center for Devices and
+     Radiological Health, and Office of Combination Products at the Food and Drug Administration.
+     2
+       We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page at
+     https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+     3
+       For the purposes of this guidance, drug substance and drug product include biological drug substances and drug
+     products.
+     4
+       See 21 CFR 3.2(e).
+
+
+
+                                                             1
+                                     Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+37   only to provide clarity to the public regarding existing requirements under the law. FDA
+38   guidance documents, including this guidance, should be viewed only as recommendations, unless
+39   specific regulatory or statutory requirements are cited. The use of the word should in Agency
+40   guidances means that something is suggested or recommended, but not required.
+41
+42
+43   II.     CONSIDERATIONS FOR IMPLEMENTATION
+44
+45   The considerations below follow the order of the sections in ICH Q12 and are specific to FDA’s
+46   implementation.
+47
+48           A.       Introduction
+49
+50   As stated above, ICH Q12 and this guidance apply to drug substances and drug products that are
+51   the subject of NDAs, BLAs, ANDAs, and supplements to these applications regulated by CDER
+52   and CBER. They also apply to combination products with device constituent parts that are the
+53   subject of NDAs, BLAs, ANDAs, and supplements to these applications regulated by CDER and
+54   CBER.
+55
+56           B.       Categorization of Postapproval CMC Changes
+57
+58   ICH Q12 describes two categories for regulatory communications: prior approval and
+59   notification. In the U.S. regulatory system, prior approval means a prior approval supplement
+60   (PAS), notification moderate means a changes being effected-30 (CBE-30) supplement, and
+61   notification low means a CBE-0 supplement or annual report. 5 As indicated in ICH Q12, the
+62   lowest risk changes are managed and documented within the pharmaceutical quality system
+63   (PQS) and do not need to be reported, but they may be verified during a surveillance or other
+64   inspection.
+65
+66           C.       Established Conditions
+67
+68   ICH Q12 defines established conditions (ECs) as legally binding information considered
+69   necessary to assure product quality. As a consequence, any change to ECs necessitates a
+70   submission to the regulatory authority. This is consistent with FDA’s regulations at 21 CFR
+71   314.70(a)(1)(i), 314.97(a), and 601.12(a)(1). Although these regulations do not explicitly specify
+72   what constitutes an EC, they do set forth a risk-based paradigm for reporting changes. In
+73   addition, existing FDA guidance documents describe a broad set of postapproval changes and
+74   make recommendations for how they should be reported. 6 The risk-based paradigm set forth in
+75   the regulations and the recommendations in these associated guidance documents can help
+
+     5
+       See 21 CFR 314.70, 314.97, and 601.12.
+     6
+       See, e.g., FDA’s Scale-Up and Postapproval Changes (SUPAC) guidances and the guidances for industry Changes
+     to an Approved Application for Specified Biotechnology and Specified Synthetic Biological Products (July 1997),
+     Changes to an Approved NDA or ANDA (April 2004), and CMC Postapproval Manufacturing Changes To Be
+     Documented in Annual Reports (March 2014). Insofar as a guidance adjusts reporting categories pursuant to section
+     506A of the Federal Food, Drug, and Cosmetic Act (FD&C Act) and 21 CFR 314.70 and 601.12, these adjustments
+     do establish legally enforceable responsibilities and are not only recommendations.
+
+
+
+                                                             2
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+ 76   applicants determine which elements of an application that FDA would typically consider to be
+ 77   ECs. ICH Q12 further helps applicants gain clarity around which elements of the product,
+ 78   manufacturing process, facilities and equipment, and control strategy in their applications are
+ 79   considered to be ECs and therefore require reporting if changed.
+ 80
+ 81   Proposing elements to be considered ECs that may differ from those FDA typically considers to
+ 82   be ECs based on the risk-based paradigm set forth in the regulations and the recommendations
+ 83   contained in guidance is voluntary. Applicants may propose ECs in their original applications or
+ 84   in a PAS. 7 If specific ECs are not proposed, ECs would be those that FDA typically considers to
+ 85   be ECs based on the risk-based paradigm set forth in the regulations and the recommendations
+ 86   contained in guidance regarding postapproval changes.
+ 87
+ 88   Applicants may also propose reporting categories for changes to ECs. The reporting categories
+ 89   proposed may be consistent with the risk-based paradigm set forth in the regulations and the
+ 90   recommendations contained in guidance. Alternatively, an increased understanding of the risk to
+ 91   product quality posed by a change to an EC may support a proposal for reduced reporting
+ 92   categories.
+ 93
+ 94            1.       Submission of ECs
+ 95
+ 96   To ensure clarity regarding ECs when submitting an original NDA, BLA, or ANDA, applicants
+ 97   should:
+ 98
+ 99       •    Include one of the following statements in the cover letter:
+100
+101            o Specific ECs are proposed.
+102
+103            o Specific ECs are not proposed; postapproval changes will follow the regulations and
+104              the recommendations in guidance. 8
+105
+106       •    Include one of the following statements in eCTD section 3.2.R of the application 9:
+107
+108            o Specific ECs are proposed. Specific reporting categories for changes to those ECs are
+109              not proposed and therefore will follow the regulations and the recommendations in
+110              guidance.
+
+      7
+        Plans to include specific ECs in an original application or PAS are an appropriate topic for presubmission meetings
+      with FDA, if available.
+      8
+        In this guidance, FDA recommends as an option that the applicant state that it intends to follow both the
+      regulations and the recommendations in guidance. In most cases, an applicant could choose to follow the regulations
+      while taking a different approach than recommended in guidance and explain how its deviations from the guidance
+      would satisfy the applicable legal requirements. However, if a guidance adjusts reporting categories pursuant to
+      section 506A of the FD&C Act and 21 CFR 314.70 and 601.12, these adjustments do establish legally enforceable
+      responsibilities and are not only recommendations.
+      9
+        eCTD=electronic common technical document, the standard format for submitting applications, supplements, and
+      other information to FDA. For more information, see https://www.fda.gov/drugs/electronic-regulatory-submission-
+      and-review/electronic-common-technical-document-ectd.
+
+
+
+                                                               3
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+111
+112          o Specific ECs are proposed. Specific reporting categories for changes to those ECs are
+113            proposed.
+114
+115          o Specific ECs are not proposed; postapproval changes will follow the regulations and
+116            the recommendations in guidance.
+117
+118   When proposing ECs in a PAS, applicants should:
+119
+120      •   State in the cover letter that ECs are proposed.
+121
+122      •   Include one of the following statements in eCTD section 3.2.R:
+123
+124          o Specific ECs are proposed. Specific reporting categories for changes to those ECs are
+125            not proposed and therefore will follow the regulations and the recommendations in
+126            guidance.
+127
+128          o Specific ECs are proposed. Specific reporting categories for changes to those ECs are
+129            proposed.
+130
+131   If applicants choose to propose specific ECs, they can propose them for the entire CMC section
+132   of the application (module 3: Quality) or for a subset of information provided in module 3 (e.g.,
+133   for eCTD section 3.2.S or for eCTD section 3.2.P.3.3). If a limited set of ECs is proposed, such
+134   as for an individual unit operation in the manufacturing process, the applicant should list for the
+135   applicable eCTD sections all of the ECs for that unit operation. Additionally, the applicant
+136   should include a statement that, for the appropriate eCTD sections, changes to those unit
+137   operations for which ECs are not proposed will be reported according to the regulations and the
+138   recommendations in guidance.
+139
+140   A complete list of proposed ECs, their reporting categories (if proposed), and the eCTD locations
+141   for their scientific justification should be included in the Product Lifecycle Management (PLCM)
+142   document in eCTD section 3.2.R. See section II.E in this guidance for more information about
+143   the PLCM document. See section II.C.2 for information about the justification for proposed ECs,
+144   including where such justifications should reside in the application.
+145
+146          2.      Identification of ECs
+147
+148   When proposing specific ECs, applicants should include a scientific justification for their
+149   selection in the relevant parts of module 3 of the application. In this justification, applicants
+150   should address both the identification of particular parameters or attributes as ECs and the
+151   proposed reporting categories (if applicable).
+152
+153                  a.      Parameters and attributes identified as ECs
+154
+155   In the justification, applicants should explain how they identified the parameters or attributes that
+156   are proposed to be ECs and why others that might typically be considered to be ECs (considering
+
+
+
+                                                         4
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+157   the regulations and the recommendations in guidance as described above) were not. For example,
+158   in a manufacturing unit operation for which three of five process parameters are proposed to be
+159   ECs (in a parameter-based approach), the applicant should explain how the three parameters
+160   were identified as being ECs and why the other two were not. A description of the applicant’s
+161   risk assessment process (including tools) used to identify particular parameters or attributes as
+162   ECs, the criticality assessment conducted to determine the level of impact of each parameter on
+163   product quality, and the supporting information for each (e.g., fundamental knowledge, empirical
+164   investigation, prior knowledge from experience with other products, commercial experience)
+165   should be provided. See also sections 3.2.3.1 “Identification of ECs for Manufacturing
+166   Processes” and 3.2.3.2 “Identification of ECs for Analytical Procedures” in ICH Q12. Applicants
+167   should not propose to manage attributes as ECs if changes to those attributes would require
+168   submission of a new original application (e.g., change in dosage form for an NDA).
+169
+170   For parameters or attributes identified as ECs that have associated acceptable ranges, applicants
+171   should include a justification for the proposed ranges.
+172
+173                     b.       Reporting categories
+174
+175   For each proposed EC, the applicant may identify a proposed reporting category: PAS, CBE-30,
+176   CBE-0, or annual report. If this reporting category differs from that recommended in existing
+177   guidance, the applicant should provide a justification in the relevant section of module 3. This
+178   justification can be part of or complementary to the justification provided to support
+179   identification of the EC. If the applicant chooses not to propose reporting categories, the
+180   applicant should include a statement that reporting categories for changes to those ECs will
+181   follow the regulations and the recommendations in guidance.
+182
+183            3.       Identification of ECs for a Drug Substance or Drug Product in a Drug Master
+184                     File
+185
+186   If information about the drug substance or drug product is incorporated in an application by
+187   reference to a Type II drug master file (DMF), 10 ECs associated with that drug substance or drug
+188   product can be proposed, but they should only be proposed as part of the application. 11 In such
+189   cases, the DMF holder will need to share sufficient information with the applicant 12 so that
+190   proposed ECs and their associated reporting categories can be specified in and approved as part
+191   of the application. The justification in support of the identification of ECs can be located in the
+192   DMF, as long as the application refers to the specific location of the justification in the DMF.
+193   The applicant should provide a justification for proposed reporting categories in the application
+194   because the justification will generally be specific to the final drug product and its conditions of
+195   approval (e.g., dosing, route of administration) rather than generalizable across different products
+
+      10
+         FDA has proposed rulemaking to codify the expectation that BLA applicants submit drug substance, drug
+      substance intermediate, and drug product information directly to the BLA rather than incorporating it by reference to
+      a master file. See 84 FR 30968.
+      11
+         The same approach applies to information incorporated by reference from other types of DMFs (e.g., Types III,
+      IV, or V, where applicable).
+      12
+         See guidance for industry Contract Manufacturing Arrangements for Drugs: Quality Agreements (November
+      2016).
+
+
+
+                                                               5
+                                    Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+196   incorporating the same drug substance or drug product. When ECs are approved for an
+197   application that incorporates by reference information from a DMF, the applicant maintains
+198   responsibility for reporting changes to ECs; however, the applicant should share the relevant
+199   approved ECs with the DMF holder to ensure that the DMF holder is aware of how changes to
+200   the referenced drug substance or drug product will be managed by the applicant.
+201
+202           4.      Identification of ECs for Device Constituent Parts of Combination Products
+203
+204   Applicants may propose ECs for the device constituent part of a combination product in an
+205   NDA, BLA, or ANDA. The combination product as a whole, including the roles and interactions
+206   of the constituent parts, should be considered in proposing ECs and reporting categories for the
+207   product, including in relation to each constituent part. The focus of this section is identifying
+208   ECs for device constituent parts in particular. One approach is to assess the “characteristics of
+209   the product that are essential for its safe and proper use” 13 (primary characteristics) relating to
+210   the device constituent part and to identify the associated ECs. The primary characteristics for the
+211   device constituent part of a combination product generally include:
+212
+213       •   Functions essential for safe use based on risk management principles (see, e.g., ICH
+214           guidance for industry Q9 Quality Risk Management (June 2006); ISO 14971:2019,
+215           Medical devices—Application of risk management to medical devices).
+216
+217       •   Design features essential to achieve delivery of the labeled dose to a specific body site
+218           (e.g., for a device constituent part that provides drug delivery).
+219
+220       •   Characteristics that impact the drug constituent part’s critical quality attributes.
+221
+222   Applicants should consider the following as potential ECs:
+223
+224       •   Design features that are primary characteristics.
+225
+226       •   Manufacturing process elements for the device constituent part that need to be controlled
+227           to ensure a primary characteristic.
+228
+229       •   Other control strategy elements for the device constituent part that ensure a primary
+230           characteristic.
+231
+232   See appendix A for a description of elements that are generally considered to be ECs for device
+233   constituent parts. As with identifying ECs for drug constituent parts, whether it may be
+234   appropriate to propose ECs for device constituent parts or a lesser reporting category for them
+235   will vary based on extent of product and process understanding, knowledge gained from design
+236   and development to manage the risks, and evidence to support designation and justification of
+237   the primary characteristics. Similarly, the level of risk associated with a change to an EC will
+
+      13
+         See ISO 13485:2016, Medical devices—Quality management systems—Requirements for regulatory purposes,
+      Section 7.3.4 Product realization—Design and development—Design and development outputs. ISO=International
+      Organization for Standardization.
+
+
+
+                                                           6
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+238   determine the appropriate reporting category for that change. See appendix B for an approach
+239   that can be followed for device constituent parts when identifying ECs and their associated
+240   reporting categories.
+241
+242          5.      Changes to Approved ECs
+243
+244   As indicated in ICH Q12, applicants may propose to add, eliminate, or make changes to
+245   approved ECs or revisions to their associated reporting categories through:
+246
+247      •   Submission of a supplement.
+248
+249          o Addition of an EC that provides increased assurance of the quality of the drug
+250            substance or product with a reporting category provided for in the regulations or
+251            recommended in guidance should be submitted as a CBE-0 (see § 314.70(c)(6)).
+252
+253          o All other changes should be submitted as a PAS.
+254
+255      •   Submission of a postapproval change management protocol (PACMP; see section II.D in
+256          this guidance).
+257
+258      •   Fulfillment of a previously approved postapproval commitment submitted in a
+259          supplement or annual report. For example, this may be done if an EC was approved with
+260          an allowance for a modification pending the availability—and submission, where
+261          specified—of certain information.
+262
+263          6.      Postapproval Submissions in Accordance With Approved ECs
+264
+265   When submitting postapproval supplements and annual reports to report CMC changes in
+266   accordance with approved ECs, applicants should state in the cover letter that the submission
+267   contains changes made in accordance with previously approved ECs. These submissions should
+268   also include an updated PLCM (see section II.E in this guidance).
+269
+270          7.      Maintenance of the Application
+271
+272   As indicated in ICH Q12, maintenance of the application is subject to regional requirements. To
+273   ensure that FDA has access to up-to-date analytical procedures, applicants should include in the
+274   annual report a copy of all analytical procedures that have been appropriately modified during
+275   the reporting period without a submission (i.e., managed only through the PQS as changes did
+276   not relate to ECs). This information is intended to be for information only and typically is not
+277   subject to review unless it is determined that changes to ECs for the procedure were in fact made.
+278   Applicants should include this information in eCTD section 1.13.5 or 1.13.7 with a statement
+279   such as “For information only: Changes made to analytical methods, including those not
+280   requiring submission.”
+281
+
+
+
+
+                                                       7
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+282            D.       Postapproval Change Management Protocol
+283
+284   In the U.S. regulatory system, PACMPs are referred to as comparability protocols and are
+285   voluntary. These protocols differ from the use of ECs in one important respect. Both
+286   comparability protocols and the use of ECs address the element to be reported if changed and the
+287   reporting mechanism, but a comparability protocol requires the tests and studies to support a
+288   future change to an EC to be specified at the time of the protocol submission (21 CFR
+289   314.70(e)).
+290
+291   FDA recommends that comparability protocols be submitted in eCTD section 3.2.R. For a
+292   comparability protocol that includes one or more changes that apply to more than one product,
+293   see draft guidance for industry Comparability Protocols for Human Drugs and Biologics:
+294   Chemistry, Manufacturing, and Controls Information (April 2016) 14 for information on the
+295   appropriate content and format of the submission and the circumstances in which a comparability
+296   protocol might be useful.
+297
+298            E.       Product Lifecycle Management Document
+299
+300   As described in ICH Q12, the PLCM document should include proposed ECs, reporting
+301   categories for making changes to approved ECs, a list of comparability protocols (if submitted),
+302   and postapproval CMC commitments, if applicable. FDA recommends that the PLCM document
+303   be provided in tabular format in eCTD section 3.2.R, with specific references to the submission
+304   sequence, eCTD section number, and page number where each EC’s scientific justification can
+305   be found. FDA further recommends that the PLCM indicate the manufacturing sites (preferably
+306   by facility establishment identifier (FEI) number) where an EC will be implemented. 15 For
+307   example, if there are two drug product manufacturing sites named in the application, but the
+308   manufacturing process-related ECs will only be associated with the manufacturing at one of
+309   those two sites, the FEI number of this site should be specified in the PLCM for those process-
+310   related ECs. It is then assumed that ECs for operations at the other facility will follow the
+311   regulations and the recommendations in guidance. If the ECs will be implemented at both sites,
+312   both FEI numbers should be listed. Applicants should attribute FEIs to ECs in the PLCM at the
+313   most inclusive level (e.g., one FEI listed at the beginning of 3.2.P if all subsequent ECs in the
+314   section are associated with one drug product facility). See appendix C in this guidance for an
+315   example of a PLCM document.
+316
+317   Applicants should provide an updated PLCM document with each supplement or annual report
+318   that reports changes to approved ECs. If no specific ECs are proposed, submission of a PLCM
+319   document is not necessary.
+320
+
+
+
+
+      14
+         More specifically, see the appendix, section A, question 6. When final, this guidance will represent FDA’s current
+      thinking on this topic.
+      15
+         Such facilities may include facilities responsible for design control for a combination product. See guidance for
+      industry Current Good Manufacturing Practice Requirements for Combination Products (January 2017).
+
+
+
+                                                                8
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+321            F.      Pharmaceutical Quality System and Change Management
+322
+323   As indicated in ICH Q12, in addition to compliance with current good manufacturing practice
+324   (CGMP) requirements, 16 an effective PQS is necessary to support the use of the tools in that
+325   guidance. However, also as noted in that guidance, FDA will not require a specific inspection
+326   before an applicant can make use of the principles in the guidance. FDA’s assessment of the
+327   effectiveness of the PQS will generally be informed by routine inspections conducted by FDA
+328   and capable foreign regulators 17 and other available information. Management should employ
+329   the principles of ICH guidance for industry Q10 Pharmaceutical Quality System (April 2009) to
+330   ensure the continued capability of the PQS to support the management of ECs.
+331
+332   Because of the importance of the PQS in supporting the use of ICH Q12 tools, when an applicant
+333   proposes to introduce a new manufacturing site after approval, the applicant should not assume
+334   that the initially approved ECs will apply. Instead, if ECs are proposed, applicants should include
+335   the following in supplements that propose a new site:
+336
+337        •   Reassessment of the relevant ECs.
+338
+339        •   Justification for proposed changes to ECs as a result of this reassessment in the relevant
+340            parts of module 3 of the application.
+341
+342   FDA will also consider information included in a supplement that supports a determination that
+343   the new site deserves the same level of regulatory flexibility regarding postapproval changes as
+344   the site included in the original application. The determination of PQS capability will consider
+345   factors such as whether the new site is operated under the same PQS as the original; the state of
+346   regulatory compliance determined by FDA and other national drug regulatory authorities;
+347   conformance with ICH Q10, especially as concerns change management practices; and
+348   conformance with other applicable change management regulations and policies.
+349
+350   As indicated in ICH Q12, inspection observations that raise concern regarding the effectiveness
+351   of the PQS, and change management in particular, may lead to a need to modify previously
+352   approved ECs, reporting categories, or comparability protocols until such time as the PQS
+353   effectiveness has returned to an acceptable state. In these cases, FDA intends to communicate the
+354   impact of such findings on previously approved ECs, reporting categories, and comparability
+355   protocols with facilities and applicants, as appropriate.
+356
+357            G.      Relationship Between Regulatory Assessment and Inspection
+358
+359   The use of ICH Q12 tools, such as ECs, is not expected to change FDA’s processes for how
+360   information is assessed as part of the application or from a facility inspection. Similarly, it does
+
+
+
+      16
+         See section 510(a)(2)(B) of the FD&C Act; 21 CFR parts 4, 210, 211, and 600; and guidance for industry Current
+      Good Manufacturing Practice Requirements for Combination Products.
+      17
+         Capability determinations are made in accordance with section 809 of the FD&C Act; see also
+      https://www.fda.gov/international-programs/international-arrangements/mutual-recognition-agreement-mra.
+
+
+
+                                                              9
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+361   not change the expectations regarding the type of information to be submitted in an application
+362   or the information that is to be available for an inspection.
+363
+364          H.      Structured Approaches for Frequent CMC Postapproval Changes and
+365                  Stability Data Approaches To Support the Evaluation of CMC Changes
+366
+367   Sections VIII and IX of ICH Q12 and section II of the ICH Q12 Annexes provide alternative
+368   approaches for certain CMC postapproval changes. FDA supports the use of such approaches.
+369   FDA also encourages applicants to gain its feedback before proposing or implementing novel
+370   approaches.
+
+
+
+
+                                                      10
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+371   APPENDIX A. ESTABLISHED CONDITIONS FOR COMBINATION PRODUCTS
+372   WITH DEVICE CONSTITUENT PARTS
+373
+374   The combination product as a whole, including the roles and interactions of the constituent parts,
+375   should be considered in proposing established conditions (ECs) and reporting categories for the
+376   product, including in relation to each constituent part. This appendix provides general guidance
+377   about the elements that are generally considered ECs for the device constituent part of
+378   combination products. 1 It does not contain a complete list of ECs for a device constituent part;
+379   each application should include a justification for the identification of proposed ECs.
+380
+381   The following are generally considered ECs for the device constituent part of combination
+382   products:
+383
+384       •   Identification of the device: If purchased from a third party, manufacturer identifiers for
+385           the device (e.g., brand name); references to device clearance or approval (if applicable).
+386
+387       •   Description and design features: Device description; principle (e.g., mechanical,
+388           electrical) and mechanism (e.g., spray, mixing) of operation for delivery of the drug
+389           product; design features that are primary characteristics; materials of construction in
+390           direct or indirect contact with the drug product and patient.
+391
+392       •   Manufacturers: Name, address, and responsibilities for sites that perform assembly,
+393           packaging, and testing of the device constituent part.
+394
+395       •   Manufacturing (e.g., assembly): Unit operations and sequence in the manufacturing
+396           process; manufacturing process parameters, material attributes, and in-process controls,
+397           where variability impacts primary characteristics.
+398
+399       •   Release/expiry specification and associated test methods for attributes that ensure
+400           primary characteristics.
+
+
+
+
+      1
+       Similar to appendix 1 in International Council for Harmonisation guidance for industry Q12 Technical and
+      Regulatory Considerations for Pharmaceutical Product Lifecycle Management (May 2021).
+
+
+
+                                                             11
+                                    Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+401   APPENDIX B. DECISION TREE FOR IDENTIFYING ESTABLISHED CONDITIONS
+402   AND REPORTING CATEGORIES FOR DEVICE CONSTITUENT PARTS
+403
+404   The decision tree below can be used to guide the identification of established conditions and
+405   associated reporting categories for the device constituent part of a combination product.
+                             Answer these questions about the characteristic:
+                             • Is it essential for safe use based on risk management?*
+                             • Is it essential to achieve delivery of the labeled dose?
+                             • Does it impact the drug product’s CQA?
+
+                                       “Yes” to any                      “No” to all
+
+
+                       Primary characteristic:                                    Other characteristic:
+                        Essential for safe and                                      Not essential for
+                            proper use**                                           safe and proper use
+
+
+            Define the design, process, and control strategy
+                        elements that are ECs
+
+
+                           Manufacturing                                                Elements of
+                               process         Other control                              design,
+             Design
+                            elements that         strategy                              process, and
+          features that
+                              need to be       elements that                            controls for
+          are primary
+                            controlled to     ensure primary                                other
+         characteristics
+                           ensure primary     characteristics                          characteristics
+                           characteristics                                              are not ECs
+
+
+
+            What is the level of potential risk associated
+                     with the proposed change?
+
+
+               High                          Moderate to Low
+
+
+
+                 PAS                   CBE-30 or CBE-0                                 Not Reported
+           *As determined using risk management principles in ICH guidance for industry Q9 Quality Risk
+           Management (June 2006) or ISO 14971:2019, Medical devices—Application of risk management to
+           medical devices.
+           **See ISO 13485:2016, Medical devices—Quality management systems—Requirements for
+           regulatory purposes, Section 7.3.4 Product realization—Design and development—Design and
+           development outputs.
+           Note: CQA=critical quality attribute; EC=established condition; PAS=prior approval supplement;
+           CBE=changes being effected; ICH=International Council for Harmonisation; ISO=International
+           Organization for Standardization.
+406
+                                                             12
+                                     Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+407   APPENDIX C. PRODUCT LIFECYCLE MANAGEMENT DOCUMENT EXAMPLE
+408
+409   In this example, 1 where the applicant proposes to follow FDA regulations and the
+410   recommendations in guidance for a change to a particular established condition, the reporting
+411   category has been left blank.
+412
+          eCTD Section       Established Conditions                                                 Reporting
+                                                                                                  Category When
+                             (Note that identification and justification of each EC is            Making a Change
+                             presented in the relevant eCTD section)                                 to the EC
+                             The ECs below are to be implemented at the following sites:
+                             FEI xxxxxx
+                             FEI yyyyyy
+
+      Seq 0001, 3.2.P.3.3,   The manufacturing process consists of the following                         PAS
+             p. 4            sequence of unit operations:
+                             1. Powder blending
+                             2. Roller compaction
+                             3. Tablet compression
+                             4. Film coating
+
+      Seq 0001, 3.2.P.3.3,   1. Powder Blending
+             p. 44
+                             The active substance and three excipients are mixed together.
+                             The following process parameters are defined as ECs.
+
+      Seq 0003, 3.2.P.3.3,   Operating principle: Diffusion mixing                                       PAS
+             p. 45
+
+      Seq 0001, 3.2.P.3.3,   Equipment type: V-blender                                               Change to
+          pp. 45–47                                                                              equipment of same
+                                                                                                 operating principle:
+                                                                                                         AR
+
+      Seq 0001, 3.2.P.3.2,   Scale: 200 kg                                                        Increase up to 10x:
+      p. 8, and 3.2.P.3.3,                                                                                AR
+           pp. 48–49
+                                                                                                   Increase beyond
+                                                                                                     10x: CBE-0
+
+      Seq 0004, 3.2.P.3.4,   Design space for blending process parameters                              CBE-30
+          pp. 10–15
+                             Blend speed: 10-20 rpm
+
+
+      1
+       Adapted from annex IF in the International Council for Harmonisation guidance for industry Q12 Technical and
+      Regulatory Considerations for Pharmaceutical Product Lifecycle Management: Annexes (May 2021).
+
+
+
+                                                            13
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+
+                             Blend time: 15-25 minutes
+
+                             2. Roller Compaction
+
+
+                             3. Tablet Compression
+
+
+                             4. Film Coating
+
+413   Note: eCTD=electronic common technical document; EC=established condition; FEI=facility establishment
+414   identifier; PAS=prior approval supplement; AR=annual report; CBE=changes being effected.
+
+
+
+
+                                                           14
+
