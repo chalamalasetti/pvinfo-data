@@ -1,0 +1,348 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-129126",
+  "metadata": {
+    "title": "Submitting Next-Generation Sequencing Data to the Division of Antiviral Products",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 07/01/2026 · Docket FDA-2017-D-6821",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Biologics, Drugs, Medical Devices",
+    "published_on": "2026-07-01",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/129126/download",
+  "original_sha256": "5261f295adbcb537b1a3a035bcb8f7dc8e9ec93f8fe048672f48c0ba53f0d661",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 39,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-5-paragraph-4",
+      "statement": "In addition, we recommend that sponsors submit a small mock or partial NGS dataset (including raw FASTQ files, consensus sequences in FASTA format, and an amino acid frequency table) before formally submitting a large NGS dataset to ensure that the data are provided in an appropriate format for review. The mock NGS dataset could include results from a small number of clinical trial samples and/or controls/test samples. Sponsors should refer to the following sections for guidance on preparing NGS-related submissions.",
+      "context": "2.0 ACCEPTABLE NGS PLATFORMS The Division will accept data generated from most standard NGS platforms if sponsors adequately describe the sequencing platform and provide the requested data, protocols, and other supporting information described in the following sections. We strongly recommend that sponsors communicate with the Division early during drug development and provide an NGS protocol (including description of data analysis methods) before initiating pivotal clinical trials. 3.0 SUMMARY OF INFORMATION TO SUBMIT TO THE DIVISION",
+      "fingerprint": "b3fd6a3b3dbccee8a2c480652beffcaf047de68e2e3caf85ca95bc1ec5772cec",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-5-paragraph-6",
+      "statement": "3.1 NGS Protocol Sponsors should submit a detailed NGS protocol that includes wet lab procedures and a description of data analysis methods. The wet lab portion of the NGS protocol should include details on sample collection, nucleic acid extraction, reverse transcription (if applicable), nucleic acid amplification, library preparation, library pooling, and sequencing. Sponsors should describe and provide their rationale for any quality control criteria applied to samples (e.g., minimum viral target copy number to attempt NGS), sample polymerase chain reaction (PCR)/reverse transcription polymerase chain reaction (RT-PCR) products (e.g., minimum concentration and required size), sequencing libraries (e.g., minimum concentration and required size), and/or sequencing results (e.g., numbers of reads, read quality, minimum target gene coverage). Sponsors should include appropriate positive and negative controls during PCR/RT- PCR and sequencing. If available, sponsors should provide validation reports for their NGS methods. See section 4.0, NGS Protocol for additional details.",
+      "context": "3.0 SUMMARY OF INFORMATION TO SUBMIT TO THE DIVISION 3.2 Raw NGS Data Sponsors should provide all raw NGS data in FASTQ format. For de novo assemblies, sponsors should provide all contiguous sequences (contigs) longer than 200 nucleotides in FASTQ format.",
+      "fingerprint": "a39ca59804d2cbf086f6960e48dc883c71e6966ddc66f648e16cdd14658f149e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-5-paragraph-7",
+      "statement": "3.2 Raw NGS Data Sponsors should provide all raw NGS data in FASTQ format. For de novo assemblies, sponsors should provide all contiguous sequences (contigs) longer than 200 nucleotides in FASTQ format.",
+      "context": "3.1 NGS Protocol Sponsors should submit a detailed NGS protocol that includes wet lab procedures and a description of data analysis methods. The wet lab portion of the NGS protocol should include details on sample collection, nucleic acid extraction, reverse transcription (if applicable), nucleic acid amplification, library preparation, library pooling, and sequencing. Sponsors should describe and provide their rationale for any quality control criteria applied to samples (e.g., minimum viral target copy number to attempt NGS), sample polymerase chain reaction (PCR)/reverse transcription polymerase chain reaction (RT-PCR) products (e.g., minimum concentration and required size), sequencing libraries (e.g., minimum concentration and required size), and/or sequencing results (e.g., numbers of reads, read quality, minimum target gene coverage). Sponsors should include appropriate positive a",
+      "fingerprint": "37824ab4936ae592220cf9052fb4897656fe536fb91241e67197f9f0d2d4a3dd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-5-paragraph-8",
+      "statement": "Sponsors do not need to provide NGS data in other formats (e.g., .ACE, .BAM, or .SAM) unless requested by the Division. FASTQ file names should include participant identification number, visit, and read number (for paired-end sequencing) (see section 6.2). For paired-end sequencing, read 1 and read 2 sequencing data should be provided as separate FASTQ files. Sponsors should provide all FASTQ files from each clinical trial in a single folder. However, in cases in which",
+      "context": "3.2 Raw NGS Data Sponsors should provide all raw NGS data in FASTQ format. For de novo assemblies, sponsors should provide all contiguous sequences (contigs) longer than 200 nucleotides in FASTQ format. multiple reference sequences are used (e.g., for different viral genotypes), we recommend organizing the FASTQ files into subfolders based on viral genotype or reference sequence.",
+      "fingerprint": "8ac7665d40f52a0b82f3a216e76b8bb2ccd33ebbc53d8093bd78eb040464fd51",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-6-paragraph-2",
+      "statement": "3.3 Consensus Sequences in FASTA Format Sponsors should provide a single FASTA file containing consensus sequences from all samples in a clinical trial. Sequence identifiers in the FASTA file should include participant identification number and visit (see section 6.3).",
+      "context": "multiple reference sequences are used (e.g., for different viral genotypes), we recommend organizing the FASTQ files into subfolders based on viral genotype or reference sequence. 3.4 Other Sequences Sponsors should provide any other sequences (e.g., in FASTA format) needed for data analysis, such as the reference sequences, primer sequences, and/or adapter sequences. In addition, if adapter trimming is performed during data analysis, sponsors should provide the sequences that were trimmed and indicate whether trimming was applied to the 5’ and/or 3’ end of read 1 and/or read 2 (for paired-end sequencing). In the NGS protocol, sponsors should provide the accession number(s) for the reference sequence(s), if applicable. If a sponsor uses a baseline sequence or consensus sequence from their clinical trial as the reference sequence, the sponsor should describe how the reference sequence was",
+      "fingerprint": "c5207a65a5d2d14c780af1c9363e360b24df45e542cf4b1aca8f29b00c41835a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-6-paragraph-3",
+      "statement": "3.4 Other Sequences Sponsors should provide any other sequences (e.g., in FASTA format) needed for data analysis, such as the reference sequences, primer sequences, and/or adapter sequences. In addition, if adapter trimming is performed during data analysis, sponsors should provide the sequences that were trimmed and indicate whether trimming was applied to the 5’ and/or 3’ end of read 1 and/or read 2 (for paired-end sequencing). In the NGS protocol, sponsors should provide the accession number(s) for the reference sequence(s), if applicable. If a sponsor uses a baseline sequence or consensus sequence from their clinical trial as the reference sequence, the sponsor should describe how the reference sequence was derived.",
+      "context": "3.3 Consensus Sequences in FASTA Format Sponsors should provide a single FASTA file containing consensus sequences from all samples in a clinical trial. Sequence identifiers in the FASTA file should include participant identification number and visit (see section 6.3). 3.5 Amino Acid Frequency Tables Sponsors should provide an amino acid frequency table (in XLSX or XPT format) reporting all amino acid substitutions that differ from the reference sequence at frequencies ≥1% . The frequency table should also include frameshifts, premature stop codons, and in-frame insertions and deletions. It is not necessary to include synonymous (silent) mutations or mutations in noncoding regions unless requested by the Division. The frequency table should include all viral genes that were agreed upon in advance with the Division. See section 7.0 for an example of an amino acid frequency table. Of note,",
+      "fingerprint": "4b0899380000f256b6897930bc3f0c2810be4dcb8cae7806d61fc7ed74f7f8a8",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-6-paragraph-4",
+      "statement": "3.5 Amino Acid Frequency Tables Sponsors should provide an amino acid frequency table (in XLSX or XPT format) reporting all amino acid substitutions that differ from the reference sequence at frequencies ≥1% . The frequency table should also include frameshifts, premature stop codons, and in-frame insertions and deletions. It is not necessary to include synonymous (silent) mutations or mutations in noncoding regions unless requested by the Division. The frequency table should include all viral genes that were agreed upon in advance with the Division. See section 7.0 for an example of an amino acid frequency table. Of note, for drugs that target nucleic acids and are impacted by nucleotide mutations (e.g., small interfering RNAs and antisense oligonucleotides), the frequency table should include all nucleotide changes, even if they do not result in an amino acid change.",
+      "context": "3.4 Other Sequences Sponsors should provide any other sequences (e.g., in FASTA format) needed for data analysis, such as the reference sequences, primer sequences, and/or adapter sequences. In addition, if adapter trimming is performed during data analysis, sponsors should provide the sequences that were trimmed and indicate whether trimming was applied to the 5’ and/or 3’ end of read 1 and/or read 2 (for paired-end sequencing). In the NGS protocol, sponsors should provide the accession number(s) for the reference sequence(s), if applicable. If a sponsor uses a baseline sequence or consensus sequence from their clinical trial as the reference sequence, the sponsor should describe how the reference sequence was derived. 3.6 NGS Report and Summary Tables Sponsors should provide an NGS Report (see section 5.0) that includes a comprehensive overview of resistance analysis results and useful",
+      "fingerprint": "28519c35b5a7766f3886b86efebc2669340be32085add7a5a0184ecd99f13550",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-6-paragraph-5",
+      "statement": "3.6 NGS Report and Summary Tables Sponsors should provide an NGS Report (see section 5.0) that includes a comprehensive overview of resistance analysis results and useful summary tables, such as the following:",
+      "context": "3.5 Amino Acid Frequency Tables Sponsors should provide an amino acid frequency table (in XLSX or XPT format) reporting all amino acid substitutions that differ from the reference sequence at frequencies ≥1% . The frequency table should also include frameshifts, premature stop codons, and in-frame insertions and deletions. It is not necessary to include synonymous (silent) mutations or mutations in noncoding regions unless requested by the Division. The frequency table should include all viral genes that were agreed upon in advance with the Division. See section 7.0 for an example of an amino acid frequency table. Of note, for drugs that target nucleic acids and are impacted by nucleotide mutations (e.g., small interfering RNAs and antisense oligonucleotides), the frequency table should include all nucleotide changes, even if they do not result in an amino acid change. a. Tables summariz",
+      "fingerprint": "1baa1ac23c9e749e58cf0aa18f1db90865e1518e6bafaf75dbb79dc14cfb3241",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-7-paragraph-1",
+      "statement": "residues that are in contact/proximity to the drug (based on structural data) or associated with resistance in nonclinical studies. Ideally, the table should include substitutions, premature stop codons, and in-frame insertions and deletions. Sponsors should provide the criteria used to define a baseline polymorphism.",
+      "context": "b. Tables listing all baseline amino acid polymorphisms in the viral target or all baseline amino acid polymorphisms at positions of interest in the target, such as amino acid c. Tables listing all treatment-emergent substitutions (TES) in the viral target or all TES at positions of interest in the target. Ideally, the table should include premature stop codons and in-frame insertions and deletions as well. Sponsors should provide the criteria used to define a TES.",
+      "fingerprint": "5083d448881256221ac298565f2a7096f64459bbeeaa333d2c5d724431aa8071",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-7-paragraph-2",
+      "statement": "c. Tables listing all treatment-emergent substitutions (TES) in the viral target or all TES at positions of interest in the target. Ideally, the table should include premature stop codons and in-frame insertions and deletions as well. Sponsors should provide the criteria used to define a TES.",
+      "context": "residues that are in contact/proximity to the drug (based on structural data) or associated with resistance in nonclinical studies. Ideally, the table should include substitutions, premature stop codons, and in-frame insertions and deletions. Sponsors should provide the criteria used to define a baseline polymorphism. d. Tables summarizing baseline polymorphisms or TES by key subgroups, such as by viral genotype, drug dose, or participant subgroup (e.g., treatment-naïve versus treatment- experienced).",
+      "fingerprint": "8815c17fc0afbe7852a4f8909e55a6a178d214757711778afa3604125564b528",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-7-paragraph-5",
+      "statement": "3.7 Conservation Analysis of Reference Sequences For drugs targeting a viral protein, sponsors should provide a comprehensive conservation analysis of all amino acid positions in the reference sequence. This analysis can be accomplished by comparing all available sequences represented by the reference sequence from publicly accessible databases and from baseline sequences analyzed during clinical development. Results should include an overall percent identity for each position and list all amino acid polymorphisms in decreasing order of prevalence. This analysis should be provided for the reference sequences for each viral genotype. Please specify version numbers for publicly accessible databases used to obtain reference sequences.",
+      "context": "e. Tables summarizing the association of baseline amino acid polymorphisms and TES with virologic and clinical outcomes of interest, such as viral nonresponse, viral breakthrough, viral relapse, and/or hospitalization/death.",
+      "fingerprint": "67175ce3e4cf411f047bd2fd5716d9ffe3e21dfdac3850e6bf4e5f5fb361da27",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-7-paragraph-7",
+      "statement": "4.1 General Protocol Design Elements Sponsors should include the following general design elements in NGS protocols:",
+      "context": "a. A description of the participants, time points/visits, and sample types to be analyzed.",
+      "fingerprint": "e86e0864ae824eb39328491b2e8d6856eed6d58eab561a170eadb7c670add0a0",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-8-paragraph-1",
+      "statement": "e. The anticipated target gene coverage. We recommend that the target gene has a coverage of greater than or equal to 5,000 reads across the full sequence. However, we recognize that this level of coverage may not be achieved in samples with low viral DNA/RNA levels. Sponsors should identify samples that did not reach this level of coverage. NGS data with minimum coverage below 5,000x may be acceptable when sponsors demonstrate high sequencing quality, provide scientific justification and comprehensive validation data confirming assay performance at the proposed coverage depth, and engage in early consultation with the Division to establish protocol agreement before initiating pivotal trials.",
+      "context": "d. General analysis strategy (e.g., identify changes relative to a reference sequence, compare sequences from different time points in the same participant). f. Any negative or positive controls. Negative controls for sample PCR/RT-PCR could include water (no template control) and/or DNA/RNA extracted from a healthy (uninfected) volunteer. Positive controls for sample PCR/RT-PCR, library preparation, and sequencing could include a previously characterized sample from a participant infected with the virus being studied and/or recombinant/synthetic DNA (e.g., a plasmid or DNA fragment).",
+      "fingerprint": "6fb0ac7c2357c9f05d2166b8125277a77378cd184748be38c696176524c4b6e4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-8-paragraph-4",
+      "statement": "4.2 Sample Preparation and Sequencing Sponsors should describe the following information concerning sample preparation and sequencing:",
+      "context": "g. Any quality control criteria for samples, sample PCR/RT-PCR products, sequencing libraries, sequencing runs, and/or sequencing results for individual samples. a. Methods for collecting, shipping, and storing samples for sequencing.",
+      "fingerprint": "e6a32626583307b41d775c33bb72c7cf3ae0bcada20c3fe2aadb74744f5e7e2c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-8-paragraph-6",
+      "statement": "b. Methods for extracting nucleic acids from samples and, in the case of RNA, generating complementary DNA. Methods for denaturing RNA secondary structures and a description of the primers used for reverse transcription should be included.",
+      "context": "a. Methods for collecting, shipping, and storing samples for sequencing. c. Methods for quantifying copy numbers of the target gene(s) in each sample (e.g., using quantitative PCR/RT-PCR).",
+      "fingerprint": "568a7add894e742223fda37d2fc846c4cf65adb7fe59bac63a9beaef3617872e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-8-paragraph-9",
+      "statement": "e. Negative and positive controls. If negative controls show evidence of contamination, PCR should be repeated for all samples that were processed in parallel with the contaminated negative control.",
+      "context": "d. Methods for sample PCR product concentration/size determination and purification. f. Methods for NGS library preparation, concentration/size determination, purification, and pooling.",
+      "fingerprint": "e589048ef338cce97272e1eb8226068b710e5ae324543f5b7a016b8da0615c97",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-9-paragraph-1",
+      "statement": "NOTE: Many NGS protocols in the published scientific literature include specific (gene-specific primers) or nonspecific (random primers) PCR to increase the concentration of DNA for sequencing. However, although predominant genotypes should be amplified by these approaches, minor variants that are important for resistance may not be amplified to the same extent. Therefore, we recommend that sponsors validate NGS protocols that include a sample PCR step by amplifying and sequencing a pool of known variants with different frequencies (e.g., 0.1%, 1%, 5%, 10%, 50%) . If feasible, sponsors can also employ approaches that correct for PCR resampling and PCR/sequencing errors, such as the use of unique identifiers.",
+      "context": "g. Methods for sequencing, including sequencing instrument, sequencing kit, sequence length, sequencing format (e.g., single-end versus paired-end), et cetera. 4.3 NGS Data Analysis Methods Sponsors should provide a detailed description of the bioinformatics analysis pipeline(s) used to analyze the sequencing data, generate the amino acid frequency table(s), and obtain consensus sequences. Sponsors may submit this information in the form of a Biocompute Object ( https://www.biocomputeobject.org/ ) with prior agreement from the Division. Contract research organizations that use a validated bioinformatics platform across multiple antiviral drug development program areas may consider submitting a drug master file to the FDA. Drug master files are not mandatory but are submitted voluntarily to provide confidential information to the FDA, which can then be referenced by multiple applications",
+      "fingerprint": "4e6fee195339fd8bea5e5044fc77dbcda18a01330475d1846aac9acfadf4e394",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-9-paragraph-2",
+      "statement": "4.3 NGS Data Analysis Methods Sponsors should provide a detailed description of the bioinformatics analysis pipeline(s) used to analyze the sequencing data, generate the amino acid frequency table(s), and obtain consensus sequences. Sponsors may submit this information in the form of a Biocompute Object ( https://www.biocomputeobject.org/ ) with prior agreement from the Division. Contract research organizations that use a validated bioinformatics platform across multiple antiviral drug development program areas may consider submitting a drug master file to the FDA. Drug master files are not mandatory but are submitted voluntarily to provide confidential information to the FDA, which can then be referenced by multiple applications without disclosing proprietary information to competitors.",
+      "context": "NOTE: Many NGS protocols in the published scientific literature include specific (gene-specific primers) or nonspecific (random primers) PCR to increase the concentration of DNA for sequencing. However, although predominant genotypes should be amplified by these approaches, minor variants that are important for resistance may not be amplified to the same extent. Therefore, we recommend that sponsors validate NGS protocols that include a sample PCR step by amplifying and sequencing a pool of known variants with different frequencies (e.g., 0.1%, 1%, 5%, 10%, 50%) . If feasible, sponsors can also employ approaches that correct for PCR resampling and PCR/sequencing errors, such as the use of unique identifiers. The information in the following sections should be provided in the NGS protocol and summarized in the NGS Report. Currently, it is not necessary for sponsors to provide the actual c",
+      "fingerprint": "7c879303706133e31d87e81a333e95cfb848abd14813b63d3ada8297d1f1d232",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-9-paragraph-3",
+      "statement": "The information in the following sections should be provided in the NGS protocol and summarized in the NGS Report. Currently, it is not necessary for sponsors to provide the actual components of bioinformatics pipelines, specific computational tools, or custom analysis algorithms unless requested by the Division.",
+      "context": "4.3 NGS Data Analysis Methods Sponsors should provide a detailed description of the bioinformatics analysis pipeline(s) used to analyze the sequencing data, generate the amino acid frequency table(s), and obtain consensus sequences. Sponsors may submit this information in the form of a Biocompute Object ( https://www.biocomputeobject.org/ ) with prior agreement from the Division. Contract research organizations that use a validated bioinformatics platform across multiple antiviral drug development program areas may consider submitting a drug master file to the FDA. Drug master files are not mandatory but are submitted voluntarily to provide confidential information to the FDA, which can then be referenced by multiple applications without disclosing proprietary information to competitors. 4.3.1 Demultiplexing, Quality/Adapter Trimming, and Read Filtering The sponsor’s description of NGS d",
+      "fingerprint": "66f2d44b797edc271c9083e40e77d9375a8f7b122d5d148161c480db0d613b56",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-9-paragraph-4",
+      "statement": "4.3.1 Demultiplexing, Quality/Adapter Trimming, and Read Filtering The sponsor’s description of NGS data analysis methods should include the procedures used to add barcodes, separate reads by barcodes, trim barcodes, and any precautions taken to eliminate potential cross-barcode contamination. Sponsors should also describe adapter and quality trimming (e.g., related to base quality and/or degenerate bases). Lastly, sponsors should describe any read filtering (e.g., based on read quality or length after trimming). Sponsors should describe the bioinformatics tools used for these steps and settings for key parameters.",
+      "context": "The information in the following sections should be provided in the NGS protocol and summarized in the NGS Report. Currently, it is not necessary for sponsors to provide the actual components of bioinformatics pipelines, specific computational tools, or custom analysis algorithms unless requested by the Division. 4.3.2 Mapping Reads and Assembling Contigs Two approaches can be used for short read NGS analyses of data to support the development of antiviral drug products: (1) mapping of short reads to a reference sequence or (2) de novo assembly of short reads to assemble contigs. We recommend that sponsors that plan to use long read technologies to assess antiviral drug resistance reach out to the Division for agreement prior to using the technology.",
+      "fingerprint": "ebd353fae61ffab6ee96a78b82ed3182918cbaab4cb5deb902ae5c4a8cdb21c6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-10-paragraph-1",
+      "statement": "4.3.2.1 Mapping sequence reads to a reference sequence and identifying variants Sponsors should consider the following for inclusion in the data analysis methods on mapping sequence reads to a reference sequence and identifying variants:",
+      "context": "4.3.2 Mapping Reads and Assembling Contigs Two approaches can be used for short read NGS analyses of data to support the development of antiviral drug products: (1) mapping of short reads to a reference sequence or (2) de novo assembly of short reads to assemble contigs. We recommend that sponsors that plan to use long read technologies to assess antiviral drug resistance reach out to the Division for agreement prior to using the technology. a. Indicate the reference sequence(s) used for mapping and provide the nucleotide and amino acid sequences and an accession number, if applicable. Please consult with the Division for prior agreement if standard reference sequences have not been established in the scientific literature.",
+      "fingerprint": "6f3cd60fc1c99cf44847e3a2a12becb0de5322d83c66d1261d41f90e1f1b5f3f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-10-paragraph-3",
+      "statement": "b. Indicate the bioinformatics tool(s) used to map reads to the reference sequence and for any post-alignment processing steps, such as local realignment or trimming of PCR primers. Sponsors should describe the bioinformatics tools used for these steps and settings for key parameters. Sponsors should provide specific information about the tool used for mapping, including but not limited to percentage of mismatches tolerated, number of insertions and deletions tolerated, and identity and similarity cutoffs.",
+      "context": "a. Indicate the reference sequence(s) used for mapping and provide the nucleotide and amino acid sequences and an accession number, if applicable. Please consult with the Division for prior agreement if standard reference sequences have not been established in the scientific literature. c. Indicate the bioinformatics tool(s) used to identify and filter variants and describe settings for key parameters. Sponsors should indicate the mutation frequency cutoff that was used to distinguish true mutations from background (PCR/sequencing) errors. The optimal mutation frequency cutoff should be determined during NGS assay development and validation and varies by platform but typically ranges from 5 to 15 percent, although other factors (e.g., clinical sample type or input template concentration) may influence this cutoff. Sponsors should describe any other criteria used to identify true mutation",
+      "fingerprint": "be2ae6182099dd12cab677db7a3c5ce636e8b711a8e2c95e56d362bfeeca1a12",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-10-paragraph-4",
+      "statement": "c. Indicate the bioinformatics tool(s) used to identify and filter variants and describe settings for key parameters. Sponsors should indicate the mutation frequency cutoff that was used to distinguish true mutations from background (PCR/sequencing) errors. The optimal mutation frequency cutoff should be determined during NGS assay development and validation and varies by platform but typically ranges from 5 to 15 percent, although other factors (e.g., clinical sample type or input template concentration) may influence this cutoff. Sponsors should describe any other criteria used to identify true mutations (e.g., based on average mutation quality or read direction bias).",
+      "context": "b. Indicate the bioinformatics tool(s) used to map reads to the reference sequence and for any post-alignment processing steps, such as local realignment or trimming of PCR primers. Sponsors should describe the bioinformatics tools used for these steps and settings for key parameters. Sponsors should provide specific information about the tool used for mapping, including but not limited to percentage of mismatches tolerated, number of insertions and deletions tolerated, and identity and similarity cutoffs. d. Document any PCR/sequencing error correction algorithms applied before variant detection.",
+      "fingerprint": "66c2b7dbcf54624b592e3e9495f6e06472c19b219128492db55e29d38717427e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-10-paragraph-6",
+      "statement": "4.3.2.2 De novo assembly of contigs and identifying variants (when applicable) Sponsors should consider the following for inclusion in the data analysis methods on the de novo assembly of contigs and identifying variants:",
+      "context": "d. Document any PCR/sequencing error correction algorithms applied before variant detection. a. Indicate the bioinformatics tool(s) used to conduct the de novo assembly of short reads into contigs and describe settings for key parameters. Sponsors should provide specific information about the tool used for contig assembly, including but not limited to percentage of mismatches tolerated, number of insertions and deletions tolerated, and identity and similarity cutoffs.",
+      "fingerprint": "52b7dda056b92c2a234db2187c12d4b31ee646ab424cc487a4b7401426add0fa",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-10-paragraph-7",
+      "statement": "a. Indicate the bioinformatics tool(s) used to conduct the de novo assembly of short reads into contigs and describe settings for key parameters. Sponsors should provide specific information about the tool used for contig assembly, including but not limited to percentage of mismatches tolerated, number of insertions and deletions tolerated, and identity and similarity cutoffs.",
+      "context": "4.3.2.2 De novo assembly of contigs and identifying variants (when applicable) Sponsors should consider the following for inclusion in the data analysis methods on the de novo assembly of contigs and identifying variants: b. Indicate the bioinformatics tool(s) used to compare contigs and identify and filter variants and describe settings for key parameters. Describe how variants were distinguished from background (PCR/sequencing) errors.",
+      "fingerprint": "3afa8adb4ee729a92fb4268f9a7288ba8fab742138927dbe66c7b96d1c5593b2",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 26,
+      "anchor": "page-11-paragraph-2",
+      "statement": "5.0 NGS REPORT Sponsors should include a summary of NGS resistance results in the appropriate Clinical Study Report but refer to a separate NGS Report for detailed NGS results.",
+      "context": "c. Indicate the bioinformatics tool(s) and the version number(s) that were used to investigate similarity to known sequences. Identify the database that was queried, provide the search criteria that were used, define the cutoffs used for percent identity, and provide details on how contaminants or other viruses were identified and reported. 5.1 Reporting Results From Read Mapping and Variant Calling Sponsors should consider the following for inclusion in the NGS Report:",
+      "fingerprint": "b07b49dd73261b87383ce64e2be017551357eca3e52d96c5267256fbda658c17",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 27,
+      "anchor": "page-11-paragraph-3",
+      "statement": "5.1 Reporting Results From Read Mapping and Variant Calling Sponsors should consider the following for inclusion in the NGS Report:",
+      "context": "5.0 NGS REPORT Sponsors should include a summary of NGS resistance results in the appropriate Clinical Study Report but refer to a separate NGS Report for detailed NGS results. a. Provide a brief summary of the NGS protocol (including data analysis methods). Include the criteria used for resistance testing, the minimum DNA/RNA copy number for attempting NGS (with brief rationale), and the mutation frequency cutoff used to distinguish true mutations from background (PCR/sequencing) errors (with brief rationale).",
+      "fingerprint": "44acb3a82bf47fd739d9d1307cbaeffb9607266ae9edf9c38111fbd98830d5be",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 28,
+      "anchor": "page-11-paragraph-5",
+      "statement": "b. Provide an amino acid frequency table (see section 7.0 for an example). These tables will generally be too large for inclusion in the NGS Report and should be provided as a standalone document (in CSV, XLSX, or XPT format).",
+      "context": "a. Provide a brief summary of the NGS protocol (including data analysis methods). Include the criteria used for resistance testing, the minimum DNA/RNA copy number for attempting NGS (with brief rationale), and the mutation frequency cutoff used to distinguish true mutations from background (PCR/sequencing) errors (with brief rationale). c. Provide summary tables of baseline polymorphisms or TES of interest. Sponsors should identify substitutions that they consider to be associated with antiviral resistance and provide their rationale (e.g., based on relative rates of the substitution across study arms, structural information, biochemical/cell culture data, amino acid conservation, published literature).",
+      "fingerprint": "1fb699936e44469ace51ee9ba4b76354e93e3d899e369f95c0aa9bdaf9dd2a55",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 29,
+      "anchor": "page-11-paragraph-6",
+      "statement": "c. Provide summary tables of baseline polymorphisms or TES of interest. Sponsors should identify substitutions that they consider to be associated with antiviral resistance and provide their rationale (e.g., based on relative rates of the substitution across study arms, structural information, biochemical/cell culture data, amino acid conservation, published literature).",
+      "context": "b. Provide an amino acid frequency table (see section 7.0 for an example). These tables will generally be too large for inclusion in the NGS Report and should be provided as a standalone document (in CSV, XLSX, or XPT format). 5.2 Reporting Results From the De Novo Assembly and Variant Calling Sponsors should consider the following for inclusion in the NGS Report:",
+      "fingerprint": "7b396f4514e3069a9f079d1ef25083a1cbbe43f4c169ed1b3d4c53cf2232c22e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 30,
+      "anchor": "page-11-paragraph-7",
+      "statement": "5.2 Reporting Results From the De Novo Assembly and Variant Calling Sponsors should consider the following for inclusion in the NGS Report:",
+      "context": "c. Provide summary tables of baseline polymorphisms or TES of interest. Sponsors should identify substitutions that they consider to be associated with antiviral resistance and provide their rationale (e.g., based on relative rates of the substitution across study arms, structural information, biochemical/cell culture data, amino acid conservation, published literature). a. Provide contig statistics showing the number of contigs generated from the reads.",
+      "fingerprint": "2e68a4b1fb7e2c2484ba048ae16ccee81dea586adfae71b3afe9230d949ced59",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 31,
+      "anchor": "page-12-paragraph-1",
+      "statement": "e. Provide an amino acid frequency table (see section 7.0, Amino Acid Frequency Table Example). These tables will generally be too large for inclusion in the NGS Report and should be provided as a standalone document (in CSV, XLSX, or XPT format).",
+      "context": "d. Describe contaminants or other viruses that were detected during annotation and report the percent representation of each contaminant. f. Provide summary tables of baseline polymorphisms or TES of interest.",
+      "fingerprint": "5cbf5ed2207d39a955389ae5c8784cc175757b1d6edb5dbcc97fd914fcdc06b5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 32,
+      "anchor": "page-12-paragraph-4",
+      "statement": "a. A summary of missing sequencing data (e.g., numbers/percentages of participants across visits and arms) and the reasons for missing data (e.g., sample not collected, insufficient nucleic acid levels, nucleic acid amplification failed, library preparation failed, sequencing failed, sequencing results did not meet quality control metrics). Every reasonable attempt should be made to minimize the amount of missing data, and wherever possible, failed nucleic acid extraction, reverse transcription (if applicable), amplification, library preparation, and/or sequencing should be repeated at least once.",
+      "context": "5.3 Additional Information The following additional information is recommended when applicable or requested by the Division: b. A summary of basic quality/mapping metrics for all samples that were sequenced.",
+      "fingerprint": "b54e336bdddf5fc1546066102a3448f8b8998b2ce19b5d979cf191eccce7597e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 33,
+      "anchor": "page-12-paragraph-10",
+      "statement": "Sponsors should submit the NGS protocol, NGS Report, reference sequence(s), and primer/adapter sequences via the FDA Electronic Submissions Gateway (ESG), whereas the raw NGS data (FASTQ format), consensus sequences (FASTA format), and checksum file should be submitted to the Division on an external hard drive (EHD) following the guidelines outlined in the technical specifications document Transmitting Electronic Submissions Using eCTD",
+      "context": "6.1 Recommended File Formats and Submission Methods Recommended file formats and submission methods for NGS-related files are shown in Table 1. Specifications (June 2017). 2 The cover letter and amino acid frequency table should be included in both the ESG and EHD submissions. The cover letter should indicate the total number of samples sequenced, the total number of participants that had samples sequenced, and the total number of FASTQ files submitted. The cover letter should also include a table of contents that describes all submitted files. An md5/checksum file should be provided so that the Division can verify that the files were fully transferred. Hard drive submissions should not include .exe files, which may result in rejection of the submission. If the hard drive is password protected, which is not required or recommended at this time, sponsors should provide the password to the",
+      "fingerprint": "b8bfd2fdaf773a12f422ffd00d4d374b3128c9835d36140b39733c3a14013147",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 34,
+      "anchor": "page-13-paragraph-1",
+      "statement": "Specifications (June 2017). 2 The cover letter and amino acid frequency table should be included in both the ESG and EHD submissions. The cover letter should indicate the total number of samples sequenced, the total number of participants that had samples sequenced, and the total number of FASTQ files submitted. The cover letter should also include a table of contents that describes all submitted files. An md5/checksum file should be provided so that the Division can verify that the files were fully transferred. Hard drive submissions should not include .exe files, which may result in rejection of the submission. If the hard drive is password protected, which is not required or recommended at this time, sponsors should provide the password to the Division ahead of time to allow coordination with the appropriate personnel in the CDER document room.",
+      "context": "Sponsors should submit the NGS protocol, NGS Report, reference sequence(s), and primer/adapter sequences via the FDA Electronic Submissions Gateway (ESG), whereas the raw NGS data (FASTQ format), consensus sequences (FASTA format), and checksum file should be submitted to the Division on an external hard drive (EHD) following the guidelines outlined in the technical specifications document Transmitting Electronic Submissions Using eCTD Table 1. Recommended File Formats and Submission Methods for NGS-Related Files.",
+      "fingerprint": "62bfae67015e417b275037d15cf460f71e2dee6e6934446be6df5a367297733b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 35,
+      "anchor": "page-13-paragraph-4",
+      "statement": "6.2 Naming FASTQ Files FASTQ file names should include participant identification number, visit, and read number (if applicable). For example, FASTQ files from three samples (Baseline, Week 16, and Follow-Up Week 4) from participant 001 in study ABC123, analyzed by paired-end sequencing, could be named as follows:",
+      "context": "NGS-Related File Recommended Format(s) Recommended Submission Method(s) Cover Letter PDF EHD and ESG (Module 5.3.5.4) NGS Protocol PDF ESG (Module 5.3.5.4) NGS Report PDF ESG (Module 5.3.5.4) Amino Acid Frequency Table CSV, XLSX, XPT EHD and ESG (Module 5.3.5.4) Raw NGS Data FASTQ EHD* Consensus Sequences FASTA EHD* Reference Sequence(s) FASTA ESG (Module 5.3.5.4) Primer/Adapter Sequences CSV, FASTA, TXT, XLSX ESG (Module 5.3.5.4) Checksum File MD5 EHD *Small NGS datasets can be submitted via EHD or the ESG (Module 5.3.5.4). a. ABC123-001.Baseline.R1.FASTQ, ABC123-001.Baseline.R2.FASTQ b. ABC123-001.Week16.R1.FASTQ, ABC123-001.Week16.R2.FASTQ c. ABC123-001.FUWeek4.R1.FASTQ, ABC123-001.FUWeek4.R2.FASTQ If a sample is re-sequenced due to low sequence quality, we recommend that sponsors submit only the highest quality results to the Division. However, in instances where multiple FASTQ files",
+      "fingerprint": "8a8a5a3747741091bf08e3190fd14b3b500f53372fd9a15960a10f2a533eda6e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 36,
+      "anchor": "page-13-paragraph-5",
+      "statement": "a. ABC123-001.Baseline.R1.FASTQ, ABC123-001.Baseline.R2.FASTQ b. ABC123-001.Week16.R1.FASTQ, ABC123-001.Week16.R2.FASTQ c. ABC123-001.FUWeek4.R1.FASTQ, ABC123-001.FUWeek4.R2.FASTQ If a sample is re-sequenced due to low sequence quality, we recommend that sponsors submit only the highest quality results to the Division. However, in instances where multiple FASTQ files need to be submitted for a single sample, the FASTQ files could be named as follows:",
+      "context": "6.2 Naming FASTQ Files FASTQ file names should include participant identification number, visit, and read number (if applicable). For example, FASTQ files from three samples (Baseline, Week 16, and Follow-Up Week 4) from participant 001 in study ABC123, analyzed by paired-end sequencing, could be named as follows: a. ABC123-001.Baseline.R1.FASTQ, ABC123-001.Baseline.R2.FASTQ b. ABC123-001.Baseline.02.R1.FASTQ, ABC123-001.Baseline.02.R2.FASTQ",
+      "fingerprint": "b8f06212061af6d58d6002b0b7515c797d5bb4b638a965ab23120e976326828d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 37,
+      "anchor": "page-14-paragraph-1",
+      "statement": "6.3 Naming Consensus Sequences (FASTA Format) Consensus sequences for each participant and time point should be provided in a single FASTA file for each clinical trial. The study identification number should be included in the FASTA file name. Sequence identifiers in the FASTA file should include participant identification number and visit. If multiple genes are sequenced separately, sponsors should also include the gene name in the sequence identifiers. Lastly, if different reference sequences are used for mapping reads from different virus genotypes/subtypes, sponsors should also include the virus genotype/subtype in the sequence identifiers.",
+      "context": "2 Available at https://www.fda.gov/media/76812/download?attachment . See also the Electronic Regulatory Submission and Review web page at https://www.fda.gov/Drugs/DevelopmentApprovalProcess/FormsSubmissionRequirements/ElectronicSubmissions/d efault.htm . 7.0 AMINO ACID FREQUENCY TABLE EXAMPLE The table below is a hypothetical example of an amino acid frequency table. The table should include all amino acid substitutions that differ from the reference sequence at frequencies ≥1% .",
+      "fingerprint": "b5ddbb31d25be4fbd155431808bd408432981ccc35b234471cfe5d9c1ffa9c6e",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 38,
+      "anchor": "page-14-paragraph-2",
+      "statement": "7.0 AMINO ACID FREQUENCY TABLE EXAMPLE The table below is a hypothetical example of an amino acid frequency table. The table should include all amino acid substitutions that differ from the reference sequence at frequencies ≥1% .",
+      "context": "6.3 Naming Consensus Sequences (FASTA Format) Consensus sequences for each participant and time point should be provided in a single FASTA file for each clinical trial. The study identification number should be included in the FASTA file name. Sequence identifiers in the FASTA file should include participant identification number and visit. If multiple genes are sequenced separately, sponsors should also include the gene name in the sequence identifiers. Lastly, if different reference sequences are used for mapping reads from different virus genotypes/subtypes, sponsors should also include the virus genotype/subtype in the sequence identifiers. Additional columns that may be helpful include study site identification number, flags for analysis populations and/or stratification factors, flags for virologic and clinical outcomes (e.g., viral breakthrough or hospitalization/death), nucleotid",
+      "fingerprint": "7d95d5ab2beb3aea9464bc6045c716acc095b8ba2648bbf45572031c32238d97",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 39,
+      "anchor": "page-14-paragraph-3",
+      "statement": "Additional columns that may be helpful include study site identification number, flags for analysis populations and/or stratification factors, flags for virologic and clinical outcomes (e.g., viral breakthrough or hospitalization/death), nucleotide position, viral variant/genotype, flags for baseline polymorphisms and treatment-emergent substitutions, and viral DNA/RNA levels in the sequenced sample. For drugs that target nucleic acids and are impacted by nucleotide mutations (e.g., small interfering RNAs and antisense oligonucleotides), the frequency table should include all nucleotide changes, even if they do not result in an amino acid change.",
+      "context": "7.0 AMINO ACID FREQUENCY TABLE EXAMPLE The table below is a hypothetical example of an amino acid frequency table. The table should include all amino acid substitutions that differ from the reference sequence at frequencies ≥1% . Table 2. Example of an Amino Acid Frequency Table. STUDYID SUBJID VISIT ARM AAPOS AAREF AASUB AACHANGE TCOV VCOV AAFREQ ABC123 001 D2 Placebo 81 R K R81K 4317 156 0.036 ABC123 001 BL Placebo 98 K R K98R 2841 99 0.035 ABC123 001 D2 Placebo 98 K R K98R 9487 366 0.039 ABC123 001 D3 Placebo 98 K R K98R 9474 378 0.040 ABC123 001 BL Placebo 120 R Q R120Q 4310 200 0.046 ABC123 001 D2 Placebo 120 R Q R120Q 12722 470 0.037 ABC123 001 D3 Placebo 120 R Q R120Q 12466 489 0.039 ABC123 001 BL Placebo 147 I V I147V 3456 742 0.215 ABC123 001 D2 Placebo 147 I V I147V 13456 2709 0.201 ABC123 001 D3 Placebo 147 I V I147V 13297 1934 0.145 ABC123 001 BL Placebo 150 A V A150V 3107 43",
+      "fingerprint": "33f49266670dd14b997c07aedaed95f57810ba63398835bb6ec9cb3f8ac41df7",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T15:21:32.174Z"
+}
