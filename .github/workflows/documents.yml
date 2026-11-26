@@ -48,8 +48,11 @@ jobs:
             const fs = require('node:fs');
             fs.mkdirSync('/tmp/pv-document-snapshots', {recursive:true});
             try {
-              const r = await github.rest.repos.getContent({...context.repo, path:'index.json', ref:'regulatory-document-cache'});
-              fs.writeFileSync('/tmp/pv-document-snapshots/index.json', Buffer.from(r.data.content, 'base64'));
+              // Raw media type: the JSON form returns no content once index.json passes 1 MB (it did on 26 Nov 2026).
+              const r = await github.rest.repos.getContent({...context.repo, path:'index.json', ref:'regulatory-document-cache', mediaType:{format:'raw'}});
+              const body = Buffer.from(typeof r.data === 'string' ? r.data : new Uint8Array(r.data));
+              JSON.parse(body.toString('utf8'));
+              fs.writeFileSync('/tmp/pv-document-snapshots/index.json', body);
             } catch(e) { if(e.status !== 404) throw e; }
       - name: Collect official public copies and deliver using short-lived GitHub identity
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.admin_capture) }}
