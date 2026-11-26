@@ -1,0 +1,236 @@
+{
+  "schema_version": "public-document-key-info-v1",
+  "document_id": "fda-guidance-188844",
+  "metadata": {
+    "title": "Computer Software Assurance for Production and Quality Management System Software: Guidance for Industry and Food and Drug Administration Staff",
+    "country": "US",
+    "agency": "FDA",
+    "edition": "Final · issued 02/03/2026 · Docket FDA-2022-D-0795",
+    "norm": "Guidance",
+    "topic": "Guidance · FDA human drugs and biologics",
+    "lifecycle": "Both",
+    "legal_basis": "FDA Guidance Document (21 CFR 10.115). Guidance states FDA's current thinking and is not binding unless a statute or regulation requires it; the official text governs.",
+    "applicability": "Products: Medical Devices. Topics: Postmarket",
+    "published_on": "2026-02-03",
+    "effective_on": "",
+    "source_status": "current"
+  },
+  "metadata_verification": "Source-register metadata; dates and legal status require human verification.",
+  "source_url": "https://www.fda.gov/media/188844/download",
+  "original_sha256": "11e2e21f5eb226b56a578da44e732965a2318e9b983422c6a58e51bc7b2e223a",
+  "content_kind": "pdf",
+  "parser_version": "normative-rules-v4-tables",
+  "extraction_status": "partial",
+  "candidate_count": 25,
+  "excluded_paragraphs": 0,
+  "candidate_limit_reached": true,
+  "review_status": "pending",
+  "limitations": [
+    "English rule-based extraction; no GPT or paid API.",
+    "Candidates are not approved requirements. Read the original, qualifications and exceptions.",
+    "Scans, tables, other languages and implicit obligations may be missed. Zero candidates does not establish zero requirements."
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "anchor": "page-8-paragraph-2",
+      "statement": "V. Computer Software Assurance Computer software assurance is a risk - based approach for establishing and maintaining confidence that software is fit for its intended use. This approach considers the risk of compromised safety and/or quality of the device (should the software fail to per form as intended) to determine the level of assurance effort and activities appropriate to establish confidence in the software. Because the computer software assurance effort is risk - based, it follows a least - burdensome approach, where the burden of valid ation is no more than necessary to address the risk. Such an approach supports the efficient use of resources, in turn promoting product quality.",
+      "context": "control of select networking components (e.g., host firewalls). 10 Platform as a service (PaaS) : The capability provided to the consumer is to deploy onto the cloud infrastructure consumer - created or acquired applications created using programming languages, libraries, services, and tools supported by the provider. 11 The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application - hosting environme nt. 12 Software as a service (SaaS) : The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., email), or a program interface. The con",
+      "fingerprint": "fad41e6f4ee699fe87e93a9af15ad436ff140e7302ba165b6f58e2b8d6697d52",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 2,
+      "anchor": "page-8-paragraph-4",
+      "statement": "Software that is fit for its intended use and that maintains a validated state should perform as intended, helping to ensure that finished devices will be safe and effective and in compliance with regulatory requirements (see 21 CFR 820.1(a)(1)). Section V outlines a risk - based",
+      "context": "In addition, computer software assurance establishes and maintains that the software used in production or the quality management system is in a state of control throughout its life cycle (“validated state”). This is important because manufacturers increasingly rely on computers and automated processing systems to monitor and operate production, alert responsible personnel, and trans fer and analyze production data, among other uses. By allowing manufacturers to leverage principles such as risk - based testing , unscripted testing, continuous performance monitoring, and data monitoring, as well as validation activities performed by other entities (e.g., developers, suppliers, cloud service providers), the computer software assurance approach provides flexibility and agility in helping to provide assurance that the software maintains a validated state consistent with applicable quality ma",
+      "fingerprint": "d1c141329c89002dfe544de84fdc72f68b2f7f74d01b34fc8fef5939728a0a71",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 3,
+      "anchor": "page-9-paragraph-4",
+      "statement": "To determine whether the requirement for validation applies, manufacturers must determine whether the software is or will be used as part of production or the quality management system (whether directly or to support production or the quality management system).",
+      "context": "(1) Identifying the Intended Use The regulation requires manufacturers to validate software that is used as part of production or the quality management system for its intended use (see Subclauses 4.1.6, 7.5.6, and 7.6 of ISO 13485 ). This includes various cloud computing models related to computerized systems, such as IaaS, PaaS, and SaaS. Software with the following intended uses is considered to be used directly as part of production or the quality management system:",
+      "fingerprint": "c70e595698ae817b5563b6079235e7d29cf9436a89ce663a0e4dd47b5283f98c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 4,
+      "anchor": "page-10-paragraph-1",
+      "statement": "must be validated under Subclauses 4.1.6, 7.5.6, or 7. 6 of ISO 13485 as appropriate . However, as further discussed below, supporting software often carries lower risk, such that under a risk - based computer software assurance approach, the effort of validation may be reduced accordingly without compromising safety.",
+      "context": "14 Cloud computing used as part of production or the quality management system, including when supporting associated recordkeeping and manufacturing activities, is within the scope of this guidance. Cloud computing used as part of device software functions are not in the scope of this guidance. On the other hand, software with the following intended uses generally is not considered to be used as part of production or the quality management system, such that the requirement s for validation in Subclauses 4.1.6, 7.5.6, and 7.6 of ISO 13485 would not apply:",
+      "fingerprint": "a37a78070f047c2b517c86f635715b09bee50c2f4d1d0ce13731243f890caf57",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 5,
+      "anchor": "page-10-paragraph-7",
+      "statement": "As described in Subclauses 4.1.6, 7.5.6, and 7.6 of ISO 13485 , the specific approach and activities associated with software validation and revalidation are required to be proportionate to the risk associated with the use of the software, including the effect on the ability of the product to conform to specification s. FDA recognizes that software used in production or the quality management system is often complex and comprised of multiple features, functions, and operations; 15 software may have one or more intended uses depending on the individual features, functions, and operations of that software. In cases where the individual features, functions, and operations of the software have different roles within production or the q uality management",
+      "context": "Conversely, an IaaS cloud storage solution may support infrastructure to store production and process data; this would not be considered an established quality management system record. In this example, the IaaS cloud storage solution does not support production or the quality management system, and the requirement s for validation in Subclauses 4.1.6, 7.5.6, and 7.6 of ISO 13 485 would not apply. When storage of data in the cloud is independent of whether or not the data is part of the quality record, it is the manufacturer’s obligation to determine what the appropriate level of risk is for that application. Manufacturers may consider a least - burdensome approach to assuring the IaaS cloud storage solution is adequate for their business. 15 That is, software is often an integration of “features,” that are used together to perform a “function” that provides a desired outcome. Several fu",
+      "fingerprint": "793b3f05f635f741c9e3fb5cd308e6d07c597a9f0058172ec4aa32af33735bd6",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 6,
+      "anchor": "page-11-paragraph-2",
+      "statement": "For example, a commercial off - the - shelf (COTS) spreadsheet software may be comprised of various functions with different intended uses. When utilizing the basic input functions of the COTS spreadsheet software for an intended use of documenting the time an d temperature readings for a curing process, a manufacturer may not need to perform additional assurance activities beyond those conducted by the COTS software developer and initial installation and configuration. The intended use of the software, “documen ting readings,” only supports maintaining a record of the process information and poses a low process risk. As such, initial activities such as the successful vendor assessment and software installation and configuration may be sufficient to establish that the software is fit for its intended use and maintains a validated state. However, if a manufacturer also utilizes built - in functions of the COTS spreadsheet to create custom formulas that are directly used in production or the quality management system, then additional risks and data integrity considerations may be present. For example, if a custom formula automatically calculates time and temperature statistics to monitor the performance and suitability of the curing process, then additional validation b y the manufacturer might be necessary.",
+      "context": "system, they may present different risks with different levels of validation effort. FDA recommends that manufacturers examine the intended uses of the individual features, functions, and operations to facilitate development of a risk - based assurance strat egy. Manufacturers may decide to conduct different assurance activities for individual features, functions, or operations as related to the intended use. For the purposes of this guidance, we describe and recommend a computer software assurance framework where manufacturers examine the intended uses of the individual features, functions, or operations of the software. However, in simple cases where software has only one intended use (e.g., if all of the features, functions, and operations within the software share the same intended use), manufacturers may not find it h elpful to examine each feature, function, and operation individua",
+      "fingerprint": "6b74607df08f7bc4b1d39fbc57eee8745f8ec9012339d7c2c331681f38d0a5cf",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 7,
+      "anchor": "page-11-paragraph-5",
+      "statement": "(2) Determining the Risk - Based Approach Once a manufacturer has determined that a software feature, function, or operation is or will be used as part of production or the quality management system, a risk - based analysis is used to determine appropriate assurance activities. It should be noted that in accordance with Subclause",
+      "context": "FDA recommends that manufacturers document their decision - making process for determining whether a software feature, function, or operation is or will be used as part of production or the quality management system. 4.1.2 of ISO 13485 , a manufacturer is required to apply a risk - based approach to the control of the appropriate processes needed for the quality management system. Broadly, this risk - based approach entails systematically identifying reasonably foreseeable software failures, determining whether such a failure poses a high process risk, and systematically selecting and performing assurance activities commensurate with the medical device or process risk, as applicable.",
+      "fingerprint": "481705c22b8ec1397f2edbad8f2649dd4116f46fd36e4c291312e4a7ab73be1d",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 8,
+      "anchor": "page-11-paragraph-6",
+      "statement": "4.1.2 of ISO 13485 , a manufacturer is required to apply a risk - based approach to the control of the appropriate processes needed for the quality management system. Broadly, this risk - based approach entails systematically identifying reasonably foreseeable software failures, determining whether such a failure poses a high process risk, and systematically selecting and performing assurance activities commensurate with the medical device or process risk, as applicable.",
+      "context": "(2) Determining the Risk - Based Approach Once a manufacturer has determined that a software feature, function, or operation is or will be used as part of production or the quality management system, a risk - based analysis is used to determine appropriate assurance activities. It should be noted that in accordance with Subclause Manufacturers should select an appropriat e frequency for performing assurance activities based on their risk - based analysis and accounting for their processes and procedures, as appropriate for",
+      "fingerprint": "eae762dd771446b3920145126e5abaa1b54cd98600ea5ec986644c0e8dac08bc",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 9,
+      "anchor": "page-11-paragraph-7",
+      "statement": "Manufacturers should select an appropriat e frequency for performing assurance activities based on their risk - based analysis and accounting for their processes and procedures, as appropriate for",
+      "context": "4.1.2 of ISO 13485 , a manufacturer is required to apply a risk - based approach to the control of the appropriate processes needed for the quality management system. Broadly, this risk - based approach entails systematically identifying reasonably foreseeable software failures, determining whether such a failure poses a high process risk, and systematically selecting and performing assurance activities commensurate with the medical device or process risk, as applicable. the software and assurance activities being performed. Note that conducting a risk - based analysis for computer software assurance for production or quality management system software, as described in this guidance, is distinct from performing a risk analysis for a medical device as described in the International Organization for Standardization (ISO) 14971:2019 – Medical devices – Application of risk management to medi",
+      "fingerprint": "6ef7689ca98bbfc2630650e0bc0dcfff38b784e2c9df4d7124cae53d87c89ec7",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 10,
+      "anchor": "page-12-paragraph-1",
+      "statement": "the software and assurance activities being performed. Note that conducting a risk - based analysis for computer software assurance for production or quality management system software, as described in this guidance, is distinct from performing a risk analysis for a medical device as described in the International Organization for Standardization (ISO) 14971:2019 – Medical devices – Application of risk management to medical devices . The risk - based analysis for production or quality management system software focuses on those factors that may impact or prevent the software from performing as intended, such as proper system configuration and management, security of the system, data integrity, data storage, data transfer, or operation error. A risk - based analysis for production or quality management system software should consider which failures are reasonably foreseeable (as opposed to likely) and the risks resulting from each such failure. For example, in a risk - based analysis a manufacturer may consider the risks resulting from a power outage, whic h may not be like ly to occur but is reasonably foreseeable to occur over the life cycle of a production or quality management system. This guidance discusses both process risks and medical device risks . A process risk refers to the potential to compromise production or the quality management system. A medical device risk refers to the potential for a device to harm the patient or user.",
+      "context": "Manufacturers should select an appropriat e frequency for performing assurance activities based on their risk - based analysis and accounting for their processes and procedures, as appropriate for When discussing medical device risks, this guidance focuses on the medical device risk resulting from a quality problem that compromises saf ety.",
+      "fingerprint": "2067c2b5b3db4a3efa4b83af12f19dba20a4f40a55d7480c68a6833680e26d70",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 11,
+      "anchor": "page-13-paragraph-4",
+      "statement": "FDA acknowledges that process risks associated with software used as part of production or the quality management system are on a spectrum, ranging from high process risk to low process risk. Manufacturers should determine the risk of each software feature, function, or operation as the risk falls on that spectrum, depending on the intended use of the software. FDA is primarily concerned with the review and assurance for those software features, functions, and operations that are high process risk because a failure also poses a medical device risk. For the purposes of this guidance, FDA is presenting the process risks in a binary manner, “high process risk” and “not high process risk.” A manufacturer may still determine that a process risk is, for example, “ moderate,” “intermediate,” or even “low” for purposes of determining assurance activities; in such a case, the portions of this guidance concerning “not high process risk” would apply. As discussed in Section V.A.4 below, assurance activities should be con ducted for software that is “high process risk” commensurate with the medical device risk and “not high process risk” commensurate with the process risk.",
+      "context": "· Are intended to manage data (process, store, and/or organize data), automate an existing calculation, increase process monitoring, or provide alerts relevant to managing data when an exception occurs in an established process; and/or · Are used to support production or the quality management system, as explained in Section V.A.1 above. Example : An Enterprise Resource Planning (ERP) Management system contains a feature that automates manufacturing material restocking. This feature automates material ordering and delivery to appropriate production operations. However, a qualified person checks the materials before their use in production. The failure of this feature to perform as intend ed may result in a mix - up in restocking and delivery, which would be a quality problem because the wrong materials would be restocked and delivered. However, the delivery of the wrong materials to the",
+      "fingerprint": "84100309dc7beebc03ec88adfb3b98d0433cb384fde9d6e4c8d331f96eece0dd",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 12,
+      "anchor": "page-13-paragraph-5",
+      "statement": "Example : An Enterprise Resource Planning (ERP) Management system contains a feature that automates manufacturing material restocking. This feature automates material ordering and delivery to appropriate production operations. However, a qualified person checks the materials before their use in production. The failure of this feature to perform as intend ed may result in a mix - up in restocking and delivery, which would be a quality problem because the wrong materials would be restocked and delivered. However, the delivery of the wrong materials to the qualified person should result in the rejection of thos e materials before use in production; as such, the quality problem should not foreseeably lead to compromised safety. The manufacturer identifies this as an intermediate (not high) process risk and determines assurance activities commensurate with the proc ess risk. The manufacturer has performed an evaluation of the ERP vendor, the ERP system information, and has configured the ERP system for its operations. The manufacturer implements any remaining assurance activities associated with the material order an d delivery automation.",
+      "context": "FDA acknowledges that process risks associated with software used as part of production or the quality management system are on a spectrum, ranging from high process risk to low process risk. Manufacturers should determine the risk of each software feature, function, or operation as the risk falls on that spectrum, depending on the intended use of the software. FDA is primarily concerned with the review and assurance for those software features, functions, and operations that are high process risk because a failure also poses a medical device risk. For the purposes of this guidance, FDA is presenting the process risks in a binary manner, “high process risk” and “not high process risk.” A manufacturer may still determine that a process risk is, for example, “ moderate,” “intermediate,” or even “low” for purposes of determining assurance activities; in such a case, the portions of this gui",
+      "fingerprint": "f9f58d3b6b81cc32a9b9e667436345b31ec1e77a9a28efd8abdcad6feb0af06f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 13,
+      "anchor": "page-14-paragraph-3",
+      "statement": "Example : An automated graphical user interface (GUI) function in the production software is used for developing test scripts based on user interactions and to automate future testing of modifications to the user interface of a system used in production. A failure of this GUI function to perform as intended may result in implementation disruptions and software updates to the production system being delayed, but in this case, these errors should not foreseeably lead to compromised safety because the GUI funct ion operates in a separate test environment. The manufacturer identifies this as a low (not high) process risk and determines assurance activities that are commensurate with the process risk. The manufacturer already undertakes some of those identified ass urance activities so implements the remaining identified assurance activities.",
+      "context": "Example : An ERP management system contains a feature to automate product delivery. The medical device risk depends upon, among other factors, the correct product being delivered to the device user. A failure of this feature to perform as intended may result in a delivery mix - up, which would be a quality problem that foreseeably compromises safety; as such, the manufacturer identifies this as a high process risk. Since the failure would compromise safety, the manufacturer will next determine the related incr ease in medical device risk and identify the assurance activities that are commensurate with the medical device risk. In this case, the manufacturer has not already implemented any of the identified assurance activities, so the manufacturer implements all of the assurance activities identified in the analysis. (3) Production or Quality Management System Software Changes For devices",
+      "fingerprint": "56d4a711231c343ced8338f9fb9b33446ec08143b22c35ff71a90efd6ce80151",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 14,
+      "anchor": "page-15-paragraph-1",
+      "statement": "foreseeably compromises safety, then it should be submitted in a 30 - day notice. If a change would not result in a quality problem that foreseeably compromises safety, then the change may be appropriate to report in an annual report. 18 For example, a Manufacturing Execution System (MES) may be used to manage workflow, track progress, record data, and establish alerts or thresholds based on validated parameters, which are part of maintaining the quality management system. Failure of such an MES to perform as intended may disrupt operations but not affect the process parameters established to produce a safe and effective device. Changes affecting these MES operations are generally submitted in annual reports. In cont rast, an MES used to aut omatically control and adjust established critical production parameters (e.g., temperature, pressure, process time) may be a change to a manufacturing procedure that affects the safety or effectiveness of the device. If so, changes affecting this specific operation would be submitted in a 30 - day notice.",
+      "context": "17 21 CFR 814.39(f), 814.108, and 814.126(b)(1). Changes in manufacturing/sterilization site or to design or performance specifications do not qualify for a 30 - day notice, see 21 CFR 814.39(a). (4) Determining the Appropriate Assurance Activities Once the manufacturer has determined whether a software feature, function, or operation poses a high process risk (a quality problem that may foreseeably compromise safety), the manufacturer should identify the assurance activities commensurate with the me dical device risk or the process risk. In cases where the quality problem may foreseeably compromise safety (high process risk), the level of assurance should be commensurate with the medical device risk. In cases where the quality problem may not foreseea bly compromise safety (not high process risk), the level of assurance rigor should be commensurate with the process risk. In either case,",
+      "fingerprint": "8b0958d551928f4bd704e7b059d217d164343f0f25bf38bc46ab32ca70dda56c",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 15,
+      "anchor": "page-15-paragraph-2",
+      "statement": "(4) Determining the Appropriate Assurance Activities Once the manufacturer has determined whether a software feature, function, or operation poses a high process risk (a quality problem that may foreseeably compromise safety), the manufacturer should identify the assurance activities commensurate with the me dical device risk or the process risk. In cases where the quality problem may foreseeably compromise safety (high process risk), the level of assurance should be commensurate with the medical device risk. In cases where the quality problem may not foreseea bly compromise safety (not high process risk), the level of assurance rigor should be commensurate with the process risk. In either case, heightened risks of software features, functions, or operations generally entail greater rigor for assurance efforts ( i.e., a greater amount of objective evidence). Conversely, relatively low risk (i.e., not high process risk) of compromised safety and/or quality generally entails less collection of objective evidence for the computer software assurance effort.",
+      "context": "foreseeably compromises safety, then it should be submitted in a 30 - day notice. If a change would not result in a quality problem that foreseeably compromises safety, then the change may be appropriate to report in an annual report. 18 For example, a Manufacturing Execution System (MES) may be used to manage workflow, track progress, record data, and establish alerts or thresholds based on validated parameters, which are part of maintaining the quality management system. Failure of such an MES to perform as intended may disrupt operations but not affect the process parameters established to produce a safe and effective device. Changes affecting these MES operations are generally submitted in annual reports. In cont rast, an MES used to aut omatically control and adjust established critical production parameters (e.g., temperature, pressure, process time) may be a change to a manufactur",
+      "fingerprint": "b7cdc00ca99faa079d819e34e7ff56b937f0093a9eeaaa6271f51a710f4dac68",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 16,
+      "anchor": "page-15-paragraph-4",
+      "statement": "If the manufacturer instead determined that the software feature, function, or operation does not pose a high process risk (i.e., it would not lead to a quality problem that foreseeably compromises safety), the manufacturer should consider the risk relativ e to the process (i.e., production or the quality management system). This is because the failure would not compromise safety, so the failure would not introduce additional medical device risk. For example, a function that collects and records process data for review would pose a lower process risk than a function that determines acceptability of product prior to human review.",
+      "context": "A software feature, function, or operation that could lead to severe harm to a patient or user would generally be high medical device risk. In contrast, a feature, function, or operation that would not foreseeably lead to severe harm would likely not be hi gh medical device risk. In either case, the risk of the software’s failure to perform as intended is commensurate with the resulting medical device risk. 18 Manufacturers should also consult the “ Enforcement Policy for Certain Supplements for Approved Premarket Approval (PMA) or Humanitarian Device Exemption (HDE) Submissions ” guidance, which describes FDA’s general recommendations for limited modifications to devices required to have an approved PMA or HDE to help address manufacturing limitations or supply chain disruptions.",
+      "fingerprint": "35aa2e4aaaa827c9065e3f6f7b0c9f6305f058dcd2b0186e8c2dbf9f1507ce25",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 17,
+      "anchor": "page-15-paragraph-5",
+      "statement": "18 Manufacturers should also consult the “ Enforcement Policy for Certain Supplements for Approved Premarket Approval (PMA) or Humanitarian Device Exemption (HDE) Submissions ” guidance, which describes FDA’s general recommendations for limited modifications to devices required to have an approved PMA or HDE to help address manufacturing limitations or supply chain disruptions.",
+      "context": "If the manufacturer instead determined that the software feature, function, or operation does not pose a high process risk (i.e., it would not lead to a quality problem that foreseeably compromises safety), the manufacturer should consider the risk relativ e to the process (i.e., production or the quality management system). This is because the failure would not compromise safety, so the failure would not introduce additional medical device risk. For example, a function that collects and records process data for review would pose a lower process risk than a function that determines acceptability of product prior to human review. Types of manual or automated testing that may be considered as part of the assurance activities commonly performed by manufacturers include, but are not limited to, the following:",
+      "fingerprint": "ff9f9ab02c8053eebe08594bad3ad6f4097b26ba3fe032ce1fb08d9d5f119ac5",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 18,
+      "anchor": "page-17-paragraph-2",
+      "statement": "In general, FDA recommends that manufacturers apply principles of risk - based testing in which the management, selection, prioritization, and use of testing activities and resources are consciously based on corresponding types and levels of analyzed risk to determine the appropriate activities. For high process risk software features, functions, and operations, manufacturers may choose to consider more rigor such as the use of scripted testing or a hybrid approach of scripted testing and unscripted testing, scaled as appropriate, when determining their assurance activities. In contrast, for software features, functions, and operations that are not high process risk, manufacturers may consider using unscripted testing methods such as scenario testing, error - gu essing, exploratory testing, or a combination of methods that is suitable for the risk. The testing examples discussed for high process risk and not high process risk are not exclusive to those categories. Manufacturers should apply the principles of risk - based testing to determine the appropriate type of testing to perform. For example, unscripted testing may be better suited to assure the software performs as intended even for high process risk features, functions, and operations. Conversely, a manufactur er may find it more effective and efficient to develop scripted testing and automate it for not high process risk features, functions, and operations.",
+      "context": "FDA recognizes that there are software testing methods and approaches, beyond those referenced in the guidance, that manufacturers have the flexibility to consider and utilize, as appropriate. 25 For example, the “ Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submission ” guidance, which is applicable to devices with cybersecurity considerations and describes recommendations regarding the cybersecurity information to be submitted for devices under certain premarket submission types, includes recommendations for cybersecur ity testing used to demonstrate the effectiveness of design and development activities . Manufacturers may consider utilizing the cybersecurity testing methods described in that guidance when conducting the assurance activities described in this guidance, as appropriate. (5) Additional Considerations for Assurance A",
+      "fingerprint": "984b5dd2345360251fc34b2bd7651d8fa1299312ae009e8c8e361408a353d02b",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 19,
+      "anchor": "page-17-paragraph-3",
+      "statement": "(5) Additional Considerations for Assurance Activities When deciding on the appropriate assurance activities, manufacturers should consider whether there are any additional controls or mechanisms in place throughout the quality management system that may decrease the impact of compromised safety and/or quality if failure of the software feature, function or operation were to occur. For example, as part of a comprehensive assurance approach, manufacturers can leverage the following to reduce the effort of additional assurance activities:",
+      "context": "In general, FDA recommends that manufacturers apply principles of risk - based testing in which the management, selection, prioritization, and use of testing activities and resources are consciously based on corresponding types and levels of analyzed risk to determine the appropriate activities. For high process risk software features, functions, and operations, manufacturers may choose to consider more rigor such as the use of scripted testing or a hybrid approach of scripted testing and unscripted testing, scaled as appropriate, when determining their assurance activities. In contrast, for software features, functions, and operations that are not high process risk, manufacturers may consider using unscripted testing methods such as scenario testing, error - gu essing, exploratory testing, or a combination of methods that is suitable for the risk. The testing examples discussed for high",
+      "fingerprint": "ac707b70838be22c3f85d7e4e135018a9dd749cb6402787477ba140b4395e84f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 20,
+      "anchor": "page-19-paragraph-5",
+      "statement": "A manufacturer should establish and maintain within its procedures the requirements it has for suppliers on the basis of their ability to meet specified requirements and define the type and extent of control to be exercised over the product, services, and suppliers. Manufacturers should consider appropriate sources of information regarding the vendor in their evaluation decision.",
+      "context": "and/or · Establishing and maintaining access controls, electronic signature controls and authorization checks for users’ actions. FDA recommends that manufacturers establish a risk - based approach to the evaluation of the vendor of software or service, the eva luation activities, and the appropriate objective evidence to retain.",
+      "fingerprint": "8f04bcf4e2a29ab613e5e54d7f34718af0838015c19930be39762a0c018acd57",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 21,
+      "anchor": "page-20-paragraph-2",
+      "statement": "(6) Establishing the Appropriate Record When establishing the record, the manufacturer should capture sufficient objective evidence to demonstrate that the software feature, function, or operation was assessed and performs as intended. In general, FDA recommends the record include the following:",
+      "context": "Manufacturers are responsible for determining the appropriate assurance activities for ensuring the software features, functions, or operations maintain a validated state. The assurance activities and considerations noted above are some possible ways of providing assurance and are not intended to be prescriptive or exhaustive. Manufacturers may leverage any of the activities, or a combination of activities, that are most appropriate for risk associated with the intended use. · The intended use of the software feature, function, or operation; · The result of the risk - based analysis of the software feature, function, or operation; and · Documentation of the assurance activities conducted, including:",
+      "fingerprint": "0aea413a39b9c51f7e8be5db1b2baeec9331c39f6bc50de1f5ac0f66b4fc85f4",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 22,
+      "anchor": "page-23-paragraph-5",
+      "statement": "· Risk - Based Analysis: In this case, the software is only used to collect and display data for monitoring nonconformances, and the manufacturer has established additional process controls and inspections to ensure that nonconforming product is not released. Therefore, failure o f the spreadsheet to perform as intended should not result in a quality problem that foreseeably leads to compromised safety. As such, the software does not pose a high process risk, and the assurance activities should be commensurate w ith the process risk.",
+      "context": "· Intended Use: The spreadsheet is intended for use in collecting and graphing nonconformance data stored in a controlled system for monitoring purposes; as such, it is used as part of production or the quality management system. Because of this use, the spreadsheet is different from similar software used for business operations such as for accounting. · Tested: Spreadsheet X, Version 1.2 · Test type: Unscripted testing – exploratory testing",
+      "fingerprint": "33bf0ccce0dc34f38618f126fc61da8efb87ca23d15cdb88820f0f731b74c2f3",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 23,
+      "anchor": "page-24-paragraph-6",
+      "statement": "B. Considerations for Electronic Records Requirements Manufacturers have expressed confusion and concern regarding the application of 21 CFR Part 11, Electronic Records; Electronic Signatures, to computers or automated data processing systems used as part of production or the quality management system. Manufacturers should refer to the “ Part 11, Electronic Records; Electronic Signatures – Scope and Application ” guidance (hereafter referred to as the “ Electronic Records guidance ”), when determining whether and how to apply 21 CFR Part 11 (hereafter referred to as “Part 11”).",
+      "context": "· When/Who: July 9, 20 2 5 , by Jane Smith The regulations in Part 11 set forth the criteria under which FDA considers electronic records, electronic signatures, and handwritten signatures executed to electronic records to be trustworthy, reliable, and generally equivalent to paper records and handwritten signatures executed on paper (see 21 CFR 11.1(a)) . In general, Part 11 applies to records in electronic form that are created, modified, maintained, archived, retrieved, or transmitted under any records requirements set forth in Agency regulations (see 21 CFR 11.1(b)) . Part 11 also applies to electronic records submitted to the Agency under requirements of the FD&C Act and the Public Health Service Act (PHS Act) , even if such records are not specifically identified in Agency regulations (see 21 CFR 11.1(b)) . The underlying requirements set forth in the FD&C Act, PHS Act, and FDA reg",
+      "fingerprint": "c8a2288a02881d8fb76d008a02140e64731c49bb09f589885e0579b935aa408a",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 24,
+      "anchor": "page-25-paragraph-1",
+      "statement": "21 CFR 11.3(b)(6)). To determine when a record is required under Part 820, manufacturers should consider, among other things, whether the record would be necessary as evidence to document required validation. I f a manufacturer maintains in electronic form a document required under Part 820, then Part 11 generally applies.",
+      "context": "For computer software used as part of production or the quality management system, the applicable predicate rules include those under Part 820. A document required under Part 820 — including, but not necessarily limited to, a document Part 820 requires to bear a signature — and maintained in electronic form would generally be an “electronic record” under Part 11 (see Example : Documentation demonstrating that a management enterprise system correctly and reliably automates checking materials before use in production would generally be necessary as evidence for a manufacturer to support a validated state. In this example, Part 1 1 would generally apply to the documentation if in electronic form .",
+      "fingerprint": "e24c8023e8186868bee24082b975fc37a782492b7b3abfb4ef0245742a97700f",
+      "review_status": "pending"
+    },
+    {
+      "ordinal": 25,
+      "anchor": "page-37-paragraph-1",
+      "statement": "Example 4: Software as a Service (SaaS) Product Life Cycle Management System (PLM) A medical device manufacturer has decided to implement a SaaS - based Product Life Cycle Management System (PLM). While the PLM SaaS solution has the capability to automate the management of various life cycle stages of a product development, the manufacture r intends to use the solution for broad project management. The SaaS PLM is intended to automate the intake of project requirements, develop project plans, monitor/track project execution, and maintain relevant records, signatures, and delivera bles upon pr oject closing. This intended use of the system does not directly impact patient safety or product quality but does maintain a quality record where integrity of the data is needed. The manufacturer does not need any customization of the “out - of - the - box” cap abilities of the SaaS product and only needs to perform basic standard configuration of the SaaS product (e.g., user roles, accounts).",
+      "context": "The manufacturer documents: · the intended use · risk - based analysis · record of who performed the assessment and date the assessment was performed · conclusion declaring acceptability including resolution, justification, and/or process controls implemented addressing the impact of the issues As part of the assurance activities, the manufacturer performs a thorough assessment of the SaaS vendor that includes:",
+      "fingerprint": "fbca0515f9aca7e9f342bc298978b5704e1407da583d611ab396e7d4d5ee0891",
+      "review_status": "pending"
+    }
+  ],
+  "retrieved_at": "2026-11-26T16:08:39.058Z"
+}
