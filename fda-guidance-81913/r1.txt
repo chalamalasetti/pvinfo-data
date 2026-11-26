@@ -1,0 +1,2785 @@
+Guidance for Industry
+Appendix I (B) to the ICH E2B(R3) ICSRs
+        Implementation Guide
+
+ Backwards and Forwards Compatibility
+
+
+
+
+         U. S. Department of Health and Human Services
+                  Food and Drug Administration
+        Center for Drug Evaluation and Research (CDER)
+       Center for Biologics Evaluation and Research (CBER)
+
+                           April 2022
+                             ICH
+
+                           Revision 1
+Guidance for Industry
+Appendix I (B) to the ICH E2B(R3) ICSRs
+        Implementation Guide
+   Backwards and Forwards Compatibility
+
+                                      Additional copies are available from:
+
+                           Office of Communications, Division of Drug Information
+                                   Center for Drug Evaluation and Research
+                                        Food and Drug Administration
+                            10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                        Silver Spring, MD 20993-0002
+                          Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                        Email: druginfo@fda.hhs.gov
+               https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+                                                      and/or
+
+                             Office of Communication, Outreach and Development
+                                 Center for Biologics Evaluation and Research
+                                         Food and Drug Administration
+                              10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                         Silver Spring, MD 20993-0002
+                                    Phone: 800-835-4709 or 240-402-8010
+                                            Email: ocod@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+
+
+
+
+                       U. S. Department of Health and Human Services
+                                Food and Drug Administration
+                      Center for Drug Evaluation and Research (CDER)
+                     Center for Biologics Evaluation and Research (CBER)
+
+                                                   April 2022
+                                                     ICH
+
+                                                   Revision 1
+                                    Contains Nonbinding Recommendations
+
+
+
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+Note 1: This guidance was jointly developed by the E2B(R3) and M2 Expert Working Groups
+of the International Council for Harmonisation of Technical Requirements for Pharmaceuticals
+for Human Use (ICH) and has been subject to consultation by the regulatory parties, in
+accordance with the ICH process. This document has been endorsed by the ICH Steering
+Committee at Step 4 of the ICH process, November 2012. At Step 4 of the process, the final
+draft is recommended for adoption to the regulatory bodies of the European Union, Japan, and
+the United States.
+
+
+Note 2: FDA has added title pages and front matter to meet the requirements of the Agency’s
+good guidance practices. FDA has maintained all other elements of the original implementation
+guidance, including pagination and heading numbers. The heading numbers are consistent with
+the structure and format of the ICH E2B(R3) Implementation Guide. *
+
+
+
+
+* This guidance was updated to incorporate technical updates made to the ICH Appendix I (B) to the
+
+Implementation Guide for Electronic Transmission of Individual Case Safety Reports — Backwards and Forwards
+Compatibility Recommendations in 2022. You may submit comments on the guidance at any time. Submit
+comments to Docket No. FDA-2011-D-0720 (available at https://www.regulations.gov/search?filter=FDA-2011-D-
+0720).
+                                        Contains Nonbinding Recommendations
+
+
+
+                                                 Document History
+
+ Date of          Title of Document                                        Version   Published for     WG
+ Finalisation
+ April            Appendix I (B) to the Implementation Guide for           2.00      Step 4 document   E2B EWG
+                  Electronic Transmission of Individual Case Safety
+ 2013
+                  Reports (ICSRs)
+                  Backwards and Forwards Compatibility
+                  Recommendations
+ November         Editorial corrections made – the accompanying            2.01      Step 4 document   E2B
+                  history spreadsheet should be consulted for details of
+ 2014                                                                                                  IWG
+                  changes
+ November         Change reference from M5 to ISO IDMP                     2.02      Step 4 document   E2B IWG
+ 2016
+ March 2022       Editorial corrections made                               2.03      Step 4 document   E2B(R3)
+                  Update scenarios and examples of 5.2.6
+                                                                                                       EWG/IWG
+
+
+
+
+Legal notice: This document is protected by copyright and may, with the exception of the ICH logo, be used,
+reproduced, incorporated into other works, adapted, modified, translated or distributed under a public license
+provided that ICH's copyright in the document is acknowledged at all times. In case of any adaption, modification
+or translation of the document, reasonable steps must be taken to clearly label, demarcate or otherwise identify
+that changes were made to or based on the original document. Any impression that the adaption, modification or
+translation of the original document is endorsed or sponsored by the ICH must be avoided.
+
+The document is provided "as is" without warranty of any kind. In no event shall the ICH or the authors of the
+original document be liable for any claim, damages or other liability arising from the use of the document.
+
+The above-mentioned permissions do not apply to content supplied by third parties. Therefore, for documents
+where the copyright vests in a third party, permission for reproduction must be obtained from this copyright holder.
+                                   Contains Nonbinding Recommendations
+
+
+
+                                    TABLE OF CONTENTS
+
+
+1.0 PURPOSE…………………………………………………………………………………... 4
+
+
+2.0 BACKGROUND……………………………………………………………………............. 4
+
+
+3.0 COMPATIBILITY……………………………………………………………………......... 5
+
+3.1 Definitions…………………………………………………………………………………... 5
+ 3.1.1 Compatibility                                                        5
+ 3.1.2 Backwards Compatibility                                              5
+ 3.1.3 Forwards Compatibility                                               5
+
+3.2 Compatibility Use Cases…………………………………………………………………….5
+ 3.2.1 Assumptions                                                          5
+ 3.2.2 Exchange Use Case                                                    6
+ 3.2.3 Retransmission Use Case                                              7
+
+3.3 Ensuring Data Integrity During E2B(R2) and E2B(R3) Conversions………………….. 8
+
+
+4.0 APPROACH FOLLOWED BY THIS APPENDIX……………………………………… 8
+
+
+5.0 GUIDANCE FOR CONVERSION………………………………………………………. 10
+
+5.1 Date Format……………………………………………………………………………….. 10
+ 5.1.1 Same Precision                                                      10
+ 5.1.2 Less Precision in E2B(R3)                                           11
+ 5.1.3 More Precision in E2B(R3)                                           11
+ 5.1.4 Date of this Transmission                                           12
+ 5.1.5 Time Zones                                                          13
+
+5.2 Code Mapping…………………………………………………………………………….. 13
+ 5.2.1 Coded value set                                                     13
+ 5.2.2 Report Nullification / Amendment                                    15
+ 5.2.3 Sender Type                                                         16
+ 5.2.4 Age Group                                                           17
+
+
+
+                                                   -1-
+                                     Contains Nonbinding Recommendations
+
+
+ 5.2.5 Drug Characterization                                                18
+ 5.2.6 Free Text and Codes for Route of Administration                      18
+ 5.2.7 Time Interval                                                        21
+ 5.2.8 MedDRA Codes                                                         23
+ 5.2.9 Code Lists and UCUM Codes                                            24
+ 5.2.10 Free Text and UCUM Codes                                            25
+ 5.2.11 Re-administration and Recurrence of Reaction on Re-administration   25
+ 5.2.12 Patient and Parent Sex                                              26
+ 5.2.13 Acknowledgement Codes                                               27
+
+5.3 Deletion…………………………………………………………………………………….. 28
+ 5.3.1 Fields to Ignore                                                     28
+ 5.3.2 Fields with Default Value                                            28
+ 5.3.3 Safety Report Version Number                                         29
+ 5.3.4 Number of Separate Dosages                                           29
+
+5.4 Addition……………………………………………………………………………………. 30
+ 5.4.1 Fields with No Mapping                                               30
+ 5.4.2 Study Registration                                                   31
+ 5.4.3 ISO IDMP identifiers                                                 32
+ 5.4.4 Investigational Product Blinded                                      33
+ 5.4.5 Case Narrative in Native Language                                    33
+ 5.4.6 Reaction as Reported and Translated                                  34
+ 5.4.7 Reported cause(s) of death                                           34
+ 5.4.8 Autopsy-determined Cause(s) of Death                                 35
+
+5.5 Field Length……………………………………………………………………………….. 36
+ 5.5.1 Extended Fields to Truncate                                          36
+ 5.5.2 Extended Fields to Keep                                              37
+ 5.5.3 Length of Numeric Fields (Extended)                                  38
+
+5.6 Null Flavour……………………………………………………………………………… 39
+ 5.6.1 Null Flavour for Optional Free Text Fields                           39
+ 5.6.2 Null Flavour for Fields Required in E2B(R3)                          40
+ 5.6.3 Null Flavour for Optional Codes and Dates                            41
+
+5.7 Structure…………………………………………………………………………………… 42
+
+
+
+                                                     -2-
+                                     Contains Nonbinding Recommendations
+
+
+5.7.1 Country of Primary Source                                            42
+5.7.2 Country of Event/Reaction                                            43
+5.7.3 Unique Case Number                                                   43
+5.7.4 Sender’s Telephone and Fax                                           44
+5.7.5 Literature References                                                45
+5.7.6 Seriousness and Seriousness Criteria                                 45
+5.7.7 Results of Tests                                                     49
+5.7.8 Drug and Dosage Information                                          50
+5.7.9 Substance Strength                                                   52
+5.7.10 Indication                                                          53
+5.7.11 Drug-Reaction / Event Matrix                                        54
+5.7.12 Additional Information on Drug                                      57
+5.7.13 Additional Sender Diagnosis                                         58
+5.7.14 Batch and Message Wrappers                                          59
+5.7.15 ICSR Message Sender and Receiver in ACK                             60
+
+
+
+
+                                                     -3-
+                                       Contains Nonbinding Recommendations
+
+
+
+1.0 PURPOSE
+
+This document is an appendix to the Implementation Guide (IG) for the ‘International Conference on
+Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use (ICH) Electronic
+Transmission of Individual Case Safety Reports (ICSRs)’.
+
+This Appendix is intended to assist reporters and recipients (including pharmaceutical companies, authorities and
+non-commercial sponsors) in implementing systems with special focus on the recommendations for conversion
+back and forth between the previous standard, i.e., E2B(R2) and this standard, i.e., E2B(R3).
+
+The evolution of the guideline, from E2B(R2) to E2B(R3), has the consequence that ICSRs cannot be perfectly
+converted from one standard version to the other (either backwards or forwards). Repeated conversion could result
+in transformation or loss of information. Therefore receivers need to evaluate contents carefully. This document
+presents the recommendations for conversion agreed within ICH so as to provide a reference to system providers,
+and a common understanding on the way to convert ICSRs and ICSR acknowledgments (ICSR ACKs) between
+E2B(R2) and E2B(R3).
+
+
+
+2.0 BACKGROUND
+
+The current pharmacovigilance databases are operating largely on the basis of the ICH E2B(R2) guideline and the
+DTD version 2.1. Whilst it is envisaged that ICH E2B(R3) will improve the current standards, it is obvious that
+there will be a time of transition until all stakeholders (regulators, pharmaceutical industry and other parties in the
+pharmaceutical business sector) have implemented the new guideline and have their pharmacovigilance databases
+adapted to these new standards.
+
+This implies that pharmacovigilance databases operating ICH E2B(R2) and / or ICH E2B(R3) standards will have
+to coexist and mapping procedures must be in place to ensure a coherent and harmonized exchange of ICSRs among
+all stakeholders at the international level. This is even more important since the exchange of ICSRs takes place
+between multiple senders and receivers and therefore depends on the implementation status (E2B(R2) or E2B(R3))
+of each party in each transmission.
+
+As a result, it is of major importance to address the compatibility between the two guidelines and the relevant
+message specifications and to provide a mapping standard that will ensure a smooth transition phase.
+
+The present appendix intends to
+
+   • describe the need for a harmonized and documented backwards and forwards compatibility
+   • define the method to address compatibility issues
+
+
+
+
+                                                         -4-
+                                       Contains Nonbinding Recommendations
+
+
+
+   • categorize the compatibility issues
+   • define the mapping recommendations for the ICH E2B(R2) and the ICH E2B(R3)
+
+
+
+
+3.0 COMPATIBILITY
+
+3.1 Definitions
+
+3.1.1 Compatibility
+
+Different systems (e.g., programs, file formats, protocols, programming languages) that can work together or
+exchange data are said to be compatible.
+
+For ICH E2B, compatibility refers to different pharmacovigilance systems (e.g., programs, file formats, protocols,
+programming languages) that can interact to support the electronic exchange of pharmacovigilance data on the basis
+of the ICH E2B(R2) and ICH E2B(R3) and applicable message specifications.
+
+3.1.2 Backwards Compatibility
+
+Backwards compatibility in the context of this appendix covers the capability to map the data elements of the ICH
+E2B(R3) guideline to the previous version, i.e., the ICH E2B(R2) guideline dated February 2001. The backwards
+compatibility should ensure that the integrity of the data is maintained and that limitations are fully described and
+supported by the E2B community (e.g., in case some data is lost during the conversion).
+
+3.1.3 Forwards Compatibility
+
+Forwards compatibility in the context of this appendix covers the capability to map the data elements of the ICH
+E2B(R2) guideline dated February 2001 to the new version i.e., ICH E2B(R3). The forwards compatibility should
+ensure that the integrity of the data is maintained and that limitations are fully described and supported by the E2B
+community (e.g., in case some data is lost during the conversion).
+
+
+
+3.2 Compatibility Use Cases
+
+3.2.1 Assumptions
+
+Compatibility applies to pharmacovigilance systems and their capability to handle the message specifications in
+ICH E2B(R2) and ICH E2B(R3) formats.
+
+It is assumed that the stakeholders will always send the reports in the format supported by their own
+pharmacovigilance system. The receiver of a case safety report is the only one who might be called upon to perform
+a conversion (either backwards or forwards) in order to load the report into his / her system.
+
+
+
+                                                         -5-
+                                      Contains Nonbinding Recommendations
+
+
+Here is the list of assumptions made in the context of the present appendix:
+
+   • Pharmacovigilance systems that currently support the E2B(R2) format will continue to receive E2B(R2)-
+      compliant messages, and there is no guarantee that these systems will immediately evolve to directly support
+      E2B(R3)-compliant messages.
+   • Pharmacovigilance systems that are developed to support the E2B(R3) format will support E2B(R3)
+      compliant messages and there is no guarantee that these systems will also be developed to support E2B(R2)
+      messages. However, system developers are encouraged to provide backwards compatibility support.
+   • Pharmacovigilance systems should be built to process ICH message specifications. This implies that the
+      underlying information model (usually the database) should be compatible with the ICH information model
+      of the safety and acknowledgment messages. However, it is expected that national or regional requirements
+      that govern system development might be outside the scope of the ICH information model, and therefore
+      these recommendations for conversion might be extended to cover such additional requirements.
+   • Pharmacovigilance systems should be fully validated to ensure that the information exchanged in the ICH
+      message format can be appropriately processed and stored in computer and human readable format.
+
+3.2.2 Exchange Use Case
+
+When exchanging ICH E2B messages between a sender and a receiver, the message can be created and processed
+by systems running either the ICH E2B(R2) or the ICH E2B(R3) specifications. In such situation, there is a need to
+convert the file from E2B(R3) to E2B(R2) or vice versa.
+
+The conversion will always occur on the receiver side, i.e., just before loading the case into the pharmacovigilance
+system.
+
+
+
+                  Sender                                   Conversion
+                                                                                          Receiver
+                                        E2B(R3)                           E2B(R2)
+                                                           to E2B(R2)
+                   E2B(R3)                                                                E2B(R2)
+
+
+
+                  Sender                                   Conversion
+                                                                                          Receiver
+                                        E2B(R2)                           E2B(R3)
+                                                           to E2B(R3)
+                   E2B(R2)                                                                E2B(R3)
+
+
+                   Sender                                                      Receiver
+
+
+
+                                        Figure 1: Use Case for Exchange
+
+
+
+
+                                                        -6-
+                                        Contains Nonbinding Recommendations
+
+
+In order to properly be treated by the receiver’s system, the message should be converted from the format used by
+the sender to the one in use by the receiver. The objective of this conversion is to retrieve all the relevant information
+at the receiver’s side:
+
+   • Conversion from E2B(R3) to E2B(R2) calls for the retrieval of all the relevant E2B(R2) data elements and
+      their content from the E2B(R3) format and mapping them to the E2B(R2) message format to generate an
+      E2B(R2)-compliant message.
+   • Conversion from E2B(R2) to E2B(R3) calls for the generation of a new message format. This is accomplished
+      by mapping the E2B(R2) data elements and their content to the E2B(R3) format. Note that some E2B(R2)
+      information might not be available to map to E2B(R3) and therefore the new E2B(R3) formatted message
+      should support the absence of information.
+
+3.2.3 Retransmission Use Case
+
+Based upon pharmacovigilance reporting requirements, E2B messages can be retransmitted between different
+senders and receivers. During this retransmission process, information previously submitted about the case should
+not be omitted or changed if no new information is available for retransmission. Recommended exceptions are listed
+in the E2B(R3) Specifications; these exceptions concern information available in both E2B(R2) and E2B(R3)
+information models.
+
+The retransmission use case is described in the diagram below.
+
+
+
+
+                                       Figure 2: Use Case for Retransmission
+
+In such case, the conversions should ensure data integrity as much as possible, i.e., with limited loss of information.
+Ideally, the initial and retransmitted messages should be identical from a content perspective except for the
+information updated by the re-transmitter.
+
+This appendix intends to provide the recommended rules to follow regarding the conversion of E2B messages
+(backwards and forwards) including the capabilities regarding the retransmission use case, and known limitations.
+
+
+
+
+                                                           -7-
+                                       Contains Nonbinding Recommendations
+
+
+3.3 Ensuring Data Integrity During E2B(R2) and E2B(R3) Conversions
+
+The conversion use cases call for limiting the amount of data lost during the conversion process.
+
+Conversion from E2B(R2) to E2B(R3) might result in some information being absent from the E2B(R3) formatted
+message because some of the data elements in E2B(R2) are no longer supported in E2B(R3), e.g., information on
+the receiver. Conversion from E2B(R3) to E2B(R2) should provide an abbreviated version of the data content
+because some data elements in E2B(R3) have been modified to increase the size of the text field, e.g., the sender’s
+comments.
+
+To minimize data lost during conversions, the following principles have been taken into account:
+
+   • If a data element in E2B(R2) is not present in E2B(R3), this implies that related information might not be
+      considered required and therefore this information can be omitted. For example, the information about the
+      receiver in E2B(R2) has been removed in E2B(R3).
+   • If a data element has been added in E2B(R3), this does not imply that current E2B(R2)-compliant systems
+      would support the new information and therefore it is not always called for to convert the data to E2B(R2).
+      However, the most important information will be converted to E2B(R2) as part of the case narrative section.
+   • For the retransmission use case where re-transmitters manage several conversions between E2B(R2) and
+      E2B(R3), re-transmitters parse the content of the case narrative section of E2B(R2) in order to reconstruct
+      the E2B(R3) message as close as possible to the original message.
+
+The case narrative section of E2B has originally a limited size (20,000 characters). It is recommended to amend
+E2B(R2) system and design E2B(R3) systems so as to support the case narrative section with no size limitation.
+This would allow the use of the case narrative placeholder to store the fields that cannot be converted directly, i.e.,
+at the location where the fields appear in E2B.
+
+If the E2B(R2) system cannot be amended to remove the size limitation on the case narrative field, it is then
+recommended to extract the information out of the case narrative field into an external file, for the information part
+coming from the conversion process.
+
+
+
+4.0 APPROACH FOLLOWED BY THIS APPENDIX
+
+The Implementation Guide for the E2B(R3) message provides technical recommendations on the way to encode
+the new E2B information model using the XML Schema of the ICH ICSR message.
+
+Therefore, the information fields that have not been amended in the new specification can be converted by following
+the same recommendations as the one provided in the Implementation Guide. The present appendix focuses on
+
+
+
+
+                                                         -8-
+                                      Contains Nonbinding Recommendations
+
+
+changes provided by E2B(R3), and for each change, or change type, guidance is provided regarding the way to
+convert the information backwards and forwards.
+
+Changes provided by E2B(R3) can be categorized as follows:
+
+   • Date format: the E2B(R2) guideline supports dates with 2 separate fields, one for the date itself and one for
+      the date format. The implementation of the E2B(R3) message has taken another approach by supporting the
+      date data type, i.e., with both date value and date format in the same field. Guidance is provided on the
+      conversion of dates.
+   • Code mapping: E2B(R2) and E2B(R3) provide sets of codes for several fields. In some case, one format has
+      additional code values than the other. Guidance is provided on the conversion of codes.
+   • Deletion: some fields of E2B(R2) have been deleted in E2B(R3). Guidance is provided on the way to handle
+      such fields.
+   • Addition: some fields have been added in E2B(R3). Guidance is provided on the way to handle such fields.
+   • Field length: some fields have been extended (i.e., increased field length) in E2B(R3). Guidance is provided
+      on the conversion of such fields.
+   • Masking: E2B(R3) provides another way to mask information, for privacy purposes, or because information
+      is unknown. Guidance is provided on the way to pass from one encoding to the other, and vice versa.
+   • Structure: E2B(R3) provides another way to structure the information that was available in E2B(R2)
+      guideline. Guidance is provided on the way to pass from one structure to the other, and vice versa.
+
+The next section provides the guidance for conversion. The section has been organized per type of change, as to
+provide generic guidance before instructions specific per field, for both the ICSR and the ICSR Acknowledgement
+messages.
+
+
+
+
+                                                       -9-
+                                          Contains Nonbinding Recommendations
+
+
+
+5.0 GUIDANCE FOR CONVERSION
+
+5.1 Date Format
+
+The E2B(R2) guideline supports dates with 2 separate fields, one for the date itself and one for the date format. For
+each field, the list of supported formats is specified in the guideline.
+
+The implementation of the E2B(R3) message has taken another approach in supporting the date type, i.e., with both
+date value and date format in the same field. E2B(R3) only defines a minimal precision, and dates should be reported
+with the appropriate precision. In E2B(R3), dates can be reported with a time zone.
+
+Guidance is provided on the conversion of dates, which depend on whether E2B(R3) supports the same date
+precision as E2B(R2), or whether additional formats are supported, with more or less precision.
+
+5.1.1 Same Precision
+
+All the date fields, except E2B(R2) A.1.3 / E2B(R3) C.1.2 (see section 5.1.4), can be expressed in a format that is
+appropriate for E2B(R2) and E2B(R3).
+
+In such case, the following conversion recommendation should apply:
+
+   • To upgrade to E2B(R3), the date value should be copied from the date field of E2B(R2) into the field of
+      E2B(R3). The date format field of E2B(R2) should be ignored.
+      Example:        Input in E2B(R2):     date value: 20081025; date format: CCYYMMDD
+                      Output in E2B(R3): date field: 20081025
+   • To downgrade to E2B(R2), the date value should be copied from the field of E2B(R3) into the date field of
+      E2B(R2), and, based on the number of characters, the date format should be detected and pasted into the date
+      format field.
+      Example:        Input in E2B(R3):     date value: 20081025
+                      Output in E2B(R2): date field: 20081025; date format: CCYYMMDD
+
+
+
+
+                                                          -10-
+                                            Contains Nonbinding Recommendations
+
+
+5.1.2 Less Precision in E2B(R3)
+
+For several date fields, E2B(R3) supports the same or lower precision than in the E2B(R2) guideline. Conversion
+guidance is only called for when a date is encoded with low precision in E2B(R3). The following fields can be
+encoded in E2B(R3) with precision to the year, while the E2B(R2) guideline expects a precision to the month or
+the day:
+
+                                              E2B(R2)                           E2B(R3)
+        Description
+                                   Field             Format           Field             Format
+    Date of birth (patient)       B.1.2.1          CCYYMMDD           D.2.1        at least to the day
+ Last menstruation period date     B.1.6            CCYYMM             D.6         at least to the year
+           (patient)                               CCYYMMDD
+     Date of birth (parent)      B.1.10.2.1        CCYYMMDD          D.10.2.1      at least to the year
+  Last menstrual period date       B.1.6           CCYYMMDD           D.10.3       at least to the year
+          (parent)
+
+In such a case, the following conversion recommendation should apply:
+
+   • To upgrade to E2B(R3), the date value should be copied from the date field of E2B(R2) into the field of
+       E2B(R3). The date format field of E2B(R2) should be ignored.
+       Example:        Input in E2B(R2):      date value: 20081025; date format: CCYYMMDD
+                       Output in E2B(R3): date field: 20081025
+   • To downgrade to E2B(R2), the closest date format available in E2B(R2) should be selected, i.e., the lowest
+       possible date precision of E2B(R2) for the field. The date value should be copied from the E2B(R3) field and
+       completed with the additional digits set to default values, i.e., 01 for months and days, and 00 for hours,
+       minutes and seconds.
+       Example:        Input in E2B(R3): date value: 2008
+                       Output in E2B(R2): date field: 2008; date format: CCYY
+
+5.1.3 More Precision in E2B(R3)
+
+For all the date fields, E2B(R3) supports the same or higher precision than in the E2B(R2) guideline. All the date
+fields can be encoded in E2B(R3) with a precision below the second (format CCYYMMDDhhmmss.uuuu), while
+the E2B(R2) guideline expects a precision to the year, the month, the day, the minute or the second (formats CCYY,
+CCYYMM, CCYYMMDD, CCYYMMDDhhmm or CCYYMMDDhhmmss).
+
+In such case, the following recommendation applies:
+
+   • To upgrade to E2B(R3), the date value should be copied from the date field of E2B(R2) into the field of
+       E2B(R3). The date format field of E2B(R2) should be ignored.
+       Example:        Input in E2B(R2):      date value: 20081025; date format: CCYYMMDD
+
+
+
+                                                            -11-
+                                             Contains Nonbinding Recommendations
+
+
+                         Output in E2B(R3): date field: 20081025
+     • To downgrade to E2B(R2), the following cases can occur:
+                1) If the date format used in E2B(R3) exists in E2B(R2), see section 5.1.1.
+                2) If the date format used in E2B(R3) does not exist in E2B(R2), the closest date format available in
+                     E2B(R2) should be selected, i.e., the highest possible date precision of E2B(R2) for the field. The
+                     date value should be copied from the E2B(R3) field and truncated to fit the date format of E2B(R2).
+         Example:        Input in E2B(R3): date value: 20081025093512.1234
+                         Output in E2B(R2): date field: 20081025; date format: CCYYMMDD
+
+
+
+5.1.4 Date of this Transmission
+
+In the context of the backwards and forwards compatibility, the field C.1.2 (i.e., the date of this transmission) is
+also used to carry information on the safety report version number (which is only available in the E2B(R2) message
+format).
+
+                                              E2B(R2)                              E2B(R3)
+          Description
+                                     Field            Format             Field            Format
+    Safety report version number                        2AN                -                  -
+      Date of this transmission      A.1.3          CCYYMMDD             C.1.2      CCYYMMDDhhmmss
+
+In E2B(R2), the safety report version number may be used to distinguish the evolution of the same safety report
+over time. In E2B(R3), this distinction is supported with the field C.1.2 which timestamps the case safety report
+down to the second. In E2B(R2), the field A.1.3 has precision to the day only.
+
+To retain the versioning of case safety report, the following recommendation applies:
+
+•          To upgrade to E2B(R3), the date value of C.1.2 should be copied from the date field of E2B(R2) into the
+           field of E2B(R3). The safety report version number, which is a number assumed to always remain below
+           60, should be appended to the field C.1.2 as seconds.
+           Example: Input in E2B(R2):          date value of A.1.3: 20081025
+                                               safety report version number: 3
+                         Output in E2B(R3): date value of C.1.2: 20081025000003
+•          To downgrade to E2B(R2), the date value of C.1.2 should be truncated to the day (see section 5.1.3) and
+           the safety report version number should not be set. If the safety report version number is to be populated,
+           the downgrade recommendations should be extended so as to support the batch conversion of ICSR
+           messages, taking into account the sequence of safety reports. Whether this is to be provided depends on the
+
+
+
+
+                                                              -12-
+                                        Contains Nonbinding Recommendations
+
+
+        national / regional pharmacovigilance systems, and the related mechanisms are not described in this
+        document.
+
+5.1.5 Time Zones
+
+For all the date fields, E2B(R3) supports the provision of a time zone at the end of the date format
+(CCYYMMDDhhmmss.uuuu±ZZzz). The E2B(R2) guideline does not support time zones.
+
+In such case, the following recommendation applies:
+
+   • To upgrade to E2B(R3), the date value should be copied from the date field of E2B(R2) into the field of
+      E2B(R3). The date format field of E2B(R2) should be ignored. No time zone should be defined when copying
+      the date to E2B(R3):
+      Example:      Input in E2B(R2):     date value: 200810250935; date format: CCYYMMDDHHMM
+                    Output in E2B(R3): date field: 200810250935
+   • To downgrade to E2B(R2), the time zone should be ignored:
+      Example:      Input in E2B(R3): date value: 200810250935+06
+                    Output in E2B(R2): date field: 200810250935; date format: CCYYMMDDHHMM
+If, in addition to a time zone, the date has less or more precision in E2B(R3), then the recommendations defined in
+sections 5.1.2 and 5.1.3 also apply.
+
+
+
+5.2 Code Mapping
+
+E2B(R2) and E2B(R3) provide sets of codes for several fields. In some case, one version of the standard has more
+code values than the other.
+
+Guidance is provided on the conversion of codes, which depend on whether E2B(R3) supports the same codes or
+whether additional code values have been introduced.
+
+
+
+
+5.2.1 Coded value set
+
+
+
+
+                                                       -13-
+                                               Contains Nonbinding Recommendations
+
+
+A. E2B(R2) and E2B(R3) expect the same set of codes for the following fields:
+
+                                                 E2B(R2)                                 E2B(R3)
+        Description
+                                     Field            Code List             Field              Code List
+        Type of report               A.1.4          4 possible values        C.1.3          4 possible values
+   Are additional documents         A.1.8.1             yes / no            C.1.6.1           true / false (+)
+          available?
+ Does this case fulfil the local     A.1.9              yes / no             C.1.7          true / false (*)(+)
+   criteria for an expedited
+             report?
+   Other case identifiers in         A.1.11                yes              C.1.9.1             true (*)(+)
+   previous transmissions
+         Qualification              A.2.1.4         5 possible values       C.2.r.4        5 possible values (*)
+       (primary source)
+   Study type in which the          A.2.3.3         3 possible values        C.5.4          3 possible values
+  reaction(s) / event(s) were
+           observed
+          Continuing                B.1.7.1d        3 possible values      D.7.1.r.3       3 possible values (*)
+   (patient medical history)
+      Was autopsy done?              B.1.9.3        3 possible values        D.9.3         3 possible values (*)
+         Continuing                B.1.10.7.1d      3 possible values     D.10.7.1.r.3     3 possible values (*)
+   (parent medical history)
+  More information available         B.3.1.3            yes / no             F.r.7              true / false
+            (tests)
+
+
+
+
+In such case, the following recommendation applies:
+
+   • To upgrade to E2B(R3), the field value should be copied from the E2B(R2) field into the E2B(R3) field. The
+       effective encoding of the code value should follow the guidance set in the related Implementation Guide.
+   • To downgrade to E2B(R2), the field value should be copied from the E2B(R3) field into the E2B(R2) field.
+       The effective encoding of the code value should follow the guidance set in the related Implementation Guide.
+
+
+   B. E2B(R2) and E2B(R3) expect the same terms, however the codes may differ.
+                                                 E2B(R2)                                 E2B(R3)
+        Description
+                                     Field            Code List             Field              Code List
+  Outcome of reaction / event        B.2.i.8        6 possible values        E.i.7          6 possible values
+ at the time of last observation
+  Action taken with the drug        B.4.k.16        6 possible values        G.k.8          6 possible values
+
+
+
+The fields that are marked with an asterisk (*) represent fields that can be nullified in E2B(R3). In such cases, the
+following downgrade recommendations apply:
+
+
+
+
+                                                                   -14-
+                                          Contains Nonbinding Recommendations
+
+
+
+   • If the field is nullified as ‘unknown’ and an ‘unknown’ code is available in the code list of E2B(R2) for that
+      field, the E2B(R2) field should be set to the code corresponding to ‘unknown’.
+   • If the field is nullified as ‘unknown’ but no ‘unknown’ code is available in the code list of E2B(R2) for that
+      field, the E2B(R2) field should not be set.
+   • If the field is nullified as another way (e.g., ‘masked’), the E2B(R2) field should not be set.
+The fields that are marked with a plus sign (+) represent fields that are required in E2B(R3) and optional in E2B(R2).
+In such case, the following upgrade recommendations apply:
+   • If the E2B(R2) field is set, the mapping should apply as described above.
+   • If the E2B(R2) field is not set, the E2B(R3) field should beset as follows:
+             1) Field C.1.6.1 should be set to ‘false’.
+             2) Field C.1.7 should be set with a null flavour of type ‘NI’.
+             3) Field C.1.9.1 should be set with a null flavour of type ‘NI’.
+
+
+
+5.2.2 Report Nullification / Amendment
+
+E2B(R2) and E2B(R3) expect different codes for the report nullification / amendment:
+
+                                          E2B(R2)                               E2B(R3)
+       Description
+                                 Field            Code List           Field            Code List
+    Report nullification /       A.1.13           Yes               C.1.11.1         nullification
+       amendment                                                                      amendment
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases can occur:
+             1) If the field value of E2B(R2) is set to ‘yes’, the field of E2B(R3) should be set to the code
+                  ‘nullification’. The effective encoding of the code value should follow the guidance set in the related
+                  Implementation Guide.
+             2) If the field value of E2B(R2) is not present, the field of E2B(R3) should not be provided in the
+                  upgraded message.
+   • To downgrade to E2B(R2), the following cases can occur:
+             1) If the field value of E2B(R3) is set to ‘nullification’, the field of E2B(R2) should be set to the code
+                  ‘yes’.
+             2) If the field value of E2B(R3) is set to ‘amendment’, the field of E2B(R2) should not be provided
+                  and the following information should be appended to the case narrative section (B.5.1):
+
+
+
+
+                                                              -15-
+                                       Contains Nonbinding Recommendations
+
+
+                          NULLIFICATION / AMENDMENT: Amendment: <content of field C.1.11.2: reason for
+                         nullification / amendment>
+           3) If the field value of E2B(R3) is not present, the field of E2B(R2) should not be provided in the
+                 downgraded message.
+
+5.2.3 Sender Type
+
+E2B(R2) and E2B(R3) expect different codes for the sender type:
+
+                                 E2B(R2)                                   E2B(R3)
+  Description
+                      Field            Code List               Field             Code List
+   Sender type        A.3.1.1       pharmaceutical            C.3.1      pharmaceutical company
+                                     company                              regulatory authority
+                                    regulatory authority                 health professional
+                                    health professional                  regional pharmacovigilance
+                                    regional                              centre
+                                     pharmacovigilance                    WHO             collaborating
+                                     center                                centres…
+                                    WHO collaborating                    other
+                                     center…                              patient / consumer
+                                    other
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field value should be copied from the E2B(R2) field into the E2B(R3) field. The
+      effective encoding of the code value should follow the guidance set in the related Implementation Guide.
+   • To downgrade to E2B(R2), the following cases can occur:
+           1) If the field value of E2B(R3) is not ‘patient / consumer’, the field value should be copied to the field
+                 of E2B(R2).
+           2) If the field value of E2B(R3) is ‘patient / consumer’, the field value of E2B(R2) should be set to the
+                 code ‘other’.
+
+
+
+
+                                                            -16-
+                                      Contains Nonbinding Recommendations
+
+
+5.2.4 Age Group
+
+E2B(R2) and E2B(R3) expect different codes for the age group:
+
+                              E2B(R2)                                    E2B(R3)
+ Description
+                    Field             Code List                Field             Code List
+   Age group       B.1.2.3        neonate                     D.2.3        foetus
+                                  infant                                   neonate
+                                  child                                    infant
+                                  adolescent                               child
+                                  adult                                    adolescent
+                                  elderly                                  adult
+                                                                            elderly
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field value should be copied from the E2B(R2) field into the E2B(R3) field. The
+      effective encoding of the code value should follow the guidance set in the Implementation Guide.
+   • To downgrade to E2B(R2), the following cases can occur:
+           1) If the field value of E2B(R3) is not ‘foetus’, the field value should be copied to the field of E2B(R2).
+           2) If the field value of E2B(R3) is ‘foetus’, no information should be provided in the E2B(R2) field
+               B.1.2.3. Instead, the E2B(R2) field for patient name and initials (i.e., B.1.1 according the E2B(R2)
+               numbering), should be set with the term ‘FOETUS’.
+
+
+
+
+                                                        -17-
+                                              Contains Nonbinding Recommendations
+
+
+5.2.5 Drug Characterization
+
+E2B(R2) and E2B(R3) expect different codes for the characterization of the drug role:
+
+                                     E2B(R2)                                               E2B(R3)
+  Description
+                            Field             Code List             Field                        Code List
+  Characterization         B.4.k.1           suspect                  G.k.1                suspect
+    of drug role                             concomitant                                   concomitant
+                                             interacting                                   interacting
+                                                                                            drug not administered
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field value should be copied from the E2B(R2) field into the E2B(R3) field.
+   • To downgrade to E2B(R2), the following cases can occur:
+             1) If the field value of E2B(R3) is not set to ‘drug not administered’, the field value should be copied
+                     to the E2B(R2) field.
+             2) If the field value of E2B(R3) is set to ‘drug not administered’, the corresponding E2B(R2) field
+                     should be set to ‘suspect’ and text ‘drug not administered’ should be appended to the E2B(R2) field
+                     on Additional information on drug (i.e., B.4.k.19 according to the E2B(R2) numbering):
+                             ‘DRUG NOT ADMINISTERED’
+
+
+
+5.2.6 Free Text and Codes for Route of Administration
+
+For the following fields, one guideline expects a code while the other expects a free text value:
+
+                                          E2B(R2)                                           E2B(R3)
+     Description
+                                 Field            Code List                    Field                  Code List
+ Route of administration        B.4.k.8         67 possible codes        G.k.4.r.10.1                  free text
+        (patient)                                                        G.k.4.r.10.2a                Term ID
+                                                                         G.k.4.r.10.2b             Term ID Version
+ Route of administration        B.4.k.9         67 possible codes        G.k.4.r.11.1                  free text
+        (parent)                                                         G.k.4.r.11.2a                Term ID
+                                                                         G.k.4.r.11.2b             Term ID Version
+
+      In E2B(R2), the fields above contain codes as they are defined in the Appendix of the E2B(R2) guideline. In
+      E2B(R3), the same E2B(R2) codes can be used or they can be converted to the codes of EDQM Standard
+      Terms (see USER GUIDE: Use of EDQM terminologies for Dose Forms and Routes of Administration for
+      Individual Case Safety Reports in E2B(R3) message). If standard terms are not available, free text values can
+      be provided as appropriate free text values. Therefore, the following recommendation applies when E2B(R2)
+      codes are used:
+
+
+
+
+                                                                -18-
+                                   Contains Nonbinding Recommendations
+
+
+
+• To upgrade to E2B(R3), there are three possible scenarios:
+        1) An E2B(R2) code (i.e., the numeric value) should be copied to the corresponding E2B(R3) code
+            with reference to the E2B(R2) vocabulary:
+        Example:     Input in E2B(R2):         code value: 030
+                     Output in E2B(R3):        Term ID version (field 2a): E2B / R2
+                                               Term ID (field 2b): 030
+
+
+        2) If an E2B(R2) RoA term has mapped with an EDQM Standard Term by the EDQM User Guide,
+            the E2B(R2) code (i.e., the numeric value) should be converted to the mapped EDQM RoA Concept
+            Class-Concept Code (i.e., alphabetic numeric value):
+        Example:     Input in E2B(R2):         code value: 030
+                     Output in E2B(R3):        Term ID version (field 2a):
+                                               Corresponding Version Number of EDQM RoA
+                                               Concept Code
+                                               Term ID (field 2b): ROA-20035000
+
+
+        3) If an E2B(R2) RoA term has NOT mapped with an EDQM Standard Term by the EDQM User
+            Guide, the E2B(R2) term should be copied or an appropriate term should be entered in the free text
+            field:
+        Example:     Input in E2B(R2):         code value: 025
+                     Output in E2B(R3):        Free text: Intrahepatic
+                                               Term ID version (field 2a): blank
+                                               Term ID (field 2b): blank
+
+
+• To downgrade to E2B(R2), there are three possible scenarios:
+        1) If a code is provided in E2B(R3) with reference to the code system / version E2B / R2, the code
+            field (i.e., the field 2a) should be copied as is to the E2B(R2) field:
+        Example:     Input in E2B(R3):         Term ID version (field 2a): E2B / R2
+                                               Term ID (field 2b): 030
+                     Output in E2B(R2):        Code value: 030
+
+
+
+
+                                                     -19-
+                          Contains Nonbinding Recommendations
+
+
+2) If a code is provided in E2B(R3) with an EDQM RoA Concept Class-Concept Code (i.e., alphabetic
+   numeric value) and its corresponding term has mapped with an E2B(R2) RoA term, the
+   corresponding E2B(R2) code should be entered in the E2B(R2) field.
+Example:    Input in E2B(R3):        Term ID version (field 2a):
+                                     Corresponding Version Number of EDQM RoA
+                                     Concept Code
+                                     Term ID (field 2b): ROA-20035000
+            Output in E2B(R2):       Code value: 030
+
+
+3) If a code is provided in E2B(R3) with an EDQM RoA Concept Class-Concept Code (i.e., alphabetic
+   numeric value) and its corresponding term has NOT mapped with an E2B(R2) RoA term, or if a
+   free text field is used in E2B(R3), the code value should be set to ‘050’ (i.e., Other) in the E2B(R2)
+   field, and the information should be copied to the E2B(R2) field B.4.k.19 according to the following
+   examples (with header ‘ROUTE’ or ‘PARENT ROUTE’):
+Example    Input in E2B(R3):         Term ID version (field 2a):
+1 (patient                           Corresponding Version Number of EDQM RoA
+route):                              Concept Code
+                                     Term ID (field 2b): ROA-20013500
+                                     Or
+                                     Free text: XYZ
+            Output in E2B(R2):       Code value: 050
+                                     B.4.k.19 ROUTE: ROA-20013500 (Corresponding
+                                     Version Number of EDQM RoA Concept Code)
+                                     Or
+                                     B.4.k.19 ROUTE: XYZ
+
+
+Example   Input in E2B(R3):          Term ID version (field 2a):
+2 (parent                            Corresponding Version Number of EDQM RoA
+route):                              Concept Code
+                                     Term ID (field 2b): ROA-20013500
+                                     Or
+                                     Free text: XYZ
+            Output in E2B(R2):       Code value: 050
+                                     B.4.k.19 PARENT ROUTE: ROA-20013500
+                                     (Corresponding Version Number of EDQM RoA
+                                     Concept Code)
+
+
+
+                                           -20-
+                                              Contains Nonbinding Recommendations
+
+
+
+                                                        Or
+                                                        B.4.k.19 PARENT ROUTE: XYZ
+
+
+Once Term IDs are identified, the recommendations should rely on a mapping between the list of values possible
+in E2B(R2) and the ones possible in E2B(R3).
+
+
+
+5.2.7 Time Interval
+
+E2B(R2) and E2B(R3) expect different codes for the time interval unit:
+
+                                                 E2B(R2)                                E2B(R3)
+        Description
+                                      Field             Code List            Field               Code List
+  Number of units in interval        B.4.k.5.4             3N               G.k.4.r.2                4N
+      Time interval unit             B.4.k.5.5         Year                G.k.4.r.3          UCUM Code
+                                                       Month                                  {cyclical}
+                                                       Week                                   {asnecessary}
+                                                       Day                                    {total}
+                                                       Hour
+                                                       Minute
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field value should be copied from the E2B(R2) field into the E2B(R3) field. The
+      effective encoding of the code value should follow the guidance set in the related Implementation Guide.
+   • To downgrade to E2B(R2), the following cases can occur:
+             1) If the unit value of E2B(R3) is supported in E2B(R2) and if the number of units is not too long, the
+                  fields (number and unit) should be copied to the corresponding fields of E2B(R2).
+             2) If the number of units is too long (i.e., using 4 digits), the E2B(R2) field should be not provided in
+                  field G.k.4.r.2. Instead, the information should be appended to the E2B(R2) field on dosage text
+                  (i.e., B.4.k.6), along with the unit:
+             Example
+                            Input in E2B(R3):                      number: 0.25 ; unit: h
+                            Output in E2B(R2):
+                                      B.4.k.6:          Time Interval: <number><unit>
+             3) If the unit value of E2B(R3) is not supported in E2B(R2), the E2B(R2) field should not be provided
+                  in field G.k.4.r.2. Instead, the information should be appended to the E2B(R2) field on dosage text
+                  (i.e., B.4.k.6):
+
+
+
+
+                                                                 -21-
+                           Contains Nonbinding Recommendations
+
+
+           When the code is set to ‘Cyclical’, the dose quantity (value and unit, i.e., G.k.4.r.1a and
+            G.k.4.r.1b) should be copied, followed by the corresponding term :
+                      <dose-value><dose-unit> CYCLICAL
+                      <dose-value><dose-unit> AS NECESSARY
+                      <dose-value><dose-unit> IN TOTAL
+4) It should be noted that the conversion of this particular field should be seen in light of the structural
+    changes provided by E2B(R3) on the dosage information (see more information under section 5.7.8).
+5) If the field value of E2B(R3) is not present, the field of E2B(R2) should not be provided in the
+    downgraded message.
+
+
+
+
+                                             -22-
+                                            Contains Nonbinding Recommendations
+
+
+5.2.8 MedDRA Codes
+
+E2B(R2) and E2B(R3) expect different ways to encode MedDRA codes:
+
+                                                E2B(R2)                              E2B(R3)
+        Description
+                                      Field               Format        Field                 Format
+  Structured information for        B.1.7.1a.2            250AN       D.7.1.r.1b                8N
+ disease, surgical procedure…
+           Indication                B.1.8f.2             250AN        D.8.r.6b                 8N
+            Reaction                 B.1.8g.2             250AN        D.8.r.7b                 8N
+    Reported cause of death          B.1.9.2.b            250AN       D.9.2.r.1b               8N (*)
+ Autopsy-determined cause of         B.1.9.4b             250AN       D.9.4.r.1b               8N (*)
+           death
+  Structured information for       B.1.10.7.1a.2          250AN      D.10.7.1.r.1b              8N
+ disease, surgical procedure…
+           Indication               B.1.10.8f.2           250AN      D.10.8.r.6b                8N
+            Reaction               B.1.10.8g.2            250AN      D.10.8.r.7b                8N
+ Reaction / event in MedDRA          B.2.i.1b             250AN        E.i.2.1b                 8N
+         terminology
+           Test name                  B.3.1c              100AN        F.r.2.2b                8N (*)
+      Sender’s diagnosis /            B.5.3b              250AN        H.3.r.1b                 8N
+       syndrome and / or
+  reclassification of reaction /
+              event
+
+Although the format defined for MedDRA codes in E2B(R2) is alpha-numeric and composed of 250 characters, the
+requested information in E2B(R3) is a MedDRA code, composed of 8 digits. Therefore, the following
+recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases can occur:
+              1) If the field value of E2B(R2) consists of 8 digits, it should be copied as is to the corresponding
+                   E2B(R3) field. For the MedDRA code fields, the corresponding field for the MedDRA version is
+                   identical in both messages, and should be copied as is.
+              2) If the field value of E2B(R2) does not consist of 8 digits, the field should be ignored unless the
+                   E2B(R3) message format foresees a free text field (i.e., see fields flagged with an asterisk). For
+                   these fields, the value of E2B(R2) should be copied as is in the free text field of E2B(R3), extended
+                   with the MedDRA version field.
+                   Example:          Input in E2B(R2):                 code value: free-text
+                                     Output in E2B(R3):                free text: free-text
+   • To downgrade to E2B(R2), the MedDRA code value of E2B(R3) should be copied as is into the free text
+       field of E2B(R2). If there is no MedDRA code value, but a free text field, then the free text field should be
+
+
+
+
+                                                              -23-
+                                            Contains Nonbinding Recommendations
+
+
+      copied instead. If both code and free text fields are present, the coded field should be copied along with the
+      MedDRA version field.
+
+
+
+5.2.9 Code Lists and UCUM Codes
+
+E2B(R2) and E2B(R3) expect different codes for the following fields:
+
+                                             E2B(R2)                                    E2B(R3)
+      Description
+                                 Field               Code List              Field              Code List
+     Age unit (patient)         B.1.2.2b           6 possible codes        D.2.2b             UCUM Code
+                                                    (incl. decade)                            Decade
+   Gestation period unit       B.1.2.2.1b          4 possible codes        D.2.2.1b           UCUM Code
+         (patient)                                 (incl. trimester)                          Trimester
+     Age unit (parent)        B.1.10.2.2b          1 possible code        D.10.2.2b           UCUM Code
+                                                                                              Decade
+       Duration unit            B.2.i.6b           7 possible codes         E.i.6b            UCUM Code
+         Dose unit             B.4.k.5.2          32 possible codes       G.k.4.r.1b          UCUM Code
+   Cumulative dose unit        B.4.k.5.7          32 possible codes        G.k.5b             UCUM Code
+      Duration of drug         B.4.k.15b           6 possible codes       G.k.4.r.6b          UCUM Code
+    administration (unit)
+   Gestation period (unit)     B.4.k.10b           4 possible codes        G.k.6b             UCUM Code
+                                                   (incl. trimester)                          Trimester
+    Time interval (unit)      B.4.k.13.1b          7 possible codes      G.k.9.i.3.1b         UCUM Code
+                              B.4.k.13.2b                                G.k.9.i.3.2b
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases can occur:
+             1) If the E2B(R2) unit is ‘decade’ or ‘trimester’ (values 800 and 810, respectively), the UCUM unit
+                  code should be defined within curly braces.
+                  Example:         Input in E2B(R2):                   value 1 ; unit code: 810
+                                   Output in E2B(R3):                  value 1 ; unit: {trimester}
+             2) In the other case, the corresponding UCUM unit code should be used.
+                  Example:         Input in E2B(R2):                   value 10 ; unit code: 003
+                                   Output in E2B(R3):                  value 10 ; unit: mg
+   • To downgrade to E2B(R2), the following cases can occur:
+             1) The UCUM unit code used in E2B(R3) should be mapped to a unit of the E2B(R2) guidance. In
+                  such case, the corresponding coded value should be copied into the E2B(R2) field. The effective
+                  encoding of the unit should follow the guidance set in the related Implementation Guide.
+
+
+
+
+                                                              -24-
+                                           Contains Nonbinding Recommendations
+
+
+Note that the present specification for backwards and forwards compatibility assumes that the UCUM unit codes
+used for E2B(R3) messages are the same as the unit codes supported in E2B(R2).
+
+
+
+5.2.10 Free Text and UCUM Codes
+
+E2B(R2) and E2B(R3) expect different ways to encode units for:
+
+                                       E2B(R2)                               E2B(R3)
+    Description
+                             Field             Format            Field              Code List
+       Test unit             B.3.1e              35AN            F.r.3.3           UCUM Code
+
+Although the format defined for the test unit in E2B(R2) is alpha-numeric and composed of 35 characters, it is
+expected to consist of a UCUM code. Therefore, the following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field should be mapped to the list of UCUM codes, and the mapped
+      code should be copied as is to the E2B(R3) field.
+   • To downgrade to E2B(R2), the UCUM code value of E2B(R3) should be copied as is into the free text field
+      of E2B(R2).
+
+
+
+5.2.11 Re-administration and Recurrence of Reaction on Re-administration
+
+E2B(R2) and E2B(R3) expect different information for the re-administration and the recurrence of reaction on re-
+administration:
+
+                                          E2B(R2)                            E2B(R3)
+      Description
+                               Field             Format           Field             Code List
+ Did reaction recur on re-   B.4.k.17.1       Yes
+     administration?                          No
+                                              Unknown
+   Did re-administration                                         G.k.9.i.4      Re-challenge was
+        take place?                                                              done, reaction recurred
+                                                                                 (yes-yes)
+                                                                                Re-challenge was
+                                                                                 done, reaction did not
+                                                                                 recur (yes-no)
+                                                                                Re-challenge was
+                                                                                 done, outcome
+                                                                                 unknown (yes)
+                                                                                No re-challenge was
+                                                                                 done (no)
+
+
+
+
+                                                          -25-
+                                              Contains Nonbinding Recommendations
+
+
+Only one reaction is a subject for B.4.k.17.1 in E2B(R2) while multiple reactions can be subjects for G.k.9.i.4 in
+E2B(R3):
+
+   • To upgrade to E2B(R3), the following mapping applies, for all the reactions identified to recur within the
+      E2B(R2) field B.4.k.17.2:
+             1) If the E2B(R2) value is set to ‘Yes’, the E2B(R3) value should be set to ‘Re-challenge was done,
+                    reaction recurred (yes-yes)’.
+             2) If the E2B(R2) value is set to ‘No’, the E2B(R3) value should be set to ‘Re-challenge was done,
+                    reaction did not recur (yes-no)’.
+             3) If the E2B(R2) value is set to ‘Unknown’, the E2B(R3) value should not beset.
+   • To downgrade to E2B(R2), the following mapping applies:
+             1) If the E2B(R3) value is set to ‘Re-challenge was done, reaction recurred (yes-yes)’, the E2B(R2)
+                    value should be set to ‘Yes’.
+                           All reactions that recurred on re-administration should be copied in E2B(R2) field
+                            B.4.k.17.2 (see section 4.7.11).
+             2) If the E2B(R3) value is set to ‘Re-challenge was done, reaction did not recur (yes-no)’, the E2B(R2)
+                    value should be set to ‘No’.
+             3) If the E2B(R3) value is set to any other value, the E2B(R2) value should be set to ‘Unknown’.
+
+
+
+5.2.12 Patient and Parent Sex
+
+E2B(R2) and E2B(R3) expect different ways to encode units for:
+
+                                       E2B(R2)                                  E2B(R3)
+   Description
+                             Field             Format             Field                Code List
+    Sex (patient)            B.1.5             Male                  D.5        Male
+                                               Female                           Female
+                                                                                 Null Flavour: UNK, MSK,
+                                                                                  ASKU, NASK
+    Sex (parent)            B.1.10.6           Male             D.10.6          Male
+                                               Female                           Female
+                                                                                 Null Flavour: UNK, MSK,
+                                                                                  ASKU, NASK
+
+In both formats, these fields are optional. Therefore, the following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field should be mapped to the list of codes available in E2B(R3). If the
+      field is not set in E2B(R2), the corresponding field should not be set in E2B(R3).
+
+
+
+
+                                                               -26-
+                                          Contains Nonbinding Recommendations
+
+
+
+   • To downgrade to E2B(R2), the E2B(R3) field should be mapped to the list of codes available in E2B(R2). If
+      the field is not set in E2B(R3), or if the field is set to ‘Unknown’, or if the field is attached to a null flavour,
+      the corresponding field should not be set in E2B(R2).
+
+5.2.13 Acknowledgement Codes
+
+E2B(R2) and E2B(R3) expect different ways to encode codes for:
+
+                                   E2B(R2)                                     E2B(R3)
+   Description
+                         Field                Format                 Field             Code List
+ ACK Transmission     ACK: A.1.6           01 (All Reports     ACK: ACK.A.4      AA (Application
+      code                                  loaded into                            Acknowledgement
+                                            database)                              Accept)
+                                           02 (ICSR Error,                       AE (Application
+                                            not all reports                        Acknowledgment Error)
+                                            loaded into the                       AR (Application
+                                            database)                              Acknowledgment
+                                           03 (SGML parsing                       Reject)
+                                            error, no data
+                                            extracted)
+   ACK Code for       ACK: B.1.8           01 (Report loaded       ACK:          CA (Commit Accept)
+      report                                successfully)          ACK.B.r.6      CR (Commit Reject)
+                                           02 (Report not
+                                            loaded)
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field A.1.6 of the E2B(R2) ACK should be mapped as follows:
+           1) E2B(R2) code ‘01’should be converted to E2B(R3) code ‘AA’.
+           2) E2B(R2) code ‘02’should be converted to E2B(R3) code ‘AE’.
+           3) E2B(R2) code ‘03’should be converted to E2B(R3) code ‘AR’.
+   • To upgrade to E2B(R3), the field B.1.8 of the E2B(R2) ACK should be mapped as follows:
+           1) E2B(R2) code ‘01’should be converted to E2B(R3) code ‘CA’.
+           2) E2B(R2) code ‘02’should be converted to E2B(R3) code ‘CR’.
+   • To downgrade to E2B(R2), the E2B(R3) field should be mapped as follows:
+           1) E2B(R3) code ‘AA’ should be converted to E2B(R2) code ‘01’.
+           2) E2B(R3) code ‘AE’ should be converted to E2B(R2) code ‘02’.
+           3) E2B(R3) code ‘AR’ should be converted to E2B(R2) code ‘03’.
+           4) E2B(R3) code ‘CA’ should be converted to E2B(R2) code ‘01’.
+           5) E2B(R3) code ‘CR’ should be converted to E2B(R2) code ‘02’.
+
+
+
+
+                                                            -27-
+                                          Contains Nonbinding Recommendations
+
+
+5.3 Deletion
+
+Some fields of E2B(R2) have been deleted in E2B(R3). Guidance is provided on the way to handle such fields.
+
+5.3.1 Fields to Ignore
+
+The following fields have been deleted in E2B(R3) as they are no longer useful anymore for handling case safety
+reports:
+
+                                            E2B(R2)                             E2B(R3)
+       Description
+                                  Field               Format          Field           Format
+    Was the case medically        A.1.14                 1N             -                 -
+         confirmed?
+     MedDRA version for           B.2.i.2          8AN / 250AN          -                 -
+   reaction / event term PT
+  ACK Safety report version    ACK: B.1.2               2AN             -                 -
+   ACK Authority number        ACK: B.1.4              100AN            -                 -
+   ACK Company number          ACK: B.1.5              100AN
+  ACK Date of receipt of the   ACK: B.1.7b               8N             -                 -
+   most recent information
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field should be ignored as there is no counterpart element in E2B(R3).
+   • To downgrade to E2B(R2), the field should not be provided in E2B(R2), as the related field is optional in
+      E2B(R2).
+
+
+
+5.3.2 Fields with Default Value
+
+The following fields have been deleted in E2B(R3) but should receive a default value when converted back to
+E2B(R2), as they are required in E2B(R2):
+
+                                            E2B(R2)                             E2B(R3)
+       Description
+                                  Field           Default Value       Field           Format
+     ACK: Message type         ACK: M.1.1             ichicsrack        -                 -
+   Message format version      (ACK) M.1.2               2.1            -                 -
+    Message format release     (ACK) M.1.3               1.0            -                 -
+  Information on receiver of      A.3.2          empty root element     -                 -
+      case safety report
+
+
+
+
+The following recommendation applies:
+
+
+
+                                                           -28-
+                                      Contains Nonbinding Recommendations
+
+
+
+   • To upgrade to E2B(R3), the fields of E2B(R2) should be ignored, as there is no counterpart element in
+      E2B(R3).
+   • To downgrade to E2B(R2), the following cases occur:
+           1) Field M.1.1 should receive the default value ‘ichicsrack’ (in ICSR ACK).
+           2) Field M.1.2 should receive the default value ‘2.1’ (in ICSR and ICSR ACK).
+           3) Field M.1.3 should receive the default value ‘1.0’ (in ICSR and ICSR ACK).
+           4) Field A.3.2 should be created with the empty root element ‘receiver’.
+
+
+
+5.3.3 Safety Report Version Number
+
+This E2B(R2) field does not exist in E2B(R3) but the related treatment is covered in section 5.1.4.
+
+
+
+5.3.4 Number of Separate Dosages
+
+E2B(R3) has reviewed the structure of information regarding dosage, and the field related to the number of separate
+dosages (i.e., B.4.k.5.3 according to the E2B(R2) field numbering) has been deleted.
+The recommendations regarding this element should be retrieved from the section dedicated to the dosage
+information, section 5.7.8.
+
+
+
+
+                                                       -29-
+                                       Contains Nonbinding Recommendations
+
+
+5.4 Addition
+
+Some fields have been added in E2B(R3). Guidance is provided on the way to handle such fields, depending on
+whether the E2B(R3) field has a counterpart in E2B(R2), or whether some mapping can be defined.
+
+5.4.1 Fields with No Mapping
+
+The following fields have been added in E2B(R3), with no counterpart in E2B(R2):
+
+                                       E2B(R2)                                E2B(R3)
+       Description
+                               Field          Format              Field                 Format
+     Included documents          -               -              C.1.6.1.r.2              File
+     (held by the sender)
+  Primary source telephone       -               -               C.2.r.2.7              33AN
+     Included documents          -               -                C.4.r.2                File
+    (literature references)
+   Family history (patient)      -               -               D.7.1.r.6              Boolean
+    Concomitant therapies        -               -                D.7.3                 Boolean
+   Medical confirmation by       -               -                 E.i.8                Boolean
+     health professional
+   MedDRA code for Test                                          F.r.2.2b                 8N
+        Name
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R3) field should not be provided, as there is no counterpart element in the
+      E2B(R2) guideline.
+   • To downgrade to E2B(R2), the value of the E2B(R3) field should be captured in narrative field (B.5.1).
+                                       E2B(R2)                                E2B(R3)
+       Description
+                               Field          Format              Field                 Format
+  ACK Date of transmission       -               -            ACK: ACK.B.r.5             Date
+
+   • To upgrade to E2B(R3), the E2B(R3) field should not be provided, as there is no counterpart element in the
+      E2B(R2) guideline.
+   • To downgrade to E2B(R2), ACK.B.r.5 field should be blank.
+
+
+
+
+                                                       -30-
+                                              Contains Nonbinding Recommendations
+
+
+5.4.2 Study Registration
+
+In E2B(R3), the study registration number and the study registration country have been added:
+
+                                              E2B(R2)                            E2B(R3)
+       Description
+                                      Field          Format           Field                Format
+  Study registration number             -               -            C.5.1.r.1            50AN
+                                                                                       ASKU, NASK
+  Study registration country            -               -            C.5.1.r.2             2A
+                                                                                       ASKU, NASK
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), these two fields should not be provided, as there is no counterpart in the E2B(R2)
+      guideline, and therefore no value in the E2B(R2) message.
+   • To downgrade to E2B(R2), the study registration number(s) and country(ies) should be copied to the E2B(R2)
+      message as a prefix for the study name field, i.e., A.2.3.1 according to the E2B(R2) field numbering. The
+      study registration number can repeat in E2B(R3), and when copied back into E2B(R2), repeated fields should
+      appear separated by a comma. If one of these fields is nullified, the term ‘UNKNOWN’ should be used
+      instead.
+      Example:        Input in E2B(R3):
+                               Study #1: registration number(s): 111 for UK, 222 for BE
+                               Study #2: registration number(s): 333 for FR, ASKU for IT
+                      Output in E2B(R2): study name:
+                               Study #1: 111 (UK),222 (BE):<study-name-1>
+                               Study #2: 333 (FR), UNKNOWN (IT): <study-name-2>
+
+
+
+
+                                                              -31-
+                                             Contains Nonbinding Recommendations
+
+
+5.4.3 ISO IDMP identifiers
+
+M5 identifiers have been renamed to ISO IDMP terms and identifiers. E2B(R3) supports the concepts of MPID
+and PhPID for the following fields:
+
+                                             E2B(R2)                               E2B(R3)
+       Description
+                                     Field          Format            Field                  Format
+   MPID and MPID version               -               -             D.8.r.2a                 AN
+   for patient drug history                                          D.8.r.2b                 AN
+  PhPID and PhPID version              -               -             D.8.r.3a                 AN
+   for patient drug history                                          D.8.r.3b                 AN
+   MPID and MPID version               -               -            D.10.8.r.2a               AN
+    for parent drug history                                         D.10.8.r.2b               AN
+  PhPID and PhPID version              -               -            D.10.8.r.3a               AN
+   for parent drug history                                          D.10.8.r.3b               AN
+   MPID and MPID version               -               -            G.k.2.1.1a                AN
+    for drug identification                                         G.k.2.1.1b                AN
+  PhPID and PhPID version              -               -            G.k.2.1.2a                AN
+    for drug identification                                         G.k.2.1.2b                AN
+      Substance TermID                 -               -            G.k.2.3.r.2a              AN
+         and version                                                G.k.2.3.r.2b              AN
+     Dose Form TermID                                               G.k.4.r.9.2a              AN
+        and version                                                 G.k.4.r.9.2b              AN
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field should not be provided, as there is no counterpart to this field in the E2B(R2)
+      guideline.
+   • To downgrade to E2B(R2), the drug identification should be copied to the E2B(R2) message as a prefix for
+      the related drug name field (see the mapping below). For each drug, the following fields should be copied:
+      MPID and MPID version date / number, or PhPID and PhPID version date / number. Information should be
+      preceded by the prefix ‘MPID’ or ‘PhPID’. The version dates should display between parentheses. MPID or
+      PhPID and the drug name should repeat, if appropriate, separated by a semi-colon.
+      The correspondence between the identification and name fields is as follows:
+            1) D.8.r.2a-2b-3a-3b should be copied as prefix of the field B.1.8aof E2B(R2).
+            2) D.10.8.r.2a-2b-3a-3b should be copied as prefix of the field B.1.10.8a of E2B(R2).
+            3) G.k.2.1.1a-1b-2a-2b should be copied as prefix of the field B.4.k.2.1 of E2B(R2).
+      Example:       Input in E2B(R3):
+                              MPID: abcdef ; version date / number: 20080925
+                     or       PhPID: ghijkl ; version date / number: 20081028
+
+
+
+
+                                                             -32-
+                                            Contains Nonbinding Recommendations
+
+
+                      Output in E2B(R2):
+                              MPID: abcdef (20080925): <drug name>
+                      or      PhPID: ghijkl (20081028): <drug name>
+
+
+
+5.4.4 Investigational Product Blinded
+
+E2B(R3) supports the concepts of investigational product blinded:
+
+                                            E2B(R2)                           E2B(R3)
+       Description
+                                    Field          Format           Field           Format
+    Investigational product           -               -            G.k.2.5          Boolean
+            blinded
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the field should not be set.
+   • To downgrade to E2B(R2), if the field is set to ‘true’, the term ‘INVESTIGATIONAL’ should be added to
+      the E2B(R2) field B.4.k.19 (additional information on the drug).
+
+
+
+5.4.5 Case Narrative in Native Language
+
+The case narrative field in native language has been added in E2B(R3):
+
+                                            E2B(R2)                           E2B(R3)
+       Description
+                                    Field          Format           Field           Format
+ Case summary and reporter’s          -               -            H.5.r.1a        100000 AN
+   comment text / language                                         H.5.r.1b           3A
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R3) field should not be provided, as there is no counterpart element in the
+      E2B(R2) guideline.
+   • To downgrade to E2B(R2), the fields H.5.r.1a and H.5.r.1b of E2B(R3) should be appended to the case
+      narrative section, i.e., B.5.1 of E2B(R2). The information should be preceded by the prefix ‘CASE
+      SUMMARY’, extended with the identification of the language between parentheses.
+
+
+
+
+                                                            -33-
+                                                Contains Nonbinding Recommendations
+
+
+       Example:        Input in E2B(R3):
+                               Reporter’s comments text: abcdefghikjkl
+                               Reporter’s comments language: jap
+                       Output in E2B(R2):
+                               <content of case narrative>
+                               CASE SUMMARY (jap): abcdefghikjkl
+
+
+
+5.4.6 Reaction as Reported and Translated
+
+The following field has been added in E2B(R3), with no counterpart in E2B(R2):
+
+                                                E2B(R2)                             E2B(R3)
+        Description
+                                      Field            Format          Field                   Format
+  Reaction / event as reported       B.2.i.0            200AN          E.i.1.1a                250AN
+      by primary source
+  Reaction / event as reported          -                 -            E.i.1.2                 250AN
+      by primary source
+         (translation)
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R3) field should not be provided, as there is no counterpart element in the
+       E2B(R2) guideline.
+   • To downgrade to E2B(R2), the following cases occur:
+             1) If the E2B(R3) field E.i.1.2 is set, it should be copied into the E2B(R2) field B.2.i.0, truncated if
+                  appropriate, as described in section 5.5.2.
+             2) If the E2B(R3) field E.i.1.2 is not set, the E2B(R3) field E.i.1.1a should be copied with the E2B(R3)
+                  field E.i.1.1b (language code) into the E2B(R2) field B.2.i.0, truncated if appropriate, as described
+                  in section 5.5.2.
+
+
+
+5.4.7 Reported cause(s) of death
+
+The following field in E2B(R2) is split into two field in E2B(R3):
+
+                                                   E2B(R2)                                     E2B(R3)
+        Description
+                                       Field                  Format                Field                Format
+  Reported cause(s) of death         B.1.9.2b                 250AN               D.9.2.r.1b              8N
+  Reported Cause(s) of Death                -                   -                 D.9.2.r.2              250AN
+          (Free text)
+
+
+
+
+                                                                -34-
+                                         Contains Nonbinding Recommendations
+
+
+The E2B(R2) Guideline recommends ‘MedDRA if applicable’ for this data element, the following recommendation
+applies:
+   • To upgrade to E2B(R3):
+            1) Populate E2B(R3) D.9.2.r.1b field with E2B(R2) B.1.9.2b data if MedDRA code is used in the
+                report.
+            2) Populate E2B(R3) D.9.2.r.2 field with E2B(R2) B.1.9.2b data if it is free text in the report.
+   • To downgrade to E2B(R2), the following cases occur:
+            1) If only the E2B(R3) D.9.2.r.1bfield is set, it should be copied into the E2B(R2) field B.1.9.2b.
+            2) If only the E2B(R3) D.9.2.r.2 field is set, it should be copied into the E2B(R2) field B.1.9.2b.
+            3) If both E2B(R3) D.9.2.r.1b and E2B(R3) D.9.2.r.2 fields are set:
+                         Copy only the E2B(R3) D.9.2.r.1b field into the E2B(R2) field B.1.9.2b.
+                         Copy the E2B(R3) B.1.9.2.r.b2 field into narrative field.
+
+
+
+5.4.8 Autopsy-determined Cause(s) of Death
+
+The following field in E2B(R2) is split into two field in E2B(R3):
+
+                                             E2B(R2)                                   E2B(R3)
+       Description
+                                   Field               Format               Field                Format
+ Autopsy-determined Cause(s)      B.1.9.4b             250AN              D.9.4.r.1b              8N
+          of Death
+ Autopsy-determined Cause(s)         -                    -                D.9.4.r.2             250AN
+     of Death (Free text)
+
+The E2B(R2) Guideline recommends ‘MedDRA if applicable’ for this data element, the following recommendation
+applies:
+   • To upgrade to E2B(R3):
+            1) Populate E2B(R3) D.9.4.r.1b field with E2B(R2) B.1.9.4.b data if MedDRA code is used in the
+                report.
+            2) Populate E2B(R3) D.9.4.r.2 field with E2B(R2) B.1.9.4b data if it is free text in the report.
+   • To downgrade to E2B(R2), the following cases occur:
+            1) If only the E2B(R3) D.9.4.r.1b field is set, it should be copied into the E2B(R2) field B.1.9.4b.
+            2) If only the E2B(R3) D.9.4.r.2 field is set, it should be copied into the E2B(R2) field B.1.9.4b.
+            3) If both E2B(R3) D.9.4.r.1b and E2B(R3) D.9.4.r.2 fields are set:
+                         Copy only the E2B(R3) D.9.4.r.1b field into the E2B(R2) field B.1.9.4b.
+
+
+
+
+                                                         -35-
+                                               Contains Nonbinding Recommendations
+
+
+                               Copy the E2B(R3) B.1.9.4.r.b2 field into narrative field.
+
+
+
+5.5 Field Length
+
+For some fields, the length has been extended in E2B(R3). Guidance is provided on the conversion of such fields,
+depending on whether truncation is appropriate or not.
+
+5.5.1 Extended Fields to Truncate
+
+The following fields have been extended in E2B(R3), and the effective size can be found in the Implementation
+Guide of E2B(R3). These fields should be truncated when converted back to E2B(R2):
+
+                                                   E2B(R2)                                E2B(R3)
+        Description
+                                         Field           Field Size          Field              Field Size
+ Reporter given name, middle            A.2.1.1b             35            C.2.r.1.2                60 (*)
+   name and family name                 A.2.1.1c             15            C.2.r.1.3                60 (*)
+                                        A.2.1.1d             50            C.2.r.1.4                60 (*)
+     Sender organization                 A.3.1.2             60              C.3.2                   100
+   Sender title, given name,            A.3.1.3b             10             C.3.3.2                  50
+   middle name and family               A.3.1.3c             35             C.3.3.3                  60
+             name                       A.3.1.3d             15             C.3.3.4                  60
+                                        A.3.1.3e             35             C.3.3.5                  60
+    Patient / parent initials            B.1.1               10              D.1                    60 (*)
+                                        B.1.10.1             10             D.10.1                  60 (*)
+     Test name (free text)               B.3.1c              100            F.r.2.1                  250
+         Dosage text                     B.4.k.6             100           G.k.4.r.8                2000
+  Pharmaceutical dose form               B.4.k.7             50           G.k.4.r.9.1               60 (*)
+           text
+     Method and result of              B.4.k.18.3            35           G.k.9.i.2.r.2              60
+         assessment                    B.4.k.18.4            35           G.k.9.i.2.r.3              60
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field should be copied into the field of E2B(R3).
+   • To downgrade to E2B(R2), the following cases occur:
+             1) If the field value does not exceed the size limitation set by the E2B(R2) guideline, the field value
+                   should be copied to the element of E2B(R2).
+             2) If the field value exceeds the size limitation set by the E2B(R2) guideline, the field value should be
+                   truncated to the size limitation set by the E2B(R2) guideline, less 3 characters, which are replaced
+                   by ‘…’ so as to highlight that truncation has been applied.
+      Example:          Input in E2B(R3):
+                                Field with size of 20 characters: 123456789012345
+
+
+
+                                                                  -36-
+                                                Contains Nonbinding Recommendations
+
+
+                       Output in E2B(R2):
+                                Field with size of 10 characters: 1234567…
+Fields with an asterisk (*) can be masked (for privacy or because information is unknown). The conversion of such
+fields is described in section 5.6.
+
+
+
+5.5.2 Extended Fields to Keep
+
+The following fields have been extended in E2B(R3), and the effective size can be found in the Implementation
+Guide of E2B(R3). These fields should be truncated when converted back to E2B(R2), but the full value should be
+copied to the narrative section of E2B(R2):
+
+                                                   E2B(R2)                              E2B(R3)
+        Description
+                                        Field            Field Size        Field              Field Size
+ List of documents held by the          A.1.8.2              100         C.1.6.1.r.1              2000
+             sender
+  Source of the case identifier        A.1.11.1              50          C.1.9.1.r.1               100
+   Reason for Nullification /          A.1.13.1              200          C.1.11.2                2000
+        Amendment
+         Study name                     A.2.3.1              100            C.5.2                 2000
+      Sponsor study name                A.2.3.2               35            C.5.3                  50
+        Medical history                B.1.7.1g              100          D.7.1.r.5               2000
+      (patient and parent)            B.1.10.7.1g                        D.10.7.1.r.5
+ Name of the drug as reported           B.1.8a               100          D.8.r.1                  250
+    (patient and parent)               B.1.10.8a             100         D.10.8.r.1                250
+  Reaction / event as reported          B.2.i.0              200           E.i.1.1a                250
+    by the primary source
+     Medicinal product as              B.4.k.2.1             70            G.k.2.2                 250
+  reported by primary source
+        Substance name                 B.4.k.2.2             100         G.k.2.3.r.1               250
+   Additional information on           B.4.k.19              100           G.k.11                 2000
+        drug (free text)
+     Reporter’s comments                B.5.2                500             H.2                  20000
+      Sender’s Comments                 B.5.4                2000            H.4                  20000
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2)field should be copied into the field of E2B(R3).
+   • To downgrade to E2B(R2), the following cases occur:
+              1) If the field value does not exceed the size limitation set by the E2B(R2) guideline, the field value
+                   should be copied to the element of E2B(R2).
+
+
+
+
+                                                                  -37-
+                                         Contains Nonbinding Recommendations
+
+
+           2) If the field value exceeds the size limitation set by the E2B(R2) guideline, the field value should be
+                truncated to the size limitation set by the E2B(R2) guideline, less 3 characters, which are replaced
+                by ‘…’ so as to highlight that truncation has been applied. In addition, the field of E2B(R3) should
+                be completely copied into the narrative section of E2B(R2), i.e., B.5.1 of E2B(R2). The information
+                should be preceded by a prefix depending on the field to be copied:
+                       A.1.8.2 / C.1.6.1.r.1                  ADDITIONAL DOCUMENTS
+                       A.1.11.1 / C.1.9.1.r.1                 CASE IDENTIFIER
+                       A.1.13.1 / C.1.11.2                    NULLIFICATION / AMENDMENT REASON
+                       A.2.3.1 / C.5.2                        STUDY NAME
+                       A.2.3.2 / C.5.3                        SPONSOR STUDY NUMBER
+                       B.1.7.1g / D.7.1.r.5                   MEDICAL HISTORY
+                       B.1.8a / D.8.r.1                       DRUG HISTORY
+                       B.1.10.7.1g / D.10.7.1.r.5             PARENT MEDICAL HISTORY
+                       B.1.10.8a / D.10.8.r.1                 PARENT DRUG HISTORY
+                       B.2.i.0 / E.i.1.1a                     REACTION / EVENT
+                       B.4.k.2.1 / G.k.2.2                    DRUG
+                       B.4.k.2.2 / G.k.2.3.r.1                ACTIVE INGREDIENT
+                       B.4.k.19 / G.k.11                      ADDITIONAL INFORMATION ON DRUG
+                       B.5.2 / H.2                            REPORTER COMMENTS
+                       B.5.4 / H.4                            SENDER COMMENTS
+      Example:      Input in E2B(R3):        Field with size of 120 characters: 123456789012345
+                    Output in E2B(R2): Field with size of 100 characters: 1234567…
+                        Case narrative section (for the study name part):
+                                 <case narrative section>
+                                 STUDY NAME: 123456789012345
+
+
+
+5.5.3 Length of Numeric Fields (Extended)
+
+The size of the following numeric field has been extended in E2B(R3):
+
+                                        E2B(R2)                                 E2B(R3)
+    Description
+                             Field              Field Size            Field           Field Size
+     Age (parent)         B.1.10.2.2a               2               D.10.2.2a             3
+
+
+
+
+                                                             -38-
+                                              Contains Nonbinding Recommendations
+
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field should be copied into the field of E2B(R3).
+   • To downgrade to E2B(R2), the following cases occur:
+             1) If 2 digits are used, the field of E2B(R3) should be copied into the field of E2B(R2).
+             2) If 3 digits are used, the field of E2B(R2) should be set to ‘99’.
+
+
+
+5.6 Null Flavour
+
+For several fields, E2B(R3) provides null flavoured information, for privacy purposes or because information is
+unknown. Guidance is provided on the way to pass from one encoding to the other, and vice versa.
+
+5.6.1 Null Flavour for Optional Free Text Fields
+
+In E2B(R3), the following optional text fields can be encoded with a null flavour:
+                                             E2B(R2)                            E2B(R3)
+      Description                  Field         Supported           Field        Supported Masks
+                                                   Masks
+      Reporter’s title            A.2.1.1a             -            C.2.r.1.1   MSK, ASKU, NASK, UNK
+  Reporter’s given, middle       A.2.1.1b              -            C.2.r.1.2     MSK, ASKU, NASK
+     and family name             A.2.1.1c                           C.2.r.1.3
+                                 A.2.1.1d                           C.2.r.1.4
+  Reporter’s organization        A.2.1.2a              -            C.2.r.2.1     MSK, ASKU, NASK
+     and department              A.2.1.2b                           C.2.r.2.2
+   Reporter’s street, city,      A.2.1.2c              -            C.2.r.2.3     MSK, ASKU, NASK
+ state or province and post      A.2.1.2d                           C.2.r.2.4
+            code                 A.2.1.2e                           C.2.r.2.5
+                                 A.2.1.2f                           C.2.r.2.6
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases occur:
+             1) If the E2B(R2) field is not set, the E2B(R3) field should not be provided (as it is optional).
+             2) If the E2B(R2) field is set to ‘UNKNOWN’
+                             If supported, the E2B(R3) field should be provided with the unknown null flavour (UNK).
+                             If not supported, the E2B(R3) field should not be provided.
+             3) If the E2B(R2) field is set to ‘PRIVACY’
+                             If supported, the E2B(R3) field should be provided with the mask null flavour (MSK).
+                             If not supported, the E2B(R3) field should not be provided.
+
+
+
+
+                                                             -39-
+                                          Contains Nonbinding Recommendations
+
+
+             4) In any other case, the field should be copied according to recommendations defined in the other
+                  sections of this document, if applicable.
+   • To downgrade to E2B(R2), the E2B(R3) field should be copied into the field of E2B(R2).
+             1) If the E2B(R3) field is not set, the E2B(R2) field should not be provided (as it is optional).
+             2) If the E2B(R3) field is provided with an unknown null flavour (UNK, ASKU, NASK), the E2B(R2)
+                  field should be provided with the default term ‘UNKNOWN’.
+             3) If the E2B(R3) field is provided with the mask null flavour (MSK), the E2B(R2) field should be
+                  provided with the default term ‘PRIVACY’.
+             4) In any other case, the field should be copied according to recommendations defined in the other
+                  sections of this document, if applicable.
+The other E2B(R3) fields that can receive a null flavour (UNK, ASKU, NASK, NI, MSK…) should be ignored
+when converted back to E2B(R2), i.e., the related E2B(R2) field should not be set.
+
+
+
+5.6.2 Null Flavour for Fields Required in E2B(R3)
+
+In E2B(R3), the following required fields can be encoded with a null flavour:
+                                          E2B(R2)                          E2B(R3)
+        Description              Field        Supported          Field          Supported Masks
+                                                Masks
+   Patient (name or initials)     B.1.1             -            D.1        MSK, ASKU, NASK, UNK
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases occur:
+             1) If the E2B(R2) field is not provided, the corresponding E2B(R3) field should be provided with the
+                  null flavour set to ‘unknown’ (UNK).
+             2)    If the E2B(R2) field ‘Initials’ (i.e., B.1.1) is provided with the value ‘UNKNOWN’, the
+                  corresponding E2B(R3) field should be provided with the null flavour set to ‘unknown’ (UNK).
+             3) If the E2B(R2) field ‘Initials’ (i.e., B.1.1) is provided with the value ‘PRIVACY’, the corresponding
+                  E2B(R3) field should be provided with the null flavour set to ‘mask’ (MSK).
+   • To downgrade to E2B(R2), the following cases occur:
+             1) If the E2B(R3) field ‘Initials’ (i.e., D.1) is provided with the null flavour set to ‘unknown’ (UNK,
+                  NASK or ASKU), the corresponding E2B(R2) field should be provided with the default value
+                  ‘UNKNOWN’.
+
+
+
+
+                                                          -40-
+                                          Contains Nonbinding Recommendations
+
+
+            2) If the E2B(R3) field ‘Initials’ (i.e., D.1) is provided with the null flavour set to ‘mask’ (MSK), the
+                 corresponding E2B(R2) field should be provided with the default value ‘PRIVACY’.
+
+5.6.3 Null Flavour for Optional Codes and Dates
+
+In E2B(R3), the following code and date fields can be encoded with a null flavour:
+                                        E2B(R2)                              E2B(R3)
+       Description              Field          Supported           Field        Supported Masks
+                                                 Masks
+   Reporter’s country code      A.2.1.3            -              C.2.r.3    MSK, ASKU, NASK, UNK
+        Qualification           A.2.1.4            -              C.2.r.4              UNK
+        Date of birth          B.1.2.1b            -               D.2.1               MSK
+         (patient)
+     Was Autopsy Done?          B.1.9.3        3=Unknown           D.9.3        ASKU, NASK,UNK
+        Date of birth         B.1.10.2.1b          -              D.10.2.1     MSK, ASKU, NASK
+          (parent)
+         Continuing            B.1.7.1d        3=Unknown       D.7.1.r.3     MSK, ASKU, NASK, UNK
+      (patient or parent      B.1.10.7.1d                     D.10.7.1.r.3
+       medical history)
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases occur:
+            1) If the field ’Was Autopsy Done’ (i.e., B.1.9.3) or ‘Continuing (patient or parent medical history)’
+                 (i.e., B.1.7.1d or B.1.10.7.1d) is provided with value ‘3’ (unknown) in E2B(R2), the corresponding
+                 field should be provided in E2B(R3) with the null flavour (UNK).
+            2) If any of the other fields are not provided in E2B(R2), the corresponding fields in E2B(R3) should
+                 not be provided.
+   • To downgrade to E2B(R2), the following cases occur:
+            1) If the field ‘Was Autopsy Done’ (i.e., D.9.3) or ’Continuing (patient or parent medical history)’
+                 (i.e., D.7.1.r.3 or D.10.7.1.r.3) has null flavour (UNK) in E2B(R3), the corresponding field in
+                 E2B(R2) should be provided with value ‘3’ (unknown).
+            2) If any of the other fields has a null flavour in E2B(R3), the corresponding field in E2B(R2) should
+                 not be provided.
+
+
+
+
+                                                           -41-
+                                              Contains Nonbinding Recommendations
+
+
+5.7 Structure
+
+For several fields, E2B(R3) provides a new way to structure the information on case safety reports. Guidance is
+provided on the way to pass from one structure to the other, and vice versa.
+
+5.7.1 Country of Primary Source
+
+In E2B(R3), the primary source entity can repeat, with one primary source selected for regulatory purposes. The
+structural change impacts the following fields:
+
+                                               E2B(R2)                         E2B(R3)
+         Description
+                                    Field            Format          Field            Format
+ Identification of the country of   A.1.1                2A             -                -
+       the primary source
+     Reporter country code          A.2.1.3              2A          C.2.r.3             2A
+  Primary source for regulatory        -                 -           C.2.r.5             1N
+            purposes
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3):
+             1) The E2B(R2) field A.1.1 should be ignored.
+             2) Each E2B(R2) entity A.2.1 (Primary Source) should be mapped to an entity C.2.r.1 in E2B(R3).
+             3) For each Primary Source, the E2B(R2) field A.2.1.3 should be copied to the E2B(R3) field C.2.r.3.
+             4) The field C.2.r.5 of E2B(R3) should be set to ‘1’ for the first occurrence of the Primary Source
+                  available in the E2B(R2) message. The other Primary Source occurrences should not have the field
+                  C.2.r.5set.
+   • To downgrade to E2B(R2):
+             1) The E2B(R2) field A.1.1 should be filled with the country value (i.e., the E2B(R3) field C.2.r.3) of
+                  the Primary Source that was set for regulatory purposes (i.e., with E2B(R3) field C.2.r.5 set to ‘1’).
+             2) Each E2B(R3) entity C.2.r.1 (Primary Source) should be mapped to an entity A.2.1 in E2B(R2).
+             3) For each Primary Source, the E2B(R3) field C.2.r.3 should be copied to the E2B(R2) field A.2.1.3.
+             4) The field C.2.r.5 of E2B(R3) should be ignored.
+
+
+
+
+                                                              -42-
+                                               Contains Nonbinding Recommendations
+
+
+5.7.2 Country of Reaction / Event
+
+E2B(R3) provides a different approach for the country of reaction / event, as it is stored at the level of the case, i.e.,
+unique, in E2B(R2) and at the level of the reaction, i.e., repeatable, in E2B(R3). The structural change impacts the
+following fields:
+
+                                               E2B(R2)                              E2B(R3)
+           Description
+                                     Field            Format             Field              Format
+  Country where the reaction /       A.1.2               2A                -                    -
+        event occurred               unique
+  Country where the reaction /         -                 -                E.i.9                2A
+        event occurred                                                 repeatable
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field A.1.2 should be copied into all the occurrences of the E2B(R3)
+          field E.i.9, i.e., with the same value for all the reactions / events.
+   • To downgrade to E2B(R2), the E2B(R3) field E.i.9 of the first occurrence of the reaction / event having a
+          E.i.9 field set, should be copied into the E2B(R2) field A.1.2, i.e., at the case report level. The other country
+          fields in the reaction / event section should be ignored.
+
+
+
+5.7.3 Unique Case Number
+
+E2B(R3) provides a different approach for the unique case number. The structural change impacts the following
+fields:
+
+                                               E2B(R2)                              E2B(R3)
+           Description
+                                     Field            Format             Field              Format
+     Regulatory authority's         A.1.10.1           100AN               -                    -
+      case report number
+      Worldwide unique                 -                 -              C.1.8.1               100AN
+       case identifier
+        Other sender’s              A.1.10.2           100AN               -                    -
+      case report number
+    First sender of this case          -                 -              C.1.8.2          regulator
+                                                                                         other
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases can occur:
+               1) If the E2B(R2) field A.1.10.1 for the regulatory authority’s number is provided, the field value
+                    should be copied into the E2B(R3) field C.1.8.1, and field C.1.8.2 should be set to ‘regulator’.
+
+
+
+
+                                                               -43-
+                                              Contains Nonbinding Recommendations
+
+
+            2) If the E2B(R2) field A.1.10.2 for the other sender’s number is provided, the field value should be
+                 copied into the E2B(R3) field C.1.8.1, and field C.1.8.2 should be set to ‘other’.
+            3) If both fields are provided in the E2B(R2) message, only the regulatory authority’s number should
+                 be converted.
+   • To downgrade to E2B(R2), the following cases can occur:
+            1) If the E2B(R3) field C.1.8.2 is set to ‘regulator’, the E2B(R3) field C.1.8.1 should be copied into
+                 the E2B(R2) field A.1.10.1 (i.e., regulatory authority’s number).
+            2) If the E2B(R3) field C.1.8.2 is set to ‘other’, the E2B(R3) field C.1.8.1 should be copied into the
+                 E2B(R2) field A.1.10.2 (i.e., other sender’s number).
+
+
+
+5.7.4 Sender’s Telephone and Fax
+
+E2B(R3) provides a different approach for the sender’s telephone and fax. The structural change impacts the
+following fields:
+
+                                               E2B(R2)                            E2B(R3)
+       Description
+                                    Field             Format            Field             Format
+     Sender’s telephone           A.3.1.4f               10AN           C.3.4.6           33AN
+ Sender’s telephone extension     A.3.1.4g               5AN               -                -
+     Sender’s telephone           A.3.1.4h               3AN               -                -
+       country code
+        Sender’s fax               A.3.1.4i              10AN           C.3.4.7           33AN
+    Sender’s fax extension         A.3.1.4j              5AN               -                -
+        Sender’s fax              A.3.1.4k               3AN               -                -
+        country code
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the three E2B(R2) fields should be merged, along with the prefix ‘tel’ or ‘fax’, and
+      copied into the single E2B(R3) field. There is no limitation in the field size.
+      Example:               Input in E2B(R2):
+                                     phone:                       12345678
+                                     phone extension:             123
+                                     phone country code:          +44
+                             Output in E2B(R3):
+                                     phone:                       tel: +44 12345678 123
+
+
+
+
+                                                                -44-
+                                            Contains Nonbinding Recommendations
+
+
+
+   • To downgrade to E2B(R2), the single E2B(R3) field should be copied, without the prefix ‘tel’ or ‘fax’, into
+          the corresponding E2B(R2) field (i.e., the longest field). If the value to be copied is too long, the value should
+          be truncated.
+          Example 1:         Input in E2B(R3):
+                                      phone:                   tel: +44 123456
+                             Output in E2B(R2):
+                                      phone:                   +44 123456
+          Example 2:         Input in E2B(R3):
+                                      phone:                   tel: +44 12345678 123
+                             Output in E2B(R2):
+                                      phone:                   +44 123…
+
+
+
+5.7.5 Literature References
+
+E2B(R3) provides a different approach for the literature references. The structural change impacts the following
+fields:
+
+                                          E2B(R2)                                  E2B(R3)
+     Description
+                                  Field             Format              Field                Format
+  Literature references            A.2.2            500AN                C.4.r.1           500AN
+                             in primary source                      in safety report     ASKU, NASK
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the E2B(R2) field A.2.2 from all the primary sources should be copied, and these
+          values should be copied into E2B(R3) field C.4.r.1 so as to have one entry per primary source.
+   • To downgrade to E2B(R2), all the not-nullified E2B(R3) fields C.4.r.1 should be copied, and these values
+          should be copied into the E2B(R2) field A.2.2 of the primary source for regulatory purposes. Fields should
+          be separated with a semi-colon. If the value to be copied extends the field size limit, the information should
+          be truncated.
+
+
+
+5.7.6 Seriousness and Seriousness Criteria
+
+E2B(R3) provides a different approach for the seriousness criteria. In E2B(R3), such information is stored in the
+reaction / event section, and could therefore be provided for each reaction / event. The structural change impacts
+the following fields:
+
+
+
+
+                                                             -45-
+                                                Contains Nonbinding Recommendations
+
+
+                                              E2B(R2)                                      E2B(R3)
+   Description
+                                Field                 Format                 Field                 Format
+     Seriousness                A.1.5.1            Yes                         -                      -
+                              report level         No
+ Seriousness criteria           A.1.5.2            Yes                      E.i.3.2           true
+ (6 different criteria)       report level         No                    reaction level       Null Flavour (NI)
+  Term highlighted              B.2.i.3            yes, highlighted by      E.i.3.1           Yes, highlighted by
+   by the reporter           reaction level         the reporter, NOT     reaction level        the reporter, NOT
+                                                    serious                                     serious
+                                                   no, not highlighted                        No, not highlighted
+                                                    by the reporter,                            by the reporter, NOT
+                                                    NOT serious                                 serious
+                                                   yes, highlighted by                        Yes, highlighted by
+                                                    the reporter,                               the reporter,
+                                                    SERIOUS                                     SERIOUS
+                                                   no, not highlighted                        No, not highlighted
+                                                    by the reporter,                            by the reporter,
+                                                    SERIOUS                                     SERIOUS
+
+The following recommendation applies:
+
+  • To upgrade to E2B(R3):
+             1) The E2B(R2) field B.2.i.3 (term highlighted by the reporter) should be mapped to the E2B(R3) field
+                   E.i.3.1 (same values).
+             2) The E2B(R2) fields for seriousness criteria, stored at the safety report level, i.e., A.1.5.2, should
+                   be copied to the E2B(R3) field E.i.3.2 of each reaction / event if the E2B(R2) field B.2.i.3 is set to
+                   ‘serious’. The E2B(R3) field E.i.3.2 should be set to ‘NI’ for each reaction / event if the E2B(R2)
+                   field B.2.i.3 is set to ‘not serious’.
+             3) The E2B(R2) fields for seriousness criteria, stored at the safety report level, i.e., A.1.5.2 should be
+                   copied to the E2B(R3) field E.i.3.2 of each reaction / event if the E2B(R2) field B.2.i.3 is not
+                   provided.
+             4) Example 1:
+                          Input in E2B(R2):
+                              Seriousness criteria (A.1.5.2): death: yes; disabling: no
+                              Reaction 1 (B.2.i.3): yes, highlighted, serious
+                              Reaction 2 (B.2.i.3): no, not highlighted, not serious
+                          Output in E2B(R3):
+                              Reaction 1:
+                                         Term highlighted by reporter (E.i.3.1): yes, highlighted, serious
+                                         Seriousness criteria (E.i.3.2): death: true; life threatening: NI;
+
+
+
+
+                                                                   -46-
+                                    Contains Nonbinding Recommendations
+
+
+                             Hospitalisation: NI; disabling: NI; Birth defect: NI; Other: NI
+                    Reaction 2:
+                             Term highlighted by reporter (E.i.3.1): no, not highlighted,
+                             not serious
+                             Seriousness criteria (E.i.3.2): death: NI; life threatening: NI;
+                             Hospitalisation: NI; disabling: NI; Birth defect: NI; Other: NI
+           Example 2:
+               Input in E2B(R2):
+                    Seriousness criteria (A.1.5.2): death: yes; disabling: no
+                    Reaction 1 (B.2.i.3): yes, highlighted, serious
+                    Reaction 2 (B.2.i.3): blank
+               Output in E2B(R3):
+                    Reaction 1:
+                             Term highlighted by reporter (E.i.3.1): yes, highlighted, serious
+                             Seriousness criteria (E.i.3.2): death: yes; life threatening: NI;
+                             Hospitalisation: NI; disabling: NI; Birth defect: NI; Other: NI
+                    Reaction 2:
+                             Term highlighted by reporter (E.i.3.1): blank
+                             Seriousness criteria (E.i.3.2): death: yes; life threatening: NI;
+                             Hospitalisation: NI; disabling: NI; Birth defect: NI; Other: NI
+
+
+• To downgrade to E2B(R2):
+       1) The E2B(R3) field E.i.3.1 (term highlighted by the reporter) should be mapped to the E2B(R2) field
+           B.2.i.3 (same values).
+       2) The E2B(R2) field A.1.5.1 should be set to ‘Yes’ if there is at least one reaction / event with the
+           corresponding seriousness criteria set to ‘true’ (i.e., E2B(R3) field E.i.3.2).
+       3) Each seriousness criteria (i.e., E2B(R2) fields A.1.5.2) should be set to ‘Yes’ if there is at least one
+           reaction / event, highlighted as serious, with the corresponding criteria set to ‘true’ (i.e., E2B(R3)
+           field E.i.3.2).
+           Example:
+               Input in E2B(R3):
+
+
+
+                                                    -47-
+                  Contains Nonbinding Recommendations
+
+
+    Reaction 1:
+            Term highlighted by reporter (E.i.3.1): yes, serious
+            Seriousness criteria (E.i.3.2): death: yes; disabling: no
+    Reaction 2:
+            Term highlighted by reporter (E.i.3.1): no, serious
+            Seriousness criteria (E.i.3.2): death: no; disabling: yes
+Output in E2B(R2):
+    Serious (A.1.5.1): yes
+    Seriousness criteria (A.1.5.2): death: yes; disabling: yes
+    Reaction 1 (B.2.i.3): Yes, highlighted, serious
+    Reaction 2 (B.2.i.3): No, not highlighted, serious
+
+
+
+
+                                   -48-
+                                         Contains Nonbinding Recommendations
+
+
+5.7.7 Results of Tests
+
+E2B(R3) provides a different approach for the results of tests. In E2B(R3), the test result can be expressed as a
+value, with or without a qualifier, or coded. Additionally, the E2B(R3) field on the results can repeat for each test.
+The structural change impacts the following fields:
+
+                                     E2B(R2)                                E2B(R3)
+   Description
+                          Field             Format                Field               Format
+     Test result          B.3.1d               50AN               F.r.3.1           as code (1N)
+                                                                  F.r.3.2          as value (50N)
+                                                                  F.r.3.4        free text (2000AN)
+   Results of tests        B.3.2            2000AN                F.r.3.4             2000AN
+                          unique
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following recommendations apply:
+             1) The upgrade of the E2B(R2) field B.3.1.d depends on its content:
+                         If the E2B(R2) field B.3.1.d is numeric, the content should be copied as is to the E2B(R3)
+                          field F.r.3.2 (as value).
+                         If the E2B(R2) field B.3.1.d is not numeric (e.g., because of the presence of a qualifier), the
+                          content should be copied as is to the E2B(R3) field F.r.3.4.
+             2) The unique E2B(R2) field B.3.2 should be copied into the E2B(R3) field F.r.3.4.
+   • To downgrade to E2B(R2), the following recommendations apply:
+             1) The downgrade of the E2B(R3) fields F.r.3 depends on their content:
+                         If the E2B(R3) field F.r.3.1 is set (coded value), it should be copied to the E2B(R2) field
+                          B.3.1.d.
+                         If the E2B(R3) field F.r.3.1 is not set, the field F.r.3.2 (numeric value) should be copied
+                          instead.
+                         If the E2B(R3) fields F.r.3.2 (numeric value) is qualified (e.g., as ‘greater than’), the
+                          information that is copied to the E2B(R2) field B.3.1.d should be made up of the qualifier
+                          followed by the numeric value.
+                         If the E2B(R3) fields F.r.3.1 and F.r.3.2 are not set, the free text field F.r.3.4 should be
+                          copied, truncated if appropriate.
+                         If both coded (F.r.3.1) and numeric (F.r.3.2) fields are set, the coded value should be copied
+                          to the E2B(R2) field B.3.1.d, and the numeric value (with qualifier and unit, if set) should
+                          be copied to the E2B(R2) field B.3.2 in the form of
+
+
+
+
+                                                           -49-
+                                            Contains Nonbinding Recommendations
+
+
+                            TEST <test name> (<date>) [RESULT: <result>]: <unstructured test results>
+              2) The test result fields of E2B(R3), i.e., F.r.2.1 (test name), F.r.1 (date) and F.r.6 (comments), should
+                  be concatenated into the E2B(R2) field B.3.2 (see pattern above).
+                           If there is not enough space in the E2B(R2) field B.3.2, it should be truncated (see section
+                            5.5 for instructions on the way to truncate fields) and the complete field value should be
+                            appended to the E2B(R2) case narrative field, i.e., B.5.1. The information should be
+                            preceded by the prefix ‘TEST RESULTS’.
+
+
+
+5.7.8 Drug and Dosage Information
+
+E2B(R3) provides a different approach for the dosage information, which repeats for a given drug in E2B(R3). The
+structural change impacts the following fields:
+
+                                          E2B(R2)                               E2B(R3)
+     Description
+                                Field               Format             Field             Format
+   Dosage information           B.4.k.5          unique per drug      G.k.4.r       repeatable per drug
+
+
+
+The general principle to support multiple dosage information in E2B(R2) is to repeat the drug section for each
+dosage, which implies repeating the drug section for each dosage information of the same drug.
+The upgrade to E2B(R3), however, should not try to further structure the information, e.g., by grouping the dosage
+information for the same drug under a unique drug section. The dosage information should be upgraded to E2B(R3)
+as is.
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the unique set of dosage information fields in E2B(R2) (fields B.4.k.3, B.4.k.5.1 to
+         B.4.k.5.5, B.4.k.6, B.4.k.7, B.4.k.8, B.4.k.9, B.4.k.12, B.4.k.14 and B.4.k.15) should be copied into the
+         dosage information in E2B(R3) of the corresponding drug section. There should be no attempt to recombine
+         the dosages below the same ‘drug’ element even if the constituents of the drug are the same.
+   • To downgrade to E2B(R2), a separate drug section (i.e., B.4.k) should be created for each dosage information
+         of the same drug. For each drug section created during the conversion, the fields not related to dosage
+         information should be filled with the same content.
+         Example:       Input in E2B(R3):
+                            Drug 1:
+                                      Dosage Information: dosage A
+                                      Dosage Information: dosage B
+
+
+
+                                                             -50-
+                                       Contains Nonbinding Recommendations
+
+
+                        Drug 2:
+                                  Dosage Information: dosage C
+                                  Dosage Information: dosage D
+                   Output in E2B(R2):
+                        Drug 1A: information on drug 1 and dosage A
+                        Drug 1B: information on drug 1 and dosage B
+                        Drug 2C: information on drug 2 and dosage C
+                        Drug 2D: information on drug 2 and dosage D
+
+
+In addition, the E2B(R3) takes another approach regarding separate dosages. The E2B(R2) field for the number of
+separate dosages, i.e., B.4.k.5.3, has been deleted in E2B(R3). This calls for a set of conventions when converting
+dosage information between the two message formats.
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the following cases can occur:
+           1) The dose value and the number of separate doses are provided. In such case, the dose value in
+               E2B(R3) should be multiplied by the number of separated doses. In addition, the number of
+               separated doses should be appended to the E2B(R3) field G.k.4.r.8 (dosage text).
+               Example:
+                   Input in E2B(R2):
+                        Dose: 2 mg
+                        Number of separated doses: 3
+                   Output in E2B(R3):
+                        Dose: 6 mg
+                        Dosage text: 3 separated doses
+                   Formula:       Dose (E2B(R3)) = Dose (E2B(R2)) x Number of separated doses
+           2) The dose value is provided but not the number of separated doses. In such case, the dose value in
+               E2B(R3) should be the same as in E2B(R2).
+               Example:
+                   Input in E2B(R2):
+                        Dose: 2 mg
+
+
+
+
+                                                       -51-
+                                            Contains Nonbinding Recommendations
+
+
+                           Number of separated doses: <not provided>
+                      Output in E2B(R3):
+                           Dose: 2 mg
+                      Formula:       Dose (E2B(R3)) = Dose (E2B(R2)) x 1
+   • To downgrade to E2B(R2), if the dose value is provided in E2B(R3), the same value should be used in
+      E2B(R2), accompanied by a number of separated doses set to 1.
+                      Example:
+                           Input in E2B(R3):
+                                     Dose: 2 mg
+                           Output in E2B(R2):
+                                     Dose: 2 mg
+                                     Number of separated doses: 1
+
+
+
+5.7.9 Substance Strength
+
+E2B(R3) supports the strength for the drug substance, which does not exist in E2B(R2). The structural change
+impacts the following fields:
+
+                                          E2B(R2)                                  E2B(R3)
+     Description
+                                  Field             Format            Field                  Format
+        Strength                    -                 -             G.k.2.3.r.3a              10N
+      Strength unit                 -                 -             G.k.2.3.r.3b         UCUM Code
+  Additional information         B.4.k.19           100AN             G.k.11                 2000AN
+   on drug (free text)
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the fields should not be set, as they do not exist in E2B(R2).
+   • To downgrade to E2B(R2), the E2B(R3) fields for substance strength and strength unit should be
+      concatenated and copied to the E2B(R2) field for additional information on drug, i.e., B.4.k.19. If the value
+      to copy exceeds the size limit of the field, truncation should apply as described in section 5.5.
+      Example:
+      Input in E2B(R3):
+                      Substance #1:
+                           Name:                               substance-1-name
+
+
+
+
+                                                             -52-
+                                        Contains Nonbinding Recommendations
+
+
+                         Strength and strength unit:         1 mg
+                    Substance #2:
+                         TermID:                             substance-2-term-id
+                         TermID version date / number: substance-2-version
+                         Strength and strength unit:         2 mg
+      Output in E2B(R2):
+                    Additional information on drug (free text):
+                         substance-1-name: 1 mg; substance-2-term-id (substance-2-version): 2 mg
+
+
+
+5.7.10 Indication
+
+E2B(R3) provides a different approach for the indication information, which repeats in E2B(R3). The structural
+change impacts the following fields:
+
+                                      E2B(R2)                                 E2B(R3)
+     Description
+                            Field             Format                Field               Format
+       Indication          B.4.k.11        unique per drug          G.k.7.r        repeatable per drug
+
+
+
+The general principle, when converting the information back to E2B(R2), is to focus on the first indication only.
+Each additional indication should be copied to the narrative section.
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the unique indication for the drug should be copied to the indication section of the
+      E2B(R3) message. If the E2B(R2) message contains multiple drug sections, for the same drug information
+      but different indications, the information should be copied as in E2B(R2) without any attempt to recombine
+      the indication information under the same drug section.
+   • To downgrade to E2B(R2), the drug section should not be duplicated to support multiple indications. Instead,
+      only the first indication should be copied from E2B(R3) back to E2B(R2). The other indications should then
+      be copied into the narrative section, under the prefix ‘INDICATION’, extended with the name of the drug
+      between parentheses. The content of the indication field should be composed of the drug indication as
+      reported by the primary source (i.e., G.k.7.r.1), and the indication in MedDRA terminology along with the
+      MedDRA version (i.e., G.k.7.r.2a and G.k.7.r.2b).
+      Example:      Input in E2B(R3):
+                         Drug 1: drug-1
+
+
+
+
+                                                         -53-
+                                             Contains Nonbinding Recommendations
+
+
+                               2 Indications: indication-1a, indication-1b
+                               Drug 2: drug-2
+                               3 Indications: indication-2a, indication-2b, indication-2c
+                          Output in E2B(R2):
+                               Drug 1: drug-1
+                               Indication: indication-1a
+                               Drug 2: drug-2
+                               Indication: indication-2a
+                               <content of case narrative>
+                               INDICATION drug-1: indication-1b (MedDRA code; MedDRA version)
+                               INDICATION drug-2: indication-2b (MedDRA code; MedDRA version)
+                               INDICATION drug-2: indication-2c (MedDRA code; MedDRA version)
+
+
+
+5.7.11 Drug-Reaction / Event Matrix
+
+E2B(R3) provides a different approach for the drug-reaction / event matrix. The structural change impacts the
+following fields:
+
+                                                E2B(R2)                                E2B(R3)
+        Description
+                                        Field             Format             Field               Format
+        Time interval                   B.2.i.7            4 fields
+                                                                         G.k.9.i.3                 -
+         (start – last)                B.4.k.13
+       Drug recurrence                 B.4.k.17               -
+                                                                         G.k.9.i.4                 -
+     (See section 4.2.12)
+   Drug reaction relatedness           B.4.k.18               -          G.k.9.i.1                 -
+                                                                         G.k.9.i.2.r
+
+The general principle of the upgrade to E2B(R3) is to combine the E2B(R2) fields for drug recurrence (i.e., B.4.k.17)
+and for drug-reaction relatedness (i.e., B.4.k.18) into the E2B(R3) field for drug-reaction matrix (i.e., G.k.9.i). The
+downgrade to E2B(R2) should focus on a single value for the time interval between drug administration and start
+of reaction / event (field B.4.k.13) in E2B(R2).
+
+The following recommendation applies:
+
+   • To upgrade to E2B(R3), the approach is as follows:
+             1) All the information related to the drug-reaction / event matrix should be listed in a unique table,
+                  ordered per reaction / event.
+
+
+
+
+                                                                  -54-
+                           Contains Nonbinding Recommendations
+
+
+2) An entry in the matrix for each reaction / event occurrence should be created.
+3) The time interval value from the first occurrence of the reaction / event in B.2.i should be retrieved.
+4) The recurrence flag for that particular reaction / event (see section 5.2.11) should be set.
+5) The assessment fields for that reaction / event should be iterated.
+    Example:
+       Input in E2B(R2):
+             Drug:
+                     Time interval (start – last): 10 days - 2 days
+                     Recurrent administration: Yes
+                     Drug recurrence: Event 1
+                     Drug relatedness:
+                              Event 1:         Source: reporter
+                                               Method: global introspection
+                                               Result: related
+                              Event 1:         Source: company
+                                               Method: algorithm
+                                               Result: possibly related
+                              Event 2:         Source: reporter
+                                               Method: global introspection
+                                               Result: not related
+                              Event 2:         Source: company
+                                               Method: algorithm
+                                               Result: possibly related
+       Input in E2B(R3):
+             Drug matrix for Event 1:
+                     Time interval (start – last): 10 days - 2 days
+                     Recurrent administration: Re-challenge was done, reaction recurred
+                     Relatedness A:            Source: reporter
+                                               Method: global introspection
+                                               Result: related
+
+
+
+
+                                            -55-
+                                  Contains Nonbinding Recommendations
+
+
+                             Relatedness B:           Source: company
+                                                      Method: algorithm
+                                                      Result: possibly related
+                    Drug matrix for Event 2:
+                             Time interval (start – last): 10 days - 2 days
+                             Relatedness A:           Source: reporter
+                                                      Method: global introspection
+                                                      Result: not related
+                             Relatedness B:           Source: company
+                                                      Method: algorithm
+                                                      Result: possibly related
+• To downgrade to E2B(R2), the approach is as follows:
+       1) The time interval for the first reaction / event listed in B.2.i should be retrieved.
+       2) For each reaction / event:
+                  The time interval for the first reaction to the drug section should be copied.
+                  The drug recurrence as in the matrix section (see section 5.2.11) should be set.
+                  If it recurs, i.e., when E2B(R3) field G.k.9.i.4 is set to ‘Re-challenge was done, reaction
+                   recurred (yes-yes)’, the corresponding reaction(s) / event(s) should be copied into the
+                   recurrence section.
+                  The assessment fields for that reaction / event should be iterated.
+            Example: see above
+
+
+
+
+                                                    -56-
+                                              Contains Nonbinding Recommendations
+
+
+5.7.12 Additional Information on Drug
+
+E2B(R3) provides a different approach for the additional information on the drug, which consists of repeatable
+coded values in E2B(R3) instead of a single free text field in E2B(R2). The structural change impacts the following
+fields:
+
+                                               E2B(R2)                            E2B(R3)
+          Description
+                                    Field             Format            Field             Format
+    Additional information            -                  -             G.k.10.r       11possible values
+      on drug (coded)
+    Additional information         B.4.k.19            100AN           G.k.11             2000AN
+     on drug (free text)
+
+The following recommendation applies:
+
+•         To upgrade to E2B(R3), the E2B(R2) field B.4.k.19 should be copied into the E2B(R3) field G.k.11.
+•         To downgrade to E2B(R2), the E2B(R3) fields G.k.10.r, i.e., the meaning of the coded values, should be
+          copied into the E2B(R2) field B.4.k.19, separated by commas. The field should be extended with the content
+          of the field G.k.11, if any. If there is not enough space in E2B(R2) field B.4.k.19, the information should be
+          truncated (see section 5.5) and the full information should be stored in the narrative section, under the prefix
+          ‘ADDITIONAL INFO ON DRUG’. The heading should be extended with the name of the drug between
+          parentheses.
+          Example (with enough space in B.4.k.19):
+                         Input in E2B(R3):
+                             Drug: drug-1
+                             Codes: code-1, code-2
+                             Other info: other-information
+                         Output in E2B(R2):
+                             Additional info: meaning-code-1, meaning-code-2, other-information
+          Example (with not enough space in B.4.k.19):
+                         Input in E2B(R3):
+                             Drug: drug-1
+                             Codes: code-1, code-2, code-3, code-4, code-5
+                             Other info: other-information
+                         Output in E2B(R2):
+                             Additional info: meaning-code-1, meaning-code-2, meaning-code-3…
+
+
+
+
+                                                               -57-
+                                            Contains Nonbinding Recommendations
+
+
+                            Narrative section:
+                                    ADDITIONAL INFO ON DRUG (drug-1): meaning-code-1, meaning-code-2,
+                                    meaning-code-3, meaning-code-4, meaning-code-5, other-information
+
+
+
+5.7.13 Additional Sender Diagnosis
+
+E2B(R3) provides a different approach for the additional sender diagnosis, which repeats in E2B(R3). The structural
+change impacts the following fields:
+
+                                            E2B(R2)                              E2B(R3)
+     Description
+                                 Field             Format               Field              Format
+     Sender diagnosis            B.5.3                unique            H.3.r          repeatable
+
+The following recommendation applies:
+
+•     To upgrade to E2B(R3), the field B.5.3 should be copied to the field H.3.r of E2B(R3).
+•     To downgrade to E2B(R2), the first occurrence of E2B(R3) field H.3.rshould be copied into the E2B(R2)
+      field B.5.3. The other fields, if any, should be copied into the narrative section under the heading
+      ‘ADDITIONAL SENDER DIAGNOSIS’.
+      Example:
+                        Input in E2B(R3):
+                            Sender diagnosis #1: diagnosis-1, diagnosis-version-1
+                            Sender diagnosis #2: diagnosis-2, diagnosis-version-2
+                            Sender diagnosis #3: diagnosis-3, diagnosis-version-3
+                        Output in E2B(R2):
+                            Sender diagnosis: diagnosis-1, diagnosis-version-1
+                            Narrative section:
+                                    ADDITIONAL SENDER DIAGNOSIS: diagnosis-2 (diagnosis-version-2),
+                                    diagnosis-3 (diagnosis-version-3)
+
+
+
+
+                                                               -58-
+                                       Contains Nonbinding Recommendations
+
+
+5.7.14 Batch and Message Wrappers
+
+E2B(R3) provides a unique batch wrapper and a repeatable message wrapper, while the E2B(R2) guideline only
+provides a unique message wrapper.
+
+                                       E2B(R2)                             E2B(R3)
+     Description
+                             Section       Characteristic        Section         Characteristic
+     Batch wrapper             M.1             unique              N.1                unique
+    Message wrapper             -                -                 N.2.r            repeatable
+
+Although the E2B(R2) section M.1 is named ‘message wrapper’, it corresponds to a batch wrapper as it covers all
+the safety reports the message contains. Therefore, the following recommendations apply:
+
+   • To upgrade to E2B(R3), the following recommendations apply:
+           1) The E2B(R2) section M.1 should be mapped to the E2B(R3) section N.1, with a one-to-one
+               relationship (see related implementation guides), except for the elements covered in sections 5.2.2
+               (codes for the type of message), 5.3.2 (format version and release), and 5.1.3 (date of transmission).
+           2) The E2B(R3) section N.2.rshould be filled with the following contents:
+                         E2B(R3) field N.2.r.1 (message ID) with E2B(R2) field A.1.0.1
+                         E2B(R3) field N.2.r.2 (message sender ID) with E2B(R2) field M.1.5
+                         E2B(R3) field N.2.r.3 (message receiver ID) with E2B(R2) field M.1.6
+                         E2B(R3) field N.2.r.4 (date of message creation) with E2B(R2) field A.1.3
+   • To downgrade to E2B(R2), the following recommendations apply:
+           1) The E2B(R2) section M.1 should be mapped to the E2B(R3) section N.1, with a one-to-one
+               relationship (see related implementation guides), except for the elements covered in sections 5.2.2
+               (codes for the type of message), 5.3.2 (format version and release), and 5.1.3 (date of transmission).
+           2) The E2B(R3) section N.2.rshould be ignored.
+
+
+
+
+                                                        -59-
+                                     Contains Nonbinding Recommendations
+
+
+5.7.15 ICSR Message Sender and Receiver in ACK
+
+E2B(R3) provides a different way to exchange ICSR message sender and receiver in the Acknowledgement
+message.
+
+                                        E2B(R2)                                E2B(R3)
+       Description
+                              Section       Characteristic           Section        Characteristic
+   ICSR Message Receiver     ACK: A.1.4           unique
+ ICSR Message ACK Sender                                          ACK: ACK.B.r.4         repeatable
+    ICSR Message Sender      ACK: A.1.3           unique
+    ICSR Message ACK                                              ACK: ACK.B.r.3         repeatable
+         Receiver
+
+Given that the ICSR message ACK follows the opposite route than the ICSR message itself, the identification of
+sender and receiver should be swapped. Therefore, the following recommendations apply:
+
+   • To upgrade to E2B(R3), the E2B(R2) fields for ICSR message sender should be copied to each occurrence
+      of the ICSR message ACK receiver in E2B(R3). Similarly, the E2B(R2) fields for ICSR message receiver
+      should be copied to each occurrence of the ICSR message ACK sender in E2B(R3).
+   • To downgrade to E2B(R2), the E2B(R3) fields for ICSR message ACK sender and receiver should be copied
+      from the first occurrence of the message acknowledgement to the ICSR message receiver and sender fields
+      in E2B(R2), respectively.
+
+
+
+
+                                                           -60-
+

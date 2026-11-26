@@ -1,0 +1,380 @@
+                                    Attachment to
+
+   Guidance on Antiviral Product Development —
+  Conducting and Submitting Virology Studies to the
+                     Agency
+                       Guidance for Submitting HIV-1
+                             Resistance Data
+                                  DRAFT GUIDANCE
+     This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+document. Submit electronic comments to http://www.regulations.gov. Submit written
+comments to the Division of Dockets Management (HFA-305), Food and Drug Administration,
+5630 Fishers Lane, rm. 1061, Rockville, MD 20852. All comments should be identified with
+the docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document contact Lisa K. Naeger at 301-796-0771.
+
+
+
+This draft guidance, when finalized, will represent the Food and Drug Administration’s (FDA’s)
+current thinking on this topic. It does not create or confer any rights for or on any person and
+does not operate to bind FDA or the public. You can use an alternative approach if the approach
+satisfies the requirements of the applicable statutes and regulations. If you want to discuss an
+alternative approach, contact the FDA staff responsible for implementing this guidance. If you
+cannot identify the appropriate FDA staff, call the appropriate number listed on the title page of
+this guidance.
+
+
+
+                      U.S. Department of Health and Human Services
+                              Food and Drug Administration
+                     Center for Drug Evaluation and Research (CDER)
+
+                                         February 2014
+                                     Clinical/Antimicrobial
+
+                                           Revision 1
+
+10935dft.doc
+02/04/14
+                                     Contains Nonbinding Recommendations
+                                              Draft – Not for Implementation
+
+ 1                   Guidance for Submitting HIV-1 Resistance Data1
+ 2
+ 3   Sponsors are encouraged to use the following sample format for submitting HIV-1 resistance
+ 4   data.
+ 5
+ 6   One dataset combines patient data, endpoint data, genotypic data, and phenotypic data. There
+ 7   are a number of ways datasets can be subdivided (i.e., by clinical study, baseline isolates, or
+ 8   virologic failure isolates) and this should be discussed with the Division of Antiviral Products
+ 9   (DAVP) before submission. To identify any potential formatting problems as early as possible,
+10   all sponsors are encouraged to submit preliminary (or mock) resistance datasets to the DAVP
+11   before assembling formal clinical trial resistance datasets.
+12
+13   For each study, we recommend constructing datasets as SAS transport files containing the
+14   following information:
+15
+16      One record (row) per patient per isolate (e.g., baseline, failure, and other time points).
+17
+18      Data in columns (with suggested column headings shown below) on all isolates.
+19
+20      Genotypic data should be provided on the corresponding record for each patient isolate for
+21       baseline isolates of all patients in treatment-experienced studies, and the endpoint isolates of
+22       patients who are classified as virologic failures and discontinuations in all studies. In
+23       treatment-naïve studies, a baseline sample should be collected and stored from all patients for
+24       future phenotypic and genotypic analysis of virologic failures.
+25
+26      Phenotypic data should be provided on the corresponding record for each patient isolate for
+27       baseline isolates and the endpoint isolates of patients who are classified as virologic failures
+28       and discontinuations. In treatment-experienced studies, it is recommended that baseline
+29       phenotypic data be obtained for all patients.
+30
+31   The specific criteria for defining virologic failures should be discussed with the DAVP and
+32   may include multiple primary and secondary protocol endpoints. The endpoints for
+33   virologic and resistance outcome analyses should be consistent.
+34
+35   Standardization of Column Headings and Variables for HIV-1 Resistance Datasets
+36
+37   Sponsors should consult with the DAVP in advance if considering alternative approaches to any
+38   of the recommended column headings, variables, or definitions.
+39
+40   Sponsors collecting and submitting next generation sequencing (NGS) data should consult with
+41   DAVP early in the experimental design process, as additional guidance will be necessary. To
+42   initiate discussions with DAVP, sponsors should provide the details of their planned NGS
+
+
+     1
+      This guidance is being revised to provide the current format, recommended definitions, standardization of column
+     headings and variables, and recommended data for submission of HIV resistance datasets.
+
+
+                                                             1
+                                 Contains Nonbinding Recommendations
+                                         Draft – Not for Implementation
+
+43   analyses, including the performance characteristics of the assay and bioinformatics software to
+44   be used for analysis.
+45
+46   Information to Include With Suggested Column Headings
+47
+48   I. Patient Data:
+49
+50      USUBJID: Unique subject identification number (ID number should be unique for all
+51       studies).
+52
+53      STUDYID: Study identification number.
+54
+55      ARM: Treatment group.
+56
+57      VISIT: (e.g., SCREENING, BASELINE, DAY#, WEEK#, FOLLOWUP WK#). Visit
+58       windows should be as defined in the protocol or statistical analysis plan.
+59
+60      VISITDY: Study day (planned), protocol-defined, relative to initiation of protocol
+61       treatment.
+62
+63      ISOLDY: Study day (actual) of isolate, relative to initiation of protocol treatment.
+64
+65      ISOLID: Unique identifier for isolate analyzed.
+66
+67      ISOLDTC: Date of isolate.
+68
+69      EXTRTHIV: Concomitant HIV-1 treatment drugs.
+70
+71      HIVHIST: Previous therapeutic products (listing of all previous antiretrovirals (ARVs)).
+72
+73      PRVARV1: Previous HIV-1 ARV product (e.g., AMPRENAVIR, ATAZANAVIR).
+74       Additional columns should be added as needed to provide information on multiple ARV
+75       exposures (e.g., PRVARV2, PRVARV3). NULL if no previous ARV products.
+76
+77      HIVGTSC: HIV-1 clade/genotype at screening.
+78
+79      HBVCOINF: Hepatitis B virus co-infected (Y or N).
+80
+81      HCVCOINF: Hepatitis C virus co-infected (Y or N).
+82
+83   II. Endpoint Data:
+84
+85      HIVVLBL: HIV-1 ribonucleic acid (RNA) (copies/mL) at baseline (identify assay in
+86       column heading description).
+87
+
+
+
+                                                       2
+                                 Contains Nonbinding Recommendations
+                                         Draft – Not for Implementation
+
+ 88      LOGVLBL: HIV-1 RNA (log10 copies/mL) at baseline.
+ 89
+ 90      HIVVL: HIV-1 RNA (copies/mL) at time points in protocol (e.g., Week 24 and Week 48);
+ 91       one row for each time point. HIV-1 RNA (copies/mL) from additional time points not
+ 92       specified in protocol can also be included.
+ 93
+ 94      LOGHIVVL: HIV-1 RNA (log10 copies/mL) at all time points from protocol, one row for
+ 95       each time point. HIV-1 RNA (log10 copies/ml) from additional time points not specified in
+ 96       protocol can also be included.
+ 97
+ 98      HIVVL(TIME): Individual column headings for HIV-1 RNA measurements (copies/mL) at
+ 99       selected visit times as appropriate depending on trial design. Each column represents a
+100       single time point of interest. For example, Treatment Week 4 (HIVVLW4).
+101
+102      HIVVLEOT: HIV-1 RNA (copies/mL) at end of treatment (including loss of virologic
+103       response; (i.e., virologic failure)) or discontinuation because of adverse event).
+104
+105      LOGVLEOT: HIV-1 RNA (log10 copies/mL) at end of treatment (based on actual end of
+106       treatment, not planned end of treatment).
+107
+108      EFFICFL: Achieved primary efficacy endpoint as defined in protocol and statistical analysis
+109       plan (Y or N).
+110
+111      NONRECAT: Failure or Nonresponder category for currently tested therapy as defined by
+112       the protocol (e.g., REBOUND, NEVER SUPPRESSED, DISCONTINUED WHILE
+113       SUPPRESSED, DISCONTINUED BEFORE SUPPRESSED).
+114
+115      DISCTXFL: A flag used to indicate subject discontinued from protocol treatment (Y or N).
+116
+117      DISCTXVL: HIV-1 viral RNA load when subject discontinued protocol treatment.
+118
+119      DISCREAS: Reason for early protocol treatment discontinuation (e.g., ADVERSE EVENT,
+120       DEATH, STOPPING RULE, LACK OF EFFICACY, LOST TO FOLLOW-UP,
+121       NONCOMPLIANCE WITH STUDY DRUG; PHYSICIAN DECISION; PREGNANCY;
+122       PROTOCOL VIOLATION; SCREEN FAILURE; WITHDRAWAL BY SUBJECT;
+123       OTHER); or NULL if no information available or not applicable. Reasons are defined
+124       according to protocol or statistical analysis plan.
+125
+126      VFFL: A flag (Y or NULL) used to indicate the specific study visit in which the subject met
+127       the criteria for protocol-defined virologic failure (e.g., rebound, end of treatment).
+128
+129      VLMET: HIV-1 RNA viral load assay name and version.
+130
+131      VLVEND: Name of vendor, contract laboratory, or other central laboratory conducting
+132       HIV-1 RNA viral load assessments.
+133
+
+
+                                                       3
+                                       Contains Nonbinding Recommendations
+                                                 Draft – Not for Implementation
+
+134   III. Genotypic Data:2
+135
+136   Genotypic data should be provided for the HIV-1 target, one amino acid per column, with the
+137   wild-type (WT) amino acid in the column heading. Changes from WT standard sequence should
+138   be indicated in the row (i.e., blanks indicate no change).
+139
+140       COLUMN HEADING FORMAT EXAMPLE:
+141       For reverse transcriptase (RT), RTAXXX where A = amino acid code and XXX is
+142       amino acid position (e.g., RTK065, RTK103); for protease (PR), PRAXXX (e.g., PR
+143       I084, PRL090); for integrase (IN), INAXXX.
+144
+145           Changes from the reference sequence should be indicated for each reported sequence
+146            (e.g., PRI084 change reported as “V”). Blank cells indicate no change from reference
+147            strain sequence. Mixed populations of WT/Variant or Variant/Variant should be reported
+148            as such (e.g., K65R/K reported as R/K; K103N/K reported as N/K).
+149
+150           To report insertions in subject sequence data relative to the reference strain used to
+151            generate the dataset, additional columns should be added where appropriate. For
+152            example, a four-amino acid stretch that includes a two-amino acid insertion between RT
+153            position 69 and 70 should be reported under the column headings RTH069, RTH069A,
+154            RTH069B, and RTK070.
+155
+156           To report deletions in subject sequence data relative to the prototypic reference strain
+157            used to generate the dataset, a dash (-) should be reported in cell for appropriate
+158            positions.
+159
+160           For ambiguous amino acids (i.e., nucleotide information was present but amino acid
+161            could not be called due to non-interpretable translation), X should be reported for
+162            appropriate positions.
+163
+164           Missing sequence data caused by poor sequence quality or other technical problems
+165            should be reported as a question mark (?) for appropriate positions. Efforts should be
+166            made not to have stretches of missing sequence information because of poor sequence
+167            quality or other technical problems.
+168
+169           GENOMET: Genotypic assay name.
+170
+171           GENOFAIL: A flag used to identify samples with sufficient HIV-1 RNA to be analyzed
+172            but results not reported because of poor sequence quality or other technical reasons (e.g.,
+173            RT-PCR amplification not successful) (Y or NULL).
+174
+
+
+      2
+        Genotypic data should be provided for baseline isolates of all patients in treatment-experienced studies, and the
+      endpoint isolates of virologic failures and discontinuations in all studies. In treatment-naïve studies, a baseline
+      sample should be collected and stored from all patients for future phenotypic and genotypic analysis of virologic
+      failures.
+
+
+                                                                4
+                               Contains Nonbinding Recommendations
+                                       Draft – Not for Implementation
+
+175      RESISTFL: A resistance analysis flag used to identify any isolate/time point (including
+176       baseline, on-treatment, and during follow-up) with resistance analysis data reported. This
+177       flag should allow reviewers to pull out all reported resistance data (Y or NULL).
+178
+179      RESBLFL: A flag used to identify baseline sample with resistance analysis data
+180       reported (Y or NULL).
+181
+182      RESEOTFL: A flag used to identify the last on-treatment isolate/time point with
+183       resistance analysis data reported. The flag should indicate no more than one time point
+184       per subject (Y or NULL).
+185
+186      TOTCCR5: Column with total number of CCR5 co-receptor antagonist substitutions in
+187       subject isolate (for baseline and endpoint isolates). The specific substitutions to include
+188       should be discussed with the DAVP in advance.
+189
+190      TOTFI: Column with total number of fusion inhibitor substitutions in subject isolate
+191       (for baseline and endpoint isolates). The specific substitutions to include should be
+192       discussed with the DAVP in advance.
+193
+194      TOTINSTI: Column with total number of INSTI substitutions in subject isolate (for
+195       baseline and endpoint isolates). The specific substitutions to include should be discussed
+196       with the DAVP in advance.
+197
+198      TOTNNRTI: Column with total number of NNRTI substitutions in subject isolate (for
+199       baseline and endpoint isolates). The specific substitutions to include should be discussed
+200       with the DAVP in advance.
+201
+202      TOTNRTI: Column with total number of NRTI substitutions in subject isolate (for
+203       baseline and endpoint isolates). The specific substitutions to include should be discussed
+204       with the DAVP in advance.
+205
+206      TOTPI: Column with total number of PI substitutions in subject isolate (for baseline and
+207       endpoint isolates). The specific substitutions to include should be discussed with the
+208       DAVP in advance.
+209
+210      TOTDRG: Column with total number of target substitutions (or mutations for genome­
+211       targeting products) in subject isolate (for baseline and endpoint isolates) for a drug with a
+212       novel target. DRG is a placeholder for the three-character abbreviation of drug.
+213
+
+
+
+
+                                                     5
+                                       Contains Nonbinding Recommendations
+                                                Draft – Not for Implementation
+
+214   IV. Phenotypic Data:3
+215
+216   For the candidate drug, approved/investigational drug(s) in the same class, and
+217   approved/investigational drug(s) outside the candidate drug class with the same target protein
+218   (e.g., NNRTIs and NRTIs) or protein complex (e.g., gp120/gp41), sponsors should provide the
+219   following data:
+220
+221      DRGEC50 (i.e., DRUG ABBREVIATION EC50 value): EC50 values (µM) at baseline and
+222       post-baseline time points for candidate drug. DRG is a placeholder for the three-character
+223       abbreviation of drug used in phenotype assay.
+224
+225      DRGECRF (i.e., DRUG ABBREVIATION RF): Fold change values in EC50 value at time
+226       of assessment (BASELINE or ENDPOINT) compared to reference strain for drug. DRG is a
+227       placeholder for the three-character abbreviation of drug used in phenotype assay.
+228
+229      DRGECBL (i.e., DRUG ABBREVIATION BL): Fold change in EC50 value at time of
+230       endpoint assessment or failure compared to baseline for drug. DRG is a placeholder for the
+231       three-character abbreviation of drug used in phenotype assay.
+232
+233      PHENOMET: Phenotypic method or assay name.
+234
+235      PHENORF: Reference strain.
+236
+237      PHENFAIL: Phenotype analysis conducted but failed because of poor replication in
+238       phenotype assay (Y or NULL).
+239
+240      DRGIQ (i.e., DRUG ABBREVIATION IQ): Inhibitory quotient (Cmin value/serum or
+241       plasma adjusted EC50 value when available). DRG is a placeholder for the three-character
+242       abbreviation of drug used in phenotype assay.
+243
+244   V. Protease Cleavage Sites (for protease inhibitors only):
+245
+246      NC/p1 Gag cleavage sites: Sponsors should show amino acid and position of cleavage site
+247       of WT in column headings (as above for genotype) and indicate amino acid change if mutant
+248       in row
+249
+250      p1/p6 Gag cleavage sites: Sponsors should show amino acid and position of cleavage site
+251       of WT in column headings (as above for genotype) and indicate amino acid change if mutant
+252       in row
+253
+
+
+
+
+      3
+       Phenotypic data should be provided for baseline isolates and the endpoint isolates of virologic failures and
+      discontinuations. In treatment-experienced studies, it is recommended that baseline phenotypic data be obtained for
+      all patients.
+
+
+                                                               6
+                                 Contains Nonbinding Recommendations
+                                         Draft – Not for Implementation
+
+254   VI. Co-Receptor Usage (for all products targeting co-receptors):
+255
+256      TRPBL: Co-receptor usage of baseline isolates. Sponsors should indicate R5, X4, D for
+257       dual-tropic, M for mixed-tropic, or D/M if the assay cannot distinguish between dual or
+258       mixed, in a column.
+259
+260      TRPBLR5: Baseline R5 tropism assay value (e.g., RLUs).
+261
+262      TRPBLX4: Baseline X4 tropism assay value (e.g., RLUs).
+263
+264      TRPEOT: Co-receptor usage of virologic failures and end-of-study isolates (on therapy).
+265       Sponsors should indicate R5, X4, D for dual-tropic, M for mixed-tropic, or D/M if the assay
+266       cannot distinguish between dual or mixed, in a column.
+267
+268      TRPEOTR5: R5 tropism assay value at failure or end of study (e.g., RLUs).
+269
+270      TRPEOTX4: X4 tropism assay value at failure or end of study (e.g., RLUs).
+
+
+
+
+                                                       7
+

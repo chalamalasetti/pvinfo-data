@@ -1,0 +1,815 @@
+                                  Attachment to
+ Guidance on Antiviral Product Development —
+ Conducting and Submitting Virology Studies to
+                 the Agency
+                      Guidance for Submitting HCV
+                            Resistance Data
+                                DRAFT GUIDANCE
+          This guidance attachment is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+document. Submit electronic comments to http://www.regulations.gov. Submit written
+comments to the Division of Dockets Management (HFA-305), Food and Drug Administration,
+5630 Fishers Lane, rm. 1061, Rockville, MD 20852. All comments should be identified with
+the docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document contact Lisa K. Naeger at 301-796-0771.
+
+
+This draft guidance, when finalized, will represent the Food and Drug Administration’s (FDA’s)
+current thinking on this topic. It does not create or confer any rights for or on any person and
+does not operate to bind FDA or the public. You can use an alternative approach if the approach
+satisfies the requirements of the applicable statutes and regulations. If you want to discuss an
+alternative approach, contact the FDA staff responsible for implementing this guidance. If you
+cannot identify the appropriate FDA staff, call the appropriate number listed on the title page of
+this guidance.
+
+
+
+                       U.S. Department of Health and Human Services
+                               Food and Drug Administration
+                      Center for Drug Evaluation and Research (CDER)
+
+                                         February 2013
+                                     Clinical Antimicrobial
+
+                                           Revision 1
+
+I:\10421dft.doc
+02/04/13
+                                        Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+
+ 1                      Guidance for Submitting HCV Resistance Data1
+ 2
+ 3
+ 4
+ 5   STANDARDIZATION OF COLUMN HEADINGS AND VARIABLES FOR HCV
+ 6   RESISTANCE DATASETS2
+ 7
+ 8   Points to Consider
+ 9    The column headings, variables, and definitions provided in this attachment can be used as a
+10      guide by sponsors of hepatitis C virus (HCV) direct-acting antiviral (DAA) clinical trials
+11      when assembling electronic datasets of HCV virology and drug resistance data. We
+12      recommend submitting final datasets as SAS transport files (.xpt).
+13
+14        The recommendations in this attachment are not intended to be applicable to all situations.
+15         Sponsors should consult with the Division of Antiviral Products (DAVP) in advance when
+16         more detailed guidance is needed, or if considering alternative approaches to any of the
+17         recommended column headings, variables, or definitions. Given the rapid pace of HCV
+18         DAA drug development, we expect continued evolution in trial designs and technologies
+19         used for collection of genotypic and phenotypic resistance data, and we intend to update this
+20         attachment frequently as new information accumulates.
+21
+22        Sponsors should use this attachment for submission of data from phase 3 and larger phase 2b
+23         efficacy trials. Sponsors can use this attachment for the submission of HCV virology and
+24         resistance data from other clinical trials, although in most cases data from early-stage clinical
+25         trials can be submitted in the form of study reports.
+26
+27        There are a number of ways datasets can be subdivided (i.e., by clinical trial, genotype,
+28         subtype) and this should be discussed with the DAVP before submission of datasets.
+29
+30        As detailed in section III., Genotypic Data, separate resistance datasets should be constructed
+31         to report amino acid sequence data from patient populations according to their HCV
+32         genotype or subtype.
+33
+34        To identify any potential formatting problems as early as possible, all sponsors are
+35         encouraged to submit preliminary (or mock) resistance datasets to DAVP before assembling
+36         formal clinical trial resistance datasets.
+37
+38
+
+
+
+
+     1
+      This attachment is being revised to provide the current format, recommended definitions, standardization of
+     column headings and variables, and recommended data for submission of HCV resistance datasets.
+     2
+         See the Glossary of Abbreviations and Acronyms at the end of this attachment.
+
+
+                                                               1
+                                 Contains Nonbinding Recommendations
+                                        Draft — Not for Implementation
+39   RECOMMENDED COLUMN HEADINGS, VARIABLES, AND DEFINITIONS
+40
+41   NULL = blank cell
+42
+43   I. Patient Data:
+44
+45      USUBJID: Unique subject identification number (ID number should be unique for all
+46       studies)
+47
+48      STUDYID: Study identification number
+49
+50      IL28MET: IL28B single nucleotide polymorphism (SNP) genotype assay name or other
+51       method identifier
+52
+53      IL28POL: IL28B SNP analyzed (rs12979860, rs8099917, or other as appropriate;
+54       genotypes’ relationship to response to Peg-IFN/RBV should be identified in column notes
+55       (e.g., for rs12979860 CC>CT>TT)). The rs number, if available, should always be used to
+56       identify the SNP analyzed. If multiple IL28B SNPs are analyzed and reported, additional
+57       columns can be added to identify the different SNPs (e.g., IL28POL1, IL28POL2).
+58
+59      IL28GEN: IL28B SNP genotype result (CC, CT, TT, GG, GT, or other polymorphism
+60       genotype result). If multiple IL28B SNPs are analyzed and reported, additional columns can
+61       be added to report the results of the different SNPs analyzed (e.g., IL28GEN1, IL28GEN2
+62       corresponding to IL28POL1, IL28POL2).
+63
+64      ARM: Treatment group
+65
+66      LEADINFL: Subject received a protocol regimen that includes an initial lead-in period of
+67       one or multiple drugs before receiving full regimen (e.g., 4-week Peg-IFN/RBV lead-in (Y or
+68       N))
+69
+70      RGTFL: Subject received an abbreviated duration of therapy according to the protocol,
+71       based on achieving a protocol-defined early response (Y or N; OTHER should be used if
+72       subject did not follow protocol guidelines (e.g., discontinued before response-guided therapy
+73       (RGT) decision point); NULL if no RGT in arm or trial)
+74
+75      VISIT: (SCREENING, BASELINE, DAY#, WEEK#, FOLLOWUP WK#). Visit windows
+76       should be as defined in protocol or statistical analysis plan.
+77
+78      VISITDY: Study day, protocol-defined, relative to initiation of protocol treatment. Counting
+79       should be continued upwards into Peg-IFN/RBV tail, rollover, or follow-up phases. Baseline
+80       = Day 1 or Day 0 should be indicated in column notes.
+81
+82      ISOLDTC: Date of isolate. Time of isolate can be included as appropriate (e.g., if multiple
+83       samples collected at different times in same day).
+84
+
+
+                                                      2
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+
+85       ISOLID: Unique identifier for isolate analyzed (e.g., barcode or other means to identify
+86        specific isolate)
+87
+88       FUDY: Day of isolate from end-of-treatment. Last day of treatment considered FUDY = 0
+89        (NULL if pre-treatment or on-treatment time point).
+90
+91       RFSTDTC: Start date of protocol treatment
+92
+93       RFENDTC: End date of protocol treatment (actual end date, not planned end date)
+94
+95       HCVHIST: Anti-HCV treatment exposure history. See recommended terms and definitions
+96        in Table 1.
+97
+98    Table 1. Recommended Controlled Terms and Definitions for Documenting Previous HCV
+99    Treatment Exposure History for the HCVHIST Column*
+       NAÏVE-ALL        Naïve to all anti-HCV treatment
+       P/R
+                        Previously treated with Peg-IFN/RBV, but naïve to HCV DAAs
+       EXPERIENCED
+       P/R PLUS DAA Previously treated with Peg-IFN/RBV in combination with 1 or more HCV
+       EXPERIENCED DAAs
+       DAA              Previously exposed to 1 or more HCV DAAs (including short courses of DAA
+       EXPERIENCED monotherapy), but never treated with Peg-IFN/RBV
+       DAA AND P/R      Previously treated with Peg-IFN/RBV and HCV DAAs, but never in the form
+       EXPERIENCED of a Peg-IFN/RBV/DAA combination regimen
+       OTHER**          Treatment history not captured by any of the above definitions.
+100   *
+        Note: Peg-IFN can refer to any pegylated interferon (e.g., α-2a, α-2b, λ); specific Peg-IFN exposure is defined
+101   elsewhere (e.g., CMTRTIFN).
+102   **
+         Sponsors should consult with the DAVP before using this variable, because it may be appropriate to create an
+103   additional treatment history definition.
+104
+105      CMTRTIFN: Previous HCV interferon (IFN) therapeutic products (e.g., PEGASYS,
+106       PEGINTRON). NULL if no previous IFN products.
+107
+108      CMTRTRBV: Previous HCV ribavirin (RBV) therapeutic products (e.g., COPEGUS,
+109       REBETOL). NULL if no previous RBV products.
+110
+111      PRVDAA1: Previous HCV DAA therapeutic products (e.g., BOCEPREVIR,
+112       TELAPREVIR). Additional columns should be added as needed to provide information on
+113       multiple DAA exposures (e.g., PRVDAA2, PRVDAA3). NULL if no previous DAA
+114       products.
+115
+116      PRVDAA1D: Approximate duration of PRVDAA1 exposure (actual, not planned), using the
+117       following categories: ≤1 WEEK, >1-4 WEEKS, >4-12 WEEKS, >12-24 WEEKS, >24
+118       WEEKS. Additional columns should be added as needed for additional DAA exposures.
+119       UNKNOWN can be used if necessary, although efforts should be made to capture this
+120       information. NULL if no previous DAA exposure.
+
+
+                                                                3
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+121
+122      PRVDAA1T: Approximate time since previous exposure to DAA1, using the following
+123       categories: ≤1 MONTH, >1-3 MONTHS, >3-6 MONTHS, >6-12 MONTHS, >1-2 YEARS,
+124       >2-4 YEARS, >4 YEARS. Additional columns should be added as needed for additional
+125       DAA exposures. UNKNOWN can be used if necessary, although efforts should be made to
+126       capture this information. NULL if no previous DAA exposure.
+127
+128      EXPERCAT: Previous response category; see recommended terms and definitions in Table
+129       2. Note: If multiple prior treatments, response category during most recent DAA-containing
+130       treatment regimen takes precedence. Alternatively, prior responses used for determining trial
+131       eligibility can take precedence. Additional descriptive information should be provided to the
+132       DAVP as appropriate.
+133
+134   Table 2. Recommended Controlled Terms and Definitions for Documenting Previous
+135   Treatment Responses for the EXPERCAT Column*
+       NAÏVE-ALL            Naïve to all anti-HCV treatment
+       P/R NULL             <2 log10 IU/mL reduction in HCV RNA at Week 12 of a Peg-IFN/RBV
+       RESPONDER            regimen
+       P/R WEEK 4           <1 log10 IU/mL decline from baseline at Week 4 futility rule and
+       FUTILITY             discontinued therapy before Week 12 of a Peg-IFN/RBV regimen
+       P/R PARTIAL          ≥2 log10 IU/mL reduction in HCV RNA at Week 12, but not achieving HCV
+       RESPONDER            RNA target not detected at end-of-treatment with a Peg-IFN/RBV regimen.
+                            Can include subjects who met 24-week virologic futility rule.
+       P/R                  Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+       BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                            to <LLOQ (detected or not detected). Occurred during treatment with a
+                            Peg-IFN/RBV regimen.
+       P/R RELAPSER         HCV RNA target not detected at end-of-treatment with a Peg-IFN/RBV
+                            regimen, but HCV RNA quantifiable (≥LLOQ) during follow-up
+       P/R+DAA              HCV RNA detected at end-of-treatment with a regimen that included one or
+       NONRESPONDER more HCV DAAs dosed in combination with Peg-IFN/RBV. Can include
+                            subjects who met protocol-defined virologic futility rule (except for
+                            breakthrough which is captured elsewhere).
+       P/R+DAA              Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+       BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                            to <LLOQ (detected or not detected). Occurred during the DAA dosing
+                            period with a regimen that included one or more HCV DAAs dosed in
+                            combination with Peg-IFN/RBV.
+       P/R TAIL             Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+       BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                            to <LLOQ (detected or not detected). Occurred during Peg-IFN/RBV tail
+                            dosing period that followed a Peg-IFN/RBV/DAA(s) dosing period.
+       P/R+DAA              HCV RNA target not detected at end-of-treatment with a regimen that
+       RELAPSER             included one or more HCV DAAs dosed in combination with Peg-
+                            IFN/RBV, but HCV RNA quantifiable (≥LLOQ) during follow-up
+136                                                                                        continued
+
+
+                                                       4
+                                         Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+137   Table 2, continued
+       DAA             HCV RNA detected at end-of-treatment with a regimen that included only
+       NONRESPONDER    HCV DAAs (can also include RBV, but not IFNs). Can include subjects
+                       who met protocol-defined virologic futility rule (except for breakthrough,
+                       which is captured elsewhere).
+          DAA          Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+          BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                       to <LLOQ (detected or not detected). Occurred during treatment with a
+                       regimen that included only HCV DAAs (can also include RBV, but not
+                       IFNs).
+          DAA RELAPSER HCV RNA target not detected at end-of-treatment with a regimen that
+                       included only HCV DAAs (can also include RBV, but not IFNs), but HCV
+                       RNA quantifiable (≥LLOQ) during follow-up
+138   *
+          Notes:
+139           The recommended terms and definitions for EXPERCAT are identical to those for NONRECAT.
+140           Other protocol-defined or retrospectively defined responses can be used as appropriate, and should be
+141              discussed in advance with the DAVP.
+142           Peg-IFN can refer to any pegylated interferon (e.g., α-2a, α-2b, λ).
+143           For DAA-containing treatment regimens, breakthrough should take precedence. Exceptions to this
+144              guideline should be discussed in advance with the DAVP.
+145           UNKNOWN can be used if necessary, although efforts should be made to capture this information.
+146
+147         EXTRTIFN: Concomitant HCV IFN treatment drugs (e.g., PEGASYS, PEGINTRON).
+148          NULL if no concomitant IFN.
+149
+150         EXTRTRBV: Concomitant RBV HCV treatment drugs (e.g., COPEGUS, REBETOL).
+151          NULL if no concomitant RBV.
+152
+153         HCVGTSC: HCV subtype at screening (e.g., 1a, 1b, 2a, 2b, 2c, 3a, 3b, 4a, 4b, 4c, 4d, 4e, 5a,
+154          6a). Mixed infections should be reported as Gt/Gt (e.g., 1a/1b).
+155
+156         HCVGTAN: HCV subtype for analysis (e.g., 1a, 1b, 2a, 2b, 2c, 3a, 3b, 4a, 4b, 4c, 4d, 4e, 5a,
+157          6a; NA (not assigned); or NULL (if not done (i.e., screening method used for analysis))).
+158          Mixed infections should be reported as Gt/Gt (e.g., 1a/1b).
+159
+160         HCVGTSCM: Assay used for determining HCV genotype/subtype at screening (e.g.,
+161          TRUGENE, VERSANTLIPA2.0, VERSANTLIPA1.0, NS3 SEQUENCE, NS3_4A
+162          SEQUENCE, NS5A SEQUENCE, NS5B SEQUENCE)
+163
+164         HCVGTANM: Assay used for determining HCV genotype/subtype for analysis (e.g.,
+165          TRUGENE, VERSANTLIPA2.0, VERSANTLIPA1.0, NS3 SEQUENCE, NS3_4A
+166          SEQUENCE, NS5A SEQUENCE, NS5B SEQUENCE) or NULL
+167
+168         HBVCOINF: HBV co-infected (Y or N)
+169
+170         HIVCOINF: HIV co-infected (Y or N)
+171
+
+
+                                                                 5
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+
+172      CIRRFL: Subject has cirrhosis as defined in protocol (Y or N)
+173
+174   II. Endpoint Data:
+175
+176   Note regarding reporting of HCV RNA viral load data: For the purposes of populating the
+177   viral load data described below, HCV RNA viral load results of target not detected should be
+178   reported using the term NOT DETECTED. HCV RNA viral load results of detectable/<LLOQ
+179   should be reported using the term DETECTED <LLOQ.
+180
+181      VLMET: HCV RNA viral load assay name and version
+182
+183      VLVEND: Name of vendor, contract laboratory, or other central laboratory conducting HCV
+184       RNA viral load assessments
+185
+186      VLLOQ: lower limit of quantitation for HCV RNA viral load assay
+187
+188      VLOD: limit of detection for HCV RNA viral load assay
+189
+190      VLBL: HCV RNA (IU/mL) at baseline
+191
+192      LOGVLBL: HCV RNA (log10 IU/mL) at baseline
+193
+194      HCVVL: HCV RNA (IU/mL) at all time points from protocol, one row for each time point.
+195       HCV RNA (IU/ml) from additional time points not specified in protocol can also be included
+196       (e.g., virologic breakthrough confirmatory sample, retest sample). Imputed data should not
+197       be reported; only observed data should be reported.
+198
+199      LOGHCVVL: HCV RNA (log10 IU/mL) at all time points from protocol, one row for each
+200       time point. HCV RNA (log10 IU/ml) from additional time points not specified in protocol
+201       can also be included (e.g., virologic breakthrough confirmatory sample, retest sample).
+202       Imputed data should not be reported; only observed data should be reported.
+203
+204      HCVVL(TIME): Individual column headings for HCV RNA measurements (IU/mL) at
+205       selected visit times of interest. Each column represents a single time point of interest. In the
+206       example shown in Table 3, the selected time points of interest are: Treatment Weeks (W) 4,
+207       8, 12, 24, and 48, and Follow-Up Weeks (F) 12 and 24. These time points can be adjusted or
+208       reduced as appropriate depending on the trial design. Time points/results for RGT decision
+209       making should be included as time points of interest. Visit windows defined in protocol or
+210       statistical analysis plan should be used. If there are multiple discordant results in a visit
+211       window of interest, the results should be reported according to statistical analysis plan. Cells
+212       should be NULL for any time points that are not applicable for individual subjects, or where
+213       data are not available.
+214
+215      VLEOT: HCV RNA (IU/mL) at end-of-treatment; this usually is duplicate data for subjects
+216       who complete protocol-specified treatment (i.e., duplicate with Week 48, if a 48-week
+
+
+
+                                                        6
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+217       treatment duration). Based on actual end-of-treatment, not planned end-of-treatment, for
+218       subjects who discontinued early.
+219
+220      LOGVLEOT: HCV RNA (log10 IU/mL) at end-of-treatment (Note: Not shown in Table 3
+221       example). Based on actual end-of-treatment, not planned end-of-treatment, for subjects who
+222       discontinued early.
+223
+224      VLEOTFL: HCV RNA target not detected at end-of-treatment (Y or N, NULL if not
+225       available)
+226
+227   Table 3. Example Illustrating Formatting of HCV RNA Viral Load Data*
+
+
+
+
+228
+229   *
+       Note: In this example, HCV RNA viral load assessments were conducted at SCREENING, BASELINE, DAY 2,
+230   DAY 4, WEEKS 1, 2, 4, 8, 12, 16, 20, 24, 28, 36, and 48, EOT (e.g., can be a duplicate of Week 48 if a 48-week
+231   treatment course is completed), and FOLLOW-UP Weeks 4, 8, 12, and 24. HCVVL and LOGHCVVL data are
+232   provided for each of these time points, with each time point representing a unique row. The RESISTFL and related
+233   columns (described in section III., Genotypic Data) will be used to flag time point(s) where resistance assessments
+234   were performed. HCV RNA viral load data for select time points of interest are also provided in column format.
+235
+236      SVR2FL: Sustained virologic response (SVR) at Week 2 after end-of-treatment (Y or N, or
+237       NULL). Use visit window defined in protocol or statistical analysis plan. NULL used if visit
+238       not specified in protocol or data missing. Do not impute Y or N. Currently, we define SVR
+239       based on HCV RNA <LLOQ.
+240
+241      SVR4FL: Sustained virologic response at Week 4 after end-of-treatment (Y or N, or NULL).
+242       Visit window defined in protocol or statistical analysis plan should be used. NULL should
+243       be used if visit not specified in protocol or data missing. Y or N should not be imputed.
+244       Currently, we define SVR based on HCV RNA <LLOQ.
+245
+246      SVR12FL: Sustained virologic response at Week 12 after end-of-treatment (Y or N, or
+247       NULL). Visit window defined in protocol or statistical analysis plan should be used. NULL
+248       should be used if visit not specified in protocol or data missing. Y or N should not be
+249       imputed. Currently, we define SVR based on HCV RNA <LLOQ.
+250
+251      SVR24FL: Sustained virologic response at Week 24 after end-of-treatment (Y or N, or
+252       NULL). Visit window defined in protocol or statistical analysis plan should be used. NULL
+
+
+                                                               7
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+253       should be used if visit not specified in protocol or data missing. Y or N should not be
+254       imputed. Currently, we define SVR based on HCV RNA <LLOQ.
+255
+256      EFFICFL: Achieved primary efficacy endpoint as defined in protocol and statistical analysis
+257       plan, including sponsor-imputed results (Y or N).
+258
+259      VR1FL: Protocol-defined virologic response, intended for RGT decisions or key protocol­
+260       defined endpoints; additional column headings can be added if other protocol-defined
+261       responses are used (e.g., VR2FL, VR3FL); the definition of the protocol-defined response(s)
+262       should be included as notes to the column heading(s). Additional descriptive information
+263       should be provided to the DAVP as needed to define the virologic responses (Y or N).
+264
+265      NDSTDY: Study day of first documented result of HCV RNA NOT DETECTED. NULL
+266       should be used if never achieved HCV RNA not detected.
+267
+268      NONRECAT: Nonresponder category for currently tested therapy as defined by the
+269       protocol. See recommended terms and definitions in Table 4.
+270
+271      DISCTXFL: A flag used to indicate subject discontinued from protocol treatment (Y or N)
+272
+273      DISCTXVL: HCV viral RNA load when subject discontinued protocol treatment (e.g., NOT
+274       DETECTED, DETECTED <LLOQ, specific IU/mL, or NULL for those who did not
+275       discontinue treatment early)
+276
+277      DISCREAS: Reason for early protocol treatment discontinuation (ADVERSE EVENT,
+278       DEATH, STOPPING RULE, LACK OF EFFICACY, LOST TO FOLLOW-UP,
+279       NONCOMPLIANCE WITH STUDY DRUG; OTHER; PHYSICIAN DECISION;
+280       PREGNANCY; PROGRESSIVE DISEASE; PROTOCOL VIOLATION; SCREEN
+281       FAILURE; TECHNICAL PROBLEMS; WITHDRAWAL BY SUBJECT); or NULL if no
+282       information available or not applicable. Reasons should be defined according to protocol or
+283       statistical analysis plan.
+284
+285      DISCFUFL: A flag used to indicate subject discontinued from follow-up (Y or N)
+286
+287      DISCFUVL: HCV viral RNA load when subject discontinued follow-up (e.g., NOT
+288       DETECTED, DETECTED <LLOQ, specific IU/mL, or NULL for those who did not
+289       discontinue follow-up early)
+290
+291      DISCREA2: Reason for early follow-up discontinuation (ADVERSE EVENT, DEATH,
+292       STOPPING RULE, LACK OF EFFICACY, LOST TO FOLLOW-UP, NONCOMPLIANCE
+293       WITH STUDY DRUG; OTHER; PHYSICIAN DECISION; PREGNANCY;
+294       PROGRESSIVE DISEASE; PROTOCOL VIOLATION; SCREEN FAILURE;
+295       TECHNICAL PROBLEMS; WITHDRAWAL BY SUBJECT); or NULL if no information
+296       available. Reasons should be defined according to protocol or statistical analysis plan.
+297
+
+
+
+                                                       8
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+
+298      BTFL: A flag (Y or NULL) used to indicate the specific study visit with a viral load value
+299       that met the definition for protocol-defined virologic breakthrough
+300
+301      VFFL: A flag (Y or NULL) used to indicate the specific study visit in which the subject met
+302       the criteria for protocol-defined virologic failure (e.g., when the subject met a protocol­
+303       defined treatment futility rule, experienced virologic relapse). Will duplicate BTFL for
+304       subjects who experienced breakthrough as the specific reason for virologic failure.
+305
+306      SVRRELFL: A flag (Y or NULL) used to indicate the specific study visit that met the
+307       criteria for a late virologic relapse.
+308
+309   Table 4. Recommended Controlled Terms and Definitions for Documenting Protocol
+310   Treatment Responses for the NONRECAT Column*
+       NAÏVE-ALL            Naïve to all anti-HCV treatment
+       P/R NULL             <2 log10 IU/mL reduction in HCV RNA at Week 12 of a Peg-IFN/RBV
+       RESPONDER            regimen
+       P/R WEEK 4           <1 log10 IU/mL decline from baseline at Week 4 futility rule and
+       FUTILITY             discontinued therapy before Week 12 of a Peg-IFN/RBV regimen
+       P/R PARTIAL          ≥2 log10 IU/mL reduction in HCV RNA at Week 12, but not achieving HCV
+       RESPONDER            RNA target not detected at end-of-treatment with a Peg-IFN/RBV regimen.
+                            Can include subjects who met 24-week virologic futility rule.
+       P/R                  Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+       BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                            to <LLOQ (detected or not detected). Occurred during treatment with a
+                            Peg-IFN/RBV regimen.
+       P/R RELAPSER         HCV RNA target not detected at end-of-treatment with a Peg-IFN/RBV
+                            regimen, but HCV RNA quantifiable (≥LLOQ) during follow-up
+       P/R+DAA              HCV RNA detected at end-of-treatment with a regimen that included one or
+       NONRESPONDER more HCV DAAs dosed in combination with Peg-IFN/RBV. Can include
+                            subjects who met protocol-defined virologic futility rule (except for
+                            breakthrough, which is captured elsewhere).
+       P/R+DAA              Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+       BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                            to <LLOQ (detected or not detected). Occurred during the DAA dosing
+                            period with a regimen that included one or more HCV DAAs dosed in
+                            combination with Peg-IFN/RBV.
+       P/R TAIL             Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+       BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                            to <LLOQ (detected or not detected). Occurred during Peg-IFN/RBV tail
+                            dosing period that followed a Peg-IFN/RBV/DAA(s) dosing period.
+       P/R+DAA              HCV RNA target not detected at end-of-treatment with a regimen that
+       RELAPSER             included one or more HCV DAAs dosed in combination with Peg-
+                            IFN/RBV, but HCV RNA quantifiable (≥LLOQ) during follow-up
+311                                                                                        continued
+
+
+
+
+                                                       9
+                                         Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+312   Table 4, continued
+       DAA             HCV RNA detected at end-of-treatment with a regimen that included only
+       NONRESPONDER    HCV DAAs (can also include RBV, but not IFNs). Can include subjects
+                       who met protocol-defined virologic futility rule (except for breakthrough,
+                       which is captured elsewhere).
+          DAA          Confirmed ≥1 log10 IU/mL HCV RNA on-treatment increase from nadir, or
+          BREAKTHROUGH confirmed increase in HCV RNA ≥LLOQ if HCV RNA previously declined
+                       to <LLOQ (detected or not detected). Occurred during treatment with a
+                       regimen that included only HCV DAAs (can also include RBV, but not
+                       IFNs).
+          DAA RELAPSER HCV RNA target not detected at end-of-treatment with a regimen that
+                       included only HCV DAAs (can also include RBV, but not IFNs), but HCV
+                       RNA quantifiable (≥LLOQ) during follow-up
+313   *
+          Notes:
+314           The recommended terms and definitions for NONRECAT are identical to those for EXPERCAT.
+315           Other protocol-defined or retrospectively defined responses can be used as appropriate, and should be
+316              discussed in advance with the DAVP.
+317           Peg-IFN can refer to any pegylated interferon (e.g., α-2a, α-2b, λ).
+318           For DAA-containing treatment regimens, breakthrough should take precedence. Exceptions to this
+319              guideline should be discussed in advance with the DAVP.
+320
+321   III. Genotypic Data:
+322
+323   General Information:
+324
+325         There are a number of ways datasets can be subdivided (e.g., clinical trial, genotype,
+326          subtype). This should be discussed with the DAVP before submission of datasets.
+327
+328         Separate resistance datasets can be constructed to report amino acid sequence data from
+329          patient populations according to their HCV genotype. Data from HCV genotype 1
+330          populations can be assembled in separate datasets for HCV genotype 1a- and 1b-infected
+331          patient populations or submitted in a single dataset, even if using different subtype-specific
+332          reference strains for reporting amino acid sequences. Non-genotype 1 HCV data can be
+333          reported according to HCV genotype in separate resistance datasets using genotype-specific
+334          reference strains. Again, this should be discussed with the DAVP before submission of
+335          datasets.
+336
+337         Subject sequence data should be reported using subtype-specific reference strains (see Table
+338          5).
+339
+
+
+
+
+                                                                10
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+340   Table 5. Reference Strains for Reporting of Amino Acid Sequence Data
+                  HCV Genotype                  Reference Strain           GenBank Accession ID
+                    Genotype 1a                       H77                      NC_004102
+                    Genotype 1b                      Con1                       AJ238799
+          Other genotype 1 subtypes, mixed
+                                                        H77                     NC_004102
+           subtypes, or subtype unknown
+                    Genotype 2                        JFH-1                     AB047639
+                    Genotype 3                         S52                      GU814263
+                    Genotype 4                        ED43                      GU814265
+                    Genotype 5                        SA13                      AF064490
+                    Genotype 6                       EUHK2                       Y12083
+341
+342   Reporting Amino Acid Substitutions:
+343
+344      Genotype information for all relevant coding regions sequenced should be reported using one
+345       amino acid position per column:
+346
+347       COLUMN HEADING FORMAT EXAMPLE: N30XXX (e.g., N30155, N4A0030,
+348       N5A0002, N5B0200)
+349
+350      Changes from the prototypic reference sequence (Table 5) should be indicated for each
+351       reported sequence. Blank cells indicate no change from prototypic reference strain sequence.
+352       Mixed populations of WT/Variant or Variant/Variant should be reported as such (e.g.,
+353       R155R/K reported as R/K; R155K/T reported as K/T).
+354
+355      To report insertions in subject sequence data relative to the prototypic reference strain used to
+356       generate the dataset, additional columns should be added where appropriate. For example, a
+357       5-amino acid stretch that includes a 3-amino acid insertion between NS3 position 131 and
+358       132 should be reported under the column headings N30131, N30131A, N30131B, N30131C,
+359       and N30132.
+360
+361      To report deletions in subject sequence data relative to the prototypic reference strain used to
+362       generate the dataset, X should be reported for appropriate positions.
+363
+364      Missing sequence data caused by poor sequence quality or other technical problems should
+365       be reported as a question mark (?) for appropriate positions. Efforts should be made not to
+366       have stretches of missing sequence information caused by poor sequence quality or other
+367       technical problems.
+368
+369      A composite of all substitutions emerging on treatment should be reported (i.e., POST-BL
+370       ALL). For datasets that include genotypic data for multiple post-baseline time points for
+371       individual subjects, a single row (one row per subject) should be added that reports the
+372       composite of all substitutions detected post-baseline relative to standard reference. This row
+373       should be indicated by a VISIT term of POST-BL ALL, as shown in Table 6.
+374
+
+
+                                                       11
+                                  Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+375   Table 6. Recommendation for Reporting POST-BL ALL Composite
+376   Substitution Data
+
+
+
+
+377
+378
+379   Reporting Reference Strain Information:
+380
+381      The amino acid sequences of the specific reference strains used for reporting of the data
+382       should be reported in the top rows of the dataset (see example in Table 7). Below each
+383       reference strain sequence, sponsors should include two additional rows to indicate the
+384       following:
+385
+386       - Percent conservation at each amino acid position (from large HCV sequence databases)
+387         for the genotype/subtype included in the dataset
+388
+389       - Summary of the most common variants (comprising ~5 percent or more of variants
+390         available in sequence databases) at the amino acid position in decreasing frequency
+391
+392      The following is additional information regarding the reporting of reference strain, percent
+393       conservation, and variant information:
+394
+395       - The USUBJID column can be used to designate rows for reference strains (REFERENCE
+396         NAME), percent conservation (GT CONSERVATION), and common variants (GT
+397         VARIANTS) (see Table 7).
+398
+399       - Both public databases and internal data (e.g., baseline sequences from trial) can be used
+400         to report percent conservation and common variants. Internal data may be valuable in the
+401         event that inadequate sequence data are available in the public domain for certain HCV
+402         genotypes.
+403
+404       - Database sequences used should be from subjects with no known previous exposure to
+405         therapies that target the region of interest. No more than one sequence per subject.
+406
+407       - It is not necessary to continually update database sequence information for percent
+408         conservation and most common variants each time a new resistance dataset is assembled
+409         and submitted to the DAVP unless a large volume of sequence data has recently become
+410         available for certain HCV genotypes that previously had only limited available sequence
+411         data.
+412
+413       - When reporting genotype 1a and 1b sequences all in the same dataset, there will be a total
+414         of six rows that provide the necessary background information for the reference strains,
+
+
+                                                      12
+                                   Contains Nonbinding Recommendations
+                                           Draft — Not for Implementation
+415          percent conservation, and common variants. Percent conservation and common variants
+416          should be calculated separately for subtype 1a and subtype 1b.
+417
+418       - For non-genotype 1 populations, database sequences used to report percent conservation
+419         and common variants within a given HCV genotype should be comprised of HCV
+420         subtypes that are reasonably representative of the HCV subtypes included in the clinical
+421         trial.
+422
+423       - Descriptive information should be provided to the DAVP in the study report summarizing
+424         the source and number of sequences used for reporting this information.
+425
+426   Table 7. Recommendation for Reporting Reference Strain,
+427   Percent Conservation, and Common Variant Information in
+428   Resistance Datasets
+
+
+
+429
+430
+431   Reporting Clonal Nucleotide Sequence Analysis:
+432
+433      For data generated by clonal nucleotide sequence analysis (or other sensitive method), we
+434       recommend consulting with the DAVP in advance of assembling these data because a
+435       number of different formats may be appropriate for submission.
+436
+437      A separate dataset or study report should be submitted that includes more specific details of
+438       clonal analysis results (e.g., all variants detected at a specific position of interest and their
+439       percent prevalence in the population).
+440
+441   Additional column headings and terms related to genotypic data that should be included in
+442   the dataset:
+443
+444      GENORF: HCV reference strain for genotypic sequence (CON1, H77, or other as
+445       appropriate). See reference strain recommendations in Table 5.
+446
+447      GENOMET: Genotypic method (CLONAL, POPULATION)
+448
+449      GENOFAIL: A flag used to identify samples with sufficient HCV RNA to be analyzed but
+450       results not reported because of poor sequence quality or other technical reasons (e.g., RT­
+451       PCR amplification not successful) (Y or NULL)
+452
+453      RESISTFL: A resistance analysis flag used to identify any isolate/time point (including
+454       baseline, on-treatment, and during follow-up) with resistance analysis data reported. This
+455       flag should allow reviewers to pull out all reported resistance data (Y or NULL).
+456
+
+
+
+                                                        13
+                                  Contains Nonbinding Recommendations
+                                          Draft — Not for Implementation
+
+457      RESBLFL: A flag used to identify baseline sample with resistance analysis data reported.
+458       Can indicate multiple rows per subject if multiple baseline or screening samples analyzed (Y
+459       or NULL).
+460
+461      RESEOTFL: A flag used to identify the last on-treatment isolate/time point with resistance
+462       analysis data reported. Should indicate no more than one time point per subject (Y or
+463       NULL).
+464
+465      RESFU1FL: A flag used to identify the first treatment-free follow-up isolate/time point with
+466       resistance analysis data reported. Should indicate no more than one time point per subject (Y
+467       or NULL).
+468
+469      RESFU2FL: Flag to identify the last treatment-free follow-up isolate/time point with
+470       resistance analysis data reported. Should indicate no more than one time point per subject (Y
+471       or NULL).
+472
+473   IV. Phenotypic Data (if available):
+474
+475   We recommend the following guidelines for submission of phenotypic resistance data generated
+476   using subject sample-derived amplicons evaluated in cell-based or biochemical phenotyping
+477   assays. Data on the effect of specific substitutions (e.g., in site-directed mutant replicons) should
+478   not be included in these datasets and can be reported in summary format in study reports. We
+479   recommend consulting with the DAVP before finalizing phenotypic resistance data formats for
+480   submission, because additional columns/variables may be needed.
+481
+482      DRUG ABBREVIATION EC50 value (e.g., DRGEC50): EC50 values at baseline and post­
+483       baseline time points; with cell culture assay. DRG is a placeholder for the three-character
+484       abbreviation of drug used in phenotype assay.
+485
+486      DRUG ABBREVIATION RF (e.g., DRGECRF): Fold change values in EC50 value at time
+487       of assessment (BASELINE or ENDPOINT) compared to reference strain for DRUG, with
+488       cell culture assay. DRG is a placeholder for the three-character abbreviation of drug used in
+489       phenotype assay.
+490
+491      DRUG ABBREVIATION BL (e.g., DRGECBL): Fold change in EC50 value at time of
+492       endpoint assessment or failure compared to baseline for DRUG, with cell culture assay.
+493       DRG is a placeholder for the three-character abbreviation of drug used in phenotype assay.
+494
+495      DRUG ABBREVIATION IC50 (e.g., DRGIC50): IC50 values at baseline and post-baseline
+496       time points, with biochemical assay. DRG is a placeholder for the three-character
+497       abbreviation of drug used in phenotype assay.
+498
+499      DRUG ABBREVIATION RF (e.g., DRGICRF): Fold change values in IC50 value at time of
+500       assessment (BASELINE or ENDPOINT) compared to reference strain for DRUG, with
+501       biochemical assay. DRG is a placeholder for the three-character abbreviation of drug used in
+502       phenotype assay.
+
+
+                                                       14
+                                 Contains Nonbinding Recommendations
+                                         Draft — Not for Implementation
+503
+504      DRUG ABBREVIATION BL (e.g., DRGICBL): Fold change in IC50 value at time of
+505       endpoint assessment or failure compared to baseline for DRUG, with biochemical assay.
+506       DRG is a placeholder for the three-character abbreviation of drug used in phenotype assay.
+507
+508      PHENOMET: Phenotypic method (REPLICON, BIOCHEMICAL, CELL-BASED, VIRUS,
+509       SDM). An example of a CELL-BASED method is a secreted alkaline phosphatase protease
+510       assay.
+511
+512      PHENORF: Reference strain (e.g., H77; CON1)
+513
+514      PHENFAIL: Phenotype analysis conducted but failed because of poor replication in
+515       phenotype assay (Y or NULL).
+516
+517      DRUG ABBREVIATION IQ (e.g., DRGIQ): Inhibitory quotient (Cmin value/serum(or
+518       plasma)-adjusted EC50 value) (when available). DRG is a placeholder for the three-character
+519       abbreviation of drug used in phenotype assay. Method for serum or plasma protein-binding
+520       adjustment should be based on the effect of 40 percent human serum on the drug EC50 value
+521       in a cell culture assay, or discussed in advance with DAVP if other means of adjustment are
+522       necessary.
+523
+
+
+
+
+                                                      15
+                               Contains Nonbinding Recommendations
+                                       Draft — Not for Implementation
+524   GLOSSARY OF ABBREVIATIONS AND ACRONYMS
+525
+526   DAA          direct-acting antiviral
+527   EC50 value   50 percent effective concentration (cell-based assay)
+528   EOT          end-of-treatment
+529   FU           follow-up
+530   GT           genotype
+531   HBV          hepatitis B virus
+532   HCV          hepatitis C virus
+533   HIV          human immunodeficiency virus
+534   IC50 value   50 percent inhibition concentration (biochemical assay)
+535   ID           identification
+536   IU/mL        international unit/milliliter
+537   LLOQ         lower limit of quantitation
+538   LOD          limit of detection
+539   Peg-IFN      pegylated interferon (α-2a, α-2b or λ)
+540   P/R          pegylated interferon (α-2a, α-2b or λ) plus ribavirin
+541   RBV          ribavirin
+542   RGT          response-guided therapy
+543   RNA          ribonucleic acid
+544   SNP          single nucleotide polymorphism
+545   SVR          sustained virologic response
+546   WT           wild-type
+547
+
+
+
+
+                                                    16
+

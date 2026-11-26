@@ -1,0 +1,1278 @@
+                         Contains Nonbinding Recommendations
+
+
+        BIORESEARCH MONITORING
+     TECHNICAL CONFORMANCE GUIDE
+
+                   Technical Specifications Document
+
+
+
+
+   This Document is Referenced by the Following Draft Guidance Document:
+
+Standardized Format for Electronic Submission of NDA and BLA Content for the
+Planning of Bioresearch Monitoring (BIMO) Inspections for CDER Submissions
+
+    For questions regarding this technical specifications document, contact CDER-BIMO-
+                              NDA-BLA-request@fda.hhs.gov.
+
+
+
+
+                    U.S. Department of Health and Human Services
+                            Food and Drug Administration
+                   Center for Drug Evaluation and Research (CDER)
+
+
+
+
+                                    September 2024
+      Contains Nonbinding Recommendations
+
+
+
+
+   BIORESEARCH MONITORING
+TECHNICAL CONFORMANCE GUIDE
+
+
+
+
+                September 2024
+             Contains Nonbinding Recommendations
+
+                      Revision History
+
+   Date                 Version                   Summary of Changes
+12/28/2017                1.0                        Original Version
+07/23/2020                2.0             1.   Corrected footnote hyperlinks
+                                          2.   Edited variable names in
+                                               examples and tables to
+                                               maintain consistency across
+                                               document
+                                          3.   Clarified document, listings,
+                                               and data requests
+                                          4.   Deleted request for SITEFFE
+                                               and SITEFFS variables in
+                                               clinsite.xpt
+                                          5.   Added COHORT variable
+                                          6.   Revised PROTVIOL variable
+                                               to IMPDEV and NOIMPDEV
+                                               variables
+                                          7.   Provided additional
+                                               instructions for placement of
+                                               files per eCTD format
+08/11/2022                3.0             1.   Rename BIMO Review Guide
+                                               to BIMO Data Review Guide.
+                                          2.   Renamed TRTEFFR to
+                                               TRTEFFR1
+                                          3.   Added EFFPOP, TRTEFFR2,
+                                               and CENSOR2 Variables
+                                          4.   Deleted request for TRTEFFS
+                                          5.   Change instructions for use of
+                                               ISO codes to use of
+                                               Geopolitical Entities, Names
+                                               and Codes (GENC) codelist.
+                                          6.   Minor editorial changes.
+09/03/2024                3.1             1.   Updated introductory
+                                               language
+                                                Contains Nonbinding Recommendations
+
+
+                                                                  TABLE OF CONTENTS
+
+
+I.         CLINICAL STUDY-LEVEL INFORMATION                                                                                                                                 1
+      A.   COMPREHENSIVE AND READILY LOCATED LIST OF ALL CLINICAL SITES ......................................................... 1
+      B.   TABLE LISTING ALL ENTITIES TO WHOM SPONSOR HAS CONTRACTED CLINICAL STUDY-RELATED
+           ACTIVITIES ....................................................................................................................................................... 1
+      C.   PROTOCOL, PROTOCOL AMENDMENTS, AND ANNOTATED CASE REPORT FORM ............................................... 2
+II.        SUBJECT-LEVEL DATA LINE LISTINGS BY CLINICAL SITE                                                                                                                2
+      A.   ORGANIZATION OF THE SUBJECT-LEVEL DATA LINE LISTINGS ........................................................................ 2
+      B.   SITE-SPECIFIC LISTINGS FORMAT ..................................................................................................................... 4
+III.       SUMMARY-LEVEL CLINICAL SITE DATASET                                                                                                                              5
+      A.   ORGANIZATION OF THE SITE-LEVEL DATASET ................................................................................................. 5
+      B.   VARIABLES AND VARIABLE NAMES FOR SITE-SPECIFIC EFFICACY RESULTS .................................................... 5
+      C.   CREATING THE DATA FILE (TEMPLATE AND STRUCTURE) ................................................................................ 7
+IV.        SUBMITTING BIMO CLINICAL DATA IN THE ECTD FORMAT                                                                                                                 7
+      A.   STUDY TAGGING FILE ....................................................................................................................................... 7
+      B.   ECTD FOLDER STRUCTURE FOR CLINICAL STUDY-LEVEL INFORMATION AND SUBJECT-LEVEL LINE LISTINGS
+           BY CLINICAL SITE ............................................................................................................................................. 8
+      C.   ECTD FOLDER STRUCTURE FOR SUMMARY-LEVEL CLINICAL SITE DATASET .................................................. 8
+      D.   FILE FORMAT .................................................................................................................................................... 9
+      E.   LEAF TITLES ..................................................................................................................................................... 9
+      F.   SUBMISSION ...................................................................................................................................................... 9
+APPENDIX 1: CLINICAL STUDY-LEVEL INFORMATION                                                                                                                               11
+APPENDIX 2: FORMATTING SUBJECT-LEVEL DATA LINE LISTINGS BY CLINICAL SITE                                                                                                   12
+APPENDIX 3: CLINICAL SITE DATA ELEMENTS SUMMARY LISTING                                                                                                                    14
+APPENDIX 4: EXAMPLES                                                                                                                                                       19
+                                     Contains Nonbinding Recommendations
+
+
+ 1            Bioresearch Monitoring Technical Conformance Guide
+ 2
+ 3   This technical conformance guide represents the current thinking of the Food and Drug
+ 4   Administration (FDA or Agency) on this topic. It does not establish any rights for any person
+ 5   and is not binding on FDA or the public. You can use an alternative approach if it satisfies the
+ 6   requirements of the applicable statutes and regulations. If you want to discuss an alternative
+ 7   approach, contact the FDA staff responsible for this technical conformance guide. If you cannot
+ 8   identify the appropriate FDA staff, send an email to cder-edata@fda.hhs.gov or
+ 9   cber.cdisc@fda.hhs.gov.
+10
+11   This Bioresearch Monitoring Technical Conformance Guide (Guide) provides current FDA
+12   specifications, recommendations, and general considerations for preparing and submitting
+13   Clinical Study-Level Information, Subject-Level Data Line Listings by Clinical Site, and a
+14   Summary-Level Clinical Site Dataset that are used by the Center for Drug Evaluation and
+15   Research (CDER) for planning of Bioresearch Monitoring (BIMO) inspections in electronic
+16   format for new drug applications (NDAs), biologics license applications (BLAs), and NDA or
+17   BLA supplemental applications containing clinical data that are regulated by CDER. 1 It also
+18   applies when these data and information are submitted under certain investigational new drug
+19   applications 2 (INDs) in advance of a planned NDA, BLA, or supplemental submission.
+20
+21
+22   I.      CLINICAL STUDY-LEVEL INFORMATION
+23
+24           A.       Comprehensive and Readily Located List of All Clinical Sites
+25
+26   The recommended format for the portable document format (PDF) of the comprehensive and
+27   readily located list(s) of all clinical sites that participated in clinical studies for each major (i.e.,
+28   pivotal) study is provided in Appendix 1 of this Guide.
+29
+30           B.       Table Listing All Entities To Whom Sponsor Has Contracted Clinical Study-
+31                    Related Activities
+32
+33   In the table(s) listing entities to whom the sponsor has contracted clinical study-related activities,
+34   which are provided in a PDF for each pivotal study, the applicant should identify the location of
+35   study-related documents for each study and whether they are sponsor- or Contract Research
+36   Organization-generated. For example, these documents may include, but are not limited to,
+37   monitoring plans and reports, training records, and data analysis plans (e.g., items that some
+38   applicants organize in a Trial Master File). When the location of study-related documents has
+39   not been finalized, the applicant should provide contact information (i.e., phone number and
+
+     1
+      We update technical conformance guides periodically. For the most recent version of this Guide, check the FDA
+     guidance web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+     2
+      See FDA guidance for industry Providing Regulatory Submissions in Electronic Format – Certain Human
+     Pharmaceutical Product Applications and Related Submissions Using the eCTD Specifications (February 2020).
+     We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page at
+     https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+                                                            1
+                                        Contains Nonbinding Recommendations
+
+
+40   email address) for the individual(s) who can provide updated location information upon request.
+41   This information ensures that when CDER issues an inspection assignment for the application,
+42   the inspection is of the most responsible entity for a given regulatory responsibility, and that the
+43   inspection assignment is issued for the location where records are present for review.
+44
+45              C.       Protocol, Protocol Amendments, and Annotated Case Report Form
+46
+47   The protocol and protocol amendments, with associated versions of the case report form, and the
+48   final version of the annotated case report form (case report form containing Clinical Data
+49   Interchange Standards Consortium and Study Data Tabulation Model (SDTM) annotations) are
+50   generally included in Appendix 16 3 of the Clinical Study Report or in the datasets folder for each
+51   study. When these items are included in an appendix to the Clinical Study Report or the dataset
+52   folder for the study, there is no need to resubmit them. If the applicant is submitting a BIMO
+53   Data Reviewer’s Guide, 4 the applicant should note that these items are present in an appendix of
+54   the Clinical Study Report or the dataset folder where they are placed.
+55
+56   These items are included in the background materials provided to the Office of Regulatory
+57   Affairs for BIMO inspections; it is important to provide all versions of these documents so that
+58   the field investigator performing the inspection can reference the correct versions of protocols
+59   and case report forms in place at the time of the conduct of specific study procedures.
+60
+61
+62   II.        SUBJECT-LEVEL DATA LINE LISTINGS BY CLINICAL SITE
+63
+64              A.       Organization of the Subject-Level Data Line Listings
+65
+66   Examples of the formatting for the PDF of subject-level data line listings provided for each
+67   major (i.e., pivotal) study used to support safety and efficacy in the application, including studies
+68   with different treatment indications, are provided in Appendix 2 of this Guide. If the sponsor
+69   believes alternative listings or formats are preferable for its submission, proposed alternatives
+70   should be discussed with the Office of Scientific Investigations in advance of the application
+71   submission—for example, before or during pre-NDA or pre-BLA meetings.
+72
+73   For clinical investigator sites involved in multiple studies in support of an application, the
+74   subject listings should be provided independently for each study within the study-associated
+75   PDF.
+76
+77   Subject-level data line listings, by clinical site, should include consented subjects, treatment
+78   assignment, discontinuations, study population, inclusion and exclusion criteria, adverse events,
+79   protocol deviations, efficacy endpoints, concomitant medications, and safety monitoring, as
+80   further described below.
+81
+
+     3
+         See ICH guidance for industry E3 Structure and Content of Clinical Study Reports (July 1996).
+     4
+      A specific template for a BIMO Data Reviewer’s Guide is not specified. However, an example can be found at
+     https://advance.phuse.global/display/WEL/Deliverables.
+
+                                                               2
+                                   Contains Nonbinding Recommendations
+
+
+ 82          1.      Consented Subjects
+ 83
+ 84   This by-subject, by-clinical site listing includes all subjects that consented to enroll in the study.
+ 85   Consented subjects that were screen failures should also be included. For subjects that consented
+ 86   but were not randomized to treatment or did not receive investigational product, the specific
+ 87   reason they were not randomized or treated should be included in this listing.
+ 88
+ 89          2.      Treatment Assignment
+ 90
+ 91   This by-subject, by-clinical site listing includes the treatment assignment to which the subject
+ 92   was randomized. If a subject mistakenly received treatment different from the subject’s assigned
+ 93   treatment for any duration of time, the actual treatment received should also be included.
+ 94
+ 95          3.      Discontinuations
+ 96
+ 97   This by-subject, by-clinical site listing includes:
+ 98
+ 99          •    All subjects that discontinued during run-in period (if applicable)
+100          •    All subjects that discontinued from study treatment
+101          •    All subjects that discontinued from the study completely
+102
+103   For each subject, the date of and reason for discontinuation should be provided.
+104
+105          4.      Study Population
+106
+107   This by-subject, by-clinical site listing identifies the protocol-defined study population in which
+108   each subject was analyzed (e.g., intent-to-treat, safety, per protocol). For subjects that did not
+109   meet criteria for inclusion in the per-protocol population, the reason they were excluded from the
+110   per-protocol population should be provided.
+111
+112          5.      Inclusion and Exclusion Criteria
+113
+114   This by-subject, by-clinical site listing should display whether each subject met each inclusion
+115   and exclusion criterion defined in the protocol.
+116
+117          6.      Adverse Events
+118
+119   This by-subject, by-clinical site listing should include all adverse events (i.e., nonserious adverse
+120   events and serious adverse events, including deaths), date of occurrence and time if collected,
+121   treatment(s) administered, severity, whether considered serious by the clinical investigator,
+122   whether considered serious by the sponsor, action taken, whether the event led to discontinuation
+123   of study therapy, and outcome/date of resolution.
+124
+125          7.      Protocol Deviations
+126
+
+
+                                                            3
+                                     Contains Nonbinding Recommendations
+
+
+127   This by-subject, by-clinical site listing should include all protocol deviations. The listing should
+128   include a description of the deviation and identify whether the sponsor considered the deviation
+129   to be an important or non-important protocol deviation. 5
+130
+131           8.       Efficacy Endpoints
+132
+133   This by-subject, by-clinical site listing(s) should contain primary and key secondary efficacy
+134   parameters or events. For derived or calculated endpoints, the raw data points used to generate
+135   the derived or calculated endpoint should be provided. For example, when efficacy endpoints
+136   are assessed based on a laboratory, imaging, components of a clinical outcome assessment(s), or
+137   other study procedures, the by-subject, by-clinical site listing should include all testing results
+138   that contribute to the derived efficacy endpoint. When efficacy endpoints are collected as
+139   clinical events, a by-subject, by-clinical site listing should be provided that includes clinical
+140   event, date of event, and when adjudicated, the date of adjudication and the outcome of the
+141   adjudication process.
+142
+143           9.       Concomitant Medications
+144
+145   This by-subject, by-clinical site listing should contain all concomitant medications as specified
+146   by the protocol. The date started, date stopped, dose, route of administration, and reason for
+147   administration should be included.
+148
+149           10.      Safety Monitoring
+150
+151   This by-subject, by-clinical site listing(s) should contain results of tests (e.g., laboratory,
+152   electrocardiogram) performed for safety monitoring as defined in the protocol. When safety
+153   endpoints are collected as clinical events, a by-subject, by-clinical site listing should be provided
+154   that includes clinical event, date of event, and when adjudicated, the outcome of the adjudication
+155   process.
+156
+157           B.       Site-Specific Listings Format
+158
+159   The specified data line listings are anticipated to fit reporting requirements for most applications.
+160   If a sponsor believes additional listings are needed to permit FDA to verify key study data during
+161   inspections, additional listings should be included. If the size of the PDF file exceeds 500
+162   megabytes, it should be split into smaller components. 6
+163
+164   Although listings are currently requested in PDF format, CDER is in the process of developing
+165   tools to extract site-specific listings, needed for inspectional purposes, from submitted Clinical
+166   Data Interchange Standards Consortium, SDTM, and Analysis Data Model (ADaM) datasets and
+167   intends to make those tools available in the future. FDA intends to update these technical
+
+      5
+        See ICH guidance for industry E3 Structure and Content of Clinical Study Reports — Questions and Answers (R1)
+      (January 2013).
+      6
+       See ICH guideline Specification for Submission Formats for eCTD v1.3 (June 2021) at
+      https://www.ich.org/page/ich-m8-specification-submission-formats-ectd.
+
+                                                             4
+                                         Contains Nonbinding Recommendations
+
+
+168   specifications to include details for the submission of SDTM and ADaM datasets, including
+169   controlled terminology standards. In anticipation of the development of CDER tools for
+170   extraction of by-site, by-subject data listings, sponsors should ensure that they are prepared to
+171   submit clinical study data using standards specified in the Data Standards Catalog. 7
+172
+173
+174   III.       SUMMARY-LEVEL CLINICAL SITE DATASET
+175
+176              A.       Organization of the Site-Level Dataset
+177
+178   A single summary-level clinical site dataset that contains data from all major (i.e., pivotal)
+179   studies used to support safety and efficacy in the application, including studies with different
+180   treatment indications, should be provided.
+181
+182   For each major (i.e., pivotal) study used to support safety and efficacy, data by clinical site and
+183   treatment arm for the safety population (SAFPOP) and primary efficacy population (EFFPOP)
+184   should be provided.
+185
+186   For clinical investigator sites involved in multiple studies in support of an application, the site
+187   data should be reported independently for each study within the dataset.
+188
+189              B.       Variables and Variable Names for Site-Specific Efficacy Results
+190
+191   For each study and investigator site, it is critical to submit the following variables associated
+192   with efficacy and their variable names:
+193   •      Safety Population (SAFPOP) — Total number of subjects in safety population at a given
+194          site by treatment arm. When a subject has transferred from one site to another, the
+195          applicant should handle reporting of such subjects consistently across sites and include in
+196          the define file, or the BIMO Data Review Guide when one is provided, the reporting
+197          convention used.
+198   •      Primary Efficacy Population (EFFPOP) — Total number of subjects in the primary efficacy
+199          population, as defined in the clinical study report, at a given site by treatment arm to support
+200          the proposed indication in the application. The efficacy population used should be identified
+201          in the define file provided for the clinsite.xpt (e.g., Full Analysis Set, Per Protocol, Intent to
+202          Treat, Modified Intent to Treat).
+203   •      Treatment Efficacy Result One (TRTEFFR1) — The summary statistic for each primary
+204          efficacy endpoint, by treatment arm at a site, based subjects in the SAFPOP. Values reported
+205          in TRTEFFR1 generally reflect simple summary statistics for the primary efficacy
+206          endpoint(s). The method used for deriving the TRTEFFR1, including a description of which
+207          analysis datasets and associated variables are used to derive the TRTEFFR1, should be
+208          described in the define file provided with the clinsite.xpt (see discussion below for examples
+209          of summary statistics according to different types of efficacy endpoints).
+
+      7
+          Available at http://www.fda.gov/forindustry/datastandards/studydatastandards/default.htm.
+
+                                                                 5
+                                   Contains Nonbinding Recommendations
+
+
+210   •   Treatment Efficacy Result Two (TRTEFFR2) —The summary statistic for each primary
+211       efficacy endpoint, by treatment arm at a site, based subjects in the EFFPOP. Values reported
+212       in TRTEFFR2 generally reflect simple summary statistics for the primary efficacy
+213       endpoint(s). The method used for deriving the TRTEFFR2, including a description of which
+214       analysis datasets and associated variables are used to derive the TRTEFFR2, should be
+215       described in the define file provided with the clinsite.xpt (see discussion below for examples
+216       of summary statistics according to different types of efficacy endpoints).
+217   •   Endpoint (ENDPOINT) — A plain-text label that describes the primary endpoint as
+218       described in the data definition file data dictionary included with each application.
+219   •   Treatment Arm (ARM) — A plain-text label for the treatment arm that is used in the Clinical
+220       Study Report.
+
+221   In addition, for studies whose primary endpoint is a time-to-event endpoint, it is critical to
+222   include the following data element:
+223   •   Censored Observations (CENSOR1 and CENSOR2) — The number of censored
+224       observations for the given site and by treatment arm for the SAFPOP and EFFPOP,
+225       respectively.
+
+226   If a study does not contain a time-to-event endpoint, this data element should be recorded as a
+227   missing value (if not applicable, leave blank in clinsite.xpt).
+228
+229   To accommodate the variety of endpoint types that can be used in analyses, it is critical that the
+230   following endpoint type definitions be referenced, and summaries be provided when tabulating
+231   the site-specific summary statistic by treatment arm (for TRTEFFR1 and TRTEFFR2):
+232   •   Discrete Endpoints — Endpoints based on efficacy observations that can take on a discrete
+233       number of values (e.g., binary, categorical). Summarize discrete endpoints by an event
+234       frequency (i.e., number of events), proportion of patients with an event, proportion of
+235       patients responding to treatment, or similar method at the site for the given treatment.
+236   •   Continuous Endpoints — Endpoints based on efficacy observations that can take on an
+237       infinite number of values. Summarize continuous endpoints by the mean, median, or other
+238       distributional quantile of the observations at the site for the given treatment.
+239   •   Time-to-Event Endpoints — Endpoints where the time to occurrence of an event is the
+240       primary efficacy measurement. Summarize time-to-event endpoints by two data elements:
+241       the number of events that occurred (TRTEFFR1 and TRTEFFR2) and the number of
+242       censored observations (CENSOR1 and CENSOR2).
+243   •   Other — If the primary efficacy endpoint cannot be summarized in terms of the previous
+244       guidelines, a single value or multiple values with precisely defined variable interpretations
+245       should be submitted as part of the dataset.
+
+246   In all cases, the endpoint description provided in the ENDPOINT plain-text label should be
+247   expressed clearly to interpret the value provided in the TRTEFFR1 and TRTEFFR2 variables.
+248
+
+
+                                                        6
+                                          Contains Nonbinding Recommendations
+
+
+249   When more than one primary efficacy endpoint exists, additional rows should be added to the
+250   dataset to report additional ENDPOINT, Primary Endpoint Type (ENDPTYPE), TRTEFFR1,
+251   and TRTEFFR2 values by arm for each site.
+252
+253   It is anticipated that efficacy data for all subjects included in the SAFPOP and EFFPOP variables
+254   will be included in TRTEFFR1 and TRTEFFR2 variables reported, respectively. If efficacy data
+255   is not available for all subjects reported in the SAFPOP or EFFPOP variables, then efficacy data
+256   for these subjects should be reported as specified in the study Data Analysis Plan, and the
+257   method used for calculation of efficacy variables should be described in the data define table
+258   provided with the clinsite.xpt file.
+259
+260   The summary-level clinical site dataset should be accompanied by a data definition file. The
+261   contents of the define file for a dataset and fictional examples are presented in Appendix 3 and
+262   Appendix 4 of this Guide.
+263
+264              C.       Creating the Data File (Template and Structure)
+265
+266   A sample summary-level clinical site data submission using the variables identified in Appendix
+267   3 of this Guide is provided in Appendix 4.
+268
+269
+270   IV.        SUBMITTING BIMO CLINICAL DATA IN THE eCTD FORMAT
+271
+272   Clinical study-level information, subject-level data line listings by clinical site, and the
+273   summary-level clinical site dataset submitted with an application, in Electronic Common
+274   Document (eCTD) format, should be placed in eCTD Module 5 (M5) — Clinical Study Reports,
+275   using the following conventions:
+
+276              A.       Study Tagging File
+277
+278   Construct a BIMO study tagging file (STF) and place it in eCTD Module 5.3.5.4, “Other Study
+279   reports and related information.” The study identifier (ID) for this STF is “BIMO.” Files
+280   described in section III (e.g., Description of Clinical Study-Level Information, Subject-Level
+281   Data Line Listings by Clinical Site, and Summary-Level Clinical Site Dataset) of the draft
+282   guidance Standardized Format for Electronic Submission of NDA and BLA Content for the
+283   Planning of Bioresearch Monitoring (BIMO) Inspections for CDER Submissions (February
+284   2018) are linked to this BIMO STF using file tags as indicated below. 8 Leaf titles for these data
+285   are named “BIMO [list study ID, followed by brief description of file being submitted].”
+286
+287   Table 1: STF File Tags
+        Requested                                                                               Required
+                          STF File Tag                                     Used For
+          Item                                                                                 File Formats
+                                                                 General clinical study-
+            III.A.1-2      data-listing-dataset                                                    .pdf
+                                                                 level information
+
+      8
+          When final, this guidance will represent the FDA’s current thinking on this topic.
+
+                                                                  7
+                                       Contains Nonbinding Recommendations
+
+
+          Requested                                                                               Required
+                                STF File Tag                            Used For
+            Item                                                                                 File Formats
+                                                               Protocol and Protocol
+           III.A.3       Protocol-or-amendment                                                         .pdf
+                                                               Amendments, by study
+                                                               Sample annotated case
+           III.A.3       annotated-crf                                                                 .pdf
+                                                               report form, by study
+                                                               Data listings, by study
+            III.B        data-listing-dataset                                                          .pdf
+                                                               (Line listings, by site)
+                                                               Site-level dataset, across
+            III.C        data-listing-dataset                                                          .xpt
+                                                               studies
+                         data-listing-data-
+            III.C                                              Define file                             .xml
+                         definition
+                                                               BIMO Data Reviewer’s
+          Optional       data-listing-dataset                                                          .pdf
+                                                               Guide
+288
+
+289            B.       eCTD Folder Structure for Clinical Study-Level Information and Subject-
+290                     Level Line Listings by Clinical Site
+291
+292   Clinical study-level information and subject-level line listings by clinical site are submitted for
+293   each major (i.e., pivotal) study used to support safety and efficacy in the application.
+294
+295   Within the eCTD folder structure, place clinical study-level information and subject-level line
+296   listings by clinical site in the M5 folder as follows:
+297
+298   Figure 2: Place Clinical Study-Level Information and Subject-Level Line Listings by
+299   Clinical Site in the M5 Folder
+300
+
+
+
+
+301
+302
+
+303            C.       eCTD Folder Structure for Summary-Level Clinical Site Dataset
+304
+305   For the site-level dataset, use the filename “clinsite.xpt.” A single file containing data from all
+306   major (i.e., pivotal) studies 9 used to support safety and efficacy in the application should be
+307   provided.
+
+      9
+       For questions regarding whether a study is considered major (i.e., pivotal), applicants should consult the relevant
+      Office of New Drugs review division during Type C Integrated Summary of Safety or pre NDA/BLA meetings.
+
+                                                                8
+                                         Contains Nonbinding Recommendations
+
+
+308
+309   Within the eCTD folder structure, place the site-level dataset define file and BIMO Data
+310   Reviewer’s Guide, if it is being submitted, in the M5 folder as follows:
+311
+312   Figure 2: Place the Site-Level Dataset Define File and BIMO Data Reviewer’s Guide in the
+313   M5 Folder
+314
+
+
+
+
+315
+
+316
+317              D.       File Format
+318
+319   The Clinical Study-Level Information and Subject-Level Data Line Listings by Clinical Site
+320   should be submitted in PDF (*.pdf). When submitting a BIMO Data Reviewer’s Guide, it should
+321   also be submitted in PDF (*.pdf). The summary-level clinical site data should be submitted in
+322   SAS transport file format (*.xpt). The define file for the summary-level clinical site data should
+323   be submitted in Extensible Markup Language (define.xml) format. For more information, see
+324   the Study Data Technical Conformance Guide. 10
+
+325              E.       Leaf Titles
+326
+327   Leaf titles for study-level information and study-level, subject-level data line listings by clinical
+328   site are named “BIMO [list study ID, followed by brief description of file being submitted].” For
+329   the leaf representing the clinsite.xpt dataset, please clearly identify it with the leaf title “BIMO
+330   summary-level clinical site data.”
+331
+332              F.       Submission
+333
+334   See the technical specifications in Transmitting Electronic Submissions Using eCTD
+335   Specifications for details on electronic transmission or physical media submissions. 11
+336
+337   The following are helpful references for eCTD submission:
+
+
+
+      10
+           Available at https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+      11
+        Available at
+      http://www.fda.gov/downloads/Drugs/DevelopmentApprovalProcess/FormsSubmissionRequirements/ElectronicSub
+      missions/UCM163567.pdf.
+
+                                                                 9
+                                 Contains Nonbinding Recommendations
+
+
+338   •   ICH eCTD STF Specification V 2.6.1, The eCTD Backbone File Specification for Study
+339       Tagging Files (June 2008) (available at https://www.fda.gov/media/159383/download).
+340   •   FDA guidance for industry Providing Regulatory Submissions in Electronic Format –
+341       Certain Human Pharmaceutical Product Applications and Related Submissions Using the
+342       eCTD Specifications (February 2020) (available at https://www.fda.gov/regulatory-
+343       information/search-fda-guidance-documents).
+344   •   FDA eCTD web page
+345       (http://www.fda.gov/Drugs/DevelopmentApprovalProcess/FormsSubmissionRequirements/E
+346       lectronicSubmissions/ucm153574.htm ).
+347   •   For general help with eCTD submissions, submit your questions to the following email
+348       address: ESUB@fda.hhs.gov.
+
+349
+350
+
+
+
+
+                                                     10
+                                   Contains Nonbinding Recommendations
+
+
+351   APPENDIX 1: CLINICAL STUDY-LEVEL INFORMATION
+352
+353   Format for comprehensive and readily located list of all clinical sites that participated in each
+354   clinical study. A separate table should be provided for each clinical study.
+
+355   Table A: Format for Clinical Site Lists
+          Protocol Number: Protocol Title
+
+              Site        Investigator        Site Address at Time of                Site Contact
+           Identifier        Name                  Clinical Study               Information at Time
+                        (Prior Clinical       (Updated Site Address               of Clinical Study
+                        Investigator(s))     when exists and available)          (Updated Contact
+                                                                                 Information when
+                                                                                exists and available)
+           SITEID        LASTNAME,              FACILITY NAME                          PHONE
+                         FRSTNAME,                   STREET                              FAX
+                          MINITIAL            CITY, STATE, POSTAL                      EMAIL
+                                                   COUNTRY
+
+           0001*        Doe, John M.        Doe University Department of       Phone: 1-555-555-5555
+                                            Medicine                           Fax: 1-555-555-5555
+                                            1 Main St., Suite 100              Email:
+                                            Silver Spring, MD 20850            john.doe@mail.com
+                                            USA
+           0002         Doe, Jean           Doe University Department of          Phone: 1-555-555-5555
+                        (Smith, John)       Medicine                              Fax: 1-555-555-5555
+                                            1 Main St., Suite 100                 Email:
+                                            Silver Spring, MD 20850               john.smith@mail.com
+                                            USA                                   (Phone: 1-555-555-5554
+                                                                                  Email:
+                                                                                  jean.doe@mail.com )
+           003           Dietric-Fischer,      Hartmannstrasse 7                  Phone:49-555-555-5555
+                         Inge                  5300 Bonn 1                        Fax: 49-555-555-5555
+                                               Germany                            Email:
+                                                                                  Dietric.Fischer@web.de
+           * Site terminated, or clinical investigator changed, at request of sponsor before study
+           completion.
+356
+357
+
+
+
+
+                                                         11
+                                   Contains Nonbinding Recommendations
+
+
+358   APPENDIX 2: FORMATTING SUBJECT-LEVEL DATA LINE LISTINGS BY
+359   CLINICAL SITE
+360
+361   By Site, by Listing Option A:
+362
+363   Figure A: By Site, by Listing Option A
+                 Protocol Number
+
+                        -                     Site Number
+
+                                                               Listing “1”
+
+                                                               Listing “2”
+
+                                                               Listing “3”
+
+                                                               Listing “4”
+
+                                                               Etc.
+
+                                                               Etc.
+
+                                                               Etc.
+
+                        +                   Next Site Number
+
+
+364                     +                   Next Site Number
+365
+366
+367   By Site, by Subject Profile Option B:
+368
+369   Figure B: By Site, by Subject Profile Option B
+                 Protocol Number
+
+                        -               Site Number
+
+
+                                             -           Subject Number
+
+
+
+                                                                          Subject Profile That Containing
+                                                                          All Elements of Requested Line
+                                                                              Listings for this Subject
+
+
+                                             +             Next Subject Number
+
+
+                                             +             Next Subject Number
+
+                        +             Next Site Number
+
+
+                        +             Next Site Number
+
+370
+371
+                                                               12
+                                  Contains Nonbinding Recommendations
+
+
+372   Example of By Site, by Listing Option A:
+373
+374   Figure C: Example of By Site, by Listing Option A
+               Protocol #1234
+                     -                 Site #0001
+
+                                                    Consented Subjects
+
+                                                    Treatment Assignment
+
+                                                    Discontinuations
+
+                                                    Study Population
+
+                                                    Etc.
+
+                                                    Etc.
+
+                                                    Etc.
+
+                     +                 Site #0002
+                     +                 Site #0003
+375
+376
+377   Example of By Site, by Listing Option B:
+378
+379   Figure D: Example of By Site, by Listing Option B
+                 Protocol #1234
+
+                         -
+                                       Site #0001
+
+
+                                            -        Subject Number #0001-001
+
+
+                                                                      Subject Profile Containing
+                                                                      All Elements of Requested
+                                                                     Line Listings for this Subject
+
+                                           +               Subject Number #0001-064
+
+
+                                           +               Subject Number #0001-101
+
+                         +             Site #0002
+
+
+                         +             Site #0003
+
+380
+
+
+                                                       13
+                                                          Contains Nonbinding Recommendations
+
+
+APPENDIX 3: CLINICAL SITE DATA ELEMENTS SUMMARY LISTING
+
+Table B: Clinical Site Data Elements Summary Listing
+      Variable                                                        Controlled Terms or
+                       Variable Name   Variable Label       Type                                              Notes or Description                           Sample Value
+       Index                                                                Format
+ 1               STUDYID               Study Identifier     Char   String                   Study or trial identification number.                       ABC-123
+ 2               TITLE                 Study Title          Char   String                   Title of the study as listed in the clinical study report   Double blind,
+                                                                                            (limit 200 characters).                                     randomized, placebo-
+                                                                                            If the title exceeds 200 characters, provide                controlled clinical
+                                                                                            shortened title and define (e.g., use the abbreviated       study on the influence
+                                                                                            title from clinicaltrial.gov).                              of drug X on indication
+                                                                                                                                                        Y
+ 3               SPONCNT               Sponsor Count        Num    Integer                  Total count of sponsors throughout the study. If            1
+                                                                                            there was a change in the sponsor while the study
+                                                                                            was ongoing, with sponsors as defined in § 312.3
+                                                                                            (21 CFR 312.3), enter an integer indicating the total
+                                                                                            count of sponsors. If there was no change in the
+                                                                                            sponsor while the study was ongoing, enter “1.”
+ 4               SPONSOR               Sponsor Name         Char   String                   Full name of the sponsor organization conducting            DrugCo, Inc.
+                                                                                            the study at the time of study completion, as
+                                                                                            sponsor is defined in § 312.3. If the sponsor name
+                                                                                            exceeds 200 characters, provide short-form sponsor
+                                                                                            name and define.
+ 5               IND                   IND Number           Num    6 digit identifier       IND number. If study not performed under IND,               010010
+                                                                                            leave blank.
+ 6               UNDERIND              Under IND            Char   String                   Value should equal “Y” if study at the site was             Y
+                                                                                            conducted under an IND (i.e., a Form FDA 1572
+                                                                                            was signed by the investigator) and “N” if study was
+                                                                                            not conducted under an IND at the site (i.e., a Form
+                                                                                            FDA 1572 was not signed by the investigator).
+ 7               NDA                   NDA Number           Num    6 digit identifier       FDA NDA number, if available/applicable. If not             021212
+                                                                                            applicable, leave blank.
+ 8               BLA                   BLA Number           Num    6 digit identifier       FDA identification number for BLA, if                       123456
+                                                                                            available/applicable. If not applicable, leave blank.
+ 9               SUPPNUM               Supplement           Num    Integer                  Serial number for supplemental application, if              4
+                                       Number                                               applicable. If no information is available, leave
+                                                                                            blank.
+ 10              SITEID                Study Site           Char   String                   Investigator site identifier assigned by the sponsor.       50
+                                       Identifier
+ 11              ARM                   Description of       Char   String                   Plain-text label for the name given to an arm or            Active name and dose
+                                       Planned                                              treatment group as referenced in the clinical study         (e.g., “Active 25mg”),
+                                       Treatment Arm                                        report (limit 200 characters). When no arm or               Comparator product
+                                                                                            treatment group is available due to only screen             name (e.g., “Drug x”),
+                                                                                            failure subjects at site, use label “Screen Failure.”       Placebo, Screen
+                                                                                                                                                        Failure
+
+
+
+
+                                                                                    14
+                                                     Contains Nonbinding Recommendations
+
+
+     Variable                                                    Controlled Terms or
+                    Variable Name   Variable Label     Type                                             Notes or Description                            Sample Value
+      Index                                                            Format
+12              COHORT              Description of     Char   String                   For cohort studies, the plain-text label given to a        A
+                                    Planned Cohort                                     cohort as referenced in the clinical study report (limit
+                                                                                       200 characters). When not a cohort study, leave
+                                                                                       blank.
+13              SAFPOP              Number of          Num    Integer                  Total number of subjects in safety population at a         20
+                                    Subjects in                                        given site by treatment arm. When a subject has
+                                    Safety                                             transferred from one site to another, the applicant
+                                    Population                                         should handle reporting of such subjects
+                                                                                       consistently across sites and include in the define
+                                                                                       file the reporting convention used. The applicant
+                                                                                       may opt to further explain the reasons subjects
+                                                                                       transferred between sites in the BIMO Data
+                                                                                       Reviewer’s Guide, if a guide will be provided.
+14              EFFPOP              Number of          Num    Integer                  Total number of subjects in primary efficacy               18
+                                    Subjects in                                        population as reported in the Clinical Study Report
+                                    Efficacy                                           at a given site by treatment arm. Further describe
+                                    Population                                         the population reported as EFFPOP (e.g.,. Per
+                                                                                       Protocol, Full Analysis Set, Intent to Treat, modified
+                                                                                       Intent to Treat) in the clinsite define.html. When a
+                                                                                       subject has transferred from one site to another, the
+                                                                                       applicant should handle reporting of such subjects
+                                                                                       consistently across sites and include in the define
+                                                                                       file the reporting convention used. The applicant
+                                                                                       may opt to further explain the reasons subjects
+                                                                                       transferred between sites in the BIMO Data
+                                                                                       Reviewer’s Guide, if a guide will be provided.
+15              SCREEN              Number of          Num    Integer                  Total number of subjects screened (and consented)          100
+                                    Subjects                                           at a given site (overall number per site as subjects
+                                    Screened                                           have not yet been assigned to treatment arm).
+                                                                                       When a subject has transferred from one site to
+                                                                                       another, the applicant should handle reporting of
+                                                                                       such subjects consistently across sites and include
+                                                                                       the reporting convention used in the define file or the
+                                                                                       BIMO Data Reviewer’s Guide (if provided). The
+                                                                                       applicant may opt to further explain the reasons
+                                                                                       subjects transferred between sites in the BIMO Data
+                                                                                       Reviewer’s Guide, if provided.
+16              DISCSTUD            Number             Num    Integer                  Number of subjects in the safety population who            5
+                                    Subjects                                           discontinued from the study by treatment arm at a
+                                    Discont. Study                                     given site.
+17              DISCTRT             Number             Num    Integer                  Number of subjects in the safety population who            10
+                                    Subjects                                           discontinued from the study treatment by treatment
+                                    Discont. Study                                     arm at a given site.
+                                    Treatment
+18              ENDPOINT            Primary            Char   String                   Plain-text label used to describe the primary              Average increase in
+                                    Endpoint                                           endpoint as described in the define file included with     blood pressure
+                                                                                       each application (limit 200 characters).
+
+
+                                                                            15
+                                                       Contains Nonbinding Recommendations
+
+
+     Variable                                                      Controlled Terms or
+                      Variable Name   Variable Label     Type                                             Notes or Description                            Sample Value
+      Index                                                              Format
+19              ENDPTYPE              Primary            Char   String                   Variable type of the primary endpoint (i.e.,              Continuous
+                                      Endpoint Type                                      “continuous,” “discrete,” “time to event,” or “other”).
+20              TRTEFFR1              Treatment          Num    Floating Point           Summary statistic for each primary efficacy endpoint      1.00
+                                      Efficacy Result                                    by treatment arm at a given site for subjects in
+                                      for SAFPOP                                         SAFPOP.
+21              TRTEFFR2              Treatment          Num    Floating Point           Summary statistic for each primary efficacy endpoint      0.98
+                                      Efficacy Result                                    by treatment arm at a given site for subjects in
+                                      for EFFPOP                                         EFFPOP.
+22              CENSOR1               Censored           Num    Integer                  Total number of censored observations in SAFPOP           5
+                                      Observations in                                    at a given site by treatment arm for primary endpoint
+                                      SAFPOP                                             (e.g., applicable to time-to-event). If not applicable,
+                                                                                         leave blank.
+23              CENSOR2               Censored           Num    Integer                  Total number of censored observations in EFFPOP           3
+                                      Observations in                                    at a given site by treatment arm for primary endpoint
+                                      EFFPOP                                             (e.g., applicable to time-to-event). If not applicable,
+                                                                                         leave blank.
+24              NSAE                  Number of Non-     Num    Integer                  Total number of nonserious adverse events at a            10
+                                      Serious                                            given site by treatment arm for subjects in the
+                                      Adverse Events                                     SAFPOP. This value should include multiple events
+                                                                                         per subject and all event types (i.e., not limited to
+                                                                                         only those that are deemed related to study drug or
+                                                                                         that are treatment emergent events). When events
+                                                                                         with the same preferred term have occurred on
+                                                                                         different dates for a subject, each event should be
+                                                                                         counted separately in event count.
+25              SAE                   Number of          Num    Integer                  Total number of serious adverse events, excluding         5
+                                      Serious                                            deaths, at a given site by treatment arm for subjects
+                                      Adverse Events                                     in the SAFPOP. This value should include multiple
+                                                                                         events per subject. When events with the same
+                                                                                         preferred term have occurred on different dates for a
+                                                                                         subject, each event should be counted separately in
+                                                                                         event count.
+26              DEATH                 Number of          Num    Integer                  Total number of deaths at a given site by treatment       1
+                                      Deaths                                             arm for subjects in the SAFPOP.
+27              IMPDEV                Number of          Num    Integer                  Total number of important protocol deviations at a        2
+                                      Important                                          given site by treatment arm for subjects in the
+                                      Protocol                                           SAFPOP. A protocol deviation is any change,
+                                      Deviations                                         divergence, or departure from the study design or
+                                                                                         procedures defined in the protocol or associated
+                                                                                         investigational plans that is not implemented or
+                                                                                         intended as a systematic change. This value should
+                                                                                         include multiple deviations per subject and all major
+                                                                                         deviation types. Important deviations are those
+                                                                                         deviations that might significantly affect the
+                                                                                         completeness, accuracy, and/or reliability of the
+                                                                                         study data or that might significantly affect a
+                                                                                         subject's rights, safety, or well-being.
+
+
+                                                                                 16
+                                                       Contains Nonbinding Recommendations
+
+
+     Variable                                                      Controlled Terms or
+                      Variable Name   Variable Label     Type                                              Notes or Description                             Sample Value
+      Index                                                              Format
+28              NOIMPDEV              Number of Non-     Num    Integer                  Total number of protocol deviations, excluding               98
+                                      Important                                          important protocol deviations, at a given site by
+                                      Protocol                                           treatment arm for subjects in the SAFPOP. A
+                                      Deviations                                         protocol deviation is any change, divergence, or
+                                                                                         departure from the study design or procedures
+                                                                                         defined in the protocol or associated investigational
+                                                                                         plans that is not implemented or intended as a
+                                                                                         systematic change.
+29              FINLDISC              Financial          Char   String                   Total financial disclosure amount (US$) by site              >= $25,000
+                                      Disclosure                                         calculated as the sum of disclosures for the clinical
+                                      Amount                                             investigator and all sub-investigators, to include all
+                                                                                         required parities under the applicable regulations
+                                                                                         (21 CFR 54, 312, 314, 320, 330, 601, 807, 812, 814,
+                                                                                         and 860). Enter “>=$25,000,” “< $25,000,”
+                                                                                         “unknown” if a proper value is applicable but is not
+                                                                                         known (i.e., unable to obtain information from
+                                                                                         investigator at site), or “masked” if information on
+                                                                                         this item is available but it has not been provided by
+                                                                                         the sender due to security, privacy, or other
+                                                                                         reasons.
+30              LASTNAME              Investigator       Char   String                   Last name of the clinical investigator as it appears         Doe
+                                      Last Name                                          on the Form FDA 1572 or the signed investigator
+                                                                                         agreement. At sites where the clinical investigator
+                                                                                         has changed during the course of the study, the
+                                                                                         most recent clinical investigator should be listed.
+31              FRSTNAME              Investigator       Char   String                   First name of the clinical investigator as it appears        John
+                                      First Name                                         on the Form FDA 1572 or the signed investigator
+                                                                                         agreement.
+32              MINITIAL              Investigator       Char   String                   Middle initial of the clinical investigator, if any, as it   M
+                                      Middle Initial                                     appears on the Form FDA 1572 or the signed
+                                                                                         investigator agreement.
+33              PHONE                 Investigator       Char   String                   Phone number of the clinical investigator. Include           44-555-555-5555
+                                      Phone Number                                       country code for non-U.S. numbers.
+34              FAX                   Investigator Fax   Char   String                   Fax number of the clinical investigator. Include             44-555-555-5555
+                                      Number                                             country code for non-U.S. numbers. If not available,
+                                                                                         leave blank.
+35              EMAIL                 Investigator       Char   String                   Email address of the clinical investigator.                  John.doe@mail.com
+                                      Email Address
+36              COUNTRY               Country            Char   Geopolitical Entities,   GENC code for the country in which the site is               USA
+                                                                Names and Codes          located.
+                                                                (GENC)
+
+
+
+
+                                                                                17
+                                                        Contains Nonbinding Recommendations
+
+
+     Variable                                                     Controlled Terms or
+                       Variable Name   Variable Label     Type                                          Notes or Description                        Sample Value
+      Index                                                             Format
+37              STATE                  State              Char   GENC                   GENC subdivision unabbreviated preferred name in        Maryland
+                                                                                        which the site is located. If not applicable, enter
+                                                                                        “NA.”
+
+
+
+
+38              CITY                   City               Char   String                 Unabbreviated city or village in which the site is      Silver Spring
+                                                                                        located.
+39              POSTAL                 Postal Code        Char   String                 Postal code in which the site is located. If not        20850
+                                                                                        applicable, enter “NA.”
+40              STREET                 Street Address     Char   String                 Street address and office number at which the site is   2005 John Fitzgerald
+                                                                                        located (limit 200 characters).                         Kennedy Boulevard
+                                                                                                                                                Northwest,
+                                                                                                                                                International
+                                                                                                                                                Technology Center,
+                                                                                                                                                Department of
+                                                                                                                                                Medicine and
+                                                                                                                                                Pharmacokinetics,
+                                                                                                                                                National Institute of
+                                                                                                                                                Clinical Research
+                                                                                                                                                Twin Towers Building,
+41              STREET1                Street Address     Char   String                 Street address and office number at which the site is   The Executive Wing,
+                                       Continued                                        located. Use this field when the STREET variable        Suite # 209
+                                                                                        does not permit sufficient space to fully describe
+                                                                                        street address and office number at which the site is
+                                                                                        located.
+
+
+
+
+                                                                              18
+                                                                                    Contains Nonbinding Recommendations
+
+
+APPENDIX 4: EXAMPLES
+
+The following is a fictional example of a dataset for a placebo-controlled trial. Four international sites enrolled a total of 205 subjects
+who were randomized in a 1:1 ratio to active or placebo. In the first example there is a single primary endpoint (percent of
+responders). In the second example there are co-primary endpoints (percent of responders and change from baseline). Note that since
+there were two treatment arms, in the first example, each site contains two rows and there are a total of eight rows for the entire
+dataset. In the second example, each site contains a total of 4 rows, and there are a total of 16 rows for the entire dataset.
+
+Table C: Example for Clinical Site Data Elements Summary Listing with One Endpoint
+                                                                           UNDER-                           SUPP-
+ STUDYID        TITLE        SPONCNT       SPONSOR               IND                      NDA     BLA                  SITEID        ARM      COHORT      SAFPOP          EFFPOP   SCREEN        DISCSTUD      DISCTRT
+                                                                             IND                             NUM
+               Double                                                                                         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001           Y       200001      ∙                   001          Active                 26                54     61             3                2
+               blind…
+               Double                                                           Y                             ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001      ∙                   001      Placebo                    25                54     61             4                1
+               blind…
+               Double                                                           Y                   ∙         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001                          002          Active                 23                44     54             2                1
+               blind…
+               Double                                                           Y                   ∙         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001                          002      Placebo                    25                43     54             4                3
+               blind…
+               Double                                                           Y                   ∙         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001                          003          Active                 27                55     62             3                0
+               blind…
+               Double                                                           Y                   ∙         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001                          003      Placebo                    26                56     62             5                3
+               blind…
+               Double                                                           Y                   ∙         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001                          004          Active                 26                49     60             2                2
+               blind…
+               Double                                                           Y                   ∙         ∙                                  -
+ ABC-123                          1       DrugCo, Inc.         000001                   200001                          004      Placebo                    27                50     60             1                0
+               blind…
+
+
+  ENDPOINT          ENDPTYPE           TRTEFFR1       TRTEFFR2          CENSOR1       CENSOR2     NSAE        SAE       DEATH        IMPDEV   NOIMPDEV           FINLDISC           LASTNAME            FRSTNAME
+   Percent                                                                                                                                           4
+                         Binary          0.48             0.64              ∙             -             0         2        0             1                       < $25,000                Doe                John
+  Responders
+   Percent                                                                                                                                           6
+                         Binary          0.14             0.19              ∙             -         2             2        0             1                       < $25,000                Doe                John
+  Responders
+   Percent                                                                                                                                           9
+                         Binary          0.48             0.42              ∙             -             3         2        1             0                       >= $25,000         Washington              George
+  Responders
+   Percent                                                                                                                                           11
+                         Binary          0.14             0.20              ∙             -             0         2        0             3                       >= $25,000         Washington              George
+  Responders
+   Percent                                                                                                                                           4
+                         Binary          0.54             0.48              ∙             -             2         2        0             1                       >= $25,000          Jefferson              Thomas
+  Responders
+   Percent                                                                                                                                           7
+                         Binary          0.19             0.32              ∙             -             3         6        0             0                       >= $25,000          Jefferson              Thomas
+  Responders
+   Percent                                                                                                                                           8
+                         Binary          0.46             0.45              ∙             -             4         1        0             0                        unknown             Lincoln               Abraham
+  Responders
+   Percent                                                                                                                                           13
+                         Binary          0.12             0.16              ∙             -             1         2        0             1                        unknown             Lincoln               Abraham
+  Responders
+
+
+  MINITIAL                PHONE                     FAX                     EMAIL                COUNTRY                 STATE                 CITY          POSTAL                   STREET                  STREET1
+                                                                                                                       Moskovskaya
+     M                  555-123-4567            555-123-4560            John@mail.com              RUS                                        Moscow             103009            Kremlin Road 1
+                                                                                                                         Oblast’
+                                                                                                                       Moskovskaya
+     M                  555-123-4567            555-123-4560            John@mail.com              RUS                                        Moscow             103009            Kremlin Road 1
+                                                                                                                         Oblast’
+                    020-3456-7891           020-3456-7890               george@mail.com           GBR                  Westminster            London         SW1A 2                 10 Downing St
+
+
+
+                                                                                                                  19
+                                                                           Contains Nonbinding Recommendations
+
+
+                      020-3456-7891       020-3456-7890           george@mail.com            GBR                 Westminster                      London               SW1A 2                     10 Downing St
+
+                      01-89-12-34-56      01-89-12-34-51            tom@mail.com             FRA                      Paris                        Paris                   75002                   1, Rue Road
+
+                      01-89-12-34-56      01-89-12-34-51            tom@mail.com             FRA                       Paris                       Paris                   75002                   1, Rue Road
+                                                                                                                                                                                          10903 New Hampshire Avenue,       Building 4,
+                                                                                                                                                                                          Office of Medical Products and    Room 1375
+                      555-987-6543        555-987-6540              abe@mail.com             USA                     Maryland                     Rockville                20852
+                                                                                                                                                                                             Tobacco, Center for Drug
+                                                                                                                                                                                             Evaluation and Research
+                                                                                                                                                                                          10903 New Hampshire Avenue,       Building 4,
+                                                                                                                                                                                          Office of Medical Products and    Room 1375
+                      555-987-6543        555-987-6540              abe@mail.com             USA                     Maryland                     Rockville                20852
+                                                                                                                                                                                             Tobacco, Center for Drug
+                                                                                                                                                                                             Evaluation and Research
+
+
+
+Table D: Example for Clinical Site Data Elements Summary Listing with Multiple Primary Endpoints
+                                                                        UNDER-                          SUPP-
+ STUDYID       TITLE        SPONCNT     SPONSOR             IND                      NDA      BLA                    SITEID          ARM            COHORT         SAFPOP          EFFPOP      SCREEN        DISCSTUD         DISCTRT
+                                                                          IND                            NUM
+              Double                                                                           ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001          Y        200001                            001           Active              A             26             22           61              3                 2
+              blind…
+              Double                                                                           ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001          Y        200001                            001           Active              B             26             22           61              3                 2
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            001           Placebo             A             25             23           61              4                 1
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            001           Placebo             B             25             23           61              4                 1
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            002           Active              A             23             19           54              2                 1
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            002           Active              B             23             19           54              2                 1
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            002           Placebo             A             25             23           54              4                 3
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            002           Placebo             B             25             23           54              4                 3
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            003           Active              A             27             26           62              3                 0
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            003           Active              B             27             26           62              3                 0
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            003           Placebo             A             26             23           62              5                 3
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            003           Placebo             B             26             23           62              5                 3
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            004           Active              A             26             19           60              2                 2
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            004           Active              B             26             19           60              2                 2
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            004           Placebo             A             27             20           60              1                 0
+              blind…
+              Double                                                       Y                   ∙          ∙
+ ABC-123                        1       DrugCo, Inc.       000001                   200001                            004           Placebo             B             27             20           60              1                 0
+              blind…
+
+
+    ENDPOINT              ENDPTYPE      TRTEFFR1       TRTEFFR2        CENSOR1      CENSOR2        NSAE         SAE         DEATH       IMPDEV             NOIMPDEV          FINLDISC             LASTNAME                 FRSTNAME
+
+ Percent Responders          Binary        0.48            0.58            ∙            ∙           0            2              0             1               5              < $25,000                 Doe                   John
+    Change from                                                                                                                                               8
+                           Continuous      0.74            0.76            ∙            ∙           0            2              0             1                              < $25,000                 Doe                   John
+     Baseline
+ Percent Responders          Binary        0.14            0.12            ∙            ∙           2            2              0             1               5              < $25,000                 Doe                   John
+    Change from                                                                                                                                               8
+                           Continuous      0.14            0.16            ∙            ∙           2            2              0             1                              < $25,000                 Doe                   John
+     Baseline
+ Percent Responders          Binary        0.48            0.44            ∙            ∙           3            2              1             0               11            >= $25,0000           Washington                George
+
+
+
+                                                                                                          20
+                                                                         Contains Nonbinding Recommendations
+
+
+   ENDPOINT             ENDPTYPE       TRTEFFR1       TRTEFFR2     CENSOR1    CENSOR2     NSAE         SAE       DEATH    IMPDEV    NOIMPDEV           FINLDISC              LASTNAME              FRSTNAME
+   Change from                                                                                                                         13
+                        Continuous        0.67          0.63             ∙           ∙      3            2            1     0                         >= $25,0000            Washington               George
+    Baseline
+Percent Responders         Binary         0.14          0.15             ∙           ∙      0            2            0     3          11             >= $25,0000            Washington               George
+   Change from                                                                                                                         13
+                        Continuous        0.14          0.16             ∙           ∙      0            2            0     3                         >= $25,0000            Washington               George
+    Baseline
+Percent Responders         Binary         0.54          0.50             ∙           ∙      2            2            0     1          9              >= $25,0000              Jefferson             Thomas
+   Change from                                                                                                                         5
+                        Continuous        0.65          0.61             ∙           ∙      2            2            0     1                         >= $25,0000              Jefferson             Thomas
+    Baseline
+Percent Responders         Binary         0.19          0.22             ∙           ∙      3            6            0     0          9              >= $25,0000              Jefferson             Thomas
+   Change from                                                                                                                         5
+                        Continuous        0.19          0.26             ∙           ∙      3            6            0     0                         >= $25,0000              Jefferson             Thomas
+    Baseline
+Percent Responders         Binary         0.46          0.51             ∙           ∙      4            1            0     0          0                unknown                 Lincoln              Abraham
+   Change from                                                                                                                         3
+                        Continuous        0.71          0.81             ∙           ∙      4            1            0     0                           unknown                 Lincoln              Abraham
+    Baseline
+                                                                                                                                       0
+Percent Responders         Binary         0.12          0.17             ∙           ∙      1            2            0     0                           unknown                 Lincoln              Abraham
+
+   Change from                                                                                                                         3
+                        Continuous        0.15          0.19             ∙           ∙      1            2            0     1                           unknown                 Lincoln              Abraham
+    Baseline
+
+
+
+MINITIAL             PHONE                FAX                  EMAIL         COUNTRY       STATE              CITY         POSTAL                                 STREET                              STREET1
+                                                                                         Moskovskaya
+    M            555-123-4567        555-123-4560        John@mail.com        RUS                            Moscow        103009                             Kremlin Road 1
+                                                                                           Oblast’
+                                                                                         Moskovskaya
+    M            555-123-4567        555-123-4560        John@mail.com        RUS                            Moscow        103009                             Kremlin Road 1
+                                                                                           Oblast’
+                                                                                         Moskovskaya
+    M            555-123-4567        555-123-4560        John@mail.com        RUS                            Moscow        103009                             Kremlin Road 1
+                                                                                           Oblast’
+                                                                                         Moskovskaya
+    M            555-123-4567        555-123-4560        John@mail.com        RUS                            Moscow        103009                             Kremlin Road 1
+                                                                                           Oblast’
+    ∙            020-3456-7891       020-3456-7890      george@mail.com       GBR        Westminster         London        SW1A 2                        10 Downing St Suite 2058
+    ∙            020-3456-7891       020-3456-7890      george@mail.com       GBR        Westminster         London        SW1A 2                        10 Downing St Suite 2058
+    ∙            020-3456-7891       020-3456-7890      george@mail.com       GBR        Westminster         London        SW1A 2                        10 Downing St Suite 2058
+    ∙            020-3456-7891       020-3456-7890      george@mail.com       GBR        Westminster         London        SW1A 2                        10 Downing St Suite 2058
+    ∙            01-89-12-34-56      01-89-12-34-51      tom@mail.com          FRA          Paris             Paris         75002                              1, Rue Road
+    ∙            01-89-12-34-56      01-89-12-34-51      tom@mail.com          FRA          Paris             Paris         75002                              1, Rue Road
+    ∙            01-89-12-34-56      01-89-12-34-51      tom@mail.com          FRA          Paris             Paris         75002                              1, Rue Road
+    ∙            01-89-12-34-56      01-89-12-34-51      tom@mail.com          FRA          Paris             Paris         75002                              1, Rue Road
+    ∙                                                                                                                                       2005 John Fitzgerald Kennedy Boulevard Northwest,
+                                                                                                                                              International Technology Center, Department of        The Executive
+                 555-987-6543        555-987-6540        abe@mail.com          USA         Maryland          Rockville      20852
+                                                                                                                                            Medicine and Pharmacokinetics, National Institute of   Wing, Suite # 209
+                                                                                                                                                  Clinical Research Twin Towers Building,
+    ∙                                                                                                                                       2005 John Fitzgerald Kennedy Boulevard Northwest,
+                                                                                                                                              International Technology Center, Department of        The Executive
+                 555-987-6543        555-987-6540        abe@mail.com          USA         Maryland          Rockville      20852
+                                                                                                                                            Medicine and Pharmacokinetics, National Institute of   Wing, Suite # 209
+                                                                                                                                                  Clinical Research Twin Towers Building,
+    ∙                                                                                                                                       2005 John Fitzgerald Kennedy Boulevard Northwest,
+                                                                                                                                              International Technology Center, Department of        The Executive
+                 555-987-6543        555-987-6540        abe@mail.com          USA         Maryland          Rockville      20852
+                                                                                                                                            Medicine and Pharmacokinetics, National Institute of   Wing, Suite # 209
+                                                                                                                                                  Clinical Research Twin Towers Building,
+    ∙            555-987-6543        555-987-6540        abe@mail.com          USA         Maryland          Rockville      20852           2005 John Fitzgerald Kennedy Boulevard Northwest,       The Executive
+
+
+
+                                                                                                    21
+                                 Contains Nonbinding Recommendations
+
+
+MINITIAL   PHONE   FAX   EMAIL      COUNTRY   STATE    CITY   POSTAL                        STREET                               STREET1
+                                                                        International Technology Center, Department of        Wing, Suite # 209
+                                                                       Medicine and Pharmacokinetics, National Institute of
+                                                                            Clinical Research Twin Towers Building,
+
+
+
+
+                                                  22
+
