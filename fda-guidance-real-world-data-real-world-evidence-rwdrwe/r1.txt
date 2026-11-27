@@ -1,0 +1,707 @@
+  Use of Electronic
+Health Record Data in
+Clinical Investigations
+
+   Guidance for Industry
+
+
+
+
+       U.S. Department of Health and Human Services
+               Food and Drug Administration
+      Center for Drug Evaluation and Research (CDER)
+    Center for Biologics Evaluation and Research (CBER)
+     Center for Devices and Radiological Health (CDRH)
+
+
+                         July 2018
+                        Procedural
+      Use of Electronic Health
+      Record Data in Clinical
+           Investigations
+
+                    Guidance for Industry
+                                Additional copies are available from:
+                      Office of Communications, Division of Drug Information
+                              Center for Drug Evaluation and Research
+                                   Food and Drug Administration
+                       10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                   Silver Spring, MD 20993-0002
+                     Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                   Email: druginfo@fda.hhs.gov
+        https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Guidances/default.htm
+                                                and/or
+                        Office of Communication, Outreach and Development
+                            Center for Biologics Evaluation and Research
+                                    Food and Drug Administration
+                         10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                    Silver Spring, MD 20993-0002
+                               Phone: 800-835-4709 or 240-402-8010
+                                       Email: ocod@fda.hhs.gov
+https://www.fda.gov/BiologicsBloodVaccines/GuidanceComplianceRegulatoryInformation/Guidances/default.htm
+                                               and/or
+                              Office of Communication and Education
+                       CDRH-Division of Industry and Consumer Education
+                            Center for Devices and Radiological Health
+                                   Food and Drug Administration
+                         10903 New Hampshire Ave., Bldg. 66, Room 4621
+                                   Silver Spring, MD 20993-0002
+                     Phone: 800-638-2041 or 301-796-7100; Fax: 301-847-8149
+                               Email: CDRH-Guidance@fda.hhs.gov
+     https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/GuidanceDocuments/default.htm
+
+
+                   U.S. Department of Health and Human Services
+                           Food and Drug Administration
+                  Center for Drug Evaluation and Research (CDER)
+                Center for Biologics Evaluation and Research (CBER)
+                 Center for Devices and Radiological Health (CDRH)
+
+                                             July 2018
+                                            Procedural
+                                             Contains Nonbinding Recommendations
+
+
+                                                         TABLE OF CONTENTS
+
+
+
+I.          INTRODUCTION............................................................................................................. 1
+II.         SCOPE ............................................................................................................................... 2
+III.        BACKGROUND ............................................................................................................... 4
+IV.         INTEROPERABILITY AND INTEGRATION OF SYSTEMS .................................. 4
+     A.     Data Standards ............................................................................................................................... 5
+     B.     Structured and Unstructured Data .............................................................................................. 5
+     C.     Validation ....................................................................................................................................... 6
+     D.     Data From Multiple EHR Systems ............................................................................................... 6
+V.          BEST PRACTICES FOR USING EHRs IN CLINICAL INVESTIGATIONS ......... 6
+     A.     Use of Health Information Technology Certified by ONC......................................................... 7
+     B.     Use of EHR Systems Not Certified by ONC ................................................................................ 7
+     C.     eSource Principles for EHRs......................................................................................................... 8
+       1. Data Originator ............................................................................................................................... 8
+       2. Data Modifications .......................................................................................................................... 9
+     D. Blinded Study Designs ................................................................................................................... 9
+     E.     Informed Consent .......................................................................................................................... 9
+VI. INSPECTION, RECORDKEEPING, AND RECORD RETENTION
+REQUIREMENTS...................................................................................................................... 10
+GLOSSARY................................................................................................................................. 11
+                                 Contains Nonbinding Recommendations
+
+
+     Use of Electronic Health Record Data in Clinical Investigations
+                        Guidance for Industry1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or
+Agency) on this topic. It does not establish any rights for any person and is not binding on FDA
+or the public. You can use an alternative approach if it satisfies the requirements of the
+applicable statutes and regulations. To discuss an alternative approach, contact the FDA office
+responsible for this guidance as listed on the title page.
+
+
+
+
+I.      INTRODUCTION
+
+This guidance is intended to assist sponsors, clinical investigators, contract research
+organizations, institutional review boards (IRBs), and other interested parties on the use of
+electronic health record data in FDA-regulated clinical investigations.2 For the purposes of this
+guidance, electronic health record (EHR) systems3are electronic platforms that contain
+individual health records for patients. EHR systems are generally maintained by health care
+providers, health care organizations, and health care institutions and are used to deliver care.
+EHR systems can be used to integrate real-time electronic health care information from medical
+devices and multiple health care providers involved in the care of patients.
+
+For the purposes of this guidance, an EHR is an individual patient record contained within the
+EHR system. A typical individual EHR may include a patient’s medical history, diagnoses,
+treatment plans, immunization dates, allergies, radiology images, pharmacy records, and
+laboratory and test results. This guidance uses broad definitions of EHRs and EHR systems to
+be inclusive of many different types of EHRs and EHR systems.4
+
+
+
+
+1
+  This guidance has been prepared by the Office of Medical Policy and the Office of Translational Sciences in the
+Center for Drug Evaluation and Research in cooperation with the Center for Biologics Evaluation and Research and
+the Center for Devices and Radiological Health at the Food and Drug Administration. This guidance was developed
+in consultation with the Office of the National Coordinator for Health Information Technology (ONC) at the
+Department of Health and Human Services (HHS).
+2
+ For FDA’s regulatory definitions of a clinical investigation, see 21 CFR 50.3(c), 56.102(c), and 312.3(b). For
+FDA’s regulatory definition of an investigation, see 21 CFR 812.3(h).
+3
+ See the Glossary for definitions and usage of specific terms used throughout this guidance. Words and phrases in
+bold italics are defined in the Glossary.
+4
+ We note that this definition of EHRs may not be consistent with the definition for EHRs published in other
+guidance documents.
+
+
+
+
+                                                         1
+                                  Contains Nonbinding Recommendations
+
+
+This guidance provides recommendations on:
+
+         Deciding whether and how to use EHRs as a source of data in clinical investigations
+
+         Using EHR systems that are interoperable with electronic data capture (EDC) systems in
+          clinical investigations
+
+         Ensuring the quality and integrity of EHR data collected and used as electronic source
+          data in clinical investigations
+
+         Ensuring that the use of EHR data collected and used as electronic source data in clinical
+          investigations meets FDA’s inspection, recordkeeping, and record retention
+          requirements5
+
+In an effort to modernize and streamline clinical investigations, the goals of this guidance are to:
+
+         Facilitate the use of EHR data in clinical investigations
+
+         Promote the interoperability of EHR and EDC systems
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+
+II.       SCOPE
+
+The recommendations outlined in this guidance apply to the use of EHR data in:
+
+         Prospective clinical investigations of human drugs and biological products, medical
+          devices, and combination products, including clinical investigations conducted in clinical
+          practice settings6
+
+
+5
+ For inspection requirements and principal recordkeeping requirements for clinical investigators who develop
+human drugs and biological products, see 21 CFR 312.62 and 312.68. For medical devices, see 21 CFR 812.140
+and 812.145.
+6
+ Conclusions about the risks and benefits of medical products drawn from data, including EHR data, collected in
+routine clinical practice settings (i.e., outside of typical clinical research settings) are sometimes referred to as real
+world evidence. Such conclusions may be used to inform regulatory decision making, specifically in the approval of
+new indications for approved drugs and to satisfy post-approval study requirements. This guidance, which is
+intended to assist interested parties on the use of EHR data in FDA-regulated clinical investigations, satisfies, in
+part, the mandate under the 21st Century Cures Act (Cures Act) (Public Law 114-255) to issue guidance about the
+use of real world evidence in regulatory decision making. See Section 3022 of the Cures Act. See also 21 U.S.C.
+
+
+
+
+                                                            2
+                                 Contains Nonbinding Recommendations
+
+
+        Foreign clinical studies not conducted under an investigational new drug application
+         (IND) or an investigational device exemption (IDE) that are submitted to FDA in support
+         of an application for the marketing approval of a medical product7 (see 21 CFR 312.120,
+         314.106, and 814.15)
+
+This guidance applies to data obtained from EHRs and EHR clinical data warehouses that store
+and integrate EHR data.
+
+The Office of the National Coordinator for Health Information Technology (ONC) at the
+Department of Health and Human Services (HHS) has adopted use of the broader term health IT
+in the ONC Health Information Technology (Health IT) Certification Program that includes
+EHRs and other forms of health IT that provide electronic data.8 Other forms of health IT may
+include mobile and telehealth technology, medical devices and remote monitoring devices,
+assistive technologies, and sensors. This guidance does not apply to data from these other forms
+of health IT.
+
+In addition, this guidance does not apply to the following:
+
+        The use of EHR data in postmarketing observational pharmacoepidemiologic studies
+         designed to assess adverse events and risks associated with drug exposure or designed to
+         test prespecified hypotheses for such studies9
+
+        The use of EHR data to evaluate feasibility of the trial design or as a recruitment tool for
+         clinical investigations10
+
+        Data collected for registries and natural history studies
+
+
+355g. For more information on real world evidence, see Sherman RE, Anderson SA, Dal Pan GJ, et al., “Real-
+World Evidence – What is it and what can it tell us.” N Engl J Med 2016; 375:2293–2297.
+7
+ For the purposes of this guidance, all references to medical products include human drugs and biological products,
+medical devices, and combination products that are regulated by CDER, CBER, or CDRH.
+8
+ See the HHS final rule “2015 Edition Health Information Technology (Health IT) Certification Criteria, 2015
+Edition Base Electronic Health Record (EHR) Definition, and ONC Health IT Certification Program Modifications,”
+published October 16, 2015 (80 FR 62602 at 62602). Also, see the Federal Health IT Strategic Plan (20152020) at
+https://www.healthit.gov/policy-researchers-implementers/health-it-strategic-planning.
+9
+  When using EHR data for postmarketing observational pharmacoepidemiologic studies designed to assess the risks
+associated with a drug exposure, sponsors should follow the recommendations in the guidance for industry and FDA
+staff Best Practices for Conducting and Reporting Pharmacoepidemiologic Safety Studies Using Electronic
+Healthcare Data. We update guidances periodically. For the most recent version of a guidance, check the FDA
+guidance web page at https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+10
+  For more information on the use of EHR data as a recruitment tool for clinical investigations, see the guidance for
+institutional review boards and clinical investigators Recruiting Study Subjects — Information Sheet, available at
+https://www.fda.gov/RegulatoryInformation/Guidances/ucm126428.htm.
+
+
+
+
+                                                          3
+                                    Contains Nonbinding Recommendations
+
+
+III.       BACKGROUND
+
+FDA issued guidance on electronic source data in clinical investigations (eSource guidance).11
+In the eSource guidance, FDA addresses attributes of source data used to fill predefined fields in
+an electronic case report form (eCRF) that would satisfy FDA’s inspection, recordkeeping, and
+record retention requirements.12 The guidance acknowledges that data entered into the sponsor’s
+eCRF may be derived from a variety of sources, including EHRs.
+
+In general, EHR systems are not under the control of FDA-regulated entities (e.g., sponsors,
+clinical investigators). In most instances, these systems belong to health care providers, health
+care organizations, and health care institutions. As provided in the eSource guidance, FDA does
+not intend to assess compliance of EHR systems with 21 CFR part 11.13 However, FDA’s
+acceptance of data from clinical investigations for decision-making purposes depends on FDA’s
+ability to verify the quality and integrity of the data during FDA inspections (see 21 CFR parts
+312 and 812). This guidance clarifies FDA’s expectations when EHRs are used as a source of
+data in clinical investigations.
+
+Potential Advantages of the Use of EHRs in Clinical Investigations
+
+With the widespread use of EHRs, there are opportunities to improve data accuracy and promote
+clinical trial efficiency when EHRs are used in clinical investigations. EHRs may enable clinical
+investigators and study personnel to have access to many types of data (e.g., clinical notes,
+physician orders, radiology, laboratory, and pharmacy records) that can be combined,
+aggregated, and analyzed. EHRs may have the potential to provide clinical investigators and
+study personnel access to real-time data for review and can facilitate post-trial follow-up on
+patients to assess long-term safety and effectiveness of medical products. In addition, there are
+opportunities for long-term follow up of large numbers of patients, which may be of particular
+importance in studies where the outcome of interest occurs rarely, such as in prophylaxis studies.
+
+
+IV.        INTEROPERABILITY AND INTEGRATION OF SYSTEMS
+
+For the purposes of this guidance, interoperability refers to the ability of two or more products,
+technologies, or systems to exchange information and to use the information that has been
+exchanged without special effort on the part of the user. EHR and EDC systems may be
+noninteroperable, interoperable, or fully integrated, depending on supportive technologies and
+standards.
+
+Noninteroperable systems, without the capability for electronic exchange of EHR data in clinical
+investigations, involve manual transcription of data elements from the EHR to the eCRF or to
+
+11
+     See the guidance for industry Electronic Source Data in Clinical Investigations.
+12
+     See footnote 5.
+13
+     See footnote 11.
+
+
+
+
+                                                            4
+                                Contains Nonbinding Recommendations
+
+
+the paper case report form, similar to the transcription performed with paper records. Such
+manual transcription procedures may introduce risks of data entry errors unless effective quality
+control systems are in place.
+
+Interoperable systems allow electronic transmission of relevant EHR data to the EDC system.
+For example, data elements originating in an EHR (e.g., demographics, vital signs, laboratory
+data, medications) may automatically populate the eCRFs within an EDC system. In addition, an
+interoperable EHR and EDC system could provide access to additional patient information
+populated from other clinical information systems (e.g., radiology information systems,
+laboratory information systems). Interoperable systems may simplify data collection for a
+clinical investigation by enabling clinical investigators and study personnel to capture source
+data at the patient’s point-of-care visit. Interoperable systems may also reduce errors in data
+transcription, allowing for the improvement in data accuracy and the quality and efficiency of the
+data collected in clinical investigations.
+
+Fully integrated systems allow clinical investigators to enter research data directly into the EHR.
+This may involve, for example, use of research modules, use of research tabs built into the EHR
+system, or use of custom research fields within the EHR system for data that are entered for
+research purposes.
+
+FDA encourages sponsors and clinical investigators to work with entities that control EHR
+systems, such as health care organizations, to use EHR and EDC systems that are interoperable
+or fully integrated. Moreover, diverse ownership of electronic systems and data may necessitate
+appropriate collaboration between the health care and clinical research communities. FDA
+encourages sponsors and health care organizations to work with EHR and EDC system vendors
+to further advance the interoperability and integration of these systems.
+
+        A.       Data Standards
+
+There may be practical challenges to the interoperability of EHR and EDC systems. These
+challenges may include the complex and diverse clinical data standards used by the health care
+and clinical research communities, which may hinder the exchange of information between
+different electronic systems. Many of these challenges are being addressed by the adoption of
+open data standards and through EHR data standardization requirements as part of the ONC
+Health IT Certification Program and ONC’s Interoperability Standards Advisory.14 The data
+exchange between EHR and EDC systems should leverage the use of existing open data
+standards, when possible, while ensuring that the integrity and security of data are not
+compromised.
+
+        B.       Structured and Unstructured Data
+
+FDA encourages exchange of structured data (e.g., demographics, vital signs, laboratory data)
+between EHR and EDC systems so that data may be entered once at the point-of-care and used
+many times without manual re-entry or manual source data verification. Sponsors should ensure
+14
+  The ONC Health IT Certification Program and their processes are discussed further in section V.A of this
+guidance. For more information on ONC’s Interoperability Standards Advisory, see https://www.healthit.gov/isa/.
+
+
+                                                        5
+                            Contains Nonbinding Recommendations
+
+
+that the structured data elements obtained from the EHR correspond with the protocol-defined
+data collection plan (e.g., time and method of measurement). In addition, for extraction of
+unstructured data, sponsors should consider the reliability and quality of unstructured EHR data
+and the appropriateness of using it as critical source data, such as study endpoints.
+
+       C.      Validation
+
+Sponsors should ensure that the interoperability of EHR and EDC systems (e.g., involving the
+automated electronic transmission of relevant EHR data to the EDC system) functions in the
+manner intended in a consistent and repeatable fashion and that the data are transmitted
+accurately, consistently, and completely. The sponsor’s quality management plan (e.g., standard
+operating procedures, software development life cycle model, change control procedures) should
+address the interoperability of the EHR and EDC system and the automated electronic
+transmission of EHR data elements to the EDC system. Sponsors should ensure that software
+updates to the sponsor’s EDC systems do not affect the integrity and security of EHR data
+transmitted to the sponsor’s EDC systems. In addition, as part of the quality management plan,
+FDA encourages sponsors to periodically check a subset of the extracted data for accuracy,
+consistency, and completeness with the EHR source data and make appropriate changes to the
+interoperable system when problems with the automated data transfer are identified.
+
+       D.      Data From Multiple EHR Systems
+
+The EHR system at the clinical investigation site may be interoperable with multiple EHR
+systems from many different health care organizations or institutions that are not affiliated with
+the clinical investigation site. If data from multiple EHR systems from different health care
+organizations and institutions are integrated with EHR data at the clinical investigation site, data
+from another institution’s EHR system may be used and transmitted to the sponsor’s EDC
+system provided that data sharing agreements are in place.
+
+
+V.     BEST PRACTICES FOR USING EHRs IN CLINICAL INVESTIGATIONS
+
+The use of EHRs as a source of data in clinical investigations may involve additional
+considerations, planning, and management as described in this section. Sponsors and clinical
+investigators should ensure that policies and processes for the use of EHRs at the clinical
+investigation site are in place and that there are appropriate security measures employed to
+protect the confidentiality and integrity of the study data.
+
+Sponsors should also ensure that study monitors have suitable access to all relevant subject
+information pertaining to a clinical investigation, as appropriate. Such access must be described
+in the informed consent (see 21 CFR 50.25(a)(5)) (see section V.E). Furthermore, at any time
+during the course of a clinical investigation, sponsors should discuss with the relevant FDA
+review division any unique issues or challenges encountered relating to the data collection from
+the EHRs (see, e.g., 21 CFR 312.41).
+
+
+
+
+                                                  6
+                                    Contains Nonbinding Recommendations
+
+
+           A.       Use of Health Information Technology Certified by ONC
+
+The Health Information Technology for Economic and Clinical Health Act of 2009 (HITECH
+Act) (Title XIII of Division A and Title IV of Division B of the American Recovery and
+Reinvestment Act of 2009 (Public Law 1115)) requires that ONC establish a voluntary
+certification program for health IT.15 Under the ONC Health IT Certification Program, certified
+EHR technology would be in compliance with applicable provisions under 45 CFR part 170.
+EHR technology with certified capabilities generally has clear advantages, because many of the
+certification requirements are aimed toward ensuring interoperable data sharing and enabling
+processes to keep electronic data confidential and secure. In particular, all EHR technology
+certified under the ONC Health IT Certification Program is required to meet certain privacy and
+security protection requirements for an individual’s health information (see 45 CFR
+170.314(d)(1) through (8) and 45 CFR 170.315(d)(1) through (11)). FDA encourages the use of
+such certified EHR systems together with appropriate policies and procedures for their use.
+
+Sponsors should include in their data management plan a list of EHR systems used by each
+clinical investigation site in the clinical investigation. Sponsors should document the
+manufacturer, model number, and version number of the EHR system and whether the EHR
+system is certified by ONC.16 If an EHR system is decertified during the course of the clinical
+investigation because the system no longer conforms to ONC’s certification criteria, sponsors
+should determine the nature or reasons for the nonconformity and determine whether it would
+affect the quality and integrity of data used in the clinical investigation.
+
+           B.       Use of EHR Systems Not Certified by ONC
+
+FDA recognizes the importance of data from foreign studies to support safety and efficacy
+claims for medical products and may accept data from clinical studies conducted outside the
+United States.17 EHR systems not certified by ONC, including EHR systems at foreign clinical
+sites, can provide adequate data to inform FDA’s regulatory decisions provided that adequate
+controls are in place to ensure the confidentiality, integrity, and security of data. Specifically, for
+EHR systems not certified by ONC, sponsors should consider whether such systems have the
+following privacy and security controls in place to ensure that the confidentiality, integrity, and
+security of data are preserved:
+
+          Policies and processes for the use of EHR systems at the clinical investigation site are in
+           place, and there are appropriate security measures employed to protect the study data.
+
+          Access to electronic systems is limited to authorized users.
+
+
+15
+  80 FR 62602 at 62606. For information about the ONC Health IT Certification Program, see
+https://www.healthit.gov/policy-researchers-implementers/onc-health-it-certification-program.
+16
+     Sponsors may check the certification status for EHR systems at https://chpl.healthit.gov/#/search.
+17
+  See the guidance for industry and FDA staff FDA Acceptance of Foreign Clinical Studies Not Conducted Under
+an IND — Frequently Asked Questions.
+
+
+                                                            7
+                                Contains Nonbinding Recommendations
+
+
+          Authors of records are identifiable.
+
+          Audit trails are available to track changes to data.
+
+          Records are available and retained for FDA inspection for as long as the records are
+           required by applicable regulations (see section VI).
+
+Sponsors should consider these factors when determining the suitability of EHR systems not
+certified by ONC for use in clinical investigations. If the clinical investigation site is using a
+system that does not contain the adequate controls previously described in the bulleted items,
+sponsors should consider the risks of employing such systems (e.g., the potential harm to
+research subjects, patient privacy rights, and data integrity of the clinical investigation and its
+regulatory implications).
+
+The following information may be helpful to sponsors to determine the suitability of EHR
+systems not certified by ONC:
+
+          Any EHR system certification information from other authorizing bodies outside the
+           United States, including information about aspects of the EHR system that the
+           authorizing body evaluated when certifying the EHR system
+
+          Feature and product-specification information from the EHR system vendor
+
+Sponsors should consult with the relevant FDA review divisions if any issues or challenges with
+the EHR system are identified.
+
+           C.       eSource Principles for EHRs
+
+As stated earlier in this guidance, FDA does not intend to assess EHR systems for compliance
+with 21 CFR part 11. However, part 11 applies to the sponsor’s EDC system that extracts the
+EHR data for use in a clinical investigation, and FDA intends to assess the sponsor’s EDC
+system for compliance with part 11, as provided in the guidance for industry Part 11, Electronic
+Records; Electronic Signatures – Scope and Application.
+
+           1.       Data Originator
+
+For the purposes of recordkeeping, audit trails, and inspection, each electronic data element
+should be associated with a data originator. The EHR is identified as the data originator for
+EHR data elements gathered during the course of a clinical investigation.18 Identifying the EHR
+as the data originator may be sufficient because sponsors are not expected to know details about
+all users who contribute information to the patient’s EHR.
+
+
+
+18
+     See footnote 11.
+
+
+
+
+                                                     8
+                                Contains Nonbinding Recommendations
+
+
+        2.       Data Modifications
+
+After data are transmitted to the eCRF, the clinical investigator or delegated study personnel
+should be the only individuals authorized to make modifications or corrections to the data.
+Modified and corrected data elements should have data element identifiers that reflect the date,
+time, data originator, and the reason for the change. Modified and corrected data should not
+obscure previous entries. Clinical investigators should review and electronically sign the
+completed eCRF for each study participant before data are archived or submitted to FDA. If
+modifications are made to the eCRF after the clinical investigator has already signed the eCRF,
+the changes should be reviewed and approved by the clinical investigator. Use of electronic
+signatures for records that are subject to 21 CFR part 11 must comply with relevant requirements
+in that regulation (see 21 CFR 11.2).
+
+        D.       Blinded Study Designs
+
+When the study design is blinded, sponsors should consider whether the use of interoperable
+EHR and EDC systems has any potential to unblind the treatment allocation. If a potential for
+unblinding is identified, sponsors should determine whether the use of interoperable systems is
+appropriate or whether other appropriate controls should be in place to prevent unblinding.
+
+        E.       Informed Consent
+
+When informed consent is required, the consent must include a statement describing the extent, if
+any, to which confidentiality of records identifying the subject will be maintained (21 CFR
+50.25(a)(5)) and should identify entities, such as health care providers, clinical investigators,
+sponsors, contract research organizations, study monitors, and regulatory agencies who may gain
+access to the patient’s electronic health record relating to the clinical investigation.19 In addition,
+the consent process must also note the possibility that FDA may inspect records (21 CFR
+50.25(a)(5)) and should not state or imply that FDA needs permission from the subject for access
+to the records. Please note that, under the Health Insurance Portability and Accountability Act
+(HIPAA) privacy rule, FDA does not need permission to inspect records containing health
+information (see 45 CFR 164.512). FDA may inspect study records, for example, to assess
+investigator compliance with the study protocol and validity of the data reported by the sponsor.
+
+Under section 704(a)(1) of the Federal Food, Drug, and Cosmetic Act (21 U.S.C. 374(a)(1)),
+FDA may inspect and copy records relating to the clinical investigation (see 21 CFR 312.58(a),
+312.68, and 812.145(b)). FDA generally will not copy records that include the subject’s name
+unless there is reason to believe the records do not represent the actual cases studied or results
+obtained. When FDA requires subject names, FDA will treat such information as confidential.
+On rare occasions, FDA may be required to disclose this information to third parties, such as to a
+court of law (see 21 CFR 20.63(a) and 20.83(a) and (b)). Therefore, the consent process should
+not promise or imply absolute confidentiality by FDA.
+
+
+19
+  For more information, see the draft guidance for IRBs, clinical investigators, and sponsors Informed Consent
+Information Sheet. When final, this guidance will represent FDA’s current thinking on this topic.
+
+
+
+
+                                                         9
+                                 Contains Nonbinding Recommendations
+
+
+For systems that are interoperable or fully integrated, sponsors and clinical investigators should
+have a detailed understanding of data flow and data visibility to allow for a clear description in
+the informed consent of the parties granted access to the patient’s data.
+
+
+VI.       INSPECTION, RECORDKEEPING, AND RECORD RETENTION
+          REQUIREMENTS
+
+FDA must have access to records and may inspect and copy all records pertaining to a clinical
+investigation in accordance with 21 CFR 312.62, 312.68, 812.140, and 812.145. All relevant
+information in the EHR pertaining to the clinical investigation must be made available to FDA
+for review upon request (21 CFR 312.62(b), 312.68, 812.140(a), and 812.145).20 This
+information should be made available and viewable to FDA as original records in the EHR or as
+certified copies. During an inspection, FDA may also request other paper or electronic records
+to support data in the eCRF (e.g., case histories, other data pertaining to the clinical
+investigation) (see 21 CFR 312.62(b), 312.68, 812.140(a)(3), and 812.145). In addition, FDA
+may request to review the EHR audit trail information during inspection.
+
+Clinical investigators must retain all paper and electronic source documents (e.g., originals or
+certified copies) and records as required to be maintained in compliance with 21 CFR 312.62(c)
+and 812.140(d).
+
+         For human drugs and biological products, clinical investigators must retain all records
+          (e.g., including case histories and other EHR data pertaining to a clinical investigation),
+          as required by 21 CFR part 312, for 2 years following the date a marketing application is
+          approved for the drug for the indication for which it is being investigated or, if no
+          application is to be filed or if the application is not approved for such indication, until
+          2 years after the investigation is discontinued and FDA is notified.
+
+         For medical devices, an investigator or sponsor must maintain all records, including
+          EHRs relating to the investigation, as required by 21 CFR 812.140(d), during the
+          investigation and for 2 years after the latter of the following two dates:
+
+          - The date on which the investigation is terminated or completed
+
+          - The date that the records are no longer required for the purposes of supporting a
+            premarket approval application or a notice of completion of a product development
+            protocol
+
+20
+   If the necessary records are not available for a foreign clinical study that is not conducted under an IND, FDA
+may not accept the study data in support of an IND or an application for marketing approval. If the records exist but
+a sponsor or an applicant cannot disclose them to FDA because such disclosure is prohibited by applicable foreign
+law, the sponsor or applicant may seek a waiver of this requirement (21 CFR 312.120(c)). For FDA to rely on such
+data that cannot be disclosed, the sponsor and FDA would need to agree on an alternative validation procedure. For
+more information, see the guidance for industry and FDA staff FDA Acceptance of Foreign Clinical Studies Not
+Conducted Under an IND — Frequently Asked Questions.
+
+
+
+
+                                                         10
+                            Contains Nonbinding Recommendations
+
+
+                                          GLOSSARY
+
+Audit Trail — Documentation that allows reconstruction of the course of events.
+
+Certified Copy — A copy (irrespective of the type of media used) of the original record that
+has been verified (i.e., by a dated signature or by generation through a validated process) to have
+the same information, including data that describe the context, content, and structure, as the
+original.
+
+Data Element — A single observation associated with a subject in a clinical study. Examples
+include birth date, white blood cell count, pain severity measure, and other clinical observations
+made and documented during a study.
+
+Data Originator — An origination type associated with each data element that identifies the
+source of the data element’s capture in the eCRF. This could be a person, a computer system, a
+device, or an instrument that is authorized to enter, change, or transmit data elements into the
+eCRF (also, sometimes known as an author).
+
+Electronic Case Report Form (eCRF) — An auditable electronic record of information that
+generally is reported to the sponsor on each trial subject, according to a clinical investigation
+protocol. The eCRF enables clinical investigation data to be systematically captured, reviewed,
+managed, stored, analyzed, and reported.
+
+Electronic Data Capture (EDC) systems — Electronic systems designed to collect and manage
+clinical trial data in an electronic format.
+
+Electronic Health Record (EHR) — An individual patient record contained within the EHR
+system. A typical individual EHR may include a patient’s medical history, diagnoses, treatment
+plans, immunization dates, allergies, radiology images, pharmacy records, and laboratory and
+test results. This guidance uses a broad definition to be inclusive of many different types of
+EHRs and may not be consistent with the definition for EHRs published in other guidance
+documents.
+
+Electronic Health Record (EHR) systems — Electronic platforms that contain individual
+health records for patients. EHR systems are generally maintained by health care providers,
+health care organizations, and health care institutions and are used to deliver care. EHR systems
+can be used to integrate real-time electronic health care information from medical devices and
+multiple health care providers involved in the care of patients.
+
+Electronic Source Data — Data initially recorded in an electronic format.
+
+Interoperability — The ability of two or more products, technologies, or systems to exchange
+information and to use the information that has been exchanged without special effort on the part
+of the user.
+
+
+
+
+                                                11
+                                Contains Nonbinding Recommendations
+
+
+Registries — Organized systems that use observational study methods to collect uniform data
+(clinical and other) to evaluate specified outcomes for a population defined by a particular disease,
+condition, or exposure, and that serve one or more predetermined scientific, clinical or policy
+purposes.21
+
+Source Data — All information in original records and certified copies of original records of
+clinical findings, observations, or other activities in a clinical trial necessary for the
+reconstruction and evaluation of the trial. Source data are contained in source documents
+(original records or certified copies).
+
+
+
+
+21
+  For more information, see Registries for Evaluating Patient Outcomes: A User's Guide, available at
+https://effectivehealthcare.ahrq.gov/topics/registries-guide-3rd-edition/research/.
+
+
+                                                        12
+
