@@ -1,0 +1,85 @@
+E2B(R3) - Reporting Scenarios
+This document lists different scenarios for reporting Individual Case Safety Reports (ICSRs) to FAERS. These
+scenarios identify the key ICH and regional data elements that must be populated for the ICSRs to be accepted.
+
+ Scenario 1: Premarket report on an IND or IND-Exempt BA/BE study
+ Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+ Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND or CDER_IND_EXEMPT_BA_BE
+ Type of Report (C.1.3) = 2 (Report from study)
+ Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+ IND Number where AE Occurred (C.5.5a) = <IND Number>
+ OR
+ Pre-ANDA Number where AE Occurred (C.5.5b) = <Pre-ANDA Number>
+ FDA Additional Information on Drug (coded) (FDA.G.k.10a) * = 1 (Test) or 2(Reference)
+ *Must be used to describe the drug’s role in the IND-Exempt BA/BE study. Use nullFlavor 'NA' for all other drugs or if information is
+ not available.
+
+ Scenario 2: Solicited reports or reports from Organized Data Collection System
+ Batch Receiver Identifier (N.1.4) = ZZFDA
+ Message Receiver Identifier (N.2.r.3) = CDER
+ Type of Report (C.1.3) = 2 (Report from study)
+ Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 2 (Individual patient use) or 3 (Other studies)
+Scenario 3: Premarket AGGREGRATE report
+Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND
+Type of Report (C.1.3) = 2 (Report from study)
+Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+IND Number where AE Occurred (C.5.5a) = <IND Number> (Use parent IND*)
+Patient (name or initials) (D.1) = AGGREGATE
+Identification Number of the Report Which Is Linked to This Report (C.1.10.r) = <list of Sender’s (case) Safety
+Report Unique Identifier (C.1.1)>
+*The parent IND is the IND under which clinical trials were first initiated in the United States. If the drug is being evaluated in
+multiple INDs, the parent IND is generally the IND with the lowest number
+
+
+
+Scenario 4: Premarket report with cross referenced INDs
+Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND
+Type of Report (C.1.3) = 2 (Report from study)
+Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+IND Number where AE Occurred (C.5.5a) = <IND Number>
+IND number of cross reported IND (FDA.C.5.6.r) = <list the cross-referenced INDs>
+Scenario 5: Premarket IND not approved and not marketed in US but is marketed outside US where AE
+occurred
+Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND
+Type of Report (C.1.3) = 1 (Spontaneous)
+IND Number where AE Occurred (C.5.5a) = <IND Number>
+
+
+Scenario 6: Postmarket study report - Must submit two (2) reports 1) on the IND and 2) on the NDA or BLA
+Report 1         Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+                 Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND
+                 Type of Report (C.1.3) = 2 (Report from study)
+                 Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+                 IND Number where AE Occurred (C.5.5a) = <IND Number>
+Report 2         Batch Receiver Identifier (N.1.4) = ZZFDA
+                 Message Receiver Identifier (N.2.r.3) = CDER
+                 Type of Report (C.1.3) = 2 (Report from study)
+                 Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+Scenario 7: Postmarket safety report
+Batch Receiver Identifier (N.1.4) = ZZFDA
+Message Receiver Identifier (N.2.r.3) = CDER
+Type of Report (C.1.3) = 1 (Spontaneous)
+IND Number where AE Occurred (C.5.5a) = empty
+
+
+Scenario 8: Premarket IND not approved and not marketed both inside and outside US and AE occurred
+outside US
+Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND
+Type of Report (C.1.3) = 2 (Report from study)
+IND Number where AE Occurred (C.5.5a) = <IND Number>
+Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+
+
+Scenario 9: Premarket INDs not approved and not marketed both inside and outside US and AE occurred
+outside US
+Batch Receiver Identifier (N.1.4) = ZZFDA_PREMKT
+Message Receiver Identifier (N.2.r.3) = CDER_IND or CBER_IND
+Type of Report (C.1.3) = 2 (Report from study)
+IND Number where AE Occurred (C.5.5a) = <Parent IND Number>
+Study Type Where Reaction(s) / Event(s) Were Observed (C.5.4) = 1 (Clinical trials)
+IND number of cross reported IND (FDA.C.5.6.r) = <list of other cross-referenced INDs>
+
