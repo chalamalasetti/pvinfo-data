@@ -1,0 +1,1170 @@
+{
+ "pass": "pub-1",
+ "batch": "p32",
+ "items": [
+  {
+   "id": "c16207c3-7e33-4116-aa95-d38172e5762a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "6a726364-c3f8-42c1-8b2f-49400b8b7aca",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote and statement were cut off mid-sentence (\"(e.\"); trimmed to the complete sentences on annex change history.",
+   "row": {
+    "quote": "122. The history of information changes in annexes to the\npharmacovigilance system master file can be provided upon request, and in\nthis case, the date of the change and/or update of an annex is included in the\nchangelog with the update of the history of changes in the annex content. It is\nallowed that regularly updated information in annexes (such as lists of\nmedicinal products, standard operating procedures, or compliance indicators)\nincludes results from controlled systems (e. g., electronic document\nmanagement systems or authorised authorities’ databases). Previous versions\nof annexes may be managed outside of the master file, provided that the\nhistory of changes is maintained and available to the authorised authorities\nupon request.",
+    "statement": "The history of changes to PSMF annexes may be provided upon request; in that case the date of each annex change or update is included in the PSMF changelog. Annexes may contain output from controlled systems, and previous annex versions may be managed outside the PSMF, provided the change history is maintained and available to the authorities on request.",
+    "title": "Record annex update dates in the changelog when annex change history is provided on request",
+    "confidence": 88
+   }
+  },
+  {
+   "id": "8a78ef7e-03d2-4edc-9b16-60ba0dfe1223",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "11a62e55-ea55-4c3c-a9f2-7956273e09f6",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "36a9a231-2cf9-402e-b6c7-d95315339c49",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "11413feb-4bee-48aa-88fb-8c79200d7541",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "deadline_ok"
+   ],
+   "reason": "Statement includes the 7-working-day limit for giving authorities access to the PSMF, but the deadline field was empty.",
+   "row": {
+    "deadline": "Within 7 working days after receiving the request",
+    "deadline_rule": {
+     "days": 7,
+     "unit": "business_days",
+     "origin": "any",
+     "applies_to": "Authority access to the PSMF",
+     "clock_start": "receiving the relevant request"
+    },
+    "confidence": 92
+   }
+  },
+  {
+   "id": "a9e9859d-5170-4c46-b291-86e60a0b27bd",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote and statement were truncated mid-word (\"co\"); completed to the end of the sentence on readable, complete and accessible form.",
+   "row": {
+    "quote": "127. It is allowed that the pharmacovigilance system master file be in\nelectronic form, provided that it is possible to submit a clearly structured hard\ncopy     at   the   authorised   authorities’ request.   In   any   format,   the\npharmacovigilance system master file shall be in a readable, complete, and\naccessible form, allowing for the assessment of all documents and\ntraceability of changes.",
+    "statement": "The PSMF may be kept in electronic form provided a clearly structured hard copy can be submitted at the authorities' request. In any format, the PSMF shall be readable, complete and accessible, allowing assessment of all documents and traceability of changes.",
+    "confidence": 92
+   }
+  },
+  {
+   "id": "5d9ef409-be64-4ef6-b02c-1090065604ac",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "0452936b-eff3-41ce-bedd-80c3474132f5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Faithful to para 129; the source's reference to the Union territory is reproduced as written."
+  },
+  {
+   "id": "81c7ac5e-43b8-40b9-a9d9-e29c2cb9dec6",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "6448a488-d7cf-4020-8617-13a778b43042",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "level_correct"
+   ],
+   "reason": "The core of the row (and its title) is that the MAH remains responsible for compliance when PSMF tasks are delegated, which is a mandatory duty; delegation itself is permitted.",
+   "row": {
+    "level": "Mandatory",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "d780b5a8-b3a2-4b19-a887-0ac64363bb49",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e887e82d-ee30-4883-859a-c3b0a2b34c46",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "5d628d11-5446-4f1f-9d1b-a9d1eeb39474",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "1f5af507-c53c-4804-860e-70e127d8c8c9",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "deadline_ok"
+   ],
+   "reason": "Each MAH sharing a PSMF must be able to submit it within 7 working days of a request; the deadline field was empty.",
+   "row": {
+    "deadline": "Within 7 working days after receiving the request",
+    "deadline_rule": {
+     "days": 7,
+     "unit": "business_days",
+     "origin": "any",
+     "applies_to": "Submission of a shared PSMF on authority request",
+     "clock_start": "receiving the relevant request"
+    },
+    "confidence": 91
+   }
+  },
+  {
+   "id": "28023f27-d4d1-435e-ab9f-7c40377e06d2",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "d8b7a0ad-9a02-40d8-86fd-529777b991c0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a7ae4e36-8697-49a4-9d96-2d500907ee7b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Statement is a list-item fragment but faithful; deadline matches."
+  },
+  {
+   "id": "a6d2a27a-d0fa-4e8d-9cc9-124c1019ef24",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "2494af5d-012b-4c1b-ab7c-6235eb969bfb",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "2a1449f2-63b4-4d7a-ad66-062f36328ff4",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Actor covers MAHs operating PV systems; para 193 binds the MAH."
+  },
+  {
+   "id": "901939ad-3e69-46ec-b990-494eb8ac17b1",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7a568cc4-2cb5-45b8-89ff-0c3215caa099",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "fc24f5b1-4fc1-4c0f-b886-dd558622551b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "209d00eb-a5f6-4f9a-a834-2257486a519f",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "b4106378-5949-46ca-a593-7989466d09d3",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "f43c0b6d-049a-4f8d-b3ad-36ca962440d3",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a74610df-c0c6-4099-96f0-1864a4314fcc",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote stopped mid-sentence at \"system,\"; extended to the end of para 201, which also requires audit results to be reported by risk level and classified by criticality.",
+   "row": {
+    "quote": "201. Auditors’ findings are documented in the auditor’s report and\ntimely reported to management. The audit process shall include mechanisms\nfor communicating findings to the audited party, obtaining feedback and\npresenting audit reports to management and stakeholders, including those\nresponsible for the pharmacovigilance system, in accordance with the\nrequirements of the Union authorities’ acts, the Member States’ legislation,\nand guidelines for the pharmacovigilance system auditing. Audit results shall\nbe reported according to the relative level of risk and classified to indicate\ntheir criticality to risks affecting the pharmacovigilance system, processes,\nand process components.",
+    "statement": "Auditors' findings are documented in the audit report and reported to management in a timely way. The audit process shall include mechanisms for communicating findings to the audited party, obtaining feedback and presenting reports to management and stakeholders, including those responsible for the PV system; audit results shall be reported according to their relative risk and classified by criticality.",
+    "confidence": 91
+   }
+  },
+  {
+   "id": "2ae86a2e-5018-4c1a-a054-9e2cfaf6c573",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Title said critical findings must be acted on \"immediately\", which para 203 does not say; it requires risk-proportionate timing and prioritisation of CAPA for critical and significant deficiencies.",
+   "row": {
+    "title": "Prioritise CAPA for critical and significant audit deficiencies in proportion to risk",
+    "confidence": 90
+   }
+  },
+  {
+   "id": "e35dd7a4-daee-4775-a08c-ade3835ab328",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "de84b7c3-8066-4c1d-96ef-89fcd15220ab",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a8039b94-7045-4815-b356-f910e55053aa",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7cd3d7ae-1f91-4f76-85cf-f61d4d6d1137",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "fe227886-4d6f-4df9-a10b-3bfb0736c8c6",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "590c616b-e5bd-47b1-84f8-49e868494e7d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a4946d20-5111-485b-b901-91957a007bcd",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "99442c3d-42b1-4a8e-a3d8-24223b3f3ecd",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "45fb09ba-8d0c-42e6-bbd7-5c2a602678c0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e4887d95-c05a-45a3-95c6-dd758ffa208e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "ea67e9b9-1280-4119-9ee9-4e194868b9e0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "0dccdb93-6e6b-41ab-9aa6-1cbf3ba79233",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "86fb5166-2d50-4532-a1c8-be0e39c85450",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7bbcd430-d27b-4c1f-9b4b-32957da2125b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "d46615a0-700c-49fe-80c0-d950053277c2",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Statement starts with the list-item fragment but is faithful."
+  },
+  {
+   "id": "fec70b20-15fc-479d-a00d-daf5a00f3a68",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "35e6bdd9-bc0c-406e-8333-6d445c2cd337",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "601dd6d9-a5b6-4334-80e7-f175ca2732bd",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "5ed0ef3e-fdc4-4ffb-a699-bb6f36fcbf27",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "cde775cc-9d0d-4531-982a-6ea48f528d8d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "61e24354-04f0-48db-81f8-ed6b5ee9655d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "04a179f0-00d3-48df-aad5-4293b29a0f0b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a3c2e060-9bf5-410e-8f4d-c76362a41f96",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "3a5e312e-6b5e-4a42-85fd-45b526497015",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e831a5ed-ffac-455d-aee4-7597d6a450a6",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "30269918-3bca-47da-b911-128bb8d3f6e0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Item d) of para 245, faithful to the source."
+  },
+  {
+   "id": "f26a8b09-ba65-4b36-916a-27220b570eec",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "49704aff-f3f9-40b6-85ec-f7e526e2d722",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9449f7a0-c4e9-4738-84a9-97c36990b2b0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "f9110a59-6523-4deb-9150-3a0d136e1fed",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "f61506de-ca0e-4ee4-8227-28481f17acd2",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "5048fa3d-9a88-4be5-8bdb-3a46d759e364",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "d40a4aae-fbe0-4daf-af56-cf39143e0aeb",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a22055c9-fa82-4088-b347-f36573549f65",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "787cecae-aedf-44b2-81f8-e417c6f0a1f4",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "fc292eed-5175-4eb5-bea0-e9872ff271c5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "012aafa1-4f04-447d-a008-ed9f1a4e104b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "05a79c96-97e0-41f0-984f-677a47e1e4cd",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "fc3cd4a5-a610-4372-8c1d-b62f0eeb965b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "50a659be-8836-480c-8d71-5c20fac1b2dc",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "db8b0c93-bebd-4e6a-85d0-afdae9960137",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "5ef3ce01-1d84-4382-af5c-345587d76038",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a0c4116b-1763-4a4e-8622-ace6347b560e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "3b866b1b-35f9-4980-a24a-be9c7274defe",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "d0df4013-bc83-4a32-881d-ebd70918a537",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote and statement included the following module heading (\"Module CVII: Identified and Potential Risks.\"), which is not part of the duty.",
+   "row": {
+    "quote": "277. When developing safety specifications of the risk management\nplan for advanced therapy medicinal products, risks specific to this drug\ngroup shall be considered.",
+    "statement": "When developing the safety specification of the RMP for advanced therapy medicinal products, risks specific to this group of products shall be considered.",
+    "confidence": 93
+   }
+  },
+  {
+   "id": "21654a4c-39f0-4c8e-b721-73bd01bae24a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote and statement included the following module heading, which is not part of the duty.",
+   "row": {
+    "quote": "278. This module shall contain a list of safety concerns identified for a\nmedicinal product at the stage of initial submission of the risk management\nplan for obtaining a marketing authorisation application, or at the post-\nauthorisation stage (for authorised medicinal products that did not previously\nhave an agreed risk management plan). This module is formed following the\napproved initial version of the risk management plan and is not subject to\nsubsequent changes.",
+    "statement": "The RMP module on safety concerns at initial submission shall list the safety concerns identified for the product at initial RMP submission for marketing authorisation, or at the post-authorisation stage for authorised products without a previously agreed RMP. This section reflects the initially approved RMP and is not changed afterwards.",
+    "confidence": 91
+   }
+  },
+  {
+   "id": "b8ca21da-7f31-465f-a717-37e758f18658",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9dc174cd-03da-44bb-9605-4bee67baa723",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "aa76ed07-3c70-4af2-8df9-9b8725d067e1",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "ad90af7b-106e-4cfb-981f-131f466c03a5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a7da8e3e-79e4-4bb9-96ba-3fad5ddba069",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "027e0824-e582-420e-9487-eaf727d5b3ff",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "8ad05963-afad-4502-be1b-0bf9fd6cd379",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "5c0b0dcb-9a59-4698-a680-c0d2df2321d2",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9d7f81e9-237d-405f-9fbd-29aaa429d629",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9edcf585-940d-4915-a1be-cd7dc67ebb40",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "39809bcb-408b-4043-8dcc-52bee759d5d6",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "2951dbc2-e65b-4eaf-9964-7b858a7e8a25",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "b3ba4429-e084-4f87-88fa-6015d2fee777",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Source says \"the marketing authorisation must assess\", meaning the MAH; row is faithful."
+  },
+  {
+   "id": "cf2d8158-b3ec-465e-b99d-6c71038eddf5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "8210e49c-c462-464e-82d3-26a0ecba465e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "f29b9fb6-7342-442d-aaa2-cc38143dc242",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "f9b99dcf-479b-4aed-8aad-180fde175efc",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "98c2a294-bafa-4d20-a479-131c2a20bcf6",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "d5928a12-75af-4676-bfe7-6a12b245fd1d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "20ff101e-9ed3-476f-810c-4db460972220",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "183791cb-1cca-4501-b399-0404653a8d65",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "ab64444b-1764-400f-9201-cfe33e78c89f",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful",
+    "actor_ok"
+   ],
+   "reason": "The title said the MAH must make the RMP summary public, but para 325 assigns publication to the authorities; the MAH duty is to provide an RMP summary containing the key elements with emphasis on risk minimisation.",
+   "row": {
+    "title": "Provide an RMP summary (for publication) covering key elements, emphasising risk minimisation",
+    "statement": "A summary of the RMP shall be made publicly available for each medicinal product; the MAH must include in the RMP an executive summary containing its key elements with particular emphasis on risk minimisation measures. Publication on the website is done by the authorised authorities.",
+    "confidence": 89
+   }
+  },
+  {
+   "id": "8dc327fd-3f7b-4dbe-8ad1-79402485e045",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "quote_clean",
+    "statement_faithful"
+   ],
+   "reason": "Quote and statement ended with the next heading \"Part VII: Annexes to Risk Management Plan\", which is not part of the duty.",
+   "row": {
+    "quote": "328. The summary of the risk management plan must be consistent\nwith the information provided in Modules CVII, CVIII of Part II and\nParts III, IV, and V of the risk management plan and shall contain the\nfollowing information:\n       a) the name of the medicinal product and the purposes for which its\nuse is approved;\n       b) summary of safety concerns and missing information;\n       c) routine and additional risk minimisation measures;\n       d) additional pharmacovigilance activities;",
+    "statement": "The RMP summary must be consistent with Modules CVII and CVIII of Part II and Parts III, IV and V of the RMP and shall contain: a) the product name and its approved uses; b) a summary of safety concerns and missing information; c) routine and additional risk minimisation measures; d) additional pharmacovigilance activities.",
+    "confidence": 92
+   }
+  },
+  {
+   "id": "7f3fba9e-ee0f-41f0-a379-fce9f0d1d148",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a07ece95-3c3b-4191-a4a0-bb5e542df27e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "98fd28c9-2a34-4a15-a2ee-43a49db76dd4",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "39a292ee-937f-4fa6-81da-2e0b9d59af43",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7feaa43c-d27d-4dd9-99aa-dd8d54156e56",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Mixed should/shall; Recommended matches the main sentence."
+  },
+  {
+   "id": "b3312af4-38e6-4b13-9b51-917cce8004d5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e12afafc-5f82-4c80-b1b6-7edbeed8100c",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7006520a-cdd1-45dd-86ee-194fd334585a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "c4964904-027f-40b6-8a1a-318f63b8ac8b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "196e6470-968b-45b6-8ac8-5f59b76facf9",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "fcb631be-2b67-49e4-8633-5bdc867254a5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "98fc2b00-3239-43d6-80a7-a14519a72057",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "2edc9535-6e79-42e1-aa81-b902cffdf42b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Mixed should/shall; Recommended matches the main sentence."
+  },
+  {
+   "id": "ce16527e-dd6e-4b0b-acfd-6c8b7d68bea2",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "statement_faithful"
+   ],
+   "reason": "Statement ended with a stray heading fragment \"VII.\"; removed.",
+   "row": {
+    "statement": "The authorised authority provides public access to summaries of approved RMPs on its website. For this purpose, the MA holder additionally submits to the authorised authority a summary of the RMP as a separate electronic document.",
+    "confidence": 92
+   }
+  },
+  {
+   "id": "4972aee4-fec8-48c7-adfe-f4a152a9d3a0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "dacb42a5-a0d3-4a25-b4ee-b6bb90238e92",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "ca4e5b0c-ee13-4ce6-9232-8293b0f6b51d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "182c0898-bad5-40e5-a8da-4e6691983f77",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "fffd8a38-d355-4248-90f0-3a7a3ec8c1a7",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "ababa65c-0c49-4fdf-bbfe-e86c2f64612e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7c5886d8-836d-46da-9611-cfe02e8ecde0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "f420c2b8-0278-4480-90fd-993c7c3a0180",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9ba2210f-6eae-43b8-8f90-bfe749621520",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "74a5df7c-afd7-4b3d-b7f2-db407a084562",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "c37dc73d-4d7a-4e42-b002-a64121602969",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e6688b20-a7e3-4a9a-8b99-9307f060865a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "4a484f5a-b7e0-47d0-92b6-dc677e960b92",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a58ab8c9-a258-4b90-a805-d811ce8eec3c",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "77d0cf1d-295c-4e73-9d19-620a4fe05bd0",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "ac99bbd9-1b78-4191-90f3-ea3f421c7096",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "a5aec17f-641b-43ab-99b2-1e7d0d925cca",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "8f502c71-428f-4150-ae28-50c2ac5755da",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "4192bdc6-1d92-43c3-a415-26464c638ff7",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "97cc89ee-8ac0-4338-bcd0-4e14d38e2d4a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "6e0bf955-1406-458b-a8d8-8370905ee8e5",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "68c2abb0-ad3e-4e60-9c6d-d9a7ca8e4e3f",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e4d2d41a-ae84-400e-be38-e004a7f2aa13",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "cd6c7c81-c7be-4954-aab0-dc32d79bd485",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "05372ed4-c0d0-4197-81ef-933e96025a3d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "800ff402-20b7-4907-bb05-4e69f1df4144",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "74defdeb-9fd9-4882-b0a4-6d068592d49e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "7d3d44e6-9e84-48b3-95ee-d90b5e7fff52",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "95ba8961-09de-4b6d-be46-351a5730239d",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "545ddf27-2665-4b7c-ae2f-21a79a05a48e",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Para mixes should and shall; Recommended matches the main training sentence."
+  },
+  {
+   "id": "add5a72c-0f1f-41d5-a5d2-5fa522aa970a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "4c7bdd67-3af6-4908-b3c2-dc0e0254fc8b",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "\"Immediately\" is captured in the statement; no numeric deadline."
+  },
+  {
+   "id": "d5aa332c-ee00-4920-931c-cf720caf6f29",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9985a9a5-2e1e-44fd-b0eb-9948f9f79f28",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "e15b0b4c-667e-452f-9fa0-e2b6546a1ea9",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "41d248fa-5aca-4305-92a9-1e020b117919",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "revise",
+   "failed_checks": [
+    "deadline_ok"
+   ],
+   "reason": "Para 441 states that certain lack-of-efficacy cases (life-threatening diseases, vaccines, contraceptives) may need to be reported within 15 calendar days; the deadline field was empty.",
+   "row": {
+    "deadline": "Within 15 calendar days for lack-of-efficacy cases involving life-threatening diseases, vaccines or contraceptives",
+    "deadline_rule": {
+     "days": 15,
+     "unit": "calendar_days",
+     "origin": "any",
+     "applies_to": "Lack-of-efficacy reports for products treating life-threatening diseases, vaccines and contraceptives",
+     "clock_start": "day zero (receipt of minimum information)"
+    },
+    "confidence": 86
+   }
+  },
+  {
+   "id": "85a64932-d71b-4639-b455-fbcb23b7ba1a",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  },
+  {
+   "id": "9f8e8350-a2ff-4931-98c4-330dc5de9b66",
+   "document_version_id": "cd98002e-57e7-40a9-b946-d5f3f155b1b4",
+   "verdict": "correct",
+   "failed_checks": [],
+   "reason": "Quote found and the row matches the source text, level and actor."
+  }
+ ]
+}
